@@ -1,7 +1,7 @@
 ---
 title: "Create phoneAuthenticationMethod"
 description: "Add a new phone authentication method."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

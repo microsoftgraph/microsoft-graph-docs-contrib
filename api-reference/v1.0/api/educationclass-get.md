@@ -1,7 +1,7 @@
 ---
 title: "Get educationClass"
 description: "Retrieve a class from the system"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType

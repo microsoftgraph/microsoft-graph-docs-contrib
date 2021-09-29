@@ -1,7 +1,7 @@
 ---
 title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "shauliu1"
@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Register a [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
 

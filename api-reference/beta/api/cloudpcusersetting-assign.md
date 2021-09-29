@@ -2,7 +2,7 @@
 title: "cloudPcUserSetting: assign"
 description: "Assign a Cloud PC user setting to user groups."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

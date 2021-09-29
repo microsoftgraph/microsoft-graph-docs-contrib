@@ -2,7 +2,7 @@
 title: "Range: LastCell"
 description: "."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

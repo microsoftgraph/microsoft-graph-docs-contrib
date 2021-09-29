@@ -2,7 +2,7 @@
 title: "Set Microsoft 365 group behaviors and provisioning options"
 description: "Using the group resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group."
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Set Microsoft 365 group behaviors and provisioning options (preview)
@@ -25,11 +25,11 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
 | WelcomeEmailDisabled|Welcome emails are not sent to new members.|A welcome email is sent to a new member on joining the group.|
 
-**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of creating the Microsoft 365 group, that are not normally part of default group creation.
+**resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of the Microsoft 365 group. These resources can be specified during group creation or update.
 
 | Supported values for resourceProvisioningOptions   |Description| Default if not set |
 |:---------------|:--------|:------------|
-| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can be added to the **resourceProvisioningOptions** string collection on [group update](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) through a `PATCH` operation, in order to convert an existing Microsoft 365 group to a team.| The group is a regular Microsoft 365 group without Teams capabilities.|
+| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group.| The group is a regular Microsoft 365 group without Teams capabilities.|
 
 
 ## See also

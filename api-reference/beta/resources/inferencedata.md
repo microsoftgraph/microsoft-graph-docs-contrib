@@ -1,7 +1,7 @@
 ---
 title: "inferenceData resource type"
 description: "inferenceData resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "profile"
 doc_type: "resourcePageType"

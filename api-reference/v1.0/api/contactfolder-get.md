@@ -2,7 +2,7 @@
 title: "Get contactFolder"
 description: "Get a contact folder by using the contact folder ID."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

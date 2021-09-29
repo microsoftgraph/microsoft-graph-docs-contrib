@@ -2,7 +2,7 @@
 title: Delete printTaskTrigger
 description: Delete a printer's task trigger.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

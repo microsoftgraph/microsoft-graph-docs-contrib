@@ -2,7 +2,7 @@
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "inbarckms"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

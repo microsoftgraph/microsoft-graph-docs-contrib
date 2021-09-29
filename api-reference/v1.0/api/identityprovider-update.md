@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

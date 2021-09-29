@@ -2,7 +2,7 @@
 title: "unifiedRoleManagementPolicyAssignment resource type"
 description: "A unifiedRoleManagementPolicyAssignment assigns the policy to a specific scope and role definition."
 author: "shauliu1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

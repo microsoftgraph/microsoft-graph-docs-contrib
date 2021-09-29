@@ -2,7 +2,7 @@
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -17,11 +17,21 @@ Retrieve a list of a user's [FIDO2 Security Key Authentication Method](../resour
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from least to most privileged)|Permissions acting on others (from least to most privileged)|
-|:---|:---|:--|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not applicable. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+### Permissions acting on self
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 

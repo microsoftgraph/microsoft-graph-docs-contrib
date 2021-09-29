@@ -2,7 +2,7 @@
 title: "Create userAttributeAssignments"
 description: "Create a new identityUserFlowAttributeAssignment object."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

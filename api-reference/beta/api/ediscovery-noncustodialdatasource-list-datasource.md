@@ -2,7 +2,7 @@
 title: "List dataSource"
 description: "Get the dataSource resources from the dataSource navigation property."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

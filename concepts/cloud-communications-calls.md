@@ -2,7 +2,7 @@
 title: "Calls overview"
 description: "Learn about the supported call types and how they're used for the signaling process."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 

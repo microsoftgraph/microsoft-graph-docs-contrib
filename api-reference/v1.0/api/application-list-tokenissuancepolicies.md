@@ -1,7 +1,7 @@
 ---
 title: "List assigned tokenIssuancePolicies"
 description: "List tokenIssuancePolicies that are assigned to an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

@@ -129,6 +129,41 @@
     "source_path_from_root": "/api-reference/beta/resources/schema.md",
     "redirect_url": "/graph/api/resources/externalconnectors-schema?view=graph-rest-beta",
     "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/resources/appleidentityprovider.md",
+    "redirect_url": "/graph/api/resources/applemanagedidentityprovider?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-list.md",
+    "redirect_url": "/graph/api/identitycontainer-list-identityproviders?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-post-identityproviders.md",
+    "redirect_url": "/graph/api/identitycontainer-post-identityproviders?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/identityproviderbase-list-availableprovidertypes.md",
+    "redirect_url": "/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-list.md",
+    "redirect_url": "/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-post-identityproviders.md",
+    "redirect_url": "/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/identityproviderbase-list-availableprovidertypes.md",
+    "redirect_url": "/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0",
+    "redirect_document_id": true
   }
 ]
 }

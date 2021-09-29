@@ -1,7 +1,7 @@
 ---
 title: "Delete identityProvider from a b2cIdentityUserFlow (deprecated)"
 description: "Delete an identityProvider from a b2cIdentityUserFlow. (deprecated)"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
