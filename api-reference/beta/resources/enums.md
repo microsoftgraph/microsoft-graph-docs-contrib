@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
@@ -140,7 +140,7 @@ Namespace: microsoft.graph
 |easSupported|
 |other|
 
-### consentRequestFilterByCurrentUserOptions values 
+### consentRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -309,14 +309,14 @@ Namespace: microsoft.graph
 |inactive|
 |unknownFutureValue|
 
-### callDirection values 
+### callDirection values
 
 |Member|
 |:---|
 |incoming|
 |outgoing|
 
-### modality values 
+### modality values
 
 |Member|
 |:---|
@@ -327,7 +327,7 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
-### kerberosSignOnMappingAttributeType values 
+### kerberosSignOnMappingAttributeType values
 
 |Member|
 |:---|
@@ -337,7 +337,7 @@ Namespace: microsoft.graph
 |onPremisesUserPrincipalUsername|
 |onPremisesSAMAccountName|
 
-### externalAuthenticationType values 
+### externalAuthenticationType values
 
 |Member|
 |:---|
@@ -353,7 +353,7 @@ Namespace: microsoft.graph
 |externalPartner|
 |externalNonPartner|
 
-### appliedConditionalAccessPolicyResult values 
+### appliedConditionalAccessPolicyResult values
 
 |Member|
 |:---|
@@ -371,7 +371,7 @@ Namespace: microsoft.graph
 
 ### microsoftAuthenticatorAuthenticationMode values
 
- 
+
 
 |Member|
 |:---|
@@ -380,7 +380,7 @@ Namespace: microsoft.graph
 |deviceBasedPush|
 
 
-### authenticationMethodFeature values 
+### authenticationMethodFeature values
 
 |Member|
 |:---|
@@ -391,7 +391,7 @@ Namespace: microsoft.graph
 |mfaCapable|
 
 
-### authMethodsType values 
+### authMethodsType values
 
 |Member|
 |:---|
@@ -409,7 +409,7 @@ Namespace: microsoft.graph
 |mobilePhoneAndSMS|
 |unknownFutureValue|
 
-### azureADLicenseType values 
+### azureADLicenseType values
 
 |Member|
 |:---|
@@ -420,7 +420,7 @@ Namespace: microsoft.graph
 |premiumP2|
 |unknownFutureValue|
 
-### conditionalAccessConditions values 
+### conditionalAccessConditions values
 
 |Member|
 |:---|
@@ -436,7 +436,7 @@ Namespace: microsoft.graph
 |deviceState|
 |client|
 
-### conditionalAccessStatus values 
+### conditionalAccessStatus values
 
 |Member|
 |:---|
@@ -445,7 +445,7 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### featureType values 
+### featureType values
 
 |Member|
 |:---|
@@ -453,7 +453,7 @@ Namespace: microsoft.graph
 |reset|
 |unknownFutureValue|
 
-### groupType values 
+### groupType values
 
 |Member|
 |:---|
@@ -461,7 +461,7 @@ Namespace: microsoft.graph
 |azureAD|
 |unknownFutureValue|
 
-### includedUserRoles values 
+### includedUserRoles values
 
 |Member|
 |:---|
@@ -471,7 +471,7 @@ Namespace: microsoft.graph
 |user|
 |unknownFutureValue|
 
-### includedUserTypes values 
+### includedUserTypes values
 
 |Member|
 |:---|
@@ -480,7 +480,7 @@ Namespace: microsoft.graph
 |guest|
 |unknownFutureValue|
 
-### initiatorType values 
+### initiatorType values
 
 |Member|
 |:---|
@@ -489,7 +489,7 @@ Namespace: microsoft.graph
 |system|
 |unknownFutureValue|
 
-### migrationStatus values 
+### migrationStatus values
 
 |Member|
 |:---|
@@ -498,7 +498,7 @@ Namespace: microsoft.graph
 |additionalStepsRequired|
 |unknownFutureValue|
 
-### networkType values 
+### networkType values
 
 |Member|
 |:---|
@@ -508,7 +508,7 @@ Namespace: microsoft.graph
 |trusted|
 |unknownFutureValue|
 
-### operationResult values 
+### operationResult values
 
 |Member|
 |:---|
@@ -517,7 +517,7 @@ Namespace: microsoft.graph
 |timeout|
 |unknownFutureValue|
 
-### provisioningResult values 
+### provisioningResult values
 
 |Member|
 |:---|
@@ -527,7 +527,7 @@ Namespace: microsoft.graph
 |warning|
 |unknownFutureValue|
 
-### provisioningStepType values 
+### provisioningStepType values
 
 |Member|
 |:---|
@@ -539,7 +539,7 @@ Namespace: microsoft.graph
 |export|
 |unknownFutureValue|
 
-### registrationAuthMethod values 
+### registrationAuthMethod values
 
 |Member|
 |:---|
@@ -554,7 +554,7 @@ Namespace: microsoft.graph
 |appPassword|
 |unknownFutureValue|
 
-### registrationStatusType values 
+### registrationStatusType values
 
 |Member|
 |:---|
@@ -564,7 +564,7 @@ Namespace: microsoft.graph
 |mfaRegistered|
 |unknownFutureValue|
 
-### requirementProvider values 
+### requirementProvider values
 
 |Member|
 |:---|
@@ -573,7 +573,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
-### riskDetail values 
+### riskDetail values
 
 |Member|
 |:---|
@@ -594,7 +594,7 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
-### riskEventType values 
+### riskEventType values
 
 |Member|
 |:---|
@@ -614,7 +614,7 @@ Namespace: microsoft.graph
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### riskLevel values 
+### riskLevel values
 
 |Member|
 |:---|
@@ -625,7 +625,7 @@ Namespace: microsoft.graph
 |none|
 |unknownFutureValue|
 
-### riskState values 
+### riskState values
 
 |Member|
 |:---|
@@ -637,7 +637,7 @@ Namespace: microsoft.graph
 |confirmedCompromised|
 |unknownFutureValue|
 
-### tokenIssuerType values 
+### tokenIssuerType values
 
 |Member|
 |:---|
@@ -645,7 +645,7 @@ Namespace: microsoft.graph
 |ADFederationServices|
 |UnknownFutureValue|
 
-### usageAuthMethod values 
+### usageAuthMethod values
 
 |Member|
 |:---|
@@ -684,6 +684,25 @@ Namespace: microsoft.graph
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
+
+### educationAssignmentStatus values
+|Member|
+|:---|
+|draft|
+|published|
+|assigned|
+|unknownFutureValue|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### externalEmailOtpState values
 
@@ -1698,7 +1717,7 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |unknownFutureValue|
 
-### advancedConfigState values 
+### advancedConfigState values
 
 |Member|
 |:---|
@@ -1813,11 +1832,11 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | 
-| :----------------- | 
-| standard           | 
-| private            | 
-| unknownFutureValue | 
+| Member             |
+| :----------------- |
+| standard           |
+| private            |
+| unknownFutureValue |
 | shared             |
 
 ### stagedFeatureName values
@@ -2229,7 +2248,7 @@ Possible values for user account types (group membership), per Windows definitio
 |custom|
 |gallery|
 
-### chatType values 
+### chatType values
 
 | Member             | Value | Description               |
 | :----------------- | :---- | :------------------------ |
@@ -2247,7 +2266,7 @@ Possible values for user account types (group membership), per Windows definitio
 |aadHeaderBased|
 |pingHeaderBased|
 
-### plannerContainerType values 
+### plannerContainerType values
 
 |Member|
 |:---|
@@ -2255,7 +2274,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |roster|
 
-### plannerPlanContextType values 
+### plannerPlanContextType values
 
 |Member|
 |:---|
@@ -2281,7 +2300,7 @@ Possible values for user account types (group membership), per Windows definitio
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
 
-### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -2290,21 +2309,21 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### roleAssignmentScheduleFilterByCurrentUserOptions values 
+### roleAssignmentScheduleFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -2313,21 +2332,21 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### roleEligibilityScheduleFilterByCurrentUserOptions values 
+### roleEligibilityScheduleFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### cloudPcAuditActivityOperationType values 
+### cloudPcAuditActivityOperationType values
 
 |Member|
 |:---|
@@ -2336,7 +2355,7 @@ Possible values for user account types (group membership), per Windows definitio
 |patch|
 |other|
 
-### cloudPcAuditActivityResult values 
+### cloudPcAuditActivityResult values
 
 |Member|
 |:---|
@@ -2346,7 +2365,7 @@ Possible values for user account types (group membership), per Windows definitio
 |timeout|
 |other|
 
-### cloudPcAuditActorType values 
+### cloudPcAuditActorType values
 
 |Member|
 |:---|
@@ -2355,14 +2374,14 @@ Possible values for user account types (group membership), per Windows definitio
 |partner|
 |unknown|
 
-### cloudPcAuditCategory values 
+### cloudPcAuditCategory values
 
 |Member|
 |:---|
 |cloudPC|
 |other|
 
-### postType values 
+### postType values
 
 |Member|
 |:---|
@@ -2371,7 +2390,7 @@ Possible values for user account types (group membership), per Windows definitio
 |strategic|
 |unknownFutureValue|
 
-### serviceHealthClassificationType values 
+### serviceHealthClassificationType values
 
 |Member|
 |:---|
@@ -2379,7 +2398,7 @@ Possible values for user account types (group membership), per Windows definitio
 |incident|
 |unknownFutureValue|
 
-### serviceHealthOrigin values 
+### serviceHealthOrigin values
 
 |Member|
 |:---|
@@ -2388,7 +2407,7 @@ Possible values for user account types (group membership), per Windows definitio
 |customer|
 |unknownFutureValue|
 
-### serviceHealthStatus values 
+### serviceHealthStatus values
 
 |Member|
 |:---|
@@ -2411,7 +2430,7 @@ Possible values for user account types (group membership), per Windows definitio
 |reported|
 |unknownFutureValue|
 
-### serviceUpdateCategory values 
+### serviceUpdateCategory values
 
 |Member|
 |:---|
@@ -2420,7 +2439,7 @@ Possible values for user account types (group membership), per Windows definitio
 |stayInformed|
 |unknownFutureValue|
 
-### serviceUpdateSeverity values 
+### serviceUpdateSeverity values
 
 |Member|
 |:---|
@@ -2435,7 +2454,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|:---- | :------------------------ |
 |standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
 
-### teamworkApplicationIdentityType values 
+### teamworkApplicationIdentityType values
 
 |Member|
 |:---|
@@ -2446,7 +2465,7 @@ Possible values for user account types (group membership), per Windows definitio
 |outgoingWebhook|
 |unknownFutureValue|
 
-### teamworkConversationIdentityType values 
+### teamworkConversationIdentityType values
 
 |Member|
 |:---|
@@ -2455,7 +2474,7 @@ Possible values for user account types (group membership), per Windows definitio
 |chat|
 |unknownFutureValue|
 
-### teamworkUserIdentityType values 
+### teamworkUserIdentityType values
 
 |Member|
 |:---|
@@ -2468,7 +2487,7 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 
-### callRecordingStatus values 
+### callRecordingStatus values
 
 |Member|
 |:---|
@@ -2478,7 +2497,46 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
-### teamworkCallEventType values 
+### simulationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|inProgress|
+|scheduled|
+|completed|
+|partiallyCompleted|
+|failed|
+|cancelled|
+|excluded|
+|deleted|
+|included|
+|unknownFutureValue|
+
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
+|notCompleted|
+|unknownFutureValue|
+
+### teamworkCallEventType values
 
 |Member|
 |:---|
@@ -2486,54 +2544,3 @@ Possible values for user account types (group membership), per Windows definitio
 |meeting|
 |screenShare|
 |unknownFutureValue|
-
-### incidentStatus values 
-
-| Member              | Description                                                                                                           |
-| :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
-| active			  | The incident is in active state.                                                                                      |
-| resolved            | The incident is in resolved state.                                                                                    |
-| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
-| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                       |
-
-### m365AlertClassification values 
-
-| Member              | Description                                                                                                                         |
-| :-------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
-| unknown		      | The alert isn't classified yet.																				                        |
-| falsePositive       | The alert is a false positive and didn't detect malicious activity.                                                                 |
-| truePositive        | The alert is true positive and detected malicious activity.                                                                         |
-| benignPositive      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
-| unknownFutureValue  | unknownFutureValue for evolvable enums pattern.                                                                                     |
-
-### m365AlertDetermination values 
-
-| Member                     | Description                                                                                                                  |
-| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown		             | No determination value was set yet.                                                                                          |
-| apt			             | A true positive alert that detected an advanced persistent threat.                                                           |
-| malware                    | A true positive alert that detected malicious software.                                                                      |
-| securityPersonnel          | A true positive alert that detected valid suspicious activity that was performed by someone on the customer's security team. |
-| securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
-| unwantedSoftware           | The alert detected unwanted software.                                                                                        |
-| multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
-| compromisedUser            | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
-| phishing                   | A true positive alert that detected a phishing email.                                                                        |
-| maliciousUserActivity      | A true positive alert that detected that the logged-on user performs malicious activities.                                   |
-| clean                      | A false alert, no suspicious activity.                                                                                       |
-| insufficientData           | A false alert, without enough information to prove otherwise.                                                                |
-| confirmedUserActivity      | The alert caught a true suspicious activity that is considered OK because it is a known user activity.                       |
-| lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it is a known and confirmed internal application.  |
-| other                      | Other determination.                                                                                                         |
-| unknownFutureValue         | unknownFutureValue for evolvable enums pattern.                                                                              |
-
-### m365AlertSeverity values 
-
-| Member             | Description                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| :------------------| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| unknown		     | Unknown severity.                                                                                                                                                                                                                                                                                                                                                                                                             |
-| informational		 | Alerts that may not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.                                                                                                                                                                                                                                                                          |
-| low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that is tested by a user in your organization.                                                                                    |
-| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they are valid detections and require investigation as they may be a part of an advanced attack. |
-| high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary.                                              |
-| unknownFutureValue | unknownFutureValue for evolvable enums pattern.																																																																																											     |
