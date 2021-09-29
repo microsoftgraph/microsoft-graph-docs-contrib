@@ -48,7 +48,10 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
   "publication": { "@odata.type": "microsoft.graph.publicationFacet" },
-  "size": 12356
+  "size": 12356,
+
+  /* instance annotations */
+  "@microsoft.graph.downloadUrl": "url",
 }
 ```
 
@@ -63,6 +66,16 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 | **size**                 | Int64                                                | Indicates the size of the content stream for this version of the item.  |
 | **content**              | Stream                                               | The content stream for this version of the item.                        |
 
+## Instance Attributes
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only.
+
+>**Notes:** 
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.
+Removing file permissions for a user might not immediately invalidate the URL.
+
 <!-- {
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
@@ -70,4 +83,3 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
-
