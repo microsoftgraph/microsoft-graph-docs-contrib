@@ -1656,6 +1656,38 @@
         "CreatedDateTime": "2021-06-11T20:00:00.001Z",
         "WorkloadArea": "Files",
         "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
+            "ApiChange": "Method",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Added capability for using timestamp-based delta tokens.",
+            "Target": "delta"
+        }],
+        "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-06-11T20:00:00.001Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
+            "ApiChange": "Method",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Added capability for using timestamp-based delta tokens.",
+            "Target": "delta"
+        }],
+        "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-06-11T20:00:00.001Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
     }
   ]
 }

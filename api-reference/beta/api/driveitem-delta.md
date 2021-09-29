@@ -221,9 +221,17 @@ In some scenarios, it may be useful to request the current deltaLink value witho
 This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
 To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
 
->**Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
+> **Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
 Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
 Using `delta` is the only way to guarantee that you've read all of the data you need to.
+
+## Retrieving delta results using a timestamp
+
+In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, e.g. `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+
+Using a timestamp in place of a token is only supported on OneDrive for Business and SharePoint.
+
+> **Note:** Clients should use the deltaLink provided by `delta` queries when possible, rather than generating their own token. This capability should only be utilized when the deltaLink is not known.
 
 ### Request
 
