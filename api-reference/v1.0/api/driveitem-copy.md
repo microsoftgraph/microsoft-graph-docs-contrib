@@ -53,6 +53,7 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 | Value           | Description                                    |
 |:----------------|:---------------------------------------------- |
+| fail            | Default behavior is to report the failure.     |
 | replace         | Overwrite existing item at the target site.    |
 | rename          | Rename the item.                               |
 
