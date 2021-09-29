@@ -9755,6 +9755,11 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
+        - name: Cloud PC supported region
+          href: resources/cloudpcsupportedregion.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-supportedregions.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
