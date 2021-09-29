@@ -1,7 +1,7 @@
 ---
 title: "Tasks component in the Microsoft Graph Toolkit"
 description: "The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: benotter
 ---
 
@@ -114,12 +114,15 @@ mgt-tasks {
 ````
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
-| taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
-| taskChanged | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
-| taskClick | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
-| taskRemoved | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskAdded` | Fires when a new task has been created | Newly created task which can be a [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) | No | No | Yes
+`taskChanged` | Fires when task metadata has been changed, such as marking completed | Updated task which can be a [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) | No | No | No
+`taskClick` | Fires when the user clicks or taps on a task | `task` property with the selected [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) | No | No | No
+`taskRemoved` | Fires when an existing task has been deleted | `task` property with the selected [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) | No | No | No
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

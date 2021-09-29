@@ -1,7 +1,7 @@
 ---
 title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -16,25 +16,35 @@ Namespace: microsoft.graph
 Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.ReadWrite.All | Not supported. | CloudPC.ReadWrite.All |
-| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.ReadWrite.All  |
+
+### For Device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.ReadWrite.All |
+
 
 ## HTTP request
 
-To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:
+To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -118,10 +128,12 @@ HTTP/1.1 204 OK
 
 ```
 
-## Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider
+## Example 2: update an existing unfiedRoleAssignmentMultiple in a Cloud PC provider
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroleassignmentmultiple_from_rbacapplication_cloudpc"
@@ -136,6 +148,24 @@ Content-type: application/json
     "description": "A new roleAssignment"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

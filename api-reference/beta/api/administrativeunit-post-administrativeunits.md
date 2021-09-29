@@ -1,8 +1,8 @@
 ---
 title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

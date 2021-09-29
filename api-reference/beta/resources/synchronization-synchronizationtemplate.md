@@ -1,7 +1,7 @@
 ---
 title: "synchronizationTemplate resource type"
 description: "Provides pre-configured synchronization settings for a particular application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

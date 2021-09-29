@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Toolkit with React"
 description: "Get started using the Microsoft Graph Toolkit in a React application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
 ---
 
@@ -12,6 +12,9 @@ Microsoft Graph Toolkit is a set of web components that simplify connecting to M
 If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+
+> [!TIP]
+> You can also follow this tutorial as an interactive code tour. For details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
 
 ## Prerequisites
 
@@ -37,7 +40,7 @@ Next, install the `mgt-react` npm package, which contains the Microsoft Graph To
 npm i @microsoft/mgt-react
 ```
 
-Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.
+Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL2 auth provider.
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -68,9 +71,9 @@ Now that you have registered your application with Azure Active Directory (Azure
 Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
 
 >[!NOTE] 
->If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
+>If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
 
-1. In the code editor, open the **src/index.** file, and to the list of imports, add:
+1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
@@ -233,7 +236,13 @@ This function does two things. First, using the React `useState` hook, it enable
 
 Now that you track the user's sign in state in your application, you can show their calendar after they signed in.
 
-1. In the code editor, open the **src/App.tsx** file, and inside the **App** function, add:
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.
+
+    ```TypeScript
+    import { Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. Next, inside the **App** function, add:
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();
@@ -253,7 +262,7 @@ Now that you track the user's sign in state in your application, you can show th
 With these changes, the **src/App.tsx** file should look like the following.
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt';
+import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
 import './App.css';

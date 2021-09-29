@@ -1,7 +1,7 @@
 ---
 title: "Create Message"
 description: "Create a draft of a new message in either JSON or MIME format."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -435,7 +435,7 @@ Content-type: application/json
 #### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_beta"
 }-->
 
@@ -452,6 +452,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRv
 ```
+
 
 #### Response
 Here is an example of the response.

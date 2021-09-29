@@ -1,7 +1,7 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
@@ -11,12 +11,35 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -24,6 +47,14 @@ Namespace: microsoft.graph
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### authenticatorAppContextType values
@@ -90,7 +121,6 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |requireNumberMatching|
-|unknownFutureValue|
 
 ### allowInvitesFrom values
 
@@ -1214,6 +1244,15 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessageType values
+
+| Value |
+|:-----------------|
+| message |
+| chatEvent |
+| typing |
+| unknownFutureValue |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |
@@ -1263,6 +1302,30 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| Multiline text. |
+|text | Single line text. |
+|choice | Choice column |
+|multichoice | Multichoice column. |
+|number | Number column. |
+|currency | Currency column. |
+|dateTime | DateTime column. |
+|lookup | Lookup column. |
+|boolean | Yes/No column. |
+|user | Person or group column. |
+|url | Hyperlink or picture column. |
+|calculated | Calculated column. |
+|location | Location column. |
+|geolocation | Geolocation column. |
+|term | Managed metadata column. |
+|multiterm | Managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | UnknownFuturevalue |
 
 ### permissionClassificationType values
 
@@ -1476,4 +1539,104 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |application|
 |system|
+|unknownFutureValue|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
 |unknownFutureValue|

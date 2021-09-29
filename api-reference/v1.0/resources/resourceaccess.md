@@ -1,7 +1,7 @@
 ---
 title: "resourceAccess resource type"
 description: "Specifies an OAuth 2.0 permission scope or an app role that an application requires."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

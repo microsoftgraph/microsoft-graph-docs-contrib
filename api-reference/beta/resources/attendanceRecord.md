@@ -1,8 +1,8 @@
 ---
 title: "attendanceRecord resource type"
 description: "Contains information associated with attendance record in meeting attendance report."
-author: "jsandoval-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

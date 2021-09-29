@@ -1,7 +1,7 @@
 ---
 title: "Worksheet: UsedRange"
 description: "The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType

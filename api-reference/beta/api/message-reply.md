@@ -1,7 +1,7 @@
 ---
 title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -144,7 +144,7 @@ HTTP/1.1 202 Accepted
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_reply_mime_beta"
 }-->
 

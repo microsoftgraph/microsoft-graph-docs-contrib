@@ -2,7 +2,7 @@
 title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -128,7 +128,7 @@ HTTP/1.1 202 Accepted
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_replyAll_mime_beta"
 }-->
 

@@ -1,8 +1,8 @@
 ---
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

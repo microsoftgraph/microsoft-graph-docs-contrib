@@ -2,7 +2,7 @@
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once|
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
@@ -117,7 +118,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsWorkFromAnywhereMetric"
 description: "Create a new userExperienceAnalyticsWorkFromAnywhereMetric object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -81,7 +81,6 @@ Content-Length: 136
   "id": "7e6fda96-da96-7e6f-96da-6f7e96da6f7e"
 }
 ```
-
 
 
 

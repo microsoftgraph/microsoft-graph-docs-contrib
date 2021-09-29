@@ -1,8 +1,8 @@
 ---
 title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
-author: "jsandoval-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -24,11 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported.                                        |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to retrieve an online meeting on behalf of that user (user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
-To get an onlineMeeting using meeting ID with delegated and app permission:
+To get an onlineMeeting using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -52,7 +51,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
-> - \* This scenario only supports application token and does not support application access policy.
+> - \* This scenario only supports application token and doesn't support application access policy.
 > - `joinWebUrl` must be URL encoded.
 
 ## Optional query parameters
@@ -271,7 +270,7 @@ Content-Type: application/json
 ```
 
 ### Example 3: Retrieve an online meeting by JoinWebUrl
-You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID is not known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a followup action.
+You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example, in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
 

@@ -1,7 +1,7 @@
 ---
 title: "List addresses"
 description: "Get the itemAddresses from the addresses navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

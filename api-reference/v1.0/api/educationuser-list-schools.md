@@ -2,7 +2,7 @@
 title: "List schools of an educationUser"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+>**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
 
 ## Permissions
 

@@ -1,10 +1,10 @@
 ---
 title: "Export governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Export governanceRoleAssignmentRequests
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) in the format `application/octet-stream`, which can be parsed as a .csv file in the browser.
 
@@ -38,9 +40,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 
 ## HTTP request

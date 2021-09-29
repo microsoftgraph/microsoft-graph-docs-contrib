@@ -2,7 +2,7 @@
 title: Get printServiceEndpoint
 description: Retrieve the properties and relationships of a print service endpoint.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

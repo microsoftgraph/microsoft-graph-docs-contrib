@@ -2,7 +2,7 @@
 title: "message: createReply"
 description: "Create a draft to reply to the sender of a message in either JSON or MIME format."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -167,8 +167,9 @@ Content-type: application/json
 
 ### Example 2: Create a draft message in MIME format to reply to an existing message
 ##### Request
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createReply_mime_v1"
 }-->
 

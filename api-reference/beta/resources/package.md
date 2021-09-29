@@ -3,7 +3,7 @@ author: JeremyKelley
 description: " or a collection of items that should be treated as a collection instead of individual items."
 ms.date: 09/10/2017
 title: Package
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

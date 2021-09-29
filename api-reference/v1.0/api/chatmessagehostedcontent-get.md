@@ -1,7 +1,7 @@
 ---
 title: "Get chatMessageHostedContent"
 description: "Retrieve the properties and relationships of chatMessageHostedContent object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
 

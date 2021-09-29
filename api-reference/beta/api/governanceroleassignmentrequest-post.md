@@ -1,10 +1,10 @@
 ---
 title: "Create governanceRoleAssignmentRequest"
 description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Create governanceRoleAssignmentRequest
@@ -12,6 +12,7 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations.
 
@@ -51,7 +52,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |
 

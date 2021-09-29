@@ -1,7 +1,7 @@
 ---
 title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and multi-factor authentication (MFA)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "conceptualPageType"
@@ -26,9 +26,9 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All<br>AuditLogs.Read.All|
+|Delegated (work or school account)|Reports.Read.All, AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All<br>AuditLogs.Read.All|
+|Application|Reports.Read.All, AuditLog.Read.All|
 
 In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
 

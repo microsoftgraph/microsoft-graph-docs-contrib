@@ -1,7 +1,7 @@
 ---
 title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -21,7 +21,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
 

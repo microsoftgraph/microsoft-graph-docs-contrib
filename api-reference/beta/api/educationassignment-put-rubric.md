@@ -1,13 +1,13 @@
 ---
-title: "Attach educationRubric to educationAssignment"
+title: "Attach educationRubric to an educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Create educationRubric
+# Attach educationRubric to an educationAssignment
 
 Namespace: microsoft.graph
 
@@ -93,11 +93,16 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationRubric"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 
 

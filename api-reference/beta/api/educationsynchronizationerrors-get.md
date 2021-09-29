@@ -2,7 +2,7 @@
 title: "Get educationSynchronizationErrors"
 description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get educationSynchronizationErrors
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 

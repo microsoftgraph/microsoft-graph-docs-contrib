@@ -2,7 +2,7 @@
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11559
+Content-Length: 11696
 
 {
   "value": {
@@ -364,11 +364,13 @@ Content-Length: 11559
     "autoUnlockBlocked": true,
     "unpairedExternalBootToRecoveryAllowed": true,
     "onDeviceOnlyDictationForced": true,
+    "wiFiConnectToAllowedNetworksOnlyForced": true,
+    "onDeviceOnlyTranslationForced": true,
+    "managedPasteboardRequired": true,
     "kioskModeAppType": "appStoreApp"
   }
 }
 ```
-
 
 
 

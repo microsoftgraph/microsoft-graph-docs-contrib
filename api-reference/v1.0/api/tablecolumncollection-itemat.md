@@ -2,7 +2,7 @@
 title: "TableColumnCollection: ItemAt"
 description: "Gets a column based on its position in the collection."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

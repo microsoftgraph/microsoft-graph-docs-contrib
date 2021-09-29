@@ -1,19 +1,21 @@
 ---
-title: "List assignments"
-description: "Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
+title: "List class assignments"
+description: "Retrieve a list of assignment objects."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List class assignments
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. A teacher or an application executing with application permissions is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them.
+Retrieve a list of assignment objects. 
+
+A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
 ## Permissions
 
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## HTTP request
 

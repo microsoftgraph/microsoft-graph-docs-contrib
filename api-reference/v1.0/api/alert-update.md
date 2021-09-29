@@ -1,7 +1,7 @@
 ---
 title: "Update alert"
 description: "Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

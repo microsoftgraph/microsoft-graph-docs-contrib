@@ -1,8 +1,8 @@
 ---
 title: "Get team photo"
 description: "Get the photo (picture) for a team."
-author: "clearab"
-localization_priority: Priority
+author: "akjo"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | TeamSettings.Read.Group*, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All  |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 

@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -154,19 +154,24 @@ Content-type: application/json
         "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
         "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
     },
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
-        }
-    }]
+    ]
 }
 ```
 # [C#](#tab/csharp)
@@ -211,64 +216,81 @@ Content-type: application/json
     "requestState": "Submitted",
     "requestStatus": "Accepted",
     "isValidationOnly": false,
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
-            "isRequired": false,
-            "text": {
-                "defaultText": "what state are you from?",
-                "localizedTexts": [{
-                    "text": "¿De qué estado eres?",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-            "choices": [{
-                "actualValue": "AZ",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Arizona",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "CA",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "California",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "OH",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Ohio",
-                        "languageCode": "es"
-                    }]
-                }
-            }],
-            "allowsMultipleSelection": false
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "what state are you from?",
+                    "localizedTexts": [
+                        {
+                            "text": "¿De qué estado eres?",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "choices": [
+                    {
+                        "actualValue": "AZ",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Arizona",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "CA",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "California",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "OH",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Ohio",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "allowsMultipleSelection": false
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "Who is your manager?",
+                    "localizedTexts": [
+                        {
+                            "text": "por qué necesita acceso a este paquete",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "isSingleLineQuestion": false
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
-            "isRequired": false,
-            "text": {
-                "defaultText": "Who is your manager?",
-                "localizedTexts": [{
-                    "text": "por qué necesita acceso a este paquete",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": false
-        }
-    }]
+    ]
 }
 ```
 ### Example 3: Request a package and provide a justification
@@ -330,6 +352,61 @@ Content-type: application/json
             "type": null
         }
     }
+}
+```
+
+### Example 4: Remove an assignment
+
+To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
+
++ The value of the **requestType** property set to `AdminRemove`.
++ In the accessPackageAssignment property, include a list with the identifier of the accessPackageAssignment objects to delete.
+
+#### Request
+
+The following example shows how to remove an assignment.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "AdminRemove",
+    "accessPackageAssignment":{
+     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
+
+    "id": "78eaee8c-e6cf-48c9-8f99-aae44c35e379",
+    "requestType": "AdminRemove",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted"
 }
 ```
 
