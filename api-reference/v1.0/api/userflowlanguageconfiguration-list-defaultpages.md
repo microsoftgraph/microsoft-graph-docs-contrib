@@ -2,7 +2,7 @@
 title: "List defaultPages"
 description: "Get the userFlowLanguagePage resources from the defaultPages navigation property."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

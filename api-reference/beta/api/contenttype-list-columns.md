@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columnDefinitions in a content type"
 description: "List columns in a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -97,7 +97,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+  "@odata.type": "microsoft.graph.columnDefinition",
+  "isCollection": true
 }
 -->  
 

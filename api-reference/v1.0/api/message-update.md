@@ -2,7 +2,7 @@
 title: "Update message"
 description: "Update the properties of message object."
 author: "abheek-das"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

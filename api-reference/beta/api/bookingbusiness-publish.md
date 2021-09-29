@@ -1,7 +1,7 @@
 ---
 title: "bookingBusiness: publish"
 description: "Make the scheduling page of this business available to external customers."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/publish
-
 ```
 ## Request headers
 | Name       | Description|

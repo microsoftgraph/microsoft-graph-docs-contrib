@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: copyToDefaultContentLocation"
 description: "Copy a file to a default content location in a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadata about the source file that needs to be copied to the default content location. Required.|
-|destinationFileName| string |Destination filename. 
+|destinationFileName| string |Destination filename. |
 
 ## Response
 

@@ -2,7 +2,7 @@
 title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

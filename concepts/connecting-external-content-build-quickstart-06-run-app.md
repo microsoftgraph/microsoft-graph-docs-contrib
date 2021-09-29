@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 In this step, you will build and run the sample. This code sample will create a new connection, register the schema, then push items from the [ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) file into that connection.

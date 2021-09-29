@@ -2,7 +2,7 @@
 title: "Update groupLifecyclePolicy"
 description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

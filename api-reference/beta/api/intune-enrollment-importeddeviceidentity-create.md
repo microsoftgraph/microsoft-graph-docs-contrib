@@ -2,7 +2,7 @@
 title: "Create importedDeviceIdentity"
 description: "Create a new importedDeviceIdentity object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,7 +103,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

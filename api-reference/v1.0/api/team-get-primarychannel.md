@@ -2,7 +2,7 @@
 title: "Get primaryChannel"
 description: "Retrieve the navigation property of a team that allows access to its default General channel."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

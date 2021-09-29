@@ -2,7 +2,7 @@
 title: "Get presence"
 description: "Get a user's presence information."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---

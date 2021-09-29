@@ -2,7 +2,7 @@
 title: "authenticationListener resource type"
 description: "Defines the listener to evaluate during an authentication event."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Defines a listener to be evaluate when an authentication event happens in an authentication experience. An authenticationListener is abstract and is the base class of the various types of listeners you can evaluate during an authentication event. 
 
-You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) for the onSignUpStart event.. This associates an application with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process. Once an application is associated with a user flow, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
+You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) for the onSignUpStart event.. This associates an application with a user flow, therefore enabling a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) process. Once an application is associated with a user flow, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
 ## Methods
 

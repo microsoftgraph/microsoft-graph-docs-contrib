@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -60,6 +60,8 @@ The following example updates the definition of the token lifetime **identityPro
 
 ##### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update-identityprovider"
@@ -74,6 +76,24 @@ Content-length: 41
     "clientSecret": "1111111111111"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 

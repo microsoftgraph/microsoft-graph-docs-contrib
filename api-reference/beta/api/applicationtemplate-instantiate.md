@@ -1,7 +1,7 @@
 ---
 title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "applications"
 doc_type: "apiPageType"

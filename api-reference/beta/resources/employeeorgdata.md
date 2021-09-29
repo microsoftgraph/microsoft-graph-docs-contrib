@@ -1,7 +1,7 @@
 ---
 title: "employeeOrgData resource type"
 description: "Represents organization data associated with a user." 
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 author: "cmmdesai"

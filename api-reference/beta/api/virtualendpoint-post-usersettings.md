@@ -2,7 +2,7 @@
 title: "Create cloudPcUserSetting"
 description: "Create a new cloudPcUserSetting ."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -65,6 +63,8 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcusersetting_from_"
@@ -82,6 +82,24 @@ Content-length: 159
   "localAdminEnabled": true
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcusersetting-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpcusersetting-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-cloudpcusersetting-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcusersetting-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

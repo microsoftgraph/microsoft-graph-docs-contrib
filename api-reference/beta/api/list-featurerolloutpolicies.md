@@ -1,7 +1,7 @@
 ---
 title: "List featureRolloutPolicies"
 description: "Retrieve a list of featureRolloutPolicy objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

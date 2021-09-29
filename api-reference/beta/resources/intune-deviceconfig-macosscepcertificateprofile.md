@@ -2,7 +2,7 @@
 title: "macOSScepCertificateProfile resource type"
 description: "Mac OS SCEP certificate profile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -57,6 +57,7 @@ Inherits from [macOSCertificateProfileBase](../resources/intune-deviceconfig-mac
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
+|allowAllAppsAccess|Boolean|AllowAllAppsAccess setting|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -140,10 +141,10 @@ Here is a JSON representation of the resource.
       "sanType": "String",
       "name": "String"
     }
-  ]
+  ],
+  "allowAllAppsAccess": true
 }
 ```
-
 
 
 
