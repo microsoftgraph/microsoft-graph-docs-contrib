@@ -2,7 +2,7 @@
 title: "Error handling for Excel APIs in Microsoft Graph"
 description: "Error handling instructions for Excel APIs in Microsoft Graph"
 author: "grangeryy"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
@@ -83,7 +83,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **forbiddenUncategorized**                    | The failed request is not allowed. The Microsoft Graph client is not expected to resend the failed request. An end user can choose to manually perform the same operations with Excel Online to get more details about the restrictions.
 | **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
 | **generalException**         | An internal error occurred while processing the request. The Microsoft Graph client is not expected to resend the failed request.
-| **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict. The Microsoft Graph client is not expected to resend the failed request.
+| **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict. The Microsoft Graph client is not expected to resend the failed request. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.
 | **internalServerErrorUncategorized**       | An unspecified error has occurred. The Microsoft Graph client is not expected to resend the failed request. If a session is specified in the failed request, further access to the session is not expected either.
 | **invalidArgument**         | The argument is invalid or missing or has an incorrect format. The Microsoft Graph client is not expected to resend the failed request.
 | **invalidReference**         | This reference is not valid for the current operation. The Microsoft Graph client is not expected to resend the failed request.
@@ -98,11 +98,11 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **itemNotFound**         | The requested resource doesn't exist. The Microsoft Graph client is not expected to resend the failed request.
 | **methodNotAllowed**         | The HTTP method specified in the request is not allowed on the resource. The Microsoft Graph client is not expected to resend the failed request.
 | **methodNotAllowedUncategorized**              | The HTTP method specified in the request is not allowed on the resource. The Microsoft Graph client is not expected to resend the failed request.
-| **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet. The Microsoft Graph client is not expected to resend the failed request.
+| **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet. The Microsoft Graph client is not expected to resend the failed request. An end user can delete rows or columns to make room for content to be inserted and then try again.
 | **notFoundUncategorized**             | The requested resource cannot be found. The Microsoft Graph client is not expected to resend the failed request.
 | **notImplementedUncategorized**            | The requested feature is not currently implemented. The Microsoft Graph client is not expected to resend the failed request.
 | **payloadTooLargeUncategorized**              | The request payload exceeds the size limit. The Microsoft Graph client is not expected to resend the failed request.
-| **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size.
+| **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size. For more information, see [resource limits and performance optimization for Office Add-ins](/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#excel-add-ins).
 | **requestAborted**         | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.
 | **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.

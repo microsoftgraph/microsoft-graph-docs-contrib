@@ -2,7 +2,7 @@
 title: "List languages"
 description: "Retrieve a list of languages supported for customization within a B2X user flow."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

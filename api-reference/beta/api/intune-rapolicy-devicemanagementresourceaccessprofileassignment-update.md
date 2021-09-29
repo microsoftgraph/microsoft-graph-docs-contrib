@@ -2,7 +2,7 @@
 title: "Update deviceManagementResourceAccessProfileAssignment"
 description: "Update the properties of a deviceManagementResourceAccessProfileAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -100,7 +100,6 @@ Content-Length: 512
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

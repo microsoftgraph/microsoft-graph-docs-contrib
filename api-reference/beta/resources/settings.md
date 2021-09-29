@@ -1,7 +1,7 @@
 ---
 title: "settings resource type"
 description: "The current required settings for a user to use the analytics API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

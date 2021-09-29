@@ -1,7 +1,7 @@
 ---
 title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
@@ -21,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+|Application | AuditLog.Read.All and Directory.Read.All |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 
@@ -41,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 |[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-For general information, see [OData query parameters](/graph/query_parameters).
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Attributes supported by the $filter parameter
 
@@ -243,8 +246,6 @@ Content-type: application/json
 ### Request
 
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

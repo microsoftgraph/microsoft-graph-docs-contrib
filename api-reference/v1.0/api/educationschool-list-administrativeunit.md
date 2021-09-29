@@ -2,7 +2,7 @@
 title: "List administrativeUnit an educationSchool"
 description: "Get a list of administrativeUnits associated with an educationSchool object."
 author: "mmast"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

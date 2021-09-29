@@ -2,7 +2,7 @@
 title: "noncustodialDataSource resource type"
 description: "Non-custodial data sources lets you add data to a case without having to associate it to a custodian"
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
