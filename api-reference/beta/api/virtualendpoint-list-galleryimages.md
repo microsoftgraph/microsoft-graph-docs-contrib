@@ -78,6 +78,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryIma
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcGalleryImage",
     "value": [
