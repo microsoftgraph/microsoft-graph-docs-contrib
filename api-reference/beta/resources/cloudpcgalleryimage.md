@@ -1,5 +1,5 @@
 ---
-title: "cloudPcDeviceImage resource type"
+title: "cloudPcGalleryImage resource type"
 description: "Represents the gallery image resource on Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcDeviceImage resource type
+# cloudPcGalleryImage resource type
 
 Namespace: microsoft.graph
 
