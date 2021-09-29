@@ -17,7 +17,10 @@ Only the student assigned to the submission can perform this operation.
 
 The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
 
-If the caller wants to create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail. 
+If the caller wants to create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
+
+[!IMPORTANT] 
+Before you can upload files, you must [setUpResourcesFolder](../api/educationsubmission-setupresourcesfolder.md) to which to upload the files for a given [educationSubmission](../resources/educationsubmission.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -522,6 +525,7 @@ Content-length: 511
 ## See also
 
 * [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

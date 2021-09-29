@@ -13,10 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an [assignment resource](../resources/educationassignmentresource.md). The resource itself has an @odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**.
+Create an [assignment resource](../resources/educationassignmentresource.md). 
 
-			 
-																							  
+Every resource has an @odata.type property to indicate which type of resource is being created. 
+
+[!IMPORTANT] 
+Before you can upload files, you must [setUpResourcesFolder](../api/educationassignment-setupresourcesfolder.md) to which to upload the files for a given [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -122,15 +124,16 @@ Content-length: 229
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],  
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"],  
   "name": "create_educationwordresource_from_educationassignment"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
 Content-type: application/json
 Content-length: 212
 
 {
+    "distributeForStudentWork":false,
     "resource": {
         "@odata.type": "microsoft.graph.educationWordResource",
         "displayName": "Issues and PR in guthub.docx",
@@ -157,7 +160,7 @@ Content-type: application/json
 Content-length: 229
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
     "assignmentResourceUrl": null,
     "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
     "resource": {
@@ -200,6 +203,7 @@ Content-type: application/json
 Content-length: 212
 
 {
+	"distributeForStudentWork":false,
 	"resource": {
 		"displayName": "article.pdf",
 		"file": {
@@ -272,6 +276,7 @@ Content-type: application/json
 Content-length: 212
 
 {
+    "distributeForStudentWork":false,
     "resource": {
         "@odata.type": "microsoft.graph.educationExcelResource",
         "displayName":"Graph Doc pages.xlsx",
@@ -340,6 +345,7 @@ Content-type: application/json
 Content-length: 212
 
 {
+    "distributeForStudentWork":false,
     "resource": {
         "@odata.type": "microsoft.graph.educationPowerPointResource",
         "displayName":"state diagram.pptx",
@@ -408,6 +414,7 @@ Content-type: application/json
 Content-length: 212
 
 {
+    "distributeForStudentWork":false,
     "resource": {
         "@odata.type": "microsoft.graph.educationMediaResource",
         "displayName":"homework example.PNG",
@@ -514,6 +521,7 @@ Content-length: 511
 ## See also
 
 * [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
