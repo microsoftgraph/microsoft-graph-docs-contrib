@@ -791,7 +791,7 @@ Content-Type: application/json
 
 ### Example 5: Call transfer from a group call
 
-> **Note:** To transfer from a group call, transferee parameter is needed. All others are same as transfer from a peer-to-peer call case. Consultative transfer from a group call or transfer to PSTN from a group call are similar to example 1-4, with transferee parameter specified.
+> **Note:** To transfer from a group call, the transferee parameter is required. All other parameters are the same as those for a transfer from a peer-to-peer call. A consultative transfer from a group call or a transfer to PSTN from a group call are similar to examples 1-4, with the transferee parameter specified.
 
 #### Request
 The following example shows the request.
@@ -829,24 +829,9 @@ Content-Length: 430
   "region": "region-value"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"
