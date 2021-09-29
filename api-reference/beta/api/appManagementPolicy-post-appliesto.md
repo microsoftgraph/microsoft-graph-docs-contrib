@@ -105,14 +105,13 @@ HTTP/1.1 204 No Content
 The following is an example of the request to assign an appManagementPolicy to a service principal.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_appliesTo"
 }-->
 
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipal/{id}/appManagementPolicies/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolicies/$ref
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
