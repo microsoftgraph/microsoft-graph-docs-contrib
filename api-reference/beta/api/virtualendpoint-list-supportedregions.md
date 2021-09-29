@@ -1,6 +1,6 @@
 ---
 title: "List supportedRegions"
-description: "List the supported regions available to create Cloud PC connections."
+description: "List the supported regions that are available for creating Cloud PC connections."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the supported regions available to create Cloud PC connections.
+List the supported regions that are available for creating Cloud PC connections.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/supportedRegions
 
 ## Optional query parameters
 
-This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
