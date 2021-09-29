@@ -128,6 +128,8 @@ Content-Type: application/json
 
 ## Remarks
 
+Versions are returned in descending order (i.e. newest to oldest). The OData `$orderBy` query string parameter is not supported.
+
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
 When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
