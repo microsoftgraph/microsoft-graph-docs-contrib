@@ -49,6 +49,17 @@ In the request body, provide a JSON object with the following parameters.
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
+## Optional query parameters
+
+This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs.
+
+| Value           | Description                                    |
+|:----------------|:---------------------------------------------- |
+| replace         | Overwrite existing item at the target site.    |
+| rename          | Rename the item.                               |
+
+**Note:** The _conflictBehavior_ is not supported for OneDrive Consumer.
+
 ## Example
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
