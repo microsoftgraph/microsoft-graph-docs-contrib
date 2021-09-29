@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
-`item-id` is the id of DriveItem. It may also be the unique id of a [SharePoint List](../resources/list.md) item.
+`item-id` is the id of a DriveItem. It may also be the unique id of a [SharePoint List](../resources/list.md) item.
 
 ## Permissions
 
