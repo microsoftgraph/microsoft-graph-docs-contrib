@@ -63,7 +63,7 @@ Users without a OneDrive license may not have a default drive available.
 | items        | [driveItem][] collection             | All items contained in the drive. Read-only. Nullable.
 | root         | [driveItem][]                        | The root folder of the drive. Read-only.
 | special      | [driveItem][] collection             | Collection of common folders available in OneDrive. Read-only. Nullable.
-| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable. 
+| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 
 ## JSON representation
 

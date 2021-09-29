@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Delete bundle
 description: Delete a bundle of driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: album resource type
 description: Facet describing a bundle which is a photo album.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

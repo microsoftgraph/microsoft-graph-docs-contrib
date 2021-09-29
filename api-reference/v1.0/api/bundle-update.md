@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Update a bundle
 description: Update a bundle of driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
