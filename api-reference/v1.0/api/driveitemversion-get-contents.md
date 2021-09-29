@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 
+**Note:** Obtaining the content of the current version is not supported. Instead, use the [DriveItem content endpoint](driveitem-get-content.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
