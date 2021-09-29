@@ -13490,8 +13490,9 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
-        href: resources/securityaction.md
         items:
+        - name: Action
+          href: resources/securityaction.md
         - name: List security actions
           href: api/securityactions-list.md
         - name: Create security action
@@ -13547,8 +13548,9 @@ items:
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Incidents (preview)
-        href: resources/incident.md
         items:
+        - name: Incident
+          href: resources/incident.md
         - name: List incidents
           href: api/incident-list.md
         - name: Get incident
