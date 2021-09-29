@@ -72,12 +72,13 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
-| **description**          | string             | The descriptive text for the site.
-| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
+| **description**          | string             | The descriptive text for the site.                                               |
 | **displayName**          | string             | The full title for the site. Read-only.
+| **eTag**                 | string             | ETag for the item. Read-only.
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
 | **name**                 | string             | The name / title of the item.
 | **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
+| **settings**             | [siteSettings]     | The settings on this site. Returned only on $select. Read-only.
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
@@ -108,7 +109,6 @@ The `root` identifier always references the root site for a given target, as fol
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **permissions**   | Collection([permission][])       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
-| **settings**      | [siteSettings]                   | The settings on this site.
 | **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
 
 [columnDefinition]: columndefinition.md
@@ -151,11 +151,12 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 
 ```json
 {
+  "displayName": "string",
   "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "settings": { "@odata.type": "microsoft.graph.siteSettings" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
@@ -168,8 +169,8 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "settings": { "@odata.type": "microsoft.graph.siteSettings" },
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
+
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",
