@@ -1656,6 +1656,38 @@
         "CreatedDateTime": "2021-06-11T20:00:00.001Z",
         "WorkloadArea": "Files",
         "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "43FB2578-A808-4676-A902-65462F410484",
+            "ApiChange": "Resource",
+            "ChangedApiName": "audio",
+            "ChangeType": "change",
+            "Description": "Document audio resource limited to OneDrive Personal.",
+            "Target": "driveItem"
+        }],
+        "Id": "43FB2578-A808-4676-A902-65462F410484",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-09-29T12:00:00.000Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "FB1A94F0-EEC1-4278-BFF6-6D36C0379317",
+            "ApiChange": "Resource",
+            "ChangedApiName": "audio",
+            "ChangeType": "change",
+            "Description": "Document audio resource limited to OneDrive Personal.",
+            "Target": "driveItem"
+        }],
+        "Id": "FB1A94F0-EEC1-4278-BFF6-6D36C0379317",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-09-29T12:00:00.000Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
     }
   ]
 }
