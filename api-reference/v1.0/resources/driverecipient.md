@@ -40,7 +40,7 @@ The recipients resource has these properties.
 ## Remarks
 
 When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
-Only one of these values is required.
+Only one of these values is required. It doesn't accept multiple values.
 
 <!-- {
   "type": "#page.annotation",
