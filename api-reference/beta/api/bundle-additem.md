@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Add item to a bundle
 description: Add item to a bundle of driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

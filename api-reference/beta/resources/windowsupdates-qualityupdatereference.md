@@ -2,7 +2,7 @@
 title: "qualityUpdateReference resource type"
 description: "Represents Windows 10 quality update content."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List identityUserFlowAttributes"
 description: "Retrieve a list of identityUserFlowAttribute objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserflow.ReadWrite.All|
+|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 

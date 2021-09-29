@@ -1,7 +1,7 @@
 ---
 title: "Assign a connectorGroup to an application"
 description: "Use this API to assign a connectorGroup to an application"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

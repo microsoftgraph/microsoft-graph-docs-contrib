@@ -2,7 +2,7 @@
 title: "windowsMobileMSI resource type"
 description: "Contains properties and inherited properties for Windows Mobile MSI Line Of Business apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

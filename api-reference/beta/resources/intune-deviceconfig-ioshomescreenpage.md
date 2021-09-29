@@ -2,7 +2,7 @@
 title: "iosHomeScreenPage resource type"
 description: "A page containing apps, folders, and web clips on the Home Screen."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -59,7 +59,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

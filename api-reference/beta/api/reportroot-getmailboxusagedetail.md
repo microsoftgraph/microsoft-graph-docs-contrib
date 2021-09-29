@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

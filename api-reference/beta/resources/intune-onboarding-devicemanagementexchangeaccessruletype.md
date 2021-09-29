@@ -2,7 +2,7 @@
 title: "deviceManagementExchangeAccessRuleType enum type"
 description: "Criteria which defines the type of device this access rule will apply to"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Criteria which defines the type of device this access rule will apply to
 |:---|:---|:---|
 |family|0|Family of devices|
 |model|1|Specific model of device|
-
 
 
 

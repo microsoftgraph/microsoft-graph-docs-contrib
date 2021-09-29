@@ -1,7 +1,7 @@
 ---
 title: "Create certifications"
 description: "Create a new certifications object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

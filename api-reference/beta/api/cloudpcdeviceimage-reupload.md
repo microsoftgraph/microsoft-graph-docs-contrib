@@ -2,7 +2,7 @@
 title: "cloudPcDeviceImage: reupload"
 description: "Reupload a cloudPcDeviceImage object."
 author: "RuiHou105"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -2,7 +2,7 @@
 title: "officeGraphInsights resource type"
 description: "Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users."
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
