@@ -2,7 +2,7 @@
 title: "cloudPcUserSettingAssignment  resource type"
 description: "Represents a defined collection of user setting assignments."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -15,14 +15,12 @@ Namespace: microsoft.graph
 
 Represents a defined collection of user setting assignments.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the user setting assignment. Read-only. If `target` is a user group, the ID has this structure: {policyID}_{groupID}.|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the user setting. Currently, the only target supported for user setting is a user group.|
+|id|String|Unique Identifier for the user setting assignment. Read-only. If `target` is a user group, the ID has this structure: {policyID}\_{groupID}.|
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the user setting. Currently, the only target supported for this user setting is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md).|
 |createdDateTime|DateTimeOffset|The date and time this assignment was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.  |
 
 ## Relationships

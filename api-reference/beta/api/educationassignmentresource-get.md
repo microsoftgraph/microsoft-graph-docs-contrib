@@ -2,7 +2,7 @@
 title: "Get educationAssignmentResource"
 description: "Get the properties of a specific resource on an assignment.  "
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a specific resource on an assignment.  
+Get the properties of a specific resource on an [assignment](../resources/educationassignment.md).  
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite   |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  | 
+|Application |  EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All  | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,12 +38,15 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
+
 ## Example
-##### Request
+### Request
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -50,7 +54,7 @@ The following is an example of the request.
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/resources/eec7f642-9d9a-406f-bbae-4b3b2c12e273
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentresource-csharp-snippets.md)]
@@ -70,7 +74,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/r
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -86,25 +90,31 @@ Content-type: application/json
 Content-length: 842
 
 {
-  "distributeForStudentWork": true,
-  "id": "22002",
-  "resource": {
-    "createdBy": {
-      "user": {
-        "displayName": "Susana Rocha",
-        "id": "14012"
-      },
-    },
-    "createdDateTime": "2014-01-01T00:00:00Z",
-    "displayName": "Excel workbook 1",
-    "lastModifiedBy": {
-      "user": {
-        "displayName": "Susana Rocha",
-        "id": "14012"
-      },
-    },
-    "lastModifiedDateTime": "2014-01-01T00:00:00Z"
-  }
+    "distributeForStudentWork": false,
+    "id": "eec7f642-9d9a-406f-bbae-4b3b2c12e273",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationFileResource",
+        "displayName": "First file uploaded as Education resource by t-cristobalb",
+        "createdDateTime": "2021-07-16T23:41:53.9378423Z",
+        "lastModifiedDateTime": "2021-07-16T23:41:53.9378423Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEA5VVDIMU4BSFG3VBI37MPHZ3OE",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                "displayName": null
+            }
+        }
+    }
 }
     
 ```

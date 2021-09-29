@@ -2,7 +2,7 @@
 title: "deliveryOptimizationMaxCacheSizePercentage resource type"
 description: "Delivery Optimization Max cache size percentage types."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,7 +41,6 @@ Here is a JSON representation of the resource.
   "maximumCacheSizePercentage": 1024
 }
 ```
-
 
 
 

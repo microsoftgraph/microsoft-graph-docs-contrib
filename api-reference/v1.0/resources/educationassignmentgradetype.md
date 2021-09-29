@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment will be graded."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Update the properties of a sharing permission by patching the permission resource."
 ms.prod: ""
 doc_type: apiPageType

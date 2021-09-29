@@ -1,9 +1,9 @@
 ---
 title: "Update member in team"
 description: "Update the role of member in a team."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 

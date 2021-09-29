@@ -1,7 +1,7 @@
 ---
 title: "Get timeOffRequest"
 description: "Retrieve the properties and relationships of timeoffrequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

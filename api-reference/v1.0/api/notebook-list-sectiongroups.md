@@ -2,7 +2,7 @@
 title: "List sectionGroups"
 description: "Retrieve a list of section groups from the specified notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Get member of channel"
 description: "Get member of channel."
-author: "laujan"
-localization_priority: Priority
+author: "akjo"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

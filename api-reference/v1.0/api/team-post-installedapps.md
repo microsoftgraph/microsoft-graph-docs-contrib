@@ -1,8 +1,8 @@
 ---
 title: "Add app to team"
 description: "Installs an app to the specified team."
-author: "clearab"
-localization_priority: Normal
+author: "akjo"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

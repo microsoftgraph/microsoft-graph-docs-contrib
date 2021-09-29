@@ -2,7 +2,7 @@
 title: "Update outlooktaskfolder"
 description: "Update the writable properties of an Outlook task folder."
 author: "mashriv"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

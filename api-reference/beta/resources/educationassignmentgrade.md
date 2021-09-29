@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentGrade resource type"
 description: "Represents the **Grade** object on a Submission."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType

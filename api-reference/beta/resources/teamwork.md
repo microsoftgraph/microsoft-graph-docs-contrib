@@ -1,9 +1,9 @@
 ---
 title: "teamwork resource type"
 description: "A container for Microsoft Teams features available for organization."
-author: "clearab"
+author: "akjo"
 doc_type: resourcePageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 

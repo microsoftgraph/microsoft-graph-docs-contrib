@@ -2,7 +2,7 @@
 title: "androidManagedAppSafetyNetAppsVerificationType enum type"
 description: "An admin enforced Android SafetyNet Device Attestation requirement on a managed app."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ An admin enforced Android SafetyNet Device Attestation requirement on a managed 
 |:---|:---|:---|
 |none|0|no requirement set|
 |enabled|1|require that Android device has SafetyNet Apps Verification enabled|
-
 
 
 
