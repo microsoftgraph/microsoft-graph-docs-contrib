@@ -78,8 +78,8 @@ The following is a JSON representation of the resource.
   "recommendedSku":"String",
   "status":"String",
   "sizeInGB":"Integer",
-  "startDate":"Date",
-  "endDate":"Date",
-  "expiredDate":"Date"
+  "startDate":"String (Date)",
+  "endDate":"String (Date)",
+  "expiredDate":"String (Date)"
 }
 ```
