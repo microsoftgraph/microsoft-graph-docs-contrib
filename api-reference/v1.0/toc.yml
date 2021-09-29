@@ -5949,6 +5949,8 @@ items:
         items:
         - name: Get site
           href: api/site-get.md
+          name: List all sites
+          href: api/site-list.md
         - name: Get lists
           href: api/list-list.md
         - name: List subsites

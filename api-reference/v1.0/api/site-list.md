@@ -11,8 +11,6 @@ author: "JeremyKelley"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List all available [sites][] in an organization.
 
 Specific filter criteria and query options are also supported and described below:

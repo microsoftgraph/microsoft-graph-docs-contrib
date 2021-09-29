@@ -13627,6 +13627,8 @@ items:
         items:
         - name: Site
           href: resources/site.md
+          name: List all sites
+          href: api/site-list.md
         - name: Get site
           href: api/site-get.md
         - name: Get site analytics
