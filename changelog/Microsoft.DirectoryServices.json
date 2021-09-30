@@ -8240,34 +8240,10 @@
         {
           "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
           "ApiChange": "Method",
-          "ChangedApiName": "identityuserflow",
-          "ChangeType": "Change",
-          "Description": "Deprecated  [list](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-beta).",
-          "Target": "identityuserflow"
-        },
-        {
-          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityuserflow",
-          "ChangeType": "Change",
-          "Description": "Deprecated  [create](https://docs.microsoft.com/en-us/graph/api/identityuserflow-post-userflows?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta).",
-          "Target": "identityuserflow"
-        },
-        {
-          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityuserflow",
-          "ChangeType": "Change",
-          "Description": "Deprecated [get](https://docs.microsoft.com/en-us/graph/api/identityuserflow-get?view=graph-rest-beta&tabs=http) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2cidentityuserflow-get?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2xidentityuserflow-get?view=graph-rest-beta).",
-          "Target": "identityuserflow"
-        },
-        {
-          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
-          "ApiChange": "Method",
-          "ChangedApiName": "identityuserflow",
-          "ChangeType": "Change",
-          "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityuserflow-delete?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2cidentityuserflow-delete?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2xidentityuserflow-delete?view=graph-rest-beta).",
-          "Target": "identityuserflow"
+          "ChangedApiName": "identityUserFlow",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated  the [userFlow API](https://docs.microsoft.com/en-us/graph/api/resources/identityuserflow?view=graph-rest-beta) and related operations and methods. Replaced it with the new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta).",
+          "Target": "identityUserFlow"
         }
       ],
       "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
