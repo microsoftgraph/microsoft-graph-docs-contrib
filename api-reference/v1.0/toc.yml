@@ -1277,7 +1277,11 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md
+            href: api/participant-invite.md          
+          - name: Start hold music
+            href: api/participant-startholdmusic.md
+          - name: Stop hold music
+            href: api/participant-stopholdmusic.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
         - name: Unmute application
@@ -6220,6 +6224,8 @@ items:
           href: api/team-list-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Add members in bulk
+          href: api/conversationmembers-add.md
         - name: Get member
           href: api/team-get-members.md
         - name: Remove member
