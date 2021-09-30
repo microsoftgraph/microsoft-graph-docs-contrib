@@ -15,7 +15,7 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 
 For example, you can:
 
-- Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id) or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Get details of an online meeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Use the `/attendeeReport` path to get the attendee report of a live event in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
 
 Live event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
@@ -36,20 +36,20 @@ To use application permission for this API, tenant administrators must create an
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts and you cannot fetch meeting artifacts without it. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## HTTP request
-To get an onlineMeeting using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-To get an onlineMeeting using **videoTeleconferenceId** with app permission*:
+To get an **onlineMeeting** using **videoTeleconferenceId** with app permission*:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-To get an onlineMeeting using **joinWebUrl** with delegated and app permission:
+To get an **onlineMeeting** using **joinWebUrl** with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
@@ -67,7 +67,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 > [!NOTE]
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
-> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
+> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - \* This scenario only supports application token and doesn't support application access policy.
 > - `joinWebUrl` must be URL encoded.
 
@@ -90,7 +90,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code. The response also includes one of the following:
 
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection of but only contains one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch the attendee report of a live event, this method returns a `Location` header that indicates the URI to the attendee report.
 
 ## Examples
@@ -291,7 +291,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve an online meeting by JoinWebUrl
+### Example 3: Retrieve an online meeting by oJinWebUrl
 You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example, in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
