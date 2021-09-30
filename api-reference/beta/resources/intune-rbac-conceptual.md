@@ -1,7 +1,7 @@
 ---
 title: "Role-based access control in Microsoft Intune"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that define and manage role-based access control (RBAC) for a tenant organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "resultTemplateOption resource type"
 description: "Provides the search display layouts options for render connectors search results."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "cristianv-ms"
 ms.prod: "search"
 doc_type: "resourcePageType"

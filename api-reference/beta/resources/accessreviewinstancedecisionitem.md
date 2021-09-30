@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on a user's access on an accessReviewInstance."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 >[!NOTE]
->The property `target` will be deprecated in v1.0 and replaced by properties `principal` and `resource`.
+>The property `target` will be deprecated in v1.0 and replaced by the `principal` and `resource` properties.
 
 Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md).
 

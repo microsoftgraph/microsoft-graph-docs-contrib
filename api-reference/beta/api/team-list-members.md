@@ -2,7 +2,7 @@
 title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "AkJo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

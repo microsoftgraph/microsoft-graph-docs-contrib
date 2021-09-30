@@ -2,7 +2,7 @@
 title: "Delete mobileAppManagementPolicy"
 description: "Delete a mobile app management policy."
 author: "michaelrm97"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

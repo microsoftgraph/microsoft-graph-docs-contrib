@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsRemoteConnection resource type"
 description: "The user experience analyte remote connection entity."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -35,6 +35,7 @@ The user experience analyte remote connection entity.
 |deviceName|String|The name of the device.|
 |model|String|The user experience analytics device model.|
 |virtualNetwork|String|The user experience analytics virtual network.|
+|manufacturer|String|The user experience analytics manufacturer.|
 |deviceCount|Int32|The count of remote connection. Valid values 0 to 2147483647|
 |cloudPcRoundTripTime|Double|The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |cloudPcSignInTime|Double|The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
@@ -42,6 +43,7 @@ The user experience analyte remote connection entity.
 |coreBootTime|Double|The core boot time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |coreSignInTime|Double|The core sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |cloudPcFailurePercentage|Double|The sign in failure percentage of Cloud PC Device. Valid values 0 to 100|
+|userPrincipalName|String|The user experience analytics userPrincipalName.|
 
 ## Relationships
 None
@@ -62,16 +64,17 @@ Here is a JSON representation of the resource.
   "deviceName": "String",
   "model": "String",
   "virtualNetwork": "String",
+  "manufacturer": "String",
   "deviceCount": 1024,
   "cloudPcRoundTripTime": "4.2",
   "cloudPcSignInTime": "4.2",
   "remoteSignInTime": "4.2",
   "coreBootTime": "4.2",
   "coreSignInTime": "4.2",
-  "cloudPcFailurePercentage": "4.2"
+  "cloudPcFailurePercentage": "4.2",
+  "userPrincipalName": "String"
 }
 ```
-
 
 
 

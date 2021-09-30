@@ -1,7 +1,7 @@
 ---
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"

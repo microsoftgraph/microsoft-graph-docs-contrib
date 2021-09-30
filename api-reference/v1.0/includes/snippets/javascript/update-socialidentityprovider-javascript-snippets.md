@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const identityProviderBase = {
-  '@odata.type': 'microsoft.graph.socialIdentityProvider',
+  '@odata.type': '#microsoft.graph.socialIdentityProvider',
   clientSecret: '1111111111111'
 };
 

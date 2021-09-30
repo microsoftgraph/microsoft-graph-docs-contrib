@@ -2,7 +2,7 @@
 title: "pstnCallLogRow resource type"
 description: "Represents a row of data in the Public Switch Telephone Network (PSTN) call log."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -15,11 +15,17 @@ Namespace: microsoft.graph.callRecords
 
 Represents a row of data in the Public Switch Telephone Network (PSTN) call log. Each row maps to one call.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow collection](callrecords-pstncalllogrow.md) | List **pstnCallLogRow** objects in a call record. |
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|callDurationSource|pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
+|callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|The source of the call duration data. If the call uses a third-party telecommunications operator via the Operator Connect Program, the operator may provide their own call duration data. In this case, the property value is `operator`. Otherwise, the value is `microsoft`.|
 |calleeNumber|String|Number dialed in [E.164](https://en.wikipedia.org/wiki/E.164) format.|
 |callerNumber|String|Number that received the call for inbound calls or the number dialed for outbound calls. E.164 format.|
 |callId|String|Call identifier. Not guaranteed to be unique.|
@@ -52,7 +58,7 @@ None.
 The following is a JSON representation of the resource.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.pstnCallLogRow",
   "keyProperty": "id"
 }

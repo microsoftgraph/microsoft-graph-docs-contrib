@@ -2,7 +2,7 @@
 title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -14,12 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings related to a live event.
-
-> [!CAUTION]
-> This API does not validate live event settings that are managed by [policy](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
-> For example, if an admin sets a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`,
-> users will be prevented from setting live event permissions to `public` in their Teams client, but will be able to create a live event via Microsoft Graph
-> by setting **allowedAudience** to `everyone`.
 
 ## Properties
 

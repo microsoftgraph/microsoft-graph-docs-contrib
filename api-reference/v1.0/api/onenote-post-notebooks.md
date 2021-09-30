@@ -2,7 +2,7 @@
 title: "Create notebook"
 description: "Create a new OneNote notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

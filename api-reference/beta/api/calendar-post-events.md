@@ -2,7 +2,7 @@
 title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

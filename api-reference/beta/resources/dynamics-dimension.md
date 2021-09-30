@@ -2,7 +2,7 @@
 title: dimensions resource type 
 description: A dimension in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -37,7 +37,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-
     "id": "GUID",
     "code": "string",
     "displayName": "string",

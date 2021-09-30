@@ -2,7 +2,7 @@
 title: "List notes"
 description: "Get the personAnnotations from the notes navigation property."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

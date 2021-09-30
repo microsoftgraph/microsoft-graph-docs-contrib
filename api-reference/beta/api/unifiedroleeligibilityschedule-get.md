@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleEligibilitySchedule"
 description: "Read the properties and relationships of an unifiedRoleEligibilitySchedule object."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/313af44a-07c9-43a7-9970-5072a6b5591f
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedule-csharp-snippets.md)]
@@ -82,7 +82,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,20 +96,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "createdUsing": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "createdDateTime": "2020-09-09T21:35:27.91Z",
-    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-    "status": "Provisioned",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "memberType": "direct"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilitySchedules/$entity",
+  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
+  "id": "313af44a-07c9-43a7-9970-5072a6b5591f",
+  "principalId": "398164b1-5196-49dd-ada2-364b49f99b27",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "createdUsing": "313af44a-07c9-43a7-9970-5072a6b5591f",
+  "createdDateTime": "2021-07-27T13:51:08.43Z",
+  "modifiedDateTime": null,
+  "status": "Provisioned",
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T13:51:08.43Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   }
 }
 ```

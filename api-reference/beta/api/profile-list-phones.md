@@ -1,7 +1,7 @@
 ---
 title: "List phones"
 description: "Retrieve a list of itemPhone objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

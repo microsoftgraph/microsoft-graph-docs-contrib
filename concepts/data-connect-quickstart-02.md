@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD041 -->
 
 Prior to using Microsoft Graph Data Connect for the first time, you need to configure your Microsoft 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
@@ -16,7 +20,7 @@ In this step, you will setup your Microsoft 365 tenant to enable usage of Micros
 1. Open a browser and go to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/).
 
 1. On the sidebar navigation, select **Active Groups**.
-  
+
     ![A screenshot showing the active groups in the Microsoft 365 admin center.](images/data-connect-m365-act-grp.png)
 
 1. Select the **Add a group** button.

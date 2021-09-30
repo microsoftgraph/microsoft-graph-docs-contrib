@@ -2,7 +2,7 @@
 title: "Get application"
 description: "Get the properties and relationships of an application object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -30,7 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications/{id}
 ```
 ## Optional query parameters
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties. 
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties.
+
+By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
+
 ## Request headers
 | Name           | Description                |
 |:---------------|:---------------------------|
@@ -73,7 +79,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ---
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

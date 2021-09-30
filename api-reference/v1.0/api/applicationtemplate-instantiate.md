@@ -1,7 +1,7 @@
 ---
 title: 'applicationTemplate: instantiate'
 description: 'Add an instance of an application from the Azure AD application gallery into your directory.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
 doc_type: 'apiPageType'
