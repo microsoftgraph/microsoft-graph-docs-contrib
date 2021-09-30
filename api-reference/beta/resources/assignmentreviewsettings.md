@@ -21,7 +21,7 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| accessReviewTimeoutBehavior | accessReviewTimeoutBehavior | The default decision to apply if the request is not reviewed within the period specified in **durationInDays**. |
+| accessReviewTimeoutBehavior | [accessReviewTimeoutBehavior](#accessreviewtimeoutbehavior-values) | The default decision to apply if the request is not reviewed within the period specified in **durationInDays**. The possible values are: `acceptAccessRecommendation`, `keepAccess`, `removeAccess`, and `unknownFutureValue`. |
 | durationInDays | Int32 | The number of days within which reviewers should provide input.|
 | isAccessRecommendationEnabled | Boolean | Specifies whether to display recommendations to the reviewer. The default value is `true` |
 | isApprovalJustificationRequired | Boolean | Specifies whether the reviewer must provide justification for the approval. The default value is `true`. |
