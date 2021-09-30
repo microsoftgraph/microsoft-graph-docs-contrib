@@ -2,7 +2,7 @@
 title: "teamworkTagMember resource type"
 description: "Represents a user in a team who has a tag applied to them."
 author: "anniecolonna"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: resourcePageType
 ---
@@ -18,8 +18,9 @@ Represents a user in a team to whom a tag is applied.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTagMembers](../api/teamworktagmember-list.md)|**teamworkTagMember** collection|Get a list of the members of a standard tag in a team and their properties.|
-|[Get teamworkTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|Get the properties and relationships of a member of a standard tag in a team.|
+|[List teamworkTagMembers](../api/teamworktagmember-list.md)|[**teamworkTagMember**](teamworktagmember.md) collection|Get a list of the members of a standard tag in a team and their properties.|
+|[Create teamworkTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Create a new **teamworkTagMember** object.|
+|[Get teamworkTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Get the properties and relationships of a member of a standard tag in a team.|
 |[Delete teamworkTagMember](../api/teamworktagmember-delete.md)|None|Delete a member from a standard tag in the team.|
 
 ## Properties

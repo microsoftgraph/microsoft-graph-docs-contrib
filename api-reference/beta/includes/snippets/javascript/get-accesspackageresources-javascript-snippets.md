@@ -12,6 +12,8 @@ const client = Client.init(options);
 
 let accessPackageResources = await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources')
 	.version('beta')
+	.filter('resourceType eq \'Application\'')
+	.expand('accessPackageResourceScopes')
 	.get();
 
 ```

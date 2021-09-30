@@ -2,7 +2,7 @@
 title: "Create iosLobApp"
 description: "Create a new iosLobApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -1,8 +1,8 @@
 ---
 author: swapnil1993
 title: "Delete contentType"
-description: "Delete a content type from a sharepoint list or a site."
-localization_priority: Normal
+description: "Delete a content type from a SharePoint list or a site."
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

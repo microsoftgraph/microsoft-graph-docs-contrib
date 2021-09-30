@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Update columnDefinition"
 description: "Update a site, list or content type column"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

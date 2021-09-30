@@ -2,7 +2,7 @@
 title: "TableRowCollection: ItemAt"
 description: "Gets a row based on its position in the collection."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

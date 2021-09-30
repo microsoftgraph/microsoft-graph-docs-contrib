@@ -1,0 +1,84 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingproperties-create.md",
+        "redirect_url": "/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingproperties-get.md",
+        "redirect_url": "/graph/api/organizationalbranding-get?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingproperties-update.md",
+        "redirect_url": "/graph/api/organizationalbranding-update?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingproperties-delete.md",
+        "redirect_url": "/graph/api/organizationalbranding-delete?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-get.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-delete.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-create.md",
+        "redirect_url": "/graph/api/organizationalbranding-post-localizations?view=graph-rest-beta",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationalbrandingpropertieslocalization-update.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-update?view=graph-rest-beta",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingproperties-create.md",
+        "redirect_url": "/graph/api/organizationalbranding-post-localizations?view=graph-rest-v1.0",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingproperties-get.md",
+        "redirect_url": "/graph/api/organizationalbranding-get?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingproperties-update.md",
+        "redirect_url": "/graph/api/organizationalbranding-update?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingproperties-delete.md",
+        "redirect_url": "/graph/api/organizationalbranding-delete?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingpropertieslocalization-get.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-get?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingpropertieslocalization-delete.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingpropertieslocalization-create.md",
+        "redirect_url": "/graph/api/organizationalbranding-post-localizations?view=graph-rest-v1.0",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/api-reference/v1.0/api/organizationalbrandingpropertieslocalization-update.md",
+        "redirect_url": "/graph/api/organizationalbrandinglocalization-update?view=graph-rest-v1.0",
+        "redirect_document_id": true
+      }
+    ]
+}

@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List contentTypes in a site"
 description: "List content types in a site"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List organization"
 description: "Retrieve a list of organization objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
