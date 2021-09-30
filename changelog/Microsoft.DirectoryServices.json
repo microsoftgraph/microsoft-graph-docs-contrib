@@ -8823,6 +8823,32 @@
         "WorkloadArea":"Identity and access",
         "SubArea":"Identity and sign-in"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "a98f54a2-f42c-4ffe-a6e7-3394c2179034",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "authenticatorAppFeatureSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **authenticatorAppFeatureSettings** enumeration type.",
+          "Target": "authenticatorAppFeatureSettings"
+        },
+        {
+          "Id": "a98f54a2-f42c-4ffe-a6e7-3394c2179034",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **featureSettings** property from [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-1.0) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        }
+      ],
+      "Id": "a98f54a2-f42c-4ffe-a6e7-3394c2179034",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T21:56:07.4056871Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {"ChangeList": [
       {
         "Id": "f8b00607-3a92-457b-8ed6-f963274ef117",
