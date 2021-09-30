@@ -2,6 +2,24 @@
 
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource to show if a particular channel is private or standard.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-07-24T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
