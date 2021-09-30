@@ -8,24 +8,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added [Get all channel messages](https://docs.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true) to [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-1.0) resource.",
-          "Target": "channel-getallmessages"
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true) method to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-1.0) resource type.",
+          "Target": "channel"
         },
         {
           "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added [Get messages across all chats for user](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) to [chats](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) resource.",
-          "Target": "chats-getallmessages"
-        },
-        {
-          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "chatmessage",
-          "ChangeType": "Addition",
-          "Description": "Added [Get messages across all chats for user](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) to [chats](https://docs.microsoft.com/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
-          "Target": "chats-getallmessages"
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) method to the [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) resource type.",
+          "Target": "chat"
         }
       ],
       "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
