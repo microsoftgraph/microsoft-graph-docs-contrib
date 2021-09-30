@@ -31,7 +31,7 @@ This type has the following properties:
 | reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by ID or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
 | startDateTime | DateTimeOffset | When the first review should start. |
 
-### Enum Type
+### accessReviewTimeoutBehavior values
 
 | Member | Description |
 |:---------------|:--------|:----------|
