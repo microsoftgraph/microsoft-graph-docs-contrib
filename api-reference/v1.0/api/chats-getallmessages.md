@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get all messages(../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, that includes one-on-one chats, group chats, and meeting chats.
+Get all [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
 [!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
 
