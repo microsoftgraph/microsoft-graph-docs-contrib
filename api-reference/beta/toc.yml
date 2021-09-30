@@ -9755,6 +9755,11 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
+        - name: Cloud PC supported region
+          href: resources/cloudpcsupportedregion.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-supportedregions.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10150,7 +10155,7 @@ items:
         - name: List schools
           href: api/educationuser-list-schools.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md            
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -12221,7 +12226,7 @@ items:
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated))
             items:
-            - name: Azure AD 
+            - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
@@ -13387,6 +13392,29 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Microsoft Defender for Office 365 security reports
+        items:
+        - name: Attack simulation reports
+          displayname: Attack simulation and training
+          href: resources/report-m365defender-reports-overview.md
+        - name: Repeat offenders
+          items:
+          - name: Repeat offender
+            href: resources/attacksimulationrepeatoffender.md
+          - name: Get repeat offenders
+            href: api/reportroot-getattacksimulationrepeatoffenders.md
+        - name: Simulation data
+          items:
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+          - name: Get simulation coverage for users
+            href: api/reportroot-getattacksimulationsimulationusercoverage.md
+        - name: Training data
+          items:
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+          - name: Get training coverage for users
+            href: api/reportroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -13461,7 +13489,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Actions
+      - name: Actions (preview)
         href: resources/securityaction.md
         items:
         - name: List security actions
@@ -13483,6 +13511,41 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Attack simulation and training (preview)
+        items:
+        - name: Simulations
+          items:
+          - name: Simulation
+            href: resources/simulation.md
+          - name: List simulations
+            href: api/attacksimulationroot-list-simulations.md
+          - name: List simulation users
+            href: api/usersimulationdetails-list.md
+          - name: Get simulation overview
+            href: api/simulationreportoverview-get.md
+        - name: Reports
+          items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/reportroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Information protection
         items:
         - name: Labels
@@ -13532,7 +13595,7 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicators
+      - name: Threat intelligence indicators (preview)
         href: resources/tiindicator.md
         items:
         - name: List

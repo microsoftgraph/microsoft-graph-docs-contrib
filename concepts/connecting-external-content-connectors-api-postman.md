@@ -16,36 +16,25 @@ This topic describes how you can use the Microsoft Graph connector APIs with Pos
 * Either a Microsoft account or work or school account.
 * Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program] to get a free developer subscription.
 
-## Step 1 - Import the Microsoft Graph Postman collection
+## Step 1 - Fork the Microsoft Graph Postman collection
 
-To use the Postman collection, you need to import it into your Postman workspace. Do this from a web browser.
+To use the Postman collection, you need to fork it into your Postman workspace. Do this from a web browser.
 
 1. Go to [Postman](https://identity.getpostman.com/signup) and sign up. If you already have a Postman account, you can [sign in](https://identity.getpostman.com/login).
 
-2. After you sign in, go to **My workspace**.
+2. After you sign in, go to the following URL: `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148`, and select the Microsoft Graph collection.
 
-![Screenshot showing the Workspaces tab in Postman and the option to select My Workspace](./images/connectors-images/02-postman-my-workspace.png)
+3. Select the three dots to the right, and select the option to **Create a fork**.
 
-3. After you go into **My workspace**, select the **Import** button.
+![Screenshot showing the Microsoft Graph collection in Postman and the option to create a fork](./images/connectors-images/16-postman.png)
 
-![Screenshot of the My Workspace section in Postman and the Import option](./images/connectors-images/03-postman-import.png)
+4. In the dialog that opens, enter a label to identify your fork. In the **Workspace** dropdown menu select **My workspace** , and select **Fork Collection**.
 
-4. In the dialog that opens, select **Link** tab and enter the following URL - in the textbox:  `https://www.postman.com/collections/61bfc772fe030514b062`.
+![Screenshot showing the Fork collection dialog in Postman and the options to enter a label, and select My Workspace](./images/connectors-images/17-postman.png)
 
-![Screenshot of the Import dialog](./images/connectors-images/04-postman-link.png)
+3. You can now go to **Workspaces** > **My Workspace**, and see the fork you created. You'll find the Microsoft Graph connectors folder under **Application**.
 
-5. Select **Continue**.
-6. Select **Import**.
-
-![Screenshot of the Import dialog after entering the URL](./images/connectors-images/05-postman-link-continue.png)
-
-You should now see the Microsoft Graph connectors API collection inside Postman.
-
-![Screenshot showing the Microsoft Graph Connector API in Postman](./images/connectors-images/06-postman-collection-tab.png)
-
-> [!NOTE]
-> The Microsoft Graph connector API was recently added into the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview).
-This document will be edited soon to use that collection instead.
+![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
 
 ## Step 2 - Download the Postman Agent (Optional - Postman Web browser only)
 
@@ -83,7 +72,7 @@ The Azure AD application now has permissions to make requests on behalf of a use
 
 Set up the variables in Postman. This information is used to generate the access token.
 
-1. Select the **Microsoft Graph connectors API** tab and go to the **Variables** section.
+1. Select the **Microsoft Graph** tab and go to the **Variables** section.
 
 ![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
 
@@ -103,7 +92,7 @@ Set up the variables in Postman. This information is used to generate the access
 
 You need to get an access token because this is the first time you are running a request as an application authentication flow. Get the app access token by making the following POST request:
 
-![Screenshot of the Get app access token section](./images/connectors-images/09-postman.png)
+![Screenshot of the Get app access token section](./images/connectors-images/09a-postman.png)
 
 
 The following example shows how to get an access token with a shared secret:
@@ -265,29 +254,19 @@ Content-type: application/json
 }
 ```
 
-The following is a screenshot of the **Get operation status** section.
+The following is a screenshot of the **Get connection operation status** section.
 
 ![Screenshot of the Get operation status section showing status in progress](./images/connectors-images/11-postman.png)
 
 After the connection schema operation status changes from **InProgress** to **Completed,** you can ingest items for the connection.
 
-The following screenshot shows the status as "completed".
-
- ![Screenshot of the Get operation status section showing status completed](./images/connectors-images/12-postman.png)
-
-The following screenshot shows the state as "draft".
-
- ![Screenshot of the Get operation status section showing state draft](./images/connectors-images/13-postman.png)
-
-After the connection state changes from **draft** to **ready**, as showed in the next screenshot, you can ingest items into current connection.
-
-![Screenshot of the Get operation status section showing state ready](./images/connectors-images/14-postman.png)
+After the connection state changes from **draft** to **ready**, you can ingest items into the current connection.
 
 ## Step 8 - Add external group member (optional)
 
 If your external service uses non-Azure AD ACLs, sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta).
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details see [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
 
 This is an example of a request.
 
@@ -316,10 +295,6 @@ Content-Type: application/json
   "identitySource": "external" 
 } 
 ```
-
-The following screenshot shows the **Create external group** section.
-
-![Screenshot of the Create external group section](./images/connectors-images/15-postman.png)
 
 ## Step 9 - Ingest Items
 
