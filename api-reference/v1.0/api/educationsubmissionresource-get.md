@@ -123,7 +123,6 @@ Content-length: 1152
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationFileResource"
@@ -180,7 +179,6 @@ Content-length: 1152
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationExcelResource"
@@ -237,7 +235,6 @@ Content-length: 1152
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationPowerPointResource"
@@ -294,7 +291,6 @@ Content-length: 1152
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationLinkResource"
@@ -351,7 +347,6 @@ Content-length: 1152
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationMediaResource"
