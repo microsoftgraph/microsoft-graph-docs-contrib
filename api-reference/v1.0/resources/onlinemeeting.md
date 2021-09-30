@@ -44,6 +44,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
+| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
