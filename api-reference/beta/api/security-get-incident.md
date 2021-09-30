@@ -73,28 +73,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.incident",
-    "id": "eb558b72-8b72-eb55-728b-55eb728b55eb",
-    "incidentWebUrl": "String",
-    "redirectIncidentId": "String",
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastUpdateDateTime": "String (timestamp)",
-    "assignedTo": "String",
-    "classification": "String",
-    "determination": "String",
-    "status": "String",
-    "severity": "String",
+    "id": 2972395,
+    "incidentWebUrl": "https://security.microsoft.com/incidents/2972395?tid=12f988bf-16f1-11af-11ab-1d7cd011db47",
+    "redirectIncidentId": null,
+    "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
+    "createdDateTime": "2021-08-13T08:43:35.5533333Z",
+    "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
+    "assignedTo": user@contoso.onmicrosoft.com,
+    "classification": "TruePositive",
+    "determination": "MultiStagedAttack",
+    "status": "Active",
+    "severity": "Medium",
     "tags": [
-      "String"
+      "Demo"
     ],
     "comments": [
       {
-        "@odata.type": "microsoft.graph.m365AlertComment"
+		"comment": "Demo incident",
+		"createdBy": "alfasi@wcdtestprd.onmicrosoft.com",
+		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
     ]
-  }
 }
 ```
 

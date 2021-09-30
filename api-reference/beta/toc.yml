@@ -13552,9 +13552,9 @@ items:
         - name: Incident
           href: resources/incident.md
         - name: List incidents
-          href: api/incident-list.md
+          href: api/security-list-incidents.md
         - name: Get incident
-          href: api/incident-get.md        
+          href: api/security-get-incident.md        
       - name: Information protection
         items:
         - name: Labels

@@ -53,17 +53,17 @@
         {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
           "ApiChange": "Method",
-          "ChangedApiName": "incident-get",
+          "ChangedApiName": "security-get-incident",
           "ChangeType": "Addition",
-          "Description": "Added the [incident-get](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) method on the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Description": "Added the [GET](https://docs.microsoft.com/en-us/graph/api/security-get-incident?view=graph-rest-beta) operation for the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
           "Target": "incident"
         },
         {
           "Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
           "ApiChange": "Method",
-          "ChangedApiName": "incident-list",
+          "ChangedApiName": "security-list-incidents",
           "ChangeType": "Addition",
-          "Description": "Added the [incident-list](https://docs.microsoft.com/en-us/graph/api/incident-list?view=graph-rest-beta) method on the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/security-list-incidents?view=graph-rest-beta) operation for the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
           "Target": "incident"
         }
       ],
