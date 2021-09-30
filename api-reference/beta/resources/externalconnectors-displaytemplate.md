@@ -1,6 +1,6 @@
 ---
 title: "displayTemplate resource type"
-description: "Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed."
+description: "Defines the appearance of the content and the conditions that dictate when the template should be displayed."
 author: "emzho"
 ms.localizationpriority: normal
 ms.prod: "search"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
+Defines the appearance of the content and the conditions that dictate when the template should be displayed.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The text identifier for the display template. Example: contosoTickets|
-|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
+|id|String|The text identifier for the display template; for example, `contosoTickets`.|
+|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|The definition of the content's appearance, represented by an [Adaptive Card](/adaptive-cards/authoring-cards/getting-started), which is a JSON-serialized card object model.|
 |priority|Int32|Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported.|
 |rules|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) collection|Specifies additional rules for selecting this display template based on the item schema. Optional.|
 
