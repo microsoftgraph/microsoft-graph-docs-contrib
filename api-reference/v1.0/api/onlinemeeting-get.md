@@ -291,7 +291,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve an online meeting by oJinWebUrl
+### Example 3: Retrieve an online meeting by JoinWebUrl
 You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example, in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
