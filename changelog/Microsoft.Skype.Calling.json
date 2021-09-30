@@ -25,7 +25,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to the read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added application permission of **OnlineMeetings.ReadWrite.All** to the read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added application permission of **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -42,7 +42,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-15T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -60,7 +60,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-09-09T21:40:54.5120151Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -94,7 +94,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -120,7 +120,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -138,7 +138,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-18T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },   
     {
       "ChangeList": [
@@ -164,7 +164,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-19T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Presence"
     },
     {
       "ChangeList": [
@@ -206,7 +206,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -224,7 +224,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -282,7 +282,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T22:17:53.668Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -332,7 +332,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-13T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -358,7 +358,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-23T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Presence"
     },
     {
       "ChangeList": [
@@ -384,7 +384,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -402,7 +402,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-14T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -444,7 +444,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-19T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -478,7 +478,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-21T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -504,7 +504,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -538,7 +538,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -556,7 +556,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-05T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
