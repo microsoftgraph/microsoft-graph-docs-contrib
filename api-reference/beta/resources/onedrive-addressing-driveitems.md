@@ -3,7 +3,7 @@ title: "Addressing resources in a drive on OneDrive"
 description: "How to access items within a drive on OneDrive with ID-based and path-based addressing."
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-author: "ZacharyZiebarth"
+author: "JeremyKelley"
 doc_type: conceptualPageType
 ---
 
