@@ -56,7 +56,7 @@ The following is an example of the request. This request created an app manageme
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
-- Enforces lifetime on passwords secrets,  symmetric and asymmetric key credentials for applications crated on or after 2014-10-19 at 10:37 AM UTC time.
+- Enforces lifetime on password secrets and key credentials for applications created on or after 2014-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
 
