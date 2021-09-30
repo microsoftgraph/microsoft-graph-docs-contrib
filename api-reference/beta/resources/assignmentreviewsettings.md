@@ -35,10 +35,10 @@ This type has the following properties:
 
 | Member | Description |
 |:---------------|:--------|:----------|
-| acceptAccessRecommendation | Review decision to take recommendations from access review to accept/remove access to access package. The general rule for AR recommendations is if last user sign in more than 30 days, it is recommended to remove access to that user. |
-| keepAccess | Review decision is to keep current access. |
-| removeAccess | Review decision is to remove access to access package. |
-| unknownFutureValue | Sentinel member for evolvable enum |
+| acceptAccessRecommendation | The review decision to take recommendations from access review to accept/remove access to access package. The general rule for AR recommendations is if last user sign in more than 30 days, it is recommended to remove access to that user. |
+| keepAccess | The review decision is to keep current access. |
+| removeAccess | The review decision is to remove access to access package. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
