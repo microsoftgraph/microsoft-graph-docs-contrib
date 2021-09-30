@@ -8,7 +8,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "membershipType",
           "ChangeType": "Addition",
-          "Description": "Added the **membershipType** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource to show if a particular channel is private or standard.",
+          "Description": "Added the **membershipType** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource type",
           "Target": "channel"
         }
       ],
