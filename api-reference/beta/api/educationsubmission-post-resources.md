@@ -19,7 +19,7 @@ Only the student assigned to the submission can perform this operation.
 
 The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`. 
 
-If the caller wants to create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
+To create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
 
 [!IMPORTANT] 
 Before you can upload files, you must [setUpResourcesFolder](../api/educationsubmission-setupresourcesfolder.md) to which to upload the files for a given [educationSubmission](../resources/educationsubmission.md).
@@ -53,6 +53,7 @@ In the request body, supply a JSON representation of the resource. Supported typ
 ## Response
 If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
 
+## Examples
 ### Example 1: educationWordResource
 #### Request
 The following is an example of the request.
