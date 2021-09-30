@@ -29,17 +29,17 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
-|classification|[m365AlertClassification](#m365AlertClassification-values)|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|classification|[m365AlertClassification](#m365alertclassification-values)|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
 |comments|[m365AlertComment](../resources/m365alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
-|determination|[m365AlertDetermination](#m365AlertDetermination-values)|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[m365AlertDetermination](#m365alertdetermination-values)|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
 |id|String|Unique identifier to represent the incident.|
 |incidentWebUrl|String|URL for the incident page in Microsoft 365 Defender portal.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.|
-|severity|[m365AlertSeverity](#m365AlertSeverity-values )|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[incidentStatus](#incidentStatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
+|severity|[m365AlertSeverity](#m365alertseverity-values )|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|status|[incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `redirected`, `unknownFutureValue`.|
 |tags|String collection|Array of custom tags associated with an incident.|
 
 
