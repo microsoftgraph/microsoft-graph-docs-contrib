@@ -1,6 +1,6 @@
 ---
 title: "Get meeting registration"
-description: "Create and enable meeting registration."
+description: "Get registration information of an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"

@@ -49,6 +49,7 @@ Registration information of an online meeting.
 ## Relationships
 
 | Relationship | Type | Description |
+| ------------ | ---- | ----------- |
 | customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| The custom registration questions. Navigation property. |
 | registrants | [meetingRegistrant](meetingRegistrant.md) collection | Participants who have registered for the online meeting. Navigation property. |
 
