@@ -70,7 +70,7 @@ and subscriptions with licensing and payment requirements will not send change n
 ## Required licenses for `model=A` 
 
 The user will need one of the 
-[supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp). 
+[supported licenses](https://aka.ms/teams-api-license-list). 
 Which user needs the license varies by API; 
 for details, see [`model=A` requirements](#modela-requirements).
 
