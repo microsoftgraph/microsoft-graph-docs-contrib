@@ -52,23 +52,27 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example: Get all predefined values for a custom security attribute
+
+The following example gets all predefined values for a custom security attribute named Project in the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "list_allowedvalue"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
+GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.allowedValue)"
+  "@odata.type": "Collection(microsoft.graph.allowedValue)",
+  "name": "list_allowedvalue"
 }
 -->
 ``` http
@@ -76,12 +80,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.allowedValue",
-      "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
-      "isActive": "Boolean"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions('Engineering_Project')/allowedValues",
+    "value": [
+        {
+            "id": "Cascade",
+            "isActive": true
+        },
+        {
+            "id": "Baker",
+            "isActive": true
+        },
+        {
+            "id": "Alpine",
+            "isActive": true
+        }
+    ]
 }
 ```
