@@ -31,6 +31,7 @@ Indicates the attributes related to applied conditional access policy or policie
 
 
 
+
 ## JSON representation
 
 Here is a JSON representation of the resource.

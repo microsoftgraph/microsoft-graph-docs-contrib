@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const externalItem = {
-  '@odata.type': 'microsoft.graph.externalItem',
   acl: [
     {
       type: 'user',

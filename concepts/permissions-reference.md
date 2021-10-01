@@ -226,6 +226,7 @@ None.
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, on behalf of the signed-in user. | Yes |
+| _DelegatedPermissionGrant.ReadWrite.All_ | Manage delegated permission grants | Allows the app to manage delegated permission grants for any API (including Microsoft Graph), on behalf of the signed-in user. | Yes |
 
 #### Application permissions
 
@@ -235,6 +236,7 @@ None.
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
+| _DelegatedPermissionGrant.ReadWrite.All_ | Manage all delegated permission grants | Allows the app to grant or revoke any delegated permission for any API (including Microsoft Graph), without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -524,6 +526,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Chat resource-specific consent permissions
 
+#### Application permissions
+
 | Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
 |:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
 | _ChatSettings.Read.Chat_         | Read this chat's settings.                                    | Allows the app to read this chat's settings, without a signed-in user. |No | No |
@@ -537,6 +541,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsTab.ReadWrite.Chat_        | Manage this chat's tabs.                                      | Allows the app to manage this chat's tabs, without a signed-in user. |No | No |
 | _TeamsAppInstallation.Read.Chat_ | Read which apps are installed in this chat.                   | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
 | _OnlineMeeting.ReadBasic.Chat_   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties—such as name, schedule, organizer, and join link—of a meeting associated with this chat, without a signed-in user. |No | No |
+
+>[!NOTE]
+> Currently, these permissions are supported only in the beta version of Microsoft Graph.
 
 ## ChatMessage permissions ([private preview](#permissions-availability-status))
 
@@ -1494,7 +1501,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Read and write Privileged Identity Management data for Directory  | Allows the app to have read and write access to Privileged Identity Management APIs for Azure AD. | Yes | No |
-| _PrivilegedAccess.ReadWrite.AzureADGroups_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
+| _PrivilegedAccess.ReadWrite.AzureADGroup_ |Read and write Privileged Identity Management data for privileged access groups | Allows the app to have read and write access to Privileged Identity Management APIs for groups. | Yes | No |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Read and write Privileged Identity Management data for Azure Resources | Allows the app to have read and write access to Privileged Identity Management APIs for Azure resources. | Yes | No |
 
 #### Application permissions
@@ -1502,8 +1509,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | Permission | Display String | Description | Admin Consent Required |
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Read Privileged Identity Management data for Directory  | Allows the app to have read access to Privileged Identity Management APIs for Azure AD. | Yes |
-| _PrivilegedAccess.Read.AzureADGroups_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
-| _PrivilegedAccess.Read.AzureADResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
+| _PrivilegedAccess.Read.AzureADGroup_ |Read Privileged Identity Management data for privileged access groups | Allows the app to have read access to Privileged Identity Management APIs for groups. | Yes |
+| _PrivilegedAccess.Read.AzureResources_ |Read Privileged Identity Management data for Azure resources | Allows the app to have read access to Privileged Identity Management APIs for Azure AD resources. | Yes |
 
 ---
 
@@ -1657,17 +1664,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
-| _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
-| _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleAssignmentSchedule.Read.Directory_ | Read all active role assignments for your company's directory. | Allows the app to read the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes reading directory role templates, and directory roles. | Yes | No |
+| _RoleEligibilitySchedule.Read.Directory_ | Read all eligible role assignments for your company's directory. | Allows the app to read the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes reading directory role templates, and directory roles. | Yes | No |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
+| _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments for your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
+| _RoleAssignmentSchedule.ReadWrite.Directory_ | Read, update, and delete all active role assignments for your company's directory. | Allows the app to read and manage the active role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing active directory role membership, and reading directory role templates, directory roles and active memberships. | Yes | No |
+| _RoleEligibilitySchedule.ReadWrite.Directory_ | Read, update, and delete  all eligible role assignments for your company's directory. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Yes | No |
+| _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagementPolicy.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments for your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments for your company's directory, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
-| _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
-| _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
+| _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+
 
 ### Remarks
 With the _RoleManagement.Read.Directory_ permission an application can read directoryRoles and directoryRoleTemplates. This includes reading membership information for directory roles.
@@ -1711,10 +1725,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ## Search permissions
 
 #### Application permissions
-
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external with the Microsoft Graph connectors indexing API. | Yes | No |
+| _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections and connection settings | Allows the app to read and write external connections and their settings without a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
+| _ExternalItem.ReadWrite.OwnedBy_ | Read and write external items | Allows the app to read and write external items without a signed-in user. The app can only read external items of the connection that it is authorized to. | Yes | No |
+| _ExternalItem.ReadWrite.All_ | Read and write all external items | Allows the app to read and write all external items without a signed-in user. | Yes | No |
 
 #### Delegated permissions
 
@@ -1771,6 +1786,25 @@ Security permissions are valid only on work or school accounts.
 
 - _SecurityEvents.Read.All_: Read the list of all security alerts from all licensed security providers available to your tenant (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_: Update or read security alerts from all licensed security providers available to your tenant  (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## Service communications permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String  | Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information on behalf of the signed-in user. Health information may include service issues or service health overviews. | Yes | Yes |
+| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages on behalf of the signed-in user. Messages may include information about new or changed features. | Yes | Yes |
+| _ServiceMessageViewpoint.Write_ | Update your user status on service announcement messages | Allows the app to update service announcement messages' user status on behalf of the signed-in user. The message status can be marked as read, archive, or favorite. | Yes | Yes |
+
+#### Application permissions
+
+|   Permission    |  Display String  | Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ServiceHealth.Read.All_ | Read service health | Allows the app to read your tenant's service health information, without a signed-in user. Health information may include service issues or service health overviews. | Yes |
+| _ServiceMessage.Read.All_ | Read service messages | Allows the app to read your tenant's service announcement messages, without a signed-in user. Messages may include information about new or changed features. | Yes |
 
 ---
 
@@ -1900,7 +1934,7 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
 | _Team.Create_  | Create teams | Create teams, without a signed-in user. | Yes | No |
-|_Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
+| _Teamwork.Migrate.All_|Manage migration to Microsoft Teams|Creating and managing resources for migration to Microsoft Teams|Yes|Yes|
 
 ## Team settings permissions
 
@@ -1991,26 +2025,28 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
 | _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
-## Teams resource-specific consent permissions
+## Team resource-specific consent permissions
+
+#### Application permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
-| TeamSettings.ReadWrite.Group | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
-| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-|Channel.Create.Group | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
-|Channel.Delete.Group | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
-|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
-|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
-|TeamsTab.Read.Group | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
-|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
-|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
-|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
-|TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
-|Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
-|Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
-|File.Read.Group| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
+| _TeamSettings.Read.Group_ | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
+| _TeamSettings.ReadWrite.Group_ | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
+| _ChannelSettings.Read.Group_ | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _ChannelSettings.ReadWrite.Group_ | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| _Channel.Create.Group_ | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
+| _Channel.Delete.Group_ | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
+| _ChannelMessage.Read.Group_ | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
+| _TeamsAppInstallation.Read.Group_ | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
+| _TeamsTab.Read.Group_ | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
+| _TeamsTab.Create.Group_ | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
+| _TeamsTab.ReadWrite.Group_ | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
+| _TeamsTab.Delete.Group_ | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
+| _TeamMember.Read.Group_ | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
+| _Member.Read.Group_ | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
+| _Owner.Read.Group_| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+| _File.Read.Group_| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 
@@ -2018,17 +2054,17 @@ Taxonomy permissions are valid only on work or school accounts.
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|No| No |
-| TeamSettings.Read.All | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
+| _Team.ReadBasic.All_ | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|No| No |
+| _TeamSettings.Read.All_ | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
+| _TeamSettings.ReadWrite.All_ | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
 
 ### Application permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
-| TeamSettings.Read.All | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
+| _Team.ReadBasic.All_ | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
+| _TeamSettings.Read.All_ | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
+| _TeamSettings.ReadWrite.All_ | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
 
 ## Teams tab permissions
 
@@ -2047,6 +2083,15 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsTab.Read.All_ | Read tabs in Microsoft Teams. | Read the names and settings of tabs inside any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs.	| Yes | No |
 | _TeamsTab.ReadWrite.All_ | Read and write tabs in Microsoft Teams. | Read and write tabs in any team in Microsoft Teams, without a signed-in user. This does not give access to the content inside the tabs. | Yes | No |
 | _TeamsTab.Create_ | Create tabs in Microsoft Teams. | Allows the app to create tabs in any team in Microsoft Teams, without a signed-in user. This does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. | Yes | No |
+
+## Teams tag permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Read and write tags in any team in Microsoft Teams, without a signed-in user.	| Yes | No |
+| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Read tags in any team in Microsoft Teams, without a signed-in user. | Yes | No |
 
 ## Terms of use permissions
 
