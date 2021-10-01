@@ -1,5 +1,5 @@
 ---
-title: "Publish an education assignment"
+title: "educationAssignment: publish"
 description: "This action publishes an education assignment."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Publish an education assignment
+# educationAssignment: publish
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. It returns an [educationAssignment](../resources/educationassignment.md) object in the response body.
+If successful, this method returns a `200 Ok` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.

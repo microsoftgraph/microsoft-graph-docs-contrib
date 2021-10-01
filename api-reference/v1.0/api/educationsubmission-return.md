@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/return
 ```
 ## Request headers
 | Header       | Value |
@@ -38,7 +38,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. It returns an [educationSubmission](../resources/educationsubmission.md) object in the response body.
+If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -81,7 +81,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionIndividualRecipient"
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
 
 ```http
