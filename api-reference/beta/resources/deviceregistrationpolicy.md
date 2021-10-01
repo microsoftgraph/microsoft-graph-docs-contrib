@@ -30,7 +30,7 @@ Represents the policy scope that controls quota restrictions, additional authent
 |description|String|The description of the device registration policy. It is always set to `Device Registration Policy`. Read-only.|
 |displayName|String|The name of the device registration policy. It is always set to `Tenant-wide policy that manages initial provisioning controls using quota restrictions, additional authentication and authorization checks`. Read-only.|
 |id|String| The identifier of the device registration policy. It is always set to `deviceRegistrationPolicy`. Read-only.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`,`unknownFutureValue`.|
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`,`unknownFutureValue`. The default value is `notRequired`. |
 |userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.|
 
 * The default value of `multiFactorAuthConfiguration` is **`notRequired`** at the time of policy creation.
