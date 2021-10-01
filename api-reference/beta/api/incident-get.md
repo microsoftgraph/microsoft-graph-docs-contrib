@@ -80,7 +80,7 @@ Content-Type: application/json
     "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
     "createdDateTime": "2021-08-13T08:43:35.5533333Z",
     "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": user@contoso.onmicrosoft.com,
+    "assignedTo": "KaiC@contoso.onmicrosoft.com",
     "classification": "TruePositive",
     "determination": "MultiStagedAttack",
     "status": "Active",
@@ -91,7 +91,7 @@ Content-Type: application/json
     "comments": [
       {
 		"comment": "Demo incident",
-		"createdBy": "alfasi@wcdtestprd.onmicrosoft.com",
+		"createdBy": "DavidS@contoso.onmicrosoft.com",
 		"createdTime": "2021-09-30T12:07:37.2756993Z"
       }
     ]

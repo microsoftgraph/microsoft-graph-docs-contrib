@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [incident](../resources/incident.md) objects and their properties.
-The list incidents API allows you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list.
+
+The list incidents operation allows you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +39,7 @@ GET /security/incidents
 ## Optional query parameters
 This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`.
 
-The following properties support `$filter` : **Status**, **Severity**, **Classification**, **Determination**, **LastUpdateDateTime**, **CreatedDateTime**, **AssignedTo**.
+The following properties support `$filter` : **assignedTo**, **classification**, **createdDateTime**, **determination**, **lastUpdateDateTime**, **severity**, and **status**.
 
 Use `@odata.nextLink` for pagination.
 
@@ -49,9 +50,9 @@ The following are examples of their use:
 }
 -->
 ``` http
-GET /security/incidents?$top=10
-GET /security/incidents?$filter={property}+eq+'{property-value}'
 GET /security/incidents?$count=true
+GET /security/incidents?$filter={property}+eq+'{property-value}'
+GET /security/incidents?$top=10
 ```
 
 For general information, see [OData query parameters](/graph/query-parameters).
@@ -105,7 +106,7 @@ Content-Type: application/json
         "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
         "createdDateTime": "2021-08-13T08:43:35.5533333Z",
         "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-        "assignedTo": user@contoso.onmicrosoft.com,
+        "assignedTo": "KaiC@contoso.onmicrosoft.com",
         "classification": "TruePositive",
         "determination": "MultiStagedAttack",
         "status": "Active",
@@ -115,9 +116,9 @@ Content-Type: application/json
         ],
         "comments": [
           {
-		    "comment": "Demo incident",
-		    "createdBy": "alfasi@wcdtestprd.onmicrosoft.com",
-		    "createdTime": "2021-09-30T12:07:37.2756993Z"
+		        "comment": "Demo incident",
+		        "createdBy": "DavidS@contoso.onmicrosoft.com",
+		        "createdTime": "2021-09-30T12:07:37.2756993Z"
           }
         ]
     }

@@ -13554,7 +13554,7 @@ items:
         - name: List incidents
           href: api/security-list-incidents.md
         - name: Get incident
-          href: api/security-get-incident.md        
+          href: api/incident-get.md        
       - name: Information protection
         items:
         - name: Labels
