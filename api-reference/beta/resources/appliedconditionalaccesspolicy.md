@@ -21,13 +21,15 @@ Indicates the attributes related to applied conditional access policy or policie
 |:---------------|:--------|:----------|
 |conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
 |conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are not satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
+|displayName|String|Name of the conditional access policy.|
 |enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).|
 |enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).|
+|excludeRulesSatisfied|[conditionalAccessRulesSatisfied] collection|List of key value pairs containing each matched exclude condition in the conditional access policy. Example: `[{"devicePlatform" : "DevicePlatform"}]` means the policy didn’t apply, because the DevicePlatform condition was a match.|
 |id|String|Identifier of the conditional access policy.|
+|includeRulesSatisfied|[conditionalAccessRulesSatisfied] collection|List of key value pairs containing each matched include condition in the conditional access policy. Example: `[{ "application" : "AllApps"}, {"users": "Group"}]`, meaning Application condition was a match because AllApps are included, Users condition was a match because the user was part of the included Group rule.|
 |result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (Policy isn't applied because policy conditions were not met),`notEnabled` (This is due to the policy in disabled state), `unknown`, `unknownFutureValue`, `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`|
-|displayName|String|Name of the conditional access policy.|
-|includeRulesSatisfied|String collection|List of key value pairs containing each matched include condition in the conditional access policy. Example: [{ "application" : "AllApps"}, {"users": "Group"}], meaning Application condition was a match because AllApps are included, Users condition was a match because the user was part of the included Group rule.|
-|excludeRulesSatisfied|String collection|List of key value pairs containing each matched exclude condition in the conditional access policy. Example: [{"devicePlatform" : "DevicePlatform"}] means the policy didn’t apply, because the DevicePlatform condition was a match.|
+
+
 
 ## JSON representation
 

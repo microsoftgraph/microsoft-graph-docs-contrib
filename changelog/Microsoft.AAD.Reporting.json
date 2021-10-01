@@ -4,6 +4,110 @@
       "ChangeList": [
           {
             "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "excludeRulesSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the **excludeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "includeRulesSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the **includeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "displayName",
+            "ChangeType": "Addition",
+            "Description": "Added the **displayName** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "AuthenticationRequirementPolicies",
+            "ChangeType": "Addition",
+            "Description": "Added the **AuthenticationRequirementPolicies** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "AuthenticationRequirementPolicies",
+            "ChangeType": "Addition",
+            "Description": "Added the **AuthenticationRequirementPolicies** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "CrossTenantAccessType",
+            "ChangeType": "Addition",
+            "Description": "Added the **CrossTenantAccessType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "FlaggedForReview",
+            "ChangeType": "Addition",
+            "Description": "Added the **FlaggedForReview** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "HomeTenantId",
+            "ChangeType": "Addition",
+            "Description": "Added the **HomeTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "ipAddressFromResourceProvider",
+            "ChangeType": "Addition",
+            "Description": "Added the **ipAddressFromResourceProvider** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "resourceTenantId ",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "signInEventTypes",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInEventTypes** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "signInIdentifier",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "userType",
+            "ChangeType": "Addition",
+            "Description": "Added the **userType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
             "ApiChange": "Enum type",
             "ChangedApiName": "signInUserType",
             "ChangeType": "Addition",
@@ -73,6 +177,22 @@
               "ChangeType": "Addition",
               "Description": "Added the [privateLinkDetails](https://docs.microsoft.com/en-us/graph/api/resources/privateLinkDetails?view=graph-rest-beta) resource type.",
               "Target": "privateLinkDetails"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authenticationRequirementPolicy",
+            "ChangeType": "Addition",
+            "Description": "Added the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta) resource type.",
+            "Target": "authenticationRequirementPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "conditionalAccessRulesSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the [conditionalAccessRulesSatisfied](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRulesSatisfied?view=graph-rest-beta) resource type.",
+            "Target": "conditionalAccessRulesSatisfied"
           },
           {
               "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
