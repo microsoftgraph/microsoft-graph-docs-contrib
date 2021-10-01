@@ -49,6 +49,7 @@ The following table shows the properties that are required when you update the [
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the attribute set.|
+|id|String|**TODO: Add Description**|
 |maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set.|
 
 
