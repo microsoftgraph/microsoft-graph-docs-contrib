@@ -14,13 +14,6 @@ Namespace: microsoft.graph
 
 Represents the policy scope of the Azure Active Directory tenant that controls the ability for users and groups to register device identities to your organization using Azure AD Join.
 
-## Methods
-
-| Method | Return Type | Description |
-| --- | --- | --- |
-| [Get deviceRegistrationPolicy](../api/deviceregistrationpolicy-get.md) | [azureAdJoinPolicy resource type](azureadjoinpolicy.md) | Read the properties of a **deviceRegistrationPolicy** object. |
-| [Update deviceRegistrationPolicy](../api/deviceregistrationpolicy-update.md) | [azureAdJoinPolicy resource type](azureadjoinpolicy.md) | Update the properties of a **deviceRegistrationPolicy** object. |
-
 ## Properties
 
 |Property|Type|Description|
