@@ -33,10 +33,6 @@ Represents the policy scope that controls quota restrictions, additional authent
 |multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`,`unknownFutureValue`. The default value is `notRequired`. |
 |userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property is not specified during the policy update operation, it is automatically reset to `0` to indicate that users are not allowed to join any devices. |
 
-* The default value of `multiFactorAuthConfiguration` is **`notRequired`** at the time of policy creation.
-* `multiFactorAuthConfiguration` resets to **`notRequired`** if not used in update of policy.
-* The default value of `userDeviceQuote` is set to **`50`** at the time of policy creation.
-* `userDeviceQuote` resets to **`0`** if not used in update of policy. This indicates no devices are allowed to join per user.
 
 ## Relationships
 
