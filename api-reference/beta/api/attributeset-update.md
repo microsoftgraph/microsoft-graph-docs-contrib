@@ -48,8 +48,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A short description of the attribute set.|
-|maxAttributesPerSet|Int32|Maximum number of custom security attributes for the attribute set.|
+|description|String|Description of the attribute set.|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set.|
 
 
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 Content-length: 119
 
 {
-    "description":"Attribute for engineering team",
+    "description":"Attributes for engineering team",
     "maxAttributesPerSet":20
 }
 ```
