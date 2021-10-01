@@ -14130,6 +14130,8 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get messages across all chats
           href: api/chats-getallmessages.md
         - name: List hosted content
