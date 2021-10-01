@@ -20,10 +20,10 @@ Registration information of an online meeting.
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[Create](meetingRegistration-create.md) | [meetingRegistration](meetingRegistration.md) | Create and enable registration for an online meeting. |
-|[Get](meetingRegistration-get.md) | [meetingRegistration](meetingRegistration.md) | Retrieve the details of a meeting registration. |
-|[Update](meetingRegistration-update.md) | [meetingRegistration](meetingRegistration.md) | Update the details of a meeting registration. |
-|[Delete](meetingRegistration-delete.md) | [meetingRegistration](meetingRegistration.md) | Delete and disable registration for an online meeting. |
+|[Create registration](meetingRegistration-create.md) | [meetingRegistration](meetingRegistration.md) | Create and enable registration for an online meeting. |
+|[Get registration](meetingRegistration-get.md) | [meetingRegistration](meetingRegistration.md) | Retrieve the details of a meeting registration. |
+|[Update registration](meetingRegistration-update.md) | [meetingRegistration](meetingRegistration.md) | Update the details of a meeting registration. |
+|[Delete registration](meetingRegistration-delete.md) | [meetingRegistration](meetingRegistration.md) | Delete and disable registration for an online meeting. |
 
 ## Properties
 

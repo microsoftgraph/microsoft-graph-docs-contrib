@@ -20,10 +20,9 @@ Speaker of an online meeting that has registration enabled.
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[Create](meetingRegistrant-create.md) | [meetingRegistrant](meetingRegistrant.md) | Create and enable registration for an online meeting. |
-|[Get](meetingRegistrant-get.md) | [meetingRegistrant](meetingRegistrant.md) | Retrieve the details of a meeting registration. |
-|[Update](meetingRegistrant-update.md) | [meetingRegistrant](meetingRegistrant.md) | Update the details of a meeting registration. |
-|[Delete](meetingRegistrant-delete.md) | [meetingRegistrant](meetingRegistrant.md) | Delete and disable registration for an online meeting. |
+|[List registrants](../api/meetingRegistrant-list.md) | [meetingRegistrant](meetingRegistrant.md) | List all registrants who have registered for the meeting. |
+|[Add registrant](../api/meetingRegistrant-create.md) | [meetingRegistrant](meetingRegistrant.md) | Register a participant for an online meeting. |
+|[Delete registrant](../api/meetingRegistrant-delete.md) | [meetingRegistrant](meetingRegistrant.md) | Remove a registrant from an online meeting. |
 
 ## Properties
 
@@ -36,7 +35,7 @@ Speaker of an online meeting that has registration enabled.
 | joinWebUrl | String | Unique web URL for the registrant to join the meeting. |
 | lastName | String | Last name of the registrant. |
 | registrationDateTime | String | Time when the registrant is registered in UTC. |
-| status | [meetingRegistrantStatus](#meetingRegistrantStatus-values) | Registration status of the registrant. |
+| status | [meetingRegistrantStatus](#meetingRegistrantstatus-values) | Registration status of the registrant. |
 
 ### meetingRegistrantStatus values
 
