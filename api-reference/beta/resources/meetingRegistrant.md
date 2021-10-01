@@ -35,7 +35,7 @@ Speaker of an online meeting that has registration enabled.
 | joinWebUrl | String | Unique web URL for the registrant to join the meeting. |
 | lastName | String | Last name of the registrant. |
 | registrationDateTime | String | Time when the registrant is registered in UTC. |
-| status | [meetingRegistrantStatus](#meetingRegistrantstatus-values) | Registration status of the registrant. |
+| status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | Registration status of the registrant. |
 
 ### meetingRegistrantStatus values
 

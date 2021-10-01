@@ -8,7 +8,7 @@ ms.date: 09/30/2021
 doc_type: apiPageType
 ---
 
-# List meeting registrants
+# Delete meeting registrants
 
 Namespace: microsoft.graph
 
