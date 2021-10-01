@@ -2,6 +2,41 @@
   "changelog": [
     {
       "ChangeList": [
+
+       {
+         "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+         "ApiChange": "Property",
+         "ChangedApiName": "defaultRedirectUri",
+         "ChangeType": "Addition",
+         "Description": "Added the **defaultRedirectUri** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+         "Target": "application"
+       },
+       {
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+        "ApiChange": "Resource",
+        "ChangedApiName": "redirectUriSettings",
+        "ChangeType": "Addition",
+        "Description": "Added the [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-beta) resource.",
+        "Target": "redirectUriSettings"
+       },
+       {
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+        "ApiChange": "Property",
+        "ChangedApiName": "redirectUriSettings",
+        "ChangeType": "Addition",
+        "Description": "Added the **redirectUriSettings** property to the [webapplication](https://docs.microsoft.com/en-us/graph/api/resources/webapplication?view=graph-rest-beta) resource.",
+        "Target": "webApplication"
+      }
+      ],
+      "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-30T05:30:27Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+      },
+      {
+      "ChangeList": [
       {
         "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
         "ApiChange": "Method",
