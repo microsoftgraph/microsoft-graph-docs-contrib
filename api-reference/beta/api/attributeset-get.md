@@ -91,8 +91,7 @@ Content-Type: application/json
             "description": "Attributes for operations team",
             "id": "Operations",
             "maxAttributesPerSet": 25
-        },
-        ...
+        }
     ]
 }
 ```
@@ -137,8 +136,7 @@ Content-Type: application/json
             "description": "Attributes for operations team",
             "id": "Operations",
             "maxAttributesPerSet": 25
-        },
-        ...
+        }
     ]
 }
 ```
@@ -182,8 +180,7 @@ Content-Type: application/json
             "description": "Attributes for engineering team",
             "id": "Engineering",
             "maxAttributesPerSet": 25
-        },
-        ...
+        }
     ]
 }
 ```
