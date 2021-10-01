@@ -1,5 +1,5 @@
 ---
-title: "userFlow resource type (deprecated)"
+title: "identityUserFlow resource type (deprecated)"
 description: "Identity user flows are built-in authentication journeys"
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
-# userFlow resource type
+# identityUserFlow resource type
 
 Namespace: microsoft.graph
 
