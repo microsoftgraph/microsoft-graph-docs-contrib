@@ -10711,34 +10711,34 @@ items:
           - name: Custom security attribute definitions
             href: resources/customsecurityattributedefinition.md
             items:
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
             - name: List
               href: api/directory-list-customsecurityattributedefinitions.md
             - name: Create
               href: api/directory-post-customsecurityattributedefinitions.md
-            - name: Get
-              href: api/customsecurityattributedefinition-get.md
             - name: Update
               href: api/customsecurityattributedefinition-update.md
           - name: Attribute sets
             href: resources/attributeset.md
             items:
+            - name: Get
+              href: api/attributeset-get.md
             - name: List
               href: api/directory-list-attributesets.md
             - name: Create
               href: api/directory-post-attributesets.md
-            - name: Get
-              href: api/attributeset-get.md
             - name: Update
               href: api/attributeset-update.md
           - name: Allowed values
             href: resources/allowedvalue.md
             items:
+            - name: Get
+              href: api/allowedvalue-get.md
             - name: List
               href: api/customsecurityattributedefinition-list-allowedvalues.md
             - name: Create
               href: api/customsecurityattributedefinition-post-allowedvalues.md
-            - name: Get
-              href: api/allowedvalue-get.md
             - name: Update
               href: api/allowedvalue-update.md
         - name: Deleted items
