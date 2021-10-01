@@ -48,15 +48,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeSet|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|isCollection|Boolean|**TODO: Add Description**|
-|isSearchable|Boolean|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
-|usePreDefinedValuesOnly|Boolean|**TODO: Add Description**|
+|attributeSet|String|Name of the attribute set.|
+|description|String|Description of the custom security attribute.|
+|id|String|ID of the custom security attribute, which a combination of the attribute set name and attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
+|isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute.|
+|isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that will assigned attribute values.|
+|name|String|Name of the custom security attribute.|
+|status|String|Specifies whether the custom security attribute is active or has been deactivated (Available or Deprecated). |
+|type|String|Data type for the custom security attribute values (Boolean, Integer, or String).|
+|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute.|
 
 
 
@@ -66,10 +66,14 @@ If successful, this method returns a `201 Created` response code and a [customSe
 
 ## Examples
 
-### Request
+### Example: Add a new custom security attribute
+
+The following example adds a new custom security attribute named ProjectDate to the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "create_customsecurityattributedefinition_from_"
+  "name": "create_customsecurityattributedefinition"
 }
 -->
 ``` http
@@ -78,41 +82,41 @@ Content-Type: application/json
 Content-length: 310
 
 {
-  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-  "attributeSet": "String",
-  "description": "String",
-  "isCollection": "Boolean",
-  "isSearchable": "Boolean",
-  "name": "String",
-  "status": "String",
-  "type": "String",
-  "usePreDefinedValuesOnly": "Boolean"
+    "attributeSet":"Engineering",
+    "description":"Target completion date",
+    "isCollection":false,
+    "isSearchable":true,
+    "name":"ProjectDate",
+    "status":"Available",
+    "type":"String",
+    "usePreDefinedValuesOnly": false
 }
 ```
 
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+  "truncated": false,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
+  "name": "create_customsecurityattributedefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-  "attributeSet": "String",
-  "description": "String",
-  "id": "7d3ae811-e811-7d3a-11e8-3a7d11e83a7d",
-  "isCollection": "Boolean",
-  "isSearchable": "Boolean",
-  "name": "String",
-  "status": "String",
-  "type": "String",
-  "usePreDefinedValuesOnly": "Boolean"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Target completion date",
+    "id": "Engineering_ProjectDate",
+    "isCollection": false,
+    "isSearchable": true,
+    "name": "ProjectDate",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": false,
+    "advancedOptions": []
 }
 ```
