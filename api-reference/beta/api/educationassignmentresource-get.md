@@ -43,6 +43,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
+## Examples
 ### Example 1: educationWordResource
 #### Request
 The following is an example of the request.

@@ -1,6 +1,6 @@
 ---
 title: "Get educationSubmissionResource"
-description: "Retrieves the properties of a specific resource associated with the submission."
+description: "Retrieve the properties of a specific resource associated with the submission."
 author: "dipakboyed"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves the properties of a specific resource associated with the [submission](../resources/educationsubmissionresource.md).
+Retrieve the properties of a specific resource associated with the [submission](../resources/educationsubmissionresource.md).
 
 This resource is in the "working" resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
@@ -44,6 +44,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
 
+## Examples
 ### Example 1: educationWordResource
 #### Request
 The following is an example of the request.

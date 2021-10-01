@@ -47,6 +47,7 @@ In the request body, supply a JSON representation of the resource object. It can
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
+## Examples
 ### Example 1: educationLinkResource
 #### Request
 The following is an example of the request.
