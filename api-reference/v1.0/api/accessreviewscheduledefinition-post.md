@@ -200,7 +200,8 @@ Content-type: application/json
       }
     },
   "applyActions": []
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -384,7 +385,8 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.removeAccessApplyAction"
       }
     ]
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -551,7 +553,8 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
