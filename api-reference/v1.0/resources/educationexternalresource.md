@@ -1,6 +1,6 @@
 ---
 title: "educationExternalResource resource type"
-description: "A subclass of educationResource. This is a resource which is not exposed to Graph callers yet."
+description: "A subclass of educationResource. This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subclass of [educationResource](educationresource.md). This is a resource which is not exposed to Graph callers yet.
+A subclass of [educationResource](educationresource.md). This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly.
 
-An educationResource cannot be added, updated or deleted with this resource type. 
+An educationResource can't be added, updated or deleted with this resource type.  
 
 ## Properties
 | Property	   | Type	|Description|

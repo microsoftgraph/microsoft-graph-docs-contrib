@@ -1,6 +1,6 @@
 ---
 title: "educationMediaResource resource type"
-description: "A subclass of educationResource. This is a media file resource."
+description: "Represents a media file resource for an educationAssignment. Inherits from educationResource"
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -11,8 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subclass of [educationResource](educationresource.md). This is a media file resource. 
-The file must be uploaded in the **fileResource** directory associated with the assignment or submission.
+Represents a media file resource for an educationAssignment. Inherits from [educationResource](educationresource.md).
+
+Upload these files to the **fileResource** directory associated with the assignment or submission.
 
 > The file types considered Media resources are `webm`, `mkv`, `avi`, `wmv`, `mp4`, `m4v`, `mpg`, `mpeg`, `m2v`, `jpg`, `png`, `gif`, `bmp`, `heic`, `jpeg`, `psd`, `mp3` and `m4a`.
 
