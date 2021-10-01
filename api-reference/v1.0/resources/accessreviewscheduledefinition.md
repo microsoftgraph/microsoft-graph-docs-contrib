@@ -92,6 +92,10 @@ The following is a JSON representation of the resource.
   "settings": {
     "@odata.type": "microsoft.graph.accessReviewScheduleSettings"
   },
-  "additionalNotificationRecipients": "microsoft.graph.accessReviewNotificationRecipientItem"
+  "additionalNotificationRecipients": [
+    {
+        "@odata.type": "microsoft.graph.accessReviewNotificationRecipientItem"
+    }
+  ]
 }
 ```
