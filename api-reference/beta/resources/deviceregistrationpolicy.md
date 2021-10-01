@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Azure Active Directory tenant that control quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## Methods
 
