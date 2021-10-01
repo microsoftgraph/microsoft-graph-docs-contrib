@@ -49,7 +49,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
 |  [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
 
-## Evaluation Mode (default) requirements
+## Evaluation mode (default) requirements
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
