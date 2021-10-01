@@ -29,8 +29,7 @@ Change notifications will not be sent if the limit is exceeded.
 
 ## `model=A` requirements
 
-`model=A` is restricted to applications performing a security or compliance function, 
-see the API Terms for Security & Compliance Applications section 
+`model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms).
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
@@ -64,7 +63,7 @@ In evaluation mode, seeded capacity is shared across all APIs.
 When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, 
 and subscriptions with licensing and payment requirements will not send change notifications.
 
-> *Note*: A successful API call does not mean that the proper licensing is in place. 
+> **Note**: A successful API call does not mean that the proper licensing is in place. 
 > Not all license violations can be detected, and grace periods might be granted in some cases.
 
 ## Required licenses for `model=A` 
@@ -80,7 +79,7 @@ Consumption meters still apply.
 
 It is the responsibility of the tenant owner (not the app owner) to ensure users are properly licensed.
 Admins can use the Information protection license report in 
-[Teams Admin Center](https://admin.teams.microsoft.com/analytics/reports) 
+[Teams admin center](https://admin.teams.microsoft.com/analytics/reports) 
 to see which users don't have a supported license.
 
 Many supported licenses offer free trials. 
@@ -98,7 +97,7 @@ For change notifications, messages sent by unlicensed users will not generate a 
 Similarly, API calls and change notifications used in evaluation mode 
 in excess of the seeded capacity will fail.
 
-> *Note*: A successful API call does not mean that the proper licensing is in place. 
+> **Note**: A successful API call does not mean that the proper licensing is in place. 
 > Not all license violations can be detected, and grace periods might be granted in some cases.
 > Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity
 > as grace periods may be granted in some cases.
