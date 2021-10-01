@@ -30,7 +30,7 @@ Change notifications will not be sent if the limit is exceeded.
 ## `model=A` requirements
 
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
-of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms).
+of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
