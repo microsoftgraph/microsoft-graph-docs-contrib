@@ -52,23 +52,27 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all attribute sets
+
+The following example gets all attribute sets in a tenant.
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "list_attributeset"
+  "name": "list_attributeset_all"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/directory/attributeSets
 ```
 
+#### Response
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.attributeSet)"
+  "name": "list_attributeset_all"
 }
 -->
 ``` http
@@ -76,13 +80,107 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.attributeSet",
-      "description": "String",
-      "id": "7faca33b-a33b-7fac-3ba3-ac7f3ba3ac7f",
-      "maxAttributesPerSet": "Integer"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/attributeSets",
+    "value": [
+        {
+            "description": "Attributes for engineering team",
+            "id": "Engineering",
+            "maxAttributesPerSet": 25
+        },
+        {
+            "description": "Attributes for operations team",
+            "id": "Operations",
+            "maxAttributesPerSet": 25
+        }
+    ]
+}
+```
+
+### Example 2: Get top attribute sets
+
+The following example gets the top 10 attribute sets with support for paging.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_attributeset_top"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
+  "name": "list_attributeset_top"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/attributeSets",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/directory/attributeSets?$top=10&$skiptoken={skiptoken}",
+    "value": [
+        {
+            "description": "Attributes for engineering team",
+            "id": "Engineering",
+            "maxAttributesPerSet": 25
+        },
+        {
+            "description": "Attributes for operations team",
+            "id": "Operations",
+            "maxAttributesPerSet": 25
+        }
+    ]
+}
+```
+
+### Example 3: Get attribute sets in order
+
+The following example gets attribute sets ordered by id.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_attributeset_orderby"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
+  "name": "list_attributeset_orderby"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/attributeSets",
+    "value": [
+        {
+            "description": "Attributes for applications",
+            "id": "Application",
+            "maxAttributesPerSet": 25
+        },
+        {
+            "description": "Attributes for engineering team",
+            "id": "Engineering",
+            "maxAttributesPerSet": 25
+        }
+    ]
 }
 ```
