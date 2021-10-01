@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet"
+  "@odata.type": "microsoft.graph.attributeSet",
   "name": "get_attributeset_all"
 }
 -->
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet"
+  "@odata.type": "microsoft.graph.attributeSet",
   "name": "get_attributeset_top"
 }
 -->
@@ -162,8 +162,8 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet"
-  "name": "get_attributeset_order"
+  "@odata.type": "microsoft.graph.attributeSet",
+  "name": "get_attributeset_orderby"
 }
 -->
 ``` http
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet"
+  "@odata.type": "microsoft.graph.attributeSet",
   "name": "get_attributeset_single"
 }
 -->
