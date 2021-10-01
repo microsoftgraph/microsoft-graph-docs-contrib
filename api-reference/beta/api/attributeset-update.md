@@ -48,53 +48,47 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|maxAttributesPerSet|Int32|**TODO: Add Description**|
+|description|String|A short description of the attribute set.|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes for the attribute set.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [attributeSet](../resources/attributeset.md) object in the response body.
+If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Request
+### Example: Update an attribute set
+
+The following example updates the description and the maximum number of attributes for the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_attributeset"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/attributeSets/{attributeSetId}
+PATCH https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 Content-Type: application/json
 Content-length: 119
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+    "description":"Attribute for engineering team",
+    "maxAttributesPerSet":20
 }
 ```
 
+#### Response
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.attributeSet",
-  "truncated": true
+  "truncated": true,
+  "name": "update_attributeset"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "id": "7faca33b-a33b-7fac-3ba3-ac7f3ba3ac7f",
-  "maxAttributesPerSet": "Integer"
-}
 ```
