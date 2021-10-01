@@ -27,7 +27,7 @@ Represents the policy scope that controls quota restrictions, additional authent
 |:---|:---|:---|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
-|description|String|Description at the time of policy creation. Read-only.|
+|description|String|The description of the device registration policy. It is always set to `Device Registration Policy`. Read-only.|
 |displayName|String|Name at the time of policy creation. Read-only.|
 |id|String| Identifier of the policy at the time of policy creation. Read-only.|
 |multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`,`unknownFutureValue`.|
