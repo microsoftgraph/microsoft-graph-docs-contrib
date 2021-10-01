@@ -52,7 +52,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example: Get all custom security attributes
+
+The following example gets all custom security attributes in a tenant.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "list_customsecurityattributedefinition"
@@ -63,12 +67,12 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)"
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
+  "name": "list_customsecurityattributedefinition"
 }
 -->
 ``` http
@@ -76,19 +80,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-      "attributeSet": "String",
-      "description": "String",
-      "id": "7d3ae811-e811-7d3a-11e8-3a7d11e83a7d",
-      "isCollection": "Boolean",
-      "isSearchable": "Boolean",
-      "name": "String",
-      "status": "String",
-      "type": "String",
-      "usePreDefinedValuesOnly": "Boolean"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions",
+    "value": [
+        {
+            "attributeSet": "Engineering",
+            "description": "Active projects for user",
+            "id": "Engineering_Project",
+            "isCollection": true,
+            "isSearchable": true,
+            "name": "Project",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        },
+        {
+            "attributeSet": "Engineering",
+            "description": "Target completion date",
+            "id": "Engineering_ProjectDate",
+            "isCollection": false,
+            "isSearchable": true,
+            "name": "ProjectDate",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": false,
+            "advancedOptions": []
+        },
+        {
+            "attributeSet": "Operations",
+            "description": "Target completion date",
+            "id": "Operations_Level",
+            "isCollection": false,
+            "isSearchable": true,
+            "name": "Deployment level",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        }
+    ]
 }
 ```
