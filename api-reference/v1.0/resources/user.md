@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure Active Directory (Azure AD) user account. Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 
@@ -537,7 +537,6 @@ Here is a JSON representation of the resource
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
-
 ```
 
 ## See also
