@@ -90,7 +90,6 @@ Content-length: 298
 #### Response
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
   "truncated": true,
   "name": "update_customsecurityattributedefinition"
 }
