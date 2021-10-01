@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->**Note:**: For delegated permissions to allow apps to update deviceRegistrationPolicy on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles:
+When calling on behalf of a user, the user needs to belong to the following directory roles:
 * Global administrator
 * Cloud device administrator
 
