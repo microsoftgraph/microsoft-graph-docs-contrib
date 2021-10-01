@@ -1,6 +1,6 @@
 ---
-title: "List meeting registrants"
-description: "List meeting registrants."
+title: "Delete meeting registrants"
+description: "Delete meeting registrants."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,4 +14,4 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List registrants of an [onlineMeeting](../resources/onlinemeeting.md).
+Delete registrants from an [onlineMeeting](../resources/onlinemeeting.md).
