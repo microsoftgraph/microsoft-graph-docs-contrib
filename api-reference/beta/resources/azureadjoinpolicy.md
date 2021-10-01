@@ -18,10 +18,10 @@ Represents the policy scope of the Azure Active Directory tenant that controls t
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedGroups|String collection|Group IDs in scope of policy. Required when used with the `selected` value in the `appliesTo` property.|
-|allowedUsers|String collection|User IDs in scope of policy. Required when used with the `selected` value in the `appliesTo` property.|
-|appliesTo|policyScope|Specifies whether to block, allow or fine-grained control of the policy scope. Possible values are: `none`, `all`, `selected`, `unknownFutureValue`. Required.|
-|isAdminConfigurable|Boolean|Specifies whether this `policyScope` is configurable by the admin. Read-only.|
+|allowedGroups|String collection|The identifiers of the groups that are in the scope of the policy. Required when the **appliesTo** property is set to `selected`. |
+|allowedUsers|String collection|The identifiers of users that are in the scope of the policy. Required when the **appliesTo** property is set to `selected`.|
+|appliesTo|policyScope|Specifies whether to block or allow fine-grained control of the policy scope. Possible values are: `none`, `all`, `selected`, `unknownFutureValue`. The default value is `0`. When set to `2`, at least one user or group identifier must be specified in either **allowedUsers** or **allowedGroups**.  Setting this property to `0` or `1` removes all identifiers in both **allowedUsers** and **allowedGroups**.|
+|isAdminConfigurable|Boolean|Specifies whether this policy scope is configurable by the admin. The default value is `false`.|
 
 * The default value is **`all`** at time of policy creation.
 * You must have at least one **`allowedGroup`** or **`allowedUser`** when using **`selected`**.
