@@ -52,23 +52,27 @@ If successful, this method returns a `200 OK` response code and a [customSecurit
 
 ## Examples
 
-### Request
+### Example: Get a single custom security attribute
+
+The following example gets a single custom security attribute named ProjectDate in the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_customsecurityattributedefinition"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}
+GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_ProjectDate
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
+  "name": "get_customsecurityattributedefinition"
 }
 -->
 ``` http
@@ -76,17 +80,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.customSecurityAttributeDefinition",
-    "attributeSet": "String",
-    "description": "String",
-    "id": "7d3ae811-e811-7d3a-11e8-3a7d11e83a7d",
-    "isCollection": "Boolean",
-    "isSearchable": "Boolean",
-    "name": "String",
-    "status": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Target completion date",
+    "id": "Engineering_ProjectDate",
+    "isCollection": false,
+    "isSearchable": true,
+    "name": "ProjectDate",
+    "status": "Available",
     "type": "String",
-    "usePreDefinedValuesOnly": "Boolean"
-  }
+    "usePreDefinedValuesOnly": false,
+    "advancedOptions": []
 }
 ```
