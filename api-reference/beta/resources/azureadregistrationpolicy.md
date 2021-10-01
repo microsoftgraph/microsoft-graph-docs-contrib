@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Azure Active Directory tenant that controls the ability for users and groups to register device identities to your organization using Azure AD registered.
+Represents the policy scope of the Azure Active Directory tenant that controls the ability for users and groups to register device identities to your organization using **Azure AD registered**. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).
 
 ## Methods
 
