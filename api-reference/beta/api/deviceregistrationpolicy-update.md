@@ -53,8 +53,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. Required.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. Required.|
+|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. |
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. |
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
 
