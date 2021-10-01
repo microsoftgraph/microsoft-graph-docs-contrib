@@ -1,6 +1,6 @@
 ---
 title: "azureADRegistrationPolicy resource type"
-description: "Represents the policy scope of an Active Directory tenant that controls device registration using Azure AD registration."
+description: "Represents the policy scope of an Active Directory tenant that controls device registration using Azure AD registered."
 author: "spunukol"
 localization_priority: Normal
 ms.prod: "directory-management"
