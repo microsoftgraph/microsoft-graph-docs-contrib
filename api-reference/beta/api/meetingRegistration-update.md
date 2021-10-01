@@ -46,8 +46,8 @@ In the request body, supply only the value of properties that need to be updated
 
 > [!TIP]
 >
->- All properties can be updated except **allowedRegistrant**.
->- However, you cannot update **customQuestions** in line. Use [update custom question](meetingRegistration-get.md) method to update **customQuestions**.
+>- All non-read-only properties can be updated except **allowedRegistrant**.
+>- Navigation property **customQuestions** cannot be updated in line. Use [update custom question](meetingRegistration-get.md) method to update it.
 >- When updating **speakers**, always supply a full list of speakers.
 
 ## Response
@@ -96,22 +96,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetafrpeng-dev/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration(customQuestions())/$entity",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E",
+  "registrationPageWebUrl": "https://teams.microsoft.com/registration/gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E?mode=read&tenantId=eefc0b3a-a334-4fb7-ac60-2f1cf13ec00d",
   "allowedRegistrant": "everyone",
-  "subject": " Microsoft Ignite",
+  "subject": "Microsoft Ignite: Day 1",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime": "2021-11-02T08:00:00Z",
-  "endDateTime": "2021-11-02T04:00:00Z",
+  "endDateTime": "2021-11-02T15:45:00Z",
+  "registrationPageViewCount": null,
   "speakers": [
     {
       "displayName": "Satya Nadella",
       "bio": "Chairman and Chief Executive Officer, Microsoft"
     },
     {
-      "displayName": "Scott Guthrie",
-      "bio": "EVP, Cloud and AI Group, Microsoft"
+      "displayName": "Vasu Jakkal",
+      "bio": "CVP, Microsoft Security, Compliance & Identity, Microsoft"
     }
-  ],
+  ]
 }
 ```

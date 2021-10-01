@@ -50,7 +50,9 @@ In the request body, supply a JSON representation of a [meetingRegistration](../
 If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
 
 > [!TIP]
-> **customQuestions** is a related resource that can only be created, but not returned in line. Use [Get registration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve **customQuestions**.
+>
+>- **registrationPageViewCount** is not returned in the response body of this method. Use [Get registration](meetingRegistration-get.md) method to retrieve it.
+>- **customQuestions** is a related resource that can only be created, but not returned in line. Use [Get registration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve it.
 
 ## Example
 
@@ -109,13 +111,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetafrpeng-dev/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
-  "id": "gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
+  "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,2Hui7cZ3e0m1BblvyhKFaw,Bcn5itxWh0ui5zRxG26Akw,XCvoVSOmK0e9fivLeKuR_w",
+  "registrationPageWebUrl": "https://teams.microsoft.com/registration/gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E?mode=read&tenantId=eefc0b3a-a334-4fb7-ac60-2f1cf13ec00d",
   "allowedRegistrant": "everyone",
-  "subject": " Microsoft Ignite",
+  "subject": "Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime": "2021-11-02T08:00:00Z",
-  "endDateTime": "2021-11-02T04:00:00Z",
+  "endDateTime": "2021-11-04T04:00:00Z",
+  "registrationPageViewCount": null,
   "speakers": [
     {
       "displayName": "Satya Nadella",
