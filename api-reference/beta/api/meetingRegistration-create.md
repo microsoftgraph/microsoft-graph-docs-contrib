@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md).
+Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md). One online meeting can only have one registration enabled.
 
 ## Permissions
 
@@ -22,19 +22,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
-| Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite |
+| Delegated (work or school account) | OnlineMeetings.ReadWrite |
 | Delegated (personal Microsoft account) | Not Supported. |
-| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
-
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create meeting registration on behalf of that user (with user ID specified in the request path).
+| Application | Not Supported. |
 
 ## HTTP request
 
-To creaate registration for an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
+To enable registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration
-POST /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
 ## Request headers
@@ -50,7 +47,10 @@ In the request body, supply a JSON representation of a [meetingRegistration](../
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
+If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
+
+> [!TIP]
+> **customQuestions** is a related resource that can only be created, but not returned in line. Use [Get registration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve **customQuestions**.
 
 ## Example
 
@@ -71,7 +71,7 @@ Content-Type: application/json
   "startDateTime":"2021-11-02T08:00:00Z",
   "endDateTime":"2021-11-02T04:00:00Z",
   "allowedRegistrant": "everyone",
-  "speakers: [
+  "speakers": [
     {
       "displayName": "Satya Nadella",
       "bio": "Chairman and Chief Executive Officer, Microsoft"
@@ -110,13 +110,13 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://canary.graph.microsoft.com/testprodbetafrpeng-dev/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
-  "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280A",
+  "id": "gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E",
   "allowedRegistrant": "everyone",
   "subject": " Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime": "2021-11-02T08:00:00Z",
   "endDateTime": "2021-11-02T04:00:00Z",
-  "speakers: [
+  "speakers": [
     {
       "displayName": "Satya Nadella",
       "bio": "Chairman and Chief Executive Officer, Microsoft"
@@ -125,6 +125,6 @@ Content-Type: application/json
       "displayName": "Scott Guthrie",
       "bio": "EVP, Cloud and AI Group, Microsoft"
     }
-  ],
+  ]
 }
 ```

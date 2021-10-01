@@ -30,10 +30,8 @@ Registration information of an online meeting.
 | Property | Type | Description |
 | :------- | :--- | :---------- |
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specify who can register for the meeting. |
-| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) colletion | The custom registration questions. |
 | description | String | The description of the meeting registration. |
 | endDateTime | DateTime | The meeting end time in UTC. Default is the same as meeting end time. |
-| registrants | [meetingRegistrant](meetingRegistrant.md) colletion | The registrants of the meeting. |
 | registrationPageViewCount | Int32 | Indicate how mant times the registration page has been visited. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
 | speakers | [meetingSpeaker](meetingSpeaker.md) colletion | The speakers information of the meeting. |
@@ -48,6 +46,12 @@ Registration information of an online meeting.
 | organization       | Everyone in organizer’s organization can register for the meeting. |
 | unknownFutureValue | Unknown future value. |
 
+## Relationships
+
+| Relationship | Type | Description |
+| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| The custom registration questions. Navigation property. |
+| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Participants who have registered for the online meeting. Navigation property. |
+
 ## JSON representation
 
 <!-- {
@@ -57,15 +61,16 @@ Registration information of an online meeting.
 
 ```json
 {
-    "allowedRegistrant": {"@odata.type": "microsoft.graph.meetingAudience"},
-    "customQuestions": [{"@odata.type": "microsoft.graph.meetingRegistrationQuestion"}],
+    "allowedRegistrant": { "@odata.type": "microsoft.graph.meetingAudience" },
     "description": "String",
     "endDateTime": "String (timestamp)",
-    "registrants": [{"@odata.type": "microsoft.graph.meetingRegistrant"}],
     "registrationPageViewCount": "Int32",
     "registrationPageWebUrl": "String",
-    "speakers": [{"@odata.type": "microsoft.graph.meetingSpeaker"}],
+    "speakers": [{ "@odata.type": "microsoft.graph.meetingSpeaker" }],
     "startDateTime": "String (timestamp)",
     "subject": "String",
+
+    "customQuestions": [{ "@odata.type": "microsoft.graph.meetingRegistrationQuestion" }],
+    "registrants": [{ "@odata.type": "microsoft.graph.meetingRegistrant" }],
 }
 ```
