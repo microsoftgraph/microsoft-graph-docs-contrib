@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.incident",
-    "id": 2972395,
+    "id": "2972395",
     "incidentWebUrl": "https://security.microsoft.com/incidents/2972395?tid=12f988bf-16f1-11af-11ab-1d7cd011db47",
     "redirectIncidentId": null,
     "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
