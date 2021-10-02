@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrength resource type"
 description: "The custom authentication strength enforced in a Conditional Access policy"
-author: "besiler**"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
