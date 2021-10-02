@@ -48,9 +48,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
+|description|String|Description of the attribute set.|
 |id|String|**TODO: Add Description**|
-|maxAttributesPerSet|Int32|**TODO: Add Description**|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set.|
 
 
 
@@ -60,10 +60,14 @@ If successful, this method returns a `201 Created` response code and an [attribu
 
 ## Examples
 
+### Example 1: Add a new attribute set
+
+The following example adds a new attribute set named Engineering.
+
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_attributeset_from_"
+  "name": "create_attributeset"
 }
 -->
 ``` http
@@ -72,19 +76,19 @@ Content-Type: application/json
 Content-length: 131
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "maxAttributesPerSet": "Integer"
+    "id":"Engineering",
+    "description":"Attributes for engineering team",
+    "maxAttributesPerSet":25
 }
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet"
+  "@odata.type": "microsoft.graph.attributeSet",
+  "name": "create_attributeset"
 }
 -->
 ``` http
@@ -92,9 +96,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.attributeSet",
-  "description": "String",
-  "id": "7faca33b-a33b-7fac-3ba3-ac7f3ba3ac7f",
-  "maxAttributesPerSet": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/attributeSets/$entity",
+    "description": "Attributes for engineering team",
+    "id": "Engineering",
+    "maxAttributesPerSet": 25
 }
 ```
