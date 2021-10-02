@@ -84,4 +84,4 @@ Looking for the API reference for this service?
 - Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
-- Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.
+- Explore [samples](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples) for more ideas about how to use Microsoft Graph.
