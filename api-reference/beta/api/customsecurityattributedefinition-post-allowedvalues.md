@@ -59,30 +59,34 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ## Examples
 
-### Request
+### Example: Add a predefined value
+
+The following example add a predefined value to the Project attribute in the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "create_allowedvalue_from_"
+  "name": "create_allowedvalue"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues
 Content-Type: application/json
 Content-length: 92
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "isActive": "Boolean"
+    "id":"Alpine",
+    "isActive":"true"
 }
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.allowedValue"
+  "@odata.type": "microsoft.graph.allowedValue",
+  "name": "create_allowedvalue"
 }
 -->
 ``` http
@@ -90,8 +94,8 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
-  "isActive": "Boolean"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions('Engineering_Project')/allowedValues/$entity",
+    "id": "Alpine",
+    "isActive": true
 }
 ```
