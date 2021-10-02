@@ -66,9 +66,9 @@ If successful, this method returns a `201 Created` response code and a [customSe
 
 ## Examples
 
-### Example: Add a new custom security attribute
+### Example 1: Add a new custom security attribute
 
-The following example adds a new custom security attribute named ProjectDate to the Engineering attribute set.
+The following example adds a new custom security attribute named ProjectDate to the Engineering attribute set. ProjectDate is a single free-form value of type string.
 
 #### Request
 <!-- {
@@ -117,6 +117,61 @@ Content-Type: application/json
     "status": "Available",
     "type": "String",
     "usePreDefinedValuesOnly": false,
+    "advancedOptions": []
+}
+```
+
+### Example 2: Add a new custom security attribute
+
+The following example adds a new custom security attribute named Project to the Engineering attribute set. Project is a supports multiple values of type string that are predefined.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_customsecurityattributedefinition_v2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+Content-length: 310
+
+{
+    "attributeSet":"Engineering",
+    "description":"Active projects for user",
+    "isCollection":true,
+    "isSearchable":true,
+    "name":"Project",
+    "status":"Available",
+    "type":"String",
+    "usePreDefinedValuesOnly": true
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
+  "name": "create_customsecurityattributedefinition_v2"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "id": "Engineering_Project",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
     "advancedOptions": []
 }
 ```
