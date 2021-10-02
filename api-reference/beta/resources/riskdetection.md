@@ -71,7 +71,6 @@ The following is a JSON representation of the resource.
  "id": "string",
     "requestId": "string",
     "correlationId": "string",
-    "riskType": {"@odata.type": "microsoft.graph.riskEventType"},
     "riskState": {"@odata.type": "microsoft.graph.riskState"},
     "riskLevel": {"@odata.type": "microsoft.graph.riskLevel"},
     "riskDetail": {"@odata.type": "microsoft.graph.riskDetail"},
