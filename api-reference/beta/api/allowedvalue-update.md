@@ -55,43 +55,39 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [allowedValue](../resources/allowedvalue.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example: Deactivate a predefined value
+
+The following example deactivates a predefined value named Alpine for a custom security attribute named Project in the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_allowedvalue"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 Content-Type: application/json
 Content-length: 80
 
 {
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "isActive": "Boolean"
+    "isActive": "false"
 }
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.allowedValue",
-  "truncated": true
+  "truncated": true,
+  "name": "update_allowedvalue"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.allowedValue",
-  "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
-  "isActive": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
