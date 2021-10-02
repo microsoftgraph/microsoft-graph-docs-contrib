@@ -2,7 +2,7 @@
 title: "List windowsFeatureUpdateProfiles"
 description: "List properties and relationships of the windowsFeatureUpdateProfile objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 658
 
 {
   "value": [
@@ -75,12 +75,12 @@ Content-Length: 594
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "deployableContentDisplayName": "Deployable Content Display Name value"
+      "deployableContentDisplayName": "Deployable Content Display Name value",
+      "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
     }
   ]
 }
 ```
-
 
 
 

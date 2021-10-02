@@ -2,7 +2,7 @@
 title: "List schools"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

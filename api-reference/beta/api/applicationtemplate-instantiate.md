@@ -1,7 +1,7 @@
 ---
 title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -111,51 +111,51 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-	  "accountEnabled": true,
-	  "addIns": [
-	    {
-	      "id": "id-value",
-	      "type": "type-value",
-	      "properties": [
-		{
-		  "key": "key-value",
-		  "value": "value-value"
-		}
-	      ]
-	    }
-	  ],
-	  "appDisplayName": "appDisplayName-value",
-	  "appId": "appId-value",
-	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-	  "appRoleAssignmentRequired": true
+   "servicePrincipal":{
+      "accountEnabled":true,
+      "addIns":[
+         {
+            "id":"id-value",
+            "type":"type-value",
+            "properties":[
+               {
+                  "key":"key-value",
+                  "value":"value-value"
+               }
+            ]
+         }
+      ],
+      "appDisplayName":"appDisplayName-value",
+      "appId":"appId-value",
+      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
+      "appRoleAssignmentRequired":true
    },
-   "application": {
-	  "api": {
-	    "acceptedAccessTokenVersion": 1,
-	    "publishedPermissionScopes": [
-	      {
-		"adminConsentDescription": "adminConsentDescription-value",
-		"adminConsentDisplayName": "adminConsentDisplayName-value",
-		"id": "id-value",
-		"isEnabled": true,
-		"type": "type-value",
-		"userConsentDescription": "userConsentDescription-value",
-		"userConsentDisplayName": "userConsentDisplayName-value",
-		"value": "value-value"
-	      }
-	    ]
-	  },
-	  "allowPublicClient": true,
-	  "applicationAliases": [
-	    "applicationAliases-value"
-	  ],
-	  "createdDateTime": "datetime-value",
-	  "installedClients": {
-	    "redirectUrls": [
-	      "redirectUrls-value"
-	    ]
-	  }
+   "application":{
+      "api":{
+         "acceptedAccessTokenVersion":1,
+         "publishedPermissionScopes":[
+            {
+               "adminConsentDescription":"adminConsentDescription-value",
+               "adminConsentDisplayName":"adminConsentDisplayName-value",
+               "id":"id-value",
+               "isEnabled":true,
+               "type":"type-value",
+               "userConsentDescription":"userConsentDescription-value",
+               "userConsentDisplayName":"userConsentDisplayName-value",
+               "value":"value-value"
+            }
+         ]
+      },
+      "allowPublicClient":true,
+      "applicationAliases":[
+         "applicationAliases-value"
+      ],
+      "createdDateTime":"datetime-value",
+      "installedClients":{
+         "redirectUrls":[
+            "redirectUrls-value"
+         ]
+      }
    }
 }
 ```

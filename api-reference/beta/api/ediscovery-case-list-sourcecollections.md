@@ -2,7 +2,7 @@
 title: "List sourceCollections"
 description: "Get the list of sourceCollections resources from a case object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,7 +121,7 @@ Content-Type: application/json
                 }
             },
             "contentQuery": "subject:'Quarterly Financials'",
-            "tenantSources": "none",
+            "dataSourceScopes": "allTenantMailboxes",
             "id": "fe5ef84e9c8c45819c056f6eb261718e",
             "displayName": "Quarterly Financials",
             "createdDateTime": "2020-12-11T22:56:14.2329133Z"

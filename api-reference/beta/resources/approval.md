@@ -1,7 +1,7 @@
 ---
 title: "approval resource type"
 description: "The approval object associated with an accessPackageAssignmentRequest or userConsentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -17,6 +17,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approva
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval object for decisions associated with a request.
 
+In [Role management](../resources/rolemanagement.md), the decisions to approve or deny role assignments.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -27,7 +29,7 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval objec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object.|
+|id|String|The identifier of the approval object.  In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md).|
 |steps|[approvalStep](../resources/approvalstep.md) collection|Used to represent the decision associated with a single step in the approval process configured in [approvalStage](../resources/approvalstage.md).|
 
 ## Relationships
@@ -42,6 +44,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.approval",
+  "baseType": "microsoft.graph.entity",
 }
 -->
 ``` json

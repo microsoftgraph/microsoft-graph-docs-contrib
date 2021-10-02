@@ -1,7 +1,7 @@
 ---
 title: "Update nameditem"
 description: "Update the properties of nameditem object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 author: "ruoyingl"
@@ -88,7 +88,7 @@ Content-length: 87
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

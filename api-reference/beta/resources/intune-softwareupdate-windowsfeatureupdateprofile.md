@@ -2,7 +2,7 @@
 title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -38,12 +38,12 @@ Windows Feature Update Profile
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
+|endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) collection|The list of group assignments of the profile.|
-|deviceUpdateStates|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection|The list of device states this profile targeted to|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -65,10 +65,10 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
-  "deployableContentDisplayName": "String"
+  "deployableContentDisplayName": "String",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 

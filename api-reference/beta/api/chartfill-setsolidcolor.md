@@ -2,7 +2,7 @@
 title: "ChartFill: setSolidColor"
 description: "Sets the fill formatting of a chart element to a uniform color."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -92,9 +92,7 @@ Content-length: 28
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

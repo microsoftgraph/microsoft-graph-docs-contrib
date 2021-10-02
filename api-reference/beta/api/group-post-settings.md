@@ -1,8 +1,8 @@
 ---
 title: "Create a directory setting on groups"
 description: "Use this API to create a new directory setting for the group."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -31,7 +31,7 @@ POST /groups/{id}/settings
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Required|
+| Authorization  | Bearer {token}. Required|
 
 ## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
@@ -41,8 +41,9 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,19 +68,21 @@ Content-length: 222
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Toolkit with Electron"
 description: "Get started using the Microsoft Graph Toolkit in an Electron application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
 ---
 
@@ -240,6 +240,5 @@ For more details about how to implement this, see the [microsoft-authentication-
 
 ## Next Steps
 - Try out the components in the [playground](https://mgt.dev).
-- Ask a question on [Microsoft Q&A](https://aka.ms/askgraph).
+- Ask a question on [Microsoft Q&A](/answers/products/m365#microsoft-graph).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
-    

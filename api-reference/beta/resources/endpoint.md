@@ -1,10 +1,10 @@
 ---
 title: "Endpoint resource type"
 description: "Endpoints represent URLs for resources associated with an entity."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "yyuank"
+ms.prod: "groups"
+author: "Jordanndahl"
 ---
 
 # Endpoint resource type

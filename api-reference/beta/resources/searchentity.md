@@ -1,7 +1,7 @@
 ---
 title: "searchEntity resource type"
 description: "A top level object representing the Microsoft Search API endpoint."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
@@ -20,7 +20,7 @@ A top level object representing the Microsoft Search API endpoint. It does not b
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[query](../api/search-query.md) |[searchResponse](searchresponse.md) collection | Runs the query specified in the request body.  |
+|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Runs the query specified in the request body.  |
 
 ## Properties
 None.

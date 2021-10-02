@@ -2,7 +2,7 @@
 title: "List used"
 description: "Calculate and list the documents that a user has viewed or modified. "
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/used
 
 #### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",

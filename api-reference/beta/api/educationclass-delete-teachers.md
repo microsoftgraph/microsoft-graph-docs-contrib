@@ -2,7 +2,7 @@
 title: "Remove teacher"
 description: "Remove a teacher from a class."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -87,9 +87,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/teachers/14012
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 
 ```http

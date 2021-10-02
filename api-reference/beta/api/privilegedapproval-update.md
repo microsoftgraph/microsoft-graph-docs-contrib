@@ -1,10 +1,10 @@
 ---
 title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Update privilegedapproval
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Update the properties of privilegedapproval object.
 ## Permissions
@@ -93,11 +95,9 @@ Content-length: 180
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.privilegedApproval"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

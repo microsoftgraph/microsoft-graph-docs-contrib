@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -105,7 +105,7 @@ In this example, note that the value used as the service principal **id** in the
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -1,8 +1,8 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "yyuank"
-localization_priority: Priority
+author: "Jordanndahl"
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -104,7 +104,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

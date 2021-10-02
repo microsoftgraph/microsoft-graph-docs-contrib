@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessPolicy resource type"
 description: "Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -56,6 +56,7 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "baseType":"microsoft.graph.entity",
   "keyProperty": "id"
 }-->
 

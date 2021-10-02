@@ -2,7 +2,7 @@
 title: "Get started with cloud communications"
 description: "Learn how you can use bots to respond to your customers' needs and facilitate collaboration."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
@@ -12,7 +12,7 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 
 ## Prerequisites
 
-Beore  you get started, it will be helpful to familiarize yourself with the following:
+Before  you get started, it will be helpful to familiarize yourself with the following:
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.

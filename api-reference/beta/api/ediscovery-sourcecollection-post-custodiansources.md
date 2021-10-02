@@ -2,7 +2,7 @@
 title: "Add custodianSources"
 description: "Add custodial dataSource objects to a source collection."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -99,15 +99,12 @@ Content-length: 179
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.dataSource"
+  "blockType": "response"
 }
 -->
 
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```

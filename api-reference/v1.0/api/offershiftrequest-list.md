@@ -1,7 +1,7 @@
 ---
 title: "List offerShiftRequest"
 description: "Retrieve the properties and relationships of all offerShiftRequest objects in a team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "Delete agreement"
 description: "Delete an agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

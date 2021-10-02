@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: sendReminder"
 description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": false

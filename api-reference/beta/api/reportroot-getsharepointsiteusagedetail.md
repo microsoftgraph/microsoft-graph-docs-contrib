@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -192,18 +192,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
-      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
-      "ExternalSharing": false,
-      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
-      "GeoLocation": "GeoLocation-value",
+      "siteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "externalSharing": false,
+      "unmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "geoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
-      "AnonymousLinkCount": 5,
-      "CompanyLinkCount": 8,
-      "SecureLinkForGuestCount": 13,
-      "SecureLinkForMemberCount": 11,
+      "anonymousLinkCount": 5,
+      "companyLinkCount": 8,
+      "secureLinkForGuestCount": 13,
+      "secureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

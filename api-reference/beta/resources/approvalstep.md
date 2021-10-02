@@ -1,7 +1,7 @@
 ---
 title: "approvalStep resource type"
 description: "The approvalStep object associated with an accessPackageAssignmentRequest or userConsentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -53,14 +53,14 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.approvalStep",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
-  "assignedToMe": true,
-  "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
-  "reviewedDateTime": "String (timestamp)",
-  "reviewResult": "String",
-  "justification": "String",
+   "@odata.type":"#microsoft.graph.approvalStep",
+   "id":"String (identifier)",
+   "displayName":"String",
+   "status":"String",
+   "assignedToMe":true,
+   "reviewedBy": [{"@odata.type": "microsoft.graph.userIdentity"}],
+   "reviewedDateTime":"String (timestamp)",
+   "reviewResult":"String",
+   "justification":"String"
 }
 ```

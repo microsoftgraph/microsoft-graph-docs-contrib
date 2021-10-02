@@ -3,7 +3,7 @@ author: daspek
 description: "The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI."
 ms.date: 09/13/2017
 title: ContentTypeOrder
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

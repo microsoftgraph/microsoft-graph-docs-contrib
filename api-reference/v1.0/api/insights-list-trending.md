@@ -2,7 +2,7 @@
 title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
@@ -72,7 +72,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call. See an example un-truncated response at the bottom of the page.
+Here is an example of the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -1,7 +1,7 @@
 ---
 title: "List appliesTo"
 description: "Get a list of directoryObject objects that a tokenIssuancePolicy object has been applied to."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}/applies
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

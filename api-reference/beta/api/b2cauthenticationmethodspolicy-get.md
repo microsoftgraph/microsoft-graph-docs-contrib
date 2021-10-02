@@ -1,7 +1,7 @@
 ---
 title: "Get b2cAuthenticationMethodsPolicy"
 description: "Read the properties of a b2cAuthenticationMethodsPolicy object."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -100,7 +100,8 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#b2cAuthenticationMethodsPolicy",
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

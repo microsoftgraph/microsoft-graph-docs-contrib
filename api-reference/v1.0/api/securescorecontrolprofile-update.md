@@ -2,7 +2,7 @@
 title: "Update secureScoreControlProfile"
 description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
 author: "preetikr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -110,9 +110,7 @@ Content-type: application/json
 
 The following is an example of a successful response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "blockType": "response"
 } -->
 
 ```http
@@ -167,7 +165,7 @@ Content-type: application/json
 
 The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

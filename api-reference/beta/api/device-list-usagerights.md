@@ -2,7 +2,7 @@
 title: "List device usageRights"
 description: "Retrieve a list of usageRights objects for a device."
 author: "jeeshnair"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## Optional query parameters
-This API supports the $filter [OData query parameter](/graph/query-parameters). The following patterns of $filter are supported:
+This API supports the `$filter` [OData query parameter](/graph/query-parameters). The following patterns of `$filter` are supported:
 
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'

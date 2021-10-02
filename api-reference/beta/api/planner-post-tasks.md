@@ -1,7 +1,7 @@
 ---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType
@@ -81,7 +81,7 @@ Content-length: 285
 
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

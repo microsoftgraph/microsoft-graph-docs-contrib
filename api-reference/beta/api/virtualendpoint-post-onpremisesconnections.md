@@ -1,8 +1,8 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
-description: "Create an on-premises connection  for provisioning cloud PCs."
+description: "Create an on-premises connection  for provisioning Cloud PCs."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object for provisioning cloud PCs.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object for provisioning Cloud PCs.
 
 ## Permissions
 
@@ -117,7 +115,7 @@ Content-length: 800
 
 ### Response
 
-**Note:** Here is an example of the response. The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+**Note:** Here is an example of the response. The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

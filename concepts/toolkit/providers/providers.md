@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Toolkit providers"
 description: "The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -17,10 +17,12 @@ The Toolkit includes the following providers.
 
 |Providers|Description|
 |---------|-----------|
-|[Msal](./msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
+|[MSAL](./msal.md)|Uses msal.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
+|[MSAL2](./msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph in a web application. | 
 |[Electron](./electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
+|[Teams](./teams.md)|Uses msal.js to sign in users and acquire tokens on the client in Microsoft Teams tabs.|
+|[Teams MSAL2](./teams-msal2.md)|Uses msal-browser to sign in users and acquire tokens in Microsoft Teams tabs. Supports Single Sign-On with custom backend. |
 |[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
@@ -30,20 +32,20 @@ To use a provider in your app, you need to initialize a new provider and then se
 
 **Option 1: Use the provider component**
 
-You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MsalProvider.
+You can use the component version of the provider directly in your HTML. Behind the scenes, a new provider is initialized and set as the global provider. The following example shows how to use the MSAL2 provider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
 
 **Option 2: Initialize in code**
 
-Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MsalProvider.
+Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MSAL2 provider.
 
 ```js
-import {Providers, MsalProvider } from "@microsoft/mgt";
-Providers.globalProvider = new MsalProvider({
+import {Providers, Msal2Provider } from "@microsoft/mgt";
+Providers.globalProvider = new Msal2Provider({
   clientId: 'YOUR_CLIENT_ID'
 });
 ```
@@ -51,20 +53,20 @@ Providers.globalProvider = new MsalProvider({
 
 ## Permission Scopes
 
-We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](../providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MsalProvider.
+We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](../providers/sharepoint.md)). This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component. The following examples show how to do this with the MSAL2 Provider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="YOUR_CLIENT_ID"
+<mgt-msal2-provider client-id="YOUR_CLIENT_ID"
                    scopes="user.read,people.read"
-                   ></mgt-msal-provider>
+                   ></mgt-msal2-provider>
 ```
 
 If you're initializing the provider in code, provide the permission scopes in an array in the `scopes` property.
 
 ```js
-import {Providers, MsalProvider } from "@microsoft/mgt";
-Providers.globalProvider = new MsalProvider({
+import {Providers, Msal2Provider } from "@microsoft/mgt";
+Providers.globalProvider = new Msal2Provider({
   clientId: 'YOUR_CLIENT_ID'
   scopes:['user.read','people.read']
 });
@@ -125,7 +127,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
+  const token = await Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 
@@ -155,19 +157,19 @@ graphClient
 
 ## Using multiple providers
 
-In some scenarios, your application will run in different environments and require a different provider for each. For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+In some scenarios, your application will run in different environments and require a different provider for each. For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MSAL2 provider and the Teams MSAL2 provider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
 
 ```html
-<mgt-teams-provider
+<mgt-teams-msal2-provider
   client-id="[CLIENT-ID]"
-  auth-popup-url="auth.html" ></mgt-teams-provider>
+  auth-popup-url="auth.html" ></mgt-teams-msal2-provider>
 
-<mgt-msal-provider
+<mgt-msal2-provider
   client-id="[CLIENT-ID]"
-  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+  depends-on="mgt-teams-provider" ></mgt-msal2-provider>
 ```
 
-In this scenario, the MsalProvider will only be used if your app is running as a web application and the TeamsProvider is not available in the current environment.
+In this scenario, the MSAL2 provider will only be used if your app is running as a web application and the Teams MSAL2 provider is not available in the current environment.
 
 To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
 
@@ -175,16 +177,16 @@ To accomplish the same in code, you can use the `isAvailable` property on the pr
 if (TeamsProvider.isAvailable) {
     Providers.globalProvider = new TeamsProvider(teamsConfig);
 } else {
-    Providers.globalProvider = new MsalProvider(msalConfig)
+    Providers.globalProvider = new Msal2Provider(msalConfig)
 }
 ```
 ## User Login/Logout
 
-When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MsalProvider and the Login component.
+When you have the right providers initialized for your application, you can add the Toolkit's [Login component](../components/login.md) to easily and quickly implement user login and logout. The component works with the provider to handle all of the authentication logic and login/logout functionality. The following example uses the MSAL2 provider and the Login component.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-msal2-provider client-id="YOUR_CLIENT_ID"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
 

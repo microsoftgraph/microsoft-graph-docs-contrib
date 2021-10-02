@@ -2,7 +2,7 @@
 title: "Get deviceHealthScriptDeviceState"
 description: "Read properties and relationships of the deviceHealthScriptDeviceState object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 929
 
 {
   "value": {
@@ -78,11 +78,13 @@ Content-Length: 854
     "remediationScriptError": "Remediation Script Error value",
     "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
     "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-    "remediationState": "skipped"
+    "remediationState": "skipped",
+    "assignmentFilterIds": [
+      "Assignment Filter Ids value"
+    ]
   }
 }
 ```
-
 
 
 

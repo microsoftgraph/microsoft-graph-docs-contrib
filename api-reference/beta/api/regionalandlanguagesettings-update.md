@@ -2,7 +2,7 @@
 title: "Update regionalAndLanguageSettings"
 description: "Update the regional and language settings of a user."
 author: "jasonbro"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -137,8 +137,6 @@ Content-type: application/json
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
 ```http
@@ -198,8 +196,6 @@ Content-type: application/json
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
 ```http

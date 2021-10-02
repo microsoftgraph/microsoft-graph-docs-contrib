@@ -3,7 +3,7 @@ title: "Update chatMessage"
 description: "Update the policyViolation property of a chatMessage."
 author: "RamjotSingh"
 doc_type: apiPageType
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -13,6 +13,8 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property of a **chatMessage** can be updated.
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## Permissions
 

@@ -1,7 +1,7 @@
 ---
 title: "List unfamiliarLocationRiskEvents"
 description: "Retrieve a list of unfamiliarlocationriskevent objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "cloudhandler"
@@ -54,7 +54,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/unfamiliarLocationRiskEvents
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

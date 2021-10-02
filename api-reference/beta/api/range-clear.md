@@ -1,7 +1,7 @@
 ---
 title: "Range: clear"
 description: "Clear range values, format, fill, border, etc."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -92,9 +92,7 @@ Content-length: 32
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

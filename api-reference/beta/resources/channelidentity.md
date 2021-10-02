@@ -3,7 +3,7 @@ title: "channelIdentity resource type"
 description: "Represents the identity of a channel in Microsoft Teams."
 author: "Kanaka"
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "teamwork"
 ---
 # channelIdentity resource type
@@ -34,9 +34,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "channelId": "string",
-  "teamId": "string",
-  
+   "channelId":"string",
+   "teamId":"string"
 }
 ```
 

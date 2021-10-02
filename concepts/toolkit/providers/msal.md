@@ -1,15 +1,21 @@
 ---
-title: "MSAL provider"
-description: "The MSAL provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
-localization_priority: Normal
+title: "MSAL Provider"
+description: "The MSAL provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph."
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
-# MSAL provider
+# MSAL Provider
 
-The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL Provider uses [msal.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](./providers.md).
+
+## Difference between MSAL2 Provider and MSAL Provider
+Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using MSAL2 Provider over MSAL Provider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+All new applications should use MSAL2 Provider whenever possible. For migration information, see [MSAL2 Provider](./msal2.md).
 
 ## Get started
 
@@ -24,7 +30,9 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
                    login-type="redirect/popup"
                    scopes="user.read,people.read"
                    redirect-uri="https://my.redirect/uri"
-                   authority=""></mgt-msal-provider>
+                   authority=""
+                   domainHint="mydomain.com"
+                   prompt="consent"></mgt-msal-provider>
 ```
 
 | Attribute    | Description                                                                                                                                                                                                                                                           |
@@ -34,7 +42,10 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
-| depends-on   | Element selector string of another higher priority provider component. Optional.                                                                                                                                                                                      |
+| depends-on   | Element selector string of another higher priority provider component. Optional. 
+| domain-hint  | Query string of domain location for forwarding sign in experience. Optional.              
+| prompt | Selection for type of user interaction required to login. Valid options include: <ul><li>`login` forces the user to enter credentials on request </li><li>`none` for no interactive prompt</li> <li>`select_account` to send the user to an account picker</li><li>`consent` to send the user to a OAuth consent dialog</li></ul> For more prompt information, see the [prompt behavior in MSAL.js](/azure/active-directory/develop/msal-js-prompt-behavior) article. Optional.                                                                                                                                                                            |
+
 
 ### Initialize in JavaScript
 
@@ -62,6 +73,8 @@ interface MsalConfig {
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
   loginHint?: string
   options?: Configuration; // msal js Configuration object
+  domainHint?: string;
+  prompt?: string; // "login", "none", "select_account", "consent"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Update shiftPreferences"
 description: "Update a user's shift preferences."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -107,8 +107,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

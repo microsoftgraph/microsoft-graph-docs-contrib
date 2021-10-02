@@ -1,8 +1,8 @@
 ---
 title: "group: addFavorite"
 description: "Add the group to the list of the current user's favorite groups. Supported for Microsoft 365 groups only."
-localization_priority: Normal
-author: "yyuank"
+ms.localizationpriority: medium
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

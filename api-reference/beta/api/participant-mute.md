@@ -2,7 +2,7 @@
 title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+> **Note:** The response object shown here might be shortened for readability. 
 
 
 <!-- {

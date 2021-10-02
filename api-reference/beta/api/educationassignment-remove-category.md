@@ -1,7 +1,7 @@
 ---
 title: "Remove educationCategory"
 description: "Remove an existing educationCategory from this educationAssignment"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: apiPageType
@@ -56,7 +56,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

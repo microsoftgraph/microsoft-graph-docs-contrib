@@ -2,7 +2,7 @@
 title: "List windowsPhone81CustomConfigurations"
 description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1645
+Content-Length: 1717
 
 {
   "value": [
@@ -104,6 +104,7 @@ Content-Length: 1645
           "displayName": "Display Name value",
           "description": "Description value",
           "omaUri": "Oma Uri value",
+          "secretReferenceValueId": "Secret Reference Value Id value",
           "isEncrypted": true
         }
       ]
@@ -111,7 +112,6 @@ Content-Length: 1645
   ]
 }
 ```
-
 
 
 

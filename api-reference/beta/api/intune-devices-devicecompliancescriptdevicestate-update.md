@@ -2,7 +2,7 @@
 title: "Update deviceComplianceScriptDeviceState"
 description: "Update the properties of a deviceComplianceScriptDeviceState object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -99,7 +99,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "userTeamwork: sendActivityNotification"
 description:  Send an activity feed notification to a user.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{userId}/teamwork/sendActivityNotification
+POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
 ## Request headers

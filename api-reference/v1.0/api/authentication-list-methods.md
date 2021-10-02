@@ -1,7 +1,7 @@
 ---
 title: "List methods"
 description: "Retrieve a list of authentication method objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,9 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
-
-> **Note:** Only methods supported on v1.0 will be returned.
+Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects. This API returns only authentication methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
 
 ## Permissions
 
@@ -83,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/methods
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

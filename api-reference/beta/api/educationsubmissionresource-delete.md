@@ -2,7 +2,7 @@
 title: "Delete educationSubmissionResource"
 description: "Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

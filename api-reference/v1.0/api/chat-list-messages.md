@@ -1,7 +1,7 @@
 ---
 title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat. "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats/{chat-id}/messages
-GET /users/{user-id}/chats/{chat-id}/messages
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages
 GET /chats/{chat-id}/messages
 ```
 
@@ -128,7 +128,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -163,7 +162,6 @@ Content-type: application/json
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",

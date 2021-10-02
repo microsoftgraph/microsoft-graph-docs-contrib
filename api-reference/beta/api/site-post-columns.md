@@ -3,7 +3,7 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: "Create columnDefinition in a site"
 description: "Create a site column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -52,17 +52,17 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/columns
 Content-Type: application/json
 
 {
-  "description": "test",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
+   "description":"test",
+   "enforceUniqueValues":false,
+   "hidden":false,
+   "indexed":false,
+   "name":"Title",
+   "text":{
+      "allowMultipleLines":false,
+      "appendChangesToExistingText":false,
+      "linesForEditing":0,
+      "maxLength":255
+   }
 }
 ```
 
@@ -77,21 +77,20 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "test",
-  "displayName": "Title",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
+   "description":"test",
+   "displayName":"Title",
+   "enforceUniqueValues":false,
+   "hidden":false,
+   "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+   "indexed":false,
+   "name":"Title",
+   "text":{
+      "allowMultipleLines":false,
+      "appendChangesToExistingText":false,
+      "linesForEditing":0,
+      "maxLength":255
+   }
 }
-
 ```
 
   

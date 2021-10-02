@@ -2,7 +2,7 @@
 title: "Enroll corporate devices by using Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enroll devices for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -24,13 +24,13 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Apple user initiated enrollment profile](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Apple user initiated enrollment type](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Azure AD windows autopilot deployment profile](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
-- [Deleted windows autopilot device state](intune-enrollment-deletedwindowsautopilotdevicestate.md)
 - [DEP enrollment base profile](intune-enrollment-depenrollmentbaseprofile.md)
 - [DEP enrollment profile](intune-enrollment-depenrollmentprofile.md)
 - [DEP iOS enrollment profile](intune-enrollment-depiosenrollmentprofile.md)
 - [DEP macOS enrollment profile](intune-enrollment-depmacosenrollmentprofile.md)
 - [DEP on-boarding setting](intune-enrollment-deponboardingsetting.md)
 - [DEP token type](intune-enrollment-deptokentype.md)
+- [Device platform type](intune-enrollment-deviceplatformtype.md)
 - [Discovery source](intune-enrollment-discoverysource.md)
 - [Enrollment profile](intune-enrollment-enrollmentprofile.md)
 - [Imported Apple device identity](intune-enrollment-importedappledeviceidentity.md)
@@ -48,7 +48,6 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Platform](intune-enrollment-platform.md)
 - [Suggested enrollment limit](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows autopilot deployment profile assignment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
-- [Windows autopilot device deletion state](intune-enrollment-windowsautopilotdevicedeletionstate.md)
 - [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Windows autopilot device type](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows autopilot profile assignment detailed status](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)

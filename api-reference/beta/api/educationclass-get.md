@@ -1,7 +1,7 @@
 ---
 title: "Get educationClass"
 description: "  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

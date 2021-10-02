@@ -1,7 +1,7 @@
 ---
 title: "List classes"
 description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

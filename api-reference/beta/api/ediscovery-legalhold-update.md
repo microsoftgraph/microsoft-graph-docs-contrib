@@ -1,7 +1,7 @@
 ---
 title: "Update legalHold"
 description: "Update the properties of a legalHold object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: apiPageType
@@ -101,9 +101,7 @@ Content-length: 295
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.legalHold"
+  "blockType": "response"
 }
 -->
 

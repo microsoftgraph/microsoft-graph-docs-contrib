@@ -1,7 +1,7 @@
 ---
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

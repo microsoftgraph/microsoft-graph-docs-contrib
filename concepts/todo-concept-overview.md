@@ -2,7 +2,7 @@
 title: "To Do API overview"
 description: "To Do provide a simple way to manage your tasks and plan your day"
 author: "avijityadav"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 

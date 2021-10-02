@@ -1,7 +1,7 @@
 ---
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
@@ -23,7 +23,7 @@ The following are limitations of feature rollout:
 - The **appliesTo** field only supports groups.
 - Dynamic groups and nested groups are not supported.
 
-The following are pre-requisites for each of the features that are currently suported for rollout using this rollout policy.
+The following are pre-requisites for each of the features that are currently supported for rollout using this rollout policy.
 
 ### Passthrough Authentication
 

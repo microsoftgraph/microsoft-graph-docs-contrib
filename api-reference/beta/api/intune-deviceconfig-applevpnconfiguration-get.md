@@ -2,7 +2,7 @@
 title: "Get appleVpnConfiguration"
 description: "Read properties and relationships of the appleVpnConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3210
+Content-Length: 3284
 
 {
   "value": {
@@ -159,6 +159,8 @@ Content-Length: 3210
       "Excluded Domains value"
     ],
     "disableOnDemandUserOverride": true,
+    "disconnectOnIdle": true,
+    "disconnectOnIdleTimerInSeconds": 14,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -169,7 +171,6 @@ Content-Length: 3210
   }
 }
 ```
-
 
 
 

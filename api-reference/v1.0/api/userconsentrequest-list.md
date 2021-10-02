@@ -2,7 +2,7 @@
 title: "List userConsentRequests"
 description: "Retrieve userConsentRequest objects and their properties."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
 
 ## Permissions
 

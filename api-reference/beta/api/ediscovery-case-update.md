@@ -1,7 +1,7 @@
 ---
 title: "Update case"
 description: "Update the properties of a case object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -100,9 +100,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.case"
+  "blockType": "response"
 } -->
 
 ```http

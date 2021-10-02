@@ -1,7 +1,7 @@
 ---
 title: "Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API"
 description: "You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
 author: "sarahwxy"
 ---
@@ -89,4 +89,4 @@ The starter sample includes the following files:
 
 ## Need help?
 
-If you need help, post your questions on [Microsoft Q&A](https://aka.ms/askgraph). Tag your post with {microsoft-graph-identity}.
+If you need help, post your questions on [Microsoft Q&A](/answers/products/m365#microsoft-graph). Tag your post with {microsoft-graph-identity}.

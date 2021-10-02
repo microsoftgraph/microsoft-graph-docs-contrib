@@ -1,7 +1,7 @@
 ---
 title: "application: delta"
 description: "Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See Using Delta Query for details."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: apiPageType
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/applications/delta
 
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,

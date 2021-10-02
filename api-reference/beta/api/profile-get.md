@@ -1,7 +1,7 @@
 ---
 title: "Get profile"
 description: "Retrieve the properties and relationships of profile object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/me/profile
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -319,7 +319,7 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

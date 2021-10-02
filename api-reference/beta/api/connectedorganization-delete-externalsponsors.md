@@ -1,7 +1,7 @@
 ---
 title: "Remove connected organization external sponsor"
 description: "Remove a user or group from the connected organization's external sponsors."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -80,9 +80,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

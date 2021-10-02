@@ -2,7 +2,7 @@
 title: "Create team"
 description: "Create a new team."
 author: "anandjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 ## Response
 
-If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+If successful, this API returns a `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 
@@ -95,11 +95,10 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,8 +165,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_minimal"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -285,8 +283,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_full_payload",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_full_payload"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -347,8 +344,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "create_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -431,8 +427,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -494,8 +489,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -579,8 +573,7 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard2",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard2"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -596,7 +589,7 @@ Content-Length: 0
 
 The following example shows how to create a team for imported messages.
 
->**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
+>**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 

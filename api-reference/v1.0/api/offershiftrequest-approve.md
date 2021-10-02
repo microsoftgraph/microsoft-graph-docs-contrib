@@ -1,7 +1,7 @@
 ---
 title: "offerShiftRequest: approve"
 description: "Approve an offerShiftRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -98,8 +98,7 @@ Content-type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http
