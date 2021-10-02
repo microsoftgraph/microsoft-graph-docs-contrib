@@ -113,7 +113,6 @@ Here is a JSON representation of the resource.
   "resourceDisplayName": "String",
   "resourceId": "String",
   "riskDetail": "string",
-  "riskEventTypes": ["string"],
   "riskEventTypes_v2": ["String"],
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
