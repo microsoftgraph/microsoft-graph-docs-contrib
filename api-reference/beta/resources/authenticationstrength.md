@@ -1,9 +1,9 @@
 ---
 title: "authenticationStrength resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "The custom authentication strength enforced in a Conditional Access policy"
+author: "besiler**"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
