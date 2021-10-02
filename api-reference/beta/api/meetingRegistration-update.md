@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 To update registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/onlineMeetings/{meetingId}/registration
+PATCH /me/onlineMeetings/{id}/registration
 ```
 
 ## Request headers
@@ -69,8 +69,8 @@ Content-Type: application/json
 
 {
   "subject":"Microsoft Ignite: Day 1",
-  "startDateTime":"2021-11-02T08:00:00Z",
-  "endDateTime":"2021-11-02T15:45:00Z",
+  "startDateTime":"2021-11-02T08:00:00-08:00",
+  "endDateTime":"2021-11-02T15:45:00-08:00",
   "speakers": [
     {
       "displayName": "Satya Nadella",
@@ -102,8 +102,8 @@ Content-Type: application/json
   "allowedRegistrant": "everyone",
   "subject": "Microsoft Ignite: Day 1",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
-  "startDateTime": "2021-11-02T08:00:00Z",
-  "endDateTime": "2021-11-02T15:45:00Z",
+  "startDateTime": "2021-11-02T16:00:00Z",
+    "endDateTime": "2021-11-02T23:45:00Z",
   "registrationPageViewCount": null,
   "speakers": [
     {

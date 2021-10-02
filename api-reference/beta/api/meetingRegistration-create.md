@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 To enable registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/onlineMeetings/{meetingId}/registration
+POST /me/onlineMeetings/{id}/registration
 ```
 
 ## Request headers
@@ -70,8 +70,8 @@ Content-Type: application/json
 {
   "subject":"Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
-  "startDateTime":"2021-11-02T08:00:00Z",
-  "endDateTime":"2021-11-02T04:00:00Z",
+  "startDateTime":"2021-11-02T08:00:00-08:00",
+  "endDateTime":"2021-11-04T04:00:00-08:00",
   "allowedRegistrant": "everyone",
   "speakers": [
     {
@@ -117,8 +117,8 @@ Content-Type: application/json
   "allowedRegistrant": "everyone",
   "subject": "Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
-  "startDateTime": "2021-11-02T08:00:00Z",
-  "endDateTime": "2021-11-04T04:00:00Z",
+  "startDateTime": "2021-11-02T016:00:00Z",
+  "endDateTime": "2021-11-04T12:00:00Z",
   "registrationPageViewCount": null,
   "speakers": [
     {
