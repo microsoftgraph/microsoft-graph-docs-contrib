@@ -56,7 +56,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -90,6 +90,5 @@ Content-length: 119
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
 ```

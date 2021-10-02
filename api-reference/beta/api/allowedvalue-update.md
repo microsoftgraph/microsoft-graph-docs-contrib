@@ -83,7 +83,6 @@ Content-length: 80
 #### Response
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.allowedValue",
   "truncated": true,
   "name": "update_allowedvalue"
 }
