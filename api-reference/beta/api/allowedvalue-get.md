@@ -52,23 +52,27 @@ If successful, this method returns a `200 OK` response code and an [allowedValue
 
 ## Examples
 
-### Request
+### Example: Get the properties of a predefined value for a custom security attribute
+
+The following example gets the properties of a predefined value named Alpine for a custom security attribute named Project in the Engineering attribute set.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_allowedvalue"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
+GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.allowedValue"
+  "@odata.type": "microsoft.graph.allowedValue",
+  "name": "get_allowedvalue"
 }
 -->
 ``` http
@@ -76,10 +80,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.allowedValue",
-    "id": "7a741af5-1af5-7a74-f51a-747af51a747a",
-    "isActive": "Boolean"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions('Engineering_Project')/allowedValues/$entity",
+    "id": "Alpine",
+    "isActive": true
 }
 ```
