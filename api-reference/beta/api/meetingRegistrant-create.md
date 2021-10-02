@@ -19,7 +19,7 @@ Register a participant for an [onlineMeeting](../resources/onlinemeeting.md) tha
 - When **allowedRegistrant** is `organization`, participants will be required to sign in before register for the meeting. The **firstName**, **lastName** and **email** must match the information stored in AAD.
 - When **allowedRegistrant** is `everyone`, particpants will not be required to sign in and will be considered as an anonymous participant.
 
-See following tips in different section for more details.
+See tips in following sections for more details.
 
 ## Permissions
 
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 > [!TIP]
 >
 > Different permissions are required for different value of **allowedRegistrant**.
+>
 > `organization`
 >
 >- Participant will be reqired to sign in. In this scenario, use the participant's delegated permission to register on behalf of that participant.

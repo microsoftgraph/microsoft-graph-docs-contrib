@@ -103,7 +103,7 @@ Content-Type: application/json
   "subject": "Microsoft Ignite: Day 1",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime": "2021-11-02T16:00:00Z",
-    "endDateTime": "2021-11-02T23:45:00Z",
+  "endDateTime": "2021-11-02T23:45:00Z",
   "registrationPageViewCount": null,
   "speakers": [
     {
