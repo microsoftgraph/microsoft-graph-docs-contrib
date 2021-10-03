@@ -8,7 +8,7 @@ ms.date: 09/30/2021
 doc_type: apiPageType
 ---
 
-# List custom registration questions
+# Get custom registration question
 
 Namespace: microsoft.graph
 
