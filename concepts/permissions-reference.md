@@ -2463,6 +2463,43 @@ For an app to read or write all Windows update deployment settings with delegate
 
 Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 
+---
+
+## Incidents permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Incidents.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
+| _Incidents.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
+| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
+
+### Remarks
+
+Incidents permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _Incidents.Read.All_: Read all incidents the user is allowed to read (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents the user is allowed to read and write (`GET /security/incidents`)
+
+#### Application
+
+* _Incidents.Read.All_: Read all incidents (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents (`GET /security/incidents`)
+
+---
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user) and [group](/graph/api/resources/group) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
