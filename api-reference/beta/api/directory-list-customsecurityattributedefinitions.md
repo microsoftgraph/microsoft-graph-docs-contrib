@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example: Get all custom security attributes
+### Example 1: Get all custom security attributes
 
 The following example gets all custom security attributes in a tenant.
 
@@ -116,6 +116,122 @@ Content-Type: application/json
             "status": "Available",
             "type": "String",
             "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        }
+    ]
+}
+```
+
+### Example 2: Filter custom security attributes based on name
+
+The following example filters custom security attributes that are named Project and are active.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_customsecurityattributedefinition_filter_name"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions?$filter=name+eq+'Project'%20and%20status+eq+'Available'
+```
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
+  "name": "list_customsecurityattributedefinition_filter_name"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions",
+    "value": [
+        {
+            "attributeSet": "Engineering",
+            "description": "Active projects for user",
+            "id": "Engineering_Project",
+            "isCollection": true,
+            "isSearchable": true,
+            "name": "Project",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        },
+        {
+            "attributeSet": "Operations",
+            "description": "Approved projects",
+            "id": "Operations_Project",
+            "isCollection": true,
+            "isSearchable": true,
+            "name": "Project",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        }
+    ]
+}
+```
+
+### Example 3: Filter custom security attributes based on attribute set
+
+The following example filters custom security attributes that are in the Engineering attribute set and are active.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_customsecurityattributedefinition_filter_attributeset"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions?$filter=attributeSet+eq+'Engineering'%20and%20status+eq+'Available'%20and%20type+eq+'String'
+```
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
+  "name": "list_customsecurityattributedefinition_filter_attributeset"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions",
+    "value": [
+        {
+            "attributeSet": "Engineering",
+            "description": "Active projects for user",
+            "id": "Engineering_Project",
+            "isCollection": true,
+            "isSearchable": true,
+            "name": "Project",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": true,
+            "advancedOptions": []
+        },
+        {
+            "attributeSet": "Engineering",
+            "description": "Target completion date (YYYY/MM/DD)",
+            "id": "Engineering_ProjectDate",
+            "isCollection": false,
+            "isSearchable": true,
+            "name": "ProjectDate",
+            "status": "Available",
+            "type": "String",
+            "usePreDefinedValuesOnly": false,
             "advancedOptions": []
         }
     ]
