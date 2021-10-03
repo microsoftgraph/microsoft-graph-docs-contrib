@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [customSecurit
 
 ## Examples
 
-### Example: Get a single custom security attribute
+### Example: Get a custom security attribute
 
 The following example gets a single custom security attribute named ProjectDate in the Engineering attribute set.
 

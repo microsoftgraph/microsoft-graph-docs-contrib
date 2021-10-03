@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example: Get all predefined values for a custom security attribute
+### Example: Get all predefined values
 
 The following example gets all predefined values for a custom security attribute named Project in the Engineering attribute set.
 

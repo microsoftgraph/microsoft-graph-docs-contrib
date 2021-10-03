@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and an [attribu
 
 ## Examples
 
-### Example 1: Add a new attribute set
+### Example: Add an attribute set
 
 The following example adds a new attribute set named Engineering.
 
