@@ -1519,27 +1519,36 @@ items:
         - name: Online meeting
           href: resources/onlinemeeting.md
           items:
-          - name: Create meeting
+          - name: Create
             href: api/application-post-onlinemeetings.md
-          - name: Get meeting
+          - name: Get
             href: api/onlinemeeting-get.md
-          - name: Update meeting 
+          - name: Update 
             href: api/onlinemeeting-update.md
-          - name: Delete meeting
+          - name: Delete
             href: api/onlinemeeting-delete.md
           - name: Create or get
             href: api/onlinemeeting-createorget.md
           - name: Meeting registration
             href: resources/meetingRegistration.md
             items:
-            - name: Create registration
+            - name: Create
               href: api/meetingRegistration-create.md
-            - name: Get registration
+            - name: Get
               href: api/meetingRegistration-get.md
-            - name: Update registration
+            - name: Update
               href: api/meetingRegistration-update.md
-            - name: Delete registration
+            - name: Delete
               href: api/meetingRegistration-delete.md
+            - name: Meeting registrant
+              href: resources/meetingRegistrant.md
+              items:
+              - name: List
+                href: api/meetingRegistrant-list.md
+              - name: Create
+                href: api/meetingRegistrant-create.md
+              - name: Delete
+                href: api/meetingRegistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:

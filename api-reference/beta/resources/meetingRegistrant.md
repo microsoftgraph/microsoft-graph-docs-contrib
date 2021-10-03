@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Participants who have registered for the online meeting.
+Participants who have registered for an online meeting.
 
 ## Methods
 
@@ -31,11 +31,11 @@ Participants who have registered for the online meeting.
 | customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) | Registrant's answer to the custom questions. |
 | email | String | Email address of the registrant. |
 | firstName | String | First name of the registrant. |
-| id | String | Id of the registrant. |
-| joinWebUrl | String | Unique web URL for the registrant to join the meeting. |
+| id | String | Id of the registrant. Read-only. |
+| joinWebUrl | String | Unique web URL for the registrant to join the meeting. Read-only. |
 | lastName | String | Last name of the registrant. |
-| registrationDateTime | String | Time in UTC when the registrant registers for the meeting. |
-| status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | Registration status of the registrant. |
+| registrationDateTime | String | Time in UTC when the registrant registers for the meeting. Read-only. |
+| status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | Registration status of the registrant. Read-only. |
 
 ### meetingRegistrantStatus values
 
