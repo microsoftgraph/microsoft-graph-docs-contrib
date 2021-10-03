@@ -28,15 +28,16 @@ The schema of a custom security attribute (key-value pair). For example, the cus
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeSet|String|Attribute set of the custom security attribute to be used for access control on the attributes.|
-|description|String|Description of the custom security attribute.|
-|id|String|Identifier for the custom security attribute that is unique within a tenant.|
-|isCollection|Boolean|Indicates whether the custom security attribute is a collection.|
-|isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that have the attribute.|
-|name|String|Name that is unique within an attribute set.|
-|status|String|Specifies whether custom security attribute is currently active or has been deprecated. Acceptable values are `Available` and `Deprecated`.|
-|type|String|Data type of the attribute. Supported types are String, Integer, and Boolean.|
-|usePreDefinedValuesOnly|Boolean|Indicates whether the custom security attribute is restricted to an allowed list of values only. If set to false, free-form values are allowed.|
+|attributeSet|String|Name of the group of related custom security attributes. Must be unique within a tenant. Cannot include spaces or special characters. Cannot be changed later.|
+|description|String|Description of the custom security attribute. Can be changed later.|
+|id|String|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
+|isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Cannot be changed later.|
+|isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that are assigned attribute values. Cannot be changed later.|
+|name|String|Name of the custom security attribute. Must be unique within an attribute set. Cannot include spaces or special characters. Cannot be changed later.|
+|status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Can be changed later.|
+|type|String|Data type for the custom security attribute values. Supported types are Boolean, Integer, and String. Cannot be changed later.|
+|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true.|
+
 
 ## Relationships
 |Relationship|Type|Description|
