@@ -48,7 +48,7 @@ Custom registration question of a [meetingRegistration](meetingRegistration.md) 
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.meetingRegistrant"
+  "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
 
 ```json

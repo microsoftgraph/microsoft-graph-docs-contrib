@@ -28,7 +28,7 @@ Participants who have registered for an online meeting.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) | Registrant's answer to the custom questions. |
+| customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) collection | Registrant's answer to the custom questions. |
 | email | String | Email address of the registrant. |
 | firstName | String | First name of the registrant. |
 | id | String | Id of the registrant. Read-only. |
@@ -62,6 +62,6 @@ Participants who have registered for an online meeting.
   "joinWebUrl": "String",
   "registrationDateTime": "String (timestamp)",
   "status": { "@odata.type": "microsoft.graph.meetingRegistrantStatus" },
-  "customQuestionAnswers": [{ "@odata.type": "microsoft.graph.customQuestionAnswer" }],
+  "customQuestionAnswers": [{ "@odata.type": "microsoft.graph.customQuestionAnswer" }]
 }
 ```

@@ -110,12 +110,14 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "add-registratrant-user"
+  "name": "add-registratrant-user",
+  "resource
 }-->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://canary.graph.microsoft.com/testprodbetafrpeng-dev/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZjZhNDQyZTQ2MjIqMCoqMTk6bWVldGluZ19NbUU0TXpnMU9USXRZamcyTmkwMFptTm1MV0k1TmpNdE9ETmtaREppTVdObE5UVmlAdGhyZWFkLnYy')/registration/registrants/$entity",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,E4jbleVFdE6BDf6ei3YBOA,KvXQzK4zfU-5LQj_ZLWgow,A7_SArco00S-Qr707l0vBA,UFakyZrk1K9vBacExW1muA",

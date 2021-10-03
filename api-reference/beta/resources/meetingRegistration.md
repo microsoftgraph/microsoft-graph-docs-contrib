@@ -62,16 +62,16 @@ Registration information of an online meeting.
 
 ```json
 {
-    "allowedRegistrant": { "@odata.type": "microsoft.graph.meetingAudience" },
-    "description": "String",
-    "endDateTime": "String (timestamp)",
-    "registrationPageViewCount": "Int32",
-    "registrationPageWebUrl": "String",
-    "speakers": [{ "@odata.type": "microsoft.graph.meetingSpeaker" }],
-    "startDateTime": "String (timestamp)",
-    "subject": "String",
+  "allowedRegistrant": { "@odata.type": "microsoft.graph.meetingAudience" },
+  "description": "String",
+  "endDateTime": "String (timestamp)",
+  "registrationPageViewCount": "Int32",
+  "registrationPageWebUrl": "String",
+  "speakers": [{ "@odata.type": "microsoft.graph.meetingSpeaker" }],
+  "startDateTime": "String (timestamp)",
+  "subject": "String",
 
-    "customQuestions": [{ "@odata.type": "microsoft.graph.meetingRegistrationQuestion" }],
-    "registrants": [{ "@odata.type": "microsoft.graph.meetingRegistrant" }],
+  "customQuestions": [{ "@odata.type": "microsoft.graph.meetingRegistrationQuestion" }],
+  "registrants": [{ "@odata.type": "microsoft.graph.meetingRegistrant" }]
 }
 ```
