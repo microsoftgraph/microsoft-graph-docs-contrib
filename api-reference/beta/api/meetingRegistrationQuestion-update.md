@@ -77,7 +77,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "update-custom-question"
+  "name": "update-custom-question",
+  "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
 
 ```http
