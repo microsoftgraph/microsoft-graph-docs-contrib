@@ -34,7 +34,7 @@ Registration information of an online meeting.
 | endDateTime | DateTime | The meeting end time in UTC. Default is the same as meeting end time. |
 | registrationPageViewCount | Int32 | Indicate how mant times the registration page has been visited. Read-only. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
-| speakers | [meetingSpeaker](meetingSpeaker.md) colletion | The speakers information of the meeting. |
+| speakers | [meetingSpeaker](meetingSpeaker.md) collection | The speakers information of the meeting. |
 | startDateTime | DateTime | The meeting start time in UTC. Default is the same as meeting start time. |
 | subject | String | The subject of the meeting registration. |
 

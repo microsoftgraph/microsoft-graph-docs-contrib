@@ -65,7 +65,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 <!-- {
   "blockType": "response",
-  "name": "get-custom-question"
+  "name": "get-custom-question",
+  "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
 
 ```http

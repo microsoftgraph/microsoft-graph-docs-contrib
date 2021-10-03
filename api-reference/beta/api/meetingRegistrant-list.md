@@ -70,7 +70,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 <!-- {
   "blockType": "response",
-  "name": "list-registratrants"
+  "name": "list-registratrants",
+  "@odata.type": [ "microsoft.graph.meetingRegistrant" ]
 }-->
 
 ```http

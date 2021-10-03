@@ -88,7 +88,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "update-registration"
+  "name": "update-registration",
+  "@odata.type": "microsoft.graph.meetingRegistration"
 }-->
 
 ```http

@@ -111,7 +111,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "name": "add-registratrant-user",
-  "resource
+  "@odata.type": "microsoft.graph.meetingRegistrant"
 }-->
 
 ```http
@@ -167,7 +167,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "add-registratrant-app"
+  "name": "add-registratrant-app",
+  "@odata.type": "microsoft.graph.meetingRegistrant"
 }-->
 
 ```http
