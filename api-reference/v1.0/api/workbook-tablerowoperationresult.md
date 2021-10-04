@@ -10,12 +10,15 @@ doc_type: apiPageType
 # workbook: tableRowOperationResult
 Namespace: microsoft.graph
 
-Part of an asynchronous create tableRow request.
+This function is the last in a series of steps to create a [workbookTableRow](../resources/workbooktablerow.md) resource asynchronously.
 
-An asynchronous create tableRow request involves the following steps:
-1. Issue an async [Create tableRow](./table-post-rows.md) request and get a [workbookOperation](../resources/workbookoperation.md) URL.
-2. Issue the [Get workbookOperation](./workbookoperation-get.md) request, and after you get a `succeeded` **operationStatus** result, get the request URL from the **resourceLocation** part of the response. This is the URL for this request. This is the only way to get this URL.
-3. Issue the URL. The response to this request contains a [workbookTableRow](../resources/workbooktablerow.md).
+A best practice to create multiple table rows is to batch them in one [create tableRow](./table-post-rows.md) operation and carry out the operation asynchronously.
+
+An asynchronous request to create table rows involves the following steps:
+1. Issue an async [Create tableRow](./table-post-rows.md) request and get the query URL returned in the `Location` response header.
+2. Use the query URL returned from step 1 to issue the [Get workbookOperation](./workbookoperation-get.md) request and get the operation ID for step 3. 
+    Alternatively, for convenience, after you get a `succeeded` **operationStatus** result, you can get the query URL from the **resourceLocation** property of the [workbookOperation](../resources/workbookoperation.md) returned in the response, and apply the query URL to step 3. 
+3. Use the query URL returned from step 2 as the GET request URL for this function **tableRowOperationResult**. A successful function call returns the new table rows in a [workbookTableRow](../resources/workbooktablerow.md) resource.
 
 This function does not do anything if called independently.
 
@@ -35,15 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult
+GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## Function parameters
-In the request URL, provide the following query parameter with values.
+The request URL requires the following query parameter. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|key|String|The **operationId** provided in the **workbookOperation** response.|
+|key|String|The **operationId** provided in the **workbookOperation** response returned in the preceding [Get workbookOperation](./workbookoperation-get.md) request.|
 
 
 ## Request headers

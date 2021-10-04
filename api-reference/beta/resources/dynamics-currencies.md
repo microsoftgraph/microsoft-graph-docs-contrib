@@ -38,7 +38,7 @@ Represents a currency used in Dynamics 365 Business Central.
 
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
@@ -55,7 +55,6 @@ Here is a JSON representation of the currencies.
   "amountRoundingPrecision": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 
