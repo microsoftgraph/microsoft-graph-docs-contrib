@@ -39,9 +39,9 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 | [List reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get the list of [reviewSets](../resources/ediscovery-reviewset.md) from a **case** object.|
 | [Create reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Create a new [reviewSet](../resources/ediscovery-reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.|
 | Case settings |
-| [Get settings](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
-| [Update settings](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Update the properties of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
-| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|Reset all settings to the default values. |
+| [Get case settings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-casesettings.md) object. |
+| [Update case settings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSsettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-casesettings.md) object. |
+| [resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values. |
 | Source collections |
 | [List sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) from a **case** object.|
 | [Create sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
