@@ -71,6 +71,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 <!-- {
   "blockType": "response",
   "name": "list-registratrants",
+  "truncated": true,
   "@odata.type": "Collection(microsoft.graph.meetingRegistrant)"
 }-->
 

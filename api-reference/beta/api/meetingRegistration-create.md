@@ -105,6 +105,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "name": "create-registration",
+  "truncated": true,
   "@odata.type": "microsoft.graph.meetingRegistration"
 }-->
 
