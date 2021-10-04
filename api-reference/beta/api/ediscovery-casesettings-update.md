@@ -1,19 +1,19 @@
 ---
-title: "Update settings"
-description: "Update the properties of a settings object."
+title: "Update case settings"
+description: "Update the properties of an eDiscovery case settings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update settings
+# Update case settings
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [settings](../resources/ediscovery-settings.md) object.
+Update the properties of a an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/settings
+PATCH /compliance/ediscovery/cases/{caseId}/caseSettings
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/settings
 
 ## Request body
 
-In the request body, supply a JSON representation of the [settings](../resources/ediscovery-settings.md) object.
+In the request body, supply a JSON representation of the [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Response
 
@@ -54,9 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_settings"
@@ -64,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/caseSettings
 Content-Type: application/json
 Content-length: 350
 
@@ -87,24 +84,8 @@ Content-length: 350
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-settings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-settings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-settings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-settings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

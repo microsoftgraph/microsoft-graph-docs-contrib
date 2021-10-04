@@ -1,5 +1,5 @@
 ---
-title: "settings: resetToDefault"
+title: "caseSettings: resetToDefault"
 description: "Resets the case settings to the default values."
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# settings: resetToDefault
+# caseSettings: resetToDefault
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset the case settings to the default values.
+Reset the [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
+POST /compliance/ediscovery/cases/{caseId}/caseSettings/resetToDefault
 ```
 
 ## Request headers
@@ -54,8 +54,6 @@ If successful, this action returns a `200 OK` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "settings_resettodefault"
@@ -63,26 +61,10 @@ If successful, this action returns a `200 OK` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/caseSettings/resetToDefault
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/settings-resettodefault-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/settings-resettodefault-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/settings-resettodefault-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/settings-resettodefault-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -99,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/caseSettings/$entity",
     "id": "5b840b94-f821-4c4a-8cad-3a90062bf51a",
     "redundancyDetection": {
         "isEnabled": true,

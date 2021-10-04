@@ -1,19 +1,19 @@
 ---
-title: "Get settings"
-description: "Read the properties and relationships of a settings object."
+title: "Get case settings"
+description: "Read the properties and relationships of an eDiscovery case settings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Get settings
+# Get case settings
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [settings](../resources/ediscovery-settings.md) object.
+Read the properties and relationships of an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/settings
+GET /compliance/ediscovery/cases/{caseId}/caseSettings
 ```
 
 ## Optional query parameters
@@ -52,14 +52,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [settings](../resources/ediscovery-settings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [caseSettings](../resources/ediscovery-caseSettings.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_settings"
@@ -67,26 +65,10 @@ If successful, this method returns a `200 OK` response code and a [settings](../
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/settings
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/caseSettings
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-settings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -94,7 +76,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.settings"
+  "@odata.type": "microsoft.graph.ediscovery.caseSettings"
 }
 -->
 
@@ -103,7 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/caseSettings/$entity",
     "id": "5b840b94-f821-4c4a-8cad-3a90062bf51a",
     "redundancyDetection": {
         "isEnabled": true,
