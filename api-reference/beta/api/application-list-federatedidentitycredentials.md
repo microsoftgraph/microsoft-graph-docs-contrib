@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
-|Delegated (personal Microsoft account) | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All    |
-|Application | Application.Read.All, Application.Readwrite.Ownedby, Application.Readwrite.All |
+|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All    |
+|Delegated (personal Microsoft account) |  Not supported. |
+|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ## HTTP request
