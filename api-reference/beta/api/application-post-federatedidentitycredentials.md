@@ -1,6 +1,6 @@
 ---
 title: "Create federatedIdentityCredential"
-description: "Create a new federatedIdentityCredential object."
+description: "Create a new federatedIdentityCredential object for an application."
 author: "kjyam98"
 localization_priority: Normal
 ms.prod: "applications"
