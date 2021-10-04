@@ -1,6 +1,6 @@
 ---
 title: "bookingWorkTimeSlot resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Defines the start and end times for work."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-The start and end times for work.
+Defines the start and end times for work.
 
 
 ## Properties
