@@ -115,14 +115,26 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
+            "school": {
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
+            "section": {
+                "optionalPropertiesToSync": [
+                    "Term Name",
+                    "Course Number",
+                    "Periods"
+                ],
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -136,19 +148,15 @@ Content-type: application/json
                     "Title",
                     "Qualification"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
-                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
-                "optionalPropertiesToSync": [],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }
