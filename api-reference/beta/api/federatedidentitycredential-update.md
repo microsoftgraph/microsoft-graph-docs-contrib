@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and an updated [fede
 ``` http
 PATCH https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/15be77d1-1940-43fe-8aae-94a78e078da0
 Content-Type: application/json
-Content-length: 203
 
 {
     "name": "testing02",
