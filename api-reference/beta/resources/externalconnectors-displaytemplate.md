@@ -35,19 +35,19 @@ The following is a JSON representation of the resource.
 -->
 ``` json
     {
-      "id": "String (identifier)",
+      "id": "String",
       "rules": [
         {
-          "property": "itemTitle",
-          "operation": "contains",
-          "valuesJoinedBy": "or",
+          "property": "String",
+          "operation": "String",
+          "valuesJoinedBy": "String",
           "values": [
-              "contoso",
-              "smart"
+              "String",
+              "String"
           ]
         }
       ],
-      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
+      "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "String"}]},
       "priority": 0
     }
 ```
