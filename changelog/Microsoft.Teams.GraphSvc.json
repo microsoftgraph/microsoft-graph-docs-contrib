@@ -202,6 +202,32 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
+	  {
+      "ChangeList": [
+        {
+          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionResultPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionResultPart](https://docs.microsoft.com/en-us/graph/api/resources/actionResultPart?view=graph-rest-1.0) resource type.",
+          "Target": "actionResultPart"
+        },
+        {
+          "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [conversationMemberAdd](https://docs.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0) method to the [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-13T06:30:06.7567921Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [{
           "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
@@ -228,7 +254,7 @@
       "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-09-13T11:01:30.771Z",
+      "CreatedDateTime": "2021-09-24T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
