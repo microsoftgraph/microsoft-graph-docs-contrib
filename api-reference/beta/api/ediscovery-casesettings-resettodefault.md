@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/caseS
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.settings"
+  "@odata.type": "microsoft.graph.ediscovery.caseSettings"
 }
 -->
 
