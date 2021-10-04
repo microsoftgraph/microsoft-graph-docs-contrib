@@ -19,8 +19,8 @@ The start and end times for work.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|The time of the day that work starts. For example, 08:00:00.0000000.|
-|start|TimeOfDay|The time of the day that work stops. For example, 17:00:00.0000000.|
+|end|TimeOfDay|The time of the day that work stops. For example, 17:00:00.0000000.|
+|start|TimeOfDay|The time of the day that work starts. For example, 08:00:00.0000000.|
 
 ## JSON representation
 
