@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Today, developers can use certificates or client secrets for their application's credentials. Federated identity credentials are a new type of credential that will allow the impersonation of an Azure AD application. This credential will be used to exchange a token from a trusted issuer for an access token of an Azure AD application.
+Today, developers can use certificates or client secrets for their application's credentials. Federated identity credentials are a new type of credential that will allow the impersonation of an Azure Active Directory (Azure AD) application. This credential will be used to exchange a token from a trusted issuer for an access token of an Azure AD application.
 
 Key scenarios:
 
