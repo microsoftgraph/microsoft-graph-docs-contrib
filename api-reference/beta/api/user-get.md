@@ -188,6 +188,78 @@ Content-length: 491
 }
 ```
 
+### Example 3: Get the custom security attribute assignments of the specified user
+
+#### Request
+
+The following example gets the custom security attributes of the specified user.
+
+```
+Engineering_Project=["Baker","Cascade"]
+Engineering_CostCenter=[1001]
+Engineering_Certification=true
+Operations_Level="Public"
+```
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_customsecurityattributes"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
+```
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Operations": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+If there are no custom security attributes assigned to the user or if the calling principal does not have access, the response will look like:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

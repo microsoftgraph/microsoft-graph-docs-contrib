@@ -520,7 +520,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 10: Remove a single-value custom security attribute assignment from a user
+### Example 10: Remove a single-valued custom security attribute assignment from a user
 
 The following example shows how to remove a custom security attribute named ProjectDate that supports a single value from a user.
 
@@ -557,7 +557,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 11: Remove a multi-value custom security attribute assignment from a user
+### Example 11: Remove a multi-valued custom security attribute assignment from a user
 
 The following example shows how to remove a custom security attribute named Project that supports multiple values from a user.
 
