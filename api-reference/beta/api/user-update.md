@@ -255,6 +255,346 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### Example 3: Assign a custom security attribute with a string value to a user
+
+The following example shows how to assign a custom security attribute named ProjectDate with a string value to a user.
+
+`Engineering_ProjectDate="2022-10-01"`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Assign a custom security attribute with a multi-string value to a user
+
+The following example shows how to assign a custom security attribute named Project with a multi-string value to a user.
+
+`Engineering_Project=["Baker","Cascade"]`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_multistring"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "Project@odata.type":"#Collection(String)",
+            "Project":["Baker","Cascade"]
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Assign a custom security attribute with an integer value to a user
+
+The following example shows how to assign a custom security attribute named NumVendors with an integer value to a user.
+
+`Engineering_NumVendors=4`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_integer"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "NumVendors@odata.type":"#Int32",
+            "NumVendors":4
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Assign a custom security attribute with a multi-integer value to a user
+
+The following example shows how to assign a custom security attribute named CostCenter with a multi-integer value to a user.
+
+`Engineering_CostCenter=[1001,1003]`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_multiinteger"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "CostCenter@odata.type":"#Collection(Int32)",
+            "CostCenter":[1001,1003]
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 7: Assign a custom security attribute with a Boolean value to a user
+
+The following example shows how to assign a custom security attribute named Certification with a Boolean value to a user.
+
+`Engineering_Certification=true`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_boolean"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "Certification":true
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### Example 8: Update a custom security attribute with an integer value for a user
+
+The following example shows how to update a custom security attribute named NumVendors with a Boolean value for a user.
+
+`Engineering_NumVendors=8`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_customsecurityattribute_integer"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "NumVendors@odata.type":"#Int32",
+            "NumVendors":8
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
+### Example 9: Update a custom security attribute with a Boolean value for a user
+
+The following example shows how to assign a custom security attribute named Certification with a Boolean value for a user.
+
+`Engineering_Certification=false`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "update_user_customsecurityattribute_boolean"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "Certification":false
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 10: Remove a single-value custom security attribute assignment from a user
+
+The following example shows how to remove a custom security attribute named ProjectDate that supports a single value from a user.
+
+`Engineering_ProjectDate=null`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_user_customsecurityattribute_singlevalue"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":null
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 11: Remove a multi-value custom security attribute assignment from a user
+
+The following example shows how to remove a custom security attribute named Project that supports multiple values from a user.
+
+`Engineering_Project=[]`
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_user_customsecurityattribute_multivalue"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "Project":[]
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
