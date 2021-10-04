@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /bookmarks/{bookmarksId}
+PATCH /search/bookmarks/{bookmarksId}
 ```
 
 ## Request headers
@@ -41,17 +41,15 @@ PATCH /bookmarks/{bookmarksId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object. Supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
-
-The following table shows the properties that are required when you update a [bookmark](../resources/search-bookmark.md).
+In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object. Supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+>**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Bookmark name displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |webUrl|String|Bookmark URL link. When users click this bookmark in search results they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|categories|String collection|Categories commonly used to describe this bookmark. For example. IT and HR.|
+|categories|String collection|Categories commonly used to describe this bookmark. For example, IT and HR.|
 |availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as `null` for always available.|
 |availabilityEndDateTime|DateTimeOffset|Date bookmark will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this bookmark.|

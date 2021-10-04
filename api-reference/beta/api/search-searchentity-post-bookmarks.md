@@ -30,7 +30,7 @@ One of the following permissions is required to call this api. To learn more, in
   "blockType": "ignored"
 }-->
 ```http
-POST /bookmarks
+POST /search/bookmarks
 ```
 
 ## Request headers
@@ -99,15 +99,14 @@ Content-Type: application/json
   ],
   "groupIds": ["groupId"],
   "powerAppIds": ["powerAppId"],
-  "state": "published",
-  "isSuggested": false
+  "state": "published"
 }
 ```
 
 
 ### Response
 Here is an example of the response. 
-**Note:** The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

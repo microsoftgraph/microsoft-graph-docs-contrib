@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-DELETE /bookmarks/{bookmarksId}
+DELETE /search/bookmarks/{bookmarksId}
 ```
 
 ## Request headers

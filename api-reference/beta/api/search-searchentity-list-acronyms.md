@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-GET /acronyms
+GET /search/acronyms
 ```
 
 ## Optional query parameters
@@ -69,7 +69,6 @@ GET https://graph.microsoft.com/beta/search/acronyms
   "truncated": true,
   "@odata.type": "microsoft.graph.search.acronym",
   "isCollection": true
-
 }
 -->
 ``` http

@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-DELETE /qnas/{qnaId}
+DELETE /search/qnas/{qnaId}
 ```
 
 ## Request headers

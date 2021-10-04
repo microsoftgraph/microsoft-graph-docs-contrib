@@ -31,7 +31,7 @@ One of the following permissions is required to call this api. To learn more, in
 }
 -->
 ``` http
-PATCH /qna/{qnaId}
+PATCH /search/qna/{qnaId}
 ```
 
 ## Request headers
@@ -41,8 +41,8 @@ PATCH /qna/{qnaId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [qna](../resources/search-qna.md) object. Supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
+In the request body, supply a JSON representation of the [qna](../resources/search-qna.md) object. Supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+>**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
 
 |Property|Type|Description|
 |:---|:---|:---|
