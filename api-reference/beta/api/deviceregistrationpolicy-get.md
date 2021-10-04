@@ -2,7 +2,7 @@
 title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication and authorization policies to register device identities to your organization.
+Read the properties and relationships of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,10 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following directory roles:
-* Global administrator
-* Cloud device administrator
-* Global reader
+When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
++ Global administrator
++ Cloud device administrator
++ Global reader
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ When calling on behalf of a user, the user needs to belong to the following dire
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/deviceRegistrationPolicy
 ```
 
@@ -66,11 +66,14 @@ GET https://graph.microsoft.com/policies/deviceRegistrationPolicy
 
 
 ### Response
+
+The following is an example of a response that shows the default settings for the device registration policy.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.deviceRegistrationPolicy.deviceRegistrationPolicy"
+  "@odata.type": "microsoft.graph.deviceRegistrationPolicy"
 }
 -->
 ``` http

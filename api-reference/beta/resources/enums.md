@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### multiFactorAuthConfiguration
+
+| Member             | Value |
+|:-------------------|:------|
+| notRequired        | 0     |
+| required           | 1     |
+| unknownFutureValue | 2     |
+
+### policyScope
+
+| Member             | Value |
+|:-------------------|:------|
+| none               | 0     |
+| all                | 1     |
+| selected           | 2     |
+| unknownFutureValue | 3     |
+
 ### appCredentialRestrictionType values
 
 |Member|

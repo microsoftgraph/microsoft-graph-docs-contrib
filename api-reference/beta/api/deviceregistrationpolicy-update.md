@@ -2,7 +2,7 @@
 title: "Update deviceRegistrationPolicy"
 description: "Update the properties of a deviceRegistrationPolicy object."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication and authorization policies to register device identities to your organization.
+Update the properties of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ## Permissions
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following directory roles:
-* Global administrator
-* Cloud device administrator
+When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
++ Global administrator
++ Cloud device administrator
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ When calling on behalf of a user, the user needs to belong to the following dire
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /policies/deviceRegistrationPolicy
 ```
 
@@ -47,9 +47,10 @@ PUT /policies/deviceRegistrationPolicy
 
 ## Request body
 
-In the request body, supply a JSON representation of the [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object.
+In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
-The following table shows the properties that are required when you update the [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md).
+The following table specifies the properties that can be updated.
+
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -101,7 +102,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceRegistrationPolicy"
 }
 -->
 ``` http
