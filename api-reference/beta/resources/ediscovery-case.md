@@ -85,7 +85,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 |noncustodialDataSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection| Returns a list of case **noncustodialDataSource** objects for this **case**.  Nullable. |
 |operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) collection| Returns a list of case **operation** objects for this **case**. Nullable. |
 |reviewSets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection| Returns a list of **reviewSet** objects in the case. Read-only. Nullable. |
-|Settings|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |
+|caseSettings|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |
 |sourceCollections|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Returns a list of **sourceCollection** objects associated with this case.|
 |tags|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Returns a list of **tag** objects associated to this case.|
 
