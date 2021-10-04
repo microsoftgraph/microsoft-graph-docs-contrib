@@ -68,7 +68,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.federatedIdentityCredential"
+  "@odata.type": "microsoft.graph.federatedIdentityCredential"
 }
 -->
 ``` http
