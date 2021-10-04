@@ -1551,20 +1551,46 @@ items:
         - name: eDiscovery case
           href: resources/ediscovery-case.md
           items:
-          - name: List
+          - name: List cases
             href: api/ediscovery-case-list.md
-          - name: Create
+          - name: Create case
             href: api/ediscovery-case-post.md
-          - name: Get
+          - name: Get case
             href: api/ediscovery-case-get.md
-          - name: Update
+          - name: Update case
             href: api/ediscovery-case-update.md
-          - name: Close
+          - name: Close case
             href: api/ediscovery-case-close.md
-          - name: Reopen
+          - name: Reopen case
             href: api/ediscovery-case-reopen.md
-          - name: Delete
+          - name: Delete case
             href: api/ediscovery-case-delete.md
+          - name: List custodians
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create custodian
+            href: api/ediscovery-case-post-custodians.md
+          - name: List legalHolds
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create legalHold
+            href: api/ediscovery-case-post-legalholds.md
+          - name: List reviewSets
+            href: api/ediscovery-case-list-reviewsets.md
+          - name: Create reviewSet
+            href: /api/ediscovery-case-post-reviewsets.md
+          - name: Get settings
+            href: api/ediscovery-settings-get.md
+          - name: Update settings
+            href: ediscovery-settings-update.md
+          - name: resetToDefault
+            href: api/ediscovery-settings-resettodefault.md
+          - name: List sourceCollections
+            href: api/ediscovery-case-list-sourcecollections.md
+          - name: Create sourceCollection
+            href: /api/ediscovery-case-post-sourcecollections.md
+          - name: List tags
+            href: /api/ediscovery-case-list-tags.md
+          - name: Create tag
+            href: /api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
