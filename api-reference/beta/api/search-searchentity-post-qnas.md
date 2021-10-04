@@ -90,7 +90,6 @@ Content-Type: application/json
   "languageTags": ["en-US"],
   "platforms": ["ios"],
   "groupIds": ["groupId"],
-  "targetedVariations": null,
   "state": "published"
 }
 ```
