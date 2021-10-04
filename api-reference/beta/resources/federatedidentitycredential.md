@@ -44,20 +44,6 @@ Inherits from [entity](../resources/entity.md).
 |name|String|The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly. It is immutable.|
 |subject|String|<li>For AAD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this guid needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of `issuer` and `subject` must be unique on the app.
 
-## New relationships
-
-#### application
-
-| Property       | Type           | Description                                 | Contained Navigation Property | Nullable  | ReadOnly  |
-| -------------- | -------------- | ------------------------------------------- | ----------------------------- | --------- | --------- |
-| `federatedIdentityCredentials` | `Collection(microsoft.graph.federatedIdentity)` | Federated identities for applications | Yes                     | Yes | No |
-
-#### servicePrincipal
-For this relationship to exist, the servicePrincipal must not have an associated app object (e.g it is a managed identity).
-
-| Property       | Type           | Description                                 | Contained Navigation Property | Nullable  | ReadOnly  |
-| -------------- | -------------- | ------------------------------------------- | ----------------------------- | --------- | --------- |
-| `federatedIdentityCredentials` | `Collection(microsoft.graph.federatedIdentity)` | Federated identities for service principals | Yes                     | Yes | No |
 
 ## JSON representation
 The following is a JSON representation of the resource.
