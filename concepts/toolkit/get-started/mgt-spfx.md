@@ -11,6 +11,9 @@ Use the SharePoint Framework library for Microsoft Graph Toolkit to use Microsof
 
 To prevent multiple components from registering their own set of Microsoft Graph Toolkit components on the page, you should deploy this library to your tenant and reference Microsoft Graph Toolkit components that you use in your solution from this library.
 
+> [!CAUTION]
+> The SharePoint Framework library for Microsoft Graph Toolkit is meant to be used with **SharePoint Framework extensions and non-isolated web parts**. If you're building isolated web parts, don't use the SharePoint Framework library for Microsoft Graph Toolkit. Instead, load Microsoft Graph Toolkit directly from the @microsoft/mgt (or @microsoft/mgt-react if you use React) package. SharePoint Framework doesn't support referencing library components from isolated web parts and doing so will cause runtime errors in the isolated web part.
+
 ## Installation
 
 To load Microsoft Graph Toolkit components from the library, add the `@microsoft/mgt-spfx` package as a runtime dependency to your SharePoint Framework project:
