@@ -1551,41 +1551,41 @@ items:
         - name: eDiscovery case
           href: resources/ediscovery-case.md
           items:
-          - name: List cases
+          - name: List
             href: api/ediscovery-case-list.md
-          - name: Create case
+          - name: Create
             href: api/ediscovery-case-post.md
-          - name: Get case
+          - name: Get
             href: api/ediscovery-case-get.md
-          - name: Update case
+          - name: Update
             href: api/ediscovery-case-update.md
-          - name: Close case
-            href: api/ediscovery-case-close.md
-          - name: Reopen case
-            href: api/ediscovery-case-reopen.md
-          - name: Delete case
+          - name: Delete
             href: api/ediscovery-case-delete.md
+          - name: Close
+            href: api/ediscovery-case-close.md
+          - name: Reopen 
+            href: api/ediscovery-case-reopen.md
           - name: List custodians
             href: api/ediscovery-case-list-custodians.md
           - name: Create custodian
             href: api/ediscovery-case-post-custodians.md
-          - name: List legalHolds
+          - name: List legal holds
             href: api/ediscovery-case-list-legalholds.md
-          - name: Create legalHold
+          - name: Create legal hold
             href: api/ediscovery-case-post-legalholds.md
-          - name: List reviewSets
+          - name: List review sets
             href: api/ediscovery-case-list-reviewsets.md
-          - name: Create reviewSet
+          - name: Create review set
             href: /api/ediscovery-case-post-reviewsets.md
           - name: Get settings
             href: api/ediscovery-settings-get.md
           - name: Update settings
             href: ediscovery-settings-update.md
-          - name: resetToDefault
+          - name: Reset to default
             href: api/ediscovery-settings-resettodefault.md
           - name: List sourceCollections
             href: api/ediscovery-case-list-sourcecollections.md
-          - name: Create sourceCollection
+          - name: Create source collection
             href: /api/ediscovery-case-post-sourcecollections.md
           - name: List tags
             href: /api/ediscovery-case-list-tags.md
