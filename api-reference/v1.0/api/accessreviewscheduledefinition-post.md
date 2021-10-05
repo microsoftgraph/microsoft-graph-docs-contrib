@@ -390,6 +390,174 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Create an access review of all users to an application
+
+This is an example of creating an access review with the following settings:
++ The review reviews user access to an application.
++ The people managers are the reviewers and fallback reviewers are the members of a group.
++ It recurs semi-annually and ends 1 year from the startDate.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Review employee access to LinkedIn",
+  "descriptionForAdmins": "Review employee access to LinkedIn",
+  "scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/users",
+        "queryType": "MicrosoftGraph"
+      }
+    ],
+    "resourceScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+        "queryType": "MicrosoftGraph"
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "query": "./manager",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph"
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": true,
+    "defaultDecision": "Recommendation",
+    "instanceDurationInDays": 180,
+    "autoApplyDecisionsEnabled": true,
+    "recommendationsEnabled": true,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 6,
+        "dayOfMonth": 0
+      },
+      "range": {
+        "type": "numbered",
+        "startDate": "2021-05-05",
+        "endDate": "2022-05-05"
+      }
+    }
+  }
+}
+```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
+  "id": "1f79f34b-8667-40d9-875c-893b630b3dec",
+  "scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/users",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ],
+    "resourceScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "query": "./manager",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": "decisions"
+    }
+  ],
+  "backupReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+      "queryType": "MicrosoftGraph",
+      "queryRoot": null
+    }
+  ],
+  "settings": {
+    "instanceDurationInDays": 180,
+    "recurrence": {
+      "pattern": {
+        "type": "absoluteMonthly",
+        "interval": 6,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "numbered",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2021-05-05",
+        "endDate": "2022-05-05"
+      }
+    }
+  },
+  "additionalNotificationRecipients": []
+}
+```
+
 <!--
 {
   "type": "#page.annotation",
