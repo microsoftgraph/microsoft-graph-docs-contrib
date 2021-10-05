@@ -149,7 +149,7 @@ Explore other options to connect with the Microsoft Graph Security API:
 
 Engage with the community:
 
-- [Join the tech community](https://aka.ms/graphsecuritycommunity)
+- [Join the tech community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
 
