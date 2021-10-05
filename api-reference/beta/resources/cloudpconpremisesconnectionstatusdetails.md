@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|

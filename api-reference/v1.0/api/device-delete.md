@@ -24,11 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
+
+The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 ```
-> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
 
 ## Request headers
 | Name       | Type | Description|
