@@ -49,22 +49,22 @@ To learn about these models in more detail, visit the [SharePoint Dev Center][] 
 ## API reference
 Looking for the API reference for this service?
 
-- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint)
+- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
+Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint).
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[list type]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[create]: /graph/api/list-create?view=graph-rest-1.0
-[querying]: /graph/api/listitem-get?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
-[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[list]: /graph/api/resources/list
+[columns]: /graph/api/resources/columndefinition
+[list type]: /graph/api/resources/listinfo
+[create]: /graph/api/list-create
+[querying]: /graph/api/listitem-get
+[drive]: /graph/api/resources/drive
+[OneDrive API]: /graph/api/resources/onedrive
 [SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
 [SharePoint Developer Docs]: /sharepoint/dev/
-[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
+[SharePoint]: /graph/api/resources/sharepoint
