@@ -71,8 +71,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.allowedValue",
-  "name": "get_allowedvalue"
+  "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
 ``` http
