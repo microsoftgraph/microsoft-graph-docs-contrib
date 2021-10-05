@@ -2,6 +2,41 @@
   "changelog": [
     {
       "ChangeList": [
+
+       {
+         "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+         "ApiChange": "Property",
+         "ChangedApiName": "defaultRedirectUri",
+         "ChangeType": "Addition",
+         "Description": "Added the **defaultRedirectUri** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+         "Target": "application"
+       },
+       {
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+        "ApiChange": "Resource",
+        "ChangedApiName": "redirectUriSettings",
+        "ChangeType": "Addition",
+        "Description": "Added the [redirectUriSettings](https://docs.microsoft.com/en-us/graph/api/resources/redirecturisettings?view=graph-rest-beta) resource.",
+        "Target": "redirectUriSettings"
+       },
+       {
+        "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+        "ApiChange": "Property",
+        "ChangedApiName": "redirectUriSettings",
+        "ChangeType": "Addition",
+        "Description": "Added the **redirectUriSettings** property to the [webapplication](https://docs.microsoft.com/en-us/graph/api/resources/webapplication?view=graph-rest-beta) resource.",
+        "Target": "webApplication"
+      }
+      ],
+      "Id": "5ac1044f-93d1-4fe7-aa57-ce514720bf27",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-30T05:30:27Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+      },
+      {
+      "ChangeList": [
       {
         "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
         "ApiChange": "Method",
@@ -8905,6 +8940,24 @@
     "CreatedDateTime": "2021-09-29T19:12:05.0698787Z",
     "WorkloadArea": "Identity and access",
     "SubArea": "Identity and sign-in"
-      }
+      },
+    {
+      "ChangeList": [
+        {
+          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlow",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated  the [identityUserFlow API](https://docs.microsoft.com/en-us/graph/api/resources/identityuserflow?view=graph-rest-beta) and related operations and methods. This API is replaced by the [b2cIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) and [b2xIdentityUserFlow](https://docs.microsoft.com/en-us/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) APIs.",
+          "Target": "identityUserFlow"
+        }
+      ],
+      "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-30T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    }
   ]
 }

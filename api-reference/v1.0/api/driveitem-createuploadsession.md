@@ -93,6 +93,8 @@ The following example controls the behavior if the filename is already taken, an
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
 
+>**Note:** The {item-path} must contain the name of the item that's specified in the request body.
+
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
