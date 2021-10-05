@@ -1583,7 +1583,7 @@ items:
             href: ediscovery-settings-update.md
           - name: Reset to default
             href: api/ediscovery-settings-resettodefault.md
-          - name: List sourceCollections
+          - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
             href: /api/ediscovery-case-post-sourcecollections.md
