@@ -69,8 +69,12 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `204 No Content` response code and updated [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+
 ## Examples
-### Request
+
+### Example 1: Update properties of the specified service principal
+
+#### Request
 Here is an example of the request.
 
 
@@ -108,7 +112,7 @@ Content-length: 391
 ---
 
 
-### Response
+#### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
@@ -133,4 +137,42 @@ HTTP/1.1 204 No Content
 -->
 
 
+### Example 2: Assign a custom security attribute with a string value to a service principal
+
+The following example shows how to assign a custom security attribute named ProjectDate with a string value to a service principal.
+
+`Engineering_ProjectDate="2022-10-01"`
+
+For other similar examples for users, see [Update user](user-update.md).
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_serviceprincipal_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 

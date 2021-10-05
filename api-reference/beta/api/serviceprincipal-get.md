@@ -53,7 +53,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
 ## Examples
-### Request
+
+### Example 1: Get the properties of the specified service principal
+
+#### Request
+
 Here is an example of the request.
 
 
@@ -85,7 +89,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 
-### Response
+#### Response
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -163,3 +167,74 @@ Content-type: application/json
 }
 -->
 
+### Example 2: Get the custom security attribute assignments of the specified service principal
+
+#### Request
+
+The following example gets the custom security attributes of the specified service principal.
+
+```
+Engineering_Project=["Baker","Cascade"]
+Engineering_CostCenter=[1001]
+Engineering_Certification=true
+Operations_Level="Public"
+```
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_customsecurityattributes"
+}-->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+```
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Operations": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+If there are no custom security attributes assigned to the service principal or if the calling principal does not have access, the response will look like:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
