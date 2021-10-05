@@ -1,6 +1,6 @@
 ---
 title: "educationExternalResource resource type"
-description: "A subclass of educationResource. This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly."
+description: "Represents a generic type to map resources not exposed to Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subclass of [educationResource](educationresource.md). This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly.
+Represents a generic type to map resources not exposed to Graph.
 
-An educationResource can't be added, updated or deleted with this resource type. 
+Inherits from [educationResource](educationresource.md).
+
+This complex type allows all SDK callers to work seamlessly.
 
 ## Properties
 | Property	   | Type	|Description|
