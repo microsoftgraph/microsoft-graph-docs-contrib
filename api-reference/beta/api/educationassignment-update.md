@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the [publish](../api/educationassignment-publish.md) action to change the assignment status.
+Update an [educationAssignment](../resources/educationassignment.md) object. 
+
+Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an **assignment**. Use the [publish](../api/educationassignment-publish.md) action to change the **assignment** status.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

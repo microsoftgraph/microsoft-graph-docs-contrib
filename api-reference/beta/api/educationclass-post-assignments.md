@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments
+POST /education/classes/{class-id}/assignments
 ```
 ## Request headers
 | Header       | Value |

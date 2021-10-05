@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update an educationAssigment object. 
+Update an [educationAssignment](../resources/educationassignment.md) object. 
 
 Only teachers can perform this action. 
 
-Alternatively, request to change the status of an assignment with [publish](../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
+Alternatively, request to change the status of an **assignment** with [publish](../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
