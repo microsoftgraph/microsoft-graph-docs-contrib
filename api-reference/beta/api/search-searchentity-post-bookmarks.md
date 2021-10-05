@@ -75,7 +75,6 @@ If successful, this method returns a `201 Created` response code with the ID of 
 }-->
 ```http
 POST https://graph.microsoft.com/beta/search/bookmarks
-Authorization: Bearer AAD_PFT_TOKEN
 Content-Type: application/json
 
 {

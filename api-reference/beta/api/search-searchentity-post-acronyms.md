@@ -68,7 +68,6 @@ If successful, this method returns a `200 Ok` response code.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/search/acronyms
-Authorization: Bearer AAD_PFT_TOKEN
 Content-Type: application/json
 
 {
