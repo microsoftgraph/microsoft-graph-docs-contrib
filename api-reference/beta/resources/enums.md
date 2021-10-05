@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 ### multiFactorAuthConfiguration values
 
-| Member             | Value |
-|:-------------------|:------|
-| notRequired        | 0     |
-| required           | 1     |
-| unknownFutureValue | 2     |
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| notRequired        | 0     | No multifactor authentication is required for a user to complete device registration.|
+| required           | 1     | Multifactor authentication is required for a user to complete device registration.|
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.|
 
 ### policyScope values
 
-| Member             | Value |
-|:-------------------|:------|
-| none               | 0     |
-| all                | 1     |
-| selected           | 2     |
-| unknownFutureValue | 3     |
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| none               | 0     | The policy does not apply to any users or groups in the organization. |
+| all                | 1     | The policy applies to all users and groups in the organization. Default value. |
+| selected           | 2     | The policy applies to specific users or groups in the organization. |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use. |
 
 ### appCredentialRestrictionType values
 
