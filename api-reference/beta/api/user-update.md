@@ -255,7 +255,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Assign a custom security attribute with a string value to a user
+### Example 4: Assign a custom security attribute with a string value to a user
 
 The following example shows how to assign a custom security attribute named ProjectDate with a string value to a user.
 
@@ -292,7 +292,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Assign a custom security attribute with a multi-string value to a user
+### Example 5: Assign a custom security attribute with a multi-string value to a user
 
 The following example shows how to assign a custom security attribute named Project with a multi-string value to a user.
 
@@ -330,7 +330,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 5: Assign a custom security attribute with an integer value to a user
+### Example 6: Assign a custom security attribute with an integer value to a user
 
 The following example shows how to assign a custom security attribute named NumVendors with an integer value to a user.
 
@@ -368,7 +368,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 6: Assign a custom security attribute with a multi-integer value to a user
+### Example 7: Assign a custom security attribute with a multi-integer value to a user
 
 The following example shows how to assign a custom security attribute named CostCenter with a multi-integer value to a user.
 
@@ -406,7 +406,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 7: Assign a custom security attribute with a Boolean value to a user
+### Example 8: Assign a custom security attribute with a Boolean value to a user
 
 The following example shows how to assign a custom security attribute named Certification with a Boolean value to a user.
 
@@ -444,7 +444,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 8: Update a custom security attribute with an integer value for a user
+### Example 9: Update a custom security attribute with an integer value for a user
 
 The following example shows how to update a custom security attribute named NumVendors with a Boolean value for a user.
 
@@ -483,7 +483,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 9: Update a custom security attribute with a Boolean value for a user
+### Example 10: Update a custom security attribute with a Boolean value for a user
 
 The following example shows how to assign a custom security attribute named Certification with a Boolean value for a user.
 
@@ -520,7 +520,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 10: Remove a single-valued custom security attribute assignment from a user
+### Example 11: Remove a single-valued custom security attribute assignment from a user
 
 The following example shows how to remove a custom security attribute named ProjectDate that supports a single value from a user.
 
@@ -557,7 +557,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 11: Remove a multi-valued custom security attribute assignment from a user
+### Example 12: Remove a multi-valued custom security attribute assignment from a user
 
 The following example shows how to remove a custom security attribute named Project that supports multiple values from a user.
 
