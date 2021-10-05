@@ -20,7 +20,7 @@ SharePoint sites power team collaboration and communication. Microsoft 365 group
 ### Unleash your data with SharePoint lists
 
 [Lists][list] are the foundation for data storage in SharePoint.
-[Create lists][create] to store a variety of business data, from a simple customer contact list to a custom business application, fronted with PowerApps.
+[Create lists][create] to store a variety of business data, from a simple customer contact list to a custom business application, fronted with Power Apps.
 When you use [columns][] to define your schema, SharePoint can protect the integrity of your data as well as enable  rich indexing, querying, and search capabilities.
 
 ### Bring the power of lists to your team's files
