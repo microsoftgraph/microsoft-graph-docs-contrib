@@ -1559,12 +1559,38 @@ items:
             href: api/ediscovery-case-get.md
           - name: Update
             href: api/ediscovery-case-update.md
-          - name: Close
-            href: api/ediscovery-case-close.md
-          - name: Reopen
-            href: api/ediscovery-case-reopen.md
           - name: Delete
             href: api/ediscovery-case-delete.md
+          - name: Close
+            href: api/ediscovery-case-close.md
+          - name: Reopen 
+            href: api/ediscovery-case-reopen.md
+          - name: List custodians
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create custodian
+            href: api/ediscovery-case-post-custodians.md
+          - name: List legal holds
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create legal hold
+            href: api/ediscovery-case-post-legalholds.md
+          - name: List review sets
+            href: api/ediscovery-case-list-reviewsets.md
+          - name: Create review set
+            href: /api/ediscovery-case-post-reviewsets.md
+          - name: Get settings
+            href: api/ediscovery-settings-get.md
+          - name: Update settings
+            href: api/ediscovery-settings-update.md
+          - name: Reset to default
+            href: api/ediscovery-settings-resettodefault.md
+          - name: List source collections
+            href: api/ediscovery-case-list-sourcecollections.md
+          - name: Create source collection
+            href: /api/ediscovery-case-post-sourcecollections.md
+          - name: List tags
+            href: /api/ediscovery-case-list-tags.md
+          - name: Create tag
+            href: /api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -11610,6 +11636,13 @@ items:
               href: api/continuousaccessevaluationpolicy-get.md
             - name: Update
               href: api/continuousaccessevaluationpolicy-update.md
+          - name: Device registration policy (preview)
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md
           - name: Feature rollout policy
             href: resources/featurerolloutpolicy.md
             items:
