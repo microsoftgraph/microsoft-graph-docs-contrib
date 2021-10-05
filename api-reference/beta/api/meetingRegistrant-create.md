@@ -8,7 +8,7 @@ ms.date: 09/30/2021
 doc_type: apiPageType
 ---
 
-# Add meeting registrants
+# Add meeting registrant
 
 Namespace: microsoft.graph
 
@@ -19,7 +19,7 @@ Register a participant for an [onlineMeeting](../resources/onlinemeeting.md) tha
 - When **allowedRegistrant** is `organization`, participants will be required to sign in before register for the meeting. The **firstName**, **lastName** and **email** must match the information stored in AAD.
 - When **allowedRegistrant** is `everyone`, particpants will not be required to sign in and will be considered as an anonymous participant.
 
-See tips in following sections for more details.
+In both scenarios, registrant will receive an email notification containing basic information of their registration. See tips in following sections for more details.
 
 ## Permissions
 
@@ -69,8 +69,15 @@ If successful, this method returns a `200 OK` response code and a partial [meeti
 
 > [!TIP]
 >
->- When **allowedRegistrant** is `organization`, only and **id** and **joinWebUrl** will be returned.
->- When **allowedRegistrant** is `everyone`, an empty [meetingRegistrant](../resources/meetingRegistrant.md) object will be returned. Anonymous participants need to use the link in the email they receive to join or unregister from the meeting.
+> Response body will contain different information depending on the value of **allowedRegistrant**.
+>
+> `organization`
+>
+> Only **id** and **joinWebUrl** will be returned in the [meetingRegistrant](../resources/meetingRegistrant.md) object. Signed-in participants can use the **id** to cancel their registration or **joinWebUrl** to join the meeting.
+>
+> `everyone`
+>
+> An empty [meetingRegistrant](../resources/meetingRegistrant.md) object will be returned. Anonymous participants need to use the link in the email they receive to cancel registration or join the meeting.
 
 ## Examples
 
@@ -90,9 +97,9 @@ POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622
 Content-Type: application/json
 
 {
-  "firstName": "Elvin",
-  "lastName": "Yang",
-  "email": "foo.bar@hatmail.com",
+  "firstName": "Foo",
+  "lastName": "Bar",
+  "email": "foo.bar@hotmail.com",
   "customQuestionAnswers": [
     {
       "questionId": "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=",
@@ -122,7 +129,7 @@ Content-Type: application/json
   "@odata.context": "https://canary.graph.microsoft.com/testprodbetafrpeng-dev/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZjZhNDQyZTQ2MjIqMCoqMTk6bWVldGluZ19NbUU0TXpnMU9USXRZamcyTmkwMFptTm1MV0k1TmpNdE9ETmtaREppTVdObE5UVmlAdGhyZWFkLnYy')/registration/registrants/$entity",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,E4jbleVFdE6BDf6ei3YBOA,KvXQzK4zfU-5LQj_ZLWgow,A7_SArco00S-Qr707l0vBA,UFakyZrk1K9vBacExW1muA",
   "registrationDateTime": null,
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmE4Mzg1OTItYjg2Ni00ZmNmLWI5NjMtODNkZDJiMWNlNTVi%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%2c%22prid%22%3a%22gWWckDBR6UOI8_yzWCzeNw%2c6pAAiSU1bkGqzLnbHG_muA%2cbzLh6uR-5EGYsCvtvIvs6Q%2cE4jbleVFdE6BDf6ei3YBOA%2cKvXQzK4zfU-5LQj_ZLWgow%2cA7_SArco00S-Qr707l0vBA%2cUFakyZrk1K9vBacExW1muA%22%2c%22isPublic%22%3afalse%7d",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmE4Mzg1OTItYjg2Ni00ZmNmLWI5NjMtODNkZDJiMWNlNTVi%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5131-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%2c%22prid%22%3a%22gWWckDBR6UOI8_yzWCzeNw%2c6pAAiSa1bkGqzLnbHG_muA%2cbzLh6uR-5EGdsCvtvIvs6Q%2cE4jbleVFdE6BDf6ei3YBOA%2cKvXQzK4zfU-5LQj_ZLWgow%2cA7_SArco00S-Qr707l0vBA%2cUFaiyZrk1K9vBacExW1muA%22%2c%22isPublic%22%3afalse%7d",
   "firstName": null,
   "lastName": null,
   "email": null,
@@ -149,7 +156,7 @@ Content-Type: application/json
 {
   "firstName": "Foo",
   "lastName": "Bar",
-  "email": "foo.bar@hatmail.com",
+  "email": "foo.bar@hotmail.com",
   "customQuestionAnswers": [
     {
       "questionId": "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=",
