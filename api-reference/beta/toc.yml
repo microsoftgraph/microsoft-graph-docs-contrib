@@ -1580,7 +1580,7 @@ items:
           - name: Get settings
             href: api/ediscovery-settings-get.md
           - name: Update settings
-            href: ediscovery-settings-update.md
+            href: api/ediscovery-settings-update.md
           - name: Reset to default
             href: api/ediscovery-settings-resettodefault.md
           - name: List source collections
