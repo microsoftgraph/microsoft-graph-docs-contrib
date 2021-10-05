@@ -71,8 +71,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
-  "name": "list_customsecurityattributedefinition"
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)"
 }
 -->
 ``` http
@@ -141,8 +140,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
-  "name": "list_customsecurityattributedefinition_filter_name"
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)"
 }
 -->
 ``` http
@@ -199,8 +197,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)",
-  "name": "list_customsecurityattributedefinition_filter_attributeset"
+  "@odata.type": "Collection(microsoft.graph.customSecurityAttributeDefinition)"
 }
 -->
 ``` http

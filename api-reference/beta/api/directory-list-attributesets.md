@@ -71,8 +71,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attributeSet)",
-  "name": "list_attributeset_all"
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
 }
 -->
 ``` http
@@ -115,8 +114,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attributeSet)",
-  "name": "list_attributeset_top"
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
 }
 -->
 ``` http
@@ -160,8 +158,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attributeSet)",
-  "name": "list_attributeset_orderby"
+  "@odata.type": "Collection(microsoft.graph.attributeSet)"
 }
 -->
 ``` http

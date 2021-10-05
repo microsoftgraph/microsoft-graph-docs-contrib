@@ -71,8 +71,7 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet",
-  "name": "get_attributeset_single"
+  "@odata.type": "microsoft.graph.attributeSet"
 }
 -->
 ``` http

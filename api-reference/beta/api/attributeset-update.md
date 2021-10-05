@@ -85,8 +85,7 @@ Content-length: 119
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "name": "update_attributeset"
+  "truncated": true
 }
 -->
 ``` http

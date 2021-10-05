@@ -83,8 +83,7 @@ Content-length: 80
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "name": "update_allowedvalue"
+  "truncated": true
 }
 -->
 ``` http

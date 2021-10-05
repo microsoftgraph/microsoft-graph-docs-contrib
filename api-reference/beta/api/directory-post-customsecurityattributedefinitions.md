@@ -97,8 +97,7 @@ Content-length: 310
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
-  "name": "create_customsecurityattributedefinition"
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
 }
 -->
 
@@ -152,8 +151,7 @@ Content-length: 310
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition",
-  "name": "create_customsecurityattributedefinition_v2"
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
 }
 -->
 

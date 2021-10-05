@@ -87,8 +87,7 @@ Content-length: 131
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attributeSet",
-  "name": "create_attributeset"
+  "@odata.type": "microsoft.graph.attributeSet"
 }
 -->
 ``` http

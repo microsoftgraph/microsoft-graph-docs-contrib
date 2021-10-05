@@ -90,8 +90,7 @@ Content-length: 298
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "name": "update_customsecurityattributedefinition"
+  "truncated": true
 }
 -->
 ``` http
@@ -122,8 +121,7 @@ Content-length: 298
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "name": "update_customsecurityattributedefinition_deactivate"
+  "truncated": true
 }
 -->
 ``` http

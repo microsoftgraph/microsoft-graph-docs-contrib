@@ -85,8 +85,7 @@ Content-length: 92
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.allowedValue",
-  "name": "create_allowedvalue"
+  "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
 ``` http
