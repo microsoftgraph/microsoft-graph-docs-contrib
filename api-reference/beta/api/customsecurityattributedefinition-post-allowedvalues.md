@@ -35,6 +35,10 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 ```
 
+|Name|Description|
+|:---|:---|
+|{customSecurityAttributeDefinitionId}|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -48,7 +52,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
+|id|String|Identifier for the allowed value.|
 |isActive|Boolean|Specifies whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
 
 

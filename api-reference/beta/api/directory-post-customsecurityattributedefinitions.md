@@ -50,7 +50,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |attributeSet|String|Name of the group of related custom security attributes. Must be unique within a tenant. Cannot include spaces or special characters. Cannot be changed later.|
 |description|String|Description of the custom security attribute. Can be changed later.|
-|id|String|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
 |isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Cannot be changed later.|
 |isSearchable|Boolean|Indicates whether custom security attribute values will be indexed for searching on objects that are assigned attribute values. Cannot be changed later.|
 |name|String|Name of the custom security attribute. Must be unique within an attribute set. Cannot include spaces or special characters. Cannot be changed later.|
@@ -58,7 +57,13 @@ The following table shows the properties that are required when you create the [
 |type|String|Data type for the custom security attribute values. Supported types are Boolean, Integer, and String. Cannot be changed later.|
 |usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true.|
 
+The following table shows the properties that are optional when you create the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
 
+|Property|Type|Description|
+|:---|:---|:---|
+|description|String|Description of the custom security attribute. Can be changed later.|
+
+id is auto generated and cannot be set.
 
 ## Response
 

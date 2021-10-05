@@ -35,6 +35,10 @@ The signed-in user must also be assigned the Attribute Definition Reader, Attrib
 GET /directory/attributeSets/{attributeSetId}
 ```
 
+|Name|Description|
+|:---|:---|
+|{attributeSetId}|Identifier for the attribute set that is unique within a tenant.|
+
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 

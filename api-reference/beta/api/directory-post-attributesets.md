@@ -48,10 +48,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Description of the attribute set.|
-|id|String|**TODO: Add Description**|
-|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set.|
+|id|String|Identifier for the attribute set that is unique within a tenant.|
 
+
+The following table shows the properties that are optional when you create the [attributeSet](../resources/attributeset.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|description|String|Description of the attribute set.|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Value is null by default. When an attribute set is created, if the value is not specified, the administrator can assign as many attributes to a attribute set in that case. The maximum number of attributes per attribute set is controlled by the maximum number of attributes that can be created in the tenant, which is 500 attributes.|
 
 
 ## Response

@@ -35,6 +35,11 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
 ```
 
+|Name|Description|
+|:---|:---|
+|{customSecurityAttributeDefinitionId}|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
+|{allowedValueId}|Identifier for the allowed value.|
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -44,11 +49,10 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 ## Request body
 In the request body, supply a JSON representation of the [allowedValue](../resources/allowedvalue.md) object.
 
-The following table shows the properties that are required when you update the [allowedValue](../resources/allowedvalue.md).
+The following table shows the properties that you can update for the [allowedValue](../resources/allowedvalue.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
 |isActive|Boolean|Specifies whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
 
 

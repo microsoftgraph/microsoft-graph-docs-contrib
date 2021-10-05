@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A value that is allowed for a custom security attribute definition.
+A predefined value that is allowed for a custom security attribute definition.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,7 +26,7 @@ A value that is allowed for a custom security attribute definition.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
+|id|String|Identifier for the allowed value.|
 |isActive|Boolean|Indicates whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
 
 ## Relationships
