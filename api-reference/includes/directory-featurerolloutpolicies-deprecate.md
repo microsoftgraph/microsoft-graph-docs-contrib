@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> The featureRolloutPolicy API has moved from /directory/featureRolloutPolicies to /policies/featureRolloutPolicies as of 3/05/2021. The existing /directory/featureRolloutPolicies endpoint will stop returning returning data after 06/30/2021.
+> The featureRolloutPolicy API moved from /directory/featureRolloutPolicies to **/policies/featureRolloutPolicies** on March 5, 2021. The previous /directory/featureRolloutPolicies endpoint stopped returning returning data after June 30, 2021.

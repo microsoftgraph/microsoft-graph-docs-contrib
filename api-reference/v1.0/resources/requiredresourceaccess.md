@@ -11,7 +11,7 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the [application](application.md) entity is a collection of **ReqiredResourceAccess**.
+Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to. The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application. The **requiredResourceAccess** property of the [application](application.md) entity is a collection of **RequiredResourceAccess**.
 
 
 ## JSON representation
