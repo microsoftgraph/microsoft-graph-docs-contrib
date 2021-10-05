@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "ffcaf9ed-cf62-4ad0-bbbd-35e5ce8ca783",
+          "ApiChange": "Method",
+          "ChangedApiName": "uploadData",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **uploadData** method from the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printdocument?view=graph-rest-beta) resource.",
+          "Target": "uploadData"
+        }
+      ],
+      "Id": "ffcaf9ed-cf62-4ad0-bbbd-35e5ce8ca783",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-04T22:44:08.4772381Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
                 {
           "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
           "ApiChange": "Enum type",
