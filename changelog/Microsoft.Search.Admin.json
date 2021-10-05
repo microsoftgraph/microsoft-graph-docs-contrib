@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "dd7fe28f-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "searchAnswer",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "searchAnswer"
                 },
                 {
-                    "Id": "dd824463-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookmark",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "bookmark"
                 },
                 {
-                    "Id": "dd84a7cb-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "qna",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "qna"
                 },
                 {
-                    "Id": "dd870a0f-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "acronym",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "acronym"
                 },
                 {
-                    "Id": "dd896f43-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "answerVariant",
                     "ChangeType": "Addition",
@@ -43,7 +43,7 @@
                     "Target": "answerVariant"
                 },
                 {
-                    "Id": "dd8bd236-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Resource",
                     "ChangedApiName": "answerKeyword",
                     "ChangeType": "Addition",
@@ -51,7 +51,7 @@
                     "Target": "answerKeyword"
                 },
                 {
-                    "Id": "dd92f4de-e354-11eb-88f7-f923b9ff781d",
+                    "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "answerState",
                     "ChangeType": "Addition",

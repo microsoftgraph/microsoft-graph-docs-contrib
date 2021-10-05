@@ -21,7 +21,7 @@ An answer variant can be used to change certain fields of a search answer based 
 |:---|:---|:---|
 |description|String|Answer variation description shown on search results page.|
 |displayName|String|Answer variation name displayed in search results.|
-|webUrl|String|Answer variation URL link. When users click this answer variation in search results they will go to this URL.|
+|webUrl|String|Answer variation URL link. When users click this answer variation in search results, they will go to this URL.|
 |languageTags|String collection|List of countries or regions able to view this search answer.|
 |platforms|microsoft.graph.platform collection|List of devices and operating systems able to view this answer variation. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

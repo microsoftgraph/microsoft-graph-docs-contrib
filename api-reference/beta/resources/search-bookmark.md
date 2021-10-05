@@ -1,6 +1,6 @@
 ---
 title: "bookmark resource type"
-description: "A bookmark is a tenant wide administrative answer in search results in Microsoft Search for common tenant search queries. A bookmark has many properties which allow administrators to make common resources more accessible in their organization."
+description: "A bookmark is a tenant wide administrative answer in Microsoft Search results for common tenant search queries. A bookmark has many properties which allow administrators to make common resources more accessible in their organization."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A bookmark is a tenant wide administrative answer in search results in Microsoft Search for common tenant search queries. A bookmark has many properties which allow administrators to make common resources more accessible in their organization.
+A bookmark is a tenant wide administrative answer in Microsoft Search results for common tenant search queries. A bookmark has many properties which allow administrators to make common resources more accessible in their organization.
 
 Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 
@@ -33,14 +33,14 @@ Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 |id|String|The unique identifier (GUID) for the bookmark. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Bookmark name displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Bookmark URL link. When users click this bookmark in search results they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Bookmark URL link. When users click this bookmark in search results, they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the bookmark. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of when the bookmark is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only. |
 |categories|String collection|Categories commonly used to describe this bookmark. For example, IT and HR.|
-|availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as `null` for always available.|
-|availabilityEndDateTime|DateTimeOffset|Date bookmark will stop to appear as a search result. Set as `null` for always available.|
+|availabilityStartDateTime|DateTimeOffset|Timestamp of when the bookmark will start to appear as a search result. Set as `null` for always available.|
+|availabilityEndDateTime|DateTimeOffset|Timestamp of when the bookmark will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this bookmark.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`,`windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |powerAppIds|String collection|List of PowerApps associated with this bookmark. If users add existing PowerApps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|

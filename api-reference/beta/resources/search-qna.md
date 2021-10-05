@@ -33,13 +33,13 @@ Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 |id|String|The unique identifier (GUID) for the qna. Inherited from [entity](../resources/entity.md).|
 |displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Qna URL link. When users click this qna in search results they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Qna URL link. When users click this qna in search results, they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only. |
 |lastModifiedDateTime|DateTimeOffset| Timestamp of when the qna is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
-|availabilityStartDateTime|DateTimeOffset|Date qna will start to appear as a search result. Set as `null` for always available.|
-|availabilityEndDateTime|DateTimeOffset|Date qna will stop to appear as a search result. Set as `null` for always available.|
+|availabilityStartDateTime|DateTimeOffset|Timestamp of when the qna will start to appear as a search result. Set as `null` for always available.|
+|availabilityEndDateTime|DateTimeOffset|Timestamp of when the qna will stop to appear as a search result. Set as `null` for always available.|
 |languageTags|String collection|List of countries or regions able to view this qna.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`,`windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this qna to appear in search results.|
 |state|microsoft.graph.search.answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`.|

@@ -30,9 +30,9 @@ None.
 ## Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-| acronyms | [microsoft.graph.search.acronym](../resources/search-acronym.md) collection | Tenant-wide administrative answer in Microsoft search results to define common acronyms in a tenant.  |
-| bookmarks | [microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection | Tenant-wide administrative answer in Microsoft search results for common tenant search queries. |
-| qnas | [microsoft.graph.search.qna](../resources/search-qna.md) collection | Tenant-wide administrative answer in Microsoft search results which provide answers for specific search keywords. |
+| acronyms | [microsoft.graph.search.acronym](../resources/search-acronym.md) collection | Tenant-wide administrative answer in Microsoft Search results to define common acronyms in a tenant.  |
+| bookmarks | [microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection | Tenant-wide administrative answer in Microsoft Search results for common tenant search queries. |
+| qnas | [microsoft.graph.search.qna](../resources/search-qna.md) collection | Tenant-wide administrative answer in Microsoft Search results which provide answers for specific search keywords. |
 
 
 ## JSON representation
