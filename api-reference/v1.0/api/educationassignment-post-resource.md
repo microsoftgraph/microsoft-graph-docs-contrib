@@ -11,12 +11,19 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an [assignment resource](../resources/educationassignmentresource.md). 
+Create an [assignment resource](../resources/educationassignmentresource.md). You can create the following types of assignment resources:
+
+- [educationFileResource](../resources/educationfileresource.md)
+- [educationExcelResource](../resources/educationexcelresource.md)
+- [educationWordResource](../resources/educationwordresource.md)
+- [educationLinkResource](../resources/educationlinkresource.md)
+- [educationPowerPointResource](../resources/educationpowerpointresource.md)
+- [educationMediaResource](../resources/educationmediaresource.md)
 
 Every resource has an @odata.type property to indicate which type of resource is being created. 
 
-[!IMPORTANT] 
-Before you can upload files, you must [setUpResourcesFolder](../api/educationassignment-setupresourcesfolder.md) to which to upload the files for a given [educationAssignment](../resources/educationassignment.md).
+> [!IMPORTANT] 
+> Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,19 +43,25 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of the resource object. It can be an [educationFileResource](../resources/educationfileresource.md), [educationExcelResource](../resources/educationexcelresource.md), [educationWordResource](../resources/educationwordresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md) and [educationMediaResource](../resources/educationmediaresource.md).
+In the request body, supply a JSON representation of one of the following resource types: 
 
->**Note:** The [educationExternalResource](../resources/educationexternalresource.md) is only an out resource, you can't POST an assignment with it.
+- [educationFileResource](../resources/educationfileresource.md)
+- [educationExcelResource](../resources/educationexcelresource.md)
+- [educationWordResource](../resources/educationwordresource.md)
+- [educationLinkResource](../resources/educationlinkresource.md)
+- [educationPowerPointResource](../resources/educationpowerpointresource.md)
+- [educationMediaResource](../resources/educationmediaresource.md)
 
+>**Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
 ## Examples
-### Example 1: educationLinkResource
+### Example 1: Create an educationLinkResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -118,7 +131,7 @@ Content-length: 229
 }
 ```
 
-### Example 2: educationWordResource
+### Example 2: Create an educationWordResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -188,7 +201,7 @@ Content-length: 229
 }
 ```
 
-### Example 3: educationFileResource
+### Example 3: Create an educationFileResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -261,7 +274,7 @@ Content-length: 229
 }
 ```
 
-### Example 4: educationExcelResource
+### Example 4: Create an educationExcelResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -330,7 +343,7 @@ Content-length: 229
 }
 ```
 
-### Example 5: educationPowerPointResource
+### Example 5: Create an educationPowerPointResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -399,7 +412,7 @@ Content-length: 229
 }
 ```
 
-### Example 6: educationMediaResource
+### Example 6: Create an educationMediaResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -467,59 +480,10 @@ Content-length: 229
 }
 ```
 
-### Example 7: educationExternalResource
-#### Request
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
-  "name": "create_educationexternalresource_from_educationassignment"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
-Content-type: application/json
-Content-length: 283
-
-{
-	"resource": {
-		"displayName": "external",
-		"webUrl": "https://microsoft-my.sharepoint-df.com/:w:/p/EXxrtSxCldNCtP43_2sSUssB0yUHomFf_arYCvE7-IIA_g",
-		"@odata.type": "#microsoft.graph.educationExternalResource"
-	}
-}
-```
-
-#### Response
-The following is an example of the response. 
-
->**Note:** The educationExternalResource is only an out resource, you can't POST a submission with it.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationExternalResource"
-} -->
-```http
-HTTP/1.1 400 Bad request
-Content-type: application/json
-Content-length: 511
-
-{
-    "error": {
-        "code": "20132",
-        "message": "The content of the request is invalid. Common causes are an invalid Content-Type header or no content in the body.",
-        "innerError": {
-            "date": "2021-09-16T19:29:00",
-            "request-id": "926cdc33-d0ac-4e66-b875-37df7aca902c",
-            "client-request-id": "660e30f8-e066-2403-cfb2-6c2f18a1855f"
-        }
-    }
-}
-```
 
 ## See also
 
-* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [Assignments and submissions state transition](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
