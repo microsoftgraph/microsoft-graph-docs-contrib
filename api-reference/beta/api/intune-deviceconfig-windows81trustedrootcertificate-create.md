@@ -2,7 +2,7 @@
 title: "Create windows81TrustedRootCertificate"
 description: "Create a new windows81TrustedRootCertificate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

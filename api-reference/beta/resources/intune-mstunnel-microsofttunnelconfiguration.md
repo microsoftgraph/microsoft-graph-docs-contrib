@@ -2,7 +2,7 @@
 title: "microsoftTunnelConfiguration resource type"
 description: "Entity that represents a collection of Microsoft Tunnel settings"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

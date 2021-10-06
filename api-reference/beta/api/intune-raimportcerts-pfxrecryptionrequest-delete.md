@@ -2,7 +2,7 @@
 title: "Delete pfxRecryptionRequest"
 description: "Deletes a pfxRecryptionRequest."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

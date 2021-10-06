@@ -2,7 +2,7 @@
 title: "Delete deviceManagementAbstractComplexSettingDefinition"
 description: "Deletes a deviceManagementAbstractComplexSettingDefinition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

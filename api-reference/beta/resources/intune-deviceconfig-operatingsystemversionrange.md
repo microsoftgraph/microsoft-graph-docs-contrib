@@ -2,7 +2,7 @@
 title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

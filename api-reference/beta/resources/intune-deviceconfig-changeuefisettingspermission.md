@@ -2,7 +2,7 @@
 title: "changeUefiSettingsPermission enum type"
 description: "Defines the permission level granted to users to enable them change Uefi settings"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

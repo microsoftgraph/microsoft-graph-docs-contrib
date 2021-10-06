@@ -2,7 +2,7 @@
 title: "userPFXCertificate resource type"
 description: "Entity that encapsulates all information required for a user's PFX certificates."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

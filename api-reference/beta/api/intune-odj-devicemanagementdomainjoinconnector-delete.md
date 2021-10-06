@@ -2,7 +2,7 @@
 title: "Delete deviceManagementDomainJoinConnector"
 description: "Deletes a deviceManagementDomainJoinConnector."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

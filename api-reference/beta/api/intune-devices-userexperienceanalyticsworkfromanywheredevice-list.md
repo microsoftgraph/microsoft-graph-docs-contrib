@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsWorkFromAnywhereDevices"
 description: "List properties and relationships of the userExperienceAnalyticsWorkFromAnywhereDevice objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,13 +60,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1429
+Content-Length: 1549
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
       "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+      "deviceId": "Device Id value",
       "deviceName": "Device Name value",
       "serialNumber": "Serial Number value",
       "manufacturer": "Manufacturer value",
@@ -83,6 +84,7 @@ Content-Length: 1429
       "tenantAttached": true,
       "compliancePolicySetToIntune": true,
       "otherWorkloadsSetToIntune": true,
+      "isCloudManagedGatewayEnabled": true,
       "upgradeEligibility": "unknown",
       "ramCheckFailed": true,
       "storageCheckFailed": true,
@@ -93,6 +95,7 @@ Content-Length: 1429
       "processorFamilyCheckFailed": true,
       "processor64BitCheckFailed": true,
       "osCheckFailed": true,
+      "workFromAnywhereScore": 7.0,
       "windowsScore": 4.0,
       "cloudManagementScore": 6.666666666666667,
       "cloudIdentityScore": 6.0,

@@ -2,7 +2,7 @@
 title: "Delete iosUpdateConfiguration"
 description: "Deletes a iosUpdateConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

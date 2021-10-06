@@ -2,7 +2,7 @@
 title: "Update windows81SCEPCertificateProfile"
 description: "Update the properties of a windows81SCEPCertificateProfile object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

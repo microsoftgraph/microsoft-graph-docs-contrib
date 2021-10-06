@@ -2,7 +2,7 @@
 title: "officeSuiteInstallProgressDisplayLevel enum type"
 description: "The Enum to specify the level of display for the Installation Progress Setup UI on the Device."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

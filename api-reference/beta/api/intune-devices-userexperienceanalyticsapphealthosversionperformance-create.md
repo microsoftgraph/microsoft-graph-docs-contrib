@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsAppHealthOSVersionPerformance"
 description: "Create a new userExperienceAnalyticsAppHealthOSVersionPerformance object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

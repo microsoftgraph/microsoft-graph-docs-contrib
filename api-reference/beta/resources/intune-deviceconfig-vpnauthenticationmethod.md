@@ -2,7 +2,7 @@
 title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

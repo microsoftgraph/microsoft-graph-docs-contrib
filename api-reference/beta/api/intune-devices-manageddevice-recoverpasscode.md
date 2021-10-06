@@ -2,7 +2,7 @@
 title: "recoverPasscode action"
 description: "Recover passcode"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

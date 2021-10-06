@@ -2,7 +2,7 @@
 title: "groupPolicyConfigurationType enum type"
 description: "Group Policy Configuration Type"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

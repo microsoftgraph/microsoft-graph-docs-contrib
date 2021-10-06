@@ -2,7 +2,7 @@
 title: "deviceManagementSettingRequiredConstraint resource type"
 description: "Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

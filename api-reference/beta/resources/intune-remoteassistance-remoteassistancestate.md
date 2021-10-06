@@ -2,7 +2,7 @@
 title: "remoteAssistanceState enum type"
 description: "State of remote assistance for the account"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

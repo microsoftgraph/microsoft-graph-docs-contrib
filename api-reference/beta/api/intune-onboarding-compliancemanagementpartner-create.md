@@ -2,7 +2,7 @@
 title: "Create complianceManagementPartner"
 description: "Create a new complianceManagementPartner object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

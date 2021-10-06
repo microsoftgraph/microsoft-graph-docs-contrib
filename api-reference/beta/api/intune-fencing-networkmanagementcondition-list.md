@@ -2,7 +2,7 @@
 title: "List networkManagementConditions"
 description: "List properties and relationships of the networkManagementCondition objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "updatePriorities action"
 description: "Update policy priorities."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType

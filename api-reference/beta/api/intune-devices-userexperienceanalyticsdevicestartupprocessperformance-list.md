@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsDeviceStartupProcessPerformances"
 description: "List properties and relationships of the userExperienceAnalyticsDeviceStartupProcessPerformance objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 460
 
 {
   "value": [
@@ -72,7 +72,9 @@ Content-Length: 399
       "publisher": "Publisher value",
       "deviceCount": 11,
       "medianImpactInMs": 0,
-      "totalImpactInMs": 15
+      "totalImpactInMs": 15,
+      "medianImpactInMs2": 1,
+      "totalImpactInMs2": 0
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "Delete windowsQualityUpdateProfile"
 description: "Deletes a windowsQualityUpdateProfile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

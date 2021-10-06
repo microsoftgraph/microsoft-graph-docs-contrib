@@ -2,7 +2,7 @@
 title: "ratingAustraliaTelevisionType enum type"
 description: "TV content rating labels in Australia"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

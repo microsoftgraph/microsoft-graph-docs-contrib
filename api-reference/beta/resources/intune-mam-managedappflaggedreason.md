@@ -2,7 +2,7 @@
 title: "managedAppFlaggedReason enum type"
 description: "The reason for which a user has been flagged"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

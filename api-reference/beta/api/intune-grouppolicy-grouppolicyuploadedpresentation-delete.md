@@ -2,7 +2,7 @@
 title: "Delete groupPolicyUploadedPresentation"
 description: "Deletes a groupPolicyUploadedPresentation."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

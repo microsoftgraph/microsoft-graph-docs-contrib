@@ -2,7 +2,7 @@
 title: "androidProfileApplicability enum type"
 description: "Android profile applicability"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "macOSEnterpriseWiFiConfiguration resource type"
 description: "MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

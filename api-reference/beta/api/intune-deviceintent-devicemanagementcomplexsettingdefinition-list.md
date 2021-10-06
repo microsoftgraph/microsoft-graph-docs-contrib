@@ -2,7 +2,7 @@
 title: "List deviceManagementComplexSettingDefinitions"
 description: "List properties and relationships of the deviceManagementComplexSettingDefinition objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

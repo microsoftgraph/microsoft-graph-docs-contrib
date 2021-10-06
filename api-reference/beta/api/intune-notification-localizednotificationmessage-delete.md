@@ -2,7 +2,7 @@
 title: "Delete localizedNotificationMessage"
 description: "Deletes a localizedNotificationMessage."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

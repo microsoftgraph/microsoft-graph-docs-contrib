@@ -2,7 +2,7 @@
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

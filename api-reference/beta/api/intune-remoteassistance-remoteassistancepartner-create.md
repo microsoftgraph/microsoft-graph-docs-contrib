@@ -2,7 +2,7 @@
 title: "Create remoteAssistancePartner"
 description: "Create a new remoteAssistancePartner object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

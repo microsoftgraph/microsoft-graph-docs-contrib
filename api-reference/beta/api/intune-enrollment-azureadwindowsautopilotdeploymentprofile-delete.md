@@ -2,7 +2,7 @@
 title: "Delete azureADWindowsAutopilotDeploymentProfile"
 description: "Deletes a azureADWindowsAutopilotDeploymentProfile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update remoteAssistancePartner"
 description: "Update the properties of a remoteAssistancePartner object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

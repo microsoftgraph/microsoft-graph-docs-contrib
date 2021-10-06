@@ -2,7 +2,7 @@
 title: "androidForWorkVpnConnectionType enum type"
 description: "Android For Work VPN connection type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

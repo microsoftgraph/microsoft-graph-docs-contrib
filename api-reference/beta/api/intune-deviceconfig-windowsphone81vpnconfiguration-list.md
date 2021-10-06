@@ -2,7 +2,7 @@
 title: "List windowsPhone81VpnConfigurations"
 description: "List properties and relationships of the windowsPhone81VpnConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

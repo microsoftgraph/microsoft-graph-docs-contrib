@@ -2,7 +2,7 @@
 title: "defaultDeviceCompliancePolicy resource type"
 description: "Default device compliance policy rules that are enforced account wide."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

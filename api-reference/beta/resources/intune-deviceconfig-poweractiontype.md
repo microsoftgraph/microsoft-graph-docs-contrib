@@ -2,7 +2,7 @@
 title: "powerActionType enum type"
 description: "Power action types"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete cartToClassAssociation"
 description: "Deletes a cartToClassAssociation."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

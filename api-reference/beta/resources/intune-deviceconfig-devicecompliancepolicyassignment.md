@@ -2,7 +2,7 @@
 title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

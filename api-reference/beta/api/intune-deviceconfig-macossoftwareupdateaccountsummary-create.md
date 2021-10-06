@@ -2,7 +2,7 @@
 title: "Create macOSSoftwareUpdateAccountSummary"
 description: "Create a new macOSSoftwareUpdateAccountSummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

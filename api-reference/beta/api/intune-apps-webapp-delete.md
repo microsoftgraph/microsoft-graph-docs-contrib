@@ -2,7 +2,7 @@
 title: "Delete webApp"
 description: "Deletes a webApp."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

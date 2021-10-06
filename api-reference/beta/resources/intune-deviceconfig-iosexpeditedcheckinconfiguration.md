@@ -2,7 +2,7 @@
 title: "iosExpeditedCheckinConfiguration resource type"
 description: "Experimental profile to increase the rate of device check-ins per day of iOS devices."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

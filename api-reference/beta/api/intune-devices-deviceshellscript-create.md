@@ -2,7 +2,7 @@
 title: "Create deviceShellScript"
 description: "Create a new deviceShellScript object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

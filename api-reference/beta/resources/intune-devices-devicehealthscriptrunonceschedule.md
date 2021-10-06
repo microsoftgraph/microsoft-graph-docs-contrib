@@ -2,7 +2,7 @@
 title: "deviceHealthScriptRunOnceSchedule resource type"
 description: "Device health script run once schedule."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "macOSSoftwareUpdateCategory enum type"
 description: "MacOS Software Update Category"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

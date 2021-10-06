@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationGroupSettingCollectionInstance resource type"
 description: "Instance of a GroupSettingCollection"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

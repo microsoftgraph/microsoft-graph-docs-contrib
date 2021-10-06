@@ -2,7 +2,7 @@
 title: "Create androidForWorkPkcsCertificateProfile"
 description: "Create a new androidForWorkPkcsCertificateProfile object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

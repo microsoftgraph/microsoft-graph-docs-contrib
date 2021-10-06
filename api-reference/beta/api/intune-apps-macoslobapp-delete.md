@@ -2,7 +2,7 @@
 title: "Delete macOSLobApp"
 description: "Deletes a macOSLobApp."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

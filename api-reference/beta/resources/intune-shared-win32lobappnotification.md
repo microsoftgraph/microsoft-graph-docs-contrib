@@ -2,7 +2,7 @@
 title: "win32LobAppNotification enum type"
 description: "Contains value for notification status."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

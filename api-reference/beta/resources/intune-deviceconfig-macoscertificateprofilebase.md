@@ -2,7 +2,7 @@
 title: "macOSCertificateProfileBase resource type"
 description: "Mac OS certificate profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "policyPlatformType enum type"
 description: "Supported platform types for policies."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

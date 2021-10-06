@@ -2,7 +2,7 @@
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

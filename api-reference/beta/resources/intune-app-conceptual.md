@@ -51,6 +51,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
 - [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
+- [Aosp Wi-Fi security type](intune-androidforwork-aospwifisecuritytype.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
 - [Device install state](intune-books-deviceinstallstate.md)

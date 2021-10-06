@@ -2,7 +2,7 @@
 title: "logoutSharedAppleDeviceActiveUser action"
 description: "Logout shared Apple device active user"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

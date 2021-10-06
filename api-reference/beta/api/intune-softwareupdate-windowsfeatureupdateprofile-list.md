@@ -2,7 +2,7 @@
 title: "List windowsFeatureUpdateProfiles"
 description: "List properties and relationships of the windowsFeatureUpdateProfile objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

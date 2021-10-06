@@ -2,7 +2,7 @@
 title: "chromeOSOnboardingStatus enum type"
 description: "The onboarding status of the tenant."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

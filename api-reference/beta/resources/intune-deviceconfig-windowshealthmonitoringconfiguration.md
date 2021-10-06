@@ -2,7 +2,7 @@
 title: "windowsHealthMonitoringConfiguration resource type"
 description: "Windows device health monitoring configuration"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

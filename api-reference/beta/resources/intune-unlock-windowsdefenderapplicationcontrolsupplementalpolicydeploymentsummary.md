@@ -2,7 +2,7 @@
 title: "windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary resource type"
 description: "Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

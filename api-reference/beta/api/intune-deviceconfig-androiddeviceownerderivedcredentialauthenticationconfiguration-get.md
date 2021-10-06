@@ -2,7 +2,7 @@
 title: "Get androidDeviceOwnerDerivedCredentialAuthenticationConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerDerivedCredentialAuthenticationConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

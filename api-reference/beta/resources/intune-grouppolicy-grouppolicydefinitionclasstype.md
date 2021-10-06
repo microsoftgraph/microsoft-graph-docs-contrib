@@ -2,7 +2,7 @@
 title: "groupPolicyDefinitionClassType enum type"
 description: "Group Policy Definition Class Type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

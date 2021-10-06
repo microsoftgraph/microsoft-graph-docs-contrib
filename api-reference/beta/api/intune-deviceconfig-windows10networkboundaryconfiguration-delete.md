@@ -2,7 +2,7 @@
 title: "Delete windows10NetworkBoundaryConfiguration"
 description: "Deletes a windows10NetworkBoundaryConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Create deviceLogCollectionResponse"
 description: "Create a new deviceLogCollectionResponse object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

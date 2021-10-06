@@ -2,7 +2,7 @@
 title: "groupPolicyUploadedDefinitionFileStatus enum type"
 description: "Type of Group Policy uploaded definition file status."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

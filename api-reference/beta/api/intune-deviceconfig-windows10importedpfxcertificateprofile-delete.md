@@ -2,7 +2,7 @@
 title: "Delete windows10ImportedPFXCertificateProfile"
 description: "Deletes a windows10ImportedPFXCertificateProfile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

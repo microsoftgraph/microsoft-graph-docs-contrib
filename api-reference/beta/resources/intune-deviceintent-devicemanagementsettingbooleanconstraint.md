@@ -2,7 +2,7 @@
 title: "deviceManagementSettingBooleanConstraint resource type"
 description: "Constraint the enforces a particular boolean value"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

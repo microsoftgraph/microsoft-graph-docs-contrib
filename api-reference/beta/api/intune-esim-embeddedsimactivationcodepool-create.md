@@ -2,7 +2,7 @@
 title: "Create embeddedSIMActivationCodePool"
 description: "Create a new embeddedSIMActivationCodePool object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

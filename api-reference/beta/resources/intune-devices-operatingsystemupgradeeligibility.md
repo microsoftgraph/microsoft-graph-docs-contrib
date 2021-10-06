@@ -2,7 +2,7 @@
 title: "operatingSystemUpgradeEligibility enum type"
 description: "Work From Anywhere windows device upgrade eligibility status"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

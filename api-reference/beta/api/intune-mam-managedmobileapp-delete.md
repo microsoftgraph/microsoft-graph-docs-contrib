@@ -2,7 +2,7 @@
 title: "Delete managedMobileApp"
 description: "Deletes a managedMobileApp."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

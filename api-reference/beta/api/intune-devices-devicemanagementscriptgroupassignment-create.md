@@ -2,7 +2,7 @@
 title: "Create deviceManagementScriptGroupAssignment"
 description: "Create a new deviceManagementScriptGroupAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

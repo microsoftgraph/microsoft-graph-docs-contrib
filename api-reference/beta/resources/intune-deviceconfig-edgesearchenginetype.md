@@ -2,7 +2,7 @@
 title: "edgeSearchEngineType enum type"
 description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

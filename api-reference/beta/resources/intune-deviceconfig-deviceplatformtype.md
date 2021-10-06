@@ -2,7 +2,7 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update windowsManagementApp"
 description: "Update the properties of a windowsManagementApp object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

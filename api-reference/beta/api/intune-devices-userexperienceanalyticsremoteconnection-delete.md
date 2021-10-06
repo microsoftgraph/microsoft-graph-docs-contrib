@@ -2,7 +2,7 @@
 title: "Delete userExperienceAnalyticsRemoteConnection"
 description: "Deletes a userExperienceAnalyticsRemoteConnection."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "win32LobAppFileSystemOperationType enum type"
 description: "Contains all supported file system detection type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

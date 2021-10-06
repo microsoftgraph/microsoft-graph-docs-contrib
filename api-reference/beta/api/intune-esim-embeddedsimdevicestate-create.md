@@ -2,7 +2,7 @@
 title: "Create embeddedSIMDeviceState"
 description: "Create a new embeddedSIMDeviceState object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

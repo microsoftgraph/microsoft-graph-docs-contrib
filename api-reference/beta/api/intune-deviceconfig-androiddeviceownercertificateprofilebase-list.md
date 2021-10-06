@@ -2,7 +2,7 @@
 title: "List androidDeviceOwnerCertificateProfileBases"
 description: "List properties and relationships of the androidDeviceOwnerCertificateProfileBase objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

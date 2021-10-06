@@ -2,7 +2,7 @@
 title: "Create androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -122,8 +122,8 @@ The following table shows the properties that are required when you create the a
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
-|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 1 to 9999999|
-|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 1 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
 |kioskModeManagedHomeScreenPinRequired|Boolean|Whether or not require user to set a PIN for sign-in session for Managed Home Screen.|
 |kioskModeManagedHomeScreenPinRequiredToResume|Boolean|Whether or not required user to enter session PIN if screensaver has appeared for Managed Home Screen.|
@@ -172,6 +172,8 @@ The following table shows the properties that are required when you create the a
 |personalProfileAppsAllowInstallFromUnknownSources|Boolean|Indicates whether the user can install apps from unknown sources on the personal profile.|
 |personalProfileCameraBlocked|Boolean|Indicates whether to disable the use of the camera on the personal profile.|
 |personalProfileScreenCaptureBlocked|Boolean|Indicates whether to disable the capability to take screenshots on the personal profile.|
+|personalProfilePlayStoreMode|[personalProfilePersonalPlayStoreMode](../resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md)|Used together with PersonalProfilePersonalApplications to control how apps in the personal profile are allowed or blocked. Possible values are: `notConfigured`, `blockedApps`, `allowedApps`.|
+|personalProfilePersonalApplications|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Policy applied to applications in the personal profile. This collection can contain a maximum of 500 elements.|
 |workProfilePasswordExpirationDays|Int32|Indicates the number of days that a work profile password can be set before it expires and a new password will be required. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Indicates the minimum length of the work profile password. Valid values 4 to 16|
 |workProfilePasswordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for the work profile password. Valid values 1 to 16|
@@ -196,7 +198,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 8247
+Content-length: 8571
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -390,6 +392,16 @@ Content-length: 8247
   "personalProfileAppsAllowInstallFromUnknownSources": true,
   "personalProfileCameraBlocked": true,
   "personalProfileScreenCaptureBlocked": true,
+  "personalProfilePlayStoreMode": "blockedApps",
+  "personalProfilePersonalApplications": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
   "workProfilePasswordMinimumNumericCharacters": 11,
@@ -409,7 +421,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8419
+Content-Length: 8743
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -606,6 +618,16 @@ Content-Length: 8419
   "personalProfileAppsAllowInstallFromUnknownSources": true,
   "personalProfileCameraBlocked": true,
   "personalProfileScreenCaptureBlocked": true,
+  "personalProfilePlayStoreMode": "blockedApps",
+  "personalProfilePersonalApplications": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
   "workProfilePasswordMinimumNumericCharacters": 11,

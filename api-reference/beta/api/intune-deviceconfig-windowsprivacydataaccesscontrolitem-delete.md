@@ -2,7 +2,7 @@
 title: "Delete windowsPrivacyDataAccessControlItem"
 description: "Deletes a windowsPrivacyDataAccessControlItem."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

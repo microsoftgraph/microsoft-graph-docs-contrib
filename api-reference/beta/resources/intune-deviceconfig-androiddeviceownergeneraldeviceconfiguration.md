@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the androidDeviceOwnerGeneralDeviceConfiguration resource."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -105,8 +105,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
-|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 1 to 9999999|
-|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 1 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
 |kioskModeManagedHomeScreenPinRequired|Boolean|Whether or not require user to set a PIN for sign-in session for Managed Home Screen.|
 |kioskModeManagedHomeScreenPinRequiredToResume|Boolean|Whether or not required user to enter session PIN if screensaver has appeared for Managed Home Screen.|
@@ -155,6 +155,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |personalProfileAppsAllowInstallFromUnknownSources|Boolean|Indicates whether the user can install apps from unknown sources on the personal profile.|
 |personalProfileCameraBlocked|Boolean|Indicates whether to disable the use of the camera on the personal profile.|
 |personalProfileScreenCaptureBlocked|Boolean|Indicates whether to disable the capability to take screenshots on the personal profile.|
+|personalProfilePlayStoreMode|[personalProfilePersonalPlayStoreMode](../resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md)|Used together with PersonalProfilePersonalApplications to control how apps in the personal profile are allowed or blocked. Possible values are: `notConfigured`, `blockedApps`, `allowedApps`.|
+|personalProfilePersonalApplications|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Policy applied to applications in the personal profile. This collection can contain a maximum of 500 elements.|
 |workProfilePasswordExpirationDays|Int32|Indicates the number of days that a work profile password can be set before it expires and a new password will be required. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Indicates the minimum length of the work profile password. Valid values 4 to 16|
 |workProfilePasswordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for the work profile password. Valid values 1 to 16|
@@ -382,6 +384,16 @@ Here is a JSON representation of the resource.
   "personalProfileAppsAllowInstallFromUnknownSources": true,
   "personalProfileCameraBlocked": true,
   "personalProfileScreenCaptureBlocked": true,
+  "personalProfilePlayStoreMode": "String",
+  "personalProfilePersonalApplications": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "String",
+      "publisher": "String",
+      "appStoreUrl": "String",
+      "appId": "String"
+    }
+  ],
   "workProfilePasswordExpirationDays": 1024,
   "workProfilePasswordMinimumLength": 1024,
   "workProfilePasswordMinimumNumericCharacters": 1024,

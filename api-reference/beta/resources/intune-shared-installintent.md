@@ -2,7 +2,7 @@
 title: "installIntent enum type"
 description: "Possible values for the install intent chosen by the admin."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

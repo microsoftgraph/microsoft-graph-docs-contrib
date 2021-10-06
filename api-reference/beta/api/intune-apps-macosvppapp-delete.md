@@ -2,7 +2,7 @@
 title: "Delete macOsVppApp"
 description: "Deletes a macOsVppApp."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

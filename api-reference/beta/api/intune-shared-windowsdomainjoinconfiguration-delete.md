@@ -2,7 +2,7 @@
 title: "Delete windowsDomainJoinConfiguration"
 description: "Deletes a windowsDomainJoinConfiguration."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "windowsDefenderApplicationControlSupplementalPolicyStatuses enum type"
 description: "Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

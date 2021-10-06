@@ -2,7 +2,7 @@
 title: "microsoftLauncherDockPresence enum type"
 description: "Microsoft Launcher Dock Presence selection."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

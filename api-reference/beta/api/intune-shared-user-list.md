@@ -2,7 +2,7 @@
 title: "List users"
 description: "List properties and relationships of the user objects."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

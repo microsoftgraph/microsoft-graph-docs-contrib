@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationGroupSettingValueTemplate resource type"
 description: "Group Setting Value Template"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

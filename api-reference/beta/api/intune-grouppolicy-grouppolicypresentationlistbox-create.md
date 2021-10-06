@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationListBox"
 description: "Create a new groupPolicyPresentationListBox object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

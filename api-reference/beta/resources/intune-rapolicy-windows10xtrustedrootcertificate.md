@@ -2,7 +2,7 @@
 title: "windows10XTrustedRootCertificate resource type"
 description: "Windows X Trusted Root Certificate configuration profile"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

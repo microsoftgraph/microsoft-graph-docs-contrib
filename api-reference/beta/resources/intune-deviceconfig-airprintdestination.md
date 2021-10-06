@@ -2,7 +2,7 @@
 title: "airPrintDestination resource type"
 description: "Represents an AirPrint destination."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "deliveryOptimizationBandwidth resource type"
 description: "Bandwidth restriction types"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

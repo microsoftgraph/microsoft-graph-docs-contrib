@@ -2,7 +2,7 @@
 title: "remoteLockActionResult resource type"
 description: "Lock action result with a pin to unlock"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

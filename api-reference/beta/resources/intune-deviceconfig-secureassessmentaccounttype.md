@@ -2,7 +2,7 @@
 title: "secureAssessmentAccountType enum type"
 description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

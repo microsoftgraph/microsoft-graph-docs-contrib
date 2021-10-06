@@ -2,7 +2,7 @@
 title: "macOSRedirectSingleSignOnExtension resource type"
 description: "Represents a Redirect-type Single Sign-On extension profile for macOS devices."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

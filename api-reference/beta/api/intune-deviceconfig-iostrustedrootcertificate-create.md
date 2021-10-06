@@ -2,7 +2,7 @@
 title: "Create iosTrustedRootCertificate"
 description: "Create a new iosTrustedRootCertificate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

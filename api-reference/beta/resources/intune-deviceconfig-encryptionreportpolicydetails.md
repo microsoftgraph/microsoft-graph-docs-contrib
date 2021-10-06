@@ -2,7 +2,7 @@
 title: "encryptionReportPolicyDetails resource type"
 description: "Policy Details for Encryption Report"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

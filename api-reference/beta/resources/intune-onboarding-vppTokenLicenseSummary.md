@@ -2,7 +2,7 @@
 title: "vppTokenLicenseSummary resource type"
 description: "License summary of a given app in a token."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

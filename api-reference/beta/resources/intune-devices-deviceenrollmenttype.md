@@ -2,7 +2,7 @@
 title: "deviceEnrollmentType enum type"
 description: "Possible ways of adding a mobile device to management."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

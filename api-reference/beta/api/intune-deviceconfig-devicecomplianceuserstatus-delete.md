@@ -2,7 +2,7 @@
 title: "Delete deviceComplianceUserStatus"
 description: "Deletes a deviceComplianceUserStatus."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "deviceManagementExchangeOnPremisesPolicy resource type"
 description: "Singleton entity which represents the Exchange OnPremises policy configured for a tenant."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

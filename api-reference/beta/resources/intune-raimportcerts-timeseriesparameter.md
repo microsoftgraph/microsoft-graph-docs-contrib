@@ -2,7 +2,7 @@
 title: "timeSeriesParameter resource type"
 description: "Parameter passed to GetHealthMetricTimeSeries when requesting snapshot time series."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

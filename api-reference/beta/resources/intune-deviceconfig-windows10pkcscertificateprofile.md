@@ -2,7 +2,7 @@
 title: "windows10PkcsCertificateProfile resource type"
 description: "Windows 10 Desktop and Mobile PKCS certificate profile"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

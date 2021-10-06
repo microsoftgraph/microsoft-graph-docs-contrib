@@ -2,7 +2,7 @@
 title: "androidWorkProfilePkcsCertificateProfile resource type"
 description: "Android Work Profile PKCS certificate profile"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

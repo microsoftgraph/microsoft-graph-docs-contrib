@@ -2,7 +2,7 @@
 title: "androidForWorkAppConfigurationSchemaItemDataType enum type"
 description: "Data type for a configuration item inside an Android for Work application's custom configuration schema"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

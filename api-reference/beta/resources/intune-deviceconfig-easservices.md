@@ -2,7 +2,7 @@
 title: "easServices enum type"
 description: "Exchange Active Sync services."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

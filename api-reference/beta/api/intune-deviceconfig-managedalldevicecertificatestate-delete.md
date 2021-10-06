@@ -2,7 +2,7 @@
 title: "Delete managedAllDeviceCertificateState"
 description: "Deletes a managedAllDeviceCertificateState."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

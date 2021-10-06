@@ -2,7 +2,7 @@
 title: "miracastChannel enum type"
 description: "Possible values for Miracast channel."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

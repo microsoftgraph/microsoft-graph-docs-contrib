@@ -2,7 +2,7 @@
 title: "mobileAppPublishingState enum type"
 description: "Indicates the publishing state of an app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

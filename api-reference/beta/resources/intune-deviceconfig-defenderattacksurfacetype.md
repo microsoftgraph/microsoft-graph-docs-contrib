@@ -2,7 +2,7 @@
 title: "defenderAttackSurfaceType enum type"
 description: "Possible values of Defender Attack Surface Reduction Rules"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "androidPermissionActionType enum type"
 description: "Android action taken when an app requests a dangerous permission."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
