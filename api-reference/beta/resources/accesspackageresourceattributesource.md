@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceAttributeSource resource type"
-description: "Used for the `accessPackageAttribute` property of an access package resource."
+description: "An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
