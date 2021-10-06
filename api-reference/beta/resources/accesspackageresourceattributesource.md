@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the complex type of the source of an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) used for the attributeSource property. The actual source will be a subtype of this complex type. Currently, the only supported subtype is [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md). 
+An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver. It is inherited by [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md). 
 
 ## Properties
 None.
