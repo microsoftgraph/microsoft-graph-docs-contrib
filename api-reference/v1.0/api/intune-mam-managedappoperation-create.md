@@ -2,7 +2,7 @@
 title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -90,7 +90,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

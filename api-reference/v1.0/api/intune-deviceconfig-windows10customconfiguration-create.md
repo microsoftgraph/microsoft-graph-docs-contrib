@@ -2,7 +2,7 @@
 title: "Create windows10CustomConfiguration"
 description: "Create a new windows10CustomConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -109,7 +109,6 @@ Content-Length: 550
   ]
 }
 ```
-
 
 
 

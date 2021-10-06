@@ -56,6 +56,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
 - [Proxied domain](intune-mam-proxieddomain.md)
 - [Targeted managed app configuration](intune-mam-targetedmanagedappconfiguration.md)
+- [Targeted managed app group type](intune-mam-targetedmanagedappgrouptype.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
 - [User](intune-mam-user.md)

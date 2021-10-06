@@ -2,7 +2,7 @@
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -30,7 +30,6 @@ Windows 10 Edition type.
 |windows10ProfessionalEducationN|9|Windows 10 Professional EducationN|
 |windows10ProfessionalWorkstation|10|Windows 10 Professional for Workstations|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional for Workstations N|
-
 
 
 

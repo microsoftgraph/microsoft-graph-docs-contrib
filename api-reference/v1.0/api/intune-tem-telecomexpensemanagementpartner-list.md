@@ -2,7 +2,7 @@
 title: "List telecomExpenseManagementPartners"
 description: "List properties and relationships of the telecomExpenseManagementPartner objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -74,7 +74,6 @@ Content-Length: 358
   ]
 }
 ```
-
 
 
 

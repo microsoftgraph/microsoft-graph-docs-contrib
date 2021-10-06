@@ -2,7 +2,7 @@
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -95,7 +95,6 @@ Content-Length: 372
   "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
 }
 ```
-
 
 
 
