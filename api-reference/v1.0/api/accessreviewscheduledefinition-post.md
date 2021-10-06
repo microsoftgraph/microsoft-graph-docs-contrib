@@ -550,7 +550,6 @@ Content-type: application/json
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
