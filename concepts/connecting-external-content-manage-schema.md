@@ -1,5 +1,5 @@
 ---
-title: "Register schema for the Microsoft Graph connection"
+title: "Register and update schema for the Microsoft Graph connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection"
 localization_priority: Priority
 author: mecampos
@@ -8,7 +8,7 @@ ms.prod: search
 ---
 <!---<author of this doc: rsamai>--->
 
-# Register schema for the Microsoft Graph connection
+# Register and update schema for the Microsoft Graph connection
 
 The connection [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
@@ -40,7 +40,7 @@ If a property is searchable, its value is added to the full text index. When a u
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against properties and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
 
-*A search for "design" displaying results for hits against properties (`title`, `tags`) and content*
+*A search for "design" displaying results for hits against properties ( `tags`)*
 
 ### Queryable
 
@@ -88,6 +88,10 @@ A label is a well known tag published by Microsoft that you can add against a pr
 | lastModifiedDateTime  | Date & time the item was last modified in the data source                            |
 | fileName              | In case of a file, the name of the file in the data source                           |
 | fileExtension         | In case of a file, the extension of the file in the data source                      |
+| unknownFutureValue    | |
+| iconUrl               | |
+| containerName         | |
+| containerUrl          | |
 
 For example, the connection property *lastEditedBy* has the same meaning as the Microsoft label *lastModifiedBy*.
 
@@ -140,14 +144,7 @@ Finally, when assigning labels, ensure the following:
 
 Aliases are friendly names for properties that you assign. These will be used in queries and selections in refinable property filters.
 
-## Planned schema updates
-
-This section includes information about planned updates for the Schema API.
-
-> [!NOTE]
-> It is strongly recommended to re-ingest items after the updates, to bring them to te latest schema. Without re-ingestion the behavior of the items will be inconsistent.
-
-### Semantic labels
+## Semantic labels
 
 Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes.
 
@@ -179,13 +176,39 @@ The label **title** is the most important label. Make sure you assign a property
 
 Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels not to have a property assigned to them.
 
+## Schema update capabilities
+
+This section includes information about the update capabilities for the Schema API.
+
+> [!NOTE]
+> It is strongly recommended to re-ingest items after an update, to bring them to te latest schema. Without re-ingestion the behavior of the items will be inconsistent.
+
 ### Adding a property
 
-It will be possible to add a property to the schema. This property can have any search attributes, and it will be available in Substrate with its value after being added.
+Adding a property does not require re-ingestion, but it is recommended.
+You can add a property to the schema by -----.
+When you add the property, you can include all the search attributes that you need.
 
-### Adding search attributes to a property
+### Adding/removing a search capability
 
-It will be possible to add specific search attributes to a property.  
+Adding a search capability does requires re-ingestion.
+You can add a property to the schema by -----.
+You can add specific search attributes to a property, however you cannot add a refiner search attribute as a schema change. Also it is not possible to refinable attributes as searchable capabilities.
+
+Deletion of search attributes from a property
+Deletion of a search attribute from a property would lead to inconsistent behavior as the backward and forward looking items differ in the returned result set.
+
+### Adding/removing an alias
+
+It does not require re-ingestion
+
+The connection admins and 1st party schema owners will be allowed to add or remove aliases.  The behavior on backward and forward-looking items for a search using this alias will be the same.
+The one caveat to this is that the schema owner will be unable to remove the original alias of a refinable property that was auto-created by the system.
+
+### Adding/removing a semantic label
+
+Requires re-ingestion
+Adding a semantic label can affect experiences like Working Set, Relevance, and Project Cortex. If a re-ingestion occurs, these experiences will be fixed.
 
 ## Next steps
 
