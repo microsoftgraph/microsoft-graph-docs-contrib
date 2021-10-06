@@ -22,8 +22,8 @@ A resource that exposes properties for the requestor of an access package to pro
 |attributeName|String|The name of the attribute in the end system.|
 |attributeSource|[accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md)|Information about how to populate the attribute value when an **accessPackageAssignmentRequest** is being fulfilled.|
 |id|String|Unique identifier for the attribute.|
-|isEditable|String|Whether or not an existing attribute value can be edited by the requester.|
-|isPersistedOnAssignmentRemoval|Boolean|Whether the attribute will remain in the end system after an assignment ends.|
+|isEditable|String| Specifies whether or not an existing attribute value can be edited by the requester.|
+|isPersistedOnAssignmentRemoval|Boolean| Specifies whether the attribute will remain in the end system after an assignment ends.|
 
 ## Relationships
 None.
