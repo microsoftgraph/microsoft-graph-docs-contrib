@@ -2,8 +2,8 @@
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -66,9 +66,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
 
 
 

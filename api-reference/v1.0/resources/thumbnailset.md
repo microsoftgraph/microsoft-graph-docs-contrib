@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
 ms.prod: ""
 doc_type: resourcePageType
@@ -62,3 +61,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "Resources/ThumbnailSet"
 } -->
+

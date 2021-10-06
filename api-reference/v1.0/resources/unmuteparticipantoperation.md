@@ -2,7 +2,7 @@
 title: "unmuteParticipantOperation resource type"
 description: "Describes the response format of a call participant unmute operation."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -54,3 +54,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

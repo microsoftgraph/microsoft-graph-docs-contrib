@@ -2,8 +2,8 @@
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -76,17 +76,6 @@ Here is a JSON representation of the resource.
   "utcTimeOffsetInMinutes": 1024
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-deviceconfig-iosupdateconfiguration.md/microsoft.graph.iosUpdateConfiguration/scheduledInstallDays:
-     Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
-
-
 
 
 

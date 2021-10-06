@@ -2,8 +2,8 @@
 title: "deviceManagementStringSettingInstance resource type"
 description: "A setting instance representing a string value"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

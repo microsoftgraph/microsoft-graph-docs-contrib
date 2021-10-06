@@ -1,7 +1,7 @@
 ---
 title: "targetPolicyEndpoints resource type"
 description: "Represents the platforms being targeted for user notifications."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "notifications"
 doc_type: "resourcePageType"
 author: "merzink"
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

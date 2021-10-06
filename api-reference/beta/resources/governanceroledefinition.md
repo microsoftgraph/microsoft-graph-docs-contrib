@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleDefinition resource type"
 description: "Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # governanceRoleDefinition resource type
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 
 Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
@@ -27,13 +29,13 @@ Represents the role definitions. For Azure resources, it can represent Azure RBA
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set for now.
 
 ## Properties
-| Property	| Type	    |Description|
-|:----|:----------|:----------|:----------|
-|id         |String     |The id of the role definition. |
-|resourceId |String     |Required. The id of the resource associated with the role definition. |
-|externalId   |String     |The external id of the role definition.|
-|displayName|String     |The display name of the role definition.|
-|templateId | String | |
+| Property    | Type   | Description                                                           |
+|:------------|:-------|:----------------------------------------------------------------------|
+| id          | String | The id of the role definition.                                        |
+| resourceId  | String | Required. The id of the resource associated with the role definition. |
+| externalId  | String | The external id of the role definition.                               |
+| displayName | String | The display name of the role definition.                              |
+| templateId  | String |                                                                       |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -59,7 +61,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",  
+  "displayName": "String",
   "templateId":"String"
 }
 
@@ -77,3 +79,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

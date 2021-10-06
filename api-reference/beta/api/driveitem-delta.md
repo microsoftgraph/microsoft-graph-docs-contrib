@@ -3,11 +3,11 @@ author: JeremyKelley
 description: "This method allows your app to track changes to a drive and its children over time."
 ms.date: 09/10/2017
 title: Sync the contents of a drive
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Track changes for a Drive
+# Track changes for a drive
 
 Namespace: microsoft.graph
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-first-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-first-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-last-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-last-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -213,9 +221,9 @@ In some scenarios, it may be useful to request the current deltaLink value witho
 This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
 To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
 
-**Note: If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
+>**Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
 Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
-Using `delta` is the only way to guarantee that you've read all of the data you need to.**
+Using `delta` is the only way to guarantee that you've read all of the data you need to.
 
 ### Request
 
@@ -236,6 +244,10 @@ GET /me/drive/root/delta?token=latest
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,16 +272,14 @@ Content-type: application/json
 * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
 * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 * The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
-* In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders within a drive.
-
 * Delta query will not return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
     
     | Operation type | Properties omitted by delta query |
     |---------|----------|
-    | Create/Modify | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | Create/Modify | `ctag` |
+    | Delete | `ctag`, `name` |
 
 
     **OneDrive (consumer)**
@@ -278,6 +288,16 @@ Content-type: application/json
     |---------|----------|
     | Create/Modify | n/a |
     | Delete | `ctag`, `size` |
+
+## Scanning permissions hierarchies
+
+By default, the delta query response will include sharing information for all items in the query that changed even if they inherit their permissions from their parent and did not have direct sharing changes themselves. This typically then results in a followup call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
+
+When the `Prefer: hierarchicalsharing` header is provided, sharing information will be returned for the root of the permissions hierarchy, as well as items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you will find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You will also see this empty sharing facet on the root of a permission hierarchy that is not shared to establish the initial scope.
+
+In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes will have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+
+> **Note:** The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joined together in a single header: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
 
 ## Error responses
 
@@ -297,3 +317,5 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
   ]
 }
 -->
+
+

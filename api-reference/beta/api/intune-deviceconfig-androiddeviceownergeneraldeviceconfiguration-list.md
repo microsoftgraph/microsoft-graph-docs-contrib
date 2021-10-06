@@ -2,8 +2,8 @@
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [androidDeviceOwnerGeneralDeviceConfigu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5148
+Content-Length: 9272
 
 {
   "value": [
@@ -98,6 +98,15 @@ Content-Length: 5148
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "azureAdSharedDeviceDataClearApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
       "accountsBlockModification": true,
       "appsAllowInstallFromUnknownSources": true,
       "appsAutoUpdatePolicy": "userChoice",
@@ -109,6 +118,14 @@ Content-Length: 5148
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
       "microsoftLauncherConfigurationEnabled": true,
+      "microsoftLauncherCustomWallpaperEnabled": true,
+      "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+      "microsoftLauncherCustomWallpaperAllowUserModification": true,
+      "microsoftLauncherFeedEnabled": true,
+      "microsoftLauncherFeedAllowUserModification": true,
+      "microsoftLauncherDockPresenceConfiguration": "show",
+      "microsoftLauncherDockPresenceAllowUserModification": true,
+      "microsoftLauncherSearchBarPlacementConfiguration": "top",
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
@@ -121,6 +138,11 @@ Content-Length: 5148
         "proxyAutoConfigURL": "Proxy Auto Config URL value"
       },
       "googleAccountsBlocked": true,
+      "kioskCustomizationDeviceSettingsBlocked": true,
+      "kioskCustomizationPowerButtonActionsBlocked": true,
+      "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+      "kioskCustomizationSystemErrorWarnings": true,
+      "kioskCustomizationSystemNavigation": "navigationEnabled",
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -143,6 +165,55 @@ Content-Length: 5148
       "kioskModeWiFiConfigurationEnabled": true,
       "kioskModeFlashlightConfigurationEnabled": true,
       "kioskModeMediaVolumeConfigurationEnabled": true,
+      "kioskModeShowDeviceInfo": true,
+      "kioskModeManagedSettingsEntryDisabled": true,
+      "kioskModeDebugMenuEasyAccessEnabled": true,
+      "kioskModeShowAppNotificationBadge": true,
+      "kioskModeScreenOrientation": "portrait",
+      "kioskModeIconSize": "smallest",
+      "kioskModeFolderIcon": "darkSquare",
+      "kioskModeWifiAllowedSsids": [
+        "Kiosk Mode Wifi Allowed Ssids value"
+      ],
+      "kioskModeAppOrderEnabled": true,
+      "kioskModeAppsInFolderOrderedByName": true,
+      "kioskModeGridHeight": 3,
+      "kioskModeGridWidth": 2,
+      "kioskModeLockHomeScreen": true,
+      "kioskModeManagedFolders": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+          "folderName": "Folder Name value",
+          "folderIdentifier": "Folder Identifier value",
+          "items": [
+            {
+              "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+              "label": "Label value",
+              "link": "Link value"
+            }
+          ]
+        }
+      ],
+      "kioskModeAppPositions": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+          "position": 8,
+          "item": {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        }
+      ],
+      "kioskModeManagedHomeScreenAutoSignout": true,
+      "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+      "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+      "kioskModeManagedHomeScreenPinComplexity": "simple",
+      "kioskModeManagedHomeScreenPinRequired": true,
+      "kioskModeManagedHomeScreenPinRequiredToResume": true,
+      "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+      "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+      "kioskModeManagedHomeScreenSignInEnabled": true,
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -166,6 +237,7 @@ Content-Length: 5148
       "safeBootBlocked": true,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
+      "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
       "stayOnModes": [
@@ -184,7 +256,21 @@ Content-Length: 5148
       "vpnAlwaysOnLockdownMode": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
-      "wifiBlockEditPolicyDefinedConfigurations": true
+      "wifiBlockEditPolicyDefinedConfigurations": true,
+      "personalProfileAppsAllowInstallFromUnknownSources": true,
+      "personalProfileCameraBlocked": true,
+      "personalProfileScreenCaptureBlocked": true,
+      "workProfilePasswordExpirationDays": 1,
+      "workProfilePasswordMinimumLength": 0,
+      "workProfilePasswordMinimumNumericCharacters": 11,
+      "workProfilePasswordMinimumNonLetterCharacters": 13,
+      "workProfilePasswordMinimumLetterCharacters": 10,
+      "workProfilePasswordMinimumLowerCaseCharacters": 13,
+      "workProfilePasswordMinimumUpperCaseCharacters": 13,
+      "workProfilePasswordMinimumSymbolCharacters": 10,
+      "workProfilePasswordPreviousPasswordCountToBlock": 15,
+      "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+      "workProfilePasswordRequiredType": "required"
     }
   ]
 }

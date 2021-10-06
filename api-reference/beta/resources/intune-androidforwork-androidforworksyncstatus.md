@@ -2,8 +2,8 @@
 title: "androidForWorkSyncStatus enum type"
 description: "Sync status of the tenant with the Google EMM API"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

@@ -2,7 +2,7 @@
 title: "Delete a educationSynchronizationProfile"
 description: "Delete a school data synchronization profile in the tenant based on the identifier."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /synchronizationProfiles/{id}
+DELETE /education/synchronizationProfiles/{id}
 ```
 
 ## Request headers
@@ -64,6 +64,10 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -87,3 +91,5 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+
+

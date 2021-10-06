@@ -1,9 +1,9 @@
 ---
 title: "Delete servicePrincipal"
 description: "Delete servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -13,21 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete servicePrincipal.
+Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -41,15 +40,17 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_serviceprincipal"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
@@ -65,14 +66,19 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -90,3 +96,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
+

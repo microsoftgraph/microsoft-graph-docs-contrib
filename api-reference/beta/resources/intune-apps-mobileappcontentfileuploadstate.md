@@ -2,8 +2,8 @@
 title: "mobileAppContentFileUploadState enum type"
 description: "Contains properties for upload request states."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

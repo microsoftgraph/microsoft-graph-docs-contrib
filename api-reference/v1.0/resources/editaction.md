@@ -1,9 +1,8 @@
 ---
 author: daspek
-ms.author: dspektor
 title: editAction resource type
 description: The EditAction object provides information about an activity that edited an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -46,3 +45,4 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+

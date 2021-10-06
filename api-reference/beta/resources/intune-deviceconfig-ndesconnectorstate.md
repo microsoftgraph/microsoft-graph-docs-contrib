@@ -2,8 +2,8 @@
 title: "ndesConnectorState enum type"
 description: "The current status of the Ndes Connector."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

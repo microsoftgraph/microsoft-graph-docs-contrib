@@ -2,7 +2,7 @@
 title: "notebookLinks resource type"
 description: "Links for opening a OneNote notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: resourcePageType
 ---
@@ -52,3 +52,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

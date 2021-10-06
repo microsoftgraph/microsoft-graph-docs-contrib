@@ -1,10 +1,10 @@
 ---
 title: "governancePermission resource type"
 description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # governancePermission resource type
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).  
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).
 
 
 ## Properties
@@ -41,3 +43,5 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+

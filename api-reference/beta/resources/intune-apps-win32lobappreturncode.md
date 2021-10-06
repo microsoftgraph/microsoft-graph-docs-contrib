@@ -2,8 +2,8 @@
 title: "win32LobAppReturnCode resource type"
 description: "Contains return code properties for a Win32 App"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

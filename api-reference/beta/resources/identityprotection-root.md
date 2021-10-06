@@ -1,13 +1,13 @@
 ---
-title: "Use the Azure AD identity protection APIs (preview)"
+title: "Use the Azure AD identity protection APIs"
 description: "You can use Microsoft Graph to query the Identity Protection APIs to receive information about risk detected by Azure AD Identity Protection."
 author: "cloudhandler"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
 ---
 
-# Use the Azure AD identity protection API (preview)
+# Use the Azure AD identity protection API
 
 Namespace: microsoft.graph
 
@@ -22,10 +22,10 @@ Identity Protection is a tool that allows organizations to discover, investigate
 * [signIn](signin.md) - Query Microsoft Graph for information about Azure AD sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that a given authentication request isn’t authorized by the identity owner. These risks can be calculated in real-time or calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 ## See also
 
-* [About Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+* [About Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Get started with Azure Active Directory identity protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

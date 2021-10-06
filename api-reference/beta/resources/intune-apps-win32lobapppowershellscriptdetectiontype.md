@@ -2,8 +2,8 @@
 title: "win32LobAppPowerShellScriptDetectionType enum type"
 description: "Contains all supported Powershell Script output detection type."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

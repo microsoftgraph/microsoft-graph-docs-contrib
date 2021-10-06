@@ -2,8 +2,8 @@
 title: "windowsUpdateForBusinessUpdateWeeks enum type"
 description: "Scheduled the update installation on the weeks of the month"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

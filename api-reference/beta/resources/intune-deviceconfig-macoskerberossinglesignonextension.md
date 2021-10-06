@@ -2,8 +2,8 @@
 title: "macOSKerberosSingleSignOnExtension resource type"
 description: "Represents a Kerberos-type Single Sign-On extension profile for macOS devices."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

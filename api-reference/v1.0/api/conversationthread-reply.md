@@ -2,7 +2,7 @@
 title: "conversationThread: reply"
 description: "Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation "
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -106,3 +106,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

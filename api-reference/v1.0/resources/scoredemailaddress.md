@@ -1,8 +1,8 @@
 ---
 title: "scoredEmailAddress resource type"
 description: "Represents a scored email address."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "AAmatino"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

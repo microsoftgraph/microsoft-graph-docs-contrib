@@ -4,7 +4,7 @@ description: Complex data types in JSON for Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -40,4 +40,6 @@ Represents a Postal Address complex type in Dynamics 365 Business Central.
 "postalCode": "string" 
 } 
  ```
+
+
 

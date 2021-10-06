@@ -1,9 +1,8 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemAnalytics resource type
 description: The ItemAnalytics object provides analytics about activities that took place on an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -52,3 +51,4 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "suppressions": []
 }
 -->
+

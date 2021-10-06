@@ -2,8 +2,8 @@
 title: "windows10CustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10CustomConfiguration resource."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -103,7 +103,9 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String"
+      "omaUri": "String",
+      "secretReferenceValueId": "String",
+      "isEncrypted": true
     }
   ]
 }

@@ -2,8 +2,8 @@
 title: "deliveryOptimizationGroupIdCustom resource type"
 description: "Custom group id type"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

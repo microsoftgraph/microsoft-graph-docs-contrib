@@ -1,9 +1,8 @@
 ---
 author: chackman
-ms.author: chackman
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -70,6 +69,10 @@ DELETE /me/drive/items/{item-id}/unfollow
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unfollow-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -91,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

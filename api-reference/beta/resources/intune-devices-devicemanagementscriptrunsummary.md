@@ -2,8 +2,8 @@
 title: "deviceManagementScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -2,16 +2,19 @@
 title: "outlookTaskGroup resource type"
 description: "A group of folders (outlookTaskFolder) that contain Outlook tasks (collection of outlookTask objects). "
 author: "mashriv"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# outlookTaskGroup resource type
+# outlookTaskGroup resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 A group of folders ([outlookTaskFolder](outlooktaskfolder.md)) that contain Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
@@ -78,3 +81,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

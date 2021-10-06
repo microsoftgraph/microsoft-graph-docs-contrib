@@ -1,10 +1,10 @@
 ---
 title: "stringKeyStringValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is a string."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # stringKeyStringValuePair resource type
@@ -53,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

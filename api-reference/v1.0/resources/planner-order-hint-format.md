@@ -2,7 +2,7 @@
 title: "Using order hints in Planner"
 description: "`)"
 author: "TarkanSevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: conceptualPageType
 ---
@@ -71,6 +71,7 @@ Add the third item to bottom:
 1. Item 2 (Order Hint: `'  !!'`)
 2. Item 1 (Order Hint: `' !'`)
 3. Item 3 (Order Hint: `' ! !'`)
+
 
 
 

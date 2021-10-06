@@ -1,9 +1,9 @@
 ---
 title: "Remove accessReview reviewer"
 description: "Remove an access review reviewer."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ No request body should be supplied.
 
 
 ## Response
-If successful, this method returns a 200-series response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-accessreview-reviewer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/remove-accessreview-reviewer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -95,3 +99,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

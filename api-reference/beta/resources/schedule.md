@@ -2,7 +2,7 @@
 title: "schedule resource type"
 description: "A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -85,3 +85,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

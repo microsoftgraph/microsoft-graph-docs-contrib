@@ -1,9 +1,9 @@
 ---
 title: "application: removePassword"
 description: "Remove a password from an application"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All |
 | Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
@@ -36,7 +36,7 @@ POST /applications/{id}/removePassword
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type   | application/json. Required.|
+| Content-Type   | application/json. Required.|
 
 ## Request body
 
@@ -94,9 +94,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http
@@ -112,3 +110,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

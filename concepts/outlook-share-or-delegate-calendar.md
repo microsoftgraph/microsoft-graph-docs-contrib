@@ -1,8 +1,8 @@
 ---
 title: "Share or delegate a calendar in Outlook"
 description: "In Outlook, a calendar owner can share the calendar with another user, or delegate another user to manage meetings in the owner's primary calendar."
-author: "angelgolfer-ms"
-localization_priority: Priority
+author: "juforan"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
@@ -33,6 +33,9 @@ Apps can also do the following using API that is generally available:
 - [Get shared or delegated Outlook calendar or its events](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 
+> [!NOTE]
+> The properties and API for calendar sharing and delegating as described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar properties **isShared** and **isSharedWithMe**. These two properties are exposed in only the beta endpoint.
+
 ## Get calendar information about sharees and delegates, and update individual permissions
 
 In this section:
@@ -62,7 +65,7 @@ The primary calendar of a user is always shared with "My Organization", which re
 
 ### Calendar owner: Get sharing or delegation information and permissions
 
-The following example shows with the consent of Alex or administrator, how to get the **calendarPermission** objects associated with Alex' primary calendar. The request returns two such permission objects:
+This example shows with the consent of Alex or administrator, how to get the **calendarPermission** objects associated with Alex' primary calendar. The request returns two such permission objects:
 
 - The first **calendarPermission** object is assigned to the delegate, Megan, and has the following property values:
 
@@ -79,6 +82,9 @@ The following example shows with the consent of Alex or administrator, how to ge
   - **role** is `freeBusyRead`, the default setting for "My Organization".
   - **emailAddress** specifies the **name** sub-property as "My Organization"; **address** for "My Organization" is by default null.
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -162,8 +168,11 @@ With the consent of Alex or administrator, you can update the permissions assign
 
 Aside from the **role** property, you cannot update other properties of an existing sharee or delegate. Changing the **emailAddress** property value requires deleting the sharee or delegate and setting up a new instance of **calendarPermission** again.
 
-The following example updates the **role** property, changing the permission of an existing sharee, Adele, from `read` to `write` for the custom calendar "Kids parties".
+The example in this section updates the **role** property, changing the permission of an existing sharee, Adele, from `read` to `write` for the custom calendar "Kids parties".
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -237,7 +246,7 @@ This section shows the properties of the delegated calendar, first from the pers
 
 ### Calendar owner: Get properties of a shared or delegated calendar
 
-The following example gets the properties of the primary calendar from the perspective of the owner, Alex. 
+The example in this section gets the properties of the primary calendar from the perspective of the owner, Alex. 
 
 Note the following properties on Alex' behalf:
 
@@ -247,7 +256,9 @@ Note the following properties on Alex' behalf:
 - **isSharedWithMe** is always false for the calendar owner.
 - **owner** shows Alex as the owner.
 
+**Microsoft Graph permissions**
 
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -289,7 +300,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -312,7 +322,7 @@ Content-type: application/json
 
 ### Sharee or delegate: Get properties of shared or delegated calendar
 
-The following example gets the properties of the same calendar from the perspective of the delegate, Megan. 
+The example in this section gets the properties of the same calendar from the perspective of the delegate, Megan. 
 
 Note the following properties:
 
@@ -327,6 +337,9 @@ Note the following properties:
 > [!NOTE] 
 > A sharee or delegate can customize only the **name** property of a shared/delegated calendar. The update is visible only to themselves; the calendar owner does not see such calendar name changes.
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -368,7 +381,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,
@@ -414,8 +426,11 @@ This is a mailbox-wide setting, so the same setting applies to all delegates of 
 
 ### Get delegation delivery setting for a user's mailbox
 
-The following example gets the **mailboxSettings** of a calendar owner who lets Outlook direct meeting requests and responses to only calendar delegates; that is, **delegateMeetingMessageDeliveryOptions** is set to `sendToDelegateOnly`.
+The example in this section gets the **mailboxSettings** of a calendar owner who lets Outlook direct meeting requests and responses to only calendar delegates; that is, **delegateMeetingMessageDeliveryOptions** is set to `sendToDelegateOnly`.
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -495,8 +510,11 @@ Content-type: application/json
 
 ### Set delegation delivery setting for a user's mailbox
 
-The following example updates the **delegateMeetingMessageDeliveryOptions** property to `sendToDelegateAndPrincipal`, to have Outlook direct meeting requests and responses of the delegated calendar to all delegates and the owner.
+The example in this section updates the **delegateMeetingMessageDeliveryOptions** property to `sendToDelegateAndPrincipal`, to have Outlook direct meeting requests and responses of the delegated calendar to all delegates and the owner.
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -546,8 +564,11 @@ Content-type: application/json
 
 ## Delete a sharee or delegate of a calendar
 
-In the following example, Alex deletes Megan as a sharee of the "Kids parties" calendar.
+In the example below, Alex deletes Megan as a sharee of the "Kids parties" calendar.
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {

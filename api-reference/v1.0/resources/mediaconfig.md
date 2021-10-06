@@ -2,7 +2,7 @@
 title: "mediaConfig resource type"
 description: "An abstract base class that contains the media configuration used to connect to a call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -39,3 +39,4 @@ An abstract base class that contains the media configuration used to connect to 
   "suppressions": []
 }
 -->
+

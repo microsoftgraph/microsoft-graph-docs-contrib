@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: List Drives
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 doc_type: apiPageType
@@ -208,3 +207,4 @@ To list them, include `system` in your `$select` statement.
   "suppressions": [
   ]
 } -->
+

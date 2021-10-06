@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Identity resource represents an identity of an actor."
 ms.date: 09/14/2017
 title: Identity
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -54,3 +54,5 @@ In this case, the **displayName** property for the identity will be returned, bu
   "suppressions": []
 }
 -->
+
+

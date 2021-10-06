@@ -2,8 +2,8 @@
 title: "androidRequiredPasswordType enum type"
 description: "Android required password type."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

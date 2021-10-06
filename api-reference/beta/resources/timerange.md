@@ -1,7 +1,7 @@
 ---
 title: "timeRange resource type"
 description: "A time range resource with a start and end time."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -2,8 +2,8 @@
 title: "win32LobAppDetection resource type"
 description: "Base class to detect a Win32 App"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

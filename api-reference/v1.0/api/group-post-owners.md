@@ -1,8 +1,8 @@
 ---
 title: "Add group owner"
 description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
-localization_priority: Priority
-author: "yyuank"
+ms.localizationpriority: high
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+Add a user or service principal to the group's owners. The owners are a set of users or service principals who are allowed to modify the group object.
 
 >**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All and User.ReadWrite.All |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ POST /groups/{id}/owners/$ref
 In the request body, supply a JSON representation of the [user](../resources/user.md) object to be added.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
 #### Request
@@ -81,15 +81,18 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,4 +105,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
 

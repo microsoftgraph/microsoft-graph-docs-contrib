@@ -1,7 +1,7 @@
 ---
 title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -114,3 +114,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

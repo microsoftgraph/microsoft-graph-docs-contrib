@@ -1,9 +1,9 @@
 ---
 title: "Get a ListItemVersion resource"
 description: "Retrieve the metadata for a specific version of a ListItem."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
@@ -103,3 +103,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

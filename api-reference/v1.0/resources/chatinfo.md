@@ -2,7 +2,7 @@
 title: "chatInfo resource type"
 description: "Information about a message in Microsoft Teams."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -52,3 +52,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

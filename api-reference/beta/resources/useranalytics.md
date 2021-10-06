@@ -1,7 +1,7 @@
 ---
 title: "userAnalytics resource type"
 description: "The user's settings and activity statistics."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"
@@ -63,3 +63,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

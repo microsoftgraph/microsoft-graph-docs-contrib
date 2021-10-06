@@ -2,8 +2,8 @@
 title: "windowsInformationProtectionApp resource type"
 description: "App for Windows information protection"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

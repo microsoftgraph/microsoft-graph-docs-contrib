@@ -2,8 +2,8 @@
 title: "windowsKioskForceUpdateSchedule resource type"
 description: "Windows 10 force update schedule for Kiosk devices."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

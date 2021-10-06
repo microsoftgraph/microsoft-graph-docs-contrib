@@ -2,8 +2,8 @@
 title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

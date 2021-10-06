@@ -2,8 +2,8 @@
 title: "encryptionReadinessState enum type"
 description: "Encryption readiness state"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

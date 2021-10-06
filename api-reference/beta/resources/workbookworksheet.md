@@ -1,7 +1,7 @@
 ---
 title: "workbookWorksheet resource type"
 description: "An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
@@ -86,3 +86,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

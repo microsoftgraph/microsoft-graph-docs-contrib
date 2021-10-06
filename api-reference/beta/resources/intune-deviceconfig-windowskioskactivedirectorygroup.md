@@ -2,8 +2,8 @@
 title: "windowsKioskActiveDirectoryGroup resource type"
 description: "The class used to identify an Azure Directory group for the kiosk configuration"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

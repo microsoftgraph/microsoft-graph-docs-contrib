@@ -1,8 +1,8 @@
 ---
 title: "Delete Outlook category"
 description: "Delete the specified outlookCategory object."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -95,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

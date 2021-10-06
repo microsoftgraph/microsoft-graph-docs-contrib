@@ -2,8 +2,8 @@
 title: "win32LobAppRestartSettings resource type"
 description: "Contains properties describing restart coordination following an app installation."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

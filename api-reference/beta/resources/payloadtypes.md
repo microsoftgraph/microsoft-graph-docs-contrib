@@ -1,7 +1,7 @@
 ---
 title: "payloadTypes resource type"
 description: "Represents data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "merzink"
 ms.prod: "notifications"
 doc_type: "resourcePageType"
@@ -52,3 +52,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

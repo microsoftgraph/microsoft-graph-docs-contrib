@@ -1,8 +1,8 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

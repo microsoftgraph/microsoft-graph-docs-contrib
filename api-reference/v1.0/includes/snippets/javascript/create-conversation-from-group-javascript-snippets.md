@@ -11,20 +11,20 @@ const options = {
 const client = Client.init(options);
 
 const conversation = {
-    topic:"New locations for this quarter",
-    threads:[
+    topic: 'Take your wellness days and rest',
+    threads: [
         {
-            posts:[
+            posts: [
                 {
-                    body:{
-                        contentType:"html",
-                        content:"What do we know so far?"
+                    body: {
+                        contentType: 'html',
+                        content: 'Contoso cares about you: Rest and Recharge'
                     },
-                    newParticipants:[
+                    newParticipants: [
                         {
-                            emailAddress:{
-                                name:"Adele Vance",
-                                address:"AdeleV@contoso.onmicrosoft.com"
+                            emailAddress: {
+                                name: 'Adele Vance',
+                                address: 'AdeleV@contoso.onmicrosoft.com'
                             }
                         }
                     ]
@@ -34,7 +34,7 @@ const conversation = {
     ]
 };
 
-let res = await client.api('/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations')
+await client.api('/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations')
 	.post(conversation);
 
 ```

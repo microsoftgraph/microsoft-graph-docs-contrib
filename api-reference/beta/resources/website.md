@@ -1,10 +1,10 @@
 ---
 title: "website resource type"
 description: "Represents a web site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "AAmatino"
 ---
 
 # website resource type
@@ -56,3 +56,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

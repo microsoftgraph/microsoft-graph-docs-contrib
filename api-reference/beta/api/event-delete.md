@@ -2,7 +2,7 @@
 title: "Delete event"
 description: "Delete event."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -39,9 +39,6 @@ DELETE /groups/{id}/calendar/events/{id}/
 
 DELETE /me/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
@@ -82,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -107,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

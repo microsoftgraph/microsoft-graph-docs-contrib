@@ -2,7 +2,7 @@
 title: "Delete educationSchool"
 description: "Delete a school."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -91,3 +91,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

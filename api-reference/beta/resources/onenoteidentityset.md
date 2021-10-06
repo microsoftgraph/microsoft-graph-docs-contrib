@@ -1,7 +1,7 @@
 ---
 title: "oneNoteIdentitySet resource type"
 description: "**Support coming soon**"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|user|[oneNoteIdentity](onenoteidentity.md)|A OneNoteIdentity resource that represents a user.|
+|user|[onenoteIdentity](onenoteidentity.md)|A OneNoteIdentity resource that represents a user.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -58,3 +58,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

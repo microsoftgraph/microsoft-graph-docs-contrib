@@ -2,8 +2,8 @@
 title: "groupPolicySettingScope enum type"
 description: "Scope of the group policy setting."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

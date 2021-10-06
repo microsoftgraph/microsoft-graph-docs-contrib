@@ -2,7 +2,7 @@
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -60,3 +60,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

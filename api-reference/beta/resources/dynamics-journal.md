@@ -4,7 +4,7 @@ description: A journal in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -55,4 +55,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

@@ -1,9 +1,9 @@
 ---
 title: "Create trustFrameworkPolicy"
 description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant." 
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 # Create trustFrameworkPolicy
@@ -93,3 +93,5 @@ Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

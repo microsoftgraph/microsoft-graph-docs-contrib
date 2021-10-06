@@ -1,9 +1,9 @@
 ---
 title: "directoryRoleTemplate resource type"
 description: "Represents a directory role template."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -71,3 +71,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

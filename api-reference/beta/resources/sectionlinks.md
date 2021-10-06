@@ -1,10 +1,10 @@
 ---
 title: "sectionLinks resource type"
 description: "Links for opening a OneNote section."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # sectionLinks resource type
@@ -52,3 +52,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

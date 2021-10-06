@@ -1,7 +1,7 @@
 ---
 title: "Range resource type"
 description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
@@ -117,3 +117,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -2,8 +2,8 @@
 title: "editionUpgradeLicenseType enum type"
 description: "Edition Upgrade License type"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

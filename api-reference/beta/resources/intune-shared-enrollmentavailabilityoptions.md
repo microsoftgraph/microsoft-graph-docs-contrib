@@ -2,8 +2,8 @@
 title: "enrollmentAvailabilityOptions enum type"
 description: "Options available for enrollment flow customization"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

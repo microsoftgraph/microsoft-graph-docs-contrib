@@ -1,7 +1,7 @@
 ---
 title: "focusActivityStatistics resource type"
 description: "Represents information about individual focus work for users"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"
@@ -64,3 +64,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

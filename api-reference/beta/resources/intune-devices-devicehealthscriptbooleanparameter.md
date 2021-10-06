@@ -2,8 +2,8 @@
 title: "deviceHealthScriptBooleanParameter resource type"
 description: "Properties of the  Booolean script parameter."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

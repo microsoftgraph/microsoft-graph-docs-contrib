@@ -2,7 +2,7 @@
 title: "educationCsvDataProvider resource type"
 description: "Used to set up the school data synchronization profile when CSV files are the input source.  "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to set up the school data synchronization profile when CSV files are the input source.  
+Used to set up the school data synchronization profile when CSV files are the input source.
 
-Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).
+Derived from [educationSynchronizationDataProvider].
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **customizations** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional customizations to be applied to the synchronization profile.|
+| Property       | Type                                     | Description                                                           |
+| :------------- | :--------------------------------------- | :-------------------------------------------------------------------- |
+| customizations | [educationSynchronizationCustomizations] | Optional customizations to be applied to the synchronization profile. |
+
+[educationsynchronizationdataprovider]: educationsynchronizationdataprovider.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
 ## JSON representation
 
@@ -35,7 +38,11 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationCsvDataProvider",
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationCsvDataProvider",
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```
+
+

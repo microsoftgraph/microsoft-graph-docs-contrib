@@ -2,7 +2,7 @@
 title: "RangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -103,3 +103,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 }-->
+

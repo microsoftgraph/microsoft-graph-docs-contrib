@@ -2,8 +2,8 @@
 title: "summarizeDevicePerformanceDevices function"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 909
 
 {
   "value": [
@@ -87,7 +87,13 @@ Content-Length: 675
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
       "deviceCount": 11,
-      "responsiveDesktopTimeInMs": 9
+      "responsiveDesktopTimeInMs": 9,
+      "blueScreenCount": 15,
+      "restartCount": 12,
+      "averageBlueScreens": 6.0,
+      "averageRestarts": 5.0,
+      "startupPerformanceScore": 7.666666666666667,
+      "modelStartupPerformanceScore": 9.3333333333333339
     }
   ]
 }

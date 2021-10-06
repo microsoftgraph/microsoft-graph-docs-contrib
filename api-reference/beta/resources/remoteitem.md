@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
 ms.date: 09/10/2017
 title: RemoteItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -87,3 +87,5 @@ For more information about the facets on a **driveItem**, see [driveItem](drivei
   "suppressions": []
 }
 -->
+
+

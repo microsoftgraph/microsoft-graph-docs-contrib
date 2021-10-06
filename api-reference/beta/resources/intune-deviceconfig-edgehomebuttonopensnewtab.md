@@ -2,8 +2,8 @@
 title: "edgeHomeButtonOpensNewTab resource type"
 description: "Show the home button; clicking the home button loads the New tab page."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

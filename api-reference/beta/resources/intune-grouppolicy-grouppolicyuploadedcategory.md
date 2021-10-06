@@ -2,8 +2,8 @@
 title: "groupPolicyUploadedCategory resource type"
 description: "The category entity stores the category of a group policy definition"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

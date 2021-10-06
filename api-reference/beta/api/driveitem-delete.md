@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Delete a DriveItem by using its ID or path."
 ms.date: 09/10/2017
 title: Delete a file or folder
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -67,6 +67,10 @@ DELETE /me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-drive-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-drive-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,3 +102,5 @@ how errors are returned.
   ]
 }
 -->
+
+

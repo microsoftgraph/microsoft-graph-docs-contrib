@@ -1,8 +1,8 @@
 ---
 title: "user: invalidateAllRefreshTokens"
 description: "Invalidates all of the user's refresh tokens issued to applications and session cookies in a user's browser."
-localization_priority: Normal
-author: "krbain"
+ms.localizationpriority: medium
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -41,10 +41,13 @@ This operation has no request content.
 
 If successful, this method returns `204 No Content` response code.
 
+>[!NOTE]
+>This API returns a different HTTP response code, similar to the [revokeSignInSessions](user-revokesigninsessions.md) action. For details, see [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,11 +69,15 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 [!INCLUDE [sample-code](../includes/snippets/objc/user-invalidateallrefreshtokens-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-invalidateallrefreshtokens-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
-Here is an example of the response. 
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -92,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

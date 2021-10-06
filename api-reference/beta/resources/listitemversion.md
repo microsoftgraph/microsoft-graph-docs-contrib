@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The listItemVersion resource represents a previous version of a ListItem resource."
 ms.date: 09/17/2017
 title: ListItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -74,3 +74,5 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
+
+

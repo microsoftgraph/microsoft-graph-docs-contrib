@@ -1,10 +1,10 @@
 ---
 title: "typedEmailAddress resource type"
 description: "Represents the name, email addresses, and their corresponding email address type of a contact."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kevinbellinger"
 ---
 
 # typedEmailAddress resource type
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

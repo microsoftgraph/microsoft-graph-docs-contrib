@@ -2,8 +2,8 @@
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

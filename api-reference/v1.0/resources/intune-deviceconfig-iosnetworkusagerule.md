@@ -2,8 +2,8 @@
 title: "iosNetworkUsageRule resource type"
 description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -48,9 +48,6 @@ Here is a JSON representation of the resource.
   "cellularDataBlocked": true
 }
 ```
-
-
-
 
 
 

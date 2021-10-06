@@ -1,7 +1,7 @@
 ---
 title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -61,14 +61,11 @@ GET /users/{id | userPrincipalName}/calendar/events
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
 
-GET /me/calendargroup/calendars/{id}/events
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
-
 GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|

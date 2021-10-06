@@ -1,8 +1,8 @@
 ---
 title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -97,7 +97,7 @@ Content-length: 44
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,3 +130,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

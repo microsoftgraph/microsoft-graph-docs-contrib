@@ -1,7 +1,7 @@
 ---
 title: "Delete threat intelligence indicator"
 description: "Delete a tiIndicator object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-tiindicator-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-tiindicator-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,3 +105,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

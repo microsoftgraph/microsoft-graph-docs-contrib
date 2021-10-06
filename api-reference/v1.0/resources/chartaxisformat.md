@@ -2,7 +2,7 @@
 title: "ChartAxisFormat resource type"
 description: "Encapsulates the format properties for the chart axis."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -54,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ author: daspek
 description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -50,3 +50,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

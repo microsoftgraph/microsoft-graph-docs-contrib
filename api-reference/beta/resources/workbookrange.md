@@ -1,7 +1,7 @@
 ---
 title: "workbookRange resource type"
 description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
@@ -124,3 +124,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
 ms.date: 09/10/2017
 title: FileSystemInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -76,3 +76,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

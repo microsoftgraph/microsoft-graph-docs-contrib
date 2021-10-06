@@ -2,8 +2,8 @@
 title: "allDevicesAssignmentTarget resource type"
 description: "Represents an assignment to all managed devices in the tenant."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -37,9 +37,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
-
-
-
 
 
 

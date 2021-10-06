@@ -1,9 +1,8 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -73,3 +72,4 @@ The actions that took place within an itemActivity are detailed in the [itemActi
   "suppressions": []
 }
 -->
+

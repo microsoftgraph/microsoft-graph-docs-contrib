@@ -1,9 +1,9 @@
 ---
 title: "Assign tokenIssuancePolicy"
 description: "Assign a tokenIssuancePolicy to an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -108,3 +108,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

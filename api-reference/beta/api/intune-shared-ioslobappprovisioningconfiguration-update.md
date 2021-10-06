@@ -1,9 +1,9 @@
 ---
 title: "Update iosLobAppProvisioningConfiguration"
 description: "Update the properties of a iosLobAppProvisioningConfiguration object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "rolyon"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

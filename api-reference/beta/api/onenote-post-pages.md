@@ -2,7 +2,7 @@
 title: "Create page"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -138,3 +138,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

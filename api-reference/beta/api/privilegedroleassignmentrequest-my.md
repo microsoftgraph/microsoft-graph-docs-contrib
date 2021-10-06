@@ -1,10 +1,10 @@
 ---
 title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "shauliu"
+ms.prod: "governance"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignmentRequest: my
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Get the requester's privileged role assignment requests.
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /privilegedRoleAssignmentRequests/my
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -67,11 +69,15 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignmentrequest-my-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +101,6 @@ Content-length: 304
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
          "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
@@ -119,7 +124,6 @@ Content-length: 304
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
         "userId": "Self",
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-07T22:17:37.2215343Z",
@@ -150,3 +154,5 @@ Content-length: 304
   ]
 }
 -->
+
+

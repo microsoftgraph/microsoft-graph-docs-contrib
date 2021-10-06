@@ -2,8 +2,8 @@
 title: "edgeHomeButtonLoadsStartPage resource type"
 description: "Show the home button; clicking the home button loads the Start page - this is also the default value."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

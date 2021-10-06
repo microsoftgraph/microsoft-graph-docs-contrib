@@ -2,8 +2,8 @@
 title: "deviceConfigurationConflictSummary resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -52,7 +52,8 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "id": "String (identifier)",

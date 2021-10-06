@@ -2,8 +2,8 @@
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

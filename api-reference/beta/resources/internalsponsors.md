@@ -1,9 +1,9 @@
 ---
 title: "internalSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -52,3 +52,5 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

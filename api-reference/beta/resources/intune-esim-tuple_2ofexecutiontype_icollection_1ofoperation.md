@@ -2,8 +2,8 @@
 title: "tuple_2OfExecutionType_ICollection_1OfOperation resource type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Check in a checked out DriveItem resource, which makes the version of the document available to others."
 title: "driveItem: checkin"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -74,6 +74,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,3 +107,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

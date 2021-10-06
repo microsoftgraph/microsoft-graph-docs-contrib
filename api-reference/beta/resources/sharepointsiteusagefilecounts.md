@@ -1,10 +1,10 @@
 ---
 title: "sharePointSiteUsageFileCounts resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # sharePointSiteUsageFileCounts resource type
@@ -33,11 +33,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteType": "String", 
-  "total": 1024, 
-  "active": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "siteType": "String",
+  "total": 1024,
+  "active": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

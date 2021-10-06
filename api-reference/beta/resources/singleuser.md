@@ -1,9 +1,9 @@
 ---
 title: "singleUser complex type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -56,3 +56,5 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

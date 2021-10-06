@@ -2,8 +2,8 @@
 title: "groupPolicyPresentationListBox resource type"
 description: "Represents an ADMX listBox element and an ADMX list element."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

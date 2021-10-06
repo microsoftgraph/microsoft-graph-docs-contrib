@@ -2,8 +2,8 @@
 title: "windowsUniversalAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows Universal AppX mobile app to a group."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

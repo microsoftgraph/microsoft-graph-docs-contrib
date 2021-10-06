@@ -2,8 +2,8 @@
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -54,9 +54,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
-
 
 
 

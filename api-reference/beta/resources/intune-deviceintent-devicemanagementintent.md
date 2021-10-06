@@ -2,8 +2,8 @@
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

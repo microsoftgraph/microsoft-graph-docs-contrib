@@ -2,7 +2,7 @@
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -103,6 +103,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",
@@ -150,3 +151,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

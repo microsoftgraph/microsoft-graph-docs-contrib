@@ -1,9 +1,9 @@
 ---
 title: "Update windowsOfficeClientSecurityConfiguration"
 description: "Update the properties of a windowsOfficeClientSecurityConfiguration object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

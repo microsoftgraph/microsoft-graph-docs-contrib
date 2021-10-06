@@ -12,12 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphClaimsMappingPolicy *claimsMappingPolicy = [[MSGraphClaimsMappingPolicy alloc] init];
-NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"definition-value"];
-[claimsMappingPolicy setDefinition:definitionList];
-[claimsMappingPolicy setDisplayName:@"displayName-value"];
-[claimsMappingPolicy setIsOrganizationDefault: true];
-[claimsMappingPolicy setType:@"type-value"];
+[claimsMappingPolicy setDisplayName:@"UpdateClaimsPolicy"];
 
 NSError *error;
 NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];

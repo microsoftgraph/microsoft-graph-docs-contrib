@@ -2,8 +2,8 @@
 title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

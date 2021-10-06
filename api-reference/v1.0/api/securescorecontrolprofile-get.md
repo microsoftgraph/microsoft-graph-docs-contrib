@@ -2,7 +2,7 @@
 title: "Get secureScoreControlProfile"
 description: "Retrieve the properties and relationships of a secureScoreControlProfile object."
 author: "preetikr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
@@ -153,3 +153,4 @@ Content-type: application/json
   ]
 }
 -->
+

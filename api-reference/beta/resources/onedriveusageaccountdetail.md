@@ -1,10 +1,10 @@
 ---
 title: "oneDriveUsageAccountDetail resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # oneDriveUsageAccountDetail resource type
@@ -38,16 +38,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteUrl": "String", 
-  "ownerDisplayName": "String", 
-  "ownerPrincipalName": "String", 
-  "isDeleted": true, 
-  "lastActivityDate": "Date", 
-  "fileCount": 1024, 
-  "activeFileCount": 1024, 
-  "storageUsedInBytes": 1024, 
-  "storageAllocatedInBytes": 1024, 
+  "reportRefreshDate": "Date",
+  "siteUrl": "String",
+  "ownerDisplayName": "String",
+  "ownerPrincipalName": "String",
+  "isDeleted": true,
+  "lastActivityDate": "Date",
+  "fileCount": 1024,
+  "activeFileCount": 1024,
+  "storageUsedInBytes": 1024,
+  "storageAllocatedInBytes": 1024,
   "reportPeriod": "String"
 }
 ```
+
+

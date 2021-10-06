@@ -2,7 +2,7 @@
 title: "Get notebook"
 description: "Retrieve the properties and relationships of a notebook object."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 

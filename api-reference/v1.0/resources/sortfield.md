@@ -1,8 +1,8 @@
 ---
 title: "SortField resource type"
 description: "Represents a condition in a sorting operation."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -54,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

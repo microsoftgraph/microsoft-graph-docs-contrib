@@ -1,7 +1,7 @@
 ---
 title: "mentionsPreview resource type"
 description: "Represents information about mention objects in a resource instance."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType
@@ -51,3 +51,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,7 +1,7 @@
 ---
 title: "searchResponse resource type"
-description: "PROVIDE DESCRIPTION HERE"
-localization_priority: Normal
+description: "Description of the searchResponse"
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
@@ -13,16 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The searchResponse contains the results from the search query.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Represents the response from a search query. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
-|searchTerms|String collection|Contains the search terms sent in the initial search query.|
+|queryAlterationResponse|[alterationResponse](alterationResponse.md)|Provides details of query alteration response for spelling correction.|
+|value|[searchResultSet](searchResultSet.md) collection|Represents results from a search query, and the terms used for the query.|
 
 ## JSON representation
 
@@ -39,8 +37,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
+  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
 }
 ```
 
@@ -53,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

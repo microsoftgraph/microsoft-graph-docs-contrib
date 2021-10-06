@@ -2,8 +2,8 @@
 title: "sharedPCAccountManagerPolicy resource type"
 description: "SharedPC Account Manager Policy. Only applies when the account manager is enabled."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

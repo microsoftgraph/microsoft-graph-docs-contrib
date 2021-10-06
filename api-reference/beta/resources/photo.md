@@ -2,7 +2,7 @@
 title: "photo resource type"
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
 ms.date: 09/10/2017
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "JeremyKelley"
 ms.prod: ""
 doc_type: "resourcePageType"
@@ -69,3 +69,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

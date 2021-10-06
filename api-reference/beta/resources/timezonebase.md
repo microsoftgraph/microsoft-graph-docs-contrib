@@ -1,10 +1,10 @@
 ---
 title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "abheek-das"
 ---
 
 # timeZoneBase resource type
@@ -53,3 +53,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

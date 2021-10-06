@@ -1,9 +1,9 @@
 ---
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -59,3 +59,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

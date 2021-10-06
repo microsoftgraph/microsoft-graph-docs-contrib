@@ -1,8 +1,8 @@
 ---
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -49,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

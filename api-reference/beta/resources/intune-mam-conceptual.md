@@ -2,7 +2,7 @@
 title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -23,15 +23,19 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
 - [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Android managed app safety net evaluation type](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
+- [Device platform type](intune-wip-deviceplatformtype.md)
 - [Intune branding profile](intune-wip-intunebrandingprofile.md)
 - [Intune branding profile assignment](intune-wip-intunebrandingprofileassignment.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [Key/value pair](intune-mam-keyvaluepair.md)
+- [Mac app identifier](intune-mam-macappidentifier.md)
 - [Managed app clipboard sharing level](intune-mam-managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune-mam-managedappconfiguration.md)
 - [Managed app data encryption type](intune-mam-managedappdataencryptiontype.md)
@@ -43,6 +47,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
 - [Managed app operation](intune-mam-managedappoperation.md)
+- [Managed app phone number redirect level](intune-mam-managedappphonenumberredirectlevel.md)
 - [Managed app PIN character set](intune-mam-managedapppincharacterset.md)
 - [Managed app policy](intune-mam-managedapppolicy.md)
 - [Managed app policy deployment summary](intune-mam-managedapppolicydeploymentsummary.md)
@@ -55,8 +60,10 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
+- [Targeted managed app group type](intune-mam-targetedmanagedappgrouptype.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
+- [Windows app identifier](intune-mam-windowsappidentifier.md)
 - [Windows information protection](intune-mam-windowsinformationprotection.md)
 - [Windows information protection app](intune-mam-windowsinformationprotectionapp.md)
 - [Windows information protection app learning summary](intune-wip-windowsinformationprotectionapplearningsummary.md)

@@ -1,10 +1,10 @@
 ---
 title: "rankedEmailAddress resource type"
 description: "Represents a ranked email address."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "AAmatino"
 ---
 
 # rankedEmailAddress resource type
@@ -53,3 +53,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

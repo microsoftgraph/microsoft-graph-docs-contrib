@@ -1,8 +1,8 @@
 ---
 title: "pageLinks resource type"
 description: "Links for opening a OneNote page."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

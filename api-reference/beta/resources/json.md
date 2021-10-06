@@ -1,10 +1,10 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # Json resource type
@@ -28,6 +28,8 @@ Here is a JSON representation of the resource.
 {
 }
 ```
+
+
 
 
 

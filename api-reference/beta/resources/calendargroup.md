@@ -2,7 +2,7 @@
 title: "calendarGroup resource type"
 description: "A group of user calendars."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -77,3 +77,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

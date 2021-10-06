@@ -1,7 +1,7 @@
 ---
 title: "fallbackPolicyProperties resource type"
 description: "Allows fallback policy to be specified for high-priority raw notifications on iOS endpoints only, with additional properties for specifying fallback wait time (delay) and corresponding visual notification content. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "merzink"
 ms.prod: "notifications"
 doc_type: "resourcePageType"
@@ -55,3 +55,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

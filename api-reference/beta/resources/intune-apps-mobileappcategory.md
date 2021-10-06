@@ -2,8 +2,8 @@
 title: "mobileAppCategory resource type"
 description: "Contains properties for a single Intune app category."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

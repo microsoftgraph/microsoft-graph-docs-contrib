@@ -1,10 +1,10 @@
 ---
 title: "synchronizationError resource type"
 description: "Represents an error that occurred during the synchronization process."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationError resource type
@@ -57,3 +57,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

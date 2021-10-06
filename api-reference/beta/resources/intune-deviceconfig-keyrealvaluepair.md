@@ -2,8 +2,8 @@
 title: "keyRealValuePair resource type"
 description: "A key-value pair with a string key and a real (floating-point) value."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

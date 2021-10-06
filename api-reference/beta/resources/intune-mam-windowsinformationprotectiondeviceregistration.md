@@ -2,8 +2,8 @@
 title: "windowsInformationProtectionDeviceRegistration resource type"
 description: "Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

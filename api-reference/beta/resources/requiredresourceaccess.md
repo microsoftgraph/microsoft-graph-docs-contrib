@@ -1,9 +1,9 @@
 ---
 title: "requiredResourceAccess resource type"
 description: "Specifies the set of OAuth 2.0 permission scopes and app roles."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "psignoret"
 ---
 
@@ -53,3 +53,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

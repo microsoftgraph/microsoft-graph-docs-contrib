@@ -2,7 +2,7 @@
 title: "resourceVisualization resource type"
 description: "Complex type containing properties of Insights."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -74,10 +74,14 @@ Here is a JSON representation of the resource
 -	Story
 -	ExternalContent
 -	Folder
+- Spsite
 -	Other
 
 Example query:
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+
+Notes:
+For `spsite` you may need to sort by `lastUsed/lastAccessedDateTime` desc in order to retrieve valid results
 
 ## containerType property values
 The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
@@ -91,3 +95,4 @@ The supported types can differ based on containers from which [officeGraphInsigh
 
 Example query:
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+

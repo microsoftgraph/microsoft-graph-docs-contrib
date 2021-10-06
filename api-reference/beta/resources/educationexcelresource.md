@@ -2,7 +2,7 @@
 title: "educationExcelResource resource type"
 description: "A subclass of educationResource. This resource type represents an Excel document.  "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,7 +1,7 @@
 ---
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 author: "harini84"
 ms.prod: "outlook"
@@ -252,3 +252,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

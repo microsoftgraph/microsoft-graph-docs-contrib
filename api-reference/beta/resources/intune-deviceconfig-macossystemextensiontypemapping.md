@@ -2,8 +2,8 @@
 title: "macOSSystemExtensionTypeMapping resource type"
 description: "Represents a mapping between team identifiers for macOS system extensions and system extension types."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

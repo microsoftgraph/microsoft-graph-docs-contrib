@@ -2,8 +2,8 @@
 title: "deviceManagementIntentSettingSecretConstraint resource type"
 description: "Constraint indicating that this value is a secret and will be encrypted."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

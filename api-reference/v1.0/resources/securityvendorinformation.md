@@ -1,7 +1,7 @@
 ---
 title: "securityVendorInformation resource type"
 description: " subProvider=AppLocker)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType
@@ -53,3 +53,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

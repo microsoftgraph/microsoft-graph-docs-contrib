@@ -1,9 +1,9 @@
 ---
 title: "Get officeClientConfiguration"
 description: "Get a specific policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

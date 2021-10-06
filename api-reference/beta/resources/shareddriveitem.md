@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
 ms.date: 09/10/2017
 title: SharedDriveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -96,3 +96,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

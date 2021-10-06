@@ -2,8 +2,8 @@
 title: "mobileAppContentFile resource type"
 description: "Contains properties for a single installer file that is associated with a given mobileAppContent version."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

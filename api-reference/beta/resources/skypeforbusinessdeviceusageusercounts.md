@@ -1,10 +1,10 @@
 ---
 title: "skypeForBusinessDeviceUsageUserCounts resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessDeviceUsageUserCounts resource type
@@ -35,13 +35,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "windows": 1024, 
-  "windowsPhone": 1024, 
-  "androidPhone": 1024, 
-  "iPhone": 1024, 
-  "iPad": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "windows": 1024,
+  "windowsPhone": 1024,
+  "androidPhone": 1024,
+  "iPhone": 1024,
+  "iPad": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

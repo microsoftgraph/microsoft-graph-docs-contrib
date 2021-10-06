@@ -3,7 +3,7 @@ author: rahmit
 description: "The sitePageData resource represents the properties of a webPart. As these properties vary by web part, this is an OpenType with no fixed properties."
 ms.date: 09/01/2018
 title: SitePageData
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
@@ -44,3 +44,5 @@ This resource has no fixed properties, but is an OpenType containing all propert
   "suppressions": []
 }
 -->
+
+

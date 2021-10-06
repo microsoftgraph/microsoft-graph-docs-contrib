@@ -2,8 +2,8 @@
 title: "mobileAppInstallSummary resource type"
 description: "Contains properties for the installation summary of a mobile app."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

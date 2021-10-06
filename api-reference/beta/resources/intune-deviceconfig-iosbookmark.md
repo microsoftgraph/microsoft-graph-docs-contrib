@@ -2,8 +2,8 @@
 title: "iosBookmark resource type"
 description: "iOS URL bookmark"
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

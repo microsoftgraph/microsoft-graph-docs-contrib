@@ -1,10 +1,10 @@
 ---
 title: "operation resource type"
 description: "The status of a long-running operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "billbliss"
 ---
 
 # operation resource type
@@ -78,3 +78,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

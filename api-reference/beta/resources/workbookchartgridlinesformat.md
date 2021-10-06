@@ -2,7 +2,7 @@
 title: "workbookChartGridlinesFormat resource type"
 description: "Encapsulates the format properties for chart gridlines."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -59,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

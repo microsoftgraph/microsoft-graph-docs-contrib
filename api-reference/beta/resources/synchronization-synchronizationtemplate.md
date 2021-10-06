@@ -1,10 +1,10 @@
 ---
 title: "synchronizationTemplate resource type"
 description: "Provides pre-configured synchronization settings for a particular application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationTemplate resource type
@@ -84,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

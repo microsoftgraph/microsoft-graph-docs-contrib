@@ -1,9 +1,9 @@
 ---
 title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

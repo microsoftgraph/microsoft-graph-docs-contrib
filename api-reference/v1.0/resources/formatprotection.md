@@ -1,8 +1,8 @@
 ---
 title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -61,3 +61,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

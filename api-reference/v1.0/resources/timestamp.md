@@ -1,8 +1,8 @@
 ---
 title: "timeStamp resource type"
 description: "Date and time information for a point in time."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "JeremyKelley"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -49,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

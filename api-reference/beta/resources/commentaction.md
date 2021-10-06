@@ -3,7 +3,7 @@ author: daspek
 description: "The CommentAction resource provides information about a comment activity made on an item."
 ms.date: 09/14/2017
 title: CommentAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -57,3 +57,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

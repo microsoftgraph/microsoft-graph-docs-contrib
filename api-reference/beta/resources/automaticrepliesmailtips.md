@@ -1,10 +1,10 @@
 ---
 title: "automaticRepliesMailTips resource type"
 description: "MailTips about any automatic replies that have been set up on a mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "abheek-das"
 ---
 
 # automaticRepliesMailTips resource type
@@ -59,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

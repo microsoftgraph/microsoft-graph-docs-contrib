@@ -1,9 +1,9 @@
 ---
 title: "List officeClientConfigurations"
 description: "Get all policies."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Create mobileAppTroubleshootingEvent"
 description: "Describes the Create mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
-author: "dougeby"
-ms.prod: "Intune"
+ms.localizationpriority: medium
+author: "rolyon"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

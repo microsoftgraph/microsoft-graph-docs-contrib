@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -52,3 +52,5 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
+
+

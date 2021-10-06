@@ -2,7 +2,7 @@
 title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -61,3 +61,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

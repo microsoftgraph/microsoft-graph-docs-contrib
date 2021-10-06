@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name."
 ms.date: 09/10/2017
 title: Copy a file or folder
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -82,6 +82,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,3 +121,5 @@ The response from the API will only indicate that the copy operation was accepte
   ]
 }
 -->
+
+

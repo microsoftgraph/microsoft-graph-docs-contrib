@@ -1,9 +1,9 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,10 @@ Content-length: 411
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,9 +110,7 @@ Content-length: 411
 
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "blockType": "response"
 } -->
 
 ```http
@@ -137,3 +139,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

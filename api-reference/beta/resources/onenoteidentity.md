@@ -1,7 +1,7 @@
 ---
 title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: resourcePageType
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,9 +1,9 @@
 ---
 title: "office365ActiveUserDetail resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: resourcePageType
 ---
 
@@ -77,3 +77,5 @@ The following is a JSON representation of the resource.
   "assignedProducts": ["String"]
 }
 ```
+
+

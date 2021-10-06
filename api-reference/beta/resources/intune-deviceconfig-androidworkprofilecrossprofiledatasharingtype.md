@@ -2,8 +2,8 @@
 title: "androidWorkProfileCrossProfileDataSharingType enum type"
 description: "Android Work Profile cross profile data sharing type."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: "scheduleInformation resource type"
 description: "Represents the availability of a user, distribution list, or resource for a specified time period. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
-author: ""
+author: "harini84"
 ---
 
 # scheduleInformation resource type
@@ -12,7 +12,7 @@ author: ""
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.
 
 ## Properties
@@ -60,3 +60,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

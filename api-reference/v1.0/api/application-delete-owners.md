@@ -2,8 +2,8 @@
 title: "Remove owner"
 description: "Remove an owner from an application."
 author: "sureshja"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -18,14 +18,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners/{id}/$ref
+DELETE /applications/{id}/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -54,13 +54,6 @@ The following example shows the request.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-}
-
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delete-owners-csharp-snippets.md)]
@@ -85,12 +78,10 @@ Content-length: 30
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -109,3 +100,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

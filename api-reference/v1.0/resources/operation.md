@@ -1,8 +1,8 @@
 ---
 title: "operation resource type"
 description: "The status of a long-running operation."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "billbliss"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

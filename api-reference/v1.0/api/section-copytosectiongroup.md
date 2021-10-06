@@ -1,7 +1,7 @@
 ---
 title: "section: copyToSectionGroup"
 description: "Copies a section to a specific section group."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -41,7 +41,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |id|String|Required. The id of the destination section group. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
@@ -96,9 +96,7 @@ Content-length: 84
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -115,3 +113,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

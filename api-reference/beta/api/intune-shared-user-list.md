@@ -1,8 +1,8 @@
 ---
 title: "List users"
 description: "List properties and relationships of the user objects."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

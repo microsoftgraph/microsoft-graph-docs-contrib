@@ -1,8 +1,8 @@
 ---
 title: "List threads"
 description: "Get all the threads of a group."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -70,12 +70,16 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-threads-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-threads-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,33 +89,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
+Content-length: 288
 
 {
   "value": [
     {
-      "toRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ],
+      "id": "thread-id",
       "topic": "topic-value",
       "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+      "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
+      "preview": "preview-value",
+      "isLocked": false
     }
   ]
 }
@@ -130,3 +121,5 @@ Content-length: 536
   ]
 }
 -->
+
+

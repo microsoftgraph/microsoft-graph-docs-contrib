@@ -4,7 +4,7 @@ description: Overview of why you want to integrate your solutions with Business 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 ---
 
@@ -26,7 +26,7 @@ Every business is different and can have specialized business processes. These p
 Microsoft Graph provides access to your financial reports. Connect BI tools and apps to your balance sheet, cash flow statement, payables and receivables aging reports, and trial balance reports to create BI dashboards and ensure that users have access to the information they need.
 
 ## Authorization
-Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](/graph/auth).
+Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](./auth/index.yml).
 
 ## API reference
 Looking for the API reference for this service?

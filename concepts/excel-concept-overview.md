@@ -1,7 +1,7 @@
 ---
 title: "Excel workbooks and charts API overview"
 description: "Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "lumine2008"
 ms.prod: "excel"
 ms.custom: scenarios:getting-started
@@ -23,11 +23,11 @@ Users love the ease with which they can perform deep and complex calculations wi
 
 ### Generate reports and analyze results
 
-Excel is a flexible reporting and analysis tool, from simple data tables to complex professional dashboards. Today, we give you full access to all of Excel’s reporting features, making Excel an online reporting service within Office 365. Imagine any of the reporting scenarios users create and rely on today pulled into a custom app to create professional charts or analyze large sets of data intelligently, seamlessly blending Excel into those customized experiences.
+Excel is a flexible reporting and analysis tool, from simple data tables to complex professional dashboards. Today, we give you full access to all of Excel’s reporting features, making Excel an online reporting service within Microsoft 365. Imagine any of the reporting scenarios users create and rely on today pulled into a custom app to create professional charts or analyze large sets of data intelligently, seamlessly blending Excel into those customized experiences.
 
 ### Store and track data
 
-Excel is also a great tool to store and track data. If your information is stored in a workbook, that data is available to any app that integrates with Office 365. Its contents are available to read from custom solutions, and those solutions can use Excel for data storage.
+Excel is also a great tool to store and track data. If your information is stored in a workbook, that data is available to any app that integrates with Microsoft 365. Its contents are available to read from custom solutions, and those solutions can use Excel for data storage.
 
 >**Note:** The Excel REST API supports only Office Open XML file formatted workbooks (files with the`.xlsx` extension). The `.xls` extension workbooks are not supported. 
 

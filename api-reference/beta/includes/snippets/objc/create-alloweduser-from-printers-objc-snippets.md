@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/print/printerShares/{id}/allowedUsers/$ref"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/print/shares/{id}/allowedUsers/$ref"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPrintUserIdentity *printUserIdentity = [[MSGraphPrintUserIdentity alloc] init];
+MSGraphUser *user = [[MSGraphUser alloc] init];
 
 NSError *error;
-NSData *printUserIdentityData = [printUserIdentity getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:printUserIdentityData];
+NSData *userData = [user getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:userData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

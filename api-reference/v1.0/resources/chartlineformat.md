@@ -2,7 +2,7 @@
 title: "ChartLineFormat resource type"
 description: "Enapsulates the formatting options for line elements."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -58,3 +58,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

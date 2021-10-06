@@ -2,8 +2,8 @@
 title: "deviceManagementExchangeAccessLevel enum type"
 description: "Access Level in Exchange."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

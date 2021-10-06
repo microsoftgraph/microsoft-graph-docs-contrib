@@ -1,7 +1,7 @@
 ---
 title: "personType resource type"
 description: "Represents the type of person."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType
@@ -48,3 +48,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

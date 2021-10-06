@@ -2,8 +2,8 @@
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

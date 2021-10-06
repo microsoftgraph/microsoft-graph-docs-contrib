@@ -2,7 +2,7 @@
 title: "Create team from group"
 description: "Create a new team from a group."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
-If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. 
+If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
 ## Permissions
@@ -29,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access groups that they are not a member of.
 
@@ -73,7 +73,7 @@ The following is an example of the request.
 PUT https://graph.microsoft.com/beta/groups/{id}/team
 Content-type: application/json
 
-{  
+{
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -102,14 +102,18 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,18 +131,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,
@@ -168,3 +172,5 @@ Content-length: 401
 ## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+
+

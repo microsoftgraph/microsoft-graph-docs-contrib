@@ -2,7 +2,7 @@
 title: "onenoteOperationError resource type"
 description: "An error from a failed OneNote operation."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

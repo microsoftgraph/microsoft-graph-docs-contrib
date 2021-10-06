@@ -1,10 +1,10 @@
 ---
 title: "operationError resource type"
 description: "Describes errors in teamsAsyncOperation."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "billbliss"
 ---
 
 # operationError resource type
@@ -49,3 +49,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

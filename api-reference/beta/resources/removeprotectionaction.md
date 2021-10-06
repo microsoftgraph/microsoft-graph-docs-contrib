@@ -1,9 +1,9 @@
 ---
 title: "removeProtectionAction resource type"
 description: "Represents an action to remove protection from the file or information."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -47,3 +47,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

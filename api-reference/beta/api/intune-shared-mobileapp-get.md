@@ -1,9 +1,9 @@
 ---
 title: "Get mobileApp"
 description: "Read properties and relationships of the mobileApp object."
-author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "rolyon"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 

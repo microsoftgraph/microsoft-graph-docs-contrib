@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get a SharePoint Site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -78,6 +78,10 @@ GET /sites/{site-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -116,3 +120,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

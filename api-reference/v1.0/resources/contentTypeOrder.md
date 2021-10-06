@@ -1,9 +1,8 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI."
 ms.prod: ""
 doc_type: resourcePageType
@@ -41,3 +40,4 @@ Here is a JSON representation of a **contentTypeOrder** resource.
   "section": "documentation",
   "tocPath": "Resources/ContentTypeOrder"
 } -->
+

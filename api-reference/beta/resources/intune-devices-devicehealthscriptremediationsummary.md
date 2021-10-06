@@ -2,8 +2,8 @@
 title: "deviceHealthScriptRemediationSummary resource type"
 description: "The number of device health scripts deployed and the number of devices the scripts remediated."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 

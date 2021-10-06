@@ -1,8 +1,8 @@
 ---
 title: "messageRulePredicates resource type"
 description: "Represents the set of conditions and exceptions that are available for a rule."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -107,3 +107,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

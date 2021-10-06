@@ -2,8 +2,8 @@
 title: "mdmSupportedState enum type"
 description: "Mdm Support Status of the setting."
 author: "dougeby"
-localization_priority: Normal
-ms.prod: "Intune"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 

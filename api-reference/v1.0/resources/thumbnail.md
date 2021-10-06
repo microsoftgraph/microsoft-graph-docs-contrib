@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Thumbnail
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The thumbnail resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation."
 ms.prod: ""
 doc_type: resourcePageType
@@ -58,3 +57,4 @@ Here is a JSON representation of the **thumbnail** resource.
   "section": "documentation",
   "tocPath": "Resources/Thumbnail"
 } -->
+

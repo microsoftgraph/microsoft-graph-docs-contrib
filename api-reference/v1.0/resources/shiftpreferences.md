@@ -1,7 +1,7 @@
 ---
 title: "shiftPreferences resource type"
 description: "Represents a user's availability to be assigned shifts in the schedule."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
@@ -63,3 +63,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
