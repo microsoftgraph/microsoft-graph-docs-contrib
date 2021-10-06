@@ -15,7 +15,12 @@ Namespace: microsoft.graph
 
 Create an [assignment resource](../resources/educationassignmentresource.md). You can create the following types of assignment resources:
 
-
+- [educationFileResource](../resources/educationfileresource.md)
+- [educationExcelResource](../resources/educationexcelresource.md)
+- [educationWordResource](../resources/educationwordresource.md)
+- [educationLinkResource](../resources/educationlinkresource.md)
+- [educationPowerPointResource](../resources/educationpowerpointresource.md)
+- [educationMediaResource](../resources/educationmediaresource.md)
 
 Every resource has an @odata.type property to indicate which type of resource is being created. 
 
@@ -50,7 +55,7 @@ In the request body, supply a JSON representation of one of the following resour
 - [educationWordResource](../resources/educationwordresource.md)
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
-- [educationMediaResource](../resources/educationmediaresource.md).
+- [educationMediaResource](../resources/educationmediaresource.md)
 
 >**Note:** You can't use this operation to create an [educationExternalResource](../resources/educationexternalresource.md).
 
