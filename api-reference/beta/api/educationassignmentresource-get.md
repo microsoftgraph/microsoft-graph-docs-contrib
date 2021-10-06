@@ -142,7 +142,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationLinkResource"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 511
 
@@ -197,7 +197,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationExcelResource"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 511
 
@@ -252,7 +252,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationPowerPointResource"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 511
 
@@ -307,7 +307,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationFileResource"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 511
 
@@ -362,7 +362,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationMediaResource"
 } -->
 ```http
-HTTP/1.1 400 Bad request
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 511
 
