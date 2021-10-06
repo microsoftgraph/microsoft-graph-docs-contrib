@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-PATCH /compliance/ediscovery/cases/{caseId}/caseSettings
+PATCH /compliance/ediscovery/cases/{caseId}/settings
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/caseSettings
+PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings
 Content-Type: application/json
 Content-length: 350
 

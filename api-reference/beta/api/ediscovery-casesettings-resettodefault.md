@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/caseSettings/resetToDefault
+POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this action returns a `200 OK` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/caseSettings/resetToDefault
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
 ---
@@ -81,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/caseSettings/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",
     "id": "5b840b94-f821-4c4a-8cad-3a90062bf51a",
     "redundancyDetection": {
         "isEnabled": true,
