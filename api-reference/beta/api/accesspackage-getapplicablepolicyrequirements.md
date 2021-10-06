@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ``` 
 
-### Example 2: Get policy requirements with given user scope in request body
+### Example 2: Get policy requirements for a given user scope
 
 #### Request
 
