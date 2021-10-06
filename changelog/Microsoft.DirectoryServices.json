@@ -37,7 +37,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "keyCredentialConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [keyCredentialConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [keyCredentialConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/keycredentialconfiguration?view=graph-rest-beta) resource.",
           "Target": "keyCredentialConfiguration"
         }
       ],
