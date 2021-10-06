@@ -29,7 +29,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "keyCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the [keyCredentials](https://docs.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the **keyCredentials** property to the [appManagementConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta) resource.",
           "Target": "appManagementConfiguration"
         },
         {
