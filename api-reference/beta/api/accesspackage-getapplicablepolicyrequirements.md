@@ -171,8 +171,8 @@ Content-Type: application/json
             "existingAnswers": [
                 {
                     "@odata.type": "#microsoft.graph.answerString",
-                    "displayValue": "test.mail@microsoft.com",
-                    "value": "test.mail@microsoft.com",
+                    "displayValue": "admin@contoso.com",
+                    "value": "admin@contoso.com",
                     "answeredQuestion": {
                         "@odata.type": "#microsoft.graph.textInputQuestion",
                         "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
