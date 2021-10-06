@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceAttribute resource type"
-description: "Used for the `accessPackageAttribute` property of an access package resource."
+description: "A resource that exposes properties for the requestor of an access package to provide custom information that may be used to make approval decisions for the access package."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
