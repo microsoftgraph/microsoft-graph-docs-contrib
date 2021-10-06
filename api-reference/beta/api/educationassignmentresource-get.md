@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a specific resource on an [assignment](../resources/educationassignment.md).  
+Get the properties of an [education assignment resource](../resources/educationassignmentresource.md) associated with an [assignment](../resources/educationassignment.md).  
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query pParameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
 
 ## Examples
-### Example 1: educationWordResource
+### Example 1: Get an educationWordResource
 #### Request
 The following is an example of the request.
 
@@ -121,7 +121,7 @@ Content-length: 842
     
 ```
 
-### Example 2: educationLinkResource
+### Example 2: Get an educationLinkResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -176,7 +176,7 @@ Content-length: 511
 }
 ```
 
-### Example 3: educationExcelResource
+### Example 3: Get an educationExcelResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -231,7 +231,7 @@ Content-length: 511
 }
 ```
 
-### Example 4: educationPowerPointResource
+### Example 4: Get an educationPowerPointResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -286,7 +286,7 @@ Content-length: 511
 }
 ```
 
-### Example 5: educationFileResource
+### Example 5: Get an educationFileResource
 #### Request
 The following is an example of the request.
 <!-- {
@@ -341,7 +341,7 @@ Content-length: 511
 }
 ```
 
-### Example 6: educationMediaResource
+### Example 6: Get an educationMediaResource
 #### Request
 The following is an example of the request.
 <!-- {
