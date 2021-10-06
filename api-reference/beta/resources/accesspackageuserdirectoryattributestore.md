@@ -1,5 +1,5 @@
 ---
-title: "accesspakageuserdirectoryattributestore resource type"
+title: "accessPackageUserDirectoryAttributeStore resource type"
 description: "The type of attribute source for the Azure Active Directory end system."
 author: "markwahl-msft"
 ms.localizationpriority: medium
