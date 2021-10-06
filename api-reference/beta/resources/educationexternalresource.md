@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a generic type to map resources not exposed to Graph.
+Represents a generic type to map resources not exposed in Microsoft Graph.
 
 Inherits from [educationResource](educationresource.md).
 
