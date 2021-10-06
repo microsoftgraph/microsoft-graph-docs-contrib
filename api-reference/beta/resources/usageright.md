@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A usage right represents a license that a user or device has for either third party software built on power apps or for device based subscriptions (device only).
+A usage right represents a license that a user or device has for either third party software built on Power Apps or for device-based subscriptions (device only).
 
 ## Methods
 
