@@ -2548,3 +2548,9 @@ Possible values for user account types (group membership), per Windows definitio
 |meeting|
 |screenShare|
 |unknownFutureValue|
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|
