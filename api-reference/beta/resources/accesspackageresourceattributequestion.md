@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system and/or request approver. 
+Resource that defines the question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system or the request approver.
 
 Inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md).
 
