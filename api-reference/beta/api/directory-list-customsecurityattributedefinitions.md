@@ -90,8 +90,7 @@ Content-Type: application/json
             "name": "Project",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": true,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": true
         },
         {
             "attributeSet": "Engineering",
@@ -102,8 +101,7 @@ Content-Type: application/json
             "name": "ProjectDate",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": false,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": false
         },
         {
             "attributeSet": "Operations",
@@ -114,8 +112,7 @@ Content-Type: application/json
             "name": "Deployment level",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": true,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": true
         }
     ]
 }
@@ -159,8 +156,7 @@ Content-Type: application/json
             "name": "Project",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": true,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": true
         },
         {
             "attributeSet": "Operations",
@@ -171,8 +167,7 @@ Content-Type: application/json
             "name": "Project",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": true,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": true
         }
     ]
 }
@@ -216,8 +211,7 @@ Content-Type: application/json
             "name": "Project",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": true,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": true
         },
         {
             "attributeSet": "Engineering",
@@ -228,8 +222,7 @@ Content-Type: application/json
             "name": "ProjectDate",
             "status": "Available",
             "type": "String",
-            "usePreDefinedValuesOnly": false,
-            "advancedOptions": []
+            "usePreDefinedValuesOnly": false
         }
     ]
 }

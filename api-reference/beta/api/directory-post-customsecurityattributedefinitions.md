@@ -120,8 +120,7 @@ Content-Type: application/json
     "name": "ProjectDate",
     "status": "Available",
     "type": "String",
-    "usePreDefinedValuesOnly": false,
-    "advancedOptions": []
+    "usePreDefinedValuesOnly": false
 }
 ```
 
@@ -174,7 +173,6 @@ Content-Type: application/json
     "name": "Project",
     "status": "Available",
     "type": "String",
-    "usePreDefinedValuesOnly": true,
-    "advancedOptions": []
+    "usePreDefinedValuesOnly": true
 }
 ```
