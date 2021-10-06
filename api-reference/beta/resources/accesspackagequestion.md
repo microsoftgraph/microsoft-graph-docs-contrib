@@ -24,7 +24,7 @@ Subtypes include [accessPackageTextInputQuestions](accesspackagetextinputquestio
 |isRequired|Boolean| Whether the requestor is required to supply an answer or not.|
 |sequence|Int32| Relative position of this question when displaying a list of questions to the requestor.|
 |text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show to the requestor.|
-|isAnswerEditable|Boolean|Allows requestor to edit answers to questions.|
+|isAnswerEditable|Boolean| Specifies whether the requestor is allowed to edit answers to questions.|
 
 ## Relationships
 None.
