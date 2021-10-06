@@ -29,7 +29,7 @@ For delegated scenarios, the administrator needs the following [role](/azure/act
 
 * Global Reader
 * Authentication Policy Administrator
-* Global admin
+* Global Administrator
 
 ## HTTP request
 
