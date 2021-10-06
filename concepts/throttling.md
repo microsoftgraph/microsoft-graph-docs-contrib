@@ -17,6 +17,10 @@ Throttling limits vary based on the scenario. For example, if you are performing
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
 
+> [!NOTE]
+> - Customers and partners looking to extract large volume of data from Microsoft Graph should leverage [Microsoft Graph Data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
+
+
 <!-- markdownlint-disable MD026 -->
 ## What happens when throttling occurs?
 <!-- markdownlint-enable MD026 -->
