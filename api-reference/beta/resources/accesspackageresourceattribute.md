@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the `accessPackageAttribute` property of an [access package](../resources/accesspackage.md) resource. Attributes provide custom information about the requestor to the end system that can be used to make a decision for approval for an access package.
+A resource that exposes properties for the requestor of an access package to provide custom information that may be used to make approval decisions for the access package.
 
 ## Properties
 |Property|Type|Description|
