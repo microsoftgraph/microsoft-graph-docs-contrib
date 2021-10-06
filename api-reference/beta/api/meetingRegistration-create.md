@@ -43,11 +43,11 @@ POST /me/onlineMeetings/{id}/registration
 
 ## Request body
 
-In the request body, supply a JSON representation of a [meetingRegistration](../resources/meetingRegistration.md) objet.
+In the request body, supply a JSON representation of a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
+If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
 
 > [!TIP]
 >

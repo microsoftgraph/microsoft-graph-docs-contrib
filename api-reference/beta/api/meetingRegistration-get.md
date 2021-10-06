@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get registration information of an [onlineMeeting](../resources/onlinemeeting.md).
+Get registration of an [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get registration information of an online meeting with delegated permission:
+To get registration of an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{id}/registration
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
+If successful, this method returns a `200 OK` response code and [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
 
 > [!TIP]
 > **customQuestions** is a navigation property that by default is not returned in the response body. To retrieve **customQuestions** in line, use `expand` query option. See [example](#example).

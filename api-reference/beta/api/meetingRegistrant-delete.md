@@ -1,6 +1,6 @@
 ---
-title: "Delete meeting registrants"
-description: "Delete meeting registrants."
+title: "Unenroll meeting registrant"
+description: "Unenroll a meeting registrant."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,7 +8,7 @@ ms.date: 09/30/2021
 doc_type: apiPageType
 ---
 
-# Delete meeting registrant
+# Unenroll meeting registrant
 
 Namespace: microsoft.graph
 
@@ -61,7 +61,7 @@ If successful, this method only returns a `204 No Content` response code.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants/gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqc8soJZw5Pg,3aMJxgQBxEufdo7_Qube_w,YgKy1Rtx-0SFjRbv-ww1ag,Cuzk8JP_iTTWqCOyVcalVA
+POST https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa81431/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants/gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqc8soJZw5Pg,3aMJxgQBxEufdo7_Qube_w,YgKy1Rtx-0SFjRbv-ww1ag,Cuzk8JP_iTTWqCOyVcalVA
 ```
 
 ### Response

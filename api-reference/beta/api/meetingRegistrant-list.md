@@ -1,6 +1,6 @@
 ---
 title: "List meeting registrants"
-description: "List meeting registrants."
+description: "List all meeting registrants."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List registrants information of an [onlineMeeting](../resources/onlinemeeting.md).
+List all registrants of an [onlineMeeting](../resources/onlinemeeting.md). One applicable scenario is to get the registration report of a [Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To enable registration for an online meeting with delegated permission:
+To list all registrants of an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{id}/registration/registrants
@@ -46,12 +46,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [meetingRegistrant](../resources/meetingRegistrant.md) objets in the response body with following exceptions.
+If successful, this method returns a `200 OK` response code and a collection of [meetingRegistrant](../resources/meetingRegistrant.md) objects in the response body with following exceptions.
 
 > [!TIP]
 >
->- **joinWebUrl** will not be returned for each [meetingRegistrant](../resources/meetingRegistrant.md) in the response body of this method.
->- **questionId** will not be returned for each [cutomQuestionAnswer](../resources/customQuestionAnswer.md) in the response body of this method.
+> **joinWebUrl** and **questionId** will be `null` in the response body of this method.
 
 ## Example
 
@@ -109,7 +108,7 @@ Content-Type: application/json
       "joinWebUrl": null,
       "firstName": "Jane",
       "lastName": "Doe",
-      "email": "jane.doe@hatmail.com",
+      "email": "jane.doe@contoso.com",
       "status": "registered",
       "customQuestionAnswers": [
         {

@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List custom registration questions of a [meetingRegistration](../resources/meetingRegistration.md).
+List all custom registration questions of a [meetingRegistration](../resources/meetingRegistration.md).
+
+> [!TIP]
+> Custom registration questions can be listed in line when getting a meeting registration. See [Get registration](meetingRegistration-get.md).
 
 ## Permissions
 
@@ -28,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To list custom registration questions with delegated permission:
+To list all custom registration questions with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{id}/registration/customQuestions

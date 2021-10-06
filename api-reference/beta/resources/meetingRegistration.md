@@ -14,29 +14,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registration information of an online meeting.
+Registration of an online meeting. One applicable scenario is [Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## Methods
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[Create registration](../api/meetingRegistration-create.md) | [meetingRegistration](meetingRegistration.md) | Create and enable registration for an online meeting. |
-|[Get registration](../api/meetingRegistration-get.md) | [meetingRegistration](meetingRegistration.md) | Retrieve the details of a meeting registration. |
-|[Update registration](../api/meetingRegistration-update.md) | [meetingRegistration](meetingRegistration.md) | Update the details of a meeting registration. |
-|[Delete registration](../api/meetingRegistration-delete.md) | [meetingRegistration](meetingRegistration.md) | Delete and disable registration for an online meeting. |
+|[Create](../api/meetingRegistration-create.md) | [meetingRegistration](meetingRegistration.md) | Create and enable registration for an online meeting. |
+|[Get](../api/meetingRegistration-get.md) | [meetingRegistration](meetingRegistration.md) | Retrieve the details of a meeting registration. |
+|[Update](../api/meetingRegistration-update.md) | [meetingRegistration](meetingRegistration.md) | Update the details of a meeting registration. |
+|[Delete](../api/meetingRegistration-delete.md) | [meetingRegistration](meetingRegistration.md) | Disable and delete registration for an online meeting. |
 
 ## Properties
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specify who can register for the meeting. |
-| description | String | The description of the meeting registration. |
-| endDateTime | DateTime | The meeting end time in UTC. Default is the same as meeting end time. |
+| description | String | The description of the meeting. |
+| endDateTime | DateTime | The meeting end time in UTC. |
 | registrationPageViewCount | Int32 | Indicate how mant times the registration page has been visited. Read-only. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
 | speakers | [meetingSpeaker](meetingSpeaker.md) collection | The speakers information of the meeting. |
-| startDateTime | DateTime | The meeting start time in UTC. Default is the same as meeting start time. |
-| subject | String | The subject of the meeting registration. |
+| startDateTime | DateTime | The meeting start time in UTC. |
+| subject | String | The subject of the meeting. |
 
 ### meetingAudience values
 
@@ -51,7 +51,7 @@ Registration information of an online meeting.
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
 | customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| The custom registration questions. Navigation property. |
-| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Participants who have registered for the online meeting. Navigation property. |
+| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Registrants of the online meeting. Navigation property. |
 
 ## JSON representation
 

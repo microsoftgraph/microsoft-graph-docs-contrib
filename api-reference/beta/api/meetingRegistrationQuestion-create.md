@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Create a custom question of a [meetingRegistration](../resources/meetingRegistration.md).
+
 > [!TIP]
 > Custom registration questions can be created in line upon creating a meeting registration. See [Create registration](meetingRegistration-create.md).
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 To create a custom registration question with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/onlineMeetings/{meetingId}/registration/customQuestions/
+POST /me/onlineMeetings/{id}/registration/customQuestions
 ```
 
 ## Request headers
@@ -43,7 +45,7 @@ POST /me/onlineMeetings/{meetingId}/registration/customQuestions/
 
 ## Request body
 
-In the request body, supply a JSON representation of a Non-readonly properties of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) objet.
+In the request body, supply a JSON representation of a Non-readonly properties of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
 
 ## Response
 

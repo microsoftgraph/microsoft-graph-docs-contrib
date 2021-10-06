@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a custom registration questions of a [meetingRegistration](../resources/meetingRegistration.md) by id.
+Delete a custom registration question of a [meetingRegistration](../resources/meetingRegistration.md) by id.
 
 ## Permissions
 
@@ -33,6 +33,8 @@ To get a custom registration question by id with delegated permission:
 ```http
 DELETE /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
 ```
+
+- `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
 
 ## Request headers
 

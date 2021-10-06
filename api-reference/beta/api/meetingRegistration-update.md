@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update registration information of an [onlineMeeting](../resources/onlinemeeting.md).
+Update registration of an [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Permissions
 
@@ -42,17 +42,17 @@ PATCH /me/onlineMeetings/{id}/registration
 
 ## Request body
 
-In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingRegistration.md) objet.
+In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 > [!TIP]
 >
->- All non-read-only properties can be updated except **allowedRegistrant**.
+>- All non-readonly properties can be updated except **allowedRegistrant**.
 >- Navigation property **customQuestions** cannot be updated in line. Use [update custom question](meetingRegistration-get.md) method to update it.
 >- When updating **speakers**, always supply a full list of speakers.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [meetingRegistration](../resources/meetingRegistration.md) objet in the response body.
+If successful, this method returns a `200 OK` response code and an updated [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
 
 ## Example
 
