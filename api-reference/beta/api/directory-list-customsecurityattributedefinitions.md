@@ -175,7 +175,7 @@ Content-Type: application/json
 
 ### Example 3: Filter custom security attributes based on attribute set
 
-The following example filters custom security attributes that are in the Engineering attribute set and are active.
+The following example filters custom security attributes that are in the Engineering attribute set, active, and of type string.
 
 #### Request
 <!-- {
