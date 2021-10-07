@@ -1,6 +1,6 @@
 ---
 title: "m365AlertComment resource type"
-description: "An analyst generated comment that is associated with an alert or incident."
+description: "An analyst-generated comment that is associated with an alert or incident."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An analyst generated comment that is associated with an alert or incident. 
+An analyst-generated comment that is associated with an alert or incident. 
 
 ## Properties
 |Property|Type|Description|
