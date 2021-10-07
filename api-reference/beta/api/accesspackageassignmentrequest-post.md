@@ -415,7 +415,6 @@ Content-type: application/json
 
 The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user, for a user who does not exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
