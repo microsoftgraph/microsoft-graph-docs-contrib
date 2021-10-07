@@ -157,7 +157,7 @@ await pageIterator.IterateAsync();
 while (pageIterator.State != PagingState.Complete)
 {
     Console.WriteLine("Iteration paused for 5 seconds...");
-    Thread.Sleep(5000);
+    await Task.Delay(5000);
     // Reset count
     count = 0;
     await pageIterator.ResumeAsync();
