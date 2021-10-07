@@ -11429,8 +11429,6 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-          - name: Delete
-            href: api/organizationalbranding-delete.md
           - name: Branding localization
             href: resources/organizationalbrandinglocalization.md
             items:
