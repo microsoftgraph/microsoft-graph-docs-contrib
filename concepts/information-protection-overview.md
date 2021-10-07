@@ -13,7 +13,7 @@ Microsoft Information Protection helps organizations to classify, label, and pro
 Organizations use labels to aid:
 
 * Users in understanding the importance of information that is being handled.
-* Compliance adminstrators in discovering where sensitive information lives. 
+* Compliance administrators in discovering where sensitive information lives. 
 * Security administrators in deploying data access and data loss prevention policies based on more rich label information.
 
 ## Why integrate Microsoft Information Protection? 
