@@ -24,6 +24,8 @@ Key scenarios:
 3) GitHub tokens exchanged for AAD access tokens: set a federated identity on an Azure AD application allowing a GitHub Actions workflow to deploy resources associated with that application
 
 
+Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
