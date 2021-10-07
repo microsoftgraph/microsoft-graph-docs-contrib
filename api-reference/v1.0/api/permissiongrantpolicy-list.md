@@ -117,7 +117,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": true
+          "clientApplicationsFromVerifiedPublisherOnly": true,
+          "certifiedClientApplicationsOnly": true
         }
       ],
       "excludes": []
@@ -136,7 +137,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "certifiedClientApplicationsOnly": false
         },
         {
           "id": "08619a19-ae6f-406c-b9a0-ea6af1f1558d",
@@ -147,7 +149,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "certifiedClientApplicationsOnly": false
         }
       ],
       "excludes": []
