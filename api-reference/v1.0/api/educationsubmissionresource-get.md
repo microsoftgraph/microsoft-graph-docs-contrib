@@ -43,7 +43,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
 
 ## Examples
-### Example 1: educationWordResource
+### Example 1: Get an educationWordResource
 #### Request
 The following is an example of the request.
 
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 ---
 
 
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -120,7 +120,7 @@ Content-length: 1152
 }
 ```
 
-### Example 2: educationFileResource
+### Example 2: Get an educationFileResource
 #### Request
 The following is an example of the request.
 
@@ -131,7 +131,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/33cf3eb2-8a35-4f76-8f16-b2abc112d44f
 ```
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -176,7 +176,7 @@ Content-length: 1152
 }
 ```
 
-### Example 3: educationExcelResource
+### Example 3: Get an educationExcelResource
 #### Request
 The following is an example of the request.
 
@@ -187,7 +187,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c36626ba-9864-4f3a-8d6f-7104f62df605
 ```
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -232,7 +232,7 @@ Content-length: 1152
 }
 ```
 
-### Example 4: educationPowerPointResource
+### Example 4: Get an educationPowerPointResource
 #### Request
 The following is an example of the request.
 
@@ -243,7 +243,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/e19bd829-17ee-4483-88d0-f62b406f367c
 ```
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -288,7 +288,7 @@ Content-length: 1152
 }
 ```
 
-### Example 5: educationLinkResource
+### Example 5: Get an educationLinkResource
 #### Request
 The following is an example of the request.
 
@@ -299,7 +299,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c9169e8f-f096-4876-8675-7dee248af635
 ```
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -344,7 +344,7 @@ Content-length: 1152
 }
 ```
 
-### Example 6: educationMediaResource
+### Example 6: Get an educationMediaResource
 #### Request
 The following is an example of the request.
 
@@ -355,7 +355,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/31f2c67a-6df1-4a7f-b4c5-311fe15c873a
 ```
-##### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
