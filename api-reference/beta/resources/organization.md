@@ -38,7 +38,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Retrieve all localization branding objects in the tenant. |
 |[Get organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Read the properties of a localization branding object. |
 |[Update organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Update a localization branding object. |
-|[Delete organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Delete a localization branding object. |
+|[Delete organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Delete a localization branding object. |
 <!--|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Delete the default organizational branding object. |
 
 **NOTE: To restore the Delete organizationalBranding operation back into the table after Update organizationalBranding if all inconsistencies are resolved.-->
