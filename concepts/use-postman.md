@@ -123,6 +123,12 @@ You can follow these steps to make other requests to Microsoft Graph. Remember t
 
 If you want to contribute your own requests, you will need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
 
+## Known issues
+
+### Authentication fails with "You can't get there from here"
+
+Certain [conditional access policies](/azure/active-directory/conditional-access/overview) configured by your organization's administrators can block the authentication flow from Postman. Please contact your administrators to explore alternatives.
+
 ## See also
 
 For details about how to do this, watch the [Getting started with Microsoft Graph Postman collection](https://youtu.be/3RTHY3jScmA) video.
