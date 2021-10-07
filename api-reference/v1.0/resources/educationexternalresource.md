@@ -11,9 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A subclass of [educationResource](educationresource.md). This is the default Resource type assignments service use to map all those resources we don't expose to graph. This allows all SDK callers to work seamlessly.
+Represents a generic type to map resources not exposed in Microsoft Graph.
 
-An educationResource can't be added, updated or deleted with this resource type.  
+Inherits from [educationResource](educationresource.md).
+
+This complex type allows all SDK callers to work seamlessly.
 
 ## Properties
 | Property	   | Type	|Description|
