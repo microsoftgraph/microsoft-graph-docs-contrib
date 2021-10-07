@@ -113,6 +113,7 @@ Content-type: application/json
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": false
+  "clientApplicationsFromVerifiedPublisherOnly": false,
+  "certifiedClientApplicationsOnly": false
 }
 ```
