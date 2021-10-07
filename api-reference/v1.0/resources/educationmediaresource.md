@@ -11,11 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a media file resource for an educationAssignment. Inherits from [educationResource](educationresource.md).
+Represents a media file resource for an [educationAssignment](educationassignment.md). Inherits from [educationResource](educationresource.md).
 
 Upload these files to the **fileResource** directory associated with the assignment or submission.
 
-> The file types considered Media resources are `webm`, `mkv`, `avi`, `wmv`, `mp4`, `m4v`, `mpg`, `mpeg`, `m2v`, `jpg`, `png`, `gif`, `bmp`, `heic`, `jpeg`, `psd`, `mp3` and `m4a`.
+The following file types are media resources: `webm`, `mkv`, `avi`, `wmv`, `mp4`, `m4v`, `mpg`, `mpeg`, `m2v`, `jpg`, `png`, `gif`, `bmp`, `heic`, `jpeg`, `psd`, `mp3` and `m4a`.
 
 ## Properties
 | Property	   | Type	|Description|
