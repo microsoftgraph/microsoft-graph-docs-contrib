@@ -47,11 +47,10 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|issuer|String|**TODO: Add Description**|
-|subject|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|audiences|String collection|**TODO: Add Description**|
+|audiences|String collection|The list of audiences that can appear in the issued token|
+|description|String|A user-provided description of what the federatedIdentityCredential is used for (this field is optional)
+|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For Azure AD, this is: <ul><li>Azure AD (global service): "https://login.microsoftonline.com/{tenantid}/v2.0"</li><li>Azure AD for US Government: "https://login.microsoftonline.us/{tenantid}/v2.0"</li><li>Azure AD Germany: "https://login.microsoftonline.de/{tenantid}/v2.0"</li><li>Azure AD China operated by 21Vianet: "https://login.chinacloudapi.cn/{tenantid}/v2.0"</li></ul> <br>The combination of `issuer` and `subject` must be unique on the app.| No | Yes | No |
+|subject|String|<li>For AAD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this guid needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of `issuer` and `subject` must be unique on the app.|
 
 
 
