@@ -1,13 +1,15 @@
 ---
 title: "Add accessReview reviewer"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.  This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified. This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers. "
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "markwahl-msft"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Add accessReview reviewer
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /accessReviews('{reviewId}')/reviewers
+POST /accessReviews/{reviewId}/reviewers
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -40,11 +42,11 @@ The following table shows the properties that can be supplied when you update an
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | The user ID.|
+| id        | String   | The user ID.|
 
 
 ## Response
-If successful, this method returns a `201, Created` response code .
+If successful, this method returns a `201 Created` response code .
 
 ## Example
 
@@ -71,7 +73,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-accessreview-reviewer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-accessreview-reviewer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +89,6 @@ Content-Type: application/json
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -107,3 +108,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+

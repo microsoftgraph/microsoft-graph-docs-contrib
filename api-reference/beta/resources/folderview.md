@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
 ms.date: 09/10/2017
 title: FolderView
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # FolderView resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -89,3 +91,5 @@ The following values are defined for the **viewType** property.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
-author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "ananmishr"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # mediaInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,3 +52,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -2,12 +2,14 @@
 title: "workbookChartAreaFormat resource type"
 description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookChartAreaFormat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,3 +61,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

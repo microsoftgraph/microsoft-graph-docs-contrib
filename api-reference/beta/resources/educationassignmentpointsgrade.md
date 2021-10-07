@@ -1,13 +1,15 @@
 ---
 title: "educationAssignmentPointsGrade resource type"
 description: "When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property. This creates a subclass from educationAssignmentGrade,"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationAssignmentPointsGrade resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

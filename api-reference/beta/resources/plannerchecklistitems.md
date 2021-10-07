@@ -1,13 +1,15 @@
 ---
 title: "plannerChecklistItems resource type"
 description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the task details object. The value in the property-value pair is the checklistItem object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerChecklistItems resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -87,3 +89,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

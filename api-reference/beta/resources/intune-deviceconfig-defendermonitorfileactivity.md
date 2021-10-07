@@ -1,13 +1,15 @@
 ---
 title: "defenderMonitorFileActivity enum type"
 description: "Possible values for monitoring file activity."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # defenderMonitorFileActivity enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Possible values for monitoring file activity.
 |monitorAllFiles|2|Monitor all files.|
 |monitorIncomingFilesOnly|3| Monitor incoming files only.|
 |monitorOutgoingFilesOnly|4|Monitor outgoing files only.|
-
-
 
 
 

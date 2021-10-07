@@ -1,20 +1,22 @@
 ---
 title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list. "
-localization_priority: Priority
-author: "angelgolfer-ms"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "vrod9429"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: findRooms
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [emailAddress](../resources/emailaddress.md) objects that represent all the meeting rooms in the user's tenant or in a specific room list. 
+Get the [emailAddress](../resources/emailaddress.md) objects that represent all the meeting rooms in the user's tenant or in a specific room list.
 
-Tenants can organize meeting rooms into room lists. In this API, each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance. 
-You can [get all the room lists](user-findroomlists.md) in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. You can get 
+Tenants can organize meeting rooms into room lists. In this API, each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.
+You can [get all the room lists](user-findroomlists.md) in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. You can get
 up to the first 100 rooms in the tenant.
 
 ## Permissions
@@ -34,7 +36,7 @@ To get all the rooms in the tenant:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms
-GET /users/<id>/findRooms
+GET /users/{id}/findRooms
 ```
 
 To get all the rooms in a specific room list of the tenant's:
@@ -42,7 +44,7 @@ To get all the rooms in a specific room list of the tenant's:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms(RoomList='{room_list_emailAddress}')
-GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/{id}/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## Query parameters
@@ -78,14 +80,14 @@ The first example gets the [emailAddress](../resources/emailaddress.md) objects 
   "blockType": "request",
   "name": "user_get_rooms_in_tenant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRooms
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-in-tenant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-rooms-in-tenant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -101,9 +103,9 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 
 ##### Response 1
-Here is an example of the response. 
+Here is an example of the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_in_tenant",
@@ -156,14 +158,14 @@ The second example gets the [emailAddress](../resources/emailaddress.md) objects
   "blockType": "request",
   "name": "user_get_rooms_from_specific_list"
 }-->
-```http
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-from-specific-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-rooms-from-specific-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -179,9 +181,9 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 
 
 ##### Response 2
-Here is an example of the response. 
+Here is an example of the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_from_specific_list",
@@ -226,3 +228,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

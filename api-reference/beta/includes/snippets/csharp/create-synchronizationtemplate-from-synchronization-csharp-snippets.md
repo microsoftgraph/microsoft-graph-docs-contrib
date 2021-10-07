@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "SCIM-Test1",
-	ApplicationId = "{id}",
+	ApplicationId = Guid.Parse("{id}"),
 	FactoryTag = "CustomSCIM"
 };
 
-await graphClient.Applications["{id}"].Synchronization.Templates
+await graphClient.Applications["{application-id}"].Synchronization.Templates
 	.Request()
 	.AddAsync(synchronizationTemplate);
 

@@ -1,13 +1,15 @@
 ---
 title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get managedDeviceOverview
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [managedDeviceOverview](../resources/in
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +36,7 @@ GET /deviceManagement/managedDeviceOverview
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1139
+Content-Length: 1487
 
 {
   "value": {
@@ -77,7 +79,17 @@ Content-Length: 1139
       "macOSCount": 10,
       "windowsMobileCount": 2,
       "windowsCount": 12,
-      "unknownCount": 12
+      "unknownCount": 12,
+      "androidDedicatedCount": 5,
+      "androidDeviceAdminCount": 7,
+      "androidFullyManagedCount": 8,
+      "androidWorkProfileCount": 7,
+      "androidCorporateWorkProfileCount": 0,
+      "configMgrDeviceCount": 4,
+      "aospUserlessCount": 1,
+      "aospUserAssociatedCount": 7,
+      "linuxCount": 10,
+      "chromeOSCount": 13
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -100,8 +112,6 @@ Content-Length: 1139
   }
 }
 ```
-
-
 
 
 

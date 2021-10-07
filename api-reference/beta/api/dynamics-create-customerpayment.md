@@ -3,12 +3,17 @@ title: Create customerPayments
 description: Creates a customer payment object in Dynamics 365 Business Central.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Create customerPayments
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Creates a customer payment object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -21,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+```http
+POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## Optional query parameters
@@ -46,8 +51,8 @@ If successful, this method returns ```201 Created``` response code and a **custo
 
 Here is an example of a request.
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournal('{id}')/customerPayments
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments
 Content-type: application/json
 
 {
@@ -67,7 +72,7 @@ Content-type: application/json
 ```
 **Response**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -88,4 +93,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

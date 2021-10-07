@@ -1,13 +1,15 @@
 ---
 title: "androidWorkProfileVpnConnectionType enum type"
 description: "Android Work Profile VPN connection type."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidWorkProfileVpnConnectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,8 +27,9 @@ Android Work Profile VPN connection type.
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
 |paloAltoGlobalProtect|6|Palo Alto Networks GlobalProtect.|
-
-
+|microsoftTunnel|7|Microsoft Tunnel.|
+|netMotionMobility|8|NetMotion Mobility.|
+|microsoftProtect|9|Microsoft Protect.|
 
 
 

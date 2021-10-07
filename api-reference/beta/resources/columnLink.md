@@ -3,11 +3,13 @@ author: daspek
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.date: 09/12/2017
 title: ColumnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # ColumnLink resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,3 +46,5 @@ Here is a JSON representation of a **columnLink** resource.
   "suppressions": []
 }
 -->
+
+

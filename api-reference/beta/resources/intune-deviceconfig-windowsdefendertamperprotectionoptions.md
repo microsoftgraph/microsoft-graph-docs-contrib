@@ -1,12 +1,15 @@
 ---
 title: "windowsDefenderTamperProtectionOptions enum type"
 description: "Defender TamperProtection setting options"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # windowsDefenderTamperProtectionOptions enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,10 +23,6 @@ Defender TamperProtection setting options
 |notConfigured|0|Not Configured|
 |enable|1|Enable windows defender tamper protection|
 |disable|2|Disable windows defender tamper protection|
-
-
-
-
 
 
 

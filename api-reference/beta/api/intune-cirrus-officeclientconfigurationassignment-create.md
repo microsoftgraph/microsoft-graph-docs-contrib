@@ -1,13 +1,15 @@
 ---
 title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
-localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+ms.localizationpriority: medium
+author: "dougeby"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Create officeClientConfigurationAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {

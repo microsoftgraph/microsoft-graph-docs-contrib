@@ -1,13 +1,15 @@
 ---
 title: "restrictedAppsState enum type"
 description: "Restricted apps state"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # restrictedAppsState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,8 +22,6 @@ Restricted apps state
 |:---|:---|:---|
 |prohibitedApps|0|Prohibited apps|
 |notApprovedApps|1|Not approved apps|
-
-
 
 
 

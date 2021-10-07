@@ -1,13 +1,15 @@
 ---
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # customTimeZone resource type
+
+Namespace: microsoft.graph
 
 Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.
 
@@ -53,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

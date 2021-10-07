@@ -1,12 +1,15 @@
 ---
 title: "List managedAllDeviceCertificateStates"
 description: "List properties and relationships of the managedAllDeviceCertificateState objects."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List managedAllDeviceCertificateStates
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -17,11 +20,11 @@ List properties and relationships of the [managedAllDeviceCertificateState](../r
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 869
+Content-Length: 958
 
 {
   "value": [
@@ -65,6 +68,7 @@ Content-Length: 869
       "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
       "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
       "certificateRevokeStatus": "pending",
+      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
       "managedDeviceDisplayName": "Managed Device Display Name value",
       "userPrincipalName": "User Principal Name value",
       "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -79,8 +83,6 @@ Content-Length: 869
   ]
 }
 ```
-
-
 
 
 

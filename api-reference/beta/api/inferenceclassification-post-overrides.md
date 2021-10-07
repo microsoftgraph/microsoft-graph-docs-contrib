@@ -1,17 +1,19 @@
 ---
 title: "Create inferenceClassificationOverride"
 description: "Create a Focused Inbox override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: ""
+author: "abheek-das"
 ms.prod: ""
 ---
 
 # Create inferenceClassificationOverride
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [Focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
+Create a [Focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified
 as specified in the override.
 
 **Note**
@@ -73,7 +75,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-inferenceclassificationoverride-from-inferenceclassification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-inferenceclassificationoverride-from-inferenceclassification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,7 +91,7 @@ Content-type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

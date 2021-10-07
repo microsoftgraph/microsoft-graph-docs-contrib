@@ -1,13 +1,15 @@
 ---
 title: "Update nameditem"
 description: "Update the properties of nameditem object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # Update nameditem
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}
+PATCH /me/drive/items/{id}/workbook/names/{name}
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ```
 ## Optional request headers
 | Name       | Description|
@@ -70,7 +73,7 @@ Content-length: 87
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-nameditem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-nameditem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -85,7 +88,7 @@ Content-length: 87
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,3 +121,5 @@ Content-length: 87
   ]
 }
 -->
+
+

@@ -1,12 +1,14 @@
 ---
 title: "Delete trustFrameworkPolicy"
 description: "This operation deletes an existing trustFrameworkPolicy object from an Azure AD B2C tenant."  
-localization_priority: Normal
-author: "valnav"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "Nickgmicrosoft"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 # Delete trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -64,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-trustframeworkpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-trustframeworkpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,3 +102,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

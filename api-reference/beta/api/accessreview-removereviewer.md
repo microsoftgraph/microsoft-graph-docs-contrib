@@ -1,13 +1,15 @@
 ---
 title: "Remove accessReview reviewer"
-description: "In the Azure AD access reviews feature, update an existing accessReview object to remove a user as a reviewer.  This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified. This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers. "
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+description: "Remove an access review reviewer."
+ms.localizationpriority: medium
+author: "markwahl-msft"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # Remove accessReview reviewer
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
+DELETE /accessReviews/{reviewId}/reviewers/{userId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -38,7 +40,7 @@ No request body should be supplied.
 
 
 ## Response
-If successful, this method returns a 200-series response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -62,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-accessreview-reviewer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-accessreview-reviewer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -97,3 +99,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

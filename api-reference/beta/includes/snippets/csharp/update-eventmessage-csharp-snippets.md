@@ -8,10 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-	IsRead = "true"
+	IsRead = true
 };
 
-await graphClient.Me.Messages["{id}"]
+await graphClient.Me.Messages["{message-id}"]
 	.Request()
 	.UpdateAsync(message);
 

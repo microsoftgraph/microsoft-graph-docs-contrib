@@ -1,13 +1,15 @@
 ---
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "harini84"
 ---
 
 # patternedRecurrence resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,7 +18,7 @@ The recurrence pattern and range.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review.|
 |range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## JSON representation
@@ -51,3 +53,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "windowsFirewallRuleTrafficDirectionType enum type"
 description: "Firewall rule traffic directions."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsFirewallRuleTrafficDirectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Firewall rule traffic directions.
 |notConfigured|0|Not configured.|
 |out|1|The rule applies to outbound traffic.|
 |in|2|The rule applies to inbound traffic.|
-
-
 
 
 

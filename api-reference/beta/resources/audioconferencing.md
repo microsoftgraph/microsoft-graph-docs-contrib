@@ -1,13 +1,15 @@
 ---
 title: "audioConferencing resource type"
-description: "Represents phone access information for an onlineMeeting."
-author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+description: "Represents phone access information for an online meeting."
+author: "mkhribech"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # audioConferencing resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -15,13 +17,19 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## Properties
 
-| Property            | Type    | Description                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | A URL to the externally-accessible web page that contains dial-in information. |
-| leaderPasscode      | String  | The leader password required to connect to the Audio Conference Provider.      |
-| participantPasscode | String  | The participant password required to connect to the Audio Conference Provider. |
-| tollFreeNumber      | String  | The toll-free number to connect to the Audio Conference Provider.              |
-| tollNumber          | String  | The toll number to connect to the Audio Conference Provider.                   |
+| Property                    | Type              | Description                                                                    |
+| :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
+| dialinUrl                   | String            | A URL to the externally-accessible web page that contains dial-in information. |
+| conferenceId                | String            | The conference id of the online meeting.                                       |
+| tollFreeNumbers             | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
+| tollNumbers                 | String collection | List of toll numbers that are displayed in the meeting invite.                 |
+| tollFreeNumber (deprecated) | String            | The toll-free number that connects to the Audio Conference Provider.           |
+| tollNumber (deprecated)     | String            | The toll number that connects to the Audio Conference Provider.                |
+
+> [!CAUTION]
+>
+>- The **tollFreeNumber** and **tollNumber** properties are deprecated. Use the **tollFreeNumbers** and **tollNumbers** properties instead.
+>- For backward compatibility, the original **tollFreeNumber** is added to the new **tollFreeNumbers** collection and the original **tollNumber** is added to the new **tollNumbers** collection.
 
 ## JSON representation
 
@@ -37,10 +45,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "dialinUrl": "String",
-  "leaderPasscode": "String",
-  "participantPasscode": "String",
-  "tollFreeNumber": "String",
-  "tollNumber": "String"
+  "conferenceId": "String",
+  "tollFreeNumbers": [ "String" ],
+  "tollNumbers": [ "String" ]
 }
 ```
 
@@ -56,3 +63,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "standardTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from daylight saving time to standard time."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # standardTimeZoneOffset resource type
+
+Namespace: microsoft.graph
 
 Specifies when a time zone switches from daylight saving time to standard time.
 
@@ -61,3 +63,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type"
 description: "Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUse
 |administrators|1|Administrators|
 |administratorsAndPowerUsers|2|Administrators and Power Users|
 |administratorsAndInteractiveUsers|3|Administrators and Interactive Users |
-
-
 
 
 

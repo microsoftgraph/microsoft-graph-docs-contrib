@@ -1,13 +1,15 @@
 ---
 title: "participantMixerLevel resource type"
 description: "Configuration of mixer levels for given audio participant"
-author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+author: "ananmishr"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # participantMixerLevel resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

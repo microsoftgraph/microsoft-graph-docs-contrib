@@ -2,12 +2,14 @@
 title: "trending resource type"
 description: "Rich relationship connecting a user to documents that are trending around the user (are relevant to the user). OneDrive files, and files stored on SharePoint team sites can trend around the user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
 # trending resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +19,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List trending](../api/insights-list-trending.md) |[insights_trending](insights-trending.md) collection| Get a list of trending files.|
+|[List trending](../api/insights-list-trending.md) |[trending](insights-trending.md) collection| Get a list of trending files.|
 
 ## Properties
 
@@ -56,3 +58,5 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+

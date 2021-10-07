@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Items["{id}"].Workbook
-	.RefreshSession(this)
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook
+	.RefreshSession()
 	.Request()
 	.Header("workbook-session-id","{session-id}")
 	.PostAsync();

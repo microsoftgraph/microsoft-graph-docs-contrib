@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -20,40 +20,50 @@ attendees.emailAddress = emailAddress;
 attendeesList.add(attendees);
 
 LocationConstraint locationConstraint = new LocationConstraint();
-locationConstraint.isRequired = "false";
-locationConstraint.suggestLocation = "false";
+locationConstraint.isRequired = false;
+locationConstraint.suggestLocation = false;
 LinkedList<LocationConstraintItem> locationsList = new LinkedList<LocationConstraintItem>();
 LocationConstraintItem locations = new LocationConstraintItem();
-locations.resolveAvailability = "false";
+locations.resolveAvailability = false;
 locations.displayName = "Conf room Hood";
 locationsList.add(locations);
 locationConstraint.locations = locationsList;
 
 TimeConstraint timeConstraint = new TimeConstraint();
 timeConstraint.activityDomain = ActivityDomain.WORK;
-LinkedList<TimeSlot> timeslotsList = new LinkedList<TimeSlot>();
-TimeSlot timeslots = new TimeSlot();
+LinkedList<TimeSlot> timeSlotsList = new LinkedList<TimeSlot>();
+TimeSlot timeSlots = new TimeSlot();
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2019-04-16T09:00:00";
 start.timeZone = "Pacific Standard Time";
-timeslots.start = start;
+timeSlots.start = start;
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.dateTime = "2019-04-18T17:00:00";
 end.timeZone = "Pacific Standard Time";
-timeslots.end = end;
-timeslotsList.add(timeslots);
-timeConstraint.timeslots = timeslotsList;
+timeSlots.end = end;
+timeSlotsList.add(timeSlots);
+timeConstraint.timeSlots = timeSlotsList;
 
 boolean isOrganizerOptional = false;
 
-String meetingDuration = "PT1H";
+Duration meetingDuration = DatatypeFactory.newInstance().newDuration("PT1H");
 
 boolean returnSuggestionReasons = true;
 
-String minimumAttendeePercentage = "100";
+Double minimumAttendeePercentage = 100d;
 
 graphClient.me()
-	.findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,maxCandidates,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+	.findMeetingTimes(UserFindMeetingTimesParameterSet
+		.newBuilder()
+		.withAttendees(attendeesList)
+		.withLocationConstraint(locationConstraint)
+		.withTimeConstraint(timeConstraint)
+		.withMeetingDuration(meetingDuration)
+		.withMaxCandidates(null)
+		.withIsOrganizerOptional(isOrganizerOptional)
+		.withReturnSuggestionReasons(returnSuggestionReasons)
+		.withMinimumAttendeePercentage(minimumAttendeePercentage)
+		.build())
 	.buildRequest( requestOptions )
 	.post();
 

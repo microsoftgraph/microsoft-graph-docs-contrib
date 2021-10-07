@@ -10,8 +10,8 @@ var groupId = "groupId-value";
 
 var renameAs = "renameAs-value";
 
-await graphClient.Me.Onenote.Notebooks["{id}"]
-	.CopyNotebook(groupId,renameAs,notebookFolder,siteCollectionId,siteId)
+await graphClient.Me.Onenote.Notebooks["{notebook-id}"]
+	.CopyNotebook(groupId,renameAs,null,null,null)
 	.Request()
 	.PostAsync();
 

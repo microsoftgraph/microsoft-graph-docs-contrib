@@ -13,7 +13,7 @@ var post = new Post
 		ContentType = BodyType.Text,
 		Content = "content-value"
 	},
-	ReceivedDateTime = "datetime-value",
+	ReceivedDateTime = DateTimeOffset.Parse("datetime-value"),
 	HasAttachments = true,
 	From = new Recipient
 	{
@@ -44,8 +44,8 @@ var post = new Post
 		}
 	},
 	ConversationId = "conversationId-value",
-	CreatedDateTime = "datetime-value",
-	LastModifiedDateTime = "datetime-value",
+	CreatedDateTime = DateTimeOffset.Parse("datetime-value"),
+	LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 	ChangeKey = "changeKey-value",
 	Categories = new List<String>()
 	{
@@ -55,11 +55,11 @@ var post = new Post
 	InReplyTo = new Post
 	{
 	},
-	Attachments = new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
-		new Attachment
+		new FileAttachment
 		{
-			LastModifiedDateTime = "datetime-value",
+			LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 			Name = "name-value",
 			ContentType = "contentType-value",
 			Size = 99,
@@ -69,7 +69,7 @@ var post = new Post
 	}
 };
 
-await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
 	.Reply(post)
 	.Request()
 	.PostAsync();

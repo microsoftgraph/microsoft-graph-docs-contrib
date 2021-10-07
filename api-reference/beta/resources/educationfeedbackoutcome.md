@@ -1,13 +1,15 @@
 ---
 title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
 # educationFeedbackOutcome resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationFeedbackOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -60,3 +61,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

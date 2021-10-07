@@ -4,12 +4,17 @@ description: Gets an account object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Get accounts
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an account object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -18,13 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type |Permissions (from least to most privileged)|
 |:---------------|:------------------------------------------|
 |Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Financials.ReadWrite.All|
 
 
 ## HTTP request
-```
-GET /financials/companies('{id}')/accounts('{id}')
+```http
+GET /financials/companies/{id}/accounts/{id}
 ```
 
 ## Optional query parameters
@@ -46,15 +51,15 @@ If successful, this method returns a `200 OK` response code and an **accounts** 
 **Request**
 Here is an example of the request.
 
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/accounts('{id}')
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
 ```
 
 **Response**
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -67,3 +72,5 @@ Here is an example of the response.
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+

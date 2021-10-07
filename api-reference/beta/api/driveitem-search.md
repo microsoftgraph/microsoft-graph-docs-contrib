@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "Search the hierarchy of items for items matching a query."
 ms.date: 09/10/2017
 title: Search for files
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+
+>**Note:** This method does not support the Sites.Selected application permission.
 
 ## HTTP request
 
@@ -50,20 +54,19 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ### Request
 
-Here is an example of the request searching the current user's OneDrive
-
+The following example searches for a match for "Contoso Project" across several fields in the signed-in user's drive items.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
-```http
-GET /me/drive/root/search(q='{search-query}')
+```msgraph-interactive
+GET /me/drive/root/search(q='Contoso Project')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -122,14 +125,14 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
-```http
-GET /me/drive/search(q='{search-query}')
+```msgraph-interactive
+GET /me/drive/search(q='Contoso Project')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-all-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -2,12 +2,14 @@
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
 # List alerts
+
+Namespace: microsoft.graph
 
 Retrieve a list of [alert](../resources/alert.md) objects.
 
@@ -38,15 +40,27 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` will return the aggregated top results from each security API provider.  
+- `$top` - Returns the aggregated top results from each security API provider.  
+- `$filter`
+
+The following table lists the `$filter` keywords by each vendor name.
+
+| Vendor name      |$filter keyword|
+|:----------|:----------|
+| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Azure Security Center | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Azure Active Directory Identity Protection | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Office 365 | Not currently supported. |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
-> **Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts. For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.  For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
+> **Note:** The `$top` OData query parameter has a limit of 1000 alerts. We recommend that you include only `$top` and not `$skip` in your first GET query. You can use `@odata.nextLink` for pagination. If you need to use `$skip`, it has a limit of 500 alerts. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
 ## Request headers
 
@@ -74,14 +88,14 @@ The following is an example of the request.
   "name": "get_alerts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,3 +151,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

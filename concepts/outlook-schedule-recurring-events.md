@@ -1,8 +1,8 @@
 ---
 title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager, or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once, and let the server fill in the rest of the series."
-author: "angelgolfer-ms"
-localization_priority: Priority
+author: "harini84"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
@@ -353,4 +353,8 @@ To create a recurrence rule, you must specify both a pattern and a range. Any pa
 
 ## Next steps
     
-Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
+- Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
+- See other recurring event examples in the calendar API reference:
+  - [Create a recurring event that occurs once a week](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
+  - [Create a daily recurring event](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+

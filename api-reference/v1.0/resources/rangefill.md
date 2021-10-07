@@ -2,12 +2,14 @@
 title: "RangeFill resource type"
 description: "Represents the background of a range object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # RangeFill resource type
+
+Namespace: microsoft.graph
 
 Represents the background of a range object.
 
@@ -56,3 +58,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

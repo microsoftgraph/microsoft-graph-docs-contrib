@@ -1,13 +1,15 @@
 ---
 title: "Create page"
 description: "Create a new page in the specified section."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # Create page
+
+Namespace: microsoft.graph
 
 Create a new [page](../resources/page.md) in the specified section.
 
@@ -120,3 +122,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

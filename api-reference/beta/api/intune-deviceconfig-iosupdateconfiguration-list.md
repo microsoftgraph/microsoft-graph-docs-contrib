@@ -1,13 +1,15 @@
 ---
 title: "List iosUpdateConfigurations"
 description: "List properties and relationships of the iosUpdateConfiguration objects."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # List iosUpdateConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ List properties and relationships of the [iosUpdateConfiguration](../resources/i
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1620
+Content-Length: 2005
 
 {
   "value": [
@@ -99,17 +101,26 @@ Content-Length: 1620
       "isEnabled": true,
       "activeHoursStart": "12:00:05.5020000",
       "activeHoursEnd": "11:59:00.8990000",
+      "desiredOsVersion": "Desired Os Version value",
       "scheduledInstallDays": [
         "monday"
       ],
       "utcTimeOffsetInMinutes": 6,
-      "enforcedSoftwareUpdateDelayInDays": 1
+      "enforcedSoftwareUpdateDelayInDays": 1,
+      "updateScheduleType": "alwaysUpdate",
+      "customUpdateTimeWindows": [
+        {
+          "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+          "startDay": "monday",
+          "endDay": "monday",
+          "startTime": "12:03:30.2730000",
+          "endTime": "12:03:02.3740000"
+        }
+      ]
     }
   ]
 }
 ```
-
-
 
 
 

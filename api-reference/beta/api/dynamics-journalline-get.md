@@ -4,12 +4,17 @@ description: Gets a journal line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Get journalLines
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a journal line object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -24,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+GET /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 ## Optional query parameters
@@ -46,15 +51,15 @@ If successful, this method returns a `200 OK` response code and a **journalLines
 **Request**
 
 Here is an example of the request.
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 **Response**
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -72,4 +77,6 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

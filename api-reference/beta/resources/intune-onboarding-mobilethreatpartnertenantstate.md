@@ -1,13 +1,15 @@
 ---
 title: "mobileThreatPartnerTenantState enum type"
 description: "Partner state of this tenant."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # mobileThreatPartnerTenantState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Partner state of this tenant.
 |available|1|Partner is available.|
 |enabled|2|Partner is enabled.|
 |unresponsive|3|Partner is unresponsive.|
-
-
 
 
 

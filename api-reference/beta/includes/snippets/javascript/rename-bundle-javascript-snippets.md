@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const driveItem = {
-  name: "Shared legal agreements"
+  name: 'Shared legal agreements'
 };
 
-let res = await client.api('/drive/items/{bundle-id}')
+await client.api('/drive/items/{bundle-id}')
 	.version('beta')
-	.update({driveItem : driveItem});
+	.update(driveItem);
 
 ```

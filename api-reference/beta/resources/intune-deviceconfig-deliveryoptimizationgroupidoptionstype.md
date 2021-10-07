@@ -1,13 +1,15 @@
 ---
 title: "deliveryOptimizationGroupIdOptionsType enum type"
 description: "Possible values for the DeliveryOptimizationGroupIdOptionsType setting."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # deliveryOptimizationGroupIdOptionsType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Possible values for the DeliveryOptimizationGroupIdOptionsType setting.
 |authenticatedDomainSid|2|Authenticated domain SID.|
 |dhcpUserOption|3|DHCP user option.|
 |dnsSuffix|4|DNS suffix.|
-
-
 
 
 

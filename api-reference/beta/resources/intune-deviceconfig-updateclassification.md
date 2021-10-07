@@ -1,13 +1,15 @@
 ---
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # updateClassification enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Possible values for automatic update classification.
 |recommendedAndImportant|1|Recommended and important.|
 |important|2|Important.|
 |none|3|None.|
-
-
 
 
 

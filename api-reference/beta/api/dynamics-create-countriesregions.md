@@ -4,12 +4,17 @@ description: Creates a countries/regions object in Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Create countriesRegions
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a countriesRegions object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -22,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
-POST /financials/companies('{id}')/countriesRegions
+```http
+POST /financials/companies/{id}/countriesRegions
 ```
 
 ## Optional query parameters
@@ -47,8 +52,8 @@ If successful, this method returns ```201 Created``` response code and a **count
 
 Here is an example of a request.
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions
 Content-type: application/json
 
 {
@@ -62,9 +67,9 @@ Content-type: application/json
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -77,4 +82,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

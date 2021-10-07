@@ -1,13 +1,15 @@
 ---
 title: "emailAppUsageUserCounts resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "sarahwxy"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAppUsageUserCounts resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 
@@ -51,3 +53,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

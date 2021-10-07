@@ -1,12 +1,15 @@
 ---
 title: "mobileAppDependencyType enum type"
 description: "Indicates the dependency type associated with a relationship between two mobile apps."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # mobileAppDependencyType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -19,8 +22,6 @@ Indicates the dependency type associated with a relationship between two mobile 
 |:---|:---|:---|
 |detect|0|Indicates that the child app should be detected before installing the parent app.|
 |autoInstall|1|Indicates that the child app should be installed before installing the parent app.|
-
-
 
 
 

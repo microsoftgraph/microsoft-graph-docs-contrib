@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -21,10 +21,16 @@ DateTimeTimeZone endTime = new DateTimeTimeZone();
 endTime.dateTime = "2019-03-15T18:00:00";
 endTime.timeZone = "Pacific Standard Time";
 
-String availabilityViewInterval = "60";
+int availabilityViewInterval = 60;
 
 graphClient.me().calendar()
-	.getschedule(schedulesList,endTime,startTime,availabilityViewInterval)
+	.getSchedule(CalendarGetScheduleParameterSet
+		.newBuilder()
+		.withSchedules(schedulesList)
+		.withEndTime(endTime)
+		.withStartTime(startTime)
+		.withAvailabilityViewInterval(availabilityViewInterval)
+		.build())
 	.buildRequest( requestOptions )
 	.post();
 

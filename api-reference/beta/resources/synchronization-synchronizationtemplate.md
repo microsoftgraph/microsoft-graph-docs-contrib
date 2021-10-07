@@ -1,13 +1,15 @@
 ---
 title: "synchronizationTemplate resource type"
-description: " anyone can retrieve the template to see the default settings, including the synchronization schema."
-localization_priority: Normal
+description: "Provides pre-configured synchronization settings for a particular application."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # synchronizationTemplate resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

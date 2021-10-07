@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.TEXT;
 body.content = "content-value";
 post.body = body;
-post.receivedDateTime = "2016-10-19T10:37:00Z";
+post.receivedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 post.hasAttachments = true;
 Recipient from = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
@@ -35,8 +35,8 @@ newParticipants.emailAddress = emailAddress2;
 newParticipantsList.add(newParticipants);
 post.newParticipants = newParticipantsList;
 post.conversationId = "conversationId-value";
-post.createdDateTime = "2016-10-19T10:37:00Z";
-post.lastModifiedDateTime = "2016-10-19T10:37:00Z";
+post.createdDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
+post.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 post.changeKey = "changeKey-value";
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("categories-value");
@@ -45,18 +45,24 @@ post.id = "id-value";
 Post inReplyTo = new Post();
 post.inReplyTo = inReplyTo;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-Attachment attachments = new Attachment();
-attachments.lastModifiedDateTime = "2016-10-19T10:37:00Z";
+FileAttachment attachments = new FileAttachment();
+attachments.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
 attachments.name = "name-value";
 attachments.contentType = "contentType-value";
 attachments.size = 99;
 attachments.isInline = true;
 attachments.id = "id-value";
 attachmentsList.add(attachments);
-post.attachments = attachmentsList;
+AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
+attachmentCollectionResponse.value = attachmentsList;
+AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
+post.attachments = attachmentCollectionPage;
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
-	.reply(post)
+	.reply(PostReplyParameterSet
+		.newBuilder()
+		.withPost(post)
+		.build())
 	.buildRequest()
 	.post();
 

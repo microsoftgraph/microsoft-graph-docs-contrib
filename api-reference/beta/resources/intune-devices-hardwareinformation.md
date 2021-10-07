@@ -1,13 +1,15 @@
 ---
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # hardwareInformation resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -32,6 +34,9 @@ Hardware information of a given device.
 |operatingSystemLanguage|String|Operating system language of the device|
 |isSupervised|Boolean|Supervised mode of the device|
 |isEncrypted|Boolean|Encryption status of the device|
+|batterySerialNumber|String|The serial number of the device’s current battery|
+|batteryHealthPercentage|Int32|The device’s current battery’s health percentage. Valid values 0 to 100|
+|batteryChargeCycles|Int32|The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647|
 |isSharedDevice|Boolean|Shared iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) collection|All users on the shared Apple device|
 |tpmSpecificationVersion|String|String that specifies the specification version.|
@@ -40,6 +45,14 @@ Hardware information of a given device.
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Virtualization-based security hardware requirement status. Possible values are: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Virtualization-based security status. . Possible values are: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|osBuildNumber|String|Operating System Build Number on Android device|
+|operatingSystemProductType|Int32|Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647|
+|ipAddressV4|String|IPAddressV4|
+|subnetAddress|String|SubnetAddress|
+|esimIdentifier|String|eSIM identifier|
+|systemManagementBIOSVersion|String|BIOS version as reported by SMBIOS|
+|tpmManufacturer|String|The identifying information that uniquely names the TPM manufacturer|
+|tpmVersion|String|The version of the TPM, as specified by the manufacturer|
 
 ## Relationships
 None
@@ -68,6 +81,9 @@ Here is a JSON representation of the resource.
   "operatingSystemLanguage": "String",
   "isSupervised": true,
   "isEncrypted": true,
+  "batterySerialNumber": "String",
+  "batteryHealthPercentage": 1024,
+  "batteryChargeCycles": 1024,
   "isSharedDevice": true,
   "sharedDeviceCachedUsers": [
     {
@@ -83,11 +99,17 @@ Here is a JSON representation of the resource.
   "deviceFullQualifiedDomainName": "String",
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
-  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+  "osBuildNumber": "String",
+  "operatingSystemProductType": 1024,
+  "ipAddressV4": "String",
+  "subnetAddress": "String",
+  "esimIdentifier": "String",
+  "systemManagementBIOSVersion": "String",
+  "tpmManufacturer": "String",
+  "tpmVersion": "String"
 }
 ```
-
-
 
 
 

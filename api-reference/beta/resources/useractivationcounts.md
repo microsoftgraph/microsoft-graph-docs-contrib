@@ -1,19 +1,21 @@
 ---
 title: "userActivationCounts resource type"
 description: "The following is a JSON representation of the resource."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.localizationpriority: medium
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 
 # userActivationCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | String | The product type, such as "Office 365 ProPlus", "Project Client", or "Visio Pro for Office 365". |
+| productType       | String | The product type, such as "Microsoft 365 ProPlus"or "Project Client". |
 | lastActivatedDate | Date   | The date of the latest activation.       |
 | windows           | Int64  | The activation count on Windows. This number includes every activation on any Windows computer. |
 | mac               | Int64  | The activation count on Mac OS.          |
@@ -43,3 +45,5 @@ The following is a JSON representation of the resource.
   "activatedOnSharedComputer": true 
 }
 ```
+
+

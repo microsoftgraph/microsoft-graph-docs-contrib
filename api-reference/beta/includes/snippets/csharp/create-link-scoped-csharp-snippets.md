@@ -10,8 +10,8 @@ var type = "edit";
 
 var scope = "organization";
 
-await graphClient.Me.Drive.Items["{item-id}"]
-	.CreateLink(type,scope,expirationDateTime,password,message,recipients)
+await graphClient.Me.Drive.Items["{driveItem-id}"]
+	.CreateLink(type,scope,null,null,null,null)
 	.Request()
 	.PostAsync();
 

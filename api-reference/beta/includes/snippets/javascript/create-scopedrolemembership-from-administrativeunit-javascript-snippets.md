@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const scopedRoleMembership = {
-  roleId: "roleId-value",
+  roleId: 'roleId-value',
   roleMemberInfo: {
-    id: "id-value"
+    id: 'id-value'
   }
 };
 
-let res = await client.api('/administrativeUnits/{id}/scopedRoleMembers')
+await client.api('/administrativeUnits/{id}/scopedRoleMembers')
 	.version('beta')
-	.post({scopedRoleMembership : scopedRoleMembership});
+	.post(scopedRoleMembership);
 
 ```

@@ -2,16 +2,25 @@
 title: "Use the Microsoft Graph API"
 description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."
 author: "jackson-woods"
-localization_priority: Priority
+ms.localizationpriority: high
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Use the Microsoft Graph API
 
 Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](auth-v2-user.md) or [service](auth-v2-service.md), you can make requests to the Microsoft Graph API.
 
-> **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+> **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
-To read from or write to a resource such as a user or an email message, you construct a request that looks like the following.
+## OData namespace
+
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord) in `microsoft.graph.callRecords`. 
+
+Unless explicitly specified in the corresponding topic, assume types, methods, and enumerations are part of the `microsoft.graph` namespace.
+
+## Call a REST API method
+
+To read from or write to a resource such as a user or an email message, you construct a request that looks like the following:
 
 <!-- {
   "blockType": "ignored"
@@ -25,7 +34,7 @@ The components of a request include:
 * [{HTTP method}](#http-methods) - The HTTP method used on the request to Microsoft Graph.
 * [{version}](#version) - The version of the Microsoft Graph API your application is using.
 * [{resource}](#resource) - The resource in Microsoft Graph that you're referencing. 
-* [{query-parameters}](#query-parameters-optional) - Optional OData query options or REST method parameters that customize the response.
+* [{query-parameters}](#query-parameters) - Optional OData query options or REST method parameters that customize the response.
 
 After you make a request, a response is returned that includes: 
 
@@ -36,7 +45,6 @@ After you make a request, a response is returned that includes:
 ## HTTP methods
 
 Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
-
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |
@@ -56,7 +64,7 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 * `v1.0` includes generally available APIs. Use the v1.0 version for all production apps.
 * `beta` includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; do not use beta APIs in your production apps.
 
-We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.
+We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 For more information about API versions, see [Versioning and support](versioning-and-support.md).
 
@@ -96,6 +104,33 @@ Aside from OData query options, some methods require parameter values specified 
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## Tools for interacting with Microsoft Graph
+
+### Graph Explorer
+
+Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+You can either access demo data without signing in, or you can sign in to a tenant of your own. Use the following steps to build the request:
+
+1. Select the HTTP method.
+2. Select the version of API that you want to use.
+3. Type the query in the request text box.
+4. Select **Run Query**. 
+
+The following example shows a request that returns information about users in the demo tenant:
+
+![Screenshot of Graph Explorer with a GET user request highlighted](./images/graph-explorer.png)
+
+Sample queries are provided in Graph Explorer to enable you to more quickly run common requests. To see the samples that are available, select **show more samples**. Select **On** for the set of samples that you want to see, and then after closing the selection window, you should see a list of predefined requests.
+
+A status code and message are displayed after a request is sent and the response is shown in the **Response Preview** tab.
+
+### Postman
+
+Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: [https://www.getpostman.com/](https://www.getpostman.com/). To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
+
+For more information, see [Use Postman with the Microsoft Graph API](./use-postman.md).
+
 ## Next steps
 
-You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).
+You're ready to get up and running with Microsoft Graph. Try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).

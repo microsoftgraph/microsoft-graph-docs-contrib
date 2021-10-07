@@ -2,12 +2,14 @@
 title: "Chart resource type"
 description: "Represents a chart object in a workbook."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # Chart resource type
+
+Namespace: microsoft.graph
 
 Represents a chart object in a workbook.
 
@@ -82,3 +84,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

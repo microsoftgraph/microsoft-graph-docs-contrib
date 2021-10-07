@@ -1,13 +1,15 @@
 ---
 title: "contactFolder resource type"
 description: "A folder that contains contacts."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "kevinbellinger"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # contactFolder resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -95,3 +97,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

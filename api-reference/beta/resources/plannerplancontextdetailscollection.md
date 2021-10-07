@@ -2,12 +2,14 @@
 title: "plannerPlanContextDetailsCollection resource type"
 description: " the value is the plannerPlanContextDetails object."
 author: "TarkanSevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
 
 # plannerPlanContextDetailsCollection resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,3 +49,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -2,12 +2,14 @@
 title: "teamsAsyncOperationStatus enum type"
 description: "Describes the current status of a teamsAsyncOperation."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # teamsAsyncOperationStatus enum type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,3 +24,5 @@ Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).
 |inProgress|2|The operation is running.|
 |succeeded|3|The operation succeeded.|
 |failed|4|The operation failed.|
+
+

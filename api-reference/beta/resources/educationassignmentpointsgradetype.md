@@ -1,13 +1,15 @@
 ---
 title: "educationAssignmentPointsGradeType resource type"
 description: "Used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationAssignmentPointsGradeType resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

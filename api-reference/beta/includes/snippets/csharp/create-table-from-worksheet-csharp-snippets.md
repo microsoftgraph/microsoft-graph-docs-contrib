@@ -10,8 +10,8 @@ var address = "";
 
 var hasHeaders = false;
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Tables
-	.Add(address,hasHeaders)
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Tables
+	.Add(hasHeaders,address)
 	.Request()
 	.PostAsync();
 

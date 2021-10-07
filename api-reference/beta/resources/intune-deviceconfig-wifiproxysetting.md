@@ -1,13 +1,15 @@
 ---
 title: "wiFiProxySetting enum type"
 description: "Wi-Fi Proxy Settings."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # wiFiProxySetting enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Wi-Fi Proxy Settings.
 |none|0|No Proxy.|
 |manual|1|Manual Proxy Settings via Address and Port.|
 |automatic|2|Automatic Proxy Settings via URL.|
-
-
 
 
 

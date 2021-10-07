@@ -3,12 +3,14 @@ author: rahmit
 description: "This resource represents a page in the SitePages list."
 ms.date: 03/15/2018
 title: SitePage
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
 # sitePage resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +20,7 @@ It contains the title, layout, and a collection of [webPart][]s.
 ## Tasks on a page
 
 The following tasks are available for **sitePage** resources.
-All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+All examples are relative to a [site][]; for example, `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
 | Common task                     | HTTP method
 |:--------------------------------|:------------------------------
@@ -92,7 +94,7 @@ The **sitePage** resource has the following content fields.
 
 ## Authoring Metadata
 
-The **sitePage** resource has the following authoring-related metadata. The publishingState property will reflect the page authoring state like checked out or published.
+The **sitePage** resource has the following authoring-related metadata. The **publishingState** property will reflect the page authoring state like checked out or published.
 
 | Property name          | Type                   | Description
 |:-----------------------|:-----------------------|:---------------------------
@@ -108,7 +110,7 @@ The following properties are inherited from **[baseItem][]**.
 | eTag                 | string            | ETag for the item. Read-only.
 | lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
 | lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| parentReference      | [itemReference][] | The date and time the item was last modified. Read-only.
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-only.
 | webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
 
 ## Relationships
@@ -150,3 +152,5 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
+
+

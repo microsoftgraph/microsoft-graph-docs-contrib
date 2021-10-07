@@ -4,15 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingService bookingService = new BookingService();
-bookingService.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.bookingService"));
-bookingService.defaultDuration = "PT1H30M";
+bookingService.defaultDuration = DatatypeFactory.newInstance().newDuration("PT1H30M");
 Location defaultLocation = new Location();
-defaultLocation.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.location"));
 PhysicalAddress address = new PhysicalAddress();
-address.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.physicalAddress"));
 address.city = "Buffalo";
 address.countryOrRegion = "USA";
 address.postalCode = "98052";
@@ -32,15 +29,14 @@ defaultLocation.uniqueId = null;
 defaultLocation.additionalDataManager().put("uniqueIdType@odata.type", new JsonPrimitive("#microsoft.graph.locationUniqueIdType"));
 defaultLocation.uniqueIdType = null;
 bookingService.defaultLocation = defaultLocation;
-bookingService.defaultPrice = 10.0;
+bookingService.defaultPrice = 10.0d;
 bookingService.additionalDataManager().put("defaultPriceType@odata.type", new JsonPrimitive("#microsoft.graph.bookingPriceType"));
 bookingService.defaultPriceType = BookingPriceType.FIXED_PRICE;
 bookingService.additionalDataManager().put("defaultReminders@odata.type", new JsonPrimitive("#Collection(microsoft.graph.bookingReminder)"));
 LinkedList<BookingReminder> defaultRemindersList = new LinkedList<BookingReminder>();
 BookingReminder defaultReminders = new BookingReminder();
-defaultReminders.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.bookingReminder"));
 defaultReminders.message = "Please be reminded that this service is tomorrow.";
-defaultReminders.offset = "P1D";
+defaultReminders.offset = DatatypeFactory.newInstance().newDuration("P1D");
 defaultReminders.additionalDataManager().put("recipients@odata.type", new JsonPrimitive("#microsoft.graph.bookingReminderRecipients"));
 defaultReminders.recipients = BookingReminderRecipients.ALL_ATTENDEES;
 defaultRemindersList.add(defaultReminders);
@@ -49,15 +45,14 @@ bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
-bookingService.postBuffer = "PT10M";
-bookingService.preBuffer = "PT5M";
+bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
+bookingService.preBuffer = DatatypeFactory.newInstance().newDuration("PT5M");
 BookingSchedulingPolicy schedulingPolicy = new BookingSchedulingPolicy();
-schedulingPolicy.additionalDataManager().put("@odata.type", new JsonPrimitive("#microsoft.graph.bookingSchedulingPolicy"));
 schedulingPolicy.allowStaffSelection = true;
-schedulingPolicy.maximumAdvance = "P10D";
-schedulingPolicy.minimumLeadTime = "PT10H";
+schedulingPolicy.maximumAdvance = DatatypeFactory.newInstance().newDuration("P10D");
+schedulingPolicy.minimumLeadTime = DatatypeFactory.newInstance().newDuration("PT10H");
 schedulingPolicy.sendConfirmationsToOwner = true;
-schedulingPolicy.timeSlotInterval = "PT1H";
+schedulingPolicy.timeSlotInterval = DatatypeFactory.newInstance().newDuration("PT1H");
 bookingService.schedulingPolicy = schedulingPolicy;
 bookingService.additionalDataManager().put("staffMemberIds@odata.type", new JsonPrimitive("#Collection(String)"));
 LinkedList<String> staffMemberIdsList = new LinkedList<String>();

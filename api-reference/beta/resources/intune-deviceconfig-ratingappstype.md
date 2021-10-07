@@ -1,13 +1,15 @@
 ---
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # ratingAppsType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,8 +26,6 @@ Apps rating as in media content
 |agesAbove9|3|9+, age 9 and above|
 |agesAbove12|4|12+, age 12 and above |
 |agesAbove17|5|17+, age 17 and above|
-
-
 
 
 

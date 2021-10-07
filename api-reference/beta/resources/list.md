@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The list resource represents a list in a site."
 ms.date: 09/11/2017
 title: List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # List resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,24 +22,37 @@ The following tasks are available for list resources.
 **Note:** This beta only allows navigating lists, not creating or updating them.
 You can, however, create or update [list items][listItem].
 
-All examples below are relative to a site, eg: `https://graph.microsoft.com/beta/sites/{site-id}`.
+All examples below are relative to a site, for example, `https://graph.microsoft.com/beta/sites/{site-id}`.
 
 | Common task               | HTTP method
 |:--------------------------|:------------------------------
+| [Get lists in a site][]   | GET /sites/{site-id}/lists
+| [Create list][]           | POST /lists
 | [Get list][]              | GET /lists/{list-id}
 | [Enumerate list items][]  | GET /lists/{list-id}/items
 | [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 | [Get recent activities][] | GET /lists/{list-id}/activities
+| [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
+|[List content types][]          | GET /lists/{list-id}/contentTypes
+|[Add copy of content type from site][] | POST /lists/{list-id}/contentTypes/addCopy
+|[List columns][]               | GET /lists/{list-id}/columns
+|[Create column][]              | POST /lists/{list-id}/columns
 
+[Get lists in a site]: ../api/list-list.md
 [Get list]: ../api/list-get.md
+[Create list]: ../api/list-create.md
 [Enumerate list items]: ../api/listitem-list.md
 [Update list item]: ../api/listitem-update.md
 [Delete list item]: ../api/listitem-delete.md
 [Create list item]: ../api/listitem-create.md
 [Get recent activities]: ../api/activities-list.md
-
+[Get WebSocket channel]: ../api/subscriptions-socketio.md
+[List content types]: ../api/list-list-contenttypes.md
+[Add copy of content type from site]: ../api/contenttype-addCopy.md
+[List columns]: ../api/list-list-columns.md
+[Create column]: ../api/list-post-columns.md
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.
@@ -61,6 +76,7 @@ Here is a JSON representation of a **list** resource.
     "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -109,6 +125,7 @@ The **list** resource has the following relationships to other resources.
 | **activities**    | [itemActivity][] collection | The recent activities that took place within this list.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
+| subscriptions      | [subscription][] collection | The set of subscriptions on the list.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -121,6 +138,7 @@ The **list** resource has the following relationships to other resources.
 [listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[subscription]: subscription.md
 
 <!--
 {
@@ -135,3 +153,5 @@ The **list** resource has the following relationships to other resources.
   "suppressions": []
 }
 -->
+
+

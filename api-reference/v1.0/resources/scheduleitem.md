@@ -1,13 +1,15 @@
 ---
 title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # scheduleItem resource type
+
+Namespace: microsoft.graph
 
 An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well.
 
@@ -59,3 +61,4 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }
 -->
+

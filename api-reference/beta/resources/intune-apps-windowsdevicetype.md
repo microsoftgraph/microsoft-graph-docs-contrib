@@ -1,13 +1,15 @@
 ---
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsDeviceType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +25,6 @@ Contains properties for Windows device type.
 |mobile|2|Whether or not the Mobile Windows device type is supported.|
 |holographic|4|Whether or not the Holographic Windows device type is supported.|
 |team|8|Whether or not the Team Windows device type is supported.|
-
-
 
 
 

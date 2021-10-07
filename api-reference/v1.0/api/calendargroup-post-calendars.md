@@ -1,13 +1,15 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Calendar
+
+Namespace: microsoft.graph
 
 Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).
 
@@ -28,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 A user's default [calendarGroup](../resources/calendargroup.md).
 
 ```http
-POST /me/calendarGroup/calendars
-POST /users/{id | userPrincipalName}/calendarGroup/calendars
+POST /me/calendars
+POST /users/{id | userPrincipalName}/calendars
 ```
 
 Any [calendarGroup](../resources/calendargroup.md) of a user.
@@ -70,15 +72,26 @@ Here is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
-
 Content-type: application/json
 
 {
   "name": "Marketing calendar"
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-calendar-from-calendargroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-calendar-from-calendargroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-calendar-from-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -88,7 +101,7 @@ In the request body, supply a JSON representation of [calendar](../resources/cal
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -128,3 +141,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

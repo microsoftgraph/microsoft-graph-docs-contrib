@@ -1,14 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 # CalculatedColumn resource type
+
+Namespace: microsoft.graph
 
 The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
 
@@ -51,3 +52,4 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
   ],
   "tocPath": "Resources/CalculatedColumn"
 } -->
+

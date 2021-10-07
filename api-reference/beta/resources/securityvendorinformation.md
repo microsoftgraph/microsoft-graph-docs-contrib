@@ -1,13 +1,15 @@
 ---
 title: "securityVendorInformation resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
 # securityVendorInformation resource type
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,3 +57,5 @@ The folllowing is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

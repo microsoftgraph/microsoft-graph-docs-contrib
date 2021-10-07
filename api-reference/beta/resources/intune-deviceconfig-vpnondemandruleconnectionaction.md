@@ -1,13 +1,15 @@
 ---
 title: "vpnOnDemandRuleConnectionAction enum type"
 description: "VPN On-Demand Rule Connection Action."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # vpnOnDemandRuleConnectionAction enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ VPN On-Demand Rule Connection Action.
 |evaluateConnection|1|Evaluate Connection.|
 |ignore|2|Ignore.|
 |disconnect|3|Disconnect.|
-
-
 
 
 

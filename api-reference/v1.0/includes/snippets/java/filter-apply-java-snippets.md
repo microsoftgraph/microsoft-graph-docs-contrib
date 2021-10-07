@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookFilterCriteria criteria = new WorkbookFilterCriteria();
 criteria.criterion1 = "criterion1-value";
@@ -17,12 +17,15 @@ icon.set = "set-value";
 icon.index = 99;
 criteria.icon = icon;
 criteria.dynamicCriteria = "dynamicCriteria-value";
-Json values = new Json();
+JsonElement values = new JsonObject();
 criteria.values = values;
 criteria.filterOn = "filterOn-value";
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns("{id|name}").filter()
-	.apply(criteria)
+	.apply(WorkbookFilterApplyParameterSet
+		.newBuilder()
+		.withCriteria(criteria)
+		.build())
 	.buildRequest()
 	.post();
 

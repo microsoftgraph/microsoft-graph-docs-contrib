@@ -3,11 +3,13 @@ author: daspek
 description: "The MentionAction resource provides information about an activity that mentioned people."
 ms.date: 09/14/2017
 title: MentionAction
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
 # MentionAction resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,3 +53,5 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
+
+

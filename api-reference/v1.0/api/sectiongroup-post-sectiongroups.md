@@ -1,13 +1,15 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified section group."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # Create sectionGroup
+
+Namespace: microsoft.graph
 
 Create a new [section group](../resources/sectiongroup.md) in the specified section group.
 ## Permissions
@@ -64,7 +66,7 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-sectiongroup-from-sectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-sectiongroup-from-sectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,3 +122,4 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
+

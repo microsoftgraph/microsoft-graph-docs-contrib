@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The thumbnail resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation."
 ms.date: 09/10/2017
 title: Thumbnail
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # Thumbnail resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +59,5 @@ Here is a JSON representation of the **thumbnail** resource.
   "suppressions": []
 }
 -->
+
+

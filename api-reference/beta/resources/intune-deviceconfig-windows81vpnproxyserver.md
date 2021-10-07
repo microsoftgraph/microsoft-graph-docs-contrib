@@ -1,13 +1,15 @@
 ---
 title: "windows81VpnProxyServer resource type"
 description: "VPN Proxy Server."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # windows81VpnProxyServer resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -47,8 +49,6 @@ Here is a JSON representation of the resource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
 
 
 

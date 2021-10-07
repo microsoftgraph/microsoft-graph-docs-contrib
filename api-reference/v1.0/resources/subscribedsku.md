@@ -1,13 +1,15 @@
 ---
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "SumitParikh"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # subscribedSku resource type
+
+Namespace: microsoft.graph
 
 Contains information about a service SKU that a company is subscribed to.
 
@@ -23,20 +25,20 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliesTo|String| For example, "User" or "Company". |
-|capabilityStatus|String| For example, "Enabled". |
+|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled**, and `LockedOut` if the customer cancelled their subscription. |
 |consumedUnits|Int32| The number of licenses that have been assigned. |
 |id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans that are available with the SKU. Not nullable |
 |skuId|Guid| The unique identifier (GUID) for the service SKU. |
-|skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". |
+|skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).|
 
 ## Relationships
 None
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource
 
 <!--{
   "blockType": "resource",
@@ -72,6 +74,11 @@ Here is a JSON representation of the resource
 }
 
 ```
+
+## See also
+
++ [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -81,3 +88,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

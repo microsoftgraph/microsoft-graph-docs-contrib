@@ -1,15 +1,17 @@
 ---
 title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
-author: "angelgolfer-ms"
-localization_priority: Priority
+author: "abheek-das"
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: move
 
-Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.
+Namespace: microsoft.graph
+
+Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message.
 
 ## Permissions
 
@@ -78,7 +80,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -97,7 +99,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -190,3 +192,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

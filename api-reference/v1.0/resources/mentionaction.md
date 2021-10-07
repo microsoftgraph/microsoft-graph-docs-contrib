@@ -1,13 +1,14 @@
 ---
 author: daspek
-ms.author: dspektor
 title: mentionAction resource type
 description: The MentionAction object provides information about who was mentioned during an activity.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
 # mentionAction resource type
+
+Namespace: microsoft.graph
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
@@ -47,3 +48,4 @@ The **MentionAction** resource provides information about an [activity][] that m
   "suppressions": []
 }
 -->
+

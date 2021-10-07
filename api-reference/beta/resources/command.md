@@ -1,17 +1,18 @@
 ---
 title: "command resource type"
-description: ""
-localization_priority: Normal
+description: "Set of commands sent to a device."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: "finsharp"
+ms.prod: "directory-management"
+author: "spunukol"
 ---
 
 # command resource type
 
+Namespace: microsoft.graph
+
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None
 
 ## Relationships
 None
@@ -25,6 +26,8 @@ Here is a JSON representation of the resource.
 {
 }
 ```
+
+
 
 
 

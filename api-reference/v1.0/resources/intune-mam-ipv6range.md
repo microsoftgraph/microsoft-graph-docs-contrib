@@ -1,13 +1,15 @@
 ---
 title: "iPv6Range resource type"
 description: "IPv6 Range definition."
-author: "tfitzmac"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # iPv6Range resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -19,8 +21,8 @@ Inherits from [ipRange](../resources/intune-mam-iprange.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowerAddress|String|Lower address|
-|upperAddress|String|Upper address|
+|lowerAddress|String|Lower address.|
+|upperAddress|String|Upper address.|
 
 ## Relationships
 None
@@ -39,6 +41,7 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
+
 
 
 

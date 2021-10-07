@@ -1,15 +1,17 @@
 ---
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
-author: "dkershaw10"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "Jordanndahl"
+ms.localizationpriority: medium
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Update a group setting
 
-Update the properties of a specific group setting object.
+Namespace: microsoft.graph
+
+Update the properties of a [groupSetting](../resources/groupsetting.md) object for tenant-wide [group](../resources/group.md) settings or a specific group setting.
 
 ## Permissions
 
@@ -25,16 +27,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
-Update a tenant-wide or group specific setting.
+
 
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name | Description |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | {token}. Required. |
 | Content-Type	| application/json	|
 
 ## Request body
@@ -42,14 +44,75 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| values | settingValue collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
+| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
+
+### Example 1: Update a tenant-wide group setting
+
+In this example, `{id}` is the identifier of the tenant-wide groupSetting object.
+
 #### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_tenant_setting"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+Content-type: application/json
+
+{
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "value": "false"
+    }
+  ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-setting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-setting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-setting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update a specific group setting
+
+In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the groupSetting object.
+
+#### Request
+
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,65 +120,14 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_groupsetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
-Content-length: 173
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
   "values": [
     {
-      "name": "CustomBlockedWordsList",
-      "value": ""
-    },
-    {
-      "name": "EnableMSStandardBlockedWords",
-      "value": "False"
-    },
-    {
-      "name": "ClassificationDescriptions",
-      "value": ""
-    },
-    {
-      "name": "DefaultClassification",
-      "value": ""
-    },
-    {
-      "name": "PrefixSuffixNamingRequirement",
-      "value": ""
-    },
-    {
-      "name": "AllowGuestsToBeGroupOwner",
-      "value": "False"
-    },
-    {
-      "name": "AllowGuestsToAccessGroups",
-      "value": "True"
-    },
-    {
-      "name": "GuestUsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "GroupCreationAllowedGroupId",
-      "value": "62e90394-69f5-4237-9190-012177145e10"
-    },
-    {
       "name": "AllowToAddGuests",
-      "value": "True"
-    },
-    {
-      "name": "UsageGuidelinesUrl",
-      "value": ""
-    },
-    {
-      "name": "ClassificationList",
-      "value": ""
-    },
-    {
-      "name": "EnableGroupCreation",
-      "value": "True"
+      "value": "true"
     }
   ]
 }
@@ -124,7 +136,7 @@ Content-length: 173
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,3 +172,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

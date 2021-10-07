@@ -4,12 +4,17 @@ description: A unit of measure object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
 
 # unitsOfMeasure resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a unit of measure, which is a standard of measurement of a quantity, in Dynamics 365 Business Central.
 
 ## Methods
@@ -48,3 +53,5 @@ Here is a JSON representation of the **unitsOfMeasure** resource.
 }
 
 ```
+
+

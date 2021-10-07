@@ -1,13 +1,14 @@
 ---
 author: daspek
-ms.author: dspektor
 title: restoreAction resource type
 description: The RestoreAction object provides information about an activity that restored an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # restoreAction resource type
+
+Namespace: microsoft.graph
 
 The presence of the **restoreAction** resource on an [**itemActivity**][activity] indicates that the activity restored an item.
 
@@ -44,3 +45,4 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+

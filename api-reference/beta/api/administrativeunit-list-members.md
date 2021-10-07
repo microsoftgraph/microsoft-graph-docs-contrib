@@ -1,13 +1,15 @@
 ---
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "DougKirschner"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # List members
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,7 +18,6 @@ Use this API to get the members list (user and group) in an administrative unit.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -24,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 > Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 
@@ -51,7 +54,7 @@ The following request will list the members of the administrative unit, returnin
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
@@ -83,7 +86,7 @@ The following request will list the member references of the administrative unit
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
@@ -101,3 +104,5 @@ Content-length: 100
   ]
 }
 ```
+
+

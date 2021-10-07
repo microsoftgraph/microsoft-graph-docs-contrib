@@ -15,10 +15,10 @@ var device = new Device
 		{
 			Type = 99,
 			IdentityProvider = "identityProvider-value",
-			Key = "base64Y3YxN2E1MWFlYw=="
+			Key = Encoding.ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	},
-	ApproximateLastSignInDateTime = "2016-10-19T10:37:00Z",
+	ApproximateLastSignInDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	DeviceId = "deviceId-value",
 	DeviceMetadata = "deviceMetadata-value",
 	DeviceVersion = 99

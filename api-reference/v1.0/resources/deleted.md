@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The Deleted resource indicates that the item has been deleted."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # Deleted facet
+
+Namespace: microsoft.graph
 
 The **Deleted** resource indicates that the item has been deleted.
 In this version of the API, the presence (non-null) of the resource value indicates that the file was deleted.
@@ -50,3 +51,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Deleted"
 } -->
+

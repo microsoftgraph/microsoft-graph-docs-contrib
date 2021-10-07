@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyPresentationValueText resource type"
 description: "The entity represents a string value for a drop-down list, combo box, or text box presentation on a policy definition."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueText resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,8 +60,6 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
-
 
 
 

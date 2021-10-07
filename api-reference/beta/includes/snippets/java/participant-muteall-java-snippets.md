@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<String> participantsList = new LinkedList<String>();
 participantsList.add("");
 
 String clientContext = "clientContext-value";
 
-graphClient.app().calls("{id}").participants()
-	.muteAll(participantsList,clientContext)
+graphClient.communications().calls("{id}").participants()
+	.muteAll(ParticipantMuteAllParameterSet
+		.newBuilder()
+		.withParticipants(participantsList)
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

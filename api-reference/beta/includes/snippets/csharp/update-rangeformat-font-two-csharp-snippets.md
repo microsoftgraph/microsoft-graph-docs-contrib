@@ -12,8 +12,8 @@ var workbookRangeFont = new WorkbookRangeFont
 	Size = 26
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"]
-	.Range('$B$1').Format.Font
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
+	.Range("$B$1").Format.Font
 	.Request()
 	.UpdateAsync(workbookRangeFont);
 

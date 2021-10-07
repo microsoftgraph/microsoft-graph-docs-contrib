@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The DriveItemVersion resource represents a specific version of a DriveItem."
 ms.date: 09/17/2017
 title: DriveItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # DriveItemVersion resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,3 +77,5 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
+
+

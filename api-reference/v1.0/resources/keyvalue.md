@@ -1,13 +1,15 @@
 ---
 title: "keyValue resource type"
 description: "Standard key-value pair resource type."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "dougeby"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
 # keyValue resource type
+
+Namespace: microsoft.graph
 
 Represents a key-value pair.
 
@@ -48,3 +50,4 @@ Here is a JSON representation of the resource.
   "tocPath": ""
 }
 -->
+

@@ -2,11 +2,13 @@
 author: learafa
 title: Unfollow site
 description: Unfollow a user's site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Unfollow site 
+
+Namespace: microsoft.graph
 
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
@@ -72,7 +74,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,9 +92,9 @@ Content-Type: application/json
 
 If successful, it returns the following JSON response. 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -100,7 +102,7 @@ If an error occured, it returns the following JSON response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 
@@ -134,3 +136,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

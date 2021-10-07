@@ -1,13 +1,15 @@
 ---
 title: "fileHashType enum"
 description: "Enum for file hash types."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: enumPageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
-# fileHashType enum
+# fileHashType enum type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,3 +28,5 @@ Enum for file hash types.
 |ctph|6| CTPH hash type.|
 |peSha1|7| PESHA1 hash type.|
 |peSha256|8| PESHA256 hash type.|
+
+

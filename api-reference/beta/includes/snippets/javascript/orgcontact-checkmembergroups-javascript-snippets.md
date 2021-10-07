@@ -10,14 +10,14 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   groupIds: [
-    "groupIds-value"
+    'groupIds-value'
   ]
 };
 
-let res = await client.api('/contacts/{id}/checkMemberGroups')
+await client.api('/contacts/{id}/checkMemberGroups')
 	.version('beta')
-	.post(String);
+	.post(string);
 
 ```

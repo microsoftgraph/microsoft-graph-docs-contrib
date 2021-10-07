@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # SharedDriveItem resource type
+
+Namespace: microsoft.graph
 
 The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
@@ -56,6 +57,7 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 | **driveItem**     | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**
 | **list**          | [**list**][list]        | Used to access the underlying **list**
 | **listItem**      | [**listItem**][listItem]    | Used to access the underlying **listItem**
+| **permission**    | [**permission**][permission] | Used to access the **permission** representing the underlying sharing link
 | **site**          | [**site**][site]        | Used to access the underlying **site**
 
 Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
@@ -68,6 +70,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 [driveItem]: driveitem.md
 [list]: list.md
 [listItem]: listitem.md
+[permission]: permission.md
 [site]: site.md
 
 ## Methods
@@ -87,3 +90,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Resources/Share"
 } -->
+

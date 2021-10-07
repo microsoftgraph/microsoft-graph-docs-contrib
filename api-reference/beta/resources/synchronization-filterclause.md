@@ -1,13 +1,15 @@
 ---
 title: "filterClause resource type"
-description: "Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion)."
-localization_priority: Normal
+description: "Represents a single assertion that a candidate object must satisfy."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # filterClause resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +55,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

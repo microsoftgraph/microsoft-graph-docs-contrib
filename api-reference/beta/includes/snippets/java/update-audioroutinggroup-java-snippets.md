@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AudioRoutingGroup audioRoutingGroup = new AudioRoutingGroup();
 audioRoutingGroup.id = "oneToOne";
@@ -17,7 +17,7 @@ receiversList.add("550fae72-d251-43ec-868c-373732c2704f");
 receiversList.add("72f988bf-86f1-41af-91ab-2d7cd011db47");
 audioRoutingGroup.receivers = receiversList;
 
-graphClient.app().calls("{id}").audioRoutingGroups("{id}")
+graphClient.communications().calls("{id}").audioRoutingGroups("{id}")
 	.buildRequest()
 	.patch(audioRoutingGroup);
 

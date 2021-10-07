@@ -1,13 +1,15 @@
 ---
 title: "Get windowsUpdateForBusinessConfiguration"
 description: "Read properties and relationships of the windowsUpdateForBusinessConfiguration object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get windowsUpdateForBusinessConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [windowsUpdateForBusinessConfiguration]
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3001
+Content-Length: 3127
 
 {
   "value": {
@@ -118,8 +120,8 @@ Content-Length: 3001
     "businessReadyUpdatesOnly": "all",
     "skipChecksBeforeRestart": true,
     "updateWeeks": "firstWeek",
-    "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-    "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+    "qualityUpdatesPauseStartDate": "2016-12-31",
+    "featureUpdatesPauseStartDate": "2016-12-31",
     "featureUpdatesRollbackWindowInDays": 2,
     "qualityUpdatesWillBeRolledBack": true,
     "featureUpdatesWillBeRolledBack": true,
@@ -128,6 +130,10 @@ Content-Length: 3001
     "engagedRestartDeadlineInDays": 12,
     "engagedRestartSnoozeScheduleInDays": 2,
     "engagedRestartTransitionScheduleInDays": 6,
+    "deadlineForFeatureUpdatesInDays": 15,
+    "deadlineForQualityUpdatesInDays": 15,
+    "deadlineGracePeriodInDays": 9,
+    "postponeRebootUntilAfterDeadline": true,
     "autoRestartNotificationDismissal": "automatic",
     "scheduleRestartWarningInHours": 13,
     "scheduleImminentRestartWarningInMinutes": 7,
@@ -137,8 +143,6 @@ Content-Length: 3001
   }
 }
 ```
-
-
 
 
 

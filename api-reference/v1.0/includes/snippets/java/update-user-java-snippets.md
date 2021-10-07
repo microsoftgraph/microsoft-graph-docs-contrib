@@ -4,14 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 User user = new User();
-user.accountEnabled = true;
 LinkedList<String> businessPhonesList = new LinkedList<String>();
-businessPhonesList.add("businessPhones-value");
+businessPhonesList.add("+1 425 555 0109");
 user.businessPhones = businessPhonesList;
-user.city = "city-value";
+user.officeLocation = "18/2111";
 
 graphClient.me()
 	.buildRequest()

@@ -2,12 +2,14 @@
 title: "ChartDataLabelFormat resource type"
 description: "Encapsulates the format properties for the chart data labels."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartDataLabelFormat resource type
+
+Namespace: microsoft.graph
 
 Encapsulates the format properties for the chart data labels.
 
@@ -53,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

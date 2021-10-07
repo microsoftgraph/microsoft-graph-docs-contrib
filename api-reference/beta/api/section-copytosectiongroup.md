@@ -1,13 +1,15 @@
 ---
 title: "section: copyToSectionGroup"
 description: "Copies a section to a specific section group."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # section: copyToSectionGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,9 +45,9 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to an Office 365 team site.|
-|siteId|String|The id of the SharePoint web to copy to. Use only when copying to an Office 365 team site.|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|siteCollectionId|String|The id of the SharePoint site to copy to. Use only when copying to a SharePoint site.|
+|siteId|String|The id of the SharePoint web to copy to. Use only when copying to a SharePoint site.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |id|String|Required. The id of the destination section group. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
@@ -82,7 +84,7 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytosectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytosectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,9 +102,7 @@ Content-length: 84
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -121,3 +121,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

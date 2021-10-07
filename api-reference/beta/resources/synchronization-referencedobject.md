@@ -1,13 +1,15 @@
 ---
 title: "referencedObject resource type"
 description: "Describes a reference to another object defined in the same directory definition."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # referencedObject resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +55,5 @@ The following is a JSON representation of the resource.
 }
 -->
             
+
+

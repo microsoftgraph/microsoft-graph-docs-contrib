@@ -1,13 +1,15 @@
 ---
 title: "binaryManagementConditionExpressionOperatorType enum type"
 description: "Supported binary operators for management condition expressions."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # binaryManagementConditionExpressionOperatorType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,8 +22,6 @@ Supported binary operators for management condition expressions.
 |:---|:---|:---|
 |or|0|Evaluates a set of operands as true if and only if one or more of its operands is true.|
 |and|1|Evaluates a set of operands as true if and only if all of its operands are true.|
-
-
 
 
 

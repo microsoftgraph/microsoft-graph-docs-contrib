@@ -1,13 +1,15 @@
 ---
 title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
 description: "Represents a detailed summary of an application sign-in."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "sureshja"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
 # applicationSignInDetailedSummary resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Represents a detailed summary of an application sign-in.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|aggregatedEventDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |appDisplayName|String|Name of the application that the user signed in to.|
 |appId|String|ID of the application that the user signed in to.|
 |id|String| A unique ID representing the sign-in activity.|
@@ -66,3 +68,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

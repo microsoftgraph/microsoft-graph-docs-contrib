@@ -1,13 +1,15 @@
 ---
 title: "ChartFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartFont resource type
+
+Namespace: microsoft.graph
 
 This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
@@ -65,3 +67,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

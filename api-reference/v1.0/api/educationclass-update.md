@@ -1,15 +1,17 @@
 ---
-title: "Update educationclass properties"
+title: "Update educationClass"
 description: "Update the properties of a class."
-author: "mmast-msft"
-localization_priority: Normal
+author: "mlafleur"
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Update educationclass properties
+# Update educationClass
 
-Update the properties of a class.
+Namespace: microsoft.graph
+
+Update the properties of an [educationClass](../resources/educationclass.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,16 +36,18 @@ PATCH /education/classes/{id}
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|description|String| Description of the class.|
-|displayName|String| Name of the class.|
-|mailNickname|String| Email alias for sending email to all users if that feature is enabled. |
-<!-- Please verify the revised description here. -->
-|classCode|String| Class code used by the school.|
-|externalId|String| ID of the class from the syncing system. |
-|externalName|String|Name of the class in the syncing system.|
-|externalSource|string| How this class was created. The possible values are: `sis`, `manual`, `enum_sentinel`.|
+| Property             | Type                                               | Description                                                        |
+| :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
+| displayName          | String                                             | Name of the class.                                                 |
+| mailNickname         | String                                             | Mail name for sending email to all members, if this is enabled.    |
+| description          | String                                             | Description of the class.                                          |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entity who created the class                                       |
+| classCode            | String                                             | Class code used by the school to identify the class.               |
+| externalId           | String                                             | ID of the class from the syncing system.                           |
+| externalSource       | educationExternalSource                            | How this class was created. Possible values are: `sis`, `manual`   |
+| externalSourceDetail | String                                             | The name of the external source this resources was generated from. |
+| grade                | String                                             | Grade level of the class.                                          |
+| term                 | [educationTerm](../resources/educationterm.md)     | Term for this class.                                               |
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.
@@ -70,7 +74,7 @@ Content-length: 224
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +91,7 @@ Content-length: 224
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -96,24 +100,26 @@ The following is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11014",
-  "description": "World History Level 1",
-  "classCode": "301",
+  "@odata.type": "#microsoft.graph.educationClass",
+  "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+  "displayName": "String",
+  "mailNickname": "String",
+  "description": "String",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
-  "displayName": "History - World History 1",
-  "externalId": "301",
-  "externalName": "World History Level 1",
-  "externalSource": "Fabrikam High School",
-  "mailNickname": "Fabrikam"
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "classCode": "String",
+  "externalName": "String",
+  "externalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "grade": "String",
+  "term": {
+    "@odata.type": "microsoft.graph.educationTerm"
+  }
 }
 ```
 

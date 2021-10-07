@@ -1,13 +1,15 @@
 ---
 title: "settingSource resource type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # settingSource resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,7 @@ Not yet documented
 |:---|:---|:---|
 |id|String|Not yet documented|
 |displayName|String|Not yet documented|
+|sourceType|[settingSourceType](../resources/intune-shared-settingsourcetype.md)|Not yet documented. Possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None
@@ -35,11 +38,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "sourceType": "String"
 }
 ```
-
-
 
 
 

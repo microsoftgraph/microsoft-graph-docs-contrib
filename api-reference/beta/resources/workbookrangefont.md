@@ -1,13 +1,15 @@
 ---
 title: "workbookRangeFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for an object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookRangeFont resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -71,3 +73,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

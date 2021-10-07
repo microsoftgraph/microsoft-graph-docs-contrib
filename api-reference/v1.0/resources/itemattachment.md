@@ -1,15 +1,18 @@
 ---
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
-localization_priority: Priority
-author: ""
-ms.prod: ""
+ms.localizationpriority: high
+ms.prod: "outlook"
+author: "abheek-das"
 doc_type: resourcePageType
 ---
 
 # itemAttachment resource type
 
-A contact, event, or message that's attached to another event, message, or post.  
+Namespace: microsoft.graph
+
+A contact, event, or message that's attached to a user [event](../resources/event.md),
+[message](../resources/message.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
 
@@ -17,7 +20,7 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
 |[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
@@ -45,6 +48,7 @@ Here is a JSON representation of the resource
     "item"
   ],
   "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.itemAttachment",
   "@odata.annotations": [
     {
@@ -81,3 +85,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

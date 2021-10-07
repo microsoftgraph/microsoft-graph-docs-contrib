@@ -1,13 +1,15 @@
 ---
 title: "Get androidDeviceOwnerEnrollmentProfile"
 description: "Read properties and relationships of the androidDeviceOwnerEnrollmentProfile object."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,11 +20,11 @@ Read properties and relationships of the [androidDeviceOwnerEnrollmentProfile](.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,7 +36,7 @@ GET /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEn
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 844
+Content-Length: 993
 
 {
   "value": {
@@ -70,6 +72,8 @@ Content-Length: 844
     "id": "a8d0245e-245e-a8d0-5e24-d0a85e24d0a8",
     "displayName": "Display Name value",
     "description": "Description value",
+    "enrollmentMode": "corporateOwnedFullyManaged",
+    "enrollmentTokenType": "corporateOwnedDedicatedDeviceWithAzureADSharedMode",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
@@ -82,14 +86,12 @@ Content-Length: 844
       "type": "Type value",
       "value": "dmFsdWU="
     },
-    "scopeTags": [
-      "Scope Tags value"
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
     ]
   }
 }
 ```
-
-
 
 
 

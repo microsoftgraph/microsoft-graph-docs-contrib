@@ -4,13 +4,17 @@ description: Gets an aged accounts receivable object in Dynamics 365 Business Ce
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
-ms.author: solsen
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "dynamics-365-business-central"
 ---
 
 # Get agedAccountsReceivable
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an aged accounts receivable report object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
-GET /financials/companies('{id}')/agedAccountsReceivable
+```http
+GET /financials/companies/{id}/agedAccountsReceivable
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -46,15 +50,15 @@ If successful, this method returns a `200 OK` response code and an **agedAccount
 
 Here is an example of the request.
 
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
 ```
 
 **Response**
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {
@@ -71,3 +75,5 @@ Here is an example of the response.
   "periodLengthFilter": "3M"   
 }
 ```
+
+

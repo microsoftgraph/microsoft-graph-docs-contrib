@@ -1,17 +1,21 @@
 ---
 title: "domain: forceDelete"
 description: "Deletes a domain using an asynchronous operation."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "adimitui"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # domain: forceDelete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a domain using an asynchronous operation.
+
+Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -21,7 +25,7 @@ The following actions are performed as part of this operation:
 
 * Renames the identifierUris of applications with references to the deleted domain.
 
-* If the number of objects to be renamed is greater than 1000, an error is returned.
+* If the number of objects to be renamed is greater than 1,000, an error is returned.
 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 
@@ -34,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Domain.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 
@@ -67,7 +71,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code. 
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +91,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,12 +106,10 @@ Content-length: 33
 ---
 
 
-##### Response
+### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
@@ -126,3 +128,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

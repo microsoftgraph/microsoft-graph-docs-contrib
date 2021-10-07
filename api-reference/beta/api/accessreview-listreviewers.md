@@ -1,13 +1,15 @@
 ---
 title: "List accessReview reviewers"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
-localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "markwahl-msft"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
 # List accessReview reviewers
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')/reviewers
+GET /accessReviews/{reviewId}/reviewers
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -38,7 +40,7 @@ GET /accessReviews('{reviewId}')/reviewers
 No request body should be supplied.
 
 ## Response
-If successful, this method returns a `200, OK` response code and an array of [userIdentity](../resources/useridentity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an array of [userIdentity](../resources/useridentity.md) objects in the response body.
 
 ## Example
 ##### Request
@@ -49,14 +51,14 @@ If successful, this method returns a `200, OK` response code and an array of [us
   "blockType": "request",
   "name": "get_accessReview_reviewers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-reviewers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-reviewers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,3 +115,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

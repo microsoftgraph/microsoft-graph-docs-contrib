@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const outlookTaskFolder = {
-  name: "Volunteer"
+  name: 'Volunteer'
 };
 
-let res = await client.api('/me/outlook/taskfolders')
+await client.api('/me/outlook/taskfolders')
 	.version('beta')
-	.post({outlookTaskFolder : outlookTaskFolder});
+	.post(outlookTaskFolder);
 
 ```

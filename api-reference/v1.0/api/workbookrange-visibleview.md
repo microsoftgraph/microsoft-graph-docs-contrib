@@ -1,13 +1,15 @@
 ---
 title: "workbookRange: visibleView"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # workbookRange: visibleView
+
+Namespace: microsoft.graph
 
 
 ## Permissions
@@ -22,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView
 ```
 ## Request headers
 | Name       | Description|
@@ -45,14 +48,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "workbookrange_visibleview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-visibleview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-visibleview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -68,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,3 +102,4 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
+

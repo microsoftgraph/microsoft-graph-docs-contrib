@@ -1,17 +1,19 @@
 ---
-title: "Permissions"
+title: "List deleted items owned by a user"
 description: "Retrieves a list of recently deleted items owned by the specified user.  "
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "keylimesoda"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# **List deleted items owned by a user**
+# List deleted items owned by a user
+
+Namespace: microsoft.graph
 
 Retrieves a list of recently deleted items owned by the specified user.  
 
-Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.
+Currently, list deleted items functionality is supported only for [application](../resources/application.md) and [group](../resources/group.md) resources owned by the user.
 
 This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.
 
@@ -19,7 +21,7 @@ This is a service action, which means it does not support pagination.  The API r
 
 One of the following permissions is required to call this API. To learn
 more, including how to choose permissions, see
-[Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+[Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | --- | --- |
@@ -119,5 +121,3 @@ Content-length: 1249
         ]
  }
 ```
-
-

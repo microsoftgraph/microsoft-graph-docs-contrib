@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessReview accessReview = new AccessReview();
 accessReview.displayName = "TestReview";
-accessReview.startDateTime = "2017-02-10T00:35:53.214Z";
-accessReview.endDateTime = "2017-03-12T00:35:53.214Z";
+accessReview.startDateTime = OffsetDateTimeSerializer.deserialize("2017-02-10T00:35:53.214Z");
+accessReview.endDateTime = OffsetDateTimeSerializer.deserialize("2017-03-12T00:35:53.214Z");
 Identity reviewedEntity = new Identity();
 reviewedEntity.id = "99025615-a0b1-47ec-9117-35377b10998b";
 accessReview.reviewedEntity = reviewedEntity;
@@ -23,7 +23,10 @@ reviewersList.add(reviewers);
 AccessReviewReviewer reviewers1 = new AccessReviewReviewer();
 reviewers1.id = "5a4e184c-4ee5-4883-96e9-b371f8da88e3";
 reviewersList.add(reviewers1);
-accessReview.reviewers = reviewersList;
+AccessReviewReviewerCollectionResponse accessReviewReviewerCollectionResponse = new AccessReviewReviewerCollectionResponse();
+accessReviewReviewerCollectionResponse.value = reviewersList;
+AccessReviewReviewerCollectionPage accessReviewReviewerCollectionPage = new AccessReviewReviewerCollectionPage(accessReviewReviewerCollectionResponse, null);
+accessReview.reviewers = accessReviewReviewerCollectionPage;
 AccessReviewSettings settings = new AccessReviewSettings();
 settings.mailNotificationsEnabled = true;
 settings.remindersEnabled = true;

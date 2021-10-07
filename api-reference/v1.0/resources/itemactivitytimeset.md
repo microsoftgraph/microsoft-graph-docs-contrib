@@ -1,13 +1,14 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivityTimeSet resource type
 description: The itemActionSet object provides information about an activity that took place on an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # itemActivityTimeSet resource type
+
+Namespace: microsoft.graph
 
 The **itemActivityTimeSet** resource provides information about when an [activity][activity] on an item took place.
 
@@ -54,3 +55,4 @@ At a later time when the user re-connects to the cloud and the changes get uploa
   "suppressions": []
 }
 -->
+

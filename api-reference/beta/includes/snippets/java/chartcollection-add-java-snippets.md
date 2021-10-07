@@ -4,16 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "ColumnStacked";
 
-String sourceData = "A1:B1";
+JsonElement sourceData = JsonParser.parseString("A1:B1");
 
 String seriesBy = "Auto";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts()
-	.add(type,sourceData,seriesBy)
+	.add(WorkbookChartAddParameterSet
+		.newBuilder()
+		.withType(type)
+		.withSourceData(sourceData)
+		.withSeriesBy(seriesBy)
+		.build())
 	.buildRequest()
 	.post();
 

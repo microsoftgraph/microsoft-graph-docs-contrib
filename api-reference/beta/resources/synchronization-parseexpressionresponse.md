@@ -1,13 +1,15 @@
 ---
 title: "parseExpressionResponse resource type"
-description: "Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action."
-localization_priority: Normal
+description: "Represents the response from the synchronizationSchema: parseExpression action."
+ms.localizationpriority: medium
 doc_type: resourcePageType
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "ArvindHarinder1"
+ms.prod: "applications"
 ---
 
 # parseExpressionResponse resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,3 +59,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,12 +1,15 @@
 ---
 title: "List macOSExtensionsConfigurations"
 description: "List properties and relationships of the macOSExtensionsConfiguration objects."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List macOSExtensionsConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -17,11 +20,11 @@ List properties and relationships of the [macOSExtensionsConfiguration](../resou
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1760
+Content-Length: 2414
 
 {
   "value": [
@@ -105,13 +108,29 @@ Content-Length: 1760
           "teamIdentifier": "Team Identifier value",
           "bundleId": "Bundle Id value"
         }
+      ],
+      "systemExtensionsBlockOverride": true,
+      "systemExtensionsAllowedTeamIdentifiers": [
+        "System Extensions Allowed Team Identifiers value"
+      ],
+      "systemExtensionsAllowed": [
+        {
+          "@odata.type": "microsoft.graph.macOSSystemExtension",
+          "teamIdentifier": "Team Identifier value",
+          "bundleId": "Bundle Id value"
+        }
+      ],
+      "systemExtensionsAllowedTypes": [
+        {
+          "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+          "teamIdentifier": "Team Identifier value",
+          "allowedTypes": "networkExtensionsAllowed"
+        }
       ]
     }
   ]
 }
 ```
-
-
 
 
 

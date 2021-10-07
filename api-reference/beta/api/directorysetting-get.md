@@ -1,19 +1,21 @@
 ---
 title: "Get a directory setting"
 description: "Retrieve the properties of a specific directory setting object."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "adimitui"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
 # Get a directory setting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
+> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ GET /settings/{id}
 GET /groups/{id}/settings/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -45,23 +47,25 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
+
 ## Example
-##### Request
+### Request
 Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysetting"
 }-->
-```http
-GET https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53cc
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -75,8 +79,10 @@ GET https://graph.microsoft.com/beta/settings/{id}
 
 ---
 
+
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,16 +91,68 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 198
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "settingTemplateId": "settingTemplateId-value",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+  "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "EnableMIPLabels",
+      "value": "true"
+    },
+    {
+      "name": "CustomBlockedWordsList",
+      "value": ""
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "true"
+    },
+    {
+      "name": "ClassificationDescriptions",
+      "value": ""
+    },
+    {
+      "name": "DefaultClassification",
+      "value": ""
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": "[Contoso-][GroupName]"
+    },
+    {
+      "name": "AllowGuestsToBeGroupOwner",
+      "value": "false"
+    },
+    {
+      "name": "AllowGuestsToAccessGroups",
+      "value": "true"
+    },
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": "https://privacy.contoso.com/privacystatement"
+    },
+    {
+      "name": "GroupCreationAllowedGroupId",
+      "value": ""
+    },
+    {
+      "name": "AllowToAddGuests",
+      "value": "true"
+    },
+    {
+      "name": "UsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "ClassificationList",
+      "value": ""
+    },
+    {
+      "name": "EnableGroupCreation",
+      "value": "true"
     }
   ]
 }

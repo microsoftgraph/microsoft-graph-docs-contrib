@@ -1,13 +1,15 @@
 ---
 title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
-author: "angelgolfer-ms"
-localization_priority: Normal
+author: "kevinbellinger"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create ContactFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,9 @@ In the request body, supply a JSON representation of [ContactFolder](../resource
 If successful, this method returns `201 Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -54,17 +58,16 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 Content-type: application/json
-Content-length: 84
 
 {
-  "displayName": "displayName-value"
+  "displayName": "Family"
 }
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contactfolder-from-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-contactfolder-from-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -78,9 +81,12 @@ Content-length: 84
 
 ---
 
+
 In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,12 +95,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value",
-  "id": "id-value"
+  "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+  "displayName": "Family",
+  "id": "AAMkADIxYjJiYmIzLTFmNjYtNGNhMy04MDU0LTBkOTFkY2Y5NzE1NAAuAAAAAADESc12GiymT5Zp9IHtHnWZAQA2t6otiDF0TYOkcEEh3vhfAAAGgUC1AAA="
 }
 ```
 
@@ -111,3 +116,5 @@ Content-length: 104
   ]
 }
 -->
+
+

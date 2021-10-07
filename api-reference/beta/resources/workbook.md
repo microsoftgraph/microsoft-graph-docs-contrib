@@ -1,7 +1,7 @@
 ---
 title: "workbook resource type"
-description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."
-localization_priority: Normal
+description: "Contains related workbook objects such as worksheets, tables, ranges, and so on."
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
@@ -9,30 +9,35 @@ doc_type: resourcePageType
 
 # workbook resource type
 
-Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+Namespace: microsoft.graph
 
-## Properties
-None
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
-|[Close Session](../api/workbook-closesession.md) | None |Close an existing session.|
-|[Refresh Session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
+|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
+|[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 
+## Properties
+None.
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
+|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbooks scoped named items (named ranges and constants). Read-only.|
 |tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
+|operations|[workbookOperation](workbookoperation.md) collection|The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only. Nullable.|
 
 ## Functions
 
-[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
+[Excel functions](#functions): Invoke a workbook function using the syntax `POST /me/drive/root/workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
 
 The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
@@ -108,10 +113,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 
@@ -129,8 +138,8 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
-## JSON Representation
-Here is a JSON representation of the resource.
+## JSON representation
+
 <!--{
   "blockType": "resource",
   "keyProperty": "id",
@@ -152,3 +161,5 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

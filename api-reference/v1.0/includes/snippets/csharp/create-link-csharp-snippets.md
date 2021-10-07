@@ -8,10 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "view";
 
+var password = "ThisIsMyPrivatePassword";
+
 var scope = "anonymous";
 
-await graphClient.Me.Drive.Items["{item-id}"]
-	.CreateLink(type,scope)
+await graphClient.Me.Drive.Items["{driveItem-id}"]
+	.CreateLink(type,scope,null,password,null)
 	.Request()
 	.PostAsync();
 

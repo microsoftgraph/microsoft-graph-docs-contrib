@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SynchronizationSchema synchronizationSchema = new SynchronizationSchema();
 LinkedList<DirectoryDefinition> directoriesList = new LinkedList<DirectoryDefinition>();
@@ -25,7 +25,10 @@ directoriesList.add(directories);
 DirectoryDefinition directories1 = new DirectoryDefinition();
 directories1.name = "Salesforce";
 directoriesList.add(directories1);
-synchronizationSchema.directories = directoriesList;
+DirectoryDefinitionCollectionResponse directoryDefinitionCollectionResponse = new DirectoryDefinitionCollectionResponse();
+directoryDefinitionCollectionResponse.value = directoriesList;
+DirectoryDefinitionCollectionPage directoryDefinitionCollectionPage = new DirectoryDefinitionCollectionPage(directoryDefinitionCollectionResponse, null);
+synchronizationSchema.directories = directoryDefinitionCollectionPage;
 LinkedList<SynchronizationRule> synchronizationRulesList = new LinkedList<SynchronizationRule>();
 SynchronizationRule synchronizationRules = new SynchronizationRule();
 synchronizationRules.name = "USER_TO_USER";

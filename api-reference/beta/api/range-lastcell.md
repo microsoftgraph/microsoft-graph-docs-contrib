@@ -2,12 +2,14 @@
 title: "Range: LastCell"
 description: "."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Range: LastCell
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names/{name}/range/LastCell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastCell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/items/{id}/workbook/names/{name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/LastCell
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/LastCell
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 
 ```
 ## Request headers
@@ -51,14 +56,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_lastcell"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/LastCell
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-lastcell-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-lastcell-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -74,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,3 +113,5 @@ Content-length: 169
   ]
 }
 -->
+
+

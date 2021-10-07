@@ -1,13 +1,15 @@
 ---
 title: "officeConfiguration resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
-localization_priority: Normal
-author: "rolyon"
-ms.prod: "Intune"
+ms.localizationpriority: medium
+author: "dougeby"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # officeConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,13 +1,15 @@
 ---
 title: "How to protect your company app data with Microsoft Intune"
 description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
-author: "tfitzmac"
-localization_priority: Normal
+author: "dougeby"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
 
 # How to protect your company app data with Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
@@ -22,6 +24,8 @@ The following Graph resources are available to manage app protection polices in 
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
+- [Device app management](intune-mam-deviceappmanagement.md)
+- [Device management](intune-wip-devicemanagement.md)
 - [iOS managed app protection](intune-mam-iosmanagedappprotection.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
@@ -46,6 +50,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app registration](intune-mam-managedappregistration.md)
 - [Managed app status](intune-mam-managedappstatus.md)
 - [Managed app status raw](intune-mam-managedappstatusraw.md)
+- [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
 - [MDM windows information protection policy](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
@@ -53,6 +58,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Targeted managed app configuration](intune-mam-targetedmanagedappconfiguration.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
+- [User](intune-mam-user.md)
 - [Windows information protection](intune-mam-windowsinformationprotection.md)
 - [Windows information protection app](intune-mam-windowsinformationprotectionapp.md)
 - [Windows information protection app learning summary](intune-wip-windowsinformationprotectionapplearningsummary.md)

@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerSystemUpdateInstallType enum type"
 description: "System Update Types for Android Device Owner."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidDeviceOwnerSystemUpdateInstallType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ System Update Types for Android Device Owner.
 |postpone|1|Postpone automatic install of updates up to 30 days.|
 |windowed|2|Install automatically inside a daily maintenance window.|
 |automatic|3|Automatically install updates as soon as possible.|
-
-
 
 
 

@@ -2,12 +2,14 @@
 title: "educationSynchronizationLicenseAssignment resource type"
 description: "Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationSynchronizationLicenseAssignment resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -15,12 +17,13 @@ Represents the license information to assign to user accounts. The resource will
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **appliesTo** | string | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`.         |
-| **skuIds** | collection of strings |  Represents the SKU identifiers of the licenses to assign.        |
+| Property  | Type              | Description                                                                                    |
+| :-------- | :---------------- | :--------------------------------------------------------------------------------------------- |
+| appliesTo | String            | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`. |
+| skuIds    | String collection | Represents the SKU identifiers of the licenses to assign.                                      |
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -31,7 +34,9 @@ Represents the license information to assign to user accounts. The resource will
 
 ```json
 {
-    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
-    "skuIds": ["String"]
+  "appliesTo": { "@odata.type": "microsoft.graph.educationUserRole" },
+  "skuIds": ["String"]
 }
 ```
+
+

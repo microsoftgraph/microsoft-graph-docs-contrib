@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The GeoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
-ms.prod: ""
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
 # GeoCoordinates resource type
+
+Namespace: microsoft.graph
 
 The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file.
 If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
@@ -53,3 +54,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Location"
 } -->
+

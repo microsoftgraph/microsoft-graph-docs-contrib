@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Send an invite to access an item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
-description: "Sends a sharing invitation for a DriveItem."
+description: "Sends a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---
 # Send a sharing invitation
 
-Sends a sharing invitation for a **DriveItem**.
+Namespace: microsoft.graph
+
+Sends a sharing invitation for a **driveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## Permissions
@@ -61,13 +62,15 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
 | sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
 | roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
+| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
 
 ## Example
 
 This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.
 The invitation grants Ryan read-write access to the file.
 
-### HTTP Request
+### HTTP request
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
@@ -75,7 +78,7 @@ If successful, this method returns `200 OK` response code and [permission](../re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
@@ -88,14 +91,16 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,7 +121,7 @@ Here is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -129,12 +134,14 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
@@ -143,9 +150,9 @@ Content-type: application/json
 ## Remarks
 
 * [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.
-* For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).
+* For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
-## Error Responses
+## Error responses
 
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
@@ -164,3 +171,4 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
+

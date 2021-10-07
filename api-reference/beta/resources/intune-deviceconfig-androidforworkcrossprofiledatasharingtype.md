@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkCrossProfileDataSharingType enum type"
 description: "Android For Work cross profile data sharing type."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidForWorkCrossProfileDataSharingType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Android For Work cross profile data sharing type.
 |preventAny|1|Prevent any sharing.|
 |allowPersonalToWork|2|Allow data sharing request from personal profile to work profile.|
 |noRestrictions|3|No restrictions on sharing.|
-
-
 
 
 

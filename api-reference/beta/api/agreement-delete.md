@@ -1,13 +1,15 @@
 ---
 title: "Delete agreement"
 description: "Delete an agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "raprakasMSFT"
 ---
 
 # Delete agreement
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,10 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Conditional Access Administrator
++ Security Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /agreements/<id>
+DELETE /identityGovernance/termsOfUse/agreements/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -41,19 +48,20 @@ If successful, this method returns a `204, No Content` response code. It does no
 ## Example
 ##### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agreement"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/agreements/<id>
+DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-agreement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-agreement-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -67,8 +75,9 @@ DELETE https://graph.microsoft.com/beta/agreements/<id>
 
 ---
 
+
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -90,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

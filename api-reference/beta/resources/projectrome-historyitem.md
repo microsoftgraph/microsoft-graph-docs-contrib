@@ -1,13 +1,15 @@
 ---
 title: "historyItem resource type"
 description: "Represents a history item for an activity in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # historyItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,3 +85,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

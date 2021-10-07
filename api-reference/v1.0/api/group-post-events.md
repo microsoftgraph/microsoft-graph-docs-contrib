@@ -1,13 +1,16 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "dkershaw10"
-localization_priority: Priority
+author: "Jordanndahl"
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Create event
+
+Namespace: microsoft.graph
+
 Use this API to create a new [event](../resources/event.md).
 
 ## Permissions
@@ -83,7 +86,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -101,7 +104,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -132,6 +135,7 @@ Content-type: application/json
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -203,3 +207,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "dkershaw10"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
 # settingTemplateValue resource type
+
+Namespace: microsoft.graph
 
 Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
 
@@ -52,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,30 +1,20 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get a SharePoint Site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType
 ---
 # Get a site resource
 
+Namespace: microsoft.graph
+
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
-
-A **site** is addressed by a unique identifier which is a composite ID of the following values:
-
-* Site collection hostname (contoso.sharepoint.com)
-* Site collection unique ID (GUID)
-* Site unique ID (GUID)
-
-There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
-
-* `/sites/root`: The tenant root site.
-* `/groups/{group-id}/sites/root`: The group's team site.
 
 ## Permissions
 
@@ -71,14 +61,14 @@ GET /groups/{group-id}/sites/root
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,3 +110,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

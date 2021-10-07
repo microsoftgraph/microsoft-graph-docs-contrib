@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
+var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequestObject
 {
 	Duration = "2",
 	Reason = "Activate the role for business purpose",
@@ -14,9 +14,8 @@ var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
 	TicketSystem = "system",
 	Schedule = new GovernanceSchedule
 	{
-		StartDateTime = "2018-02-08T02:35:17.903Z"
+		StartDateTime = DateTimeOffset.Parse("2018-02-08T02:35:17.903Z")
 	},
-	EvaluateOnly = false,
 	Type = "UserAdd",
 	AssignmentState = "Active",
 	RoleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"

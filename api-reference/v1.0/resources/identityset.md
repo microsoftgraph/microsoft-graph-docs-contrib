@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The IdentitySet resource is a keyed collection of identity resources."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # IdentitySet resource type
+
+Namespace: microsoft.graph
 
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
@@ -50,3 +51,4 @@ See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+

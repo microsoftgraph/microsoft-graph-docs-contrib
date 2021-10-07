@@ -1,13 +1,15 @@
 ---
 title: "iosNotificationSettings resource type"
 description: "An item describing notification setting."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # iosNotificationSettings resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,6 +29,7 @@ An item describing notification setting.
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. Possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Indicates whether badges are allowed for this app.|
 |soundsEnabled|Boolean|Indicates whether sounds are allowed for this app.|
+|previewVisibility|[iosNotificationPreviewVisibility](../resources/intune-deviceconfig-iosnotificationpreviewvisibility.md)|Overrides the notification preview policy set by the user on an iOS device. Possible values are: `notConfigured`, `alwaysShow`, `hideWhenLocked`, `neverShow`.|
 
 ## Relationships
 None
@@ -49,11 +52,10 @@ Here is a JSON representation of the resource.
   "showOnLockScreen": true,
   "alertType": "String",
   "badgesEnabled": true,
-  "soundsEnabled": true
+  "soundsEnabled": true,
+  "previewVisibility": "String"
 }
 ```
-
-
 
 
 

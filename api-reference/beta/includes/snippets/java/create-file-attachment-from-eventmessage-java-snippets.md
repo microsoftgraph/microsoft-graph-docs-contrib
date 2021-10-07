@@ -4,15 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Attachment attachment = new Attachment();
-attachment.additionalDataManager().put("@odata.type", new JsonPrimitive("#Microsoft.OutlookServices.FileAttachment"));
+FileAttachment attachment = new FileAttachment();
 attachment.name = "name-value";
 attachment.contentType = "contentType-value";
 attachment.isInline = false;
 attachment.contentLocation = "contentLocation-value";
-attachment.contentBytes = "contentBytes-value";
+attachment.contentBytes = Base64.getDecoder().decode("contentBytes-value");
 
 graphClient.me().messages("{id}").attachments()
 	.buildRequest()

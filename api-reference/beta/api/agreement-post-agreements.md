@@ -1,13 +1,15 @@
 ---
 title: "Create agreement"
 description: "Create a new agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "raprakasMSFT"
 ---
 
 # Create agreement
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,10 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Conditional Access Administrator
++ Security Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /agreements
+POST /identityGovernance/termsOfUse/agreements
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -53,13 +60,14 @@ If successful, this method returns a `201, Created` response code and [agreement
 In the request body, supply a JSON representation of the [agreement](../resources/agreement.md) object.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agreement_from_agreements"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/agreements
+POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
@@ -81,7 +89,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-agreement-from-agreements-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -96,8 +104,9 @@ Content-type: application/json
 ---
 
 
+
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,3 +136,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

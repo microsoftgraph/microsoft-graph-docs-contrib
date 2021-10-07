@@ -1,13 +1,15 @@
 ---
 title: "depTokenType enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # depTokenType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Not yet documented
 |none|0|Token Type is None|
 |dep|1|Token Type is Dep.|
 |appleSchoolManager|2|Token Type is Apple School Manager|
-
-
 
 
 

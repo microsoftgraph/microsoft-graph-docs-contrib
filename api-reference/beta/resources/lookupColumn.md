@@ -3,11 +3,13 @@ author: JeremyKelley
 description: "The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site."
 ms.date: 09/11/2017
 title: LookupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 # LookupColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,3 +50,5 @@ Here is a JSON representation of a **lookupColumn** resource.
   "suppressions": []
 }
 -->
+
+

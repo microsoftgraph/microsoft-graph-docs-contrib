@@ -4,23 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
-recipients.email = "john@contoso.com";
+recipients.email = "ryan@contoso.org";
 
 recipientsList.add(recipients);
-DriveRecipient recipients1 = new DriveRecipient();
-recipients1.email = "ryan@external.com";
 
-recipientsList.add(recipients1);
+String message = "Here's the file that we're collaborating on.";
+
+Boolean requireSignIn = true;
+
+Boolean sendInvitation = true;
 
 LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("read");
+rolesList.add("write");
 
-graphClient.shares("{encoded-sharing-url}").permission()
-	.grant(rolesList,recipientsList)
+String password = "password123";
+
+String expirationDateTime = "07/15/2018 14:00:00";
+
+graphClient.me().drive().items("{item-id}")
+	.invite(DriveItemInviteParameterSet
+		.newBuilder()
+		.withRequireSignIn(requireSignIn)
+		.withRoles(rolesList)
+		.withSendInvitation(sendInvitation)
+		.withMessage(message)
+		.withRecipients(recipientsList)
+		.withExpirationDateTime(expirationDateTime)
+		.withPassword(password)
+		.build())
 	.buildRequest()
 	.post();
 

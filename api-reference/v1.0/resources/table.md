@@ -2,12 +2,14 @@
 title: "Table resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # Table resource type
+
+Namespace: microsoft.graph
 
 Represents an Excel table.
 
@@ -17,10 +19,10 @@ Represents an Excel table.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get Table](../api/table-get.md) | [WorkbookTable](table.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](tablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
-|[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](tablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
-|[List rows](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) collection| Get a TableRow object collection.|
+|[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
+|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[List rows](../api/table-list-rows.md) |[WorkbookTableRow]( workbooktablerow.md) collection| Get a TableRow object collection.|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)	|Update Table object. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the table.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](range.md)|Gets the range object associated with header row of the table.|
@@ -51,8 +53,8 @@ Represents an Excel table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|columns|[WorkbookTableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[WorkbookTableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|columns|[WorkbookTableColumn](workbooktablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
+|rows|[WorkbookTableRow]( workbooktablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
 |sort|[WorkbookTableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
 |worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
@@ -95,3 +97,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

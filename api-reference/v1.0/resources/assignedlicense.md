@@ -1,13 +1,15 @@
 ---
 title: "assignedLicense resource type"
 description: "Represents a license assigned to a user. The **assignedLicenses** property of the user entity is a collection of **assignedLicense**."
-localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.localizationpriority: medium
+author: "jpettere"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 
 # assignedLicense resource type
+
+Namespace: microsoft.graph
 
 Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.
 
@@ -47,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,13 +1,15 @@
 ---
 title: "complianceStatus enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # complianceStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -26,8 +28,6 @@ Not yet documented
 |error|5|Not yet documented|
 |conflict|6|Not yet documented|
 |notAssigned|7|Not yet documented|
-
-
 
 
 

@@ -2,11 +2,13 @@
 author: learafa
 title: Follow site
 description: Follow a user's site/sites.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Follow site 
+
+Namespace: microsoft.graph
 
 Follow a user's [site](../resources/site.md) or multiple sites.
 
@@ -41,7 +43,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response 
 
 * If the request is successful, this method returns an array of sites that were followed.  
-* If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
+* If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
 
 ## Example
 
@@ -73,7 +75,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ If successful, it returns the following JSON response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -133,7 +135,7 @@ If an error occured, it returns the following JSON response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 {
@@ -179,3 +181,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

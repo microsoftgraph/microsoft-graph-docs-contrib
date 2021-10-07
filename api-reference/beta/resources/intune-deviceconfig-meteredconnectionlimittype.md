@@ -1,13 +1,15 @@
 ---
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
-doc_type: resourcePageType
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # meteredConnectionLimitType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Metered Connection Limit Settings.
 |unrestricted|0|Unrestricted|
 |fixed|1|Fixed|
 |variable|2|Variable|
-
-
 
 
 

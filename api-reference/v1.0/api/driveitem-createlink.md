@@ -1,14 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Share a file with a link
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "You can use createLink action to share a DriveItem via a sharing link."
 doc_type: apiPageType
 ---
 # Create a sharing link for a DriveItem
+
+Namespace: microsoft.graph
 
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
 
@@ -44,9 +45,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Name    |  Type  |                                 Description                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
+|   Name       |  Type  |                                 Description                                  |
+| :------------| :----- | :--------------------------------------------------------------------------- |
+| **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
+| **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
+| **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous` or `organization`. |
 
 
@@ -97,6 +100,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -104,7 +108,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -138,7 +142,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
@@ -167,7 +172,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -201,7 +206,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 
@@ -230,7 +235,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -283,3 +288,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

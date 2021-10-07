@@ -1,13 +1,15 @@
 ---
 title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # FilterDatetime resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,3 +57,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

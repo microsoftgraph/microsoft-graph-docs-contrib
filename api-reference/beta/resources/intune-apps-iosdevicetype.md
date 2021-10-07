@@ -1,13 +1,15 @@
 ---
 title: "iosDeviceType resource type"
 description: "Contains properties of the possible iOS device types the mobile app can run on."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # iosDeviceType resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -38,8 +40,6 @@ Here is a JSON representation of the resource.
   "iPhoneAndIPod": true
 }
 ```
-
-
 
 
 

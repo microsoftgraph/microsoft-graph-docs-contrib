@@ -2,12 +2,14 @@
 title: "educationCategory resource type"
 description: "A category that can be applied to assignments."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
 # educationCategory resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,6 +20,7 @@ A category that can be applied to assignments.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
 |[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
 
@@ -42,8 +45,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```
@@ -60,3 +63,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

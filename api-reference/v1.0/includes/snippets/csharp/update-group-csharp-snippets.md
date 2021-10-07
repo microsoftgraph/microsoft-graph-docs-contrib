@@ -8,18 +8,17 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var group = new Group
 {
-	Description = "description-value",
-	DisplayName = "displayName-value",
+	Description = "Library Assist",
+	DisplayName = "Library Assist",
 	GroupTypes = new List<String>()
 	{
-		"groupTypes-value"
+		"Unified"
 	},
-	Mail = "mail-value",
 	MailEnabled = true,
-	MailNickname = "mailNickname-value"
+	MailNickname = "library-help"
 };
 
-await graphClient.Groups["{id}"]
+await graphClient.Groups["{group-id}"]
 	.Request()
 	.UpdateAsync(group);
 

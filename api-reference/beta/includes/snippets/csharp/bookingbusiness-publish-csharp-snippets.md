@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"]
-	.Publish(bookingBusiness)
+await graphClient.BookingBusinesses["{bookingBusiness-id}"]
+	.Publish()
 	.Request()
 	.PostAsync();
 

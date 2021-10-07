@@ -3,15 +3,20 @@ author: JeremyKelley
 description: "This resource represents an item in a SharePoint list."
 ms.date: 09/11/2017
 title: ListItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # ListItem resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents an item in a SharePoint **[list][]**.
+Represents an item in a SharePoint [list][].
+
+All items in a SharePoint document library can be represented as a **listItem** or [driveItem][] resource.
+
 Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Tasks on a listItem
@@ -29,6 +34,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [Update column values][Update] | PATCH /items/{item-id}/fields
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -36,6 +42,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 
 ## JSON representation
 
@@ -135,3 +142,5 @@ The following properties are inherited from **[baseItem][]**.
   "suppressions": []
 }
 -->
+
+

@@ -1,13 +1,15 @@
 ---
 title: "iTunesPairingMode enum type"
 description: "Not yet documented"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # iTunesPairingMode enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,8 +23,6 @@ Not yet documented
 |disallow|0|Pairing is not allowed|
 |allow|1|Pairing allowed|
 |requiresCertificate|2|Certificate required to pair with iTunes|
-
-
 
 
 

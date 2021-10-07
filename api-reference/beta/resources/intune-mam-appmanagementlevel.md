@@ -1,13 +1,15 @@
 ---
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # appManagementLevel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Management levels for apps
 |unmanaged|1|Unmanaged|
 |mdm|2|MDM|
 |androidEnterprise|4|Android Enterprise|
-
-
 
 
 

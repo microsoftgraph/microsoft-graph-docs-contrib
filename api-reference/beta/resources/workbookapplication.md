@@ -1,13 +1,15 @@
 ---
 title: "workbookApplication resource type"
 description: "Represents the Excel workbookApplication that manages the workbook."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookApplication resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,15 +26,14 @@ Represents the Excel application that manages the workbook.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`. Read-only.|
+|calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -61,3 +62,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

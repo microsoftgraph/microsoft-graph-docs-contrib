@@ -1,15 +1,16 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The System facet indicates that the object is managed by the system for its own operation."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # System facet
+
+Namespace: microsoft.graph
 
 The **System** facet indicates that the object is managed by the system for its own operation.
 Most apps should ignore items that have a System facet.
@@ -34,3 +35,4 @@ None. This facet is a null or not-null value and contains no properties.
   "section": "documentation",
   "tocPath": "Facets/System"
 } -->
+

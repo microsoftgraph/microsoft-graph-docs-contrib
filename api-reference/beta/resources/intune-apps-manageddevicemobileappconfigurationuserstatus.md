@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceMobileAppConfigurationUserStatus resource type"
 description: "Contains properties, inherited properties and actions for an MDM mobile app configuration status for a user."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationUserStatus resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -56,8 +58,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

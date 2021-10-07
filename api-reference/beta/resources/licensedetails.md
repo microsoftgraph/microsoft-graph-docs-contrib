@@ -1,13 +1,15 @@
 ---
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "users"
+author: "jpettere"
 ---
 
 # licenseDetails resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,3 +67,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

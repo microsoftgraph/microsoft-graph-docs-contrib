@@ -11,14 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const user = {
-  accountEnabled: true,
   businessPhones: [
-    "businessPhones-value"
+    '+1 425 555 0109'
   ],
-  city: "city-value"
+  officeLocation: '18/2111'
 };
 
-let res = await client.api('/me')
-	.update({user : user});
+await client.api('/me')
+	.update(user);
 
 ```

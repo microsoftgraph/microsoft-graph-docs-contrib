@@ -4,12 +4,17 @@ description: Updates a journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Update journalLines
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a journal lines object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -24,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-PATCH /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+PATCH /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 ## Optional query parameters
@@ -48,8 +53,8 @@ If successful, this method returns a `200 OK` response code and an updated **jou
 **Request**
 
 Here is an example of the request.
-```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+```http
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 Content-type: application/json
 
 {
@@ -59,7 +64,7 @@ Content-type: application/json
 
 **Response**
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -78,5 +83,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 
 

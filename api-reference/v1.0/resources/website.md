@@ -1,13 +1,15 @@
 ---
 title: "website resource type"
 description: "Represents a website."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "AAmatino"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # website resource type
+
+Namespace: microsoft.graph
 
 Represents a website.
 
@@ -49,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

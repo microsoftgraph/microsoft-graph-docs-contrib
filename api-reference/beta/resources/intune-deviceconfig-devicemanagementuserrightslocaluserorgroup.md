@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementUserRightsLocalUserOrGroup resource type"
 description: "Represents information for a local user or group used for user rights setting."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementUserRightsLocalUserOrGroup resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -40,8 +42,6 @@ Here is a JSON representation of the resource.
   "securityIdentifier": "String"
 }
 ```
-
-
 
 
 

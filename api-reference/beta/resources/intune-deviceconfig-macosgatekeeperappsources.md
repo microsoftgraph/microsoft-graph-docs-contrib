@@ -1,13 +1,15 @@
 ---
 title: "macOSGatekeeperAppSources enum type"
 description: "App source options for macOS Gatekeeper."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # macOSGatekeeperAppSources enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ App source options for macOS Gatekeeper.
 |macAppStore|1|Only apps from the Mac AppStore can be run.|
 |macAppStoreAndIdentifiedDevelopers|2|Only apps from the Mac AppStore and identified developers can be run.|
 |anywhere|3|Apps from anywhere can be run.|
-
-
 
 
 

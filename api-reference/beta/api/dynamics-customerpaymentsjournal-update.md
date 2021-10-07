@@ -4,12 +4,17 @@ description: Updates a customer payment journal in Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---
 
 # Update customerPaymentJournals
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a customer payments journal object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -24,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-PATCH /financials/companies('{id}')/customerPaymentJournals('{id}')
+PATCH /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## Optional query parameters
@@ -49,8 +54,8 @@ If successful, this method returns a `200 OK` response code and an updated **cus
 
 Here is an example of the request.
 
-```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')
+```http
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 Content-type: application/json
 
 {
@@ -63,9 +68,9 @@ Content-type: application/json
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -76,4 +81,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

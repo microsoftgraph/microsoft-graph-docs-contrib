@@ -1,13 +1,15 @@
 ---
 title: "androidVpnConnectionType enum type"
 description: "Android VPN connection type."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # androidVpnConnectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -24,8 +26,9 @@ Android VPN connection type.
 |dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
-
-
+|microsoftTunnel|7|Microsoft Tunnel.|
+|netMotionMobility|8|NetMotion Mobility.|
+|microsoftProtect|9|Microsoft Protect.|
 
 
 

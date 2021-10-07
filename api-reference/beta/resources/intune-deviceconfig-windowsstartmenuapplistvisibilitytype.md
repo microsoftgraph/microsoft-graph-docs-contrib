@@ -1,13 +1,15 @@
 ---
 title: "windowsStartMenuAppListVisibilityType enum type"
 description: "Type of start menu app list visibility."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
 # windowsStartMenuAppListVisibilityType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,8 +24,6 @@ Type of start menu app list visibility.
 |collapse|1|Collapse the app list on the start menu.|
 |remove|2|Removes the app list entirely from the start menu.|
 |disableSettingsApp|4|Disables the corresponding toggle (Collapse or Remove) in the Settings app.|
-
-
 
 
 

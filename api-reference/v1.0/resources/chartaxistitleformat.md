@@ -2,12 +2,14 @@
 title: "ChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # ChartAxisTitleFormat resource type
+
+Namespace: microsoft.graph
 
 Represents the chart axis title formatting.
 
@@ -49,3 +51,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

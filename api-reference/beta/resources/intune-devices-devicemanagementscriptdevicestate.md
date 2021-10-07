@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementScriptDeviceState resource type"
 description: "Contains properties for device run state of the device management script."
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementScriptDeviceState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,8 +29,8 @@ Contains properties for device run state of the device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|id|String|Key of the device management script device state entity. This property is read-only.|
+|runState|[runState](../resources/intune-devices-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
@@ -58,8 +60,6 @@ Here is a JSON representation of the resource.
   "errorDescription": "String"
 }
 ```
-
-
 
 
 

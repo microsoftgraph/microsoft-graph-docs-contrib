@@ -3,13 +3,15 @@ author: daspek
 description: "The presence of the accessAction resource on an itemActivity indicates that the activity accessed an item."
 ms.date: 09/12/2018
 title: AccessAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "sites-and-lists"
 ---
 # accessAction resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
+
+
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
@@ -45,3 +47,5 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
+
+

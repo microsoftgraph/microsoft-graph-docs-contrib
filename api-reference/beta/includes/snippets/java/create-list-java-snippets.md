@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 List list = new List();
 list.displayName = "Books";
@@ -19,7 +19,10 @@ columns1.name = "PageCount";
 NumberColumn number = new NumberColumn();
 columns1.number = number;
 columnsList.add(columns1);
-list.columns = columnsList;
+ColumnDefinitionCollectionResponse columnDefinitionCollectionResponse = new ColumnDefinitionCollectionResponse();
+columnDefinitionCollectionResponse.value = columnsList;
+ColumnDefinitionCollectionPage columnDefinitionCollectionPage = new ColumnDefinitionCollectionPage(columnDefinitionCollectionResponse, null);
+list.columns = columnDefinitionCollectionPage;
 ListInfo list = new ListInfo();
 list.template = "genericList";
 list.list = list;

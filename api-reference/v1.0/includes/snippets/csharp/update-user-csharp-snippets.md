@@ -8,12 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var user = new User
 {
-	AccountEnabled = true,
 	BusinessPhones = new List<String>()
 	{
-		"businessPhones-value"
+		"+1 425 555 0109"
 	},
-	City = "city-value"
+	OfficeLocation = "18/2111"
 };
 
 await graphClient.Me

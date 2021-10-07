@@ -2,14 +2,16 @@
 title: "Close Session"
 description: "Use this API to close an existing workbook session. "
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
 # Close Session
 
-Use this API to close an existing workbook session. 
+Namespace: microsoft.graph
+
+Use this API to close an existing workbook session.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,13 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. | | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Name                | Description                      |
+|:--------------------|:---------------------------------|
+| Authorization       | Bearer {token}. Required.        |
 | workbook-session-id | Workbook session Id to be closed |
 
 ## Request body
@@ -62,7 +65,7 @@ Content-length: 0
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/close-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -77,11 +80,11 @@ Content-length: 0
 ---
 
 
-Note that workbook-session-id header is required. 
+Note that workbook-session-id header is required.
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -94,7 +97,6 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: close_excel_session//api-reference/v1.0/api/workbook-closesession.md:
-      Request includes a non-standard header: workbook-session-id"
   ]
 }-->
+

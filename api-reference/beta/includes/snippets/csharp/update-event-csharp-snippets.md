@@ -13,15 +13,22 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "2016-10-19T10:37:00Z"
+		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
 	},
 	Recurrence = null,
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true
+	IsOnlineMeeting = true,
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
+	IsReminderOn = true,
+	HideAttendees = false,
+	Categories = new List<String>()
+	{
+		"Red category"
+	}
 };
 
-await graphClient.Me.Events["{id}"]
+await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

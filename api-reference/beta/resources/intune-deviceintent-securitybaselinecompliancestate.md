@@ -1,12 +1,15 @@
 ---
 title: "securityBaselineComplianceState enum type"
 description: "Security Baseline Compliance State"
-author: "rolyon"
-localization_priority: Normal
-ms.prod: "Intune"
+author: "dougeby"
+ms.localizationpriority: medium
+ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # securityBaselineComplianceState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,8 +26,6 @@ Security Baseline Compliance State
 |notSecure|3|Not secure state|
 |error|4|Error state|
 |conflict|5|Conflict state|
-
-
 
 
 

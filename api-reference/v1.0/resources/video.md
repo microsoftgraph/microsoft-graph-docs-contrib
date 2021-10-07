@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Video
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The Video resource groups video-related data items into a single structure."
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # Video resource type
+
+Namespace: microsoft.graph
 
 The **Video** resource groups video-related data items into a single structure.
 
@@ -69,3 +70,4 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Video"
 } -->
+

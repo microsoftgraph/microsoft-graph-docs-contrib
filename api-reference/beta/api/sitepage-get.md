@@ -3,11 +3,13 @@ author: rahmit
 description: "Returns the metadata for a sitePage in the site pages list in a site."
 ms.date: 03/15/2018
 title: Get a page in a site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a page in the site pages list of a site
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,14 +43,14 @@ GET /sites/{site-id}/pages/{page-id}
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -67,7 +69,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -79,16 +81,16 @@ Content-type: application/json
     "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
     "createdBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "lastModifiedBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "parentReference": {
@@ -159,3 +161,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

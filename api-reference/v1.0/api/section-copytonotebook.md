@@ -1,13 +1,15 @@
 ---
 title: "section: copyToNotebook"
 description: "Copies a section to a specific notebook."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
 
 # section: copyToNotebook
+
+Namespace: microsoft.graph
 Copies a section to a specific notebook.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
@@ -38,7 +40,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |id|String|Required. The id of the destination notebook. |
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
@@ -71,7 +73,7 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytonotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytonotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,9 +91,7 @@ Content-length: 84
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -108,3 +108,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

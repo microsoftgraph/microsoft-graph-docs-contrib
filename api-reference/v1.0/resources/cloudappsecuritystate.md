@@ -1,13 +1,15 @@
 ---
 title: "cloudAppSecurityState resource type"
 description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
-localization_priority: Normal
-author: ""
+ms.localizationpriority: medium
+author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType
 ---
 
 # cloudAppSecurityState resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).
 
@@ -49,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
