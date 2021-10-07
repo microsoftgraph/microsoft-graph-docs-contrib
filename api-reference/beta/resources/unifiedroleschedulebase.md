@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Base property of unified role schedules that combines unified role assignment schedules and unified role eligibility schedules
 
 ## Properties
