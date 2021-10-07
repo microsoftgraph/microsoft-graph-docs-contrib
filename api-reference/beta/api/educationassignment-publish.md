@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action changes the state of an assignment from its original draft status to the published status. 
+Change the state of an assignment from its original draft status to the published status. 
 
 Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, [educationSubmission](../resources/educationsubmission.md) objects are created and the assignment appears in the student's list.
 
@@ -139,7 +139,7 @@ HTTP/1.1 200 Ok
 
 ## See also
 
-* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
