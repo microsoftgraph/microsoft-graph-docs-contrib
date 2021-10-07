@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Today, developers can use certificates or client secrets for their application's credentials. Federated identity credentials are a new type of credential that will allow the impersonation of an Azure Active Directory (Azure AD) application. This credential will be used to exchange a token from a trusted issuer for an access token of an Azure AD application.
 
-Key scenarios:
+Key scenarios for federated identity credentials:
 
-1) Cross-tenant Customer Managed Keys scenario for ISVs: with federated identities on multi-tenant Azure AD applications, a managed identity  can be used to get tokens as the application in the tenants in which the application has been installed.
+1) Exchanging GitHub tokens for Azure AD access tokens: set a federated identity on an Azure AD application allowing a GitHub Actions workflow to deploy resources associated with that application.
    
-2) Kubernetes service account tokens exchanged for AAD access tokens: set a federated identity on an Azure AD application allowing a Kubernetes trusted token to assume that application and get token to access resources
+2) Exchanging Kubernetes service account tokens for Azure AD access tokens: set a federated credential on an Azure AD application allowing a Kubernetes container to access Azure resources associated with that application.
    
-3) GitHub tokens exchanged for AAD access tokens: set a federated identity on an Azure AD application allowing a GitHub Actions workflow to deploy resources associated with that application
+3) Cross-tenant Customer Managed Keys for Independent Software Vendors (ISVs): with federated credentials on multi-tenant Azure AD applications, a managed identity can get tokens on behalf of the application to encrypt data using Key Vault keys in customer tenants where the application is installed.
 
 
 Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application.
