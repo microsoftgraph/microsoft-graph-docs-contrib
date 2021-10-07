@@ -1102,6 +1102,41 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Incidents permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Incidents.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
+| _Incidents.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
+| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
+
+### Remarks
+
+Incidents permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _Incidents.Read.All_: Read all incidents in an organization that the user is allowed to read (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization that the user is allowed to read and write (`GET /security/incidents`)
+
+#### Application
+
+* _Incidents.Read.All_: Read all incidents in an organization (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization (`GET /security/incidents`)
+
+---
+
 ## Information protection policy permissions
 
 #### Delegated permissions
@@ -1568,6 +1603,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.AccessReview_ |   Read and write your organization's access review policy  | Allows the app to read and write your organization's access review policy on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies, on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.AuthenticationMethod_        | Read and write authentication method policies       | Allows the app to read and write the authentication method policies, on behalf of the signed-in user. The signed-in user must also be assigned the Global Administrator role. | Yes | No |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy on behalf of the signed-in user. | Yes | No |
@@ -1580,21 +1616,23 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:----------------------------|
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
 | _Policy.Read.PermissionGrant_ | Read consent and permission grant policies | Allows the app to read policies related to consent and permission grants for applications, without a signed-in user. | Yes |
 | _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
-| _Policy.ReadWrite.AccessReview_ | Read and write your organization's access review policy | Allows the app to read and write your organization's access review policy, without a signed-in user. | Yes | No |
-| _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies, without a signed-in user. | Yes | No |
+| _Policy.ReadWrite.AccessReview_ | Read and write your organization's access review policy | Allows the app to read and write your organization's access review policy, without a signed-in user. | Yes |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies, without a signed-in user. | Yes |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes | No |
 | _Policy.ReadWrite.CrossTenantAccessPolicy_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.AuthenticationMethod_   | Read and write all authentication method policies    | Allows the app to read and write all authentication method policies for the tenant, without a signed-in user. | Yes |
+| _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes |
+| _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, without a signed-in user. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
-| _Policy.ReadWrite.AuthenticationMethod_ | Read and write your organization's authentication method policies | Allows the app to read and write the authentication method policies, without a signed-in user. | Yes |
 
 ### Example usage
 
@@ -1606,6 +1644,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.ReadWrite.AccessReview_: Read and write your organization's access review policies (`PATCH /beta/policies/accessReviewPolicy`)
 * _Policy.ReadWrite.ApplicationConfiguration_: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_: Read and write your organization's authentication flows policy (`PATCH /beta/policies/authenticationFlowsPolicy`)
+* _Policy.ReadWrite.AuthenticationMethod_: Use this permission to manage the settings of the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 * _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.CrossTenantAccessPolicy_: Read and write your organization's cross tenant access policy (`PATCH /beta/policies/crossTenantAccessPolicy`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
@@ -2435,7 +2474,7 @@ With these permissions, all authentication methods can be read and managed on a 
 
 All the permissions above are valid only for work or school accounts.
 
-For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator or Intune Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator, Intune Administrator, or Windows Update Deployment Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### Example usage
 
@@ -2447,24 +2486,7 @@ For an app to read or write all Windows update deployment settings with delegate
 
 * _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
 
-## Authentication methods policy permissions ([preview](#permissions-availability-status))
-
-#### Delegated permissions
-
-|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
-|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_Policy.ReadWrite.AuthenticationMethod_ (preview)        |Read and write all authentication methods policies.       |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|No|
-
-#### Application permissions
-
-|Permission                              |Display String                        |Description        |Admin Consent Required |
-|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. |Yes|
-
-
-### Remarks
-
-Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
+---
 
 ## Permission scenarios
 
