@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and an [permiss
 
 ### Request
 
-In this example, *all* delegated permissions for client apps from verified publishers are included in the permission grant policy. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
+In this example, *all* delegated permissions for client apps that are from verified publishers and are Microsoft 365 certified are included in the permission grant policy. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
 
 
 # [HTTP](#tab/http)
@@ -68,7 +68,8 @@ Content-Type: application/json
 
 {
   "permissionType": "delegated",
-  "clientApplicationsFromVerifiedPublisherOnly": true
+  "clientApplicationsFromVerifiedPublisherOnly": true,
+  "certifiedClientApplicationsOnly": true
 }
 ```
 # [C#](#tab/csharp)
@@ -115,6 +116,7 @@ Content-type: application/json
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": false
+  "clientApplicationsFromVerifiedPublisherOnly": true,
+  "certifiedClientApplicationsOnly": true
 }
 ```
