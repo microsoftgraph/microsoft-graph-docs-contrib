@@ -874,18 +874,22 @@ items:
             - name: Delete
               href: api/application-delete-extensionproperty.md
         - name: Federated identity credentials (preview)
-          href: resources/federatedidentitycredential.md
           items:
-          - name: List
-            href: api/application-list-federatedidentitycredentials.md
-          - name: Create
-            href: api/application-post-federatedidentitycredentials.md
-          - name: Get
-            href: api/federatedidentitycredential-get.md
-          - name: Update
-            href: api/federatedidentitycredential-update.md
-          - name: Delete
-            href: api/federatedidentitycredential-delete.md
+          - name: Overview
+            href: resources/federatedidentitycredentials-overview.md
+          - name: Federated identity credentials
+            href: resources/federatedidentitycredential.md
+            items:
+              - name: List
+                href: api/application-list-federatedidentitycredentials.md
+              - name: Create
+                href: api/application-post-federatedidentitycredentials.md
+              - name: Get
+                href: api/federatedidentitycredential-get.md
+              - name: Update
+                href: api/federatedidentitycredential-update.md
+              - name: Delete
+                href: api/federatedidentitycredential-delete.md
         - name: Owners
           items:
           - name: List owners
