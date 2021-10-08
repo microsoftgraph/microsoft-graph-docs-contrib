@@ -30,7 +30,7 @@ Specifies which participants can bypass the meeting lobby.
 | organization | Only the participants from the same company and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | People in my organization and guests |
 | organizationAndFederated | Only the participants from the same company or trusted organization and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | People in my organization, trusted organizations, and guests |
 | everyone | Everyone is admitted into the meeting. No participants are placed in the meeting lobby. | Everyone |
-| unknownFutureValue | Unknown future value. Read-only. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
