@@ -33,7 +33,7 @@ Federated identity credentials are supported on applications only. A maximum of 
 
 ## See also
 
-+ [federatedIdentityCredential resource type](federatedidentitycredentials.md)
++ [federatedIdentityCredential resource type](federatedidentitycredential.md)
 + [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)
 + [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 <!--
