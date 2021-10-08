@@ -88,7 +88,6 @@ Content-type: application/json
         "safeguard": {
             "disabledSafeguardProfiles": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.safeguardProfile",
                     "category": "likelyIssues"
                 }
             ]
