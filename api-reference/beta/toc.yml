@@ -14689,6 +14689,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range
