@@ -3,7 +3,7 @@ title: "Get tenantInformationByTenantId"
 description: "Given a domain name, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All|
-|Delegated (personal Microsoft account)|Policy.Read.All|
-|Application|Policy.Read.All|
+|Delegated (work or school account)|CrossTenantInformation.ReadBasic.All|
+|Delegated (personal Microsoft account)|None|
+|Application|CrossTenantInformation.ReadBasic.All|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /tenantRelationships/findTenantInformationByDomainName(domainName='{id}')
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 |Name|Description|
