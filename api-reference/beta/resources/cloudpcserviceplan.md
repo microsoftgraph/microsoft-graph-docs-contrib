@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcSupportedRegion resource type
+# cloudPcServicePlan resource type
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ Represents a defined collection of service plan configurations that Cloud PCs su
 |:---|:---|:---|
 |id|String|Unique identifier for the service plan. Read-only.|
 |displayName|String|The name for the service plan. Read-only.|
-|type|[cloudPcServicePlanType](#cloudPcServicePlanType-values)|The type of the service plan. There will be 2 types including 'enterprise' and 'business' now. Read-only.|
+|type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. There will be 2 types including 'enterprise' and 'business' now. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
 |ramInGB|Int32|The size of RAM in GB. Read-only.|
 |storageInGB|Int32|The size of OS Disk in GB. Read-only.|

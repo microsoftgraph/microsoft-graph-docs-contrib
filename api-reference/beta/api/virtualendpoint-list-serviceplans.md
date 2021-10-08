@@ -1,5 +1,5 @@
 ---
-title: "List supportedRegions"
+title: "List servicePlans"
 description: "List the service plans that Cloud PCs support for this tenant."
 author: "RuiHou105"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List supportedRegions
+# List servicePlans
 
 Namespace: microsoft.graph
 
