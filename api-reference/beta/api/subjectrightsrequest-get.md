@@ -34,8 +34,8 @@ GET /compliance/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## Optional query parameters
-Optional query parameters
-This method does not support the OData query parameters to help customize the response.
+
+This method does not support the [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
