@@ -5,10 +5,10 @@
       {
         "Id": "12b6de5f-fe2d-4593-9f24-d95543e71199",
         "ApiChange": "Resource",
-        "ChangedApiName": "application",
+        "ChangedApiName": "requiredResourceAccess",
         "ChangeType": "Change",
-        "Description": "Added limits on the *requiredResourceAccess* property for the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource. No more than 50 required APIs, and no more than 400 total required permissions may be included.",
-        "Target": "requiredResourceAccess"
+        "Description": "Added limits on the *requiredResourceAccess* property of the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource. No more than 50 required APIs, and no more than 400 total required permissions may be included.",
+        "Target": "application"
       }
      ],
      "Id": "12b6de5f-fe2d-4593-9f24-d95543e71199",
