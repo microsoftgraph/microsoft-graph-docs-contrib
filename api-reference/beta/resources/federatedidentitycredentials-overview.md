@@ -1,5 +1,5 @@
 ---
-title: "Federated identity credentials in Azure Active Directory (Azure AD)"
+title: "Overview of federated identity credentials in Azure Active Directory (preview)"
 description: "Federated identity credentials allow you to access Azure and Microsoft Graph resources without having to manage secrets. This is part of workload identity federation in Azure AD."
 author: "kjyam98"
 ms.localizationpriority: medium
