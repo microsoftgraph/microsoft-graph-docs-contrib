@@ -172,7 +172,7 @@ Label | Description
 
 The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
 
-The label **title** is the most important label. Make sure you assign a property to this label to allow your connection to participate in the [result cluster experience](result-cluster.md).
+The label **title** is the most important label. Make sure you assign a property to this label to allow your connection to participate in the result cluster experience.
 
 Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels not to have a property assigned to them.
 
