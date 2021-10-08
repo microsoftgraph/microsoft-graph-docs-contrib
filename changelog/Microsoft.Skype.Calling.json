@@ -1,5 +1,109 @@
 {
-  "changelog": [ 
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollFreeNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollFreeNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        }
+      ],
+      "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-06T23:50:40.2068677Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "startHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "stopHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "startHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T18:05:28.5021936Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendeeReport",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendeeReport** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T22:10:57.9979092Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dc14dc50-181e-480f-963f-5d8dd6b21904",
+          "ApiChange": "Property",
+          "ChangedApiName": "recordAutomatically",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordAutomatically** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "dc14dc50-181e-480f-963f-5d8dd6b21904",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T19:15:11.695531Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
     {
       "ChangeList": [
         {
@@ -7,7 +111,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to the read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         },
         {
@@ -15,7 +119,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added application permission of **OnlineMeetings.ReadWrite.All** to the read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Description": "Added application permission of **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
@@ -24,7 +128,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-15T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -42,7 +146,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-09-09T21:40:54.5120151Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -76,7 +180,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -102,7 +206,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -120,8 +224,8 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-18T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
-    },   
+      "SubArea": "Online meetings"
+    },
     {
       "ChangeList": [
         {
@@ -146,7 +250,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-19T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Presence"
     },
     {
       "ChangeList": [
@@ -188,7 +292,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -206,7 +310,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -264,7 +368,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T22:17:53.668Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Calls"
     },
     {
       "ChangeList": [
@@ -314,7 +418,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-08-13T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -340,7 +444,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-23T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Presence"
     },
     {
       "ChangeList": [
@@ -366,7 +470,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -384,7 +488,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-14T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -426,7 +530,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-19T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -460,7 +564,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-21T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -486,7 +590,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -520,7 +624,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -538,7 +642,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-05T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [

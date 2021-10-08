@@ -74,7 +74,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | unknownFutureValue | Unknown future value.                                         |
 
 > [!TIP]
-> If the value of **allowedPresenters** is set to `roleIsPresenter`, specify each meeting participant's meeting role using the [meetingParticipantInfo](../resources/meetingparticipantinfo.md) **role** property.
+>
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
 
 ### meetingChatMode values
 
@@ -127,5 +129,3 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
