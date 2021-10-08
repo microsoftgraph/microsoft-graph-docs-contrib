@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 View the effective permissions of the currently authenticated user. GetEffectivePermissions is a function that retrieves the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
