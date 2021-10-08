@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |[List federatedIdentityCredentials](../api/application-list-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
 |[Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Get federatedIdentityCredential](../api/federatedidentitycredential-get.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Update federatedIdentityCredential](../api/federatedidentitycredential-update.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Update federatedIdentityCredential](../api/federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Delete federatedIdentityCredential](../api/federatedidentitycredential-delete.md)|None|Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 
 ## Properties
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 | description | String | A user-provided description of what the federated identity credential is used for. Optional.  |
 | id| String | The unique identifier for the federated identity. It is immutable. Required. Read-only.  |
 | issuer | String | The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For Azure AD, this is: <ul><li>Azure AD (global service) — `https://login.microsoftonline.com/{tenantid}/v2.0` </li><li>Azure AD for US Government — `https://login.microsoftonline.us/{tenantid}/v2.0`</li><li>Azure AD Germany — `https://login.microsoftonline.de/{tenantid}/v2.0`</li><li>Azure AD China operated by 21Vianet — `https://login.chinacloudapi.cn/{tenantid}/v2.0`</li></ul> <br>The combination of **issuer** and **subject** must be unique on the app. Required. |
-| name | String | The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly. It is immutable. Required. Not nullable. Supports `$filter` (`eq`). |
+| name | String | The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces).. It is immutable. Required. Not nullable. Supports `$filter` (`eq`). |
 | subject | String | Required. <li>For an Azure AD issuer, the value of the **id** of the **servicePrincipal** (with `managedIdentity` as the **servicePrincipalType**) that can impersonate the app. The object associated with this **id** must exist in the tenant.</li><li>For all other issuers, a string that is not validated by Azure AD.</ul><br><br>The combination of **issuer** and **subject** must be unique on the app. Supports `$filter` (`eq`). |
 
 
