@@ -2,6 +2,7 @@
 title: "Update schema"
 description: "Update the properties of a schema for an externalConnection."
 localization_priority: Normal
+ms.localization_priority: Normal
 author: "mecampos"
 ms.prod: "search"
 doc_type: "apiPageType"
