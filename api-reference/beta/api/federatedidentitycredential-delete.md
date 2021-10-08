@@ -2,7 +2,7 @@
 title: "Delete federatedIdentityCredential"
 description: "Deletes a federatedIdentityCredential object."
 author: "kjyam98"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---

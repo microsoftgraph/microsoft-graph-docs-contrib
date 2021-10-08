@@ -1,8 +1,8 @@
 ---
 title: "federatedIdentityCredential resource type"
-description: "Represents a federated identity credential on an application."
+description: "Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
 author: "kjyam98"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
 ---
@@ -13,18 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Today, developers can use certificates or client secrets for their application's credentials. Federated identity credentials are a new type of credential that will allow the impersonation of an Azure Active Directory (Azure AD) application. This credential will be used to exchange a token from a trusted issuer for an access token of an Azure AD application.
-
-Key scenarios for federated identity credentials:
-
-1) Exchanging GitHub tokens for Azure AD access tokens: set a federated identity on an Azure AD application allowing a GitHub Actions workflow to deploy resources associated with that application.
-   
-2) Exchanging Kubernetes service account tokens for Azure AD access tokens: set a federated credential on an Azure AD application allowing a Kubernetes container to access Azure resources associated with that application.
-   
-3) Cross-tenant Customer Managed Keys for Independent Software Vendors (ISVs): with federated credentials on multi-tenant Azure AD applications, a managed identity can get tokens on behalf of the application to encrypt data using Key Vault keys in customer tenants where the application is installed.
-
-
-Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application.
+Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD.
 
 Inherits from [entity](../resources/entity.md).
 

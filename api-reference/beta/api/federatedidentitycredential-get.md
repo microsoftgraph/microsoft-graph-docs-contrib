@@ -2,7 +2,7 @@
 title: "Get federatedIdentityCredential"
 description: "Read the properties and relationships of a federatedIdentityCredential object."
 author: "kjyam98"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -35,7 +35,7 @@ GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdenti
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) on the **name** and **subject** properties to help customize the response. Only the `eq` operator is supported. For example, `/applications/{id}/federatedIdentityCredentials?$filter=subject eq 'value'`.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
