@@ -18,8 +18,7 @@ This resource contains the top level properties of the list, including template 
 ## Tasks on a list
 
 The following tasks are available for list resources.
-**Note:** This beta only allows navigating lists, not creating or updating them.
-You can, however, create or update [list items][listItem].
+
 
 All examples below are relative to a site, for example, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 

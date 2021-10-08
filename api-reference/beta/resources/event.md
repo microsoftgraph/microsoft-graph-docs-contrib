@@ -66,7 +66,7 @@ This resource supports:
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
+|allowNewTimeProposals| Boolean | `true` if the meeting organizer allows invitees to propose a new time when responding; otherwise `false`. Optional. Default is `true`. |
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
