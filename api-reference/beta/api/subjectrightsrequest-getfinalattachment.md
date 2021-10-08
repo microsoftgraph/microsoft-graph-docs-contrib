@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob Storage link with the SAS token and return a `302` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `302` response code.
 
 ## Examples
 
