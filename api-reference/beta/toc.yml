@@ -13322,7 +13322,7 @@ items:
           - name: Get schema
             href: api/externalconnectors-schema-get.md
           - name: Update schema
-            href: api/externalconnectors-externalconnection-update.md
+            href: api/externalconnectors-schema-update.md
         - name: External item
           items:
           - name: External item
