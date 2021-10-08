@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections/{connectionsId}/items/{externalItemId}
+GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## Optional query parameters

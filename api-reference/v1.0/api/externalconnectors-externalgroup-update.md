@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}/groups/{externalGroupId}
+PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers

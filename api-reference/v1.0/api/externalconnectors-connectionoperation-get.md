@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections/{connectionsId}/operations/{connectionOperationId}
+GET /external/connections/{connectionsId}/operations/{connectionOperationId}
 ```
 
 ## Optional query parameters

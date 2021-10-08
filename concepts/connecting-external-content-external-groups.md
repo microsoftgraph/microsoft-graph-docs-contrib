@@ -50,7 +50,7 @@ External groups belong to a connection. To create external groups in your connec
     > The [displayName](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) and **description** are optional fields.
 
     ```http
-    POST /connections/{connectionId}/groups
+    POST /external/connections/{connectionId}/groups
 
     { 
       "id": "contosoEscalations", 
