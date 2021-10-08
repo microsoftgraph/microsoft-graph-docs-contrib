@@ -1321,6 +1321,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
@@ -1555,12 +1559,38 @@ items:
             href: api/ediscovery-case-get.md
           - name: Update
             href: api/ediscovery-case-update.md
+          - name: Delete
+            href: api/ediscovery-case-delete.md
           - name: Close
             href: api/ediscovery-case-close.md
           - name: Reopen
             href: api/ediscovery-case-reopen.md
-          - name: Delete
-            href: api/ediscovery-case-delete.md
+          - name: List custodians
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create custodian
+            href: api/ediscovery-case-post-custodians.md
+          - name: List legal holds
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create legal hold
+            href: api/ediscovery-case-post-legalholds.md
+          - name: List review sets
+            href: api/ediscovery-case-list-reviewsets.md
+          - name: Create review set
+            href: /api/ediscovery-case-post-reviewsets.md
+          - name: Get settings
+            href: api/ediscovery-settings-get.md
+          - name: Update settings
+            href: api/ediscovery-settings-update.md
+          - name: Reset to default
+            href: api/ediscovery-settings-resettodefault.md
+          - name: List source collections
+            href: api/ediscovery-case-list-sourcecollections.md
+          - name: Create source collection
+            href: /api/ediscovery-case-post-sourcecollections.md
+          - name: List tags
+            href: /api/ediscovery-case-list-tags.md
+          - name: Create tag
+            href: /api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -9751,6 +9781,11 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
+        - name: Cloud PC supported region
+          href: resources/cloudpcsupportedregion.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-supportedregions.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10146,7 +10181,7 @@ items:
         - name: List schools
           href: api/educationuser-list-schools.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md            
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -10245,6 +10280,8 @@ items:
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Return submission
           href: api/educationsubmission-return.md
+        - name: Reassign submission
+          href: api/educationsubmission-reassign.md
       - name: Outcome
         items:
         - name: Outcome
@@ -11264,38 +11301,6 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events (deprecated)
-            items:
-            - name: Identity risk event
-              href: resources/identityriskevent.md
-            - name: List identityRiskEvent
-              href: api/identityriskevent-list.md
-            - name: Get identityRiskEvent
-              href: api/identityriskevent-get.md
-            - name: List anonymousIpRiskEvent
-              href: api/anonymousipriskevent-list.md
-            - name: Get anonymousIpRiskEvent
-              href: api/anonymousipriskevent-get.md
-            - name: List impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-list.md
-            - name: Get impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-get.md
-            - name: List leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-list.md
-            - name: Get leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-get.md
-            - name: List malwareRiskEvent
-              href: api/malwareriskevent-list.md
-            - name: Get malwareRiskEvent
-              href: api/malwareriskevent-get.md
-            - name: List suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-list.md
-            - name: Get suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-get.md
-            - name: List unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-list.md
-            - name: Get unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
             items:
             - name: Risk detection
@@ -11386,24 +11391,25 @@ items:
           - name: Create invitation
             href: api/invitation-post.md
         - name: Organizational branding
-          href: resources/organizationalbrandingproperties.md
+          href: resources/organizationalbranding.md
           items:
-          - name: Create
-            href: api/organizationalbrandingproperties-create.md
           - name: Get
-            href: api/organizationalbrandingproperties-get.md
+            href: api/organizationalbranding-get.md
           - name: Update
-            href: api/organizationalbrandingproperties-update.md
-          - name: Delete
-            href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized
-            href: api/organizationalbrandingpropertieslocalization-create.md
-          - name: Get localized
-            href: api/organizationalbrandingpropertieslocalization-get.md
-          - name: Update localized
-            href: api/organizationalbrandingpropertieslocalization-update.md
-          - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md
+            href: api/organizationalbranding-update.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -11494,7 +11500,7 @@ items:
             - name: Get
               href: api/authenticationflowspolicy-get.md
             - name: Update
-              href: api/authenticationflowspolicy-update.md          
+              href: api/authenticationflowspolicy-update.md
           - name: Authentication methods policy
             items:
             - name: Overview
@@ -11596,6 +11602,13 @@ items:
               href: api/continuousaccessevaluationpolicy-get.md
             - name: Update
               href: api/continuousaccessevaluationpolicy-update.md
+          - name: Device registration policy (preview)
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md
           - name: Feature rollout policy
             href: resources/featurerolloutpolicy.md
             items:
@@ -11731,7 +11744,7 @@ items:
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
           items:
-          - name: User flow
+          - name: User flow (deprecated)
             items:
             - name: User flow
               href: resources/identityuserflow.md
@@ -12212,7 +12225,7 @@ items:
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated))
             items:
-            - name: Azure AD 
+            - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
@@ -13378,6 +13391,29 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Microsoft Defender for Office 365 security reports
+        items:
+        - name: Attack simulation reports
+          displayname: Attack simulation and training
+          href: resources/report-m365defender-reports-overview.md
+        - name: Repeat offenders
+          items:
+          - name: Repeat offender
+            href: resources/attacksimulationrepeatoffender.md
+          - name: Get repeat offenders
+            href: api/reportroot-getattacksimulationrepeatoffenders.md
+        - name: Simulation data
+          items:
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+          - name: Get simulation coverage for users
+            href: api/reportroot-getattacksimulationsimulationusercoverage.md
+        - name: Training data
+          items:
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+          - name: Get training coverage for users
+            href: api/reportroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -13452,7 +13488,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Actions
+      - name: Actions (preview)
         href: resources/securityaction.md
         items:
         - name: List security actions
@@ -13474,6 +13510,41 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Attack simulation and training (preview)
+        items:
+        - name: Simulations
+          items:
+          - name: Simulation
+            href: resources/simulation.md
+          - name: List simulations
+            href: api/attacksimulationroot-list-simulations.md
+          - name: List simulation users
+            href: api/usersimulationdetails-list.md
+          - name: Get simulation overview
+            href: api/simulationreportoverview-get.md
+        - name: Reports
+          items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/reportroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Information protection
         items:
         - name: Labels
@@ -13523,7 +13594,7 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicators
+      - name: Threat intelligence indicators (preview)
         href: resources/tiindicator.md
         items:
         - name: List
@@ -14058,6 +14129,8 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get messages across all chats
           href: api/chats-getallmessages.md
         - name: List hosted content
@@ -14616,6 +14689,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range

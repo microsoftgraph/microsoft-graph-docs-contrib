@@ -15,7 +15,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## September 2021: New and generally available
 
 ### Cloud communications | Online meetings
-Use `OnlineMeetingArtifact.Read.All` as delegated or application permission to read artifacts of online meetings. See [online meetings permissions](permissions-reference.md#online-meetings-permissions) for more information.
+Use `OnlineMeetingArtifact.Read.All` as delegated or application permission to read artifacts of online meetings. For more information, see [online meetings permissions](permissions-reference.md#online-meetings-permissions).
 
 ### Files
 - Get the details of any virus detected in a [driveItem](/graph/api/resources/driveItem) through a **malware** property.

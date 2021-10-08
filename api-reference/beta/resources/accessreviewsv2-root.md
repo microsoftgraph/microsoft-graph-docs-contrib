@@ -15,14 +15,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
+Use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of users' rights to access Azure AD resources. These Azure AD resources include groups, service principals, access packages, and privileged roles.
 
-You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
+Typical customer scenarios for access reviews include:
 
-Typical customer scenarios for access reviews of group memberships and application and Azure AD role access are:
-
-- Customers can review and certify guest user access to applications, Azure AD roles, and memberships of groups. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
-
-- Customers can review and certify employee access to applications, Azure AD roles, and group memberships with access reviews.
+- Customers can review and certify guest user access to groups through group memberships. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
+- Customers can review and certify employee access to Azure AD resources.
+- Customers can review and audit assignments to Azure AD privileged roles. This supports organizations in the management of privileged access.
 
 Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
@@ -69,7 +68,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. 
+The following [Azure AD roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage access reviews.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
@@ -80,6 +79,7 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 ## See also
 
+- [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
 - [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 
