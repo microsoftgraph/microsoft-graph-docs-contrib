@@ -11085,6 +11085,16 @@ items:
               href: api/unifiedRoleManagementPolicyRule-get.md
             - name: Update
               href: api/unifiedRoleManagementPolicyRule-update.md
+          - name: Tenant relationships
+            href: resources/tenantrelationships.md
+            items:
+            - name: Tenant information
+              href: resources/tenantinformation.md
+              items:
+              - name: Get by domain name
+                href: api/tenantinformationbydomainname-get.md
+              - name: Get by tenant ID
+                href: api/tenantinformationbytenantid-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
