@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List me assignments
+# List assignments of a user
 
 Namespace: microsoft.graph
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments
+GET /education/users/{user-id}/assignments
 ```
 
 ## Optional query parameters
@@ -51,6 +51,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
 
+If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
+
 ## Example
 
 ##### Request
@@ -58,11 +60,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_me_assignments"
+  "name": "get_user_assignments"
 }-->
 
 ```http 
-GET https://graph.microsoft.com/beta/education/me/assignments
+GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments
 ```
 
 ##### Response
@@ -84,7 +86,7 @@ Content-type: application/json
 Content-length: 344
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/assignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments",
     "value": [
         {
             "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
