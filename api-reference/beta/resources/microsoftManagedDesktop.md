@@ -20,7 +20,7 @@ The specific settings to MicrosoftManagedDesktop which enables MMD customers to 
 |Property|Type|Description|
 |:---|:---|:---|
 |profile|String|Indicate name of Microsoft Managed Desktop profile that Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftManagedDesktopType-values)|Indicate if the provisioning policy is to enable MMD. If yes, which plan. Possible values include notManaged, premiumManaged, standardManaged, starterManaged.|
+|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicate if the provisioning policy is to enable MMD. If yes, which plan. Possible values include notManaged, premiumManaged, standardManaged, starterManaged.|
 
 ### microsoftManagedDesktopType values
 
