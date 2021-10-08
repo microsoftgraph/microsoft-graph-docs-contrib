@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > [!NOTE]
 > Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
-> With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](known-issues.md#query-parameter-limitations).
+> With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](known-issues.md#query-parameters).
 
 ## filter parameter
 
@@ -358,4 +358,4 @@ However, it is important to note that query parameters specified in a request mi
 
 - [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
-- [Query parameter limitations](known-issues.md#query-parameter-limitations)
+- [Query parameter limitations](known-issues.md#query-parameters)
