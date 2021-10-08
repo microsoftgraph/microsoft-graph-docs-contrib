@@ -38,10 +38,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantinformation",
-  "defaultDomainName": "String",
-  "displayName": "String",
-  "federationBrandName": "String",
-  "tenantId": "String"
+  "defaultDomainName": "contoso.com",
+  "displayName": "Contoso Production Tenant",
+  "federationBrandName": "The Contoso Company",
+  "tenantId": "tenantId-value"
 }
 ```
 
