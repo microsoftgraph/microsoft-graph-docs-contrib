@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegated (work or school account)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
 | Delegated (personal Microsoft account) | Not Supported.                                                                         |
 | Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to get online meeting artifacts on behalf of that user (with user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 > [!CAUTION]
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts. You can still fetch meeting artifacts without them until **January 15, 2022**. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
@@ -113,7 +113,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code. The response also includes one of the following:
 
-- If you fetch an online meeting by meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch the attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
 - If you fetch the attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
@@ -365,14 +366,34 @@ The following example shows a request to download an attendee report.
 #### Request
 
 The following request uses delegated permission.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_attendee_report"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendee-report-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendee-report-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendee-report-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 The following request uses application permission.
 
@@ -401,13 +422,33 @@ The following example shows a request to download a recording.
 #### Request
 
 The following request uses delegated permission.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_live_event_recording"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-live-event-recording-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-live-event-recording-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-live-event-recording-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-live-event-recording-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 The following request uses application permission.
 <!-- { "blockType": "ignored" }-->
@@ -434,6 +475,8 @@ The following example shows a request to get a meeting attendance report.
 #### Request
 
 The following request uses delegated permission.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_attendance_report"
@@ -442,6 +485,24 @@ The following request uses delegated permission.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendance-report-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendance-report-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendance-report-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 The following request uses application permission.
 <!-- { "blockType": "ignored" }-->

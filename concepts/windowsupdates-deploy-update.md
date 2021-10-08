@@ -15,6 +15,9 @@ When you deploy a feature update to a device, Windows Update offers the specifie
 
 As long as a device remains enrolled in feature update management, the device does not receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
 
+> [!IMPORTANT]
+> By using the Windows Update for Business deployment service to upgrade devices to Windows 11 (by setting the version paramater of a deployment to "Windows 11, version 21H2"), you are agreeing that when applying this operating system to a device either (1) the applicable Windows license was purchased though volume licensing, or (2) that you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: [Microsoft Software License Terms](https://www.microsoft.com/Useterms).
+
 ## Prerequisites
 
 * Devices meet the [prerequisites for the deployment service](windowsupdates-concept-overview.md#prerequisites).

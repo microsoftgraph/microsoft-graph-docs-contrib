@@ -22,7 +22,7 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List case](../api/ediscovery-case-list.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) collection | Retrieve a list of [case](../resources/ediscovery-case.md) objects.|
+| [List cases](../api/ediscovery-case-list.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) collection | Retrieve a list of [case](../resources/ediscovery-case.md) objects.|
 | [Create case](../api/ediscovery-case-post.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Create a new **case** object. |
 | [Get case](../api/ediscovery-case-get.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Retrieve the properties and relationships of a **case** object. |
 | [Update case](../api/ediscovery-case-update.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Update the properties of a **case** object. |
