@@ -15,9 +15,9 @@ The Microsoft Graph compliance API provides a unified interface and schema to in
 
 Use the Microsoft Graph compliance API to build applications that:
 
-- Create and manage subject rights requests
-
 - Automate common tasks in eDiscovery
+
+- Create and manage subject rights requests
 
 The Microsoft Graph compliance API includes the following key entities.
 
