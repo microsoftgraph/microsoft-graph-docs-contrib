@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application. Maximum of 20 objects can be added to an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,11 +46,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audiences|String collection|The list of audiences that can appear in the issued token.  The possible values are: `api://AzureADTokenExchange`. Required.|
-|description|String|A user-provided description of what the federatedIdentityCredential is used for. Optional. |
-|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For Azure AD, this is: <ul><li>Azure AD (global service): `https://login.microsoftonline.com/{tenantid}/v2.0`</li><li>Azure AD for US Government: `https://login.microsoftonline.us/{tenantid}/v2.0`</li><li>Azure AD Germany: `https://login.microsoftonline.de/{tenantid}/v2.0`</li><li>Azure AD China operated by 21Vianet: `https://login.chinacloudapi.cn/{tenantid}/v2.0`</li></ul> <br>The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
-|name|String|The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces). Read-only after creation. Required. <br> Supports `$filter` (`eq`). |
-|subject|String|<li>For Azure AD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app. Required. <br> Supports `$filter` (`eq`).|
+|audiences|String collection|The list of audiences that can appear in the issued token.  The possible values are: `api://AzureADTokenExchange`.|
+|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and the property should match one of the following values: <ul><li>Azure AD (global service): `https://login.microsoftonline.com/{tenantid}/v2.0`</li><li>Azure AD for US Government: `https://login.microsoftonline.us/{tenantid}/v2.0`</li><li>Azure AD Germany: `https://login.microsoftonline.de/{tenantid}/v2.0`</li><li>Azure AD China operated by 21Vianet: `https://login.chinacloudapi.cn/{tenantid}/v2.0`</li></ul> <br>The combination of the values of **issuer** and **subject** must be unique on the app.|
+|name|String|The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces). Read-only after creation.|
+|subject|String|<li>For Azure AD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app.|
 
 
 
@@ -74,7 +73,6 @@ Content-Type: application/json
     "name": "testing02",
     "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
     "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
-    "description": "This is a test federated credential",
     "audiences": [
         "api://AzureADTokenExchange"
     ]
@@ -101,7 +99,7 @@ Content-Type: application/json
     "name": "testing02",
     "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
     "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
-    "description": "This is a test federated credential",
+    "description": null,
     "audiences": [
         "api://AzureADTokenExchange"
     ]

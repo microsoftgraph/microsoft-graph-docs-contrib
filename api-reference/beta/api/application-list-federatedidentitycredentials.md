@@ -35,7 +35,7 @@ GET /applications/{applicationsId}/federatedIdentityCredentials
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) on the **name** and **subject** properties to help customize the response. Only the `eq` operator is supported. For example, `/applications/{id}/federatedIdentityCredentials?$filter=subject eq 'value'`.
+This method supports the `$filter` (`eq`) and `$select` [OData query parameters](/graph/query-parameters) to help customize the response. For example, `/applications/{id}/federatedIdentityCredentials?$filter=subject eq 'value'`.
 
 ## Request headers
 |Name|Description|
