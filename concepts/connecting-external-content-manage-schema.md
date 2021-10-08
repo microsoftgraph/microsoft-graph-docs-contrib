@@ -148,7 +148,7 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes.
 
-Semantic Labels find applications in many different content experiences. They provide automated support for many tasks like:
+Semantic Labels find applications in many different content experiences. They provide automated support for tasks like:
 
 * Data integration in heterogenous experiences
 * Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
@@ -156,6 +156,7 @@ Semantic Labels find applications in many different content experiences. They pr
 
 You can assign semantic labels to your source properties on the "Assign property labels" page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
 
+----> Removing this table, it is the same table we have under Labels  ------
 The following table lists the labels that are currently supported, and their descriptions.  
 
 Label | Description
@@ -169,6 +170,8 @@ Label | Description
 **Last modified date time** | Date and time of the most recent modifications to the item.
 **File name** | Name of the file item.
 **File extension** | Type of file item such as .pdf or .word
+
+----------------------
 
 The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
 
