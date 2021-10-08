@@ -1,27 +1,27 @@
 ---
-title: "Get tenantRelationshipRoot"
-description: "Read the properties and relationships of a tenantRelationshipRoot object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+title: "Get tenantInformationByTenantId"
+description: "Given a tenant ID, search for a tenant and read its tenantInformation."
+author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get tenantRelationshipRoot
+# Get tenantInformationByTenantId
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [tenantRelationshipRoot](../resources/tenantrelationshiproot.md) object.
+Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All|
+|Delegated (personal Microsoft account)|Policy.Read.All|
+|Application|Policy.Read.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships
+GET /tenantRelationships/findTenantInformationByTenantId(tenantId='{id}')
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [tenantRelationshipRoot](../resources/tenantrelationshiproot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [tenantInformation](../resources/tenantinformation.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [tenantRelatio
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships
+GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationByTenantId(tenantId='tenant-id-value')
 ```
 
 
@@ -75,7 +75,12 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.tenantRelationshipRoot"
+    "@odata.type": "#Microsoft.DirectoryServices.tenantRelationshipRoot",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#graph.tenantInformation",
+    "tenantId": "String (identifier)",
+    "federationBrandName": "The Contoso Company",
+    "displayName": "Contoso Production Tenant",
+    "defaultDomainName": "contoso.com"
   }
 }
 ```
