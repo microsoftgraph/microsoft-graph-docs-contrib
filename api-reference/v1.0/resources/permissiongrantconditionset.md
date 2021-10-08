@@ -28,7 +28,6 @@ A permission grant condition set contains several conditions. For an event to ma
 | clientApplicationTenantIds | String collection | A list of Azure Active Directory tenant IDs in which the client application is registered, or a list with the single value `all` to match with client apps registered in any tenant. Default is the single value `all`. |
 | clientApplicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value `all` to match with client apps from any publisher. Default is the single value `all`. |
 | clientApplicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on client applications with a verified publisher. Set to `false` to match on any client app, even if it does not have a verified publisher. Default is `false`. |
-| certifiedClientApplicationsOnly | Boolean | Set to `true` to only match on client applications that are Microsoft 365 certified. Set to `false` to match on any other client app. Default is `false`. |
 
 ## JSON representation
 
@@ -48,7 +47,6 @@ A permission grant condition set contains several conditions. For an event to ma
     "clientApplicationIds": [ "string" ],
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
-    "clientApplicationsFromVerifiedPublisherOnly": false,
-    "certifiedClientApplicationsOnly": false
+    "clientApplicationsFromVerifiedPublisherOnly": false
 }
 ```
