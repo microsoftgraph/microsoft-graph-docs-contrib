@@ -20,11 +20,11 @@
                 },
                 {
                     "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "microsoftManagedDesktopType",
                     "ChangeType": "Addition",
                     "Description": "Added the **microsoftManagedDesktopType** enumeration type.",
-                    "Target": "microsoftManagedDesktop"
+                    "Target": "microsoftManagedDesktopType"
                 }
             ],
             "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
