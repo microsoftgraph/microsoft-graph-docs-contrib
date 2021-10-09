@@ -24,7 +24,7 @@ Specifies which participants can bypass the meeting lobby.
 
 ### lobbyBypassScope values
 
-| Value                    | Description     | Description on Teamwork |
+| Value                    | Description     | Description on Teams Meeting Options Page |
 | ------------------------ | --------------------------------------------------- |
 | organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | Only me and co-organizers |
 | organization | Only the participants from the same company and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | People in my organization and guests |
