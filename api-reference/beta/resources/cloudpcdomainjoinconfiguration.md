@@ -25,7 +25,7 @@ Represents a defined configuration of how provisioned Cloud PC device will be jo
 ### cloudPcDomainJoinType values
 
 |Member|Description|
-|:---|：---|
+|:---|:---|
 |hybridAzureADJoin|Joined only to Azure AD. Cloud-only and hybrid users can be assigned and sign into the Cloud PC.|
 |azureADJoin|Joined to on-premises AD and Azure AD. Only hybrid users can be assigned and sign into the Cloud PC.
 |unknownFutureValue|Unknown future type.|
