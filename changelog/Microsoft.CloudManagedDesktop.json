@@ -17,6 +17,14 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [cloudPcServicePlan](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta) resource type and supported method.",
                     "Target": "cloudPcServicePlan"
+                },
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcServicePlanType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcServicePlanType** enumeration type.",
+                    "Target": "cloudPcServicePlanType"
                 }
             ],
             "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
