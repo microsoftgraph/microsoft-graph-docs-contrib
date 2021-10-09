@@ -662,7 +662,7 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 
-## Data Subject Request permissions
+## Data subject request permissions
 
 #### Delegated permissions
 
@@ -672,12 +672,12 @@ DataSubjectRequest.Read.All | Read data subject requests | Allows the app to�
 DataSubjectRequest.ReadWrite.All | Read and write data subject requests | Allows the app to read and write data subject requests on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
-None
+None.
 
-Example usage
-Delegated
-DataSubjectRequest.Read.All: Get the list of data subject request available to the user (`GET /compliance/datasubjectrequest`)
-DataSujectRequest.ReadWrite.All: Create a data subject request (`POST /compliance/datasubjectrequest`)
+### Example usage
+#### Delegated
+- _DataSubjectRequest.Read.All_: Get the list of data subject request available to the user (`GET /compliance/datasubjectrequest`).
+- _DataSujectRequest.ReadWrite.All_: Create a data subject request (`POST /compliance/datasubjectrequest`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
