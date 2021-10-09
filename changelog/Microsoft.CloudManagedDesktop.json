@@ -12,10 +12,26 @@
                 },
                 {
                     "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcOnPremisesConnectionType",
                     "ChangeType": "Addition",
                     "Description": "Added the **cloudPcOnPremisesConnectionType** enumeration type.",
+                    "Target": "cloudPcOnPremisesConnectionType"
+                },
+                {
+                    "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "adDomainName",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **adDomainName** property in the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource from required to optional.",
+                    "Target": "cloudPcOnPremisesConnection"
+                },
+                {
+                    "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "adDomainUsername",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **adDomainUsername** property in the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource from required to optional.",
                     "Target": "cloudPcOnPremisesConnection"
                 }
             ],
