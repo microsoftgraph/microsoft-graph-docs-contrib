@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "type",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **type** property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnection"
+                },
+                {
+                    "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcOnPremisesConnectionType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcOnPremisesConnectionType** enumeration type.",
+                    "Target": "cloudPcOnPremisesConnection"
+                }
+            ],
+            "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-10-09T01:39:23.272Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "f9be3f85-2629-4cb4-a718-b8c66ee2c469",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "supportedRegions",

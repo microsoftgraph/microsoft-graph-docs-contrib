@@ -25,13 +25,14 @@ Represents a defined collection of Azure resource information that can be used t
 |[Update cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Delete cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|None|Delete a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. You can’t delete an connection that’s in use.|
 |[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
-|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|None|Update AD domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|None|Update AD domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). The API is supported when onPremisesConnection's type is hybridAzureADJoin.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the on-premises connection. Read-only.|
+|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC will be joined to Azure AD. It includes different types, one is azureADJoin which means there's no on-premises Active Directory (AD) in current tenant and the Cloud PC device will be only joined Azure AD. Another one is hybridAzureADJoin which means there's also on-premises AD in current tenant and the Cloud PC device will be joined to on-premises AD and Azure AD. The type also determines which types of users can be assigned and can sign into a Cloud PC. azureADJoin type indicates cloud-only and hybrid users can be assigned and sign into the Cloud PC, hybridAzureADJoin indicates only hybrid user can be assigned and sign into the Cloud PC. Default is "hybridAzureADJoin".|
 |displayName|String|The display name for the on-premises connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
@@ -46,11 +47,19 @@ Represents a defined collection of Azure resource information that can be used t
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`.For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |inUse|Boolean|When `true`, the on-premises connection is in use. When `false`, the connection is not in use. You cannot delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 
+### cloudPcOnPremisesConnectionType values
+
+|Member|Description|
+|:---|:---|
+|hybridAzureADJoin|Joined to on-premises AD.|
+|azureADJoin|Joined only to Azure AD.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
+
 ### cloudPcOnPremisesConnectionStatus values
 
 |Member|Description|
 |:---|:---|
-|pending|Created and waiting for health checks.
+|pending|Created and waiting for health checks.|
 |running|Health checks are running.|
 |passed|Health checks passed.|
 |failed|Health checks failed.|
@@ -78,6 +87,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "String (identifier)",
+  "type": "hybridAzureADJoin",
   "displayName": "String",
   "subscriptionId": "String",
   "subscriptionName": "String",
