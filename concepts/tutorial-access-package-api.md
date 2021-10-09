@@ -542,7 +542,7 @@ You can also use the **id** of the access package policy that you created to see
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
 #### Response
@@ -560,7 +560,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "assignmentStatus": "Delivered",
       "assignmentState": "Delivered",
       "isExtended": false,
-      "expiredDateTime": null
+      "expiredDateTime": null,
+      "target": {
+         "id": "8586ddc8-0ff7-4c24-9c79-f192bc3566e3",
+         "objectId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0"
+      },
+      "accessPackageAssignmentResourceRoles": [
+         {
+            "id": "bdb7e0a0-a927-42ab-bf30-c5b5533dc54a",
+            "originSystem": "AadGroup",
+            "status": "Fulfilled"
+         }
+      ]
     }
   ]
 }
