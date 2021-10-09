@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDomainJoinConfiguration",
-  "type": "String",
+  "type": "string",
   "regionName": "String",
   "onPremisesConnectionId": "String"
 }
