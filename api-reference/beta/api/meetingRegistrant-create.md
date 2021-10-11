@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Enroll a registrant. This operation has two scenarios:
 
-- If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
--  If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
+- If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
+-  If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
 
 In either scenario, the registrant will receive an email notification that contains their registration information. 
 
@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | OnlineMeetings.Read.All |
 
 > [!TIP]
-> - If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, use the registrant's delegated permission to enroll.
-> - If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, use the registrant's delegated permission to enroll.
+> - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, use the registrant's delegated permission to enroll.
+> - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, use the registrant's delegated permission to enroll.
 
 ## HTTP request
 
@@ -53,23 +53,16 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 ## Request body
 
-In the request body, supply a JSON representation of non-readonly properties of a [meetingRegistrant](../resources/meetingRegistrant.md) object.
+In the request body, supply a JSON representation of the editable properties of a [meetingRegistrant](../resources/meetingRegistrant.md) object.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a partial [meetingRegistrant](../resources/meetingRegistrant.md) object in the response body.
 
 > [!TIP]
->
-> Response body will contain different information depending on the value of **allowedRegistrant**.
->
-> `organization`
->
-> Only **id** and **joinWebUrl** will be returned in the [meetingRegistrant](../resources/meetingRegistrant.md) object. Registrants can use the **id** to cancel their registration or **joinWebUrl** to join the meeting.
->
-> `everyone`
->
-> An empty [meetingRegistrant](../resources/meetingRegistrant.md) object will be returned. Registrants need to use the links in the email they receive to cancel registration or join the meeting.
+> The response body will contain different information depending on the value of **allowedRegistrant**.
+> - If the value of the **allowedRegistrant** property is `organization`, only **id** and **joinWebUrl** will be returned in the [meetingRegistrant](../resources/meetingRegistrant.md) object. Registrants can use the **id** to cancel their registration or **joinWebUrl** to join the meeting.
+> - If the value of the **allowedRegistrant** property is `everyone`, an empty [meetingRegistrant](../resources/meetingRegistrant.md) object will be returned. Registrants need to use the links in the email they receive to cancel registration or join the meeting.
 
 ## Examples
 
