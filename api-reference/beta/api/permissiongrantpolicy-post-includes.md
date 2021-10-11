@@ -125,7 +125,7 @@ Content-type: application/json
 
 ### Request
 
-In this example, *all* delegated permissions for client apps that are Microsoft 365 certified are included in the permission grant policy. Note having a verified publisher is a pre-requisite for an app to be Microsoft 365 certified. Hence this policy look for both the criteria to be true. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
+In this example, all delegated permissions for all client apps that are Microsoft 365 certified are included in the permission grant policy. Since having a verified publisher is a pre-requisite for an app to be considered Microsoft 365 certified, it is not necessary to explicitly require a verified publisher. All the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values.
 
 
 ### [HTTP](#tab/http)
