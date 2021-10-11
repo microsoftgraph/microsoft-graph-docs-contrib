@@ -36,8 +36,9 @@ To cancel registration for an online meeting with delegated permission:
 DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{id}
 ```
 
-- `userId` is the objectID of the meeting organizer.
-- `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
+>**Notes:**
+> - `userId` is the objectID of the meeting organizer.
+> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
 
 ## Request headers
 
