@@ -49,10 +49,10 @@ In the request body, supply a JSON representation of a [meetingRegistration](../
 
 If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
 
-> [!TIP]
+> [!NOTES]
 >
->- **registrationPageViewCount** is not returned in the response body of this method. Use [Get registration](meetingRegistration-get.md) method to retrieve it.
->- **customQuestions** is a related resource that can only be created, but not returned in line. Use [Get registration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve it.
+>- The **registrationPageViewCount** property is not returned in the response body of this method. Use the [Get meetingRegistration](meetingRegistration-get.md) method to retrieve that property.
+>- **customQuestions** is a related resource that can only be created, but not returned. Use the [Get meetingRegistration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve it.
 
 ## Example
 
