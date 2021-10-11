@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subjectRightsRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource",
+          "Description": "Added the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /compliance/subjectRightsRequests/{subjectRightsRequestId}/notes
+POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an [authore
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}/notes
+POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 Content-Type: application/json
 Content-length: 203
 

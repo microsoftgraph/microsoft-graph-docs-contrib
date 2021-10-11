@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
+GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
 ```
 
 

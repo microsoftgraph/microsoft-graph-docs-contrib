@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/subjectRightsRequests/{subjectRightsRequestId}
+GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [subjectRights
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this function will redirect to the Microsoft Azure blob storage l
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /compliance/subjectRightsRequests/{subjectRightsRequestId}
+PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [subj
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/compliance/subjectRightsRequests/{subjectRightsRequestId}
+PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
 Content-length: 837
 

@@ -1544,11 +1544,11 @@ items:
       items:
       - name: Overview
         href: resources/complianceapioverview.md
-      - name: Subject Rights Request
+      - name: Subject rights request
         items:
         - name: Overview
           href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-        - name: Subject Rights Request
+        - name: Subject rights request
           href: resources/subjectrightsrequest.md
           items:
           - name: List
@@ -1563,12 +1563,9 @@ items:
             href: api/subjectrightsrequest-getfinalreport.md
           - name: Get final attachment
             href: api/subjectrightsrequest-getfinalattachment.md
-        - name: Note
-          href: resources\authorednote.md
-          items:
-          - name: List
+          - name: List notes
             href: api/subjectrightsrequest-list-notes.md
-          - name: Create
+          - name: Create note
             href: api/subjectrightsrequest-post-notes.md
 
       - name: eDiscovery
@@ -13117,11 +13114,6 @@ items:
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
-    - name: Privacy (Preview)
-      displayName: Privacy API, Microsoft Graph Privacy API
-      items:
-        - name: Overview
-          href: resources/privacyapioverview.md
     - name: Reports
       items:
       - name: Azure AD activity reports
