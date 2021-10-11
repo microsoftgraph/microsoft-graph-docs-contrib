@@ -1,6 +1,6 @@
 ---
 title: "Unenroll meeting registrant"
-description: "Cancel an onlineMeeting registration for a meetingRegistrant.."
+description: "Cancel an onlineMeeting registration for a meetingRegistrant."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
