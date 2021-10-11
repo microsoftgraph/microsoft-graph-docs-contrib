@@ -32,9 +32,9 @@ Registration of an online meeting. One applicable scenario is [Teams webinar](ht
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specify who can register for the meeting. |
 | description | String | The description of the meeting. |
 | endDateTime | DateTime | The meeting end time in UTC. |
-| registrationPageViewCount | Int32 | Indicate how mant times the registration page has been visited. Read-only. |
+| registrationPageViewCount | Int32 | The number of times the registration page has been visited. Read-only. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
-| speakers | [meetingSpeaker](meetingSpeaker.md) collection | The speakers information of the meeting. |
+| speakers | [meetingSpeaker](meetingSpeaker.md) collection | The meeting speaker's information. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the meeting. |
 
@@ -43,15 +43,15 @@ Registration of an online meeting. One applicable scenario is [Teams webinar](ht
 | Value              | Description |
 | ------------------ | ----------- |
 | everyone           | Everyone can register for the meeting. |
-| organization       | Everyone in organizer’s organization can register for the meeting. |
-| unknownFutureValue | Unknown future value. |
+| organization       | Everyone in the organizer’s organization can register for the meeting. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| The custom registration questions. Navigation property. |
-| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Registrants of the online meeting. Navigation property. |
+| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| Custom registration questions. |
+| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Registrants of the online meeting. |
 
 ## JSON representation
 
