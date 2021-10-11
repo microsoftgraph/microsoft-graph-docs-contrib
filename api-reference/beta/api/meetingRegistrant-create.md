@@ -14,17 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll a registrant. This operation has two scenarios depending on the value of **allowedRegistrant** of the [registration](../resources/meetingRegistration.md).
+Enroll a registrant. This operation has two scenarios:
 
-`organization`
+- If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
+-  If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
 
-- Registrants will be required to sign in before registering for the meeting. The **firstName**, **lastName** and **email** must match the information stored in Azure Active Directory.
-
-`everyone`
-
-- Registrants will not be required to sign in and will be considered an anonymous.
-
-In either scenario, the registrant will receive an email notification containing their registration information. See tips in following sections for more details.
+In either scenario, the registrant will receive an email notification containing their registration information. 
 
 ## Permissions
 
@@ -37,16 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | OnlineMeetings.Read.All |
 
 > [!TIP]
->
-> Different permissions are required for different value of **allowedRegistrant**.
->
-> `organization`
->
->- Registrants will be reqired to sign in. In this scenario, use the registrant's delegated permission to enroll.
->
-> `everyone`
->
->- Registrants will not be required to sign in. In this scenario, use application permission to enroll.
+> - If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, use the registrant's delegated permission to enroll.
+> - If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, use the registrant's delegated permission to enroll.
 
 ## HTTP request
 
@@ -56,7 +43,7 @@ To enroll a registrant in an online meeting with delegated or application permis
 POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 ```
 
-- `userId` is the objectID of the meeting organizer.
+> **Note:** `userId` is the **objectID** of the meeting organizer.
 
 ## Request headers
 
