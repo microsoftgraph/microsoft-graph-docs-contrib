@@ -19,7 +19,7 @@ Enroll a registrant. This operation has two scenarios:
 - If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
 -  If the value of the **allowedRegistrant** property of the of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
 
-In either scenario, the registrant will receive an email notification containing their registration information. 
+In either scenario, the registrant will receive an email notification that contains their registration information. 
 
 ## Permissions
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a partial [meeti
 
 ### Example 1: Enroll a signed-in registrant
 
-This example shows how to enroll a signed-in registrant with the registrant's delegated permission when the meeting has **allowedRegistrant** set to `organization`.
+The following example shows how to enroll a signed-in registrant with the registrant's delegated permission when the meeting has **allowedRegistrant** set to `organization`.
 
 #### Request
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 
 ### Example 2: Enroll an anonymous registrant
 
-This example shows how to enroll an anonymous registrant with application permission when the meeting has **allowedRegistrant** set to `everyone`.
+The following example shows how to enroll an anonymous registrant with application permission when the meeting has **allowedRegistrant** set to `everyone`.
 
 #### Request
 
