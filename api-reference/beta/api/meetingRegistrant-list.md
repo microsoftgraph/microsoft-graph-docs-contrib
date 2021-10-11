@@ -1,6 +1,6 @@
 ---
 title: "List meeting registrants"
-description: "List all meeting registrants."
+description: "Get a list of the meetingRegistrants of an onlineMeeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all registrants of an [onlineMeeting](../resources/onlinemeeting.md). One applicable scenario is to get the registration report of a [Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
+Get a list of the [meetingRegistrants](../resources/meetingregistrant.md) of an [onlineMeeting](../resources/onlinemeeting.md). 
+
+You can use this method to get the registration report for a [Microsoft Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## Permissions
 
@@ -46,11 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [meetingRegistrant](../resources/meetingRegistrant.md) objects in the response body with following exceptions.
-
-> [!TIP]
->
-> **joinWebUrl** and **questionId** will be `null` in the response body of this method.
+If successful, this method returns a `200 OK` response code and a collection of [meetingRegistrant](../resources/meetingRegistrant.md) objects in the response body. The **joinWebUrl** and **questionId** properties will be `null`.
 
 ## Example
 
