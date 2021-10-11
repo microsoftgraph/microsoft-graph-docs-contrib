@@ -1,6 +1,6 @@
 ---
 title: "Unenroll meeting registrant"
-description: "Unenroll a meeting registrant."
+description: "Cancel an onlineMeeting registration for a meetingRegistrant.."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel an [onlineMeeting](../resources/onlinemeeting.md) registration for a [meetingRegistrant](../resources/meetingregistrant.md). Only use this method when the **allowedRegistrant** property of the [meeting registration](../resources/meetingRegistration.md) has a value of `organization` and with the registrant's delegated permission. When the **allowedRegistrant** value is `everyone`, registrants can only use the link in the email they receive to cancel their registration.
+Cancel an [onlineMeeting](../resources/onlinemeeting.md) registration for a [meetingRegistrant](../resources/meetingregistrant.md). 
+
+Only use this method when the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object has a value of `organization` and the registrant's delegated permission was used to enroll. When the **allowedRegistrant** value is `everyone`, registrants can only use the link in the email they receive to cancel their registration.
 
 ## Permissions
 
