@@ -127,7 +127,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request for a non-root scope resource.  The access package resource for the site must already have been added to the access package catalog containing this access package. If the [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object obtained from an earlier request to [list access package resources](accesspackagecatalog-list-accesspackageresources.md) has `isRootScope` as the resource is a root scope, include that property with the same value in the `accessPackageResourceScope` in the request.
+The following is an example of the request for a non-root scope resource.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+
+If the [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object obtained from an earlier request to [list access package resources](accesspackagecatalog-list-accesspackageresources.md) has the resource as a root scope (**isRootScope** set to `true`), include the **isRootScope** property in the **accessPackageResourceScope** object of the request.
 
 
 # [HTTP](#tab/http)
