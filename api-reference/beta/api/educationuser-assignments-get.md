@@ -21,11 +21,11 @@ This utility namespace allows a caller to find all a student's assignments in a 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | Not supported.                                                                                         |
+| Permission type                        | Permissions (from least to most privileged)                                                                            |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                                                                                         |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                         |
+| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -53,9 +53,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
 
-## Example
+The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
 
-##### Request
+## Example 1: User assignments
+
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -67,7 +69,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments
 ```
 
-##### Response
+#### Response
 
 The following is an example of the response. 
 
@@ -169,6 +171,134 @@ Content-length: 344
         }
     ]
 }
+```
+
+## Example 2: User assignments with expand submissions
+
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_assignments_expand_submissions"
+}-->
+
+```http 
+GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments?expand=submissions
+```
+
+#### Response
+
+The following is an example of the response. 
+
+> **Note:** It will expand submissions if the user has a student role, and will be null for teacher role.
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments(submissions())",
+    "value": [
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Reading test 09.03 #4",
+            "closeDateTime": null,
+            "dueDateTime": "2021-09-07T00:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-09-13T19:18:35.2587894Z",
+            "lastModifiedDateTime": "2021-09-13T19:19:56.6381405Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "1618dfb0-3ff2-4edf-8d5c-b8f81df00e80",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 50
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            },
+            "submissions@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
+            "submissions": [
+                {
+                    "status": "working",
+                    "submittedDateTime": null,
+                    "unsubmittedDateTime": null,
+                    "returnedDateTime": null,
+                    "reassignedDateTime": null,
+                    "resourcesFolderUrl": null,
+                    "id": "da443246-384d-673b-32db-bdba9d7f2b51",
+                    "recipient": {
+                        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+                    },
+                    "submittedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                            "displayName": null
+                        }
+                    },
+                    "unsubmittedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "returnedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "reassignedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}        
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
