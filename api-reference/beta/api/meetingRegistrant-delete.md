@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A meeting registrant cancels their registration for an [onlineMeeting](../resources/onlinemeeting.md). Only use this method when **allowedRegistrant** of [meeting registration](../resources/meetingRegistration.md) is `organization` and with the registrant's delegated permission. When **allowedRegistrant** is `everyone`, registrants can only use the link in the email they receive to cancel their registration.
+Cancel an [onlineMeeting](../resources/onlinemeeting.md) registration for a [meetingRegistrant](../resources/meetingregistrant.md). Only use this method when the **allowedRegistrant** property of the [meeting registration](../resources/meetingRegistration.md) has a value of `organization` and with the registrant's delegated permission. When the **allowedRegistrant** value is `everyone`, registrants can only use the link in the email they receive to cancel their registration.
 
 ## Permissions
 
