@@ -264,16 +264,16 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 #### Delegated
 
-* _Application.Read.All_: List all applications (`GET /beta/applications`)
-* _Application.ReadWrite.All_: Update a service principal (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_: List all applications (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_: Update a service principal (`PATCH /v1.0/servicePrincipals/{id}`)
 
 #### Application
 
-* _Application.Read.All_: List all applications (`GET /beta/applications`)
-* _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).
+* _Application.Read.All_: List all applications (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_: Delete a service principal (`DELETE /v1.0/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_: Create an application (`POST /v1.0/applications`)
+* _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /v1.0/applications/{id}/owners/$ref`).
     > NOTE: This may require additional permissions.
 
 ---
@@ -1099,41 +1099,6 @@ The following usages are valid for both delegated and application permissions:
 * _IdentityUserFlow.ReadWrite.All_: Create a user attribute assignment in an Azure AD B2C user flow (`POST beta/identity/b2cUserFlows/{id}/userAttributeAssignments`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
----
-
-## Incidents permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Incidents.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
-| _Incidents.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
-
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
-| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
-
-### Remarks
-
-Incidents permissions are valid only on work or school accounts.
-
-### Example usage
-
-#### Delegated
-
-* _Incidents.Read.All_: Read all incidents in an organization that the user is allowed to read (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization that the user is allowed to read and write (`GET /security/incidents`)
-
-#### Application
-
-* _Incidents.Read.All_: Read all incidents in an organization (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization (`GET /security/incidents`)
 
 ---
 
@@ -2480,8 +2445,6 @@ For an app to read or write all Windows update deployment settings with delegate
 #### Application
 
 * _WindowsUpdates.ReadWrite.All_: Create a deployment (`POST /beta/admin/windows/updates/deployments`).
-
----
 
 ## Permission scenarios
 

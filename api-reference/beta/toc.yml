@@ -11397,8 +11397,6 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-          - name: Delete
-            href: api/organizationalbranding-delete.md
           - name: Branding localization
             href: resources/organizationalbrandinglocalization.md
             items:
@@ -13491,9 +13489,8 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
+        href: resources/securityaction.md
         items:
-        - name: Action
-          href: resources/securityaction.md
         - name: List security actions
           href: api/securityactions-list.md
         - name: Create security action
@@ -13548,14 +13545,6 @@ items:
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Incidents (preview)
-        items:
-        - name: Incident
-          href: resources/incident.md
-        - name: List incidents
-          href: api/security-list-incidents.md
-        - name: Get incident
-          href: api/incident-get.md        
       - name: Information protection
         items:
         - name: Labels
@@ -14700,6 +14689,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range
