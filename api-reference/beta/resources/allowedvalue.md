@@ -1,6 +1,6 @@
 ---
 title: "allowedValue resource type"
-description: "A value that is allowed for a custom security attribute definition."
+description: "A predefined value that is allowed for a custom security attribute definition."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -26,7 +26,7 @@ A predefined value that is allowed for a custom security attribute definition.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier for the allowed value.|
+| id | String | Identifier for the allowed value. Required. |
 |isActive|Boolean|Indicates whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
 
 ## Relationships

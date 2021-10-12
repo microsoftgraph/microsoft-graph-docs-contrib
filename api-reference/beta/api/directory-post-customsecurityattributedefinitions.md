@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator directory role that permits them to create custom security attribute definitions. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [customSe
 
 ### Example 1: Add a custom security attribute
 
-The following example adds a new custom security attribute named ProjectDate to the Engineering attribute set. ProjectDate is a single free-form value of type string.
+The following example adds a new custom security attribute named "ProjectDate" to the Engineering attribute set. ProjectDate is a single free-form value of type String.
 
 #### Request
 <!-- {
@@ -84,7 +84,6 @@ The following example adds a new custom security attribute named ProjectDate to 
 ``` http
 POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
 Content-Type: application/json
-Content-length: 310
 
 {
     "attributeSet":"Engineering",

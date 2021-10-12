@@ -194,13 +194,6 @@ Content-length: 491
 
 The following example gets the custom security attributes of the specified user.
 
-```
-Engineering_Project=["Baker","Cascade"]
-Engineering_CostCenter=[1001]
-Engineering_Certification=true
-Operations_Level="Public"
-```
-
 
 <!-- {
   "blockType": "request",
@@ -221,7 +214,6 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",
@@ -247,12 +239,11 @@ Content-length: 491
 }
 ```
 
-If there are no custom security attributes assigned to the user or if the calling principal does not have access, the response will look like:
+If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following will be the response:
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(customSecurityAttributes)/$entity",

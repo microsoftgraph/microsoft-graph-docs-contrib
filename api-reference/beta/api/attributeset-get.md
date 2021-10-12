@@ -23,7 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All, CustomSecAttributeAssignment.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Reader, Attribute Assignment Reader, Attribute Definition Administrator, or Attribute Assignment Administrator directory roles that permits them to read attribute sets. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
++ Attribute Definition Reader
++ Attribute Assignment Reader
++ Attribute Definition Administrator
++ Attribute Assignment Administrator
+By default, Global Administrator and other administrator roles do not have permissions to define, read, or assign custom security attributes.
 
 ## HTTP request
 
@@ -34,10 +39,6 @@ The signed-in user must also be assigned the Attribute Definition Reader, Attrib
 ``` http
 GET /directory/attributeSets/{attributeSetId}
 ```
-
-|Name|Description|
-|:---|:---|
-|{attributeSetId}|Identifier for the attribute set that is unique within a tenant.|
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).

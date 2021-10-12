@@ -173,12 +173,6 @@ Content-type: application/json
 
 The following example gets the custom security attributes of the specified service principal.
 
-```
-Engineering_Project=["Baker","Cascade"]
-Engineering_CostCenter=[1001]
-Engineering_Certification=true
-Operations_Level="Public"
-```
 
 
 <!-- {

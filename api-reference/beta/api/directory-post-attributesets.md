@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator directory role that permits them to create attribute sets. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -78,7 +78,6 @@ The following example adds a new attribute set named Engineering.
 ``` http
 POST https://graph.microsoft.com/beta/directory/attributeSets
 Content-Type: application/json
-Content-length: 131
 
 {
     "id":"Engineering",

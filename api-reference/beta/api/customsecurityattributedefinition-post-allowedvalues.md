@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator directory role that permits them to create allowed values. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -35,9 +35,6 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 POST /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues
 ```
 
-|Name|Description|
-|:---|:---|
-|{customSecurityAttributeDefinitionId}|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
 
 ## Request headers
 |Name|Description|
@@ -53,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier for the allowed value.|
-|isActive|Boolean|Specifies whether the allowed value is active. If set to false, this value cannot be added to any other objects.|
+|isActive|Boolean|Specifies whether the allowed value is active. If set to `false`, this value cannot be added to any other supported directory objects.|
 
 
 
@@ -65,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ### Example: Add a predefined value
 
-The following example add a predefined value to the Project attribute in the Engineering attribute set.
+The following example adds a predefined value to the **Project** attribute in the **Engineering** attribute set.
 
 #### Request
 <!-- {
@@ -76,7 +73,6 @@ The following example add a predefined value to the Project attribute in the Eng
 ``` http
 POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues
 Content-Type: application/json
-Content-length: 92
 
 {
     "id":"Alpine",

@@ -23,7 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All, CustomSecAttributeAssignment.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Reader, Attribute Definition Administrator, or Attribute Assignment Administrator directory roles that permits them to list custom security attribute definitions. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
++ Attribute Definition Reader
++ Attribute Definition Administrator
++ Attribute Assignment Administrator
+By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -120,7 +124,7 @@ Content-Type: application/json
 
 ### Example 2: Filter custom security attributes based on name
 
-The following example filters custom security attributes that are named Project and are active.
+The following example retrieves custom security attributes that are named "Project" and are active.
 
 #### Request
 <!-- {
@@ -175,7 +179,7 @@ Content-Type: application/json
 
 ### Example 3: Filter custom security attributes based on attribute set
 
-The following example filters custom security attributes that are in the Engineering attribute set, active, and of type string.
+The following example retrieves custom security attributes that are in the Engineering attribute set, are active, and of type String.
 
 #### Request
 <!-- {

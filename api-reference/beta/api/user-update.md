@@ -259,7 +259,6 @@ HTTP/1.1 204 No Content
 
 The following example shows how to assign a custom security attribute named ProjectDate with a string value to a user.
 
-`Engineering_ProjectDate="2022-10-01"`
 
 #### Request
 
@@ -296,7 +295,6 @@ HTTP/1.1 204 No Content
 
 The following example shows how to assign a custom security attribute named Project with a multi-string value to a user.
 
-`Engineering_Project=["Baker","Cascade"]`
 
 #### Request
 

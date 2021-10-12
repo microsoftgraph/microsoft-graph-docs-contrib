@@ -10732,7 +10732,7 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
-        - name: Custom security attributes
+        - name: Custom security attributes (preview)
           items:
           - name: Attribute sets
             href: resources/attributeset.md

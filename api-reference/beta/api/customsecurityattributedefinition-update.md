@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned the Attribute Definition Administrator directory role that permits them to update custom security attribute definitions. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned the Attribute Definition Administrator [directory role](/azure/active-directory/roles/permissions-reference). By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -35,10 +35,6 @@ The signed-in user must also be assigned the Attribute Definition Administrator 
 PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}
 ```
 
-|Name|Description|
-|:---|:---|
-|{customSecurityAttributeDefinitionId}|Unique identifier of the custom security attribute, which is a combination of the attribute set name and the custom security attribute name separated by an underscore (&lt;attributeSet&gt;_&lt;name&gt;).|
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -46,9 +42,9 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
+In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
 
-The following table shows the properties that you can update for the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
+The following table specifies the properties that can be updated. 
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -77,7 +73,6 @@ The following example updates the description for the ProjectDate attribute in t
 ``` http
 PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_ProjectDate
 Content-Type: application/json
-Content-length: 298
 
 {
   "description": "Target completion date (YYYY/MM/DD)",
@@ -108,7 +103,6 @@ The following example deactivates the Project attribute in the Engineering attri
 ``` http
 PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
 Content-Type: application/json
-Content-length: 298
 
 {
   "status": "Deprecated"
