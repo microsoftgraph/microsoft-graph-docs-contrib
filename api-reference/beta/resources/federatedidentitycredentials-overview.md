@@ -31,6 +31,8 @@ The [federatedIdentityCredential](federatedidentitycredential.md) resource repre
 
 Federated identity credentials are supported on applications only. A maximum of 20 federated identity credentials can be added per application object.
 
+The federated identity credentials API is not available in [national cloud](concepts/deployments) deployments.
+
 ## See also
 
 + [federatedIdentityCredential resource type](federatedidentitycredential.md)

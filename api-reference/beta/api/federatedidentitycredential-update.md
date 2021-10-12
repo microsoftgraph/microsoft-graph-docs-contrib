@@ -50,7 +50,7 @@ The following table specifies the properties that can be updated.
 |:---|:---|:---|
 |audiences|String collection|The list of audiences that can appear in the issued token. The possible values are: `api://AzureADTokenExchange`. |
 |description|String|A user-provided description of what the federatedIdentityCredential is used for. |
-|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and the property should match one of the following values: <ul><li>Azure AD (global service): `https://login.microsoftonline.com/{tenantid}/v2.0`</li></ul> <br>The combination of the values of **issuer** and **subject** must be unique on the app. |
+|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app. |
 |subject|String|<li>For Azure AD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app.|
 
 
