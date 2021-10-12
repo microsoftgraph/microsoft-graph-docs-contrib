@@ -1,6 +1,6 @@
 ---
 title: "meetingRegistrant resource type"
-description: "Contains information about meeting registrant."
+description: "Represents a meeting registrant who has enrolled in an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registrants who have enrolled for an online meeting.
+Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md).
 
 ## Methods
 
@@ -28,11 +28,11 @@ Registrants who have enrolled for an online meeting.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) collection | Registrant's answer to the custom questions. |
+| customQuestionAnswers | [customQuestionAnswer](customQuestionAnswer.md) collection | The registrant's answer to custom questions. |
 | email | String | The email address of the registrant. |
 | firstName | String | The first name of the registrant. |
-| id | String | The id of the registrant. Read-only. |
-| joinWebUrl | String | Unique web URL for the registrant to join the meeting. Read-only. |
+| id | String | The ID of the registrant. Read-only. |
+| joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only. |
 | lastName | String | The last name of the registrant. |
 | registrationDateTime | String | Time in UTC when the registrant registers for the meeting. Read-only. |
 | status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | The registration status of the registrant. Read-only. |
@@ -44,7 +44,7 @@ Registrants who have enrolled for an online meeting.
 | registered | Registrant has enrolled in the meeting. |
 | canceled | Registrant has canceled their registration. |
 | processing | Interim status indicating the status is processing. |
-| unknownFutureValue | Unknown future value. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
