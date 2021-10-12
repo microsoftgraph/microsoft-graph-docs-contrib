@@ -652,7 +652,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "user@odata.bind":"https://graph.microsoft.com/v1.0/users('john.doe@microsoft.com')"
+         "user@odata.bind":"https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
       }
    ]
 }

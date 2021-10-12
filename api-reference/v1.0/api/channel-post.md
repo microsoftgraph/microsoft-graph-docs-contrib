@@ -298,7 +298,7 @@ Content-type: application/json
      [
         {
            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('alex@microsoft.com')",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
            "roles":["owner"]
         }
      ]

@@ -200,7 +200,7 @@ Content-length: 100
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users('john.doe@microsoft.com')"
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
 }
 ```
 
@@ -224,9 +224,9 @@ Content-length: 468
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
   "roles": [],
-  "displayName": "John Doe",
+  "displayName": "Jacob Hancock",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": "john.doe@microsoft.com"
+  "email": "jacob@contoso.com"
 }
 ```
 

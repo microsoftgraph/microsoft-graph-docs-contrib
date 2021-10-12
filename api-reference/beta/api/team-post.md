@@ -650,7 +650,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "user@odata.bind":"https://graph.microsoft.com/beta/users('john.doe@microsoft.com')"
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')"
       }
    ]
 }

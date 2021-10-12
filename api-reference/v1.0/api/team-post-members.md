@@ -53,7 +53,7 @@ For best results, stagger calls with a 2 second buffer.
 
 ### Example 1: Add a member to a team
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +90,7 @@ Content-length: 100
 
 ---
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 
 <!-- 
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ### Example 2: Add a member to a team using user principal name
 
-### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -134,7 +134,7 @@ Content-length: 100
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('john.doe@microsoft.com')"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
 }
 ```
 
@@ -158,8 +158,8 @@ Content-type: application/json
         "owner"
     ],
     "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    "displayName": "John Doe",
-    "email": "john.doe@microsoft.com"
+    "displayName": "Jacob Hancock",
+    "email": "jacob@contoso.com"
 }
 ```
 

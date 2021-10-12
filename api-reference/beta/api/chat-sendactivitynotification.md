@@ -226,7 +226,7 @@ Content-Type: application/json
     },
     "recipient": {
         "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
-        "userId": "john.doe@microsoft.com"
+        "userId": "jacob@contoso.com"
     },
     "templateParameters": [
         {
