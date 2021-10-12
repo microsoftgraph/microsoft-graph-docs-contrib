@@ -90,8 +90,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of an online meeting. Navigation property. Read-only. |
-| registration | [meetingRegistration](meetingRegistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled. Navigation property. |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of an online meeting. Read-only. |
+| registration | [meetingRegistration](meetingRegistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 
 ## JSON representation
 
