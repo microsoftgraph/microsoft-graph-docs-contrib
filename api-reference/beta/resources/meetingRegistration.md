@@ -29,7 +29,7 @@ Registration of an online meeting. One applicable scenario is [Teams webinar](ht
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specify who can register for the meeting. |
+| allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specifies who can register for the meeting. |
 | description | String | The description of the meeting. |
 | endDateTime | DateTime | The meeting end time in UTC. |
 | registrationPageViewCount | Int32 | The number of times the registration page has been visited. Read-only. |
