@@ -87,7 +87,7 @@ Verify that worked by entering the following.
 $user.DisplayName
 ```
 
-### List the user's joined Teams
+### List the user's joined teams
 
 Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 
@@ -95,11 +95,11 @@ Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Just like the `Get-MgUser` command, this gives a list of Teams. Select one of the user's joined Teams and copy it's `Id`.
+Just like the `Get-MgUser` command, this gives a list of teams. Select one of the user's joined teams and copy its `Id`.
 
-### List Team channels
+### List team channels
 
-Now use the Team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
+Now use the team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
