@@ -1559,12 +1559,38 @@ items:
             href: api/ediscovery-case-get.md
           - name: Update
             href: api/ediscovery-case-update.md
+          - name: Delete
+            href: api/ediscovery-case-delete.md
           - name: Close
             href: api/ediscovery-case-close.md
           - name: Reopen
             href: api/ediscovery-case-reopen.md
-          - name: Delete
-            href: api/ediscovery-case-delete.md
+          - name: List custodians
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create custodian
+            href: api/ediscovery-case-post-custodians.md
+          - name: List legal holds
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create legal hold
+            href: api/ediscovery-case-post-legalholds.md
+          - name: List review sets
+            href: api/ediscovery-case-list-reviewsets.md
+          - name: Create review set
+            href: /api/ediscovery-case-post-reviewsets.md
+          - name: Get settings
+            href: api/ediscovery-settings-get.md
+          - name: Update settings
+            href: api/ediscovery-settings-update.md
+          - name: Reset to default
+            href: api/ediscovery-settings-resettodefault.md
+          - name: List source collections
+            href: api/ediscovery-case-list-sourcecollections.md
+          - name: Create source collection
+            href: /api/ediscovery-case-post-sourcecollections.md
+          - name: List tags
+            href: /api/ediscovery-case-list-tags.md
+          - name: Create tag
+            href: /api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -11275,38 +11301,6 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events (deprecated)
-            items:
-            - name: Identity risk event
-              href: resources/identityriskevent.md
-            - name: List identityRiskEvent
-              href: api/identityriskevent-list.md
-            - name: Get identityRiskEvent
-              href: api/identityriskevent-get.md
-            - name: List anonymousIpRiskEvent
-              href: api/anonymousipriskevent-list.md
-            - name: Get anonymousIpRiskEvent
-              href: api/anonymousipriskevent-get.md
-            - name: List impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-list.md
-            - name: Get impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-get.md
-            - name: List leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-list.md
-            - name: Get leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-get.md
-            - name: List malwareRiskEvent
-              href: api/malwareriskevent-list.md
-            - name: Get malwareRiskEvent
-              href: api/malwareriskevent-get.md
-            - name: List suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-list.md
-            - name: Get suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-get.md
-            - name: List unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-list.md
-            - name: Get unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
             items:
             - name: Risk detection
@@ -11403,8 +11397,6 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-          - name: Delete
-            href: api/organizationalbranding-delete.md
           - name: Branding localization
             href: resources/organizationalbrandinglocalization.md
             items:
@@ -11508,7 +11500,7 @@ items:
             - name: Get
               href: api/authenticationflowspolicy-get.md
             - name: Update
-              href: api/authenticationflowspolicy-update.md          
+              href: api/authenticationflowspolicy-update.md
           - name: Authentication methods policy
             items:
             - name: Overview
@@ -11610,6 +11602,13 @@ items:
               href: api/continuousaccessevaluationpolicy-get.md
             - name: Update
               href: api/continuousaccessevaluationpolicy-update.md
+          - name: Device registration policy (preview)
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md
           - name: Feature rollout policy
             href: resources/featurerolloutpolicy.md
             items:
@@ -11745,7 +11744,7 @@ items:
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
           items:
-          - name: User flow
+          - name: User flow (deprecated)
             items:
             - name: User flow
               href: resources/identityuserflow.md
@@ -14130,6 +14129,8 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get messages across all chats
           href: api/chats-getallmessages.md
         - name: List hosted content
@@ -14688,6 +14689,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range

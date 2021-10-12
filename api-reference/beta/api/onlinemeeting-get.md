@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegated (work or school account)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
 | Delegated (personal Microsoft account) | Not Supported.                                                                         |
 | Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
@@ -113,7 +113,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code. The response also includes one of the following:
 
-- If you fetch an online meeting by meeting ID, **videoTeleconferenceId** or **joinWebUrl**, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+- If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch the attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
 - If you fetch the attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
