@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom registration question of a [meetingRegistration](meetingRegistration.md) other than first name, last name and email address.
+Represents a custom registration question, other than first name, last name, and email address, associated with a [meetingRegistration](meetingRegistration.md).
 
 ## Methods
 
@@ -33,8 +33,8 @@ Custom registration question of a [meetingRegistration](meetingRegistration.md) 
 | answerInputType | [answerInputType](#answerinputtype-values) | Answer input type of the custom registration question. |
 | answerOptions | String collection | Answer options when **answerInputType** is `radioButton`. |
 | displayName | String | Display name of the custom registration question. |
-| id | String | Id of the custom registration question. Read-only. |
-| isRequired | Boolean | Indicate if this question is required. |
+| id | String | ID of the custom registration question. Read-only. |
+| isRequired | Boolean | Indicates whether the question is required. |
 
 ### answerInputType values
 
@@ -42,7 +42,7 @@ Custom registration question of a [meetingRegistration](meetingRegistration.md) 
 |--------------------|-------------|
 | text | Question accepts a single line text answer. |
 | radioButton | Question accepts an answer chosen from radio buttons. |
-| unknownFutureValue | Unknown future value. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
