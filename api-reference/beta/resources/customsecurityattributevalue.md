@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeValue resource type"
-description: "Value of a custom security attribute."
+description: "An open complex type that holds the value of a custom security attribute that is assigned to a directory object."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An OData type for the value of a custom security attribute.
+An open complex type that holds the value of a custom security attribute that is assigned to a directory object.
 
 ## Properties
 None.
