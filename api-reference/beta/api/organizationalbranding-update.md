@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) object.
+Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -77,6 +77,7 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
+Accept-Language: 0
 
 {
     "signInPageText":"Default",
