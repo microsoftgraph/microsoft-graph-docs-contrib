@@ -10732,10 +10732,10 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
-        - name: Custom security attributes (Preview)
+        - name: Custom security attributes (preview)
           items:
-          - name: Custom security attributes API (Preview)
-            href: ../../concepts/custom-security-attributes-overview.md
+          - name: Overview
+            href: resources/custom-security-attributes-overview.md
           - name: Attribute sets
             href: resources/attributeset.md
             items:
