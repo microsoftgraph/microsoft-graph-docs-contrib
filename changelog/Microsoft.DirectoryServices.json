@@ -1,30 +1,46 @@
 {
   "changelog": [
-    {
+   {
       "ChangeList": [
         {
-          "Id": "0a65081b-9698-4f25-a7b3-81f214b8a306",
-          "ApiChange": "Resource",
-          "ChangedApiName": "assignmentReviewSettings",
-          "ChangeType": "Change",
-          "Description": "Updated properties table in [assignmentReviewSettings](/resources/assignmentReviewSettings?view=graph-rest-beta) resource type and related properties.",
+          "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewTimeoutBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewTimeoutBehavior** enumeration type.",
+          "Target": "accessReviewTimeoutBehavior"
+        },
+        {
+          "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessReviewTimeoutBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewTimeoutBehavior** property to [assignmentReviewSettings](https://docs.microsoft.com/en-us/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta) resource.",
           "Target": "assignmentReviewSettings"
         },
         {
-          "Id": "0a65081b-9698-4f25-a7b3-81f214b8a306",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "accessReviewTimeoutBehavior",
+          "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAccessRecommendationEnabled",
           "ChangeType": "Addition",
-          "Description": "Added **accessReviewTimeoutBehavior** enumeration.",
-          "Target": "acessReviewTimeoutBehavior"
+          "Description": "Added the **isAccessRecommendationEnabled** property to [assignmentReviewSettings](https://docs.microsoft.com/en-us/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta) resource.",
+          "Target": "assignmentReviewSettings"
+        },
+        {
+          "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isApprovalJustificationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApprovalJustificationRequired** property to [assignmentReviewSettings](https://docs.microsoft.com/en-us/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta) resource.",
+          "Target": "assignmentReviewSettings"
         }
       ],
-        "Id": "0a65081b-9698-4f25-a7b3-81f214b8a306",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-09-14T00:00:00Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Governance"
+      "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-18T00:06:57.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     },
     {
       "ChangeList": [
