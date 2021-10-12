@@ -1,6 +1,6 @@
 ---
 title: "meetingSpeaker resource type"
-description: "Contains information about online meeting speaker."
+description: "Represents the speaker of an online meeting that has registration enabled."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Speaker of an online meeting that has registration enabled.
+Represents the speaker of an online meeting that has registration enabled.
 
 ## Properties
 
