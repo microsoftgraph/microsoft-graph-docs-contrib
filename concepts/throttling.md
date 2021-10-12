@@ -2,6 +2,7 @@
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 author: "davidmu1"
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.localizationpriority: high
 ---
@@ -287,9 +288,9 @@ Other factors that affect a request cost:
 
 ### Identity and access reports service limits
 
-| Request type |  Limit per app per tenant | Limit per tenant for all apps |
-| ------------ | ------------------------ | ------------------------ |
-| Any | 60 requests per 60 seconds |60 requests per 60 seconds |
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 60 requests per 60 seconds |
 
 The preceding limits apply to the following resources:
 
