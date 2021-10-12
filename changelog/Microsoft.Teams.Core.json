@@ -385,7 +385,40 @@
       "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-06-14T16:05:49.407Z",
+      "CreatedDateTime": "2021-06-14T16:05:49.407Z","WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Added the ``shared`` member to the **channelMembershipType** enumeration.",
+          "Target": "channelMembershipType"
+        },
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the ``teamifyGroup`` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the ``createChannel`` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        }
+      ],
+      "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-15T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },

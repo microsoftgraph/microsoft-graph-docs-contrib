@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/joinedTeams
 GET /users/{id | user-principal-name}/joinedTeams
 ```
+> **Note**: These APIs don't return the parent team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
 This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
