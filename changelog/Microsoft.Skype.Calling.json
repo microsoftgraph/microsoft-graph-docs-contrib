@@ -24,16 +24,8 @@
           "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
           "ApiChange": "Method",
           "ChangedApiName": "transfer",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **transfer** method from the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
-          "Target": "transfer"
-        },
-        {
-          "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
-          "ApiChange": "Method",
-          "ChangedApiName": "transfer",
-          "ChangeType": "Addition",
-          "Description": "Added the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) method to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) method to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
           "Target": "transfer"
         }
       ],
@@ -68,16 +60,8 @@
           "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
           "ApiChange": "Method",
           "ChangedApiName": "transfer",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **transfer** method from the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
-          "Target": "transfer"
-        },
-        {
-          "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
-          "ApiChange": "Method",
-          "ChangedApiName": "transfer",
-          "ChangeType": "Addition",
-          "Description": "Added the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) method to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) method to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
           "Target": "transfer"
         }
       ],
