@@ -27,7 +27,7 @@ Using the custom security attributes API, you can do the following actions:
 
 To call the custom security attributes API, you must have the appropriate [custom security attributes permissions](/graph/permissions-reference#custom-security-attributes-permissions).
 
-The signed-in user must also be assigned one of the following custom security attribute roles. By default, Global Administrator and other administrator roles do not have permissions to read, filter, define, manage, or assign custom security attributes.
+The signed-in user must also be assigned one of the following custom security attribute roles. By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
 
 - [Attribute Definition Reader](/azure/active-directory/roles/permissions-reference#attribute-definition-reader)
 - [Attribute Definition Administrator](/azure/active-directory/roles/permissions-reference#attribute-definition-administrator)

@@ -24,10 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|CustomSecAttributeDefinition.ReadWrite.All, CustomSecAttributeAssignment.ReadWrite.All|
 
 The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
+
 + Attribute Definition Reader
 + Attribute Assignment Reader
 + Attribute Definition Administrator
 + Attribute Assignment Administrator
+
 By default, Global Administrator and other administrator roles do not have permissions to define, read, or assign custom security attributes.
 
 ## HTTP request
