@@ -77,11 +77,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "tocPath": "",
   "suppressions": [
       "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.ediscovery.caseSettings"
-  ],
-  [
-      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n       Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.managedTenants.setting"
   ]
-
 }-->
 
 
