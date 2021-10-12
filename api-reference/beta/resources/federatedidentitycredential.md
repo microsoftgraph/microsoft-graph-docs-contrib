@@ -17,7 +17,7 @@ Resource that holds references to an application's federated identity credential
 
 Inherits from [entity](../resources/entity.md).
 
->**NOTE:** This resource is not available in [national cloud](concepts/deployments) deployments.
+>**NOTE:** This resource is not available in [national cloud](/graph/deployments) deployments.
 
 ## Methods
 |Method|Return type|Description|
