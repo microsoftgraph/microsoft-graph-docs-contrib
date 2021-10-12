@@ -12161,17 +12161,6 @@ items:
               href: api/accesspackageresourcerequest-list.md
             - name: Create
               href: api/accesspackageresourcerequest-post.md
-          - name: Access package resource attribute
-            href: resources/accesspackageresourceattribute.md
-            items:
-            - name: Attribute Destination
-              href: resources/accesspackageresourceattributedestination.md
-            - name: Attribute Question
-              href: resources/accesspackageresourceattributequestion.md
-            - name: Attribute Source
-              href: resources/accesspackageresourceattributesource.md
-            - name: User directory attribute store
-              href: resources/accesspackageuserdirectoryattributestore.md
           - name: Access package resource environment
             href: resources/accesspackageresourceenvironment.md
             items:
