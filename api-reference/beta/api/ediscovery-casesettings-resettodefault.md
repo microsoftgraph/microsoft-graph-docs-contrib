@@ -1,6 +1,6 @@
 ---
 title: "caseSettings: resetToDefault"
-description: "Resets the case settings to the default values."
+description: "Reset a caseSetting object to the default values."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset the [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
+Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 
 ## Permissions
 
@@ -64,11 +64,9 @@ If successful, this action returns a `200 OK` response code.
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
----
-
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
