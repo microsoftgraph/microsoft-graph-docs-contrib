@@ -29,7 +29,7 @@ Used in the request, approval, and assignment review settings of an [access pack
 
 ## JSON representation
 
-The following is a JSON representation of userSet. A [userSet]() is an abstract base class and so would not be sent or received.  Instead, one of the following `@odata.type` values representing the inherited types would be used:
+The following is a JSON representation of userSet. A [userSet](userset.md) is an abstract base class and so would not be sent or received.  Instead, one of the following `@odata.type` values representing the inherited types would be used:
 + `#microsoft.graph.singleUser`
 + `#microsoft.graph.groupMembers`
 + `#microsoft.graph.connectedOrganizationMembers`
@@ -47,6 +47,7 @@ The following is a JSON representation of userSet. A [userSet]() is an abstract 
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.userSet",
   "isBackup": false
 }
 ```
