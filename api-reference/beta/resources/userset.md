@@ -47,7 +47,7 @@ The following is a JSON representation of userSet. A [userSet]() is an abstract 
 
 ```json
 {
-  "@odata.type": "microsoft.graph.userSet",
+  "@odata.type": "#microsoft.graph.userSet",
   "isBackup": false
 }
 ```
