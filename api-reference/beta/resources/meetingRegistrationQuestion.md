@@ -1,6 +1,6 @@
 ---
 title: "meetingRegistrationQuestion resource type"
-description: "Registration question information of an online meeting."
+description: "Represents a custom registration question, other than first name, last name, and email address, associated with a meetingRegistration."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
