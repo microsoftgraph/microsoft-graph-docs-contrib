@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollFreeNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollFreeNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        }
+      ],
+      "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-06T23:50:40.2068677Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
           "ApiChange": "Resource",
           "ChangedApiName": "startHoldMusicOperation",

@@ -43,10 +43,10 @@ POST /directoryObjects/getByIds
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-type  | string | application/json. Required.  |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-type  | application/json. Required.  |
 
 ## Request body
 

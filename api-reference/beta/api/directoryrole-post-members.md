@@ -33,9 +33,9 @@ POST /directoryRoles/{role-id}/members/$ref
 POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
 
 ## Request body

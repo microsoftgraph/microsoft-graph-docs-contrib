@@ -1563,7 +1563,7 @@ items:
             href: api/ediscovery-case-delete.md
           - name: Close
             href: api/ediscovery-case-close.md
-          - name: Reopen 
+          - name: Reopen
             href: api/ediscovery-case-reopen.md
           - name: List custodians
             href: api/ediscovery-case-list-custodians.md
@@ -11336,38 +11336,6 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events (deprecated)
-            items:
-            - name: Identity risk event
-              href: resources/identityriskevent.md
-            - name: List identityRiskEvent
-              href: api/identityriskevent-list.md
-            - name: Get identityRiskEvent
-              href: api/identityriskevent-get.md
-            - name: List anonymousIpRiskEvent
-              href: api/anonymousipriskevent-list.md
-            - name: Get anonymousIpRiskEvent
-              href: api/anonymousipriskevent-get.md
-            - name: List impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-list.md
-            - name: Get impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-get.md
-            - name: List leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-list.md
-            - name: Get leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-get.md
-            - name: List malwareRiskEvent
-              href: api/malwareriskevent-list.md
-            - name: Get malwareRiskEvent
-              href: api/malwareriskevent-get.md
-            - name: List suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-list.md
-            - name: Get suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-get.md
-            - name: List unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-list.md
-            - name: Get unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
             items:
             - name: Risk detection
@@ -11464,8 +11432,6 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-          - name: Delete
-            href: api/organizationalbranding-delete.md
           - name: Branding localization
             href: resources/organizationalbrandinglocalization.md
             items:
@@ -11569,7 +11535,7 @@ items:
             - name: Get
               href: api/authenticationflowspolicy-get.md
             - name: Update
-              href: api/authenticationflowspolicy-update.md          
+              href: api/authenticationflowspolicy-update.md
           - name: Authentication methods policy
             items:
             - name: Overview
@@ -14758,6 +14724,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range
