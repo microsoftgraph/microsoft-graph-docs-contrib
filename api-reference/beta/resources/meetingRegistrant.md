@@ -4,7 +4,6 @@ description: "Represents a meeting registrant who has enrolled in an online meet
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
-ms.date: 09/30/2021
 doc_type: resourcePageType
 ---
 
