@@ -1,6 +1,6 @@
 ---
 title: "Update caseSettings"
-description: "Update the properties of an eDiscovery case settings object."
+description: "Update the properties of an eDiscovery caseSettings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -89,7 +89,7 @@ Content-length: 350
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
