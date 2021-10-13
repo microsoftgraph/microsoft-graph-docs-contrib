@@ -45,8 +45,8 @@ In the request body, supply only the value of properties that need to be updated
 
 > [!TIP]
 >
->- All non-readonly properties can be updated except **allowedRegistrant**.
->- Navigation property **customQuestions** cannot be updated in line. Use [update custom question](meetingRegistration-get.md) method to update it.
+>- All properties that are not read only can be updated, with the exception of the **allowedRegistrant** property.
+>- The **customQuestions** navigation property cannot be updated; use the [Update meetingRegistrationQuestion](meetingregistrationquestion-update.md) method to update it.
 >- When updating **speakers**, always supply a full list of speakers.
 
 ## Response
