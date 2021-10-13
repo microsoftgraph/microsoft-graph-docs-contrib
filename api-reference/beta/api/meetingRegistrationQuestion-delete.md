@@ -1,6 +1,6 @@
 ---
 title: "Delete meetingRegistrationQuestion"
-description: "Delete custom meeting registration question."
+description: "Delete a custom meeting registration question from an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [custom registration question](../resources/meetingRegistrationQuestion.md) of a [meetingRegistration](../resources/meetingRegistration.md) object.
+Delete a [custom registration question](../resources/meetingRegistrationQuestion.md) from a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 ## Permissions
 
