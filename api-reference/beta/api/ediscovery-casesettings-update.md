@@ -1,5 +1,5 @@
 ---
-title: "Update case settings"
+title: "Update caseSettings"
 description: "Update the properties of an eDiscovery case settings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update case settings
+# Update caseSettings
 
 Namespace: microsoft.graph.ediscovery
 

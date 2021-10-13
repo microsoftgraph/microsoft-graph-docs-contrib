@@ -1,5 +1,5 @@
 ---
-title: "Get case settings"
+title: "Get caseSettings"
 description: "Read the properties and relationships of an eDiscovery case settings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Get case settings
+# Get caseSettings
 
 Namespace: microsoft.graph.ediscovery
 

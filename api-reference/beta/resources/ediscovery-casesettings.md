@@ -1,5 +1,5 @@
 ---
-title: "caseSettings resource type (eDiscovery)"
+title: "caseSettings resource type"
 description: "Settings for an eDiscovery case"
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# caseSettings resource type (eDiscovery)
+# caseSettings resource type
 
 Namespace: microsoft.graph.ediscovery
 
