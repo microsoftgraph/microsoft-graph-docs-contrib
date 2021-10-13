@@ -33,6 +33,8 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
+The available `$expand` options for this method are: `outcomes`, `resources`, `submittedResources` and `*` which includes all the previous options.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -44,7 +46,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
-## Example
+## Example 1: Get Submissions
 ### Request
 The following is an example of the request.
 
@@ -130,6 +132,134 @@ Content-length: 873
                     "displayName": null
                 }
             }
+        }
+    ]
+}
+```
+
+## Example 2: Get Submissions with $expand options
+### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
+  "name": "get_submissions_expand"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
+```
+
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions(outcomes())",
+    "value": [
+        {
+            "status": "returned",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": "2021-10-13T15:57:00.0349869Z",
+            "resourcesFolderUrl": null,
+            "id": "9bc724ee-d314-1ec5-725d-5f81228e85a6",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
+            "outcomes": [
+                {
+                    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+                    "lastModifiedBy": null,
+                    "feedback": null,
+                    "publishedFeedback": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationPointsOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+                    "lastModifiedBy": null,
+                    "points": null,
+                    "publishedPoints": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationRubricOutcome",
+                    "lastModifiedDateTime": "2021-10-13T15:57:00.0076092Z",
+                    "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+                    "lastModifiedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "rubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "rubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ],
+                    "publishedRubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "publishedRubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
