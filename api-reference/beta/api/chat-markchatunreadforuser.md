@@ -1,5 +1,5 @@
 ---
-title: "chat: markChatUnreadForUser"
+title: "Mark chat unread for a user"
 description: "This API will enable the callers to mark a chat as unread, from the given time."
 author: "sweta-thapliyal"
 ms.localizationpriority: Normal
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /chats/{chatsId}/markChatUnreadForUser
+POST /chats/{chat-id}/markChatUnreadForUser
 ```
 
 ## Request headers
@@ -46,9 +46,9 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated, a user may only hide chat for themselves**.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unread the chat for. **In delegated, a user may only hide chat for themselves**.|
 |tenantId|String|Tenant id of the user.|
-|lastMessageReadDateTime|DateTimeOffset|Time since the chat has to be marked unread|
+|lastMessageReadDateTime|DateTimeOffset|Timestamp indicating the time after which all the which are sent and received are to be marked as unread|
 
 > **Note:** lastMessageReadDateTime is optional in request. If not mentioned, the last message would be marked as Unread.
 
@@ -65,16 +65,16 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/chats/{chatsId}/markChatUnreadForUser
+POST https://graph.microsoft.com/beta/chats/19:7d898072-792c-4006-bb10-5ca9f2590649_8ea0e38b-efb3-4757-924a-5f94061cf8c2@unq.gbl.spaces/markChatUnreadForUser
 Content-Type: application/json
 Content-length: 158
 
 {
   "user": {
-    "@odata.type": "microsoft.graph.teamworkUserIdentity"
+    "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
   },
-  "tenantId": "String",
-  "lastMessageReadDateTime": "String (timestamp)"
+  "tenantId": "2a690434-97d9-4eed-83a6-f5f13600199a",
+  "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
 }
 ```
 
