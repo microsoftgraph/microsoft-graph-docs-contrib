@@ -1,6 +1,6 @@
 ---
 title: "Update meetingRegistrationQuestion"
-description: "Update custom meeting registration question."
+description: "Update a custom meeting registration question associated with ."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
