@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeDefinition resource type"
-description: "The schema of a custom security attribute (key-value pair)."
+description: "An object that that represents the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
+An object that represent the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
+
+Up to 500 active objects can be defined in a tenant. The **customSecurityAttributeDefiniton** object can't be deleted, but can be deactivated by using the [Update customSecurityAttributeDefinition](../api/customsecurityattributedefinition-update.md) operation.
 
 ## Methods
 |Method|Return type|Description|
