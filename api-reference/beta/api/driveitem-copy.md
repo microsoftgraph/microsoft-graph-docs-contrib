@@ -104,9 +104,9 @@ Content-Type: application/json
 
 ---
 
-<!-- { "blockType": "response" } -->
-### Response
 
+### Response
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
