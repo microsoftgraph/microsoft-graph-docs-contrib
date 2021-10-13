@@ -1,6 +1,6 @@
 ---
 title: "Get customRegistrationQuestion"
-description: "Get custom meeting registration question."
+description: "Get a custom meeting registration question associated with a meetingRegistration object."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a custom registration question of a [meetingRegistration](../resources/meetingRegistration.md) by id.
+Get a [custom registration question](../resources/meetingRegistrationquestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ To get a custom registration question by ID with delegated permission:
 GET /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
 ```
 
-- `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
+> **Note:** `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
 
 ## Optional query parameters
 
