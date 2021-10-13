@@ -1,6 +1,6 @@
 ---
 title: "List meeting registration questions"
-description: "List custom meeting registration questions."
+description: "Get a list of the custom registration questions associated with a meetingRegistration object."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all custom registration questions of a [meetingRegistration](../resources/meetingRegistration.md).
+Get a list of the [custom registration questions](../resources/meetingregistrationquestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 > [!TIP]
-> Custom registration questions can be listed in line when getting a meeting registration. See [Get registration](meetingRegistration-get.md).
+> You can also use the [Get meetingRegistration](meetingregistration-get.md) operation to get custom registration questions.
 
 ## Permissions
 
