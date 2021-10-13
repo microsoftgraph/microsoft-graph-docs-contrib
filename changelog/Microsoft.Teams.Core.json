@@ -2,6 +2,50 @@
 
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
+          "ApiChange": "Property",
+          "ChangedApiName": "membershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-07-24T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true) method to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-1.0) resource type.",
+          "Target": "channel"
+        },
+        {
+          "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) method to the [chat](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0) resource type.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "1665cfa5-4613-4eb8-b402-76f28b1faec5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-01T19:45:07.457Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",

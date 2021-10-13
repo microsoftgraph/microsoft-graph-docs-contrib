@@ -11,11 +11,22 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### authenticatorAppFeatureSettings values
+### multiFactorAuthConfiguration values
 
-|Member|
-|:---|
-|requireNumberMatching|
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| notRequired        | 0     | No multifactor authentication is required for a user to complete device registration.|
+| required           | 1     | Multifactor authentication is required for a user to complete device registration.|
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.|
+
+### policyScope values
+
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| none               | 0     | The policy does not apply to any users or groups in the organization. |
+| all                | 1     | The policy applies to all users and groups in the organization. Default value. |
+| selected           | 2     | The policy applies to specific users or groups in the organization. |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use. |
 
 ### appCredentialRestrictionType values
 
@@ -813,13 +824,6 @@ Namespace: microsoft.graph
 |allow|
 |block|
 |unknownFutureValue|
-
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
 
 ### anniversaryType values
 
@@ -2544,3 +2548,9 @@ Possible values for user account types (group membership), per Windows definitio
 |meeting|
 |screenShare|
 |unknownFutureValue|
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|

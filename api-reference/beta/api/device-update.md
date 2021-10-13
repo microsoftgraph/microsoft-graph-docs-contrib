@@ -13,16 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a device.
-
-Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+Update the properties of a device. Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -36,9 +34,9 @@ PATCH /devices/{id}
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       |Description|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
