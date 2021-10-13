@@ -37,6 +37,9 @@ GET /me/onlineMeetings/{id}/registration
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
+> [!TIP]
+> The **customQuestions** property is not returned by default. To retrieve **customQuestions** in line, use the `expand` query option, as shown in the example later in this topic.
+
 ## Request headers
 
 | Name            | Description               |
@@ -50,9 +53,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
-
-> [!TIP]
-> **customQuestions** is a navigation property that by default is not returned in the response body. To retrieve **customQuestions** in line, use `expand` query option. See [example](#example).
 
 ## Example
 

@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistrant",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistrant](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrant?view=graph-rest-beta) resource",
+          "Description": "Added the [meetingRegistrant](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrant?view=graph-rest-beta) resource and associated methods.",
           "Target": "meetingRegistrant"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistration",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistration](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistration?view=graph-rest-beta) resource",
+          "Description": "Added the [meetingRegistration](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistration?view=graph-rest-beta) resource and associated methods.",
           "Target": "meetingRegistration"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistrationQuestion",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistrationQuestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrationQuestion?view=graph-rest-beta) resource",
+          "Description": "Added the [meetingRegistrationQuestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrationQuestion?view=graph-rest-beta) resource and associated methods.",
           "Target": "meetingRegistrationQuestion"
         }
       ],

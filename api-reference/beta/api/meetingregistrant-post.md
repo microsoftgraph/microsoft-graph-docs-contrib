@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | OnlineMeetings.Read.All |
 
 > [!TIP]
+>
 > - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, use the registrant's delegated permission to enroll.
 > - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, use the registrant's delegated permission to enroll.
 

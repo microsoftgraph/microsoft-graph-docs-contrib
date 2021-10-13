@@ -1,5 +1,5 @@
 ---
-title: "Delete customRegistrationQuestion"
+title: "Delete meetingRegistrationQuestion"
 description: "Delete custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete customRegistrationQuestion
+# Delete meetingRegistrationQuestion
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a custom registration question of a [meetingRegistration](../resources/meetingRegistration.md) by id.
+Delete a [custom registration question](../resources/meetingRegistrationQuestion.md) of a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 ## Permissions
 

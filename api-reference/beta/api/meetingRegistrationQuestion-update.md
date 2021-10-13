@@ -1,5 +1,5 @@
 ---
-title: "Update customRegistrationQuestion"
+title: "Update meetingRegistrationQuestion"
 description: "Update custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update customRegistrationQuestion
+# Update meetingRegistrationQuestion
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a custom registration questions of a [meetingRegistration](../resources/meetingRegistration.md) by id.
+Update a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ PATCH /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
 
 ## Response
 

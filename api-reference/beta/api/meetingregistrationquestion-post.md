@@ -1,5 +1,5 @@
 ---
-title: "Create customRegistrationQuestion"
+title: "Create meetingRegistrationQuestion"
 description: "Create custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,16 +7,16 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create customRegistrationQuestion
+# Create meetingRegistrationQuestion
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a custom question of a [meetingRegistration](../resources/meetingRegistration.md).
+Create a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 > [!TIP]
-> Custom registration questions can be created in line upon creating a meeting registration. See [Create registration](meetingRegistration-post.md).
+> You can create custom registration questions in line when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
 
 ## Permissions
 
