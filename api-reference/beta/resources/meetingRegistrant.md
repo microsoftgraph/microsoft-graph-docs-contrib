@@ -20,7 +20,7 @@ Represents a meeting registrant who has enrolled in an [online meeting](onlineme
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
 |[List](../api/meetingRegistrant-list.md) | [meetingRegistrant](meetingRegistrant.md) | List all registrants who have enrolled in the meeting. |
-|[Create](../api/meetingRegistrant-create.md) | [meetingRegistrant](meetingRegistrant.md) | Enroll a registrant in an online meeting. |
+|[Create](../api/meetingRegistrant-post.md) | [meetingRegistrant](meetingRegistrant.md) | Enroll a registrant in an online meeting. |
 |[Delete](../api/meetingRegistrant-delete.md) | [meetingRegistrant](meetingRegistrant.md) | Unenroll a registrant from an online meeting. |
 
 ## Properties

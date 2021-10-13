@@ -20,7 +20,7 @@ Represents a custom registration question, other than first name, last name, and
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
 |[List](../api/meetingRegistrationQuestion-list.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection | List all custom registration questions. |
-|[Create](../api/meetingRegistrationQuestion-create.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Create a custom registration question. |
+|[Create](../api/meetingRegistrationQuestion-post.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Create a custom registration question. |
 |[Get](../api/meetingRegistrationQuestion-get.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Get a custom registration question. |
 |[Update](../api/meetingRegistrationQuestion-update.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Update a custom registration question. |
 |[Delete](../api/meetingRegistrationQuestion-delete.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Delete a custom registration question. |

@@ -1533,7 +1533,7 @@ items:
             href: resources/meetingRegistration.md
             items:
             - name: Create
-              href: api/meetingRegistration-create.md
+              href: api/meetingRegistration-post.md
             - name: Get
               href: api/meetingRegistration-get.md
             - name: Update
@@ -1546,7 +1546,7 @@ items:
               - name: List
                 href: api/meetingRegistrant-list.md
               - name: Create
-                href: api/meetingRegistrant-create.md
+                href: api/meetingRegistrant-post.md
               - name: Delete
                 href: api/meetingRegistrant-delete.md
       - name: Presence

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a custom question of a [meetingRegistration](../resources/meetingRegistration.md).
 
 > [!TIP]
-> Custom registration questions can be created in line upon creating a meeting registration. See [Create registration](meetingRegistration-create.md).
+> Custom registration questions can be created in line upon creating a meeting registration. See [Create registration](meetingRegistration-post.md).
 
 ## Permissions
 
