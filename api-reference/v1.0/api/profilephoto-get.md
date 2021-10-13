@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
 |Application      |    User.Read.All, User.ReadWrite.All           |
 
 ### To retrieve the profile photo of a group
@@ -47,10 +47,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
 |Application      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Note:**  
+> 1. Metadata operation is not supported for personal Microsoft accounts. 
+> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 
