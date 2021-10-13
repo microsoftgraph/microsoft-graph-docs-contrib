@@ -1,6 +1,6 @@
 ---
 title: "Get caseSettings"
-description: "Read the properties and relationships of an eDiscovery case settings object."
+description: "Read the properties and relationships of an eDiscovery caseSettings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
