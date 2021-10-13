@@ -3,6 +3,78 @@
     {
       "ChangeList": [
         {
+          "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
+          "ApiChange": "Property",
+          "ChangedApiName": "participantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **participantId** property to the [participantInfo](https://docs.microsoft.com/en-us/graph/api/resources/participantInfo?view=graph-rest-beta) resource.",
+          "Target": "participantInfo"
+        }
+      ],
+      "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-12T21:32:00.9962748Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
+          "ApiChange": "Method",
+          "ChangedApiName": "transfer",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
+          "Target": "transfer"
+        }
+      ],
+      "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970658Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fafd48cb-8876-431e-890d-3db8d3a4cbe1",
+          "ApiChange": "Property",
+          "ChangedApiName": "participantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **participantId** property to [participantInfo](https://docs.microsoft.com/en-us/graph/api/resources/participantInfo?view=graph-rest-1.0) resource.",
+          "Target": "participantInfo"
+        }
+      ],
+      "Id": "fafd48cb-8876-431e-890d-3db8d3a4cbe1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970709Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
+          "ApiChange": "Method",
+          "ChangedApiName": "transfer",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
+          "Target": "transfer"
+        }
+      ],
+      "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970722Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
           "ApiChange": "Property",
           "ChangedApiName": "tollFreeNumbers",
