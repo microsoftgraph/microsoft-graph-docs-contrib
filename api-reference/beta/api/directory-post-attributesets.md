@@ -44,19 +44,13 @@ POST /directory/attributeSets
 ## Request body
 In the request body, supply a JSON representation of the [attributeSet](../resources/attributeset.md) object.
 
-The following table shows the properties that are required when you create the [attributeSet](../resources/attributeset.md).
+The following table shows the properties that you can configure when you create the [attributeSet](../resources/attributeset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier for the attribute set that is unique within a tenant.|
-
-
-The following table shows the properties that are optional when you create the [attributeSet](../resources/attributeset.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|Description of the attribute set.|
-|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Value is null by default. When an attribute set is created, if the value is not specified, the administrator can assign as many attributes to a attribute set in that case. The maximum number of attributes per attribute set is controlled by the maximum number of attributes that can be created in the tenant, which is 500 attributes.|
+|description|String|Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later. Optional.|
+|id|String|Identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Required.|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later. Optional.|
 
 
 ## Response

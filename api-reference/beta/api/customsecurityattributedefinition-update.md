@@ -42,15 +42,15 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
+In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
 The following table specifies the properties that can be updated. 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Description of the custom security attribute. Can be changed later.|
-|status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Can be changed later.|
-|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true. If `type` is set to Boolean, `usePreDefinedValuesOnly` cannot be set to true.|
+|description|String|Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Optional.|
+|status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Optional.|
+|usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can be changed from true to false, but cannot be changed from false to true. If `type` is set to Boolean, `usePreDefinedValuesOnly` cannot be set to true. Optional.|
 
 
 

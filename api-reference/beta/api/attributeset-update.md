@@ -42,14 +42,14 @@ PATCH /directory/attributeSets/{attributeSetId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [attributeSet](../resources/attributeset.md) object.
+In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
-The following table shows the properties that you can update for the [attributeSet](../resources/attributeset.md).
+The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Description of the attribute set.|
-|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Value is null by default. When an attribute set is created, if the value is not specified, the administrator can assign as many attributes to a attribute set in that case. The maximum number of attributes per attribute set is controlled by the maximum number of attributes that can be created in the tenant, which is 500 attributes.|
+|description|String|Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Optional.|
+|maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Optional.|
 
 
 
