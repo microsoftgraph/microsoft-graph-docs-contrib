@@ -1,5 +1,5 @@
 ---
-title: "Delete custom registration question"
+title: "Delete customRegistrationQuestion"
 description: "Delete custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete custom registration question
+# Delete customRegistrationQuestion
 
 Namespace: microsoft.graph
 
@@ -27,13 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get a custom registration question by id with delegated permission:
+To get a custom registration question by ID with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
 ```
 
-- `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
+> [!NOTE]
+> `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
 
 ## Request headers
 

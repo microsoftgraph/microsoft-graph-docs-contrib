@@ -1,5 +1,5 @@
 ---
-title: "Update meeting registration"
+title: "Update meetingRegistration"
 description: "Update meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update meeting registration
+# Update meetingRegistration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update registration of an [onlineMeeting](../resources/onlinemeeting.md).
+Update the details of a [meetingRegistration](../resources/meetingregistration.md) object assciated with an [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Permissions
 
@@ -72,12 +72,12 @@ Content-Type: application/json
   "endDateTime":"2021-11-02T15:45:00-08:00",
   "speakers": [
     {
-      "displayName": "Satya Nadella",
-      "bio": "Chairman and Chief Executive Officer, Microsoft"
+      "displayName": "John Doe",
+      "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Vasu Jakkal",
-      "bio": "CVP, Microsoft Security, Compliance & Identity, Microsoft"
+      "displayName": "Foo Bar",
+      "bio": "CVP, Microsoft Security, Compliance & Identity"
     }
   ]
 }
@@ -108,12 +108,12 @@ Content-Type: application/json
   "registrationPageViewCount": null,
   "speakers": [
     {
-      "displayName": "Satya Nadella",
-      "bio": "Chairman and Chief Executive Officer, Microsoft"
+      "displayName": "John Doe",
+      "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Vasu Jakkal",
-      "bio": "CVP, Microsoft Security, Compliance & Identity, Microsoft"
+      "displayName": "Foo Bar",
+      "bio": "CVP, Microsoft Security, Compliance & Identity"
     }
   ]
 }

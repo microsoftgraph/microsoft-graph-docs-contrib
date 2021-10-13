@@ -1,5 +1,5 @@
 ---
-title: "Create custom registration question"
+title: "Create customRegistrationQuestion"
 description: "Create custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create custom registration question
+# Create customRegistrationQuestion
 
 Namespace: microsoft.graph
 

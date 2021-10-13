@@ -1,5 +1,5 @@
 ---
-title: "Update custom registration question"
+title: "Update customRegistrationQuestion"
 description: "Update custom meeting registration question."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update custom registration question
+# Update customRegistrationQuestion
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update a custom registration question by id with delegated permission:
+To update a custom registration question by ID with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object in the response body.
 
 ## Example
 

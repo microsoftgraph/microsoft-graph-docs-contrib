@@ -35,6 +35,10 @@ To list all registrants of an online meeting with delegated permission:
 GET /me/onlineMeetings/{id}/registration/registrants
 ```
 
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name            | Description               |

@@ -1,5 +1,5 @@
 ---
-title: "Create meeting registration"
+title: "Create meetingRegistration"
 description: "Create and enable meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create meeting registration
+# Create meetingRegistration
 
 Namespace: microsoft.graph
 
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and [meetingReg
 > [!NOTE]
 >
 >- The **registrationPageViewCount** property is not returned in the response body of this method. Use the [Get meetingRegistration](meetingRegistration-get.md) method to retrieve that property.
->- **customQuestions** is a related resource that can only be created, but not returned. Use the [Get meetingRegistration](meetingRegistration-get.md) or [Get custom questions](meetingRegistration-get.md) method to retrieve it.
+>- **customQuestions** is a related resource that can only be created, but not returned. Use the [Get meetingRegistration](meetingRegistration-get.md) or [Get custom questions](meetingregistrationquestion-get.md) method to retrieve it.
 
 ## Example
 
@@ -75,12 +75,12 @@ Content-Type: application/json
   "allowedRegistrant": "everyone",
   "speakers": [
     {
-      "displayName": "Satya Nadella",
-      "bio": "Chairman and Chief Executive Officer, Microsoft"
+      "displayName": "John Doe",
+      "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Scott Guthrie",
-      "bio": "EVP, Cloud and AI Group, Microsoft"
+      "displayName": "Jane Doe",
+      "bio": "EVP, Cloud and AI Group"
     }
   ],
   "customQuestions": [
@@ -124,12 +124,12 @@ Content-Type: application/json
   "registrationPageViewCount": null,
   "speakers": [
     {
-      "displayName": "Satya Nadella",
-      "bio": "Chairman and Chief Executive Officer, Microsoft"
+      "displayName": "John Doe",
+      "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Scott Guthrie",
-      "bio": "EVP, Cloud and AI Group, Microsoft"
+      "displayName": "Jane Doe",
+      "bio": "EVP, Cloud and AI Group"
     }
   ]
 }

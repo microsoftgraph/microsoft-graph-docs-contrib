@@ -1,5 +1,5 @@
 ---
-title: "Get meeting registration"
+title: "Get meetingRegistration"
 description: "Get registration information of an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get meeting registration
+# Get meetingRegistration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get registration of an [onlineMeeting](../resources/onlinemeeting.md).
+Get the [meetingRegistration](../resources/meetingregistration.md) details associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Permissions
 
@@ -32,6 +32,10 @@ To get registration of an online meeting with delegated permission:
 ```http
 GET /me/onlineMeetings/{id}/registration
 ```
+
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -88,12 +92,12 @@ Content-Type: application/json
   "registrationPageViewCount": 0,
   "speakers": [
     {
-      "displayName": "Satya Nadella",
-      "bio": "Chairman and Chief Executive Officer, Microsoft"
+      "displayName": "John Doe",
+      "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Scott Guthrie",
-      "bio": "EVP, Cloud and AI Group, Microsoft"
+      "displayName": "Jane Doe",
+      "bio": "EVP, Cloud and AI Group"
     }
   ],
   "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/customQuestions",

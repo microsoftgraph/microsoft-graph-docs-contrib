@@ -1,5 +1,5 @@
 ---
-title: "Delete meeting registration"
+title: "Delete meetingRegistration"
 description: "Delete and disable meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete meeting registration
+# Delete meetingRegistration
 
 Namespace: microsoft.graph
 

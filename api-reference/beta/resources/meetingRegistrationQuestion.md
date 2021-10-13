@@ -33,7 +33,7 @@ Represents a custom registration question, other than first name, last name, and
 | answerOptions | String collection | Answer options when **answerInputType** is `radioButton`. |
 | displayName | String | Display name of the custom registration question. |
 | id | String | ID of the custom registration question. Read-only. |
-| isRequired | Boolean | Indicates whether the question is required. |
+| isRequired | Boolean | Indicates whether the question is required. Default value is `false`. |
 
 ### answerInputType values
 

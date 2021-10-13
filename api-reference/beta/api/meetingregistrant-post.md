@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 Enroll a registrant. This operation has two scenarios:
 
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
--  If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
+- If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
 
-In either scenario, the registrant will receive an email notification that contains their registration information. 
+In either scenario, the registrant will receive an email notification that contains their registration information.
 
 ## Permissions
 
