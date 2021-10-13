@@ -94,8 +94,8 @@ Content-Type: application/json
             "maxAttributesPerSet": 25
         },
         {
-            "description": "Attributes for operations team",
-            "id": "Operations",
+            "description": "Attributes for marketing team",
+            "id": "Marketing",
             "maxAttributesPerSet": 25
         }
     ]
@@ -138,8 +138,8 @@ Content-Type: application/json
             "maxAttributesPerSet": 25
         },
         {
-            "description": "Attributes for operations team",
-            "id": "Operations",
+            "description": "Attributes for marketing team",
+            "id": "Marketing",
             "maxAttributesPerSet": 25
         }
     ]

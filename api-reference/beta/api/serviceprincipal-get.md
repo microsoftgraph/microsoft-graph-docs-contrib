@@ -212,7 +212,7 @@ Content-length: 491
             ],
             "Certification": true
         },
-        "Operations": {
+        "Marketing": {
             "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
             "Level": "Public"
         }
