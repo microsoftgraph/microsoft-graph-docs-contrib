@@ -2,7 +2,7 @@
 title: "List users"
 description: "List properties and relationships of the user objects."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -88,7 +88,6 @@ Content-Length: 136
   ]
 }
 ```
-
 
 
 

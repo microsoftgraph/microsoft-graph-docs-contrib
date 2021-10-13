@@ -2,7 +2,7 @@
 title: "provisionChannelEmailResult resource type"
 description: "Represents the result of a channel email provisioning operation."
 author: "anandab-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

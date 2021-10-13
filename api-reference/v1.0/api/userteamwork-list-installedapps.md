@@ -1,9 +1,9 @@
 ---
 title: "List apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 

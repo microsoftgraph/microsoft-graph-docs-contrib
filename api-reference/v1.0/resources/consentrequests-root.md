@@ -1,7 +1,7 @@
 ---
 title: "Azure Active Directory consent requests"
 description: "Use Azure AD consent requests to manage the request workflow for users attempting to access apps that require admin consent."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "governance"
 doc_type: conceptualPageType

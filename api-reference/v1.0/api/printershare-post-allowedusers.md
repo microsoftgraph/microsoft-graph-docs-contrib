@@ -2,7 +2,7 @@
 title: Create allowedUser for printerShare
 description: Grant the specified user access to submit print jobs to the associated printer share.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -232,7 +232,6 @@ Content-Length: 2359
   "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
-
 
 
 

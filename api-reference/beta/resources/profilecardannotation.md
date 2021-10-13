@@ -1,7 +1,7 @@
 ---
 title: "profileCardAnnotation resource type"
 description: "Allows an administrator to customize the appearance of selected fields in the Microsoft 365 profile card."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

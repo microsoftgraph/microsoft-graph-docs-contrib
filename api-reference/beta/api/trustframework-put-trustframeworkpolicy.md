@@ -1,7 +1,7 @@
 ---
 title: "Update trustFrameworkPolicy"
 description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

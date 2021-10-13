@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Update a file or folder
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Update the metadata for a DriveItem by ID or path."
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "List userExperienceAnalyticsAppHealthDevicePerformances"
 description: "List properties and relationships of the userExperienceAnalyticsAppHealthDevicePerformance objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 620
+Content-Length: 685
 
 {
   "value": [
@@ -72,6 +72,7 @@ Content-Length: 620
       "appCrashCount": 13,
       "crashedAppCount": 15,
       "appHangCount": 12,
+      "processedDateTime": "2017-01-01T00:03:22.2339319-08:00",
       "meanTimeToFailureInMinutes": 10,
       "deviceAppHealthScore": 6.666666666666667,
       "deviceAppHealthStatus": "Device App Health Status value",
@@ -81,7 +82,6 @@ Content-Length: 620
   ]
 }
 ```
-
 
 
 

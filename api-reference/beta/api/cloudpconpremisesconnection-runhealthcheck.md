@@ -1,8 +1,8 @@
 ---
 title: "CloudPcOnPremisesConnection: runHealthChecks"
-description: "Run health checks on the cloud PC on-premises connection."
+description: "Run health checks on the Cloud PC on-premises connection."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -17,7 +17,6 @@ Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpre
 
 This will trigger a new health check for this [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object and change the healthCheckStatus and [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) properties when check finished.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

@@ -2,7 +2,7 @@
 title: "getManagementConditionsForPlatform function"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Not yet documented|
+|platform|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Not yet documented|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

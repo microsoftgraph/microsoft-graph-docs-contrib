@@ -2,7 +2,7 @@
 title: "Microsoft Graph Windows Updates enumeration values"
 description: "Microsoft Graph Windows Updates enumeration values"
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: enumTypes
 ---

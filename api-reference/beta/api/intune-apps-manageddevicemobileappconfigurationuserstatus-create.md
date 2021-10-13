@@ -2,7 +2,7 @@
 title: "Create managedDeviceMobileAppConfigurationUserStatus"
 description: "Create a new managedDeviceMobileAppConfigurationUserStatus object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -97,7 +97,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Delete an appRoleAssignment granted for a service principal"
+title: "Delete appRoleAssignedTo"
 description: "Delete an appRoleAssignment granted for a service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
 ---
 
-# Delete an appRoleAssignment granted for a service principal
+# Delete appRoleAssignedTo
 
 Namespace: microsoft.graph
 
@@ -32,17 +32,17 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
+DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
+> As a best practice, we recommend you use this method to delete app role assignments, instead of the [Delete appRoleAssignments ](serviceprincipal-delete-approleassignments.md) method which deletes through the **appRoleAssignments** relationship of the assigned user, group, or service principal.
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -66,7 +66,7 @@ Here is an example of the request to delete an app role assignment from the reso
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
@@ -87,7 +87,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRo
 ---
 
 
-In this example, `{resource-SP-id}` would be the id of the resource service principal, and `{principalId}` would be the id of the assigned user, group, or client service principal.
+In this example, `{resource-SP-id}` is the id of the resource service principal, and `{appRoleAssignment-id}` is the id of the appRoleAssignment object that represents an assignment to the user, group, or client service principal.
 
 ### Response
 

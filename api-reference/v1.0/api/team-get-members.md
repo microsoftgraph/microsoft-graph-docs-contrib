@@ -1,8 +1,8 @@
 ---
 title: "Get member of team"
 description: "Get member of team."
-author: "laujan"
-localization_priority: Priority
+author: "akjo"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Create deviceManagementConfigurationPolicyAssignment"
 description: "Create a new deviceManagementConfigurationPolicyAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -50,6 +50,8 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|The key of the assignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for the DeviceManagementConfigurationPolicy.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device compliance policy, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|The identifier of the source of the assignment.|
 
 
 
@@ -63,7 +65,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
 Content-type: application/json
-Content-length: 404
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
@@ -72,7 +74,9 @@ Content-length: 404
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
     "collectionId": "Collection Id value"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -81,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 453
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
@@ -91,10 +95,11 @@ Content-Length: 453
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
     "collectionId": "Collection Id value"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
-
 
 
 

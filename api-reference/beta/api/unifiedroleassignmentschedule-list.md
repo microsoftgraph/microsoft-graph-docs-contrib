@@ -1,8 +1,8 @@
 ---
 title: "List unifiedRoleAssignmentSchedules"
 description: "Get a list of the unifiedRoleAssignmentSchedule objects and their properties."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory	|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory	|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -82,7 +82,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,22 +97,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilitySchedule)",
   "value": [
     {
-      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-      "createdDateTime": "2020-09-09T21:35:27.91Z",
-      "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "status": "Provsioned",
+      "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
+      "id": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+      "appScopeId": null,
+      "createdUsing": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f",
+      "createdDateTime": "2021-07-27T14:03:04.4Z",
+      "modifiedDateTime": "0001-01-01T08:00:00Z",
+      "status": "Provisioned",
+      "memberType": "Direct",
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "eligible",
-      "memberType": "direct"
+        "startDateTime": "2021-07-27T14:03:04.4Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "noExpiration",
+          "endDateTime": null,
+          "duration": null
+        }
+      }
     }
   ]
 }

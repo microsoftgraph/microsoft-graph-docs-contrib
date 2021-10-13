@@ -1,7 +1,7 @@
 ---
 title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "resourcePageType"

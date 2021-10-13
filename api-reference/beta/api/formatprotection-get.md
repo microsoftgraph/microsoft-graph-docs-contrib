@@ -1,7 +1,7 @@
 ---
 title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.prod: ""

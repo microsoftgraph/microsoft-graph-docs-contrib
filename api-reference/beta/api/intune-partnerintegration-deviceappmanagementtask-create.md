@@ -2,7 +2,7 @@
 title: "Create deviceAppManagementTask"
 description: "Create a new deviceAppManagementTask object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -110,7 +110,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

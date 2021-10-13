@@ -2,7 +2,7 @@
 title: "Update roleManagement"
 description: "Update the properties of a roleManagement object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -81,7 +81,6 @@ Content-Length: 105
   "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
 }
 ```
-
 
 
 

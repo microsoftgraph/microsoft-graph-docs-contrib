@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsWorkFromAnywhereDevicesSummary resource type"
 description: "The user experience analytics Work From Anywhere metrics devices summary."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -23,6 +23,7 @@ The user experience analytics Work From Anywhere metrics devices summary.
 |autopilotDevicesSummary|[userExperienceAnalyticsAutopilotDevicesSummary](../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md)|The value of work from anywhere autopilot devices summary.|
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|The user experience work from anywhere Cloud management devices summary.|
 |windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|The user experience analytics work from anywhere Windows 10 devices summary.|
+|cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|The user experience analytics work from anywhere Cloud Identity devices summary.|
 
 ## Relationships
 None
@@ -40,7 +41,8 @@ Here is a JSON representation of the resource.
   "autopilotDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
     "devicesNotAutopilotRegistered": 1024,
-    "devicesWithoutAutopilotProfileAssigned": 1024
+    "devicesWithoutAutopilotProfileAssigned": 1024,
+    "totalWindows10DevicesWithoutTenantAttached": 1024
   },
   "cloudManagementDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -51,10 +53,13 @@ Here is a JSON representation of the resource.
   "windows10DevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
     "unsupportedOSversionDeviceCount": 1024
+  },
+  "cloudIdentityDevicesSummary": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+    "deviceWithoutCloudIdentityCount": 1024
   }
 }
 ```
-
 
 
 

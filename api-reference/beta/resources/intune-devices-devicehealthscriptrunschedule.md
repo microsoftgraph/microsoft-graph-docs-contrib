@@ -2,7 +2,7 @@
 title: "deviceHealthScriptRunSchedule resource type"
 description: "Base type of Device health script run schedule."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
   "interval": 1024
 }
 ```
-
 
 
 

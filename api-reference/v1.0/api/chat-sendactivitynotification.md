@@ -2,7 +2,7 @@
 title: "chat: sendActivityNotification"
 description: Send an activity feed notification in scope of a chat.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -223,3 +223,6 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+## See also
+
+[Notify Feed App C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)

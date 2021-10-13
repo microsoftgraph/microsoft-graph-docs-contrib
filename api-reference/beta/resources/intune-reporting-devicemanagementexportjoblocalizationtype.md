@@ -2,7 +2,7 @@
 title: "deviceManagementExportJobLocalizationType enum type"
 description: "Configures how the requested export job is localized"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Configures how the requested export job is localized
 |:---|:---|:---|
 |localizedValuesAsAdditionalColumn|0|Configures the export job to expose localized values as an additional column|
 |replaceLocalizableValues|1|Configures the export job to replace enumerable values with their localized values|
-
 
 
 

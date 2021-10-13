@@ -2,7 +2,7 @@
 title: "Create groupPolicySettingMapping"
 description: "Create a new groupPolicySettingMapping object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -149,7 +149,6 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
 
 
 

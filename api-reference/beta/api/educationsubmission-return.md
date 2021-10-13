@@ -2,7 +2,7 @@
 title: "educationSubmission: return"
 description: "This action makes the grade and feedback associated with this submission available to the student."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action makes the grade and feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done. This action can only be done by the teacher.
+Make the grade and feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done. This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/return
 ```
 ## Request headers
 | Header       | Value |
@@ -35,14 +35,15 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -52,7 +53,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/return
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/022fb52d-1278-d21f-e827-2221a6a3e516/return
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-return-csharp-snippets.md)]
@@ -73,15 +74,61 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ---
 
 
-##### Response
+### Response
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "returned",
+    "submittedDateTime": "2021-09-03T18:20:11.2167718Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2021-09-03T19:01:45.6526389Z",
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RKYRQDN3FDQWNA24OCLHBD5C2SH",
+    "id": "022fb52d-1278-d21f-e827-2221a6a3e516",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
+}
 ```
+
+## See also
+
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyRule
+var unifiedRoleManagementPolicyRule = new UnifiedRoleManagementPolicyApprovalRule
 {
 	Target = new UnifiedRoleManagementPolicyRuleTarget
 	{

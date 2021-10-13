@@ -2,7 +2,7 @@
 title: "Delete iosCompliancePolicy"
 description: "Deletes a iosCompliancePolicy."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

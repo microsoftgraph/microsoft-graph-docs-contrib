@@ -2,7 +2,7 @@
 title: "Create team"
 description: "Create a new team."
 author: "anandjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -21,12 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 > **Note**: The Teamwork.Migrate.All permission is *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
+
+> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 
@@ -49,7 +51,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 ## Response
 
-If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+If successful, this API returns a `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 
@@ -95,7 +97,7 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -614,7 +616,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 
 #### Error response
 
-If the request is unsuccessful, this method returns a `400 Bad Request` response code. 
+If the request is unsuccessful, this method returns a `400 Bad Request` response code.
 
 ```http
 400 Bad Request

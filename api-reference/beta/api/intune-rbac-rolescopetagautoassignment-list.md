@@ -2,7 +2,7 @@
 title: "List roleScopeTagAutoAssignments"
 description: "List properties and relationships of the roleScopeTagAutoAssignment objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -77,7 +77,6 @@ Content-Length: 499
   ]
 }
 ```
-
 
 
 

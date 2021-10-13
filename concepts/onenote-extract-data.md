@@ -2,7 +2,7 @@
 title: "Use OneNote API div tags to extract data from captures "
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 

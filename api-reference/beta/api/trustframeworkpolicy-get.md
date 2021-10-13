@@ -1,7 +1,7 @@
 ---
 title: "Get trustFrameworkPolicy"
 description: "This operation retrieves an existing trustFrameworkPolicy content from an Azure AD B2C tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

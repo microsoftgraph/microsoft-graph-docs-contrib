@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationStringSettingValueDefinition resource type"
 description: "String constraints"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -49,7 +49,6 @@ Here is a JSON representation of the resource.
   "isSecret": true
 }
 ```
-
 
 
 

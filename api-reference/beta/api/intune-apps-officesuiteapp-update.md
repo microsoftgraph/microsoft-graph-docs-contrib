@@ -2,7 +2,7 @@
 title: "Update officeSuiteApp"
 description: "Update the properties of a officeSuiteApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -228,7 +228,6 @@ Content-Length: 1847
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

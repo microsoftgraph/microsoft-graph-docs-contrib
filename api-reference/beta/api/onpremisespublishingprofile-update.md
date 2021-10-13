@@ -1,7 +1,7 @@
 ---
 title: "Update onPremisesPublishingProfile"
 description: "Update the properties of an onPremisesPublishingProfile object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

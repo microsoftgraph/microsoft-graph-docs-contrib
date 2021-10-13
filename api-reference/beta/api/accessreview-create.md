@@ -1,7 +1,7 @@
 ---
 title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType

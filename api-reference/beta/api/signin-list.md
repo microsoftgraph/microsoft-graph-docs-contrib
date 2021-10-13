@@ -2,7 +2,7 @@
 title: "List signIns"
 doc_type: apiPageType
 description: "Get a list of the user sign-ins in an Azure Active Directory tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 ---
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [signIn](../resources/signin.md) objects. The list contains the user sign-ins for your Azure Active Directory tenant. Sign-ins where a username and password are passed as part of authorization token, and successful federated sign-ins are currently included in the sign-in logs. The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first.
+Get a list of [signIn](../resources/signin.md) objects. The list contains the user sign-ins for your Azure Active Directory tenant. Sign-ins where a username and password are passed as part of authorization token, and successful federated sign-ins are currently included in the sign-in logs.
+
+The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Azure Active Directory (Azure AD) [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
 ## Permissions
 
@@ -21,11 +23,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
+| Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Application | AuditLog.Read.All and Directory.Read.All | 
 
-In addition, apps must be properly registered to Azure Active Directory.
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
+
+Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +48,7 @@ GET auditLogs/signIns
 
 ## Optional query parameters
 
-This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

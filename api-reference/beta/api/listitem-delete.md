@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Removes an item from a list."
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

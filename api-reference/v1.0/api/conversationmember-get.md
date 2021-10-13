@@ -1,8 +1,8 @@
 ---
 title: "Get conversationMember"
 description: "Get member of chat or channel."
-author: "laujan"
-localization_priority: Priority
+author: "akjo"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

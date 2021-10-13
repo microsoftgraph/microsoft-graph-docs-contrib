@@ -2,7 +2,7 @@
 title: "Create child folder"
 description: "Use this API to create a new child mailfolder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

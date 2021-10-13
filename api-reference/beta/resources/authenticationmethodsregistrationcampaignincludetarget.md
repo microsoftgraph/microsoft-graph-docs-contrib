@@ -2,7 +2,7 @@
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
 description: "Allow users and groups of users to be prompted to set up targeted authentication methods."
 author: "mjsantani"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

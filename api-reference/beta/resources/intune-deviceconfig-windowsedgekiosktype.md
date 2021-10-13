@@ -2,7 +2,7 @@
 title: "windowsEdgeKioskType enum type"
 description: "Edge kiosk type"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Edge kiosk type
 |:---|:---|:---|
 |publicBrowsing|0|public-browsing|
 |fullScreen|1|fullscreen|
-
 
 
 

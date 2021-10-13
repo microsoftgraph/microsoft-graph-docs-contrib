@@ -1,10 +1,10 @@
 ---
 title: "Get governanceRoleDefinition"
 description: "Retrieve the properties and relationships of a governanceRoleDefinition."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # Get governanceRoleDefinition
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).
 
@@ -38,9 +40,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.
 

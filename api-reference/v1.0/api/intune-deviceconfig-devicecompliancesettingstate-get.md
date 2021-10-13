@@ -2,7 +2,7 @@
 title: "Get deviceComplianceSettingState"
 description: "Read properties and relationships of the deviceComplianceSettingState object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

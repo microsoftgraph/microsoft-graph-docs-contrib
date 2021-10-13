@@ -2,7 +2,7 @@
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -27,7 +27,6 @@ Not yet documented
 |notConfigured|4|Not configured|
 |doesNotMeetHardwareRequirements|5|System does not meet hardware requirements|
 |other|42|Other. Event logs in microsoft-Windows-DeviceGuard have more details.|
-
 
 
 

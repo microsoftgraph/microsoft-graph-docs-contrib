@@ -2,7 +2,7 @@
 title: "applicationGuardBlockClipboardSharingType enum type"
 description: "Possible values for applicationGuardBlockClipboardSharingType"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,6 @@ Possible values for applicationGuardBlockClipboardSharingType
 |blockHostToContainer|2|Block clipboard to share data from Host to Container|
 |blockContainerToHost|3|Block clipboard to share data from Container to Host|
 |blockNone|4|Block clipboard to share data neither from Host to Container nor from Container to Host|
-
 
 
 

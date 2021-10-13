@@ -2,7 +2,7 @@
 title: "Delete personAnnotation"
 description: "Deletes a personAnnotation object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

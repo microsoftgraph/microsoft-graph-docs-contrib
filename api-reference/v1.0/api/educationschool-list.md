@@ -2,7 +2,7 @@
 title: "List educationSchools"
 description: "Get a list of the educationSchool objects and their properties."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

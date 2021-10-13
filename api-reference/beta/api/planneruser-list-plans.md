@@ -1,7 +1,7 @@
 ---
 title: "List plans"
 description: "Retrieve a list of **plannerplan** objects shared with a user object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

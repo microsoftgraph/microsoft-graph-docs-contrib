@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsSummarizeWorkFromAnywhereDevices function"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 758
+Content-Length: 998
 
 {
   "value": {
@@ -68,7 +68,8 @@ Content-Length: 758
     "autopilotDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
       "devicesNotAutopilotRegistered": 13,
-      "devicesWithoutAutopilotProfileAssigned": 6
+      "devicesWithoutAutopilotProfileAssigned": 6,
+      "totalWindows10DevicesWithoutTenantAttached": 10
     },
     "cloudManagementDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -79,11 +80,14 @@ Content-Length: 758
     "windows10DevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
       "unsupportedOSversionDeviceCount": 15
+    },
+    "cloudIdentityDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+      "deviceWithoutCloudIdentityCount": 15
     }
   }
 }
 ```
-
 
 
 

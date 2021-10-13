@@ -1,13 +1,13 @@
 ---
-title: "Device management intent assign action"
+title: "assign action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Device management intent assign action
+# assign action
 
 Namespace: microsoft.graph
 
@@ -86,7 +86,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

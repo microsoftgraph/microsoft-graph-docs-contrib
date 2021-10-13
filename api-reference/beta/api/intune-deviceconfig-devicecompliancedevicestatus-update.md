@@ -2,7 +2,7 @@
 title: "Update deviceComplianceDeviceStatus"
 description: "Update the properties of a deviceComplianceDeviceStatus object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -105,7 +105,6 @@ Content-Length: 493
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

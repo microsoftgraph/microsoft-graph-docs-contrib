@@ -2,7 +2,7 @@
 title: "Get appConsentRequest"
 description: "Read the properties and relationships of an appConsentRequest object."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

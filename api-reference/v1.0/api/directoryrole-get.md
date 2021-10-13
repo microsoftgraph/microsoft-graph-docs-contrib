@@ -2,7 +2,7 @@
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -27,11 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}
-GET /directoryRoles/roleTemplateId={role-templateId}
+GET /directoryRoles/{role-id}
+GET /directoryRoles/roleTemplateId={roleTemplateId}
 ```
 ## Optional query parameters
-This method does **not** support any [OData Query Parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
+This method does **not** support any [OData query parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
 
 ## Request headers
 | Name       | Type | Description|
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 ## Examples
 
-### Example 1: Get the definition of a directory role using role objectId
+### Example 1: Get the definition of a directory role using role id
 #### Request
 
 
@@ -98,7 +98,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the definition of a directory role using role templateId
+### Example 2: Get the definition of a directory role using roleTemplateId
 #### Request
 
 

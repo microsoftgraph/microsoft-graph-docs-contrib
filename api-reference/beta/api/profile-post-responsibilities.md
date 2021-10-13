@@ -2,7 +2,7 @@
 title: "Create responsibilities"
 description: "Create a new responsibilities object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

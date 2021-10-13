@@ -2,7 +2,7 @@
 title: "List submissions"
 description: "List all the submissions associated with an assignment."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all the submissions associated with an assignment. 
+List all the submissions associated with an [assignment](../resources/educationassignment.md). 
 
 A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
 
@@ -22,13 +22,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
+|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -39,8 +40,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request body
 Don't supply a request body for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
+
 ## Example
 ### Request
 The following is an example of the request.
@@ -49,11 +52,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-submissions-csharp-snippets.md)]
@@ -91,31 +94,44 @@ Content-type: application/json
 Content-length: 873
 
 {
-  "value": [
-    {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015",
-        "@Odata.type":"microsoft.graph.educationSubmissionRecipient"
-      },
-      "releasedBy": {
-          "user": {
-            "displayName": "Shawn Hughes",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Shawn Hughes",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
-    }
-  ]
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEDJCE5LX4OXABF37QSORAK5WKQD",
+            "id": "4af73d2b-6b9c-493f-0688-979087bed39b",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "user: getMemberObjects"
 description: "Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

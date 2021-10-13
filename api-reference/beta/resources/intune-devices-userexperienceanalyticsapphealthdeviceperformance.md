@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAppHealthDevicePerformance resource type"
 description: "The user experience analytics device performance entity contains device performance details."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -35,6 +35,7 @@ The user experience analytics device performance entity contains device performa
 |appCrashCount|Int32|The number of app crashes for the device. Valid values -2147483648 to 2147483647|
 |crashedAppCount|Int32|The number of distinct app crashes for the device. Valid values -2147483648 to 2147483647|
 |appHangCount|Int32|The number of app hangs for the device. Valid values -2147483648 to 2147483647|
+|processedDateTime|DateTimeOffset|The date and time when the statistics were last computed.|
 |meanTimeToFailureInMinutes|Int32|The mean time to failure for the device in minutes. Valid values -2147483648 to 2147483647|
 |deviceAppHealthScore|Double|The app health score of the device. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |deviceAppHealthStatus|String|The overall app health status of the device.|
@@ -61,6 +62,7 @@ Here is a JSON representation of the resource.
   "appCrashCount": 1024,
   "crashedAppCount": 1024,
   "appHangCount": 1024,
+  "processedDateTime": "String (timestamp)",
   "meanTimeToFailureInMinutes": 1024,
   "deviceAppHealthScore": "4.2",
   "deviceAppHealthStatus": "String",
@@ -68,7 +70,6 @@ Here is a JSON representation of the resource.
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

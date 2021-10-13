@@ -2,7 +2,7 @@
 title: "disconnect action"
 description: "A request to remove the active TeamViewer connector"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

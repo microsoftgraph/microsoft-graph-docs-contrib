@@ -2,7 +2,7 @@
 title: "runAsAccountType enum type"
 description: "Indicates the type of execution context the app runs in."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "List members"
 description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -32,15 +32,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}/members
-GET /directoryRoles/roleTemplateId={role-templateId}/members
+GET /directoryRoles/{role-id}/members
+GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Examples
 
-### Example 1: Get the members of a directory role using role objectId
+### Example 1: Get the members of a directory role using role id
 
 #### Request
 Here is an example of the request.
@@ -110,10 +110,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the members of a directory role using role templateId
+### Example 2: Get the members of a directory role using roleTemplateId
 
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)

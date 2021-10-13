@@ -1,7 +1,7 @@
 ---
 title: "List cases"
 description: "Retrieve a list of eDiscovery cases."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"

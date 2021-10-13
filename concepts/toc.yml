@@ -161,9 +161,11 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
-      - name: Connecting external content (preview)
+      - name: Connecting external content
         displayName: connectors
         items:
           - name: Overview of Microsoft Graph connectors
@@ -234,12 +236,22 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: Multi-tenant management (preview)
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
+          - name: Service health and communications
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: Education
         items:
           - name: Overview
             href: education-concept-overview.md
           - name: Rubrics
             href: education-rubric-overview.md
+          - name: Upload files
+            href: education-upload-resource-overview.md
+          - name: Assignment and submission state transitions
+            href: assignments-submissions-states-transition.md            
       - name: Files
         href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
@@ -251,10 +263,14 @@ items:
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
-          - name: Authentication methods
-            href: authenticationmethods-get-started.md
+          - name: Directory management
+            items:
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Authentication methods
+                href: authenticationmethods-get-started.md
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
@@ -269,6 +285,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -326,7 +344,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -343,7 +361,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -352,7 +370,9 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
-          - name: Customize insights privacy (preview)
+          - name: Item insights overview
+            href: item-insights-overview.md
+          - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -373,22 +393,24 @@ items:
         items:
           - name: Overview
             href: search-concept-overview.md
-          - name: Query
-            items:
-              - name: Search messages
-                href: search-concept-messages.md
-              - name: Search events
-                href: search-concept-events.md
-              - name: Search content in OneDrive and SharePoint
-                href: search-concept-files.md
-              - name: Search connectors
-                href: search-concept-custom-types.md
-              - name: Sort search results (preview)
-                href: search-concept-sort.md
-              - name: Refine search results (preview)
-                href: search-concept-aggregation.md
-              - name: Request spelling correction (preview)
-                href: search-concept-speller.md
+          - name: Search messages
+            href: search-concept-messages.md
+          - name: Search events
+            href: search-concept-events.md
+          - name: Search content in OneDrive and SharePoint
+            href: search-concept-files.md
+          - name: Search connectors
+            href: search-concept-custom-types.md
+          - name: Search persons (preview)
+            href: search-concept-person.md
+          - name: Sort search results
+            href: search-concept-sort.md
+          - name: Refine search results
+            href: search-concept-aggregation.md
+          - name: Request spelling correction (preview)
+            href: search-concept-speller.md
+          - name: Search display layout (preview)
+            href: search-concept-display-layout.md
       - name: Security
         items:
           - name: Overview
@@ -424,12 +446,18 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
-          - name: Licenses for subscribing to chat messages
+          - name: Licensing and payment requirements
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Send activity feed notifications
-            href: teams-send-activityfeednotifications.md
+          - name: Activity feed notifications
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices 
+                href: teams-activity-feed-notifications-best-practices.md  
+          - name: System messages
+            href: system-messages.md
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -485,8 +513,15 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the search query parameter
+                href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
@@ -507,17 +542,20 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notification in Microsoft Teams
-                displayName: Change notifications in Microsoft Teams
+              - name: Change notifications in Microsoft Teams
                 items:
                   - name: Overview
-                    href: change-notification-in-microsoft-teams-overview.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
+                    href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Team membership
+                  - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md                  
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat membership
+                    href: teams-changenotifications-chatMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -584,6 +622,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: "4: Deploy, test, and extend"
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: Migration FAQ
+                href: migrate-azure-ad-graph-faq.md
       - name: Use SDKs
         items:
           - name: Overview
@@ -630,7 +670,7 @@ items:
                 href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
-              - name: Register an Azure Active Directory app
+              - name: Register an Azure AD app
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
@@ -640,8 +680,10 @@ items:
                 href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: Build a Microsoft Teams tab
+              - name: Build a Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build a Teams tab with SSO
+                href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
@@ -650,12 +692,14 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
-              - name: MSAL 2 provider
+              - name: MSAL2 provider
                 href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
+              - name: Teams provider
                 href: toolkit/providers/teams.md
+              - name: Teams MSAL2 provider
+                href: toolkit/providers/teams-msal2.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
               - name: Proxy provider
@@ -694,6 +738,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components

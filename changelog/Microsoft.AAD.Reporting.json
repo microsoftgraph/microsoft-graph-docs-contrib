@@ -2,6 +2,32 @@
   "changelog": [
       {
         "ChangeList": [
+          {
+            "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastNonInteractiveSignInDateTime",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastNonInteractiveSignInDateTime** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Target": "signInActivity"
+          },
+          {
+            "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastNonInteractiveSignInRequestId",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastNonInteractiveSignInRequestId** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Target": "signInActivity"
+          }
+        ],
+        "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2021-08-17T13:54:40.077762Z",
+        "WorkloadArea": "Users",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
             {
                 "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
                 "ApiChange": "Relationship",

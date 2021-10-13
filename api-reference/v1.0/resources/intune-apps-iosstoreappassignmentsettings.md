@@ -2,7 +2,7 @@
 title: "iosStoreAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS Store mobile app to a group."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

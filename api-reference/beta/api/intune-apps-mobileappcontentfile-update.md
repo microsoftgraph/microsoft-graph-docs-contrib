@@ -2,7 +2,7 @@
 title: "Update mobileAppContentFile"
 description: "Update the properties of a mobileAppContentFile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -113,7 +113,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

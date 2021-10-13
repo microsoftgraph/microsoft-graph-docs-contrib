@@ -2,7 +2,7 @@
 title: "Create macOSSoftwareUpdateConfiguration"
 description: "Create a new macOSSoftwareUpdateConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -187,7 +187,6 @@ Content-Length: 1714
   "updateTimeWindowUtcOffsetInMinutes": 2
 }
 ```
-
 
 
 

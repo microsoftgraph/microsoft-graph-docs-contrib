@@ -1,7 +1,7 @@
 ---
 title: "Get onenoteOperation"
 description: "Get the status of a long-running OneNote operation. This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

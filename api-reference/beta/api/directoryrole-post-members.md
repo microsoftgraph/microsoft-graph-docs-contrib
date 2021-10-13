@@ -2,7 +2,7 @@
 title: "Add directory role member"
 description: "Create a new directory role member."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -29,13 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{role-objectId}/members/$ref
-POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST /directoryRoles/{role-id}/members/$ref
+POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -139,7 +139,7 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### Example 3: Add a new member to a directory role using role templateId
+### Example 3: Add a new member to a directory role using roleTemplateId
 #### Request
 In this request, replace `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` with the value of the **roleTemplateId** for the directory role you wish to assign to the user or directory object. Replace `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user or directory object. 
 

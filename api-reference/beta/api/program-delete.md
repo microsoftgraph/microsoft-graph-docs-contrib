@@ -1,7 +1,7 @@
 ---
 title: "Delete program"
 description: "In the Azure AD access reviews feature, delete a program object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"

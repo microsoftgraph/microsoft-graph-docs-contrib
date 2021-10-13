@@ -1,5 +1,389 @@
 {
-  "changelog": [    
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
+          "ApiChange": "Property",
+          "ChangedApiName": "participantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **participantId** property to the [participantInfo](https://docs.microsoft.com/en-us/graph/api/resources/participantInfo?view=graph-rest-beta) resource.",
+          "Target": "participantInfo"
+        }
+      ],
+      "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-12T21:32:00.9962748Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
+          "ApiChange": "Method",
+          "ChangedApiName": "transfer",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
+          "Target": "transfer"
+        }
+      ],
+      "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970658Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fafd48cb-8876-431e-890d-3db8d3a4cbe1",
+          "ApiChange": "Property",
+          "ChangedApiName": "participantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **participantId** property to [participantInfo](https://docs.microsoft.com/en-us/graph/api/resources/participantInfo?view=graph-rest-1.0) resource.",
+          "Target": "participantInfo"
+        }
+      ],
+      "Id": "fafd48cb-8876-431e-890d-3db8d3a4cbe1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970709Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
+          "ApiChange": "Method",
+          "ChangedApiName": "transfer",
+          "ChangeType": "Change",
+          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
+          "Target": "transfer"
+        }
+      ],
+      "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-12T21:32:00.9970722Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollFreeNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollFreeNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollNumbers** property to [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioConferencing?view=graph-rest-1.0) resource.",
+          "Target": "audioConferencing"
+        }
+      ],
+      "Id": "01af669a-7767-485f-a237-c3da3b269fb0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-06T23:50:40.2068677Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "startHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-1.0) resource",
+          "Target": "stopHoldMusicOperation"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "startHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-1.0) method to the [participant](https://docs.microsoft.com/en-us/graph/api/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "77ec3e83-ec65-4673-9b12-3301b027e95f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T18:05:28.5021936Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendeeReport",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendeeReport** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T22:10:57.9979092Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dc14dc50-181e-480f-963f-5d8dd6b21904",
+          "ApiChange": "Property",
+          "ChangedApiName": "recordAutomatically",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordAutomatically** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "dc14dc50-181e-480f-963f-5d8dd6b21904",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-29T19:15:11.695531Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7684a4c1-6c89-4d19-97c3-b70dea0c96b4",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingArtifact.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added delegated permission **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7684a4c1-6c89-4d19-97c3-b70dea0c96b4",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingArtifact.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added application permission of **OnlineMeetingArtifact.Read.All** to read artifacts of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "7684a4c1-6c89-4d19-97c3-b70dea0c96b4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-15T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "11e3646a-457e-4fbb-bec6-677a72115730",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalParticipantCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **totalParticipantCount** property to the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "11e3646a-457e-4fbb-bec6-677a72115730",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-09T21:40:54.5120151Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "broadcastMeetingAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the **broadcastMeetingAudience** enumeration type.",
+          "Target": "broadcastMeetingAudience"
+        },
+        {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "Member",
+          "ChangedApiName": "producer",
+          "ChangeType": "Addition",
+          "Description": "Added the **producer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        },
+        {
+          "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "broadcastMeetingSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-1.0) resource type.",
+          "Target": "broadcastMeetingSettings"
+        }
+      ],
+      "Id": "d54aa4a2-6fdf-44fe-8e79-1cc1eab29939",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-26T04:44:06.85621Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "broadcastSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **broadcastSettings** property to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isBroadcast",
+          "ChangeType": "Addition",
+          "Description": "Added the **isBroadcast** property to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "1a59763c-a086-47e4-b6b7-5883c6e80d9a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-26T04:44:06.8568472Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
+          "ApiChange": "Property",
+          "ChangedApiName": "recordAutomatically",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordAutomatically** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "cb86c949-1f67-485e-8dc7-6ec8314361ab",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-18T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+          "ApiChange": "Action",
+          "ChangedApiName": "setPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-v1.0) action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-v1.0) action.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "28b5e099-e951-467e-9645-2023e87713bc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-19T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Presence"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Resource",
+          "ChangedApiName": "startHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/startHoldMusicOperation?view=graph-rest-beta) resource",
+          "Target": "startHoldMusicOperation"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopHoldMusicOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusicOperation](https://docs.microsoft.com/en-us/graph/api/resources/stopHoldMusicOperation?view=graph-rest-beta) resource",
+          "Target": "stopHoldMusicOperation"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Method",
+          "ChangedApiName": "startHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [startHoldMusic](https://docs.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) method to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+          "ApiChange": "Method",
+          "ChangedApiName": "stopHoldMusic",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopHoldMusic](https://docs.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) method to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "2cea88ce-2974-4981-bb71-f5af7fb5c749",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-13T01:42:26.0020901Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Calls"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "499080c4-42f6-45a2-bce0-d215350fec9b",
+          "ApiChange": "Property",
+          "ChangedApiName": "metadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **metadata** property to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "499080c4-42f6-45a2-bce0-d215350fec9b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-16T16:56:16.0636032Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Calls"
+    },
     {
       "ChangeList": [
         {
@@ -56,13 +440,89 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-07-09T22:17:53.668Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Calls"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowAttendeeToEnableMic",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowAttendeeToEnableCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowMeetingChat",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowMeetingChat** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowTeamworkReactions",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowTeamworkReactions** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-v1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "meetingChatMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatMode** enumeration.",
+          "Target": "meetingChatMode"
+        }
+      ],
+      "Id": "7be974ef-0984-451e-a49e-acbba0d54fb3",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-13T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "setPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-beta) action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-beta) action.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-23T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Presence"
     },
     {
       "ChangeList": [
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Resource",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableMic",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
@@ -70,7 +530,7 @@
         },
         {
           "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "allowAttendeeToEnableCamera",
           "ChangeType": "Addition",
           "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
@@ -82,7 +542,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-10T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -100,83 +560,83 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-14T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
-        "ChangeList": [
-          {
-            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Property",
-            "ChangedApiName": "tollNumbers",
-            "ChangeType": "Addition",
-            "Description": "Added the **tollNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
-            "Target": "audioConferencing"
-          },
-          {
-            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Property",
-            "ChangedApiName": "tollFreeNumbers",
-            "ChangeType": "Addition",
-            "Description": "Added the **tollFreeNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
-            "Target": "audioConferencing"
-          },
-          {
-            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Property",
-            "ChangedApiName": "tollNumber",
-            "ChangeType": "Change",
-            "Description": "Deprecated the **tollNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
-            "Target": "audioConferencing"
-          },
-          {
-            "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-            "ApiChange": "Property",
-            "ChangedApiName": "tollFreeNumber",
-            "ChangeType": "Change",
-            "Description": "Deprecated the **tollFreeNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
-            "Target": "audioConferencing"
-          }
-        ],
-        "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-04-19T00:00:00",
-        "WorkloadArea": "Cloud communications",
-        "SubArea": ""
-      },
-      {
-        "ChangeList": [
-          {
-            "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
-            "ApiChange": "Property",
-            "ChangedApiName": "capabilities",
-            "ChangeType": "Change",
-            "Description": "Deprecated the **capabilities** property of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
-            "Target": "onlineMeeting"
-          },
-          {
-            "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
-            "ApiChange": "Property",
-            "ChangedApiName": "producers",
-            "ChangeType": "Change",
-            "Description": "Deprecated the **producers** property of the [meetingParticipants](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipants?view=graph-rest-beta) resource.",
-            "Target": "meetingParticipants"
-          },
-          {
-            "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
-            "ApiChange": "Property",
-            "ChangedApiName": "contributors",
-            "ChangeType": "Change",
-            "Description": "Deprecated the **contributors** property of the [meetingParticipants](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipants?view=graph-rest-beta) resource.",
-            "Target": "meetingParticipants"
-          }
-        ],
-        "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-04-21T00:00:00",
-        "WorkloadArea": "Cloud communications",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollFreeNumbers",
+          "ChangeType": "Addition",
+          "Description": "Added the **tollFreeNumbers** property to the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollNumber",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **tollNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+          "Target": "audioConferencing"
+        },
+        {
+          "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+          "ApiChange": "Property",
+          "ChangedApiName": "tollFreeNumber",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **tollFreeNumber** property of the [audioConferencing](https://docs.microsoft.com/en-us/graph/api/resources/audioconferencing?view=graph-rest-beta) resource.",
+          "Target": "audioConferencing"
+        }
+      ],
+      "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-19T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "capabilities",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **capabilities** property of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "producers",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **producers** property of the [meetingParticipants](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipants?view=graph-rest-beta) resource.",
+          "Target": "meetingParticipants"
+        },
+        {
+          "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributors",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **contributors** property of the [meetingParticipants](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipants?view=graph-rest-beta) resource.",
+          "Target": "meetingParticipants"
+        }
+      ],
+      "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-21T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -202,7 +662,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-28T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -236,7 +696,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [
@@ -254,7 +714,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-05T00:00:00",
       "WorkloadArea": "Cloud communications",
-      "SubArea": ""
+      "SubArea": "Online meetings"
     },
     {
       "ChangeList": [

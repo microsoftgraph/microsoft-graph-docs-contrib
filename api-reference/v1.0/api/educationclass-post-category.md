@@ -1,7 +1,7 @@
 ---
 title: "Create educationCategory"
 description: "Creates a new category."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType

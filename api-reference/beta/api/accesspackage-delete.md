@@ -1,7 +1,7 @@
 ---
 title: "Delete accessPackage"
 description: "Delete accessPackage."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "targetApps action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -47,6 +47,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|Not yet documented|
+|appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|Not yet documented|
 
 
 
@@ -61,7 +62,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/targetApps
 
 Content-type: application/json
-Content-length: 335
+Content-length: 378
 
 {
   "apps": [
@@ -74,7 +75,8 @@ Content-length: 335
       "id": "0a129715-9715-0a12-1597-120a1597120a",
       "version": "Version value"
     }
-  ]
+  ],
+  "appGroupType": "allCoreMicrosoftApps"
 }
 ```
 

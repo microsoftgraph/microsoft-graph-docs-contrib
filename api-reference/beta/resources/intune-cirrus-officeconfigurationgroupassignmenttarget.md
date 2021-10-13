@@ -1,7 +1,7 @@
 ---
 title: "officeConfigurationGroupAssignmentTarget resource type"
 description: "Office client configuration AAD group assignment target."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -41,7 +41,6 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
-
 
 
 

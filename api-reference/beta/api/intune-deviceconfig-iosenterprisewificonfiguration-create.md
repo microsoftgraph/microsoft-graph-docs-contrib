@@ -2,7 +2,7 @@
 title: "Create iosEnterpriseWiFiConfiguration"
 description: "Create a new iosEnterpriseWiFiConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -211,7 +211,6 @@ Content-Length: 2189
   "passwordFormatString": "Password Format String value"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentRequest: cancel"
 description: "Cancel accessPackageAssignmentRequest objects that are in a cancellable state."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"

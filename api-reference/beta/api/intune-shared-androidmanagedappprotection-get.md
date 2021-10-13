@@ -2,7 +2,7 @@
 title: "Get androidManagedAppProtection"
 description: "Read properties and relationships of the androidManagedAppProtection object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -143,7 +143,6 @@ Content-Length: 3296
   }
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Update deviceComanagementAuthorityConfiguration"
 description: "Update the properties of a deviceComanagementAuthorityConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -113,7 +113,6 @@ Content-Length: 617
   "configurationManagerAgentCommandLineArgument": "Configuration Manager Agent Command Line Argument value"
 }
 ```
-
 
 
 
