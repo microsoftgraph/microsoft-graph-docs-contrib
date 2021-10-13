@@ -1,5 +1,5 @@
 ---
-title: "List assignments of a user"
+title: "List me assignments"
 description: "Returns a list of assignments assigned to a user for all classes."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Returns a list of assignments assigned to a user for all classes. 
 
-This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
+This utility namespace allows a caller to find all the assignments belonging to a student or a teacher in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
 
 ## Permissions
 
