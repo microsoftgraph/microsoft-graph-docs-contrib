@@ -1,6 +1,6 @@
 ---
 title: "Create meetingRegistration"
-description: "Create and enable meeting registration."
+description: "Create and enable registration for an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer. One online meeting can only have one registration enabled.
+Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer. An online meeting can only have one registration enabled.
 
 ## Permissions
 
