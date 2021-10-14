@@ -154,7 +154,7 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
-##Compliance
+## Compliance
 
 ### Subject Rights Requests permissions not currently available
 
