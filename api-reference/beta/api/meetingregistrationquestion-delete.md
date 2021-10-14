@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [custom registration question](../resources/meetingRegistrationQuestion.md) from a [meetingRegistration](../resources/meetingRegistration.md) object on behalf of the organizer.
+Delete a [custom registration question](../resources/meetingregistrationquestion.md) from a [meetingRegistration](../resources/meetingregistration.md) object on behalf of the organizer.
 
 ## Permissions
 

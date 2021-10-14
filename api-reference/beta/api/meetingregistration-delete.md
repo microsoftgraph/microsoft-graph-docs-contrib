@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable and delete the [meetingRegistration](../resources/meetingRegistration.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
+Disable and delete the [meetingRegistration](../resources/meetingregistration.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
 ## Permissions
 

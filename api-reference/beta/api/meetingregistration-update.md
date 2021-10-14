@@ -39,7 +39,7 @@ PATCH /me/onlineMeetings/{id}/registration
 
 ## Request body
 
-In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingRegistration.md) object.
+In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingregistration.md) object.
 
 > [!TIP]
 >
@@ -49,7 +49,7 @@ In the request body, supply only the value of properties that need to be updated
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [meetingRegistration](../resources/meetingRegistration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [meetingRegistration](../resources/meetingregistration.md) object in the response body.
 
 ## Example
 

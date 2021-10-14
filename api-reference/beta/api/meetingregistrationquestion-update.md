@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object on behalf of the organizer.
+Update a [custom registration question](../resources/meetingregistrationquestion.md) associated with a [meetingRegistration](../resources/meetingregistration.md) object on behalf of the organizer.
 
 ## Permissions
 
@@ -39,11 +39,11 @@ PATCH /me/onlineMeetings/{meetingId}/registration/customQuestions/{id}
 
 ## Request body
 
-In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
+In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistrationQuestion](../resources/meetingregistrationquestion.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [meetingRegistrationQuestion](../resources/meetingregistrationquestion.md) object in the response body.
 
 ## Example
 

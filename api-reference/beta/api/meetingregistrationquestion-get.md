@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [custom registration question](../resources/meetingRegistrationquestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object on behalf of the organizer.
+Get a [custom registration question](../resources/meetingregistrationquestion.md) associated with a [meetingRegistration](../resources/meetingregistration.md) object on behalf of the organizer.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [meetingregistrationquestion](../resources/meetingRegistrationQuestion.md) object in the response body.
 
 ## Example
 

@@ -19,11 +19,11 @@ Represents a custom registration question, other than first name, last name, and
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[List](../api/meetingRegistrationQuestion-list.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection | List all custom registration questions. |
-|[Create](../api/meetingRegistrationQuestion-post.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Create a custom registration question. |
-|[Get](../api/meetingRegistrationQuestion-get.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Get a custom registration question. |
-|[Update](../api/meetingRegistrationQuestion-update.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Update a custom registration question. |
-|[Delete](../api/meetingRegistrationQuestion-delete.md) | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) | Delete a custom registration question. |
+|[List](../api/meetingregistrationquestion-list.md) | [meetingRegistrationQuestion](meetingregistrationquestion.md) collection | List all custom registration questions. |
+|[Create](../api/meetingregistrationquestion-post.md) | [meetingRegistrationQuestion](meetingregistrationquestion.md) | Create a custom registration question. |
+|[Get](../api/meetingregistrationquestion-get.md) | [meetingRegistrationQuestion](meetingregistrationquestion.md) | Get a custom registration question. |
+|[Update](../api/meetingregistrationquestion-update.md) | [meetingRegistrationQuestion](meetingregistrationquestion.md) | Update a custom registration question. |
+|[Delete](../api/meetingregistrationquestion-delete.md) | [meetingRegistrationQuestion](meetingregistrationquestion.md) | Delete a custom registration question. |
 
 ## Properties
 

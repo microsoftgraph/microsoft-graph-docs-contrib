@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a registrant's answer to the [custom registration question](meetingregistrationquestion.md) associated with a [meetingRegistration](meetingRegistration.md).
+Represents a registrant's answer to the [custom registration question](meetingregistrationquestion.md) associated with a [meetingRegistration](meetingregistration.md).
 
 ## Properties
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object on behalf of the organizer.
+Create a [custom registration question](../resources/meetingregistrationquestion.md) associated with a [meetingRegistration](../resources/meetingregistration.md) object on behalf of the organizer.
 
 > [!TIP]
 > You can create custom registration questions when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
@@ -42,11 +42,11 @@ POST /me/onlineMeetings/{id}/registration/customQuestions
 
 ## Request body
 
-In the request body, supply a JSON representation of the writable properties of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
+In the request body, supply a JSON representation of the writable properties of a [meetingRegistrationQuestion](../resources/meetingregistrationquestion.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [meetingRegistrationQuestion](../resources/meetingregistrationquestion.md) object in the response body.
 
 ## Example
 

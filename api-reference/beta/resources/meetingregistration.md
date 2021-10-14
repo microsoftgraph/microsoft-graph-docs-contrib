@@ -19,10 +19,10 @@ Represents registration details of an online meeting, such as a [Microsoft Teams
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[Create](../api/meetingRegistration-post.md) | [meetingRegistration](meetingRegistration.md) | Create and enable registration for an online meeting. |
-|[Get](../api/meetingRegistration-get.md) | [meetingRegistration](meetingRegistration.md) | Retrieve the details of a meeting registration. |
-|[Update](../api/meetingRegistration-update.md) | [meetingRegistration](meetingRegistration.md) | Update the details of a meeting registration. |
-|[Delete](../api/meetingRegistration-delete.md) | [meetingRegistration](meetingRegistration.md) | Disable and delete registration for an online meeting. |
+|[Create](../api/meetingregistration-post.md) | [meetingRegistration](meetingregistration.md) | Create and enable registration for an online meeting. |
+|[Get](../api/meetingregistration-get.md) | [meetingRegistration](meetingregistration.md) | Retrieve the details of a meeting registration. |
+|[Update](../api/meetingregistration-update.md) | [meetingRegistration](meetingregistration.md) | Update the details of a meeting registration. |
+|[Delete](../api/meetingregistration-delete.md) | [meetingRegistration](meetingregistration.md) | Disable and delete registration for an online meeting. |
 
 ## Properties
 
