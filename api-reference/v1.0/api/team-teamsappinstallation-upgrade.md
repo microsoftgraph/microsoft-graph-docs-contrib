@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> **Note**: Permissions marked with ** are deprecated and should not be used.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

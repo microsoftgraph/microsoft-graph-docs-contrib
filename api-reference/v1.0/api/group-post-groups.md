@@ -38,9 +38,9 @@ POST /groups
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       |Description|
+|:---------------|:----------|
+| Authorization  |Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
 ## Request body
@@ -80,7 +80,7 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ### Example 1: Create a Microsoft 365 group
 
-The following example creates a Microsoft 365 group.
+The following example creates a Microsoft 365 group. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
 
 #### Request
 
@@ -93,7 +93,6 @@ The following example creates a Microsoft 365 group.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for library",
