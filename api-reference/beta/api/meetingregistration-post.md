@@ -99,14 +99,14 @@ Content-Type: application/json
 
 ### Response
 
+> **Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "name": "create-registration",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingRegistration"
 }-->
-
-> **Note**: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 201 Created

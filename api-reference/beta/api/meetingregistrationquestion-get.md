@@ -66,13 +66,13 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ### Response
 
+> **Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "name": "get-custom-question",
   "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
-
-> **Note**: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

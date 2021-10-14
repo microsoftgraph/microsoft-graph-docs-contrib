@@ -66,14 +66,14 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ### Response
 
+> **Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "name": "list-registratrants",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.meetingRegistrant)"
 }-->
-
-> **Note**: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
