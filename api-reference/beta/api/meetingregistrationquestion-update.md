@@ -72,13 +72,13 @@ Content-Type: application/json
 
 ### Response
 
+> **Note**: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "name": "update-custom-question",
   "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
-
-> **Note**: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
