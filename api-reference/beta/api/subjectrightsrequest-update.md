@@ -19,9 +19,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All|
+|Delegated (work or school account)|SubjectRightsRequest.ReadWrite.All*|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
+
+>[!IMPORTANT]
+>Permissions marked with an * are currently not available. For details, see see [known issues](/graph/known-issues#compliance).
 
 ## HTTP request
 
