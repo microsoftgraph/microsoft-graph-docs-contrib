@@ -27,7 +27,6 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
 
-
 ## Relationships
 
 None.
