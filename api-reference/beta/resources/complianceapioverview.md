@@ -27,7 +27,7 @@ eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect
 
 Learn more about [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md).
 
-## Subject Rights Request
+## Subject rights request
 The Microsoft Graph privacy API includes key entities for subject rights request.
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
