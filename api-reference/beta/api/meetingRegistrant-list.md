@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [meetingRegistrants](../resources/meetingregistrant.md) of an [onlineMeeting](../resources/onlinemeeting.md). 
+Get a list of the [meetingRegistrants](../resources/meetingregistrant.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
 You can use this method to get the registration report for a [Microsoft Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To list all registrants of an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{id}/registration/registrants

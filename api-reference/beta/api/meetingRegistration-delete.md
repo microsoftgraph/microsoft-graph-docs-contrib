@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable and delete the [meetingRegistration](../resources/meetingRegistration.md) of an [onlineMeeting](../resources/onlinemeeting.md).
+Disable and delete the [meetingRegistration](../resources/meetingRegistration.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
 ## Permissions
 
@@ -26,8 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To disable registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{id}/registration

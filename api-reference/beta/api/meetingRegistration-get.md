@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [meetingRegistration](../resources/meetingregistration.md) details associated with an [onlineMeeting](../resources/onlinemeeting.md).
+Get the [meetingRegistration](../resources/meetingregistration.md) details associated with an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
 ## Permissions
 
@@ -26,8 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To get registration of an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{id}/registration

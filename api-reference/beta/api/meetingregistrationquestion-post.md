@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
+Create a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object on behalf of the organizer.
 
 > [!TIP]
 > You can create custom registration questions when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To create a custom registration question with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{id}/registration/customQuestions

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the details of a [meetingRegistration](../resources/meetingregistration.md) object assciated with an [onlineMeeting](../resources/onlinemeeting.md).
+Update the details of a [meetingRegistration](../resources/meetingregistration.md) object assciated with an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
 ## Permissions
 
@@ -26,8 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To update registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{id}/registration

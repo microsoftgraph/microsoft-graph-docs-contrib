@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel an [onlineMeeting](../resources/onlinemeeting.md) registration for a [meetingRegistrant](../resources/meetingregistrant.md).
+Cancel an [onlineMeeting](../resources/onlinemeeting.md) registration for a [meetingRegistrant](../resources/meetingregistrant.md) on behalf of the registrant.
 
 Only use this method when the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object has a value of `organization` and the registrant's delegated permission was used to enroll. When the **allowedRegistrant** value is `everyone`, registrants can only use the link in the email they receive to cancel their registration.
 
@@ -28,14 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | OnlineMeetings.Read.All |
 
 ## HTTP request
-
-To cancel registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{id}
 ```
 
 >**Notes:**
+>
 > - `userId` is the objectID of the meeting organizer.
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
 

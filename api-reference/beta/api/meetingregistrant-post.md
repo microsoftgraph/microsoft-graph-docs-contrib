@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll a [meeting registrant](../resources/meetingRegistrant.md) in an online meeting that has [meeting registration](../resources/meetingRegistration.md) enabled. This operation has two scenarios:
+Enroll a [meeting registrant](../resources/meetingRegistrant.md) in an online meeting that has [meeting registration](../resources/meetingRegistration.md) enabled on behalf of the registrant. This operation has two scenarios:
 
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
@@ -36,8 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 > - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, use the registrant's delegated permission to enroll.
 
 ## HTTP request
-
-To enroll a registrant in an online meeting with delegated or application permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/{id}/registration/registrants

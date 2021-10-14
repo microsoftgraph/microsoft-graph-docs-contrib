@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md). One online meeting can only have one registration enabled.
+Create and enable registration for an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer. One online meeting can only have one registration enabled.
 
 ## Permissions
 
@@ -26,8 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application | Not supported. |
 
 ## HTTP request
-
-To enable registration for an online meeting with delegated permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{id}/registration
