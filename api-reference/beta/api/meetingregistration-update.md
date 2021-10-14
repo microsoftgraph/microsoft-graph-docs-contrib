@@ -1,6 +1,6 @@
 ---
 title: "Update meetingRegistration"
-description: "Update meeting registration."
+description: "Update the details of a meeting registration associated with an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -39,7 +39,7 @@ PATCH /me/onlineMeetings/{id}/registration
 
 ## Request body
 
-In the request body, supply only the value of properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingregistration.md) object.
+In the request body, supply only the properties that need to be updated in a JSON representation of a [meetingRegistration](../resources/meetingregistration.md) object.
 
 > [!TIP]
 >
