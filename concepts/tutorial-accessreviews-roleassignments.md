@@ -8,7 +8,7 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to privileged roles
 
-Contoso Limited is a growing service provider that has delegated various Azure AD administrator privileges to users, groups, and service principals in the organization. The company needs to ensure that only the right assignees have active or eligible assignments to the privileged roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
+Contoso Limited is a growing service provider that has delegated various Azure AD administrator privileges to users, groups, and service principals in the organization. The company needs to ensure only the right assignees have access to privileged roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
 
 In this tutorial, you as the Global Administrator of Contoso will use the access reviews API to create a recurring access review of users and groups with access (both active and eligible) to privileged roles. You'll then create a review history report that will be shared with the company’s auditors.
 
@@ -18,7 +18,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in an Identity Governance Administrator role.
-+ Principals assigned to the privileged role that is the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
++ Principals assigned to a privileged role that is the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
 + The following delegated permissions: `AccessReview.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
@@ -39,12 +39,12 @@ In this tutorial, we create a recurring access review of both *active* and *elig
 
 The following access review schedule definition has the following settings:
 
-+ The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator privileged role.
++ The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator role.
 + The scope (**resourceScopes**) of the review is on both active and eligible User Administrator assignments.
 + You as the user in an Identity Governance Administrator role will be the reviewer.
-+ Assign the user in the Global Administrator role as the fallback reviewer. This ensures that if decisions aren't applied within the schedule, the fallback reviewer is notified of the pending access review for action.
-+ The approver must provide justification before they approve an access to the privileged role.
-+ The default decision is `Deny` when neither the main nor the fallback reviewers don't respond to the access review request.
++ The user in the Global Administrator role is the fallback reviewer. This ensures that if decisions aren't applied within the schedule, the fallback reviewer is notified of the pending access review for action.
++ The approver must provide justification before they approve access to the privileged role.
++ The default decision is `Deny` when neither the main nor the fallback reviewers respond to the access review request, or when an instance of the access review expires before a reviewer records the decision.
 + **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, a user whose access was a subject of the review must apply the decisions manually.
 + The review recurs monthly over a period of three days and doesn't end.
 
@@ -217,7 +217,7 @@ Content-type: application/json
 
 ## Step 2: Retrieve instances of the access review
 
-Each access review instance represents each unique resource that is under review. In Step 1, only one access review was created to review access to the User Administrator resource which is identified by the role definition id `e930be7-5e62-47db-91af-98c3a49a38b1`.
+Each access review instance represents each unique resource that is under review. In Step 1, only one access review was created to review access to the User Administrator resource that is identified by the role definition **id** `e930be7-5e62-47db-91af-98c3a49a38b1`.
 
 ### Request
 
@@ -229,7 +229,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the instance object shows that the end date as three days after the start date; this corresponds with the value defined for instanceDurationInDays property in Step 1. Only one instance is returned, representing only one access review in the tenant.
+In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, representing only one access review in the tenant.
 
 ```http
 HTTP/1.1 200 OK
@@ -288,11 +288,11 @@ Content-type: application/json
 }
 ```
 
-The status of this access review instance is `InProgress`. This means that the decisions have not been made, nor has the period for this access review instance ended.
+The status of this access review instance is `InProgress`. This means that the decisions haven't been made, nor has the period for this access review instance expired.
 
-## Step 3: Retrieve access review decisions prior to completing the access review
+## Step 3: Retrieve access review decisions before recording any decisions
 
-In this step, we will retrieve the access review decision items before we complete the access review; that is, either before the reviewer submits a decision or before the access review instance ends.
+In this step, you'll retrieve the access review decision items before we complete the access review; that is, either before the reviewer submits a decision or before the access review instance expires.
 
 ### Request
 
@@ -308,14 +308,11 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-The following response shows two decision items each corresponding a decision per a principal's access to the resource.
+The following response shows two decision items each corresponding to a decision per a principal's access to the resource.
 
-+ The principal property show that two principals have access to the User Administrator role—a group named **Role assignable group** and a user named **Adele Vance**.
-+ The reviewers have not reviewed the instances as indicated by the `NotReviewed` value of the **decision** property.
-+ No recommendations are available because recommendations weren't enabled in Step 1.
-
-> [!Note for Isabelle]
-> resource and resourceLink properties are null. Should include information about the resource. https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0. How else will the reviewer know what they're approving via the API?
++ The principal property shows that two principals have access to the User Administrator role—a group named **Role assignable group** and a user named **Adele Vance**.
++ The reviewers haven't reviewed the instances as indicated by the `NotReviewed` value of the **decision** property.
++ No recommendations are available because recommendations weren't enabled in the accessReviewScheduleDefinition in Step 1.
 
 ```http
 HTTP/1.1 200 OK
@@ -392,17 +389,17 @@ Content-type: application/json
 }
 ```
 
-You can now make and apply decisions for the access review instances.
+You can now record or submit your decisions for the access review instances.
 
 ## Step 4: Record decisions
 
-You will now record decisions for the access review. The scope of your decision can be one of the following:
+You'll now record decisions for the access review. The scope of your decision can be one of the options:
 + A decision that applies for a single principal only
 + A decision that applies for a single resource only
 + A decision that applies for a single principal to a single resource
 + **What does neither do?**
 
-In this step, we wil record a decision that applies for a single principal to a single resource. Because the company policy requires that access to privileged roles be granted to only groups and not individual users, we will deny Adele access while approving access for the IT Helpdesk group.
+In this step, you'll record a decision that applies for a single principal to a single resource. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll therefore deny Adele access while approving access for the IT Helpdesk group.
 
 In the following requests, replace the following values:
 
@@ -411,11 +408,11 @@ In the following requests, replace the following values:
 + `86da86bd-272e-4ae4-998e-3d803d63cf0d` with the value of IT Helpdesk group's id.
 + `99e44b05-c10b-4e95-a523-e2732bbaba1e` with the value of Adele's id
 
-`fe930be7-5e62-47db-91af-98c3a49a38b1` is the Azure AD identifier of the User Administrator role which is the resource that's the subject of the review.
+`fe930be7-5e62-47db-91af-98c3a49a38b1` is the Azure AD identifier of the User Administrator role that is the resource that's the subject of the review.
 
 ### Request
 
-In the following request, we will approve access for the IT Helpdesk group.
+In the following request, you'll approve access for the IT Helpdesk group.
 
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/batchRecordDecisions
@@ -437,7 +434,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-In the following request, we will deny access for Adele Vance.
+In the following request, we'll deny access for Adele Vance.
 
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/batchRecordDecisions
@@ -459,7 +456,7 @@ HTTP/1.1 204 No Content
 
 ## Step 5: Retrieve access review decisions
 
-Contoso's auditors are conducting ad hoc reviews of all decisions to grant or deny access to privileged roles in the organization. Through their auditing application, they will retrieve access review decision logs for all access reviews scoped to privileged roles.
+Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the accessReviewScheduleDefinition you created in Step 1.
 
 ### Request
 
@@ -469,17 +466,102 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
+The following response object is different from the response object you received in Step 3 with the following settings:
++ 
++
++
+
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
-
-
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('a13c348b-dc1c-47b5-8c58-b0d12b35a18b')/instances('f282e54c-4eed-47a4-be9a-da00ab38aa8f')/decisions",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "09c27ef4-4709-47b7-b661-3eac0d6a8627",
+            "accessReviewId": "f282e54c-4eed-47a4-be9a-da00ab38aa8f",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
+            "recommendation": "NoInfoAvailable",
+            "principalLink": "https://graph.microsoft.com/v1.0/groups/86da86bd-272e-4ae4-998e-3d803d63cf0d",
+            "resourceLink": null,
+            "resource": null,
+            "reviewedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "appliedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "principal": {
+                "id": "86da86bd-272e-4ae4-998e-3d803d63cf0d",
+                "displayName": "Role assignbale group",
+                "type": "group"
+            }
+        },
+        {
+            "id": "115d96e2-a235-4cfa-8273-f8b66c4fc6ab",
+            "accessReviewId": "f282e54c-4eed-47a4-be9a-da00ab38aa8f",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
+            "recommendation": "NoInfoAvailable",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/99e44b05-c10b-4e95-a523-e2732bbaba1e",
+            "resourceLink": null,
+            "resource": null,
+            "reviewedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "appliedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "type": null,
+                "userPrincipalName": ""
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "99e44b05-c10b-4e95-a523-e2732bbaba1e",
+                "displayName": "Adele Vance",
+                "type": "user",
+                "userPrincipalName": "AdeleV@M365x010717.OnMicrosoft.com",
+                "lastUserSignInDateTime": ""
+            }
+        }
+    ]
+}
 ```
 
 ## Step 6: Clean up resources
 
-Delete the following resources that you created for this tutorial: the access review schedule definition.
+Delete the accessReviewScheduleDefinition object that you created for this tutorial. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
 
+### Request
 
+```http
+DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
+```
+
+### Response
+
+```
+HTTP/1.1 204 No Content
+Content-type: text/plain
+```
 
 ## See also
 
