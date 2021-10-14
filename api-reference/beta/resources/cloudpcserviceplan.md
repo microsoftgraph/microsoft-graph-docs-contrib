@@ -27,19 +27,19 @@ Represents a defined collection of service plan configurations that Cloud PCs su
 |:---|:---|:---|
 |id|String|Unique identifier for the service plan. Read-only.|
 |displayName|String|The name for the service plan. Read-only.|
-|ramInGB|Int32|The size of RAM in GB. Read-only.|
-|storageInGB|Int32|The size of OS Disk in GB. Read-only.|
-|type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. There will be 2 types including 'enterprise' and 'business' now. Read-only.|
-|userProfileInGB|Int32|The size of user profile disk in GB. Read-only.|
+|ramInGB|Int32|The size of the RAM in GB. Read-only.|
+|storageInGB|Int32|The size of the OS Disk in GB. Read-only.|
+|type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. Currently, possible values are: `enterprise`, `business`, `unknownFutureValue`. Read-only.|
+|userProfileInGB|Int32|The size of the user profile disk in GB. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
 
 ### cloudPcServicePlanType values
 
 |Member|Description|
 |:---|:---|
-|enterprise|Enterprise service plan type for enterprise customer.|
-|business|Business service plan type for Very Small Business(VSB) customer.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
+|enterprise|Enterprise service plan type for enterprise customers.|
+|business|Business service plan type for Very Small Business(VSB) customers.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
@@ -63,9 +63,9 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "type": "String",
-  "vCpuCount": "Integer",
-  "ramInGB": "Integer",
-  "storageInGB": "Integer",
-  "userProfileInGB": "Integer"
+  "vCpuCount": "Int32",
+  "ramInGB": "Int32",
+  "storageInGB": "Int32",
+  "userProfileInGB": "Int32"
 }
 ```
