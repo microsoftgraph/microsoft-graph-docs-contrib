@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and [meetingReg
 > [!NOTE]
 >
 >- The **registrationPageViewCount** property is not returned in the response body of this method. Use the [Get meetingRegistration](meetingRegistration-get.md) method to retrieve that property.
->- **customQuestions** is a related resource that can only be created, but not returned. Use the [Get meetingRegistration](meetingRegistration-get.md) or [Get custom questions](meetingregistrationquestion-get.md) method to retrieve it.
+>- **customQuestions** is a related resource that can only be created, but not returned. Use the [Get meetingRegistration](meetingRegistration-get.md) or [Get meetingRegistrationQuestion](meetingregistrationquestion-get.md) method to retrieve it.
 
 ## Example
 
