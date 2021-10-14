@@ -1,5 +1,5 @@
 ---
-title: "Unenroll meeting registrant"
+title: "Delete meetingRegistrant"
 description: "Cancel an onlineMeeting registration for a meetingRegistrant."
 author: "mkhribech"
 ms.localizationpriority: medium
