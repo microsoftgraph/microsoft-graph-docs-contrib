@@ -1,6 +1,6 @@
 ---
 title: "Create meetingRegistrationQuestion"
-description: "Create custom meeting registration question."
+description: "Create a custom meeting registration question associated with a meetingRegistration object."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a [custom registration question](../resources/meetingRegistrationQuestion.md) associated with a [meetingRegistration](../resources/meetingRegistration.md) object.
 
 > [!TIP]
-> You can create custom registration questions in line when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
+> You can create custom registration questions when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
 
 ## Permissions
 
@@ -44,7 +44,7 @@ POST /me/onlineMeetings/{id}/registration/customQuestions
 
 ## Request body
 
-In the request body, supply a JSON representation of a Non-readonly properties of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
+In the request body, supply a JSON representation of the writable properties of a [meetingRegistrationQuestion](../resources/meetingRegistrationQuestion.md) object.
 
 ## Response
 
