@@ -1,5 +1,5 @@
 ---
-title: "Enroll meeting registrant"
+title: "Create meetingRegistrant"
 description: "Enroll a meeting registrant."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Enroll meeting registrant
+# Create meetingRegistrant
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll a registrant. This operation has two scenarios:
+Enroll a [meeting registrant](../resources/meetingRegistrant.md) in an online meeting that has [meeting registration](../resources/meetingRegistration.md) enabled. This operation has two scenarios:
 
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingRegistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported. |
+| Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetings.Read.All |
 
 > [!TIP]
@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a partial [meeti
 
 > [!TIP]
 > The response body will contain different information depending on the value of **allowedRegistrant**.
+>
 > - If the value of the **allowedRegistrant** property is `organization`, only **id** and **joinWebUrl** will be returned in the [meetingRegistrant](../resources/meetingRegistrant.md) object. Registrants can use the **id** to cancel their registration or **joinWebUrl** to join the meeting.
 > - If the value of the **allowedRegistrant** property is `everyone`, an empty [meetingRegistrant](../resources/meetingRegistrant.md) object will be returned. Registrants need to use the links in the email they receive to cancel registration or join the meeting.
 
@@ -82,9 +83,9 @@ POST https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa81431
 Content-Type: application/json
 
 {
-  "firstName": "Foo",
-  "lastName": "Bar",
-  "email": "foo.bar@contoso.com",
+  "firstName": "Frederick",
+  "lastName": "Cormier",
+  "email": "frederick.cormier@contoso.com",
   "customQuestionAnswers": [
     {
       "questionId": "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=",
@@ -139,9 +140,9 @@ POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622
 Content-Type: application/json
 
 {
-  "firstName": "Foo",
-  "lastName": "Bar",
-  "email": "foo.bar@contoso.com",
+  "firstName": "Lisa",
+  "lastName": "Adkins",
+  "email": "lisa.adkins@contoso.com",
   "customQuestionAnswers": [
     {
       "questionId": "MSM5YjlmM2Q4ZS03ZmVkLTRmN3gwMDIw94MDAyMF9hX3gwMDIwX2RldmU=",

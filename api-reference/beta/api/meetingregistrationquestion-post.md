@@ -25,8 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Not Supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
 
@@ -77,6 +77,8 @@ Content-Type: application/json
   "name": "create-custom-question",
   "@odata.type": "microsoft.graph.meetingRegistrationQuestion"
 }-->
+
+> **Note**: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

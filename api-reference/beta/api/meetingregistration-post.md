@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Not Supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
 
@@ -75,12 +75,12 @@ Content-Type: application/json
   "allowedRegistrant": "everyone",
   "speakers": [
     {
-      "displayName": "John Doe",
+      "displayName": "Henry Ross",
       "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Jane Doe",
-      "bio": "EVP, Cloud and AI Group"
+      "displayName": "Hailey Clark",
+      "bio": "EVP"
     }
   ],
   "customQuestions": [
@@ -108,6 +108,8 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.meetingRegistration"
 }-->
 
+> **Note**: The response object shown here might be shortened for readability.
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -124,12 +126,12 @@ Content-Type: application/json
   "registrationPageViewCount": null,
   "speakers": [
     {
-      "displayName": "John Doe",
+      "displayName": "Henry Ross",
       "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Jane Doe",
-      "bio": "EVP, Cloud and AI Group"
+      "displayName": "Hailey Clark",
+      "bio": "EVP"
     }
   ]
 }

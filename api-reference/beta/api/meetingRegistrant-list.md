@@ -24,8 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Not Supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
 
@@ -75,6 +75,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
   "@odata.type": "Collection(microsoft.graph.meetingRegistrant)"
 }-->
 
+> **Note**: The response object shown here might be shortened for readability.
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,9 +88,9 @@ Content-Type: application/json
       "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqc8soJZw5Pg,3aMJxgQBxEufdo7_Qube_w,YgKy1Rtx-0SFjRbv-ww1ag,Cuzk8JP_iTTWqCOyVcalVA",
       "registrationDateTime": "2021-10-02T00:07:16.882602Z",
       "joinWebUrl": null,
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "jdoe@contoso.com",
+      "firstName": "Frederick",
+      "lastName": "Cormier",
+      "email": "frederick.cormier@contoso.com",
       "status": "registered",
       "customQuestionAnswers": [
         {
@@ -107,9 +109,9 @@ Content-Type: application/json
       "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,b0ezc8soJZw5Pg,3aMJxgQBxEufdo7_Qube_w,YgKy1Rtx-0SFjRbv-ww1ag,UwWARTlCT0dzO0jsuuq5EA",
       "registrationDateTime": "2021-10-02T00:08:49.1053222Z",
       "joinWebUrl": null,
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "email": "jane.doe@contoso.com",
+      "firstName": "Lisa",
+      "lastName": "Adkins",
+      "email": "lisa.adkins@contoso.com",
       "status": "registered",
       "customQuestionAnswers": [
         {

@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
 | Delegated (work or school account) | OnlineMeetings.Read, OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Not Supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
 
@@ -76,6 +76,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
   "@odata.type": "microsoft.graph.meetingRegistration"
 }-->
 
+> **Note**: The response object shown here might be shortened for readability.
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,12 +94,12 @@ Content-Type: application/json
   "registrationPageViewCount": 0,
   "speakers": [
     {
-      "displayName": "John Doe",
+      "displayName": "Henry Ross",
       "bio": "Chairman and Chief Executive Officer"
     },
     {
-      "displayName": "Jane Doe",
-      "bio": "EVP, Cloud and AI Group"
+      "displayName": "Hailey Clark",
+      "bio": "CFO"
     }
   ],
   "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/customQuestions",
