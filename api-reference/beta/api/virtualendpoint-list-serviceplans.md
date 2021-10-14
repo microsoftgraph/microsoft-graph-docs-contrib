@@ -1,6 +1,6 @@
 ---
 title: "List servicePlans"
-description: "List the service plans that Cloud PCs support for this tenant."
+description: "List the service plans that Cloud PCs support for a tenant."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the service plans that Cloud PCs support for this tenant.
+List the service plans that Cloud PCs support for a tenant.
 
 ## Permissions
 
