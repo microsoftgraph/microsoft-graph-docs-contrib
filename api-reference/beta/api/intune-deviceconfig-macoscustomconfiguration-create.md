@@ -2,7 +2,7 @@
 title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -162,7 +162,6 @@ Content-Length: 1357
   "deploymentChannel": "userChannel"
 }
 ```
-
 
 
 

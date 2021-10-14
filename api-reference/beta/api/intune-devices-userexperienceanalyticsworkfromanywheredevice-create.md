@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Create a new userExperienceAnalyticsWorkFromAnywhereDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -75,6 +75,11 @@ The following table shows the properties that are required when you create the u
 |processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
 |processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
 |osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
+|windowsScore|Double|The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudManagementScore|Double|The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudIdentityScore|Double|The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudProvisioningScore|Double|The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -88,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 1028
+Content-length: 1215
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -117,7 +122,12 @@ Content-length: 1028
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -126,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1077
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -156,10 +166,14 @@ Content-Length: 1077
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

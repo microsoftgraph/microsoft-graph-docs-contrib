@@ -2,7 +2,7 @@
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 ---

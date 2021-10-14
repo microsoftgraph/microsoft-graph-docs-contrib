@@ -1,7 +1,7 @@
 ---
 title: "Get approvalStep"
 description: "Retrieve the properties of an approvalStep object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"

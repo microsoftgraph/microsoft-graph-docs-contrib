@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## Request body
 
-In the request body, provide an optional `passwordCredential` object with the following properties.
+In the request body, provide an empty [passwordCredential](../resources/passwordcredential.md) object or with the following optional properties.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -88,7 +88,7 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

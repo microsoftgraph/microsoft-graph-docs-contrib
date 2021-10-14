@@ -2,7 +2,7 @@
 title: "admin resource type"
 description: "Singleton entity that acts as a container for administrator functionality."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

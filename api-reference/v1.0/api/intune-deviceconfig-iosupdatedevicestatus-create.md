@@ -2,7 +2,7 @@
 title: "Create iosUpdateDeviceStatus"
 description: "Create a new iosUpdateDeviceStatus object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

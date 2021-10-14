@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Read properties and relationships of the userExperienceAnalyticsWorkFromAnywhereDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1152
+Content-Length: 1349
 
 {
   "value": {
@@ -94,11 +94,15 @@ Content-Length: 1152
     "secureBootCheckFailed": true,
     "processorFamilyCheckFailed": true,
     "processor64BitCheckFailed": true,
-    "osCheckFailed": true
+    "osCheckFailed": true,
+    "windowsScore": 4.0,
+    "cloudManagementScore": 6.666666666666667,
+    "cloudIdentityScore": 6.0,
+    "cloudProvisioningScore": 7.333333333333333,
+    "healthStatus": "insufficientData"
   }
 }
 ```
-
 
 
 

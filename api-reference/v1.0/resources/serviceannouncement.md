@@ -2,7 +2,7 @@
 title: "serviceAnnouncement resource type"
 description: "A top-level container for service communications resources"
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: resourcePageType
 ---

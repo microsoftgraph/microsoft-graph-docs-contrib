@@ -2,7 +2,7 @@
 title: "win32LobAppRestartBehavior enum type"
 description: "Indicates the type of restart action."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Indicates the type of restart action.
 |allow|1|Intune will not take any specific action on reboot codes resulting from app installations. Intune will not attempt to suppress restarts for MSI apps.|
 |suppress|2|Intune will attempt to suppress restarts for MSI apps.|
 |force|3|Intune will force the device to restart immediately after the app installation operation.|
-
 
 
 

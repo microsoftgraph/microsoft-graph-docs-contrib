@@ -2,7 +2,7 @@
 title: "Update workbookChartAxisTitle"
 description: "Update the properties of workbookchartaxistitle object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

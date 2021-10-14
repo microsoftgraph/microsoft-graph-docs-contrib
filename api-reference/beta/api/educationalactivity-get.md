@@ -1,7 +1,7 @@
 ---
 title: "Get educationalActivity"
 description: "Retrieve the properties and relationships of an educationalActivity object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "sharedPCAccountManagerPolicy resource type"
 description: "SharedPC Account Manager Policy. Only applies when the account manager is enabled."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -44,7 +44,6 @@ Here is a JSON representation of the resource.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
-
 
 
 

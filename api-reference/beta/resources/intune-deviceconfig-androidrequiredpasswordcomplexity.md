@@ -2,7 +2,7 @@
 title: "androidRequiredPasswordComplexity enum type"
 description: "The password complexity types that can be set on Android. One of: NONE, LOW, MEDIUM, HIGH. This is an API targeted to Android 11+."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ The password complexity types that can be set on Android. One of: NONE, LOW, MED
 |low|1|The required password complexity on the device is of type low as defined by the Android documentation.|
 |medium|2|The required password complexity on the device is of type medium as defined by the Android documentation.|
 |high|3|The required password complexity on the device is of type high as defined by the Android documentation.|
-
 
 
 

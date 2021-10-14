@@ -1,7 +1,7 @@
 ---
 title: "Assign tokenIssuancePolicy"
 description: "Assign a tokenIssuancePolicy to an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

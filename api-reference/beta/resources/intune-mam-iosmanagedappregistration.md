@@ -2,7 +2,7 @@
 title: "iosManagedAppRegistration resource type"
 description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -90,7 +90,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
 
 
 

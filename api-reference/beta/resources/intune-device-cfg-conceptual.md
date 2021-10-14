@@ -2,7 +2,7 @@
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -143,6 +143,8 @@ The following Graph resources are available to manage settings and features on d
 - [BitLocker system drive policy](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Browser sync setting](intune-deviceconfig-browsersyncsetting.md)
 - [Cart to class association](intune-deviceconfig-carttoclassassociation.md)
+- [Certificate connector details](intune-raimportcerts-certificateconnectordetails.md)
+- [Certificate connector health metric value](intune-raimportcerts-certificateconnectorhealthmetricvalue.md)
 - [Certificate issuance states](intune-deviceconfig-certificateissuancestates.md)
 - [Certificate revocation status](intune-deviceconfig-certificaterevocationstatus.md)
 - [Change uefi settings permission](intune-deviceconfig-changeuefisettingspermission.md)
@@ -357,6 +359,7 @@ The following Graph resources are available to manage settings and features on d
 - [Key value](intune-deviceconfig-keyvalue.md)
 - [Key/value pair](intune-deviceconfig-keyvaluepair.md)
 - [Key/value pair](intune-deviceconfig-keyvaluepair.md)
+- [Kiosk mode managed home screen PIN complexity](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [LAN manager authentication level](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Local security options administrator elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Local security options format and eject of removable media allowed user type](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -495,6 +498,7 @@ The following Graph resources are available to manage settings and features on d
 - [Specified captive network plugins](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [State management setting](intune-deviceconfig-statemanagementsetting.md)
 - [Subject name format](intune-deviceconfig-subjectnameformat.md)
+- [Time series parameter](intune-raimportcerts-timeseriesparameter.md)
 - [Unsupported device configuration](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Unsupported device configuration detail](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
 - [Update classification](intune-deviceconfig-updateclassification.md)

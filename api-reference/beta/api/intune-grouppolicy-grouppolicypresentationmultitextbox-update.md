@@ -2,7 +2,7 @@
 title: "Update groupPolicyPresentationMultiTextBox"
 description: "Update the properties of a groupPolicyPresentationMultiTextBox object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -96,7 +96,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

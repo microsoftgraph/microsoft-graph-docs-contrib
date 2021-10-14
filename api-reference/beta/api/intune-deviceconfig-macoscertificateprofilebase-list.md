@@ -2,7 +2,7 @@
 title: "List macOSCertificateProfileBases"
 description: "List properties and relationships of the macOSCertificateProfileBase objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -107,7 +107,6 @@ Content-Length: 1602
   ]
 }
 ```
-
 
 
 

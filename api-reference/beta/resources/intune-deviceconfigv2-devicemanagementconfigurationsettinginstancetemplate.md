@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingInstanceTemplate resource type"
 description: "Setting Instance Template"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -42,7 +42,6 @@ Here is a JSON representation of the resource.
   "isRequired": true
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete externalItem"
 description: "Delete an externalItem."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"

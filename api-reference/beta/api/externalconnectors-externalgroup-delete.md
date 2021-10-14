@@ -1,8 +1,8 @@
 ---
 title: "Delete externalGroup"
-description: "Deletes an externalGroup object."
+description: "Delete an externalGroup object."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update onPremisesConditionalAccessSettings"
 description: "Update the properties of a onPremisesConditionalAccessSettings object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

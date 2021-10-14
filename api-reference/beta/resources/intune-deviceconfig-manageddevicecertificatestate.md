@@ -2,7 +2,7 @@
 title: "managedDeviceCertificateState resource type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -96,7 +96,6 @@ Here is a JSON representation of the resource.
   "certificateErrorCode": 1024
 }
 ```
-
 
 
 

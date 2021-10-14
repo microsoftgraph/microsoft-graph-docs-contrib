@@ -2,7 +2,7 @@
 title: "List accessReviewInstances"
 description: "Get a list of the accessReviewInstance objects and their properties."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

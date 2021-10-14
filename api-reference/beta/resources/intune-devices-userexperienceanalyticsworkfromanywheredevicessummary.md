@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsWorkFromAnywhereDevicesSummary resource type"
 description: "The user experience analytics Work From Anywhere metrics devices summary."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -41,7 +41,8 @@ Here is a JSON representation of the resource.
   "autopilotDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
     "devicesNotAutopilotRegistered": 1024,
-    "devicesWithoutAutopilotProfileAssigned": 1024
+    "devicesWithoutAutopilotProfileAssigned": 1024,
+    "totalWindows10DevicesWithoutTenantAttached": 1024
   },
   "cloudManagementDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -59,7 +60,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

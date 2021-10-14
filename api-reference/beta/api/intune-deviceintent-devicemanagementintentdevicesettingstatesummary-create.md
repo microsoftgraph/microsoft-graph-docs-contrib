@@ -2,7 +2,7 @@
 title: "Create deviceManagementIntentDeviceSettingStateSummary"
 description: "Create a new deviceManagementIntentDeviceSettingStateSummary object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -102,7 +102,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

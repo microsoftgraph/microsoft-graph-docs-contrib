@@ -2,7 +2,7 @@
 title: "Create mobileThreatDefenseConnector"
 description: "Create a new mobileThreatDefenseConnector object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the m
 |partnerUnsupportedOsVersionBlocked|Boolean|Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner|
 |partnerUnresponsivenessThresholdInDays|Int32|Get or Set days the per tenant tolerance to unresponsiveness for this partner integration|
 |allowPartnerToCollectIOSApplicationMetadata|Boolean|For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune|
+|microsoftDefenderForEndpointAttachEnabled|Boolean|When TRUE, configuration profile management via Microsoft Defender for Endpoint is enabled. When FALSE, configuration profile management via Microsoft Defender for Endpoint is disabled.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json
-Content-length: 726
+Content-length: 780
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -95,7 +96,8 @@ Content-length: 726
   "macDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
-  "allowPartnerToCollectIOSApplicationMetadata": true
+  "allowPartnerToCollectIOSApplicationMetadata": true,
+  "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
 
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 775
+Content-Length: 829
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -123,10 +125,10 @@ Content-Length: 775
   "macDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
-  "allowPartnerToCollectIOSApplicationMetadata": true
+  "allowPartnerToCollectIOSApplicationMetadata": true,
+  "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
-
 
 
 

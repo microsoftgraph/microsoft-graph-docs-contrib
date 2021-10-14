@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationValueList"
 description: "Create a new groupPolicyPresentationValueList object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -100,7 +100,6 @@ Content-Length: 394
   ]
 }
 ```
-
 
 
 

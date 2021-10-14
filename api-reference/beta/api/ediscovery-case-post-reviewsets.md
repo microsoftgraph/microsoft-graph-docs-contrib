@@ -1,7 +1,7 @@
 ---
 title: "Create reviewSet"
 description: "Create an eDiscovery review set."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

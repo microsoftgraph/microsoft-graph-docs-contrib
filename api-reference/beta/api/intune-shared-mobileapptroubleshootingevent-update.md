@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppTroubleshootingEvent"
 description: "Describes the Update mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "rolyon"
 ms.prod: "intune"
 doc_type: apiPageType
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |**Troubleshooting**|
-|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event.|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event.|
 |applicationId|String|Intune application identifier.|
 |correlationId|String|ID used for tracing the failure in the service. |
 |eventDateTime|DateTimeOffset|Time when the event occurred. |
@@ -94,7 +94,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

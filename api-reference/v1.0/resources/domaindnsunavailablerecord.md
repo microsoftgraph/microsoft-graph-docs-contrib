@@ -1,7 +1,7 @@
 ---
 title: "domainDnsUnavailableRecord resource type"
 description: "Indicates that serviceConfigurationRecords cannot be generated."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: resourcePageType

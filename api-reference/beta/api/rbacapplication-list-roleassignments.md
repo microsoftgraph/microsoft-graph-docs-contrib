@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleAssignments"
 description: "Get a list of unifiedRoleAssignment objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -61,6 +61,8 @@ To list role assignments for the entitlement management provider:
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
 ```
 
 ## Query parameters

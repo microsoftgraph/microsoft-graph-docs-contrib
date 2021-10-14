@@ -1,7 +1,7 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
@@ -57,13 +57,6 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
-
 ### fido2RestrictionEnforcementType values
 
 |Member|
@@ -115,12 +108,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### allowInvitesFrom values
 
@@ -1302,6 +1289,30 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| Multiline text. |
+|text | Single line text. |
+|choice | Choice column |
+|multichoice | Multichoice column. |
+|number | Number column. |
+|currency | Currency column. |
+|dateTime | DateTime column. |
+|lookup | Lookup column. |
+|boolean | Yes/No column. |
+|user | Person or group column. |
+|url | Hyperlink or picture column. |
+|calculated | Calculated column. |
+|location | Location column. |
+|geolocation | Geolocation column. |
+|term | Managed metadata column. |
+|multiterm | Managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | UnknownFuturevalue |
 
 ### permissionClassificationType values
 

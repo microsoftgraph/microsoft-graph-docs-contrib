@@ -2,7 +2,7 @@
 title: "List includedGroups"
 description: "Get the list of groups that are included in a mobile app management policy."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

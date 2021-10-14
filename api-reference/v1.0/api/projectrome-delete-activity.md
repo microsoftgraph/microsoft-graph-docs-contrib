@@ -1,7 +1,7 @@
 ---
 title: "Delete an activity"
 description: "Delete an existing user activity for your app."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType

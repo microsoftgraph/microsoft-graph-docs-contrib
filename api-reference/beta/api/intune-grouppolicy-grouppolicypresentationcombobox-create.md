@@ -2,7 +2,7 @@
 title: "Create groupPolicyPresentationComboBox"
 description: "Create a new groupPolicyPresentationComboBox object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -102,7 +102,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

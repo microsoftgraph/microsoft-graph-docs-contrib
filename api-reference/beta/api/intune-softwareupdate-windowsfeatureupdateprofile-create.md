@@ -2,7 +2,7 @@
 title: "Create windowsFeatureUpdateProfile"
 description: "Create a new windowsFeatureUpdateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -107,7 +107,6 @@ Content-Length: 577
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
-
 
 
 

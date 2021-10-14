@@ -2,7 +2,7 @@
 title: "remoteAssistanceState enum type"
 description: "State of remote assistance for the account"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ State of remote assistance for the account
 |notConfigured|0|Remote assistance is not configured for the account. With this value, basic Quick Assist remote assistance features are provided.|
 |disabled|1|Remote assistance is disabled for the account. With this value, Quick Assist remote assistance sessions are not allowed for the account.|
 |enabled|2|Remote assistance is enabled for the account. With this value, enterprise Quick Assist remote assistance features are provided.|
-
 
 
 

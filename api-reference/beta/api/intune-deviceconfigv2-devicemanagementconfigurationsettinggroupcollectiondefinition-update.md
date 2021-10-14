@@ -2,7 +2,7 @@
 title: "Update deviceManagementConfigurationSettingGroupCollectionDefinition"
 description: "Update the properties of a deviceManagementConfigurationSettingGroupCollectionDefinition object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -219,7 +219,6 @@ Content-Length: 1834
   "minimumCount": 12
 }
 ```
-
 
 
 

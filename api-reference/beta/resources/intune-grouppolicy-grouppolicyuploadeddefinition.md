@@ -2,7 +2,7 @@
 title: "groupPolicyUploadedDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -40,6 +40,8 @@ Inherits from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolic
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Possible values are: `admxBacked`, `admxIngested`.|
 |hasRelatedDefinitions|Boolean|Signifies whether or not there are related definitions to this definition Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |groupPolicyCategoryId|Guid|The category id of the parent category Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|minDeviceCspVersion|String|Minimum required CSP version for device configuration in this definition Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|minUserCspVersion|String|Minimum required CSP version for user configuration in this definition Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |version|String|Setting definition version Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |id|String|Key of the entity. Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
@@ -72,12 +74,13 @@ Here is a JSON representation of the resource.
   "policyType": "String",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "Guid",
+  "minDeviceCspVersion": "String",
+  "minUserCspVersion": "String",
   "version": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

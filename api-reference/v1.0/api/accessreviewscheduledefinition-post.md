@@ -1,7 +1,7 @@
 ---
 title: "Create accessReviewScheduleDefinition"
 description: "Create a new accessReviewScheduleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -44,8 +44,8 @@ The following table shows the properties accepted to create an accessReview.
 | Property | Type | Description |
 |:-------------|:------------|:------------|
 | displayName | String | Name of access review series. Required.|
-| descriptionForAdmins | string | Context of the review provided to admins. Required. |
-  descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
+| descriptionForAdmins | String | Context of the review provided to admins. Required. |
+  descriptionForReviewers | String | Context of the review provided to reviewers in email notifications. Email notifications support up to 256 characters. Required. |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) |  Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |

@@ -1,7 +1,7 @@
 ---
 title: "mobileAppTroubleshootingEvent resource type"
 description: "Describes the mobileAppTroubleshootingEvent resource of the Microsoft Graph API for Intune, which supports multiple workflows."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "rolyon"
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -31,7 +31,7 @@ Event representing a users device application install status for device manageme
 |:---|:---|:---|
 |id|String|UUID for the object.|
 |**Troubleshooting**|
-|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |applicationId|String|Intune application identifier.|
 |correlationId|String|ID used for tracing the failure in the service. |
 |eventDateTime|DateTimeOffset|Time when the event occurred . |
@@ -95,7 +95,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get connectionOperation"
 description: "Retrieve the properties of a connectionOperation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"

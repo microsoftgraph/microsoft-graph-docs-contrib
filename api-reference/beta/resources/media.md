@@ -2,7 +2,7 @@
 author: MarcMroz
 description: "The media resource contains metadata about the media (audio or video) drive item."
 title: media resource type
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

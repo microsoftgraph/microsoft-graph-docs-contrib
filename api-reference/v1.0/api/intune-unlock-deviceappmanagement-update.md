@@ -2,7 +2,7 @@
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Update the properties of a advancedThreatProtectionOnboardingDeviceSettingState object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -117,7 +117,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

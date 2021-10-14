@@ -2,7 +2,7 @@
 title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -196,7 +196,6 @@ Content-Length: 1558
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

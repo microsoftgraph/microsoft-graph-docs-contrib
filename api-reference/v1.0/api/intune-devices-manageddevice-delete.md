@@ -2,7 +2,7 @@
 title: "Delete managedDevice"
 description: "Deletes a managedDevice."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

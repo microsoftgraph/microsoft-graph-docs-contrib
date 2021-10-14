@@ -2,7 +2,7 @@
 title: "managementActionTenantDeploymentStatus resource type"
 description: "Represents tenant level deployment status for the management action."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---

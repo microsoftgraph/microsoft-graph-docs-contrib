@@ -2,7 +2,7 @@
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
@@ -37,7 +37,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
 | attendeeReport        | Stream                                        | The content stream of the attendee report of a live event. Read-only.                                                                                                                                                                                       |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                                                                                                                                                    |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event*                                                                                                                                                                                                                    |
+| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.                                                                                                                                                                                                                     |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                                                                                                                                                   |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                                                                                                                                                                |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                                                                                                                                                                |
@@ -62,8 +62,6 @@ Contains information about a meeting, including the URL used to join a meeting, 
 >
 >- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
->- \* Creating live events with the **broadcastSettings** property is in beta, with important limitations. For details, see
-> [broadcastSettings](broadcastMeetingSettings.md).
 
 ### onlineMeetingPresenters values
 
@@ -76,7 +74,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | unknownFutureValue | Unknown future value.                                         |
 
 > [!TIP]
-> If the value of **allowedPresenters** is set to `roleIsPresenter`, specify each meeting participant's meeting role using the [meetingParticipantInfo](../resources/meetingparticipantinfo.md) **role** property.
+>
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
 
 ### meetingChatMode values
 
@@ -129,5 +129,3 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

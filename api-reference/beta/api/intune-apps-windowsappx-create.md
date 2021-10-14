@@ -2,7 +2,7 @@
 title: "Create windowsAppX"
 description: "Create a new windowsAppX object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -208,7 +208,6 @@ Content-Length: 1734
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

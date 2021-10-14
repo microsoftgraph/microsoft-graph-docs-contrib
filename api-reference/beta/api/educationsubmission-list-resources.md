@@ -2,7 +2,7 @@
 title: "List submission resources"
 description: "List the resources associated with a submission."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

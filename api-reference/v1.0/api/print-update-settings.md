@@ -2,7 +2,7 @@
 title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

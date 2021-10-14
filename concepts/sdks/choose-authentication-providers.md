@@ -1,7 +1,7 @@
 ---
 title: "Choose a Microsoft Graph authentication provider"
 description: "Learn how to choose scenario-specific authentication providers for your application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
@@ -168,7 +168,11 @@ The client credential flow enables service applications to run without user inte
 ### Using a client secret
 
 ```csharp
-var scopes = new[] { "User.Read.All" };
+// The client credentials flow requires that you request the
+// /.default scope, and preconfigure your permissions on the
+// app registration in Azure. An administrator must grant consent
+// to those permissions beforehand.
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal

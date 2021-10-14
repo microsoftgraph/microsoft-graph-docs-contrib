@@ -2,7 +2,7 @@
 title: "Create macOSCompliancePolicy"
 description: "Create a new macOSCompliancePolicy object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -164,7 +164,6 @@ Content-Length: 1318
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

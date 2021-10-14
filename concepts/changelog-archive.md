@@ -2,7 +2,7 @@
 title: "Changelog for Microsoft Graph (Archive)"
 description: "This topic contains archived changelog entries for Microsoft Graph."
 author: "MSGraphDocsVteam"
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Changelog for Microsoft Graph (Archive)

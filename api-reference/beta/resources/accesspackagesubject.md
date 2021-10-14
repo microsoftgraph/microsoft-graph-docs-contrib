@@ -1,7 +1,7 @@
 ---
 title: "accessPackageSubject resource type"
 description: "In Azure AD entitlement management, a subject of an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"

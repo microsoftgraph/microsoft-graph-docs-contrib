@@ -2,7 +2,7 @@
 title: "easAuthenticationMethod enum type"
 description: "Exchange Active Sync authentication method."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ Exchange Active Sync authentication method.
 |usernameAndPassword|0|Authenticate with a username and password.|
 |certificate|1|Authenticate with a certificate.|
 |derivedCredential|2|Authenticate with derived credential.|
-
 
 
 

@@ -2,7 +2,7 @@
 title: "deviceManagementReportFileFormat enum type"
 description: "Possible values for the file format of a report"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---

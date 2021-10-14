@@ -2,7 +2,7 @@
 title: "operatingSystemUpgradeEligibility enum type"
 description: "Work From Anywhere windows device upgrade eligibility status"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Work From Anywhere windows device upgrade eligibility status
 |unknown|1|Not enough data available to compute the eligibility of device for windows upgrade|
 |notCapable|2|The device is not capable for windows upgrade|
 |capable|3|The device is capable for windows upgrade|
-
 
 
 

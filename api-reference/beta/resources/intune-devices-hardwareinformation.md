@@ -2,7 +2,7 @@
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -110,7 +110,6 @@ Here is a JSON representation of the resource.
   "tpmVersion": "String"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get workbookApplication"
 description: "Retrieve the properties and relationships of workbookApplication object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType

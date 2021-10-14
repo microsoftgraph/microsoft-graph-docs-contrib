@@ -2,7 +2,7 @@
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -21,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
+
+> **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

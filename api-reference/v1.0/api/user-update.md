@@ -2,7 +2,7 @@
 title: "Update user"
 description: "Update the properties of a user object."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---

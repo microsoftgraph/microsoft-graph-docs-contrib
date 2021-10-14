@@ -2,7 +2,7 @@
 title: "Create timeCard"
 description: "Create a timeCard instance in the schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

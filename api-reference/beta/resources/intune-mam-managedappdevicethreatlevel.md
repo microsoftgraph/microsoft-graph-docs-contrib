@@ -2,7 +2,7 @@
 title: "managedAppDeviceThreatLevel enum type"
 description: "The maxium threat level allowed for an app to be compliant."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,6 @@ The maxium threat level allowed for an app to be compliant.
 |low|2|Device needs to have a low threat.|
 |medium|3|Device needs to have not more than medium threat.|
 |high|4|Device needs to have not more than high threat|
-
 
 
 

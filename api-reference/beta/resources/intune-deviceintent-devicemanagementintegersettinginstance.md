@@ -2,7 +2,7 @@
 title: "deviceManagementIntegerSettingInstance resource type"
 description: "A setting instance representing an integer value"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -57,7 +57,6 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
-
 
 
 

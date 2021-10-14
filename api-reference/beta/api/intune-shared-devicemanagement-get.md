@@ -2,7 +2,7 @@
 title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
 author: "rolyon"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -156,7 +156,6 @@ Content-Length: 918
   }
 }
 ```
-
 
 
 

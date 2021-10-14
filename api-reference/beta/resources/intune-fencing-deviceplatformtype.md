@@ -2,7 +2,7 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -29,7 +29,6 @@ Supported platform types.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|Android Work Profile.|
 |unknown|8|Unknown.|
-
 
 
 

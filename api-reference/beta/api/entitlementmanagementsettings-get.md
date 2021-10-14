@@ -1,7 +1,7 @@
 ---
 title: "Get entitlementManagementSettings"
 description: "Retrieve the properties of the entitlementManagementSettings object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

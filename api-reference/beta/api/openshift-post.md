@@ -1,7 +1,7 @@
 ---
 title: "Create openShift"
 description: "Create an instance of openshift object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

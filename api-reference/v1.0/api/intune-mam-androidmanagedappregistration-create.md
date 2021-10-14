@@ -2,7 +2,7 @@
 title: "Create androidManagedAppRegistration"
 description: "Create a new androidManagedAppRegistration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

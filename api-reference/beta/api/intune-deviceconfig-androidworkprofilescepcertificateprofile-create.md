@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileScepCertificateProfile"
 description: "Create a new androidWorkProfileScepCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -220,7 +220,6 @@ Content-Length: 2154
   ]
 }
 ```
-
 
 
 

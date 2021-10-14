@@ -2,7 +2,7 @@
 title: "Update groupPolicyPresentation"
 description: "Update the properties of a groupPolicyPresentation object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -87,7 +87,6 @@ Content-Length: 205
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

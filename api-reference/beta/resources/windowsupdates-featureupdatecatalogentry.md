@@ -2,7 +2,7 @@
 title: "featureUpdateCatalogEntry resource type"
 description: "Metadata for a Windows 10 feature update that you can approve for deployment."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -143,6 +143,7 @@ The following table shows the properties that are required when you create the d
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 
 
 
@@ -156,7 +157,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5308
+Content-length: 5341
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -277,7 +278,8 @@ Content-length: 5308
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
 
@@ -286,7 +288,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5480
+Content-Length: 5513
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -410,10 +412,10 @@ Content-Length: 5480
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
-
 
 
 

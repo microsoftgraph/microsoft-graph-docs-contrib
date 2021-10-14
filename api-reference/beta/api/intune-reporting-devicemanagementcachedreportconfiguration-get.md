@@ -2,7 +2,7 @@
 title: "Get deviceManagementCachedReportConfiguration"
 description: "Read properties and relationships of the deviceManagementCachedReportConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -84,7 +84,6 @@ Content-Length: 514
   }
 }
 ```
-
 
 
 

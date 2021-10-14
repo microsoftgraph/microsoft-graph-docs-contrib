@@ -2,7 +2,7 @@
 title: "Get groupPolicyDefinition"
 description: "Read properties and relationships of the groupPolicyDefinition object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 574
+Content-Length: 690
 
 {
   "value": {
@@ -82,13 +82,14 @@ Content-Length: 574
     "policyType": "admxIngested",
     "hasRelatedDefinitions": true,
     "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+    "minDeviceCspVersion": "Min Device Csp Version value",
+    "minUserCspVersion": "Min User Csp Version value",
     "version": "Version value",
     "id": "f9607947-7947-f960-4779-60f9477960f9",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
-
 
 
 

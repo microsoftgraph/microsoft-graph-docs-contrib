@@ -2,7 +2,7 @@
 title: "Create embeddedSIMActivationCodePool"
 description: "Create a new embeddedSIMActivationCodePool object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -108,7 +108,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
 
 
 

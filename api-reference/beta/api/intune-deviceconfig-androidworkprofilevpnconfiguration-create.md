@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileVpnConfiguration"
 description: "Create a new androidWorkProfileVpnConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -263,7 +263,6 @@ Content-Length: 2594
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
-
 
 
 

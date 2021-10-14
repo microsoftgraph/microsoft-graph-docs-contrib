@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -13,4 +13,7 @@ ms.topic: include
 | Any | 10000 requests per 20 seconds | 5000 requests per 20 seconds | 2000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-subscription.
+
+| <!-- fake header-->                                                |
+|--------------------------------------------------------------------|
+| <ul> <li> [subscription](/graph/api/resources/subscription)  </ul> |

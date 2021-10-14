@@ -2,7 +2,7 @@
 title: "List securityBaselineDeviceStates"
 description: "List properties and relationships of the securityBaselineDeviceState objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -76,7 +76,6 @@ Content-Length: 420
   ]
 }
 ```
-
 
 
 
