@@ -116,4 +116,4 @@ and [`model=B` requirements](#modelb-requirements)
 ## Price for additional use
 
 In the future, Microsoft will charge a fee for usage over the seeded capacity.
-It is not possible yet to associate your app with a payment method.
+In the future, you'll be able to associate an Azure subscription to your application registration.
