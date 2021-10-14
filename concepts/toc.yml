@@ -161,6 +161,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -261,10 +263,14 @@ items:
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
-          - name: Authentication methods
-            href: authenticationmethods-get-started.md
+          - name: Directory management
+            items:
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Authentication methods
+                href: authenticationmethods-get-started.md
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
@@ -279,6 +285,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -395,9 +403,9 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results (preview)
+          - name: Sort search results
             href: search-concept-sort.md
-          - name: Refine search results (preview)
+          - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
@@ -438,12 +446,11 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
-          - name: Licenses for subscribing to chat messages
+          - name: Licensing and payment requirements
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Activity feed notifications
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +548,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Team membership
+                  - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md                  

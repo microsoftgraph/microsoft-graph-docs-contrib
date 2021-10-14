@@ -107,13 +107,11 @@ Content-length: 3296
                         "GradeHigh",
                         "Principal Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "section": {
                     "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -123,7 +121,6 @@ Content-length: 3296
                         "Email",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -132,19 +129,15 @@ Content-length: 3296
                         "Teacher Number",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "studentEnrollment": {
-                    "optionalPropertiesToSync": [],
                     "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "teacherRoster": {
-                    "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 }
