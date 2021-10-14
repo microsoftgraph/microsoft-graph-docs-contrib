@@ -83,7 +83,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {

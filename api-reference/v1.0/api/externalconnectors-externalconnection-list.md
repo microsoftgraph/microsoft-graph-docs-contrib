@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections
+GET https://graph.microsoft.com/v1.0/external/connections
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-externalconnection-csharp-snippets.md)]

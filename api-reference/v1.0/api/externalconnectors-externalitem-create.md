@@ -89,7 +89,7 @@ If successful, this method returns `200 OK` response code.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {

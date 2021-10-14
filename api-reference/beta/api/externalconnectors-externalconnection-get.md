@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/connections/contosohr
+GET https://graph.microsoft.com/beta/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]

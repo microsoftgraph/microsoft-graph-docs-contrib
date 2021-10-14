@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [externalConn
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/contosohr
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-externalconnection-csharp-snippets.md)]

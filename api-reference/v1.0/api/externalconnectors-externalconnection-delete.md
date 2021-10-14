@@ -56,7 +56,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalconnection-csharp-snippets.md)]

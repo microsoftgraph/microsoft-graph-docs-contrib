@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/groups/{externalGroupId}
+PATCH https://graph.microsoft.com/v1.0/external/connections/{connectionsId}/groups/{externalGroupId}
 Content-Type: application/json
 
 {

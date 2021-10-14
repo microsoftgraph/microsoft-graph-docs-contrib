@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 

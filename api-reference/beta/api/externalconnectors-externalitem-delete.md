@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]

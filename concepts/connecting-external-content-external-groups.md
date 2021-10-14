@@ -72,7 +72,7 @@ An external group can contain one or more of the following:
 After you create the group, you can add members to the group, as shown in the following examples.
 
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "contosoSupport",
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "25f143de-be82-4afb-8a57-e032b9315752",
@@ -90,7 +90,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",

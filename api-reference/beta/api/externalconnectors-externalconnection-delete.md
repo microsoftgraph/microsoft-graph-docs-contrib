@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]

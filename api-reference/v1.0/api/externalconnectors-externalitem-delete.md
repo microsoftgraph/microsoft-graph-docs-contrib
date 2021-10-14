@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalitem-csharp-snippets.md)]
