@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a [custom registration question](../resources/meetingregistrationquestion.md) associated with a [meetingRegistration](../resources/meetingregistration.md) object on behalf of the organizer.
 
 > [!TIP]
-> You can create custom registration questions when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
+> You can create custom registration questions in line when you create a meeting registration. For details, see [Create meetingRegistration](meetingRegistration-post.md).
 
 ## Permissions
 
