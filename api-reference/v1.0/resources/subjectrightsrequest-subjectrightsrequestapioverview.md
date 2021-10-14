@@ -16,9 +16,6 @@ The Microsoft Graph APIs for subject rights request provide functionality for or
 > [!IMPORTANT]
 > The Microsoft Graph APIs for subject rights request are intended to help meet the need to fulfill subject rights requests within Microsoft 365 services for Exchange Online, SharePoint Online, Teams chats, and OneDrive for Business. These APIs should not be used as a substitute for searching for data in any other Microsoft 365 system or any other area as those scenarios are not explicity supported.
 
-> [!NOTE]
-> During the preview, usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees. 
-
 The API includes the following key entities.
 
 | Name | Type       | Use case |
