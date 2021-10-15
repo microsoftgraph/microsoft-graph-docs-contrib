@@ -15,6 +15,8 @@ The Microsoft Graph API for Intune enables programmatic access to Intune informa
 
 For mobile device management (MDM) scenarios, the Microsoft Graph API for Intune supports standalone deployments; Intune [hybrid deployments](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) are not supported. 
 
+
+
 ## Using the Microsoft Graph API for Intune
 
 Intune provides data into the Microsoft Graph API in the same way as other cloud services do, with rich entity information and relationship navigation. Use the Microsoft Graph API to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.     
@@ -43,6 +45,16 @@ The Microsoft Graph API controls access to resources via permissions. As a devel
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
+## Interaction between Graph APIs for Windows Updates
+
+With Graph, there are two sets of APIs you can use to manage Windows Updates: 
+
+- The Intune APIs, or [corporate management](https://docs.microsoft.com/graph/intune-concept-overview)
+- The Windows updates APIs, or [device updates](https://docs.microsoft.com/graph/windowsupdates-concept-overview)
+  
+While you can use either Graph to manage Windows Updates, use of these two Graphs for Windows Updates are not compatible with each other. Each can overwrite the configurations made by the other Graph without providing visibility to that action. Use of both Graphs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
+
 
 ## Next Steps
 
