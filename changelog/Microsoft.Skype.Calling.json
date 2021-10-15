@@ -179,6 +179,98 @@
     {
       "ChangeList": [
         {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "answerInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **answerInputType** enumeration type.",
+          "Target": "answerInputType"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "meetingAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingAudience** enumeration type.",
+          "Target": "meetingAudience"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "meetingRegistrantStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingRegistrantStatus** enumeration type.",
+          "Target": "meetingRegistrantStatus"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customQuestionAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the [customQuestionAnswer](https://docs.microsoft.com/en-us/graph/api/resources/customQuestionAnswer?view=graph-rest-beta) resource type.",
+          "Target": "customQuestionAnswer"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingSpeaker",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingSpeaker](https://docs.microsoft.com/en-us/graph/api/resources/meetingSpeaker?view=graph-rest-beta) resource type.",
+          "Target": "meetingSpeaker"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistrant",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingRegistrant](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrant?view=graph-rest-beta) resource and associated methods.",
+          "Target": "meetingRegistrant"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingRegistration](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "meetingRegistration"
+        },
+        {
+          "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistrationQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingRegistrationQuestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrationQuestion?view=graph-rest-beta) resource and associated methods.",
+          "Target": "meetingRegistrationQuestion"
+        }
+      ],
+      "Id": "888886a4-9134-442c-8268-578a0fda3d2f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-14T04:49:37.889327Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c74d5173-8b40-4f22-a41b-fcd8bc103518",
+          "ApiChange": "Resource",
+          "ChangedApiName": "registration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registration** relationship to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "c74d5173-8b40-4f22-a41b-fcd8bc103518",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-29T04:49:37.8901959Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7684a4c1-6c89-4d19-97c3-b70dea0c96b4",
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingArtifact.Read.All",
