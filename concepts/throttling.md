@@ -288,10 +288,9 @@ Other factors that affect a request cost:
 
 ### Identity and access reports service limits
 
-| Request type | Limit per tenant for all apps | Limit per app per tenant |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
-| Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 60 requests per 60 seconds |
 
 The preceding limits apply to the following resources:
 
@@ -300,6 +299,8 @@ The preceding limits apply to the following resources:
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
+  
+For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|

@@ -29,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /servicePrincipals/{id}
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

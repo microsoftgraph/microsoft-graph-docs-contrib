@@ -109,7 +109,7 @@ Here is a JSON representation of the resource
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
-|id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
+|id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
 |inferenceClassification|String| Possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
