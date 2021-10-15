@@ -433,6 +433,9 @@ System.out.println(String.format("New event created with ID: %s", event.id));
 final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
+
+---
+
 ## Implementing batching using BatchRequestContent, BatchRequestStep, and HttpRequestMessage
 
 The following example shows how to use `BatchRequestContent`,`BatchRequestStep`, and `HttpRequestMessage` to send multiple requests in a batch and how to handle the limit of 20 with Microsoft Graph API requests. This example creates meeting links using the `onlineMeetings/createOrGet` endpoint for the specified user ID. You can use this example with other Microsoft Graph endpoints as well.
