@@ -103,8 +103,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-10-15T21:04:31.2767577Z",
-      "WorkloadArea": "Microsoft.Compliance.DataSubjectRequest",
-      "SubArea": ""
+      "WorkloadArea": "Compliance",
+      "SubArea": "Privacy"
     }
   ]
 }
