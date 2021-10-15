@@ -1,5 +1,5 @@
 ---
-title: "List meeting registrants"
+title: "List registrants"
 description: "Get a list of the meetingRegistrants of an onlineMeeting."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List meeting registrants
+# List registrants
 
 Namespace: microsoft.graph
 

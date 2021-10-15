@@ -1,5 +1,5 @@
 ---
-title: "List meeting registration questions"
+title: "List customQuestions"
 description: "Get a list of the custom registration questions associated with a meetingRegistration object."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List custom registration questions
+# List customQuestions
 
 Namespace: microsoft.graph
 
