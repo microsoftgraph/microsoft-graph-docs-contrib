@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to control continuous access evaluation settings. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to control continuous access evaluation settings.
 
 ## Properties
 |Property|Type|Description|
