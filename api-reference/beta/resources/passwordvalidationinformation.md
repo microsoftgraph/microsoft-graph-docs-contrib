@@ -19,8 +19,8 @@ Resource that exposes the properties that specify whether a user's password is v
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isValid|Boolean| Specifies whether the password is valid based off the calculation of the results in the **validationResults** property. Required. Read-only. |
-|validationResults|[validationResult](../resources/validationresult.md) collection| The list of password validation rules and whether the password passed those rules. Read-only. |
+|isValid|Boolean| Specifies whether the password is valid based off the calculation of the results in the **validationResults** property. Not nullable. Read-only. |
+|validationResults|[validationResult](../resources/validationresult.md) collection| The list of password validation rules and whether the password passed those rules. Not nullable. Read-only. |
 
 ## Relationships
 None.

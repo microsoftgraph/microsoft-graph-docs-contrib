@@ -18,9 +18,9 @@ Resource that exposes the properties that specify whether a user's password is v
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|message|String| The string containing the user friendly response reason for why the rule passed or not. Read-only. Required. |
-|ruleName|String| The string containing the name of the password validation rule that the action was validated against. Read-only. Required. |
-|validationPassed|Boolean| Whether the password passed or failed the validation rule. Read-only. Required.|
+|message|String| The string containing the user friendly response reason for why the rule passed or not. Read-only. Not nullable. Read-only.|
+|ruleName|String| The string containing the name of the password validation rule that the action was validated against. Read-only. Not nullable. Read-only. |
+|validationPassed|Boolean| Whether the password passed or failed the validation rule. Read-only. Not nullable. Read-only.|
 
 ## Relationships
 None.
