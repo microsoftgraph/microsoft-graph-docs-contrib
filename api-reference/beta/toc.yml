@@ -1544,9 +1544,9 @@ items:
               href: resources/meetingregistrant.md
               items:
               - name: List
-                href: api/meetingregistrant-list.md
+                href: api/meetingregistration-list-registrants.md
               - name: Create
-                href: api/meetingregistrant-post.md
+                href: api/meetingregistration-post-registrants.md
               - name: Delete
                 href: api/meetingregistrant-delete.md
       - name: Presence
