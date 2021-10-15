@@ -1599,11 +1599,11 @@ items:
           - name: Create review set
             href: /api/ediscovery-case-post-reviewsets.md
           - name: Get settings
-            href: api/ediscovery-settings-get.md
+            href: api/ediscovery-casesettings-get.md
           - name: Update settings
-            href: api/ediscovery-settings-update.md
+            href: api/ediscovery-casesettings-update.md
           - name: Reset to default
-            href: api/ediscovery-settings-resettodefault.md
+            href: api/ediscovery-casesettings-resettodefault.md
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
