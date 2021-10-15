@@ -1,6 +1,6 @@
 ---
 title: "continuousAccessEvaluationSessionControl resource type"
-description: "Session control to control continuous access evaluation settings"
+description: "Session control to control continuous access evaluation settings."
 author: "lujiangfeng666"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
