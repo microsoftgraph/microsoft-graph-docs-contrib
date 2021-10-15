@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of authored notes assoicated with a subject rights request. 
+Get the list of authored notes associated with a subject rights request. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 >[!IMPORTANT]
->Permissions marked with an * are currently not available. For details, see see [known issues](/graph/known-issues#compliance).
+>Permissions marked with an * are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
 
 ## HTTP request
 
