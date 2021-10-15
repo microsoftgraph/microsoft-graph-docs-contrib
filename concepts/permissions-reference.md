@@ -1900,12 +1900,12 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 SubjectRightsRequest.Read.All* | Read subject rights requests | Allows the app to read subject rights requests on behalf of the signed-in user. | Yes | No |
 SubjectRightsRequest.ReadWrite.All* | Read and write subject rights requests | Allows the app to read and write subject rights requests on behalf of the signed-in user. | Yes | No |
 
+> **Important**
+>Permissions marked with an asterisk (*) are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
+
+
 #### Application permissions
 None.
-
-> **Important**
->Permissions marked with an * are currently not available. For details, see see [known issues](/graph/known-issues#compliance).
-
 
 ### Example usage
 #### Delegated
