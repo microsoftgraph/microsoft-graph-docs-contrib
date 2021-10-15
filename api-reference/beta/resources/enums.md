@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### continuousAccessEvaluationMode values 
+
+|Member|
+|:---|
+|strictEnforcement|
+|disabled|
+|unknownFutureValue|
+
 ### multiFactorAuthConfiguration values
 
 | Member             | Value | Description |
@@ -2003,14 +2011,6 @@ Possible values for user account types (group membership), per Windows definitio
 |approvedApplication|
 |compliantApplication|
 |passwordChange|
-|unknownFutureValue|
-
-### continuousAccessEvaluationMode values 
-
-|Member|
-|:---|
-|strictEnforcement|
-|disabled|
 |unknownFutureValue|
 
 ### signinFrequencyType values
