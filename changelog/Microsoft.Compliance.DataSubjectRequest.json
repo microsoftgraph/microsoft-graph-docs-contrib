@@ -69,14 +69,6 @@
         {
           "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
           "ApiChange": "Resource",
-          "ChangedApiName": "subjectRightsRequests",
-          "ChangeType": "Addition",
-          "Description": "Added the **subjectRightsRequests** relationship to [compliance](https://docs.microsoft.com/en-us/graph/api/resources/compliance?view=graph-rest-beta) resource.",
-          "Target": "compliance"
-        },
-        {
-          "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
-          "ApiChange": "Resource",
           "ChangedApiName": "subjectRightsRequest",
           "ChangeType": "Addition",
           "Description": "Added the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
