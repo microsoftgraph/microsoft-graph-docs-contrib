@@ -1277,7 +1277,11 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md
+            href: api/participant-invite.md          
+          - name: Start hold music
+            href: api/participant-startholdmusic.md
+          - name: Stop hold music
+            href: api/participant-stopholdmusic.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
         - name: Unmute application
@@ -4856,24 +4860,25 @@ items:
           - name: Create invitation
             href: api/invitation-post.md
         - name: Organizational branding
-          href: resources/organizationalbrandingproperties.md
+          href: resources/organizationalbranding.md
           items:
-          - name: Create
-            href: api/organizationalbrandingproperties-create.md
           - name: Get
-            href: api/organizationalbrandingproperties-get.md
+            href: api/organizationalbranding-get.md
           - name: Update
-            href: api/organizationalbrandingproperties-update.md
-          - name: Delete
-            href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized
-            href: api/organizationalbrandingpropertieslocalization-create.md
-          - name: Get localized
-            href: api/organizationalbrandingpropertieslocalization-get.md
-          - name: Update localized
-            href: api/organizationalbrandingpropertieslocalization-update.md
-          - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md
+            href: api/organizationalbranding-update.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -5948,8 +5953,6 @@ items:
           href: api/site-get.md
         - name: Get lists
           href: api/list-list.md
-        - name: List subsites
-          href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: Follow site
@@ -5974,6 +5977,8 @@ items:
           href: api/list-create.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Search for sites
+          href: api/site-search.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -6217,6 +6222,8 @@ items:
           href: api/team-list-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Add members in bulk
+          href: api/conversationmembers-add.md
         - name: Get member
           href: api/team-get-members.md
         - name: Remove member
@@ -6299,6 +6306,8 @@ items:
           href: api/channel-completemigration.md
         - name: Get channel message
           href: api/chatmessage-get.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get channel messages delta
           href: api/chatmessage-delta.md
         - name: Get files folder
@@ -6348,6 +6357,8 @@ items:
           href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-messages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Send message in chat
@@ -6375,6 +6386,10 @@ items:
           href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App
@@ -6768,6 +6783,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range

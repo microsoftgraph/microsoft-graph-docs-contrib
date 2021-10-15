@@ -1,6 +1,6 @@
 ---
 title: "conversationMember: add"
-description: "Add members in bulk to team."
+description: "Add members in bulk to a team."
 author: "nkramer"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and could not be created.
+Add multiple members in a single request to a [team](../resources/team.md). The response provides details about which memberships could and couldn't be created.
 
 ## Permissions
 
@@ -22,13 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged) |
 |:--------------------|:--------------------------|
 | Delegated (work or school account) | TeamMember.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported. |
 | Application | TeamMember.ReadWrite.All   |
 
 
 ## HTTP Request
 
-This is a bound action for adding multiple elements to a **conversationMember** collection in a single request.
+This is a bound action to add multiple elements to a **conversationMember** collection in a single request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of derivatives of [actionResultPart](../resources/actionresultpart.md) in the response body.
 
-This API returns a `200` response indicating all members supplied were added to the team or a `207` response indicating that only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource.
+This API returns a `200` response that indicates all members supplied were added to the team or a `207` response that indicates only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource.
 
 ## Examples
 
@@ -66,6 +66,7 @@ This API returns a `200` response indicating all members supplied were added to 
 The following example shows a request to add multiple members to a team.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
@@ -111,13 +112,14 @@ Content-Type: application/json
 
 #### Response
 
-The following is the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+  "@odata.type": "microsoft.graph.actionResultPart",
+  "isCollection": true
 } -->
 
 ```http
@@ -147,8 +149,8 @@ Content-Type: application/json
 
 The following example shows a request to add multiple members to a team that results in a partial failure.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_partial_failure"
@@ -194,13 +196,14 @@ Content-Type: application/json
 
 #### Response
 
-The following is the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.actionResultPart)"
+  "@odata.type": "microsoft.graph.actionResultPart",
+  "isCollection": true
 } -->
 
 ```http
@@ -230,14 +233,14 @@ Content-Type: application/json
 
 ## See also
 
-- [Add member to team](team-post-members.md)
+- [Add member to a team](team-post-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Add members to team in bulk",
+  "description": "Add members to a team in bulk.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

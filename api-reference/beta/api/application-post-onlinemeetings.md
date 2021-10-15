@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).
+Create an online meeting on behalf of a user.
 
 > [!TIP]
-> The meeting does not show up on the user's calendar.
+> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,20 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                        |
 | Application                            | OnlineMeetings.ReadWrite.All*                         |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
-Request when using a delegated token:
+To create an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
-```
-
-Request when using an application token:
-<!-- { "blockType": "ignored" } -->
-```http
 POST /users/{userId}/onlineMeetings
 ```
 

@@ -65,7 +65,7 @@ This resource supports:
 ## Properties
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
+|allowNewTimeProposals| Boolean | `true` if the meeting organizer allows invitees to propose a new time when responding; otherwise, `false`. Optional. Default is `true`. |
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
@@ -77,8 +77,9 @@ This resource supports:
 |exceptionOccurrences|String collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
-|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
-|importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
+|iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
+|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Case-sensitive and read-only.|
+|importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
 |isDraft|Boolean|Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.|
@@ -119,7 +120,7 @@ This resource supports:
 > * For Microsoft accounts:
 > `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event: 
+> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event:
 >
 > * For work or school accounts:
 > `https://outlook.office365.com/calendar/item/{event-id}`
@@ -177,7 +178,7 @@ Here is a JSON representation of the resource
   "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,  
+  "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
