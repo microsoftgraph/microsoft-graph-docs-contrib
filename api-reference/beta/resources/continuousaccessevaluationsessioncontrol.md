@@ -18,7 +18,7 @@ Session control to control continuous access evaluation settings.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mode|continuousAccessEvaluationMode|Specifies continuous access evaluation' setting. Possible values are: `strictEnforcement`, `disabled`, `unknownFutureValue`.|
+|mode|continuousAccessEvaluationMode| Specifies continuous access evaluation settings. The possible values are: `strictEnforcement`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
