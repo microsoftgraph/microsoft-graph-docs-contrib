@@ -42,11 +42,11 @@ The following access review schedule definition has the following settings:
 + The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator role.
 + The scope (**resourceScopes**) of the review is on both active and eligible User Administrator assignments.
 + You as the user in an Identity Governance Administrator role will be the reviewer.
-+ The user in the Global Administrator role is the fallback reviewer. This ensures that if decisions aren't applied within the schedule, the fallback reviewer is notified of the pending access review for action.
++ The user in the Global Administrator role is the fallback reviewer. If decisions aren't recorded when an access review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
 + The approver must provide justification before they approve access to the privileged role.
-+ The default decision is `Deny` when neither the main nor the fallback reviewers respond to the access review request, or when an instance of the access review expires before a reviewer records the decision.
-+ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, a user whose access was a subject of the review must apply the decisions manually.
-+ The review recurs monthly over a period of three days and doesn't end.
++ The default decision is `Deny` when neither the main nor the fallback reviewers respond to the access review request before an access review instance expires.
++ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, you must manually apply the decisions.
++ The review recurs every three months over a period of three days and doesn't end.
 
 ### Request
 
@@ -229,7 +229,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, representing only one access review in the tenant.
+In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, in this scenario representing only one resource under review.
 
 ```http
 HTTP/1.1 200 OK
@@ -393,7 +393,7 @@ You can now record or submit your decisions for the access review instances.
 
 ## Step 4: Record decisions
 
-You'll now record decisions for the access review. The scope of your decision can be one of the options:
+<!--You'll now record decisions for the access review. The scope of your decision can be one of the options:
 + A decision that applies for a single principal only
 + A decision that applies for a single resource only
 + A decision that applies for a single principal to a single resource
@@ -454,7 +454,86 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Step 5: Retrieve access review decisions
+-->
+
+You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll therefore deny Adele access while approving access for the IT Helpdesk group.
+
+In the following requests, replace the following values:
+
++ `a13c348b-dc1c-47b5-8c58-b0d12b35a18b` with the value of the access review that you created in Step 1
++ `f282e54c-4eed-47a4-be9a-da00ab38aa8f` with the value of the access review instance you'd like to retrieve decisions for
++ `115d96e2-a235-4cfa-8273-f8b66c4fc6ab` with the value of the access review instance scoped to Adele's access
++ `09c27ef4-4709-47b7-b661-3eac0d6a8627` with the value of the access review instance scoped to IT Helpdesk group's access
+
+
+### Request
+
+In the following request, you'll approve access for the IT Helpdesk group.
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/decisions/09c27ef4-4709-47b7-b661-3eac0d6a8627
+Content-type: application/json
+
+{
+    "decision": "Approve",
+    "justification": "The IT Helpdesk requires continued access to the User Administrator role to manage user account support requests, lifecycle, and access to resources"
+}
+```
+
+### Response
+
+```
+HTTP/1.1 204 No Content
+```
+
+### Request
+
+In the following request, we'll deny access for Adele Vance.
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/decisions/115d96e2-a235-4cfa-8273-f8b66c4fc6ab
+Content-type: application/json
+
+{
+    "decision": "Deny",
+    "justification": "Adele Vance should join an allowed group to have continued access to the User Administrator role. Refer to the company policy '#132487: Privileged roles' for more details."
+}
+```
+
+### Response
+
+```
+HTTP/1.1 204 No Content
+```
+
+When you retrieve the access review decisions, they have the following settings:
++ The access review decision for the IT Helpdesk group is Approve while for Adele is Deny.
++ The reviewedBy object contains your details as the reviewer.
++ The applyResult is **New** meaning the decisions haven't yet been applied. You must manually apply the decisions.
+
+Even though you've recorded all the decisions that were pending for this accessReviewInstance, these decisions have not yet been applied to the resource and principal objects; for example, Adele still has access to the privileged role. This is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, nor has the accessReviewInstance period expired and autocompleted.
+
+In this tutorial, you won't stop the accessReviewInstance manually. Instead, you will let the accessReviewInstance expire and autocomplete and then apply the access review decisions.
+
+## Step 5: Apply access review decisions
+
+As an admin, after the **status** of the accessReviewInstance is set to `Completed`, you can apply the access review decisions.
+
+### Request
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/applyDecisions
+```
+
+### Response
+
+```
+HTTP/1.1 204 No Content
+```
+
+Adele has now lost access to the User Administrator role while the IT Support group has continued access.
+
+## Step 6: Retrieve access review decisions
 
 Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the accessReviewScheduleDefinition you created in Step 1.
 
@@ -467,9 +546,9 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 ### Response
 
 The following response object is different from the response object you received in Step 3 with the following settings:
-+ 
-+
-+
++ The access review decision for IT Helpdesk is Approve while for Adele is Deny
++ The reviewedBy object contains your details as the reviewer
++ The applyResult is New meaning the decisions haven't yet been applied. You must manually apply the decisions.
 
 ```http
 HTTP/1.1 200 OK
@@ -482,9 +561,9 @@ Content-type: application/json
         {
             "id": "09c27ef4-4709-47b7-b661-3eac0d6a8627",
             "accessReviewId": "f282e54c-4eed-47a4-be9a-da00ab38aa8f",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
+            "reviewedDateTime": "2021-10-14T19:09:18.983Z",
+            "decision": "Approve",
+            "justification": "The IT Helpdesk requires continued access to the User Administrator role to manage user account support requests, lifecycle, and access to resources",
             "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "NoInfoAvailable",
@@ -492,10 +571,10 @@ Content-type: application/json
             "resourceLink": null,
             "resource": null,
             "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
+                "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+                "displayName": "MOD Administrator",
                 "type": null,
-                "userPrincipalName": ""
+                "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -512,9 +591,9 @@ Content-type: application/json
         {
             "id": "115d96e2-a235-4cfa-8273-f8b66c4fc6ab",
             "accessReviewId": "f282e54c-4eed-47a4-be9a-da00ab38aa8f",
-            "reviewedDateTime": null,
-            "decision": "NotReviewed",
-            "justification": "",
+            "reviewedDateTime": "2021-10-14T19:06:12.213Z",
+            "decision": "Deny",
+            "justification": "Adele Vance should join an allowed group to have continued access to the User Administrator role. Refer to the company policy '#132487: Privileged roles' for more details.",
             "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "NoInfoAvailable",
@@ -522,10 +601,10 @@ Content-type: application/json
             "resourceLink": null,
             "resource": null,
             "reviewedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
+                "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+                "displayName": "MOD Administrator",
                 "type": null,
-                "userPrincipalName": ""
+                "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -548,7 +627,7 @@ Content-type: application/json
 
 ## Step 6: Clean up resources
 
-Delete the accessReviewScheduleDefinition object that you created for this tutorial. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
+Delete the accessReviewScheduleDefinition object that you created for this tutorial. This will remove the settings, instances, and decisions associated with the access review.
 
 ### Request
 
@@ -567,3 +646,4 @@ Content-type: text/plain
 
 + [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
++ [https://docs.microsoft.com/en-us/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide)
