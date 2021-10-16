@@ -2569,51 +2569,51 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|
 |:---|
-|contentRetrieval| Content retrieval stage |
-|contentReview| Content review stage |
-|generateReport| Generate report stage |
-|contentDeletion| Content deletion stage |
-|caseResolved| Resolve case stage |
+|contentRetrieval|
+|contentReview| 
+|generateReport| 
+|contentDeletion|
+|caseResolved|
 |unknownFutureValue|
 
 ### subjectRightsRequestStageStatus values 
 
 |Member|
 |:---|
-|notStarted| The stage has not been started yet |
-|current| The stage is the current stage for the request. |
-|completed| The stage is completed |
-|failed|The stage has failed |
+|notStarted|
+|current|
+|completed|
+|failed|
 |unknownFutureValue|
 
 ### subjectRightsRequestStatus values 
 
 |Member|
 |:---|
-|active| The request is active |
-|closed| The request has been marked closed |
+|active|
+|closed|
 |unknownFutureValue|
 
 ### subjectRightsRequestType values 
 
 |Member|
 |:---|
-|export| The request is for exporting the data for the data subject |
-|delete| The request is for deleting data for the data subject |
-|access| The request for type access |
-|tagForAction| The request was created so that the administrator can tag items for different action |
+|export|
+|delete|
+|access|
+|tagForAction|
 |unknownFutureValue|
 
 ### dataSubjectType values 
 
 |Member|
 |:---|
-|customer| The data subject is a customer |
-|currentEmployee| The data subject is a current employee |
-|formerEmployee| The data subject is a formal employee |
-|prospectiveEmployee| The data subject is a prospective Employee |
-|student| The data subject is student. | 
-|teacher| The data subhect is teacher. |
-|faculty| The data subject is faculty of the institute. |
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
 |other|
 |unknownFutureValue|
