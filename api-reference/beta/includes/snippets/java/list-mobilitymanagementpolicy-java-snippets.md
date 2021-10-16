@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MobilityManagementPolicyCollectionPage mobileDeviceManagementPolicies = graphClient.policies().mobileDeviceManagementPolicies()
+MobilityManagementPolicyCollectionPage mobileAppManagementPolicies = graphClient.policies().mobileAppManagementPolicies()
 	.buildRequest()
 	.get();
 

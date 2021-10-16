@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### continuousAccessEvaluationMode values 
+
+|Member|
+|:---|
+|strictEnforcement|
+|disabled|
+|unknownFutureValue|
+
 ### multiFactorAuthConfiguration values
 
 | Member             | Value | Description |
