@@ -1,6 +1,6 @@
 ---
 title: "microsoftManagedDesktop resource type"
-description: "The specific settings to MicrosoftManagedDesktop which enables MMD customers to get device managed experience for Cloud PC."
+description: "Represents specific settings for the Microsoft Managed Desktop (MMD) which enables MMD customers to get device managed experience for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The specific settings to MicrosoftManagedDesktop which enables MMD customers to get device managed experience for Cloud PC.
+Represents specific settings for the Microsoft Managed Desktop (MMD) which enables MMD customers to get device managed experience for a Cloud PC.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|profile|String|Indicate name of Microsoft Managed Desktop profile that Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicate if the provisioning policy is to enable MMD. If yes, which plan. Possible values include notManaged, premiumManaged, standardManaged, starterManaged.|
+|profile|String|Indicates the name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
+|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates if the provisioning policy enables MMD. If yes, it indicates the plan. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
 
 ### microsoftManagedDesktopType values
 
@@ -30,7 +30,7 @@ The specific settings to MicrosoftManagedDesktop which enables MMD customers to 
 |premiumManaged|The device is managed by MMD premium plan.|
 |standardManaged|The device is managed by MMD standard plan.|
 |starterManaged|The device is managed by MMD starter plan.|
-|unknownFutureValue|Unknown future type.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftManagedDesktop",
-  "type": "StandardManaged",
-  "profile": "Information Worker"
+  "type": "String",
+  "profile": "String"
 }
 ```

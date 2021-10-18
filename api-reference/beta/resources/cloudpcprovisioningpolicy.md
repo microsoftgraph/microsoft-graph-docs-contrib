@@ -37,7 +37,7 @@ Represents a Cloud PC provisioning policy.
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
-|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings to MicrosoftManagedDesktop which enables MMD customers to get device managed experience for Cloud PC. To enable MicrosoftManagedDesktop to provide add-on value, admin needs to specify certain settings in it.|
+|microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop (MMD) which enables MMD customers to get device managed experience for the Cloud PC. To enable MMD to provide add-on value, an admin needs to configure it first.|
 
 ## Relationships
 
@@ -68,8 +68,8 @@ The following is a JSON representation of the resource.
   "imageDisplayName": "String",
   "imageType": "String",
   "microsoftManagedDesktop": {
-    "type": "StandardManaged",
-    "profile": "Information Worker"
+    "type": "String",
+    "profile": "String"
   }
 }
 ```
