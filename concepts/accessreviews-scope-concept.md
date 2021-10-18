@@ -59,16 +59,16 @@ To review *only inactive users* assigned to the group:
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))&$count=true",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true,
+    "query": "./members/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
-Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Note that dynamic groups and role-assignable groups are not included in this review.
 
 ### Example 4: Review all guest users assigned to all Microsoft 365 groups
 
@@ -84,7 +84,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Note that dynamic groups and role-assignable groups are not included in this review.
     
 ### Example 5: Review all guest users assigned to all Teams
 
@@ -100,7 +100,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 }
 ```
     
-Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.  Note that dynamic groups and role-assignable groups are not included in this review.
 
 ### Example 6: Review all inactive guest users assigned to all Microsoft 365 groups
 
@@ -117,7 +117,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 }
 ```
 
-Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
+Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Note that dynamic groups and role-assignable groups are not included in this review.
 
 ### Example 7: Review all inactive guest users assigned to all Teams
 
@@ -134,7 +134,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 }
 ```
 
-Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
+Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Note that dynamic groups and role-assignable groups are not included in this review.
 
 ### Example 8: Review all assignemnt to Entitlement Management access packages
 
