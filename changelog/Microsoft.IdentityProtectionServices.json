@@ -127,7 +127,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "devices",
 					"ChangeType": "Addition",
-					"Description": "Added the **devices** property to [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Description": "Added the **devices** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
