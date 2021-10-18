@@ -1,6 +1,6 @@
 ---
 title: "safeguardSettings resource type"
-description: "Settings controlling safeguards that the service applies to devices in a deployment."
+description: "Manages the safeguards that the service applies to devices in a deployment."
 author: "Alice-at-Microsoft"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings controlling safeguards that the service applies to devices in a deployment.
+Manages the safeguards that the service applies to devices in a deployment.
 
 ## Properties
 |Property|Type|Description|

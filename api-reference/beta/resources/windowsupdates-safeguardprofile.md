@@ -1,6 +1,6 @@
 ---
 title: "safeguardProfile resource type"
-description: "Profile describing the issue(s) against which the service safeguards devices."
+description: "Describes the issue(s) against which the service safeguards devices."
 author: "Alice-at-Microsoft"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Profile describing the issue(s) against which the service safeguards devices.
+Describes the issue(s) against which the service safeguards devices.
 
 ## Properties
 |Property|Type|Description|
