@@ -1,6 +1,6 @@
 ---
 title: "user: validatePassword"
-description: "Check against the organization's password validation policy and report whether the password is valid."
+description: "Check a user's password against the organization's password validation policy and report whether the password is valid."
 author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Action to check a user's password against the organization's password validation policy and report whether the password is valid. Use this action to provide real-time feedback on password strength while the user types their password.
+Check a user's password against the organization's password validation policy and report whether the password is valid. Use this action to provide real-time feedback on password strength while the user types their password.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,7 @@ The following table shows the parameters that are required with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [passwordValidationInformation](../resources/passwordvalidationinformation.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [passwordValidationInformation](../resources/passwordvalidationinformation.md) object in the response body.
 
 ## Examples 
 
