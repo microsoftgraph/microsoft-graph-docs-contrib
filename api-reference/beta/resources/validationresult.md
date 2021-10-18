@@ -1,6 +1,6 @@
 ---
 title: "validationResult resource type"
-description: "Exposes the properties that specify whether a user's password is valid when validated against the tenant's password validation policy."
+description: "Exposes the properties that specify the rules against which a user's password was validated, and the validation results."
 author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes the properties that specify whether a user's password is valid when validated against the tenant's password validation policy.
+Exposes the properties that specify the rules against which a user's password was validated, and the validation results.
 
 ## Properties
 |Property|Type|Description|
