@@ -8,16 +8,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationAssignment = new EducationAssignment
 {
-	DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z"),
-	DisplayName = "Midterm 1",
+	DueDateTime = DateTimeOffset.Parse("2021-09-07T00:00:00Z"),
+	DisplayName = "Reading test 09.03 #4",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Read chapters 1 through 3"
+		Content = "Read chapter 4"
 	},
 	Grading = new EducationAssignmentPointsGradeType
 	{
-		MaxPoints = 100f
+		MaxPoints = 50f
 	},
 	AssignTo = new EducationAssignmentClassRecipient
 	{
