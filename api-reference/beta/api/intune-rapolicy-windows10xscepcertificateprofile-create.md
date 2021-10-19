@@ -2,7 +2,7 @@
 title: "Create windows10XSCEPCertificateProfile"
 description: "Create a new windows10XSCEPCertificateProfile object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
