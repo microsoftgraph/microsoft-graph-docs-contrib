@@ -371,7 +371,67 @@
          "CreatedDateTime": "2021-08-02T21:04:31.258Z",
          "WorkloadArea": "Devices and apps",
          "SubArea": "Service health and communications"
-       }
+       },
+       {
+        "ChangeList": [
+          {
+            "Id": "e344bdfa-d64a-4fab-be6a-54e525d3299b",
+            "ApiChange": "Resource",
+            "ChangedApiName": "attachment",
+            "ChangeType": "Addition",
+            "Description": "Added the [attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-beta) resource",
+            "Target": "attachment"
+          }
+        ],
+        "Id": "e344bdfa-d64a-4fab-be6a-54e525d3299b",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2021-10-18T17:08:21.2533527Z",
+        "WorkloadArea": "Calendar, mail, personal contacts",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "dc7d876d-045b-4906-ac16-b876dcdd2265",
+            "ApiChange": "Resource",
+            "ChangedApiName": "serviceAnnouncementAttachment",
+            "ChangeType": "Addition",
+            "Description": "Added the [serviceAnnouncementAttachment](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-beta) resource",
+            "Target": "serviceAnnouncementAttachment"
+          },
+          {
+            "Id": "dc7d876d-045b-4906-ac16-b876dcdd2265",
+            "ApiChange": "Property",
+            "ChangedApiName": "attachmentsArchive",
+            "ChangeType": "Addition",
+            "Description": "Added the **attachmentsArchive** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Target": "serviceUpdateMessage"
+          },
+          {
+            "Id": "dc7d876d-045b-4906-ac16-b876dcdd2265",
+            "ApiChange": "Property",
+            "ChangedApiName": "hasAttachments",
+            "ChangeType": "Addition",
+            "Description": "Added the **hasAttachments** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Target": "serviceUpdateMessage"
+          },
+          {
+            "Id": "dc7d876d-045b-4906-ac16-b876dcdd2265",
+            "ApiChange": "Resource",
+            "ChangedApiName": "attachments",
+            "ChangeType": "Addition",
+            "Description": "Added the **attachments** relationship to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Target": "serviceUpdateMessage"
+          }
+        ],
+        "Id": "dc7d876d-045b-4906-ac16-b876dcdd2265",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2021-10-18T17:08:21.254085Z",
+        "WorkloadArea": "Service Comms Platform",
+        "SubArea": ""
+      }
     ]
  }
  

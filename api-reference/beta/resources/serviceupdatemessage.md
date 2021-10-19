@@ -29,15 +29,18 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 |[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the signed in user.|
 |[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
+|[List attachments](../api/serviceupdatemessage-list-attachments.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) collection|Get the serviceAnnouncementAttachment resources from the attachments navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
+|attachmentsArchive|Stream|The zipfile of all attachments for a message.|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
 |details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|The end time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|hasAttachments|Boolean|Indicates whether the message has any attachment.|
 |id|String|The id of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |isMajorChange|Boolean|Indicates whether the message describes a major update for the service.|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
@@ -49,7 +52,9 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message. This data includes message status such as whether the user has archived, read, or marked the message as favorite. This property is null when accessed with application permissions.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|attachments|Collection([serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md))|A collection of [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -57,6 +62,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.serviceUpdateMessage",
+  "baseType": "microsoft.graph.serviceAnnouncementBase",
   "openType": false
 }
 -->
@@ -88,7 +94,9 @@ The following is a JSON representation of the resource.
   ],
   "viewPoint": {
     "@odata.type": "microsoft.graph.serviceUpdateMessageViewpoint"
-  }
+  },
+  "hasAttachments": "Boolean",
+  "attachmentsArchive": "Stream"
 }
 ```
 
