@@ -16,7 +16,7 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an online meeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get the attendee report of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-microsoft-teams-live-event).
 
 Microsoft Teams Live Event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
@@ -357,7 +357,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Fetch attendee report of a **Microsoft Teams Live Event**
+### Example 4: Fetch attendee report of a Microsoft Teams Live Event
 
 The following example shows a request to download an attendee report.
 
