@@ -18,8 +18,8 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get the attendee report of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
-- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-microsoft-teams-live-event).
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-microsoft-teams-live-event).
 - Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
 Meeting attendance report, Microsoft Teams Live Event attendee report, and Microsoft Teams Live Event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
@@ -359,7 +359,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### Example 4: Fetch attendee report of a **Microsoft Teams Live Event**
+### Example 4: Fetch attendee report of a Microsoft Teams Live Event
 
 The following example shows a request to download an attendee report.
 
@@ -415,7 +415,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### Example 5: Fetch recording of a **Microsoft Teams Live Event**
+### Example 5: Fetch recording of a Microsoft Teams Live Event
 
 The following example shows a request to download a recording.
 
