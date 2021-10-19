@@ -1,6 +1,6 @@
 ---
 title: "federatedIdentityCredential resource type"
-description: "Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
+description: "References an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
 author: "kjyam98"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource that holds references to an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD.
+References an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD.
 
 Inherits from [entity](../resources/entity.md).
 
