@@ -797,8 +797,6 @@ Content-Type: application/json
 The following example shows the request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-transfer-5"
