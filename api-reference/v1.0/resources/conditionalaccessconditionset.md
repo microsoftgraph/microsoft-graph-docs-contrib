@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
+  "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "signInRiskLevels": ["String"],
