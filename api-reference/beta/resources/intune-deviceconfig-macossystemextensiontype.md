@@ -2,7 +2,7 @@
 title: "macOSSystemExtensionType enum type"
 description: "Flag enum representing the allowed macOS system extension types."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

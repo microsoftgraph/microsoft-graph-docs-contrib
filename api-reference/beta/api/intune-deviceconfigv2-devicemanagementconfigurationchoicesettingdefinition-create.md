@@ -2,7 +2,7 @@
 title: "Create deviceManagementConfigurationChoiceSettingDefinition"
 description: "Create a new deviceManagementConfigurationChoiceSettingDefinition object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -85,14 +85,14 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 Content-type: application/json
-Content-length: 19061
+Content-length: 19063
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },
@@ -373,14 +373,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 19110
+Content-Length: 19112
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },

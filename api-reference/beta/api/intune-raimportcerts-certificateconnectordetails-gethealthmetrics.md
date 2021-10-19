@@ -2,7 +2,7 @@
 title: "getHealthMetrics action"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this action returns a `200 OK` response code and a [keyLongValueP
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 
 Content-type: application/json
 Content-length: 55

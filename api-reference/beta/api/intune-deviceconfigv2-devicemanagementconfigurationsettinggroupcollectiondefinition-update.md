@@ -2,7 +2,7 @@
 title: "Update deviceManagementConfigurationSettingGroupCollectionDefinition"
 description: "Update the properties of a deviceManagementConfigurationSettingGroupCollectionDefinition object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -88,14 +88,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 Content-type: application/json
-Content-length: 1785
+Content-length: 1787
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },
@@ -156,14 +156,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1834
+Content-Length: 1836
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionDefinition",
   "applicability": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
     "description": "Description value",
-    "platform": "macOS",
+    "platform": "android",
     "deviceMode": "kiosk",
     "technologies": "mdm"
   },

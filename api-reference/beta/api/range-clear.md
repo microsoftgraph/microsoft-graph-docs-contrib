@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear range values, format, fill, border, etc.
+Clear range values such as format, fill, and border.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,8 +33,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
