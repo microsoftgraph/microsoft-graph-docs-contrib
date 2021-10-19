@@ -8966,7 +8966,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayLocationInformationRequiredState",
           "ChangeType": "Deletion",
-          "Description": "Removed the **displayLocationInformationRequiredState** property from [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Description": "Removed the **displayLocationInformationRequiredState** property from the [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta) resource.",
           "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
         }
       ],
