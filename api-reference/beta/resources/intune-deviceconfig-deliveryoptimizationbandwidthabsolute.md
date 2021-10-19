@@ -2,7 +2,7 @@
 title: "deliveryOptimizationBandwidthAbsolute resource type"
 description: "Bandwidth limits in kilobytes per second."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

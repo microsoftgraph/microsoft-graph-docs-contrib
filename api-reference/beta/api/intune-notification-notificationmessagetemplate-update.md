@@ -2,7 +2,7 @@
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

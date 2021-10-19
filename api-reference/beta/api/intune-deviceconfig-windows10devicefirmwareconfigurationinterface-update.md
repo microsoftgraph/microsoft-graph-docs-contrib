@@ -2,7 +2,7 @@
 title: "Update windows10DeviceFirmwareConfigurationInterface"
 description: "Update the properties of a windows10DeviceFirmwareConfigurationInterface object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
