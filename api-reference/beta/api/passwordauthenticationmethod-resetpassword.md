@@ -54,7 +54,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 
 ## Request headers
@@ -102,7 +102,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
@@ -170,7 +170,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
