@@ -11,27 +11,27 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphEdiscoverySettings *settings = [[MSGraphEdiscoverySettings alloc] init];
+MSGraphEdiscoveryCaseSettings *caseSettings = [[MSGraphEdiscoveryCaseSettings alloc] init];
 MSGraphEdiscoveryRedundancyDetectionSettings *redundancyDetection = [[MSGraphEdiscoveryRedundancyDetectionSettings alloc] init];
 [redundancyDetection setIsEnabled: false];
 [redundancyDetection setSimilarityThreshold: 70];
 [redundancyDetection setMinWords: 12];
 [redundancyDetection setMaxWords: 400000];
-[settings setRedundancyDetection:redundancyDetection];
+[caseSettings setRedundancyDetection:redundancyDetection];
 MSGraphEdiscoveryTopicModelingSettings *topicModeling = [[MSGraphEdiscoveryTopicModelingSettings alloc] init];
 [topicModeling setIsEnabled: false];
 [topicModeling setIgnoreNumbers: false];
 [topicModeling setTopicCount: 50];
 [topicModeling setDynamicallyAdjustTopicCount: false];
-[settings setTopicModeling:topicModeling];
+[caseSettings setTopicModeling:topicModeling];
 MSGraphEdiscoveryOcrSettings *ocr = [[MSGraphEdiscoveryOcrSettings alloc] init];
 [ocr setIsEnabled: true];
 [ocr setMaxImageSize: 12000];
-[settings setOcr:ocr];
+[caseSettings setOcr:ocr];
 
 NSError *error;
-NSData *settingsData = [settings getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:settingsData];
+NSData *caseSettingsData = [caseSettings getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:caseSettingsData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
