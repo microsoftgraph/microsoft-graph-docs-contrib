@@ -84,6 +84,7 @@ Because `./manager` is a relative query, specify the **queryRoot** property with
 ]
 ```
 
-## See also
+## Next steps
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)
++ [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources

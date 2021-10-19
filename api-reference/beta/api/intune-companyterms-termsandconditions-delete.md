@@ -2,7 +2,7 @@
 title: "Delete termsAndConditions"
 description: "Deletes a termsAndConditions."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

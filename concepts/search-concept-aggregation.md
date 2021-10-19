@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations (preview)
+# Refine search results using aggregations
 
 Refine search results and show their distribution in the index.
 

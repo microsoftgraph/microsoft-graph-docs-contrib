@@ -1321,6 +1321,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
@@ -1514,16 +1518,37 @@ items:
         items:
         - name: Online meeting
           href: resources/onlinemeeting.md
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md
-        - name: Update
-          href: api/onlinemeeting-update.md
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
+          items:
+          - name: Create
+            href: api/application-post-onlinemeetings.md
+          - name: Get
+            href: api/onlinemeeting-get.md
+          - name: Update 
+            href: api/onlinemeeting-update.md
+          - name: Delete
+            href: api/onlinemeeting-delete.md
+          - name: Create or get
+            href: api/onlinemeeting-createorget.md
+          - name: Meeting registration
+            href: resources/meetingregistration.md
+            items:
+            - name: Create
+              href: api/meetingregistration-post.md
+            - name: Get
+              href: api/meetingregistration-get.md
+            - name: Update
+              href: api/meetingregistration-update.md
+            - name: Delete
+              href: api/meetingregistration-delete.md
+          - name: Meeting registrant
+            href: resources/meetingregistrant.md
+            items:
+            - name: List
+              href: api/meetingregistration-list-registrants.md
+            - name: Create
+              href: api/meetingregistration-post-registrants.md
+            - name: Delete
+              href: api/meetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1535,12 +1560,12 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
-    - name: Compliance (preview)
+    - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
       - name: Overview
         href: resources/complianceapioverview.md
-      - name: eDiscovery
+      - name: eDiscovery (preview)
         items:
         - name: Overview
           href: resources/ediscovery-eDiscoveryapioverview.md
@@ -1555,12 +1580,38 @@ items:
             href: api/ediscovery-case-get.md
           - name: Update
             href: api/ediscovery-case-update.md
+          - name: Delete
+            href: api/ediscovery-case-delete.md
           - name: Close
             href: api/ediscovery-case-close.md
           - name: Reopen
             href: api/ediscovery-case-reopen.md
-          - name: Delete
-            href: api/ediscovery-case-delete.md
+          - name: List custodians
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create custodian
+            href: api/ediscovery-case-post-custodians.md
+          - name: List legal holds
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create legal hold
+            href: api/ediscovery-case-post-legalholds.md
+          - name: List review sets
+            href: api/ediscovery-case-list-reviewsets.md
+          - name: Create review set
+            href: /api/ediscovery-case-post-reviewsets.md
+          - name: Get settings
+            href: api/ediscovery-casesettings-get.md
+          - name: Update settings
+            href: api/ediscovery-casesettings-update.md
+          - name: Reset to default
+            href: api/ediscovery-casesettings-resettodefault.md
+          - name: List source collections
+            href: api/ediscovery-case-list-sourcecollections.md
+          - name: Create source collection
+            href: /api/ediscovery-case-post-sourcecollections.md
+          - name: List tags
+            href: /api/ediscovery-case-list-tags.md
+          - name: Create tag
+            href: /api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -1670,6 +1721,29 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
+      - name: Subject rights request
+        items:
+        - name: Overview
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
+          items:
+          - name: List
+            href: api/subjectrightsrequest-list.md
+          - name: Create
+            href: api/subjectrightsrequest-post.md
+          - name: Get
+            href: api/subjectrightsrequest-get.md
+          - name: Update
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -2185,6 +2259,8 @@ items:
               href: api/intune-apps-androidstoreapp-delete.md
             - name: Update
               href: api/intune-apps-androidstoreapp-update.md
+          - name: Aosp Wi-Fi security type
+            href: resources/intune-androidforwork-aospwifisecuritytype.md
           - name: App configuration setting item
             href: resources/intune-apps-appconfigurationsettingitem.md
           - name: Certificate status
@@ -5960,6 +6036,8 @@ items:
             href: resources/intune-deviceconfig-operator.md
           - name: Perfect forward secrecy group
             href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+          - name: Personal profile personal play store mode
+            href: resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md
           - name: Pfx recryption request
             href: resources/intune-raimportcerts-pfxrecryptionrequest.md
             items:
@@ -9154,6 +9232,60 @@ items:
               href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
             - name: Update
               href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+          - name: Identity
+            href: resources/intune-rbac-identity.md
+          - name: Identity set
+            href: resources/intune-rbac-identityset.md
+          - name: Operation approval policy
+            href: resources/intune-rbac-operationapprovalpolicy.md
+            items:
+            - name: List
+              href: api/intune-rbac-operationapprovalpolicy-list.md
+            - name: Get
+              href: api/intune-rbac-operationapprovalpolicy-get.md
+            - name: Create
+              href: api/intune-rbac-operationapprovalpolicy-create.md
+            - name: Delete
+              href: api/intune-rbac-operationapprovalpolicy-delete.md
+            - name: Update
+              href: api/intune-rbac-operationapprovalpolicy-update.md
+          - name: Operation approval policy platform
+            href: resources/intune-rbac-operationapprovalpolicyplatform.md
+          - name: Operation approval policy set
+            href: resources/intune-rbac-operationapprovalpolicyset.md
+          - name: Operation approval policy type
+            href: resources/intune-rbac-operationapprovalpolicytype.md
+          - name: Operation approval request
+            href: resources/intune-rbac-operationapprovalrequest.md
+            items:
+            - name: List
+              href: api/intune-rbac-operationapprovalrequest-list.md
+            - name: Get
+              href: api/intune-rbac-operationapprovalrequest-get.md
+            - name: Create
+              href: api/intune-rbac-operationapprovalrequest-create.md
+            - name: Delete
+              href: api/intune-rbac-operationapprovalrequest-delete.md
+            - name: Update
+              href: api/intune-rbac-operationapprovalrequest-update.md
+            - name: approve action
+              href: api/intune-rbac-operationapprovalrequest-approve.md
+            - name: reject action
+              href: api/intune-rbac-operationapprovalrequest-reject.md
+            - name: cancelApproval action
+              href: api/intune-rbac-operationapprovalrequest-cancelapproval.md
+            - name: getRequestStatus action
+              href: api/intune-rbac-operationapprovalrequest-getrequeststatus.md
+            - name: getMyRequestById
+              href: api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
+            - name: getMyRequests
+              href: api/intune-rbac-operationapprovalrequest-getmyrequests.md
+            - name: cancelMyRequest action
+              href: api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
+          - name: Operation approval request entity status
+            href: resources/intune-rbac-operationapprovalrequestentitystatus.md
+          - name: Operation approval request status
+            href: resources/intune-rbac-operationapprovalrequeststatus.md
           - name: Rbac application multiple
             href: resources/intune-rbac-rbacapplicationmultiple.md
             items:
@@ -9378,8 +9510,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9751,6 +9883,11 @@ items:
             href: api/cloudpcusersetting-delete.md
           - name: Assign
             href: api/cloudpcusersetting-assign.md
+        - name: Cloud PC supported region
+          href: resources/cloudpcsupportedregion.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-supportedregions.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10146,7 +10283,7 @@ items:
         - name: List schools
           href: api/educationuser-list-schools.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md            
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -10245,6 +10382,8 @@ items:
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Return submission
           href: api/educationsubmission-return.md
+        - name: Reassign submission
+          href: api/educationsubmission-reassign.md
       - name: Outcome
         items:
         - name: Outcome
@@ -11050,67 +11189,6 @@ items:
               href: api/unifiedRoleManagementPolicyRule-update.md
       - name: Identity and sign-in
         items:
-        - name: Application authentication method policy (preview)
-          items:
-          - name: Overview
-            href: resources/applicationAuthenticationMethodPolicy.md
-          - name: Tenant app management policy
-            items:
-            - name: Overview
-              href: resources/tenantAppManagementPolicy.md
-            - name: Get
-              href: api/tenantAppManagementPolicy-get.md
-            - name: Update
-              href: api/tenantAppManagementPolicy-update.md
-          - name: App management policy
-            items:
-            - name: Overview
-              href: resources/appManagementPolicy.md
-            - name: List
-              href: api/appManagementPolicy-list.md
-            - name: Get
-              href: api/appManagementPolicy-get.md
-            - name: Create
-              href: api/appManagementPolicy-post.md
-            - name: Update
-              href: api/appManagementPolicy-update.md
-            - name: Delete
-              href: api/appManagementPolicy-delete.md
-            - name: Create appliesTo
-              href: api/appManagementPolicy-post-appliesTo.md
-            - name: List appliesTo
-              href: api/appManagementPolicy-list-appliesTo.md
-        - name: Authentication events policy
-          items:
-          - name: Authentication events policy
-            href: resources/authenticationeventspolicy.md
-          - name: Sign-up-start event
-            items:
-            - name: Authentication listener
-              href: resources/authenticationlistener.md
-            - name: Invoke user flow listener type
-              href: resources/invokeuserflowlistener.md
-            - name: List listeners
-              href: api/authenticationeventspolicy-list-onsignupstart.md
-            - name: Create listener
-              href: api/authenticationeventspolicy-post-onsignupstart.md
-            - name: Get listener
-              href: api/authenticationlistener-get.md
-            - name: Update listener
-              href: api/authenticationlistener-update.md
-            - name: Put listener
-              href: api/authenticationlistener-put.md
-            - name: Delete listener
-              href: api/authenticationlistener-delete.md
-        - name: Authentication flows policy
-          items:
-          - name: Authentication flows policy
-            href: resources/authenticationflowspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationflowspolicy-get.md
-            - name: Update
-              href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -11214,78 +11292,6 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-        - name: Authentication method policy
-          items:
-          - name: Overview
-            href: resources/authenticationmethodspolicies-overview.md
-          - name: Authentication method policy
-            href: resources/authenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationmethodspolicy-get.md
-            - name: Update
-              href: api/authenticationmethodspolicy-update.md
-          - name: FIDO2 policy
-            href: resources/fido2authenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/fido2authenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/fido2authenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator policy
-            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
-            href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Temporary Access Pass policy
-            href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-          - name: Email policy
-            href: resources/emailauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/emailauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/emailauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/emailauthenticationmethodconfiguration-delete.md
-          - name: Text Message policy
-            href: resources/smsAuthenticationMethodConfiguration.md
-            items:
-            - name: Get
-              href: api/smsAuthenticationMethodConfiguration-get.md
-            - name: Update
-              href: api/smsAuthenticationMethodConfiguration-update.md
-            - name: Delete
-              href: api/smsAuthenticationMethodConfiguration-delete.md
-        - name: B2C authentication methods policy
-          href: resources/b2cauthenticationmethodspolicy.md
-          items:
-          - name: Get
-            href: api/b2cauthenticationmethodspolicy-get.md
-          - name: Update
-            href: api/b2cauthenticationmethodspolicy-update.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -11397,38 +11403,6 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events (deprecated)
-            items:
-            - name: Identity risk event
-              href: resources/identityriskevent.md
-            - name: List identityRiskEvent
-              href: api/identityriskevent-list.md
-            - name: Get identityRiskEvent
-              href: api/identityriskevent-get.md
-            - name: List anonymousIpRiskEvent
-              href: api/anonymousipriskevent-list.md
-            - name: Get anonymousIpRiskEvent
-              href: api/anonymousipriskevent-get.md
-            - name: List impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-list.md
-            - name: Get impossibleTravelRiskEvent
-              href: api/impossibletravelriskevent-get.md
-            - name: List leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-list.md
-            - name: Get leakedCredentialsRiskEvent
-              href: api/leakedcredentialsriskevent-get.md
-            - name: List malwareRiskEvent
-              href: api/malwareriskevent-list.md
-            - name: Get malwareRiskEvent
-              href: api/malwareriskevent-get.md
-            - name: List suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-list.md
-            - name: Get suspiciousIpRiskEvent
-              href: api/suspiciousipriskevent-get.md
-            - name: List unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-list.md
-            - name: Get unfamiliarLocationRiskEvent
-              href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
             items:
             - name: Risk detection
@@ -11519,24 +11493,25 @@ items:
           - name: Create invitation
             href: api/invitation-post.md
         - name: Organizational branding
-          href: resources/organizationalbrandingproperties.md
+          href: resources/organizationalbranding.md
           items:
-          - name: Create
-            href: api/organizationalbrandingproperties-create.md
           - name: Get
-            href: api/organizationalbrandingproperties-get.md
+            href: api/organizationalbranding-get.md
           - name: Update
-            href: api/organizationalbrandingproperties-update.md
-          - name: Delete
-            href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized
-            href: api/organizationalbrandingpropertieslocalization-create.md
-          - name: Get localized
-            href: api/organizationalbrandingpropertieslocalization-get.md
-          - name: Update localized
-            href: api/organizationalbrandingpropertieslocalization-update.md
-          - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md
+            href: api/organizationalbranding-update.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -11568,6 +11543,131 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Application authentication method policy (preview)
+            items:
+            - name: Overview
+              href: resources/applicationAuthenticationMethodPolicy.md
+            - name: Tenant app management policy
+              items:
+              - name: Tenant app management policy
+                href: resources/tenantAppManagementPolicy.md
+              - name: Get
+                href: api/tenantAppManagementPolicy-get.md
+              - name: Update
+                href: api/tenantAppManagementPolicy-update.md
+            - name: App management policy
+              items:
+              - name: App management policy
+                href: resources/appManagementPolicy.md
+              - name: List
+                href: api/appManagementPolicy-list.md
+              - name: Get
+                href: api/appManagementPolicy-get.md
+              - name: Create
+                href: api/appManagementPolicy-post.md
+              - name: Update
+                href: api/appManagementPolicy-update.md
+              - name: Delete
+                href: api/appManagementPolicy-delete.md
+              - name: Create appliesTo
+                href: api/appManagementPolicy-post-appliesTo.md
+              - name: List appliesTo
+                href: api/appManagementPolicy-list-appliesTo.md
+          - name: Authentication events policy
+            items:
+            - name: Authentication events policy
+              href: resources/authenticationeventspolicy.md
+            - name: Sign-up-start event
+              items:
+              - name: Authentication listener
+                href: resources/authenticationlistener.md
+              - name: Invoke user flow listener type
+                href: resources/invokeuserflowlistener.md
+              - name: List listeners
+                href: api/authenticationeventspolicy-list-onsignupstart.md
+              - name: Create listener
+                href: api/authenticationeventspolicy-post-onsignupstart.md
+              - name: Get listener
+                href: api/authenticationlistener-get.md
+              - name: Update listener
+                href: api/authenticationlistener-update.md
+              - name: Put listener
+                href: api/authenticationlistener-put.md
+              - name: Delete listener
+                href: api/authenticationlistener-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication methods policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
+              href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
+            - name: Text Message policy
+              href: resources/smsAuthenticationMethodConfiguration.md
+              items:
+              - name: Get
+                href: api/smsAuthenticationMethodConfiguration-get.md
+              - name: Update
+                href: api/smsAuthenticationMethodConfiguration-update.md
+              - name: Delete
+                href: api/smsAuthenticationMethodConfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -11575,6 +11675,13 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
+          - name: B2C authentication methods policy
+            href: resources/b2cauthenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/b2cauthenticationmethodspolicy-get.md
+            - name: Update
+              href: api/b2cauthenticationmethodspolicy-update.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -11590,6 +11697,20 @@ items:
               href: api/claimsmappingpolicy-delete.md
             - name: List applied to applications
               href: api/claimsmappingpolicy-list-appliesto.md
+          - name: Continuous access evaluation policy
+            href: resources/continuousaccessevaluationpolicy.md
+            items:
+            - name: Get
+              href: api/continuousaccessevaluationpolicy-get.md
+            - name: Update
+              href: api/continuousaccessevaluationpolicy-update.md
+          - name: Device registration policy (preview)
+            href: resources/deviceregistrationpolicy.md
+            items:
+            - name: Get
+              href: api/deviceregistrationpolicy-get.md
+            - name: Update
+              href: api/deviceregistrationpolicy-update.md
           - name: Feature rollout policy
             href: resources/featurerolloutpolicy.md
             items:
@@ -11687,13 +11808,6 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
-          - name: Continuous access evaluation policy
-            href: resources/continuousaccessevaluationpolicy.md
-            items:
-            - name: Get
-              href: api/continuousaccessevaluationpolicy-get.md
-            - name: Update
-              href: api/continuousaccessevaluationpolicy-update.md
         - name: Trust Framework Keyset
           href: resources/trustframeworkkeyset.md
           items:
@@ -11732,7 +11846,7 @@ items:
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
           items:
-          - name: User flow
+          - name: User flow (deprecated)
             items:
             - name: User flow
               href: resources/identityuserflow.md
@@ -12122,6 +12236,8 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
             - name: Filter by current user
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
@@ -12211,7 +12327,7 @@ items:
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated))
             items:
-            - name: Azure AD 
+            - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
             - name: Privileged role
               href: resources/privilegedrole.md
@@ -13377,6 +13493,29 @@ items:
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Microsoft Defender for Office 365 security reports
+        items:
+        - name: Attack simulation reports
+          displayname: Attack simulation and training
+          href: resources/report-m365defender-reports-overview.md
+        - name: Repeat offenders
+          items:
+          - name: Repeat offender
+            href: resources/attacksimulationrepeatoffender.md
+          - name: Get repeat offenders
+            href: api/reportroot-getattacksimulationrepeatoffenders.md
+        - name: Simulation data
+          items:
+          - name: Simulation user coverage
+            href: resources/attacksimulationsimulationusercoverage.md
+          - name: Get simulation coverage for users
+            href: api/reportroot-getattacksimulationsimulationusercoverage.md
+        - name: Training data
+          items:
+          - name: Training user coverage
+            href: resources/attacksimulationtrainingusercoverage.md
+          - name: Get training coverage for users
+            href: api/reportroot-getattacksimulationtrainingusercoverage.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -13451,7 +13590,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Actions
+      - name: Actions (preview)
         href: resources/securityaction.md
         items:
         - name: List security actions
@@ -13473,6 +13612,41 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Attack simulation and training (preview)
+        items:
+        - name: Simulations
+          items:
+          - name: Simulation
+            href: resources/simulation.md
+          - name: List simulations
+            href: api/attacksimulationroot-list-simulations.md
+          - name: List simulation users
+            href: api/usersimulationdetails-list.md
+          - name: Get simulation overview
+            href: api/simulationreportoverview-get.md
+        - name: Reports
+          items:
+          - name: Attack simulation reports
+            displayname: Attack simulation and training
+            href: resources/report-m365defender-reports-overview.md
+          - name: Repeat offenders
+            items:
+            - name: Repeat offender
+              href: resources/attacksimulationrepeatoffender.md
+            - name: Get repeat offenders
+              href: api/reportroot-getattacksimulationrepeatoffenders.md
+          - name: Simulation data
+            items:
+            - name: Simulation user coverage
+              href: resources/attacksimulationsimulationusercoverage.md
+            - name: Get simulation coverage for users
+              href: api/reportroot-getattacksimulationsimulationusercoverage.md
+          - name: Training data
+            items:
+            - name: Training user coverage
+              href: resources/attacksimulationtrainingusercoverage.md
+            - name: Get training coverage for users
+              href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Information protection
         items:
         - name: Labels
@@ -13522,7 +13696,7 @@ items:
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: Threat intelligence indicators
+      - name: Threat intelligence indicators (preview)
         href: resources/tiindicator.md
         items:
         - name: List
@@ -13582,6 +13756,8 @@ items:
           href: api/list-create.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Search for sites
+          href: api/site-search.md
         - name: Permissions
           items:
           - name: Permission
@@ -14057,6 +14233,8 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get messages across all chats
           href: api/chats-getallmessages.md
         - name: List hosted content
@@ -14582,6 +14760,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
@@ -14613,6 +14793,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range

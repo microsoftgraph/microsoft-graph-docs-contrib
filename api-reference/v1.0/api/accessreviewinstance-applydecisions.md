@@ -10,9 +10,10 @@ doc_type: apiPageType
 # accessReviewInstance: applyDecisions
 Namespace: microsoft.graph
 
-Apply review decisions to the resource reviewed in an [accessReviewInstance](../resources/accessreviewinstance.md).
+Apply review decisions on an [accessReviewInstance](../resources/accessreviewinstance.md) if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md).
 
-Decisions are applied automatically if the **autoApplyDecisionsEnabled** of the **settings** parameter of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) is `true`.
+
+The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

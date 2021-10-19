@@ -44,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 |[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-For general information, see [OData query parameters](/graph/query_parameters).
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Attributes supported by the $filter parameter
 

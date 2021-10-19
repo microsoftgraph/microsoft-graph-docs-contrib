@@ -64,13 +64,6 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
-
 ### fido2RestrictionEnforcementType values
 
 |Member|
@@ -122,12 +115,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### allowInvitesFrom values
 
@@ -1646,4 +1633,57 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |critical|
+|unknownFutureValue|
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
 |unknownFutureValue|

@@ -1,8 +1,8 @@
 ---
 title: "Get calendarPermission"
 description: "Get the properties and relationships of calendarpermission object."
+author: "Harini84"
 ms.localizationpriority: medium
-author: "sochowdh"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Get calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the specified permissions object of a user or group calendar that has been shared.
 
@@ -50,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -93,7 +95,6 @@ GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -114,7 +115,7 @@ Content-type: application/json
   "emailAddress": {
     "name": "My Organization",
   },
-  "isRemovable": true,
+  "isRemovable": false,
   "isInsideOrganization": true,
   "role": "write",
   "allowedRoles": [
@@ -137,5 +138,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
