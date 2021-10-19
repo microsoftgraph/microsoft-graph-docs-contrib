@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attachment of a serviceUpdateMessage(../resources/serviceUpdateMessage.md)
+Represents an attachment of a [serviceUpdateMessage](../resources/serviceUpdateMessage.md)
 
 Inherits from [attachment](../resources/attachment.md).
 

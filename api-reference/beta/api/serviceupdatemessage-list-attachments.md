@@ -1,5 +1,5 @@
 ---
-title: "List attachments"
+title: "List service message attachments"
 description: "Get the serviceAnnouncementAttachment resources from the attachments navigation property."
 author: "payiAzure"
 ms.localizationpriority: medium
