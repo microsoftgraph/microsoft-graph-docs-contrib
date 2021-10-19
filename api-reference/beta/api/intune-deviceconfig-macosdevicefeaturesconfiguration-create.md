@@ -73,7 +73,7 @@ The following table shows the properties that are required when you create the m
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -115,7 +115,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6135
+Content-length: 6256
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -244,6 +244,7 @@ Content-length: 6135
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -251,6 +252,9 @@ Content-length: 6135
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },
@@ -307,7 +311,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6307
+Content-Length: 6428
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -439,6 +443,7 @@ Content-Length: 6307
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -446,6 +451,9 @@ Content-Length: 6307
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },

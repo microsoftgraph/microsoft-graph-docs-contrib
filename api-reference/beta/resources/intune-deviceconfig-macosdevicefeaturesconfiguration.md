@@ -237,12 +237,16 @@ Here is a JSON representation of the resource.
     "passwordChangeUrl": "String",
     "modeCredentialUsed": "String",
     "usernameLableCustom": "String",
+    "usernameLabelCustom": "String",
     "userSetupDelayed": true,
     "signInHelpText": "String",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "preferredKDCs": [
       "String"
     ],
     "tlsForLDAPRequired": true
