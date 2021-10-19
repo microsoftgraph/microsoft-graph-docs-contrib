@@ -1,0 +1,78 @@
+---
+title: "Delete incoming channel"
+description: "Deletes an incoming channel."
+author: "devjha-ms"
+doc_type: "apiPageType"
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+---
+
+# Delete incoming channel
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Deletes an incoming [channel](../resources/channel.md) from this [team](../resources/team.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account) | Channel.Delete.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Channel.Delete.All |
+
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "delete_sharedwithchannelteaminfo"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/incomingChannels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/$ref
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+## See also
+
+- [Remove member from channel](channel-delete-members.md)
+- [Remove member from team](team-delete-members.md)
