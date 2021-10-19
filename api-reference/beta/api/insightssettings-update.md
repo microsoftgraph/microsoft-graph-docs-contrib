@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties of the specified [InsightsSettings](../resources/insightssettings.md) resource.
+Update properties of the specified [insightsSettings](../resources/insightssettings.md) resource.
 
 To learn how to customize insights privacy for your organization see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
--  [Customize people insights privacy](/graph/customize-people-insights-privacy?view=graph-rest-1.0).
+-  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy?view=graph-rest-1.0).
 
 ## Permissions
 
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
@@ -66,7 +67,7 @@ If successful, this method returns a `200 OK` response code and [InsightsSetting
 
 >**Note:** This operation verifies the validity of property values of the specified **itemInsightsSettings** or **peopleInsightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable insights for all the users in the organization. 
 
-## Example itemInsightsSetting
+## Example itemInsights 
 
 ### Request
 
@@ -104,10 +105,10 @@ Content-type: application/json
 
 ---
 
-## Example peopleInsightsSetting
+## Example peopleInsights
 ### Request
 
-Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
+Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' people insights of a particular Azure AD group.
 
 # [HTTP](#tab/http)
 <!-- {

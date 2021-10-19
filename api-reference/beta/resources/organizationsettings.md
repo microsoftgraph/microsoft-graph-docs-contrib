@@ -20,8 +20,8 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 | [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** by posting to the **profileCardProperty** object collection. |
 | [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a **profileCardProperty** object collection. |
-| [Get itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Get the properties of an **itemInsightsSettings** object. |
-| [Update itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Update the properties of the specified **itemInsightsSettings** resource. |
+| [Get insightsSettings](../api/insightssettings-get.md) | [insightsSettings](insightssettings.md) | Get the properties of an **insightsSettings** object. |
+| [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of the specified **insightsSettings** resource. |
 
 ## Properties
 
@@ -33,7 +33,8 @@ None.
 |:-------------|:------------|:------------|
 |id |String| Id of the settings object for the organization. |
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card. [Get organization settings](../api/organizationsettings-get.md) returns the properties configured for profile cards for the organization.|
-|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. [Get itemInsightsSettings](../api/iteminsightssettings-get.md) through this navigation property.|
+|itemInsights|[insightsSettings](insightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. [Get insightsSettings](../api/insightssettings-get.md) through this navigation property.|
+|peopleInsights|[insightsSettings](insightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Working-with list (list of people relevant to a user) in Microsoft 365. [Get insightsSettings](../api/insightssettings-get.md) through this navigation property.|
 
 ## JSON representation
 
