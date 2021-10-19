@@ -16,9 +16,9 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an online meeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get the attendee report of a **Microsoft Teams Live Event** in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-microsoft-teams-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
 
-Microsoft Teams Live Event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams Live Event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -56,7 +56,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-To get the attendee report of a **Microsoft Teams Live Event** with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -91,7 +91,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you fetch the attendee report of a **Microsoft Teams Live Event**, this method returns a `Location` header that indicates the URI to the attendee report.
+- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report.
 
 ## Examples
 
@@ -357,7 +357,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Fetch attendee report of a Microsoft Teams Live Event
+### Example 4: Fetch attendee report of a Teams Live Event
 
 The following example shows a request to download an attendee report.
 
