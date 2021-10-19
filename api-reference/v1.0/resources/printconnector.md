@@ -18,6 +18,7 @@ Represents a print connector that has been registered by using a Universal Print
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+| [List connectors](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Retrieve a list of print connectors. |
 | [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
 | [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
 | [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
