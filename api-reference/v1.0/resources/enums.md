@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
 ### lifecycleEventType values
 
 |Member|
