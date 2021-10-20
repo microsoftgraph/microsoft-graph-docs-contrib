@@ -58,6 +58,36 @@ If successful, this method returns a `200 OK` response code and the requested [s
 
 The following is an example of the request.
 
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
+Content-type: application/json
+
+{
+  "baseType": "microsoft.graph.externalItem",
+  "properties": [
+    {
+      "name": "ticketTitle",
+      "type": "string",
+      "isSearchable": "true",
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
+    },
+    {
+      "name": "priority",
+      "type": "string",
+      "isQueryable": "true",
+      "isRetrievable": "true",
+      "isSearchable": "false"
+    },
+    {
+      "name": "assignee",
+      "type": "string",
+      "isRetrievable": "true"
+    }
+  ]
+}
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -65,7 +95,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schema-csharp-snippets.md)]
@@ -98,36 +128,9 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
 
-{
-  "baseType": "microsoft.graph.externalItem",
-  "properties": [
-    {
-      "name": "ticketTitle",
-      "type": "string",
-      "isSearchable": true,
-      "isRetrievable": true,
-      "labels": [
-        "title"
-      ]
-    },
-    {
-      "name": "priority",
-      "type": "string",
-      "isQueryable": true,
-      "isRetrievable": true,
-      "isRefinable": true,
-      "isSearchable": false
-    },
-    {
-      "name": "assignee",
-      "type": "string",
-      "isRetrievable": true
-    }
-  ]
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -73,9 +73,16 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 *Refine results by `tags`, a refinable property*
 
-## Labels
+## Semantic labels
 
-A label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provide a better experience.
+A semantic label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience.
+Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
+
+* Data integration in heterogenous experiences
+* Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
+* Default templates for user experiences
+
+You can assign semantic labels to your source properties on the "Assign property labels" page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
 
 | Label                 | Description                                                                          |
 |---------------------- |------------------------------------------------------------------------------------- |
@@ -88,10 +95,9 @@ A label is a well known tag published by Microsoft that you can add against a pr
 | lastModifiedDateTime  | Date & time the item was last modified in the data source                            |
 | fileName              | In case of a file, the name of the file in the data source                           |
 | fileExtension         | In case of a file, the extension of the file in the data source                      |
-| unknownFutureValue    | |
-| iconUrl               | |
-| containerName         | |
-| containerUrl          | |
+| iconUrl               | The URL of an icon|
+| containerName         | Name of the container|
+| containerUrl          | The URL of the container|
 
 For example, the connection property *lastEditedBy* has the same meaning as the Microsoft label *lastModifiedBy*.
 
@@ -99,6 +105,9 @@ Add as many labels as you can, but ensure that they are accurately mapped to pro
 
 > [!IMPORTANT]
 > All properties that you map to labels must be retrievable.
+
+The label **title** is the most important label. Make sure you assign a property to this label to allow your connection to participate in the result cluster experience.
+Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels not to have a property assigned to them.
 
 ### Relevance
 
@@ -144,41 +153,6 @@ Finally, when assigning labels, ensure the following:
 
 Aliases are friendly names for properties that you assign. These will be used in queries and selections in refinable property filters.
 
-## Semantic labels
-
-Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes.
-
-Semantic Labels find applications in many different content experiences. They provide automated support for tasks like:
-
-* Data integration in heterogenous experiences
-* Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
-* Default templates for user experiences
-
-You can assign semantic labels to your source properties on the "Assign property labels" page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
-
-----> Removing this table, it is the same table we have under Labels  ------
-The following table lists the labels that are currently supported, and their descriptions.  
-
-Label | Description
---- | ---  
-**title** | The title for the item that you want shown in search and other experiences.
-**url** | The target url of the item in the source system.
-**Created By** | Name of the person who created the item.
-**Last modified by** | Name of the person who most recently edited the item.
-**Authors** | Name of the authors who participated/collaborated on the item.
-**Created date time** | Date and time of the creation of the item.
-**Last modified date time** | Date and time of the most recent modifications to the item.
-**File name** | Name of the file item.
-**File extension** | Type of file item such as .pdf or .word
-
-----------------------
-
-The properties on this page are pre-selected based on your data source, but you can change this selection if there's a different property that is better suited for a particular label.  
-
-The label **title** is the most important label. Make sure you assign a property to this label to allow your connection to participate in the result cluster experience.
-
-Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels not to have a property assigned to them.
-
 ## Schema update capabilities
 
 This section includes information about the update capabilities for the Schema API.
@@ -189,14 +163,12 @@ This section includes information about the update capabilities for the Schema A
 ### Adding a property
 
 Adding a property does not require re-ingestion, but it is recommended.
-You can add a property to the schema by -----.
-When you add the property, you can include all the search attributes that you need.
+When you add a property, you can include all the search attributes that you need.
 
 ### Adding/removing a search capability
 
-Adding a search capability does requires re-ingestion.
-You can add a property to the schema by -----.
-You can add specific search attributes to a property, however you cannot add a refiner search attribute as a schema change. Also it is not possible to refinable attributes as searchable capabilities.
+Adding a search capability requires re-ingestion.
+You can add specific search attributes to a property, however you cannot add a refiner search attribute as a schema change. Also it is not possible to use refinable attributes as searchable capabilities.
 
 Deletion of search attributes from a property
 Deletion of a search attribute from a property would lead to inconsistent behavior as the backward and forward looking items differ in the returned result set.
@@ -219,3 +191,4 @@ Adding a semantic label can affect experiences like Working Set, Relevance, and 
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
+- [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)

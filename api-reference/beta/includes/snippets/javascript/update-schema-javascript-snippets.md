@@ -5,13 +5,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
 
-let schema = await client.api('/external/connections/contosohr/schema')
-	.version('beta')
-	.get();
+const schema = {
+  baseType: 'microsoft.graph.externalItem',
+  properties: [
+    {
+      name: 'ticketTitle',
+      type: 'string',
+      isSearchable: 'true',
+      isRetrievable: 'true',
+      labels: [
+        'title'
+      ]
+    },
+    {
+      name: 'priority',
+      type: 'string',
+      isQueryable: 'true',
+      isRetrievable: 'true',
+      isSearchable: 'false'
+    },
+    {
+      name: 'assignee',
+      type: 'string',
+      isRetrievable: 'true'
+    }
+  ]
+};
+
+await client.api('/external/connections/contosohr/schema')
+    .version('beta')
+    .patch(schema);
 
 ```
