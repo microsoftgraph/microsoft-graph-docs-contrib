@@ -2,7 +2,7 @@
 title: "macOSContentCachingParentSelectionPolicy enum type"
 description: "Determines how content caches select a parent cache."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

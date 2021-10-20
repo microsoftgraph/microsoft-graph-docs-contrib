@@ -2,7 +2,7 @@
 title: "Delete pfxUserCertificate"
 description: "Deletes a pfxUserCertificate."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

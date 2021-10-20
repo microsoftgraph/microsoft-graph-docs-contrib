@@ -1,19 +1,19 @@
 ---
-title: "settings resource type (eDiscovery)"
-description: "Settings for an eDiscovery case"
+title: "caseSettings resource type"
+description: "Contains ettings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# settings resource type (eDiscovery)
+# caseSettings resource type
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings for an eDiscovery case. For details, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
+Contains settings for an eDiscovery case. For details, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get settings](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object.|
-|[Update settings](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Update the properties of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object.|
-|[resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|Reset all settings to the default values.|
+|[Get caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[Update caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Update the properties of a [microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md) object.|
+|[resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|None|Reset all settings to the default values.|
 
 ## Properties
 
@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.ediscovery.settings",
+  "@odata.type": "microsoft.graph.ediscovery.caseSettings",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.ediscovery.settings",
+  "@odata.type": "#microsoft.graph.ediscovery.caseSettings",
   "id": "String (identifier)",
   "redundancyDetection": {
     "@odata.type": "microsoft.graph.ediscovery.redundancyDetectionSettings"

@@ -2,7 +2,7 @@
 title: "policySetStatus enum type"
 description: "The enum to specify the status of PolicySet."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

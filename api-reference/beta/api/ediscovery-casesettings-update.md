@@ -1,19 +1,19 @@
 ---
-title: "Update settings"
-description: "Update the properties of a settings object."
+title: "Update caseSettings"
+description: "Update the properties of an eDiscovery caseSettings object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Update settings
+# Update caseSettings
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [settings](../resources/ediscovery-settings.md) object.
+Update the properties of a an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/settings
 
 ## Request body
 
-In the request body, supply a JSON representation of the [settings](../resources/ediscovery-settings.md) object.
+In the request body, supply a JSON representation of the [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Response
 
@@ -54,7 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,9 +105,11 @@ Content-length: 350
 ---
 
 
+---
+
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

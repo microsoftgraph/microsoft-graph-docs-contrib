@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSettingUsage enum type"
 description: "Supported setting types"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
