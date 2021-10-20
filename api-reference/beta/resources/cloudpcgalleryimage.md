@@ -26,21 +26,21 @@ Represents the gallery image resource on Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the gallery image resource on the Cloud PC. Read-only.|
 |displayName|String|The official display name of the gallery image. Read-only.|
-|offerDisplayName|String|The official display offer name of the gallery image. For example: Windows 10 Enterprise + OS Optimizations. Read-only.|
-|skuDisplayName|String|The official display SKU name of this gallery image. For example: 2004. Read-only.|
-|publisher|String|Ths publisher name of the gallery image, this value will be passed to Azure to get image resource. Read-only.|
-|offer|String|Ths offer name of the gallery image, this value will be passed to Azure to get image resource. Read-only.|
-|sku|String|Ths SKU name of the gallery image, this value will be passed to Azure to get image resource. Read-only.|
+|endDate|Date|The date in which this image is no longer within long-term support. Cloud PC will continue to provide short-term support. Read-only.|
+|expirationDate|Date|The date when the image is no longer available. Read-only.|
+|id|String|Unique identifier for the gallery image resource on the Cloud PC. Read-only.|
+|offer|String|Ths offer name of the gallery image. The value will be passed to Azure to get image resource. Read-only.|
+|offerDisplayName|String|The official display offer name of the gallery image. For example, Windows 10 Enterprise + OS Optimizations. Read-only.|
+|publisher|String|Ths publisher name of the gallery image. The value will be passed to Azure to get image resource. Read-only.|
 |recommendedSku|String|Recommended Cloud PC SKU for this gallery image. Read-only.|
-|status|cloudPcGalleryImageStatus|The status of the gallery image on Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`. Read-only.|
 |sizeInGB|Int32|The size of this image in gigabytes. Read-only.|
-|startDate|Date|The date when image becomes available. Read-only.|
-|endDate|Date|The date in which this image is no longer within long term support. Cloud PC will continue to support it short term. Read-only.|
-|expirationDate|Date|The date when image is no longer available. Read-only.|
+|sku|String|Ths SKU name of the gallery image. The value will be passed to Azure to get image resource. Read-only.|
+|skuDisplayName|String|The official display stock keeping unit (SKU) name of this gallery image. For example, 2004. Read-only.|
+|startDate|Date|The date when the image becomes available. Read-only.|
+|status|cloudPcGalleryImageStatus|The status of the gallery image on Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. Read-only.|
 
-### CloudPcGalleryImageStatus values
+### cloudPcGalleryImageStatus values
 
 |Member|Description|
 |:---|:---|
@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
   "sku":"String",
   "recommendedSku":"String",
   "status":"String",
-  "sizeInGB":"Integer",
+  "sizeInGB":"Int32",
   "startDate":"String (Date)",
   "endDate":"String (Date)",
   "expiredDate":"String (Date)"

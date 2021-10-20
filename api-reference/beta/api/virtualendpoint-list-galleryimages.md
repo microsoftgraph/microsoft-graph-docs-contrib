@@ -72,9 +72,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryIma
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcGalleryImage)"
+  "@odata.type": "microsoft.graph.cloudPcGalleryImage",
+  "isCollection": true
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

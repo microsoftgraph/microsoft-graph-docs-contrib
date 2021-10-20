@@ -58,16 +58,15 @@ If successful, this method returns a `200 OK` response code and a [cloudPcGaller
 
 ### Request
 
-### Request
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcgalleryimage"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/{id}
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

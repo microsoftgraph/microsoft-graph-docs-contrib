@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcGalleryImage",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcGalleryImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [cloudPcGalleryImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource type and supported methods.",
                     "Target": "cloudPcGalleryImage"
                 },
                 {

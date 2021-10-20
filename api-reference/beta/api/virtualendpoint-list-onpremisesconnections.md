@@ -94,7 +94,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcOnPremisesConnection)"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
+  "isCollection": true
 }
 -->
 
