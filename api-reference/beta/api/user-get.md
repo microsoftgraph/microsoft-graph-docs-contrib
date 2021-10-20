@@ -190,9 +190,39 @@ Content-length: 491
 
 ### Example 3: Get the custom security attribute assignments of the specified user
 
-#### Request
-
 The following example gets the custom security attributes of the specified user.
+
+Attribute #1
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Attribute value: `["Baker","Cascade"]`
+
+Attribute #2
+
++ Attribute set: `Engineering`
++ Attribute: `CostCenter`
++ Attribute data type: Collection of Integers
++ Attribute value: `[1001]`
+
+Attribute #3
+
++ Attribute set: `Engineering`
++ Attribute: `Certification`
++ Attribute data type: Boolean
++ Attribute value: `true`
+
+Attribute #4
+
++ Attribute set: `Marketing`
++ Attribute: `Level`
++ Attribute data type: String
++ Attribute value: `"Public"`
+
+The calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator roles and must be assigned the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+#### Request
 
 
 <!-- {
@@ -231,7 +261,7 @@ Content-type: application/json
             ],
             "Certification": true
         },
-        "Operations": {
+        "Marketing": {
             "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
             "Level": "Public"
         }

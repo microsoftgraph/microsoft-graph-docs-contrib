@@ -113,9 +113,6 @@ Content-type: application/json
         "applicationTemplateId": null,
         "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
         "appRoleAssignmentRequired": false,
-        "customSecurityAttributes": {
-          "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-        },
         "disabledByMicrosoftStatus": null,
         "displayName": "foo",
         "errorUrl": null,
@@ -169,9 +166,39 @@ Content-type: application/json
 
 ### Example 2: Get the custom security attribute assignments of the specified service principal
 
-#### Request
-
 The following example gets the custom security attributes of the specified service principal.
+
+Attribute #1
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Attribute value: `["Baker","Cascade"]`
+
+Attribute #2
+
++ Attribute set: `Engineering`
++ Attribute: `CostCenter`
++ Attribute data type: Collection of Integers
++ Attribute value: `[1001]`
+
+Attribute #3
+
++ Attribute set: `Engineering`
++ Attribute: `Certification`
++ Attribute data type: Boolean
++ Attribute value: `true`
+
+Attribute #4
+
++ Attribute set: `Marketing`
++ Attribute: `Level`
++ Attribute data type: String
++ Attribute value: `"Public"`
+
+The calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator roles and must be assigned the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+#### Request
 
 
 
@@ -194,7 +221,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
@@ -225,7 +251,6 @@ If there are no custom security attributes assigned to the service principal or 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
