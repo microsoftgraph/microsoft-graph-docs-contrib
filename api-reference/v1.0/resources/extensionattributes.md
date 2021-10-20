@@ -94,6 +94,7 @@ ConsistencyLevel: eventual
   "value": [
   {
     "accountEnabled": true,
+    "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
     "approximateLastSignInDateTime": "String (timestamp)",
     "complianceExpirationDateTime": "String (timestamp)",
     "deviceId": "string",
@@ -104,7 +105,9 @@ ConsistencyLevel: eventual
     "id": "string (identifier)",
     "isCompliant": true,
     "isManaged": true,
+    "manufacturer": "string",
     "mdmAppId": "string",
+    "model": "string",
     "onPremisesLastSyncDateTime": "String (timestamp)",
     "onPremisesSyncEnabled": true,
     "operatingSystem": "string",
@@ -112,13 +115,7 @@ ConsistencyLevel: eventual
     "physicalIds": ["string"],
     "profileType": "string",
     "systemLabels": ["string"],
-    "trustType": "string",
-    "Name": "string",
-    "Status": "string",
-    "Platform": "string",
-    "Kind": "string",
-    "Model": "string",
-    "Manufacturer": "string"
+    "trustType": "string"
    }
   ]
 }
