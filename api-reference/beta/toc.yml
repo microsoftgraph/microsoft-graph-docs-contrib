@@ -13056,22 +13056,22 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-      - name: Organization control (preview)
-        items:
-        - name: Insights settings
-          href: resources/insightssettings.md
-        - name: Get
-          href: api/insightssettings-get.md
-        - name: Update
-          href: api/insightssettings-update.md
-      - name: User control (preview)
-        items:
-        - name: User insights settings
-          href: resources/userinsightssettings.md
-        - name: Get
-          href: api/userinsightssettings-get.md
-        - name: Update
-          href: api/userinsightssettings-update.md
+        - name: Organization control (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: Get
+            href: api/insightssettings-get.md
+          - name: Update
+            href: api/insightssettings-update.md
+        - name: User control (preview)
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
