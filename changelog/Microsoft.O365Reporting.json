@@ -55,7 +55,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageversionsusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of g[etemailappusageversionsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Update JSON return type of [getemailappusageversionsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailappusageversionsusercounts"
 		},
 		{
