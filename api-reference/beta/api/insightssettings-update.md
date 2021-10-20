@@ -1,6 +1,6 @@
 ---
-title: "Update Insights"
-description: "Update properties of InsightsSettings object"
+title: "Update insights"
+description: "Update properties of insightsSettings object"
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -21,7 +21,7 @@ To learn how to customize insights privacy for your organization see:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

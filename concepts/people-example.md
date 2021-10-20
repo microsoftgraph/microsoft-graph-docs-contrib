@@ -977,8 +977,8 @@ In order for User C to appear, the profile owner must be in a relatively small g
  
 People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
 
-#### Disabling Working-With
+#### Disabling working-with
 There are two controls available to administrations:
-* Organization Wide Control - to help switch off Working-With for the whole organization
+* Organization wide control - to help switch off working-with for the whole organization
 * Azure AD Group Control - to help disable the control for a group of people.
-Read more on how to [Customize people insight privacy control](insights-customize-people-insights-privacy.md)
+Read more on how to [customize people insight privacy control](insights-customize-people-insights-privacy.md)
