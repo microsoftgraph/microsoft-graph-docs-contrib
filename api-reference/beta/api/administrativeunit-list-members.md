@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Use this API to get the members list (user and group) in an administrative unit."
+description: "Use this API to get the members list (user, group, device) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to get the members list (user and group) in an administrative unit.
+Use this API to get the members list (users, groups, and devices) in an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md), [group](../resources/group.md), and/or [device](../resources/device.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
 
 ## Examples
 ##### List member objects

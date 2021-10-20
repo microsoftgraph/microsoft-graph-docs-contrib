@@ -1,6 +1,6 @@
 ---
 title: "Remove a member"
-description: "Use this API to remove a member (user or group) from an administrative unit."
+description: "Use this API to remove a member (user, group, device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove a member (user or group) from an administrative unit.
+Use this API to remove a member (user, group, or device) from an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

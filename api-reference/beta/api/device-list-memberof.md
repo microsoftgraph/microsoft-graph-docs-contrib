@@ -1,6 +1,6 @@
 ---
 title: "List device memberOf"
-description: "Get groups that this device is a direct member of. This operation is not transitive."
+description: "Get groups or administrative units that this device is a direct member of. This operation is not transitive."
 author: "spunukol"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

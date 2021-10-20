@@ -1,6 +1,6 @@
 ---
 title: "Add a member"
-description: "Use this API to add a member (user or group) to an administrative unit."
+description: "Use this API to add a member (user, group, device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a member (user or group) to an administrative unit.
+Use this API to add a member (user, group, or device) to an administrative unit.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -38,7 +38,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [device](../resources/device.md) to be added.
 
 ## Response
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ---
 
-In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
+In the request body, provide the `id` of the [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) object you want to add.
 
 ### Response
 Here is an example of the response.
