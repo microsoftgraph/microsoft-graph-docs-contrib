@@ -14,6 +14,7 @@ People insights feature or working-with allows users to view people most relevan
 ## Controls available 
 
 Based on customer feedback, we are adding two controls to enable tenant administrator to be able to customize the feature for their organisation. The controls are: 
+
 |People insights controls | Default | Comments |
 |-------------------------|---------|----------|
 |Entire organization  | Enabled |
