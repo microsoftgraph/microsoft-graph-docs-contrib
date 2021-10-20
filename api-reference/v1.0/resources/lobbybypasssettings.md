@@ -24,10 +24,12 @@ Specifies which participants can bypass the meeting lobby.
 
 | Value                    | Description     |
 | ------------------------ | --------------------------------------------------- |
-| organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| organization | Only the participants from the same company and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| organizationAndFederated | Only the participants from the same company or trusted organization and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. | 
-| everyone | Everyone is admitted into the meeting. No participants are placed in the meeting lobby. | 
+| organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organization | Only the participants from the same company **and guests** are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organizationAndFederated | Only the participants from the same company or trusted organization and guests are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| everyone | Everyone is admitted into the meeting. No participants are placed in the meeting lobby. |
+| invited | Only people the organizer invite are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
+| organizationExcludingGuests |  Only the participants from the same company are admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
