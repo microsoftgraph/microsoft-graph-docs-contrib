@@ -13065,7 +13065,7 @@ items:
         - name: Update
           href: api/insightssettings-update.md
       - name: User control (preview)
-         items:
+        items:
         - name: User insights settings
           href: resources/userinsightssettings.md
         - name: Get
