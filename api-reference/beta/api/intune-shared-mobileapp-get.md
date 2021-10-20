@@ -1,8 +1,8 @@
 ---
 title: "Get mobileApp"
 description: "Read properties and relationships of the mobileApp object."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -101,7 +101,6 @@ Content-Length: 949
   }
 }
 ```
-
 
 
 

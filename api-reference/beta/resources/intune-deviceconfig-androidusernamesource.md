@@ -2,7 +2,7 @@
 title: "androidUsernameSource enum type"
 description: "Android username source."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Android username source.
 |userPrincipalName|1|The user principal name.|
 |samAccountName|2|The user sam account name.|
 |primarySmtpAddress|3|Primary SMTP address.|
-
 
 
 

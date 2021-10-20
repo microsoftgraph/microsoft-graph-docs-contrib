@@ -2,7 +2,7 @@
 title: "microsoftTunnelServerLogCollectionResponse resource type"
 description: "Entity that stores the server log collection status."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -25,6 +25,7 @@ Entity that stores the server log collection status.
 |[Create microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-create.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Create a new [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
 |[Delete microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-delete.md)|None|Deletes a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md).|
 |[Update microsoftTunnelServerLogCollectionResponse](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-update.md)|[microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md)|Update the properties of a [microsoftTunnelServerLogCollectionResponse](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) object.|
+|[createDownloadUrl action](../api/intune-mstunnel-microsofttunnelserverlogcollectionresponse-createdownloadurl.md)|String|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -34,6 +35,9 @@ Entity that stores the server log collection status.
 |startDateTime|DateTimeOffset|The start time of the logs collected |
 |endDateTime|DateTimeOffset|The end time of the logs collected|
 |sizeInBytes|Int64|The size of the logs in bytes|
+|serverId|String|ID of the server the log collection is requested upon|
+|requestDateTime|DateTimeOffset|The time when the log collection was requested|
+|expiryDateTime|DateTimeOffset|The time when the log collection is expired|
 
 ## Relationships
 None
@@ -53,10 +57,12 @@ Here is a JSON representation of the resource.
   "status": "String",
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "sizeInBytes": 1024
+  "sizeInBytes": 1024,
+  "serverId": "String",
+  "requestDateTime": "String (timestamp)",
+  "expiryDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

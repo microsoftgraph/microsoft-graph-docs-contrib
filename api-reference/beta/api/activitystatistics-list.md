@@ -1,7 +1,7 @@
 ---
 title: "List activityStatistics"
 description: "Get a collection of activityStatistics objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "apiPageType"
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 The following is an example of a response with all related activity statistics for a user. This response only shows the first day of a week's activities to shorten it for readability.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

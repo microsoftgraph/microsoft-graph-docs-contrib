@@ -2,7 +2,7 @@
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "security"
 doc_type: apiPageType
 ---
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

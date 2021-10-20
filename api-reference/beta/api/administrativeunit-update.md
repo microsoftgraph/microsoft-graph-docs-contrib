@@ -1,9 +1,9 @@
 ---
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
-author: "anandyadavMSFT"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "DougKirschner"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -96,9 +96,7 @@ Content-length: 114
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

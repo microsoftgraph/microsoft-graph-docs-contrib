@@ -2,7 +2,7 @@
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -33,6 +33,13 @@ GET /servicePrincipals/{id}
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
+For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for service principals has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 | Name           | Description                |
@@ -79,9 +86,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -102,6 +109,7 @@ Content-type: application/json
         "applicationTemplateId": null,
         "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
         "appRoleAssignmentRequired": false,
+        "disabledByMicrosoftStatus": null,
         "displayName": "foo",
         "errorUrl": null,
         "homepage": null,

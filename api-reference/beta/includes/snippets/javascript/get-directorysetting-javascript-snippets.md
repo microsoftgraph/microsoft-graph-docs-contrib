@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/settings/{id}')
+let directorySetting = await client.api('/settings/f0b2d6f5-097d-4177-91af-a24e530b53cc')
 	.version('beta')
 	.get();
 

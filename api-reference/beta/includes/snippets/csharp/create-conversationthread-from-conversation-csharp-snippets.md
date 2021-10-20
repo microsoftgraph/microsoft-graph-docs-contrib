@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var conversationThread = new ConversationThread
 {
-	Topic = "topic-value",
+	Topic = "Take your wellness days and rest",
 	Posts = new ConversationThreadPostsCollectionPage()
 	{
 		new Post
@@ -16,13 +16,13 @@ var conversationThread = new ConversationThread
 			Body = new ItemBody
 			{
 				ContentType = BodyType.Html,
-				Content = "this is body content"
+				Content = "Waiting for the summer holidays."
 			}
 		}
 	}
 };
 
-await graphClient.Groups["{id}"].Conversations["{id}"].Threads
+await graphClient.Groups["{group-id}"].Conversations["{conversation-id}"].Threads
 	.Request()
 	.AddAsync(conversationThread);
 

@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getYammerActivityUserDetail"
 description: "Get details about Yammer activity by user."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -124,9 +124,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

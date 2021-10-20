@@ -2,7 +2,7 @@
 title: "deviceConfigurationTargetedUserAndDevice resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get device command status"
 description: "Get the status of a command on a device. For the  full list of status codes, see List of actionStatus."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
 ms.prod: ""
@@ -147,7 +147,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices/{id}/command/{id}/responsePayload
+GET me/devices/{id}/commands/{id}/responsePayload
 ```
 
 ### Request headers

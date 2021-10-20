@@ -2,8 +2,8 @@
 title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
-localization_priority: Normal
+ms.prod: "governance"
+ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 

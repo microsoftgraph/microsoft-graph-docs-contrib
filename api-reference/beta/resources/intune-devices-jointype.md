@@ -2,7 +2,7 @@
 title: "joinType enum type"
 description: "Device enrollment join type."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Device enrollment join type.
 |azureADJoined|1|The device is joined by Azure AD.|
 |azureADRegistered|2|The device is registered by Azure AD.|
 |hybridAzureADJoined|3|The device is joined by hybrid Azure AD.|
-
 
 
 

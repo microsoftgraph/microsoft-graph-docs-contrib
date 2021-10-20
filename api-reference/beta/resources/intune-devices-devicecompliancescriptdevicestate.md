@@ -2,7 +2,7 @@
 title: "deviceComplianceScriptDeviceState resource type"
 description: "Contains properties for device run state of the device compliance script."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -30,17 +30,17 @@ Contains properties for device run state of the device compliance script.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device compliance script device state entity. This property is read-only.|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device compliance script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device compliance script is expected to execute|
-|lastSyncDateTime|DateTimeOffset|The last time that Intune Management Extension synced with Intune|
+|lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
 |scriptOutput|String|Output of the detection script|
 |scriptError|String|Error from the detection script|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-shared-manageddevice.md)|The managed device on which the device compliance script executed|
+|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|The managed device on which the device compliance script executed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -62,7 +62,6 @@ Here is a JSON representation of the resource.
   "scriptError": "String"
 }
 ```
-
 
 
 

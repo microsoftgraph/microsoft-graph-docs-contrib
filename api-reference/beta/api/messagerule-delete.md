@@ -2,7 +2,7 @@
 title: "Delete messageRule"
 description: "Delete the specified messageRule object."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

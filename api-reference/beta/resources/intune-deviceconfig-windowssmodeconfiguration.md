@@ -2,7 +2,7 @@
 title: "windowsSModeConfiguration enum type"
 description: "The possible options to configure S mode unlock"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ The possible options to configure S mode unlock
 |noRestriction|0|This option will remove all restrictions to unlock S mode - default|
 |block|1|This option will block the user to unlock the device from S mode|
 |unlock|2|This option will unlock the device from S mode|
-
 
 
 

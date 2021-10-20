@@ -1,17 +1,18 @@
 ---
-title: "Add identityProvider to a b2cIdentityUserFlow"
-description: "Add identityProvider to a b2cIdentityUserFlow."
-localization_priority: Normal
+title: "Add identityProvider to a b2cIdentityUserFlow (deprecated)"
+description: "Add identityProvider to a b2cIdentityUserFlow. (deprecated)"
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+author: "namkedia"
+ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2cIdentityUserFlow
+# Add identityProvider to a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Add identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
@@ -35,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /b2cUserFlows/{id}/identityProviders/$ref
+POST /identity/b2cUserFlows/{id}/identityProviders/$ref
 ```
 
 ## Request headers
@@ -68,7 +69,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -107,5 +108,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

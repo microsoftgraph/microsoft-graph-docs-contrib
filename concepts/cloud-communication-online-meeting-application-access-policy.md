@@ -1,8 +1,8 @@
 ---
 title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
-author: "frankpeng7"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
@@ -18,7 +18,7 @@ These steps are specific to online meetings and do not apply to other Microsoft 
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
-1. Identify the app’s applcation (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
+1. Identify the app’s application (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
 
     - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
@@ -40,18 +40,25 @@ To configure an application access policy and allow applications to access onlin
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
+5. (Optional) Grant the policy to the whole tenant. This will apply to users who do not have an application access policy assigned. For details, see the cmdlet links in the [see also](#see-also) section.
 
-> **Note** 
-> 
+   Run the following cmdlet, replacing the **PolicyName** argument.
+
+   ```powershell
+   Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Global
+   ```
+
+> [!NOTE]
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
 
-Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access for an app that has been granted any of the following application permissions:
+Administrators can use ApplicationAccessPolicy cmdlets to control online meeting access for an app that has been granted any of the following application permissions:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
+- OnlineMeetingArtifact.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 

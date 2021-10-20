@@ -2,8 +2,8 @@
 title: "List riskyUsers"
 description: "Get a list of the riskyUser objects and their properties."
 author: "cloudhandler"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_2"
 }
 -->
 ``` http

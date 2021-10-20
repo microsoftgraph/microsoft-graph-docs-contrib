@@ -1,9 +1,9 @@
 ---
 title: "preAuthorizedApplication resource type"
 description: "Lists the pre-authorized client applications"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -18,7 +18,7 @@ Lists the client applications that are pre-authorized with the specified permiss
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |appId|String| The unique identifier for the application. |
-|delegatedPermissionIds|String collection| The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires. |
+|permissionIds|String collection| The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires. |
 
 ## JSON representation
 Here is a JSON representation of the resource.

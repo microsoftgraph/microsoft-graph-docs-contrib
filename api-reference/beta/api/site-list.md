@@ -1,7 +1,7 @@
 ---
 title: "Enumerate sites"
 description: "List the available [sites][] in an organization that match provided filter criteria and query options."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 author: "JeremyKelley"
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

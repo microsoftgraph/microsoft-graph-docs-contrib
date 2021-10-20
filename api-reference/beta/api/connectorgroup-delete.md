@@ -1,7 +1,7 @@
 ---
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 ---
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

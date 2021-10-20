@@ -1,10 +1,10 @@
 ---
 title: "Create identityUserFlowAttribute"
 description: "Create a new identityUserFlowAttribute object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Create identityUserFlowAttribute

@@ -3,7 +3,7 @@ author: daspek
 description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
 title: Get analytics
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -76,7 +76,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

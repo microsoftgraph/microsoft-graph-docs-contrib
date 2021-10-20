@@ -1,10 +1,10 @@
 ---
 title: "changeNotificationCollection resource type"
 description: "Represents a collection of subscription notifications sent to the subscriber."
-localization_priority: Normal
-author: "davidmu1"
+ms.localizationpriority: medium
+author: "Jumaodhiss"
 doc_type: resourcePageType
-ms.prod: "non-product-specific"
+ms.prod: "change-notifications"
 ---
 
 # changeNotificationCollection resource type

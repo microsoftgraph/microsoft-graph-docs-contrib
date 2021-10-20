@@ -1,7 +1,7 @@
 ---
 title: "educationClass: delta"
 description: "Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Delegated (work or school account)     | EduRoster.ReadBasic, EduRoster.Read, or EduRoster.ReadWrite              |
 | Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All, or EduRoster.WriteWrite.All |
+| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All, or EduRoster.ReadWrite.All |
 
 ## HTTP request
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

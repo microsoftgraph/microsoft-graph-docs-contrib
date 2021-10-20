@@ -2,7 +2,7 @@
 title: "List deviceManagementConfigurationPolicies"
 description: "List properties and relationships of the deviceManagementConfigurationPolicy objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,11 +20,11 @@ List properties and relationships of the [deviceManagementConfigurationPolicy](.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/configurationPolicies
+GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies
 ```
 
 ## Request headers
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 607
+Content-Length: 974
 
 {
   "value": [
@@ -78,12 +79,18 @@ Content-Length: 607
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "isAssigned": true
+      "isAssigned": true,
+      "templateReference": {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+        "templateId": "Template Id value",
+        "templateFamily": "endpointSecurityAntivirus",
+        "templateDisplayName": "Template Display Name value",
+        "templateDisplayVersion": "Template Display Version value"
+      }
     }
   ]
 }
 ```
-
 
 
 

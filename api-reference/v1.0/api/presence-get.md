@@ -1,8 +1,8 @@
 ---
 title: "Get presence"
 description: "Get a user's presence information."
-author: "elvinyang-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---

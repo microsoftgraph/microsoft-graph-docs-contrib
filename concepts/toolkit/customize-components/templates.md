@@ -1,7 +1,7 @@
 ---
 title: "Templates in the Microsoft Graph Toolkit"
 description: "Use custom templates to modify the content of a component."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -96,6 +96,28 @@ The following example shows how to use the `$index` property in a data-for loop.
     </template>
   </mgt-person-card>
 </mgt-person>
+```
+
+### {{this}}
+
+To help debug the data context, you can use `this` in your binding expressions. The simplest form is to add `{{this}}` anywhere in your template.
+
+```html
+<template data-type="event">
+  <div>
+    {{this}}
+  </div>
+</template>
+```
+
+Because you can use JavaScript in your binding expressions, you also have access to the [`console`](https://developer.mozilla.org/docs/Web/API/Console) object which allows you to use `console.log(this)` (or any other `console` API) in your templates.
+
+```html
+<template data-type="event">
+  <div>
+    {{console.log(this)}}
+  </div>
+</template>
 ```
 
 ## Conditional rendering

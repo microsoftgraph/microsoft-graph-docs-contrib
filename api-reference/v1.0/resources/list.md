@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: List
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The list resource represents a list in a site."
 doc_type: resourcePageType
@@ -21,7 +21,7 @@ The following tasks are available for list resources.
 **Note:** This beta only allows navigating lists, not creating or updating them.
 You can, however, create or update [list items][listItem].
 
-All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
+All examples below are relative to a site, for example, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Common task               | HTTP method
 |:--------------------------|:------------------------------

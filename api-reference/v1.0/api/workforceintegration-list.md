@@ -1,7 +1,7 @@
 ---
 title: "List workforceIntegrations"
 description: "Retrieve a list of workforceIntegration objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

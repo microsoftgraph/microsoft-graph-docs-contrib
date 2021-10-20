@@ -2,7 +2,7 @@
 title: "microsoftTunnelSite resource type"
 description: "Entity that represents a Microsoft Tunnel site"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -25,6 +25,7 @@ Entity that represents a Microsoft Tunnel site
 |[Create microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-create.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Create a new [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.|
 |[Delete microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-delete.md)|None|Deletes a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md).|
 |[Update microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-update.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Update the properties of a [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.|
+|[requestUpgrade action](../api/intune-mstunnel-microsofttunnelsite-requestupgrade.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -33,6 +34,12 @@ Entity that represents a Microsoft Tunnel site
 |displayName|String|The MicrosoftTunnelSite's display name|
 |description|String|The MicrosoftTunnelSite's description|
 |publicAddress|String|The MicrosoftTunnelSite's public domain name or IP address|
+|upgradeWindowUtcOffsetInMinutes|Int32|The site's timezone represented as a minute offset from UTC|
+|upgradeWindowStartTime|TimeOfDay|The site's upgrade window start time of day|
+|upgradeWindowEndTime|TimeOfDay|The site's upgrade window end time of day|
+|upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
+|upgradeAvailable|Boolean|True if an upgrade is available|
+|internalNetworkProbeUrl|String|The MicrosoftTunnelSite's Internal Network Access Probe URL|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
@@ -56,12 +63,17 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "publicAddress": "String",
+  "upgradeWindowUtcOffsetInMinutes": 1024,
+  "upgradeWindowStartTime": "String (time of day)",
+  "upgradeWindowEndTime": "String (time of day)",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "String",
   "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create educationClass"
 description: "Create a new class. This will also create a universal group. When you use this API to create a class, it will add special properties to the group, which will"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -89,7 +89,7 @@ Content-length: 224
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

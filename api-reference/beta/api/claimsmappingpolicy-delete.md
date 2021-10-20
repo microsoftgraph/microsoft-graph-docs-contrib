@@ -1,9 +1,9 @@
 ---
 title: "Delete claimsMappingPolicy"
 description: "Delete claimsMappingPolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

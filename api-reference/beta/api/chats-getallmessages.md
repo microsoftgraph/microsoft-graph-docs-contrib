@@ -1,8 +1,8 @@
 ---
 title: "chats: getAllMessages"
 description: "Get messages from all chats that a user is a participant in."
-author: "laujan"
-localization_priority: Priority
+author: "RamjotSingh"
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
 
 ## Permissions
 
@@ -32,7 +34,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/getAllMessages
+GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## Optional query parameters
@@ -62,16 +64,16 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
-HTTP/1.1 200 OK 
-Content-type: application/json 
-Content-length: 347 
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 347
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
@@ -96,6 +98,7 @@ Content-length: 347
          "webUrl":null,
          "channelIdentity":null,
          "policyViolation":null,
+         "eventDetail": null,
          "from":{
             "application":null,
             "device":null,
@@ -111,13 +114,13 @@ Content-length: 347
             "content":"<div>\n<blockquote itemscope=\"\" itemtype=\"http://schema.skype.com/Reply\" itemid=\"1600457867820\">\n<strong itemprop=\"mri\" itemid=\"8:orgid:0de69e5e-2da8-4cf2-821f-5e6585b2c65b\">Richard Wilson</strong><span itemprop=\"time\" itemid=\"1600457867820\"></span>\n<p itemprop=\"preview\">1237</p>\n</blockquote>\n<p>this is a reply</p>\n</div>"
          },
          "attachments":[
-            
+
          ],
          "mentions":[
-            
+
          ],
          "reactions":[
-            
+
          ]
       }
    ]

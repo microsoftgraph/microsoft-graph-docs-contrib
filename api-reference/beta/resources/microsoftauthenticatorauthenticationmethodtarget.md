@@ -2,7 +2,7 @@
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of users or groups enabled to use Microsoft Authenticator authentication methods policy."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of users or groups enabled to use [Microsoft Authenticator authentication methods policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.  Inherits from [authenticationMethodTarget](authenticationMethodTarget.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of an Azure AD user or group.|
-|isNumberMatchingRequired (Private Preview)|Boolean|Require the user to match the number displayed on the sign-in page to approve the MFA notification.|
-|isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not supported*. |
-|shownContext (Private Preview)|authenticatorAppContextType|Determines what types of context about the sign-in should be shown to the user in the body of the notification. Possible values are: `location`, `app`.|
-|targetType|authenticationMethodTargetType| Possible values are: `null`, `user`, `group`.|
+|authenticationMode|microsoftAuthenticatorAuthenticationMode|Determines which types of notifications can be used for sign-in. The possible values are: `deviceBasedPush` (passwordless only), `push`, and `any`.|
+|id|String|Object identifier of an Azure AD user or group. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md).|
+|isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. Inherited from [authenticationMethodTarget](authenticationmethodtarget.md). *Not supported*. |
+|targetType|authenticationMethodTargetType| The possible values are: `user`, `group`, and `unknownFutureValue`. Inherited from [authenticationMethodTarget](authenticationMethodTarget.md).|
+|numberMatchingRequiredState|advancedConfigState|Requires number matching for MFA notifications. Value is ignored for phone sign-in notifications. Possible values are: `enabled`, `disabled`, `default`.|
+|displayLocationInformationRequiredState|advancedConfigState|Determines whether the location of the sign-in should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
+|displayAppInformationRequiredState|advancedConfigState|Determines whether the app the user is signing into should be shown to the user in the body of the notification. Possible values are: `enabled`, `disabled`, `default`.|
 
 ## Relationships
 None.
@@ -39,12 +41,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodTarget",
-  "id": "String (identifier)",
   "targetType": "String",
+  "id": "String (identifier)",
   "isRegistrationRequired": "Boolean",
-  "useForSignIn": "Boolean",
-  "shownContext": "String",
-  "isNumberMatchingRequired": "Boolean"
+  "authenticationMode": "String",
+  "numberMatchingRequiredState": "String",
+  "displayLocationInformationRequiredState": "String",
+  "displayAppInformationRequiredState": "String"
 }
-```
 
+```

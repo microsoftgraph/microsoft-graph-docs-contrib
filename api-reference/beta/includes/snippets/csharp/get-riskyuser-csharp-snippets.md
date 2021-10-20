@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var riskyUsers = await graphClient.IdentityProtection.RiskyUsers
+var riskyUser = await graphClient.TenantRelationships.ManagedTenants.RiskyUsers["{managedTenants.riskyUser-id}"]
 	.Request()
 	.GetAsync();
 

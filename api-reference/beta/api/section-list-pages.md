@@ -1,7 +1,7 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects from the specified section."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

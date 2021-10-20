@@ -2,7 +2,7 @@
 title: "Manage apps using Microsoft Intune"
 description: "The following Graph resources are available to manage mobile apps in Intune:  "
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
@@ -19,7 +19,10 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
+- [Device app management](intune-apps-deviceappmanagement.md)
+- [Device app management](intune-apps-deviceappmanagement.md)
 - [Device install state](intune-books-deviceinstallstate.md)
+- [Device management](intune-androidforwork-devicemanagement.md)
 - [E-book install summary](intune-books-ebookinstallsummary.md)
 - [File encryption info](intune-apps-fileencryptioninfo.md)
 - [Install state](intune-books-installstate.md)
@@ -61,19 +64,36 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
+- [Mobile app install time settings](intune-apps-mobileappinstalltimesettings.md)
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
+- [Run as account type](intune-apps-runasaccounttype.md)
 - [User install state summary](intune-books-userinstallstatesummary.md)
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
+- [Win32 LOB app](intune-apps-win32lobapp.md)
+- [Win32 LOB app assignment settings](intune-apps-win32lobappassignmentsettings.md)
+- [Win32 LOB app delivery optimization priority](intune-apps-win32lobappdeliveryoptimizationpriority.md)
+- [Win32 LOB app file system operation type](intune-apps-win32lobappfilesystemoperationtype.md)
+- [Win32 LOB app file system rule](intune-apps-win32lobappfilesystemrule.md)
+- [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
+- [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
+- [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
+- [Win32 LOB app notification](intune-apps-win32lobappnotification.md)
+- [Win32 LOB app power shell script rule](intune-apps-win32lobapppowershellscriptrule.md)
+- [Win32 LOB app power shell script rule operation type](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Win32 LOB app product code rule](intune-apps-win32lobappproductcoderule.md)
+- [Win32 LOB app registry rule](intune-apps-win32lobappregistryrule.md)
+- [Win32 LOB app registry rule operation type](intune-apps-win32lobappregistryruleoperationtype.md)
+- [Win32 LOB app restart behavior](intune-apps-win32lobapprestartbehavior.md)
+- [Win32 LOB app restart settings](intune-apps-win32lobapprestartsettings.md)
+- [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
+- [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
+- [Win32 LOB app rule](intune-apps-win32lobapprule.md)
+- [Win32 LOB app rule operator](intune-apps-win32lobappruleoperator.md)
+- [Win32 LOB app rule type](intune-apps-win32lobappruletype.md)
 - [Windows architecture](intune-apps-windowsarchitecture.md)
 - [Windows device type](intune-apps-windowsdevicetype.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
-
-
-
-
-
-

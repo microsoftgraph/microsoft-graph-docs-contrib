@@ -2,7 +2,7 @@
 title: "deviceComplianceScheduledActionForRule resource type"
 description: "Scheduled Action for Rule"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -30,12 +30,12 @@ Scheduled Action for Rule
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|ruleName|String|Name of the rule which this scheduled action applies to.|
+|ruleName|String|Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) collection|The list of scheduled action configurations for this compliance policy.|
+|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) collection|The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -52,7 +52,6 @@ Here is a JSON representation of the resource.
   "ruleName": "String"
 }
 ```
-
 
 
 

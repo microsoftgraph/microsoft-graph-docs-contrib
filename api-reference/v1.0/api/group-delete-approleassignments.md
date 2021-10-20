@@ -1,17 +1,17 @@
 ---
-title: "Delete an appRoleAssignment from a group"
+title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment that has been granted to a group."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"
 ---
 
-# Delete an appRoleAssignment granted to a group
+# Delete appRoleAssignment
 
 Namespace: microsoft.graph
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
+> As a best practice, we recommend you delete app role assignments using the [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) method which deletes through the **appRoleAssignedTo** relationship of the _resource_ service principal, instead of this method.
 
 ## Request headers
 

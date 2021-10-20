@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: Add owner"
 description: "Add an owner for the service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -85,9 +85,7 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -2,7 +2,7 @@
 title: "macOSLobApp resource type"
 description: "Contains properties and inherited properties for the MacOS LOB App."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -128,7 +128,9 @@ Here is a JSON representation of the resource.
     "v10_12": true,
     "v10_13": true,
     "v10_14": true,
-    "v10_15": true
+    "v10_15": true,
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",
@@ -149,7 +151,6 @@ Here is a JSON representation of the resource.
   "installAsManaged": true
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "RangeFormat: autofitRows"
 description: "Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/autofitRows
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/autofitRows
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
 ## Request headers

@@ -1,7 +1,7 @@
 ---
 title: "List tasks"
 description: "Get all the Outlook tasks in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ##### Response
 Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,7 +2,7 @@
 title: "androidForWorkApp resource type"
 description: "Contains properties and inherited properties for Android for Work (AFW) Apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -112,7 +112,6 @@ Here is a JSON representation of the resource.
   "appStoreUrl": "String"
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Update roleScopeTag"
 description: "Update the properties of a roleScopeTag object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -49,10 +49,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated.|
+|id|String|Key of the entity. This is read-only and automatically generated. This property is read-only.|
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
-|isBuiltIn|Boolean|Description of the Role Scope Tag.|
+|isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
 
 
 
@@ -91,7 +91,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

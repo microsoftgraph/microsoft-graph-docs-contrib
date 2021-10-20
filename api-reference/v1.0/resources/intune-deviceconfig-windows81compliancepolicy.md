@@ -2,7 +2,7 @@
 title: "windows81CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 8.1."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -89,11 +89,6 @@ Here is a JSON representation of the resource.
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

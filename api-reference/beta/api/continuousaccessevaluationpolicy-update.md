@@ -2,8 +2,8 @@
 title: "Update continuousAccessEvaluationPolicy"
 description: "Update the properties of a continuousAccessEvaluationPolicy object."
 author: "jerrysai"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 > [!NOTE]
-> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.  
 
 ## HTTP request
 

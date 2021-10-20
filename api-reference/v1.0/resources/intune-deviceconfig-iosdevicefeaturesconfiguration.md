@@ -2,7 +2,7 @@
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -73,7 +73,7 @@ Here is a JSON representation of the resource.
   "lockScreenFootnote": "String",
   "homeScreenDockIcons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenItem",
+      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
       "displayName": "String",
       "pages": [
         {
@@ -96,7 +96,7 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenItem",
+          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
           "displayName": "String",
           "pages": [
             {
@@ -131,11 +131,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

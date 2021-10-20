@@ -2,7 +2,7 @@
 title: "windowsQualityUpdateClassification enum type"
 description: "Windows quality update classification"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -20,10 +20,9 @@ Windows quality update classification
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|all|0|Security baseline template|
-|security|1|Specialized devices template|
-|nonSecurity|2|Advanced Threat Protection security baseline template|
-
+|all|0|All update type|
+|security|1|Security only update type|
+|nonSecurity|2|Non security only update type|
 
 
 

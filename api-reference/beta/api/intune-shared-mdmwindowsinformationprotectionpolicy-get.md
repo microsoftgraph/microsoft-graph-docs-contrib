@@ -1,8 +1,8 @@
 ---
 title: "Get mdmWindowsInformationProtectionPolicy"
 description: "Read properties and relationships of the mdmWindowsInformationProtectionPolicy object."
-author: "dougeby"
-localization_priority: Normal
+author: "rolyon"
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -202,7 +202,6 @@ Content-Length: 4414
   }
 }
 ```
-
 
 
 

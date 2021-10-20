@@ -1,9 +1,9 @@
 ---
 title: "provisioningServicePrincipal resource type"
 description: "Represents the service principal used for provisioning."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 

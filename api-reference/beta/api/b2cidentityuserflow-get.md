@@ -1,10 +1,10 @@
 ---
 title: "Get b2cIdentityUserFlow"
 description: "Retrieve the properties and relationships a b2cIdentityUserFlow object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get b2cIdentityUserFlow

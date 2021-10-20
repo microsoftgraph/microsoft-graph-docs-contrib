@@ -1,7 +1,7 @@
 ---
 title: "Get started with the Microsoft Graph PowerShell SDK"
 description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 

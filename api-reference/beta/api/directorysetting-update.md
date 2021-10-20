@@ -2,8 +2,8 @@
 title: "Update a directory setting"
 description: "Update the properties of a specific directory setting object."
 author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -92,9 +92,7 @@ Content-length: 178
 
 ##### Response
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directorysetting"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 OK

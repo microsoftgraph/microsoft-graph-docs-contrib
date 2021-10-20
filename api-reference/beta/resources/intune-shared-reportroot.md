@@ -1,8 +1,8 @@
 ---
 title: "reportRoot resource type"
 description: "The resource that represents an instance of a device or troubleshooting report, depending on context."
-localization_priority: Normal
-author: "dougeby"
+ms.localizationpriority: medium
+author: "rolyon"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -54,7 +54,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
 
 
 

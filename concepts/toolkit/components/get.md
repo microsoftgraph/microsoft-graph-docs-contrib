@@ -1,7 +1,7 @@
 ---
 title: "Get component in the Microsoft Graph Toolkit"
 description: "A Get component allows you to make any GET query from Microsoft Graph directly in your HTML."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -35,15 +35,21 @@ You can use several attributes to change the behavior of the component. The only
 | N/A |error| Read-only error from Microsoft Graph if request was not successful. |
 
 ## Methods
+
 | Method | Description |
 | --- | --- |
 | refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update.  |
 
-
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
-| dataChange | The detail contains the `response` and `error` objects. | Fired when the response or error change. |
+
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`dataChange` | Fired after the component loaded its data. | `{ response: any, error: any }`. The `response` property contains the response retrieved from Microsoft Graph. The `error` property contains information about the error if one occurred | No | No | Yes
+
+> [!TIP]
+> For more information about the data returned in the `response` property see the API reference of the API that you used in the `resource` property of the Get component.
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -58,8 +64,18 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md). 
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
+
+## Cache
+
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-get` component does not cache any responses.
+
+|Object store|Cached data|Remarks|
+|-----------|-----------|-------|
+|`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
+
+See [Caching](../customize-components/cache.md) for more details.

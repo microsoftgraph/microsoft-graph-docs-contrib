@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API for security threat detection and protection (preview)"
 description: "The sophistication of security threats continues to escalate, affecting the global economy. Damage is often done long before organizations even discover it. You can use Microsoft Graph to build or extend security solutions that consolidate and correlate security alerts from multiple sources, detect threats that attempt to compromise user identity, unlock contextual data to inform investigations, and automate security operations for greater efficiency."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: conceptualPageType

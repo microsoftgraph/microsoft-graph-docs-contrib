@@ -2,7 +2,7 @@
 title: "iosCertificateProfile resource type"
 description: "Device Configuration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -63,11 +63,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

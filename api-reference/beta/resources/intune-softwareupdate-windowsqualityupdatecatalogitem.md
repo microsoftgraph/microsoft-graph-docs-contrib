@@ -2,7 +2,7 @@
 title: "windowsQualityUpdateCatalogItem resource type"
 description: "Windows update catalog item entity"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -35,6 +35,7 @@ Inherits from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-wind
 |id|String|The catalog item id. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|String|The display name for the catalog item. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|The last supported date for a catalog item Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|Knowledge base article id|
 |classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Classification of the quality update. Possible values are: `all`, `security`, `nonSecurity`.|
 |isExpeditable|Boolean|Flag indicating if update qualifies for expedite|
@@ -56,12 +57,12 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "releaseDateTime": "String (timestamp)",
+  "endOfSupportDate": "String (timestamp)",
   "kbArticleId": "String",
   "classification": "String",
   "isExpeditable": true
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "synchronizationJob: validateCredentials"
 description: "Validate that the credentials are valid in the tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -90,9 +90,7 @@ Content-length: 218
 ##### Response
 The following is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

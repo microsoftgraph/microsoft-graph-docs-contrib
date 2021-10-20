@@ -2,7 +2,7 @@
 title: "resourceOperation resource type"
 description: "Describes the resourceOperation resource (entity) of the Microsoft Graph API (REST), which supports Intune workflows related to role-based access control (RBAC)."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -31,11 +31,11 @@ Describes the resourceOperation resource (entity) of the Microsoft Graph API (RE
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
-|resource|String|Resource category to which this Operation belongs.|
+|resource|String|Resource category to which this Operation belongs. This property is read-only.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
-|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment.|
+|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment. This property is read-only.|
 
 ## Relationships
 None
@@ -59,7 +59,6 @@ Here is a JSON representation of the resource.
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

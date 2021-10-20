@@ -1,9 +1,9 @@
 ---
 title: "Get orgContact"
 description: "Retrieve the properties of an orgContact object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

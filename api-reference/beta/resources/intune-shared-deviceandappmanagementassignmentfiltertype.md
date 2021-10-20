@@ -2,7 +2,7 @@
 title: "deviceAndAppManagementAssignmentFilterType enum type"
 description: "Represents type of the assignment filter."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -23,7 +23,6 @@ Represents type of the assignment filter.
 |none|0|Default value. Do not use.|
 |include|1|Indicates in-filter, rule matching will offer the payload to devices.|
 |exclude|2|Indicates out-filter, rule matching will not offer the payload to devices.|
-
 
 
 

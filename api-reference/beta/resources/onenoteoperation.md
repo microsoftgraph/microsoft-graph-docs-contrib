@@ -2,7 +2,7 @@
 title: "onenoteOperation resource type"
 description: "The status of certain long-running OneNote operations."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: resourcePageType
 ---
@@ -49,8 +49,8 @@ Here is a JSON representation of the resource.
 |lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
 |resourceId|string|The resource id.|
 |resourceLocation|string|The resource URI for the object. For example, the resource URI for a copied page or section. |
-|status|string|The current status of the operation: `notstarted`, `running`, `completed`, `failed` |
-|percentComplete|string|The operation percent complete if the operation is still in `running` status
+|status|operationStatus|The current status of the operation: `NotStarted`, `Running`, `Completed`, `Failed`. |
+|percentComplete|string|The operation percent complete if the operation is still in `running` status.|
 
 ## Relationships
 None

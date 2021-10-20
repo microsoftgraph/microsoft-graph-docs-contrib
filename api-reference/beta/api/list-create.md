@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Create a new list in a site."
 ms.date: 09/11/2017
 title: Create a SharePoint List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -96,7 +96,7 @@ If successful, this method returns a [list][] in the response body for the creat
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

@@ -1,9 +1,9 @@
 ---
 title: "Delete ipNamedLocation"
 description: "Delete an ipNamedLocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
