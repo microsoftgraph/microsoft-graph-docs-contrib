@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "da40fd2a78c24b938120c66aff17e414",
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
                     "ApiChange": "Property",
                     "ChangedApiName": "domainJoinConfiguration",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "cloudPcProvisioningPolicy"
                 },
                 {
-                    "Id": "da40fd2a78c24b938120c66aff17e414",
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcDomainJoinConfiguration",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "cloudPcDomainJoinConfiguration"
                 },
                 {
-                    "Id": "da40fd2a78c24b938120c66aff17e414",
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcDomainJoinType",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "cloudPcDomainJoinType"
                 }
             ],
-            "Id": "da40fd2a78c24b938120c66aff17e414",
+            "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-28T06:40:50.582Z",
