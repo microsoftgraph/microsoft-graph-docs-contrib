@@ -10872,7 +10872,7 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device memberOf
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md

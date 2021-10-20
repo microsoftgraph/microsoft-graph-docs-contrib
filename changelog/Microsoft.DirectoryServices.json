@@ -1,6 +1,23 @@
 {
   "changelog": [
    {
+    "ChangeList": [
+      {
+        "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
+        "ApiChange": "Method",
+        "ChangedApiName": "memberOf",
+        "ChangeType": "Change",
+        "Description": "Added the [administrative units](https://docs.microsoft.com/en-us/graph/api/device-list-memberof.md) as a supported return type.",
+        "Target": "Device list memberOf"
+      },
+    ],
+    "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2021-10-20T16:25:00",
+    "WorkloadArea": "Directory Management",
+    "SubArea": "Device Management"
+  },
       "ChangeList": [
         {
           "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",

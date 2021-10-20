@@ -1,5 +1,5 @@
 ---
-title: "List device groups"
+title: "List device memberOf"
 description: "Get groups that this device is a direct member of. This operation is not transitive."
 author: "spunukol"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List device groups
+# List device memberOf
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get groups that this device is a direct member of. This operation is not transitive.
+Get [groups](../resources/group.md) and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive.
 
 ## Permissions
 
