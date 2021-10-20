@@ -25,8 +25,8 @@ Represents a defined collection of service plan configurations that Cloud PCs su
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the service plan. Read-only.|
 |displayName|String|The name for the service plan. Read-only.|
+|id|String|Unique identifier for the service plan. Read-only.|
 |ramInGB|Int32|The size of the RAM in GB. Read-only.|
 |storageInGB|Int32|The size of the OS Disk in GB. Read-only.|
 |type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. Possible values are: `enterprise`, `business`, `unknownFutureValue`. Read-only.|
