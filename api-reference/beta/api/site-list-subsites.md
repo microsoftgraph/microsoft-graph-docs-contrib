@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Get a collection of subsites defined for a site."
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

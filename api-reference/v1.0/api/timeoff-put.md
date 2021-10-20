@@ -2,7 +2,7 @@
 title: "Replace timeOff"
 description: "Replace an existing timeOff object."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

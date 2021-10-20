@@ -2,7 +2,7 @@
 title: "Update tag"
 description: "Update the properties of a tag object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

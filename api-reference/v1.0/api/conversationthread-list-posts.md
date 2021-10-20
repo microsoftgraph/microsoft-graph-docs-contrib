@@ -1,7 +1,7 @@
 ---
 title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -31,7 +31,7 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. `$expand` is also supported to expand specific relationships and only one relationship can be expanded in a single request.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

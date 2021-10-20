@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -17,8 +17,8 @@ NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
 payloadDictionary[@"addLicenses"] = addLicensesList;
 
 NSMutableArray *removeLicensesList = [[NSMutableArray alloc] init];
-[removeLicensesList addObject: @"skuId-value-1"];
-[removeLicensesList addObject: @"skuId-value-2"];
+[removeLicensesList addObject: @"c7df2760-2c81-4ef7-b578-5b5392b571df"];
+[removeLicensesList addObject: @"b05e124f-c7cc-45a0-a6aa-8cf78c946968"];
 payloadDictionary[@"removeLicenses"] = removeLicensesList;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

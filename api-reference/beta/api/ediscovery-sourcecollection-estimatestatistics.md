@@ -2,7 +2,7 @@
 title: "sourceCollection: estimateStatistics"
 description: "Runs an estimate of the source collection."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

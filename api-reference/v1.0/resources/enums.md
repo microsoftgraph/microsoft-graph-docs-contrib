@@ -1,7 +1,7 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
@@ -10,6 +10,13 @@ doc_type: enumPageType
 # Enum values
 
 Namespace: microsoft.graph
+
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
 
 ### lifecycleEventType values
 
@@ -56,13 +63,6 @@ Namespace: microsoft.graph
 |none|
 |assignIfOpen|
 |unknownFutureValue|
-
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
 
 ### fido2RestrictionEnforcementType values
 
@@ -115,12 +115,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### allowInvitesFrom values
 
@@ -1303,6 +1297,30 @@ Possible values for user account types (group membership), per Windows definitio
 | waitingOnOthers
 | deferred
 
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| Multiline text. |
+|text | Single line text. |
+|choice | Choice column |
+|multichoice | Multichoice column. |
+|number | Number column. |
+|currency | Currency column. |
+|dateTime | DateTime column. |
+|lookup | Lookup column. |
+|boolean | Yes/No column. |
+|user | Person or group column. |
+|url | Hyperlink or picture column. |
+|calculated | Calculated column. |
+|location | Location column. |
+|geolocation | Geolocation column. |
+|term | Managed metadata column. |
+|multiterm | Managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | UnknownFuturevalue |
+
 ### permissionClassificationType values
 
 | Member
@@ -1615,4 +1633,57 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |critical|
+|unknownFutureValue|
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
 |unknownFutureValue|

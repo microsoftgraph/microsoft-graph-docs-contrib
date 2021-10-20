@@ -2,7 +2,7 @@
 title: Get printJob
 description: Retrieve the properties and relationships of a print job.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

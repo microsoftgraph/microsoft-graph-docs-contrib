@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts"
 description: "Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType

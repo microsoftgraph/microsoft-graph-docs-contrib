@@ -1,7 +1,7 @@
 ---
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to an application or service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

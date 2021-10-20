@@ -2,7 +2,7 @@
 title: "List tabs in chat"
 description: "Retrieve the list of tabs in the specified chat. "
 author: "subray"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "Get educationClass"
 description: "  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType

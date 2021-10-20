@@ -1,13 +1,13 @@
 ---
-title: "Check member groups"
+title: "directoryObject: checkMemberGroups"
 description: "Check for membership in a specified list of groups, and returns from that list those groups"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Check member groups
+# directoryObject: checkMemberGroups
 
 Namespace: microsoft.graph
 
@@ -15,6 +15,7 @@ Check for membership in a specified list of groups, and returns from that list t
 of which the specified user, group, or directory object is a member. This function is transitive.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -23,13 +24,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, Directory.Read.All |
 
-Use the follow scenario guidance to help determine which permission types to use:
-- Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.
-- Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.
-- Use GroupMember.Read.All or Group.Read.All permission to get group memberships for a group.
-- Use Directory.Read.All permission to check group memberships for a directory object.
+The following table lists the permission types to use for different scenarios.
+
+| Scenario | Permissions |
+|:-|:-|
+| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
+| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
+| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
+| To get group memberships for a service principal | Use one of the following sets of permissions <br/> <li>**Application.ReadWrite.All** and **GroupMember.Read.All** <li>**Application.ReadWrite.All** and **Group.Read.All** |
+| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -38,12 +44,14 @@ POST /groups/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string | application/json  |
+
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
@@ -56,7 +64,7 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -94,7 +102,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

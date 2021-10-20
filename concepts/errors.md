@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph error responses and resource types"
 description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph error responses and resource types
@@ -191,6 +191,8 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **pathIsTooLong**                  | Path exceeds maximum length.
 | **pathTooDeep**                    | Folder hierarchy depth limit reached.
 | **propertyNotUpdateable**          | Property not updateable.
+| **provisioningNotAllowed**         | Request requires account provisioning, which is not allowed.
+| **resourceBeingProvisioned**       | Requested resource is being provisioned.
 | **resyncApplyDifferences**         | Resync required. Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.
 | **resyncRequired**                 | Resync is required.
 | **resyncUploadDifferences**        | Resync required. Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).

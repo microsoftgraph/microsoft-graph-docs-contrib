@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleEligibilityScheduleInstance"
 description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligi
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityscheduleinstance-csharp-snippets.md)]
@@ -82,7 +82,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,17 +96,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-    "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
-    "startDateTime": "2020-09-09T21:35:27.91Z",
-    "endDateTime": "2020-09-09T21:35:27.91Z",
-    "memberType": "direct",
-    "roleEligibilityScheduleId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleInstances/$entity",
+  "id": "UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e",
+  "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+  "appScopeId": null,
+  "startDateTime": "2021-07-27T14:03:04.4Z",
+  "endDateTime": null,
+  "memberType": "Direct",
+  "roleEligibilityScheduleId": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f"
 }
 ```
 

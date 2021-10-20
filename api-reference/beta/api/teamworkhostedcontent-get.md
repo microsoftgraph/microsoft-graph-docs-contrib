@@ -1,7 +1,7 @@
 ---
 title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jecha"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

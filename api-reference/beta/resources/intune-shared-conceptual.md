@@ -1,7 +1,7 @@
 ---
 title: "Shared resources in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that support multiple workflows for a tenant organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 ---
@@ -58,6 +58,7 @@ The following Graph resources are shared between Intune workflows:
 - [IP range](intune-shared-iprange.md)
 - [IPv4 range](intune-shared-ipv4range.md)
 - [IPv6 range](intune-shared-ipv6range.md)
+- [Key long value pair](intune-shared-keylongvaluepair.md)
 - [Key size](intune-shared-keysize.md)
 - [Key storage provider option](intune-shared-keystorageprovideroption.md)
 - [Key usages](intune-shared-keyusages.md)

@@ -1,7 +1,7 @@
 ---
 title: "searchResultSet resource type"
 description: "Description of the searchResultSet"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

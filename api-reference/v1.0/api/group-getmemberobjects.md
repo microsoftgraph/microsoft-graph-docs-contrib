@@ -1,7 +1,7 @@
 ---
 title: "group: getMemberObjects"
 description: "Return all of the groups that this group is a member of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -29,23 +29,24 @@ POST /groups/{id}/getMemberObjects
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| Set to **false**. Returning only security-enabled groups is supported for users only.|
+|securityEnabledOnly|Boolean| Set to `false`. Returning only security-enabled groups is supported for users only.|
 
 ## Response
 If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -53,9 +54,8 @@ The following is an example of the request.
   "name": "group_getmemberobjects"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/getMemberObjects
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -80,7 +80,7 @@ Content-length: 33
 ---
 
 
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -92,11 +92,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "1132b215-826f-42a9-8cfe-1643d19d17fd"
   ]
 }
 ```

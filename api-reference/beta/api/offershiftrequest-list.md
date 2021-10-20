@@ -1,7 +1,7 @@
 ---
 title: "List offerShiftRequest"
 description: "Retrieve the properties and relationships of all offerShiftRequest objects in a team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

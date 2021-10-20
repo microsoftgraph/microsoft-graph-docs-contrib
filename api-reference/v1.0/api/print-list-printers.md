@@ -2,7 +2,7 @@
 title: List printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

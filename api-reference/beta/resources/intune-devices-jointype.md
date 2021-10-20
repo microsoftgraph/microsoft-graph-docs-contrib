@@ -27,4 +27,3 @@ Device enrollment join type.
 
 
 
-

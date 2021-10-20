@@ -1,7 +1,7 @@
 ---
 title: "People-Picker component"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
 ---
 
@@ -66,6 +66,13 @@ You can populate selected people data by doing one of the following:
     ```javascript
     // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
+
+- Using the `selectGroupsById()` method, which accepts an array of Microsoft graph [group ids](/graph/api/resources/group) to find the group(s) with associated users.
+
+    ```javascript
+    // groupid = Microsoft graph group "id"
+    document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
     ```
 
 ## Events

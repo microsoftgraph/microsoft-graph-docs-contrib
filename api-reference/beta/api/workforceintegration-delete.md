@@ -1,7 +1,7 @@
 ---
 title: "Delete workforceIntegration"
 description: "Delete an instance of a workforceIntegration."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

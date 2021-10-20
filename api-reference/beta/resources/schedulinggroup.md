@@ -2,7 +2,7 @@
 title: "schedulingGroup resource type"
 description: "A logical grouping of members in the schedule (usually by role)."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A logical grouping of users in a [schedule](schedule.md) (usually by role). 
+A logical grouping of users in a [schedule](schedule.md) (usually by role).
 
 ## Methods
 

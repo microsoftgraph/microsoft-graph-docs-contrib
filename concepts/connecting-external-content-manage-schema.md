@@ -1,7 +1,7 @@
 ---
 title: "Register and update schema for the Microsoft Graph connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection"
-localization_priority: Priority
+ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
@@ -192,3 +192,4 @@ Adding a semantic label can affect experiences like Working Set, Relevance, and 
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
 - [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)
+

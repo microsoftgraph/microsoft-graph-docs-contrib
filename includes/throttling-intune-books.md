@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -13,5 +13,9 @@ ms.topic: include
 | POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
-The preceding limits apply to the following resources:  
-deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, managedEBookCategory, userInstallStateSummary.
+The preceding limits apply to the following resources: 
+
+ 
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceInstallState](/graph/api/resources/deviceinstallstate) <li> [eBookInstallSummary](/graph/api/resources/ebookinstallsummary) <li> [iosVppEBook](/graph/api/resources/iosvppebook) <li> [iosVppEBookAssignment](/graph/api/resources/iosvppebookassignment) <li> [managedEBook](/graph/api/resources/managedebook) <li> [managedEBookAssignment](/graph/api/resources/managedebookassignment) <li> [managedEBookCategory](/graph/api/resources/managedebookcategory) <li> [userInstallStateSummary](/graph/api/resources/userinstallstatesummary) </ul> |

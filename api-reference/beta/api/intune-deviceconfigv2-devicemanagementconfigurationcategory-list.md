@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 603
+Content-Length: 605
 
 {
   "value": [
@@ -71,7 +71,7 @@ Content-Length: 603
       "helpText": "Help Text value",
       "name": "Name value",
       "displayName": "Display Name value",
-      "platforms": "macOS",
+      "platforms": "android",
       "technologies": "mdm",
       "settingUsage": "configuration",
       "parentCategoryId": "Parent Category Id value",
@@ -83,7 +83,6 @@ Content-Length: 603
   ]
 }
 ```
-
 
 
 

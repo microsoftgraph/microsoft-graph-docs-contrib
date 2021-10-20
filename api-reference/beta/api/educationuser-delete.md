@@ -2,7 +2,7 @@
 title: "Delete educationUser"
 description: "Delete a user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

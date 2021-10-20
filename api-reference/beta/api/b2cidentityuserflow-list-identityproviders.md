@@ -1,7 +1,7 @@
 ---
 title: "List all identityProviders in a b2cIdentityUserFlow (deprecated)"
 description: "List all identityProviders in a b2cIdentityUserFlow. (deprecated)"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"

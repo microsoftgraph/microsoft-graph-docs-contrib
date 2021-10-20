@@ -2,7 +2,7 @@
 title: "catalogEntry resource type"
 description: "Metadata for a piece of content that you can approve for deployment."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

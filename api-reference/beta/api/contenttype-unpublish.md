@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: unpublish"
 description: "Unpublish a content type from a content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

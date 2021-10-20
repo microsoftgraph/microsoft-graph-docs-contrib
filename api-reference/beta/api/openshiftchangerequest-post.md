@@ -1,7 +1,7 @@
 ---
 title: "Create openShiftChangeRequest"
 description: "Create an instance of an openShiftChangeRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "adminConsentRequestPolicy resource type"
 description: "Specifies the policy by which consent requests can be created and managed for the entire tenant."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

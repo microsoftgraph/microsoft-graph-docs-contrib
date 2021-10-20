@@ -2,7 +2,7 @@
 author: learafa
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

@@ -2,6 +2,7 @@
 title: "National cloud deployments"
 description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
 author: "arpitha-dhanapathi"
+ms.localizationpriority: medium
 ---
 
 # National cloud deployments
@@ -49,13 +50,13 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 > [!IMPORTANT]
 > For an app in US Government:
-> 
-> 
+>
+>
 > * If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
 > * If you're working in a Microsoft 365 GCC High environment, use: `https://portal.azure.us` and `https://graph.microsoft.us`.
 > * If you're working in a Microsoft 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
-> 
-> 
+>
+>
 > Access to US Government data using the worldwide endpoint will be disabled in the near future.
 
 > [!NOTE]
@@ -67,28 +68,28 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
-| Users | ✔ | ✔ | ✔ |
-| Groups | ✔ | ✔ | ✔ |
-| Excel | ✔ | ✔\* | ✔ |
-| OneDrive | ✔ | ✔\* | ✔ |
-| Outlook Mail | ✔ | ✔ | ✔ |
-| Outlook Calendar | ✔ | ✔ | ✔ |
-| Personal Contacts | ✔ | ✔ | ✔ |
-| Security | ✔ | ✔ | ✔ |
-| SharePoint | ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ |
-| Planner | ✔ | ✔ | ✔ |
-| Reports | ➖ | ✔ | ➖ |
-| Organizational contacts | ✔ | ➖ | ➖ |
 | Applications | ✔ | ➖ | ➖ |
-| Service principals | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
 | Directory schema extensions | ✔ | ✔ | ➖ |
+| Excel | ✔ | ➖ | ✔ |
+| Groups | ✔ | ✔ | ✔ |
+| OneDrive | ✔ | ✔\* | ✔ |
 | Open type extensions | ✔ | ➖ | ➖ |
+| Organizational contacts | ✔ | ➖ | ➖ |
+| Outlook Calendar | ✔ | ✔ | ✔ |
+| Outlook Mail | ✔ | ✔ | ✔ |
+| Personal Contacts | ✔ | ✔ | ✔ |
+| Planner | ✔ | ✔ | ✔ |
+| Reports | ➖ | ✔ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
+| Security | ✔ | ✔ | ✔ |
 | Service health and communications | ✔ | ✔ | ✔ |
- 
+| Service principals | ✔ | ➖ | ➖ |
+| SharePoint | ✔ | ✔ | ✔ |
+| Teams | ✔ | ✔ | ✔ |
+| Users | ✔ | ✔ | ✔ |
+
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts

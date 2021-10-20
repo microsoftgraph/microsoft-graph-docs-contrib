@@ -1,7 +1,7 @@
 ---
 title: "group: getMemberGroups"
 description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -57,9 +57,10 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
+
 
 
 # [HTTP](#tab/http)
@@ -69,9 +70,8 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/getMemberGroups
+POST https://graph.microsoft.com/beta/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -96,7 +96,7 @@ Content-length: 33
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 
@@ -112,11 +112,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [
-    "string-value"
+    "1132b215-826f-42a9-8cfe-1643d19d17fd"
   ]
 }
 ```
