@@ -3,6 +3,7 @@ title: "Create a new member"
 description: "Use this API to create a new group within an administrative unit."
 author: "anandyadavMSFT"
 localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -92,7 +93,7 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "@odata.type": "#Microsoft.Graph.Group"
+  "@odata.type": "#Microsoft.Graph.Group",
   "description": "Self help community for golf",
   "displayName": "Golf Assist",
   "groupTypes": [
