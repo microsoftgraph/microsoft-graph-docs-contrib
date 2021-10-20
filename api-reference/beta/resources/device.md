@@ -57,6 +57,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |domainName|String|The on-premises domain name of Hybrid Azure AD joined devices. This property is set by Intune.|
 |enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. This property is set by Intune.|
 |enrollmentType|String|Enrollment type of the device. This property is set by Intune. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+| extensionAttributes | [extensionAttributes](extensionattributes.md) | Contains extensionAttributes 1-15 for the device. The individual extension attributes are not selectable. These properties may be set during creation or update of a device in Azure AD. <br><br>Returned only on $select, $filter. |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Boolean|`true` if the device is managed by a Mobile Device Management (MDM) app; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `NOT`). |
@@ -122,6 +123,7 @@ The following is a JSON representation of the resource.
   "domainName": "string",
   "enrollmentProfileName": "string",
   "enrollmentType": "string",
+  "extensionAttributes": {"@odata.type": "microsoft.graph.extensionAttributes"},
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
