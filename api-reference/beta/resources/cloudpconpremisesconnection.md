@@ -25,19 +25,19 @@ Represents a defined collection of Azure resource information that can be used t
 |[Update cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Delete cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|None|Delete a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. You can’t delete an connection that’s in use.|
 |[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
-|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|None|Update AD domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). The API is supported when onPremisesConnection's type is hybridAzureADJoin.|
+|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|None|Update AD domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). The API is supported when the **onPremisesConnection**'s type is `hybridAzureADJoin`.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the on-premises connection. Read-only.|
-|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC will be joined to Azure AD. It includes different types, one is azureADJoin which means there's no on-premises Active Directory (AD) in current tenant and the Cloud PC device will be only joined Azure AD. Another one is hybridAzureADJoin which means there's also on-premises AD in current tenant and the Cloud PC device will be joined to on-premises AD and Azure AD. The type also determines which types of users can be assigned and can sign into a Cloud PC. azureADJoin type indicates cloud-only and hybrid users can be assigned and sign into the Cloud PC, hybridAzureADJoin indicates only hybrid user can be assigned and sign into the Cloud PC. Default is "hybridAzureADJoin".|
+|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |displayName|String|The display name for the on-premises connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
-|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
-|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
+|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join. Optional.|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com. Optional.|
 |adDomainPassword|String|The password associated with **adDomainUsername**.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
@@ -51,9 +51,9 @@ Represents a defined collection of Azure resource information that can be used t
 
 |Member|Description|
 |:---|:---|
-|hybridAzureADJoin|Joined to on-premises AD.|
-|azureADJoin|Joined only to Azure AD.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
+|hybridAzureADJoin|Joined to on-premises Active Directory (AD) and Azure AD. Only hybrid users can be assigned and sign into the Cloud PC.|
+|azureADJoin|Joined only to Azure AD. Cloud-only and hybrid users can be assigned and sign into the Cloud PC.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcOnPremisesConnectionStatus values
 
@@ -87,7 +87,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "String (identifier)",
-  "type": "hybridAzureADJoin",
+  "type": "String",
   "displayName": "String",
   "subscriptionId": "String",
   "subscriptionName": "String",
