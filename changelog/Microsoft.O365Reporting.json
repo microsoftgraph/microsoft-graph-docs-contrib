@@ -1,6 +1,6 @@
 {
   "changelog": [
-	{
+    {
 	  "ChangeList": [
 		{
 		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
@@ -185,7 +185,7 @@
 		  "ChangeType": "Change",
 		  "Description": "Update JSON return type of [getteamsuseractivitydistributiontotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitydistributiontotalusercounts"
-		},
+		}
 	  ],
 	  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
 	  "Cloud": "prd",
@@ -193,7 +193,7 @@
 	  "CreatedDateTime": "2021-10-20T07:57:05.521Z",
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
-	},
+    },
     {
       "ChangeList": [
         {
