@@ -1,5 +1,199 @@
 {
   "changelog": [
+	{
+	  "ChangeList": [
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailactivityuserdetail",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailactivityuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailactivityuserdetail"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailactivitycounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailactivitycounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailactivitycounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailactivityusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailactivityusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailactivityusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailappusageuserdetail",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailappusageuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailappusageuserdetail"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailappusageappsusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailappusageappsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailappusageappsusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailappusageusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getemailappusageusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailappusageusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getemailappusageversionsusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of g[etemailappusageversionsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getemailappusageversionsusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getmailboxusagedetail",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getmailboxusagedetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getmailboxusagedetail"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getmailboxusagemailboxcounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getmailboxusagemailboxcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getmailboxusagemailboxcounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getmailboxusagequotastatusmailboxcounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getmailboxusagequotastatusmailboxcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getmailboxusagequotastatusmailboxcounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getmailboxusagestorage",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getmailboxusagestorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) API to stream.",
+		  "Target": "getmailboxusagestorage"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsdeviceusageuserdetail",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsdeviceusageuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsdeviceusageuserdetail"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsdeviceusageusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsdeviceusageusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsdeviceusageusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsdeviceusagetotalusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsdeviceusagetotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsdeviceusagetotalusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsdeviceusagedistributionusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsdeviceusagedistributionusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsdeviceusagedistributionusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsdeviceusagedistributiontotalusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsdeviceusagedistributiontotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsdeviceusagedistributiontotalusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivityuserdetail",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivityuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivityuserdetail"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivitycounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivitycounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivitycounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivitytotalcounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivitytotalcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivitytotalcounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivityusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivityusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivityusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivitytotalusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivitytotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivitytotalusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivitydistributionusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivitydistributionusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivitydistributionusercounts"
+		},
+		{
+		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getteamsuseractivitydistributiontotalusercounts",
+		  "ChangeType": "Change",
+		  "Description": "Update JSON return type of [getteamsuseractivitydistributiontotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getteamsuseractivitydistributiontotalusercounts"
+		},
+	  ],
+	  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2021-10-20T07:57:05.521Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+	},
     {
       "ChangeList": [
         {
