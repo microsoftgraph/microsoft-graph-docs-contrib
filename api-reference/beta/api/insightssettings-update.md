@@ -90,6 +90,26 @@ Content-type: application/json
 ```
 
 ---
+### Response
+
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "update_insightssettings_iteminsightrequest"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+}
+```
+---
 
 ## Example peopleInsights
 ### Request
@@ -120,7 +140,7 @@ Here is an example of the response. Note: The response object shown here might b
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "update_insightssettings"
+  "name": "update_insightssettings_peopleinsightsrequest"
 } -->
 
 ```http

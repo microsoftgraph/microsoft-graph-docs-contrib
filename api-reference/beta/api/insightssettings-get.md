@@ -77,7 +77,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "get_insightssettingsresponse"
+  "name": "get_insightssettingsrequest"
 } -->
 
 ```http
@@ -115,7 +115,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "get_insightssettingspeopleresponse"
+  "name": "get_insightssettingspeoplerequest"
 } -->
 
 ```http
