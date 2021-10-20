@@ -162,34 +162,27 @@ This section includes information about the update capabilities for the Schema A
 
 ### Adding a property
 
-Adding a property does not require re-ingestion, but it is recommended.
+You can add a property to your schema, doing so does not require re-ingestion, but it is recommended.
 When you add a property, you can include all the search attributes that you need.
 
 ### Adding/removing a search capability
 
+You can add specific search attributes to a property, but keep in mind that you cannot add a refiner search attribute as a schema change. Also it is not possible to use refinable attributes as searchable capabilities.
 Adding a search capability requires re-ingestion.
-You can add specific search attributes to a property, however you cannot add a refiner search attribute as a schema change. Also it is not possible to use refinable attributes as searchable capabilities.
-
-Deletion of search attributes from a property
-Deletion of a search attribute from a property would lead to inconsistent behavior as the backward and forward looking items differ in the returned result set.
 
 ### Adding/removing an alias
 
-It does not require re-ingestion
-
-The connection admins and 1st party schema owners will be allowed to add or remove aliases.  The behavior on backward and forward-looking items for a search using this alias will be the same.
-The one caveat to this is that the schema owner will be unable to remove the original alias of a refinable property that was auto-created by the system.
+You can add or remove aliases, and use them for your search queries.
+Consider that you will be unable to remove the original alias of a refinable property that was auto-created by the system.
 
 ### Adding/removing a semantic label
 
-Requires re-ingestion
-Adding a semantic label can affect experiences like Working Set, Relevance, and Project Cortex. If a re-ingestion occurs, these experiences will be fixed.
+You can add or remove semantic labels. Adding a semantic label can affect experiences like Working Set, Relevance, and Project Cortex. If a re-ingestion occurs, these experiences will be fixed.
 
 ## Next steps
 
 - [Add items to the connection](./connecting-external-content-manage-items.md)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
-- Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
 - [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)
 
