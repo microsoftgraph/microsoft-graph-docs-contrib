@@ -15,7 +15,7 @@ Use this API to disable/enable calculation and visibility of item insights, m
 Learn more about the privacy settings above by following the links below:
 - [itemInsights](iteminsights.md) - Calculates relationship between users and items such as documents or sites in Microsoft 365.
 - privacy setting for [meeting hours insights](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) - Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook calendar in Microsoft 365.
-- [peopleInsights](peopleInsights.md) - Calculates the relationship between users based on their public relationships and generates a of people relevant to a user. 
+- [peopleInsights](/graph/insghts-customize-people-insights-privacy?view=graph-rest-beta) - Calculates the relationship between users based on their public relationships and generates a of people relevant to a user. 
  
 
 Use the [userInsightsSettings](userinsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights of a user. 

@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
 
 >**Note:** This operation verifies the validity of property values of the specified **itemInsightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will not be able to identify any group membership and disable item insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable insights for all the users in the organization. 
 
@@ -56,32 +56,16 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 
 ##### Request
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "get_insightssettings"
+  "name": "get_insightssettingsrequest"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-iteminsightssettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-iteminsightssettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ##### Response
@@ -92,8 +76,8 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.itemInsightsSettings",
-  "name": "get_iteminsightssettings"
+  "@odata.type": "microsoft.graph.insightsSettings",
+  "name": "get_insightssettingsresponse"
 } -->
 
 ```http
@@ -110,10 +94,9 @@ Content-type: application/json
 
 ##### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_insightssettings"
+  "name": "get_insightssettingspeoplerequest"
 }-->
 
 ```msgraph-interactive
@@ -132,7 +115,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "get_insightssettings"
+  "name": "get_insightssettingspeopleresponse"
 } -->
 
 ```http

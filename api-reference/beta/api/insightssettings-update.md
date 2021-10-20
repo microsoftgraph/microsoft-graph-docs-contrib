@@ -7,7 +7,7 @@ ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Update InsightsSettings
+# Update insightsSettings
 
 Namespace: microsoft.graph
 
@@ -38,6 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /organization/{organizationId}/settings/itemInsights
 ```
+
 ## peopleInshgtsSetting HTTP request
 <!-- { "blockType": "ignored" } -->
 
@@ -73,10 +74,10 @@ If successful, this method returns a `200 OK` response code and [InsightsSetting
 
 Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "update_insightssettings"
+  "name": "update_insightssettings_iteminsightrequest"
 }-->
 
 ```http
@@ -87,21 +88,6 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-iteminsightssettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-iteminsightssettings-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-iteminsightssettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -110,15 +96,16 @@ Content-type: application/json
 
 Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' people insights of a particular Azure AD group.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "update_insightssettings"
+  "name": "update_insightssettings_peopleinsightsrequest"
 }-->
 
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
 Content-Type: application/json
+
 {
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }

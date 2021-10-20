@@ -390,8 +390,6 @@ items:
           href: api/user-list-transitivememberof.md
       - name: Insights
         items:
-        - name: People insights (preview)
-          href: resources/peopleinsights.md
         - name: Item insights
           items:
           - name: Item insights (preview)
@@ -499,8 +497,6 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: People insights (preview)
-          href: resources/peopleinsights.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -12746,8 +12742,6 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: People insights (preview)
-          href: resources/peopleinsights.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -13054,8 +13048,6 @@ items:
         items:
         - name: Item insights
           items:
-          - name: People insights (preview)
-            href: resources/peopleinsights.md
           - name: Item insights
             items:
             - name: Item insights (preview)
