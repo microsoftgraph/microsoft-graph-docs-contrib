@@ -7,7 +7,7 @@
           "ApiChange": "assignments?targetUserId=]",
           "ChangedApiName": "assignments",
           "ChangeType": "Change",
-          "Description": "Removed the **assignments** resource type",
+          "Description": "Adding the **assignments** resource type",
           "Target": "educationUser"
         }
       ],
