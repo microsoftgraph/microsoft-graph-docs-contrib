@@ -2,7 +2,7 @@
 title: "iosVppEBook resource type"
 description: "A class containing the properties for iOS Vpp eBook."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

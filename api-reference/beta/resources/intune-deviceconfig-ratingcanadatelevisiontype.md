@@ -2,7 +2,7 @@
 title: "ratingCanadaTelevisionType enum type"
 description: "TV content rating labels in Canada"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

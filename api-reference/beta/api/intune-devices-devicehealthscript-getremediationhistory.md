@@ -2,7 +2,7 @@
 title: "getRemediationHistory function"
 description: "Function to get the number of remediations by a device health scripts"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

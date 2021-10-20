@@ -2,7 +2,7 @@
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

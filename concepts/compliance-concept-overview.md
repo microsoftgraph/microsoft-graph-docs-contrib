@@ -1,5 +1,5 @@
 ---
-title: "Overview of compliance in Microsoft Graph"
+title: "Overview of compliance and privacy APIs in Microsoft Graph"
 description: "The Microsoft Graph APIs for Compliance provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations."
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "ediscovery"
 ms.custom: scenarios:getting-started
 ---
 
-# Overview of Compliance in Microsoft Graph
+# Overview of compliance and privacy APIs in Microsoft Graph
 
-The Microsoft Graph APIs for compliance provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations.
+The Microsoft Graph APIs for compliance and privacy provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations.
 
-The compliance APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance to their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
+The compliance and privacy APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance to their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
 
-## eDiscovery API (preview)
+## Electronic discovery (eDiscovery) (preview)
 
 ### Develop applications that ensure a repeatable, predictable, and standard process
 
@@ -37,14 +37,18 @@ Depending on the current systems and processes in place, organizations might hav
 
 - Create custom reporting to track case load and progress from individual cases.
 
-## Privacy API
-
-### Automate tasks for data subject requests
+## Privacy management by subject rights requests
 
 In accordance with certain privacy regulations around the world, individuals can make requests to review or manage the personal data about themselves that companies have collected. These requests are referred to as subject rights requests within the Microsoft 365 privacy management solution; they are sometimes also referred to as data subject requests (DSRs) or data subject access requests (DSARs). Microsoft 365 privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among an organization’s data in Exchange, SharePoint, OneDrive, and Teams. 
 
 The Microsoft Graph APIs for subject rights request provide functionality for organizations to automate repetitive tasks and integrate with existing data subject request tools, to enable building repeatable workflows that can be incorporated to their business processes. You can use the subject rights request APIs to help you automate and scale your organization's ability to perform subject rights requests searches in Microsoft 365 and help meet industry regulations more efficiently.
 
+## API reference
+
+Looking for the API reference for these services?
+- [Use the Microsoft Graph eDiscovery API](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta
+- [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview) in Microsoft Graph v1.0
+- [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta
 
 ## Next steps
 
