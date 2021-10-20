@@ -1,8 +1,8 @@
 ---
-title: "Mark chat as read for a user"
-description: "This API will enable the caller to mark the chat read till the current time, or the last message received or sent."
+title: "chat: markChatReadForUser"
+description: "Mark a chat as read till the current time, or the last message received or sent."
 author: "sweta-thapliyal"
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks [chat](../resources/chat.md) as read for a user.
+Marks a [chat](../resources/chat.md) as read for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,13 +40,13 @@ POST /chats/{chat-id}/markChatReadForUser
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to read the chat for.|
+|user|[teamworkUserID](../resources/teamworkuseridentity.md)|User to read the chat for.|
 |tenantId|String|Tenant id of the user.|
 
 

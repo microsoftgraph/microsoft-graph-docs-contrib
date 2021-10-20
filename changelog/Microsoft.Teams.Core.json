@@ -49,19 +49,19 @@
       "ChangeList": [
         {
           "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "markChatReadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/markChatReadForUser?view=graph-rest-beta) method to the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/markChatReadForUser?view=graph-rest-beta) resource.",
-          "Target": "markChatReadForUser"
+          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/markChatReadForUser?view=graph-rest-beta) method to the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
         },
         {
           "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "markChatUnreadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/markChatUnreadForUser?view=graph-rest-beta) method to the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/markChatUnreadForUser?view=graph-rest-beta) resource.",
-          "Target": "markChatReadForUser"
+          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/markChatUnreadForUser?view=graph-rest-beta) method to the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
         }
       ],
       "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",

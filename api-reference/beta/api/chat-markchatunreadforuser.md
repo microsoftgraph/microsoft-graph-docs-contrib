@@ -1,8 +1,8 @@
 ---
-title: "Mark chat unread for a user"
-description: "This API will enable the callers to mark a chat as unread, from the given time."
+title: "chat: markChatUnreadForUser"
+description: "Mark a chat as unread, from the given time."
 author: "sweta-thapliyal"
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks [chat](../resources/chat.md) as unread for a user.
+Marks a [chat](../resources/chat.md) as unread for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,17 +40,17 @@ POST /chats/{chat-id}/markChatUnreadForUser
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unread the chat for.|
+|user|[teamworkUserID](../resources/teamworkuseridentity.md)|User to unread the chat for.|
 |tenantId|String|Tenant id of the user.|
-|lastMessageReadDateTime|DateTimeOffset|Timestamp indicating the time after which all the messages that are sent or received are to be marked as unread.|
+|lastMessageReadDateTime|DateTimeOffset|Timestamp that indicates the time after which all sent or received messages are to be marked as unread.|
 
-> **Note:** lastMessageReadDateTime is optional in request. If not mentioned, the last message would be marked as Unread.
+> **Note:** **lastMessageReadDateTime** is optional in the request. If not mentioned, the last message would be marked as unread.
 
 ## Response
 
