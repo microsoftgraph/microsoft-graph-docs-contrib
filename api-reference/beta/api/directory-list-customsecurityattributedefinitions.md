@@ -42,7 +42,9 @@ GET /directory/customSecurityAttributeDefinitions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$expand`, and `$filter` (`eq`) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The `allowedValues` navigation property is not returned or expanded by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
 
 ## Request headers
 |Name|Description|
