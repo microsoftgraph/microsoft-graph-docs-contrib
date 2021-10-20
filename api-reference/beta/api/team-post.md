@@ -627,6 +627,52 @@ The following are common reasons for this response:
 * **createdDateTime** is set in the future.
 * **createdDateTime** is correctly specified but the **teamCreationMode** instance attribute is missing or set to an invalid value.
 
+### Example 9: Application permissions using user principal name
+
+The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+      }
+   ]
+}
+```
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+Content-Length: 0
+```
+
 
 ## See also
 
