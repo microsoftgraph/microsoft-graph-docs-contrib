@@ -52,7 +52,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "markChatReadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/markChatReadForUser?view=graph-rest-beta) method to the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/markChatReadForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         },
         {
@@ -60,7 +60,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "markChatUnreadForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/markChatUnreadForUser?view=graph-rest-beta) method to the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/markChatUnreadForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         }
       ],

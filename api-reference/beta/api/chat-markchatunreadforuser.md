@@ -46,9 +46,10 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unread the chat for.|
-|tenantId|String|Tenant id of the user.|
 |lastMessageReadDateTime|DateTimeOffset|Timestamp that indicates the time after which all sent or received messages are to be marked as unread.|
+|tenantId|String|Tenant id of the user.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unread the chat for.|
+
 
 > **Note:** **lastMessageReadDateTime** is optional in the request. If not mentioned, the last message would be marked as unread.
 
