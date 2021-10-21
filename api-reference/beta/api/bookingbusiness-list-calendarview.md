@@ -41,7 +41,7 @@ In the request URL, provide the following required query parameters with values.
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Description|
@@ -56,7 +56,7 @@ If successful, this method returns `200, OK` response code and [bookingAppointme
 
 ## Example
 The following is an example of how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -86,8 +86,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ---
 
 
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

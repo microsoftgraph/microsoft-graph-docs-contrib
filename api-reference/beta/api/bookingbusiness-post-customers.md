@@ -32,17 +32,17 @@ POST /bookingBusinesses/{id}/customers
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
+In the request body, supply a JSON representation of a [bookingCustomer](../resources/bookingcustomer.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -107,9 +107,10 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [bookingCustomer](../resources/bookingcustomer.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

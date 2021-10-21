@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Update the properties of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,10 +31,10 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -72,7 +72,7 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 ## Example
-##### Request
+### Request
 The following example changes the date of service by a day, and updated the invoice date as well.
 
 # [HTTP](#tab/http)
@@ -121,7 +121,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",

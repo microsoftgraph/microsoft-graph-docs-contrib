@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).
+Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,17 +32,17 @@ POST /bookingBusinesses/{id}/services
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.
+In the request body, supply a JSON representation of a [bookingService](../resources/bookingservice.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingService](../resources/bookingservice.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -134,9 +134,10 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
