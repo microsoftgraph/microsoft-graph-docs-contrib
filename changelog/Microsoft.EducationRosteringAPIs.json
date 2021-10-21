@@ -81,6 +81,40 @@
       "CreatedDateTime": "2021-03-17T09:51:36.520Z",
       "WorkloadArea": "Education",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "94b49cfe-5e3a-4c92-9230-1e48a277727f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "contactRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the **contactRelationship** enumeration type.",
+          "Target": "contactRelationship"
+        },
+        {
+          "Id": "94b49cfe-5e3a-4c92-9230-1e48a277727f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relatedContact",
+          "ChangeType": "Addition",
+          "Description": "Added the [relatedContact](https://docs.microsoft.com/en-us/graph/api/resources/relatedContact?view=graph-rest-1.0) resource type.",
+          "Target": "relatedContact"
+        },
+        {
+          "Id": "94b49cfe-5e3a-4c92-9230-1e48a277727f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource",
+          "Target": "educationUser"
+        }
+      ],
+      "Id": "94b49cfe-5e3a-4c92-9230-1e48a277727f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-21T18:44:21.6954492Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
     }
   ]
 }
