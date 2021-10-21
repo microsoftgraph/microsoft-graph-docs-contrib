@@ -220,7 +220,7 @@ Attribute #4
 + Attribute data type: String
 + Attribute value: `"Public"`
 
-The calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator roles and must be assigned the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
 
 #### Request
 
