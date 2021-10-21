@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The name of the staff member, as displayed to customers.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|timeZone|String|Timezone of the bookingStaffMember is operating from. The format/value of time zone would be the standard followed in graph as mentioned: [dateTimeTimeZone](../resources/datetimetimezone.md).|
+|timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 

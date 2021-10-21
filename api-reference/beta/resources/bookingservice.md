@@ -38,14 +38,14 @@ Represents information about a particular service provided by a [bookingBusiness
 |emailAddress|String|An email address|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
-|isLocationOnline|Boolean|This indicates if the appointment will be held online.|
+|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
-|smsNotificationsEnabled|Boolean|This indicates if SMS notifications can be sent for the service. The customer will not receive SMS, if the flag of same name is false at appointment level.|
+|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
 |staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
-|webUrl|String|This URL allows one to access service as a separate entity. The main URL of the business resource takes one to Bookings page where all services are listed.|
+|webUrl|String|The URL a customer uses to access the service.|
 
 ## Relationships
 None
