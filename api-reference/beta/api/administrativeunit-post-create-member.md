@@ -8,7 +8,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Add a member
+# Create a new member
 
 Namespace: microsoft.graph
 
@@ -31,8 +31,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeUnits/{id}/members/$ref
+POST /administrativeUnits/{id}/members
 ```
+`NOTE: When creating a new object as a member of an administrative unit, the request URL should not contain $ref (unlike when an existing object is added).`
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
