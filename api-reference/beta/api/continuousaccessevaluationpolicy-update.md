@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|migrate|Boolean| `true` to indicate if Continuous Access Evaluation should be or has been migrated to under Conditional Access.|
+|migrate|Boolean| `true` to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy. |
 
 ## Response
 
