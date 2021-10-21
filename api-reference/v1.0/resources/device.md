@@ -2,7 +2,7 @@
 title: "device resource type"
 description: "Represents a device registered in the organization."
 ms.localizationpriority: medium
-author: "spunukol"
+author: "sandeo"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -49,7 +49,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |deviceMetadata|String| For internal use only. Set to `null`. |
 |deviceVersion|Int32| For internal use only. |
 |displayName|String|The display name for the device. Required. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search`, and `$orderBy`.  |
-| extensionAttributes | [extensionAttributes](extensionattributes.md) | Contains extensionAttributes 1-15 for the device. The individual extension attributes are not selectable. These properties may be set during creation or update of a device in Azure AD. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the device. The individual extension attributes are not selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Azure AD. <br><br>Returned only on `$select`. Supports `$filter` (`eq`). |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Boolean|`true` if the device is managed by a Mobile Device Management (MDM) app; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `NOT`). |
@@ -101,7 +101,7 @@ Here is a JSON representation of the resource
   "deviceMetadata": "string",
   "deviceVersion": 1024,
   "displayName": "string",
-  "extensionAttributes": {"@odata.type": "microsoft.graph.extensionAttributes"},
+  "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
