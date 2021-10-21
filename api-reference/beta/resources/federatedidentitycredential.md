@@ -1,6 +1,6 @@
 ---
 title: "federatedIdentityCredential resource type"
-description: "References an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
+description: "References an application's federated identity credentials. These federated identity credentials are used in workload identity federation when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
 author: "kjyam98"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-References an application's federated identity credentials. These federated identities are used when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD.
+References an application's federated identity credentials. These federated identity credentials are used in [workload identity federation](/azure/active-directory/develop/workload-identity-federation) when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,12 +31,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| audiences | String collection | The list of audiences that can appear in the issued token. The recommended value is `api://AzureADTokenExchange`. Required. |
-| description | String | A user-provided description of what the federated identity credential is used for. Optional.  |
+| audiences | String collection | Lists the audiences that can appear in the external token. This field is mandatory, and defaults to "api://AzureADTokenExchange". It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required. |
+| description | String | The un-validated, user-provided description of the federated identity credential. Optional.  |
 | id| String | The unique identifier for the federated identity. Required. Read-only.  |
-| issuer | String | The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
-| name | String | The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces). It is immutable. Required. Not nullable. Supports `$filter` (`eq`). |
-| subject | String | Required. <li>For an Azure AD issuer, the value of the **id** of the **servicePrincipal** (with `managedIdentity` as the **servicePrincipalType**) that can impersonate the app. The object associated with this **id** must exist in the tenant.</li><li>For all other issuers, a string that is not validated by Azure AD.</ul><br><br>The combination of **issuer** and **subject** must be unique on the app. Supports `$filter` (`eq`). |
+| issuer | String | The URL of the external identity provider and must match the `issuer` claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
+| name | String | is the unique identifier for the federated identity credential, which has a character limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports `$filter` (`eq`). |
+| subject | String | Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the `sub` claim within the token presented to Azure AD. The combination of **issuer** and **subject** must be unique on the app. Supports `$filter` (`eq`). |
 
 
 ## Relationships
