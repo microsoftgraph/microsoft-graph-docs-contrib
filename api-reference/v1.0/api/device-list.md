@@ -141,7 +141,58 @@ Content-type: text/plain
 ```
 
 
-### Example 3: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects
+### Example 3: List all devices and return only their id and extensionAttributes properties
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices(id,extensionAttributes)",
+    "value": [
+        {
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "extensionAttributes": {
+                "extensionAttribute1": null,
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
+
+### Example 4: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects
 
 #### Request
 
@@ -209,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects
+### Example 5: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects
 
 #### Request
 
@@ -277,92 +328,73 @@ Content-type: application/json
 }
 ```
 
-### Example 5:  Get device with extensionAttributes
-
-#### Request
-
-``` JSON
-GET https://graph.microsoft.com/v1.0/devices?$select=extensionAttributes,id
-```
-
-#### Response
-```
-HTTP/1.1 200 OK
-{
-    "id": "id-value",
-    "extensionAttributes": {
-      "extensionAttribute1": "string",
-      "extensionAttribute2": "string",
-      "extensionAttribute3": "string",
-      "extensionAttribute4": "string",
-      "extensionAttribute5": "string",
-      "extensionAttribute6": "string",
-      "extensionAttribute7": "string",
-      "extensionAttribute8": "string",
-      "extensionAttribute9": "string",
-      "extensionAttribute10": "string",
-      "extensionAttribute11": "string",
-      "extensionAttribute12": "string",
-      "extensionAttribute13": "string",
-      "extensionAttribute14": "string",
-      "extensionAttribute15": "string"
-  }
-}
-```
-
 ### Example 6: Get device using filter on extensionAttributes
 
 #### Request
 
-``` JSON
-GET https://graph.microsoft.com/v1.0/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'&$count=true
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the extensionAttributes property supports `$filter` only with advanced query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_by_extensionAttribute"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices?$filter=extensionAttributes/extensionAttribute1 eq 'BYOD-Device'&$count=true
 ConsistencyLevel: eventual
 ```
 
 #### Response
-```
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices",
-  "@odata.count": "long",
-  "value": [
-  {
-    "accountEnabled": true,
-    "approximateLastSignInDateTime": "String (timestamp)",
-    "complianceExpirationDateTime": "String (timestamp)",
-    "deviceCategory": "string",
-    "deviceId": "string",
-    "deviceMetadata": "string",
-    "deviceOwnership": "string",
-    "deviceVersion": 1024,
-    "displayName": "string",
-    "domainName": "string",
-    "enrollmentProfileName": "string",
-    "enrollmentType": "string",
-    "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-    "id": "string (identifier)",
-    "isCompliant": true,
-    "isManaged": true,
-    "isRooted": true,
-    "mdmAppId": "string",
-    "onPremisesLastSyncDateTime": "String (timestamp)",
-    "onPremisesSyncEnabled": true,
-    "operatingSystem": "string",
-    "operatingSystemVersion": "string",
-    "physicalIds": ["string"],
-    "profileType": "string",
-    "registrationDateTime": "String (timestamp)",
-    "systemLabels": ["string"],
-    "hostNames" : ["string"],
-    "trustType": "string",
-    "Name": "string",
-    "Status": "string",
-    "Platform": "string",
-    "Kind": "string",
-    "Model": "string",
-    "managementType": "string",
-    "Manufacturer": "string"
-   }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6a59ea83-02bd-468f-a40b-f2c3d1821983/Microsoft.DirectoryServices.Device",
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "accountEnabled": true,
+            "approximateLastSignInDateTime": "2021-10-21T06:36:56Z",
+            "createdDateTime": "2021-09-21T15:16:30Z",
+            "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+            "displayName": "DESKTOP-LK3PESR",
+            "operatingSystem": "Windows",
+            "operatingSystemVersion": "10.0.19043.1237",
+            "physicalIds": [],
+            "extensionAttributes": {
+                "extensionAttribute1": "BYOD-Device",
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            },
+            "alternativeSecurityIds": [
+                {
+                    "type": 2,
+                    "identityProvider": null,
+                    "key": "WAA1ADAAOQA6AD...QBnAD0A"
+                }
+            ]
+        }
+    ]
 }
 ```
 

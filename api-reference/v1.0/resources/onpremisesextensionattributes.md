@@ -1,6 +1,6 @@
 ---
 title: "onPremisesExtensionAttributes resource type"
-description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties can be set over Exchange Online. The attributes are read only in Microsoft Graph."
+description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties. "
 ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
@@ -11,7 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **onPremisesExtensionAttributes** property of the [user](user.md) entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties cannot be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
+The return type of the **onPremisesExtensionAttributes** property of the [user](user.md) object and **extensionAttributes** property of the [device](device.md) object. Returns fifteen custom extension attribute properties.
+
+On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties cannot be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
+
+The **extensionAttributes** property of the [device](device.md) entity is managed only on Azure AD during device [creation](../api/device-post-devices.md) or [update](../api/device-update.md).
 
 > **Note:** These extension attributes are also known as Exchange custom attributes 1-15.
 
@@ -36,7 +40,7 @@ The **onPremisesExtensionAttributes** property of the [user](user.md) entity con
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -67,91 +71,7 @@ Here is a JSON representation of the resource
   }
 
 ```
-## Example REST operations
 
-### Use case:  Write extensionAttributes on a device
-
-``` JSON
-PATCH https://graph.microsoft.com/v1.0/devices/{id}
-Content-type: application/json
-
-{
-  "extensionAttributes": [
-    "extensionAttribute1" : "extensionAttribute1-value",
-    "extensionAttribute2" : "extensionAttribute2-value",
-    "extensionAttribute10" : "extensionAttribute10-value",
-    "extensionAttribute15" : "extensionAttribute15-value"
-  ]
-}
-```
-
-### Use case:  Get device with extensionAttributes
-
-``` JSON
-GET https://graph.microsoft.com/v1.0/devices?$select=extensionAttributes,id
-
-HTTP/1.1 200 OK
-{
-    "id": "id-value",
-    "extensionAttributes": {
-      "extensionAttribute1": "string",
-      "extensionAttribute2": "string",
-      "extensionAttribute3": "string",
-      "extensionAttribute4": "string",
-      "extensionAttribute5": "string",
-      "extensionAttribute6": "string",
-      "extensionAttribute7": "string",
-      "extensionAttribute8": "string",
-      "extensionAttribute9": "string",
-      "extensionAttribute10": "string",
-      "extensionAttribute11": "string",
-      "extensionAttribute12": "string",
-      "extensionAttribute13": "string",
-      "extensionAttribute14": "string",
-      "extensionAttribute15": "string"
-  }
-}
-```
-
-### Use case: Get device using filter on extensionAttributes
-
-``` JSON
-GET https://graph.microsoft.com/v1.0/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'&$count=true
-ConsistencyLevel: eventual
-
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices",
-  "@odata.count": "long",
-  "value": [
-  {
-    "accountEnabled": true,
-    "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
-    "approximateLastSignInDateTime": "String (timestamp)",
-    "complianceExpirationDateTime": "String (timestamp)",
-    "deviceId": "string",
-    "deviceMetadata": "string",
-    "deviceVersion": 1024,
-    "displayName": "string",
-    "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-    "id": "string (identifier)",
-    "isCompliant": true,
-    "isManaged": true,
-    "manufacturer": "string",
-    "mdmAppId": "string",
-    "model": "string",
-    "onPremisesLastSyncDateTime": "String (timestamp)",
-    "onPremisesSyncEnabled": true,
-    "operatingSystem": "string",
-    "operatingSystemVersion": "string",
-    "physicalIds": ["string"],
-    "profileType": "string",
-    "systemLabels": ["string"],
-    "trustType": "string"
-   }
-  ]
-}
-```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -163,4 +83,3 @@ ConsistencyLevel: eventual
   "section": "documentation",
   "tocPath": ""
 }-->
-

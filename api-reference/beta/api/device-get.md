@@ -47,8 +47,11 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
-## Example
-### Request
+## Examples
+
+### Example 1: Get a device
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -78,9 +81,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 ---
 
 
-> **Note:** The `id` in the request is the **id** property of the device, not the **deviceId** property.
-
-### Response
+#### Response
 The following example shows a response for a device with no **hostNames**. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -127,84 +128,53 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Get a device and return only its id and extensionAttributes properties
 
-The following example shows a response for a device with **extensionAttributes**.
+#### Request
 
-``` JSON
-GET https://graph.microsoft.com/beta/devices?$select=extensionAttributes,id
+The following request retrieves the **id** and **extensionAttributes** property of a device.
 
-HTTP/1.1 200 OK
-{
-    "id": "id-value",
-    "extensionAttributes": {
-      "extensionAttribute1": "string",
-      "extensionAttribute2": "string",
-      "extensionAttribute3": "string",
-      "extensionAttribute4": "string",
-      "extensionAttribute5": "string",
-      "extensionAttribute6": "string",
-      "extensionAttribute7": "string",
-      "extensionAttribute8": "string",
-      "extensionAttribute9": "string",
-      "extensionAttribute10": "string",
-      "extensionAttribute11": "string",
-      "extensionAttribute12": "string",
-      "extensionAttribute13": "string",
-      "extensionAttribute14": "string",
-      "extensionAttribute15": "string"
-  }
-}
+<!-- {
+  "blockType": "request",
+  "name": "get_device_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
 ```
 
-The following example shows a response for a device using filter with **extensionAttributes**.
+#### Response
 
-``` JSON
-GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'&$count=true
-ConsistencyLevel: eventual
+The following is an example of the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices",
-  "@odata.count": "long",
-  "value": [
-  {
-    "accountEnabled": true,
-    "approximateLastSignInDateTime": "String (timestamp)",
-    "complianceExpirationDateTime": "String (timestamp)",
-    "deviceCategory": "string",
-    "deviceId": "string",
-    "deviceMetadata": "string",
-    "deviceOwnership": "string",
-    "deviceVersion": 1024,
-    "displayName": "string",
-    "domainName": "string",
-    "enrollmentProfileName": "string",
-    "enrollmentType": "string",
-    "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-    "id": "string (identifier)",
-    "isCompliant": true,
-    "isManaged": true,
-    "isRooted": true,
-    "mdmAppId": "string",
-    "onPremisesLastSyncDateTime": "String (timestamp)",
-    "onPremisesSyncEnabled": true,
-    "operatingSystem": "string",
-    "operatingSystemVersion": "string",
-    "physicalIds": ["string"],
-    "profileType": "string",
-    "registrationDateTime": "String (timestamp)",
-    "systemLabels": ["string"],
-    "hostNames" : ["string"],
-    "trustType": "string",
-    "Name": "string",
-    "Status": "string",
-    "Platform": "string",
-    "Kind": "string",
-    "Model": "string",
-    "managementType": "string",
-    "Manufacturer": "string"
-   }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices(id,extensionAttributes)/$entity",
+    "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+    "extensionAttributes": {
+        "extensionAttribute1": null,
+        "extensionAttribute2": null,
+        "extensionAttribute3": null,
+        "extensionAttribute4": null,
+        "extensionAttribute5": null,
+        "extensionAttribute6": null,
+        "extensionAttribute7": null,
+        "extensionAttribute8": null,
+        "extensionAttribute9": null,
+        "extensionAttribute10": null,
+        "extensionAttribute11": null,
+        "extensionAttribute12": null,
+        "extensionAttribute13": null,
+        "extensionAttribute14": null,
+        "extensionAttribute15": null
+    }
 }
 ```
 

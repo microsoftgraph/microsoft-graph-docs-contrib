@@ -55,8 +55,11 @@ In the request body, supply the values for the [device](../resources/device.md) 
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
-### Request
+## Examples
+
+### Example 1: Update the accountEnabled property of a device
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -67,7 +70,6 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
-Content-length: 31
 
 {
   "accountEnabled": false
@@ -91,7 +93,7 @@ Content-length: 31
 
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response"
@@ -100,20 +102,32 @@ Content-length: 31
 HTTP/1.1 204 No Content
 ```
 
-## Example:  Write extensionAttributes on a device
+### Example 2:  Write extensionAttributes on a device
 
-``` JSON
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_device_extensionAttributes"
+}-->
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
 
 {
-  "extensionAttributes": [
-    "extensionAttribute1" : "extensionAttribute1-value",
-    "extensionAttribute2" : "extensionAttribute2-value",
-    "extensionAttribute10" : "extensionAttribute10-value",
-    "extensionAttribute15" : "extensionAttribute15-value"
-  ]
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device"
+    }
 }
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
