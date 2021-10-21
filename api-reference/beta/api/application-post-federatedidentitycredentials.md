@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application. Maximum of 20 objects can be added to an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Azure AD application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +46,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audiences|String collection|The list of audiences that can appear in the issued token.  The possible values are: `api://AzureADTokenExchange`.|
-|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app.|
-|name|String|The unique identifier for the federated identity. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces). Read-only after creation.|
-|subject|String|<li>For Azure AD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app.|
+|audiences|String collection|Lists the audiences that can appear in the external token. This field is mandatory, and defaults to "api://AzureADTokenExchange". It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required.|
+|issuer|String|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. Required.|
+|name|String|The unique identifier for the federated identity credential, which has a character limit of 120 characters and must be URL friendly. It is immutable once created|
+|subject|String|Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD. The combination of **issuer** and **subject** must be unique on the app.|
 
 
 
