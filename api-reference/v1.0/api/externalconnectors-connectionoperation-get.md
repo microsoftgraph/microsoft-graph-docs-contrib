@@ -2,7 +2,7 @@
 title: "Get connectionOperation"
 description: "Read the properties and relationships of a connectionOperation object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections/{connectionsId}/operations/{connectionOperationId}
+GET /external/connections/{connectionsId}/operations/{connectionOperationId}
 ```
 
 ## Optional query parameters
@@ -51,32 +51,15 @@ If successful, this method returns a `200 OK` response code and a [connectionOpe
 
 ### Request
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_connectionoperation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectionoperation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectionoperation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectionoperation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

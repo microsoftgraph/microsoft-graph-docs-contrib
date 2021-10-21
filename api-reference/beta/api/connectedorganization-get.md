@@ -3,7 +3,7 @@ title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
 author: "markwahl-msft"
 ms.prod: "governance"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 

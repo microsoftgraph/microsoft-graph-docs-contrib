@@ -1,7 +1,7 @@
 ---
 title: "Add identityProvider to a b2xIdentityUserFlow (deprecated)"
 description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"

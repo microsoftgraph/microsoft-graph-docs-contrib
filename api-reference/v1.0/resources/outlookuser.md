@@ -2,7 +2,7 @@
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

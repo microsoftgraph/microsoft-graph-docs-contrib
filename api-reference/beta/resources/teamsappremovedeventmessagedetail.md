@@ -2,7 +2,7 @@
 title: "teamsAppRemovedEventMessageDetail resource type"
 description: "Represents the details of an event message about teamsApp removed."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

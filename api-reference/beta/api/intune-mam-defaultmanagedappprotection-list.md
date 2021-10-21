@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6001
+Content-Length: 6038
 
 {
   "value": [
@@ -186,12 +186,12 @@ Content-Length: 6001
       "warnAfterCompanyPortalUpdateDeferralInDays": 10,
       "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
       "deviceLockRequired": true,
-      "appActionIfDeviceLockNotSet": "wipe"
+      "appActionIfDeviceLockNotSet": "wipe",
+      "connectToVpnOnLaunch": true
     }
   ]
 }
 ```
-
 
 
 

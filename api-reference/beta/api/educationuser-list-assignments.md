@@ -1,7 +1,7 @@
 ---
 title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/users/{id}/assignments
+GET /education/me/assignments
 ```
 
 ## Optional query parameters

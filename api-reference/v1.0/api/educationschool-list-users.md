@@ -2,7 +2,7 @@
 title: "List users of an educationSchool"
 description: "Retrieve a list of users at a school."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

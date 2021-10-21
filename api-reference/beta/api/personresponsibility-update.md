@@ -2,7 +2,7 @@
 title: "Update personResponsibility"
 description: "Update the properties of a personResponsibility object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "group: checkMemberGroups"
 description: "Check for membership in the specified list of groups."
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
 ---

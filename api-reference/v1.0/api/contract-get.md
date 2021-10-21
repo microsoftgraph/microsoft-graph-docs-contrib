@@ -1,7 +1,7 @@
 ---
 title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType

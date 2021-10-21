@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## HTTP Request
 <!-- {
@@ -58,6 +58,9 @@ The following table shows the parameters that can be used with this action.
 |notificationTitle|String|Not yet documented|
 |notificationBody|String|Not yet documented|
 |deviceName|String|Not yet documented|
+|carrierUrl|String|Not yet documented|
+|deprovisionReason|String|Not yet documented|
+|organizationalUnitPath|String|Not yet documented|
 
 
 
@@ -72,7 +75,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 274
+Content-length: 441
 
 {
   "actionName": "delete",
@@ -83,7 +86,10 @@ Content-length: 274
   ],
   "notificationTitle": "Notification Title value",
   "notificationBody": "Notification Body value",
-  "deviceName": "Device Name value"
+  "deviceName": "Device Name value",
+  "carrierUrl": "https://example.com/carrierUrl/",
+  "deprovisionReason": "Deprovision Reason value",
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 
@@ -112,7 +118,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

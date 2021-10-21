@@ -2,7 +2,7 @@
 title: "Schedule a deployment using the Windows Update for Business deployment service"
 description: "When deploying an update using the deployment service, you can schedule the deployment so that devices receive the update at a future date."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---

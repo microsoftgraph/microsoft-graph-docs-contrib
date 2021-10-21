@@ -2,7 +2,7 @@
 title: "Delete linkedResource"
 description: "Deletes a linkedResource object."
 author: "avijityadav"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

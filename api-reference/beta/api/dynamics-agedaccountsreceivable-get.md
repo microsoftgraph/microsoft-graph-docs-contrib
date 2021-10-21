@@ -4,7 +4,7 @@ description: Gets an aged accounts receivable object in Dynamics 365 Business Ce
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "dynamics-365-business-central"
 ---

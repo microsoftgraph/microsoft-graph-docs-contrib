@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

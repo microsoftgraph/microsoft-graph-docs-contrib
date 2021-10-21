@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 String contentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101";
 
-graphClient.sites("id").lists("{list-id}").contentTypes()
+graphClient.sites("{site-id}").lists("{list-id}").contentTypes()
 	.addCopy(ContentTypeAddCopyParameterSet
 		.newBuilder()
 		.withContentType(contentType)

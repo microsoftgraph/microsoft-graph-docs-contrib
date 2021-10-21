@@ -2,7 +2,7 @@
 title: "Delete call"
 description: "Delete or hang up an active call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

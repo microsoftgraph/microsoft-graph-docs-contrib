@@ -1,7 +1,7 @@
 ---
 title: "Delete identityUserFlowAttribute"
 description: "Delete an identityUserFlowAttribute."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"

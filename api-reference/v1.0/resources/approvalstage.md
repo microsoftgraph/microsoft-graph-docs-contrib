@@ -2,7 +2,7 @@
 title: "approvalStage resource type"
 description: "The approvalStage object associated with a userConsentRequest."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "How to protect your company app data with Microsoft Intune"
 description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
@@ -56,6 +56,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
 - [Proxied domain](intune-mam-proxieddomain.md)
 - [Targeted managed app configuration](intune-mam-targetedmanagedappconfiguration.md)
+- [Targeted managed app group type](intune-mam-targetedmanagedappgrouptype.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
 - [User](intune-mam-user.md)

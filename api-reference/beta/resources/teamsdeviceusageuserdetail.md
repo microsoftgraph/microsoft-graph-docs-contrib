@@ -2,7 +2,7 @@
 title: "teamsDeviceUsageUserDetail resource type"
 description: "Represents details about Microsoft Teams device usage by user."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

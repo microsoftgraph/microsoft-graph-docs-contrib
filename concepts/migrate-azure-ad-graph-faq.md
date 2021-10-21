@@ -2,7 +2,7 @@
 title: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ"
 description: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ."
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
@@ -29,7 +29,7 @@ If you own an application's source code, search for the `https://graph.windows.n
 1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
-1. In the **App registrations** window, select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
+1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. In the text box, enter the app ID you retrieved in Step 1 and select **Apply**. The list has narrowed down to the specified app.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by app ID." border="true":::
@@ -53,7 +53,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
-1. In the App registrations window, select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. The **Requested API** filter pops up.
+1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. The **Requested API** filter pops up.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
 
@@ -72,7 +72,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
-1. In the App registrations window, select the **All Applications** tab and then select **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
+1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. Enter an app ID in the text box and select **Apply**. The list has narrowed down to the specified app.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Filter by apps by app ID." border="true":::

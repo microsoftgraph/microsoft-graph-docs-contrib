@@ -25,4 +25,3 @@ Supported setting types
 
 
 
-

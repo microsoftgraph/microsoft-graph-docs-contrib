@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentResource resource type"
 description: "A wrapper object that stores the resources associated with an assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType

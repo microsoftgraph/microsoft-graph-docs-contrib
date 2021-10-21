@@ -2,7 +2,7 @@
 title: "List instances"
 description: "Get the accessReviewInstance resources from the instances navigation property."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

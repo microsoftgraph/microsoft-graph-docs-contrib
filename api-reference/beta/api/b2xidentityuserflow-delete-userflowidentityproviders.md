@@ -1,7 +1,7 @@
 ---
 title: "Delete a userFlowIdentityProvider"
 description: "Delete an identityProvider from a b2xIdentityUserFlow."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"

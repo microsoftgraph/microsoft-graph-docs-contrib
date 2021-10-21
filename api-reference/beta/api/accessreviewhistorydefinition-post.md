@@ -2,7 +2,7 @@
 title: "Create accessReviewHistoryDefinition"
 description: "Create a new accessReviewHistoryDefinition object."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

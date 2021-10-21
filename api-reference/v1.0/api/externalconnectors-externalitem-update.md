@@ -2,7 +2,7 @@
 title: "Update externalItem"
 description: "Update the properties of an externalItem object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 
 ### Request
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 Content-length: 360
 
@@ -93,23 +93,6 @@ Content-length: 360
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

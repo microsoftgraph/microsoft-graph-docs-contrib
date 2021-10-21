@@ -73,7 +73,7 @@ The following table shows the properties that are required when you create the m
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -103,6 +103,8 @@ The following table shows the properties that are required when you create the m
 |contentCachingKeepAwake|Boolean|Prevent the device from sleeping if content caching is enabled.|
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object in the response body.
 
@@ -113,7 +115,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 5662
+Content-length: 6135
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -239,7 +241,18 @@ Content-length: 5662
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -294,7 +307,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5834
+Content-Length: 6307
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -423,7 +436,18 @@ Content-Length: 5834
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -472,7 +496,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Assign homeRealmDiscoveryPolicy"
 description: "Assign a homeRealmDiscoveryPolicy to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hpsin"
 ms.prod: "applications"
 doc_type: "apiPageType"
