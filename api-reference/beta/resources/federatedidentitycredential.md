@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 | description | String | A user-provided description of what the federated identity credential is used for. Optional.  |
 | id| String | The unique identifier for the federated identity. Required. Read-only.  |
 | issuer | String | The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
-| name | String | The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces).. It is immutable. Required. Not nullable. Supports `$filter` (`eq`). |
+| name | String | The unique identifier for the federated identity to be used in ARM scenarios. Has a character limit of 120 characters and must be URL friendly (for example, not include spaces). It is immutable. Required. Not nullable. Supports `$filter` (`eq`). |
 | subject | String | Required. <li>For an Azure AD issuer, the value of the **id** of the **servicePrincipal** (with `managedIdentity` as the **servicePrincipalType**) that can impersonate the app. The object associated with this **id** must exist in the tenant.</li><li>For all other issuers, a string that is not validated by Azure AD.</ul><br><br>The combination of **issuer** and **subject** must be unique on the app. Supports `$filter` (`eq`). |
 
 
