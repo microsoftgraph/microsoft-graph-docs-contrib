@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| audiences | String collection | The list of audiences that can appear in the issued token. The possible values are: `api://AzureADTokenExchange`. Required. |
+| audiences | String collection | The list of audiences that can appear in the issued token. The recommended value is `api://AzureADTokenExchange`. Required. |
 | description | String | A user-provided description of what the federated identity credential is used for. Optional.  |
 | id| String | The unique identifier for the federated identity. Required. Read-only.  |
 | issuer | String | The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
