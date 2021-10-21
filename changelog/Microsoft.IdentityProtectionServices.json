@@ -99,9 +99,7 @@
 		"CreatedDateTime": "2020-12-15T19:36:30.757Z",
 		"WorkloadArea": "Identity and access",
 		"SubArea": "Identity and sign-in"
-	}]
-	"changelog": [
-		{
+	},{
 			"ChangeList": [
 				{
 					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
