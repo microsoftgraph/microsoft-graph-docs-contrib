@@ -307,7 +307,7 @@ You are responsible for converting your source permissions to grant or deny. Den
 The following is an example of request.
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
 { 
