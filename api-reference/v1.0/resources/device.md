@@ -2,7 +2,7 @@
 title: "device resource type"
 description: "Represents a device registered in the organization."
 ms.localizationpriority: medium
-author: "sandeo"
+author: "sandeo-MSFT"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
