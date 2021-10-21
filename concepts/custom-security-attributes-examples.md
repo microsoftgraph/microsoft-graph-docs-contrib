@@ -14,7 +14,7 @@ ms.prod: "directory-management"
 
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects.
 
-This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](../api-reference/beta/api/user-update.md) or [Update servicePrincipal](../api-reference/beta/api/serviceprincipal-update.md) request.
+This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](/graph/api/user-update?view=graph-rest-beta) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta) request.
 
 ## Permissions
 
@@ -24,9 +24,9 @@ To manage custom security attributes, the calling principal must be assigned the
 
 Also, the calling principal must be granted the following permission.
 
-- [CustomSecAttributeAssignment.ReadWrite.All](/graph/permissions-reference#custom-security-attributes-permissions)
+- [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
 
-## Assign custom security attributes to users or service principals
+## Assign custom security attributes
 
 ### Example 1: Assign a custom security attribute with a string value to a user
 
@@ -271,11 +271,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Update custom security attributes for users or service principals
+## Update custom security attribute assignments
 
-### Example 1: Update a custom security attribute with an integer value for a user
+### Example 1: Update a custom security attribute assignment with an integer value for a user
 
-The following example shows how to update a custom security attribute with an integer value for a user.
+The following example shows how to update a custom security attribute assignment with an integer value for a user.
 
 - Attribute set: `Engineering`
 - Attribute: `NumVendors`
@@ -315,9 +315,9 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 2: Update a custom security attribute with a Boolean value for a user
+### Example 2: Update a custom security attribute assignment with a Boolean value for a user
 
-The following example shows how to assign a custom security attribute with a Boolean value for a user.
+The following example shows how to update a custom security attribute assignment with a Boolean value for a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Certification`
@@ -355,11 +355,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Remove custom security attributes from users or service principals
+## Remove custom security attribute assignments
 
 ### Example 1: Remove a single-valued custom security attribute assignment from a user
 
-The following example shows how to remove a custom security attribute that supports a single value from a user.
+The following example shows how to remove a custom security attribute assignment that supports a single value from a user.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`
@@ -398,7 +398,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Remove a multi-valued custom security attribute assignment from a user
 
-The following example shows how to remove a custom security attribute that supports multiple values from a user.
+The following example shows how to remove a custom security attribute assignment that supports multiple values from a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`
@@ -437,7 +437,7 @@ HTTP/1.1 204 No Content
 
 ## Next steps
 
-- [Overview of custom security attributes using the Microsoft Graph API](../api-reference/beta/resources/custom-security-attributes-overview.md)
+- [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
 - [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
-- [Update user](../api-reference/beta/api/user-update.md)
-- [Update servicePrincipal](../api-reference/beta/api/serviceprincipal-update.md) 
+- [Update user](/graph/api/user-update?view=graph-rest-beta)
+- [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta) 
