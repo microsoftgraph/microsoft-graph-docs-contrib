@@ -1,7 +1,7 @@
 ---
 title: "relatedContact resource type"
 description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
-author: "mmast-msft"
+author: "marcla"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
@@ -17,9 +17,8 @@ Contact record related to an [educationUser](../resources/educationuser.md) that
 
 | Property      | Type                  | Description                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | String                | Identity of the contact within Azure Active Directory.                                                                                    |
 | displayName   | String                | Name of the contact. Required.                                                                                                            |
-| emailAddress  | String                | Primary email address of the contact.                                                                                                     |
+| emailAddress  | String                | Primary email address of the contact. Required.                                                                                           |
 | mobilePhone   | String                | Mobile phone number of the contact.                                                                                                       |
 | relationship  | `contactRelationship` | Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`. |
 | accessConsent | Boolean               | Indicates whether the user has been consented to access student data.                                                                     |
@@ -38,7 +37,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String",
   "displayName": "String",
   "emailAddress": "String",
   "mobilePhone": "String",
@@ -60,4 +58,3 @@ The following is a JSON representation of the resource.
   ]
 }
 -->
-
