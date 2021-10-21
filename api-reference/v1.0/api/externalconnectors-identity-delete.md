@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
+DELETE /external/connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ```
 
 ## Request headers

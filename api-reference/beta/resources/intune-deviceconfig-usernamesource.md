@@ -2,7 +2,7 @@
 title: "usernameSource enum type"
 description: "Username source."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

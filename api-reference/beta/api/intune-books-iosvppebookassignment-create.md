@@ -2,7 +2,7 @@
 title: "Create iosVppEBookAssignment"
 description: "Create a new iosVppEBookAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

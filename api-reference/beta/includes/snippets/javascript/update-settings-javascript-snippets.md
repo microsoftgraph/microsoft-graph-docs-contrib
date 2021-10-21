@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const settings = {
+const caseSettings = {
     redundancyDetection: {
         isEnabled: false,
         similarityThreshold: 70,
@@ -31,6 +31,6 @@ const settings = {
 
 await client.api('/compliance/ediscovery/cases/{caseId}/settings')
 	.version('beta')
-	.update(settings);
+	.update(caseSettings);
 
 ```
