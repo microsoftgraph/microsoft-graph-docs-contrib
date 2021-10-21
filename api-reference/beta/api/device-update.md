@@ -1,7 +1,7 @@
 ---
 title: "Update device"
 description: "Update the properties of a device."
-author: "spunukol"
+author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -102,6 +102,22 @@ Content-length: 31
 } -->
 ```http
 HTTP/1.1 204 No Content
+```
+
+## Example:  Write extensionAttributes on a device
+
+``` JSON
+PATCH https://graph.microsoft.com/beta/devices/{id}
+Content-type: application/json
+
+{
+  "extensionAttributes": [
+    "extensionAttribute1" : "extensionAttribute1-value",
+    "extensionAttribute2" : "extensionAttribute2-value",
+    "extensionAttribute10" : "extensionAttribute10-value",
+    "extensionAttribute15" : "extensionAttribute15-value"
+  ]
+}
 ```
 
 ## See also
