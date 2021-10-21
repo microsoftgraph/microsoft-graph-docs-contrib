@@ -1,6 +1,6 @@
 ---
 title: "List peopleInsights"
-description: "Retrieve properties of an insightsSettings object for displaying people insights in an organization."
+description: "Retrieve properties of an insightsSettings object for displaying or returning people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
