@@ -404,10 +404,18 @@ items:
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Get
-            href: api/insightssettings-get.md
-          - name: Update
-            href: api/insightssettings-update.md
+          - name: Settings for item insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Settings for people insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -13060,10 +13068,18 @@ items:
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Get
-            href: api/insightssettings-get.md
-          - name: Update
-            href: api/insightssettings-update.md
+          - name: Settings for item insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Settings for people insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties of the specified [insightsSettings](../resources/insightssettings.md) resource.
+Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
 
 To learn how to customize insights privacy for your organization see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
@@ -32,14 +32,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
-## itemInsightsSetting HTTP request
+## HTTP request
+
+To update settings for item insights:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /organization/{organizationId}/settings/itemInsights
 ```
 
-## peopleInshgtsSetting HTTP request
+To update settings for people insights:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -59,20 +61,21 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if organization item or people insights are enabled; `false` if organization item or people insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure AD group, of which the members' item or people insights are disabled. Default is `empty`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+
+>**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a string, this operation does not check the existence of the corresponding Azure AD group. This means, if you set **disabledForGroup** to an Azure AD group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [InsightsSettings](../resources/insightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
 
->**Note:** This operation verifies the validity of property values of the specified **itemInsightsSettings** or **peopleInsightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable insights for all the users in the organization. 
+## Examples 
 
-## Example itemInsights 
+### Example 1: Update settings for item insights
+#### Request
 
-### Request
-
-Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
+Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
 
 
 <!-- {
@@ -89,8 +92,8 @@ Content-type: application/json
 }
 ```
 
----
-### Response
+
+#### Response
 
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -109,12 +112,12 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
----
 
-## Example peopleInsights
-### Request
 
-Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' people insights of a particular Azure AD group.
+### Example 2: Update settings for people insights
+#### Request
+
+Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
 
 
 <!-- {
@@ -130,7 +133,7 @@ Content-Type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
----
+
 
 
 ### Response

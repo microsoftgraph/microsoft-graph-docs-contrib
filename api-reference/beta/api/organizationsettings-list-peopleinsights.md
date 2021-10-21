@@ -1,19 +1,19 @@
 ---
-title: "Get insights"
-description: "Retrieve properties of insightsSettings object"
+title: "List peopleInsights"
+description: "Retrieve properties of an insightsSettings object for displaying people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Get insightsSettings
+# List peopleInsights
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of [insightsSettings](../resources/insightssettings.md) object.
+Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning people insights in an organization.
 
 To learn how to customize insights privacy for your organization see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{organizationId}/settings/itemInsights
+GET /organization/{organizationId}/settings/peopleInsights
 ```
 
 ## Request headers
@@ -50,49 +50,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
 
->**Note:** This operation verifies the validity of property values of the specified **insightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will not be able to identify any group membership and disable item insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable insights for all the users in the organization. 
-
-## Example - itemInsights
-
-##### Request
-
-
-<!-- {
-  "blockType": "request",
-  "name": "get_insightssettingsrequest"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
-```
-
-
-
-##### Response
-
-Here is an example of the response. 
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "get_insightssettingsrequest"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "isEnabledInOrganization": true,
-  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
-}
-```
-
-## Example - peopleInsights
-
-##### Request
+## Example 
+### Request
 
 <!-- {
   "blockType": "request",
@@ -103,10 +62,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
 ```
 
----
-
-
-##### Response
+### Response
 
 Here is an example of the response. 
 > **Note:** The response object shown here might be shortened for readability.
