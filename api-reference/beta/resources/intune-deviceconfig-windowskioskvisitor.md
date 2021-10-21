@@ -2,7 +2,7 @@
 title: "windowsKioskVisitor resource type"
 description: "The class used to identify a visitor kiosk account"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "used": 123,
-  "total": 1234
+  "used": "Int32",
+  "total": "Int32"
 }
 ```

@@ -2,7 +2,7 @@
 title: "List deviceConfigurationAssignments"
 description: "List properties and relationships of the deviceConfigurationAssignment objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

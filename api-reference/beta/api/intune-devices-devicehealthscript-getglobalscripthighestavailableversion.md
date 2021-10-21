@@ -2,7 +2,7 @@
 title: "getGlobalScriptHighestAvailableVersion action"
 description: "Update the Proprietary Device Health Script"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

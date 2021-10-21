@@ -2,7 +2,7 @@
 title: "certificateRevocationStatus enum type"
 description: "Certificate Revocation Status."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

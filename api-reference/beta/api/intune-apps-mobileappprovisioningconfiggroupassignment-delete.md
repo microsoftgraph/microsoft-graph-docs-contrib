@@ -2,7 +2,7 @@
 title: "Delete mobileAppProvisioningConfigGroupAssignment"
 description: "Deletes a mobileAppProvisioningConfigGroupAssignment."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

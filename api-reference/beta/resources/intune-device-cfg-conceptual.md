@@ -451,6 +451,7 @@ The following Graph resources are available to manage settings and features on d
 - [Operating system version range](intune-deviceconfig-operatingsystemversionrange.md)
 - [Operator](intune-deviceconfig-operator.md)
 - [Perfect forward secrecy group](intune-deviceconfig-perfectforwardsecrecygroup.md)
+- [Personal profile personal play store mode](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Pfx recryption request](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx user certificate](intune-raimportcerts-pfxusercertificate.md)
 - [Policy platform type](intune-deviceconfig-policyplatformtype.md)
