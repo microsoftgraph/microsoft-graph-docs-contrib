@@ -50,6 +50,7 @@
     "WorkloadArea": "Directory Management",
     "SubArea": "Device Management"
   },
+  {
       "ChangeList": [
         {
           "Id": "7e0e8545-43ac-4ce8-a47f-6dc85975847a",
