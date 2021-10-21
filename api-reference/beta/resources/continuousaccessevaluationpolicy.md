@@ -30,7 +30,7 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 |id|String|Specifies the identifier of a [continuousAccessEvaluationPolicy](#continuousaccessevaluationpolicy-resource-type) object. Read-only.|
 |isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. Read-only.|
 |users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty. Read-only.|
-|migrate|Boolean| `true` to indicate if Continuous Access Evaluation should be or has been migrated to under Conditional Access.|
+|migrate|Boolean| `true` to indicate that the continuous access evaluation policy settings should be or has been migrated to the conditional access policy. |
 ## Relationships
 None.
 
