@@ -67,6 +67,91 @@ Here is a JSON representation of the resource
   }
 
 ```
+## Example REST operations
+
+### Use case:  Write extensionAttributes on a device
+
+``` JSON
+PATCH https://graph.microsoft.com/v1.0/devices/{id}
+Content-type: application/json
+
+{
+  "extensionAttributes": [
+    "extensionAttribute1" : "extensionAttribute1-value",
+    "extensionAttribute2" : "extensionAttribute2-value",
+    "extensionAttribute10" : "extensionAttribute10-value",
+    "extensionAttribute15" : "extensionAttribute15-value"
+  ]
+}
+```
+
+### Use case:  Get device with extensionAttributes
+
+``` JSON
+GET https://graph.microsoft.com/v1.0/devices?$select=extensionAttributes,id
+
+HTTP/1.1 200 OK
+{
+    "id": "id-value",
+    "extensionAttributes": {
+      "extensionAttribute1": "string",
+      "extensionAttribute2": "string",
+      "extensionAttribute3": "string",
+      "extensionAttribute4": "string",
+      "extensionAttribute5": "string",
+      "extensionAttribute6": "string",
+      "extensionAttribute7": "string",
+      "extensionAttribute8": "string",
+      "extensionAttribute9": "string",
+      "extensionAttribute10": "string",
+      "extensionAttribute11": "string",
+      "extensionAttribute12": "string",
+      "extensionAttribute13": "string",
+      "extensionAttribute14": "string",
+      "extensionAttribute15": "string"
+  }
+}
+```
+
+### Use case: Get device using filter on extensionAttributes
+
+``` JSON
+GET https://graph.microsoft.com/v1.0/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'&$count=true
+ConsistencyLevel: eventual
+
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices",
+  "@odata.count": "long",
+  "value": [
+  {
+    "accountEnabled": true,
+    "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
+    "approximateLastSignInDateTime": "String (timestamp)",
+    "complianceExpirationDateTime": "String (timestamp)",
+    "deviceId": "string",
+    "deviceMetadata": "string",
+    "deviceVersion": 1024,
+    "displayName": "string",
+    "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
+    "id": "string (identifier)",
+    "isCompliant": true,
+    "isManaged": true,
+    "manufacturer": "string",
+    "mdmAppId": "string",
+    "model": "string",
+    "onPremisesLastSyncDateTime": "String (timestamp)",
+    "onPremisesSyncEnabled": true,
+    "operatingSystem": "string",
+    "operatingSystemVersion": "string",
+    "physicalIds": ["string"],
+    "profileType": "string",
+    "systemLabels": ["string"],
+    "trustType": "string"
+   }
+  ]
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
