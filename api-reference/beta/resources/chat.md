@@ -31,6 +31,8 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
 |[Remove chat member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
+|[Mark chat as read](../api/chat-markchatreadforuser.md) |None| Mark chat as read for a user |
+|[Mark chat as unread](../api/chat-markchatunreadforuser.md) |None| Mark chat as unread for a user |
 | **Messages** |||
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 

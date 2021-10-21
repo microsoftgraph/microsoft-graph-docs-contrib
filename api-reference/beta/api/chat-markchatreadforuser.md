@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|Tenant id of the user.|
+|tenantId|String|Tenant ID of the user.|
 |user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to read the chat for.|
 
 ## Response
