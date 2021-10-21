@@ -1,7 +1,7 @@
 ---
 title: "Get device"
 description: "Get the properties and relationships of a device object."
-author: "spunukol"
+author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -127,6 +127,86 @@ Content-type: application/json
 }
 ```
 
+
+The following example shows a response for a device with **extensionAttributes**.
+
+``` JSON
+GET https://graph.microsoft.com/beta/devices?$select=extensionAttributes,id
+
+HTTP/1.1 200 OK
+{
+    "id": "id-value",
+    "extensionAttributes": {
+      "extensionAttribute1": "string",
+      "extensionAttribute2": "string",
+      "extensionAttribute3": "string",
+      "extensionAttribute4": "string",
+      "extensionAttribute5": "string",
+      "extensionAttribute6": "string",
+      "extensionAttribute7": "string",
+      "extensionAttribute8": "string",
+      "extensionAttribute9": "string",
+      "extensionAttribute10": "string",
+      "extensionAttribute11": "string",
+      "extensionAttribute12": "string",
+      "extensionAttribute13": "string",
+      "extensionAttribute14": "string",
+      "extensionAttribute15": "string"
+  }
+}
+```
+
+The following example shows a response for a device using filter with **extensionAttributes**.
+
+``` JSON
+GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'&$count=true
+ConsistencyLevel: eventual
+
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices",
+  "@odata.count": "long",
+  "value": [
+  {
+    "accountEnabled": true,
+    "approximateLastSignInDateTime": "String (timestamp)",
+    "complianceExpirationDateTime": "String (timestamp)",
+    "deviceCategory": "string",
+    "deviceId": "string",
+    "deviceMetadata": "string",
+    "deviceOwnership": "string",
+    "deviceVersion": 1024,
+    "displayName": "string",
+    "domainName": "string",
+    "enrollmentProfileName": "string",
+    "enrollmentType": "string",
+    "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
+    "id": "string (identifier)",
+    "isCompliant": true,
+    "isManaged": true,
+    "isRooted": true,
+    "mdmAppId": "string",
+    "onPremisesLastSyncDateTime": "String (timestamp)",
+    "onPremisesSyncEnabled": true,
+    "operatingSystem": "string",
+    "operatingSystemVersion": "string",
+    "physicalIds": ["string"],
+    "profileType": "string",
+    "registrationDateTime": "String (timestamp)",
+    "systemLabels": ["string"],
+    "hostNames" : ["string"],
+    "trustType": "string",
+    "Name": "string",
+    "Status": "string",
+    "Platform": "string",
+    "Kind": "string",
+    "Model": "string",
+    "managementType": "string",
+    "Manufacturer": "string"
+   }
+  ]
+}
+```
 
 ## See also
 
