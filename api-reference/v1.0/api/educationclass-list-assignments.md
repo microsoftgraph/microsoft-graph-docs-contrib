@@ -51,9 +51,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
 
-## Example 1: Get Assignments
+## Examples
 
-### Request
+### Example 1: Get Assignments
+
+#### Request
 
 The following is an example of the request.
 
@@ -86,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response. 
 
@@ -151,9 +153,9 @@ Content-length: 344
 }
 ```
 
-## Example 2: Get Assignments using $expand options
+### Example 2: Get Assignments using $expand options
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -166,7 +168,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments?$expand=resources
 ```
 
-### Response
+#### Response
 
 The following is an example of the response, it includes the list of resources for each assignment. 
 

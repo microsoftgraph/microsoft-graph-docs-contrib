@@ -46,8 +46,10 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [educationSubmission](../resources/educationsubmission.md) objects in the response body.
 
-## Example 1: Get Submissions
-### Request
+## Examples
+
+### Example 1: Get Submissions
+#### Request
 The following is an example of the request.
 
 
@@ -79,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ---
 
 
-### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -137,8 +139,8 @@ Content-length: 873
 }
 ```
 
-## Example 2: Get Submissions with $expand options
-### Request
+### Example 2: Get Submissions with $expand options
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -150,7 +152,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
 ```
 
-### Response
+#### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

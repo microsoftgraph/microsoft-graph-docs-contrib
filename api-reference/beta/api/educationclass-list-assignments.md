@@ -53,7 +53,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
 
-## Example 1: Get Assignments
+## Examples
+
+### Example 1: Get Assignments
 
 #### Request
 
@@ -133,7 +135,7 @@ Content-length: 344
 }
 ```
 
-## Example 2: Get Assignments using $expand options
+### Example 2: Get Assignments using $expand options
 
 #### Request
 

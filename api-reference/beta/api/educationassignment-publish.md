@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: publish"
-description: "This action changes the state of an assignment from its original draft status to the published status."
+description: "Change the state of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the state of an assignment from its original `draft` status to the `published` status. 
+Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
-The state can also be changed from `draft` to `scheduled` status if the assignment is scheduled for a future date. 
+You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
 
 Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, [educationSubmission](../resources/educationsubmission.md) objects are created and the assignment appears in the student's list.
 
