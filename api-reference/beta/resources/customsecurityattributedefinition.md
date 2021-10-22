@@ -1,6 +1,6 @@
 ---
 title: "customSecurityAttributeDefinition resource type"
-description: "An object that that represents the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values."
+description: "An object that represents the schema of a custom security attribute (key-value pair)."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object that represent the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
+An object that represents the schema of a custom security attribute (key-value pair). For example, the custom security attribute name, description, data type, and allowed values.
 
-Up to 500 active objects can be defined in a tenant. The **customSecurityAttributeDefiniton** object can't be deleted, but can be deactivated by using the [Update customSecurityAttributeDefinition](../api/customsecurityattributedefinition-update.md) operation.
+Up to 500 active objects can be defined in a tenant. The `customSecurityAttributeDefiniton` object can't be renamed or deleted, but can be deactivated by using the [Update customSecurityAttributeDefinition](../api/customsecurityattributedefinition-update.md) operation. Must be part of an attribute set.
 
 ## Methods
 |Method|Return type|Description|
@@ -42,7 +42,7 @@ Up to 500 active objects can be defined in a tenant. The **customSecurityAttribu
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|Values that are allowed for this custom security attribute.|
+|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|Values that are allowed for this custom security attribute.<br><br>This navigation property is not returned by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

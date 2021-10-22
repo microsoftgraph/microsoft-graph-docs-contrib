@@ -1,6 +1,6 @@
 ---
 title: "attributeSet resource type"
-description: "A group of related custom security attributes."
+description: "A group of related custom security attribute definitions."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A group of related custom security attributes.
+A group of related custom security attribute definitions.
+
+Up to 100 `attributeSet` objects can be defined in a tenant. Can't be renamed or deleted.
 
 ## Methods
 |Method|Return type|Description|

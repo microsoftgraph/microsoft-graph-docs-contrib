@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 A predefined value that is allowed for a custom security attribute definition.
 
+Up to 100 `allowedValue` objects can be defined per [customSecurityAttributeDefinition](customsecurityattributedefinition.md). This object can't be renamed or deleted, but can be deactivated by using the [Update allowedValue](../api/../api/allowedvalue-update.md) operation. This object is defined as a navigation property on the [customSecurityAttributeDefinition](customsecurityattributedefinition.md) resource and its value is returned only on `$expand`.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
