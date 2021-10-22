@@ -2,7 +2,7 @@
 title: "windowsKioskAzureADGroup resource type"
 description: "The class used to identify an AzureAD group for the kiosk configuration"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

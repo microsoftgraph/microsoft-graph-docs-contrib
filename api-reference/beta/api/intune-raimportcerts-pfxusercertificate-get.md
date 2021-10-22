@@ -2,7 +2,7 @@
 title: "Get pfxUserCertificate"
 description: "Read properties and relationships of the pfxUserCertificate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

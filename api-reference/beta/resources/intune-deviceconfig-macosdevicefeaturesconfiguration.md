@@ -2,7 +2,7 @@
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -234,7 +234,18 @@ Here is a JSON representation of the resource.
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "modeCredentialUsed": "String",
+    "usernameLableCustom": "String",
+    "userSetupDelayed": true,
+    "signInHelpText": "String",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",

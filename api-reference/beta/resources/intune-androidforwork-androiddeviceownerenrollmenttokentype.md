@@ -2,7 +2,7 @@
 title: "androidDeviceOwnerEnrollmentTokenType enum type"
 description: "The enrollment token type for an enrollment profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
