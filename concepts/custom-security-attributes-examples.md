@@ -14,7 +14,7 @@ ms.prod: "directory-management"
 
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects.
 
-This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](/graph/api/user-update?view=graph-rest-beta) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta) request.
+This article provides examples of how to assign, update, or remove different types of custom security attributes for users and applications (service principals). Custom security attributes can be assigned or updated only through a `PATCH` operation in an [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) or [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true) request.
 
 ## Permissions
 
@@ -439,5 +439,5 @@ HTTP/1.1 204 No Content
 
 - [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
 - [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
-- [Update user](/graph/api/user-update?view=graph-rest-beta)
-- [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta) 
+- [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true)
+- [Update servicePrincipal](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true)
