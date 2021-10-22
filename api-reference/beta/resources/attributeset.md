@@ -29,7 +29,7 @@ Up to 100 `attributeSet` objects can be defined in a tenant. Can't be renamed or
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.|
-|id|String|Case insensitive identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later.|
+|id|String|Identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive.|
 |maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.|
 
 ## Relationships

@@ -28,7 +28,7 @@ Up to 100 `allowedValue` objects can be defined per [customSecurityAttributeDefi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | Case sensitive identifier for the allowed value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. |
+| id | String | Identifier for the allowed value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. |
 |isActive|Boolean|Indicates whether the allowed value is active. If set to `false`, this value cannot be added to any other supported directory objects.|
 
 ## Relationships
