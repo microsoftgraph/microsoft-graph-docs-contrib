@@ -1518,16 +1518,37 @@ items:
         items:
         - name: Online meeting
           href: resources/onlinemeeting.md
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md
-        - name: Update
-          href: api/onlinemeeting-update.md
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
+          items:
+          - name: Create
+            href: api/application-post-onlinemeetings.md
+          - name: Get
+            href: api/onlinemeeting-get.md
+          - name: Update 
+            href: api/onlinemeeting-update.md
+          - name: Delete
+            href: api/onlinemeeting-delete.md
+          - name: Create or get
+            href: api/onlinemeeting-createorget.md
+          - name: Meeting registration
+            href: resources/meetingregistration.md
+            items:
+            - name: Create
+              href: api/meetingregistration-post.md
+            - name: Get
+              href: api/meetingregistration-get.md
+            - name: Update
+              href: api/meetingregistration-update.md
+            - name: Delete
+              href: api/meetingregistration-delete.md
+          - name: Meeting registrant
+            href: resources/meetingregistrant.md
+            items:
+            - name: List
+              href: api/meetingregistration-list-registrants.md
+            - name: Create
+              href: api/meetingregistration-post-registrants.md
+            - name: Delete
+              href: api/meetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1539,12 +1560,12 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
-    - name: Compliance (preview)
+    - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
       - name: Overview
         href: resources/complianceapioverview.md
-      - name: eDiscovery
+      - name: eDiscovery (preview)
         items:
         - name: Overview
           href: resources/ediscovery-eDiscoveryapioverview.md
@@ -1578,11 +1599,11 @@ items:
           - name: Create review set
             href: /api/ediscovery-case-post-reviewsets.md
           - name: Get settings
-            href: api/ediscovery-settings-get.md
+            href: api/ediscovery-casesettings-get.md
           - name: Update settings
-            href: api/ediscovery-settings-update.md
+            href: api/ediscovery-casesettings-update.md
           - name: Reset to default
-            href: api/ediscovery-settings-resettodefault.md
+            href: api/ediscovery-casesettings-resettodefault.md
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
@@ -1700,6 +1721,29 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
+      - name: Subject rights request
+        items:
+        - name: Overview
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
+          items:
+          - name: List
+            href: api/subjectrightsrequest-list.md
+          - name: Create
+            href: api/subjectrightsrequest-post.md
+          - name: Get
+            href: api/subjectrightsrequest-get.md
+          - name: Update
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -2215,6 +2259,8 @@ items:
               href: api/intune-apps-androidstoreapp-delete.md
             - name: Update
               href: api/intune-apps-androidstoreapp-update.md
+          - name: Aosp Wi-Fi security type
+            href: resources/intune-androidforwork-aospwifisecuritytype.md
           - name: App configuration setting item
             href: resources/intune-apps-appconfigurationsettingitem.md
           - name: Certificate status
@@ -5990,6 +6036,8 @@ items:
             href: resources/intune-deviceconfig-operator.md
           - name: Perfect forward secrecy group
             href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+          - name: Personal profile personal play store mode
+            href: resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md
           - name: Pfx recryption request
             href: resources/intune-raimportcerts-pfxrecryptionrequest.md
             items:
@@ -9184,6 +9232,60 @@ items:
               href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
             - name: Update
               href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+          - name: Identity
+            href: resources/intune-rbac-identity.md
+          - name: Identity set
+            href: resources/intune-rbac-identityset.md
+          - name: Operation approval policy
+            href: resources/intune-rbac-operationapprovalpolicy.md
+            items:
+            - name: List
+              href: api/intune-rbac-operationapprovalpolicy-list.md
+            - name: Get
+              href: api/intune-rbac-operationapprovalpolicy-get.md
+            - name: Create
+              href: api/intune-rbac-operationapprovalpolicy-create.md
+            - name: Delete
+              href: api/intune-rbac-operationapprovalpolicy-delete.md
+            - name: Update
+              href: api/intune-rbac-operationapprovalpolicy-update.md
+          - name: Operation approval policy platform
+            href: resources/intune-rbac-operationapprovalpolicyplatform.md
+          - name: Operation approval policy set
+            href: resources/intune-rbac-operationapprovalpolicyset.md
+          - name: Operation approval policy type
+            href: resources/intune-rbac-operationapprovalpolicytype.md
+          - name: Operation approval request
+            href: resources/intune-rbac-operationapprovalrequest.md
+            items:
+            - name: List
+              href: api/intune-rbac-operationapprovalrequest-list.md
+            - name: Get
+              href: api/intune-rbac-operationapprovalrequest-get.md
+            - name: Create
+              href: api/intune-rbac-operationapprovalrequest-create.md
+            - name: Delete
+              href: api/intune-rbac-operationapprovalrequest-delete.md
+            - name: Update
+              href: api/intune-rbac-operationapprovalrequest-update.md
+            - name: approve action
+              href: api/intune-rbac-operationapprovalrequest-approve.md
+            - name: reject action
+              href: api/intune-rbac-operationapprovalrequest-reject.md
+            - name: cancelApproval action
+              href: api/intune-rbac-operationapprovalrequest-cancelapproval.md
+            - name: getRequestStatus action
+              href: api/intune-rbac-operationapprovalrequest-getrequeststatus.md
+            - name: getMyRequestById
+              href: api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
+            - name: getMyRequests
+              href: api/intune-rbac-operationapprovalrequest-getmyrequests.md
+            - name: cancelMyRequest action
+              href: api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
+          - name: Operation approval request entity status
+            href: resources/intune-rbac-operationapprovalrequestentitystatus.md
+          - name: Operation approval request status
+            href: resources/intune-rbac-operationapprovalrequeststatus.md
           - name: Rbac application multiple
             href: resources/intune-rbac-rbacapplicationmultiple.md
             items:
@@ -9408,8 +9510,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -11431,8 +11533,6 @@ items:
             href: api/organizationalbranding-get.md
           - name: Update
             href: api/organizationalbranding-update.md
-          - name: Delete
-            href: api/organizationalbranding-delete.md
           - name: Branding localization
             href: resources/organizationalbrandinglocalization.md
             items:
@@ -13525,9 +13625,8 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
+        href: resources/securityaction.md
         items:
-        - name: Action
-          href: resources/securityaction.md
         - name: List security actions
           href: api/securityactions-list.md
         - name: Create security action
@@ -13582,14 +13681,6 @@ items:
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Incidents (preview)
-        items:
-        - name: Incident
-          href: resources/incident.md
-        - name: List incidents
-          href: api/security-list-incidents.md
-        - name: Get incident
-          href: api/incident-get.md        
       - name: Information protection
         items:
         - name: Labels
@@ -13699,6 +13790,8 @@ items:
           href: api/list-create.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Search for sites
+          href: api/site-search.md
         - name: Permissions
           items:
           - name: Permission
@@ -14734,6 +14827,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range

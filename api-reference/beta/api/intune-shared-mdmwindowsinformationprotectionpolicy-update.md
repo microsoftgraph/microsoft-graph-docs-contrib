@@ -2,7 +2,7 @@
 title: "Update mdmWindowsInformationProtectionPolicy"
 description: "Update the properties of a mdmWindowsInformationProtectionPolicy object."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
