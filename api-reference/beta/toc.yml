@@ -10180,10 +10180,8 @@ items:
           href: api/educationuser-delta.md
         - name: List schools
           href: api/educationuser-list-schools.md
-        - name: List me assignments
-          href: api/educationuser-list-assignments.md
         - name: List assignments
-          href: api/educationuser-assignments-get.md          
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
