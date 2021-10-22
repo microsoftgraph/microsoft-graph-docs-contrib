@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "b87327a9-27a9-b873-a927-73b8a92773b8",
+  "id": "114d3459-3459-114d-5934-4d1159344d11",
   "displayName": "String",
   "description": "String",
   "isHidden": "Boolean",

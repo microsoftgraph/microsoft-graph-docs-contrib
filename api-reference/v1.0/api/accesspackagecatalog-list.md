@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "60b328fa-28fa-60b3-fa28-b360fa28b360",
+      "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
       "displayName": "String",
       "description": "String",
       "catalogType": "String",
