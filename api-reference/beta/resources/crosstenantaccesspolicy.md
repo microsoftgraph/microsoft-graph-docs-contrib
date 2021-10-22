@@ -22,6 +22,8 @@ Granular controls let you determine the people, groups, and apps, both in your o
     + In Azure AD B2B Direct Connect, both access settings are disabled by default.
 + **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Azure AD B2B and Azure AD B2B Direct Connect might be disabled across your organization by default, you can enable these features for a specific external organization.
 
+> **Note:** By configuring B2B direct connect outbound settings, you agree to allow external organizations that you have enabled outbound settings with to access limited contact data about your users. Microsoft shares this data with those organizations to help them send a request to connect with your users. Data collected by external organizations, including limited contact data, is subject to the privacy policies and practices of those organizations.
+
 Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
 
 ## Methods
