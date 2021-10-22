@@ -46,13 +46,13 @@ POST /identityGovernance/entitlementManagement/accessPackages
 ## Request body
 In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
 
-The following table shows the properties that are required when you create the [accessPackage](../resources/accesspackage.md).
+You can specify the following properties when creating an **accessPackage**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the access package.
-|description|String|The description of the access package.
-|isHidden|Boolean|Whether the access package is hidden from the requestor.
+|displayName|String|The display name of the access package.|
+|description|String|The description of the access package.|
+|isHidden|Boolean|Whether the access package is hidden from the requestor.|
 
 
 
@@ -65,7 +65,7 @@ If successful, this method returns a 201 Created response code and a new [access
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackage_from_"
+  "name": "create_accesspackage"
 }
 -->
 ``` http
@@ -76,7 +76,10 @@ Content-length: 164
 {
   "displayName": "String",
   "description": "String",
-  "isHidden": "Boolean"
+  "isHidden": "Boolean",
+  "catalog": {
+    "id": "66584aae-98bb-48cc-9458-7bee5d2a6577"
+  }
 }
 ```
 
@@ -94,7 +97,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "b87327a9-27a9-b873-a927-73b8a92773b8",
+  "id": "114d3459-3459-114d-5934-4d1159344d11",
   "displayName": "String",
   "description": "String",
   "isHidden": "Boolean",
@@ -102,5 +105,4 @@ Content-Type: application/json
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
 

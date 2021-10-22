@@ -5239,7 +5239,7 @@ items:
             - name: List
               href: api/accesspackage-list.md
             - name: Create
-              href: api/accesspackage-create.md
+              href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
               href: api/accesspackage-get.md
             - name: Update
@@ -5265,7 +5265,7 @@ items:
             - name: List
               href: api/accesspackageassignmentrequest-list.md
             - name: Create
-              href: api/accesspackageassignmentrequest-create.md
+              href: api/entitlementmanagement-post-assignmentrequests.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
@@ -5280,7 +5280,7 @@ items:
             - name: List
               href: api/accesspackagecatalog-list.md
             - name: Create
-              href: api/accesspackagecatalog-create.md
+              href: api/entitlementmanagement-post-catalogs.md
             - name: Get
               href: api/accesspackagecatalog-get.md
             - name: Update
@@ -5293,7 +5293,7 @@ items:
             - name: List
               href: api/connectedorganization-list.md
             - name: Create
-              href: api/connectedorganization-create.md
+              href: api/entitlementmanagement-post-connectedorganizations.md
             - name: Get
               href: api/connectedorganization-get.md
             - name: Update

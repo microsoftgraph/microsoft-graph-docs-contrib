@@ -43,7 +43,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
-The following table shows the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
+You can specify the following properties when creating a **connectedOrganization**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -61,31 +61,33 @@ If successful, this method returns a `201 Created` response code and a new [conn
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
-  "name": "create_connectedorganization_from_"
+  "name": "create_connectedorganization_from_connectedorganizations"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/
 Content-Type: application/json
-Content-length: 280
+Content-length: 100
 
 {
-  "displayName": "String",
-  "description": "String",
+  "displayName":"Connected organization name",
+  "description":"Connected organization description",
   "identitySources": [
     {
-      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
-    }
+      "@odata.type": "#microsoft.graph.domainIdentitySource",
+      "domainName": "example.com",
+      "displayName": "example.com"
+      }
   ],
-  "state": "String"
+  "state":"proposed"
 }
 ```
 
-
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,21 +96,17 @@ Content-length: 280
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "id": "8284a122-a122-8284-22a1-848222a18482",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
-  "identitySources": [
-    {
-      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
-    }
-  ],
-  "state": "String"
+  "id": "006111db-0810-4494-a6df-904d368bd81b",
+  "displayName":"Connected organization name",
+  "description":"Connected organization description",
+  "createdBy": "admin@contoso.com",
+  "createdDateTime": "2020-06-08T20:13:53.7099947Z",
+  "modifiedBy": "admin@contoso.com",
+  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
+  "state":"proposed"
 }
 ```
-
 

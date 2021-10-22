@@ -39,17 +39,16 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-The following table shows the properties that are required when you update the [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The access package catalog name.|
 |description|String|The description of the access package catalog.|
-|catalogType|accessPackageCatalogType|Whether the catalog is created by a user or entitlement management. The possible values are: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.
-|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.
-|isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.
+|catalogType|accessPackageCatalogType|Whether the catalog is created by a user or entitlement management. The possible values are: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.|
+|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.|
+|isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 
 
 
@@ -93,7 +92,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "60b328fa-28fa-60b3-fa28-b360fa28b360",
+  "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
   "displayName": "String",
   "description": "String",
   "catalogType": "String",

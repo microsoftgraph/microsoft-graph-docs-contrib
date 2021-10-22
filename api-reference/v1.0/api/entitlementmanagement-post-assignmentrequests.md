@@ -41,14 +41,16 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 | Content-Type  | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-The following table shows the properties that are required when you create the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-|Property|Type|Description|
-|:---|:---|:---|
+For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **accessPackageAssignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
+For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
+For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+
+For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
@@ -57,53 +59,5 @@ If successful, this method returns a 200-series response code and a new [accessP
 If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](accesspackageassignment-list.md).
 
 ## Examples
-
-### Request
-<!-- {
-  "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_"
-}
--->
-``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
-Content-Type: application/json
-Content-length: 305
-
-{
-  "requestType": "String",
-  "state": "String",
-  "status": "String",
-  "completedDate": "String (timestamp)",
-  "schedule": {
-    "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
-}
-```
-
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
-}
--->
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "id": "5f68ec80-ec80-5f68-80ec-685f80ec685f",
-  "requestType": "String",
-  "state": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "completedDate": "String (timestamp)",
-  "schedule": {
-    "@odata.type": "microsoft.graph.entitlementManagementSchedule"
-  }
-}
-```
 
 

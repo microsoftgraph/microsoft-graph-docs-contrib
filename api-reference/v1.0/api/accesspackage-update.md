@@ -39,15 +39,14 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-The following table shows the properties that are required when you update the [accessPackage](../resources/accesspackage.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The access package name.|
 |description|String|The description of the access package.|
-|isHidden|Boolean|Whether the access package is hidden from the requestor.
+|isHidden|Boolean|Whether the access package is hidden from the requestor.|
 
 
 
@@ -87,7 +86,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "b87327a9-27a9-b873-a927-73b8a92773b8",
+  "id": "114d3459-3459-114d-5934-4d1159344d11",
   "displayName": "String",
   "description": "String",
   "isHidden": "Boolean",

@@ -34,14 +34,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/inter
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
-
-The following table shows the properties that are required when you create the [directoryObject](../resources/directoryobject.md).
-
-|Property|Type|Description|
-|:---|:---|:---|
-
-
+In the request body, supply a JSON representation of the reference to the [user](../resources/user.md) or [group](../resources/group.md) object to be added, as an `@odata.id` property with the full URI of the user or group.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -58,12 +51,12 @@ The following is an example of the request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors/$ref
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
 

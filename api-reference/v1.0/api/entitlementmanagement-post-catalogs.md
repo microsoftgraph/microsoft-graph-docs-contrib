@@ -43,17 +43,14 @@ POST /identityGovernance/entitlementManagement/catalogs
 ## Request body
 In the request body, supply a JSON representation of the [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
-The following table shows the properties that are required when you create the [accessPackageCatalog](../resources/accesspackagecatalog.md).
+You can specify the following properties when creating an **accessPackageCatalog**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the access package catalog.
-|description|String|The description of the access package catalog.
-|catalogType|accessPackageCatalogType|Whether the catalog is created by a user or entitlement management. The possible values are: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.
-|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.
-|isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.
-
-
+|displayName|String|The display name of the access package catalog.|
+|description|String|The description of the access package catalog.|
+|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished` and `published`.|
+|isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 
 ## Response
 
@@ -64,7 +61,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackagecatalog_from_"
+  "name": "create_accesspackagecatalog"
 }
 -->
 ``` http
@@ -75,7 +72,6 @@ Content-length: 232
 {
   "displayName": "String",
   "description": "String",
-  "catalogType": "String",
   "state": "String",
   "isExternallyVisible": "Boolean"
 }
@@ -95,7 +91,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "60b328fa-28fa-60b3-fa28-b360fa28b360",
+  "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
   "displayName": "String",
   "description": "String",
   "catalogType": "String",
@@ -105,5 +101,4 @@ Content-Type: application/json
   "modifiedDateTime": "String (timestamp)"
 }
 ```
-
 
