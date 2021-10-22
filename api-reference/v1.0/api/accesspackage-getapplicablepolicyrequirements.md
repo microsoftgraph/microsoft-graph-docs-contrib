@@ -70,6 +70,7 @@ Content-Type: application/json
 {
   "value": [
     {
+      "@odata.type": "microsoft.graph.accessPackageAssignmentRequestRequirements"
     }
   ]
 }
