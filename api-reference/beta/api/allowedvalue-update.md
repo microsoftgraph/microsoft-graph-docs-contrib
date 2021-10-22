@@ -61,7 +61,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example: Deactivate a predefined value
 
-The following example deactivates a predefined value named Alpine for a custom security attribute named Project in the Engineering attribute set.
+The following example deactivates a predefined value for a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Predefined value: `Alpine`
 
 #### Request
 <!-- {

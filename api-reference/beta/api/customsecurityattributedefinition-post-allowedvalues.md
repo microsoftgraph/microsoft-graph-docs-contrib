@@ -62,7 +62,11 @@ If successful, this method returns a `201 Created` response code and an [allowed
 
 ### Example: Add a predefined value
 
-The following example adds a predefined value to the **Project** attribute in the **Engineering** attribute set.
+The following example adds a predefined value to a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Predefined value: `Alpine`
 
 #### Request
 <!-- {

@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get all custom security attributes
 
-The following example gets all custom security attributes in a tenant.
+The following example gets all custom security attribute definitions in a tenant.
 
 #### Request
 <!-- {
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 ### Example 2: Filter custom security attributes based on name
 
-The following example retrieves custom security attributes that are named "Project" and are active.
+The following example retrieves custom security attribute definitions that are named `Project` and are active.
 
 #### Request
 <!-- {
@@ -183,7 +183,7 @@ Content-Type: application/json
 
 ### Example 3: Filter custom security attributes based on attribute set
 
-The following example retrieves custom security attributes that are in the Engineering attribute set, are active, and of type String.
+The following example retrieves custom security attribute definitions that are in the `Engineering` attribute set, are active, and of type String.
 
 #### Request
 <!-- {

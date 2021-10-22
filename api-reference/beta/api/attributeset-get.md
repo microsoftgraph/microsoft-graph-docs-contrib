@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [attributeSet
 
 ### Example: Get an attribute set
 
-The following example gets a single attribute set named Engineering.
+The following example gets a single attribute set named `Engineering`.
 
 #### Request
 <!-- {

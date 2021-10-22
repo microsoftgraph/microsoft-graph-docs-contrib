@@ -62,7 +62,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Update a custom security attribute
 
-The following example updates the description for the ProjectDate attribute in the Engineering attribute set.
+The following example updates the description for a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `ProjectDate`
 
 #### Request
 <!-- {
@@ -92,7 +95,10 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Deactivate a custom security attribute
 
-The following example deactivates the Project attribute in the Engineering attribute set.
+The following example deactivates a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
 
 #### Request
 <!-- {

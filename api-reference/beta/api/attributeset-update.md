@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example: Update an attribute set
 
-The following example updates the description and the maximum number of attributes for the Engineering attribute set.
+The following example updates the description and the maximum number of attributes for an attribute set named `Engineering`.
 
 #### Request
 <!-- {

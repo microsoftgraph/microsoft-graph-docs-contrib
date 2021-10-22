@@ -59,7 +59,11 @@ If successful, this method returns a `200 OK` response code and an [allowedValue
 
 ### Example: Get the properties of a predefined value
 
-The following example gets the properties of a predefined value named Alpine for a custom security attribute named Project in the Engineering attribute set.
+The following example gets the properties of a predefined value for a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Predefined value: `Alpine`
 
 #### Request
 <!-- {

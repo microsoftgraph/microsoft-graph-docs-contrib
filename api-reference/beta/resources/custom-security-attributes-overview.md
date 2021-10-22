@@ -45,7 +45,7 @@ To configure custom security attribute definitions, use the [customSecurityAttri
 *Allowed values* represent the predefined values of a custom security attribute. The following are the general characteristics of allowed values:
 
 + Values can include spaces, but some special characters are not allowed.
-+ Can't be deleted, but can be deactivated.
++ Can't be renamed or deleted, but can be deactivated.
 + More predefined values can be added later.
 + Can be of Boolean, Integer, or String data types.
 

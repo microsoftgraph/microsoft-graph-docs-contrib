@@ -67,7 +67,10 @@ If successful, this method returns a `201 Created` response code and a [customSe
 
 ### Example 1: Add a custom security attribute
 
-The following example adds a new custom security attribute named "ProjectDate" to the Engineering attribute set. ProjectDate is a single free-form value of type String.
+The following example adds a new custom security attribute definition that is a single free-form value of type String.
+
++ Attribute set: `Engineering`
++ Attribute: `ProjectDate`
 
 #### Request
 <!-- {
@@ -119,7 +122,10 @@ Content-Type: application/json
 
 ### Example 2: Add a custom security attribute that supports multiple predefined values
 
-The following example adds a new custom security attribute named Project to the Engineering attribute set. Project supports multiple values of type string that are predefined.
+The following example adds a new custom security attribute definition that supports multiple values of type String that are predefined.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
 
 #### Request
 <!-- {
