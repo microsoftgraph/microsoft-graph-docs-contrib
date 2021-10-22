@@ -3,7 +3,143 @@
     {
 	  "ChangeList": [
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivitySummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivitySummary** resource type.",
+          "Target": "emailActivitySummary"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivityUserDetail** resource type.",
+          "Target": "emailActivityUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageAppsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageAppsUserCounts** resource type.",
+          "Target": "emailAppUsageAppsUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserCounts** resource type.",
+          "Target": "emailAppUsageUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserDetail** resource type.",
+          "Target": "emailAppUsageUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageVersionsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageVersionsUserCounts** resource type.",
+          "Target": "emailAppUsageVersionsUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageDetail** resource type.",
+          "Target": "mailboxUsageDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageMailboxCounts** resource type.",
+          "Target": "mailboxUsageMailboxCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageQuotaStatusMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageQuotaStatusMailboxCounts** resource type.",
+          "Target": "mailboxUsageQuotaStatusMailboxCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageStorage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageStorage** resource type.",
+          "Target": "mailboxUsageStorage"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageDistributionUserCounts** resource type.",
+          "Target": "teamsDeviceUsageDistributionUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserCounts** resource type.",
+          "Target": "teamsDeviceUsageUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserDetail** resource type.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityCounts** resource type.",
+          "Target": "teamsUserActivityCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityDistributionUserCounts** resource type.",
+          "Target": "teamsUserActivityDistributionUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserCounts** resource type.",
+          "Target": "teamsUserActivityUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserDetail** resource type.",
+          "Target": "teamsUserActivityUserDetail"
+        },
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivityuserdetail",
 		  "ChangeType": "Change",
@@ -11,7 +147,7 @@
 		  "Target": "getemailactivityuserdetail"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivitycounts",
 		  "ChangeType": "Change",
@@ -19,7 +155,7 @@
 		  "Target": "getemailactivitycounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivityusercounts",
 		  "ChangeType": "Change",
@@ -27,7 +163,7 @@
 		  "Target": "getemailactivityusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageuserdetail",
 		  "ChangeType": "Change",
@@ -35,7 +171,7 @@
 		  "Target": "getemailappusageuserdetail"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageappsusercounts",
 		  "ChangeType": "Change",
@@ -43,7 +179,7 @@
 		  "Target": "getemailappusageappsusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageusercounts",
 		  "ChangeType": "Change",
@@ -51,7 +187,7 @@
 		  "Target": "getemailappusageusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageversionsusercounts",
 		  "ChangeType": "Change",
@@ -59,7 +195,7 @@
 		  "Target": "getemailappusageversionsusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagedetail",
 		  "ChangeType": "Change",
@@ -67,7 +203,7 @@
 		  "Target": "getmailboxusagedetail"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagemailboxcounts",
 		  "ChangeType": "Change",
@@ -75,7 +211,7 @@
 		  "Target": "getmailboxusagemailboxcounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagequotastatusmailboxcounts",
 		  "ChangeType": "Change",
@@ -83,7 +219,7 @@
 		  "Target": "getmailboxusagequotastatusmailboxcounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagestorage",
 		  "ChangeType": "Change",
@@ -91,7 +227,7 @@
 		  "Target": "getmailboxusagestorage"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusageuserdetail",
 		  "ChangeType": "Change",
@@ -99,7 +235,7 @@
 		  "Target": "getteamsdeviceusageuserdetail"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusageusercounts",
 		  "ChangeType": "Change",
@@ -107,7 +243,7 @@
 		  "Target": "getteamsdeviceusageusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagetotalusercounts",
 		  "ChangeType": "Change",
@@ -115,7 +251,7 @@
 		  "Target": "getteamsdeviceusagetotalusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagedistributionusercounts",
 		  "ChangeType": "Change",
@@ -123,7 +259,7 @@
 		  "Target": "getteamsdeviceusagedistributionusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagedistributiontotalusercounts",
 		  "ChangeType": "Change",
@@ -131,7 +267,7 @@
 		  "Target": "getteamsdeviceusagedistributiontotalusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivityuserdetail",
 		  "ChangeType": "Change",
@@ -139,7 +275,7 @@
 		  "Target": "getteamsuseractivityuserdetail"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitycounts",
 		  "ChangeType": "Change",
@@ -147,7 +283,7 @@
 		  "Target": "getteamsuseractivitycounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitytotalcounts",
 		  "ChangeType": "Change",
@@ -155,7 +291,7 @@
 		  "Target": "getteamsuseractivitytotalcounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivityusercounts",
 		  "ChangeType": "Change",
@@ -163,7 +299,7 @@
 		  "Target": "getteamsuseractivityusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitytotalusercounts",
 		  "ChangeType": "Change",
@@ -171,7 +307,7 @@
 		  "Target": "getteamsuseractivitytotalusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitydistributionusercounts",
 		  "ChangeType": "Change",
@@ -179,7 +315,7 @@
 		  "Target": "getteamsuseractivitydistributionusercounts"
 		},
 		{
-		  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitydistributiontotalusercounts",
 		  "ChangeType": "Change",
@@ -187,10 +323,10 @@
 		  "Target": "getteamsuseractivitydistributiontotalusercounts"
 		}
 	  ],
-	  "Id": "8691196c-0414-4d13-8cf0-13cf57fdb6a9",
+	  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 	  "Cloud": "prd",
 	  "Version": "beta",
-	  "CreatedDateTime": "2021-10-20T07:57:05.521Z",
+	  "CreatedDateTime": "2021-10-21T08:10:58.5561352Z",
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
     },
