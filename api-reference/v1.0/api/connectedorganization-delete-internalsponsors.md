@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Remove connected organization external sponsor
+# Remove connected organization internal sponsor
 
 Namespace: microsoft.graph
 
