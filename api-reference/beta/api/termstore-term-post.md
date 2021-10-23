@@ -3,7 +3,7 @@ title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
