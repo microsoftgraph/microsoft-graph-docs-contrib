@@ -1,6 +1,6 @@
 ---
 title: "accessReviewnotificationrecipientqueryscope resource type"
-description: "Represents users who will receive notifications for access reviews."
+description: "Specifies a list of users who will receive notifications for access reviews."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -18,9 +18,9 @@ Inherits from [accessReviewNotificationRecipientScope](../resources/accessreview
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------- | :---------- |
-| query | String | This represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
+| query | String | Represents the query for who the recipients are. For example, `/groups/{group id}/members` for group members and `/users/{user id}` for a specific user. |
 | queryType | String | Indicates the type of query. Allowed value is `MicrosoftGraph`. |
-| queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query that is, `./manager`) is specified. |
+| queryRoot | String | In the scenario where reviewers need to be specified dynamically, indicates the relative source of the query. This property is only required if a relative query (that is, `./manager`) is specified. |
 
 
 ## Relationships
