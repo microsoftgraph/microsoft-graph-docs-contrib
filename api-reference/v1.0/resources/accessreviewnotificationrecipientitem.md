@@ -17,7 +17,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) notification eve
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| notificationTemplateType  |String  | Indicates the type of access review email to be sent. Supported template type is `CompletedAdditionalRecipients` which sends review completion notifications to the recipients.|
+| notificationTemplateType  |String  | Indicates the type of access review email to be sent. Supported template type is `CompletedAdditionalRecipients`, which sends review completion notifications to the recipients.|
 | notificationRecipientScope |[accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md)  | Determines the recipient of the notification email.|
 
 ## Relationships
@@ -26,7 +26,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
