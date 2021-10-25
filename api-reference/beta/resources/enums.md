@@ -17,6 +17,15 @@ Namespace: microsoft.graph
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### appKeyCredentialRestrictionType values
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### synchronizationSecret values
