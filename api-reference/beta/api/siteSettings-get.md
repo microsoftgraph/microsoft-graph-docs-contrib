@@ -3,7 +3,7 @@ author: k-tsoi
 description: "Returns the metadata for a sitePage in the site pages list in a site"
 ms.date: 09/29/2021
 title: Get a Site's Settings
-localization_priority: Normal
+ms.localizationpriority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

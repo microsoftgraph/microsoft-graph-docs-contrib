@@ -3,7 +3,7 @@ author: k-tsoi
 description: "This resource represents the settings of a site."
 ms.date: 09/29/2021
 title: SiteSettings
-localization_priority: Normal
+ms.localizationpriority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
