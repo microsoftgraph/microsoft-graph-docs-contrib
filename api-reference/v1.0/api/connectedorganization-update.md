@@ -58,53 +58,42 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_connectedorganization"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 252
+Content-length: 100
 
 {
-  "displayName": "String",
-  "description": "String",
-  "identitySources": [
-    {
-      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
-    }
-  ],
-  "state": "String"
+  "displayName":"Connected organization new name",
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectedOrganization"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 Accepted
+Content-type: application/json
 
 {
-  "id": "04e7fa5f-fa5f-04e7-5ffa-e7045ffae704",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
-  "identitySources": [
-    {
-      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
-    }
-  ],
-  "state": "String"
+  "id": "006111db-0810-4494-a6df-904d368bd81b",
+  "displayName":"Connected organization new name",
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
-
 
