@@ -42,6 +42,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 ## Request body
 
 In the request body, supply a JSON representation of the parameters of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
+
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
