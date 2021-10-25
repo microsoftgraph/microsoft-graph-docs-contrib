@@ -25,7 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | Not supported.                                                                                         |
+| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+
+Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+
+The `/users/{user-id}` endpoint works with delegated and application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -170,16 +174,6 @@ Content-length: 344
 ```
 
 ### Example 2: Get User assignments
-
-## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Permission type                        | Permissions (from least to most privileged)                                                                            |
-| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite                 |
-| Delegated (personal Microsoft account) | Not supported.                                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 #### Request
 The following is an example of the request.
