@@ -385,7 +385,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "customSecurityAttributeDefinition",
               "ChangeType": "Addition",
-              "Description": "Added the [customSecurityAttributeDefinition](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-beta) resource type.",
+              "Description": "Added the [customSecurityAttributeDefinition](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-beta) resource type and associated methods.",
               "Target": "customSecurityAttributeDefinition"
           },
           {
@@ -393,7 +393,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "allowedValue",
               "ChangeType": "Addition",
-              "Description": "Added the [allowedValue](https://docs.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-beta) resource type.",
+              "Description": "Added the [allowedValue](https://docs.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-beta) resource type and associated methods.",
               "Target": "allowedValue"
           },
           {
@@ -401,7 +401,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "customSecurityAttributeValue",
               "ChangeType": "Addition",
-              "Description": "Added the [customSecurityAttributeValue](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeValue?view=graph-rest-beta) resource type.",
+              "Description": "Added the [customSecurityAttributeValue](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeValue?view=graph-rest-beta) resource type and associated methods.",
               "Target": "customSecurityAttributeValue"
           }
       ],
