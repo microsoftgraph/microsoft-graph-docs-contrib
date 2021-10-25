@@ -18,10 +18,10 @@
         },
         {
           "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "appKeyCredentialRestrictionType",
           "ChangeType": "Addition",
-          "Description": "Added the [appKeyCredentialRestrictionType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the **appKeyCredentialRestrictionType** enumeration.",
           "Target": "appKeyCredentialRestrictionType"
         },
         {
