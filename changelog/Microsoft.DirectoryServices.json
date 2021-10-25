@@ -3,6 +3,24 @@
    {
       "ChangeList": [
         {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagement",
+          "ChangeType": "Addition",
+          "Description": "Added [entitlementManagement](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-1.0) resources",
+          "Target": "entitlementManagement"
+        }
+      ],
+      "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-25T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+   },
+   {
+      "ChangeList": [
+        {
           "Id": "d37c36dc-ae82-4d86-9204-102b4d7b34b8",
           "ApiChange": "Property",
           "ChangedApiName": "extensionAttributes",
