@@ -2,7 +2,7 @@
 title: "deviceCompliancePolicySettingStateSummary resource type"
 description: "Device Compilance Policy Setting State summary across the account."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

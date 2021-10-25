@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAppHealthDeviceModelPerformance resource type"
 description: "The user experience analytics device model performance entity contains device model performance details."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

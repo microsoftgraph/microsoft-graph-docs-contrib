@@ -1,7 +1,7 @@
 ---
 title: "Get windowsOfficeClientConfiguration"
 description: "Get a specific non-security policy windowsOfficeClientConfiguration object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType

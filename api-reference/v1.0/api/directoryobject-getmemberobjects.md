@@ -34,10 +34,10 @@ POST /directoryObjects/{id}/getMemberObjects
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type   | string  | application/json  |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type   | application/json  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

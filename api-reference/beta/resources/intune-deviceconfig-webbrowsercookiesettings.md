@@ -2,7 +2,7 @@
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

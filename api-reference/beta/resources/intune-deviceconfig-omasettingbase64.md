@@ -2,7 +2,7 @@
 title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
