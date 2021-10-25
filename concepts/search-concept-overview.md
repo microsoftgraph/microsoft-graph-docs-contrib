@@ -36,6 +36,7 @@ The Microsoft Search API supports searching the following content in the Microso
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
 - [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
 - Content ingested through the Microsoft Graph connectors platform : [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resources.
+- Administrative search answer resources : [acronyms](..\api-reference\beta\resources\search-acronym.md), [bookmarks](..\api-reference\beta\resources\search-bookmark.md), and [QnA](..\api-reference\beta\resources\search-qna.md) resources.
 
 ## API reference
 
@@ -44,6 +45,7 @@ Looking for the API reference for this service?
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true) (v1.0)
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) (preview)
 - [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (preview)
+- [Use the Microsoft Search API to manage administrative search answers](../api-reference/beta/resources/search-api-answers-overview.md) (preview)
 
 ## Next steps
 
@@ -60,6 +62,7 @@ Looking for the API reference for this service?
   - [Refine search results](search-concept-aggregation.md) (preview)
   - [Request spelling correction](search-concept-speller.md) (preview)
   - [Search display layout](search-concept-display-layout.md) (preview)
+  - [Create new administrative search answer](search-concept-answers.md) (preview)
  
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
