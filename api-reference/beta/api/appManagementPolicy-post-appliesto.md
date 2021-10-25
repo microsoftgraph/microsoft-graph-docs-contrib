@@ -47,9 +47,11 @@ In the request body, provide a reference to a single policy object from the [app
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example 1: Assign an appManagementPolicy to an application object
+## Examples
 
-### Request
+### Example 1: Assign an appManagementPolicy to an application object
+
+#### Request
 
 The following is an example of the request to assign an appManagementPolicy to an application.
 
@@ -85,7 +87,7 @@ POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$r
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -98,9 +100,9 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Assign an appManagementPolicy to a service principal object
+### Example 2: Assign an appManagementPolicy to a service principal object
 
-### Request
+#### Request
 
 The following is an example of the request to assign an appManagementPolicy to a service principal.
 
@@ -118,7 +120,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 

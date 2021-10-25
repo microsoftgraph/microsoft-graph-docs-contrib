@@ -2,7 +2,7 @@
 title: "keyCredentialConfiguration resource type"
 description: "Key credential configuration complex type to configure key credential restriction, maxLifetime, and enforcement date"
 author: "madansr7"
-localization_priority: Normal
+ms.localization_priority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Key credential configuration object that contains properties to configure restrictions such as restricting lifetime of key secrets.
+Key credential configuration object that contains properties to configure restrictions such as restricting the lifetime of key secrets.
 
 ## Properties
 
 | Property                            | Type                                                                               | Description                                                                                                                                                                                                                                                                                   |
 | :---------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| restrictionType                     | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`. Each value of restrictionType can be used only once per policy.                                                                                                                        |
-| maxLifeTime                         | Duration                                                                           | Value that can be used as the maximum number for setting key expiration time in days, hours, minutes or seconds. For example, "P4DT12H30M5S" represents a duration of four days, twelve hours, thirty minutes, and five seconds. This property is required when restriction type is set to `keyLifetime`. |
-| restrictForAppsCreatedAfterDateTime | DateTimeOffset                                                                     | Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be null.                                                                               |
+| restrictionType                     | appKeyCredentialRestrictionType | The type of restriction being applied. Possible values are `asymmetricKeyLifetime`, `unknownFutureValue`. Each value of restrictionType can be used only once per policy.                                                                                                                        |
+| maxLifeTime                         | Duration                                                                           |Value that can be used as the maximum duration in days, hours, minutes, or seconds from the date of key creation, for which the key is valid. For example, `P4DT12H30M5S` represents a duration of four days, twelve hours, thirty minutes, and five seconds. This property is required when **restrictionType** is set to `keyLifetime`. |
+| restrictForAppsCreatedAfterDateTime | DateTimeOffset                                                                     | Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be `null`. Nullable. |
 
 ## Relationships
 
