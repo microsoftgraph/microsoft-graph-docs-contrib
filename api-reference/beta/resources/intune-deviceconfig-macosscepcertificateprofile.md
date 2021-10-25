@@ -2,7 +2,7 @@
 title: "macOSScepCertificateProfile resource type"
 description: "Mac OS SCEP certificate profile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

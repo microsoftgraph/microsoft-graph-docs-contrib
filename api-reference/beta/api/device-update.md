@@ -1,7 +1,7 @@
 ---
 title: "Update device"
 description: "Update the properties of a device."
-author: "spunukol"
+author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -13,16 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a device.
-
-Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+Update the properties of a device. Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -36,9 +34,9 @@ PATCH /devices/{id}
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       |Description|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,9 +58,11 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Update the accountEnabled property of a device
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -73,7 +73,6 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 PATCH https://graph.microsoft.com/beta/devices/{id}
 Content-type: application/json
-Content-length: 31
 
 {
   "accountEnabled": false
@@ -97,7 +96,35 @@ Content-length: 31
 
 ---
 
-### Response
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2:  Write extensionAttributes on a device
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_device_extensionAttributes"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/devices/{id}
+Content-type: application/json
+
+{
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device"
+    }
+}
+```
+
+#### Response
 
 <!-- {
   "blockType": "response"

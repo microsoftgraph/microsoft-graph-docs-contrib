@@ -59,15 +59,16 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| id| String| The chat's unique identifier. Read-only.|
-| topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
+| id| String| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
-| webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-| tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
-| viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
+| tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
+| topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
+| viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
+| webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+
 
 ### chatType values 
 
@@ -76,7 +77,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 |oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
 |group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
-|unknownFutureValue  | 3     | Sentinel value to indicate future values. |
+|unknownFutureValue  | 3     | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 
