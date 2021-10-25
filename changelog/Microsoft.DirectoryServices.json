@@ -5,7 +5,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "symmetricKeyAddition",
           "ChangeType": "Addition",
-          "Description": "Added the [symmetricKeyAddition](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the `symmetricKeyAddition` member to the **appCredentialRestrictionType** enumeration.",
           "Target": "appCredentialRestrictionType"
         },
         {
