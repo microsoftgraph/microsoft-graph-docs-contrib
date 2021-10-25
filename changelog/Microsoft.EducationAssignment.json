@@ -1,23 +1,5 @@
 {
-  "changelog": [
-    {
-      "ChangeList": [
-        {
-          "Id": "416d0bb6-21a1-47b7-a503-5358b6027454",
-          "ApiChange": "assignments?targetUserId=]",
-          "ChangedApiName": "assignments",
-          "ChangeType": "Change",
-          "Description": "Adding the **assignments** resource type",
-          "Target": "educationUser"
-        }
-      ],
-      "Id": "416d0bb6-21a1-47b7-a503-5358b6027454",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-18T20:41:29.5602301Z",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    },    
+  "changelog": [   
     {      
       "ChangeList": [
         {
