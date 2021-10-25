@@ -196,11 +196,6 @@
       "CreatedDateTime": "2021-09-30T05:30:27Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
-<<<<<<< HEAD
-    },
-    {
-      "ChangeList": [{
-=======
       },
       {
       "ChangeList": [
@@ -241,7 +236,6 @@
     {
       "ChangeList": [
       {
->>>>>>> 54bdb9b8a9546fa98d16846fcbf7fa8338c3a35b
         "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
         "ApiChange": "Method",
         "ChangedApiName": "Delete",
