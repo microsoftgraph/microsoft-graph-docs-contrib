@@ -10,7 +10,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
 Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 ## Permissions
