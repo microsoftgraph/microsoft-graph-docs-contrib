@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
-description: "Update the Active Directory (AD) domain password for a successful on-premises connection. This API is supported when onPremisesConnection's type is hybridAzureADJoin."
+description: "Update the Active Directory (AD) domain password for a successful on-premises connection. This API is supported when the onPremisesConnection's type is hybridAzureADJoin."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the Active Directory (AD) domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). The API is supported when the **onPremisesConnection**'s type is `hybridAzureADJoin`.
+Update the Active Directory (AD) domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the **onPremisesConnection**'s type is `hybridAzureADJoin`.
 
 
 ## Permissions
