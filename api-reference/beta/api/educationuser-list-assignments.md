@@ -295,7 +295,7 @@ Content-length: 344
 }
 ```
 
-## Example 3: Get user assignments with expand submissions
+### Example 3: Get user assignments with expand submissions
 
 #### Request
 The following is an example of the request.
