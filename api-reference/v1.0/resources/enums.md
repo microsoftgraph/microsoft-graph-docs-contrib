@@ -1687,3 +1687,122 @@ Possible values for user account types (group membership), per Windows definitio
 |faculty|
 |other|
 |unknownFutureValue|
+
+### accessPackageAssignmentFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|expired|
+|deliveryFailed|
+|unknownFutureValue|
+
+### accessPackageCatalogState values
+
+|Member|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### accessPackageRequestState values
+
+|Member|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### accessPackageRequestType values
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### accessPackageSubjectType values
+
+|Member|
+|:---|
+|notSpecified|
+|user|
+|servicePrincipal|
+|unknownFutureValue|
+
+### connectedOrganizationState values
+
+|Member|
+|:---|
+|configured|
+|proposed|
+|unknownFutureValue|
+
+### expirationPatternType values
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
