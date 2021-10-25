@@ -2,7 +2,7 @@
 title: "prereleaseFeatures enum type"
 description: "Possible values for pre-release features."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
