@@ -13,7 +13,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "symmetricKeyLifetime",
           "ChangeType": "Addition",
-          "Description": "Added the [symmetricKeyLifetime](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the `symmetricKeyLifetime` member to the **appCredentialRestrictionType** enumeration.",
           "Target": "appCredentialRestrictionType"
         },
         {
