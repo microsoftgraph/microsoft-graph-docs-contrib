@@ -56,6 +56,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
 
+## Examples
+
 ### Example 1: Get the assignments of the logged in user
 
 #### Request
@@ -295,7 +297,7 @@ Content-length: 344
 }
 ```
 
-## Example 3: Get user assignments with expand submissions
+### Example 3: Get user assignments with expand submissions
 
 #### Request
 The following is an example of the request.
