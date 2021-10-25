@@ -51,11 +51,14 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackage"
@@ -64,35 +67,22 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 Content-Type: application/json
-Content-length: 137
+Content-length: 38
 
 {
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean"
+  "displayName":"Access Package New Name"
 }
 ```
 
-
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "id": "114d3459-3459-114d-5934-4d1159344d11",
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
-}
 ```
 
 

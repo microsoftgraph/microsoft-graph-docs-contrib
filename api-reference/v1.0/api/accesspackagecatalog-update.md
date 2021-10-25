@@ -60,47 +60,31 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_accesspackagecatalog"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
+```http
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
 Content-Type: application/json
-Content-length: 205
+Content-length: 39
 
 {
-  "displayName": "String",
-  "description": "String",
-  "catalogType": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean"
+  "displayName":"Catalog One"
 }
 ```
-
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
-``` http
-HTTP/1.1 200 OK
+```http
+HTTP/1.1 204 No Content
 Content-Type: application/json
 
-{
-  "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
-  "displayName": "String",
-  "description": "String",
-  "catalogType": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
-}
 ```
-
 
