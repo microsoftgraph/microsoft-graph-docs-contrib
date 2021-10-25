@@ -1,5 +1,5 @@
 ---
-title: "List me assignments"
+title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes."
 ms.localizationpriority: medium
 author: "mmast-msft"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List me assignments
+# List assignments of a user
 
 Namespace: microsoft.graph
 
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignment](../resources/educationassignment.md) objects in the response body.
 
-### Example 1: Get me assignments
+### Example 1: Get the assignments of the logged in user
 
 #### Request
 The following is an example of the request.
@@ -173,7 +173,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get User assignments
+### Example 2: Get assignments of a user
 
 #### Request
 The following is an example of the request.
@@ -295,7 +295,7 @@ Content-length: 344
 }
 ```
 
-## Example 3: Get User assignments with expand submissions
+## Example 3: Get user assignments with expand submissions
 
 #### Request
 The following is an example of the request.
