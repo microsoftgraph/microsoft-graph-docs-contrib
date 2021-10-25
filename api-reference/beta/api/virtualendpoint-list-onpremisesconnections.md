@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcOnPremisesConnections"
+title: "List onPremisesConnections"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
