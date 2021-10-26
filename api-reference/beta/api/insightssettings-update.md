@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
 
-To learn how to customize insights privacy for your organization see:
--  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
--  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy?view=graph-rest-1.0).
+To learn more about customizing insights privacy for your organization, see:
+-  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy). 
+-  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy).
 
 ## Permissions
 

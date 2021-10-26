@@ -14,7 +14,7 @@ The people API is particularly useful for people picking scenarios, such as comp
 
 ## Including a person as relevant or "working with"
  
-For a person to be included as relevant or "working with" a profile owner in Delve, the owner's profile card, or to be returned by the people API, there must be a _public_ relationship between the person and the profile owner. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
+For a person to be included as relevant to or "working with" a profile owner in Delve, to be displayed in the owner's profile card, or to be returned by the people API, there must be a _public_ relationship between the person and the profile owner. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
 ![Image of working with relationships](images/working-with.png)
  
@@ -41,7 +41,7 @@ In order for User C to appear, the profile owner must be in a relatively small g
  
 People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
 
-### Disabling "working-with"
+## Disabling "working-with"
 Administrators can manage the display or return of people relevant to a profile owner at two levels:
 * For an organization:
   - Enable for the entire organization.

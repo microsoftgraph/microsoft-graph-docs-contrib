@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings to calculate and manage the display or return of a specific type of insights in an organization. The insights can be item insights or people insights. 
+Represents _settings_ to calculate and manage the display or programmatic return of a specific type of insights in an organization. The insights can be item insights or people insights. 
 
-Use the [userInsightsSettings](userinsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights of a user. 
+Item insights represent relationships between users and items such as documents or sites in Microsoft 365. Programmatically, they are represented by the [itemInsights](iteminsights.md) resource. You can get documents that are [shared](../api/insights-list-shared.md) with a user, [trending](../api/insights-list-trending.md) around a user, or [used](../api/insights-list-used.md) by a user. You can use **insightsSettings** to [customize the privacy settings for displaying or returning item insights in an organization](/graph/insights-customize-item-insights-privacy).
 
-Learn more about the privacy settings by following the links below:
-- [itemInsights](iteminsights.md) resource - Calculates relationship between users and items such as documents or sites in Microsoft 365.
-- Privacy settings for [people insights](/graph/insghts-customize-people-insights-privacy?view=graph-rest-beta) - Calculates the relationship between users based on their public relationships and generates a list of people relevant to a user. 
-- Privacy settings for [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) - Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook calendar in Microsoft 365.
+People insights represent connections of people who are relevant to or work with one another based on their public relationships. Programmatically, individual people is represented by the [person](person.md) resource. You can [use the people API to get people insights](/graph/people-example). You can use **insightsSettings** to [customize the privacy settings for displaying or returning people insights](/graph/insights-customize-people-insights-privacy).
 
+In contrast, for item insights and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1), you can also manage their calculation and visibility at a _user_ level by using the [userInsightsSettings](userinsightssettings.md) resource.
 
 ## Methods
 

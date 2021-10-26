@@ -505,6 +505,14 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
+        - name: Settings for people insights
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-peopleinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -12750,6 +12758,14 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
+        - name: Settings for people insights
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-peopleinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
