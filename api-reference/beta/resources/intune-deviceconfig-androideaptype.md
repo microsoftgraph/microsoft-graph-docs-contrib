@@ -2,7 +2,7 @@
 title: "androidEapType enum type"
 description: "Extensible Authentication Protocol (EAP) Configuration Types."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

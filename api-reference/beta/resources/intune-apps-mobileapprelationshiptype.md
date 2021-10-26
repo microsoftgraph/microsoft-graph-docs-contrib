@@ -2,7 +2,7 @@
 title: "mobileAppRelationshipType enum type"
 description: "Indicates whether the target of a relationship is the parent or the child in the relationship."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

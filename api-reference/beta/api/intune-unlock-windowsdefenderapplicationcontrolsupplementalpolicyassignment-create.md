@@ -2,7 +2,7 @@
 title: "Create windowsDefenderApplicationControlSupplementalPolicyAssignment"
 description: "Create a new windowsDefenderApplicationControlSupplementalPolicyAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

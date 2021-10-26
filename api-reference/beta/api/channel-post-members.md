@@ -184,6 +184,52 @@ Content-length: 468
 }
 ```
 
+### Example 3: Add a member to a channel using user principal name
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "channel_add_member_3"
+} -->
+```http
+POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+}
+```
+
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+  "roles": [],
+  "displayName": "Jacob Hancock",
+  "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "email": "jacob@contoso.com"
+}
+```
+
 ## See also
 
 - [Add member to team](team-post-members.md)

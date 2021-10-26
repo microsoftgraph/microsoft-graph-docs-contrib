@@ -2,7 +2,7 @@
 title: "diffieHellmanGroup enum type"
 description: "Diffie Hellman Group values for Windows10 VPN policies with IKEv2 connection type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
