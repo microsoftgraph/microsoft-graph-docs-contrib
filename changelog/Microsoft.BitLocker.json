@@ -31,7 +31,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlockerrecoverykey",
                     "ChangeType": "Addition",
-                    "Description": "Migrating [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource to v1.",
+                    "Description": "Added the [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource. This is the resource that contains the actual recovery key.",
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
