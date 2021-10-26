@@ -1,23 +1,6 @@
 {
     "changelog": [
-        {
-            "ChangeList":[
-                {
-                    "Id": "be49d3d0-c6d8-4b28-8935-fc0b9da21a4c",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "Working with Windows 365 in Microsoft Graph",
-                    "ChangeType": "Addition",
-                    "Description": "Introduced the Windows 365 overview page.",
-                    "Target": "Cloud PC (Preview)"
-                }
-            ],
-            "Id":"be49d3d0-c6d8-4b28-8935-fc0b9da21a4c",
-            "Cloud": "prd",
-            "Version": "beta",
-            "CreatedDateTime": "2021-09-17T16:28:07.127Z",
-            "WorkloadArea": "Devices and apps",
-            "SubArea": "Cloud PC"
-        },
+        
         {
             "ChangeList": [
                 {
