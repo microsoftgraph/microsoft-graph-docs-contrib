@@ -204,6 +204,7 @@ The following Graph resources are available to manage settings and features on d
 - [Device compliance setting state](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Device compliance user overview](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Device compliance user status](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [Device config assignment intent](intune-deviceconfig-deviceconfigassignmentintent.md)
 - [Device configuration assignment](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Device configuration conflict summary](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [Device configuration device overview](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
