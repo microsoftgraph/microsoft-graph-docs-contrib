@@ -3,8 +3,6 @@
         {
             "ChangeList": [
                 {
-            "ChangeList": [
-                {
                     "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "servicePlans",
