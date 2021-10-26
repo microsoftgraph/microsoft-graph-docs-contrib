@@ -129,6 +129,12 @@ Content-Type: application/json
 
 The following is an example of the request.
 
+
+<!-- {
+  "blockType": "request",
+  "name": "list_bitlockerrecoverykey_filter_deviceId"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
