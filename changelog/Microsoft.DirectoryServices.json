@@ -53,6 +53,32 @@
    {
       "ChangeList": [
         {
+          "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedidentitycredential?view=graph-rest-beta) resource and associated methods. Federated identity credentials is a secure method for managing an application's credentials that allows a tenant's cloud applications to access Azure AD without using secrets and certificates.",
+          "Target": "federatedIdentityCredential"
+       },
+       {
+         "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+         "ApiChange": "Relationship",
+         "ChangedApiName": "federatedIdentityCredentials",
+         "ChangeType": "Addition",
+         "Description": "Added the **federatedIdentityCredentials** navigation property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+         "Target": "application"
+        }
+      ],
+      "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-25T00:00:00Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+   },
+   {
+      "ChangeList": [
+        {
           "Id": "d37c36dc-ae82-4d86-9204-102b4d7b34b8",
           "ApiChange": "Property",
           "ChangedApiName": "extensionAttributes",
