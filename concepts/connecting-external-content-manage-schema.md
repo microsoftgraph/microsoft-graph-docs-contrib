@@ -40,7 +40,7 @@ If a property is searchable, its value is added to the full text index. When a u
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against properties and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
 
-*A search for "design" displaying results for hits against properties ( `tags`)*
+*A search for "design" displaying results for hits against properties (`title`)*
 
 ### Queryable
 
@@ -59,7 +59,7 @@ If a property is queryable, you can query against it using knowledge query langu
 
 ### Retrievable
 
-If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large properties, such as `editHistory`, or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
+If a property is retrievable, its value can be returned in search results. Any property that you want to add in the display template or be returned from the query and be relevant in search results must be retrievable. Marking large or too many properties as retrievable will increase search latency. Be selective and choose relevant properties.
 
 ![A set of retrievable properties rendered as a result](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 

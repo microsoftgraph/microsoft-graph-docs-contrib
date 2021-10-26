@@ -21,7 +21,7 @@ The [connection](externalconnectors-externalconnection.md) schema determines how
 |:----------------------------------------------------------|:------------------------------|:--|
 | [Create schema](../api/externalconnectors-externalconnection-post-schema.md) | None *or* [schema](externalconnectors-schema.md) | Register connection schema. |
 | [Get schema](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Read properties of a schema object. |
-| [Update schema](../api/externalconnectors-schema-update.md) | [schema](externalconnectors-schema.md) | Read properties of a schema object. |
+| [Update schema](../api/externalconnectors-schema-update.md) | [schema](externalconnectors-schema.md) | Update properties of a schema object. |
 
 ## Properties
 
