@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlocker",
                     "ChangeType": "Addition",
-                    "Description": "Migrating [bitlocker](/graph/resources/bitlocker.md) resource to v1.",
+                    "Description": "Added the [bitlocker](/graph/resources/bitlocker.md) resource. This is the parent resource which exposes the navigation property bitlockerRecoveryKey which contains the actual recovery key. ",
                     "Target": "bitlocker"
                 },
                 {
