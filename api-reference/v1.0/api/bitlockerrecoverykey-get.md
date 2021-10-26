@@ -39,7 +39,7 @@ To get the specified BitLocker key without returning the **key** property:
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}
 ```
 
 To get the specified BitLocker key including its **key** property:
