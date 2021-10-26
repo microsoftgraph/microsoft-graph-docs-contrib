@@ -70,8 +70,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Example 1
-Get the BitLocker key by specifying the **key id**. This example does not return the **key** property.
+### Example 1: Get the BitLocker key by specifying the key id
 
 #### Request
 The following is an example of the request.
