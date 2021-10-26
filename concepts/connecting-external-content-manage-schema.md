@@ -38,9 +38,9 @@ The following table represents an example of a possible schema for a work ticket
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](connecting-external-content-manage-items.md#content).
 
 <!-- markdownlint-disable MD036 -->
-![A search for "design" displaying results for hits against properties and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
+![A search for "design" displaying results for hits against the property title and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.svg)
 
-*A search for "design" displaying results for hits against properties (`title`)*
+*A search for "design" displaying results for hits against the property (`title`) and content*
 
 ### Queryable
 
