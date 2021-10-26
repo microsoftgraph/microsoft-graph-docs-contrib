@@ -55,7 +55,8 @@ If successful, this method returns a `201 Created` response code with the new [a
 The following is an example of the request. This request created an app management policy with the following settings:
 
 - Enables the policy.
-- Blocks creating of new passwords for apps and service principals after 2019-10-19 at 10:37 AM UTC time.
+- Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
+- Enforces lifetime on password secrets and key credentials for applications created on or after 2014-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
 
@@ -73,19 +74,36 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
     "description": "Cred policy sample",
     "isEnabled": true,
     "restrictions": {
-        "passwordCredentials": [
-            {
-                "restrictionType": "passwordAddition",
-                "maxLifetime": null,
-                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
-            },
-            {
-                "restrictionType": "passwordLifetime",
-                "maxLifetime": "P4DT12H30M5S",
-                "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
-            }
-        ]
-    }
+            "passwordCredentials": [
+               {
+                  "restrictionType": "passwordAddition",
+                  "maxLifetime": null,
+                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "passwordLifetime",
+                  "maxLifetime": "P4DT12H30M5S",
+                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "symmetricKeyAddition",
+                  "maxLifetime": null,
+                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "symmetricKeyLifetime",
+                  "maxLifetime": "P4D",
+                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               }
+            ],
+            "keyCredentials": [
+               {
+                  "restrictionType": "asymmetricKeyLifetime",
+                  "maxLifetime": "P90D",
+                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               }
+            ]
+         }
 }
 
 ```
