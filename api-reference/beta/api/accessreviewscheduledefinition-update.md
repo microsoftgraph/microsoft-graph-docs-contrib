@@ -83,10 +83,12 @@ Content-type: application/json
   "descriptionForAdmins": "Test world",
   "descriptionForReviewers": "Test world",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
     "queryType": "MicrosoftGraph"
   },
