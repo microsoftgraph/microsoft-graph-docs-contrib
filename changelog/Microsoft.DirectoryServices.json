@@ -1,5 +1,81 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+          "ApiChange": "Member",
+          "ChangedApiName": "symmetricKeyAddition",
+          "ChangeType": "Addition",
+          "Description": "Added the `symmetricKeyAddition` member to the **appCredentialRestrictionType** enumeration.",
+          "Target": "appCredentialRestrictionType"
+        },
+        {
+          "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+          "ApiChange": "Member",
+          "ChangedApiName": "symmetricKeyLifetime",
+          "ChangeType": "Addition",
+          "Description": "Added the `symmetricKeyLifetime` member to the **appCredentialRestrictionType** enumeration.",
+          "Target": "appCredentialRestrictionType"
+        },
+        {
+          "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "appKeyCredentialRestrictionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appKeyCredentialRestrictionType** enumeration.",
+          "Target": "appKeyCredentialRestrictionType"
+        },
+        {
+          "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "keyCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **keyCredentials** property to the [appManagementConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyCredentialConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [keyCredentialConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/keycredentialconfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        }
+      ],
+      "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-25T23:57:07.3971171Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+   {
+      "ChangeList": [
+        {
+          "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedidentitycredential?view=graph-rest-beta) resource and associated methods. Federated identity credentials is a secure method for managing an application's credentials that allows a tenant's cloud applications to access Azure AD without using secrets and certificates.",
+          "Target": "federatedIdentityCredential"
+       },
+       {
+         "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+         "ApiChange": "Relationship",
+         "ChangedApiName": "federatedIdentityCredentials",
+         "ChangeType": "Addition",
+         "Description": "Added the **federatedIdentityCredentials** navigation property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+         "Target": "application"
+        }
+      ],
+      "Id": "839d947b-154c-4dfa-a854-3c25b67b1198",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-25T00:00:00Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+   },
    {
       "ChangeList": [
         {
