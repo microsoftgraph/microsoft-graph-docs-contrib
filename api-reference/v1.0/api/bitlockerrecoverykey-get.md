@@ -89,7 +89,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
