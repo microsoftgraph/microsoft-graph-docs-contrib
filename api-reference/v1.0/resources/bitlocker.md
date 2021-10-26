@@ -1,6 +1,6 @@
 ---
-title: "bitlocker type"
-description: "BitLocker resource"
+title: "bitLocker resource"
+description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey which contains the actual recovery key."
 author: "hafowler"
 localization_priority: Normal
 ms.prod: "directory-management"
