@@ -112,9 +112,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
-
-Get the BitLocker key with the **key** property by specifying the **key id**.
+### Example 2: Get the BitLocker key with the **key** property
 
 #### Request
 
