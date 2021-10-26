@@ -75,6 +75,11 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 #### Request
 The following is an example of the request. This example does not return the **key** property.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_bitlockerrecoverykey"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
