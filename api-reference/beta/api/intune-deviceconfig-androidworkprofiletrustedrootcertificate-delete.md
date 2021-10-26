@@ -2,7 +2,7 @@
 title: "Delete androidWorkProfileTrustedRootCertificate"
 description: "Deletes a androidWorkProfileTrustedRootCertificate."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

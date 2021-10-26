@@ -2,7 +2,7 @@
 title: "Create roleDefinition"
 description: "Create a new roleDefinition object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

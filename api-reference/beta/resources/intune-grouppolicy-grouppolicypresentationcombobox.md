@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationComboBox resource type"
 description: "Represents an ADMX comboBox element and an ADMX text element."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

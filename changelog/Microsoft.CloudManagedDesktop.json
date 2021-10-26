@@ -3,6 +3,8 @@
         {
             "ChangeList": [
                 {
+            "ChangeList": [
+                {
                     "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "servicePlans",
@@ -31,6 +33,54 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-25T05:40:39.582Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckConnectDisabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckConnectDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckDurationExceeded",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckDurationExceeded` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "permissionCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `permissionCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-10-25T08:18:27.582Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },

@@ -2,7 +2,7 @@
 title: "deviceComanagementAuthorityConfiguration resource type"
 description: "Windows 10 Co-Management Authority Page Configuration"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
