@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to manage administrative search answers"
 description: "You can use the Microsoft Search API to manage administrative search answers in your tenant."
-author: "jake-ost"
+author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 ms.date: 10/25/2021
@@ -10,7 +10,7 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Search API in Microsoft Graph to manage administrative search answers (preview)
 
-You can use the Microsoft Search API to manage administrative search answers in your tenant. These answers are displayed in Microsoft search results when triggered by a keyword or acronym defined in the available search answer resource types: [acronyms](..\api-reference\beta\resources\search-acronym.md), [bookmarks](..\api-reference\beta\resources\search-bookmark.md), and [QnA](..\api-reference\beta\resources\search-qna.md) resources.
+You can use the Microsoft Search API to manage administrative search answers in your tenant. These answers are displayed in Microsoft Search results when triggered by a keyword or acronym defined in the available search answer resource types: [acronyms](..\api-reference\beta\resources\search-acronym.md), [bookmarks](..\api-reference\beta\resources\search-bookmark.md), and [QnA](..\api-reference\beta\resources\search-qna.md) resources.
 
 When triggered by a defined keyword or acronym, these search answers will appear at the top of the search results page in your tenant.
 

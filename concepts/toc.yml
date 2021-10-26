@@ -409,6 +409,8 @@ items:
             href: search-concept-speller.md
           - name: Search display layout (preview)
             href: search-concept-display-layout.md
+          - name: Search answers management (preview)
+            href: search-concept-answers.md
       - name: Security
         items:
           - name: Overview

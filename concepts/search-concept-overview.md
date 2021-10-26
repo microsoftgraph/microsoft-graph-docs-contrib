@@ -35,8 +35,8 @@ The Microsoft Search API supports searching the following content in the Microso
 - Outlook email [message](/graph/api/resources/message) and calendar [event](/graph/api/resources/event) resources.
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
 - [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
-- Content ingested through the Microsoft Graph connectors platform : [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resources.
-- Administrative search answer resources : [acronyms](..\api-reference\beta\resources\search-acronym.md), [bookmarks](..\api-reference\beta\resources\search-bookmark.md), and [QnA](..\api-reference\beta\resources\search-qna.md) resources.
+- Content ingested through the Microsoft Graph connectors platform: [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resources.
+- Administrative search answer resources: [acronyms](..\api-reference\beta\resources\search-acronym.md), [bookmarks](..\api-reference\beta\resources\search-bookmark.md), and [QnA](..\api-reference\beta\resources\search-qna.md) resources.
 
 ## API reference
 
