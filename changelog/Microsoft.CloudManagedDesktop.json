@@ -34,6 +34,8 @@
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
+        {
+            "ChangeList": [
                 {
                     "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
                     "ApiChange": "Member",
