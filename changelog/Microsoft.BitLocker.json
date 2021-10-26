@@ -37,9 +37,9 @@
                 {
                     "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Enum type",
-                    "ChangedApiName": "volumeType",
+                    "ChangedApiName": "volumeType ",
                     "ChangeType": "Addition",
-                    "Description": "Added the **volumeType** enumeration type for migration to v1",
+                    "Description": "Added the **volumeType** enumeration.",
                     "Target": "volumeType"
                 }
             ],
