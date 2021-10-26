@@ -118,6 +118,11 @@ Content-type: application/json
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_bitlockerrecoverykey_key"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
