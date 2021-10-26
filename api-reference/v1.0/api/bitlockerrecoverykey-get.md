@@ -48,7 +48,7 @@ To get the specified BitLocker key including its **key** property:
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$select=key
 ```
 
 ## Optional query parameters
