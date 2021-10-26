@@ -1,7 +1,7 @@
 ---
 title: "Create appManagementPolicy"
 description: "Create an application management policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -56,8 +56,10 @@ The following is an example of the request. This request created an app manageme
 
 - Enables the policy.
 - Blocks creating of new passwords for apps and service principals after 2019-10-19 at 10:37 AM UTC time.
-- Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than XX days.
+- Limits password secrets for apps and service principals created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_appManagementPolicy"
@@ -87,6 +89,24 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 }
 
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-appmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

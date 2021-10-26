@@ -2,7 +2,7 @@
 title: "Create chat"
 description: "Create a new chat object."
 author: "bhartono"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

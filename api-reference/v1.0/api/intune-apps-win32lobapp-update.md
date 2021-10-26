@@ -2,7 +2,7 @@
 title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

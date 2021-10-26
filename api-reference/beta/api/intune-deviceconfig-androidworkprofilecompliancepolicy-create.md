@@ -2,7 +2,7 @@
 title: "Create androidWorkProfileCompliancePolicy"
 description: "Create a new androidWorkProfileCompliancePolicy object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -173,7 +173,6 @@ Content-Length: 1593
   "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
-
 
 
 

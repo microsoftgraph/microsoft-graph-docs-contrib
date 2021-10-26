@@ -6,32 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationResource educationSubmissionResource = new EducationResource();
-educationSubmissionResource.assignmentResourceUrl = "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T";
+EducationSubmissionResource educationSubmissionResource = new EducationSubmissionResource();
 EducationWordResource resource = new EducationWordResource();
 resource.displayName = "Report.docx";
-resource.createdDateTime = OffsetDateTimeSerializer.deserialize("2017-10-21T07:52:53.9863696Z");
-IdentitySet createdBy = new IdentitySet();
-createdBy.application = null;
-createdBy.device = null;
-Identity user = new Identity();
-user.id = "63cc91d2-59c7-4732-9594-35b91a26b340";
-user.displayName = null;
-createdBy.user = user;
-resource.createdBy = createdBy;
-resource.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("2017-10-21T07:52:53.9863696Z");
-IdentitySet lastModifiedBy = new IdentitySet();
-lastModifiedBy.application = null;
-lastModifiedBy.device = null;
-Identity user1 = new Identity();
-user1.id = "63cc91d2-59c7-4732-9594-35b91a26b340";
-user1.displayName = null;
-lastModifiedBy.user = user1;
-resource.lastModifiedBy = lastModifiedBy;
-resource.fileUrl = "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6";
+resource.fileUrl = "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2";
 educationSubmissionResource.resource = resource;
 
-graphClient.education().classes("acdefc6b-2dc6-4e71-b1e9-6d9810ab1793").assignments("ad8afb28-c138-4ad7-b7f5-a6986c2655a8").submissions("fbe51c90-78b7-418a-b5f3-871bf8d8d21e").resources()
+graphClient.education().classes("f4a941ff-9da6-4707-ba5b-0eae93cad0b4").assignments("3c77de7f-539b-49e1-9c96-1274f2f0ee3b").submissions("4af73d2b-6b9c-493f-0688-979087bed39b").resources()
 	.buildRequest()
 	.post(educationSubmissionResource);
 

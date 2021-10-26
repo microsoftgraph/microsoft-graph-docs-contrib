@@ -679,6 +679,48 @@
       "CreatedDateTime": "2021-07-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+          {
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "groups",
+              "ChangeType": "Addition",
+              "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource.",
+              "Target": "externalConnection"
+          },
+          {
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "externalGroup",
+              "ChangeType": "Addition",
+              "Description": "Added the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-1.0) resource type.",
+              "Target": "externalGroup"
+          },
+          {
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "identity",
+              "ChangeType": "Addition",
+              "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
+              "Target": "identity"
+          },
+          {
+              "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "identityType",
+              "ChangeType": "Addition",
+              "Description": "Added the **identityType** enumeration type.",
+              "Target": "identityType"
+          }
+      ],
+      "Id": "62e88b5a-e8b4-11eb-88f7-f923b9ff781d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-19T17:11:41.609Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

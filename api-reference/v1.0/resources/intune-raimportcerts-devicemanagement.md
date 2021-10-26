@@ -2,7 +2,7 @@
 title: "deviceManagement resource type"
 description: "Singleton that acts as container for a collection of UserPFXCertificate entities."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

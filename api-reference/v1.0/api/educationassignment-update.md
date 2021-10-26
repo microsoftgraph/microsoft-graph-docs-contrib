@@ -1,7 +1,7 @@
 ---
 title: "Update educationassignment"
 description: "Update an educationAssigment object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "settings: resetToDefault"
 description: "Resets the case settings to the default values."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

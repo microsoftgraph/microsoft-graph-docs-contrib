@@ -2,7 +2,7 @@
 title: "managedDeviceMobileAppConfiguration resource type"
 description: "An abstract class for Mobile app configuration for enrolled devices."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

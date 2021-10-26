@@ -2,7 +2,7 @@
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -49,6 +49,8 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
+|homeScreenGridWidth|Int32|Gets or sets the number of columns to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridHeight must be configured as well.|
+|homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
 |wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
@@ -187,6 +189,8 @@ Here is a JSON representation of the resource.
       ]
     }
   ],
+  "homeScreenGridWidth": 1024,
+  "homeScreenGridHeight": 1024,
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -288,7 +292,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

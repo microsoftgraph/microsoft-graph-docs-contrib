@@ -1,7 +1,7 @@
 ---
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, message, Outlook task, or post."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "outlook"
 author: "abheek-das"

@@ -1,7 +1,7 @@
 ---
 title: "activityStatistics resource type"
 description: "Represents time spent on work activities, including email, meetings, focus work, chats, and calls."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment for a service principal"
 description: "Grant an app role assignment for a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -29,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All |
+|Application | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -101,7 +101,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

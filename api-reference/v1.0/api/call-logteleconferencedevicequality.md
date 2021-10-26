@@ -1,7 +1,7 @@
 ---
 title: "call: logTeleconferenceDeviceQuality"
 description: "Log video teleconferencing device quality data."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dongkyun"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"

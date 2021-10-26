@@ -2,7 +2,7 @@
 title: "Get iosExpeditedCheckinConfiguration"
 description: "Read properties and relationships of the iosExpeditedCheckinConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -105,7 +105,6 @@ Content-Length: 1327
   }
 }
 ```
-
 
 
 

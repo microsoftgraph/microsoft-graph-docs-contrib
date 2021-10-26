@@ -2,7 +2,7 @@
 title: "Update user"
 description: "Update the properties of a user object."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -86,7 +86,7 @@ In the request body, supply the values for relevant fields that should be update
 |userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.          |
 
 > [!NOTE] 
-> The follow properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
+> The following properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
 ## Response
 

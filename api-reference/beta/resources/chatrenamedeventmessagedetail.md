@@ -2,7 +2,7 @@
 title: "chatRenamedEventMessageDetail resource type"
 description: "Represents the details of an event message about a renamed chat."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

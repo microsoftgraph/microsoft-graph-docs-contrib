@@ -1,8 +1,8 @@
 ---
 title: "List rules"
 description: "Get the unifiedRoleManagementPolicyRule resources from the rules navigation property."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

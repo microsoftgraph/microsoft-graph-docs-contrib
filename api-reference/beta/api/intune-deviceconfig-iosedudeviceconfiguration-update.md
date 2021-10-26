@@ -2,7 +2,7 @@
 title: "Update iosEduDeviceConfiguration"
 description: "Update the properties of a iosEduDeviceConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -220,7 +220,6 @@ Content-Length: 2855
   }
 }
 ```
-
 
 
 

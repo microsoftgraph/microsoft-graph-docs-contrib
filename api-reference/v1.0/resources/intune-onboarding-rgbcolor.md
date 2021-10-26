@@ -2,7 +2,7 @@
 title: "rgbColor resource type"
 description: "Color in RGB."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

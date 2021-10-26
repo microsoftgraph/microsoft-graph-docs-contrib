@@ -2,7 +2,7 @@
 title: "Get macOSScepCertificateProfile"
 description: "Read properties and relationships of the macOSScepCertificateProfile object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2273
+Content-Length: 2306
 
 {
   "value": {
@@ -128,11 +128,11 @@ Content-Length: 2273
         "sanType": "emailAddress",
         "name": "Name value"
       }
-    ]
+    ],
+    "allowAllAppsAccess": true
   }
 }
 ```
-
 
 
 

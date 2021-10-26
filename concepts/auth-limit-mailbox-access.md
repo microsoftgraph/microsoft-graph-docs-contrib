@@ -2,7 +2,7 @@
 title: "Limiting application permissions to specific Exchange Online mailboxes"
 description: "To scope an app's application permissions to specific Exchange Online mailboxes, you will need to create application access policies."
 author: "abheek-das"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 ---
 
@@ -14,9 +14,6 @@ Administrators who want to limit app access to specific mailboxes can create an 
 Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which by default enable such apps to access _all_ mailboxes in a organization on Exchange Online. For example, the `Mail.Read` application permission allows apps to read mail in all mailboxes without a signed-in user. 
 
 There are scenarios where administrators may want to limit an app to only specific mailboxes and _not all_ Exchange Online mailboxes in the organization. Administrators can identify the set of mailboxes to permit access by putting them in a mail-enabled security group. Administrators can then limit third-party app access to only that set of  mailboxes by creating an application access policy for access to that group.
-
-> [!NOTE]
-> Once an application access policy is configured for an organization, the policy applies to any app that uses the Microsoft Graph API or Exchange Web Services to access Exchange Online mailboxes.
 
 As further described in the [Supported permissions and additional resources](#supported-permissions-and-additional-resources) section below, application access policy restricts mailbox access for apps that have been granted any of the Microsoft Graph or Exchange Web Services permission scopes that the policy supports.
 

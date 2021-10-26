@@ -2,7 +2,7 @@
 title: "usageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
 author: "jeeshnair"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

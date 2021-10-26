@@ -2,7 +2,7 @@
 title: List printConnectors for printer
 description: Retrieve a list of connectors associated with the printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "errorCode enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Not yet documented
 |unauthorized|1|The current user does not have access due to lack of RBAC permissions on the resource.|
 |notFound|2|The current user does not have access due to lack of RBAC Scope Tags on the resource.|
 |deleted|3|The resource has been deleted.|
-
 
 
 

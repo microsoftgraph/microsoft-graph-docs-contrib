@@ -1,7 +1,7 @@
 ---
 title: "Get impossibleTravelRiskEvent"
 description: "Retrieve the properties and relationships of an impossibletravelriskevent object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"

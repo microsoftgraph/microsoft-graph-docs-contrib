@@ -1,7 +1,7 @@
 ---
 title: "Update inferenceClassificationOverride"
 description: "Change the **classifyAs** field of a Focused Inbox override as specified. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
 ms.prod: ""

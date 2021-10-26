@@ -2,7 +2,7 @@
 title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "anniecolonna"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete notificationMessageTemplate"
 description: "Deletes a notificationMessageTemplate."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List permissionGrants of a team"
 description: "Retrieve permissionGrants of a team."
 author: "jecha"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List suspiciousIpRiskEvents"
 description: "Retrieve a list of suspiciousipriskevent objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "cloudhandler"

@@ -2,7 +2,7 @@
 title: "deviceManagementReportSchedule resource type"
 description: "Entity representing a schedule for which reports are delivered"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -78,7 +78,6 @@ Here is a JSON representation of the resource.
   "format": "String"
 }
 ```
-
 
 
 

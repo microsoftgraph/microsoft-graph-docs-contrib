@@ -2,7 +2,7 @@
 title: "Create managedDeviceMobileAppConfigurationDeviceStatus"
 description: "Create a new managedDeviceMobileAppConfigurationDeviceStatus object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

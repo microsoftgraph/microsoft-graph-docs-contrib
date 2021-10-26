@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationChoiceSettingValueDefinitionTemplate resource type"
 description: "Choice Setting Value Definition Template"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -59,7 +59,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

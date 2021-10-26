@@ -2,7 +2,7 @@
 title: "Update windows10NetworkBoundaryConfiguration"
 description: "Update the properties of a windows10NetworkBoundaryConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -210,7 +210,6 @@ Content-Length: 2091
   }
 }
 ```
-
 
 
 

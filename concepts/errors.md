@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph error responses and resource types"
 description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph error responses and resource types

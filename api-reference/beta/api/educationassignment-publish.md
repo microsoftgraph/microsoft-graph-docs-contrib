@@ -1,7 +1,7 @@
 ---
 title: "educationAssignment: publish"
 description: "This action changes the state of an assignment from its original draft status to the published status."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: apiPageType

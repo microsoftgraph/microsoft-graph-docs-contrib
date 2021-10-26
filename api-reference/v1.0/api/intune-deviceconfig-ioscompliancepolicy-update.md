@@ -2,7 +2,7 @@
 title: "Update iosCompliancePolicy"
 description: "Update the properties of a iosCompliancePolicy object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

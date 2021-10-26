@@ -1,7 +1,7 @@
 ---
 title: "Delete orgContact"
 description: "Delete orgContact."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

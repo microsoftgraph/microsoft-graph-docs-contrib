@@ -2,7 +2,7 @@
 title: "windowsDeviceUsageType enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Not yet documented
 |:---|:---|:---|
 |singleUser|0|Single User Device Type|
 |shared|1|Shared Device Type|
-
 
 
 

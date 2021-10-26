@@ -1,7 +1,7 @@
 ---
 title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 

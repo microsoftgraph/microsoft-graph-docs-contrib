@@ -2,7 +2,7 @@
 title: "Update macOSWiredNetworkConfiguration"
 description: "Update the properties of a macOSWiredNetworkConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -179,7 +179,6 @@ Content-Length: 1671
   "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
 }
 ```
-
 
 
 

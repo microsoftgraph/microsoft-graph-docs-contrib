@@ -2,7 +2,7 @@
 title: "Device management in Microsoft Intune"
 description: "Device management resources in Microsoft Intune"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 - [Detected app](intune-devices-detectedapp.md)
 - [Device action result](intune-devices-deviceactionresult.md)
 - [Device category](intune-devices-devicecategory.md)
-- [Device enrollment type](intune-devices-deviceenrollmenttype.md)
+- [Device enrollment type](intune-shared-deviceenrollmenttype.md)
 - [Device exchange access state summary](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune-devices-devicegeolocation.md)
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)

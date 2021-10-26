@@ -2,7 +2,7 @@
 title: "List androidDeviceOwnerCompliancePolicies"
 description: "List properties and relationships of the androidDeviceOwnerCompliancePolicy objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1552
+Content-Length: 1602
 
 {
   "value": [
@@ -95,12 +95,12 @@ Content-Length: 1552
       "passwordMinutesOfInactivityBeforeLock": 5,
       "passwordExpirationDays": 6,
       "passwordPreviousPasswordCountToBlock": 4,
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "securityRequireIntuneAppIntegrity": true
     }
   ]
 }
 ```
-
 
 
 

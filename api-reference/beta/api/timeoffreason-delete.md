@@ -2,7 +2,7 @@
 title: "Delete timeOffReason"
 description: "Mark a timeOffReason as inactive by setting the isActive property."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

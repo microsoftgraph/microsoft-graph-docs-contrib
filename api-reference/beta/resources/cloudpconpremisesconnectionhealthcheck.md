@@ -2,7 +2,7 @@
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
 description: "The result of a cloud PC on-premises connection health check."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The result of a cloud PC on-premises connection health check.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 

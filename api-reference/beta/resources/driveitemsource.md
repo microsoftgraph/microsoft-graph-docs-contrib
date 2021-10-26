@@ -2,7 +2,7 @@
 author: MarcMroz
 description: "The driveItemSource contains metadata about the source application that the drive item was created in."
 title: driveItemSource resource type
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

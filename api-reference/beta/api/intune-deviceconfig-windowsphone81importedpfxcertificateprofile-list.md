@@ -2,7 +2,7 @@
 title: "List windowsPhone81ImportedPFXCertificateProfiles"
 description: "List properties and relationships of the windowsPhone81ImportedPFXCertificateProfile objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -109,7 +109,6 @@ Content-Length: 1725
   ]
 }
 ```
-
 
 
 

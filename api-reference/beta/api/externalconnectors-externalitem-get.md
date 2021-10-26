@@ -1,7 +1,7 @@
 ---
 title: "Get externalItem"
 description: "Get an externalItem."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"

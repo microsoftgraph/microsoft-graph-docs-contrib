@@ -2,7 +2,7 @@
 title: "renewUpload action"
 description: "Renews the SAS URI for an application file upload."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

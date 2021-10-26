@@ -1,7 +1,7 @@
 ---
 title: "Create directReport"
 description: "Use this API to create a new directReport."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

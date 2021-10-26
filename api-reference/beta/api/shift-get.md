@@ -2,7 +2,7 @@
 title: "Get shift"
 description: "Get a shift by ID."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

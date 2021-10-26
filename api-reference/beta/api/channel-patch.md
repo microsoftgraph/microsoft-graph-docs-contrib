@@ -2,7 +2,7 @@
 title: "Update channel"
 description: "Update the properties of the specified channel."
 author: "akjo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

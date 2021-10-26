@@ -1,7 +1,7 @@
 ---
 title: "Register schema for the Microsoft Graph connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection"
-localization_priority: Priority
+ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search

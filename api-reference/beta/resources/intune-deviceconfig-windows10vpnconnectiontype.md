@@ -2,7 +2,7 @@
 title: "windows10VpnConnectionType enum type"
 description: "VPN connection types."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -31,7 +31,6 @@ VPN connection types.
 |citrix|8|Citrix.|
 |paloAltoGlobalProtect|9|Palo Alto Networks GlobalProtect.|
 |ciscoAnyConnect|10|Cisco AnyConnect|
-
 
 
 

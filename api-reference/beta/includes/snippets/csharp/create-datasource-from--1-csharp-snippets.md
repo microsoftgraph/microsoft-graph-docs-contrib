@@ -6,9 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dataSource = new Microsoft.Graph.Ediscovery.UserSource
+var dataSource = new SiteSource
 {
-	Email = "badguy@contoso.com"
+	Site = new Site
+	{
+		WebUrl = "https://contoso.sharepoint.com/sites/SecretSite"
+	}
 };
 
 await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].SourceCollections["{ediscovery.sourceCollection-id}"].AdditionalSources

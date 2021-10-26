@@ -2,7 +2,7 @@
 title: "Patch channel"
 description: "Update the properties of the specified channel."
 author: "anandjo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

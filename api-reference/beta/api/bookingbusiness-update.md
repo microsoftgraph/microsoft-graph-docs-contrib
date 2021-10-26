@@ -1,7 +1,7 @@
 ---
 title: "Update bookingbusiness"
 description: "Update the properties of a bookingBusiness object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType

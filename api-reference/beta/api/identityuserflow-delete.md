@@ -1,7 +1,7 @@
 ---
 title: "Delete userFlow"
 description: "Delete userFlow."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

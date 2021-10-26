@@ -3,7 +3,7 @@ title: "Update chatMessage"
 description: "Update the policyViolation property of a chatMessage."
 author: "RamjotSingh"
 doc_type: apiPageType
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 

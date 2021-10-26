@@ -1,7 +1,7 @@
 ---
 title: "timeSlot resource type"
 description: "A time period."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Get appManagementPolicy"
 description: "Get an application management policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -56,6 +56,8 @@ The following is an example of the request.  From the response, the app manageme
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_appManagementPolicy"
@@ -64,6 +66,24 @@ The following is an example of the request.  From the response, the app manageme
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-appmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

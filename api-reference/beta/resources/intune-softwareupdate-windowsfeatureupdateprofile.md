@@ -2,7 +2,7 @@
 title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -44,7 +44,6 @@ Windows Feature Update Profile
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) collection|The list of group assignments of the profile.|
-|deviceUpdateStates|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection|The list of device states this profile targeted to|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -70,7 +69,6 @@ Here is a JSON representation of the resource.
   "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 

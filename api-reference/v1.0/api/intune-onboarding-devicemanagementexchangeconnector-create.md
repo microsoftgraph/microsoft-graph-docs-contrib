@@ -2,7 +2,7 @@
 title: "Create deviceManagementExchangeConnector"
 description: "Create a new deviceManagementExchangeConnector object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsWorkFromAnywhereDevice"
 description: "Update the properties of a userExperienceAnalyticsWorkFromAnywhereDevice object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -62,6 +62,24 @@ The following table shows the properties that are required when you create the [
 |azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
 |osDescription|String|The user experience work from anywhere device's OS Description.|
 |osVersion|String|The user experience work from anywhere device's OS Version.|
+|tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
+|compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
+|ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
+|storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
+|processorCoreCountCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.|
+|processorSpeedCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.|
+|tpmCheckFailed|Boolean|The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.|
+|secureBootCheckFailed|Boolean|The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.|
+|processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
+|processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
+|osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
+|windowsScore|Double|The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudManagementScore|Double|The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudIdentityScore|Double|The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudProvisioningScore|Double|The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -75,7 +93,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 585
+Content-length: 1215
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -91,7 +109,25 @@ Content-length: 585
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -100,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 634
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -117,10 +153,27 @@ Content-Length: 634
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

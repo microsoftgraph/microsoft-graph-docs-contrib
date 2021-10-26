@@ -2,7 +2,7 @@
 title: "Update deviceAndAppManagementRoleAssignment"
 description: "Update the properties of a deviceAndAppManagementRoleAssignment object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

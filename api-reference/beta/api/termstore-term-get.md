@@ -2,7 +2,7 @@
 title: "Get term"
 description: "Read the properties and relationships of a term object."
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---

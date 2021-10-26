@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationStringFormat enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -35,7 +35,6 @@ Not yet documented
 |json|12|Not yet documented|
 |dateTime|13|Not yet documented|
 |surfaceHub|14|Not yet documented|
-
 
 
 

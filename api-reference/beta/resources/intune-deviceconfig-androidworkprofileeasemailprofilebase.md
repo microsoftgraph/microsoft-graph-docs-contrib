@@ -2,7 +2,7 @@
 title: "androidWorkProfileEasEmailProfileBase resource type"
 description: "Base for Android Work Profile EAS Email profiles"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -109,7 +109,6 @@ Here is a JSON representation of the resource.
   "usernameSource": "String"
 }
 ```
-
 
 
 

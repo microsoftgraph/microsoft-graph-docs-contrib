@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
@@ -134,7 +134,7 @@ Namespace: microsoft.graph
 |easSupported|
 |other|
 
-### consentRequestFilterByCurrentUserOptions values 
+### consentRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -303,14 +303,14 @@ Namespace: microsoft.graph
 |inactive|
 |unknownFutureValue|
 
-### callDirection values 
+### callDirection values
 
 |Member|
 |:---|
 |incoming|
 |outgoing|
 
-### modality values 
+### modality values
 
 |Member|
 |:---|
@@ -321,7 +321,7 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
-### kerberosSignOnMappingAttributeType values 
+### kerberosSignOnMappingAttributeType values
 
 |Member|
 |:---|
@@ -331,7 +331,7 @@ Namespace: microsoft.graph
 |onPremisesUserPrincipalUsername|
 |onPremisesSAMAccountName|
 
-### externalAuthenticationType values 
+### externalAuthenticationType values
 
 |Member|
 |:---|
@@ -347,7 +347,7 @@ Namespace: microsoft.graph
 |externalPartner|
 |externalNonPartner|
 
-### appliedConditionalAccessPolicyResult values 
+### appliedConditionalAccessPolicyResult values
 
 |Member|
 |:---|
@@ -365,7 +365,7 @@ Namespace: microsoft.graph
 
 ### microsoftAuthenticatorAuthenticationMode values
 
- 
+
 
 |Member|
 |:---|
@@ -374,7 +374,7 @@ Namespace: microsoft.graph
 |deviceBasedPush|
 
 
-### authenticationMethodFeature values 
+### authenticationMethodFeature values
 
 |Member|
 |:---|
@@ -385,7 +385,7 @@ Namespace: microsoft.graph
 |mfaCapable|
 
 
-### authMethodsType values 
+### authMethodsType values
 
 |Member|
 |:---|
@@ -403,7 +403,7 @@ Namespace: microsoft.graph
 |mobilePhoneAndSMS|
 |unknownFutureValue|
 
-### azureADLicenseType values 
+### azureADLicenseType values
 
 |Member|
 |:---|
@@ -414,7 +414,7 @@ Namespace: microsoft.graph
 |premiumP2|
 |unknownFutureValue|
 
-### conditionalAccessConditions values 
+### conditionalAccessConditions values
 
 |Member|
 |:---|
@@ -430,7 +430,7 @@ Namespace: microsoft.graph
 |deviceState|
 |client|
 
-### conditionalAccessStatus values 
+### conditionalAccessStatus values
 
 |Member|
 |:---|
@@ -439,7 +439,7 @@ Namespace: microsoft.graph
 |notApplied|
 |unknownFutureValue|
 
-### featureType values 
+### featureType values
 
 |Member|
 |:---|
@@ -447,7 +447,7 @@ Namespace: microsoft.graph
 |reset|
 |unknownFutureValue|
 
-### groupType values 
+### groupType values
 
 |Member|
 |:---|
@@ -455,7 +455,7 @@ Namespace: microsoft.graph
 |azureAD|
 |unknownFutureValue|
 
-### includedUserRoles values 
+### includedUserRoles values
 
 |Member|
 |:---|
@@ -465,7 +465,7 @@ Namespace: microsoft.graph
 |user|
 |unknownFutureValue|
 
-### includedUserTypes values 
+### includedUserTypes values
 
 |Member|
 |:---|
@@ -474,7 +474,7 @@ Namespace: microsoft.graph
 |guest|
 |unknownFutureValue|
 
-### initiatorType values 
+### initiatorType values
 
 |Member|
 |:---|
@@ -483,7 +483,7 @@ Namespace: microsoft.graph
 |system|
 |unknownFutureValue|
 
-### migrationStatus values 
+### migrationStatus values
 
 |Member|
 |:---|
@@ -492,7 +492,7 @@ Namespace: microsoft.graph
 |additionalStepsRequired|
 |unknownFutureValue|
 
-### networkType values 
+### networkType values
 
 |Member|
 |:---|
@@ -502,7 +502,7 @@ Namespace: microsoft.graph
 |trusted|
 |unknownFutureValue|
 
-### operationResult values 
+### operationResult values
 
 |Member|
 |:---|
@@ -511,7 +511,7 @@ Namespace: microsoft.graph
 |timeout|
 |unknownFutureValue|
 
-### provisioningResult values 
+### provisioningResult values
 
 |Member|
 |:---|
@@ -521,7 +521,7 @@ Namespace: microsoft.graph
 |warning|
 |unknownFutureValue|
 
-### provisioningStepType values 
+### provisioningStepType values
 
 |Member|
 |:---|
@@ -533,7 +533,7 @@ Namespace: microsoft.graph
 |export|
 |unknownFutureValue|
 
-### registrationAuthMethod values 
+### registrationAuthMethod values
 
 |Member|
 |:---|
@@ -548,7 +548,7 @@ Namespace: microsoft.graph
 |appPassword|
 |unknownFutureValue|
 
-### registrationStatusType values 
+### registrationStatusType values
 
 |Member|
 |:---|
@@ -558,7 +558,7 @@ Namespace: microsoft.graph
 |mfaRegistered|
 |unknownFutureValue|
 
-### requirementProvider values 
+### requirementProvider values
 
 |Member|
 |:---|
@@ -567,7 +567,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
-### riskDetail values 
+### riskDetail values
 
 |Member|
 |:---|
@@ -588,7 +588,7 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
-### riskEventType values 
+### riskEventType values
 
 |Member|
 |:---|
@@ -608,7 +608,7 @@ Namespace: microsoft.graph
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### riskLevel values 
+### riskLevel values
 
 |Member|
 |:---|
@@ -619,7 +619,7 @@ Namespace: microsoft.graph
 |none|
 |unknownFutureValue|
 
-### riskState values 
+### riskState values
 
 |Member|
 |:---|
@@ -631,7 +631,7 @@ Namespace: microsoft.graph
 |confirmedCompromised|
 |unknownFutureValue|
 
-### tokenIssuerType values 
+### tokenIssuerType values
 
 |Member|
 |:---|
@@ -639,7 +639,7 @@ Namespace: microsoft.graph
 |ADFederationServices|
 |UnknownFutureValue|
 
-### usageAuthMethod values 
+### usageAuthMethod values
 
 |Member|
 |:---|
@@ -678,6 +678,25 @@ Namespace: microsoft.graph
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
+|studentsOnly|
+
+### educationAssignmentStatus values
+|Member|
+|:---|
+|draft|
+|published|
+|assigned|
+|unknownFutureValue|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### externalEmailOtpState values
 
@@ -788,13 +807,6 @@ Namespace: microsoft.graph
 |allow|
 |block|
 |unknownFutureValue|
-
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
 
 ### anniversaryType values
 
@@ -1692,7 +1704,7 @@ Possible values for user account types (group membership), per Windows definitio
 |hidden|
 |unknownFutureValue|
 
-### advancedConfigState values 
+### advancedConfigState values
 
 |Member|
 |:---|
@@ -1807,11 +1819,11 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | 
-| :----------------- | 
-| standard           | 
-| private            | 
-| unknownFutureValue | 
+| Member             |
+| :----------------- |
+| standard           |
+| private            |
+| unknownFutureValue |
 | shared             |
 
 ### stagedFeatureName values
@@ -2223,7 +2235,7 @@ Possible values for user account types (group membership), per Windows definitio
 |custom|
 |gallery|
 
-### chatType values 
+### chatType values
 
 | Member             | Value | Description               |
 | :----------------- | :---- | :------------------------ |
@@ -2241,7 +2253,7 @@ Possible values for user account types (group membership), per Windows definitio
 |aadHeaderBased|
 |pingHeaderBased|
 
-### plannerContainerType values 
+### plannerContainerType values
 
 |Member|
 |:---|
@@ -2249,7 +2261,7 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |roster|
 
-### plannerPlanContextType values 
+### plannerPlanContextType values
 
 |Member|
 |:---|
@@ -2275,7 +2287,7 @@ Possible values for user account types (group membership), per Windows definitio
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
 
-### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -2284,21 +2296,21 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### roleAssignmentScheduleFilterByCurrentUserOptions values 
+### roleAssignmentScheduleFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values
 
 |Member|
 |:---|
@@ -2307,21 +2319,21 @@ Possible values for user account types (group membership), per Windows definitio
 |approver|
 |unknownFutureValue|
 
-### roleEligibilityScheduleFilterByCurrentUserOptions values 
+### roleEligibilityScheduleFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values
 
 |Member|
 |:---|
 |principal|
 |unknownFutureValue|
 
-### cloudPcAuditActivityOperationType values 
+### cloudPcAuditActivityOperationType values
 
 |Member|
 |:---|
@@ -2330,7 +2342,7 @@ Possible values for user account types (group membership), per Windows definitio
 |patch|
 |other|
 
-### cloudPcAuditActivityResult values 
+### cloudPcAuditActivityResult values
 
 |Member|
 |:---|
@@ -2340,7 +2352,7 @@ Possible values for user account types (group membership), per Windows definitio
 |timeout|
 |other|
 
-### cloudPcAuditActorType values 
+### cloudPcAuditActorType values
 
 |Member|
 |:---|
@@ -2349,14 +2361,14 @@ Possible values for user account types (group membership), per Windows definitio
 |partner|
 |unknown|
 
-### cloudPcAuditCategory values 
+### cloudPcAuditCategory values
 
 |Member|
 |:---|
 |cloudPC|
 |other|
 
-### postType values 
+### postType values
 
 |Member|
 |:---|
@@ -2365,7 +2377,7 @@ Possible values for user account types (group membership), per Windows definitio
 |strategic|
 |unknownFutureValue|
 
-### serviceHealthClassificationType values 
+### serviceHealthClassificationType values
 
 |Member|
 |:---|
@@ -2373,7 +2385,7 @@ Possible values for user account types (group membership), per Windows definitio
 |incident|
 |unknownFutureValue|
 
-### serviceHealthOrigin values 
+### serviceHealthOrigin values
 
 |Member|
 |:---|
@@ -2382,7 +2394,7 @@ Possible values for user account types (group membership), per Windows definitio
 |customer|
 |unknownFutureValue|
 
-### serviceHealthStatus values 
+### serviceHealthStatus values
 
 |Member|
 |:---|
@@ -2405,7 +2417,7 @@ Possible values for user account types (group membership), per Windows definitio
 |reported|
 |unknownFutureValue|
 
-### serviceUpdateCategory values 
+### serviceUpdateCategory values
 
 |Member|
 |:---|
@@ -2414,7 +2426,7 @@ Possible values for user account types (group membership), per Windows definitio
 |stayInformed|
 |unknownFutureValue|
 
-### serviceUpdateSeverity values 
+### serviceUpdateSeverity values
 
 |Member|
 |:---|
@@ -2429,7 +2441,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|:---- | :------------------------ |
 |standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
 
-### teamworkApplicationIdentityType values 
+### teamworkApplicationIdentityType values
 
 |Member|
 |:---|
@@ -2440,7 +2452,7 @@ Possible values for user account types (group membership), per Windows definitio
 |outgoingWebhook|
 |unknownFutureValue|
 
-### teamworkConversationIdentityType values 
+### teamworkConversationIdentityType values
 
 |Member|
 |:---|
@@ -2449,7 +2461,7 @@ Possible values for user account types (group membership), per Windows definitio
 |chat|
 |unknownFutureValue|
 
-### teamworkUserIdentityType values 
+### teamworkUserIdentityType values
 
 |Member|
 |:---|
@@ -2462,7 +2474,7 @@ Possible values for user account types (group membership), per Windows definitio
 |phoneUser|
 |unknownFutureValue|
 
-### callRecordingStatus values 
+### callRecordingStatus values
 
 |Member|
 |:---|
@@ -2472,7 +2484,46 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
-### teamworkCallEventType values 
+### simulationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|inProgress|
+|scheduled|
+|completed|
+|partiallyCompleted|
+|failed|
+|cancelled|
+|excluded|
+|deleted|
+|included|
+|unknownFutureValue|
+
+### payloadDeliveryPlatform values
+
+|Member|
+|:---|
+|unknown|
+|sms|
+|email|
+|teams|
+|unknownFutureValue|
+
+### trainingStatus values
+
+|Member|
+|:---|
+|unknown|
+|assigned|
+|inProgress|
+|completed|
+|overdue|
+|notCompleted|
+|unknownFutureValue|
+
+### teamworkCallEventType values
 
 |Member|
 |:---|

@@ -2,7 +2,7 @@
 title: "Microsoft Information Protection labeling overview"
 description: "Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on Office 365 Security and Compliance Center Sensitivity Labels."
 author: "tommoser"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "security"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified device object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 

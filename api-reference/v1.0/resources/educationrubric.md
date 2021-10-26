@@ -1,7 +1,7 @@
 ---
 title: "educationRubric resource type"
 description: "A grading rubric that can be attached to an assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"

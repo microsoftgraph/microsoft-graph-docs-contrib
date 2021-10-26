@@ -2,7 +2,7 @@
 title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 #### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -101,18 +101,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

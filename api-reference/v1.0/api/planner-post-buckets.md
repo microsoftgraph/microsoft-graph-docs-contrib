@@ -1,7 +1,7 @@
 ---
 title: "Create plannerBucket"
 description: "Use this API to create a new **plannerBucket**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

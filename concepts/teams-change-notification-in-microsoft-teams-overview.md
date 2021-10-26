@@ -2,7 +2,7 @@
 title: "Change notifications for Microsoft Teams resources using Microsoft Graph"
 description: "Learn how to get notifications for changes (create, update, and delete) for resources in Microsoft Teams using Microsoft Graph APIs"
 author: "anandab-msft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---

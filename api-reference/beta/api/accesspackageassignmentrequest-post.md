@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

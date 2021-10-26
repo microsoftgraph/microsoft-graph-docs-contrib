@@ -2,7 +2,7 @@
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8262
+Content-Length: 9272
 
 {
   "value": [
@@ -98,6 +98,15 @@ Content-Length: 8262
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "azureAdSharedDeviceDataClearApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
       "accountsBlockModification": true,
       "appsAllowInstallFromUnknownSources": true,
       "appsAutoUpdatePolicy": "userChoice",
@@ -196,6 +205,15 @@ Content-Length: 8262
           }
         }
       ],
+      "kioskModeManagedHomeScreenAutoSignout": true,
+      "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+      "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+      "kioskModeManagedHomeScreenPinComplexity": "simple",
+      "kioskModeManagedHomeScreenPinRequired": true,
+      "kioskModeManagedHomeScreenPinRequiredToResume": true,
+      "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+      "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+      "kioskModeManagedHomeScreenSignInEnabled": true,
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -219,6 +237,7 @@ Content-Length: 8262
       "safeBootBlocked": true,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
+      "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
       "stayOnModes": [
@@ -256,7 +275,6 @@ Content-Length: 8262
   ]
 }
 ```
-
 
 
 

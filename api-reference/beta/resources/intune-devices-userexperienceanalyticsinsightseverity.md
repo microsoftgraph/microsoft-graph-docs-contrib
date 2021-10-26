@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsInsightSeverity enum type"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -24,7 +24,6 @@ Not yet documented
 |informational|1|Not yet documented|
 |warning|2|Not yet documented|
 |error|3|Not yet documented|
-
 
 
 

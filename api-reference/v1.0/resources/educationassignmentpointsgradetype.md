@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentPointsGradeType resource type"
 description: "Resource type that is used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType

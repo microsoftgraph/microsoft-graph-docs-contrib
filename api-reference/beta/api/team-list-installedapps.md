@@ -2,7 +2,7 @@
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
 author: "akjo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

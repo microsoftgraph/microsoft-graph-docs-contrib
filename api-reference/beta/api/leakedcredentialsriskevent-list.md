@@ -1,7 +1,7 @@
 ---
 title: "List leakedCredentialsRiskEvents"
 description: "Retrieve a list of leakedcredentialsriskevent objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"

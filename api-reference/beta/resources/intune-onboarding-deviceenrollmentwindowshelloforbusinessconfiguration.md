@@ -2,7 +2,7 @@
 title: "deviceEnrollmentWindowsHelloForBusinessConfiguration resource type"
 description: "Windows Hello for Business settings lets users access their devices using a gesture, such as biometric authentication, or a PIN. Configure settings for enrolled Windows 10, Windows 10 Mobile and later."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -95,7 +95,6 @@ Here is a JSON representation of the resource.
   "securityKeyForSignIn": "String"
 }
 ```
-
 
 
 

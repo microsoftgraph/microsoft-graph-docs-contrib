@@ -2,7 +2,7 @@
 title: "Delete enrollmentConfigurationAssignment"
 description: "Deletes a enrollmentConfigurationAssignment."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Get team photo"
 description: "Get the photo (picture) for a team."
 author: "akjo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

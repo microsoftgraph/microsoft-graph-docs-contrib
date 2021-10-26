@@ -2,7 +2,7 @@
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

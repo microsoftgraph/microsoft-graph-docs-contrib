@@ -2,7 +2,7 @@
 title: "chatViewpoint resource type"
 description: "Represents user-specific properties of a chat."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

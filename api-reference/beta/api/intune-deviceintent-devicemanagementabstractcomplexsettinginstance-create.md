@@ -2,7 +2,7 @@
 title: "Create deviceManagementAbstractComplexSettingInstance"
 description: "Create a new deviceManagementAbstractComplexSettingInstance object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -93,7 +93,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
 
 
 

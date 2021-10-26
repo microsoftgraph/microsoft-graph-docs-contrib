@@ -2,7 +2,7 @@
 title: "omaSettingDateTime resource type"
 description: "OMA Settings DateTime definition."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

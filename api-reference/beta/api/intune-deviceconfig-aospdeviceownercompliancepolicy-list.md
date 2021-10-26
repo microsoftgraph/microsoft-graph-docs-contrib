@@ -2,7 +2,7 @@
 title: "List aospDeviceOwnerCompliancePolicies"
 description: "List properties and relationships of the aospDeviceOwnerCompliancePolicy objects."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 870
+Content-Length: 917
 
 {
   "value": [
@@ -78,6 +78,7 @@ Content-Length: 870
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+      "securityBlockJailbrokenDevices": true,
       "passwordRequired": true,
       "passwordRequiredType": "required",
       "passwordMinutesOfInactivityBeforeLock": 5,
@@ -87,7 +88,6 @@ Content-Length: 870
   ]
 }
 ```
-
 
 
 

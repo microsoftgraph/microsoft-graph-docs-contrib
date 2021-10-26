@@ -2,7 +2,7 @@
 title: "windowsKioskSingleWin32App resource type"
 description: "The class used to identify the single app configuration for the kiosk win32 configuration"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -52,7 +52,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

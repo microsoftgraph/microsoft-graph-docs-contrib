@@ -2,7 +2,7 @@
 title: "Get androidOmaCpConfiguration"
 description: "Read properties and relationships of the androidOmaCpConfiguration object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -105,7 +105,6 @@ Content-Length: 1336
   }
 }
 ```
-
 
 
 

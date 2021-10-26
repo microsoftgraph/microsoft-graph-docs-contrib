@@ -2,7 +2,7 @@
 title: "Get calendarGroup"
 description: "Retrieve the properties and relationships of a calendar group object."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

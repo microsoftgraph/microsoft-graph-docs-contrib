@@ -2,7 +2,7 @@
 title: "Get settings"
 description: "Read the properties and relationships of a settings object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

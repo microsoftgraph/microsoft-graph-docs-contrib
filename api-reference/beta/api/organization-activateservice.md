@@ -2,7 +2,7 @@
 title: "organization: activateService"
 description: "Activates a service for an organization."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

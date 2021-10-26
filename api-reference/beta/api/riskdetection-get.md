@@ -1,7 +1,7 @@
 ---
 title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "importOffice365DeviceConfigurationPolicies action"
 description: "Not yet documented"
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -80,7 +80,6 @@ Content-Length: 452
   ]
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsOverview resource type"
 description: "The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -84,7 +84,6 @@ Here is a JSON representation of the resource.
   "resourcePerformanceHealthState": "String"
 }
 ```
-
 
 
 

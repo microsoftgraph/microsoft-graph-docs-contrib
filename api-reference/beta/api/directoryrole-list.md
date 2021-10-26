@@ -2,7 +2,7 @@
 title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

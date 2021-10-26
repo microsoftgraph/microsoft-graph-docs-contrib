@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Use this API to retrieve the contents of an item in a specific format."
 ms.date: 09/10/2017
 title: Convert to other formats
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

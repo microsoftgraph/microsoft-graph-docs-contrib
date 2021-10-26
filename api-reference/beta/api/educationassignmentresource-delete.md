@@ -2,7 +2,7 @@
 title: "Delete educationAssignmentResource"
 description: "Delete a specific resource attached to an assignment."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

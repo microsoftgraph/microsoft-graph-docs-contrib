@@ -2,7 +2,7 @@
 title: "Create externalGroup"
 description: "Create a new externalGroup object."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -45,9 +45,9 @@ POST /external/connections/{connectionId}/groups
 
 ## Request body
 
-In the request body, supply a JSON representation of the [externalGroup](../resources/externalconnectors-externalgroup.md) object.
+In the request body, supply a JSON representation of the **externalGroup** object.
 
-The following table shows the properties that are required when you create the [externalGroup](../resources/externalconnectors-externalgroup.md).
+You can specify the following properties when creating an **externalGroup**.
 
 | Property    | Type   | Description                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [externalGroup](../resources/externalconnectors-externalgroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an **externalGroup** object in the response body.
 
 ## Examples
 

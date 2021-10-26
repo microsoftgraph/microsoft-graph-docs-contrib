@@ -1,7 +1,7 @@
 ---
 title: "Create mailSearchFolder"
 description: "Use this API to create a new mailSearchFolder in the specified user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

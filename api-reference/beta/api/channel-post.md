@@ -1,7 +1,7 @@
 ---
 title: "Create channel"
 description: "Create new channel in a team, as specified in the request body."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akjo"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

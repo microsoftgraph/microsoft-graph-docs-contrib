@@ -1,7 +1,7 @@
 ---
 title: "Send chatMessage in a channel or a chat"
 description: "Send a new chatMessage in the specified channel or a chat."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -151,7 +151,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -259,7 +258,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -382,7 +380,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -496,7 +493,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -612,7 +608,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -724,7 +719,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",

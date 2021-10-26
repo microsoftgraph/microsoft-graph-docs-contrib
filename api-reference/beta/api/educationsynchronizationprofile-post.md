@@ -2,7 +2,7 @@
 title: "Create an educationSynchronizationProfile"
 description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

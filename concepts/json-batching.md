@@ -2,7 +2,7 @@
 title: "Combine multiple requests in one HTTP call using JSON batching"
 description: "JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:"
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 

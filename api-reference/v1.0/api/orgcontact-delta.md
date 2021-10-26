@@ -1,7 +1,7 @@
 ---
 title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType
