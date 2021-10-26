@@ -9906,6 +9906,11 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-supportedregions.md
+        - name: Cloud PC service plan
+          href: resources/cloudpcserviceplan.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-serviceplans.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
