@@ -58,6 +58,12 @@ If successful, this method returns a `200 OK` response code and the requested [s
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_schema"
+}-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
@@ -89,12 +95,6 @@ Content-type: application/json
   ]
 }
 ```
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_schema"
-}-->
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
