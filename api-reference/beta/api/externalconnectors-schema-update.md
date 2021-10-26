@@ -62,7 +62,6 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_schema"
-  "@odata.type": "microsoft.graph.externalConnectors.schema"
 }-->
 
 ```http
@@ -127,7 +126,6 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnectors.schema"
 } -->
 
 ```http
