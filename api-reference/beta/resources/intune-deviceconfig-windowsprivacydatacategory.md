@@ -2,7 +2,7 @@
 title: "windowsPrivacyDataCategory enum type"
 description: "Windows privacy data category specifier for privacy data access."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
