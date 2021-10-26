@@ -39,7 +39,6 @@ Here is a JSON representation of the resource.
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
-
 ```
 
 
