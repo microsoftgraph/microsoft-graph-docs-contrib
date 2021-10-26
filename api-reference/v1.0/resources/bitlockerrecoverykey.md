@@ -27,7 +27,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 |deviceId|String|Identifier of the device the BitLocker key is originally backed up from. Supports `$filter` (`eq`).|
 |id|String|The unique identifier for the BitLocker key.|
 |key|String|The BitLocker recovery key. Returned only on `$select`. Not nullable.|
-|volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. Possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
+|volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. The possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, and `unknownFutureValue`.|
 
 ## Relationships
 None.
