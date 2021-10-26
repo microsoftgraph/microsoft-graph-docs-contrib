@@ -27,11 +27,12 @@ Keep the following in mind when updating item insights settings:
 * The update operation doesn’t check if a group exists. Make sure to get the correct ID of the Azure AD group from the Azure portal, that the group exists, and that the intended users have been added to the group. If the group doesn’t exist, then no changes will be made for any user in the organization. 
 * Updating **insightsSettings** can take up to 8 hours before they take effect. 
 
-## Behavior changes in UI and APIs 
+## Behavior changes in the Microsoft 365 UI and people API 
 
-Disabling people insights means that the data will not be generated for the given user; it doesn’t affect search and ranking of results.
+Disabling people insights means that the data is not generated for a specified user. It doesn’t affect search and ranking of results.
 
-This is where the changes will be noticeable, the list will be revised in the future.  
+When customizing privacy for people insights, you can observe behavioral changes in the following areas:
 * Microsoft 365 [profile card](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * User profile in Delve
+* [Listing relevant people](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true).
 

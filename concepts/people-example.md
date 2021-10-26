@@ -9,7 +9,9 @@ ms.prod: "insights"
 
 # Use the people API in Microsoft Graph to get information about the people most relevant to you
 
-Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
+Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. 
+
+Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 The people API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
 
 ## Including a person as relevant or "working with"
@@ -44,10 +46,10 @@ People external to the organization do not show on the profile owner's list. Peo
 ## Disabling "working-with"
 Administrators can manage the display or return of people relevant to a profile owner at two levels:
 * For an organization:
-  - Enable for the entire organization.
+  - Enable for the entire organization. This is the default setting.
   - Disable for the entire organization, other than the profile owner.
 * For an Azure AD group in the organization:
-  Disable for a specified Azure AD group. This is useful for enabling "working-with" for an organization except for members in the Azure AD group.
+  - Disable for a specified Azure AD group. This is useful for enabling "working-with" for an organization except for members in the Azure AD group.
 
 For more information, see [customize people insight privacy control](insights-customize-people-insights-privacy.md).
 
