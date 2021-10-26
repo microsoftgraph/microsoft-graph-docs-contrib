@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "5a55571e-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "joinWebUrl",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "5a57b837-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "5a5a18d9-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "customerTimeZone",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "5a5c7df0-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "addresses",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "5a5edf39-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "phones",
                     "ChangeType": "Addition",
@@ -43,7 +43,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "5a614270-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -51,7 +51,7 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "5a63a43b-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "webUrl",
                     "ChangeType": "Addition",
@@ -59,31 +59,15 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "5a660573-17ae-11ec-bd5a-a13d1ed8c60f",
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
                     "ApiChange": "Property",
                     "ChangedApiName": "timeZone",
                     "ChangeType": "Addition",
                     "Description": "Added the **timeZone** property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
                     "Target": "bookingStaffMember"
-                },
-                {
-                    "Id": "5a686bb7-17ae-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "phone",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [phone](https://docs.microsoft.com/en-us/graph/api/resources/phone?view=graph-rest-beta) resource type.",
-                    "Target": "phone"
-                },
-                {
-                    "Id": "5a6aca42-17ae-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "phoneType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **phoneType** enumeration type.",
-                    "Target": "phoneType"
                 }
             ],
-            "Id": "5a52f276-17ae-11ec-bd5a-a13d1ed8c60f",
+            "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-17T11:56:54.877Z",
