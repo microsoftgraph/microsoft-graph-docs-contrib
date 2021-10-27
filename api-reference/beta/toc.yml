@@ -281,6 +281,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Validate password
+          href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
       - name: App role assignments

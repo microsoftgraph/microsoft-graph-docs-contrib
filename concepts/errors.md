@@ -150,7 +150,7 @@ For an example that shows how to properly handle errors, see
 
 The `message` property at the root contains an error message intended for the
 developer to read. Error messages are not localized and shouldn't be displayed
-directly to the user. When handling errors, your code should not key off of
+directly to the user. When handling errors, your code should not branch based on
 `message` values because they can change at any time, and they often contain
 dynamic information specific to the failed request. You should only code
 against error codes returned in `code` properties.
@@ -186,8 +186,8 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **maxItemCountExceeded**           | Max limit on number of Items is reached.
 | **maxQueryLengthExceeded**         | Max query length exceeded.
 | **maxStreamSizeExceeded**          | Maximum stream size exceeded.
-| **parameterIsTooLong**             | Parameter Exceeds Maximum Length.
-| **parameterIsTooSmall**            | Parameter is smaller then minimum value.
+| **parameterIsTooLong**             | Parameter exceeds maximum length.
+| **parameterIsTooSmall**            | Parameter is smaller than minimum value.
 | **pathIsTooLong**                  | Path exceeds maximum length.
 | **pathTooDeep**                    | Folder hierarchy depth limit reached.
 | **propertyNotUpdateable**          | Property not updateable.
