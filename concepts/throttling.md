@@ -4,7 +4,6 @@ description: "Throttling limits the number of concurrent calls to a service to p
 author: "davidmu1"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
@@ -85,7 +84,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
 
 >[!NOTE]
->[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+>[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
 
 ## Throttling and batching
 
@@ -163,9 +162,8 @@ You can find additional information about best practices in [OneNote API throttl
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### Microsoft Teams service limits
 
@@ -334,9 +332,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### Microsoft Graph reports service limits
@@ -406,9 +405,7 @@ The preceding information applies to the following resources:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -483,6 +480,7 @@ The following limits apply to requests on the assignment service API:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
