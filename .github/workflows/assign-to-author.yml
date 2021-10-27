@@ -1,0 +1,20 @@
+name: Assign to author
+
+on:
+  issues:
+    types:
+      - "opened"
+
+jobs:
+  assign_to_author_job:
+    runs-on: ubuntu-latest
+    name: Assign issue to author
+    steps:
+    - name: Assign
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        needAssignLabel: needs-assignment
+        excludedAuthors: MSGraphDocsVteam
+      id: assign
+      uses: microsoftgraph/assign-to-author@v1
+      
