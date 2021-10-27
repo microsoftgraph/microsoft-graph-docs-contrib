@@ -95,10 +95,10 @@ Content-type: application/json
   ]
 }
 ```
-
+<!--  
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
-```
+```-->
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
