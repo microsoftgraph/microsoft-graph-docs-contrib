@@ -46,6 +46,8 @@ To get a list of BitLocker keys within the tenant:
 
 ``` http
 GET /informationProtection/bitlocker/recoveryKeys
+```
+
 ## Optional query parameters
 
 This method supports the `$filter` OData query parameter to filter results by the **deviceId** of the device that the key was most recently backed up to. This method does not support `$top`. For general information, see [OData query parameters](/graph/query-parameters).
