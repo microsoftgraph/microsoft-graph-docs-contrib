@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
 ```
 
@@ -63,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments
 Content-type: application/json
 Content-length: 465
 

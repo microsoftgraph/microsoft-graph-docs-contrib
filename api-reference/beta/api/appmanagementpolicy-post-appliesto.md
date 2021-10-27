@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                                |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
+| Delegated (work or school account)     | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 
@@ -50,7 +50,9 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Examples
 
-### Request
+### Example 1: Assign an appManagementPolicy to an application object
+
+#### Request
 
 The following is an example of the request to assign an appManagementPolicy to an application.
 
@@ -87,8 +89,40 @@ Content-type: application/json
 
 ---
 
+#### Response
 
-### Response
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Assign an appManagementPolicy to a service principal object
+
+#### Request
+
+The following is an example of the request to assign an appManagementPolicy to a service principal.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_appliesTo"
+}-->
+
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolicies/$ref
+
+{
+ "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
+}
+```
+
+#### Response
 
 The following is an example of the response.
 

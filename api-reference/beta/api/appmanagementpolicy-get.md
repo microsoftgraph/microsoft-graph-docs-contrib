@@ -118,6 +118,23 @@ Content-type: application/json
                   "restrictionType": "passwordLifetime",
                   "maxLifetime": "P4DT12H30M5S",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "symmetricKeyAddition",
+                  "maxLifetime": null,
+                  "restrictForAppsCreatedAfterDateTime": "2021-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "symmetricKeyLifetime",
+                  "maxLifetime": "P4D",
+                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               }
+            ],
+            "keyCredentials": [
+               {
+                  "restrictionType": "asymmetricKeyLifetime",
+                  "maxLifetime": "P90D",
+                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ]
          }
