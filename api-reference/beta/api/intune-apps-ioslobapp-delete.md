@@ -2,7 +2,7 @@
 title: "Delete iosLobApp"
 description: "Deletes a iosLobApp."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

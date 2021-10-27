@@ -2,7 +2,7 @@
 title: "windowsUniversalAppXContainedApp resource type"
 description: "A class that represents a contained app of a WindowsUniversalAppX app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "driverCategory enum type"
 description: "An enum type to represent which category a driver belongs to."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

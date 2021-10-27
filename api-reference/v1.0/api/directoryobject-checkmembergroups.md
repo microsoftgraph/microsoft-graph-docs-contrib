@@ -45,10 +45,10 @@ POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string | application/json  |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
 

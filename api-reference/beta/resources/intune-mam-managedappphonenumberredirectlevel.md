@@ -2,7 +2,7 @@
 title: "managedAppPhoneNumberRedirectLevel enum type"
 description: "The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
