@@ -40,17 +40,21 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name                  | Description                                                        |
+|:----------------------|:-------------------------------------------------------------------|
+| Authorization         | Bearer {token}. Required.                                          |
+| Content-Type          | application/json. Required.                                        |
+| Prefer: respond-async | Use this to cause the request to execute asynchronously. Optional. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
+
+When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property. The `properties` object must contain at least one property, up to a maximum of 64.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [schema](../resources/externalconnectors-schema.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
 ## Examples
 
