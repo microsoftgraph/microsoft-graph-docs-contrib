@@ -1,7 +1,7 @@
 ---
 title: "user: getMemberGroups"
 description: "Return all the groups that the user is a member of. The check is transitive, unlike reading the"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

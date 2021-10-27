@@ -2,7 +2,7 @@
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -204,6 +204,7 @@ The following Graph resources are available to manage settings and features on d
 - [Device compliance setting state](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Device compliance user overview](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Device compliance user status](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [Device config assignment intent](intune-deviceconfig-deviceconfigassignmentintent.md)
 - [Device configuration assignment](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Device configuration conflict summary](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [Device configuration device overview](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
@@ -451,6 +452,7 @@ The following Graph resources are available to manage settings and features on d
 - [Operating system version range](intune-deviceconfig-operatingsystemversionrange.md)
 - [Operator](intune-deviceconfig-operator.md)
 - [Perfect forward secrecy group](intune-deviceconfig-perfectforwardsecrecygroup.md)
+- [Personal profile personal play store mode](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Pfx recryption request](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx user certificate](intune-raimportcerts-pfxusercertificate.md)
 - [Policy platform type](intune-deviceconfig-policyplatformtype.md)

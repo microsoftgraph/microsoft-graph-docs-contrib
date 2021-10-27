@@ -2,7 +2,7 @@
 title: "unifiedRoleManagementPolicyAuthenticationContextRule resource type"
 description: "A unifiedRoleManagementPolicyAuthenticationContextRule specifies the enablement rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
 author: "shauliu1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

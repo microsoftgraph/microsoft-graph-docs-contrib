@@ -1,7 +1,7 @@
 ---
 title: "Update educationassignment"
 description: "Update an educationAssigment object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update an educationAssigment object. 
+Update an [educationAssignment](../resources/educationassignment.md) object. 
 
 Only teachers can perform this action. 
 
-Alternatively, request to change the status of an assignment with [publish](../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
+Alternatively, request to change the status of an **assignment** with [publish](../api/educationassignment-publish.md) action. Don't use a PATCH operation for this purpose.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
+PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```
 ## Request headers
 | Header       | Value |
@@ -68,21 +68,22 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","4679bc1b-90c5-45af-ae1a-d5357672ed39"],
   "name": "update_educationassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8
+PATCH https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
 Content-length: 279
 
 {
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "dueDateTime": "2014-02-01T00:00:00Z"
+    "displayName": "Reading and review test 09.03 #5",
+    "instructions": {
+        "contentType": "text",
+        "content": "Read chapter 5 and write your review"
+    },
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "addedStudentAction": "none"
 }
 ```
 # [C#](#tab/csharp)
@@ -120,19 +121,56 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "classId": "11021",
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "closeDateTime": "2014-02-11T00:00:00Z",
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z",
-  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",
+    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+    "displayName": "Reading and review test 09.03 #5",
+    "closeDateTime": null,
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": null,
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "createdDateTime": "2021-09-03T23:57:14.6088791Z",
+    "lastModifiedDateTime": "2021-09-04T15:01:35.3361649Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "draft",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addedStudentAction": "none",
+    "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
+    "instructions": {
+        "content": "Read chapter 5 and write your review",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 50
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## See also
+
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

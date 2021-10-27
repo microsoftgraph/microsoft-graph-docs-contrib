@@ -3,7 +3,7 @@ title: "Use the People API in Microsoft Graph to get information about the peopl
 description: "Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. "
 ms.date: 4/9/2019
 author: "anthona"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 ---
 

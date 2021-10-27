@@ -4,6 +4,7 @@ description: "Throttling limits the number of concurrent calls to a service to p
 author: "davidmu1"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
@@ -146,7 +147,7 @@ The preceding limits apply to the following resources:
 
 [!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
-You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
 
 **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -187,7 +188,7 @@ Limits are expressed as requests per second (rps).
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
 
-See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
+See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
 [!INCLUDE [Teams throttling documentation](../includes/throttling-teams.md)]
@@ -247,6 +248,7 @@ Other factors that affect a request cost:
 - Using `$select` decreases cost by 1
 - Using `$expand` increases cost by 1
 - Using `$top` with a value of less than 20 decreases cost by 1
+- Creating a user in an Azure AD B2C tenant increases cost by 4
 
 > **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
@@ -286,18 +288,19 @@ Other factors that affect a request cost:
 
 ### Identity and access reports service limits
 
-| Request type | Limit per tenant for all apps | Limit per app per tenant |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
-| Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 60 requests per 60 seconds |
 
-The preceding limits apply to the following resources:  
+The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
+  
+For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
@@ -379,7 +382,7 @@ The preceding limits apply to the following resources:
 
 Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
-The preceding information applies to the following resources:  
+The preceding information applies to the following resources:
 
 [!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
@@ -387,7 +390,7 @@ The preceding information applies to the following resources:
 
 Service limits for Planner are not available.
 
-The preceding information applies to the following resources:  
+The preceding information applies to the following resources:
 [!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### Identity and access data policy operation service limits
@@ -472,9 +475,9 @@ The following limits apply to requests on the assignment service API:
 |---------------------------|------------------------------|----------------------------|
 | Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
 |Any          | 15000 requests per 3600 seconds|30000 requests per 3600 seconds|
-| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
+| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |
 
-The preceding limits apply to the following resources: 
+The preceding limits apply to the following resources:
 
 | <!-- fake header--> |
 |--|

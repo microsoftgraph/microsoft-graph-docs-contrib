@@ -2,7 +2,7 @@
 title: "Get chatMessage in a channel or chat"
 description: "Retrieve a single message (without its replies) in a channel or a chat."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+
+> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ### Permissions for chat
 

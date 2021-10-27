@@ -1,7 +1,7 @@
 ---
 title: "entitlementManagementSettings resource type"
 description: "Represents tenant-wide settings for Azure AD entitlement management."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"

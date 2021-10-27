@@ -1,17 +1,19 @@
 ---
 title: "privilegedRoleAssignment resource type"
 description: "Represents a privileged role assignment for a particular user. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedRoleAssignment resource type
+# privilegedRoleAssignment resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Represents a privileged role assignment for a particular user. 
 

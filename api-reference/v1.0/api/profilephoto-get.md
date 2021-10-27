@@ -1,9 +1,9 @@
 ---
 title: "Get photo"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -26,13 +26,33 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### To retrieve the profile photo of a user
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | For **user** resource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported |
-|Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
+|Application      |    User.Read.All, User.ReadWrite.All           |
 
-> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+### To retrieve the profile photo of a group
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   Group.Read.All, Group.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    Group.Read.All, Group.ReadWrite.All           |
+
+### To retrieve the profile photo of a contact
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
+|Application      |    Contacts.Read, Contacts.ReadWrite           |
+
+> **Note:**  
+> 1. Metadata operation is not supported for personal Microsoft accounts. 
+> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 

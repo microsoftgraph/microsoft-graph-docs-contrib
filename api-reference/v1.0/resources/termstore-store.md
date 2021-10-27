@@ -2,7 +2,7 @@
 title: "store resource type"
 description:  "Represents a taxonomy term store."
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: "resourcePageType"
 ---

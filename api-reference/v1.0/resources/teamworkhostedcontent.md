@@ -2,7 +2,7 @@
 title: "teamworkHostedContent resource type"
 description: "Represents rich content hosted by Microsoft Teams."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

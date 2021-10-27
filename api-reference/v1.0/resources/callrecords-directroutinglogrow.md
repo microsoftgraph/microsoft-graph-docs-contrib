@@ -2,7 +2,7 @@
 title: "directRoutingLogRow resource type"
 description: "Represents a row of data in the direct routing call log."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

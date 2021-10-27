@@ -2,7 +2,7 @@
 title: "Update deviceManagementSettingCategory"
 description: "Update the properties of a deviceManagementSettingCategory object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

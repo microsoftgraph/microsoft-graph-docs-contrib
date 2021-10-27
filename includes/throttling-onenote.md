@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---

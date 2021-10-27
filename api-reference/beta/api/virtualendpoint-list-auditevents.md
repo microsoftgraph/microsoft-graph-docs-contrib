@@ -2,7 +2,7 @@
 title: "List auditEvents"
 description: "Get a list of the cloudPcAuditEvent objects and their properties."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects for the tenant.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

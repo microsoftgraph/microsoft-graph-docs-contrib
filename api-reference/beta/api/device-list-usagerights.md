@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Delegated (work or school account)|Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
@@ -34,7 +34,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## Optional query parameters
-This API supports the $filter [OData query parameter](/graph/query-parameters). The following patterns of $filter are supported:
+This API supports the `$filter` [OData query parameter](/graph/query-parameters). The following patterns of `$filter` are supported:
 
 - $filter = state eq 'value'
 - $filter = serviceIdentifier eq 'value'

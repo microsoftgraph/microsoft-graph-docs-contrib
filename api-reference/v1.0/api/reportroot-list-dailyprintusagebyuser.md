@@ -2,7 +2,7 @@
 title: List dailyPrintUsageByUser
 description: Retrieve a list of daily print usage summaries, grouped by user.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

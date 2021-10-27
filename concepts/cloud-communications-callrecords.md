@@ -2,7 +2,7 @@
 title: "Call records overview"
 description: "Call records give you insights into the calls and meetings that occur within your organization."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 

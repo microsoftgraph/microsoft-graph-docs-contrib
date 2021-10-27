@@ -1,7 +1,7 @@
 ---
 title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
-author: "spunukol"
+author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/devices
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 > Note: The response object shown here might be shortened for readability.
 
 <!-- {
@@ -148,7 +148,54 @@ Content-type: text/plain
 
 294
 
-### Example 3: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects
+### Example 3: List all devices and return only their id and extensionAttributes properties
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
+```
+
+#### Response
+
+The following is an example of the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices(id,extensionAttributes)",
+    "value": [
+        {
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "extensionAttributes": {
+                "extensionAttribute1": null,
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Use $filter and $top to get one device with a display name that starts with 'a' including a count of returned objects
 
 #### Request
 
@@ -206,7 +253,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects
+### Example 5: Use $search to get devices with display names that contain the letters 'Android' including a count of returned objects
 
 #### Request
 
@@ -254,6 +301,76 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 6: Get devices using filter on extensionAttributes
+
+#### Request
+
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the extensionAttributes property supports `$filter` only with advanced query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_by_extensionAttribute"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttribute1 eq 'BYOD-Device'&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6a59ea83-02bd-468f-a40b-f2c3d1821983/Microsoft.DirectoryServices.Device",
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "accountEnabled": true,
+            "approximateLastSignInDateTime": "2021-10-21T06:36:56Z",
+            "createdDateTime": "2021-09-21T15:16:30Z",
+            "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+            "displayName": "DESKTOP-LK3PESR",
+            "operatingSystem": "Windows",
+            "operatingSystemVersion": "10.0.19043.1237",
+            "alternativeSecurityIds": [
+                {
+                    "type": 2,
+                    "identityProvider": null,
+                    "key": "WAA1ADAAOQA6AD...ADQAMwB5AGEAcQBnAD0A"
+                }
+            ],
+            "extensionAttributes": {
+                "extensionAttribute1": "BYOD-Device",
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

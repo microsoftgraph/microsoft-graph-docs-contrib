@@ -2,7 +2,7 @@
 author: daspek
 title: accessAction resource type
 description: The accessAction object provides information about accesses of an item.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

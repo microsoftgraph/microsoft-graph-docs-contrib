@@ -7,16 +7,15 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Privileged Identity Management - Azure AD
+# Privileged Identity Management - Azure AD (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> The API to manage Azure AD roles is deprecated for most tenants except for a few that use an older version of Privileged Identity Management (PIM). For more information about PIM versions, see [Determine your version of PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). If you are using the new version and are recieving a **TenantEnabledInAadRoleMigration** error, you can wait until a new API is available for PIM functionality under the [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) API for Azure AD roles, or you can use the [Azure Resource](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) API for your Azure AD roles. To use the **Azure resource** API, replace `azureResources` with `aadRoles` for `provider_id` and use your tenant id for `resource_id`. We recommend that you wait for the new API. You will be able to continue using the **Azure resource** API after the new API is available. Any new features made available in the Azure portal will also be made exclusively available through the new API.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
-The following methods are provided by PIM for Azure AD roles. The service is built on top of OData. To filter the results from a query, use the standard OData ``$filter`` expressions in the URIs.
+The following methods are provided by PIM for Azure AD roles. The service is built on top of OData. To filter the results from a query, use the standard OData `$filter` expressions in the URIs.
 
 ## Methods
 

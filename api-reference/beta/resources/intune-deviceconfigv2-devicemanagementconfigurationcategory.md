@@ -31,12 +31,13 @@ Device Management Configuration Policy
 |:---|:---|:---|
 |id|String|Identifier for item|
 |description|String|Description of the item|
+|categoryDescription|String|Description of the category header|
 |helpText|String|Help text of the item|
 |name|String|Name of the item|
 |displayName|String|Display name of the item|
-|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`.|
+|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`, `compliance`.|
 |parentCategoryId|String|Parent id of the category.|
 |rootCategoryId|String|Root id of the category.|
 |childCategoryIds|String collection|List of child ids of the category.|
@@ -57,6 +58,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "id": "String (identifier)",
   "description": "String",
+  "categoryDescription": "String",
   "helpText": "String",
   "name": "String",
   "displayName": "String",

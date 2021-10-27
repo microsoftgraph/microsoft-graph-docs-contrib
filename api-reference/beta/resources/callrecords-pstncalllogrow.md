@@ -2,7 +2,7 @@
 title: "pstnCallLogRow resource type"
 description: "Represents a row of data in the Public Switch Telephone Network (PSTN) call log."
 author: "williamlooney"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

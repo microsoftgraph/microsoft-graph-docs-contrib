@@ -2012,6 +2012,66 @@
         "CreatedDateTime": "2021-06-11T20:00:00.001Z",
         "WorkloadArea": "Files",
         "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Property",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Target": "driveItem"
+      }, {
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Resource",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Target": "malware"
+      }, {
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Resource",
+        "ChangedApiName": "driveItem",
+        "ChangeType": "change",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
+        "Target": "driveItem"
+      }],
+      "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-07T20:00:00.001Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Property",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Target": "driveItem"
+      }, {
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Resource",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Target": "malware"
+      }, {
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Resource",
+        "ChangedApiName": "driveItem",
+        "ChangeType": "change",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
+        "Target": "driveItem"
+      }],
+      "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+      "Cloud": "Prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-07T09:20:58.5352861Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }

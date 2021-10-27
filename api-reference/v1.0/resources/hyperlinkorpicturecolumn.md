@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "hyperlinkOrPictureColumn resource type" 
 description: "The hyperlinkOrPictureColumn resource indicates that the column contains URL data which can be an achortag or an image that serves as a hyperlink."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

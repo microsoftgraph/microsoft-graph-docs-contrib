@@ -3,7 +3,7 @@ author: daspek
 description: "The ItemActivityTimeSet resource provides information about when an activity on an item took place."
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 
 ## Permissions

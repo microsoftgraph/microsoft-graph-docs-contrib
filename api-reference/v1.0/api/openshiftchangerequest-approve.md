@@ -1,7 +1,7 @@
 ---
 title: "openShiftChangeRequest: approve"
 description: "Approve an openShiftChangeRequest request."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

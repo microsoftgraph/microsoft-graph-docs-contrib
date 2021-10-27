@@ -2,7 +2,7 @@
 title: "Create thread"
 description: "Create a new thread in the specified conversation. "
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.

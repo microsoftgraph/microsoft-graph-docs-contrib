@@ -2,7 +2,7 @@
 title: "Advanced query capabilities on Azure AD directory objects"
 description: "Azure AD directory objects support advanced query capabilities to efficiently access data."
 author: "Licantrop0"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
@@ -206,3 +206,4 @@ Content-type: application/json
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](known-issues.md#query-parameter-limitations)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
++ [Explore advanced query capabilities for Azure AD directory objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

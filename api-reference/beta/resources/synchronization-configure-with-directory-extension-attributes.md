@@ -1,7 +1,7 @@
 ---
 title: "Configure synchronization with directory extension attributes"
 description: "Customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

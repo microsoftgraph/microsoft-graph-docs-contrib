@@ -1,7 +1,7 @@
 ---
 title: "responseStatus resource type"
 description: "The response status of a meeting request."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
 doc_type: resourcePageType

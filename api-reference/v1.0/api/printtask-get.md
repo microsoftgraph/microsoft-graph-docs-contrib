@@ -2,7 +2,7 @@
 title: Get task
 description: Get details about a print task.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

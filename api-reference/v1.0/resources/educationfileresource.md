@@ -1,7 +1,7 @@
 ---
 title: "educationFileResource resource type"
 description: "A subclass of educationResource that represents a file object that is associated with the assignment or submission."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType

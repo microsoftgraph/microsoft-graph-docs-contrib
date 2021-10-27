@@ -1,7 +1,7 @@
 ---
 title: "Add member"
 description: "Add a member to a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -11,12 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a member to a Microsoft 365 group or a security group through the **members** navigation property.
+Add a member to a group through the **members** navigation property.
 
 You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
-> + You can only add users to security and Microsoft 365 groups managed through the cloud.
+> + You can only add users to groups that are managed through the cloud.
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
 

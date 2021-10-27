@@ -2,7 +2,7 @@
 title: "commsOperation resource type"
 description: "The status of certain long-running operations."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

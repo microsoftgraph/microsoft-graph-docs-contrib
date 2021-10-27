@@ -2,7 +2,7 @@
 title: "List responsibilities"
 description: "Get the personResponsibilities from the responsibilities navigation property."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

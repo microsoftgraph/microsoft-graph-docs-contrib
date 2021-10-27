@@ -2,7 +2,7 @@
 title: "user: activateServicePlan"
 description: "Activate a service plan with a given `servicePlanId` and `skuId` for a given user."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---

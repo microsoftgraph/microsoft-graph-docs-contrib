@@ -1,7 +1,7 @@
 ---
 title: "Update userAccountInformation"
 description: "Update the properties of userAccountInformation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

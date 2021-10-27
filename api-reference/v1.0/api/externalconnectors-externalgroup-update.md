@@ -2,7 +2,7 @@
 title: "Update externalGroup"
 description: "Update the properties of an externalGroup object."
 author: "sacampbe-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}/groups/{externalGroupId}
+PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers
@@ -58,13 +58,15 @@ If successful, this method returns a `204 No Content` response code.
 ## Example
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/groups/{externalGroupId}
+PATCH https://graph.microsoft.com/v1.0/external/connections/{connectionsId}/groups/{externalGroupId}
 Content-Type: application/json
 
 {
@@ -72,6 +74,7 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+
 
 
 ### Response

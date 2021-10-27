@@ -2,7 +2,7 @@
 title: "WorksheetProtection resource type"
 description: "Represents the protection of a sheet object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

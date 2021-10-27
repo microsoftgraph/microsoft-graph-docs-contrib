@@ -1,7 +1,7 @@
 ---
 title: "List identityProviders"
 description: "Get a collection of identity provider resources that are configured for a tenant, and that are derived from identityProviderBase."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"

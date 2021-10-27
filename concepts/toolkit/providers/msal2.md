@@ -1,22 +1,29 @@
 ---
-title: "MSAL 2 provider"
+title: "MSAL2 provider"
 description: "The MSAL 2 provider uses msal-browser to sign in users and acquire tokens to use with the Microsoft Graph"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
 ---
 
-# MSAL 2  provider
+# MSAL2 Provider
 
-The MSAL 2 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL2 Provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+
 To learn more, see [providers](./providers.md).
+
+## Difference between MSAL2 Provider and MSAL Provider
+Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+
+All new applications should use MSAL2 Provider whenever possible. 
 
 ## Get started
 
-You can initialize the MSAL 2.0 provider in HTML or JavaScript.
+You can initialize the MSAL2 Provider in HTML or JavaScript.
 
 ### Initialize in your HTML page
 
-Initializing the MSAL 2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This will create a new `PublicClientApplication` instance that will be used for all authentication and acquiring tokens.
+Initializing the MSAL2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This will create a new `PublicClientApplication` instance that will be used for all authentication and acquiring tokens.
 
 ```html
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
@@ -41,34 +48,61 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
 You can provide more options by initializing the provider in JavaScript.
 
 ```ts
-    import {Providers, LoginType} from '@microsoft/mgt-element';
-    import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+    import {Providers} from '@microsoft/mgt-element';
+    import {Msal2Provider, Msal2Config, Msal2PublicClientApplicationConfig} from '@microsoft/mgt-msal2-provider';
 
     // initialize the auth provider globally
-    Providers.globalProvider = new Msal2Provider({
-      clientId: 'REPLACE_WITH_CLIENTID',
-      scopes?: string[],
-      authority?: string,
-      redirectUri?: string,
-      loginType?: LoginType, // LoginType.Popup or LoginType.Redirect (redirect is default)
-      prompt?: PromptType, // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
-      sid?: string, // Session ID
-      loginHint?: string,
-      domainHint?: string,
-      options?: Configuration // msal js Configuration object
-    });
+    Providers.globalProvider = new Msal2Provider(config: Msal2Config | Msal2PublicClientApplicationConfig);
+```
+
+You can configure the `Msal2Provider` constructor parameter in two ways, as described in the following sections.
+
+#### Provide a `clientId` to create a new `PublicClientApplication`
+
+This option makes sense when the Microsoft Graph Toolkit is responsible for all authentication in your application.
+
+```ts
+interface Msal2Config {
+  clientId: string;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
+```
+
+#### Pass an existing `PublicClientApplication` in the `publicClientApplication` property.
+
+Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). For further guidance, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
+
+Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session; for example, by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
+
+```ts
+interface Msal2PublicClientApplicationConfig {
+  publicClientApplication: PublicClientApplication;
+  scopes?: string[];
+  authority?: string;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  prompt?: PromptType; // PromptType.CONSENT, PromptType.LOGIN or PromptType.SELECT_ACCOUNT
+  sid?: string; // Session ID
+  loginHint?: string;
+  domainHint?: string;
+  options?: Configuration // msal-browser Configuration object
+}
 ```
 
 ## Creating an app/client ID
 
 For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
-## Difference between Msal2Provider and MsalProvider
-Although the usage is very similar, MsalProvider and Msal2Provider are built on top of different OAuth flows. MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
-Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of MSAL2Provider over MSALProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
-
-## Migrating from MSAL Provider to MSAL 2 Provider
-To migrate an application that's using MSAL provider to the MSAL 2 Provider:
+## Migrating from MSAL Provider to MSAL2 Provider
+To migrate an application that's using MSAL provider to the MSAL2 Provider:
 1. Go to the Azure portal at https://portal.azure.com.
 1. From the menu, select **Azure Active Directory**.
 1. From the Azure Active Directory menu, select **App registrations**.
@@ -76,7 +110,7 @@ To migrate an application that's using MSAL provider to the MSAL 2 Provider:
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
-1. In your code, replace MSALProvider with MSAL2Provider.
+1. In your code, replace `MSALProvider` with `MSAL2Provider`.
 
     If you are initializing your provider in the JS/TS code, follow these steps:
     

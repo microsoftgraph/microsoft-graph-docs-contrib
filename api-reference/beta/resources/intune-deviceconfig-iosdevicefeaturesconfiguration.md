@@ -258,7 +258,9 @@ Here is a JSON representation of the resource.
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "signInHelpText": "String",
+    "managedAppsInBundleIdACLIncluded": true
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -288,7 +290,9 @@ Here is a JSON representation of the resource.
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "signInHelpText": "String",
+    "managedAppsInBundleIdACLIncluded": true
   }
 }
 ```

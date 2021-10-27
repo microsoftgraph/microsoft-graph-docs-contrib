@@ -1,19 +1,21 @@
 ---
 title: "privilegedRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privilegd Identity Management."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "shauliu1"
 ---
 
-# privilegedRoleAssignmentRequest resource type
+# privilegedRoleAssignmentRequest resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the request for role assignment operations in Privilegd Identity Management.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Represents the request for role assignment operations in Privileged Identity Management (PIM).
 
 `privilegedRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST` and `LIST` operations as well as `MY` and `Cancel` functions on `governanceRoleAssignment`.
 

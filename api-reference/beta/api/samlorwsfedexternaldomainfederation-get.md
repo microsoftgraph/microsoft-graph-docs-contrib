@@ -2,7 +2,7 @@
 title: "Get samlOrWsFedExternalDomainFederation"
 description: "Read the properties and relationships of a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -42,7 +42,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## Query parameters
 
-This method requires the `$filter` OData query parameter. To retrieve a specific [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) filter based on [externalDomainName](../resources/externaldomainname.md), add `?$filter=domains/any(x: x/id eq 'domainName-value')`. 
+This method requires the `$filter` OData query parameter. To retrieve a specific [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) filter based on [externalDomainName](../resources/externaldomainname.md), add `?$filter=domains/any(x: x/id eq 'domainName-value')`.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -64,6 +64,8 @@ If successful, this method returns a `200 OK` response code and a [samlOrWsFedEx
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_samlorwsfedexternaldomainfederation"
@@ -73,6 +75,24 @@ If successful, this method returns a `200 OK` response code and a [samlOrWsFedEx
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

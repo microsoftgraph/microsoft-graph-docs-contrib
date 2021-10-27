@@ -2,7 +2,7 @@
 title: "managedDeviceSummarizedAppState resource type"
 description: "Event representing a user's devices with failed or pending apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

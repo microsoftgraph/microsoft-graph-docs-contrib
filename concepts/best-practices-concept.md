@@ -1,7 +1,7 @@
 ---
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -143,6 +143,7 @@ Use [batching](json-batching.md) where significant network latency can have a bi
 ## Reliability and support
 To ensure reliability and facilitate support for your application:
 
+- Use TLS 1.2 to support all capabilities of Microsoft Graph. For more information about the Microsoft Graph TLS 1.0 and 1.1 deprecation, see [Enable support for TLS 1.2 in your environment](/troubleshoot/azure/active-directory/enable-support-tls-environment).
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
