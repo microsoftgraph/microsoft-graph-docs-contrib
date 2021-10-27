@@ -2,7 +2,7 @@
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -80,6 +80,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to disable user’s access to scan Windows Update. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Specifies what Windows Update notifications users see. Possible values are: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|allowWindows11Upgrade|Boolean|Allow eligible Windows 10 devices to upgrade to the latest version of Windows 11.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,7 +92,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceUpdateStates|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection|Windows update for business configuration device states.|
+|deviceUpdateStates|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection|Windows update for business configuration device states. This collection can contain a maximum of 500 elements.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -173,7 +174,8 @@ Here is a JSON representation of the resource.
   "scheduleImminentRestartWarningInMinutes": 1024,
   "userPauseAccess": "String",
   "userWindowsUpdateScanAccess": "String",
-  "updateNotificationLevel": "String"
+  "updateNotificationLevel": "String",
+  "allowWindows11Upgrade": true
 }
 ```
 

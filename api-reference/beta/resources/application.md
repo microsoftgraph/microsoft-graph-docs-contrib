@@ -45,6 +45,12 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
 | [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+|**Federated identity credentials**| | |
+| [List federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) collection | List federated identity credentials on an application object. |
+| [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Create a federated identity credential on an application object. |
+| [Get federatedIdentityCredential](../api/federatedidentitycredential-get.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Retrieve the properties of a federated identity credential. |
+| [Update federatedIdentityCredential](../api/federatedidentitycredential-update.md) | None | Update a federated identity credential of an application object. |
+| [Delete federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | None | Delete a federated identity credential from an application object. |
 |**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
@@ -94,7 +100,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | publisherDomain | String | The verified publisher domain for the application. Read-only. Supports `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
-| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of OAuth permission scopes and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. Not nullable. <br><br>Supports `$filter` (`eq`, `NOT`, `ge`, `le`).|
+| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. Not nullable. <br><br>Supports `$filter` (`eq`, `NOT`, `ge`, `le`).|
 | signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (default), and `PersonalMicrosoftAccount`. See more in the [table below](#signinaudience-values). <br><br>Supports `$filter` (`eq`, `ne`, `NOT`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.<br><br>Supports `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
@@ -121,6 +127,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
+|federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for applications. This object can only be retrieved on a single GET request (`GET /applications/{id}/federatedIdentityCredentials`).|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand`.|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) collection|The tokenLifetimePolicies assigned to this application. Supports `$expand`.|

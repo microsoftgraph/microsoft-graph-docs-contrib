@@ -2,7 +2,7 @@
 title: "microsoftTunnelServerLogCollectionResponse resource type"
 description: "Entity that stores the server log collection status."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
