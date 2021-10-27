@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlocker",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bitlocker](/graph/resources/bitlocker.md) resource. This is the parent resource that exposes the **bitlockerRecoveryKey** navigation property which contains the actual BitLocker recovery key.",
+                    "Description": "Added the [bitlocker](https://docs.microsoft.com/en-us/graph/api/resources/bitlocker?view=graph-rest-beta) resource. This is the parent resource that exposes the **bitlockerRecoveryKey** navigation property which contains the actual BitLocker recovery key.",
                     "Target": "bitlocker"
                 },
                 {
