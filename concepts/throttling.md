@@ -15,6 +15,9 @@ Throttling limits vary based on the scenario. For example, if you are performing
 > [!NOTE]
 > Solutions that need to extract a large volume of data from Microsoft Graph should use [Microsoft Graph Data Connect](data-connect-concept-overview.md) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
 
+<!-- markdownlint-disable MD033 -->
+<br/>
+
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
@@ -128,7 +131,6 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
-
 
 ### Cloud communication service limits
 
@@ -317,7 +319,6 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
-
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Insights service limits
@@ -336,7 +337,6 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/trending)
 - [usedInsight](/graph/api/resources/usedinsight)
 
-
 ### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
@@ -349,7 +349,6 @@ The following limits apply to any request on `/reports`.
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
 The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
-
 
 ### Invitation manager service limits
 
@@ -378,7 +377,6 @@ The following limits apply to any request on `/security`.
 
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
-
 
 ### Files and lists service limits
 
