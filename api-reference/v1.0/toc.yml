@@ -4251,9 +4251,7 @@ items:
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
-          href: api/educationuser-post-rubrics.md
-        - name: List assignments
-          href: api/educationuser-list-assignments.md          
+          href: api/educationuser-post-rubrics.md       
       - name: Assignment
         href: resources/educationassignment.md
         items:
