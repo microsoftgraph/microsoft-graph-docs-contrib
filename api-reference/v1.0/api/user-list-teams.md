@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get list of all [teams](../resources/team.md) in an organization.
 
 ## Methods
@@ -69,7 +67,7 @@ The following is an example of the request.
   "name": "get_teams"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams
+GET https://graph.microsoft.com/v1.0/teams
 ```
 ---
 
@@ -121,7 +119,7 @@ The following is an example of the request.
   "name": "get_teams"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&$top=2
+GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&$top=2
 ```
 ---
 
@@ -167,7 +165,7 @@ The following is an example of the request.
   "name": "get_teams"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Team'&$select=id,description
+GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Team'&$select=id,description
 ```
 ---
 
