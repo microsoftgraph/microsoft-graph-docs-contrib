@@ -245,6 +245,7 @@ Content-type: application/json
                     }
                 }
             }
+        }
     ]
 }
 ```
