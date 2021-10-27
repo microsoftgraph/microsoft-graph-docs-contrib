@@ -106,7 +106,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
     "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
     "createdDateTime": "2020-06-15T13:45:30.0000000Z",
-    "volumeType": 1,
+    "volumeType": "1",
     "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9"
   }
 }
@@ -148,7 +148,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
     "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
     "createdDateTime": "String (timestamp)",
-    "volumeType": 1,
+    "volumeType": "1",
     "deviceId": "1ab40ab2-32a8-4b00-b6b5-ba724e407de9",
     "key": "123456-231453-873456-213546-654678-765689-123456-324565"
   }
