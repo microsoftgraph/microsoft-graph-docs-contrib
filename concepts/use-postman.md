@@ -23,7 +23,7 @@ To use the Postman collection, fork it to your own Postman workspace. Do this fr
 1. Go to the Postman collection labeled [Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c/fork).
 1. Fill in a label for your own fork. This can be any text.
 1. Under Workspace, ensure that **My Workspace** is selected in the drop-down list.
-1. Click **Fork Collection**.
+1. Select **Fork Collection**.
 
 You will be redirected to a fork of the main Microsoft Graph Postman collection in your own workspace.
 
@@ -38,22 +38,24 @@ You don't need the agent if you're using the Postman for Windows app. If you ope
 To use this collection in your own developer tenant, create an Azure AD application and give it the appropriate permissions for the requests you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
-1. Under **Azure Services**, click **Azure Active Directory**.
-1. On the left menu, click **App registrations**.
-1. On the horizontal menu, click **New registration**.
+1. Under **Azure Services**, select **Azure Active Directory**.
+1. On the left menu, select **App registrations**.
+1. On the horizontal menu, select **New registration**.
 1. Set the **Application name** to `Postman`.
 1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
-1. Click **Register**.
-1. On the left menu, click **API Permissions**.
-1. In the horizontal menu, click **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
+1. Select **Register**.
+1. On the left menu, select **Authentication**.
+1. Under **Redirect URIs**, select **Add URI**. Set the value to `https://app.getpostman.com/oauth2/callback` and select **Save**.
+1. On the left menu, select **API Permissions**.
+1. In the horizontal menu, select **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
 1. Type `Mail.`, expand the **Mail** options, and check **Mail.Read**.
-1. Click **Application permissions** and type `User.`, and check **Application Permissions**.
+1. Select **Application permissions** and type `User.`, and check **Application Permissions**.
 1. Expand the **User** options and check **User.Read.All**.
-1. Click **Add permissions**.
-1. In the horizontal menu, click **Grant admin consent for**, and click **Yes**.
-1. In the left menu, click **Overview**. From here, you can get the **Application (client) ID** and **Directory (tenant) ID**. You will need these in step 4.
-1. In the left menu, click **Certificates & secrets**.
-1. Click **New client secret**, enter a description, and click **Add**. Hover over the new client secret **Value** and copy it. You will need this in step 4.
+1. Select **Add permissions**.
+1. In the horizontal menu, select **Grant admin consent for**, and select **Yes**.
+1. In the left menu, select **Overview**. From here, you can get the **Application (client) ID** and **Directory (tenant) ID**. You will need these in step 4.
+1. In the left menu, select **Certificates & secrets**.
+1. Select **New client secret**, enter a description, and select **Add**. Hover over the new client secret **Value** and copy it. You will need this in step 4.
 
 The Azure AD application now has permissions to make requests on behalf of a user to call Mail.Read and as an application for User.Read.All.
 
@@ -64,11 +66,11 @@ In this step, you set up the environment variables used to retrieve an access to
 1. Go to [Fork environment](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
 1. Add a label for fork. This can be any text.
 1. Under Workspace, ensure that **My Workspace** is selected in the drop-down list.
-1. Click **Fork Environment**.
+1. Select **Fork Environment**.
 1. In `ClientID`, set the **Current value** to the application (client) ID value from step 3.15.
 1. In `ClientSecret`, set the **Current value** to the client secret value from step 3.17.
 1. In `TenantID`, set the **Current value** to the directory (tenant) ID value from step 3.15.
-1. On the top right, click **Save**.
+1. On the top right, select **Save**.
 1. Close the **Manage Environments** tab.
 1. On the top right, next to the eye icon, verify that **M365 Environment** is selected in the drop down and not **No environment**.
 
@@ -77,11 +79,11 @@ In this step, you set up the environment variables used to retrieve an access to
 Because this is the first time you are running a request as a delegated authentication flow, you need to get an access token.
 
 1. Select the **Delegated** folder.
-1. Click the **Authorization** tab.
-1. In the **Configure New Token** section, click the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Authorization Code`.
-1. Scroll down on the right and click **Get New Access Token**.
+1. Select the **Authorization** tab.
+1. In the **Configure New Token** section, select the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Authorization Code`.
+1. Scroll down on the right and select **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
-1. Click **Proceed**, and then click the **Use Token** button.
+1. Select **Proceed**, and then select the **Use Token** button.
 
 You now have a valid access token to use for delegated requests.
 
@@ -91,7 +93,7 @@ Inside the **Delegated** folder are requests for various Microsoft Graph workloa
 
 1. Expand the **Delegated** folder and then expand the **Mail** folder.
 1. Double-click **Get my messages** to open the request.
-1. On the top right, click **Send**.
+1. On the top right, select **Send**.
 
 You have now successfully made a Microsoft Graph call using delegated authentication.
 
@@ -100,10 +102,10 @@ You have now successfully made a Microsoft Graph call using delegated authentica
 Because this is the first time you are running a request as a application authentication flow, you need to get an access token.
 
 1. Select the **Application** folder.
-1. Click the **Authorization** tab.
-1. In the **Configure New Token** section, click the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Client Credentials`.
-1. Scroll down on the right side and click **Get New Access Token**.
-1. Click **Proceed**, and then click the **Use Token** button.
+1. Select the **Authorization** tab.
+1. In the **Configure New Token** section, select the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type** which is set to `Client Credentials`.
+1. Scroll down on the right side and select **Get New Access Token**.
+1. Select **Proceed**, and then select the **Use Token** button.
 
 You now have a valid access token to use for application requests.
 
@@ -113,7 +115,7 @@ Inside the **Application** folder are requests for various Microsoft Graph workl
 
 1. Expand the **Application** folder and then expand the **User** folder.
 1. Double-click **Get Users** to open the request.
-1. On the top right, click **Send**.
+1. On the top right, select **Send**.
 
 You have now successfully made a Microsoft Graph call using application authentication.
 
@@ -122,6 +124,12 @@ You can follow these steps to make other requests to Microsoft Graph. Remember t
 ### Contribute to the collection
 
 If you want to contribute your own requests, you will need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
+
+## Known issues
+
+### Authentication fails with "You can't get there from here"
+
+Certain [conditional access policies](/azure/active-directory/conditional-access/overview) configured by your organization's administrators can block the authentication flow from Postman. Please contact your administrators to explore alternatives.
 
 ## See also
 

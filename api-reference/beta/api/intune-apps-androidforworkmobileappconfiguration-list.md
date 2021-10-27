@@ -2,7 +2,7 @@
 title: "List androidForWorkMobileAppConfigurations"
 description: "List properties and relationships of the androidForWorkMobileAppConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 906
+Content-Length: 943
 
 {
   "value": [
@@ -87,7 +87,8 @@ Content-Length: 906
           "action": "autoGrant"
         }
       ],
-      "profileApplicability": "androidWorkProfile"
+      "profileApplicability": "androidWorkProfile",
+      "connectedAppsEnabled": true
     }
   ]
 }

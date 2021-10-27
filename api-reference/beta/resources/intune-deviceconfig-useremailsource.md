@@ -2,7 +2,7 @@
 title: "userEmailSource enum type"
 description: "Possible values for username source or email source."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -435,4 +435,94 @@ System.out.println(String.format("You have %d events on your calendar today", ev
 ```
 
 ---
+
+## Implementing batching using BatchRequestContent, BatchRequestStep, and HttpRequestMessage
+
+The following example shows how to use `BatchRequestContent`,`BatchRequestStep`, and `HttpRequestMessage` to send multiple requests in a batch and how to handle the limit of 20 with Microsoft Graph API requests. This example creates meeting links using the `onlineMeetings/createOrGet` endpoint for the specified user ID. You can use this example with other Microsoft Graph endpoints as well.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Graph;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksToBeGenerated)
+        {            
+            List<string> _joinWebUrls = new List<string>();
+            //Total number of items per batch supported is 20
+            int maxNoBatchItems = 20;
+            try
+            {
+                //valid GraphAccessToken is required to execute the call
+                var graphClient = GetAuthenticatedClient(GraphAccessToken);
+                var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+                foreach (var item in meetingLinksToBeGenerated)
+                {
+                    var externalId = Guid.NewGuid().ToString();
+                    var @event = new OnlineMeetingCreateOrGetRequestBody
+                    {
+                        StartDateTime = item.StartTime,
+                        EndDateTime = item.EndTime,
+                        Subject = "Test Meeting",
+                        ExternalId = externalId,
+                        
+                    };
+                    events.Add(@event);
+                }
+                // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
+                List<BatchRequestContent> batches = new List<BatchRequestContent>();
+                var batchRequestContent = new BatchRequestContent();
+                foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+                { 
+                    //create online meeting for particular user or we can use /me as well
+                    var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
+                    {
+                        Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
+                    };
+                    BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
+                    batchRequestContent.AddBatchRequestStep(requestStep);
+                    if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
+                    {
+                        batches.Add(batchRequestContent);
+                        batchRequestContent = new BatchRequestContent();
+                    }
+                }
+                if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                if (batches.Count == 0 && batchRequestContent != null)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                foreach (BatchRequestContent batch in batches)
+                {
+                    BatchResponseContent response = null;
+                    response = await graphClient.Batch.Request().PostAsync(batch);
+                    Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
+                    foreach (string key in responses.Keys)
+                    {
+                        HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
+                        var responseContent = await httpResponse.Content.ReadAsStringAsync();
+                        JObject eventResponse = JObject.Parse(responseContent);
+                        //do something below
+                        Console.writeline(eventResponse["joinWebUrl"].ToString());                      
+                    }                 
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Writeline(ex.Message + ex.StackTrace);               
+            }
+        }    
+
+```
+---
 <!-- markdownlint-enable MD024 -->

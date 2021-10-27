@@ -2,7 +2,7 @@
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

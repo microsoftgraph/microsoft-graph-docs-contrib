@@ -2,7 +2,7 @@
 title: "deviceAndAppManagementAssignmentFilterType enum type"
 description: "Represents type of the assignment filter."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
