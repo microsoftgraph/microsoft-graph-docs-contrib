@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 460
 
 {
   "value": [
@@ -72,12 +72,13 @@ Content-Length: 399
       "publisher": "Publisher value",
       "deviceCount": 11,
       "medianImpactInMs": 0,
-      "totalImpactInMs": 15
+      "totalImpactInMs": 15,
+      "medianImpactInMs2": 1,
+      "totalImpactInMs2": 0
     }
   ]
 }
 ```
-
 
 
 

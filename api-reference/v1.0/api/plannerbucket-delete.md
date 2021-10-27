@@ -1,7 +1,7 @@
 ---
 title: "Delete plannerBucket"
 description: "Delete **plannerBucket**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

@@ -17,7 +17,7 @@ const associateWithHubSites = {
    propagateToExistingLists: false
 };
 
-await client.api('/sites/id/contentTypes/id/associateWithHubSites')
+await client.api('/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites')
 	.version('beta')
 	.post(associateWithHubSites);
 

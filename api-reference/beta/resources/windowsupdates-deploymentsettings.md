@@ -2,7 +2,7 @@
 title: "deploymentSettings resource type"
 description: "Settings controlling when and how the service deploys an update."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

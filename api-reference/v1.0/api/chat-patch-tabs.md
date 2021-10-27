@@ -2,7 +2,7 @@
 title: "Update tab in chat"
 description: "Update the properties of the specified tab in a chat."
 author: "subray"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

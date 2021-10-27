@@ -1,7 +1,7 @@
 ---
 title: "connectorGroup resource type"
 description: "Represents an Application Proxy connectorGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 author: "japere"
 doc_type: resourcePageType

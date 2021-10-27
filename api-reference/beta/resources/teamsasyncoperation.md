@@ -2,7 +2,7 @@
 title: "teamsAsyncOperation resource type"
 description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -33,7 +33,7 @@ When the request completes successfully, the status will be "succeeded" and the 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
 |id|string |Unique operation id.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes which type of operation is being described.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Denotes the type of operation being described. |
 |createdDateTime|DateTimeOffset |Time when the operation was created.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Operation status.|
 |lastActionDateTime|DateTimeOffset |Time when the async operation was last updated.|
@@ -55,13 +55,13 @@ The following is a JSON representation of the resource.
 ```json
 {
     "id": "string",
-    "operationType": "archiveTeam",
-    "createdDateTime": "2018-01-01T00:00:00.0000000Z",
-    "status": "succeeded",
-    "lastActionDateTime": "2018-01-01T00:00:00.0000000Z",
-    "attemptsCount": 1,
-    "targetResourceId": "fa4aa5a2-a75b-4769-86f4-9e2742a18fda",
-    "targetResourceLocation": "/groups('fa4aa5a2-a75b-4769-86f4-9e2742a18fda')/team",
+    "operationType": "string",
+    "createdDateTime": "string (timestamp)",
+    "status": "string",
+    "lastActionDateTime": "string (timestamp)",
+    "attemptsCount": "Integer",
+    "targetResourceId": "string",
+    "targetResourceLocation": "string",
     "error": null
 }
 ```

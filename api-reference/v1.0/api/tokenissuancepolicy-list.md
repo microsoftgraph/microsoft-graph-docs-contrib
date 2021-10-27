@@ -1,7 +1,7 @@
 ---
 title: "List tokenIssuancePolicy"
 description: "Get a list of tokenIssuancePolicy objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

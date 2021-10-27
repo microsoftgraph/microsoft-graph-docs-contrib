@@ -1,7 +1,7 @@
 ---
 title: "Role-based access control in Microsoft Intune"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that define and manage role-based access control (RBAC) for a tenant organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 ---
@@ -21,6 +21,15 @@ The following Graph resources are available to manage role-based access control 
 - [Device and app management assigned role details](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Device and app management role assignment](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Device and app management role definition](intune-rbac-deviceandappmanagementroledefinition.md)
+- [Identity](intune-rbac-identity.md)
+- [Identity set](intune-rbac-identityset.md)
+- [Operation approval policy](intune-rbac-operationapprovalpolicy.md)
+- [Operation approval policy platform](intune-rbac-operationapprovalpolicyplatform.md)
+- [Operation approval policy set](intune-rbac-operationapprovalpolicyset.md)
+- [Operation approval policy type](intune-rbac-operationapprovalpolicytype.md)
+- [Operation approval request](intune-rbac-operationapprovalrequest.md)
+- [Operation approval request entity status](intune-rbac-operationapprovalrequestentitystatus.md)
+- [Operation approval request status](intune-rbac-operationapprovalrequeststatus.md)
 - [Rbac application multiple](intune-rbac-rbacapplicationmultiple.md)
 - [Resource action](intune-rbac-resourceaction.md)
 - [Resource operation](intune-rbac-resourceoperation.md)

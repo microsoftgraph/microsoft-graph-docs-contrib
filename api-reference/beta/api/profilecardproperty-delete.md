@@ -1,7 +1,7 @@
 ---
 title: "Delete profileCardProperty"
 description: "Delete a profileCardProperty object and remove all customizations from the profile card."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

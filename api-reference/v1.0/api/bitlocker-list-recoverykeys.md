@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->**Note**: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from:
+For delegated permissions to allow apps to get bitLockerRecoveryKey resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from or the the calling user must be in one of the following directory roles:
 
 * Global administrator
 * Cloud device administrator
@@ -78,6 +78,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_bitlockerrecoverykey"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
@@ -126,6 +131,12 @@ Content-Type: application/json
 
 The following is an example of the request.
 
+
+<!-- {
+  "blockType": "request",
+  "name": "list_bitlockerrecoverykey_filter_deviceId"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"

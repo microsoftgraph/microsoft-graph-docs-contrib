@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
+**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -39,7 +39,7 @@ To get the specified BitLocker key without returning the **key** property:
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}
 ```
 
 To get the specified BitLocker key including its **key** property:
@@ -48,7 +48,7 @@ To get the specified BitLocker key including its **key** property:
 }
 -->
 ``` http
-GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
+GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$select=key
 ```
 
 ## Optional query parameters
@@ -70,12 +70,16 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Example 1
-Get the BitLocker key by specifying the **key id**. This example does not return the **key** property.
+### Example 1: Get the BitLocker key by specifying the key id
 
 #### Request
-The following is an example of the request.
+The following is an example of the request. This example does not return the **key** property.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_bitlockerrecoverykey"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 ocp-client-name: "My Friendly Client"
@@ -85,7 +89,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,14 +112,17 @@ Content-type: application/json
 }
 ```
 
-### Example 2
-
-Get the BitLocker key with the **key** property by specifying the **key id**.
+### Example 2: Get the BitLocker key with the **key** property
 
 #### Request
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_bitlockerrecoverykey_key"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 ```
@@ -124,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKey
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

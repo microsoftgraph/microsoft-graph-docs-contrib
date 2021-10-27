@@ -1,7 +1,7 @@
 ---
 title: "Create skillProficiency"
 description: "Use this API to create a new skillProficiency."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

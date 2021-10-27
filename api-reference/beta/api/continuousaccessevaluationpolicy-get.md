@@ -2,7 +2,7 @@
 title: "Get continuousAccessEvaluationPolicy"
 description: "Read the properties of a continuousAccessEvaluationPolicy object."
 author: "jerrysai"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -99,6 +99,7 @@ Content-type: application/json
   "displayName": "Continuous Access Evaluation",
   "isEnabled": true,
   "users": [ "1608be63-df14-42a4-8932-1c9d963b026f" ],
-  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ]
+  "groups": [ "4308b567-df14-0000-8932-1c9d963b026f" ],
+  "migrate": true
 }
 ```

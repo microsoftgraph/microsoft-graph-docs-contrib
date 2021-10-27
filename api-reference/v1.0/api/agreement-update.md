@@ -1,7 +1,7 @@
 ---
 title: "Update agreement"
 description: "Update the properties of an agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"

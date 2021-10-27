@@ -1,7 +1,7 @@
 ---
 title: "Update ipnamedlocation"
 description: "Update the properties of an ipNamedLocation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -41,6 +41,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+You must specify the **@odata.type** as `#microsoft.graph.ipNamedLocation`.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

@@ -1,7 +1,7 @@
 ---
 title: "List activityStatistics"
 description: "Get a collection of activityStatistics objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "apiPageType"

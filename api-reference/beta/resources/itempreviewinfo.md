@@ -3,7 +3,7 @@ author: kevinlam
 description: "The ItemPreviewInfo resource contains information on how to embed a preview of a DriveItem."
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

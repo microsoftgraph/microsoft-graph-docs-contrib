@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: evaluateClassificationResults"
 description: "Evaluate which label to apply based on existing content info and a classification result."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"

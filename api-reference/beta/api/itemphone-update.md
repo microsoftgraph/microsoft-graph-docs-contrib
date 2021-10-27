@@ -1,7 +1,7 @@
 ---
 title: "Update itemphone"
 description: "Update the properties of an itemPhone object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

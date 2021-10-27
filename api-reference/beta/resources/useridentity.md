@@ -1,7 +1,7 @@
 ---
 title: "userIdentity type"
 description: "Represents an Azure AD user identity for a reviewer of an access review."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: resourcePageType

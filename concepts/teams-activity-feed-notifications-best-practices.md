@@ -2,7 +2,7 @@
 title: "Best practices for using Microsoft Teams activity feed notifications"
 description: "This article provides best practices and examples for working with activity feed notifications in Microsoft Graph."
 author: "KirtiPereira"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "teamwork"
 ---
 

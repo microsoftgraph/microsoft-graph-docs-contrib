@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columnDefinitions in a list"
 description: "List columns in a list."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

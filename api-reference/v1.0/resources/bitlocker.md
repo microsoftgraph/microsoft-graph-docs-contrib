@@ -1,6 +1,6 @@
 ---
-title: "bitlocker type"
-description: "BitLocker resource"
+title: "bitLocker resource"
+description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey which contains the actual recovery key."
 author: "hafowler"
 localization_priority: Normal
 ms.prod: "directory-management"
@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 The parent resource for a stored BitLocker key with the navigation property **bitlockerRecoveryKey** which contains the actual recovery key.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the bitlockerRecoveryKey objects and their properties.|
+None.
 
 ## Properties
 None.

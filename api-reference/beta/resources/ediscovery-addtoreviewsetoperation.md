@@ -2,7 +2,7 @@
 title: "addToReviewSetOperation resource type"
 description: "Adds the results of a sourceCollection to a reviewSet"
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

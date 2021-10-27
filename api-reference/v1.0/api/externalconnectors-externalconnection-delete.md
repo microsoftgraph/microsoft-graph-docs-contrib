@@ -2,7 +2,7 @@
 title: "Delete externalConnection"
 description: "Deletes an externalConnection object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}
+DELETE /external/connections/{connectionsId}
 ```
 
 ## Request headers
@@ -48,14 +48,17 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 ## Examples
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "delete_externalconnection"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
+
 
 
 ### Response

@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Security API"
 description: "The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "preetikr"
 ms.prod: "security"
 doc_type: conceptualPageType
@@ -107,12 +107,12 @@ Need more ideas? See [how some of our partners are using Microsoft Graph](https:
 
 Explore other options to connect with the Microsoft Graph Security API:
 
-- [Microsoft Graph Security connectors for Logic Apps, Flow and PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Microsoft Graph Security connectors for Logic Apps, Flow and Power Apps](https://aka.ms/graphsecurityconnectors)
 - [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
 - [Jupyter Notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
 
 Engage with the community:
 
-- [Join the tech community](https://aka.ms/graphsecuritycommunity)
+- [Join the tech community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 

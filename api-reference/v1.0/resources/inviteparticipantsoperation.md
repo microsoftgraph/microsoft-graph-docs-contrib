@@ -2,7 +2,7 @@
 title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

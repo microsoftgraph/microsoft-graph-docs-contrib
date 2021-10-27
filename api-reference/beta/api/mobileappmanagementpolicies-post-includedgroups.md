@@ -2,7 +2,7 @@
 title: "Add includedGroups" 
 description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update externalItem"
 description: "Update the properties of an externalItem object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -70,6 +70,8 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 ## Examples
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "update_externalitem",
@@ -77,7 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 Content-length: 360
 
@@ -91,6 +93,7 @@ Content-length: 360
   ]
 }
 ```
+
 
 
 ### Response

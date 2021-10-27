@@ -2,7 +2,7 @@
 title: "Microsoft Teams API overview"
 description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
@@ -59,13 +59,13 @@ Let customers create new [teams](/graph/api/resources/team) and [channels](/grap
 ### Create and manage multiple teams and channels
 
 Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels,
-by automate creating and managing [teams](/graph/api/resources/team), [channels](/graph/api/resources/channel),
+by automating the creation and management of [teams](/graph/api/resources/team), [channels](/graph/api/resources/channel),
 [tabs](/graph/api/resources/teamstab), and [apps](/graph/api/resources/teamsapp).
 Microsoft Graph also lets you [find](teams-list-all-teams.md) 
 and [archive](/graph/api/team-archive)
 the teams you are no longer using. 
 This is the same API that the [Microsoft Teams Admin Center](/microsoftteams/enable-features-office-365)
-and [Teams PowerShell commandlets](/microsoftteams/teams-powershell-overview) are built on.
+and [Teams PowerShell cmdlets](/microsoftteams/teams-powershell-overview) are built on.
 
 ### Deploy apps to teams
 
@@ -77,7 +77,7 @@ and [install apps](/graph/api/teamsappinstallation-add) to them.
 
 Microsoft Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. These apps let work group users share assets, interact through chat, and schedule events on the team calendar. These apps can also automate creating teams, channels, and conversations, enhancing the value of Microsoft Teams.
 
-You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
+You can create websites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
 **Types of apps enabled for Microsoft Teams**
 
@@ -94,7 +94,7 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Connectors](/microsoftteams/platform/concepts/connectors/connectors) |Post updates from external services to channels.|
 | [Actionable messaging](/microsoftteams/platform/concepts/cards/cards) |Add enhanced interaction to your connector cards.|
 | [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
-|Websites| Surface enhanced content in your web pages.|
+|Websites| Surface enhanced content in your webpages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|

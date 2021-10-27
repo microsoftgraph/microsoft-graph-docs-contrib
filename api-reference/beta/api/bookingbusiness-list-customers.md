@@ -1,7 +1,7 @@
 ---
 title: "List customers"
 description: "Get a list of bookingCustomer objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 286
+Content-Length: 394
 
 {
   "value": {
@@ -71,11 +71,12 @@ Content-Length: 286
     "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
     "displayName": "Display Name value",
     "tunnelServerHealthStatus": "healthy",
-    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+    "agentImageDigest": "Agent Image Digest value",
+    "serverImageDigest": "Server Image Digest value"
   }
 }
 ```
-
 
 
 

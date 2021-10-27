@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlocker",
                     "ChangeType": "Addition",
-                    "Description": "Migrating [bitlocker](/graph/resources/bitlocker.md) resource to v1.",
+                    "Description": "Added the [bitlocker](/graph/resources/bitlocker.md) resource. This is the parent resource which exposes the navigation property bitlockerRecoveryKey which contains the actual recovery key. ",
                     "Target": "bitlocker"
                 },
                 {
@@ -31,15 +31,15 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "bitlockerrecoverykey",
                     "ChangeType": "Addition",
-                    "Description": "Migrating [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource to v1.",
+                    "Description": "Added the [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource. This is the resource that contains the actual recovery key.",
                     "Target": "bitlockerRecoveryKey"
                 },
                 {
                     "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
                     "ApiChange": "Enum type",
-                    "ChangedApiName": "volumeType",
+                    "ChangedApiName": "volumeType ",
                     "ChangeType": "Addition",
-                    "Description": "Added the **volumeType** enumeration type for migration to v1",
+                    "Description": "Added the **volumeType** enumeration.",
                     "Target": "volumeType"
                 }
             ],
