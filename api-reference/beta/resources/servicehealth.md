@@ -2,7 +2,7 @@
 title: "serviceHealth resource type"
 description: "Represents the health information of a service."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the health information of a service.
+Represents the health information of a service subscribed by a tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +24,7 @@ Represents the health information of a service.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The service id.|
-|service|String|The service name.|
+|service|String|The service name. Use the [list healthOverviews](../api/serviceannouncement-list-healthoverviews.md) operation to get exact string names for services subscribed by the tenant.|
 |status|serviceHealthStatus|Show the overral service health status. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`.|
 
 ## Relationships

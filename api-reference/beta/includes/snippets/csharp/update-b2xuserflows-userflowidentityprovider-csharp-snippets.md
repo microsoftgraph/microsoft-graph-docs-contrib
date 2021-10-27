@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var userFlowIdentityProviders = new IdentityProviderBase
+var userFlowIdentityProviders = new IdentityProvider
 {
 	AdditionalData = new Dictionary<string, object>()
 	{

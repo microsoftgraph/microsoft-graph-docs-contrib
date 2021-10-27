@@ -2,7 +2,7 @@
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+AppManagementPolicy appManagementPolicy = new AppManagementPolicy();
+appManagementPolicy.displayName = "Credential management policy";
+appManagementPolicy.description = "Cred policy sample";
+appManagementPolicy.isEnabled = true;
+AppManagementConfiguration restrictions = new AppManagementConfiguration();
+LinkedList<PasswordCredentialConfiguration> passwordCredentialsList = new LinkedList<PasswordCredentialConfiguration>();
+PasswordCredentialConfiguration passwordCredentials = new PasswordCredentialConfiguration();
+passwordCredentials.restrictionType = AppCredentialRestrictionType.PASSWORD_ADDITION;
+passwordCredentials.maxLifetime = DatatypeFactory.newInstance().newDuration("null");
+passwordCredentials.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2019-10-19T10:37:00Z");
+passwordCredentialsList.add(passwordCredentials);
+PasswordCredentialConfiguration passwordCredentials1 = new PasswordCredentialConfiguration();
+passwordCredentials1.restrictionType = AppCredentialRestrictionType.PASSWORD_LIFETIME;
+passwordCredentials1.maxLifetime = DatatypeFactory.newInstance().newDuration("P4DT12H30M5S");
+passwordCredentials1.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2018-10-19T10:37:00Z");
+passwordCredentialsList.add(passwordCredentials1);
+restrictions.passwordCredentials = passwordCredentialsList;
+appManagementPolicy.restrictions = restrictions;
+
+graphClient.policies().appManagementPolicies()
+	.buildRequest()
+	.post(appManagementPolicy);
+
+```

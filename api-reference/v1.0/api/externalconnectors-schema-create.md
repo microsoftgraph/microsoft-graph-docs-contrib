@@ -2,7 +2,7 @@
 title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -38,12 +38,7 @@ When registering a custom item schema, the `schema` object MUST have the `baseTy
 
 ## Response
 
-With the `Prefer: respond-async` header included in the request, if successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
-
-Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/externalconnectors-schema.md) object in the response body.
-
-> [!NOTE]
-> Creating a schema is a long-running process prone to gateway timeouts. We recommend using the `Prefer: respond-async` header to avoid timeout errors.
+If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
 ## Examples
 
@@ -63,7 +58,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",
@@ -92,6 +86,24 @@ Prefer: respond-async
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

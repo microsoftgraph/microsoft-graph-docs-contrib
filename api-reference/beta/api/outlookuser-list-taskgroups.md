@@ -1,7 +1,7 @@
 ---
 title: "List taskGroups"
 description: "Get all the Outlook task groups in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType

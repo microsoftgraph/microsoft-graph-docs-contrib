@@ -2,7 +2,7 @@
 title: "List members of a roster"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---

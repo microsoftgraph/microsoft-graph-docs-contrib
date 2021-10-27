@@ -2,7 +2,7 @@
 title: "Create user"
 description: "Create a new user."
 author: "jpettere"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---

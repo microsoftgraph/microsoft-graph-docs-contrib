@@ -2,7 +2,7 @@
 title: "Get filesFolder"
 description: "Retrieve the filesFolder navigation path of a channel."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored. 
+Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Application | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

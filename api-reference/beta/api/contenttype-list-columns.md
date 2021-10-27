@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columnDefinitions in a content type"
 description: "List columns in a content type."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

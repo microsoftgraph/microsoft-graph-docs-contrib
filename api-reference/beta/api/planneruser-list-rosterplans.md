@@ -2,7 +2,7 @@
 title: "List rosterPlans"
 description: "Get the plannerPlan resources from the rosterPlans navigation property."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---

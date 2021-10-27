@@ -1,7 +1,7 @@
 ---
 title: "Update externalConnection"
 description: "Update the properties of an externalConnection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_connection",
@@ -68,7 +68,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr
 Content-type: application/json
 
 {
@@ -76,23 +76,6 @@ Content-type: application/json
   "description": "Connection to index HR service tickets"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 <!-- markdownlint-disable MD024 -->

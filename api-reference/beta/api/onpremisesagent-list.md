@@ -1,7 +1,7 @@
 ---
 title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

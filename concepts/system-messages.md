@@ -2,7 +2,7 @@
 title: "Get system messages for Microsoft Teams using Microsoft Graph APIs"
 description: "Learn how Microsoft Teams generates system messages for events using Microsoft Graph APIs."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
@@ -754,6 +754,7 @@ The following JSON examples show the responses for each supported event type.
   "reactions": [],
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "members": [{
         "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
         "displayName": null,

@@ -2,7 +2,7 @@
 title: "External connectors enum values"
 description: "Microsoft Graph external connectors enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ms.author: "emzho"
 author: "emzho"
@@ -112,6 +112,20 @@ Namespace: microsoft.graph.externalConnectors
 | doubleCollection
 | dateTimeCollection
 | unknownFutureValue
+
+### ruleOperation values 
+
+|Member|
+|:---|
+|null|
+|equals|
+|notEquals|
+|contains|
+|notContains|
+|lessThan|
+|greaterThan|
+|startsWith|
+|unknownFutureValue|
 
 <!--
 {

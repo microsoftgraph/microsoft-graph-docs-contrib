@@ -2,7 +2,7 @@
 title: "Microsoft Graph Data Connect integration with Privileged Access Management"
 description: "Microsoft Graph Data Connect relies on Privileged Access Management to allow Microsoft 365 administrators to approve data movement requests."
 author: "fercobo-msft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 

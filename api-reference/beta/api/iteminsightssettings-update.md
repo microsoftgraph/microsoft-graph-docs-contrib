@@ -2,7 +2,7 @@
 title: "Update itemInsights"
 description: "Update properties of itemInsightsSettings object"
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: "apiPageType"
 ---

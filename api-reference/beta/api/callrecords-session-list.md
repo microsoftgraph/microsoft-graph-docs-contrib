@@ -1,7 +1,7 @@
 ---
 title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"

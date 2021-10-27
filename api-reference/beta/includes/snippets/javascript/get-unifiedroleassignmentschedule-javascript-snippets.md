@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let unifiedRoleAssignmentSchedule = await client.api('/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413')
+let unifiedRoleAssignmentSchedule = await client.api('/roleManagement/directory/roleAssignmentSchedules/226faf5f-61b4-40bb-8726-52e48ec914de')
 	.version('beta')
 	.get();
 

@@ -2,7 +2,7 @@
 title: "cloudPcOnPremisesConnection resource type"
 description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
@@ -39,7 +37,7 @@ Represents a defined collection of Azure resource information that can be used t
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
-|adDomainPassword|String|The password associated with adDomainUsername.|
+|adDomainPassword|String|The password associated with **adDomainUsername**.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|

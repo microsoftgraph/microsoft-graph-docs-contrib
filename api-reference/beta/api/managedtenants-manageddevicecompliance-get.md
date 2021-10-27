@@ -2,7 +2,7 @@
 title: "Get managedDeviceCompliance"
 description: "Read the properties and relationships of a managedDeviceCompliance object."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---

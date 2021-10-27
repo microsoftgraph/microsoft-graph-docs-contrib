@@ -1,7 +1,7 @@
 ---
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jumaodhiss"
 ms.prod: "change-notifications"
 doc_type: resourcePageType
@@ -24,7 +24,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
 - A [user][] in Azure Active Directory.
 
-See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
+For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 
 ## Methods
 

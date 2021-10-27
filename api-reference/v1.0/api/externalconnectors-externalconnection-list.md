@@ -2,7 +2,7 @@
 title: "List externalConnections"
 description: "Get a list of the externalConnection objects and their properties."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections
+GET /external/connections
 ```
 
 ## Optional query parameters
@@ -51,14 +51,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "list_externalconnection"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections
+GET https://graph.microsoft.com/v1.0/external/connections
 ```
+
 
 
 ### Response

@@ -1,7 +1,7 @@
 ---
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's Inbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

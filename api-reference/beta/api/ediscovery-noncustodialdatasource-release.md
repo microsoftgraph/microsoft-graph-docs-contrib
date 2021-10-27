@@ -2,7 +2,7 @@
 title: "noncustodialDataSource: release"
 description: "Releases the non-custodial data source from the case."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

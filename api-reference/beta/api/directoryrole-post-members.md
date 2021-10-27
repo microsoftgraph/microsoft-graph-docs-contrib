@@ -2,7 +2,7 @@
 title: "Add directory role member"
 description: "Create a new directory role member."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -33,9 +33,9 @@ POST /directoryRoles/{role-id}/members/$ref
 POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
 
 ## Request body

@@ -1,7 +1,7 @@
 ---
 title: "Delete externalConnection"
 description: "Delete an externalConnection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
@@ -53,32 +53,15 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_connection"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-connection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 <!-- markdownlint-disable MD024 -->

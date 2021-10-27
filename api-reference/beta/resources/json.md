@@ -1,7 +1,7 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "ruoyingl"

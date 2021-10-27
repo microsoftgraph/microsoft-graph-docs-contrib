@@ -2,7 +2,7 @@
 title: "Delete application"
 description: "Delete an application object."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an [application](../resources/application.md) object.
+Delete an [application](../resources/application.md) object. When deleted, apps are moved to a temporary container and can be restored within 30 days. After that time, they are permanently deleted.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

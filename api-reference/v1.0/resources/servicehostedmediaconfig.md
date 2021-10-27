@@ -2,7 +2,7 @@
 title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

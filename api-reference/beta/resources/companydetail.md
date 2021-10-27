@@ -1,7 +1,7 @@
 ---
 title: "companyDetail resource type"
 description: "companyDetail resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

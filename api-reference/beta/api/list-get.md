@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Get metadata for a list
 description: Return the metadata for a list.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

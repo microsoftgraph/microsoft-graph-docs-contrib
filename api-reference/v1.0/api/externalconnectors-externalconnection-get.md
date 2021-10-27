@@ -2,7 +2,7 @@
 title: "Get externalConnection"
 description: "Read the properties and relationships of an externalConnection object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections/{connectionsId}
+GET /external/connections/{connectionsId}
 ```
 
 ## Optional query parameters
@@ -51,14 +51,17 @@ If successful, this method returns a `200 OK` response code and an [externalConn
 ## Examples
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "get_externalconnection"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/contosohr
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
+
 
 
 ### Response

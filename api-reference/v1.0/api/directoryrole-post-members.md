@@ -2,7 +2,7 @@
 title: "Add directory role member"
 description: "Use this API to create a new directory role member."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -32,10 +32,10 @@ POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json. Required.  |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.

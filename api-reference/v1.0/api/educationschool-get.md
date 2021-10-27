@@ -2,7 +2,7 @@
 title: "Get educationSchool"
 description: "Read the properties and relationships of an educationSchool object."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

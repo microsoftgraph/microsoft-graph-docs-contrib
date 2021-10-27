@@ -2,7 +2,7 @@
 title: "educationIdentityMatchingOptions resource type"
 description: "Provides a mapping between a source property and a target property for matching user accounts. The source property should exist in the source data. The target property should be a valid property in Azure Active Directory (Azure AD)."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Resolve Microsoft Graph authorization errors"
 description: "Find out how to resolve Microsoft Graph 401 and 403 authorization errors."
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 ---
 

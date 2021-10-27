@@ -2,7 +2,7 @@
 title: "Configure the scope of your access review using the Microsoft Graph API"
 description: "Learn how to use the access reviews API in Microsoft Graph to review access to Azure AD resources."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
@@ -34,6 +34,7 @@ To configure the scope by using the **accessReviewQueryScope** type, set the val
     "queryType": "MicrosoftGraph"
 }
 ```
+
 To review *only inactive users* assigned to the group:
 
 ```http
@@ -43,52 +44,69 @@ To review *only inactive users* assigned to the group:
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
-### Example 2: Review guest users assigned to a group
+### Example 2: Review all guest users assigned to a group
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",    
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
-
-### Example 3: Review guest users assigned to all Microsoft 365 groups
+### Example 3: Review all users assigned to all Microsoft 365 groups
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true ",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+    "query": "./members/microsoft.graph.user",
+    "queryType": "MicrosoftGraph"
+}
+```
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Note that dynamic groups and role-assignable groups are not included in this review.
+
+### Example 4: Review all guest users assigned to all Microsoft 365 groups
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph"
 }
 ```
 
-Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
-
-### Example 4: Review access of all inactive guest users to all groups
-
-```http
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph",
-    "inactiveDuration": "P30D"
-}
-```
-
-Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
-
-### Example 5: Review of all inactive guest users assigned to all teams
+Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Note that dynamic groups and role-assignable groups are not included in this review.
+    
+### Example 5: Review all guest users assigned to all Teams
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.  Note that dynamic groups and role-assignable groups are not included in this review.
+
+### Example 6: Review all inactive guest users assigned to all Microsoft 365 groups
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -99,9 +117,26 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 }
 ```
 
-Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
+Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Note that dynamic groups and role-assignable groups are not included in this review.
 
-### Example 6: Review of Entitlement Management access package assignment
+### Example 7: Review all inactive guest users assigned to all Teams
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph",
+    "inactiveDuration": "P30D"
+}
+```
+
+Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Note that dynamic groups and role-assignable groups are not included in this review.
+
+### Example 8: Review all assignemnt to Entitlement Management access packages
 
 ```http
 "scope": {
@@ -111,7 +146,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 7: Review of service principals assigned to privileged roles 
+### Example 9: Review all service principals assigned to a privileged role
 
 ```http
 "scope": {
@@ -120,12 +155,42 @@ Because this review is applied on all teams, configure the **instanceEnumeration
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### Example 10: Review all users assigned to a privileged role (all active and eligible assignments included)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 11: Review all users with eligible assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### Example 12: Review all users with active assignment to a privileged role
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## Use principalResourceMembershipsScope to configure scope
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition**. This includes reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 1: Review access of all inactive guest users to groups
+### Example 13: Review all inactive guest users assigned to all groups
 
 ```http
 "scope": {
@@ -150,7 +215,7 @@ The **principalResourceMembershipsScope** exposes the **principalScopes** and **
 
 In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.
 
-### Example 2: Review access of all guest users to a directory role
+### Example 14: Review all guest users assigned to a directory role
 
 ```http
 "scope": {
@@ -172,6 +237,7 @@ In this example, the principals are all inactive guest users with the period of 
 }
 ```
 
-## See also
+## Next steps
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)
++ [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources

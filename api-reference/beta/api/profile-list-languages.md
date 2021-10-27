@@ -1,7 +1,7 @@
 ---
 title: "List languages"
 description: "Retrieve a list of languageProficiency objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

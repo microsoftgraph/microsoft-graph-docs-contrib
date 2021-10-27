@@ -19,7 +19,7 @@ const plannerTaskDetails = {
       previewPriority: ' !',
       type: 'Other'
     },
-    'https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer':{
+    'https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer':{
       '@odata.type': 'microsoft.graph.plannerExternalReference',
       previewPriority: '  !!',
     },

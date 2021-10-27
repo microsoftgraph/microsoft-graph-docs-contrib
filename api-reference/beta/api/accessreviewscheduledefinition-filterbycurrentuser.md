@@ -2,7 +2,7 @@
 title: "accessReviewScheduleDefinition: filterByCurrentUser"
 description: "Returns accessReviewScheduleDefinition objects where the calling user is the reviewer."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

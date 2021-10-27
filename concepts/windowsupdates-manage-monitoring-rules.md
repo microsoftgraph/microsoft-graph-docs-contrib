@@ -2,7 +2,7 @@
 title: "Manage monitoring rules for a deployment using the Windows Update for Business deployment service"
 description: "For deployments initiated by the deployment service, you can use monitoring rules configure alerts and automated actions based on deployment signals."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
@@ -12,9 +12,6 @@ doc_type: conceptualPageType
 For deployments initiated by the deployment service, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
 Monitoring rules are compatible with deployments of Windows 10 feature updates.
-
-> [!NOTE]
-> If you do not specify a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) when creating a [deployment](/graph/api/resources/windowsupdates-deployment), a default monitoring rule is created. This default monitoring rule has a **signal** of `rollback​`, a **threshold** of `20​`, and an **action** of `alertError​`. In a future update of the API, this behavior will change and a default monitoring rule will not be created.
 
 ## Step 1: Create a monitoring rule
 

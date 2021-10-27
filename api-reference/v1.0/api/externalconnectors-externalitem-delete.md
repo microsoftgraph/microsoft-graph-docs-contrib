@@ -2,7 +2,7 @@
 title: "Delete externalItem"
 description: "Deletes an externalItem object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}/items/{externalItemId}
+DELETE /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## Request headers
@@ -48,14 +48,17 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+
 <!-- {
   "blockType": "request",
   "name": "delete_externalitem"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 ```
+
 
 
 ### Response

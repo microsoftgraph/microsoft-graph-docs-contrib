@@ -2,7 +2,7 @@
 title: "Delete conversation"
 description: "Delete conversation."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -39,8 +39,8 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,8 +68,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 
 ---
 
-##### Response
-Here is an example of the response. 
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

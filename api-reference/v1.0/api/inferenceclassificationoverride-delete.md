@@ -1,7 +1,7 @@
 ---
 title: "Delete inferenceClassificationOverride"
 description: "Delete an override specified by its ID."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType

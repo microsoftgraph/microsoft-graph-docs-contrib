@@ -2,7 +2,7 @@
 title: "schedule: share"
 description: "Share a schedule time range with schedule members."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

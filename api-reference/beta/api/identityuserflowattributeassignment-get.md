@@ -2,7 +2,7 @@
 title: "Get userAttributeAssignments"
 description: "Read the properties and relationships of an identityUserFlowAttributeAssignment object."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
