@@ -65,6 +65,17 @@ doc_type: enumTypes
 |inactive|
 |unknownFutureValue|
 
+### tenantOnboardingEligibilityReason values
+
+|Member|
+|:---|
+|none|
+|contractType|
+|delegatedAdminPrivileges|
+|usersCount|
+|license|
+|unknownFutureValue|
+
 ### workloadActionCategory values
 
 |Member|
