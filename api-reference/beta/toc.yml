@@ -9806,8 +9806,8 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Cloud PC (preview)
         items:
-        - name: Windows 365 Overview
-          href: resources/windows365overview.md
+        - name: Overview
+          href: resources/cloudpc-api-overview.md
         - name: Virtual endpoint
           href: resources/virtualendpoint.md
           items:
