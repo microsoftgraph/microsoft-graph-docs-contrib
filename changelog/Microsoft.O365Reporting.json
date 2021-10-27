@@ -337,7 +337,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-          "Description": "Added the **isLicensed** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -345,7 +345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -353,7 +353,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -361,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **adHocMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -369,7 +369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **adHocMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -377,7 +377,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -385,7 +385,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -393,7 +393,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -401,7 +401,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -409,7 +409,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "audioDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **audioDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **audioDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -417,7 +417,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "videoDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **videoDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **videoDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -425,7 +425,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "screenShareDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **screenShareDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **screenShareDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -433,7 +433,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-          "Description": "Added the **isLicensed** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -441,7 +441,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "usedChromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **usedChromeOS** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedChromeOS** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -449,7 +449,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "usedLinux",
           "ChangeType": "Addition",
-          "Description": "Added the **usedLinux** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedLinux** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -457,7 +457,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageUserCounts** resource.",
           "Target": "teamsDeviceUsageUserCounts"
         },
         {
@@ -465,7 +465,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-          "Description": "Added the **linux** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageUserCounts** resource.",
           "Target": "teamsDeviceUsageUserCounts"
         },
         {
@@ -473,7 +473,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
         },
         {
@@ -481,7 +481,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-          "Description": "Added the **linux** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
         },
         {
@@ -489,7 +489,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsUserActivityDistributionUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivitydistributionusercounts?view=graph-rest-beta) resource type.",
+          "Description": "Added the **teamsUserActivityDistributionUserCounts** resource type.",
           "Target": "teamsUserActivityDistributionUserCounts"
         },
         {
