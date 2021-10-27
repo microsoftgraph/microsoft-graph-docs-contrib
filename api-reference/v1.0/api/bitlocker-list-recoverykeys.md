@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-For delegated permissions to allow apps to get bitLockerRecoveryKey resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from or the the calling user must be in one of the following directory roles:
+For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
 
 * Global administrator
 * Cloud device administrator

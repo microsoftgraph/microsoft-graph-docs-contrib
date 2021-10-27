@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-**Note:** For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
+For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -52,7 +52,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to return the **key** property. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to return the **key** property. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
