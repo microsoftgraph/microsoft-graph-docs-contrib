@@ -13,13 +13,12 @@ Throttling limits the number of concurrent calls to a service to prevent overuse
 
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
 
+> [!NOTE]
+> Solutions that need to extract a large volume of data from Microsoft Graph should use [Microsoft Graph Data Connect](data-connect-concept-overview.md) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
+
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
-
-> [!NOTE]
-> - Customers and partners looking to extract large volume of data from Microsoft Graph should leverage [Microsoft Graph Data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
-
 
 <!-- markdownlint-disable MD026 -->
 ## What happens when throttling occurs?
@@ -304,7 +303,7 @@ The preceding limits apply to the following resources:
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
-  
+
 For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
