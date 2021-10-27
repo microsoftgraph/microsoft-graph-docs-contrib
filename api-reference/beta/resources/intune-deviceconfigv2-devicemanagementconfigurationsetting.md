@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationSetting resource type"
 description: "Setting instance within policy"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -35,7 +35,7 @@ Setting instance within policy
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
+|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

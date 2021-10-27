@@ -9,6 +9,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/{id}/appManagementPolicies/$ref"]]];
 [urlRequest setHTTPMethod:@"POST"];
+[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAppManagementPolicy *appManagementPolicy = [[MSGraphAppManagementPolicy alloc] init];
 

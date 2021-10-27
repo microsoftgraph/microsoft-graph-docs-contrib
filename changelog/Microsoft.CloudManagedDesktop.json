@@ -45,6 +45,90 @@
         {
             "ChangeList": [
                 {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "servicePlans",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **servicePlans** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcServicePlan",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcServicePlan](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta) resource type and supported method.",
+                    "Target": "cloudPcServicePlan"
+                },
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcServicePlanType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcServicePlanType** enumeration type.",
+                    "Target": "cloudPcServicePlanType"
+                }
+            ],
+            "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-10-25T05:40:39.582Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckConnectDisabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckConnectDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckDurationExceeded",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckDurationExceeded` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "permissionCheckTransientServiceError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `permissionCheckTransientServiceError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "cd9ec23a-28ab-11ec-9ce8-b357a2761d24",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-10-25T08:18:27.582Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "f9be3f85-2629-4cb4-a718-b8c66ee2c469",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "supportedRegions",

@@ -2,7 +2,7 @@
 title: "Get deviceComplianceActionItem"
 description: "Read properties and relationships of the deviceComplianceActionItem object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

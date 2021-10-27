@@ -2,7 +2,7 @@
 title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

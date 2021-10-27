@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcDeviceImages"
+title: "List deviceImages"
 description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
