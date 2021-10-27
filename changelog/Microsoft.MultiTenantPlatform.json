@@ -473,8 +473,8 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2021-10-26T23:54:12.684464Z",
-            "WorkloadArea": "Microsoft.MultiTenantPlatform",
-            "SubArea": ""
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Multi-tenant management"
         }
     ]
 }

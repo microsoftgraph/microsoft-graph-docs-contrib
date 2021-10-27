@@ -25,7 +25,7 @@ Represents onboarding status information for a managed tenant.
 |onboardedByUserId|String|The identifier for the account that onboarded the managed tenant. Optional. Read-only.|
 |onboardedDateTime|DateTimeOffset|The date and time when the managed tenant was onboarded. Optional. Read-only.|
 |onboardingStatus|tenantOnboardingStatus|The onboarding status for the managed tenant.. Possible values are: `ineligible`, `inProcess`, `active`, `inactive`, `unknownFutureValue`. Optional. Read-only.|
-|tenantOnboardingEligibilityReason|tenantOnboardingEligibilityReason|Organization's onboarding eligibility reason in Lighthouse.. Possible values are: `none`, `contractType`, `delegatedAdminPrivileges`,`usersCount`,`license`. Optional. Read-only.|
+|tenantOnboardingEligibilityReason|tenantOnboardingEligibilityReason|Organization's onboarding eligibility reason in Microsoft 365 Lighthouse.. Possible values are: `none`, `contractType`, `delegatedAdminPrivileges`,`usersCount`,`license`. Optional. Read-only.|
 |workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) collection|The collection of workload statues for the managed tenant. Optional. Read-only.|
 
 ## Relationships
