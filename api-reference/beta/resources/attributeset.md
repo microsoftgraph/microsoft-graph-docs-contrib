@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 An object that represents a group of related custom security attribute definitions.
 
-Up to 100 `attributeSet` objects can be defined in a tenant. Can't be renamed or deleted.
+Up to 500 `attributeSet` objects can be defined in a tenant. Can't be renamed or deleted.
 
 ## Methods
 |Method|Return type|Description|
