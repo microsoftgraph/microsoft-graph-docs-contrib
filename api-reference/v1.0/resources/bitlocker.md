@@ -2,7 +2,7 @@
 title: "bitLocker resource"
 description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey which contains the actual recovery key."
 author: "hafowler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
