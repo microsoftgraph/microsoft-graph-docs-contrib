@@ -145,6 +145,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -251,6 +252,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -372,6 +374,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -484,6 +487,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991899452?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991899452&parentMessageId=1616991899452",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -598,6 +602,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -708,6 +713,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616992043931?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616992043931&parentMessageId=1616992043931",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,

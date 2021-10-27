@@ -1246,6 +1246,7 @@ Possible values for user account types (group membership), per Windows definitio
 | chatEvent |
 | typing |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessagePolicyViolationDlpActionType values
 
@@ -1686,4 +1687,23 @@ Possible values for user account types (group membership), per Windows definitio
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
 |unknownFutureValue|

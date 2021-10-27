@@ -81,6 +81,8 @@ items:
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
+    - name: System messages
+      href: /graph/system-messages?context=graph/api/1.0
   - name: Migrate
     expanded: false
     items:
