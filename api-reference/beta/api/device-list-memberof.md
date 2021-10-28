@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List device memberOf
+# List memberOf
 
 Namespace: microsoft.graph
 
