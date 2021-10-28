@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Use this API to get the members list (user, group, device) in an administrative unit."
+description: "Use this API to get the members list (users, groups, and devices) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
