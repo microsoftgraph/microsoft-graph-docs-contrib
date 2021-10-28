@@ -28,8 +28,8 @@ Up to 100 `allowedValue` objects can be defined per [customSecurityAttributeDefi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | Identifier for the allowed value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. |
-|isActive|Boolean|Indicates whether the allowed value is active. If set to `false`, this value cannot be added to any other supported directory objects.|
+| id | String | Identifier for the predefined value. Can be up to 64 characters long and include Unicode characters. Can include spaces, but some special characters are not allowed. Cannot be changed later. Case sensitive. |
+|isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects.|
 
 ## Relationships
 None.

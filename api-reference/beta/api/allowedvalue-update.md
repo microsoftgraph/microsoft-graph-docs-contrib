@@ -49,7 +49,7 @@ The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isActive|Boolean|Indicates whether the allowed value is active. If set to `false`, this value cannot be added to any other supported directory objects. Optional.|
+|isActive|Boolean|Indicates whether the predefined value is active or deactivated. If set to `false`, this predefined value cannot be assigned to any additional supported directory objects. Optional.|
 
 
 

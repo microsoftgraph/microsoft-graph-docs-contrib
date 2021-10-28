@@ -42,7 +42,7 @@ Up to 500 active objects can be defined in a tenant. The `customSecurityAttribut
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|Values that are allowed for this custom security attribute.<br><br>This navigation property is not returned by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.|
+|allowedValues|[allowedValue](../resources/allowedvalue.md) collection|Values that are predefined for this custom security attribute.<br><br>This navigation property is not returned by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
