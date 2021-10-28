@@ -79,7 +79,7 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example
+## Examples
 ### Request
 Here is an example of the request.
 
