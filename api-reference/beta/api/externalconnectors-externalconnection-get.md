@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 The following is an example of the request.
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -64,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/connections/contosohr
+GET https://graph.microsoft.com/beta/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]
@@ -83,6 +85,7 @@ GET https://graph.microsoft.com/beta/connections/contosohr
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 <!-- markdownlint-disable MD024 -->
