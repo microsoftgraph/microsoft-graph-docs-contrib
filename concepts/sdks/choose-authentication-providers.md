@@ -337,7 +337,24 @@ On-behalf-of OAuth flows require that you implement a custom authentication prov
 
 # [Java](#tab/Java)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
+```java
+final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
+        .clientId(clientID)
+        .pfxCertificate(pfxCertificatePath) // or .pemCertificate(certificatePath) or .clientSecret("ClientSecret")
+        .clientCertificatePassword(pfxCertificatePassword) // remove if using pemCertificate or clientSecret
+        .tokenCachePersistenceOptions(tokenCachePersistenceOptions) //Optional: enables the persistent token cache which is disabled by default
+        .userAssertion(userAssertion)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, onBehalfOfCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
+        .builder()
+        .authenticationProvider(tokenCredentialAuthProvider)
+        .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # [Android](#tab/Android)
 
