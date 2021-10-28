@@ -1,5 +1,5 @@
 ---
-title: "List device memberOf"
+title: "List memberOf"
 description: "Get groups or administrative units that this device is a direct member of. This operation is not transitive."
 author: "spunukol"
 ms.localizationpriority: medium
