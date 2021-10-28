@@ -390,8 +390,11 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams).
 
 ### Unable to filter team members by roles
-1. All the requests to filter team members by roles expect either _skipToken_ parameter or _top_ paramater in the request but not both. If both the parameters are passed in the request, the _top_ parameter will be ignored.
-2. Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
+Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
+
+### Requests to filter team members by role require a parameter
+
+All the requests to filter team members by roles expect either a _skipToken_ parameter or a _top_ paramater in the request, but not both. If both the parameters are passed in the request, the _top_ parameter will be ignored.
 
 ### Some properties for chat members might be missing in the response to a GET request
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
