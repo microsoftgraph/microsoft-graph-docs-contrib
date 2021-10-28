@@ -20,7 +20,7 @@ var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
 	}
 };
 
-await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
 	.Request()
 	.UpdateAsync(externalItem);
 
