@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md), [group](../resources/group.md), and/or [device](../resources/device.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) objects in the response body. Adding `$ref` at the end of the request returns a collection of only `@odata.id` URLs of the members.
 
 ## Examples
 ##### List member objects
