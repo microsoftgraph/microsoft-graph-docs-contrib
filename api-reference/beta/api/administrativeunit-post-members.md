@@ -1,6 +1,6 @@
 ---
 title: "Add a member"
-description: "Use this API to add a member (user, group, device) to an administrative unit."
+description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
