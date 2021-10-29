@@ -1,7 +1,7 @@
 ---
 title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

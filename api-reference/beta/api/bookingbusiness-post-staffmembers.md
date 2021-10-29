@@ -1,7 +1,7 @@
 ---
 title: "Create bookingStaffMember"
 description: "Create a new staff member in the specified bookingbusiness."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,10 +32,10 @@ POST /bookingBusinesses/{id}/staffMembers
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object. You must include the following properties:
+In the request body, supply a JSON representation of a [bookingStaffMember](../resources/bookingstaffmember.md) object. You must include the following properties:
 
 - **displayName**
 - **emailAddress**
@@ -43,10 +43,10 @@ In the request body, supply a JSON representation of [bookingStaffMember](../res
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -66,6 +66,7 @@ Content-length: 309
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
     "workingHours":[
@@ -155,9 +156,10 @@ Content-length: 309
 
 ---
 
-In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,6 +177,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar":false,
     "colorIndex":1,
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours":[
         {

@@ -1,7 +1,7 @@
 ---
 title: "offerShiftRequest resource type"
 description: "Represents type of shift request to offer a shift to another user in the team."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

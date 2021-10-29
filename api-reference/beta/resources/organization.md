@@ -1,7 +1,7 @@
 ---
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -29,10 +29,19 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
-|[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
-|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get an organizationalBrandingProperties object collection. |
-|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a collection of organizationalBrandingProperties objects. |
+|**Organization licenses**| | |
 |[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
+|**Organizational branding**| | |
+|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Get the default organizational branding object. |
+|[Update organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update the default organizational branding object. |
+|[Create organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Create a new localization (language-specific) branding and a default branding object, if it doesn't exist. |
+|[List organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Retrieve all localization branding objects in the tenant. |
+|[Get organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Read the properties of a localization branding object. |
+|[Update organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Update a localization branding object. |
+|[Delete organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Delete a localization branding object. |
+<!--|[Delete organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Delete the default organizational branding object. |
+
+**NOTE: To restore the Delete organizationalBranding operation back into the table after Update organizationalBranding if all inconsistencies are resolved.-->
 
 ## Properties
 
@@ -42,7 +51,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | businessPhones | String collection | Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
 | city | String | City name of the address for the organization. |
 | country | String | Country/region name of the address for the organization. |
-| countryLetterCode | String | Country/region abbreviation for the organization. |
+| countryLetterCode | String | Country or region abbreviation for the organization in ISO 3166-2 format. |
 | createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | deletedDateTime | DateTimeOffset | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | The directory size quota information of an organization. |
@@ -68,9 +77,9 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Relationship  | Type	|Description|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage  certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
+|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 
-|organizationalBranding|[organizationalBrandingProperties](organizationalbrandingproperties.md) collection| Branding for the organization. Nullable.|
+|organizationalBranding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
 |settings|[organizationSettings](organizationsettings.md) | Retrieve the properties and relationships of organizationSettings object. Nullable.|
 
 ## JSON representation
@@ -89,29 +98,29 @@ Here is a JSON representation of the resource
 ```json
 {
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
-  "businessPhones": ["string"],
-  "city": "string",
-  "country": "string",
-  "countryLetterCode": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "country": "String",
+  "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
-  "displayName": "string",
-  "id": "string (identifier)",
-  "isMultipleDataLocationsForServicesEnabled": "boolean",
-  "marketingNotificationEmails": ["string"],
-  "objectType": "string",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "Boolean",
+  "marketingNotificationEmails": ["String"],
+  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
-  "postalCode": "string",
-  "preferredLanguage": "string",
+  "postalCode": "String",
+  "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "securityComplianceNotificationMails": ["string"],
-  "securityComplianceNotificationPhones": ["string"],
-  "state": "string",
-  "street": "string",
-  "technicalNotificationMails": ["string"],
+  "securityComplianceNotificationMails": ["String"],
+  "securityComplianceNotificationPhones": ["String"],
+  "state": "String",
+  "street": "String",
+  "technicalNotificationMails": ["String"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
   "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "dirSyncEnabled": true

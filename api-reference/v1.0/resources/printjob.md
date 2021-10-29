@@ -2,7 +2,7 @@
 title: printJob resource type
 description: Represents a print job that has been queued for a printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

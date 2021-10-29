@@ -1,7 +1,7 @@
 ---
 title: "accessPackageResource resource type"
 description: "An access package resource is a reference to a resource associated with a catalog the roles for which can be used in one or more access packages."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -41,9 +41,9 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Nullable.|
-|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable.|
-|accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable.|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Nullable. Supports `$expand`.|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
+|accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 

@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "You can use createLink action to share a DriveItem via a sharing link."
 title: "driveItem: createLink"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

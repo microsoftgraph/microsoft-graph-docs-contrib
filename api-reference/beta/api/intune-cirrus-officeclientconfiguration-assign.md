@@ -1,5 +1,5 @@
 ---
-title: "Office client configuration assign action"
+title: "assign action"
 description: "Replace all targeted groups for a policy."
 localization_priority: Normal
 author: "dougeby"
@@ -7,7 +7,7 @@ ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Office client configuration assign  assign action
+# assign action
 
 Namespace: microsoft.graph
 
@@ -97,7 +97,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

@@ -83,17 +83,18 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data. (iOS Only)|
-|customSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
+|customSettings|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to the affected users, unalterned by this service|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |minimumRequiredPatchVersion|String|Define the oldest required Android security patch level a user can have to gain secure access to the app. (Android only)|
 |minimumWarningPatchVersion|String|Define the oldest recommended Android security patch level a user can have for secure access to the app. (Android only)|
-|exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps. (iOS Only)|
-|exemptedAppPackages|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps. (Android only)|
+|exemptedAppProtocols|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|iOS Apps in this list will be exempt from the policy and will be able to receive data from managed apps. (iOS Only)|
+|exemptedAppPackages|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Android App packages in this list will be exempt from the policy and will be able to receive data from managed apps. (Android only)|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True. (iOS Only)|
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWipePatchVersion|String|Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data. (Android only)|
@@ -127,6 +128,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -202,6 +204,7 @@ Here is a JSON representation of the resource.
   ],
   "appActionIfUnableToAuthenticateUser": "String",
   "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -265,10 +268,10 @@ Here is a JSON representation of the resource.
   "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "String"
+  "appActionIfDeviceLockNotSet": "String",
+  "connectToVpnOnLaunch": true
 }
 ```
-
 
 
 

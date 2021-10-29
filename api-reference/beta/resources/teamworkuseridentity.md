@@ -2,7 +2,7 @@
 title: "teamworkUserIdentity resource type"
 description: "Represents a user in Microsoft Teams."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

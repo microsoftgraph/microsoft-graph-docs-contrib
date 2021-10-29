@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Get a SharePoint Site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Retrieve properties and relationships for a site resource."
 doc_type: apiPageType

@@ -1,10 +1,10 @@
 ---
 title: "privilegedRoleAssignment: my"
 description: "Get the requestor's privileged role assignments."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "shauliu1"
 ---
 
 # privilegedRoleAssignment: my
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Get the requestor's privileged role assignments.
 

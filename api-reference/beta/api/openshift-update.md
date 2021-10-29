@@ -1,7 +1,7 @@
 ---
 title: "Update openShift"
 description: "Update the properties of an openShift object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

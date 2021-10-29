@@ -2,7 +2,7 @@
 title: "teamsUserActivityUserDetail resource type"
 description: "Represents details about Microsoft Teams user activity by user."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "TableRowCollection: add"
 description: "Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookTableRow](../resources/workbooktablerow.md) object in the response body.
 
 ## Example
 In this example two rows of data are inserted at the end of the table. 

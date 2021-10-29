@@ -1,7 +1,7 @@
 ---
 title: "Get legalHold"
 description: "Read the properties and relationships of a legalHold object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "offerShiftRequest: decline"
 description: "Decline an offer shift request."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

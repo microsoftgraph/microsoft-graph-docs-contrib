@@ -2,7 +2,7 @@
 title: List allowedGroups for printerShare
 description: Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

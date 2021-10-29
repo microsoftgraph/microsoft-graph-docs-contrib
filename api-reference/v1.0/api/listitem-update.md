@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Update listItem
 description: Update the properties on a **[listItem][]**.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

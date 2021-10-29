@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for an eligible role assignment operations through Azure AD Privileged Identity Management."
-author: "shauliu"
-localization_priority: Normal
+author: "shauliu1"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the schedule for an eligible role assignment through Azure AD Privileged Identity Management. A `roleEligibilitySchedule` is created by `roleEligibilityScheduleRequest` and is used to instantiate a `roleEligibilityInstance`. We support list and get operations to retrieve the schedule for the purpose of viewing current and future eligible assignments.
+Represents the schedule for an eligible role assignment through Azure AD Privileged Identity Management. A **unifiedRoleEligibilitySchedule** is created by [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) and is used to instantiate a [unifiedRoleEligibilityScheduleInstance](unifiedroleeligibilityscheduleinstance.md). This resource supports the List and Get operations to retrieve the schedule for the purpose of viewing current and future eligible assignments.
 
 Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
 
@@ -27,17 +27,17 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdDateTime|DateTimeOffset|Time that the schedule was created. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|String|ID of the RoleEligibilityScheduleRequest that created this schedule. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|String|The unique identifier for the unifiedRoleEligibilitySchedule. Key, not nullable, Read-only. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
+|createdDateTime|DateTimeOffset|Time that the schedule was created. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
+|createdUsing|String|Identifier of the roleEligibilityScheduleRequest that created this schedule. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
+|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
+|id|String|The unique identifier for the unifiedRoleEligibilitySchedule. Key, not nullable, Read-only. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
 |memberType|String|Membership type of the eligible assignment. It can either be `Inherited`, `Direct`, or `Group`.|
-|modifiedDateTime|DateTimeOffset|Last time the schedule was updated. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| Objectid of the principal to which the eligible assignment is being granted to. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinitionId|String|ID of the unifiedRoleDefinition the eligible assignment is for. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|modifiedDateTime|DateTimeOffset|Last time the schedule was updated. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).|
+|principalId|String| Identifier of the principal to which the eligible assignment is being granted to. Can be a group or a user. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).<br> Supports `$filter` (`eq`).|
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).<br> Supports `$filter` (`eq`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The schedule object of the eligible role assignment request.|
-|status|String|Status for the `roleEligibilitySchedule`. It can include state related messages like `Provisioned`, `Revoked`, `Pending Provisioning`, and `Pending Approval`. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|status|String|Status for the `roleEligibilitySchedule`. It can include state related messages like `Provisioned`, `Revoked`, `Pending Provisioning`, and `Pending Approval`. Inherited from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).<br> Supports `$filter` (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|

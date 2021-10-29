@@ -2,7 +2,7 @@
 title: "noMediaConfig resource type"
 description: "Media configuration for indicating no media."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

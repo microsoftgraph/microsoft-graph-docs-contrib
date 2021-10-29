@@ -2,7 +2,7 @@
 title: "List legalHold siteSources"
 description: "Get the list of siteSource objecs associated with a legal hold."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

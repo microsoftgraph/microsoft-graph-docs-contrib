@@ -2,7 +2,7 @@
 title: "accessPackageQuestion resource type"
 description: "The complex type for questions configured on an access package assignment policy."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -55,6 +55,8 @@ The following table shows the properties that are required when you create the [
 |deviceCount|Int64|User experience analytics device startup process summarized count.|
 |medianImpactInMs|Int32|User experience analytics device startup process median impact in milliseconds.|
 |totalImpactInMs|Int32|User experience analytics device startup process total impact in milliseconds.|
+|medianImpactInMs2|Int64|User experience analytics device startup process median impact in milliseconds.|
+|totalImpactInMs2|Int64|User experience analytics device startup process total impact in milliseconds.|
 
 
 
@@ -68,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{userExperienceAnalyticsDeviceStartupProcessPerformanceId}
 Content-type: application/json
-Content-length: 285
+Content-length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -77,7 +79,9 @@ Content-length: 285
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
@@ -86,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 334
+Content-Length: 387
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -96,10 +100,11 @@ Content-Length: 334
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
-
 
 
 

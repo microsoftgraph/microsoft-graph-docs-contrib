@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: publish"
 description: "Publish a content type present in content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Publishes a [contentType][] present in content type hub site.
+Publishes a [contentType][] present in a content type hub site.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
->**Note:** The siteId represents a content type hub site.
+>**Note:** `siteId` represents a content type hub site.
 
 ## Request headers
 |Name|Description|

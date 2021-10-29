@@ -1,7 +1,7 @@
 ---
 title: "Get profileCardProperty"
 description: "Retrieve the properties and relationships of a profileCardProperty object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

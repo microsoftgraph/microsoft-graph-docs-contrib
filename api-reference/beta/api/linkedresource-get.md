@@ -2,7 +2,7 @@
 title: "Get linkedResource"
 description: "Read the properties and relationships of a linkedResource object."
 author: "avijityadav"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List notebooks"
 description: "Retrieve a list of notebook objects."
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

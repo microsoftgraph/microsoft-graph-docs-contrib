@@ -1,15 +1,16 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
-localization_priority: Priority
-author: "Nickgmicrosoft"
+ms.localizationpriority: high
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get identityProvider
-
+# Get identityProvider (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
 
@@ -58,6 +59,7 @@ The following example retrieves a specific **identityProvider**.
   "blockType": "request",
   "name": "get-identityprovider"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```

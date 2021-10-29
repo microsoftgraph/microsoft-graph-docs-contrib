@@ -3,7 +3,7 @@ author: daspek
 description: "The ShareAction resource provides information about an activity that shared an item."
 ms.date: 09/14/2017
 title: ShareAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List threat intelligence indicators"
 description: "Retrieve a list of tiindicator objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

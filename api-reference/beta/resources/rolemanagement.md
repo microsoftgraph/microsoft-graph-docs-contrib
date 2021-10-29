@@ -1,7 +1,7 @@
 ---
 title: "roleManagement resource type"
 description: "RBAC role management resource"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a Microsoft 365 RBAC role management entity that provides access to role definitions and role assignments surfaced from various RBAC providers. 
 
 The unified role management API currently supports the following RBAC providers in Microsoft 365:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
@@ -26,8 +26,6 @@ For more information, see:
 * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Delegation and roles in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
 * [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 
@@ -41,7 +39,7 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a cloud PC RBAC provider. Read-only. Nullable.|
+|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a Cloud PC RBAC provider. Read-only. Nullable.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
 |directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of an Azure AD RBAC provider. Read-only. Nullable.|
 |entitlementManagement|[rbacApplication](rbacapplication.md)| Provides access to role definitions and role assignments of Azure AD entitlement management. Read-only. Nullable.|

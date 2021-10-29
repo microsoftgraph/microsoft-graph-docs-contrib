@@ -1,7 +1,7 @@
 ---
 title: "Get authenticationContextClassReference"
 description: "Retrieve the properties and relationships of a authenticationContextClassReference object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

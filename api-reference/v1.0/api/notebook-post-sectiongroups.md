@@ -2,7 +2,7 @@
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

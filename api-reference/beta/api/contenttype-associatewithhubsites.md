@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: associateWithHubSites"
 description: "Associate a content type with list of hubsites."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /sites/id/contentTypes/id/associateWithHubSites
+POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 Content-Type: application/json
 
 {

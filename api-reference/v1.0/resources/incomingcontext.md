@@ -2,7 +2,7 @@
 title: "incomingContext resource type"
 description: "Represents the context associated with an incoming call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

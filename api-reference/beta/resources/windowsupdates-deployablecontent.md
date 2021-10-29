@@ -2,7 +2,7 @@
 title: "deployableContent resource type"
 description: "Represents content that is deployable by the service."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

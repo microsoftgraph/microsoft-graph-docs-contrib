@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageAssignmentPolicy"
 description: "Use this API to create a new accessPackageAssignmentPolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -313,7 +313,7 @@ Content-type: application/json
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
+                "isEscalationEnabled": false,
                 "escalationTimeInMinutes": 11520,
                 "primaryApprovers": [{
                         "@odata.type": "#microsoft.graph.groupMembers",
@@ -328,9 +328,6 @@ Content-type: application/json
                 ]
             }
         ]
-    },
-    "accessReviewSettings": {
-        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,

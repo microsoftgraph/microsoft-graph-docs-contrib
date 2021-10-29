@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1559
+Content-Length: 1627
 
 {
   "value": [
@@ -98,12 +98,12 @@ Content-Length: 1559
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "managementServiceAppId": "Management Service App Id value",
       "hybridAzureADJoinSkipConnectivityCheck": true
     }
   ]
 }
 ```
-
 
 
 
