@@ -1,7 +1,7 @@
 ---
 title: "List classes"
 description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType

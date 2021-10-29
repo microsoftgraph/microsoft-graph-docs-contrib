@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"
@@ -102,7 +102,7 @@ In this example, `{id}` and `{principalId-value}` would both be the `id` of the 
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

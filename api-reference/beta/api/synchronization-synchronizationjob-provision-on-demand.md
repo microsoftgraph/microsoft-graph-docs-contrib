@@ -2,7 +2,7 @@
 title: "synchronizationJob: provisionOnDemand"
 description: "Select a user and provision the account on-demand."
 author: "ArvindHarinder1"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---

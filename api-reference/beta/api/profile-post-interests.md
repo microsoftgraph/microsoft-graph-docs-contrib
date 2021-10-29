@@ -1,7 +1,7 @@
 ---
 title: "Create personInterest"
 description: "Create a new personInterest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "People"
 doc_type: "apiPageType"

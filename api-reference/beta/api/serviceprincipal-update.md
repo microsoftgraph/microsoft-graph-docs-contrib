@@ -2,7 +2,7 @@
 title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 ---

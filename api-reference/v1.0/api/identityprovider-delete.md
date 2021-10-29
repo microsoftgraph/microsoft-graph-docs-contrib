@@ -1,15 +1,16 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider"
-localization_priority: Priority
-author: "Nickgmicrosoft"
+ms.localizationpriority: high
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete identityProvider
-
+# Delete identityProvider (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Delete an existing [identityProvider](../resources/identityprovider.md).
 
@@ -58,6 +59,7 @@ The following example deletes an **identityProvider**.
   "blockType": "request",
   "name": "delete-identityprovider"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```

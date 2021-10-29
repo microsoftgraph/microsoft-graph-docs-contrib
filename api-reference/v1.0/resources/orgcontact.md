@@ -1,7 +1,7 @@
 ---
 title: "orgContact resource type"
 description: "Represents an organizational contact"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -32,6 +32,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | String collection                                | Returns a list of directoryObjects the organizational contact is a member of.                                               |
 
 ## Properties
+
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 | Property                     | Type                                                                     | Description                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

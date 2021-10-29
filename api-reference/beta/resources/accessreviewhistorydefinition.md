@@ -2,7 +2,7 @@
 title: "accessReviewHistoryDefinition resource types"
 description: "Represents a collection of access review history data."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "bookingService resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: resourcePageType
@@ -38,11 +38,14 @@ Represents information about a particular service provided by a [bookingBusiness
 |emailAddress|String|An email address|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
+|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
+|smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
 |staffMemberIds|String collection|Represents those [staff members](bookingstaffmember.md) who provide this service. |
+|webUrl|String|The URL a customer uses to access the service.|
 
 ## Relationships
 None
@@ -72,11 +75,14 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "id": "String (identifier)",
   "isHiddenFromCustomers": true,
+  "isLocationOnline": "Boolean",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "staffMemberIds": ["String"]
+  "smsNotificationsEnabled": "Boolean",
+  "staffMemberIds": ["String"],
+  "webUrl": "String"
 }
 
 ```

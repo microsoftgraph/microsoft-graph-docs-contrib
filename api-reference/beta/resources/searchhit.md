@@ -1,7 +1,7 @@
 ---
 title: "searchHit resource type"
 description: "Description of searchHit entity"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

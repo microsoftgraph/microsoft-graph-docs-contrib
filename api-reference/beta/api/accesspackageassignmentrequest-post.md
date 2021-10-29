@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -59,7 +59,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](accesspackageassignment-list.md).
 
 ## Examples
-### Example 1: Admin requests a direct assignment for a user
+### Example 1: Admin requests a direct assignment for a user already in the directory
 #### Request
 
 The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
@@ -154,19 +154,24 @@ Content-type: application/json
         "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
         "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
     },
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
-        }
-    }]
+    ]
 }
 ```
 # [C#](#tab/csharp)
@@ -211,64 +216,81 @@ Content-type: application/json
     "requestState": "Submitted",
     "requestStatus": "Accepted",
     "isValidationOnly": false,
-    "answers": [{
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Arizona",
-        "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
-            "isRequired": false,
-            "text": {
-                "defaultText": "what state are you from?",
-                "localizedTexts": [{
-                    "text": "¿De qué estado eres?",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-            "choices": [{
-                "actualValue": "AZ",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Arizona",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "CA",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "California",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "OH",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Ohio",
-                        "languageCode": "es"
-                    }]
-                }
-            }],
-            "allowsMultipleSelection": false
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Arizona",
+            "answeredQuestion": {
+                "id": "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "what state are you from?",
+                    "localizedTexts": [
+                        {
+                            "text": "¿De qué estado eres?",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "choices": [
+                    {
+                        "actualValue": "AZ",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Arizona",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "CA",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "California",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actualValue": "OH",
+                        "displayValue": {
+                            "localizedTexts": [
+                                {
+                                    "text": "Ohio",
+                                    "languageCode": "es"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "allowsMultipleSelection": false
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "Need access to marketing campaign material",
+            "answeredQuestion": {
+                "id": "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
+                "isRequired": false,
+                "text": {
+                    "defaultText": "Who is your manager?",
+                    "localizedTexts": [
+                        {
+                            "text": "por qué necesita acceso a este paquete",
+                            "languageCode": "es"
+                        }
+                    ]
+                },
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "isSingleLineQuestion": false
+            }
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Need access to marketing campaign material",
-        "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
-            "isRequired": false,
-            "text": {
-                "defaultText": "Who is your manager?",
-                "localizedTexts": [{
-                    "text": "por qué necesita acceso a este paquete",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": false
-        }
-    }]
+    ]
 }
 ```
 ### Example 3: Request a package and provide a justification
@@ -387,6 +409,79 @@ Content-type: application/json
     "requestStatus": "Accepted"
 }
 ```
+
+### Example 5: Admin requests a direct assignment for a user not yet in the directory
+#### Request
+
+The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user, for a user who does not exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+  "requestType": "AdminAdd",
+  "accessPackageAssignment":{
+     "target": {
+        "email": "user@contoso.com"
+     },
+     "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
+     "accessPackageId":"a914b616-e04e-476b-aa37-91038f0b165b"
+  }
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-5-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-5-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+
+  "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+  "requestType": "AdminAdd",
+  "requestState": "Submitted",
+  "requestStatus": "Accepted",
+  "isValidationOnly": false
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

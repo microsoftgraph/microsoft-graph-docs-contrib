@@ -2,7 +2,7 @@
 title: "Best practices for Excel APIs in Microsoft Graph"
 description: "List best practices and examples for Excel APIs in Microsoft Graph"
 author: "grangeryy"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 

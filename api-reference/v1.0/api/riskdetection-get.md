@@ -2,7 +2,7 @@
 title: "Get riskDetection"
 description: "Read the properties and relationships of a riskDetection object."
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

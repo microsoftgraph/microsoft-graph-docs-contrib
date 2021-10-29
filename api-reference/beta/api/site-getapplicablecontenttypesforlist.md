@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "site: getApplicableContentTypesForList"
 description: "Get site content types that can be added to a list."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
-|Delegated (personal Microsoft account) | Not Supported    |
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## HTTP request
@@ -31,6 +31,15 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/getApplicableContentTypesForList
 ```
+
+## Function parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|-|-|-|
+|listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
+
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -44,14 +53,6 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 
 ## Request body
 Do not supply a request body for this method.
-
-## Function Parameters
-In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
-
-|Parameter|Type|Description|
-|-|-|-|
-|listId| String | GUID of the list for which the applicable content types need to be fetched. Required. |
 
 ## Response
 

@@ -2,7 +2,7 @@
 title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

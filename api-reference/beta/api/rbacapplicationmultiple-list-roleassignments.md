@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleAssignmentMultiple"
 description: "Retrieve the properties and relationships of unifiedRoleAssignmentMultiple object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -16,12 +16,10 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) objects for an RBAC provider.
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 
 For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -46,7 +44,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To list role assignments for a cloud PC provider:
+To list role assignments for a Cloud PC provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -131,7 +129,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 2: List role assignments for a cloud PC provider
+### Example 2: List role assignments for a Cloud PC provider
 
 ### Request
 
@@ -212,7 +210,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List role assignments for specific role of a cloud PC provider
+### Example 3: List role assignments for specific role of a Cloud PC provider
 
 ### Request
 

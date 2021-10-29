@@ -1,7 +1,7 @@
 ---
 title: "Delete itemEmail"
 description: "Delete an itemEmail object from a users profile."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "List educationSynchronizationProfiles"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -107,13 +107,11 @@ Content-length: 3296
                         "GradeHigh",
                         "Principal Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "section": {
                     "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -123,7 +121,6 @@ Content-length: 3296
                         "Email",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
@@ -132,19 +129,15 @@ Content-length: 3296
                         "Teacher Number",
                         "Middle Name"
                     ],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "studentEnrollment": {
-                    "optionalPropertiesToSync": [],
                     "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 },
                 "teacherRoster": {
-                    "optionalPropertiesToSync": [],
-                    "synchronizationStartDate": "0001-01-01T00:00:00Z",
                     "isSyncDeferred": false,
                     "allowDisplayNameUpdate": false
                 }

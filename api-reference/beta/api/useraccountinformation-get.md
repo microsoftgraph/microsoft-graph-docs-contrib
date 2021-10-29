@@ -1,7 +1,7 @@
 ---
 title: "Get userAccountInformation"
 description: "Retrieve the properties and relationships of userAccountInformation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "Profile"
 doc_type: "apiPageType"

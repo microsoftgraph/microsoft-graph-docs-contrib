@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9030
+Content-Length: 9093
 
 {
   "value": {
@@ -271,11 +271,11 @@ Content-Length: 9030
         "valueType": "Value Type value",
         "updatable": true
       }
-    ]
+    ],
+    "enrollmentProfileName": "Enrollment Profile Name value"
   }
 }
 ```
-
 
 
 

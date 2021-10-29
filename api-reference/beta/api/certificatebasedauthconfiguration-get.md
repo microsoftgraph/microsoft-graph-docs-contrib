@@ -1,7 +1,7 @@
 ---
 title: "Get certificateBasedAuthConfiguration"
 description: "Get the properties of a certificatebasedauthconfiguration object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: Get taskDefinition
 description: Get details about a task definition.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

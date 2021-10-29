@@ -1,7 +1,7 @@
 ---
 title: "Update plannertaskdetails"
 description: "Update the properties of **plannertaskdetails** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

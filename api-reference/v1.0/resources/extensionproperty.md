@@ -1,7 +1,7 @@
 ---
 title: "extensionProperty resource type"
 description: "Represents a directory extension"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"

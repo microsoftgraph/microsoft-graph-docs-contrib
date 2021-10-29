@@ -225,6 +225,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |autoUnlockBlocked|Boolean|Blocks users from unlocking their device with Apple Watch. Available for devices running iOS and iPadOS versions 14.5 and later.|
 |unpairedExternalBootToRecoveryAllowed|Boolean|Allow users to boot devices into recovery mode with unpaired devices. Available for devices running iOS and iPadOS versions 14.5 and later.|
 |onDeviceOnlyDictationForced|Boolean|Disables connections to Siri servers so that users can’t use Siri to dictate text. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|wiFiConnectToAllowedNetworksOnlyForced|Boolean|Require devices to use Wi-Fi networks set up via configuration profiles. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|onDeviceOnlyTranslationForced|Boolean|When set to TRUE, the setting disables connections to Siri servers so that users can’t use Siri to translate text. When set to FALSE, the setting allows connections to to Siri servers to users can use Siri to translate text. Available for devices running iOS and iPadOS versions 15.0 and later.|
+|managedPasteboardRequired|Boolean|Open-in management controls how people share data between unmanaged and managed apps. Setting this to true enforces copy/paste restrictions based on how you configured <b>Block viewing corporate documents in unmanaged apps </b> and <b> Block viewing non-corporate documents in corporate apps.</b>|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
@@ -543,10 +546,12 @@ Here is a JSON representation of the resource.
   "autoUnlockBlocked": true,
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
+  "onDeviceOnlyTranslationForced": true,
+  "managedPasteboardRequired": true,
   "kioskModeAppType": "String"
 }
 ```
-
 
 
 

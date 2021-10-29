@@ -2,7 +2,7 @@
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ The response includes the IDs for the new conversation and thread, which you can
 [list posts](conversationthread-list-posts.md) operation to get the new post as well.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 
@@ -104,7 +104,7 @@ Content-type: application/json
 ---
 
 
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -117,14 +117,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-  "id":"AAQkADPxBgqECsrFDTuM=",
-  "threads@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADPxBgqECsrFDTuM%3D')/threads",
-  "threads":[
-    {
-      "id":"AAQkADUNO4xAAMbGA93Sw-EGCoQKysUNO4w=="
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs=",
+    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs%3D')/threads",
+    "threads": [
+        {
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAtb7jJmXlfkeq0gXIhAeYmxAAtb7jJmXlfkeq0gXIhAeYmw=="
+        }
+    ]
 }
 ```
 

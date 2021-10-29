@@ -1,7 +1,7 @@
 ---
 title: "trustFrameworkKeySet: generateKey"
 description: "Generate a key and a secret automatically in the keyset."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: List bundles
 description: List the bundles in a user's drive
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
