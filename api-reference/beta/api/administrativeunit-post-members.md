@@ -145,10 +145,10 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Create a new group
+### Example 2: Create a new group
 The following example creates a new group in the administrative unit.
 
-### Request
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
