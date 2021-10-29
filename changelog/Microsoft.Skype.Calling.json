@@ -22,10 +22,10 @@
       "ChangeList": [
         {
           "Id": "facfdb13-3aa0-4556-b808-4c3be32e2d44",
-          "ApiChange": "Method",
-          "ChangedApiName": "transfer",
-          "ChangeType": "Change",
-          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-beta) resource.",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "transferee",
+          "ChangeType": "Addition",
+          "Description": "Added the **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/call-transfer?view=graph-rest-beta) method.",
           "Target": "transfer"
         }
       ],
@@ -58,10 +58,10 @@
       "ChangeList": [
         {
           "Id": "343da7fc-e885-49d0-850d-b886c9aa40a5",
-          "ApiChange": "Method",
-          "ChangedApiName": "transfer",
-          "ChangeType": "Change",
-          "Description": "Added **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/transfer?view=graph-rest-1.0) resource.",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "transferee",
+          "ChangeType": "Addition",
+          "Description": "Added the **transferee** parameter to the [transfer](https://docs.microsoft.com/en-us/graph/api/call-transfer?view=graph-rest-1.0) method.",
           "Target": "transfer"
         }
       ],
