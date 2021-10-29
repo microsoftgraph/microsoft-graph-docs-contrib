@@ -3,6 +3,24 @@
     {
       "ChangeList": [
       { 
+        "Id": "4bf37336-391f-4ce3-909b-03314160aade",
+        "ApiChange": "Method",
+        "ChangedApiName": "members",
+        "ChangeType": "Addition",
+        "Description": "Added the ability to create a group to the [add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members) method.",
+        "Target": "members"
+      }
+    ],
+      "Id": "4bf37336-391f-4ce3-909b-03314160aade",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-28T00:00:00.000Z",
+      "WorkloadArea": "Identity and Access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+      { 
         "Id": "e114cd2d-6d20-498d-a61e-623baee7e0f1",
         "ApiChange": "Method",
         "ChangedApiName": "user",
