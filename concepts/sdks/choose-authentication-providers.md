@@ -32,7 +32,11 @@ Authentication providers implement the code required to acquire a token using th
 |                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
 
 > [!NOTE]
-> Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library to get access to the different credentials types. .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package to get access to the different credentials types.
+> The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The authentication providers used are provided by the following Azure Identity libraries:
+>
+> - .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package.
+> - JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
+> - Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library.
 
 ## Authorization code provider
 
@@ -56,6 +60,7 @@ var clientSecret = "YOUR_CLIENT_SECRET";
 // with an authorization code in the query parameters
 var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -182,6 +187,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -207,6 +213,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientCertificate = new X509Certificate2("MyCertificate.pfx");
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -301,6 +308,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -394,6 +402,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -558,6 +567,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new InteractiveBrowserCredentialOptions
 {
     TenantId = tenantId,
@@ -653,6 +663,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -661,6 +672,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 
