@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRoleAssignment objects that are assoc
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List assignments
