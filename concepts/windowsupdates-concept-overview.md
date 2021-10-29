@@ -57,7 +57,7 @@ To learn more, see [Deploy an expedited security update](windowsupdates-deploy-e
 
 ## Protect devices by default
 
-Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to also protect devices that Microsoft ML identifies to be at a higher risk of experiencing post-update issues, such as OS rollbacks, app crashes, or graphics issues.
+Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
 
 To learn more, see [Manage safeguards for a deployment](windowsupdates-manage-safeguards.md).
 

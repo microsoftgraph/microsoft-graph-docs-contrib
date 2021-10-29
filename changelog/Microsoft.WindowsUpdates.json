@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "safeguard",
                     "ChangeType": "Addition",
-                    "Description": "Added the **safeguard** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/deploymentSettings?view=graph-rest-beta) resource.",
+                    "Description": "Added the **safeguard** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentSettings?view=graph-rest-beta) resource.",
                     "Target": "deploymentSettings"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "safeguardSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [safeguardSettings](https://docs.microsoft.com/en-us/graph/api/resources/safeguardSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [safeguardSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta) resource type.",
                     "Target": "safeguardSettings"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "safeguardProfile",
                     "ChangeType": "Addition",
-                    "Description": "Added the [safeguardProfile](https://docs.microsoft.com/en-us/graph/api/resources/safeguardProfile?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [safeguardProfile](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardProfile?view=graph-rest-beta) resource type.",
                     "Target": "safeguardProfile"
                 },
                 {
