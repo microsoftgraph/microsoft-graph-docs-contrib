@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "This method allows your app to track changes to a drive and its children over time."
 ms.date: 09/10/2017
-title: Sync the contents of a drive
+title: "driveItem: delta"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -59,6 +59,16 @@ GET /users/{userId}/drive/root/delta
 
 This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.
@@ -70,11 +80,13 @@ In addition to the collection of DriveItems, the response will also include one 
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
-## Example (Initial Request)
+## Examples
+
+### Example (Initial Request)
 
 Here is an example of how to call this API to establish your local state.
 
-### Request
+#### Request
 
 Here is an example of the initial request.
 
@@ -104,7 +116,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -139,11 +151,11 @@ Content-type: application/json
 This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
 Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
 
-## Example (Last page in a set)
+### Example (Last page in a set)
 
 Here is an example of how to call this API to update your local state.
 
-### Request
+#### Request
 
 Here is an example request after the initial request.
 
@@ -173,7 +185,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -214,7 +226,7 @@ After finishing the full enumeration, compare the returned items with your local
 | `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
-## Retrieving the current deltaLink
+### Retrieving the current deltaLink
 
 In some scenarios, it may be useful to request the current deltaLink value without first enumerating all of the items in the drive already.
 
@@ -225,15 +237,7 @@ To retrieve the latest deltaLink, call `delta` with a query string parameter `?t
 Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
 Using `delta` is the only way to guarantee that you've read all of the data you need to.
 
-## Retrieving delta results using a timestamp
-
-In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, e.g. `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
-
-Using a timestamp in place of a token is only supported on OneDrive for Business and SharePoint.
-
-> **Note:** Clients should use the deltaLink provided by `delta` queries when possible, rather than generating their own token. This capability should only be utilized when the deltaLink is not known.
-
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -261,7 +265,7 @@ GET /me/drive/root/delta?token=latest
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -272,6 +276,69 @@ Content-type: application/json
 {
     "value": [ ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+}
+```
+
+### Retrieving delta results using a timestamp
+
+In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, e.g. `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+
+Using a timestamp in place of a token is only supported on OneDrive for Business and SharePoint.
+
+> **Note:** Clients should use the deltaLink provided by `delta` queries when possible, rather than generating their own token. This capability should only be utilized when the deltaLink is not known.
+
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+
+```msgraph-interactive
+GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-timestamp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-timestamp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-timestamp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-timestamp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "0123456789abc",
+            "name": "folder2",
+            "folder": { },
+            "deleted": { }
+        },
+        {
+            "id": "123010204abac",
+            "name": "file.txt",
+            "file": { }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
