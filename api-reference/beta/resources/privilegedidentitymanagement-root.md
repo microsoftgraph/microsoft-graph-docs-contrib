@@ -4,7 +4,7 @@ description: "APIs for Azure AD Privileged Identity Management to manage Azure A
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Privileged Identity Management (deprecated)
