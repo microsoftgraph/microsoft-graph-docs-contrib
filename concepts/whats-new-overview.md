@@ -33,23 +33,54 @@ Support [media](/graph/api/resources/educationMediaResource) files or other [ext
 - To drive the consent experience for an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), specify the [resources that the app needs to access](/graph/api/resources/requiredresourceaccess?view=graph-rest-beta&preserve-view=true), including the set of OAuth 2.0 delegated permissions and application roles that the application requires.
 - Limit the number of required APIS to 50, and required permissions to 400 per application.
 
+### Identity and access | Directory management
+- Set [extension attributes](/graph/api/resources/onpremisesextensionattributes) for a [device](/graph/api/resources/device) and manage them in Azure Active Directory on device [creation](/graph/api/device-post-devices) or [update](/graph/api/device-update).
+- [Get a BitLocker recovery key](/graph/api/bitlockerrecoverykey-get) on behalf of the signed-in user who's the device owner or in an appropriate role. Getting a recovery key generates an [audit log](/azure/active-directory/reports-monitoring/concept-audit-logs), in parity with the end user experience.
+
+### Identity and access | Governance
+Specify a list of additional users or group members to be notified of the access review progress, in the **additionalNotificationRecipients** property of an [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+
+### Identity and access | Identity and sign-in
+Specify the devices in a [conditional access policy](/graph/api/resources/conditionalaccesspolicy), as part of the [conditions](/graph/api/resources/conditionalAccessConditionSet) that govern when the policy applies.
+
 ### Personal contacts
 Enable support for delegated permissions (`Contacts.Read` or `Contacts.ReadWrite`) for [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-beta&preserve-view=true) resources in personal Microsoft accounts.
 
 ### Teamwork
 - [Get all chat messages across all channels](/graph/api/channel-getallmessages) in a [team](/graph/api/resources/team).
 - [Get all messages from all the chats](/graph/api/chats-getallmessages) that a user participates in, including one-on-one chats, group chats, and meeting chats.
+- Check out the [licensing and payment models](teams-licenses.md) that apply to Microsoft Teams APIs in Microsoft Graph.
 
 ### Users
 User licenses for Azure Active Directory (Azure AD) services now support a timesstamp for when the [state of the license assignment](/graph/api/resources/licenseassignmentstate) is last updated. 
 
 ## October 2021: New in preview only
 
+### Applications
+Use [federated identity credentials](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true) to manage an application's credentials and allow an organization's cloud applications to access Azure AD without using secrets and certificates.
+
 ### Cloud communications | Calls
 Identify a call [participant](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true), by using the **participantId** property of the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) resource type.
 
 ### Cloud communications | Online meetings
 Enable [meeting registration](/graph/api/resources/meetingregistration?view=graph-rest-beta&preserve-view=true) and organize online meetings as a [webinar](/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). Associate the meeting with a registration page, and choose to enroll everyone or only organization members as [meeting registrants](/graph/api/resources/meetingregistrant?view=graph-rest-beta&preserve-view=true). 
+
+### Customer booking
+- Support the following attributes for a [booking service](/graph/api/resources/bookingService?view=graph-rest-beta&preserve-view=true):
+  - Enable sending SMS notifications to customers for their appointments (**smsNotificationsEnabled** property).
+  - The URL that customers can use to access the service (**webUrl** property).
+- Book an [appointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) with one or more of the following attributes:
+  - Specify the customer's time zone (**customerTimeZone** property).
+  - Specify the URL for an online appointment (**joinWebUrl** property).
+  - Enable SMS notifications to the customer for the appointment (**smsNotificationsEnabled** property).
+- Specify one or more addresses and phone numbers for a [customer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true).
+- Specify the time zone for a [staff member](/graph/api/resources/bookingStaffMember?view=graph-rest-beta&preserve-view=true).
+
+### Devices and apps | Cloud PC
+[List](/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-beta&preserve-view=true) the [Windows 365 service plans](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true) that an organization subscribes to for their Cloud PCs. Under each [service plan type](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true#cloudpcserviceplantype-values) (business or enterprise), an organization can choose to subscribe from a range of plan configurations that vary by attributes like vCPU, RAM, and storage.
+
+### Identity and access | Directory management
+Specify [key credential configuration settings](/graph/api/resources/keycredentialconfiguration?view=graph-rest-beta&preserve-view=true) that can be [configured to enable restrictions to an application or service principal](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Governance
 Enable the following additional [settings](/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta&preserve-view=true) to review an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true):
@@ -58,12 +89,16 @@ Enable the following additional [settings](/graph/api/resources/assignmentReview
 - Require reviewer to provide justification for approval (**isApprovalJustificationRequired** property).
 
 ### Identity and access | Identity and sign-in
-As a part of Azure Active Directory [conditional access](/azure/active-directory/conditional-access/overview), use a new session control, [continuousAccessEvaluationSessionControl](/graph/api/resources/continuousAccessEvaluationSessionControl?view=graph-rest-beta&preserve-view=true), to continuously evaluate access and make access decisions.
+- Specify whether [continuous access evaluation policy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) settings should be or have been migrated to the [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- As a part of Azure Active Directory [conditional access](/azure/active-directory/conditional-access/overview), use a new session control, [continuousAccessEvaluationSessionControl](/graph/api/resources/continuousAccessEvaluationSessionControl?view=graph-rest-beta&preserve-view=true), to continuously evaluate access and make access decisions.
 
 ### Search | Index
 - Specify [settings](/graph/api/resources/externalconnectors-searchsettings?view=graph-rest-beta&preserve-view=true) for the search experience of content in an [external connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). For example, a [display template](/graph/api/resources/externalconnectors-displaytemplate?view=graph-rest-beta&preserve-view=true) for search results, and a [rule](/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta&preserve-view=true) to select the display template.
 - Relate one or more [external groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta&preserve-view=true) to an [external connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). For example, an external group such as a business unit or work team can determine permissions to the content in the data source represented by the external connection.
 - Can optionally specify the ID of a Teams app in an [external connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) in the **connectorId** property.
+
+### Users
+[Validate a password](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) in realtime against an organization's password validation policy, as a user types the password. Get [detailed information from the validation](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) against rules in the policy.
 
 
 ## September 2021: New and generally available
@@ -88,7 +123,7 @@ Intune monthly updates for the v1.0 version. In the [changelog](https://develope
 - Use the [delta](/graph/api/driveitem-delta) function to track changes on not only the root folder but also other folders within a drive.
 
 ### Identity and access | Directory management
-- Providers of role-based access control (RBAC) can [manage roles](/graph/api/resources/rolemanagement) in Azure Active Directory, by [defining role actions](/graph/api/resources/unifiedroledefinition) that can be performed on specific resources, and [assigning roles](/graph/api/resources/unifiedroleassignment) to users based on such role definitions, giving them the corresponding access to those resources.
+Providers of role-based access control (RBAC) can [manage roles](/graph/api/resources/rolemanagement) in Azure Active Directory, by [defining role actions](/graph/api/resources/unifiedroledefinition) that can be performed on specific resources, and [assigning roles](/graph/api/resources/unifiedroleassignment) to users based on such role definitions, giving them the corresponding access to those resources.
 
 ### Search | Query
 - Aggregate numeric or string type search results that are imported by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and that are set to be refinable in the [schema](/graph/api/resources/schema). See more information about [refining search results using aggregations](search-concept-aggregation.md).
