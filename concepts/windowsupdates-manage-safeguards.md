@@ -7,7 +7,7 @@ ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Manage safeguards for a feature update deployment using the Windows Update for Business deployment service
+# Manage safeguards using the Windows Update for Business deployment service
 
 When you deploy updates with the deployment service, the service automatically safeguards deployments by preventing devices with known or likely issues from being offered the update by Windows Update.
 
