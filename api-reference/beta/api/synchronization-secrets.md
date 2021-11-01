@@ -57,13 +57,25 @@ The following is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets
 Content-type: application/json
-Content-length: 218
 
-{ 
-    "value": [ 
-        { "key": "BaseAddress", "value": "user@domain.com" },
-        { "key": "SecretToken", "value": "password-value" }
-        { "key": "SyncNotificationSettings", "value": "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}"},{"key":"SyncAll","value":"false"}
+{
+    "value": [
+        {
+            "key": "BaseAddress",
+            "value": "user@domain.com"
+        },
+        {
+            "key": "SecretToken",
+            "value": "password-value"
+        },
+        {
+            "key": "SyncNotificationSettings",
+            "value": "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}"
+        },
+        {
+            "key": "SyncAll",
+            "value": "false"
+        }
     ]
 }
 ```
