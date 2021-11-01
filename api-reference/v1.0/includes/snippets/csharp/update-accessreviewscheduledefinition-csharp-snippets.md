@@ -12,12 +12,12 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 	DisplayName = "Test world UPDATED NAME!",
 	DescriptionForAdmins = "Test world",
 	DescriptionForReviewers = "Test world",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewQueryScope
 	{
 		Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
 		QueryType = "MicrosoftGraph"
 	},
-	InstanceEnumerationScope = new AccessReviewScope
+	InstanceEnumerationScope = new AccessReviewQueryScope
 	{
 		Query = "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
 		QueryType = "MicrosoftGraph"

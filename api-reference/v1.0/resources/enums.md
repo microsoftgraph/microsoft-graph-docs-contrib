@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
 ### filterMode values
 
 |Member|

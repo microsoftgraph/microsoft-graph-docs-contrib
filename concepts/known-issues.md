@@ -396,7 +396,11 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams).
 
 ### Unable to filter team members by roles
-The filter query to get members of a team based on their roles, `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`, might not work. The server might respond with a `BAD REQUEST`.
+Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
+
+### Requests to filter team members by role require a parameter
+
+All the requests to filter team members by roles expect either a _skipToken_ parameter or a _top_ paramater in the request, but not both. If both the parameters are passed in the request, the _top_ parameter will be ignored.
 
 ### Some properties for chat members might be missing in the response to a GET request
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
@@ -416,7 +420,7 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
 
 ### Access to a user's profile photo is limited
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
 Failure to read or update a photo, in this case, results in the following error:
 
 ```javascript
@@ -464,6 +468,6 @@ The following limitations apply to query parameters:
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
-## Functionality available only in Office 365 REST or Azure AD Graph APIs
+## Functionality available only in Office 365 REST or Azure AD Graph APIs (deprecated)
 
-Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](/previous-versions/office/office-365-api/). For Azure Active Directory, see [Migrate Azure AD Graph apps to Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](/previous-versions/office/office-365-api/). For Azure AD Graph, see [Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph](./migrate-azure-ad-graph-overview.md).

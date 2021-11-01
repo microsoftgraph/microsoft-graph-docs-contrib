@@ -4,7 +4,7 @@ description: "Deactivate the role that is assigned to the requestor."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRole: selfDeactivate
