@@ -1,5 +1,5 @@
 ---
-title: "Manage safeguards for a deployment using the Windows Update for Business deployment service"
+title: "Manage safeguards using the Windows Update for Business deployment service"
 description: "When you deploy updates with the deployment service, the service automatically safeguards deployments by preventing devices with known or likely issues from being offered the update by Windows Update."
 author: "Alice-at-Microsoft"
 ms.localizationpriority: medium
