@@ -1740,6 +1740,51 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
+      - name: Records Management (preview)
+        items:
+        - name: Overview
+          href: resources/ediscovery-eDiscoveryapioverview.md
+        - name: Label
+          href: resources/ediscovery-case.md
+          items:
+          - name: List
+            href: api/ediscovery-case-list.md
+          - name: Create
+            href: api/ediscovery-case-post.md
+          - name: Get
+            href: api/ediscovery-case-get.md
+          - name: Update
+            href: api/ediscovery-case-update.md
+          - name: Delete
+            href: api/ediscovery-case-delete.md
+        - name: Events
+          href: resources/ediscovery-custodian.md
+          items:
+          - name: List
+            href: api/ediscovery-case-list-custodians.md
+          - name: Create
+            href: api/ediscovery-case-post-custodians.md
+          - name: Get
+            href: api/ediscovery-custodian-get.md
+          - name: Update
+            href: api/ediscovery-custodian-update.md
+          - name: Activate
+            href: api/ediscovery-custodian-activate.md
+          - name: Release
+            href: api/ediscovery-custodian-release.md
+        - name: Event Types
+          href: resources/ediscovery-legalhold.md
+          items:
+          - name: List
+            href: api/ediscovery-case-list-legalholds.md
+          - name: Create
+            href: api/ediscovery-case-post-legalholds.md
+          - name: Get
+            href: api/ediscovery-legalhold-get.md
+          - name: Update
+            href: api/ediscovery-legalhold-update.md
+          - name: Delete
+            href: api/ediscovery-legalhold-delete.md
       - name: Subject rights request
         items:
         - name: Overview

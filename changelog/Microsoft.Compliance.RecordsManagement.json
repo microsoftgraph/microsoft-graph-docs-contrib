@@ -1,0 +1,166 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "identity",
+            "ChangeType": "Addition",
+            "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type.",
+            "Target": "identity"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "identitySet",
+            "ChangeType": "Addition",
+            "Description": "Added the [identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-beta) resource type.",
+            "Target": "identitySet"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "compliance",
+            "ChangeType": "Addition",
+            "Description": "Added the [compliance](https://docs.microsoft.com/en-us/graph/api/resources/compliance?view=graph-rest-beta) resource",
+            "Target": "compliance"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "entity",
+            "ChangeType": "Addition",
+            "Description": "Added the [entity](https://docs.microsoft.com/en-us/graph/api/resources/entity?view=graph-rest-beta) resource",
+            "Target": "entity"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "actionAfterRetentionPeriod",
+            "ChangeType": "Addition",
+            "Description": "Added the **actionAfterRetentionPeriod** enumeration type.",
+            "Target": "actionAfterRetentionPeriod"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "behaviorDuringRetentionPeriod",
+            "ChangeType": "Addition",
+            "Description": "Added the **behaviorDuringRetentionPeriod** enumeration type.",
+            "Target": "behaviorDuringRetentionPeriod"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "eventPropagationStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **eventPropagationStatus** enumeration type.",
+            "Target": "eventPropagationStatus"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "retentionEventStatusType",
+            "ChangeType": "Addition",
+            "Description": "Added the **retentionEventStatusType** enumeration type.",
+            "Target": "retentionEventStatusType"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "retentionTrigger",
+            "ChangeType": "Addition",
+            "Description": "Added the **retentionTrigger** enumeration type.",
+            "Target": "retentionTrigger"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "dispositionReviewStage",
+            "ChangeType": "Addition",
+            "Description": "Added the [dispositionReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/dispositionReviewStage?view=graph-rest-beta) resource type.",
+            "Target": "dispositionReviewStage"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "eventPropagationResult",
+            "ChangeType": "Addition",
+            "Description": "Added the [eventPropagationResult](https://docs.microsoft.com/en-us/graph/api/resources/eventPropagationResult?view=graph-rest-beta) resource type.",
+            "Target": "eventPropagationResult"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicError",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicError](https://docs.microsoft.com/en-us/graph/api/resources/publicError?view=graph-rest-beta) resource type.",
+            "Target": "publicError"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicErrorDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicErrorDetail](https://docs.microsoft.com/en-us/graph/api/resources/publicErrorDetail?view=graph-rest-beta) resource type.",
+            "Target": "publicErrorDetail"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicInnerError",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicInnerError](https://docs.microsoft.com/en-us/graph/api/resources/publicInnerError?view=graph-rest-beta) resource type.",
+            "Target": "publicInnerError"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "retentionEventStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the [retentionEventStatus](https://docs.microsoft.com/en-us/graph/api/resources/retentionEventStatus?view=graph-rest-beta) resource type.",
+            "Target": "retentionEventStatus"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "recordsManagementroot",
+            "ChangeType": "Addition",
+            "Description": "Added the [recordsManagementroot](https://docs.microsoft.com/en-us/graph/api/resources/recordsManagementroot?view=graph-rest-beta) resource",
+            "Target": "recordsManagementroot"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "retentionEvent",
+            "ChangeType": "Addition",
+            "Description": "Added the [retentionEvent](https://docs.microsoft.com/en-us/graph/api/resources/retentionEvent?view=graph-rest-beta) resource",
+            "Target": "retentionEvent"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "retentionEventType",
+            "ChangeType": "Addition",
+            "Description": "Added the [retentionEventType](https://docs.microsoft.com/en-us/graph/api/resources/retentionEventType?view=graph-rest-beta) resource",
+            "Target": "retentionEventType"
+          },
+          {
+            "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "retentionLabel",
+            "ChangeType": "Addition",
+            "Description": "Added the [retentionLabel](https://docs.microsoft.com/en-us/graph/api/resources/retentionLabel?view=graph-rest-beta) resource",
+            "Target": "retentionLabel"
+          }
+        ],
+        "Id": "43859426-c704-4bc4-98b4-b5c3c1c07d8c",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2021-10-15T00:01:27.6990325Z",
+        "WorkloadArea": "Compliance",
+        "SubArea": ""
+      }
+    ]
+  }

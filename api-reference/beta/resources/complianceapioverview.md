@@ -28,6 +28,11 @@ Explore the [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md)
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams. Learn more about [Microsoft 365 subject rights requests](/microsoft-365/compliance/privacy-management-subject-rights-requests).
 
+## Records Management (Preview)
+
+Records Management solution in M365 provides the capability to manage regulatory, legal, and business-critical records across corporate data. It organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes. Learn more about [Microsoft 365 records management](https://docs.microsoft.com/en-us/microsoft-365/compliance/records-management?view=o365-worldwide)
+
+
 Explore the [Microsoft 365 subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).
 
 <!--
