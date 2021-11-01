@@ -56,7 +56,7 @@ The following is an example of the request.
   "name": "synchronization_secrets"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets
+PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets
 Content-type: application/json
 Content-length: 218
 
