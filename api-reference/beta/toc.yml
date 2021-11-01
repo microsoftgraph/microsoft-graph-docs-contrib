@@ -1152,6 +1152,8 @@ items:
           href: api/synchronization-synchronization-acquireaccesstoken.md
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
+        - name: Secrets
+          href: resources/synchronization-secrets.md
           items:
           - name: Discover
             href: api/directorydefinition-discover.md
