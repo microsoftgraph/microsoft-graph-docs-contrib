@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyRuleTarget resource type"
 description: "A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -27,7 +27,7 @@ A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the
 |Relationship|Type|Description|
 |:---|:---|:---|
 |targetObjects|[directoryObject](../resources/directoryobject.md) collection|The collection of users, groups and servicePrincipals which are in scope of the policy. If not specified, all objects are in scope of the policy.|
--->
+
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {

@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents a Cloud PC user setting.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

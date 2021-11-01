@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through MEM portal, so the Cloud PC also has a corresponding Intune managed device id.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|

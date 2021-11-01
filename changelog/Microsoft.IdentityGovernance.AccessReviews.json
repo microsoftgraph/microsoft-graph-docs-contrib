@@ -1,5 +1,39 @@
 {
     "changelog": [
+          {
+            "ChangeList": [
+                {
+                    "Id": "8580BF1E-FC60-4C41-A3E8-A452A1500A61",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "additionalNotificationRecipients",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition?view=graph-rest-beta&tabs=http) resource.",
+                    "Target": "accessreviewscheduledefinition"
+                },
+                {
+                    "Id": "8580BF1E-FC60-4C41-A3E8-A452A1500A61",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessreviewnotificationrecipientitem",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessreviewnotificationrecipientitem](https://docs.microsoft.com/en-us/graph/api/accessreviewnotificationrecipientitem?view=graph-rest-beta&tabs=http) resource type.",
+                    "Target": "accessreviewnotificationrecipientitem"
+                },
+                {
+                    "Id": "8580BF1E-FC60-4C41-A3E8-A452A1500A61",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewnotificationrecipientqueryscope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewnotificationrecipientqueryscope](https://docs.microsoft.com/en-us/graph/api/accessReviewnotificationrecipientqueryscope?view=graph-rest-beta&tabs=http) resource type.",
+                    "Target": "accessReviewnotificationrecipientqueryscope"
+                }
+            ],
+            "Id": "8580BF1E-FC60-4C41-A3E8-A452A1500A61",
+            "Cloud": "prd",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-10-22T00:00:00.557Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },      
         {
               "ChangeList": [
                   {

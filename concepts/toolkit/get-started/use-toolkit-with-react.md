@@ -73,7 +73,7 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 >[!NOTE] 
 >If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
 
-1. In the code editor, open the **src/index.** file, and to the list of imports, add:
+1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
@@ -262,7 +262,7 @@ Now that you track the user's sign in state in your application, you can show th
 With these changes, the **src/App.tsx** file should look like the following.
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt';
+import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
 import './App.css';

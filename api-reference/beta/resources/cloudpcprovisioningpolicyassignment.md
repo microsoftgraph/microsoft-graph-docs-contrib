@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents a defined collection of provisioning policy assignments.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|

@@ -4,7 +4,7 @@ description: "Represents a privileged role assignment for a particular user. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRoleAssignment resource type (deprecated)

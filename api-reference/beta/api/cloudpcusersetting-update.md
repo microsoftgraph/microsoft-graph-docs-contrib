@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Update the properties of a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

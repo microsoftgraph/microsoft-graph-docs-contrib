@@ -3,20 +3,56 @@
     {
       "ChangeList": [
         {
-          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
-          "ApiChange": "Resource",
-          "ChangedApiName": "workbookOperation,workbook",
+          "Id": "528f2219-8a0a-4952-b469-1d4f554b3dc9",
+          "ApiChange": "Method",
+          "ChangedApiName": "tableRowOperationResult",
           "ChangeType": "Addition",
-          "Description": "Added the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation) relationship to the [workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
-          "Target": "workbookOperation,workbook"
+          "Description": "Added the [tableRowOperationResult](https://docs.microsoft.com/en-us/graph/api/workbook-tableRowOperationResult?view=graph-rest-1.0) method to the [workbook](https://docs.microsoft.com/graph/api/resources/workbook?view=graph-rest-1.0) resource.",
+          "Target": "workbook"
+        }
+      ],
+      "Id": "528f2219-8a0a-4952-b469-1d4f554b3dc9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-15T09:48:15.7300973Z",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "84cdc61b-3f54-4c19-8631-f4e1032ebbe2",
+          "ApiChange": "Method",
+          "ChangedApiName": "tableRowOperationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [tableRowOperationResult](https://docs.microsoft.com/en-us/graph/api/workbook-tableRowOperationResult?view=graph-rest-beta) method to the [workbook](https://docs.microsoft.com/graph/api/resources/workbook?view=graph-rest-beta) resource.",
+          "Target": "workbook"
+        }
+      ],
+      "Id": "84cdc61b-3f54-4c19-8631-f4e1032ebbe2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-15T06:35:02.2263073Z",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
+          "Target": "workbook"
         },
         {
           "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Get workbookOperation,workbookOperation",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get workbookOperation",
           "ChangeType": "Addition",
-          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/workbookoperation-get) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity",
-          "Target": "Get workbookOperation,workbookOperation"
+          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/workbookoperation-get) operation to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity",
+          "Target": "workbookOperation"
         }
       ],
       "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",

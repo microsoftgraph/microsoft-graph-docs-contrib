@@ -25,7 +25,24 @@ MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordC
 [passwordCredentials setMaxLifetime:@"P4DT12H30M5S"];
 [passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2019-01-01T10:37:00Z"];
 [passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyAddition]];
+[passwordCredentials setMaxLifetime: null];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2021-04-01T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyLifetime]];
+[passwordCredentials setMaxLifetime:@"P40D"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2015-04-01T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
 [applicationRestrictions setPasswordCredentials:passwordCredentialsList];
+NSMutableArray *keyCredentialsList = [[NSMutableArray alloc] init];
+MSGraphKeyCredentialConfiguration *keyCredentials = [[MSGraphKeyCredentialConfiguration alloc] init];
+[keyCredentials setRestrictionType: [MSGraphAppKeyCredentialRestrictionType asymmetricKeyLifetime]];
+[keyCredentials setMaxLifetime:@"P30D"];
+[keyCredentials setRestrictForAppsCreatedAfterDateTime: "2015-01-01T10:37:00Z"];
+[keyCredentialsList addObject: keyCredentials];
+[applicationRestrictions setKeyCredentials:keyCredentialsList];
 [tenantAppManagementPolicy setApplicationRestrictions:applicationRestrictions];
 
 NSError *error;

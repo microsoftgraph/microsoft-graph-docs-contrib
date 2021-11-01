@@ -4,7 +4,7 @@ description: "Represents the request for role assignment operations in Priviledg
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # governanceRoleAssignmentRequest resource type
