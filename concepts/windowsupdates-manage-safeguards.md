@@ -15,9 +15,9 @@ Safeguards are compatible with [deployments](windowsupdates-deployments.md) of W
 
 ## Apply all safeguards
 
-By default, the deployment service applies all applicable safeguards to devices in a deployment. To benefit from safeguards, you do not need to specify anything additional when creating a deployment.
+By default, the deployment service applies all applicable safeguards to devices in a deployment. To benefit from safeguards, you don't need to specify anything additional when creating a deployment.
 
-Below is an example of creating a deployment with all safeguards applied.
+The following example demonstrates how to create a deployment with all safeguards applied.
 
 ### Request
 
@@ -69,7 +69,7 @@ Content-Type: application/json
 
 You can opt out of safeguards against likely issues in a deployment by configuring [safeguard settings](/graph/api/resources/windowsupdates-safeguardsettings). If necessary, you can also [opt out of safeguard holds for known issues by using the disable safeguards policy](/windows/deployment/update/safeguard-opt-out).
 
-Below is an example of creating a deployment without safeguards against likely issues. By specifying a **safeguardProfile** for the **category** of `likelyIssues` under the list of safeguard profiles to disable, you are configuring the deployment to offer the update to a device even if it is likely to have an update issue.
+The example below demonstrates how to create a deployment without safeguards against likely issues. By specifying a **safeguardProfile** for the **category** of `likelyIssues` under the list of safeguard profiles to disable, you are configuring the deployment to offer the update to a device even if it is likely to have an update issue.
 
 ### Request
 
