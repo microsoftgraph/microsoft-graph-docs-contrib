@@ -67,7 +67,7 @@ Content-Type: application/json
 
 ## Opt out of safeguards against likely issues
 
-You can opt out of safeguards against likely issues in a deployment by configuring [safeguard settings](/graph/api/resources/windowsupdates-safeguardsettings). If necessary, you can also [opt out of safeguard holds for known issues by using the disable safeguards policy](https://docs.microsoft.com/windows/deployment/update/safeguard-opt-out).
+You can opt out of safeguards against likely issues in a deployment by configuring [safeguard settings](/graph/api/resources/windowsupdates-safeguardsettings). If necessary, you can also [opt out of safeguard holds for known issues by using the disable safeguards policy](/windows/deployment/update/safeguard-opt-out).
 
 Below is an example of creating a deployment without safeguards against likely issues. By specifying a **safeguardProfile** for the **category** of `likelyIssues` under the list of safeguard profiles to disable, you are configuring the deployment to offer the update to a device even if it is likely to have an update issue.
 

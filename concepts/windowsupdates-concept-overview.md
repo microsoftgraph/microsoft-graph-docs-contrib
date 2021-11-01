@@ -19,7 +19,7 @@ IT Professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s)
 
-Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, please see [Overview of the deployment service](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview).
+Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, please see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
 
 ## Prerequisites    
 
@@ -57,7 +57,7 @@ To learn more, see [Deploy an expedited security update](windowsupdates-deploy-e
 
 ## Protect devices by default
 
-Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
+Enjoy the benefit of [safeguard holds](/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
 
 To learn more, see [Manage safeguards for a deployment](windowsupdates-manage-safeguards.md).
 
