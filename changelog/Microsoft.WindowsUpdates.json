@@ -41,14 +41,6 @@
                     "ChangeType": "Addition",
                     "Description": "Added the **safeguardCategory** enumeration type.",
                     "Target": "safeguardCategory"
-                },
-                {
-                    "Id": "0620c98d-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "unknownFutureValue",
-                    "ChangeType": "Deletion",
-                    "Description": "Removed the `unknownFutureValue` member from the **deploymentStateReasonValue** enumeration.",
-                    "Target": "deploymentStateReasonValue"
                 }
             ],
             "Id": "06127aad-168d-11ec-bd5a-a13d1ed8c60f",
