@@ -50,7 +50,6 @@ If the secrets are successfully saved, this method returns a `204, No Content` r
 ##### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronization_secrets"
@@ -67,7 +66,7 @@ Content-length: 218
         { "key": "SyncNotificationSettings", "value": "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}"},{"key":"SyncAll","value":"false"}
     ]
 }
-
+```
 
 ##### Response
 The following is an example of the response. 
