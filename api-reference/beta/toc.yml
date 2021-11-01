@@ -1153,7 +1153,7 @@ items:
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
         - name: Secrets
-          href: resources/synchronization-secrets.md
+          href: api/synchronization-secrets.md
           items:
           - name: Discover
             href: api/directorydefinition-discover.md
