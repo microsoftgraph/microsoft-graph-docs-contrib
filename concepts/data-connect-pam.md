@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Microsoft Graph Data Connect integration with Privileged Access Management
 
-Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data Connect pipelines must be approved by a member of the data access request approver specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
+Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data Connect pipelines must be approved by a member of the data access request approver specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Set up your Microsoft 365 tenant and enable Microsoft Graph Data Connect](https://docs.microsoft.com/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
 Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Microsoft 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline.
 
