@@ -1,7 +1,7 @@
 ---
 title: "accessreviewrecommendationinsightsetting resource type"
 description: "In the Azure AD access reviews feature, the `accessreviewrecommendationinsightsetting` represents the settings associated with an insight included in the review."
-author: "shubhamguptacal"
+author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
