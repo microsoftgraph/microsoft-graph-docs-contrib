@@ -1743,48 +1743,44 @@ items:
       - name: Records Management (preview)
         items:
         - name: Overview
-          href: resources/ediscovery-eDiscoveryapioverview.md
+          href: 
         - name: Label
-          href: resources/ediscovery-case.md
+          href: resources\recordsmanagement-retentionlabel.md
           items:
           - name: List
-            href: api/ediscovery-case-list.md
+            href: api\recordsmanagement-retentionlabel-list.md
           - name: Create
-            href: api/ediscovery-case-post.md
+            href: api\recordsmanagement-recordsmanagementroot-post-labels.md
           - name: Get
-            href: api/ediscovery-case-get.md
+            href: api\recordsmanagement-retentionlabel-get.md
           - name: Update
-            href: api/ediscovery-case-update.md
+            href: api\recordsmanagement-retentionlabel-update.md
           - name: Delete
-            href: api/ediscovery-case-delete.md
+            href: api\recordsmanagement-retentionlabel-delete.md
         - name: Events
-          href: resources/ediscovery-custodian.md
+          href: resources\recordsmanagement-retentionevent.md
           items:
           - name: List
-            href: api/ediscovery-case-list-custodians.md
+            href: api\recordsmanagement-retentionevent-list.md
           - name: Create
-            href: api/ediscovery-case-post-custodians.md
+            href: api\recordsmanagement-recordsmanagementroot-post-events.md
           - name: Get
-            href: api/ediscovery-custodian-get.md
-          - name: Update
-            href: api/ediscovery-custodian-update.md
-          - name: Activate
-            href: api/ediscovery-custodian-activate.md
-          - name: Release
-            href: api/ediscovery-custodian-release.md
-        - name: Event Types
-          href: resources/ediscovery-legalhold.md
-          items:
-          - name: List
-            href: api/ediscovery-case-list-legalholds.md
-          - name: Create
-            href: api/ediscovery-case-post-legalholds.md
-          - name: Get
-            href: api/ediscovery-legalhold-get.md
-          - name: Update
-            href: api/ediscovery-legalhold-update.md
+            href: api\recordsmanagement-retentionevent-get.md
           - name: Delete
-            href: api/ediscovery-legalhold-delete.md
+            href: api\recordsmanagement-retentionevent-delete.md
+        - name: Event Types
+          href: resources\recordsmanagement-retentioneventtype.md
+          items:
+          - name: List
+            href: api\recordsmanagement-retentioneventtype-list.md
+          - name: Create
+            href: api\recordsmanagement-recordsmanagementroot-post-eventtypes.md
+          - name: Get
+            href: api\recordsmanagement-retentioneventtype-get.md
+          - name: Update
+            href: api\recordsmanagement-retentioneventtype-update.md
+          - name: Delete
+            href: api\recordsmanagement-retentioneventtype-delete.md
       - name: Subject rights request
         items:
         - name: Overview
