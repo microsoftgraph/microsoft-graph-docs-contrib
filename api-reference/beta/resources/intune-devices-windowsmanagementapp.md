@@ -2,7 +2,7 @@
 title: "windowsManagementApp resource type"
 description: "Windows management app entity."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

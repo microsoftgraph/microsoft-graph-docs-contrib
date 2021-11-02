@@ -2,7 +2,7 @@
 title: "ratingGermanyTelevisionType enum type"
 description: "TV content rating labels in Germany"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
