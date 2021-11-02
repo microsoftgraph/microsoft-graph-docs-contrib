@@ -68,7 +68,6 @@ If successful, this method returns a `201 Created` response code and a [userAcco
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
-Content-length: 494
 
 {
   "allowedAudiences": "organization",

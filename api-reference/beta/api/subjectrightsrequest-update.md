@@ -71,7 +71,6 @@ If successful, this method returns a `200 OK` response code and an updated [subj
 ``` http
 PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

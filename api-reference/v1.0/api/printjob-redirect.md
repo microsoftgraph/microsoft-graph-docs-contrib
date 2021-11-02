@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
 Content-Type: application/json
-Content-length: 128
 
 {
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",

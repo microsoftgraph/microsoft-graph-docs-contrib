@@ -69,7 +69,6 @@ If successful, this method returns a `201 Created` response code and a [printerS
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares
 Content-Type: application/json
-Content-length: 509
 
 {
   "displayName": "ShareName",

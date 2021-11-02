@@ -55,7 +55,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/onenote/pages/{id}/content
 Content-type: application/json
-Content-length: 312
 
 [
    {

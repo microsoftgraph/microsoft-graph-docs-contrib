@@ -73,7 +73,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/contacts/{id}
 Content-type: application/json
-Content-length: 222
 
 {
   "businessPhones": [

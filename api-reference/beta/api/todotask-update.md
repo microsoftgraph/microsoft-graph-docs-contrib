@@ -81,7 +81,6 @@ If successful, this method returns a `200 OK` response code and an updated [todo
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 Content-Type: application/json
-Content-length: 608
 
 {
    "dueDateTime":{

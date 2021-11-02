@@ -71,7 +71,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/me/activateServicePlan
 Content-type: application/json
-Content-length: 115
 
 {
   "servicePlanId": "28f42d6f-8034-4a0f-9d8a-a218a63b3299",

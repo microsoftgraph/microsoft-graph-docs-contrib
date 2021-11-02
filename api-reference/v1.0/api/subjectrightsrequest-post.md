@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a [subjectR
 ``` http
 POST https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 Content-Type: application/json
-Content-length: 849
 
 {
     "type": "microsoft.graph.subjectRightsRequestType",
