@@ -42,6 +42,8 @@ MSGraphBookingReminder *defaultReminders = [[MSGraphBookingReminder alloc] init]
 [bookingService setDefaultReminders:defaultRemindersList];
 [bookingService setDescription:@"Individual bento box lunch delivery"];
 [bookingService setDisplayName:@"Bento"];
+[bookingService setIsLocationOnline: true];
+[bookingService setSmsNotificationsEnabled: true];
 [bookingService setIsHiddenFromCustomers: false];
 [bookingService setNotes:@"Home-cooked special"];
 [bookingService setPostBuffer:@"PT10M"];
