@@ -2,7 +2,7 @@
 title: "Delete targetedManagedAppPolicyAssignment"
 description: "Deletes a targetedManagedAppPolicyAssignment."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

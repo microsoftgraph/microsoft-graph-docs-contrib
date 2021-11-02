@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcProvisioningPolicies"
+title: "List provisioningPolicies"
 description: "View the properties and relationships of all Cloud PC provisioning policies."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium

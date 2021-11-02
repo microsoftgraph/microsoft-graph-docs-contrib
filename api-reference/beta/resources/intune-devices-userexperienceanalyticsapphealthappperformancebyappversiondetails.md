@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails resource type"
 description: "The user experience analytics application performance entity contains app performance by app version details."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -38,7 +38,7 @@ Apply the following best practices for consent and authorization in your app:
 
   - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
@@ -143,6 +143,7 @@ Use [batching](json-batching.md) where significant network latency can have a bi
 ## Reliability and support
 To ensure reliability and facilitate support for your application:
 
+- Use TLS 1.2 to support all capabilities of Microsoft Graph. For more information about the Microsoft Graph TLS 1.0 and 1.1 deprecation, see [Enable support for TLS 1.2 in your environment](/troubleshoot/azure/active-directory/enable-support-tls-environment).
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
