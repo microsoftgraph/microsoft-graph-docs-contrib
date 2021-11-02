@@ -11,6 +11,22 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
 ### lifecycleEventType values
 
 |Member|
@@ -1626,4 +1642,57 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |critical|
+|unknownFutureValue|
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
 |unknownFutureValue|

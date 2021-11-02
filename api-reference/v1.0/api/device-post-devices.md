@@ -30,10 +30,10 @@ POST /devices
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-type | string | application/json |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
+| Content-type | application/json |
 
 ## Request body
 In the request body, supply a JSON representation of [device](../resources/device.md) object.

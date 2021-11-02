@@ -2,7 +2,7 @@
 title: "securityBaselineComplianceState enum type"
 description: "Security Baseline Compliance State"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

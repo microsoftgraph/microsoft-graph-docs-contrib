@@ -60,6 +60,8 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of the request.
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,7 +70,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr
 Content-type: application/json
 
 {
@@ -93,6 +95,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 <!-- markdownlint-disable MD024 -->

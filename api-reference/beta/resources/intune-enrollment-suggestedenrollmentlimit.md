@@ -2,7 +2,7 @@
 title: "suggestedEnrollmentLimit resource type"
 description: "The suggestedEnrollmentLimit resource represents the suggested enrollment limit when given an enrollment type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

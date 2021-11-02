@@ -2,7 +2,7 @@
 title: "extendFeatureUpdatesPause action"
 description: "Extend Feature Updates Pause for a Windows Update for Business ring."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

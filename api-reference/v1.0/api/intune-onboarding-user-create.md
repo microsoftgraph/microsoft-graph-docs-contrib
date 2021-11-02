@@ -2,7 +2,7 @@
 title: "Create user"
 description: "Create a new user object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -82,7 +82,6 @@ Content-Length: 126
   "deviceEnrollmentLimit": 5
 }
 ```
-
 
 
 

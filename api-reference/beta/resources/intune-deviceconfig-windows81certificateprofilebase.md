@@ -2,7 +2,7 @@
 title: "windows81CertificateProfileBase resource type"
 description: "Device Configuration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}
+PATCH /external/connections/{connectionsId}
 ```
 
 ## Request headers
@@ -57,6 +57,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -64,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/contosohr
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
 Content-type: application/json
 
 {
@@ -89,6 +91,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 <!-- markdownlint-disable MD024 -->
