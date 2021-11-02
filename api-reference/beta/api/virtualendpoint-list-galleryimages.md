@@ -1,6 +1,6 @@
 ---
 title: "List cloudPcGalleryImages"
-description: "List the properties and relationships of gallery images on Cloud PC."
+description: "List the properties and relationships of gallery images of the organization."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
