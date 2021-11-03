@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceAttributeDestination resource type"
-description: "A complex type used for the `attributeDestination` property an access package."
+description: "An abstract type that exposes objects that define the end system to which the user configured values will be passed."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
