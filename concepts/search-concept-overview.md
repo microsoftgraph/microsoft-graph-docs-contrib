@@ -55,7 +55,7 @@ Looking for the API reference for this service?
   - [Index external content](connecting-external-content-manage-items.md)
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
-  - [Search content in Sharepoint and OneDrive](search-concept-files.md)
+  - [Search content in SharePoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md)
   - [Search person](search-concept-person.md) (preview)
   - [Manage administrative search answers](search-concept-answers.md) (preview)

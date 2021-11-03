@@ -2,7 +2,7 @@
 title: "managedAppDataEncryptionType enum type"
 description: "Represents the level to which app data is encrypted for managed apps"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

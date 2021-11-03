@@ -53,6 +53,8 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 The following is an example of the request.
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -60,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
@@ -79,6 +81,7 @@ DELETE https://graph.microsoft.com/beta/connections/contosohr
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 <!-- markdownlint-disable MD024 -->

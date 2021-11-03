@@ -2,7 +2,7 @@
 title: "List windowsUpdateForBusinessConfigurations"
 description: "List properties and relationships of the windowsUpdateForBusinessConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3283
+Content-Length: 3321
 
 {
   "value": [
@@ -136,7 +136,8 @@ Content-Length: 3283
       "scheduleImminentRestartWarningInMinutes": 7,
       "userPauseAccess": "enabled",
       "userWindowsUpdateScanAccess": "enabled",
-      "updateNotificationLevel": "defaultNotifications"
+      "updateNotificationLevel": "defaultNotifications",
+      "allowWindows11Upgrade": true
     }
   ]
 }

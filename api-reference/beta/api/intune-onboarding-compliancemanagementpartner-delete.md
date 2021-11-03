@@ -2,7 +2,7 @@
 title: "Delete complianceManagementPartner"
 description: "Deletes a complianceManagementPartner."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

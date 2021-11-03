@@ -4,7 +4,7 @@ description: "Make the role assignment permanent."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRoleAssignment: makePermanent

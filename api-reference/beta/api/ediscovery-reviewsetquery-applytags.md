@@ -43,7 +43,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 

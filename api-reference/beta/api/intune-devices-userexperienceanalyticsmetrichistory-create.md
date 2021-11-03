@@ -2,7 +2,7 @@
 title: "Create userExperienceAnalyticsMetricHistory"
 description: "Create a new userExperienceAnalyticsMetricHistory object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

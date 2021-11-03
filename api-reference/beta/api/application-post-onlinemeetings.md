@@ -222,7 +222,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create a live event with a user token
+### Example 3: Create a Microsoft Teams live event with a user token
 
 #### Request
 

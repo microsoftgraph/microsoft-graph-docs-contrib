@@ -4,7 +4,7 @@ description: "Get the requester's privileged role assignment requests."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRoleAssignmentRequest: my
