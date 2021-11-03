@@ -6,10 +6,9 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
-# List accessPackageCatalogs
+# List catalogs
 
 Namespace: microsoft.graph
-
 
 Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.
 
