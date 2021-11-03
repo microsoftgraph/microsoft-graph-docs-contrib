@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Use this API to add a member (user, group, or device) to an administrative unit.
 
-`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+**NOTE:** Currently it's only possible to add one member at a time to an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +38,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [device](../resources/device.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [device](../resources/device.md) to be added.
 
 ## Response
 
@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -84,7 +84,7 @@ Content-type: application/json
 In the request body, provide the `id` of the [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) object you want to add.
 
 ### Response
-Here is an example of the response.
+The following is an example of the response.
  
 <!-- {
   "blockType": "response",

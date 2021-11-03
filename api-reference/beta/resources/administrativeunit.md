@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An administrative unit provides a conceptual container for User, Group, and Device directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users, groups, and devices contained within or scoped to an administrative unit to a regional or departmental administrator.
+An administrative unit provides a conceptual container for user, group, and device directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users, groups, and devices contained within or scoped to an administrative unit to a regional or departmental administrator.
 
 This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/administrativeunit-delta.md) function.
 
@@ -65,7 +65,7 @@ This topic provides descriptions of the declared properties and navigation prope
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -78,10 +78,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String"
 }
 
 ```

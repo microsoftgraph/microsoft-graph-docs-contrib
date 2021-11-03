@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [groups](../resources/group.md) and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive.
+Get [groups](../resources/group.md) and [administrative units](../resources/administrativeunit.md) that the device is a direct member of. This operation is not transitive.
 
 ## Permissions
 
@@ -37,8 +37,6 @@ GET /devices/{id}/memberOf
 This method supports the `$search`, `$count`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. OData cast is also enabled, for example, you can cast to get just the directoryRoles the device is a member of. You can use `$search` on the **displayName** and **description** properties.
 
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
 | Header       | Value |
