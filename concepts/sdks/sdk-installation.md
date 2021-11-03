@@ -29,9 +29,9 @@ Install-Package Microsoft.Graph
 
 The Microsoft Graph Go SDK is included in the following packages:
 
-[Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API.
-[Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API.
-[Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - The core library for making calls to Microsoft Graph.
+- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API.
+- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API.
+- [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - The core library for making calls to Microsoft Graph.
 
 ```Shell
 go get github.com/microsoftgraph/msgraph-sdk-go
