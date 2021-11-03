@@ -9,7 +9,7 @@ author: "merzink"
 
 # Use the notifications REST API in Microsoft Graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<!-- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] -->
 
 > [!IMPORTANT]
 > The Microsoft Graph notifications API have been retired. For an alternative notification experience, see [Microsoft Azure Notification Hubs](azure/notification-hubs/), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.  
