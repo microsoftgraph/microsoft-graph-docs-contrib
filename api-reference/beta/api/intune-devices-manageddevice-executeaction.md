@@ -2,7 +2,7 @@
 title: "executeAction action"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## HTTP Request
 <!-- {
@@ -54,6 +54,7 @@ The following table shows the parameters that can be used with this action.
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
+|persistEsimDataPlan|Boolean|Not yet documented|
 |deviceIds|String collection|Not yet documented|
 |notificationTitle|String|Not yet documented|
 |notificationBody|String|Not yet documented|
@@ -75,12 +76,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 441
+Content-length: 473
 
 {
   "actionName": "delete",
   "keepEnrollmentData": true,
   "keepUserData": true,
+  "persistEsimDataPlan": true,
   "deviceIds": [
     "Device Ids value"
   ],

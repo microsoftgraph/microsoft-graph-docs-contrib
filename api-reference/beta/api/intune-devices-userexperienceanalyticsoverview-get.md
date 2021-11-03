@@ -2,7 +2,7 @@
 title: "Get userExperienceAnalyticsOverview"
 description: "Read properties and relationships of the userExperienceAnalyticsOverview object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1129
+Content-Length: 1219
 
 {
   "value": {
@@ -75,6 +75,7 @@ Content-Length: 1129
     "workFromAnywhereOverallScore": 12,
     "appHealthOverallScore": 5,
     "resourcePerformanceOverallScore": 15,
+    "batteryHealthOverallScore": 9,
     "insights": [
       {
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -94,7 +95,8 @@ Content-Length: 1129
     "bestPracticesHealthState": "insufficientData",
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
-    "resourcePerformanceHealthState": "insufficientData"
+    "resourcePerformanceHealthState": "insufficientData",
+    "batteryHealthHealthState": "insufficientData"
   }
 }
 ```

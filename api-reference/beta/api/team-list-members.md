@@ -276,9 +276,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: List only those members who are *owners* of the team
+### Example 4: List members by their role in the team
 
-The following example shows a request to find all the members who are have *owner* role attached to them.
+The following example shows how to list the members by their role in the team. This example lists all the members that have an owner role.
 
 > [!NOTE]
 > There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
