@@ -66,25 +66,6 @@ The following table shows the properties of the [group](../resources/group.md) r
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
-> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
-
-Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
-
->**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
-
-> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
-
-Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
-
-#### groupTypes options
-
-Use the **groupTypes** property to control the type of group and its membership, as shown.
-
-| Type of group | Assigned membership | Dynamic membership |
-|:--------------|:------------------------|:---------------|
-| Microsoft 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
-
 ## Response
 
 If successful, adding an existing object (using $ref) returns `204 No Content` response code. It does not return anything in the response body.  When creating a new group (without $ref), this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
@@ -99,7 +80,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_administrativeUnits_members_ref"
+  "name": "post_administrativeunits_members_ref"
 } -->
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
@@ -151,7 +132,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_administrativeUnits_members"
+  "name": "post_administrativeunits_members"
 } -->
 ``` http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -171,19 +152,19 @@ Content-length: 244
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeUnits-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeUnits-members-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeUnits-members-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeUnits-members-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
