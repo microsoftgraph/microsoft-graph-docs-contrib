@@ -131,7 +131,7 @@ Content-type: application/json
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 #### Response
-Here is an example of the response.
+The following is an example of the response.
  
 <!-- {
   "blockType": "response",
