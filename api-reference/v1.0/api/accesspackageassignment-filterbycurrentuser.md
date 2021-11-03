@@ -65,7 +65,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/filterByCurrentUser(on='target')
 ```
 
 
@@ -84,10 +84,10 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "state": "String",
-      "status": "String",
-      "expiredDateTime": "String (timestamp)",
+      "id": "5521fb4f-6a6c-410a-9191-461a65fd39d4",
+      "state": "delivered",
+      "status": "Delivered",
+      "expiredDateTime": "null",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }
@@ -95,5 +95,4 @@ Content-Type: application/json
   ]
 }
 ```
-
 

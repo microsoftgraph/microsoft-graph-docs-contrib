@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1
 ```
 
 
@@ -77,13 +77,13 @@ Content-Type: application/json
 
 {
   "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
-  "displayName": "String",
-  "description": "String",
-  "catalogType": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "displayName": "Access package catalog for testing",
+  "description": "Sample access package catalog",
+  "catalogType": "userManaged",
+  "state": "published",
+  "isExternallyVisible": "false",
+  "createdDateTime": "2019-01-27T18:19:50.74Z",
+  "modifiedDateTime": "2019-01-27T18:19:50.74Z"
 }
 ```
 

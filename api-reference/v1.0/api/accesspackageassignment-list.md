@@ -82,9 +82,9 @@ Content-Type: application/json
   "value": [
     {
       "id": "2a353749-3749-2a35-4937-352a4937352a",
-      "state": "String",
-      "status": "String",
-      "expiredDateTime": "String (timestamp)",
+      "state": "delivered",
+      "status": "Delivered",
+      "expiredDateTime": "2019-04-25T23:45:40.42Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }
@@ -92,5 +92,6 @@ Content-Type: application/json
   ]
 }
 ```
+
 
 

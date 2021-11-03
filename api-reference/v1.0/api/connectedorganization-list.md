@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_connectedorganization"
@@ -60,8 +61,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -77,19 +78,19 @@ Content-Type: application/json
   "value": [
     {
       "id": "04e7fa5f-fa5f-04e7-5ffa-e7045ffae704",
-      "displayName": "String",
-      "description": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
+      "displayName": "Wingtip Toys",
+      "description": "Wingtip Toys",
+      "createdDateTime": "2020-05-13T15:18:04.81Z",
+      "modifiedDateTime": "2020-05-13T15:18:04.81Z",
       "identitySources": [
         {
-          "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
+          "@odata.type": "microsoft.graph.azureActiveDirectoryTenant",
+          "displayName": "Wingtip Toys Co"
         }
       ],
-      "state": "String"
+      "state": "configured"
     }
   ]
 }
 ```
-
 

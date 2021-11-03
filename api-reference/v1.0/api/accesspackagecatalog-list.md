@@ -62,8 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -79,16 +79,17 @@ Content-Type: application/json
   "value": [
     {
       "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
-      "displayName": "String",
-      "description": "String",
-      "catalogType": "String",
-      "state": "String",
-      "isExternallyVisible": "Boolean",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)"
+      "displayName": "Access package catalog for testing",
+      "description": "Sample access package catalog",
+      "catalogType": "userManaged",
+      "state": "published",
+      "isExternallyVisible": "false",
+      "createdDateTime": "2019-01-27T18:19:50.74Z",
+      "modifiedDateTime": "2019-01-27T18:19:50.74Z"
     }
   ]
 }
 ```
+
 
 

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [connectedOrga
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/04e7fa5f-fa5f-04e7-5ffa-e7045ffae704
 ```
 
 
@@ -77,17 +77,19 @@ Content-Type: application/json
 
 {
   "id": "04e7fa5f-fa5f-04e7-5ffa-e7045ffae704",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)",
+  "displayName": "Wingtip Toys",
+  "description": "Wingtip Toys",
+  "createdDateTime": "2020-05-13T15:18:04.81Z",
+  "modifiedDateTime": "2020-05-13T15:18:04.81Z",
   "identitySources": [
     {
-      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
+      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant",
+      "displayName": "Wingtip Toys Co"
     }
   ],
-  "state": "String"
+  "state": "configured"
 }
 ```
+
 
 
