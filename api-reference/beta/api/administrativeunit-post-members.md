@@ -35,14 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
+The following request adds an existing user, group, or device to the administrative unit.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
-```
-```http
-POST /administrativeUnits/{id}/members
-```
-`NOTE: When creating a new group as a member of an administrative unit, the request URL should not contain $ref.  Otherwise, $ref is required for adding an existing user or group.`
 
 ## Request headers
 | Name      |Description|
