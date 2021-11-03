@@ -11,6 +11,9 @@ author: "merzink"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!IMPORTANT]
+> The Microsoft Graph notifications API have been retired. For an alternative notification experience, see [Microsoft Azure Notification Hubs](azure/notification-hubs/), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.  
+
 You can use the notifications API in Microsoft Graph to send push notifications to a user. Simply post a notification to your target user, and the platform will deliver the notification to all device endpoints registered to that user. The high-level flow is as follows:
 
 1. User signs in to your application, which creates a subscription with the Microsoft Graph notification service. A specific user notification subscription ID or UNSID will be returned to the calling application.
