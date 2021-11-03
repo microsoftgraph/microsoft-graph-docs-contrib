@@ -13,34 +13,10 @@
       {
         "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
         "ApiChange": "Method",
-        "ChangedApiName": "members",
+        "ChangedApiName": "device",
         "ChangeType": "Addition",
-        "Description": "Added devices as a supported resource type for administrative unit method for [get a member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-get-members).",
-        "Target": "Administrative unit get members"
-      },
-      {
-        "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
-        "ApiChange": "Method",
-        "ChangedApiName": "members",
-        "ChangeType": "Addition",
-        "Description": "Added devices as a supported resource type for administrative unit method for [add a member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members).",
-        "Target": "Administrative unit post members"
-      },
-      {
-        "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
-        "ApiChange": "Method",
-        "ChangedApiName": "members",
-        "ChangeType": "Addition",
-        "Description": "Added devices as a supported resource type for administrative unit method for [delete members](https://docs.microsoft.com/en-us/graph/api/administrativeunit-delete-members).",
-        "Target": "Administrative unit delete members"
-      },
-      {
-        "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
-        "ApiChange": "Method",
-        "ChangedApiName": "members",
-        "ChangeType": "Addition",
-        "Description": "Added devices as a supported resource type for administrative unit method for [list member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-list-members).",
-        "Target": "Administrative unit list members"
+        "Description": "Added `device` as a supported resource type of the [Get member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-get-members?view=graph-rest-beta), [List members](https://docs.microsoft.com/en-us/graph/api/administrativeunit-list-members?view=graph-rest-beta), [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members?view=graph-rest-beta), and [Remove member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-delete-members?view=graph-rest-beta) methods of the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+        "Target": "administrativeUnit"
       }
     ],
     "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
