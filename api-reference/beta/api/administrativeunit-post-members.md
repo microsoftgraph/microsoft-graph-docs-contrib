@@ -40,6 +40,13 @@ The following request adds an existing user, group, or device to the administrat
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
+```
+
+The following request creates a new group within the administrative unit.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /administrativeUnits/{id}/members
+```
 
 ## Request headers
 | Name      |Description|
