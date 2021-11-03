@@ -52,7 +52,7 @@ POST /administrativeUnits/{id}/members/$ref
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the Administrative Unit. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
