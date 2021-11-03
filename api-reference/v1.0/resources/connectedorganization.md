@@ -16,7 +16,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List connectedOrganizations](../api/connectedorganization-list.md)|[connectedOrganization](connectedorganization.md) collection|Retrieve a list of connectedOrganization objects. |
+|[List connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md)|[connectedOrganization](connectedorganization.md) collection|Retrieve a list of connectedOrganization objects. |
 |[Create connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md)|[connectedOrganization](connectedorganization.md)|Create a new connectedOrganization object. |
 |[Get connectedOrganization](../api/connectedorganization-get.md)|[connectedOrganization](connectedorganization.md)|Read properties and relationships of a connectedOrganization object. |
 |[Update connectedOrganization](../api/connectedorganization-update.md)||Update a connectedOrganization. |

@@ -13,15 +13,14 @@ The entitlement management singleton is the container for entitlement management
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[accessPackage](../resources/accesspackage.md) collection|Get the accessPackage resources from the accessPackages navigation property.|
-|[Create accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](../resources/accesspackage.md)|Create a new accessPackage object.|
-|[List assignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Get the accessPackageAssignmentRequest resources from the assignmentRequests navigation property.|
+|[List accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[accessPackage](../resources/accesspackage.md) collection|List the access packages.|
+|[Create accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](../resources/accesspackage.md)|Create a new access package.|
+|[List assignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|List the access package assignment requests.|
 |[Create accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Create a new accessPackageAssignmentRequest object.|
-|[List assignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Get the accessPackageAssignment resources from the assignments navigation property.|
-|[Create accessPackageAssignment](../api/entitlementmanagement-post-assignments.md)|[accessPackageAssignment](../resources/accesspackageassignment.md)|Create a new accessPackageAssignment object.|
-|[List catalogs](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|Get the accessPackageCatalog resources from the catalogs navigation property.|
+|[List assignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|List the access package assignments.|
+|[List catalogs](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|List the access package catalogs.|
 |[Create accessPackageCatalog](../api/entitlementmanagement-post-catalogs.md)|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Create a new accessPackageCatalog object.|
-|[List connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md)|[connectedOrganization](../resources/connectedorganization.md) collection|Get the connectedOrganization resources from the connectedOrganizations navigation property.|
+|[List connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md)|[connectedOrganization](../resources/connectedorganization.md) collection|List the connected organizations.|
 |[Create connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md)|[connectedOrganization](../resources/connectedorganization.md)|Create a new connectedOrganization object.|
 
 ## Properties

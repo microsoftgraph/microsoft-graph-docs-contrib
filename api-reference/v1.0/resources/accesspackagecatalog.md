@@ -18,7 +18,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageCatalogs](../api/accesspackagecatalog-list.md)|[accessPackageCatalog](accesspackagecatalog.md) collection|Retrieve a list of accesspackagecatalog objects. |
+|[List accessPackageCatalogs](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md) collection|Retrieve a list of accesspackagecatalog objects. |
 |[Create accessPackageCatalog](../api/entitlementmanagement-post-catalogs.md)|[accessPackageCatalog](accesspackagecatalog.md)|Create a new accessPackageCatalog object. |
 |[Get accessPackageCatalog](../api/accesspackagecatalog-get.md)|[accessPackageCatalog](accesspackagecatalog.md)|Read properties and relationships of an accessPackageCatalog object. |
 |[Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None|Update the properties of an accessPackageCatalog object. |

@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # identityGovernance resource type
 
-The identity governance singleton is the container for identity governance resources, including [access reviews](acessreviewsv2-root.md) and [entitlement management](entitlementmanagement-root.md).
+The identity governance singleton is the container for identity governance resources, including [access reviews](accessreviewsv2-root.md) and [entitlement management](entitlementmanagement-root.md).
 
 ## Relationships
 None.

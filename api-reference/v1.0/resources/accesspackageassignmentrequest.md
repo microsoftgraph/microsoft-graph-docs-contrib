@@ -16,7 +16,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection|Retrieve a list of **accesspackageassignmentrequest** objects. |
+|[List accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection|Retrieve a list of **accesspackageassignmentrequest** objects. |
 |[Create accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Create a new **accessPackageAssignmentRequest**. |
 |[Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Read properties and relationships of an **accessPackageAssignmentRequest** object. |
 |[Delete accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|None|Delete an **accessPackageAssignmentRequest**. |

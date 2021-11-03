@@ -17,7 +17,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageAssignments](../api/accesspackageassignment-list.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
+|[List accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
 
 ## Properties

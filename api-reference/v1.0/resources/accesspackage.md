@@ -20,7 +20,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackages](../api/accesspackage-list.md)|[accessPackage](accesspackage.md) collection|Retrieve a list of **accesspackage** objects. |
+|[List accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[accessPackage](accesspackage.md) collection|Retrieve a list of **accesspackage** objects. |
 |[Create accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](accesspackage.md)|Create a new **accesspackage** object. |
 |[Get accessPackage](../api/accesspackage-get.md)|[accessPackage](accesspackage.md)|Read properties and relationships of an **accesspackage** object. |
 |[Update accessPackage](../api/accesspackage-update.md)|None|Update the properties of an **accesspackage** object. |
