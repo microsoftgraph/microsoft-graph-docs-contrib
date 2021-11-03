@@ -50,8 +50,8 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 With Microsoft Graph, there are two sets of APIs you can use to manage Windows Updates: 
 
-- [The Intune APIs](https://docs.microsoft.com/graph/intune-concept-overview)
-- [The Windows updates APIs](https://docs.microsoft.com/graph/windowsupdates-concept-overview)
+- [The Intune APIs](/graph/intune-concept-overview)
+- [The Windows updates APIs](/graph/windowsupdates-concept-overview)
   
 While you can use either API to manage Windows Updates, use of these two APIs for Windows Updates are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility to that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
 
