@@ -82,7 +82,7 @@ Content-Type: application/json
       "description": "Sample access package catalog",
       "catalogType": "userManaged",
       "state": "published",
-      "isExternallyVisible": "false",
+      "isExternallyVisible": false,
       "createdDateTime": "2019-01-27T18:19:50.74Z",
       "modifiedDateTime": "2019-01-27T18:19:50.74Z"
     }

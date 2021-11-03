@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
 
@@ -83,12 +83,11 @@ Content-Type: application/json
       "id": "d378b3b7-b42a-445a-8780-2841194f777e",
       "displayName": "Sales resources",
       "description": "Resources needed by the Sales department.",
-      "isHidden": "false",
+      "isHidden": false,
       "createdDateTime": "2021-01-26T22:30:57.37Z",
       "modifiedDateTime": "2021-01-26T22:30:57.37Z"
     }
   ]
 }
 ```
-
 
