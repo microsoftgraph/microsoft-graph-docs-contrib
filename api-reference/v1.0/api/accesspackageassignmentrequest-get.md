@@ -77,11 +77,11 @@ Content-Type: application/json
 
 {
   "id": "7999249e-249e-7999-9e24-99799e249979",
-  "requestType": "String",
-  "state": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "completedDate": "String (timestamp)",
+  "requestType": "adminAdd",
+  "state": "delivered",
+  "status": "Delivered",
+  "createdDateTime": "2019-10-25T22:55:11.623Z",
+  "completedDate": "2019-10-26T22:55:11.623Z",
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
   }

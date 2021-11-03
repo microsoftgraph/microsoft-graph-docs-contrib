@@ -1,7 +1,7 @@
 ---
 title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
-author: "sbounouh"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -80,12 +80,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "displayName": "String",
-      "description": "String",
-      "isHidden": "Boolean",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)"
+      "id": "d378b3b7-b42a-445a-8780-2841194f777e",
+      "displayName": "Sales resources",
+      "description": "Resources needed by the Sales department.",
+      "isHidden": "false",
+      "createdDateTime": "2021-01-26T22:30:57.37Z",
+      "modifiedDateTime": "2021-01-26T22:30:57.37Z"
     }
   ]
 }

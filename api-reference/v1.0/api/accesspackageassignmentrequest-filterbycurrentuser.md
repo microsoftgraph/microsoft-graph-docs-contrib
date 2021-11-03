@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentRequest: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignmentrequest objects filtered on the signed-in user."
-author: "sbounouh"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='target')
 ```
 
 
@@ -84,12 +84,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "String (identifier)",
-      "requestType": "String",
-      "state": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
-      "completedDate": "String (timestamp)",
+      "id": "46c1410d-ef96-44c5-ae9c-a577d014fe0e",
+      "requestType": "adminAdd",
+      "state": "delivered",
+      "status": "Delivered",
+      "createdDateTime": "2021-01-19T20:02:23.907Z",
+      "completedDate": "2021-01-19T20:02:40.97Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

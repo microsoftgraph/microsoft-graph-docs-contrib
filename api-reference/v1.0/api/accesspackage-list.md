@@ -79,11 +79,11 @@ Content-Type: application/json
   "value": [
     {
       "id": "114d3459-3459-114d-5934-4d1159344d11",
-      "displayName": "String",
-      "description": "String",
-      "isHidden": "Boolean",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)"
+      "displayName": "Access package for testing",
+      "description": "Sample access package",
+      "isHidden": "false",
+      "createdDateTime": "2019-01-27T18:19:50.74Z",
+      "modifiedDateTime": "2019-01-27T18:19:50.74Z"
     }
   ]
 }
