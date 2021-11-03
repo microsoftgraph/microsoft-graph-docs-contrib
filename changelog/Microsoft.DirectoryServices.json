@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "validatePassword",
           "ChangeType": "Addition",
-          "Description": "Added the [validatePassword](https://docs.microsoft.com/en-us/graph/api/validatePassword?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [validatePassword](https://docs.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
