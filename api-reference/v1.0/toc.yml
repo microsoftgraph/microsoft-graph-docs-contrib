@@ -5242,7 +5242,7 @@ items:
             href: resources/accesspackage.md
             items:
             - name: List
-              href: api/accesspackage-list.md
+              href: api/entitlementmanagement-list-accesspackages.md
             - name: Create
               href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
@@ -5259,7 +5259,7 @@ items:
             href: resources/accesspackageassignment.md
             items:
             - name: List
-              href: api/accesspackageassignment-list.md
+              href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment policy
@@ -5268,7 +5268,7 @@ items:
             href: resources/accesspackageassignmentrequest.md
             items:
             - name: List
-              href: api/accesspackageassignmentrequest-list.md
+              href: api/entitlementmanagement-list-assignmentrequests.md
             - name: Create
               href: api/entitlementmanagement-post-assignmentrequests.md
             - name: Get
@@ -5283,7 +5283,7 @@ items:
             href: resources/accesspackagecatalog.md
             items:
             - name: List
-              href: api/accesspackagecatalog-list.md
+              href: api/entitlementmanagement-list-catalogs.md
             - name: Create
               href: api/entitlementmanagement-post-catalogs.md
             - name: Get
@@ -5296,7 +5296,7 @@ items:
             href: resources/connectedorganization.md
             items:
             - name: List
-              href: api/connectedorganization-list.md
+              href: api/entitlementmanagement-list-connectedorganizations.md
             - name: Create
               href: api/entitlementmanagement-post-connectedorganizations.md
             - name: Get
