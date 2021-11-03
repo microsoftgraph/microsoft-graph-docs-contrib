@@ -18,7 +18,9 @@ Resource that defines the question provided to an end user, for the purpose of o
 Inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md).
 
 ## Properties
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|Question|accessPackageQuestion|The question asked in order to get the value of the attribute|
 
 ## Relationships
 None.
