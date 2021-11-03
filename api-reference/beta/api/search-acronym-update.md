@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the [acronym](../resources/
 |description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 |standsFor|String collection|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.|
+|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
 |webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
 
 
@@ -76,7 +76,6 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

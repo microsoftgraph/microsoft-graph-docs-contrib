@@ -1,6 +1,6 @@
 ---
 title: "acronym resource type"
-description: "An acronym is a tenant wide administrative answer in Microsoft Search results to define common acronyms in a tenant."
+description: "An acronym is an administrative answer in Microsoft Search results to define common acronyms in a organization."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An acronym is a tenant wide administrative answer in Microsoft Search results to define common acronyms in a tenant.
+An acronym is an administrative answer in Microsoft Search results to define common acronyms in an organization.
 
 Inherits from [searchAnswer](../resources/search-searchAnswer.md).
 

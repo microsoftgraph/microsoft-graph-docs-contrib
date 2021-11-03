@@ -57,7 +57,7 @@ In the request body, supply a JSON representation of the [bookmark](../resources
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |powerAppIds|String collection|List of PowerApps associated with this bookmark. If users add existing PowerApps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
-|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
+|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 
 
@@ -86,7 +86,6 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
