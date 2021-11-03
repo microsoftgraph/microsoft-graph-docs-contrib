@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a member (user or group) to an administrative unit or to create a new group within an administrative unit.
+Use this API to add a member (user or group) to an administrative unit or to create a new group within an administrative unit. All [group types](/graph/api/resources/groups-overview) can be created within an administrative unit.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
