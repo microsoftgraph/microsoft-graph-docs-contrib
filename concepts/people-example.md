@@ -14,7 +14,7 @@ Microsoft Graph applications can use the people API to retrieve the people who a
 Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 The people API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
 
-## Including a person as relevant or "working with"
+## Including a person as relevant or "working-with"
  
 For a person to be included as relevant to or "working with" a profile owner in Delve, to be displayed in the owner's profile card, or to be returned by the people API, there must be a _public_ relationship between the person and the profile owner. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
