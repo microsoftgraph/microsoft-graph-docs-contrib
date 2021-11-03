@@ -117,7 +117,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "post_administrativeUnits_members_ref"
+  "name": "post_administrativeunits_members_ref"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -181,7 +181,7 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "post_administrativeUnits_members"
+  "name": "post_administrativeunits_members"
 } -->
 ``` http
 HTTP/1.1 201 Created
