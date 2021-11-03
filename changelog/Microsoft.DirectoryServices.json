@@ -7,8 +7,8 @@
         "ApiChange": "Method",
         "ChangedApiName": "memberOf",
         "ChangeType": "Addition",
-        "Description": "Added the [administrative units](https://docs.microsoft.com/en-us/graph/api/device-list-memberof.md) as a supported return type.",
-        "Target": "Device list memberOf"
+        "Description": "Added `administrativeUnit` as a supported return type of the [List memberOf](https://docs.microsoft.com/en-us/graph/api/device-list-memberOf?view=graph-rest-beta) method of the device resource.",
+        "Target": "memberOf"
       },
       {
         "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
