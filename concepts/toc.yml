@@ -401,16 +401,16 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results
-            href: search-concept-sort.md
+          - name: Manage admin search answers (preview)
+            href: search-concept-answers.md
+          - name: Manage search results layout (preview)
+            href: search-concept-display-layout.md
           - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
-          - name: Search display layout (preview)
-            href: search-concept-display-layout.md
-          - name: Search answers management (preview)
-            href: search-concept-answers.md
+          - name: Sort search results
+            href: search-concept-sort.md
       - name: Security
         items:
           - name: Overview

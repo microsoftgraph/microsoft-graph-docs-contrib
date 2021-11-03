@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API in Microsoft Graph to render display layout (preview)
+# Use the Microsoft Search API in Microsoft Graph to manage layout templates for search results (preview)
 
 A search display layout or result type is a rule that causes distinct kinds of search results to be displayed in different ways in search result pages. It consists of the following: 
 
@@ -456,6 +456,7 @@ The following example shows how to use Adaptive Card templating to render search
 </html>
 ```
 
-## Next steps
+## See also
 
+- [Create a layout to customize search results](/microsoftsearch/customize-results-layout)
 - [Use the Microsoft Search API](/graph/api/resources/search-api-overview)

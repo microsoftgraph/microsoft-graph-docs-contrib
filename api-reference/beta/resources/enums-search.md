@@ -21,6 +21,7 @@ Namespace: microsoft.graph.search
 |Published|
 |Draft|
 |Excluded|
+|unknownFutureValue|
 
 <!--
 {

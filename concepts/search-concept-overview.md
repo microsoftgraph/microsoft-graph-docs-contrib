@@ -58,11 +58,12 @@ Looking for the API reference for this service?
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md)
   - [Search person](search-concept-person.md) (preview)
-  - [Sort search results](search-concept-sort.md) (preview)
+  - [Manage administrative search answers](search-concept-answers.md) (preview)
+  - [Manage search results layout](search-concept-display-layout.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
   - [Request spelling correction](search-concept-speller.md) (preview)
-  - [Search display layout](search-concept-display-layout.md) (preview)
-  - [Create new administrative search answer](search-concept-answers.md) (preview)
+  - [Sort search results](search-concept-sort.md) (preview)
+
  
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

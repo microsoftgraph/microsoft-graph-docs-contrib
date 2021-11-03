@@ -1780,19 +1780,19 @@ Access to data via search requires the read permission to the item. Ex : _Files.
 
 ## Search configuration permissions
 
-#### Application permissions
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configurations, without a signed-in user. | Yes | No |
-| _SearchConfiguration.ReadWrite.All_ | Allows the app to read and write search configurations, without a signed-in user. | Yes | No |
-
-
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configuration, on behalf of the signed-in user. | Yes | No |
-| _SearchConfiguration.ReadWrite.All_ | Allows the app to read and write search configurations, on behalf of the signed-in user. | Yes | No |
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | 
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configurations, without a signed-in user. | Yes | 
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, without a signed-in user. | Yes | 
+
 
 ### Remarks
 Search configuration permissions are only valid for work or school accounts.
