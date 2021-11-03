@@ -1,6 +1,6 @@
 ---
 title: "accessPackageUserDirectoryAttributeStore resource type"
-description: "The type of attribute source for the Azure Active Directory end system."
+description: "The type used for objects that expose the Azure Active Directory end system to which the user configured values will be saved to."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A child of **accessPackageAttributeDestination** that is the type of attribute source for the Azure Active Directory end system. Inherits from [accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md). 
+A child of **accessPackageAttributeDestination** that is the type of attribute store for the Azure Active Directory end system. Inherits from [accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md). 
 
 ## Properties
 None.
