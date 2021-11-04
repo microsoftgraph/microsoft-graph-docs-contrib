@@ -54,9 +54,9 @@ PATCH /compliance/recordsManagement/events/{retentionEventId}/labels/{retentionL
 |isInUse|Boolean|**Specifies if the label is currently being used** Optional.|
 |descriptionForAdmins|String|**Optional information about the label for the Admin** Optional.|
 |descriptionForUsers|String|**Optional information about the label for the User** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The user who created the entity.** Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
 |createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The latest user who modified the entity.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified.** Optional.|
 |dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**A multi stage collection of reviewers that will be notified and have to approve before an item is deleted** Optional.|
 

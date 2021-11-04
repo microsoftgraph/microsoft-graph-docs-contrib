@@ -30,7 +30,7 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The user who created the entity.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
 |createdDateTime|DateTimeOffset|The date time when the entity was created.|
 |description|String|Optional information about the event|
 |displayName|String|Name of the event|
@@ -39,7 +39,7 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |filesQuery|String|Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event.|
 |id|String|Id of the Event Inherited from [entity](../resources/recordsmanagement-entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The latest user who modified the entity.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
 |lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated|
 |messagesQuery|String|Specifies the keywords that are used to scope Exchange content for the compliance retention event.|

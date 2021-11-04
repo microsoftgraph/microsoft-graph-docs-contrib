@@ -48,9 +48,9 @@ PATCH /compliance/recordsManagement/labels/{retentionLabelId}/eventType
 |:---|:---|:---|
 |displayName|String|**Name of the event type** Optional.|
 |description|String|**Optional information about the event type** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The user who created the entity.** Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
 |createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The latest user who modified the entity.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
 
 ## Response

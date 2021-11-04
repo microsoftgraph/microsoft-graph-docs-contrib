@@ -30,12 +30,12 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The user who created the entity.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
 |createdDateTime|DateTimeOffset|The date time when the entity was created.|
 |description|String|Optional information about the event type|
 |displayName|String|Name of the event type|
 |id|String|Id of the EventType Inherited from [entity](../resources/recordsmanagement-entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The latest user who modified the entity.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
 
 ## Relationships

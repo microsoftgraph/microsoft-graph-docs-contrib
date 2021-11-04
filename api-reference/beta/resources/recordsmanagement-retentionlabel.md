@@ -34,7 +34,7 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 |:---|:---|:---|
 |actionAfterRetentionPeriod|actionAfterRetentionPeriod|Specifies the action of a document that has been labeled with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
 |behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies the behaviour of a document that has been labeled with this label during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The user who created the entity|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity|
 |createdDateTime|DateTimeOffset|The date time when the entity was created|
 |descriptionForAdmins|String|Optional information about the label for the Admin|
 |descriptionForUsers|String|Optional information about the label for the User|
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 |dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers that will be notified and have to approve before an item is deleted|
 |id|String|Id of the label Inherited from [entity](../resources/recordsmanagement-entity.md).|
 |isInUse|Boolean|Specifies if the label is currently being used|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The latest user who modified the entity|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified|
 |retentionDurationInDays|Int32|Specifies the number of days to retain the content|
 |retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
