@@ -60,15 +60,9 @@ Looking for the API reference for this service?
   - [Search person](search-concept-person.md) (preview)
   - [Manage administrative search answers](search-concept-answers.md) (preview)
   - [Manage search results layout](search-concept-display-layout.md) (preview)
-  - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Refine search results](search-concept-aggregation.md)
   - [Request spelling correction](search-concept-speller.md) (preview)
-  - [Sort search results](search-concept-sort.md) (preview)
-
- 
-  
-- Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+  - [Sort search results](search-concept-sort.md)
+- Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
-
-## See also
-
-- Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph)  or on GitHub
+- Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph) or on GitHub.
