@@ -33,9 +33,9 @@ GET /education/classes/{id}/assignments
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
+The following are the available `$expand` options for this method: `categories`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
 
 ## Request headers
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get Assignments
+### Example 1: Get assignments
 
 #### Request
 
@@ -153,7 +153,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get Assignments using $expand options
+### Example 2: Get assignments using $expand options
 
 #### Request
 
