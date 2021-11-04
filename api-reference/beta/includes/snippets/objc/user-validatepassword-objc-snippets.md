@@ -7,15 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/administrativeUnits/{id}/members/$ref"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/validatePassword"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphDirectoryObject *directoryObject = [[MSGraphDirectoryObject alloc] init];
+NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSError *error;
-NSData *directoryObjectData = [directoryObject getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:directoryObjectData];
+NSString *password = @"1234567890";
+payloadDictionary[@"password"] = password;
+
+NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
+[urlRequest setHTTPBody:data];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

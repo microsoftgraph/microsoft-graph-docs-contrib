@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+      { 
+        "Id": "4bf37336-391f-4ce3-909b-03314160aade",
+        "ApiChange": "Method",
+        "ChangedApiName": "POST",
+        "ChangeType": "Addition",
+        "Description": "Added support for creating a group within an administrative unit through the [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members) method.",
+        "Target": "administrativeUnit"
+      }
+    ],
+      "Id": "4bf37336-391f-4ce3-909b-03314160aade",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-03T00:00:00.000Z",
+      "WorkloadArea": "Identity and Access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "cc9daa2b-0fbd-42b3-8bfb-b7593e031739",
           "ApiChange": "Method",
