@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get Assignments
+### Example 1: Get assignments
 
 #### Request
 
@@ -135,7 +135,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get Assignments using $expand options
+### Example 2: Get assignments using $expand options
 
 #### Request
 
@@ -152,7 +152,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments?$expand=
 
 #### Response
 
-The following is an example of the response, it includes the list of resources for each assignment. 
+The following is an example of the response. The response includes the list of resources for each assignment. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
