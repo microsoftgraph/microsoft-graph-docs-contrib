@@ -30,5 +30,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## Next steps
 
-- See the [Microsoft Search API overview](/graph/search-concept-overview).
+- Be familiar with the Search API scenarios and capabilities: 
+  - [Microsoft Search API overview](/graph/search-concept-overview).
+  - [Set up administrative search answers for users in an organization](/graph/search-concept-answers)
 - Drill down on the methods, properties, and relationships of the answer type resources: [bookmarks](search-bookmark.md), [acronyms](search-acronym.md), and [QnAs](search-qna.md).
