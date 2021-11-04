@@ -1,13 +1,13 @@
 ---
 title: "Customizing people insights privacy in Microsoft Graph"
-description: "The overview of customizing of people insights at the organization level"
+description: "Learn about how to customize people insights at the organization level using the Microsoft Graph API."
 author: "anthona"
 ms.localizationpriority: high
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---
 
-# Customizing people insights privacy in Microsoft Graph  (preview)
+# Customizing people insights privacy in Microsoft Graph (preview)
 
 People insights represent connections of people who are [relevant to or working with](people-example.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true).
 
@@ -16,16 +16,16 @@ People insights represent connections of people who are [relevant to or working 
 
 By default, the display or return of people insights is enabled for an organization. Administrators with the global administrator role can customize this behavior for an organization using REST APIs and the appropriate permissions. They can customize by setting properties of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource in the following ways:
 
-- Disable people insights for all users in the organization, by setting the **isEnabledInOrganization** property of the **insightsSettings** resource to false. (By default, the **isEnabledInOrganization** property is true.)
+- Disable people insights for all users in the organization, by setting the **isEnabledInOrganization** property of the **insightsSettings** resource to `false`. (By default, the **isEnabledInOrganization** property is `true`.)
 
-- Disable people insights for a subset of users, by assigning these users to an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+- Disable people insights for a subset of users, by assigning these users to an Azure Active Directory (Azure AD) group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** or **disabledForGroup** properties accordingly for people insights. 
 
 Keep the following in mind when updating item insights settings: 
 * People insights settings are available only in the beta endpoint. 
-* The update operation doesn’t check if a group exists. Make sure to get the correct ID of the Azure AD group from the Azure portal, that the group exists, and that the intended users have been added to the group. If the group doesn’t exist, then no changes will be made for any user in the organization. 
-* Updating **insightsSettings** can take up to 8 hours before they take effect. 
+* The update operation doesn’t verify that a group exists. Make sure to get the correct ID of the Azure AD group from the Azure portal, verify that the group exists, and that the intended users have been added to the group. If the group doesn’t exist, no changes will be made for any user in the organization. 
+* Updating **insightsSettings** can take up to 8 hours to take effect. 
 
 ## Behavior changes in the Microsoft 365 UI and people API 
 
