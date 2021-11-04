@@ -25,6 +25,44 @@ The use cases for the APIs in this section involve managing administrative answe
 | **Search answer actions**                        |                                             |
 | Create, update, or delete a search answer        | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [QnA](search-qna.md) |
 
+## Supported language tags
+| Value       | Description |
+| ----------- | ----------  |
+|`es-AR`| Argentina |
+|`en-AU`| Australia |
+|`de-AT`| Austria |
+|`fr-BE`| Belgium - French |
+|`nl-BE`| Belgium - Dutch |
+|`en-CA`| Cananda - English |
+|`fr-CA`| Canada - French |
+|`fr-FR`| France |
+|`de-DE`| Germany |
+|`zh-HK`| Hong Kong |
+|`en-IN`| India |
+|`it-IT`| Italy |
+|`pt-BR`| Brazil |
+|`en-ID`| Indonesia |
+|`ja-JP`| Japan |
+|`ko-KR`| Korea |
+|`en-MY`| Malaysia |
+|`es-MX`| Mexico |
+|`nl-NL`| Netherlands |
+|`nb-NO`| Norway |
+|`zh-CN`| People's Republic of China |
+|`pl-PL`| Poland |
+|`ru-RU`| Russia |
+|`ar-SA`| Saudi Arabia |
+|`sv-SE`| Sweden |
+|`es-ES`| Spain |
+|`fr-CH`| Switzerland - French |
+|`de-CH`| Switzerland - German |
+|`en-ZA`| South Africa |
+|`zh-TW`| Taiwan |
+|`tr-TR`| Turkey |
+|`en-GB`| United Kingdom |
+|`en-US`| United States - English |
+|`es-US`| United States - Spanish |
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
