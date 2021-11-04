@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "sourceImageNotGeneralized",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageNotGeneralized` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknownFutureValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknownFutureValue` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-04T11:09:07.127Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "servicePlans",
