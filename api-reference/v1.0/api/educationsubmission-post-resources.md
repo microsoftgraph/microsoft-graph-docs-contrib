@@ -55,7 +55,7 @@ In the request body, supply a JSON representation of the resource. The following
 
 >**Note:** The [educationExternalResource](../resources/educationexternalresource.md) is only an out resource, you can't POST a submission with it.
 
-The `assignmentResourceUrl` isn't required in the request body, it's a read-only property.
+The `assignmentResourceUrl` isn't required in the request body; it's a read-only property.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an object according to the resource type in the response body.
