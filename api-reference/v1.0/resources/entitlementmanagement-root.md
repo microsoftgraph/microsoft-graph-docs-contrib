@@ -18,7 +18,7 @@ By creating access packages with the roles users need to have across those resou
 The entitlement management resource types include:
 
 - [accessPackage](accesspackage.md): Defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.
-- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): Specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
+- accessPackageAssignmentPolicy: Specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): Created by a user who wishes to obtain an access package assignment.
 - [accessPackageAssignment](accesspackageassignment.md): An assignment of an access package to a particular subject, for a period of time.
 - [accessPackageCatalog](accesspackagecatalog.md): A container for access packages.

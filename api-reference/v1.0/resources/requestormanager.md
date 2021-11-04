@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md).
+Used in the approval settings of an access package assignment policy.
 It is a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value `#microsoft.graph.requestorManager` indicates that a requesting user's manager is to be the approver.  When creating an access package assignment policy approval stage with requestorManager, also include another approver, such as a single user or group member, in case the requesting user does not have a manager.
 ## Properties
 |Property|Type|Description|
