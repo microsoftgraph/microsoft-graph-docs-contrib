@@ -92,7 +92,7 @@ Because the **user** resource supports [extensions](/graph/extensibility-overvie
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 > [!NOTE] 
-> The follow properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
+> The follow properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
 ## Response
 
