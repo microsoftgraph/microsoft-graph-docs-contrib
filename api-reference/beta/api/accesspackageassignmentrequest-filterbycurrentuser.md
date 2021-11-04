@@ -2,7 +2,7 @@
 title: "accessPackageAssignmentRequest: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignmentrequest objects filtered on the signed-in user."
 ms.localizationpriority: medium
-author: "sbounouh"
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---

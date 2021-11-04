@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
+              - name: Manage safeguards
+                href: windowsupdates-manage-safeguards.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)

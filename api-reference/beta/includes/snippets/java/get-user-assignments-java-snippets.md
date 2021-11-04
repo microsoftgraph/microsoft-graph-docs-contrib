@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DirectoryObject directoryObject = new DirectoryObject();
-directoryObject.id = "{id}";
-
-graphClient.administrativeUnits("{id}").members().references()
+EducationAssignmentCollectionPage assignments = graphClient.education().users("80cefd93-8d88-40e2-b5d3-67898383e226").assignments()
 	.buildRequest()
-	.post(directoryObject);
+	.get();
 
 ```
