@@ -49,7 +49,7 @@ You can specify the following properties when creating an **accessPackageCatalog
 |:---|:---|:---|
 |displayName|String|The display name of the access package catalog.|
 |description|String|The description of the access package catalog.|
-|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished` and `published`.|
+|state|accessPackageCatalogState|Has the value `published` if the access packages are available for management. The possible values are: `unpublished` and `published`.|
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 
 ## Response

@@ -47,7 +47,7 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 |displayName|String|The access package catalog name.|
 |description|String|The description of the access package catalog.|
 |catalogType|accessPackageCatalogType|Whether the catalog is created by a user or entitlement management. The possible values are: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.|
-|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.|
+|state|accessPackageCatalogState|Has the value `published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.|
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 
 

@@ -34,7 +34,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String|Read-only.|
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
-|state|accessPackageCatalogState|Has the value `Published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.|
+|state|accessPackageCatalogState|Has the value `published` if the access packages are available for management. The possible values are: `unpublished`, `published`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
