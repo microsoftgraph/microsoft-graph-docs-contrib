@@ -23,9 +23,13 @@ The use cases for the APIs in this section involve managing administrative answe
 | Use cases                                        | REST resources                              |
 |:-------------------------------------------------|:--------------------------------------------|
 | **Search answer actions**                        |                                             |
-| Create, update, or delete a search answer        | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [QnA](search-qna.md) |
+| Create, update, or delete a search answer        | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [qna](search-qna.md) |
 
 ## Supported language tags
+The language tags of a [bookmark](search-bookmark.md) or [qna](search-qna.md) list the locales (languages and countries or regions) in which that search answer (**bookmark** or **qna**) can be viewed in.
+
+A locale name follows the pattern {language}-{REGION}. For more information, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
+
 | Value       | Description |
 | ----------- | ----------  |
 |`es-AR`| Argentina |
