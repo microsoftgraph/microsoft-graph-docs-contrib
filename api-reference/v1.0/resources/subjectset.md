@@ -13,9 +13,8 @@ Namespace: microsoft.graph
 
 Used in the request, approval, and assignment review settings of an access package assignment policy. The abstract base type for the [singleUser](singleuser.md), [singleServicePrincipal](singleserviceprincipal.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) types.
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
 
+None.
 ## Relationships
 None.
 ## JSON representation
