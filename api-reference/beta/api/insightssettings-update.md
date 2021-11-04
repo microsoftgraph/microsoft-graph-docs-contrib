@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights or people insights.
 
 To learn more about customizing insights privacy for your organization, see:
--  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy). 
--  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy).
+-  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
+-  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy)
 
 ## Permissions
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 ### Example 1: Update settings for item insights
 #### Request
 
-Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
+Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
 
 
 <!-- {
@@ -95,7 +95,9 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +119,7 @@ Content-type: application/json
 ### Example 2: Update settings for people insights
 #### Request
 
-Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
+Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
 
 
 <!-- {
@@ -138,7 +140,9 @@ Content-Type: application/json
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
