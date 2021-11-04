@@ -12,7 +12,7 @@ ms.custom: scenarios:getting-started
 People insights represent connections of people who are [relevant to or working with](people-example.md#including-a-person-as-relevant-or-working-with) one another within the same organization, based on public relationships between the people. These insights can be displayed in Delve and the profile card, and returned by the [people API](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true).
 
 
-## How to customize people insights? 
+## Customizing people insights for an organization
 
 By default, the display or return of people insights is enabled for an organization. Administrators with the global administrator role can customize this behavior for an organization using REST APIs and the appropriate permissions. They can customize by setting properties of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource in the following ways:
 
