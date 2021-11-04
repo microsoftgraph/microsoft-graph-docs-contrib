@@ -47,10 +47,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [insightsSettings](../resources/insightssettings.md) object in the response body.
 
 ## Example
 ### Request
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -61,7 +62,7 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
 
-##### Response
+### Response
 
 Here is an example of the response. 
 > **Note:** The response object shown here might be shortened for readability.
