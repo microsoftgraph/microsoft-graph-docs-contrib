@@ -45,6 +45,9 @@ The result of a cloud PC on-premises connection health check.
 |adJoinCheckOrganizationalUnitIncorrectFormat|The domain join check failed because the organizational unit (OU) can't be found. Please provide an OU in the domain. The OU must be in distinguished name format. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
 |adJoinCheckComputerObjectAlreadyExists|The computer account can't be found in the organizational unit (OU) provided in the on-premises network connection but the computer name already exists in the domain. This often occurs after the computer object was moved out of the OU configured in the on-premises network connection. Please move the computer object back to the target OU.|
 |adJoinCheckAccessDenied|The domain join check failed because the user account provided doesn't have sufficient permissions to join the domain. Please make sure that the account provided has sufficient permissions or change the user account defined in the on-premises network connection properties. Permissions needed: *Create computer objects* and *Delete computer objects*.|
+|adJoinCheckCredentialsExpired|The active domain join check failed because the password of the domain join user has expired. Please update the password then update the on-premises network connection with the new credentials.|
+|adJoinCheckAccountLockedOrDisabled|The active domain join check failed because the domain join user account is currently locked out or disabled. Please ensure the domain join user account is unlocked, active, and able to authenticate to the domain.|
+|adJoinCheckAccountQuotaExceeded|The active domain join check failed because the domain join user has exceeded maximum domain joins. Please make sure the domain join is allowed and the ms-DS-MachineAccountQuota Active Directory property allows sufficient domain joins.|
 |adJoinCheckUnknownError|The domain join check failed due to an unknown error. Please make sure that the on-premises network connection can successfully join the domain using the details provided.|
 |endpointConnectivityCheckCloudPcUrlNotAllowListed|During provisioning, one or more required URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
 |endpointConnectivityCheckWVDUrlNotAllowListed|During provisioning, one or more required WVD URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
@@ -63,6 +66,15 @@ The result of a cloud PC on-premises connection health check.
 |resourceAvailabilityCheckSubscriptionTransferred|The Azure subscription provided can't be accessed. Please ensure that the Azure subscription is available for provisioning.|
 |resourceAvailabilityCheckGeneralSubscriptionError|An Azure policy is restricting the creation of resources. Please ensure that there is no Azure policy that restricts creating resources in the subscription and/or resource group.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|The selected vNet is located in an unsupported region. Please ensure that the selected vNet is located in a supported region.|
+|resourceAvailabilityCheckResourceGroupInvalid|Selected Azure resource group is invalid or not found. Please make sure the selected Azure resource group is available to provision resources. Alternatively, update this on-premises network connection with another resource group.|
+|resourceAvailabilityCheckVNetInvalid|Selected Azure virtual network is invalid. Please make sure the virtual network is available and healthy. Alternatively, update this on-premises network connection with another virtual network.|
+|resourceAvailabilityCheckSubnetInvalid|Selected Azure subnet is invalid. Please make sure the subnet is available and healthy. Alternatively, update this on-premises network connection with another subnet.|
+|resourceAvailabilityCheckResourceGroupBeingDeleted|Selected Azure resource group is being deleted. Please make sure the selected Azure resource group is available to provision resources. Alternatively, update this on-premises network connection with another resource group.|
+|resourceAvailabilityCheckVNetBeingMoved|Selected Azure virtual network is being moved. Please ensure your virtual network is not changing or being moved and try again. Alternatively, update this on-premises network connection with another vNet.|
+|resourceAvailabilityCheckSubnetDelegationFailed|Selected Azure virtual network has subnet delegation which is blocking the creation of Nic. Please ask your Azure virtual network owner to modify their subnet delegation policy to allow provisioning to succeed.|
+|resourceAvailabilityCheckSubnetWithExternalResources|Selected subnet cannot be used because it contains external resources. Please remove any resources that could cause conflicts and try again. Alternatively, update this on-premises network connection with another subnet.|
+|resourceAvailabilityCheckResourceGroupLockedForReadonly|Selected resource group is locked and cannot be modified for provisioning. Please remove this lock to ensure provisioning succeeds.|
+|resourceAvailabilityCheckResourceGroupLockedForDelete|Selected resource group or its parent scope has been locked for delete action. It may use up the IP addresses. Please remove the lock and try again.|
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|The cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the cloud PC service principal has the *Reader* permissions on the subscription.|
@@ -76,6 +88,7 @@ The result of a cloud PC on-premises connection health check.
 |internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Please try again later. If the problem persists, please contact support.|
 |internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
 |internalServerUnknownError|The provisioning has failed due to an internal error. Please contact customer support.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 
