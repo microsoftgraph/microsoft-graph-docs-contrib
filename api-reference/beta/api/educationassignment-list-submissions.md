@@ -33,9 +33,9 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-The available `$expand` options for this method are: `outcomes`, `resources`, `submittedResources` and `*` which includes all the previous options.
+The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 
 ## Request headers
 | Header       | Value |
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [e
 
 ## Examples
 
-### Example 1: Get Submissions
+### Example 1: Get submissions
 #### Request
 The following is an example of the request.
 
@@ -139,7 +139,7 @@ Content-length: 873
 }
 ```
 
-### Example 2: Get Submissions with $expand options
+### Example 2: Get submissions with $expand options
 #### Request
 The following is an example of the request.
 
