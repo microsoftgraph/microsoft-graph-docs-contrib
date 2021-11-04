@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `201 Created` response code and a [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -162,7 +162,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"
