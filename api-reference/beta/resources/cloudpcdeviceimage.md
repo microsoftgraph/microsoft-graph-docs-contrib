@@ -39,6 +39,8 @@ Represents the image resource on a Cloud PC.
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
 |statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
+|expirationDate|Date|The date the image became unavailable.|
+|osStatus|cloudPcDeviceImageOsStatus|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -56,6 +58,14 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|Source image is inaccessible or not found.|
 |osVersionNotSupported| OS version is not supported.|
 |sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+
+### cloudPcDeviceImageOsStatus values
+
+|Member|Description|
+|:---|:---|
+|supported|The device image is active and ready to be used for provisioning.|
+|supportedWithWarning|The device image has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
+|unknownFutureValue|Unknown future status (Reserved, not used right now).|
 
 ## Relationships
 
@@ -84,6 +94,8 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "status": "String",
   "statusDetails": "String",
-  "sourceImageResourceId": "String"
+  "sourceImageResourceId": "String",
+  "expirationDate":"String (timestamp)",
+  "osStatus":"String"
 }
 ```
