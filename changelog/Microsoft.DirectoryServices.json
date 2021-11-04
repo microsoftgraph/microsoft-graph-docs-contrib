@@ -9283,7 +9283,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "registrationEnforcement",
           "ChangeType": "Addition",
-          "Description": "Added the **registrationEnforcement** property to [authenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-1.0) resource.",
+          "Description": "Added the **registrationEnforcement** property to the [authenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-1.0) resource.",
           "Target": "authenticationMethodsPolicy"
         }
       ],

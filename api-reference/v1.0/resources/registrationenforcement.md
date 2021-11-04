@@ -11,14 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Enforce registration at sign-in time. This can currently only be used to remind users to set up targeted authentication methods (Microsoft Authenticator) using the 'authenticationMethodsRegistrationCampaign`.
+Enforce registration at sign-in time. This can currently only be used to remind users to set up targeted authentication methods (for example, Microsoft Authenticator) using the `authenticationMethodsRegistrationCampaign`.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethodsRegistrationCampaign|[authenticationMethodsRegistrationCampaign](../resources/authenticationmethodsregistrationcampaign.md)|Run campaigns to remind users to setup targeted authentication methods.|
+|authenticationMethodsRegistrationCampaign|[authenticationMethodsRegistrationCampaign](../resources/authenticationmethodsregistrationcampaign.md)|Run campaigns to remind users to set up targeted authentication methods.|
 
 ## Relationships
 None.

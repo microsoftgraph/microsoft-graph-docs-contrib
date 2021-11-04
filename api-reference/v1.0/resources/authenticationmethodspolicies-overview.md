@@ -27,7 +27,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Azure AD tenant.|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Azure AD tenant.|
 
-## Policies available to push users to set up authentication methods:
+## Policies available for authentication methods Registration Campaign:
 |Policy       | Description |
 |:---------------------------|:------------|
 |[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who should be reminded to set up an authentication method (only supported for the Microsoft Authenticator).|

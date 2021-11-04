@@ -11,14 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the users and groups that are targeted for authentication method registration campaigns. Only users and groups that are enabled by the policy to set up the authentication method are targeted.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object identifier of an Azure AD user or group.|
+|id|String|The object identifier of an Azure Active Directory user or group.|
 |targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be `microsoftAuthenticator`.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
 

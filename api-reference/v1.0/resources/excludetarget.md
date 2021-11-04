@@ -11,14 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the users or groups of users that are excluded from a policy.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object identifier of an Azure AD user or group.|
+|id|String|The object identifier of an Azure Active Directory user or group.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
