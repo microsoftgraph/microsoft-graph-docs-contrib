@@ -3,7 +3,7 @@ title: "Delete retentionEvent"
 description: "Deletes a retentionEvent object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "compliance**"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
