@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcGalleryImages"
+title: "List galleryImages"
 description: "List the properties and relationships of gallery images of the organization."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium

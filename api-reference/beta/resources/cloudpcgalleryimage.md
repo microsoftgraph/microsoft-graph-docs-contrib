@@ -1,6 +1,6 @@
 ---
 title: "cloudPcGalleryImage resource type"
-description: "Represents the gallery image resource of current organization."
+description: "Represents the gallery image resource of the current organization."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the gallery image resource of current organization which can be used to provision a Cloud PC.
+Represents the gallery image resource of the current organization which can be used to provision a Cloud PC.
 
 ## Methods
 
@@ -30,12 +30,12 @@ Represents the gallery image resource of current organization which can be used 
 |endDate|Date|The date in which this image is no longer within long-term support. The Cloud PC will continue to provide short-term support. Read-only.|
 |expirationDate|Date|The date when the image is no longer available. Read-only.|
 |id|String|Unique identifier for the gallery image resource on the Cloud PC. Read-only.|
-|offer|String|The offer name of the gallery image. This value will be passed to Azure to get image resource. Read-only.|
+|offer|String|The offer name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
 |offerDisplayName|String|The official display offer name of the gallery image. For example, Windows 10 Enterprise + OS Optimizations. Read-only.|
-|publisher|String|The publisher name of the gallery image. This value will be passed to Azure to get image resource. Read-only.|
+|publisher|String|The publisher name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
 |recommendedSku|String|Recommended Cloud PC SKU for this gallery image. Read-only.|
 |sizeInGB|Int32|The size of this image in gigabytes. Read-only.|
-|sku|String|The SKU name of the gallery image. This value will be passed to Azure to get image resource. Read-only.|
+|sku|String|The SKU name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
 |skuDisplayName|String|The official display stock keeping unit (SKU) name of this gallery image. For example, 2004. Read-only.|
 |startDate|Date|The date when the image becomes available. Read-only.|
 |status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. Read-only.|
