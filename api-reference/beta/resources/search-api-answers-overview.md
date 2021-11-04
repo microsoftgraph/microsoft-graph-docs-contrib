@@ -37,11 +37,11 @@ A locale name follows the pattern {language}-{REGION}. For more information, see
 |`de-AT`| Austria |
 |`fr-BE`| Belgium - French |
 |`nl-BE`| Belgium - Dutch |
-|`en-CA`| Cananda - English |
+|`en-CA`| Canada - English |
 |`fr-CA`| Canada - French |
 |`fr-FR`| France |
 |`de-DE`| Germany |
-|`zh-HK`| Hong Kong |
+|`zh-HK`| Hong Kong - Simplified Chinese |
 |`en-IN`| India |
 |`it-IT`| Italy |
 |`pt-BR`| Brazil |
