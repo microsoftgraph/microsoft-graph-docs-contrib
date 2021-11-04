@@ -54,9 +54,9 @@ You can specify the following properties when creating a **retentionLabel**.
 |isInUse|Boolean|**Specifies if the label is currently being used** Optional.|
 |descriptionForAdmins|String|**Optional information about the label for the Admin** Optional.|
 |descriptionForUsers|String|**Optional information about the label for the User** Optional.|
-|createdBy|[microsoft.graph.identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identityset?view=graph-rest-1.0&branch=main)|**The user who created the entity.** Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
 |createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identityset?view=graph-rest-1.0&branch=main)|**The latest user who modified the entity.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified.** Optional.|
 |dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**A multi stage collection of reviewers that will be notified and have to approve before an item is deleted** Optional.|
 

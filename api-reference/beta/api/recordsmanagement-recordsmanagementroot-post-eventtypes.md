@@ -48,9 +48,9 @@ You can specify the following properties when creating a **retentionEventType**.
 |:---|:---|:---|
 |displayName|String|**Name of the event type** Optional.|
 |description|String|**Optional information about the event type** Optional.|
-|createdBy|[microsoft.graph.identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identityset?view=graph-rest-1.0&branch=main)|**The user who created the entity.** Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
 |createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identityset?view=graph-rest-1.0&branch=main)|**The latest user who modified the entity.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
 
 

@@ -51,7 +51,7 @@ You can specify the following properties when creating a **retentionEvent**.
 |messagesQuery|String|**Specifies the keywords that are used to scope Exchange content for the compliance retention event.** Optional.|
 |filesQuery|String|**Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event.** Optional.|
 |eventTriggerDateTime|DateTimeOffset|**Optional time when the event should be triggered.** Optional.|
-|createdBy|[microsoft.graph.identitySet](\resources\identityset.md)|**The user who created the entity.** Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
 |createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
 |lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
