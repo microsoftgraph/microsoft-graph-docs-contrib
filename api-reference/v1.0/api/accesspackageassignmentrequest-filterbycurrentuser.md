@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessPackageAssignmentRequestFilterByCurrentUserOptions|The list of current user options that can be used to filter on the access package assignment requests list.|
+|on|accessPackageAssignmentRequestFilterByCurrentUserOptions|The list of user options that can be used to filter on the access package assignment requests list.|
 
 - `target` is used to get the `accessPackageAssignmentRequest` objects where the signed-in user is the target. The resulting list includes all the assignment requests, current and expired, that were requested by the caller or for the caller, across all catalogs and access packages.
 

@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessPackageFilterByCurrentUserOptions|The list of current user options that can be used to filter on the access packages list.|
+|on|accessPackageFilterByCurrentUserOptions|The list of user options that can be used to filter on the access packages list.|
 
 - `allowedRequestor` is used to get the `accessPackage` objects for which the signed-in user is allowed to submit access requests. The resulting list includes all access packages that can be requested by the caller across all catalogs.
 
