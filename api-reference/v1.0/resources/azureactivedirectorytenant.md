@@ -27,7 +27,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.azureActiveDirectoryTenant"
+  "@odata.type": "microsoft.graph.azureActiveDirectoryTenant",
+  "baseType": "microsoft.graph.identitySource"
 }
 -->
 ``` json
@@ -37,5 +38,6 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
+
 
 

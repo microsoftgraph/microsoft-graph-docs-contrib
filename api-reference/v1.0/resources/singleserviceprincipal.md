@@ -24,7 +24,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.singleServicePrincipal"
+  "@odata.type": "microsoft.graph.singleServicePrincipal",
+  "baseType": "microsoft.graph.subjectSet"
 }
 -->
 ``` json
@@ -34,5 +35,6 @@ The following is a JSON representation of the resource.
   "description": "String"
 }
 ```
+
 
 

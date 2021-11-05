@@ -27,7 +27,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.domainIdentitySource"
+  "@odata.type": "microsoft.graph.domainIdentitySource",
+  "baseType": "microsoft.graph.identitySource"
 }
 -->
 ``` json
@@ -37,5 +38,4 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
 

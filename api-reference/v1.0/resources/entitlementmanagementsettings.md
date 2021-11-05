@@ -24,6 +24,7 @@ Represents settings that control the behavior of [Azure AD entitlement managemen
 |:---|:---|:---|
 |durationUntilExternalUserDeletedAfterBlocked|Duration|If **externalUserLifecycleAction** is `blockSignInAndDelete`, the duration, typically a number of days, after an external user is blocked from sign in before their account is deleted.|
 |externalUserLifecycleAction|accessPackageExternalUserLifecycleAction|Automatic action that the service should take when an external user's last access package assignment is removed. The possible values are: `none`, `blockSignIn`, `blockSignInAndDelete`, `unknownFutureValue`.|
+|id|String|A constant. Read-only.|
 
 ## Relationships
 None.
@@ -39,6 +40,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.entitlementManagementSettings",
+  "id": "String",
   "externalUserLifecycleAction": "String",
   "durationUntilExternalUserDeletedAfterBlocked": "String (duration)"
 }
