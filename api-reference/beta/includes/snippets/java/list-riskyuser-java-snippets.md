@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-RiskyUserCollectionPage riskyUsers = graphClient.tenantRelationships().managedTenants().riskyUsers()
+Content riskyUsers = graphClient.tenantRelationships().managedTenants().riskyUsers()
 	.buildRequest()
 	.get();
 
