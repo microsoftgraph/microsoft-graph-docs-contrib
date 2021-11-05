@@ -23,6 +23,7 @@ None.
 |email|String|The email address of the subject.|
 |id|String|Read-only.|
 |objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant.|
+|onPremisesSecurityIdentifier|String|A string representation of the principal's security identifier, if known, or `null` if the subject does not have a security identifier.|
 |principalName|String|The principal name, if known, of the subject.|
 |subjectType|accessPackageSubjectType|The resource type of the subject. The possible values are: `notSpecified`, `user`, `servicePrincipal`, `unknownFutureValue`.|
 
