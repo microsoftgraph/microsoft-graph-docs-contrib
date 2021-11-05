@@ -26,7 +26,7 @@ The use cases for the APIs in this section involve managing administrative answe
 | Create, update, or delete a search answer        | [acronym](search-acronym.md), [bookmark](search-bookmark.md), [qna](search-qna.md) |
 
 ## Supported language tags
-A language tag of a [bookmark](search-bookmark.md) or [qna](search-qna.md) represents a geographically specific language in which that search answer (**bookmark** or **qna**) can be viewed in. A language tag follows the pattern {language}-{REGION}. For more information on the pattern, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
+A language tag of a [bookmark](search-bookmark.md) or [qna](search-qna.md) represents a geographically specific language in which that search answer (**bookmark** or **qna**) can be viewed. A language tag follows the pattern {language}-{REGION}. For more information on the pattern, see [RFC 4646](https://datatracker.ietf.org/doc/html/rfc4646).
 
 The following table lists the language tags, locales, and the corresponding country or region that you can set in the [Microsoft 365 admin center](https://admin.microsoft.com/) to publish a search answer. The **Locale** column describes the language as used in that country or region.
 
