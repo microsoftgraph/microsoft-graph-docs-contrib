@@ -15,7 +15,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 # [C#](#tab/CS)
 
 ```csharp
-/var scopes = new[] { "User.Read" };
+var scopes = new[] { "User.Read" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal
