@@ -7,6 +7,8 @@ ms.prod: "compliance"
 doc_type: enumTypes
 ---
 
+# Enum values for Microsoft Graph M365 Records management 
+
 ### actionAfterRetentionPeriod values 
 
 
