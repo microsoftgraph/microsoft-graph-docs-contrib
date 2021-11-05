@@ -27,22 +27,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
           "Target": "accessPackageQuestion"
-        },
-        {
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Property",
-          "ChangedApiName": "isEditable",
-          "ChangeType": "Addition",
-          "Description": "Added the **isEditable** property to [accessPackageResourceAttribute](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResourceAttribute?view=graph-rest-beta) resource.",
-          "Target": "accessPackageResourceAttribute"
-        },
-        {
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Property",
-          "ChangedApiName": "isPersistedOnAssignmentRemoval",
-          "ChangeType": "Addition",
-          "Description": "Added the **isPersistedOnAssignmentRemoval** property to [accessPackageResourceAttribute](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageResourceAttribute?view=graph-rest-beta) resource.",
-          "Target": "accessPackageResourceAttribute"
         }
       ],
       "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
