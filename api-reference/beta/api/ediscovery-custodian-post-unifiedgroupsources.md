@@ -103,6 +103,10 @@ Content-length: 219
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-email-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-email-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -174,6 +178,10 @@ Content-length: 219
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

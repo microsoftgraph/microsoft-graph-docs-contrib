@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -156,6 +160,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subje
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

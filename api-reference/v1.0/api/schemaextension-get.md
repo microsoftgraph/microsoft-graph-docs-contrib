@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 [!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

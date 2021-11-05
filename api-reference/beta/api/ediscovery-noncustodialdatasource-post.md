@@ -101,6 +101,10 @@ Content-length: 206
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-email-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-email-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -171,6 +175,10 @@ Content-length: 206
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-siteurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-siteurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

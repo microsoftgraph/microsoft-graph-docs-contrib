@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-licensedetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

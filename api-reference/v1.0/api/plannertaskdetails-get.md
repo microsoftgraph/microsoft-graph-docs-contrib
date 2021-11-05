@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannertaskdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannertaskdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
