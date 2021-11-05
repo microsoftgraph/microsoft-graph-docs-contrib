@@ -1,14 +1,14 @@
 ---
-title: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ"
+title: "Azure Azure AD Graph to Microsoft Graph migration FAQ"
 description: "Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Azure Active Directory (Azure AD) Graph to Microsoft Graph migration FAQ
+# Assign Azure AD Graph to Microsoft Graph migration FAQ
 
-This article provides answers to frequently asked questions about migrating from Azure AD Graph to Microsoft Graph.
+This article provides answers to frequently asked questions about migrating from Azure Active Directory (Azure AD) Graph to Microsoft Graph.
 
 ## How is Microsoft Graph different from Azure AD Graph and why should I migrate my apps?
 
@@ -130,7 +130,7 @@ If you still need to configure Azure AD Graph permissions for your applications,
 + The [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) object of the [application](/graph/api/resources/application) API in Microsoft Graph
 + The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0) cmdlet in Microsoft Graph PowerShell
 
-For examples using the listed workarounds, see [Assign Azure Active Directory (Azure AD) Graph permissions to an app through Microsoft Graph](migrate-azure-ad-graph-permissions-howto.md)
+For examples using the listed workarounds, see [Assign Azure AD Graph permissions to an app through Microsoft Graph](migrate-azure-ad-graph-permissions-howto.md)
 
 ## See also
 
