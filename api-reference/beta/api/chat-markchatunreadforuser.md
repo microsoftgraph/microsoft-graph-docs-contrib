@@ -1,6 +1,6 @@
 ---
 title: "chat: markChatUnreadForUser"
-description: "Mark a chat as unread, from the given time."
+description: "Mark a chat as unreadfor a user."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks a [chat](../resources/chat.md) as unread for a user.
+Mark a [chat](../resources/chat.md) as unread for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,7 +80,7 @@ Content-length: 158
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
