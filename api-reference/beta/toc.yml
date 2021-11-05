@@ -1595,6 +1595,10 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
+        - name: Set user preferred presence
+          href: api/presence-setuserpreferredpresence.md
+        - name: Clear user preferred presence
+          href: api/presence-clearuserpreferredpresence.md
     - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
