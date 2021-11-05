@@ -16,7 +16,6 @@ The entitlement management singleton is the container for entitlement management
 |[List accessPackages](../api/entitlementmanagement-list-accesspackages.md)|[accessPackage](../resources/accesspackage.md) collection|List the access packages.|
 |[Create accessPackage](../api/entitlementmanagement-post-accesspackages.md)|[accessPackage](../resources/accesspackage.md)|Create a new access package.|
 |[List assignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|List the access package assignment requests.|
-|[Create accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Create a new accessPackageAssignmentRequest object.|
 |[List assignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|List the access package assignments.|
 |[List catalogs](../api/entitlementmanagement-list-catalogs.md)|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|List the access package catalogs.|
 |[Create accessPackageCatalog](../api/entitlementmanagement-post-catalogs.md)|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Create a new accessPackageCatalog object.|

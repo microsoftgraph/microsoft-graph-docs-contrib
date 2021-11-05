@@ -5262,8 +5262,6 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
-          - name: Access package assignment policy
-            href: resources/accesspackageassignmentpolicy.md
           - name: Access package assignment request
             href: resources/accesspackageassignmentrequest.md
             items:
