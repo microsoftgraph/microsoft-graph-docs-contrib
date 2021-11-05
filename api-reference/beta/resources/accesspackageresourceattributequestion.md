@@ -20,7 +20,7 @@ Inherits from [accessPackageResourceAttributeSource](../resources/accesspackager
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|Question|accessPackageQuestion|The question asked in order to get the value of the attribute|
+|question|accessPackageQuestion|The question asked in order to get the value of the attribute|
 
 ## Relationships
 None.
