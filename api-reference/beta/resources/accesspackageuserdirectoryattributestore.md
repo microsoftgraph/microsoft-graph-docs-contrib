@@ -25,7 +25,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore"
+  "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore",
+  "baseType": "microsoft.graph.accessPackageResourceAttributeDestination"
 }
 -->
 ``` json
