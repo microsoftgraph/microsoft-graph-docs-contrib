@@ -34,7 +34,7 @@ The Microsoft Graph Go SDK is included in the following packages:
 - [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - The core library for making calls to Microsoft Graph.
 
 ```Shell
-go get github.com/microsoftgraph/msgraph-sdk-go
+go get -u github.com/microsoftgraph/msgraph-sdk-go
 ```
 
 ## Install the Microsoft Graph Java SDK
