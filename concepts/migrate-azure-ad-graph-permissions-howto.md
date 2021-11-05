@@ -13,17 +13,17 @@ Azure Active Directory (Azure AD) Graph is deprecated and will be retired on Jun
 However, you may still need to add more Azure AD Graph permissions to your app. This article provides you with guidance for using Microsoft Graph to add Azure AD Graph permissions to your app.
 
 > [!CAUTION]
-> Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md)
+> Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
 ## Option 1: Use the Microsoft Graph REST API
 
-The Microsoft Graph [application](/graph/api/resources/application) API includes a **requiredResourceAccess** property that is a collection of  [requiredResourceAccess](/graph/api/resources/requiredresourceaccess)objects. Use this property to assign Azure AD Graph permissions following the steps below.
+The Microsoft Graph [application](/graph/api/resources/application) API includes a **requiredResourceAccess** property that is a collection of  [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) objects. Use this property to assign Azure AD Graph permissions following the steps below.
 
 ### Prerequisites
 
 To complete the following steps, you need the following resources and privileges:
 
-+ Run the HTTP requests in a tool of your choice, for example in your app, through [Graph Explorer](aka.ms/ge), or Postman.
++ Run the HTTP requests in a tool of your choice, for example in your app, through [Graph Explorer](https://aka.ms/ge), or Postman.
 + Run the APIs as a user in a Global Administrator or Application Administrator role. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 + Be assigned the `Application.ReadWrite.All` permission.
 
@@ -157,7 +157,7 @@ Content-type: application/json
 
 ### Step 2: Add Azure AD Graph permissions to your app
 
-The following example calls the [Update application](/graph/api/application-update) API to add an Azure AD Graph permission to an app. In this example, we'll add the following permissions to an app identified by the object id `581088ba-83c5-4975-b8af-11d2d7a76e98`:
+The following example calls the [Update application](/graph/api/application-update) API to add the following Azure AD Graph permissions to an app identified by object id `581088ba-83c5-4975-b8af-11d2d7a76e98`:
 
 + *User.Read* delegated permission identified by object id `311a71cc-e848-46a1-bdf8-97ff7156d8e6`.
 + *Application.Read.All* application permission identified by object id `3afa6a7d-9b1a-42eb-948e-1650a849e176`.
@@ -219,16 +219,6 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
 
-#### View the permissions on the Azure portal
-
-1. Sign in to the [Azure portal](https://portal.azure.com) as a global administrator.
-1. Search for and select **Azure Active Directory**.
-1. Under **Manage**, select **App registrations**.
-1. In the **App registrations** window, select the **All Applications** tab then select the application for which you added Azure AD Graph permissions.
-1. From the left pane of the window, under **Manage**, select **API Permissions**.
-1. In the **Configured permissions** section of the window, you should see the permissions you added in Step 2 above. If the permissions aren't listed, refresh your browser.
-
-
 ### Step 4: Grant admin consent for permissions that require admin consent
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to applications.
@@ -241,6 +231,8 @@ Though you've granted the permissions you require, some permissions, for example
 
 
 ## Option 2: Use Microsoft Graph PowerShell SDK
+
+The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to assign Azure AD Graph permissions following the steps below.
 
 ### Prerequisites
 
@@ -265,7 +257,7 @@ Connect-Graph -Scopes "Application.ReadWrite.All"
 ## Replace f7748341-825c-46e9-a111-5e3b56ae015b with the object ID of the existing app; then read and output the permission id's and their types
 $sourceAppId= 'f7748341-825c-46e9-a111-5e3b56ae015b' 
 $sourceApp = Get-MgApplication -ApplicationId $sourceAppId 
-$sourceApp.requiredResourceAccess.ResourceAccess
+$sourceApp.RequiredResourceAccess.ResourceAccess
 ```
 
 Run the script using the following command
@@ -284,14 +276,14 @@ Id                                   Type
 3afa6a7d-9b1a-42eb-948e-1650a849e176 Role
 ```
 
-From this output, 311a71cc-e848-46a1-bdf8-97ff7156d8e6 is the object id of the *User.Read* delegated permission while `3afa6a7d-9b1a-42eb-948e-1650a849e176` is the object id of the *Application.Read.All* application permission.
+From this output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the object id of the *User.Read* delegated permission while `3afa6a7d-9b1a-42eb-948e-1650a849e176` is the object id of the *Application.Read.All* application permission.
 
 ### Step 2: Add Azure AD Graph permissions to your app
 
 Create a new PowerShell script named **updatePermissions.ps1** and add the following code. This code adds the required permissions to an app identified by the object id `581088ba-83c5-4975-b8af-11d2d7a76e98`. From Step 1, these were the *User.Read* and *Application.Read.All* delegated and application permissions respectively.
 
 > [!IMPORTANT]
-> To update the requiredResourceAccess object, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
+> To update the **RequiredResourceAccess** object, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
 
 #### Request
 
@@ -308,8 +300,8 @@ $aadAccess = $app.RequiredResourceAccess | Where-Object { $_.resourceAppId -eq '
 
 if($null -eq $aadAccess){ 
     $app.RequiredResourceAccess += @{  
-        resourceAppId = "00000002-0000-0000-c000-000000000000"; 
-        resourceAccess = @( 
+        ResourceAppId = "00000002-0000-0000-c000-000000000000"; 
+        ResourceAccess = @( 
 
                 ## Replace the following with values of id and type for all permissions - both new and existing permissions - you want to grant the app
                 @{ 
@@ -347,6 +339,8 @@ Id                                   Type
 3afa6a7d-9b1a-42eb-948e-1650a849e176 Role
 ```
 
+Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
+
 ### Step 3: Grant admin consent for permissions that require admin consent
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to applications.
@@ -360,4 +354,4 @@ Id                                   Type
 ## See also
 
 + [application API](/graph/api/resources/application)
-+ [Update-MgApplication](powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0)
++ [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)
