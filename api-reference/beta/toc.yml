@@ -9865,6 +9865,13 @@ items:
             href: api/cloudpcdeviceimage-getsourceimages.md
           - name: Reupload
             href: api/cloudpcdeviceimage-reupload.md
+        - name: Cloud PC gallery image
+          href: resources/cloudpcgalleryimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-galleryimages.md
+          - name: Get
+            href: api/cloudpcgalleryimage-get.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
