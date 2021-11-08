@@ -613,15 +613,15 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ],
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
@@ -641,7 +641,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
-  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 
@@ -1210,7 +1210,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
@@ -1370,7 +1370,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
