@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcDeviceImages"
+title: "List deviceImages"
 description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to Cloud PC.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -96,7 +94,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
+  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
+  "isCollection": true
 }
 -->
 

@@ -2,7 +2,7 @@
 title: "Delete macOSExtensionsConfiguration"
 description: "Deletes a macOSExtensionsConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

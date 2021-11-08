@@ -23,8 +23,6 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - Microsoft Intune
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 | Method       | Return Type | Description |

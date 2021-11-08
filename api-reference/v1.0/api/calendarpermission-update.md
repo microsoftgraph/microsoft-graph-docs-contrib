@@ -1,15 +1,17 @@
 ---
 title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
+author: "Harini84"
 ms.localizationpriority: medium
-author: "sochowdh"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
 # Update calendarPermission
 
-Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
+Namespace: microsoft.graph
+
+Update the permissions assigned to an existing sharee or delegate, through the corresponding <b>[calendarPermission](../resources/calendarpermission.md)</b> object for a calendar.
 
 ## Permissions
 
@@ -44,7 +46,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -63,7 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 ### Request
 
 The following example changes the permission level of the sharee, Adele, to `write`.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,9 +97,7 @@ Content-type: application/json
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
@@ -143,4 +143,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

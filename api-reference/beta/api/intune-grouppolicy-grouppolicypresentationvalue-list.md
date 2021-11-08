@@ -2,7 +2,7 @@
 title: "List groupPolicyPresentationValues"
 description: "List properties and relationships of the groupPolicyPresentationValue objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
