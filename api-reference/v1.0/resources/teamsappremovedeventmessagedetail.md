@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about teamsApp removed.
-This message is generated when a teamsApp is removed from a channel, a chat, or a team.
+Represents the details of an event message about **teamsApp** removed.
+This message is generated when a **teamsApp** is removed from a channel, a chat, or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,8 +21,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamsAppDisplayName|String|Display name of the teamApp.|
-|teamsAppId|String|Unique identifier of the teamsApp.|
+|teamsAppDisplayName|String|Display name of the **teamsApp**.|
+|teamsAppId|String|Unique identifier of the **teamsApp**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about teamsApp removed](/graph/system-messages/#teams-app-removed)
+- [Example response for an event message about **teamsApp** removed](/graph/system-messages/#teams-app-removed)
 - For more information about other types of events, see [System messages](/graph/system-messages).
