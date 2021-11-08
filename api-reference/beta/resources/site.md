@@ -63,7 +63,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
-[Get site setting]: ../api/siteSettings-get.md
+[Get site setting]: ../api/site-settings-get.md
 
 
 ## Properties
