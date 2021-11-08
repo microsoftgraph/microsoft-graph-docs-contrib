@@ -4,7 +4,7 @@ description: "Retrieve the role settings for the given role. A privilegedRoleSet
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get privilegedRoleSettings

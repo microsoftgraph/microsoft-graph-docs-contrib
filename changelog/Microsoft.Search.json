@@ -729,7 +729,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "connectorId",
             "ChangeType": "Addition",
-            "Description": "Added the **connectorId** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource.",
+            "Description": "Added the **connectorId** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
             "Target": "externalConnection"
           },
           {
@@ -737,7 +737,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "searchSettings",
             "ChangeType": "Addition",
-            "Description": "Added the **searchSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource.",
+            "Description": "Added the **searchSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
             "Target": "externalConnection"
           },
           {
@@ -745,7 +745,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "displayTemplate",
             "ChangeType": "Addition",
-            "Description": "Added the [displayTemplate](https://docs.microsoft.com/en-us/graph/api/resources/displayTemplate?view=graph-rest-beta) resource type.",
+            "Description": "Added the [displayTemplate](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-displayTemplate?view=graph-rest-beta) resource type.",
             "Target": "displayTemplate"
           },
           {
@@ -753,7 +753,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "propertyRule",
             "ChangeType": "Addition",
-            "Description": "Added the [propertyRule](https://docs.microsoft.com/en-us/graph/api/resources/propertyRule?view=graph-rest-beta) resource type.",
+            "Description": "Added the [propertyRule](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta) resource type.",
             "Target": "propertyRule"
           },
           {
@@ -761,7 +761,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "searchSettings",
             "ChangeType": "Addition",
-            "Description": "Added the [searchSettings](https://docs.microsoft.com/en-us/graph/api/resources/searchSettings?view=graph-rest-beta) resource type.",
+            "Description": "Added the [searchSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-searchSettings?view=graph-rest-beta) resource type.",
             "Target": "searchSettings"
           },
           {
@@ -785,7 +785,7 @@
             "ApiChange": "Relationship",
             "ChangedApiName": "groups",
             "ChangeType": "Addition",
-            "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource.",
+            "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-1.0) resource.",
             "Target": "externalConnection"
           }
       ],
