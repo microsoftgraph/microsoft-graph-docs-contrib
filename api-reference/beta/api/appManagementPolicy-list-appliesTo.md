@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                             |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Delegated (work or school account)     | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Application.Read.All and Policy.Read.All, Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 
@@ -34,6 +34,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 ```
 
 ## Optional query parameters
+
 This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves the **appId** and **displayName** of applications or service principals that are assigned the policy.
 
 ``` http
@@ -57,9 +58,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [appManagementPolicy](../resources/appManagementPolicy.md) objects in the response body.
 
-## Example 1: Get applications and service principal objects applied to an app management policy
+## Examples
 
-### Request
+### Example 1: Get applications and service principal objects applied to an app management policy
+
+#### Request
 
 The following is an example of the request.
 
@@ -92,7 +95,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -121,12 +124,11 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
+### Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
 
-### Request
+#### Request
 
-The following is an example of the request.
-
+The following is an example of the request using $select query option.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -155,8 +157,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 ---
 
-
-### Response
+#### Response
 
 The following is an example of the response that returns `id`, `appId`, `displayName` and `createdDateTime` of applications and service principals where the policy is applied.
 

@@ -56,7 +56,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -237,12 +237,16 @@ Here is a JSON representation of the resource.
     "passwordChangeUrl": "String",
     "modeCredentialUsed": "String",
     "usernameLableCustom": "String",
+    "usernameLabelCustom": "String",
     "userSetupDelayed": true,
     "signInHelpText": "String",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "preferredKDCs": [
       "String"
     ],
     "tlsForLDAPRequired": true
