@@ -2,7 +2,7 @@
 title: "keyStringValuePair resource type"
 description: "A key-value pair with a string key and a string value."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

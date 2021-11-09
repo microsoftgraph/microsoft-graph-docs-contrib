@@ -2,7 +2,7 @@
 title: "androidManagedAppSafetyNetDeviceAttestationType enum type"
 description: "An admin enforced Android SafetyNet Device Attestation requirement on a managed app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

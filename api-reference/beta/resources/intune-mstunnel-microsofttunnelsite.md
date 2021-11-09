@@ -2,7 +2,7 @@
 title: "microsoftTunnelSite resource type"
 description: "Entity that represents a Microsoft Tunnel site"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

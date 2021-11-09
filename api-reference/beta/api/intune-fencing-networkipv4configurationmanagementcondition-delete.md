@@ -2,7 +2,7 @@
 title: "Delete networkIPv4ConfigurationManagementCondition"
 description: "Deletes a networkIPv4ConfigurationManagementCondition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

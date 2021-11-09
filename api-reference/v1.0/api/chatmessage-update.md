@@ -11,6 +11,8 @@ ms.prod: "microsoft-teams"
 
 Update a [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property of a **chatMessage** can be updated.
 
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

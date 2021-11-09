@@ -2,7 +2,7 @@
 title: "windows10DeviceFirmwareConfigurationInterface resource type"
 description: "Graph properties for Device Firmware Configuration Interface "
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

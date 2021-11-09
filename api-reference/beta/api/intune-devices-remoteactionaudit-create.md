@@ -2,7 +2,7 @@
 title: "Create remoteActionAudit"
 description: "Create a new remoteActionAudit object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

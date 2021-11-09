@@ -92,7 +92,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcUserSetting)"
+  "@odata.type": "microsoft.graph.cloudPcUserSetting",
+  "isCollection": true
 }
 -->
 ``` http

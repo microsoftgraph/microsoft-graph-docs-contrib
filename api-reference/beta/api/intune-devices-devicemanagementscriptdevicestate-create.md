@@ -2,7 +2,7 @@
 title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
