@@ -163,7 +163,7 @@ items:
             href: cloud-communications-phone-number.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
-      - name: Compliance (preview)
+      - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
         displayName: connectors
@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
+              - name: Manage safeguards
+                href: windowsupdates-manage-safeguards.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)
@@ -265,7 +267,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Use PIM to assign privileged roles
+              - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
@@ -285,6 +287,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -444,7 +448,7 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
-          - name: Licenses for subscribing to chat messages
+          - name: Licensing and payment requirements
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context

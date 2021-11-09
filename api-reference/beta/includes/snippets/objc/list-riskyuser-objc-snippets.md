@@ -13,9 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		NSError *jsonError = nil;
-		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphRiskyUser *riskyUser = [[MSGraphRiskyUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphRiskyUsers *riskyUsers = [[MSGraphRiskyUsers alloc] initWithData:data error:&nserror];
 
 }];
 

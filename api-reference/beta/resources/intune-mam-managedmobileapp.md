@@ -2,7 +2,7 @@
 title: "managedMobileApp resource type"
 description: "The identifier for the deployment an app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

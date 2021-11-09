@@ -20,7 +20,7 @@ const externalItem = {
   ]
 };
 
-await client.api('/connections/contosohr/items/TSP228082938')
+await client.api('/external/connections/contosohr/items/TSP228082938')
 	.update(externalItem);
 
 ```

@@ -32,9 +32,9 @@ GET /directoryRoleTemplates
 This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:------|
+| Authorization  |Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
