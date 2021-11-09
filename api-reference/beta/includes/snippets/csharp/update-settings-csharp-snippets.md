@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var settings = new Microsoft.Graph.Ediscovery.Settings
+var caseSettings = new Microsoft.Graph.Ediscovery.CaseSettings
 {
 	RedundancyDetection = new Microsoft.Graph.Ediscovery.RedundancyDetectionSettings
 	{
@@ -31,6 +31,6 @@ var settings = new Microsoft.Graph.Ediscovery.Settings
 
 await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
 	.Request()
-	.UpdateAsync(settings);
+	.UpdateAsync(caseSettings);
 
 ```

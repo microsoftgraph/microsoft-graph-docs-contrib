@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsResourcePerformance resource type"
 description: "The user experience analytics resource performance entity."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

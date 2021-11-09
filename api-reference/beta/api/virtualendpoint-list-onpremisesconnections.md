@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcOnPremisesConnections"
+title: "List onPremisesConnections"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -94,7 +94,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcOnPremisesConnection)"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
+  "isCollection": true
 }
 -->
 

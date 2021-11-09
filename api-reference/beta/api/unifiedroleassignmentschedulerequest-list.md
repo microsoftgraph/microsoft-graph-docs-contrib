@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleAssignmentScheduleRequests"
 description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

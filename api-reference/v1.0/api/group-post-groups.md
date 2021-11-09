@@ -38,9 +38,9 @@ POST /groups
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       |Description|
+|:---------------|:----------|
+| Authorization  |Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
 ## Request body
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---------------|:--------|:----------|
 | displayName | String | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
 | mailEnabled | Boolean | Set to `true` for mail-enabled groups. Required. |
-| mailNickname | String | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
+| mailNickname | String | The mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
 | securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required.  **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
 
 > [!IMPORTANT]
@@ -80,7 +80,7 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ### Example 1: Create a Microsoft 365 group
 
-The following example creates a Microsoft 365 group.
+The following example creates a Microsoft 365 group. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
 
 #### Request
 
@@ -93,7 +93,6 @@ The following example creates a Microsoft 365 group.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for library",

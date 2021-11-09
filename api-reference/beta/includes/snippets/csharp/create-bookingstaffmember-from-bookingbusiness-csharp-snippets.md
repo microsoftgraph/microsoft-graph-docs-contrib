@@ -12,6 +12,7 @@ var bookingStaffMember = new BookingStaffMember
 	DisplayName = "Dana Swope",
 	EmailAddress = "danas@contoso.com",
 	Role = BookingStaffRole.ExternalGuest,
+	TimeZone = "America/Chicago",
 	UseBusinessHours = true,
 	WorkingHours = new List<BookingWorkHours>()
 	{
