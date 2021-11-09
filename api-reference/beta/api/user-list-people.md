@@ -1,7 +1,7 @@
 ---
 title: "List people"
 description: "Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
-author: "anthona"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | People.Read, People.Read.All    |
+|Delegated (work or school account) | People.Read    |
 |Delegated (personal Microsoft account) | People.Read    |
-|Application | People.Read.All |
+|Application | Not supported. |
 
 ## HTTP request
 
