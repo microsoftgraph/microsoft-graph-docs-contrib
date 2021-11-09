@@ -52,7 +52,7 @@ Enable support for delegated permissions (`Contacts.Read` or `Contacts.ReadWrite
 - Check out the [licensing and payment models](teams-licenses.md) that apply to Microsoft Teams APIs in Microsoft Graph.
 
 ### Users
-User licenses for Azure Active Directory (Azure AD) services now support a timesstamp for when the [state of the license assignment](/graph/api/resources/licenseassignmentstate) is last updated. 
+User licenses for Azure Active Directory (Azure AD) services now support a timestamp for when the [state of the license assignment](/graph/api/resources/licenseassignmentstate) is last updated. 
 
 ## October 2021: New in preview only
 
@@ -98,7 +98,7 @@ Enable the following additional [settings](/graph/api/resources/assignmentReview
 - Can optionally specify the ID of a Teams app in an [external connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) in the **connectorId** property.
 
 ### Users
-[Validate a password](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) in realtime against an organization's password validation policy, as a user types the password. Get [detailed information from the validation](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) against rules in the policy.
+[Validate a password](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) in real time against an organization's password validation policy, as a user types the password. Get [detailed information from the validation](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) against rules in the policy.
 
 
 ## September 2021: New and generally available
