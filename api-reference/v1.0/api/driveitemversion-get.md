@@ -41,11 +41,13 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.
 
 
-## Example
+## Examples
+
+### Example 1: Get specified version of a file
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -73,7 +75,7 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 ---
 
 
-### Response
+#### Response
 
 This returns a version:
 
@@ -88,7 +90,7 @@ Content-Type: application/json
     "lastModifiedBy": {
     "user": {
         "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
-        "displayName": "Ryan Gregg"
+        "displayName": "Iheanetu Olamma"
     }
     },
     "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
@@ -97,39 +99,21 @@ Content-Type: application/json
 ```
 
 
-## Example (Current version)
+### Example 2: Get current version of a file
 
 This example retrieves the current version of a file in the current user's drive.
 
-### HTTP request
+#### Request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
 
-```msgraph-interactive
+```http
 GET /me/drive/items/{item-id}/versions/current
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-current-version-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-current-version-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-current-version-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-current-version-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-### Response
+#### Response
 
 This returns a version:
 
@@ -144,7 +128,7 @@ Content-Type: application/json
     "lastModifiedBy": {
     "user": {
         "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
-        "displayName": "Ryan Gregg"
+        "displayName": "Iheanetu Olamma"
     }
     },
     "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
