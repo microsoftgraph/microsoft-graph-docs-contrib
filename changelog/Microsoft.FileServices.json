@@ -2077,8 +2077,8 @@
         "ChangeList": [{
             "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
             "ApiChange": "Method",
-            "ChangedApiName": "driveItem",
-            "ChangeType": "change",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
             "Description": "Added capability for using timestamp-based delta tokens.",
             "Target": "delta"
         }],
@@ -2093,8 +2093,8 @@
         "ChangeList": [{
             "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
             "ApiChange": "Method",
-            "ChangedApiName": "driveItem",
-            "ChangeType": "change",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
             "Description": "Added capability for using timestamp-based delta tokens.",
             "Target": "delta"
         }],
