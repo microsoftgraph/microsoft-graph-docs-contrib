@@ -10494,8 +10494,6 @@ items:
       items:
       - name: Overview
         href: resources/onedrive.md
-      - name: Addressing items
-        href: ../../concepts/onedrive-addressing-driveitems.md
       - name: Drives
         href: resources/drive.md
         items:
