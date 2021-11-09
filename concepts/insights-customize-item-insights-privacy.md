@@ -33,7 +33,7 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. They can configure item insights in the Microsoft 365 admin center, or by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required. 
 
-The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights settings via Microsoft admin center?
 An administrator with the _global administrator role_ can tune item insights privacy settings via toggles. To do so, in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, and under **Item insights**, choose **Change settings**.
@@ -77,10 +77,10 @@ Alternatively, you can change the default and disable item insights for a specif
 ### Configure item insights using REST API
 As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
 
-- Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
+- Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
+Use the [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
 
 | How item insights are enabled | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -89,7 +89,7 @@ Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserv
 | Disabled for the entire organization | `false` | ignored |
 
 Keep the following in mind when updating item insights settings:
-- [insights settings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) are available only in the beta endpoint.
+- [Item insights settings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) are available only in the beta endpoint.
 - Get the ID of an Azure AD group from the Azure portal, and make sure the group exists, because the update operation does not check the existence of the group. Specifying a non-existent group in **disabledForGroup** does _not_ disable insights for any users in the organization.
 - Updating settings can take up to 24 hours to be applied across all Microsoft 365 experiences.
 - Regardless of item insights settings, Delve continues to respect Delve tenant and user level [privacy settings](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true).

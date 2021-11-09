@@ -404,20 +404,12 @@ items:
             href: api/insights-list-used.md
         - name: Organization control (preview)
           items:
-          - name: Insights settings
-            href: resources/insightssettings.md
-          - name: Settings for item insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
+          - name: Item insights settings
+            href: resources/iteminsightssettings.md
+          - name: Get
+            href: api/iteminsightssettings-get.md
+          - name: Update
+            href: api/iteminsightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -507,14 +499,6 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
-          items:
-          - name: Insights settings
-            href: resources/insightssettings.md
-          - name: List
-            href: api/organizationsettings-list-peopleinsights.md
-          - name: Update
-            href: api/insightssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -12792,14 +12776,6 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
-          items:
-          - name: Insights settings
-            href: resources/insightssettings.md
-          - name: List
-            href: api/organizationsettings-list-peopleinsights.md
-          - name: Update
-            href: api/insightssettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -13108,36 +13084,37 @@ items:
           items:
           - name: Item insights (preview)
             href: resources/iteminsights.md
-          - name: List shared
-            href: api/insights-list-shared.md
-          - name: List trending
-            href: api/insights-list-trending.md
-          - name: List used
-            href: api/insights-list-used.md
-        - name: Organization control (preview)
-          items:
-          - name: Insights settings
-            href: resources/insightssettings.md
-          - name: Settings for item insights
+          - name: Shared
+            href: resources/insights-shared.md
             items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
+            - name: List shared
+              href: api/insights-list-shared.md
+          - name: Trending
+            href: resources/insights-trending.md
             items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
+            - name: List trending
+              href: api/insights-list-trending.md
+          - name: Used
+            href: resources/insights-used.md
+            items:
+            - name: List used
+              href: api/insights-list-used.md
+          - name: Organization control (preview)
+            items:
+            - name: Item insights settings
+              href: resources/iteminsightssettings.md
+            - name: Get
+              href: api/iteminsightssettings-get.md
             - name: Update
-              href: api/insightssettings-update.md
-        - name: User control (preview)
-          items:
-          - name: User insights settings
-            href: resources/userinsightssettings.md
-          - name: Get
-            href: api/userinsightssettings-get.md
-          - name: Update
-            href: api/userinsightssettings-update.md
+              href: api/iteminsightssettings-update.md
+          - name: User control (preview)
+            items:
+            - name: User insights settings
+              href: resources/userinsightssettings.md
+            - name: Get
+              href: api/userinsightssettings-get.md
+            - name: Update
+              href: api/userinsightssettings-update.md
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
