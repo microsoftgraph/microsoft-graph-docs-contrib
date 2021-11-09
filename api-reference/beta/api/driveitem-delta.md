@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This method allows your app to track changes to a drive and its children over time.
+Track changes in a [driveItem](../resources/driveitem.md) and its children over time.
 
 Your app begins by calling `delta` without any parameters. 
 The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
@@ -82,7 +82,7 @@ In addition to the collection of DriveItems, the response will also include one 
 
 ## Examples
 
-### Example 1: Initial Request
+### Example 1: Initial request
 
 Here is an example of how to call this API to establish your local state.
 
