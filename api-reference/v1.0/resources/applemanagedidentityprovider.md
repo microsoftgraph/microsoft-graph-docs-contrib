@@ -31,12 +31,12 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|developerId|String|The Apple developer identifier. Required.|
-|serviceId|String|The Apple service identifier. Required.|
-|keyId|String|The Apple key identifier. Required.|
 |certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
-|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|developerId|String|The Apple developer identifier. Required.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
+|keyId|String|The Apple key identifier. Required.|
+|serviceId|String|The Apple service identifier. Required.|
 
 Retrieve the **developerId**, **serviceId**, **keyId**, and the **certificateData** from the Apple developer portal. For more information, follow the guide to [create an Apple ID application](/azure/active-directory-b2c/identity-provider-apple-id?pivots=b2c-user-flow#create-an-apple-id-application).
 
