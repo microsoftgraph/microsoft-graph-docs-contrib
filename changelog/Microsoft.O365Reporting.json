@@ -143,7 +143,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivityuserdetail",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailactivityuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailactivityuserdetail"
 		},
 		{
@@ -151,7 +151,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivitycounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailactivitycounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailactivitycounts"
 		},
 		{
@@ -159,7 +159,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailactivityusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailactivityusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailactivityusercounts"
 		},
 		{
@@ -167,7 +167,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageuserdetail",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailappusageuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailappusageuserdetail"
 		},
 		{
@@ -175,7 +175,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageappsusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailappusageappsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailappusageappsusercounts"
 		},
 		{
@@ -183,7 +183,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailappusageusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailappusageusercounts"
 		},
 		{
@@ -191,7 +191,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getemailappusageversionsusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getemailappusageversionsusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getemailappusageversionsusercounts"
 		},
 		{
@@ -199,7 +199,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagedetail",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getmailboxusagedetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta) API to stream.",
 		  "Target": "getmailboxusagedetail"
 		},
 		{
@@ -207,7 +207,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagemailboxcounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getmailboxusagemailboxcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getmailboxusagemailboxcounts"
 		},
 		{
@@ -215,7 +215,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagequotastatusmailboxcounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getmailboxusagequotastatusmailboxcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getmailboxusagequotastatusmailboxcounts"
 		},
 		{
@@ -223,7 +223,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getmailboxusagestorage",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getmailboxusagestorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) API to stream.",
 		  "Target": "getmailboxusagestorage"
 		},
 		{
@@ -231,7 +231,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusageuserdetail",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsdeviceusageuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsdeviceusageuserdetail"
 		},
 		{
@@ -239,7 +239,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusageusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsdeviceusageusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsdeviceusageusercounts"
 		},
 		{
@@ -247,7 +247,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagetotalusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsdeviceusagetotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsdeviceusagetotalusercounts"
 		},
 		{
@@ -255,7 +255,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagedistributionusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsdeviceusagedistributionusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsdeviceusagedistributionusercounts"
 		},
 		{
@@ -263,7 +263,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsdeviceusagedistributiontotalusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsdeviceusagedistributiontotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsdeviceusagedistributiontotalusercounts"
 		},
 		{
@@ -271,7 +271,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivityuserdetail",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivityuserdetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivityuserdetail"
 		},
 		{
@@ -279,7 +279,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitycounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivitycounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitycounts"
 		},
 		{
@@ -287,7 +287,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitytotalcounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivitytotalcounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitytotalcounts"
 		},
 		{
@@ -295,7 +295,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivityusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivityusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivityusercounts"
 		},
 		{
@@ -303,7 +303,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitytotalusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivitytotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitytotalusercounts"
 		},
 		{
@@ -311,7 +311,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitydistributionusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivitydistributionusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitydistributionusercounts"
 		},
 		{
@@ -319,7 +319,7 @@
 		  "ApiChange": "Method",
 		  "ChangedApiName": "getteamsuseractivitydistributiontotalusercounts",
 		  "ChangeType": "Change",
-		  "Description": "Update JSON return type of [getteamsuseractivitydistributiontotalusercounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) API to stream.",
 		  "Target": "getteamsuseractivitydistributiontotalusercounts"
 		}
 	  ],
