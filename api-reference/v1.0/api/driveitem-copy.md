@@ -1,13 +1,12 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Copy a file or folder
+title: driveItem: copy
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType
 ---
-# Copy a DriveItem
+# driveItem: copy
 
 Namespace: microsoft.graph
 
@@ -35,19 +34,7 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-### Request body
-
-In the request body, provide a JSON object with the following parameters.
-
-
-| Name            | Value                                          | Description                                                                                                 |
-|:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
-| name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
-
-**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
-
-## Optional query parameters
+## Query parameters
 
 This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs.
 
@@ -59,12 +46,24 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 **Note:** The _conflictBehavior_ is not supported for OneDrive Consumer.
 
+## Request body
+
+In the request body, provide a JSON object with the following parameters.
+
+
+| Name            | Value                                          | Description                                                                                                 |
+|:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
+| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
+| name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
+
+**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
 ## Example
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file will be named `contoso plan (copy).txt`.
 
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
@@ -99,8 +98,7 @@ Content-Type: application/json
 
 ---
 
-
-## Response
+### Response
 
 Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
 
