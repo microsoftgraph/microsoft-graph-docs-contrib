@@ -15,8 +15,7 @@ Represents the details of an event message about members added.
 This message is generated when members are added to a chat, a channel, or a team.
 The **visibleHistoryStartDateTime** property for an event about members added to a channel is always set to `0001-01-01T00:00:00Z`, which indicates that all history is shared.
 
-> **Note**: For a chat, when the selected share history time for members is earlier than the initator's visible history time, the
-**visibleHistoryStartDateTime** property for [conversationMember](conversationmember.md) and the **membersAddedEventMessageDetail** message might have different values. [conversationMember](conversationmember.md) has the effective visible history time for the member based on the initiator's visible history time.
+> **Note**: The **visibleHistoryStartDateTime** property for a [conversationMember](conversationmember.md) and the **membersAddedEventMessageDetail** message might have different values if the selected **shareHistoryTime** value for members in a chat is earlier than the initiator’s visible history time.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
