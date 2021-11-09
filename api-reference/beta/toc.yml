@@ -9849,6 +9849,13 @@ items:
             href: api/cloudpcdeviceimage-getsourceimages.md
           - name: Reupload
             href: api/cloudpcdeviceimage-reupload.md
+        - name: Cloud PC gallery image
+          href: resources/cloudpcgalleryimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-galleryimages.md
+          - name: Get
+            href: api/cloudpcgalleryimage-get.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -14241,6 +14248,10 @@ items:
           href: api/chat-list-operations.md
         - name: Get operation
           href: api/teamsasyncoperation-get.md
+        - name: Mark chat as read
+          href: api/chat-markchatreadforuser.md
+        - name: Mark chat as unread
+          href: api/chat-markchatunreadforuser.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
