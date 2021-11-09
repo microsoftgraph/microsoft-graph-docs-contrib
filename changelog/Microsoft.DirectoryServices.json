@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "certifiedClientApplicationsOnly",
           "ChangeType": "Addition",
-          "Description": "Added the **certifiedClientApplicationsOnly** property to [permissionGrantConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta) resource.",
+          "Description": "Added the **certifiedClientApplicationsOnly** property to the [permissionGrantConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta) resource.",
           "Target": "permissionGrantConditionSet"
         }
       ],
