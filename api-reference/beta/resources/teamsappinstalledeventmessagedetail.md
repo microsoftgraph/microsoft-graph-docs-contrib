@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about **teamsApp** installed.
+Represents the details of an event message about a **teamsApp** installation.
 This message is generated when a **teamsApp** is installed in a channel, a chat, or a team.
 
 
