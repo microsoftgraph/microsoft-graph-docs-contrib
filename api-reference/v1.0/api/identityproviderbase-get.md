@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in the response body.
 
 ## Examples
 
@@ -178,15 +178,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applemanagedidentityprovider_from_identityproviderbase"
 }
 -->
 
-``` http
-GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
+```http
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
 ```
 
 #### Response
