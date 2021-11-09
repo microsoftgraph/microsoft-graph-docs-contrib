@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let assignments = await client.api('/education/classes/{id}/assignments')
+const directoryObject = {
+  '@odata.id':'https://graph.microsoft.com/beta/groups/{id}'
+};
+
+await client.api('/administrativeUnits/{id}/members/$ref')
 	.version('beta')
-	.get();
+	.post(directoryObject);
 
 ```

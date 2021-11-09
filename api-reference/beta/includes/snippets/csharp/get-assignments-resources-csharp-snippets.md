@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var assignments = await graphClient.Education.Classes["{educationClass-id}"].Assignments
 	.Request()
+	.Expand("resources")
 	.GetAsync();
 
 ```
