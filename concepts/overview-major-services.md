@@ -2,7 +2,7 @@
 title: "Major services and features in Microsoft Graph"
 description: "Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
 author: "angelgolfer-ms"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---
 
@@ -82,6 +82,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |:-----------|:--------------------|:-----------|:----------------|
 | Cloud printing | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
 |Corp management of devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
+| Cloud PC (preview) | Windows 365  | Windows 365 is a cloud-based service that lets administrators easily set up and manage Windows 365 Cloud PCs for users in their organization. Individual end users can securely stream their rich, personalized Windows experience from the Microsoft cloud to any device, any time, with their Cloud PC. | [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true) |
 | Device updates (preview) | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md) |
 | Multi-tenant management (preview) | Microsoft 365 Lighthouse | Lets Managed Service Providers (MSPs) remotely manage multiple customer tenants for compliance and threat detection, and help get tenant devices in a healthy and secure state. | [Multi-tenant management using Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 | Service health and communications | Microsoft 365 and Dynamics 365 services | Provides access to the health status and message center posts about Microsoft cloud services. A notable example that uses the service communications API is the Microsoft 365 admin center. | [Accessing service health and communications in Microsoft Graph](service-communications-concept-overview.md) |

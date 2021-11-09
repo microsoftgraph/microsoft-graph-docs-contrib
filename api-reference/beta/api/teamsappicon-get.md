@@ -1,7 +1,7 @@
 ---
 title: "Get teamsAppIcon"
 description: "Retrieve an icon associated with a specific definition of a Teams app."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jecha"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

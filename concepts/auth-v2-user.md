@@ -2,7 +2,7 @@
 title: "Get access on behalf of a user"
 description: "To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph."
 author: "jackson-woods"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
 ---

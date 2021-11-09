@@ -1,7 +1,7 @@
 ---
 title: "List existing synchronization templates"
 description: "List the synchronization templates associated with a given application or service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

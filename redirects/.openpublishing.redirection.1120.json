@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/user-list-workingwith.md",
+      "redirect_url": "/graph/api/user-list-people?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

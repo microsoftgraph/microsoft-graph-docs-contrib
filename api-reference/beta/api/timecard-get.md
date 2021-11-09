@@ -2,7 +2,7 @@
 title: "Get timeCard"
 description: "Get a timeCard by ID."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

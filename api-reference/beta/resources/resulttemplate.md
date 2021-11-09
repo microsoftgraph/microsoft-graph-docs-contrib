@@ -1,7 +1,7 @@
 ---
 title: "resultTemplate resource type"
 description: "A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "cristianv-ms"
 ms.prod: "search"
 doc_type: "resourcePageType"

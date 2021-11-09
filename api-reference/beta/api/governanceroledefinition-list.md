@@ -1,16 +1,18 @@
 ---
 title: "List governanceRoleDefinitions"
 description: "Get a collection of governanceRoleDefinitions on a resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # List governanceRoleDefinitions
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 

@@ -2,7 +2,7 @@
 title: "Get cloudPcUserSetting"
 description: "Read the properties and relationships of a cloudPcUserSetting object."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -165,7 +163,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcUserSetting",
     "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
     "displayName": "Display Name value",
@@ -184,6 +181,5 @@ Content-Type: application/json
           }
       }
     ]
-  }
 }
 ```

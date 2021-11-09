@@ -1,7 +1,7 @@
 ---
 title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

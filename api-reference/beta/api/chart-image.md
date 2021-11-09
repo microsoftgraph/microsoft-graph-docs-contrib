@@ -2,7 +2,7 @@
 title: "Chart: Image"
 description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -77,11 +77,11 @@ You can display the base-64 string inside an HTML image tag: `<img src="data:ima
 
 For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
 
-![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
 
 If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
+![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

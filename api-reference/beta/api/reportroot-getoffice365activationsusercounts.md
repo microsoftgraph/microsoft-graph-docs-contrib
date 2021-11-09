@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActivationsUserCounts"
 description: "Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

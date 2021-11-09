@@ -1,7 +1,7 @@
 ---
 title: "OneDrive file storage API overview"
 description: "OneDrive is the files hub in Microsoft 365."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onedrive"
 ms.custom: scenarios:getting-started
 ---

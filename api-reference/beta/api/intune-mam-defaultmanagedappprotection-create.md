@@ -99,6 +99,7 @@ The following table shows the properties that are required when you create the d
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `oneDriveForBusiness`, `sharePoint`, `camera`.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -143,6 +144,7 @@ The following table shows the properties that are required when you create the d
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 
 
 
@@ -156,7 +158,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5308
+Content-length: 5407
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -214,6 +216,7 @@ Content-length: 5308
   ],
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
+  "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -277,7 +280,8 @@ Content-length: 5308
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
 
@@ -286,7 +290,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5480
+Content-Length: 5579
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -347,6 +351,7 @@ Content-Length: 5480
   ],
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
+  "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -410,10 +415,10 @@ Content-Length: 5480
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "wipe"
+  "appActionIfDeviceLockNotSet": "wipe",
+  "connectToVpnOnLaunch": true
 }
 ```
-
 
 
 

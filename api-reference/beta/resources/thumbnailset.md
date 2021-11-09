@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
 ms.date: 09/10/2017
 title: ThumbnailSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

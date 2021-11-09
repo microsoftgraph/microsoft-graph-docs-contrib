@@ -2,7 +2,7 @@
 title: "Get teamworkBot"
 description: "Read the properties and relationships of a teamworkBot object."
 author: "AkJo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: Get printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
 description: "Represents a detailed summary of an application sign-in."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

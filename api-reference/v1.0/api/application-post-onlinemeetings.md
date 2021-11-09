@@ -2,7 +2,7 @@
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
 author: "mkhribech"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -11,34 +11,29 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
+Create an online meeting on behalf of a user.
 
-> [!NOTE]
-> The meeting does not show up on the user's calendar.
+> [!TIP]
+> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | OnlineMeetings.ReadWrite.All*               |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
-Request when using a delegated token:
+To create an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
-```
-
-Request when using an application token:
-<!-- { "blockType": "ignored" } -->
-```http
 POST /users/{userId}/onlineMeetings
 ```
 
@@ -60,11 +55,13 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-## Examples 
+## Examples
+
+### Example 1: Create an online meeting with user token
 
 The following example creates an online meeting with a user token.
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,8 +96,7 @@ Content-Type: application/json
 
 ---
 
-
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -157,6 +153,108 @@ Content-Type: application/json
     }  
 ```
 
+### Example 2: Create a Microsoft Teams live event with user token
+
+<!-- {
+  "blockType": "request",
+  "name": "create-live-event-user-token"
+}-->
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2021-08-20T14:00:34.2444915+00:00",
+  "endDateTime":"2021-08-20T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### Response
+
+> **Note:** The response object shown here has been shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```json
+{
+  "id": "(redacted)",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2021-08-20T14:00:34.2444915Z",
+  "endDateTime": "2021-08-20T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -170,4 +268,3 @@ Content-Type: application/json
   ]
 }
 -->
-

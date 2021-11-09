@@ -2,7 +2,7 @@
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---

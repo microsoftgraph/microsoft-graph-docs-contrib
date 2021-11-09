@@ -2,7 +2,7 @@
 title: "Create educationSchool"
 description: "Create a new educationSchool object."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

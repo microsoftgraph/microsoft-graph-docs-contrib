@@ -2,7 +2,7 @@
 title: printerShare resource type
 description: Represents a printer that is intended to be discoverable by users and printing applications.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

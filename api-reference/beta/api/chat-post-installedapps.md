@@ -2,7 +2,7 @@
 title: "Add app to chat"
 description: "Install an app to chat."
 author: "subray"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -31,8 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { 
-"blockType": "ignored" 
+<!-- {
+"blockType": "ignored"
 } -->
 
 ```http
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 Content-Type: application/json
 
 {
-"teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 # [C#](#tab/csharp)

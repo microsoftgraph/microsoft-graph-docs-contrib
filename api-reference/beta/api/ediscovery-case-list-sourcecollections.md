@@ -2,7 +2,7 @@
 title: "List sourceCollections"
 description: "Get the list of sourceCollections resources from a case object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

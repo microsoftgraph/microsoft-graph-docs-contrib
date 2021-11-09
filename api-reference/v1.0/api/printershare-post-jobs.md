@@ -2,7 +2,7 @@
 title: Create printJob for a printerShare
 description: Create a new printJob for a printerShare. 
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

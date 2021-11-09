@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: bundle resource type
 description: Facet describing a driveItem that is a logical grouping of other driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

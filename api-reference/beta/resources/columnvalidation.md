@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "columnValidation resource type"
 description: "Contains data for validating column values."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

@@ -1,10 +1,10 @@
 ---
 title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # privilegedRole: selfDeactivate
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Deactivate the role that is assigned to the requestor.
 ## Permissions

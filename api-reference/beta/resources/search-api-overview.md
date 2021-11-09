@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nmoreau"
 ms.prod: "search"
 doc_type: resourcePageType
@@ -66,7 +66,7 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 25 for **message** and **event**. 
+- The maximum results per page (**size**) is 25 for **message** and **event**.
 
 There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
@@ -143,7 +143,7 @@ See [refine search results](/graph/search-concept-aggregation) for examples that
 
 ## Request spelling correction
 
-Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md).
 
 In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
 
@@ -155,7 +155,7 @@ The search API allows you to render search results from [connectors](/microsofts
 
 To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
 
-See [Use search display layout](/graph/search-concept-display-layout) for examples. 
+See [Use search display layout](/graph/search-concept-display-layout) for examples.
 
 ## Error handling
 
@@ -170,7 +170,7 @@ The search API has the following limitations:
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, **person**, SharePoint and OneDrive types, or **externalItem** are currently not supported.  
+Any combinations involving **message**, **event**, **person**, SharePoint and OneDrive types, or **externalItem** are currently not supported.
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
@@ -204,7 +204,7 @@ For backward compatibility, the original properties and types are accessible and
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
-  - [Search person](/graph/search-concept-person)  
+  - [Search person](/graph/search-concept-person)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)

@@ -1,7 +1,7 @@
 ---
 title: "Create oAuth2PermissionGrant (a delegated permission grant)"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

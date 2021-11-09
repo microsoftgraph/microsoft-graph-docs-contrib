@@ -2,8 +2,8 @@
 title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
-localization_priority: Normal
-ms.prod: "Sharepoint"
+ms.localizationpriority: medium
+ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [term](..
 } -->
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
 Content-length: 366
 

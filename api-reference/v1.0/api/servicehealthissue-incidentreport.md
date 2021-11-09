@@ -2,7 +2,7 @@
 title: "serviceHealthIssue: incidentReport"
 description: "Provide the Post-Incident Review (PIR) document of a specified service issue for tenant."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Send mail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
