@@ -1,6 +1,6 @@
 ---
 title: "chat: markChatUnreadForUser"
-description: "Mark a chat as unreadfor a user."
+description: "Mark a chat as unread for a user."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
