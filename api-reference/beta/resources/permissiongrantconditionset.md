@@ -50,7 +50,7 @@ A permission grant condition set contains several conditions. For an event to ma
     "clientApplicationIds": [ "string" ],
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
-    "clientApplicationsFromVerifiedPublisherOnly": false,
-    "certifiedClientApplicationsOnly": false
+    "clientApplicationsFromVerifiedPublisherOnly": Boolean,
+    "certifiedClientApplicationsOnly": Boolean
 }
 ```
