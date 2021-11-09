@@ -333,11 +333,6 @@ The following is an example of an output that verifies the permissions granted t
 
 ```powershell
 Welcome To Microsoft Graph!
-
-Id                                   Type
---                                   ----
-311a71cc-e848-46a1-bdf8-97ff7156d8e6 Scope
-3afa6a7d-9b1a-42eb-948e-1650a849e176 Role
 ```
 
 Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
