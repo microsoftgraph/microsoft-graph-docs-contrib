@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let getApplicableContentTypesForList = await client.api('/sites/{siteId}/getApplicableContentTypesForList(listId='listId')')
+let getApplicableContentTypesForList = await client.api('/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')')
 	.version('beta')
 	.get();
 

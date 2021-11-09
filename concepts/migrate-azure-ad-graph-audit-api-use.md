@@ -1,12 +1,12 @@
 ---
-title: "Examine Azure AD Graph APIs app usage"
-description: "Describes how to audit Azure Active Directory (Azure AD) APIs to migrate an app to Microsoft Graph API."
+title: "Examine Azure Active Directory (Azure AD) Graph APIs app usage"
+description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Examine Azure AD Graph APIs app usage
+# Examine Azure Active Directory (Azure AD) Graph APIs app usage
 
 This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 

@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents the scope tag info with display name and identity.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

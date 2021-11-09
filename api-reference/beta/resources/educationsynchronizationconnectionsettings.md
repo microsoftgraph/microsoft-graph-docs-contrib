@@ -32,4 +32,20 @@ Represents the provider connection settings. This allows the system to know how 
 | clientId     | String | Client ID used to connect to the provider.                    |
 | clientSecret | String | Client secret to authenticate the connection to the provider. |
 
+## JSON representation
 
+The following is a JSON representation of this resource.
+
+<!-- {
+  "blockType": "resource",
+   truncated: true,
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
+}-->
+
+```json
+{}
+```

@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
@@ -38,7 +37,9 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request body
 You need to provide an empty json `{}` as request body for this method.
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
+If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
+
+If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
 
 ## Example
 The following example shows how to call this API.
@@ -50,7 +51,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
@@ -138,6 +139,33 @@ Content-length: 279
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
+        }
+    }
+}
+```
+
+If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

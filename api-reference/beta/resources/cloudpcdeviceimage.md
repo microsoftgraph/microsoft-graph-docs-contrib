@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents the image resource on a Cloud PC.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 |Method|Return type|Description|

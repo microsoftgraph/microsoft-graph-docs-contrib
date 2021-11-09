@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcProvisioningPolicies"
+title: "List provisioningPolicies"
 description: "View the properties and relationships of all Cloud PC provisioning policies."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List properties and relationships of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) objects.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -96,7 +94,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
+  "isCollection": true
 }
 -->
 

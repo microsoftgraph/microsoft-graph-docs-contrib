@@ -2,7 +2,7 @@
 title: "Delete managedDeviceMobileAppConfigurationDeviceStatus"
 description: "Deletes a managedDeviceMobileAppConfigurationDeviceStatus."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

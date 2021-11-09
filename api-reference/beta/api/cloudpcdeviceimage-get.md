@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -104,7 +103,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
     "displayName": "Display Name value",
@@ -115,6 +113,5 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
     "status": "pending",
     "statusDetails": null
-  }
 }
 ```

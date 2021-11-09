@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionStatusDetails resource type"
-description: "The status details of a cloud PC on-premises connection."
+description: "The status details of a Cloud PC on-premises connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 

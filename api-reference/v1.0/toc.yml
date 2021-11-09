@@ -88,7 +88,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
+        href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -1153,6 +1153,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
@@ -1273,7 +1277,11 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md
+            href: api/participant-invite.md          
+          - name: Start hold music
+            href: api/participant-startholdmusic.md
+          - name: Stop hold music
+            href: api/participant-stopholdmusic.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
         - name: Unmute application
@@ -1337,6 +1345,34 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
+    - name: Compliance
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: Subject rights request
+        items:
+        - name: Overview
+          href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
+        - name: Subject rights request
+          href: resources/subjectrightsrequest.md
+          items:
+          - name: List
+            href: api/subjectrightsrequest-list.md
+          - name: Create
+            href: api/subjectrightsrequest-post.md
+          - name: Get
+            href: api/subjectrightsrequest-get.md
+          - name: Update
+            href: api/subjectrightsrequest-update.md
+          - name: Get final report
+            href: api/subjectrightsrequest-getfinalreport.md
+          - name: Get final attachment
+            href: api/subjectrightsrequest-getfinalattachment.md
+          - name: List notes
+            href: api/subjectrightsrequest-list-notes.md
+          - name: Create note
+            href: api/subjectrightsrequest-post-notes.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -4215,9 +4251,7 @@ items:
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
-          href: api/educationuser-post-rubrics.md
-        - name: List assignments
-          href: api/educationuser-list-assignments.md          
+          href: api/educationuser-post-rubrics.md       
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4480,6 +4514,13 @@ items:
             href: api/administrativeunit-get-scopedrolemembers.md
           - name: Remove a scoped-role administrator
             href: api/administrativeunit-delete-scopedrolemembers.md
+        - name: BitLocker recovery key
+          href: resources/bitlockerrecoverykey.md
+          items:
+          - name: List
+            href: api/bitlocker-list-recoverykeys.md
+          - name: Get
+            href: api/bitlockerrecoverykey-get.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -4636,16 +4677,35 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Create
+              href: api/rbacapplication-post-roledefinitions.md
+            - name: Get
+              href: api/unifiedroledefinition-get.md
+            - name: Update
+              href: api/unifiedroledefinition-update.md
+            - name: Delete
+              href: api/unifiedroledefinition-delete.md
+          - name: Role assignment
+            href: resources/unifiedroleassignment.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignments.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignments.md
+            - name: Get
+              href: api/unifiedroleassignment-get.md
+            - name: Delete
+              href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
-        - name: Authentication flows policy
-          items:
-          - name: Authentication flows policy
-            href: resources/authenticationflowspolicy.md
-          - name: Get
-            href: api/authenticationflowspolicy-get.md
-          - name: Update
-            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -4679,44 +4739,6 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication methods policy
-          items:
-          - name: Overview
-            href: resources/authenticationmethodspolicies-overview.md
-          - name: Authentication method policy
-            href: resources/authenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationmethodspolicy-get.md
-            - name: Update
-              href: api/authenticationmethodspolicy-update.md
-          - name: FIDO2 policy
-            href: resources/fido2authenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/fido2authenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/fido2authenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator policy
-            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Email policy
-            href: resources/emailauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/emailauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/emailauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -4871,24 +4893,25 @@ items:
           - name: Create invitation
             href: api/invitation-post.md
         - name: Organizational branding
-          href: resources/organizationalbrandingproperties.md
+          href: resources/organizationalbranding.md
           items:
-          - name: Create
-            href: api/organizationalbrandingproperties-create.md
           - name: Get
-            href: api/organizationalbrandingproperties-get.md
+            href: api/organizationalbranding-get.md
           - name: Update
-            href: api/organizationalbrandingproperties-update.md
-          - name: Delete
-            href: api/organizationalbrandingproperties-delete.md
-          - name: Create localized
-            href: api/organizationalbrandingpropertieslocalization-create.md
-          - name: Get localized
-            href: api/organizationalbrandingpropertieslocalization-get.md
-          - name: Update localized
-            href: api/organizationalbrandingpropertieslocalization-update.md
-          - name: Delete localized
-            href: api/organizationalbrandingpropertieslocalization-delete.md
+            href: api/organizationalbranding-update.md
+          - name: Branding localization
+            href: resources/organizationalbrandinglocalization.md
+            items:
+            - name: List
+              href: api/organizationalbranding-list-localizations.md
+            - name: Create
+              href: api/organizationalbranding-post-localizations.md
+            - name: Get
+              href: api/organizationalbrandinglocalization-get.md
+            - name: Update
+              href: api/organizationalbrandinglocalization-update.md
+            - name: Delete
+              href: api/organizationalbrandinglocalization-delete.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4905,6 +4928,52 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication method policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -4912,21 +4981,6 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
-          - name: Home realm discovery policy
-            href: resources/homerealmdiscoverypolicy.md
-            items:
-            - name: List
-              href: api/homerealmdiscoverypolicy-list.md
-            - name: Create
-              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-            - name: Get
-              href: api/homerealmdiscoverypolicy-get.md
-            - name: Update
-              href: api/homerealmdiscoverypolicy-update.md
-            - name: Delete
-              href: api/homerealmdiscoverypolicy-delete.md
-            - name: List applied to applications
-              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -4959,6 +5013,21 @@ items:
               href: api/featurerolloutpolicy-post-appliesto.md
             - name: Delete appliesTo
               href: api/featurerolloutpolicy-delete-appliesto.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: List
+              href: api/homerealmdiscoverypolicy-list.md
+            - name: Create
+              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+            - name: Get
+              href: api/homerealmdiscoverypolicy-get.md
+            - name: Update
+              href: api/homerealmdiscoverypolicy-update.md
+            - name: Delete
+              href: api/homerealmdiscoverypolicy-delete.md
+            - name: List applied to applications
+              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -5917,8 +5986,6 @@ items:
           href: api/site-get.md
         - name: Get lists
           href: api/list-list.md
-        - name: List subsites
-          href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: Follow site
@@ -5943,6 +6010,8 @@ items:
           href: api/list-create.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Search for sites
+          href: api/site-search.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -6186,6 +6255,8 @@ items:
           href: api/team-list-members.md
         - name: Add member
           href: api/team-post-members.md
+        - name: Add members in bulk
+          href: api/conversationmembers-add.md
         - name: Get member
           href: api/team-get-members.md
         - name: Remove member
@@ -6268,6 +6339,8 @@ items:
           href: api/channel-completemigration.md
         - name: Get channel message
           href: api/chatmessage-get.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get channel messages delta
           href: api/chatmessage-delta.md
         - name: Get files folder
@@ -6282,6 +6355,10 @@ items:
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -6313,6 +6390,8 @@ items:
           href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-messages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Send message in chat
@@ -6340,6 +6419,10 @@ items:
           href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App
@@ -6700,6 +6783,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:
@@ -6731,6 +6816,8 @@ items:
           href: api/worksheet-usedrange.md
         - name: Update worksheet
           href: api/worksheet-update.md
+        - name: Delete worksheet
+          href: api/worksheet-delete.md
         - name: Get cell
           href: api/worksheet-cell.md
         - name: Get range
