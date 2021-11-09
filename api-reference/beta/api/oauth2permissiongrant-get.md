@@ -1,5 +1,5 @@
 ---
-title: "Get oAuth2PermissionGrant"
+title: "Get oAuth2PermissionGrant (a delegated permission grant)"
 description: "Retrieve the properties and relationships of single oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Get oAuth2PermissionGrant
+# Get oAuth2PermissionGrant (a delegated permission grant)
 
 Namespace: microsoft.graph
 

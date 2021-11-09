@@ -1,5 +1,5 @@
 ---
-title: "Delete oAuth2PermissionGrant"
+title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Delete oAuth2PermissionGrant
+# Delete oAuth2PermissionGrant (a delegated permission grant)
 
 Namespace: microsoft.graph
 

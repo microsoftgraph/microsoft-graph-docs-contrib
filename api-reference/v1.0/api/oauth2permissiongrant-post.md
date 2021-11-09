@@ -1,5 +1,5 @@
 ---
-title: "Create oAuth2PermissionGrant"
+title: "Create oAuth2PermissionGrant (a delegated permission grant)"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Create oAuth2PermissionGrant
+# Create oAuth2PermissionGrant (a delegated permission grant)
 
 Namespace: microsoft.graph
 
