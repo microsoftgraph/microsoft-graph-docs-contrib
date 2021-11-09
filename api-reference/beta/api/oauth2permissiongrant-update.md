@@ -1,5 +1,5 @@
 ---
-title: "Update an oAuth2PermissionGrant"
+title: "Update oAuth2PermissionGrant"
 description: "Update the properties of an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Update a delegated permission grant (oAuth2PermissionGrant)
+# Update oAuth2PermissionGrant
 
 Namespace: microsoft.graph
 

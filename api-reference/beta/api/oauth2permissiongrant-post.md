@@ -1,5 +1,5 @@
 ---
-title: "Create an oAuth2PermissionGrant"
+title: "Create oAuth2PermissionGrant"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
