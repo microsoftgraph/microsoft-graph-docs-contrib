@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about **teamsApp** upgraded.
+Represents the details of an event message about a **teamsApp** upgrade.
 This message is generated when a **teamsApp** is upgraded in a channel, a chat, or a team.
 
 
