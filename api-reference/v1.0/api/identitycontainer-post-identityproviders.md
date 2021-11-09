@@ -165,9 +165,8 @@ The following is an example of the request.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/identity/identityProviders
+POST https://graph.microsoft.com/v1.0/identity/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.appleManagedIdentityProvider",
@@ -177,6 +176,7 @@ Content-length: 154
   "keyId": "99P6D879C4",
   "certificateData": "******"
 }
+```
 
 #### Response
 
