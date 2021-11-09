@@ -1,12 +1,12 @@
 ---
-title: "Assign Azure AD Graph permissions to an app through Microsoft Graph"
-description: "Assign Azure AD Graph permissions to an app through Microsoft Graph."
+title: "Use Microsoft Graph to assign Azure AD Graph permissions to an app"
+description: "Use Microsoft Graph to assign Azure AD Graph permissions to an app."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Assign Azure AD Graph permissions to an app through Microsoft Graph
+# Use Microsoft Graph to assign Azure AD Graph permissions to an app
 
 Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation journey, adding Azure AD Graph permissions to an app through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the [Microsoft Graph](/graph/overview) API.
 
