@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about **teamsApp** removed.
+Represents the details of an event message about a **teamsApp** removal.
 This message is generated when a **teamsApp** is removed from a channel, a chat, or a team.
 
 
