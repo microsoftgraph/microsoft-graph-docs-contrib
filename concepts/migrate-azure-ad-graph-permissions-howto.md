@@ -8,7 +8,7 @@ ms.prod: "applications"
 
 # Assign Azure AD Graph permissions to an app through Microsoft Graph
 
-Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation path, adding Azure AD Graph permissions to an app through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the Microsoft Graph API.
+Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation journey, adding Azure AD Graph permissions to an app through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the [Microsoft Graph](/graph/overview) API.
 
 However, you may still need to add more Azure AD Graph permissions to your app. This article provides you with guidance for using Microsoft Graph to add Azure AD Graph permissions to your app.
 
@@ -107,7 +107,7 @@ The details of all Azure AD Graph permissions are indicated in the **appRoles** 
 
 ### Step 1: Identify the permission id's for the Azure AD Graph permissions you need for your app
 
-First, identify the Azure AD Graph permissions you need to add, their permission id's, and their types (application permissions or delegated permissions). You can retrieve the id's from an existing app by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through Microsoft Graph API.
+First, identify the Azure AD Graph permissions you need to add, their permission id's, and their types (application permissions or delegated permissions). You can retrieve the id's from an existing app by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through Microsoft Graph API. Azure AD Graph's globally unique **appId** is `00000002-0000-0000-c000-000000000000` and it's identified by the **resourceAppId** property of the **requiredResourceAccess** object.
 
 ### Request
 
@@ -221,7 +221,7 @@ Though you've granted the permissions you require, some permissions, for example
 
 ### Step 4: Grant admin consent for permissions that require admin consent
 
-1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to applications.
+1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following Azure AD roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to apps.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the **App registrations** window, select the **All Applications** tab then select the application for which you added Azure AD Graph permissions.
@@ -244,11 +244,11 @@ To complete the following steps, your PowerShell app needs the following resourc
 
 ### Step 1: Identify the permission id's for the Azure AD Graph permissions you need for your app
 
-First, identify the Azure AD Graph permissions you need to add, their permission id's, and their types (application permissions or delegated permissions). You can retrieve the id's from an existing app by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through a PowerShell script.
+First, identify the Azure AD Graph permissions you need to add, their permission id's, and their types (application permissions or delegated permissions). You can retrieve the id's from an existing app by retrieving its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through a PowerShell script.
 
 ### Request
 
-Create a new PowerShell script named **fetchPermissions.ps1** and add the following code. This code retrieves Azure AD Graph permission IDs and types from an existing application identified by **id** `f7748341-825c-46e9-a111-5e3b56ae015b`. Replace the `f7748341-825c-46e9-a111-5e3b56ae015b` with your source app's object ID.
+Create a new PowerShell script named **fetchPermissions.ps1** and add the following code. This code retrieves Azure AD Graph permission IDs and types from an existing application identified by object ID `f7748341-825c-46e9-a111-5e3b56ae015b`. Replace `f7748341-825c-46e9-a111-5e3b56ae015b` with your source app's object ID.
 
 ```powershell
 # Sign in with the required Application.ReadWrite.All scope
@@ -280,7 +280,7 @@ From this output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the object id of the
 
 ### Step 2: Add Azure AD Graph permissions to your app
 
-Create a new PowerShell script named **updatePermissions.ps1** and add the following code. This code adds the required permissions to an app identified by the object id `581088ba-83c5-4975-b8af-11d2d7a76e98`. From Step 1, these were the *User.Read* and *Application.Read.All* delegated and application permissions respectively.
+Create a new PowerShell script named **updatePermissions.ps1** and add the following code. This code adds the required permissions to an app identified by the object id `581088ba-83c5-4975-b8af-11d2d7a76e98`. From Step 1, these permissions were *User.Read* and *Application.Read.All* delegated and application permissions respectively.
 
 > [!IMPORTANT]
 > To update the **RequiredResourceAccess** object, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
@@ -296,7 +296,8 @@ $applicationId = '581088ba-83c5-4975-b8af-11d2d7a76e98'
 
 $app = Get-MgApplication -ApplicationId $applicationId
 
-$aadAccess = $app.RequiredResourceAccess | Where-Object { $_.resourceAppId -eq '00000002-0000-0000-c000-000000000000' } 
+## Azure AD Graph's globally unique appId is 00000002-0000-0000-c000-000000000000 identified by the ResourceAppId
+$aadAccess = $app.RequiredResourceAccess | Where-Object { $_.ResourceAppId -eq '00000002-0000-0000-c000-000000000000' } 
 
 if($null -eq $aadAccess){ 
     $app.RequiredResourceAccess += @{  
@@ -321,14 +322,14 @@ if($null -eq $aadAccess){
 Update-MgApplication -ApplicationId $applicationId -RequiredResourceAccess $app.RequiredResourceAccess 
 ```
 
-Run the script using the following command
+Run the script using the following command.
 ```powershell
 .\updatePermissions.ps1
 ```
 
 ### Response
 
-The following is an example of the output. This verifies the permissions that have been granted to the app.
+The following is an example of an output that verifies the permissions granted to the app.
 
 ```powershell
 Welcome To Microsoft Graph!
@@ -343,7 +344,7 @@ Though you've granted the permissions you require, some permissions, for example
 
 ### Step 3: Grant admin consent for permissions that require admin consent
 
-1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to applications.
+1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following Azure AD roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to apps.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. In the **App registrations** window, select the **All Applications** tab then select the application for which you added Azure AD Graph permissions.

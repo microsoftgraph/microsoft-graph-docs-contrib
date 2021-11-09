@@ -8,13 +8,13 @@ ms.prod: "applications"
 
 # Assign Azure AD Graph to Microsoft Graph migration FAQ
 
-This article provides answers to frequently asked questions about migrating from Azure Active Directory (Azure AD) Graph to Microsoft Graph.
+This article provides answers to frequently asked questions about migrating from Azure Active Directory (Azure AD) Graph to [Microsoft Graph](/graph/overview).
 
 ## How is Microsoft Graph different from Azure AD Graph and why should I migrate my apps?
 
 The Azure AD Graph API offers access to only Azure AD services. The Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services such as Microsoft Teams, Microsoft Exchange, and Microsoft Intune.
 
-Microsoft Graph is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and will be retired on June 30, 2022. After June 30, 2022, your apps will no longer receive responses from the Azure AD Graph endpoint. Migrate to Microsoft Graph to avoid loss of functionality.
+[Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and will be retired on June 30, 2022. After June 30, 2022, your apps will no longer receive responses from the Azure AD Graph endpoint. Migrate to Microsoft Graph to avoid loss of functionality.
 
 ## As a developer, how do I identify apps that use Azure AD Graph?
 
@@ -123,7 +123,7 @@ There are no exceptions to this deprecation. Your apps will no longer receive re
 
 First, we recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the Microsoft Graph API.
 
-If you've identified a gap where Microsoft Graph doesn't support a feature available in Azure AD Graph, let us know through Microsoft Graph on Q&A by using the tag [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
+If you've identified a gap where Microsoft Graph doesn't support a feature available in Azure AD Graph, let us know through Microsoft Q&A by using the tag [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
 
 If you still need to configure Azure AD Graph permissions for your applications, use one of the following workarounds. Adding Azure AD Graph permissions using these workarounds won't be supported after June 30, 2022. Any app using Azure AD Graph will still stop functioning after June 30, 2022.
 
