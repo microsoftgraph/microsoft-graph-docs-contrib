@@ -1,5 +1,5 @@
 ---
-title: "Create an oAuth2PermissionGrant"
+title: "Create oAuth2PermissionGrant"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,12 +7,12 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Create a delegated permission grant (oAuth2PermissionGrant)
+# Create oAuth2PermissionGrant
 
 Namespace: microsoft.graph
 
 
-Create a delegated permission grant. A delegated permission grant is represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+Create a delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 

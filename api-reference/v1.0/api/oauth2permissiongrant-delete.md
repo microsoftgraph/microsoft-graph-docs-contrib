@@ -1,5 +1,5 @@
 ---
-title: "Delete an oAuth2PermissionGrant"
+title: "Delete oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,11 +7,11 @@ ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Delete a delegated permission grant (oAuth2PermissionGrant)
+# Delete oAuth2PermissionGrant
 
 Namespace: microsoft.graph
 
-Delete an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Delete a delegated permission grant, represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
