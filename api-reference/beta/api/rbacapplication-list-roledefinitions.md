@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -20,8 +20,6 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Azure AD) 
 - entitlement management (Azure AD)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

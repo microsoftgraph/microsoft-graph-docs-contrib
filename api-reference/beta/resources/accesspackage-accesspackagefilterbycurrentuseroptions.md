@@ -1,8 +1,8 @@
 ---
 title: "accessPackageFilterByCurrentUserOptions enum type"
 description: "Options for current user to use as a filter on access packages list."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "enumPageType"
 ---

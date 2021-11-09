@@ -2,7 +2,7 @@
 title: "Create languages"
 description: "Create a custom language in an Azure AD B2C user flow."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

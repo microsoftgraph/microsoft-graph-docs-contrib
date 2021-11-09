@@ -1,7 +1,7 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an identityProvider."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Delete identityProvider
 Namespace: microsoft.graph
 
-Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+Delete an identity provider resource that is of the type specified by the **id** in the request.
 
-In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
+Among the types of providers derived from identityProviderBase, you can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource.
 
 ## Permissions
 

@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: getMemberGroups"
 description: "Get the list of groups that this service principal is a member of.  The check is transitive."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -87,7 +87,7 @@ Content-length: 33
 
 
 ### Response
-Here is an example of the response. 
+Here is an example of the response.
 >Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

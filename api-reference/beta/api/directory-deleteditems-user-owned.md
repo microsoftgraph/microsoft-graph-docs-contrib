@@ -2,7 +2,7 @@
 title: "List deleted items owned by a user"
 description: "Retrieves a list of recently deleted items owned by the specified user.  "
 author: "keylimesoda"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

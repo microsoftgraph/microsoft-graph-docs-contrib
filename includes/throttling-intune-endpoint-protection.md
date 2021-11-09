@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -14,4 +14,7 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-deviceManagementDerivedCredentialSettings, deviceManagementResourceAccessProfileAssignment, deviceManagementResourceAccessProfileBase, windows10XCertificateProfile, windows10XSCEPCertificateProfile, windows10XTrustedRootCertificate, windows10XVpnConfiguration, windows10XWifiConfiguration.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceManagementDerivedCredentialSettings](/graph/api/resources/devicemanagementderivedcredentialsettings) <li> [deviceManagementResourceAccessProfileAssignment](/graph/api/resources/devicemanagementresourceaccessprofileassignment) <li> [deviceManagementResourceAccessProfileBase](/graph/api/resources/devicemanagementresourceaccessprofilebase) <li> [windows10XCertificateProfile](/graph/api/resources/windows10xcertificateprofile) <li> [windows10XSCEPCertificateProfile](/graph/api/resources/windows10xscepcertificateprofile) <li> [windows10XTrustedRootCertificate](/graph/api/resources/windows10xtrustedrootcertificate) <li> [windows10XVpnConfiguration](/graph/api/resources/windows10xvpnconfiguration) <li> [windows10XWifiConfiguration](/graph/api/resources/windows10xwificonfiguration) </ul> |

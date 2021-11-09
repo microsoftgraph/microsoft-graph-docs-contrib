@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentResource resource type"
 description: "A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType

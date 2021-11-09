@@ -2,7 +2,7 @@
 title: "Microsoft Graph Data Connect policies and licensing"
 description: "Describes what policies are supported and how to assign ISV access SKUs to organizations."
 author: "fercobo-msft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Use app-only authentication with the Microsoft Graph PowerShell SDK"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph PowerShell SDK."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 
@@ -29,6 +29,7 @@ You will need an X.509 certificate installed in your user's trusted store on the
 
 You can register the application either in the [Azure Active Directory portal](https://aad.portal.azure.com), or using PowerShell.
 
+<!-- markdownlint-disable MD025 -->
 # [Portal](#tab/azure-portal)
 
 1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a Microsoft 365 tenant organization admin.
@@ -62,6 +63,7 @@ You can register the application either in the [Azure Active Directory portal](h
 1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
 
 # [PowerShell](#tab/powershell)
+<!-- markdownlint-enable MD025 -->
 
 > [!NOTE]
 > You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
@@ -83,9 +85,12 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
 1. Review the output for the prompt `Please go to the following URL in your browser to provide admin consent`. Copy the URL provided and paste it in your browser. Sign in with an administrator account to grant admin consent to your newly registered application.
 
     > [!NOTE]
-    > After granting admin consent, the browser will display an error: `AADSTS500113: No reply address is registered for the application`. This is because the app registration does not include a redirect URL. This error can be ignored.
+    > After granting admin consent, the browser will redirect back to `http://localhost` and display a **Not Found** error. This error can be ignored as long as the URL contains `admin_consent=True`.
 
 1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
+
+    > [!TIP]
+    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
 
 ---
 

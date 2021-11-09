@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 950
+Content-Length: 988
 
 {
   "value": [
@@ -94,12 +94,12 @@ Content-Length: 950
       "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "disableUDPConnections": true
     }
   ]
 }
 ```
-
 
 
 

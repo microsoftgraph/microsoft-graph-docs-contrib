@@ -2,7 +2,7 @@
 title: "List messages"
 description: "Retrieve the serviceUpdateMessage resources from the messages navigation property."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -115,6 +115,7 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
+      "expiryDateTime": null,
       "details": [
         {
           "name": "ExternalLink",

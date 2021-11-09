@@ -2,7 +2,7 @@
 title: "Get schema"
 description: "Read the properties and relationships of a schema object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /connections/{connectionsId}/schema
+GET /external/connections/{connectionsId}/schema
 ```
 
 ## Optional query parameters
@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 
 ### Request
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/connections/contosohr/schema
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schema-csharp-snippets.md)]
@@ -78,6 +80,7 @@ GET https://graph.microsoft.com/v1.0/connections/contosohr/schema
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 

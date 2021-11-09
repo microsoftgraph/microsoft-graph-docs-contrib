@@ -1,7 +1,7 @@
 ---
 title: "Delete itemPatent"
 description: "Deletes an itemPatent object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

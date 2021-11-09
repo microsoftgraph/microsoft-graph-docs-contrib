@@ -1,7 +1,7 @@
 ---
 title: "Get accessPackage"
 description: "Retrieve the properties and relationships of an accessPackage object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

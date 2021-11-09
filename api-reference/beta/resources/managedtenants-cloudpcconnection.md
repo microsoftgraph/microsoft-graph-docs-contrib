@@ -2,7 +2,7 @@
 title: "cloudPcConnection resource type"
 description: "Represents a cloud PC connection for a given managed tenant."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update externalItem"
 description: "Update the properties of an externalitem."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
@@ -75,6 +75,8 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 
 The following is an example of the request.
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,7 +85,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {
@@ -114,6 +116,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 <!-- markdownlint-disable MD024 -->

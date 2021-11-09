@@ -2,7 +2,7 @@
 title: "List submittedResources"
 description: "List the resources that have officially been submitted for grading."
 author: "sharad-sharma-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---

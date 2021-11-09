@@ -1,6 +1,6 @@
 ---
 author: "davidmu1"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
 ---
@@ -12,4 +12,7 @@ ms.topic: include
 | Any | 400000 requests per 20 seconds | 35000 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
-educationClass, educationCourse, educationOnPremisesInfo, educationOrganization, educationRelatedContact, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                            | <!-- fake header-->                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [educationClass](/graph/api/resources/educationclass) <li> [educationCourse](/graph/api/resources/educationcourse) <li> [educationOnPremisesInfo](/graph/api/resources/educationonpremisesinfo) <li> [educationOrganization](/graph/api/resources/educationorganization) <li> [educationRelatedContact](/graph/api/resources/educationrelatedcontact) <li> [educationRoot](/graph/api/resources/educationroot) </ul> | <ul><li> [educationSchool](/graph/api/resources/educationschool) <li> [educationStudent](/graph/api/resources/educationstudent) <li> [educationTeacher](/graph/api/resources/educationteacher) <li> [educationTerm](/graph/api/resources/educationterm) <li> [educationUser](/graph/api/resources/educationuser) </ul> |

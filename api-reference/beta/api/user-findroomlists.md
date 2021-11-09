@@ -2,7 +2,7 @@
 title: "user: findRoomLists"
 description: "Get the room lists defined in a tenant."
 author: "vrod9429"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

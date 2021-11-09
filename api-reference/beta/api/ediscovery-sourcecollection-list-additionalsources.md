@@ -2,7 +2,7 @@
 title: "List additionalSources"
 description: "Get a list of additional dataSource objects associated with a source collection."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

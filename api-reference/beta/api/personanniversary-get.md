@@ -1,7 +1,7 @@
 ---
 title: "Get personAnniversary"
 description: "Retrieve the properties and relationships of a personAnniversary object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

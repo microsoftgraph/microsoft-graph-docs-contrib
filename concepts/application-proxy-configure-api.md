@@ -3,7 +3,7 @@ title: Configure Application Proxy using Microsoft Graph APIs
 description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
 author: davidmu1
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 ---
 

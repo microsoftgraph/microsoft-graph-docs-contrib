@@ -2,7 +2,7 @@
 title: "Update regionalAndLanguageSettings"
 description: "Update the regional and language settings of a user."
 author: "jasonbro"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---

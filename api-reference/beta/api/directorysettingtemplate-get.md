@@ -1,7 +1,7 @@
 ---
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -46,8 +46,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,7 +56,7 @@ Here is an example of the request.
   "name": "get_directorysettingtemplate"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
+GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplate-csharp-snippets.md)]
@@ -75,8 +76,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 
 ---
 
+
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,20 +88,21 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 270
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates/$entity",
+  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "deletedDateTime": null,
+  "displayName": "Group.Unified.Guest",
+  "description": "Settings for a specific Unified Group",
   "values": [
     {
-      "name": "name-value",
-      "type": "type-value",
-      "defaultValue": "defaultValue-value",
-      "description": "description-value"
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Unified Group."
     }
-  ],
+  ]
 }
 ```
 

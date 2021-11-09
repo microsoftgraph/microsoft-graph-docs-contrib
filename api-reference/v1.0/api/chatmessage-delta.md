@@ -1,7 +1,7 @@
 ---
 title: "chatMessage: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -30,7 +30,7 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission Type                        |Permissions (from least to most privileged)  |
 |---------------------------------------|---------------------------------------------|

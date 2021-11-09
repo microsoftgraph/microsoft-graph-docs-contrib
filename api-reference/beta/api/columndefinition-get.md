@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Get columnDefinition"
 description: " Get a site, list or content type column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -19,7 +19,7 @@ Retrieve the metadata for a [site][], [list][] or [contentType][] [column][colum
 
   
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
   
 

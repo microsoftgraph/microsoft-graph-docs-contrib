@@ -1,7 +1,7 @@
 ---
 title: "List agreements"
 description: "Retrieve a list of agreement objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"

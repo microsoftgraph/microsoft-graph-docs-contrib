@@ -2,7 +2,7 @@
 title: "Get Outlook category"
 description: "Get the properties and relationships of the specified outlookCategory object."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

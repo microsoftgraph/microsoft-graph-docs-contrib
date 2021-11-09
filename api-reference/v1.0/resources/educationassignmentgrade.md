@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentGrade resource type"
 description: "Represents the Grade object on a Submission."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: resourcePageType

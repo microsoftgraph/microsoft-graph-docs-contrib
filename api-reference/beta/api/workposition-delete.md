@@ -1,7 +1,7 @@
 ---
 title: "Delete workPosition"
 description: "Delete a workPosition object from a user's profile."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"

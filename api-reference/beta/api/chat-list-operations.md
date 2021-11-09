@@ -2,7 +2,7 @@
 title: "List operations on a chat"
 description: "Retrieve operations on a chat."
 author: "jecha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

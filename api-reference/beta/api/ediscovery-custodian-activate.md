@@ -2,7 +2,7 @@
 title: "custodian: activate"
 description: "Reactivate a custodian in a case."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

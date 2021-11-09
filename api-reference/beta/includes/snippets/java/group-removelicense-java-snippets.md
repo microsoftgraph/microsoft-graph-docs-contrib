@@ -9,10 +9,10 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 
 LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
-removeLicensesList.add(UUID.fromString("skuId-value-1"));
-removeLicensesList.add(UUID.fromString("skuId-value-2"));
+removeLicensesList.add(UUID.fromString("c7df2760-2c81-4ef7-b578-5b5392b571df"));
+removeLicensesList.add(UUID.fromString("b05e124f-c7cc-45a0-a6aa-8cf78c946968"));
 
-graphClient.groups("1ad75eeb-7e5a-4367-a493-9214d90d54d0")
+graphClient.groups("1132b215-826f-42a9-8cfe-1643d19d17fd")
 	.assignLicense(GroupAssignLicenseParameterSet
 		.newBuilder()
 		.withAddLicenses(addLicensesList)

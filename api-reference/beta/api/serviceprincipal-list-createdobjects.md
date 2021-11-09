@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

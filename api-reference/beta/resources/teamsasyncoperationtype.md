@@ -2,7 +2,7 @@
 title: "teamsAsyncOperationType enum type"
 description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: enumPageType
 ---

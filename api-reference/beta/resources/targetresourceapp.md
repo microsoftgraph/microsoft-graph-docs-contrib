@@ -1,7 +1,7 @@
 ---
 title: "targetResourceApp resource type"
 description: "Indicates the app object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "SarahBar"

@@ -2,7 +2,7 @@
 title: "Overview for accessing service health and communications through Microsoft Graph"
 description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services."
 author: "payiAzure"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "service-communications"
 ms.custom: scenarios:getting-started
 ---
@@ -35,7 +35,7 @@ This section shows examples in the [Microsoft 365 admin center](https://admin.mi
 
 ### Service health dashboard
 
-From the **Service health** dashboad, you can view the health of your subscribed Microsoft services, which can include Office on the web, Yammer, Microsoft Dynamics CRM, and mobile device management cloud services. See examples as demarcated in figure 1.
+From the **Service health** dashboard, you can view the health of your subscribed Microsoft services, which can include Office on the web, Yammer, Microsoft Dynamics CRM, and mobile device management cloud services. See examples as demarcated in figure 1.
 
 **Figure 1. Service health dashboard in Microsoft 365 admin center**
 
@@ -43,7 +43,7 @@ From the **Service health** dashboad, you can view the health of your subscribed
 
 ### Windows release health dashboard
 
-From the **Windows release health** dashboad, you can view essential information about monthly quality and feature updates, and the latest features and enhancements for Windows. See an example as demarcated in figure 2.
+From the **Windows release health** dashboard, you can view essential information about monthly quality and feature updates, and the latest features and enhancements for Windows. See an example as demarcated in figure 2.
 
 **Figure 2. Windows release health dashboard in Microsoft 365 admin center**
 
@@ -51,7 +51,7 @@ From the **Windows release health** dashboad, you can view essential information
 
 
 ### Message center dashboard
-From the **Message center** dashboad, you can view upcoming changes, including new and changed features, planned maintenance, and other important announcements. See examples as demarcated in figure 3.
+From the **Message center** dashboard, you can view upcoming changes, including new and changed features, planned maintenance, and other important announcements. See examples as demarcated in figure 3.
 
 **Figure 3. Message center dashboard in Microsoft 365 admin center**
 

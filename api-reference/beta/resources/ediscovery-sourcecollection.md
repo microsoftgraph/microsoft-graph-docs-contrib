@@ -2,7 +2,7 @@
 title: "sourceCollection resource type"
 description: "Represents an eDiscovery collection, commonly known as a search."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
@@ -36,12 +36,12 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).  You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
+|contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions). You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **sourceCollection**.|
 |createdDateTime|DateTimeOffset|The date and time the **sourceCollection** was created.|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`.|
-|description|String|The description of the **sourceCollection**|
-|displayName|String|The display name of the **sourceCollection**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|description|String|The description of the **sourceCollection**.|
+|displayName|String|The display name of the **sourceCollection**.|
 |id|String| The ID for the **sourceCollection**. Read-only. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The last user who modified the **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the **sourceCollection** was modified.|

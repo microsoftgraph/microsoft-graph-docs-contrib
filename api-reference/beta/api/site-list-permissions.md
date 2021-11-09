@@ -2,7 +2,7 @@
 title: "List permissions"
 description: "Get the permission resources from the permissions navigation property on a site."
 author: "BarrySh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

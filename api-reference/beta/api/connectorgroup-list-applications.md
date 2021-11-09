@@ -1,7 +1,7 @@
 ---
 title: "List applications"
 description: "Retrieve a list of application objects associated with the connectorGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
