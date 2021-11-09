@@ -1,7 +1,7 @@
 ---
 title: "appleManagedIdentityProvider resource type"
 description: "Represents apple identity provider in an Azure AD B2C tenant."
-ms.localizationpriority: high
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "namkedia"
