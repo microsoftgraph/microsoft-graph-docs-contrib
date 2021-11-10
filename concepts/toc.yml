@@ -628,8 +628,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
-              - name: Assign Azure AD Graph permissions
-                href: migrate-azure-ad-graph-permissions-howto.md
+              - name: Configure Azure AD Graph permissions
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Use SDKs
         items:
           - name: Overview
