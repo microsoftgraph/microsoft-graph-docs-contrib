@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let assignments = await client.api('/education/classes/{id}/assignments')
+let cloudPcGalleryImage = await client.api('/deviceManagement/virtualEndpoint/galleryImages/{id}')
 	.version('beta')
 	.get();
 

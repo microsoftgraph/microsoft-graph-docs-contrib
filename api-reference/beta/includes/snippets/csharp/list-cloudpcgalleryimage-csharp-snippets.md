@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var assignments = await graphClient.Education.Classes["{educationClass-id}"].Assignments
+var galleryImages = await graphClient.DeviceManagement.VirtualEndpoint.GalleryImages
 	.Request()
 	.GetAsync();
 

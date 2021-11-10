@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 let assignments = await client.api('/education/classes/{id}/assignments')
 	.version('beta')
+	.expand('resources')
 	.get();
 
 ```

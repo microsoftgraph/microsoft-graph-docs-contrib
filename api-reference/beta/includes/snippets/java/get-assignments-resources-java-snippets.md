@@ -8,6 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 EducationAssignmentCollectionPage assignments = graphClient.education().classes("{id}").assignments()
 	.buildRequest()
+	.expand("resources")
 	.get();
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationAssignmentCollectionPage assignments = graphClient.education().classes("{id}").assignments()
+CloudPcGalleryImageCollectionPage galleryImages = graphClient.deviceManagement().virtualEndpoint().galleryImages()
 	.buildRequest()
 	.get();
 

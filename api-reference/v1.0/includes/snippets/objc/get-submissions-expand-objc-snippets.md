@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/{id}/assignments"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -15,7 +15,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphEducationAssignment *educationAssignment = [[MSGraphEducationAssignment alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphEducationSubmission *educationSubmission = [[MSGraphEducationSubmission alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
