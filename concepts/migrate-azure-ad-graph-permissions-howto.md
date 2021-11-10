@@ -17,7 +17,7 @@ However, you may still need to add more Azure AD Graph permissions to your app. 
 
 ## Option 1: Use the Microsoft Graph API
 
-The Microsoft Graph [application](/graph/api/resources/application) API includes a **requiredResourceAccess** property that is a collection of  [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) objects. Use this property to assign Azure AD Graph permissions following the steps below.
+The Microsoft Graph [application](/graph/api/resources/application) API includes a **requiredResourceAccess** property that is a collection of  [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) objects. Use this property to configure required Azure AD Graph permissions following the steps below.
 
 ### Prerequisites
 
