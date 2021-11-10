@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation journey, adding Azure AD Graph permissions to the required permissions for an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the [Microsoft Graph](/graph/overview) API.
 
-However, you may still need to add more Azure AD Graph permissions to your app. This article provides you with guidance for using Microsoft Graph to add Azure AD Graph permissions to your app.
+However, you may still need to add more Azure AD Graph permissions to your app. This article provides you with guidance for using Microsoft Graph to configure required permissions for Azure AD Graph to your app registration.
 
 > [!CAUTION]
 > Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
