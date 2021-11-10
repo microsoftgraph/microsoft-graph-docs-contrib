@@ -2079,13 +2079,13 @@
             "ApiChange": "Method",
             "ChangedApiName": "delta",
             "ChangeType": "Addition",
-            "Description": "Added capability for using timestamp-based delta tokens.",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
             "Target": "delta"
         }],
         "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-09-29T20:00:00.000Z",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
         "WorkloadArea": "Files",
         "SubArea": ""
     },
@@ -2095,13 +2095,13 @@
             "ApiChange": "Method",
             "ChangedApiName": "delta",
             "ChangeType": "Addition",
-            "Description": "Added capability for using timestamp-based delta tokens.",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
             "Target": "delta"
         }],
         "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
         "Cloud": "prd",
         "Version": "v1.0",
-        "CreatedDateTime": "2021-09-29T20:00:00.000Z",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
         "WorkloadArea": "Files",
         "SubArea": ""
     }
