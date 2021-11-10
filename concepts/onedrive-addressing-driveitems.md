@@ -1,5 +1,5 @@
 ---
-title: "Addressing resources in a drive on OneDrive"
+title: "Address resources in a drive on OneDrive"
 description: "How to access items within a drive on OneDrive with ID-based and path-based addressing."
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -7,7 +7,7 @@ author: "JeremyKelley"
 doc_type: conceptualPageType
 ---
 
-# Addressing resources in a drive on OneDrive
+# Address resources in a drive on OneDrive
 
 ## ID-based addressing
 OneDrive supports ID-based addressing of items. Items are assigned a unique
@@ -28,13 +28,13 @@ hierarchy.
 However, since path-based addressing is based on the name of the item, renaming
 or moving the item to a new location will cause the path of the item to change.
 
-Path-based addressing can be used relative to any item in OneDrive, which enables
-some very useful scenarios. For example, when working with shared folders, you
+You can use path-based addressing relative to any item in OneDrive. 
+For example, when working with shared folders, you
 can use a path-based URL relative to the shared folder's item ID to address
 something in the shared folder by path.
 
 ## Examples
-These examples show the different URL formats that can be used to access data.
+The following examples show the different URL formats available to access data.
 All of these URLs are logically equivalent and return the content of MyFile.xlsx.
 
 | URL example                                       | Description                                              |
@@ -48,7 +48,7 @@ All of these URLs are logically equivalent and return the content of MyFile.xlsx
 ## Path encoding
 
 OneDrive supports addressing files and folders using the path of the item in the
-user's OneDrive. However, because the path contains user specified content which
+user's OneDrive. However, because the path contains user specified content, which
 can potentially contain characters that are not URL safe, you should ensure proper
 encoding of any path segments.
 
@@ -56,7 +56,7 @@ Microsoft Graph expects that URLs conform to [RFC 3986](http://tools.ietf.org/ht
 The following is a summary of how to properly encode paths for Microsoft Graph.
 
 ### OneDrive reserved characters
-The following characters are OneDrive reserved characters, and can't be used in OneDrive folder and file names.
+The following characters are OneDrive reserved characters and can't be used in OneDrive folder and file names.
 
 ```
   onedrive-reserved  = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|"
@@ -169,22 +169,22 @@ var url = root + escape(path);
 
 ### Examples
 
-Here is an example of a OneDrive user (Ryan) with the following folder hierarchy:
+Here is an example of a OneDrive user (Adele) with the following folder hierarchy:
 ```
 OneDrive
-	\Ryan's Files
+	\Adele's Files
 		\doc (1).docx
     \estimate%s.docx
 	\Break#Out
 		\saved_game[1].bin
 ```
 
-To address each of Ryan's files, you use percent encoding, as follows:
+To address each of Adele's files, you use percent encoding, as follows:
 
 | Path                     | Encoded URL for path                      |
 |:-------------------------|:------------------------------------------|
-| `\Ryan's Files`          | `/root:/Ryan's%20Files`                   |
-| `\...\doc (1).docx`      | `/root:/Ryan's%20Files/doc%20(1).docx`    |
-| `\...\estimate%.docx`    | `/root:/Ryan's%20Files/estimate%25s.docx` |
+| `\Adele's Files`          | `/root:/Adele's%20Files`                   |
+| `\...\doc (1).docx`      | `/root:/Adele's%20Files/doc%20(1).docx`    |
+| `\...\estimate%.docx`    | `/root:/Adele's%20Files/estimate%25s.docx` |
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
