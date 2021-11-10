@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Drive resource type
+title: drive resource type
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 
-# Drive resource type
+# drive resource type
 
 Namespace: microsoft.graph
 
-The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
+The top-level object that represents a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
@@ -65,7 +65,7 @@ In the previous table, the examples use `/drive`, but other paths are valid too.
 
 ## JSON representation
 
-Here is a JSON representation of a Drive resource.
+The following is a JSON representation of this resource.
 
 The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
