@@ -21,13 +21,13 @@ The Microsoft Graph [application](/graph/api/resources/application) API includes
 
 ### Prerequisites
 
-To complete the following steps, you need the following resources and privileges:
+To complete the following steps, you need the following privileges:
 
 + Run the HTTP requests in a tool of your choice, for example in your app, through [Graph Explorer](https://aka.ms/ge), or Postman.
 + Run the APIs as a user in a Global Administrator or Application Administrator role, or as owner of the target app registration. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 + The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
-### Step 1: Identify the permission IDs for the Azure AD Graph permissions you need for your app
+### Step 1: Identify the permission IDs for the Azure AD Graph permissions your app requires
 
 Identify the Azure AD Graph permissions your app requires, their permission IDs, and whether they are app roles (application permissions) or delegated permissions. You can retrieve the permission IDs from an existing app registration that has the permission configured by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through Microsoft Graph API. 
 

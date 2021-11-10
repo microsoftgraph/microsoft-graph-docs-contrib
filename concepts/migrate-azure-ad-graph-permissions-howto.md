@@ -27,84 +27,6 @@ To complete the following steps, you need the following resources and privileges
 + Run the APIs as a user in a Global Administrator or Application Administrator role, or as owner of the target app registration. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 + The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
-<!---
-## Hiding this because the PG doesn't want to publicize this workaround to retrieving all Azure AD Graph permissions.
-
-### Step 1: Identify the permission ids for the Azure AD Graph permissions
-
-Azure AD Graph is identified as a servicePrincipal object with globally unique appId `00000002-0000-0000-c000-000000000000` and `Windows Azure Active Directory` as its **displayName** and **appDisplayName**. To retrieve the Azure AD object using Microsoft Graph, call the /servicePrincipals API as follows:
-
-
-#### Request: Retrieve the servicePrincipal object for Azure AD Graph
-
-<!-- {
-  "blockType": "request",
-  "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
-}-->
-
-<!--
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000002-0000-0000-c000-000000000000'
-```
-
-#### Response
-
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
-} -->
-
-<!--
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
-    "value": [
-        {
-            "id": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
-            "accountEnabled": true,
-            "appDisplayName": "Windows Azure Active Directory",
-            "appDescription": null,
-            "appId": "00000002-0000-0000-c000-000000000000",
-            "appOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-            "appRoleAssignmentRequired": false,
-            "displayName": "Windows Azure Active Directory",
-            "servicePrincipalNames": [
-                "https://graph.windows.net",
-                "00000002-0000-0000-c000-000000000000/graph.microsoftazure.us",
-                "00000002-0000-0000-c000-000000000000/graph.windows.net",
-                "00000002-0000-0000-c000-000000000000/directory.windows.net",
-                "00000002-0000-0000-c000-000000000000",
-                "https://graph.windows.net/",
-                "https://graph.microsoftazure.us"
-            ],
-            "servicePrincipalType": "Application",
-            "signInAudience": "AzureADMultipleOrgs",
-            "appRoles": [
-                {
-                    "allowedMemberTypes": [
-                        "Application"
-                    ],
-                    "description": "Allows the app to read applications and service principals without a signed-in user",
-                    "displayName": "Read all applications",
-                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
-                    "isEnabled": true,
-                    "origin": "Application",
-                    "value": "Application.Read.All"
-                }
-            ]
-        }
-    ]
-}
-```
-
-The details of all Azure AD Graph permissions are indicated in the **appRoles** (application permissions) and **oauth2PermissionScopes** (delegated permissions) objects. From here
--->
-
 ### Step 1: Identify the permission IDs for the Azure AD Graph permissions you need for your app
 
 Identify the Azure AD Graph permissions your app requires, their permission IDs, and whether they are app roles (application permissions) or delegated permissions. You can retrieve the permission IDs from an existing app registration that has the permission configured by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through Microsoft Graph API. 
@@ -218,7 +140,7 @@ The following request retrieves the **id** and **requiredResourceAccess** proper
 GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98?$select=id,requiredResourceAccess
 ```
 
-Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
+>**NOTE:**Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
 ## Option 2: Use Microsoft Graph PowerShell
 
@@ -325,7 +247,7 @@ The following is an example of the output.
 Welcome To Microsoft Graph!
 ```
 
-Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
+>**NOTE:**Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
 ## See also
 
