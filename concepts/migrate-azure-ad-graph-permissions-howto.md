@@ -165,7 +165,7 @@ The following example calls the [Update application](/graph/api/application-upda
 + *Application.Read.All* app role (application permission), identified by ID `3afa6a7d-9b1a-42eb-948e-1650a849e176`.
 
 > [!IMPORTANT]
-> To update the requiredResourceAccess object, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
+> To update the **requiredResourceAccess** property, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
 
 #### Request
 
