@@ -119,7 +119,7 @@ First, confirm the full list of apps owned by your tenant or third-party applica
 
 There are no exceptions to this deprecation. Your apps will no longer receive responses from the Azure AD Graph endpoint after June 30, 2022. 
 
-## I need to add new Azure AD permissions to my app but the Azure portal permissions sign-up is disabled. How can I add the Azure AD permissions?
+## I need to add new Azure AD Graph permissions to my app, but I can't select Azure AD Graph as a required permission for my app registration. How can I add the Azure AD Graph permissions?
 
 First, we recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to the Microsoft Graph API.
 
