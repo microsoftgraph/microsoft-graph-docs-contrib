@@ -105,7 +105,7 @@ Content-type: application/json
 The details of all Azure AD Graph permissions are indicated in the **appRoles** (application permissions) and **oauth2PermissionScopes** (delegated permissions) objects. From here
 -->
 
-### Step 1: Identify the permission id's for the Azure AD Graph permissions you need for your app
+### Step 1: Identify the permission IDs for the Azure AD Graph permissions you need for your app
 
 First, identify the Azure AD Graph permissions you need to add, their permission id's, and their types (application permissions or delegated permissions). You can retrieve the id's from an existing app by reading its **requiredResourceAccess** property either in the app's **Manifest** on the Azure portal, or through Microsoft Graph API. Azure AD Graph's globally unique **appId** is `00000002-0000-0000-c000-000000000000` and it's identified by the **resourceAppId** property of the **requiredResourceAccess** object.
 
