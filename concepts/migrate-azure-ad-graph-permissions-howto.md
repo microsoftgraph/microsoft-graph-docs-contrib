@@ -207,9 +207,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Step 3: Verify that the Azure AD Graph permissions were added to your app
+### Step 3: Verify that the required Azure AD Graph permissions were added to your app
 
-Verify that your app has the permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** window on the Azure portal.
+Verify that your app registration has the required API permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** page in the Azure portal.
 
 #### Use the Microsoft Graph GET /application/{id} API
 
