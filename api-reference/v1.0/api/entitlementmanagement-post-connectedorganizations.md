@@ -99,14 +99,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "006111db-0810-4494-a6df-904d368bd81b",
-  "displayName":"Connected organization name",
-  "description":"Connected organization description",
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2020-06-08T20:13:53.7099947Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
-  "state":"proposed"
+  "id": "35ff48a8-e9d8-4405-8425-0b23694287a4",
+  "displayName": "Connected organization name",
+  "description": "Connected organization description",
+  "createdDateTime": "2021-11-10T01:13:15.541617Z",
+  "modifiedDateTime": "2021-11-10T01:13:15.541617Z",
+  "state": "proposed",
+  "identitySources": []
 }
 ```
 

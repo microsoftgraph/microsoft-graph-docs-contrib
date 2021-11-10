@@ -70,10 +70,10 @@ Content-Type: application/json
 Content-length: 232
 
 {
-  "displayName": "String",
-  "description": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean"
+  "displayName": "sales",
+  "description": "for employees working with sales and outside sales partners",
+  "state": "published",
+  "isExternallyVisible": true
 }
 ```
 
@@ -91,14 +91,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+
   "id": "b1bf99ed-99ed-b1bf-ed99-bfb1ed99bfb1",
-  "displayName": "String",
-  "description": "String",
-  "catalogType": "String",
-  "state": "String",
-  "isExternallyVisible": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "displayName": "sales",
+  "description": "for employees working with sales and outside sales partners",
+  "catalogType": "userManaged",
+  "state": "published",
+  "isExternallyVisible": true,
+  "createdDateTime": "2021-11-10T01:08:30.9134953Z",
+  "modifiedDateTime": "2021-11-10T01:08:30.9134953Z"
 }
 ```
 

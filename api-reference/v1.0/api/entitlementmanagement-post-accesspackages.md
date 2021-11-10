@@ -72,9 +72,9 @@ Content-Type: application/json
 Content-length: 164
 
 {
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean",
+  "displayName": "sales reps",
+  "description": "outside sales representatives",
+  "isHidden": false,
   "catalog": {
     "id": "66584aae-98bb-48cc-9458-7bee5d2a6577"
   }
@@ -95,12 +95,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "114d3459-3459-114d-5934-4d1159344d11",
-  "displayName": "String",
-  "description": "String",
-  "isHidden": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "id": "642181f0-bc17-4fc6-9ebb-ff53dbf18c2f",
+  "displayName": "sales reps",
+  "description": "outside sales representatives",
+  "isHidden": false,
+  "createdDateTime": "2021-11-10T01:10:09.5220119Z",
+  "modifiedDateTime": "2021-11-10T01:10:09.5220119Z"
 }
 ```
 
