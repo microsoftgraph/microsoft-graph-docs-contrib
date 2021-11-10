@@ -13,11 +13,6 @@ Namespace: microsoft.graph
 
 Get list of all [teams](../resources/team.md) in an organization.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List Teams](../resources/team.md)|[Teams](../resources/team.md) collection|Get a list of the [Teams](../resources/team.md) objects and their properties.|
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

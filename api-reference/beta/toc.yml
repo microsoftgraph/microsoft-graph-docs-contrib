@@ -547,6 +547,8 @@ items:
           href: api/userteamwork-teamsappinstallation-upgrade.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
+        - name: Get list of teams in an organization
+          href: api/teams-list.md  
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
         - name: Get chat for user

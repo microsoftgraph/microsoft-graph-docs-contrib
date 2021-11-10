@@ -36,7 +36,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List all teams in an organization](../api/user-list-teams.md) | [team](team.md) collection | List all teams in an organization. |
+|[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
