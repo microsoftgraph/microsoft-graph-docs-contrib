@@ -157,7 +157,7 @@ Content-type: application/json
 }
 ```
 
-### Step 2: Add Azure AD Graph permissions to your app
+### Step 2: Add required Azure AD Graph permissions to your app
 
 The following example calls the [Update application](/graph/api/application-update) API to add the following Azure AD Graph permissions to an app identified by object id `581088ba-83c5-4975-b8af-11d2d7a76e98`:
 
