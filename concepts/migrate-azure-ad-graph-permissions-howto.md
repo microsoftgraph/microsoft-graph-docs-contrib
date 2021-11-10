@@ -15,7 +15,7 @@ However, you may still need to add more Azure AD Graph permissions to your app. 
 > [!CAUTION]
 > Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
-## Option 1: Use the Microsoft Graph REST API
+## Option 1: Use the Microsoft Graph API
 
 The Microsoft Graph [application](/graph/api/resources/application) API includes a **requiredResourceAccess** property that is a collection of  [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) objects. Use this property to assign Azure AD Graph permissions following the steps below.
 
