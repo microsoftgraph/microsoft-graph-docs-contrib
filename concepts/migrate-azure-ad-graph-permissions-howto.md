@@ -219,7 +219,7 @@ The following request retrieves the **id** and **requiredResourceAccess** proper
 GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98?$select=id,requiredResourceAccess
 ```
 
-Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
+Though you've configured the permissions the app requires, these permissions have not been granted. Many permissions require admin consent before they can be used to access organizational data.
 
 
 ## Option 2: Use Microsoft Graph PowerShell
