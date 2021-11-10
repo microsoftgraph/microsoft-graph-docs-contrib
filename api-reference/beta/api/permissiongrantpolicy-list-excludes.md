@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the **excludes** condition sets of the built-in permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure AD Graph.
+The following is an example of the request to retrieve the **excludes** condition sets of the built-in permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure Active Direcotry Graph.
 
 
 # [HTTP](#tab/http)
