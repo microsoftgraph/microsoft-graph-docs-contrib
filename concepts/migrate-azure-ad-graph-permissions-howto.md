@@ -159,10 +159,10 @@ Content-type: application/json
 
 ### Step 2: Add required Azure AD Graph permissions to your app
 
-The following example calls the [Update application](/graph/api/application-update) API to add the following Azure AD Graph permissions to an app identified by object id `581088ba-83c5-4975-b8af-11d2d7a76e98`:
+The following example calls the [Update application](/graph/api/application-update) API to add the following Azure AD Graph permissions to an app registration identified by object ID `581088ba-83c5-4975-b8af-11d2d7a76e98`:
 
-+ *User.Read* delegated permission identified by object id `311a71cc-e848-46a1-bdf8-97ff7156d8e6`.
-+ *Application.Read.All* application permission identified by object id `3afa6a7d-9b1a-42eb-948e-1650a849e176`.
++ *User.Read* delegated permission, identified by permission ID `311a71cc-e848-46a1-bdf8-97ff7156d8e6`.
++ *Application.Read.All* app role (application permission), identified by ID `3afa6a7d-9b1a-42eb-948e-1650a849e176`.
 
 > [!IMPORTANT]
 > To update the requiredResourceAccess object, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
