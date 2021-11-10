@@ -219,16 +219,6 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
 
-### Step 4: Grant admin consent for permissions that require admin consent
-
-1. Sign in to the [Azure portal](https://portal.azure.com) as a user in one of the following Azure AD roles: Global Administrator, Privileged Role Administrator, Cloud Application Administrator, Application Administrator, or a custom role that includes the permission to grant permissions to apps.
-1. Search for and select **Azure Active Directory**.
-1. Under **Manage**, select **App registrations**.
-1. In the **App registrations** window, select the **All Applications** tab then select the application for which you added Azure AD Graph permissions.
-1. From the left pane of the window, under **Manage**, select **API Permissions**.
-1. In the **Configured permissions** section of the window, you should see the permissions you added in Step 2 above. If the permissions aren't listed, refresh your browser.
-1. Carefully review the permissions that the application requires. To consent, select **Grant admin consent**.
-
 
 ## Option 2: Use Microsoft Graph PowerShell SDK
 
