@@ -132,7 +132,7 @@ If you still need to configure Azure AD Graph permissions for your applications,
 
 For examples using the listed workarounds, see [Use Microsoft Graph to assign Azure AD Graph permissions to an app](migrate-azure-ad-graph-permissions-howto.md)
 
-**NOTE:** Adding Azure AD Graph permissions using these workarounds won't be supported after June 30, 2022. Any app using Azure AD Graph will still stop functioning after June 30, 2022.
+>**Note:** Adding Azure AD Graph permissions using these workarounds won't be supported after June 30, 2022. Any app using Azure AD Graph will still stop functioning after June 30, 2022.
 
 
 
