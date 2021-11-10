@@ -25,7 +25,7 @@ To complete the following steps, you need the following resources and privileges
 
 + Run the HTTP requests in a tool of your choice, for example in your app, through [Graph Explorer](https://aka.ms/ge), or Postman.
 + Run the APIs as a user in a Global Administrator or Application Administrator role, or as owner of the target app registration. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
-+ Be assigned the `Application.ReadWrite.All` permission.
++ The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
 <!---
 ## Hiding this because the PG doesn't want to publicize this workaround to retrieving all Azure AD Graph permissions.
