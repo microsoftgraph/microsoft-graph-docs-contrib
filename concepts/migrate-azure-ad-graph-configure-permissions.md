@@ -140,7 +140,7 @@ The following request retrieves the **id** and **requiredResourceAccess** proper
 GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7a76e98?$select=id,requiredResourceAccess
 ```
 
->**NOTE:**Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
+>**NOTE:** Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
 ## Option 2: Use Microsoft Graph PowerShell
 
@@ -247,7 +247,7 @@ The following is an example of the output.
 Welcome To Microsoft Graph!
 ```
 
->**NOTE:**Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
+>**NOTE:** Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
 ## See also
 
