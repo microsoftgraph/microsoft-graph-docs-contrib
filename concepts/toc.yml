@@ -259,7 +259,7 @@ items:
         items:
           - name: Overview
             href: onedrive-concept-overview.md
-          - name: Addressing DriveItems
+          - name: Addressing drive items
             href: onedrive-addressing-driveitems.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
