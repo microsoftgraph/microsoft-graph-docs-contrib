@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
 
-For an Azure AD tenant, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md) or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects.
+For an Azure AD tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
-For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md) objects.
+For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
 ## Permissions
 
@@ -52,9 +52,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) and/or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for an Azure AD tenant.
+If successful, this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), or [builtinIdentityProvider](../resources/builtinidentityprovider.md) objects in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md) objects in the response body.
+For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects in the response body.
 
 ## Examples
 
@@ -170,6 +170,15 @@ Content-type: application/json
             "identityProviderType": "LinkedIn",
             "clientId": "866xc0qtyy00ih",
             "clientSecret": "******"
+        },
+{
+            "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
+            "id": "Apple-Managed-OIDC",
+            "displayName": "Sign in with Apple",
+            "developerId": "UBF8T346G9",
+            "serviceId": "com.microsoft.aad.b2c.iuyt.client",
+            "keyId": "99P6DD87C4",
+            "certificateData": "******"
         }
     ]
 }

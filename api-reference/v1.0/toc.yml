@@ -4859,6 +4859,8 @@ items:
             href: resources/builtinidentityprovider.md
           - name: Social identity provider
             href: resources/socialidentityprovider.md
+          - name: Apple identity provider
+            href: resources/applemanagedidentityprovider.md
           - name: List
             href: api/identitycontainer-list-identityproviders.md
           - name: Create
