@@ -226,11 +226,11 @@ The [Update-MgApplication](/powershell/module/microsoft.graph.applications/updat
 
 ### Prerequisites
 
-To complete the following steps, your PowerShell app needs the following resources and privileges:
+To complete the following steps, the following resources and privileges are required:
 
-+ Be granted the Global Administrator or Application Administrator Azure AD roles. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
-+ Be assigned the `Application.ReadWrite.All` permission.
-+ An authenticated PowerShell session.
++ An authenticated PowerShell session (e.g. using `Connect-MgGraph`).
++ Microsoft Graph PowerShell must be granted the `Application.ReadWrite.All` permission.
++ The signed-in user must be granted the Global Administrator or Application Administrator Azure AD directory roles, or be owner of the target app registration. For more information about the actions supported by these roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ### Step 1: Identify the permission id's for the Azure AD Graph permissions you need for your app
 
