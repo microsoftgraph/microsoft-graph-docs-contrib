@@ -220,9 +220,9 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 Though you've granted the permissions you require, some permissions, for example, all application permissions, require admin consent before they can be used to access organizational data.
 
 
-## Option 2: Use Microsoft Graph PowerShell SDK
+## Option 2: Use Microsoft Graph PowerShell
 
-The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to assign Azure AD Graph permissions following the steps below.
+The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure required Azure AD Graph permissions following the steps below.
 
 ### Prerequisites
 
