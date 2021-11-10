@@ -18,7 +18,7 @@
      "WorkloadArea": "Identity and access",
      "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
@@ -27,6 +27,46 @@
           "ChangeType": "Addition",
           "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
           "Target": "accessPackageQuestion"
+         },
+	       {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttribute** resource.",
+          "Target": "accessPackageResourceAttribute"
+        },
+	      {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
+          "Target": "accessPackageResourceAttributeDestination"
+        },
+	      {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageuserdirectoryattributestore",
+          "ChangeType": "Addition",
+          "Description": "Added the **accesspackageuserdirectoryattributestore** resource.",
+          "Target": "accesspackageuserdirectoryattributestore"
+        },
+	      {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeSource** resource.",
+          "Target": "accessPackageResourceAttributeSource"
+        },
+	      {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeQuestion** resource.",
+          "Target": "accessPackageResourceAttributeQuestion"
         }
       ],
       "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
