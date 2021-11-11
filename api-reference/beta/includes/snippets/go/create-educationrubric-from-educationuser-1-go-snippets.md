@@ -41,7 +41,7 @@ requestBody.SetQualities( []RubricQuality {
 options := &msgraphsdk.RubricsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Education().Me().Rubrics().Post(options);
+result, err := graphClient.Education().Me().Rubrics().Post(options)
 
 
 ```

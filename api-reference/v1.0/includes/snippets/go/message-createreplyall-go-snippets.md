@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll().Post(options)
 
 
 ```

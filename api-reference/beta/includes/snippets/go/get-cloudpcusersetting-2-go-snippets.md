@@ -14,7 +14,7 @@ options := &msgraphsdk.CloudPcUserSettingRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get(options);
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.GetMemberObjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetMemberObjects().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetMemberObjects().Post(options)
 
 
 ```

@@ -58,7 +58,7 @@ residenceAddress.SetStreet(&street)
 options := &msgraphsdk.UsersRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Education().Users().Post(options);
+result, err := graphClient.Education().Users().Post(options)
 
 
 ```

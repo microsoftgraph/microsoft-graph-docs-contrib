@@ -18,7 +18,7 @@ options := &msgraphsdk.OrgContactRequestBuilderGetOptions{
 	H: headers,
 }
 orgContactId := "orgContact-id"
-result, err := graphClient.ContactsById(&orgContactId).Get(options);
+result, err := graphClient.ContactsById(&orgContactId).Get(options)
 
 
 ```

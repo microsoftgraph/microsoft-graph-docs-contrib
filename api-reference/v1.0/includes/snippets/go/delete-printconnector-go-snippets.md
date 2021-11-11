@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 printConnectorId := "printConnector-id"
-graphClient.Print().ConnectorsById(&printConnectorId).Delete(options);
+graphClient.Print().ConnectorsById(&printConnectorId).Delete(options)
 
 
 ```

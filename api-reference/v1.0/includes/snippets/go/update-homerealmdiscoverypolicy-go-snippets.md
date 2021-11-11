@@ -19,7 +19,7 @@ options := &msgraphsdk.HomeRealmDiscoveryPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 homeRealmDiscoveryPolicyId := "homeRealmDiscoveryPolicy-id"
-graphClient.Policies().HomeRealmDiscoveryPoliciesById(&homeRealmDiscoveryPolicyId).Patch(options);
+graphClient.Policies().HomeRealmDiscoveryPoliciesById(&homeRealmDiscoveryPolicyId).Patch(options)
 
 
 ```

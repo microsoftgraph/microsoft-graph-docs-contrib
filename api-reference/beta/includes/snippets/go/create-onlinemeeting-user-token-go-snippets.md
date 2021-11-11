@@ -17,7 +17,7 @@ requestBody.SetSubject(&subject)
 options := &msgraphsdk.OnlineMeetingsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().OnlineMeetings().Post(options);
+result, err := graphClient.Me().OnlineMeetings().Post(options)
 
 
 ```

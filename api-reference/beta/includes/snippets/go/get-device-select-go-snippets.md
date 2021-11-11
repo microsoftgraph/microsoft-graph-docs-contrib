@@ -14,7 +14,7 @@ options := &msgraphsdk.DeviceRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Get(options);
+result, err := graphClient.DevicesById(&deviceId).Get(options)
 
 
 ```

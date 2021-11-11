@@ -25,7 +25,7 @@ options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
 
 
 ```

@@ -15,7 +15,7 @@ requestBody.SetIsHidden(&isHidden)
 options := &msgraphsdk.MailFoldersRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().MailFolders().Post(options);
+result, err := graphClient.Me().MailFolders().Post(options)
 
 
 ```

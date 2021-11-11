@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 groupId := "group-id"
 conversationId := "conversation-id"
-graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Delete(options);
+graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Delete(options)
 
 
 ```

@@ -33,7 +33,7 @@ options := &msgraphsdk.LegalHoldsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHolds().Post(options)
 
 
 ```

@@ -24,7 +24,7 @@ options := &msgraphsdk.FederatedIdentityCredentialRequestBuilderPatchOptions{
 }
 applicationId := "application-id"
 federatedIdentityCredentialId := "federatedIdentityCredential-id"
-graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options);
+graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options)
 
 
 ```

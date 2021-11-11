@@ -44,7 +44,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.CallsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Communications().Calls().Post(options);
+result, err := graphClient.Communications().Calls().Post(options)
 
 
 ```

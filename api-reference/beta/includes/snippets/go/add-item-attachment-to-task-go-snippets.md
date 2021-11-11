@@ -17,7 +17,7 @@ options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(options);
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(options)
 
 
 ```

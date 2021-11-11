@@ -40,7 +40,7 @@ options := &msgraphsdk.ShiftsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Post(options)
 
 
 ```

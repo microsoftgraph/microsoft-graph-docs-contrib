@@ -35,7 +35,7 @@ requestBody.SetProperties( []ExtensionSchemaProperty {
 options := &msgraphsdk.SchemaExtensionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.SchemaExtensions().Post(options);
+result, err := graphClient.SchemaExtensions().Post(options)
 
 
 ```

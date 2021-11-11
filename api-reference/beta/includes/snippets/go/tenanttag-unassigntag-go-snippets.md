@@ -15,7 +15,7 @@ options := &msgraphsdk.UnassignTagRequestBuilderPostOptions{
 	Body: requestBody,
 }
 tenantTagId := "tenantTag-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).UnassignTag().Post(options);
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).UnassignTag().Post(options)
 
 
 ```

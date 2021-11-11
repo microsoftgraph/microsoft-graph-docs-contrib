@@ -18,7 +18,7 @@ options := &msgraphsdk.CopyToNotebookRequestBuilderPostOptions{
 	Body: requestBody,
 }
 onenoteSectionId := "onenoteSection-id"
-result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToNotebook().Post(options);
+result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToNotebook().Post(options)
 
 
 ```

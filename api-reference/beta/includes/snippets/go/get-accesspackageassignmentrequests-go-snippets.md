@@ -14,7 +14,7 @@ requestParameters := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGe
 options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Get(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Get(options)
 
 
 ```

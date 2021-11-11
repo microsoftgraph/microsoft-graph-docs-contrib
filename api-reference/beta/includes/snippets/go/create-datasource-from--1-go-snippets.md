@@ -16,7 +16,7 @@ options := &msgraphsdk.AdditionalSourcesRequestBuilderPostOptions{
 }
 caseId := "case-id"
 sourceCollectionId := "sourceCollection-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).AdditionalSources().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).AdditionalSources().Post(options)
 
 
 ```

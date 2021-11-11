@@ -24,7 +24,7 @@ requestBody.SetRequestType(&requestType)
 options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
 
 
 ```

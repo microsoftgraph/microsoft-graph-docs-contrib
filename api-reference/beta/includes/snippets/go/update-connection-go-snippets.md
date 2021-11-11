@@ -16,7 +16,7 @@ options := &msgraphsdk.ExternalConnectionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Patch(options);
+graphClient.External().ConnectionsById(&externalConnectionId).Patch(options)
 
 
 ```

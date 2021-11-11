@@ -20,7 +20,7 @@ options := &msgraphsdk.ItemsRequestBuilderPostOptions{
 }
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Post(options);
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Post(options)
 
 
 ```

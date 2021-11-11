@@ -13,7 +13,7 @@ requestBody.SetRoleTemplateId(&roleTemplateId)
 options := &msgraphsdk.DirectoryRolesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DirectoryRoles().Post(options);
+result, err := graphClient.DirectoryRoles().Post(options)
 
 
 ```

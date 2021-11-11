@@ -14,7 +14,7 @@ options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().ItemInsights().Patch(options);
+graphClient.OrganizationById(&organizationId).Settings().ItemInsights().Patch(options)
 
 
 ```

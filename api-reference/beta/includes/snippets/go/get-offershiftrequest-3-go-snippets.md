@@ -22,7 +22,7 @@ options := &msgraphsdk.OfferShiftRequestsRequestBuilderPostOptions{
 	H: headers,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().OfferShiftRequests().Post(options)
 
 
 ```

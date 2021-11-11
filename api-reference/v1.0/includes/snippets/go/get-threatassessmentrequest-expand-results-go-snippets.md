@@ -14,7 +14,7 @@ options := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 threatAssessmentRequestId := "threatAssessmentRequest-id"
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).Get(options);
+result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).Get(options)
 
 
 ```

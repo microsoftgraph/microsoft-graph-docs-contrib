@@ -18,7 +18,7 @@ options := &msgraphsdk.ValidatePropertiesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-graphClient.GroupsById(&groupId).ValidateProperties().Post(options);
+graphClient.GroupsById(&groupId).ValidateProperties().Post(options)
 
 
 ```

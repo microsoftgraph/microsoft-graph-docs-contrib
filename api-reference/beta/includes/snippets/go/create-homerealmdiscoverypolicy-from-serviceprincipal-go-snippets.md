@@ -15,7 +15,7 @@ options := &msgraphsdk.HomeRealmDiscoveryPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).HomeRealmDiscoveryPolicies().Post(options);
+graphClient.ServicePrincipalsById(&servicePrincipalId).HomeRealmDiscoveryPolicies().Post(options)
 
 
 ```

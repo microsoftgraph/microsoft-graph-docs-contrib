@@ -24,7 +24,7 @@ options := &msgraphsdk.ShiftRequestBuilderPutOptions{
 }
 teamId := "team-id"
 shiftId := "shift-id"
-graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Put(options);
+graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Put(options)
 
 
 ```

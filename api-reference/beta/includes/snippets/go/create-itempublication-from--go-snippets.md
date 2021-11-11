@@ -23,7 +23,7 @@ requestBody.SetWebUrl(&webUrl)
 options := &msgraphsdk.PublicationsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Publications().Post(options);
+result, err := graphClient.Me().Profile().Publications().Post(options)
 
 
 ```

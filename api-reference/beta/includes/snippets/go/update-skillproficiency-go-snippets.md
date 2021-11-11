@@ -17,7 +17,7 @@ options := &msgraphsdk.SkillProficiencyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 skillProficiencyId := "skillProficiency-id"
-graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(options);
+graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(options)
 
 
 ```

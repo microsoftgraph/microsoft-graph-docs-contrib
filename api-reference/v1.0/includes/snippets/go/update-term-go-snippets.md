@@ -22,7 +22,7 @@ options := &msgraphsdk.TermRequestBuilderPatchOptions{
 siteId := "site-id"
 setId := "set-id"
 termId := "term-id"
-graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Patch(options);
+graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
 
 
 ```

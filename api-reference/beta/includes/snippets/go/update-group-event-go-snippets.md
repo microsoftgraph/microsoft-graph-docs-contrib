@@ -29,7 +29,7 @@ options := &msgraphsdk.EventRequestBuilderPatchOptions{
 }
 groupId := "group-id"
 eventId := "event-id"
-graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(options);
+graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(options)
 
 
 ```

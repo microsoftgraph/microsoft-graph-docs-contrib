@@ -26,7 +26,7 @@ options := &msgraphsdk.UpdateAudienceByIdRequestBuilderPostOptions{
 	Body: requestBody,
 }
 deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById().Post(options);
+graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudienceById().Post(options)
 
 
 ```

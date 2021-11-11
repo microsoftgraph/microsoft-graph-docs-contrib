@@ -14,7 +14,7 @@ options := &msgraphsdk.OutlookTaskRequestBuilderGetOptions{
 	H: headers,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Get(options);
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Get(options)
 
 
 ```

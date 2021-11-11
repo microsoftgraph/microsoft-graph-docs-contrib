@@ -14,7 +14,7 @@ options := &msgraphsdk.GetMemberGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberGroups().Post(options);
+result, err := graphClient.DirectoryObjectsById(&directoryObjectId).GetMemberGroups().Post(options)
 
 
 ```

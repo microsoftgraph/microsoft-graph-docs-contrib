@@ -16,7 +16,7 @@ options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options);
+graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options)
 
 
 ```

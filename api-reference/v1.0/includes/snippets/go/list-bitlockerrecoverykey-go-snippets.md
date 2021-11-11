@@ -14,7 +14,7 @@ headers := map[string]string{
 options := &msgraphsdk.RecoveryKeysRequestBuilderGetOptions{
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeys().Get(options);
+result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeys().Get(options)
 
 
 ```

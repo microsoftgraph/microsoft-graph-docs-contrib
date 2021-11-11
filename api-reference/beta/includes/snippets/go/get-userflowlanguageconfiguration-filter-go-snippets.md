@@ -14,7 +14,7 @@ options := &msgraphsdk.LanguagesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().Get(options);
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Languages().Get(options)
 
 
 ```

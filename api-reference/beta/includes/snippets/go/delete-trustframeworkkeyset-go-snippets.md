@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Delete(options);
+graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Delete(options)
 
 
 ```

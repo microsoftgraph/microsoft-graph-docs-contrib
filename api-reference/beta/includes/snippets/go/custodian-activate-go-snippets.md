@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 caseId := "case-id"
 custodianId := "custodian-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Activate().Post(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Activate().Post(options)
 
 
 ```

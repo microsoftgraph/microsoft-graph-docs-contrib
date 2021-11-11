@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 directoryRoleId := "directoryRole-id"
-result, err := graphClient.DirectoryRolesById(&directoryRoleId).Members().$ref().Post(options);
+result, err := graphClient.DirectoryRolesById(&directoryRoleId).Members().$ref().Post(options)
 
 
 ```

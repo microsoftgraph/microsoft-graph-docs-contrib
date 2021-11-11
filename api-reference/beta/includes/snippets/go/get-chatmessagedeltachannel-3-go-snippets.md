@@ -16,7 +16,7 @@ options := &msgraphsdk.ChatMessageRequestBuilderGetOptions{
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Get(options);
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Get(options)
 
 
 ```

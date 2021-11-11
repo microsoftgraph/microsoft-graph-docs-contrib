@@ -17,7 +17,7 @@ requestBody.SetIsExternallyVisible(&isExternallyVisible)
 options := &msgraphsdk.AccessPackageCatalogsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().Post(options)
 
 
 ```

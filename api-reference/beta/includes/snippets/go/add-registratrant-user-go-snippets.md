@@ -31,7 +31,7 @@ options := &msgraphsdk.RegistrantsRequestBuilderPostOptions{
 }
 userId := "user-id"
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.UsersById(&userId).OnlineMeetingsById(&onlineMeetingId).Registration().Registrants().Post(options);
+result, err := graphClient.UsersById(&userId).OnlineMeetingsById(&onlineMeetingId).Registration().Registrants().Post(options)
 
 
 ```

@@ -62,7 +62,7 @@ options := &msgraphsdk.ShiftRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 shiftId := "shift-id"
-graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Patch(options);
+graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Patch(options)
 
 
 ```

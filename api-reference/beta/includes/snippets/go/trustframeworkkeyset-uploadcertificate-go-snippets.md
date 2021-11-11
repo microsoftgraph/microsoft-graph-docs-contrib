@@ -14,7 +14,7 @@ options := &msgraphsdk.UploadCertificateRequestBuilderPostOptions{
 	Body: requestBody,
 }
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadCertificate().Post(options);
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadCertificate().Post(options)
 
 
 ```

@@ -16,7 +16,7 @@ options := &msgraphsdk.CreateLinkRequestBuilderPostOptions{
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).CreateLink().Post(options);
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).CreateLink().Post(options)
 
 
 ```

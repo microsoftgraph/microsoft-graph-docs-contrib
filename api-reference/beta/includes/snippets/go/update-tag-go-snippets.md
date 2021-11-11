@@ -15,7 +15,7 @@ options := &msgraphsdk.TagRequestBuilderPatchOptions{
 }
 caseId := "case-id"
 tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(options)
 
 
 ```

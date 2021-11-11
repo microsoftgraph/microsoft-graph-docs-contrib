@@ -17,7 +17,7 @@ options := &msgraphsdk.UserSourcesRequestBuilderPostOptions{
 }
 caseId := "case-id"
 legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).UserSources().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).UserSources().Post(options)
 
 
 ```

@@ -17,7 +17,7 @@ options := &msgraphsdk.QueriesRequestBuilderPostOptions{
 }
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Queries().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Queries().Post(options)
 
 
 ```

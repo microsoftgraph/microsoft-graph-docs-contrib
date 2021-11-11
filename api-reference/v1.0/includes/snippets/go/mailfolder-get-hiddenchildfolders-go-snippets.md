@@ -14,7 +14,7 @@ options := &msgraphsdk.ChildFoldersRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Get(options);
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Get(options)
 
 
 ```

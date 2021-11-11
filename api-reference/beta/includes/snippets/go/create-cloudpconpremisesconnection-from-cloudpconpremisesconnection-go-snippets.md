@@ -32,7 +32,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.OnPremisesConnectionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(options);
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(options)
 
 
 ```

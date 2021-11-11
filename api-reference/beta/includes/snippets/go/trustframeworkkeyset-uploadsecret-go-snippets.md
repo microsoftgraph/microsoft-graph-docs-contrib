@@ -20,7 +20,7 @@ options := &msgraphsdk.UploadSecretRequestBuilderPostOptions{
 	Body: requestBody,
 }
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadSecret().Post(options);
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadSecret().Post(options)
 
 
 ```

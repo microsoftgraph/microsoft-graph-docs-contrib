@@ -23,7 +23,7 @@ options := &msgraphsdk.SettingsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Settings().Post(options);
+result, err := graphClient.GroupsById(&groupId).Settings().Post(options)
 
 
 ```

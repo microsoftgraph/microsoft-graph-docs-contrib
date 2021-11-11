@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilder
 options := &msgraphsdk.AccessPackageResourceEnvironmentsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceEnvironments().Get(options)
 
 
 ```

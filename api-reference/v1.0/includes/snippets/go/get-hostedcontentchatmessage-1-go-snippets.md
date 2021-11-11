@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 chatId := "chat-id"
 chatMessageId := "chatMessage-id"
 chatMessageHostedContentId := "chatMessageHostedContent-id"
-result, err := graphClient.ChatsById(&chatId).MessagesById(&chatMessageId).HostedContentsById(&chatMessageHostedContentId).Get(options);
+result, err := graphClient.ChatsById(&chatId).MessagesById(&chatMessageId).HostedContentsById(&chatMessageHostedContentId).Get(options)
 
 
 ```

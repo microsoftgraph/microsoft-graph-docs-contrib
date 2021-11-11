@@ -21,7 +21,7 @@ options := &msgraphsdk.CloudPcUserSettingRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options);
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
 
 
 ```

@@ -15,7 +15,7 @@ options := &msgraphsdk.InstalledAppsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).InstalledApps().Post(options);
+result, err := graphClient.ChatsById(&chatId).InstalledApps().Post(options)
 
 
 ```

@@ -27,7 +27,7 @@ requestBody.SetConnectorId(nil)
 options := &msgraphsdk.CreateRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Print().Printers().Create().Post(options);
+graphClient.Print().Printers().Create().Post(options)
 
 
 ```

@@ -35,7 +35,7 @@ options := &msgraphsdk.EvaluateClassificationResultsRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(options);
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(options)
 
 
 ```

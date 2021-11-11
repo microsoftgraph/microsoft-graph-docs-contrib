@@ -14,7 +14,7 @@ options := &msgraphsdk.BrandingRequestBuilderGetOptions{
 	H: headers,
 }
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options);
+result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 teamId := "team-id"
 timeCardId := "timeCard-id"
-graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Delete(options);
+graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Delete(options)
 
 
 ```

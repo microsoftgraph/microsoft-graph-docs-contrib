@@ -15,7 +15,7 @@ requestBody.SetMembershipRule(&membershipRule)
 options := &msgraphsdk.EvaluateDynamicMembershipRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Groups().EvaluateDynamicMembership().Post(options);
+result, err := graphClient.Groups().EvaluateDynamicMembership().Post(options)
 
 
 ```

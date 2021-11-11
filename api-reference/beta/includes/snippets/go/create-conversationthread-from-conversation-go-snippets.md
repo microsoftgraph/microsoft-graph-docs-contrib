@@ -20,7 +20,7 @@ options := &msgraphsdk.ThreadsRequestBuilderPostOptions{
 }
 groupId := "group-id"
 conversationId := "conversation-id"
-result, err := graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Threads().Post(options);
+result, err := graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Threads().Post(options)
 
 
 ```

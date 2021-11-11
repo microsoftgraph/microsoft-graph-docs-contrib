@@ -17,7 +17,7 @@ options := &msgraphsdk.OpenShiftRequestBuilderPutOptions{
 }
 teamId := "team-id"
 openShiftId := "openShift-id"
-graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Put(options);
+graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Put(options)
 
 
 ```

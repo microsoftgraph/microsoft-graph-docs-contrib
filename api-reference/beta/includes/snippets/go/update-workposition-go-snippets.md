@@ -14,7 +14,7 @@ options := &msgraphsdk.WorkPositionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 workPositionId := "workPosition-id"
-graphClient.Me().Profile().PositionsById(&workPositionId).Patch(options);
+graphClient.Me().Profile().PositionsById(&workPositionId).Patch(options)
 
 
 ```

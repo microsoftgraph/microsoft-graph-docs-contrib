@@ -14,7 +14,7 @@ options := &msgraphsdk.AppliesToRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 appManagementPolicyId := "appManagementPolicy-id"
-result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).AppliesTo().Get(options);
+result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).AppliesTo().Get(options)
 
 
 ```

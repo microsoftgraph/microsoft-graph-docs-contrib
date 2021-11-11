@@ -67,7 +67,7 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 options := &msgraphsdk.AccessReviewsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.AccessReviews().Post(options);
+result, err := graphClient.AccessReviews().Post(options)
 
 
 ```

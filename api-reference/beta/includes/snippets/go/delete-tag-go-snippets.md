@@ -15,7 +15,7 @@ options := &msgraphsdk.TagRequestBuilderDeleteOptions{
 }
 caseId := "case-id"
 tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Delete(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Delete(options)
 
 
 ```

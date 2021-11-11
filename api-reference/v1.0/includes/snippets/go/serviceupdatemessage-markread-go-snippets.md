@@ -15,7 +15,7 @@ requestBody.SetMessageIds( []String {
 options := &msgraphsdk.MarkReadRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(options);
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(options)
 
 
 ```

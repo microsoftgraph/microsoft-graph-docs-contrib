@@ -28,7 +28,7 @@ options := &msgraphsdk.SettingsRequestBuilderPutOptions{
 	Body: requestBody,
 }
 privilegedRoleId := "privilegedRole-id"
-graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(options);
+graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(options)
 
 
 ```

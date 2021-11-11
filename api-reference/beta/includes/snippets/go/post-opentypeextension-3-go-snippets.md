@@ -20,7 +20,7 @@ options := &msgraphsdk.ExtensionsRequestBuilderPostOptions{
 }
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Extensions().Post(options);
+result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Extensions().Post(options)
 
 
 ```

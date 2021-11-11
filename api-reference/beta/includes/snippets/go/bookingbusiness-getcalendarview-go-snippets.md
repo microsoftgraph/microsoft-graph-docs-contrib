@@ -15,7 +15,7 @@ options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CalendarView().Get(options);
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CalendarView().Get(options)
 
 
 ```

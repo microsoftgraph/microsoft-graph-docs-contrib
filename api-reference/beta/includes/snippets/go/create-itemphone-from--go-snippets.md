@@ -15,7 +15,7 @@ requestBody.SetNumber(&number)
 options := &msgraphsdk.PhonesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Phones().Post(options);
+result, err := graphClient.Me().Profile().Phones().Post(options)
 
 
 ```

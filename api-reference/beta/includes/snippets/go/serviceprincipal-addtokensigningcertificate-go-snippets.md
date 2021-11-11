@@ -16,7 +16,7 @@ options := &msgraphsdk.AddTokenSigningCertificateRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate().Post(options)
 
 
 ```

@@ -17,7 +17,7 @@ options := &msgraphsdk.PersonAwardRequestBuilderPatchOptions{
 }
 userId := "user-id"
 personAwardId := "personAward-id"
-graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options);
+graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options)
 
 
 ```

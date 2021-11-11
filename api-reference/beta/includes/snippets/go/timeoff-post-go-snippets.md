@@ -30,7 +30,7 @@ options := &msgraphsdk.TimesOffRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(options)
 
 
 ```

@@ -20,7 +20,7 @@ options := &msgraphsdk.GroupSettingRequestBuilderPatchOptions{
 }
 groupId := "group-id"
 groupSettingId := "groupSetting-id"
-graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(options);
+graphClient.GroupsById(&groupId).SettingsById(&groupSettingId).Patch(options)
 
 
 ```

@@ -62,7 +62,7 @@ requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
 options := &msgraphsdk.EventsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Events().Post(options);
+result, err := graphClient.Me().Events().Post(options)
 
 
 ```

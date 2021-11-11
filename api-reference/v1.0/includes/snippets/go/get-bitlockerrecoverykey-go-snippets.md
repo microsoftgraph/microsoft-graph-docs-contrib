@@ -15,7 +15,7 @@ options := &msgraphsdk.BitlockerRecoveryKeyRequestBuilderGetOptions{
 	H: headers,
 }
 bitlockerRecoveryKeyId := "bitlockerRecoveryKey-id"
-result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeysById(&bitlockerRecoveryKeyId).Get(options);
+result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeysById(&bitlockerRecoveryKeyId).Get(options)
 
 
 ```

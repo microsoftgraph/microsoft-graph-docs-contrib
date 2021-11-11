@@ -21,7 +21,7 @@ options := &msgraphsdk.TemporaryAccessPassMethodsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Authentication().TemporaryAccessPassMethods().Post(options);
+result, err := graphClient.UsersById(&userId).Authentication().TemporaryAccessPassMethods().Post(options)
 
 
 ```

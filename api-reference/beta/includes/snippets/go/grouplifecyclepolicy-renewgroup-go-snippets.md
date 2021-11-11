@@ -13,7 +13,7 @@ requestBody.SetGroupId(&groupId)
 options := &msgraphsdk.RenewGroupRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(options);
+result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.SecureScoresRequestBuilderGetQueryParameters{
 options := &msgraphsdk.SecureScoresRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Security().SecureScores().Get(options);
+result, err := graphClient.Security().SecureScores().Get(options)
 
 
 ```

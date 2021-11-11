@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).IdentityProviders().$ref().Post(options);
+result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).IdentityProviders().$ref().Post(options)
 
 
 ```

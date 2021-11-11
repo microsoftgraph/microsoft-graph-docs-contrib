@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 claimsMappingPolicyId := "claimsMappingPolicy-id"
-graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Delete(options);
+graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Delete(options)
 
 
 ```

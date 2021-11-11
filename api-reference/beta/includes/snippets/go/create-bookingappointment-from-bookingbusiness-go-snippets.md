@@ -175,7 +175,7 @@ options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options);
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options)
 
 
 ```

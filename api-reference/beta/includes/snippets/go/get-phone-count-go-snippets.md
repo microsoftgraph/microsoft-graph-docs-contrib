@@ -18,7 +18,7 @@ options := &msgraphsdk.ContactsRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.Contacts().Get(options);
+result, err := graphClient.Contacts().Get(options)
 
 
 ```

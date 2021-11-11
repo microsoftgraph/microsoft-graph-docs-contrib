@@ -16,7 +16,7 @@ options := &msgraphsdk.TenantTagRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(options);
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(options)
 
 
 ```

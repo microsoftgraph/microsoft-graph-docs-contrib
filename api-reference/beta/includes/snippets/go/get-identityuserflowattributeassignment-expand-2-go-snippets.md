@@ -14,7 +14,7 @@ options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Get(options);
+result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Get(options)
 
 
 ```

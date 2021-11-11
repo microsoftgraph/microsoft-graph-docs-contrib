@@ -18,7 +18,7 @@ options := &msgraphsdk.BookingServiceRequestBuilderPatchOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingServiceId := "bookingService-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(options);
+graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(options)
 
 
 ```

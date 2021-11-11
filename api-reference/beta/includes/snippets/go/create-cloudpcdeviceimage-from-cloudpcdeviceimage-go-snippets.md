@@ -24,7 +24,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.DeviceImagesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(options);
+result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.UnmuteRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Unmute().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).Unmute().Post(options)
 
 
 ```

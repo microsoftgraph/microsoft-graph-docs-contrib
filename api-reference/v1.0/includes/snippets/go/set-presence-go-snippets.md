@@ -20,7 +20,7 @@ options := &msgraphsdk.SetPresenceRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetPresence().Post(options);
+graphClient.UsersById(&userId).Presence().SetPresence().Post(options)
 
 
 ```

@@ -25,7 +25,7 @@ options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options);
+graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
 
 
 ```

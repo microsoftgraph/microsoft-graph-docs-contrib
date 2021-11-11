@@ -22,7 +22,7 @@ options := &msgraphsdk.AudioRoutingGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Post(options)
 
 
 ```

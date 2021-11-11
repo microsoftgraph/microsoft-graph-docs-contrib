@@ -40,7 +40,7 @@ requestBody.SetScopes( []AccessReviewScope {
 options := &msgraphsdk.HistoryDefinitionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(options);
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(options)
 
 
 ```

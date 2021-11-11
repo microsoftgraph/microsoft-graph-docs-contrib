@@ -17,7 +17,7 @@ options := &msgraphsdk.ConnectorGroupRequestBuilderPatchOptions{
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 connectorGroupId := "connectorGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(options);
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(options)
 
 
 ```

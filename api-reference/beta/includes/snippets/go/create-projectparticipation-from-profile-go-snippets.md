@@ -42,7 +42,7 @@ detail.SetSummary(&summary)
 options := &msgraphsdk.ProjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Projects().Post(options);
+result, err := graphClient.Me().Profile().Projects().Post(options)
 
 
 ```

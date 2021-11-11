@@ -15,7 +15,7 @@ requestBody.SetMessageIds( []String {
 options := &msgraphsdk.FavoriteRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(options);
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(options)
 
 
 ```

@@ -26,7 +26,7 @@ options := &msgraphsdk.RepliesRequestBuilderPostOptions{
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Replies().Post(options);
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Replies().Post(options)
 
 
 ```

@@ -18,7 +18,7 @@ options := &msgraphsdk.AppRoleAssignmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).AppRoleAssignments().Post(options);
+result, err := graphClient.UsersById(&userId).AppRoleAssignments().Post(options)
 
 
 ```

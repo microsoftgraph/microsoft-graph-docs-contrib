@@ -15,7 +15,7 @@ options := &msgraphsdk.TokenLifetimePoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).TokenLifetimePolicies().Post(options);
+graphClient.ApplicationsById(&applicationId).TokenLifetimePolicies().Post(options)
 
 
 ```

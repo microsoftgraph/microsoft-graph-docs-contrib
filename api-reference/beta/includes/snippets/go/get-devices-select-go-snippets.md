@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
 options := &msgraphsdk.DevicesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Devices().Get(options);
+result, err := graphClient.Devices().Get(options)
 
 
 ```

@@ -16,7 +16,7 @@ options := &msgraphsdk.AcceptRequestBuilderPostOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Accept().Post(options);
+graphClient.Me().EventsById(&eventId).Accept().Post(options)
 
 
 ```

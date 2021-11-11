@@ -15,7 +15,7 @@ requestBody.SetUserIds( []String {
 options := &msgraphsdk.ConfirmCompromisedRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.RiskyUsers().ConfirmCompromised().Post(options);
+graphClient.RiskyUsers().ConfirmCompromised().Post(options)
 
 
 ```

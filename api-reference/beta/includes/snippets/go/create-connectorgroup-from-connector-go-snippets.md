@@ -17,7 +17,7 @@ options := &msgraphsdk.ConnectorGroupRequestBuilderPostOptions{
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 connectorId := "connector-id"
 connectorGroupId := "connectorGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorsById(&connectorId).MemberOfById(&connectorGroupId).Post(options);
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorsById(&connectorId).MemberOfById(&connectorGroupId).Post(options)
 
 
 ```

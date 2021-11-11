@@ -14,7 +14,7 @@ options := &msgraphsdk.MembersRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().Get(options);
+result, err := graphClient.TeamsById(&teamId).Members().Get(options)
 
 
 ```

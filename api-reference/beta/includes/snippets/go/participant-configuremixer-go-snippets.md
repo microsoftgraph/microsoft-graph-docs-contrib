@@ -18,7 +18,7 @@ options := &msgraphsdk.ParticipantRequestBuilderPostOptions{
 }
 callId := "call-id"
 participantId := "participant-id"
-graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(options);
+graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(options)
 
 
 ```

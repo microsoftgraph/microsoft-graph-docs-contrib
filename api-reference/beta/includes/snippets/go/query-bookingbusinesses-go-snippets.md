@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.BookingBusinessesRequestBuilderGetQueryParamete
 options := &msgraphsdk.BookingBusinessesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.BookingBusinesses().Get(options);
+result, err := graphClient.BookingBusinesses().Get(options)
 
 
 ```

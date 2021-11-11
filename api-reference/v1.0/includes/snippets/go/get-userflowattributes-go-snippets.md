@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 identityUserFlowAttributeId := "identityUserFlowAttribute-id"
-result, err := graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Get(options);
+result, err := graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Get(options)
 
 
 ```

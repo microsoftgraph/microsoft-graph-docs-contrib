@@ -32,7 +32,7 @@ options := &msgraphsdk.PagesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Pages().Post(options);
+result, err := graphClient.SitesById(&siteId).Pages().Post(options)
 
 
 ```

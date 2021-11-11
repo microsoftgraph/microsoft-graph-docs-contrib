@@ -21,7 +21,7 @@ options := &msgraphsdk.TimeCardRequestBuilderPutOptions{
 }
 teamId := "team-id"
 timeCardId := "timeCard-id"
-graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(options);
+graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(options)
 
 
 ```

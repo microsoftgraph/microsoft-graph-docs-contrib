@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 options := &msgraphsdk.TenantTagsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(options);
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(options)
 
 
 ```

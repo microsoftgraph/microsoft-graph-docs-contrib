@@ -21,7 +21,7 @@ options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
 }
 siteId := "site-id"
 setId := "set-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(options);
+result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(options)
 
 
 ```

@@ -49,7 +49,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.TeamsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Teams().Post(options);
+result, err := graphClient.Teams().Post(options)
 
 
 ```

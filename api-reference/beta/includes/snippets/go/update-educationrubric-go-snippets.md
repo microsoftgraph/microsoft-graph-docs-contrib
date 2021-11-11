@@ -14,7 +14,7 @@ options := &msgraphsdk.EducationRubricRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 educationRubricId := "educationRubric-id"
-graphClient.Education().Me().RubricsById(&educationRubricId).Patch(options);
+graphClient.Education().Me().RubricsById(&educationRubricId).Patch(options)
 
 
 ```

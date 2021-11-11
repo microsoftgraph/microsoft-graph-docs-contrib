@@ -21,7 +21,7 @@ requestBody.SetApprovalDuration(&approvalDuration)
 options := &msgraphsdk.PrivilegedApprovalRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.PrivilegedApproval().Post(options);
+result, err := graphClient.PrivilegedApproval().Post(options)
 
 
 ```

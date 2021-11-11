@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.RiskDetectionsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.RiskDetectionsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.IdentityProtection().RiskDetections().Get(options);
+result, err := graphClient.IdentityProtection().RiskDetections().Get(options)
 
 
 ```

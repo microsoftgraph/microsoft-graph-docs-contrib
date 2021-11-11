@@ -19,7 +19,7 @@ options := &msgraphsdk.ActivityBasedTimeoutPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 activityBasedTimeoutPolicyId := "activityBasedTimeoutPolicy-id"
-graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(options);
+graphClient.Policies().ActivityBasedTimeoutPoliciesById(&activityBasedTimeoutPolicyId).Patch(options)
 
 
 ```

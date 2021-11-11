@@ -15,7 +15,7 @@ options := &msgraphsdk.MembersRequestBuilderPostOptions{
 }
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Members().Post(options);
+result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Members().Post(options)
 
 
 ```

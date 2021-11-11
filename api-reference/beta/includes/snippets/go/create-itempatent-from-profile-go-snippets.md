@@ -21,7 +21,7 @@ requestBody.SetWebUrl(&webUrl)
 options := &msgraphsdk.PatentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Patents().Post(options);
+result, err := graphClient.Me().Profile().Patents().Post(options)
 
 
 ```

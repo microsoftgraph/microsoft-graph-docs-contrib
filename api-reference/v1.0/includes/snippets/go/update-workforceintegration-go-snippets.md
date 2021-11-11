@@ -28,7 +28,7 @@ options := &msgraphsdk.WorkforceIntegrationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 workforceIntegrationId := "workforceIntegration-id"
-graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options);
+graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
 
 
 ```

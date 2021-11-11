@@ -14,7 +14,7 @@ options := &msgraphsdk.AssignmentsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 educationUserId := "educationUser-id"
-result, err := graphClient.Education().UsersById(&educationUserId).Assignments().Get(options);
+result, err := graphClient.Education().UsersById(&educationUserId).Assignments().Get(options)
 
 
 ```

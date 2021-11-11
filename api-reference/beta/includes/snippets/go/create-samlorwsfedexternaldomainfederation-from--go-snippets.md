@@ -23,7 +23,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.FederationConfigurationsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Directory().FederationConfigurations().Post(options);
+result, err := graphClient.Directory().FederationConfigurations().Post(options)
 
 
 ```

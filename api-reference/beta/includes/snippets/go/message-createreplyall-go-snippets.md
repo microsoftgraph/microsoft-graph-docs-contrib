@@ -20,7 +20,7 @@ options := &msgraphsdk.CreateReplyAllRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll().Post(options)
 
 
 ```

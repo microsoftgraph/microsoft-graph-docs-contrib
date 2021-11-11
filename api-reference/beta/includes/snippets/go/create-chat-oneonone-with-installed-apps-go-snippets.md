@@ -37,7 +37,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
 options := &msgraphsdk.ChatsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Chats().Post(options);
+result, err := graphClient.Chats().Post(options)
 
 
 ```

@@ -34,7 +34,7 @@ grantControls.SetBuiltInControls( []ConditionalAccessGrantControl {
 options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options);
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
 
 
 ```

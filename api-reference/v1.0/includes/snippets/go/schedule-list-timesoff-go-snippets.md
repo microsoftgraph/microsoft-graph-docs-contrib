@@ -14,7 +14,7 @@ options := &msgraphsdk.TimesOffRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Get(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Get(options)
 
 
 ```

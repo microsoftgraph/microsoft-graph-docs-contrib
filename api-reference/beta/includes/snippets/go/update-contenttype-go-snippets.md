@@ -55,7 +55,7 @@ options := &msgraphsdk.ContentTypeRequestBuilderPatchOptions{
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(options);
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(options)
 
 
 ```

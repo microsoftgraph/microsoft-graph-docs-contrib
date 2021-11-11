@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 userId := "user-id"
 itemPhoneId := "itemPhone-id"
-graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Delete(options);
+graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Delete(options)
 
 
 ```

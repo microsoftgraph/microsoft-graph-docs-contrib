@@ -18,7 +18,7 @@ options := &msgraphsdk.RecoveryKeysRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeys().Get(options);
+result, err := graphClient.InformationProtection().Bitlocker().RecoveryKeys().Get(options)
 
 
 ```

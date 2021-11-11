@@ -23,7 +23,7 @@ options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).AddKey().Post(options);
+result, err := graphClient.ApplicationsById(&applicationId).AddKey().Post(options)
 
 
 ```

@@ -19,7 +19,7 @@ requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.NotesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Notes().Post(options);
+result, err := graphClient.Me().Profile().Notes().Post(options)
 
 
 ```

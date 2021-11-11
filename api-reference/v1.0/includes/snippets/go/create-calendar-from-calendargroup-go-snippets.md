@@ -14,7 +14,7 @@ options := &msgraphsdk.CalendarsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(options);
+result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(options)
 
 
 ```

@@ -115,7 +115,7 @@ signInFrequency.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options);
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
 
 
 ```

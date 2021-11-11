@@ -23,7 +23,7 @@ requestBody.SetLatestSupportedTlsVersion(&latestSupportedTlsVersion)
 options := &msgraphsdk.SubscriptionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Subscriptions().Post(options);
+result, err := graphClient.Subscriptions().Post(options)
 
 
 ```

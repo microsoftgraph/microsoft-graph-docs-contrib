@@ -14,7 +14,7 @@ options := &msgraphsdk.OrgContactRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 orgContactId := "orgContact-id"
-result, err := graphClient.ContactsById(&orgContactId).Get(options);
+result, err := graphClient.ContactsById(&orgContactId).Get(options)
 
 
 ```

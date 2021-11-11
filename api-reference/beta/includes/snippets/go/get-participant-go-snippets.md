@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 callId := "call-id"
 participantId := "participant-id"
-result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Get(options);
+result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Get(options)
 
 
 ```

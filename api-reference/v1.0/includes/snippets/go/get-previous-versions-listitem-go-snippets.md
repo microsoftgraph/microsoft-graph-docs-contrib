@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Versions().Get(options);
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Versions().Get(options)
 
 
 ```

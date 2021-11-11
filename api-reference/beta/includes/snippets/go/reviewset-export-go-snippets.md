@@ -21,7 +21,7 @@ options := &msgraphsdk.ExportRequestBuilderPostOptions{
 }
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Export().Post(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Export().Post(options)
 
 
 ```

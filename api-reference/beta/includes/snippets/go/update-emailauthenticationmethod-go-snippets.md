@@ -16,7 +16,7 @@ options := &msgraphsdk.EmailAuthenticationMethodRequestBuilderPutOptions{
 }
 userId := "user-id"
 emailAuthenticationMethodId := "emailAuthenticationMethod-id"
-graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(options);
+graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(options)
 
 
 ```

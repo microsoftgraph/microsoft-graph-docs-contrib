@@ -7,19 +7,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
-requestBody := msgraphsdk.New()
-requestBody.SetAdditionalData(map[string]interface{}{
-	"displayName": "Connected organization name",
-	"description": "Connected organization description",
-	"identitySources":  []Object {
+requestBody := msgraphsdk.NewConnectedOrganization()
+displayName := "Connected organization name"
+requestBody.SetDisplayName(&displayName)
+description := "Connected organization description"
+requestBody.SetDescription(&description)
+requestBody.SetIdentitySources( []IdentitySource {
+	msgraphsdk.NewIdentitySource(),
+	SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.domainIdentitySource",
+		"domainName": "example.com",
+		"displayName": "example.com",
 	}
-	"state": "proposed",
 }
-options := &msgraphsdk.ConnectedOrganizationRequestBuilderPostOptions{
+state := "proposed"
+requestBody.SetState(&state)
+options := &msgraphsdk.ConnectedOrganizationsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-connectedOrganizationId := "connectedOrganization-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(options)
 
 
 ```

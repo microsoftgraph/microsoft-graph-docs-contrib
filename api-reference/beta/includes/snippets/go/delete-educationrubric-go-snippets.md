@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 educationRubricId := "educationRubric-id"
-graphClient.Education().Me().RubricsById(&educationRubricId).Delete(options);
+graphClient.Education().Me().RubricsById(&educationRubricId).Delete(options)
 
 
 ```

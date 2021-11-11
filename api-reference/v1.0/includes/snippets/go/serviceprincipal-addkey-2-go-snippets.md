@@ -26,7 +26,7 @@ options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey().Post(options)
 
 
 ```

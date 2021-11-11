@@ -14,7 +14,7 @@ options := &msgraphsdk.AccessPackageCatalogRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 accessPackageCatalogId := "accessPackageCatalog-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).Patch(options);
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).Patch(options)
 
 
 ```

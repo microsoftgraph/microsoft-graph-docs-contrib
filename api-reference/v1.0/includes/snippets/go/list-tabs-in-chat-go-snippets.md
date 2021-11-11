@@ -14,7 +14,7 @@ options := &msgraphsdk.TabsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Get(options);
+result, err := graphClient.ChatsById(&chatId).Tabs().Get(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.B2xUserFlowsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.B2xUserFlowsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Identity().B2xUserFlows().Get(options);
+result, err := graphClient.Identity().B2xUserFlows().Get(options)
 
 
 ```

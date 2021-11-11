@@ -15,7 +15,7 @@ requestBody.SetUserIds( []String {
 options := &msgraphsdk.DismissRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.RiskyUsers().Dismiss().Post(options);
+graphClient.RiskyUsers().Dismiss().Post(options)
 
 
 ```

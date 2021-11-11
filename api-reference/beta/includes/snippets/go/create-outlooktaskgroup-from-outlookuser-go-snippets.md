@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 options := &msgraphsdk.TaskGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Outlook().TaskGroups().Post(options);
+result, err := graphClient.Me().Outlook().TaskGroups().Post(options)
 
 
 ```

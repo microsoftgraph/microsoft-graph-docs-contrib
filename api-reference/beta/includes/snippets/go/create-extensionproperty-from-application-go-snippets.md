@@ -19,7 +19,7 @@ options := &msgraphsdk.ExtensionPropertiesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).ExtensionProperties().Post(options);
+result, err := graphClient.ApplicationsById(&applicationId).ExtensionProperties().Post(options)
 
 
 ```

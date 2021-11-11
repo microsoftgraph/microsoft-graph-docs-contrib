@@ -15,7 +15,7 @@ options := &msgraphsdk.TabsRequestBuilderGetOptions{
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().Get(options);
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Tabs().Get(options)
 
 
 ```

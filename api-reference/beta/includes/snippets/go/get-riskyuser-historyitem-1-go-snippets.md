@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 riskyUserId := "riskyUser-id"
 riskyUserHistoryItemId := "riskyUserHistoryItem-id"
-result, err := graphClient.RiskyUsersById(&riskyUserId).HistoryById(&riskyUserHistoryItemId).Get(options);
+result, err := graphClient.RiskyUsersById(&riskyUserId).HistoryById(&riskyUserHistoryItemId).Get(options)
 
 
 ```

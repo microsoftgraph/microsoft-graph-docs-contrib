@@ -15,7 +15,7 @@ requestBody.SetSkuId(&skuId)
 options := &msgraphsdk.ActivateServicePlanRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Me().ActivateServicePlan().Post(options);
+graphClient.Me().ActivateServicePlan().Post(options)
 
 
 ```

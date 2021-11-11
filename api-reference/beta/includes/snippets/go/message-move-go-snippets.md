@@ -14,7 +14,7 @@ options := &msgraphsdk.MoveRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Move().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).Move().Post(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.TeamsAppsRequestBuilderPostQueryParameters{
 options := &msgraphsdk.TeamsAppsRequestBuilderPostOptions{
 	Q: requestParameters,
 }
-graphClient.AppCatalogs().TeamsApps().Post(options);
+graphClient.AppCatalogs().TeamsApps().Post(options)
 
 
 ```

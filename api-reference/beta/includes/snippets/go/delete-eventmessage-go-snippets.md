@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Delete(options);
+graphClient.Me().MessagesById(&messageId).Delete(options)
 
 
 ```

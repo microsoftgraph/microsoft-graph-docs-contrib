@@ -17,7 +17,7 @@ options := &msgraphsdk.MembersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 plannerRosterId := "plannerRoster-id"
-result, err := graphClient.Planner().RostersById(&plannerRosterId).Members().Post(options);
+result, err := graphClient.Planner().RostersById(&plannerRosterId).Members().Post(options)
 
 
 ```

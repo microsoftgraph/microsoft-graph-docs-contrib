@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Get(options);
+result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Get(options)
 
 
 ```

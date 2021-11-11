@@ -33,7 +33,7 @@ options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options);
+graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options)
 
 
 ```

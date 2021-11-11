@@ -18,7 +18,7 @@ requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
 options := &msgraphsdk.HomeRealmDiscoveryPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().HomeRealmDiscoveryPolicies().Post(options);
+result, err := graphClient.Policies().HomeRealmDiscoveryPolicies().Post(options)
 
 
 ```

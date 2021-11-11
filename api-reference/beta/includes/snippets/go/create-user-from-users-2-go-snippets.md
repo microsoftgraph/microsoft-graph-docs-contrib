@@ -25,7 +25,7 @@ passwordProfile.SetPassword(&password)
 options := &msgraphsdk.UsersRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Users().Post(options);
+result, err := graphClient.Users().Post(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.RemovePasswordRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).RemovePassword().Post(options);
+graphClient.ApplicationsById(&applicationId).RemovePassword().Post(options)
 
 
 ```

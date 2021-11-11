@@ -14,7 +14,7 @@ options := &msgraphsdk.SetVerifiedPublisherRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).SetVerifiedPublisher().Post(options);
+graphClient.ApplicationsById(&applicationId).SetVerifiedPublisher().Post(options)
 
 
 ```

@@ -24,7 +24,7 @@ options := &msgraphsdk.CalendarPermissionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(options);
+result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(options)
 
 
 ```

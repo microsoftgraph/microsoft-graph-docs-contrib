@@ -20,7 +20,7 @@ options := &msgraphsdk.RedirectRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Redirect().Post(options);
+graphClient.Communications().CallsById(&callId).Redirect().Post(options)
 
 
 ```

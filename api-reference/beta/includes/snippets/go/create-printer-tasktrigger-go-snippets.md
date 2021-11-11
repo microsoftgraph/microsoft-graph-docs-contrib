@@ -17,7 +17,7 @@ options := &msgraphsdk.TaskTriggersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).TaskTriggers().Post(options);
+result, err := graphClient.Print().PrintersById(&printerId).TaskTriggers().Post(options)
 
 
 ```

@@ -36,7 +36,7 @@ options := &msgraphsdk.AlertRequestBuilderPatchOptions{
 	H: headers,
 }
 alertId := "alert-id"
-graphClient.Security().AlertsById(&alertId).Patch(options);
+graphClient.Security().AlertsById(&alertId).Patch(options)
 
 
 ```

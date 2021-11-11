@@ -16,7 +16,7 @@ options := &msgraphsdk.PrivilegedApprovalRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 privilegedApprovalId := "privilegedApproval-id"
-graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(options);
+graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(options)
 
 
 ```

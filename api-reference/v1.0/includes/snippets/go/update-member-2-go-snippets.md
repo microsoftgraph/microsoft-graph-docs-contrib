@@ -19,7 +19,7 @@ options := &msgraphsdk.ConversationMemberRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 conversationMemberId := "conversationMember-id"
-graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options);
+graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options)
 
 
 ```

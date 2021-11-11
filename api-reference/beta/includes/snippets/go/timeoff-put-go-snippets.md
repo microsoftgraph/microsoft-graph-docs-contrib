@@ -20,7 +20,7 @@ options := &msgraphsdk.TimeOffRequestBuilderPutOptions{
 }
 teamId := "team-id"
 timeOffId := "timeOff-id"
-graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).Put(options);
+graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).Put(options)
 
 
 ```

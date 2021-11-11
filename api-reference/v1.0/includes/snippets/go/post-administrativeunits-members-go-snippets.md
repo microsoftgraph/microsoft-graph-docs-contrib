@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Members().$ref().Post(options);
+result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Members().$ref().Post(options)
 
 
 ```

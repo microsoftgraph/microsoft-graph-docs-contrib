@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestParameters := &msgraphsdk.UserConsentRequestRequestBuilderGetQueryParameters{
-	Filter: "%20",
+	Filter: "%20(status%20eq%20'Completed')",
 }
 options := &msgraphsdk.UserConsentRequestRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 appConsentRequestId := "appConsentRequest-id"
 userConsentRequestId := "userConsentRequest-id"
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).UserConsentRequestsById(&userConsentRequestId).Get(options);
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).UserConsentRequestsById(&userConsentRequestId).Get(options)
 
 
 ```

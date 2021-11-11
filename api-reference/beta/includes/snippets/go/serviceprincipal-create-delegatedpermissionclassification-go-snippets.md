@@ -18,7 +18,7 @@ options := &msgraphsdk.DelegatedPermissionClassificationsRequestBuilderPostOptio
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(options)
 
 
 ```

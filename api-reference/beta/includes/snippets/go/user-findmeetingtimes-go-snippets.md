@@ -51,7 +51,7 @@ options := &msgraphsdk.FindMeetingTimesRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.Me().FindMeetingTimes().Post(options);
+result, err := graphClient.Me().FindMeetingTimes().Post(options)
 
 
 ```

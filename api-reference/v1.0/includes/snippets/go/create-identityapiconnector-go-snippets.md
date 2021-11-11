@@ -22,7 +22,7 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.ApiConnectorsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().ApiConnectors().Post(options);
+result, err := graphClient.Identity().ApiConnectors().Post(options)
 
 
 ```

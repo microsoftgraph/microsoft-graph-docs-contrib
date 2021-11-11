@@ -41,7 +41,7 @@ requestBody.SetMembers( []ConversationMember {
 options := &msgraphsdk.ChatsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Chats().Post(options);
+result, err := graphClient.Chats().Post(options)
 
 
 ```

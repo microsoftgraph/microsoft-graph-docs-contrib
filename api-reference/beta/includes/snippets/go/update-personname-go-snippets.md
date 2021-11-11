@@ -14,7 +14,7 @@ options := &msgraphsdk.PersonNameRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 personNameId := "personName-id"
-graphClient.Me().Profile().NamesById(&personNameId).Patch(options);
+graphClient.Me().Profile().NamesById(&personNameId).Patch(options)
 
 
 ```

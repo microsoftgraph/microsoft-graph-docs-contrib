@@ -16,7 +16,7 @@ options := &msgraphsdk.InstancesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Instances().Get(options);
+result, err := graphClient.Me().EventsById(&eventId).Instances().Get(options)
 
 
 ```

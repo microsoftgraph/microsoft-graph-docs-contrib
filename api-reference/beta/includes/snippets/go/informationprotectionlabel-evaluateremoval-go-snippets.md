@@ -78,7 +78,7 @@ options := &msgraphsdk.EvaluateRemovalRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(options);
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(options)
 
 
 ```

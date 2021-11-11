@@ -15,7 +15,7 @@ requestBody.SetPhoneType(&phoneType)
 options := &msgraphsdk.PhoneMethodsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Authentication().PhoneMethods().Post(options);
+result, err := graphClient.Me().Authentication().PhoneMethods().Post(options)
 
 
 ```

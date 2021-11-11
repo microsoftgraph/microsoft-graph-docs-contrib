@@ -14,7 +14,7 @@ options := &msgraphsdk.ProgramRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 programId := "program-id"
-graphClient.ProgramsById(&programId).Patch(options);
+graphClient.ProgramsById(&programId).Patch(options)
 
 
 ```

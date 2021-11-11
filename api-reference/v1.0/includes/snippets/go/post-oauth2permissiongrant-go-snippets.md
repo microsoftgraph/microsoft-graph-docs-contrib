@@ -21,7 +21,7 @@ requestBody.SetScope(&scope)
 options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Oauth2PermissionGrants().Post(options);
+result, err := graphClient.Oauth2PermissionGrants().Post(options)
 
 
 ```

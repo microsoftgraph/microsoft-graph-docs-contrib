@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).RegisteredUsers().$ref().Post(options);
+result, err := graphClient.DevicesById(&deviceId).RegisteredUsers().$ref().Post(options)
 
 
 ```

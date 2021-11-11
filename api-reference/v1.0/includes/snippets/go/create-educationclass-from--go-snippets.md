@@ -42,7 +42,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.ClassesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Education().Classes().Post(options);
+result, err := graphClient.Education().Classes().Post(options)
 
 
 ```

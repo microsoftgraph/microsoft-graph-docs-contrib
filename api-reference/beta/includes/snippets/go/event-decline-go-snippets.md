@@ -30,7 +30,7 @@ options := &msgraphsdk.DeclineRequestBuilderPostOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Decline().Post(options);
+graphClient.Me().EventsById(&eventId).Decline().Post(options)
 
 
 ```

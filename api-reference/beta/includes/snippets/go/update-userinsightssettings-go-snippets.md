@@ -14,7 +14,7 @@ options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options);
+graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options)
 
 
 ```

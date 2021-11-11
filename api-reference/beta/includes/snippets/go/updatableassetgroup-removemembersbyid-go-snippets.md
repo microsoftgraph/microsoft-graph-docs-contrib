@@ -19,7 +19,7 @@ options := &msgraphsdk.RemoveMembersByIdRequestBuilderPostOptions{
 	Body: requestBody,
 }
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).RemoveMembersById().Post(options);
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).RemoveMembersById().Post(options)
 
 
 ```

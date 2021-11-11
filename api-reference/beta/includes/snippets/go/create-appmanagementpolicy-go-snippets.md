@@ -53,7 +53,7 @@ restrictions.SetKeyCredentials( []KeyCredentialConfiguration {
 options := &msgraphsdk.AppManagementPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().AppManagementPolicies().Post(options);
+result, err := graphClient.Policies().AppManagementPolicies().Post(options)
 
 
 ```

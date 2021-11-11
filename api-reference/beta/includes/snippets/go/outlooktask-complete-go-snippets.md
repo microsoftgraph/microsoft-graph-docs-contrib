@@ -14,7 +14,7 @@ options := &msgraphsdk.CompleteRequestBuilderPostOptions{
 	H: headers,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Complete().Post(options);
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Complete().Post(options)
 
 
 ```

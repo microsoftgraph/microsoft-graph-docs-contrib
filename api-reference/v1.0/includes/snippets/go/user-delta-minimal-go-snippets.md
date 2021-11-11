@@ -18,7 +18,7 @@ options := &msgraphsdk.UserRequestBuilderGetOptions{
 	H: headers,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Get(options);
+result, err := graphClient.UsersById(&userId).Get(options)
 
 
 ```

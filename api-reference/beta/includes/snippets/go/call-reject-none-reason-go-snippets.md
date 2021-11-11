@@ -14,7 +14,7 @@ options := &msgraphsdk.RejectRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Reject().Post(options);
+graphClient.Communications().CallsById(&callId).Reject().Post(options)
 
 
 ```

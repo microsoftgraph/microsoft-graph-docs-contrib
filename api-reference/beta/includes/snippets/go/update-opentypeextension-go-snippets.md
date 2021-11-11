@@ -27,7 +27,7 @@ groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
 extensionId := "extension-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(options);
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(options)
 
 
 ```

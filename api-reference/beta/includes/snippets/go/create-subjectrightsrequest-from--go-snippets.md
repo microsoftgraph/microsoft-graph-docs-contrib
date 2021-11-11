@@ -38,7 +38,7 @@ dataSubject.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.SubjectRightsRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(options);
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(options)
 
 
 ```

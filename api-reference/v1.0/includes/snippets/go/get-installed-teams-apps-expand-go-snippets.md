@@ -15,7 +15,7 @@ options := &msgraphsdk.TeamsAppInstallationRequestBuilderGetOptions{
 }
 teamId := "team-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Get(options);
+result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Get(options)
 
 
 ```

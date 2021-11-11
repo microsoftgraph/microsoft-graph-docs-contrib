@@ -26,7 +26,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.ProvisioningPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(options);
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(options)
 
 
 ```

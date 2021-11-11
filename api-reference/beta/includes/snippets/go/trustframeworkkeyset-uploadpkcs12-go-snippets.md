@@ -16,7 +16,7 @@ options := &msgraphsdk.UploadPkcs12RequestBuilderPostOptions{
 	Body: requestBody,
 }
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12().Post(options);
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12().Post(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetAppId(&appId)
 options := &msgraphsdk.ServicePrincipalsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.ServicePrincipals().Post(options);
+result, err := graphClient.ServicePrincipals().Post(options)
 
 
 ```

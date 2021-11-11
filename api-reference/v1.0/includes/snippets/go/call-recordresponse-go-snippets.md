@@ -35,7 +35,7 @@ options := &msgraphsdk.RecordResponseRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).RecordResponse().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).RecordResponse().Post(options)
 
 
 ```

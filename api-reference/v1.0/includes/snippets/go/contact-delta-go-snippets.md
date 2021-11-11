@@ -19,7 +19,7 @@ options := &msgraphsdk.ContactRequestBuilderGetOptions{
 }
 contactFolderId := "contactFolder-id"
 contactId := "contact-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).ContactsById(&contactId).Get(options);
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).ContactsById(&contactId).Get(options)
 
 
 ```

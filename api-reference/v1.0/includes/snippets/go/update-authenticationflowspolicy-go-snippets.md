@@ -15,7 +15,7 @@ selfServiceSignUp.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.AuthenticationFlowsPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().AuthenticationFlowsPolicy().Patch(options);
+graphClient.Policies().AuthenticationFlowsPolicy().Patch(options)
 
 
 ```

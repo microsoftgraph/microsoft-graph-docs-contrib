@@ -15,7 +15,7 @@ options := &msgraphsdk.MessageRequestBuilderGetOptions{
 }
 mailFolderId := "mailFolder-id"
 messageId := "message-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessagesById(&messageId).Get(options);
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessagesById(&messageId).Get(options)
 
 
 ```

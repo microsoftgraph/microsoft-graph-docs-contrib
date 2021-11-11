@@ -19,7 +19,7 @@ requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId)
 options := &msgraphsdk.ValidatePropertiesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.DirectoryObjects().ValidateProperties().Post(options);
+graphClient.DirectoryObjects().ValidateProperties().Post(options)
 
 
 ```

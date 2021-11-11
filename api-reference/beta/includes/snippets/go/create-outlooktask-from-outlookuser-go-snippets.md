@@ -29,7 +29,7 @@ options := &msgraphsdk.TasksRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.Me().Outlook().Tasks().Post(options);
+result, err := graphClient.Me().Outlook().Tasks().Post(options)
 
 
 ```

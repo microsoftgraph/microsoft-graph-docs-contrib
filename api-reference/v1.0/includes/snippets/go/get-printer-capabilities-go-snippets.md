@@ -14,7 +14,7 @@ options := &msgraphsdk.PrinterRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Get(options);
+result, err := graphClient.Print().PrintersById(&printerId).Get(options)
 
 
 ```

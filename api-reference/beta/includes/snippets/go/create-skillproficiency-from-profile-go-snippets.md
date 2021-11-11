@@ -23,7 +23,7 @@ requestBody.SetCollaborationTags( []String {
 options := &msgraphsdk.SkillsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Skills().Post(options);
+result, err := graphClient.Me().Profile().Skills().Post(options)
 
 
 ```

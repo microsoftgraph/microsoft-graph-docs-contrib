@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.NamedLocationsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options);
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options)
 
 
 ```

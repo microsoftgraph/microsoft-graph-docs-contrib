@@ -15,7 +15,7 @@ requestBody.SetDescription(&description)
 options := &msgraphsdk.ProgramsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Programs().Post(options);
+result, err := graphClient.Programs().Post(options)
 
 
 ```

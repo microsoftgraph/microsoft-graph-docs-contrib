@@ -18,7 +18,7 @@ options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 administrativeUnitId := "administrativeUnit-id"
-graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(options);
+graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(options)
 
 
 ```

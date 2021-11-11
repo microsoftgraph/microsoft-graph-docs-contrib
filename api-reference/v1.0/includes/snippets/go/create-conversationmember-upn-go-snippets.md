@@ -19,7 +19,7 @@ options := &msgraphsdk.MembersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().Post(options);
+result, err := graphClient.TeamsById(&teamId).Members().Post(options)
 
 
 ```

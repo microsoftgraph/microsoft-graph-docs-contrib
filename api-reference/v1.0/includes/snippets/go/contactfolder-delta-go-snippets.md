@@ -14,7 +14,7 @@ options := &msgraphsdk.ContactFolderRequestBuilderGetOptions{
 	H: headers,
 }
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Get(options);
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Get(options)
 
 
 ```

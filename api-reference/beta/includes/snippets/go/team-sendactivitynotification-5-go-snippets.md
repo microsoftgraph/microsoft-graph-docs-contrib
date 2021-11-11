@@ -38,7 +38,7 @@ options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification().Post(options);
+graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
 
 
 ```

@@ -18,7 +18,7 @@ options := &msgraphsdk.CheckMemberObjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).CheckMemberObjects().Post(options);
+result, err := graphClient.DevicesById(&deviceId).CheckMemberObjects().Post(options)
 
 
 ```

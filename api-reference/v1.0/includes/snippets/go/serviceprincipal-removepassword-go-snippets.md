@@ -14,7 +14,7 @@ options := &msgraphsdk.RemovePasswordRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).RemovePassword().Post(options);
+graphClient.ServicePrincipalsById(&servicePrincipalId).RemovePassword().Post(options)
 
 
 ```

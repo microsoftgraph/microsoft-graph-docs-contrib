@@ -14,7 +14,7 @@ options := &msgraphsdk.ReviewersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 accessReviewId := "accessReview-id"
-result, err := graphClient.AccessReviewsById(&accessReviewId).Reviewers().Post(options);
+result, err := graphClient.AccessReviewsById(&accessReviewId).Reviewers().Post(options)
 
 
 ```

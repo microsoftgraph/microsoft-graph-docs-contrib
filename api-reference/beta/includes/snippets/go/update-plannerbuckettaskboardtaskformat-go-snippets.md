@@ -19,7 +19,7 @@ options := &msgraphsdk.BucketTaskBoardFormatRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).BucketTaskBoardFormat().Patch(options);
+graphClient.Planner().TasksById(&plannerTaskId).BucketTaskBoardFormat().Patch(options)
 
 
 ```

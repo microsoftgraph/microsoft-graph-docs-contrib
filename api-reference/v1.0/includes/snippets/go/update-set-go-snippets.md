@@ -15,7 +15,7 @@ options := &msgraphsdk.SetRequestBuilderPatchOptions{
 }
 siteId := "site-id"
 setId := "set-id"
-graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Patch(options);
+graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Patch(options)
 
 
 ```

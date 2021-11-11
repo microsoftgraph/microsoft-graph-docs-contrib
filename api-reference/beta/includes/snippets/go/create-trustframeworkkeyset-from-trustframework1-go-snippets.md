@@ -13,7 +13,7 @@ requestBody.SetId(&id)
 options := &msgraphsdk.KeySetsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.TrustFramework().KeySets().Post(options);
+result, err := graphClient.TrustFramework().KeySets().Post(options)
 
 
 ```

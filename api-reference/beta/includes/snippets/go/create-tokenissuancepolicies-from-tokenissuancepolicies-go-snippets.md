@@ -18,7 +18,7 @@ requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
 options := &msgraphsdk.TokenIssuancePoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().TokenIssuancePolicies().Post(options);
+result, err := graphClient.Policies().TokenIssuancePolicies().Post(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 eventId := "event-id"
 attachmentId := "attachment-id"
-graphClient.Me().EventsById(&eventId).AttachmentsById(&attachmentId).Delete(options);
+graphClient.Me().EventsById(&eventId).AttachmentsById(&attachmentId).Delete(options)
 
 
 ```

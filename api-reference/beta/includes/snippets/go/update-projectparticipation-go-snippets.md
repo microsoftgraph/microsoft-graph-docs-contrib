@@ -20,7 +20,7 @@ options := &msgraphsdk.ProjectParticipationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 projectParticipationId := "projectParticipation-id"
-graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(options);
+graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(options)
 
 
 ```

@@ -15,7 +15,7 @@ requestBody.SetDate(&date)
 options := &msgraphsdk.AnniversariesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Anniversaries().Post(options);
+result, err := graphClient.Me().Profile().Anniversaries().Post(options)
 
 
 ```

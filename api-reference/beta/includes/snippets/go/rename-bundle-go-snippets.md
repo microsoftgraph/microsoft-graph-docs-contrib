@@ -14,7 +14,7 @@ options := &msgraphsdk.DriveItemRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 driveItemId := "driveItem-id"
-graphClient.Drive().ItemsById(&driveItemId).Patch(options);
+graphClient.Drive().ItemsById(&driveItemId).Patch(options)
 
 
 ```

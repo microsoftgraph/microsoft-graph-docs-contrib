@@ -19,7 +19,7 @@ options := &msgraphsdk.UnifiedGroupSourcesRequestBuilderPostOptions{
 }
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSources().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSources().Post(options)
 
 
 ```

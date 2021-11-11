@@ -16,7 +16,7 @@ options := &msgraphsdk.RemoveKeyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).RemoveKey().Post(options);
+graphClient.ApplicationsById(&applicationId).RemoveKey().Post(options)
 
 
 ```

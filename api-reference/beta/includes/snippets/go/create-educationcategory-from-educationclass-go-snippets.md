@@ -14,7 +14,7 @@ options := &msgraphsdk.AssignmentCategoriesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(options);
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentCategories().Post(options)
 
 
 ```

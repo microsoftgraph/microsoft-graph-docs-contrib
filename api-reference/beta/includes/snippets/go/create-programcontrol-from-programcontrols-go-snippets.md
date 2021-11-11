@@ -17,7 +17,7 @@ requestBody.SetProgramId(&programId)
 options := &msgraphsdk.ProgramControlsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.ProgramControls().Post(options);
+result, err := graphClient.ProgramControls().Post(options)
 
 
 ```

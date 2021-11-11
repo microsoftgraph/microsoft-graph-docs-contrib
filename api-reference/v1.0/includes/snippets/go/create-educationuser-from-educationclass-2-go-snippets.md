@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Teachers().$ref().Post(options);
+result, err := graphClient.Education().ClassesById(&educationClassId).Teachers().$ref().Post(options)
 
 
 ```

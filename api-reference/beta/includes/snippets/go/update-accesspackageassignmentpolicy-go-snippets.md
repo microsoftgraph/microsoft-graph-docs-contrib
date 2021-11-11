@@ -23,7 +23,7 @@ options := &msgraphsdk.AccessPackageAssignmentPolicyRequestBuilderPutOptions{
 	Body: requestBody,
 }
 accessPackageAssignmentPolicyId := "accessPackageAssignmentPolicy-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById(&accessPackageAssignmentPolicyId).Put(options);
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPoliciesById(&accessPackageAssignmentPolicyId).Put(options)
 
 
 ```
