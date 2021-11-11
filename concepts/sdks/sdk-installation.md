@@ -23,7 +23,7 @@ You can use either the [Package Manager UI in Visual Studio or the Package Manag
 Install-Package Microsoft.Graph
 ```
 
-## Install the Microsoft Graph Go SDK (PREVIEW)
+## Install the Microsoft Graph Go SDK (preview)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
