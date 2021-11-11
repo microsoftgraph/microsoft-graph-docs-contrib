@@ -14,7 +14,7 @@ options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(options);
+graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(options)
 
 
 ```

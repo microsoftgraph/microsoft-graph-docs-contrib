@@ -37,7 +37,7 @@ requestBody.SetPhones( []Phone {
 options := &msgraphsdk.ContactsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Contacts().Post(options);
+result, err := graphClient.Me().Contacts().Post(options)
 
 
 ```

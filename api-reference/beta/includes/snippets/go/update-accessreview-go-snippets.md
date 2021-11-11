@@ -14,7 +14,7 @@ options := &msgraphsdk.AccessReviewRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 accessReviewId := "accessReview-id"
-graphClient.AccessReviewsById(&accessReviewId).Patch(options);
+graphClient.AccessReviewsById(&accessReviewId).Patch(options)
 
 
 ```

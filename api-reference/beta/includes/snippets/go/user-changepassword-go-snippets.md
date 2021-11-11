@@ -15,7 +15,7 @@ requestBody.SetNewPassword(&newPassword)
 options := &msgraphsdk.ChangePasswordRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Me().ChangePassword().Post(options);
+graphClient.Me().ChangePassword().Post(options)
 
 
 ```

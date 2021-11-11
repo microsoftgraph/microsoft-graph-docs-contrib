@@ -14,7 +14,7 @@ options := &msgraphsdk.MemberOfRequestBuilderPostOptions{
 	Body: requestBody,
 }
 orgContactId := "orgContact-id"
-graphClient.ContactsById(&orgContactId).MemberOf().Post(options);
+graphClient.ContactsById(&orgContactId).MemberOf().Post(options)
 
 
 ```

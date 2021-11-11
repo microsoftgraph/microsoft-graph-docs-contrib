@@ -13,7 +13,7 @@ requestBody.SetPassword(&password)
 options := &msgraphsdk.ValidatePasswordRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Users().ValidatePassword().Post(options);
+result, err := graphClient.Users().ValidatePassword().Post(options)
 
 
 ```

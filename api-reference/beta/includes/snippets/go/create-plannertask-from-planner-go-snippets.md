@@ -21,7 +21,7 @@ assignments.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.TasksRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Planner().Tasks().Post(options);
+result, err := graphClient.Planner().Tasks().Post(options)
 
 
 ```

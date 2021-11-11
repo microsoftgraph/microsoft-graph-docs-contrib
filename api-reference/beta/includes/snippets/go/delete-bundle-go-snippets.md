@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 driveItemId := "driveItem-id"
-graphClient.Drive().ItemsById(&driveItemId).Delete(options);
+graphClient.Drive().ItemsById(&driveItemId).Delete(options)
 
 
 ```

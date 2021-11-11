@@ -14,7 +14,7 @@ options := &msgraphsdk.RefRequestBuilderDeleteOptions{
 	Q: requestParameters,
 }
 groupId := "group-id"
-graphClient.GroupsById(&groupId).AcceptedSenders().$ref().Delete(options);
+graphClient.GroupsById(&groupId).AcceptedSenders().$ref().Delete(options)
 
 
 ```

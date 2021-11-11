@@ -27,7 +27,7 @@ options := &msgraphsdk.TabsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Post(options);
+result, err := graphClient.ChatsById(&chatId).Tabs().Post(options)
 
 
 ```

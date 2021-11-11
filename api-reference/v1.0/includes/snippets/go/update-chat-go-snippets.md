@@ -14,7 +14,7 @@ options := &msgraphsdk.ChatRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).Patch(options);
+graphClient.ChatsById(&chatId).Patch(options)
 
 
 ```

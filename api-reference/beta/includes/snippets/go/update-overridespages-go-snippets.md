@@ -18,7 +18,7 @@ options := &msgraphsdk.ContentRequestBuilderPutOptions{
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
 userFlowLanguagePageId := "userFlowLanguagePage-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(options);
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(options)
 
 
 ```

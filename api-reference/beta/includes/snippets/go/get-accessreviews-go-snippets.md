@@ -15,7 +15,7 @@ requestParameters := &msgraphsdk.AccessReviewsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.AccessReviewsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.AccessReviews().Get(options);
+result, err := graphClient.AccessReviews().Get(options)
 
 
 ```

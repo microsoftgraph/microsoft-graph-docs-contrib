@@ -18,7 +18,7 @@ options := &msgraphsdk.GroupLifecyclePolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 groupLifecyclePolicyId := "groupLifecyclePolicy-id"
-graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(options);
+graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(options)
 
 
 ```

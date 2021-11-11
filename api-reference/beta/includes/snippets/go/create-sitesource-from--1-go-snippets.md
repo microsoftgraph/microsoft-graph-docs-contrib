@@ -17,7 +17,7 @@ options := &msgraphsdk.SiteSourcesRequestBuilderPostOptions{
 }
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).SiteSources().Post(options);
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).SiteSources().Post(options)
 
 
 ```

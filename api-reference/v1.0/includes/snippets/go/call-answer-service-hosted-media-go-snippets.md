@@ -24,7 +24,7 @@ options := &msgraphsdk.AnswerRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer().Post(options);
+graphClient.Communications().CallsById(&callId).Answer().Post(options)
 
 
 ```

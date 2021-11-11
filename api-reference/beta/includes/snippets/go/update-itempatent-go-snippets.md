@@ -17,7 +17,7 @@ options := &msgraphsdk.ItemPatentRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemPatentId := "itemPatent-id"
-graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(options);
+graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(options)
 
 
 ```

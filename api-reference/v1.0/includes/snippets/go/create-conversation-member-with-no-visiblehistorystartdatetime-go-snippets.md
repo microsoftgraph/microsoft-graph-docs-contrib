@@ -19,7 +19,7 @@ options := &msgraphsdk.MembersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Members().Post(options);
+result, err := graphClient.ChatsById(&chatId).Members().Post(options)
 
 
 ```

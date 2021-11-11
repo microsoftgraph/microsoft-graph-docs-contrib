@@ -22,7 +22,7 @@ options := &msgraphsdk.ClockOutRequestBuilderPostOptions{
 }
 teamId := "team-id"
 timeCardId := "timeCard-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).ClockOut().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).ClockOut().Post(options)
 
 
 ```

@@ -28,7 +28,7 @@ vendorInformation.SetVendor(&vendor)
 options := &msgraphsdk.SecurityActionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Security().SecurityActions().Post(options);
+result, err := graphClient.Security().SecurityActions().Post(options)
 
 
 ```

@@ -102,7 +102,7 @@ options := &msgraphsdk.ServicesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(options);
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Services().Post(options)
 
 
 ```

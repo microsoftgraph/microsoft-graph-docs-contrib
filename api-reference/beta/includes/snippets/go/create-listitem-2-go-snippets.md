@@ -18,7 +18,7 @@ options := &msgraphsdk.FieldsRequestBuilderPatchOptions{
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options);
+graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options)
 
 
 ```

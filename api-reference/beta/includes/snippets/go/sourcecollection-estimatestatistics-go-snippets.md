@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 caseId := "case-id"
 sourceCollectionId := "sourceCollection-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).EstimateStatistics().Post(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).EstimateStatistics().Post(options)
 
 
 ```

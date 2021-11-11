@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.EventsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.EventsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Me().Calendar().Events().Get(options);
+result, err := graphClient.Me().Calendar().Events().Get(options)
 
 
 ```

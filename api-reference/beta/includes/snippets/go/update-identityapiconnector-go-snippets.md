@@ -19,7 +19,7 @@ options := &msgraphsdk.IdentityApiConnectorRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 identityApiConnectorId := "identityApiConnector-id"
-graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(options);
+graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(options)
 
 
 ```

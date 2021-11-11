@@ -16,7 +16,7 @@ options := &msgraphsdk.ActivateServiceRequestBuilderPostOptions{
 	Body: requestBody,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).ActivateService().Post(options);
+graphClient.OrganizationById(&organizationId).ActivateService().Post(options)
 
 
 ```

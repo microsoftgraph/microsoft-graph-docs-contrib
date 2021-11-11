@@ -14,7 +14,7 @@ options := &msgraphsdk.InstalledAppsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().Get(options);
+result, err := graphClient.UsersById(&userId).Teamwork().InstalledApps().Get(options)
 
 
 ```

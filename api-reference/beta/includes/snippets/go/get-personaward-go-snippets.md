@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 personAwardId := "personAward-id"
-result, err := graphClient.Me().Profile().AwardsById(&personAwardId).Get(options);
+result, err := graphClient.Me().Profile().AwardsById(&personAwardId).Get(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 siteId := "site-id"
 setId := "set-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Get(options);
+result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Get(options)
 
 
 ```

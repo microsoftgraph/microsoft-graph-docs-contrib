@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.HealthOverviewsRequestBuilderGetQueryParameters
 options := &msgraphsdk.HealthOverviewsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().Get(options);
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().Get(options)
 
 
 ```

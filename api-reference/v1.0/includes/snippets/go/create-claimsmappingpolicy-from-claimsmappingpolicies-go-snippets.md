@@ -16,7 +16,7 @@ requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.ClaimsMappingPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().ClaimsMappingPolicies().Post(options);
+result, err := graphClient.Policies().ClaimsMappingPolicies().Post(options)
 
 
 ```

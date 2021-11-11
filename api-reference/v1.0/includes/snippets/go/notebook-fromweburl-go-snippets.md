@@ -13,7 +13,7 @@ requestBody.SetWebUrl(&webUrl)
 options := &msgraphsdk.GetNotebookFromWebUrlRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(options);
+result, err := graphClient.Me().Onenote().Notebooks().GetNotebookFromWebUrl().Post(options)
 
 
 ```

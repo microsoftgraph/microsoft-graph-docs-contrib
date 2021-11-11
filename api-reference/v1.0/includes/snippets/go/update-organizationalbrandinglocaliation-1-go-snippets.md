@@ -20,7 +20,7 @@ options := &msgraphsdk.BrandingRequestBuilderPatchOptions{
 	H: headers,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Branding().Patch(options);
+graphClient.OrganizationById(&organizationId).Branding().Patch(options)
 
 
 ```

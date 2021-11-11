@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPutOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).ConnectorGroup().$ref().Put(options);
+graphClient.ApplicationsById(&applicationId).ConnectorGroup().$ref().Put(options)
 
 
 ```

@@ -27,7 +27,7 @@ requestBody.SetSupports(&supports)
 options := &msgraphsdk.WorkforceIntegrationsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Teamwork().WorkforceIntegrations().Post(options);
+result, err := graphClient.Teamwork().WorkforceIntegrations().Post(options)
 
 
 ```

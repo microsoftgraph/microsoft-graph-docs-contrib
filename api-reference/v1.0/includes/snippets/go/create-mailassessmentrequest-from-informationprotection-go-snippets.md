@@ -20,7 +20,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options);
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
 
 
 ```

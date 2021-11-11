@@ -17,7 +17,7 @@ requestBody.SetIds( []String {
 options := &msgraphsdk.CheckMemberObjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().CheckMemberObjects().Post(options);
+result, err := graphClient.Me().CheckMemberObjects().Post(options)
 
 
 ```

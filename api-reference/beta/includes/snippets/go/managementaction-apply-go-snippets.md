@@ -18,7 +18,7 @@ options := &msgraphsdk.ApplyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 managementActionId := "managementAction-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById(&managementActionId).Apply().Post(options);
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById(&managementActionId).Apply().Post(options)
 
 
 ```

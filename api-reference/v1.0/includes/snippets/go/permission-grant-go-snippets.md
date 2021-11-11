@@ -25,7 +25,7 @@ options := &msgraphsdk.GrantRequestBuilderPostOptions{
 	Body: requestBody,
 }
 sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant().Post(options);
+result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant().Post(options)
 
 
 ```

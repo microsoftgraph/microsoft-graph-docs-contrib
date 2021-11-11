@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 onenoteOperationId := "onenoteOperation-id"
-result, err := graphClient.Me().Onenote().OperationsById(&onenoteOperationId).Get(options);
+result, err := graphClient.Me().Onenote().OperationsById(&onenoteOperationId).Get(options)
 
 
 ```

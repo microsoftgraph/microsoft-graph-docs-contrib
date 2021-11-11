@@ -17,7 +17,7 @@ requestBody.SetMailTipsOptions(&mailTipsOptions)
 options := &msgraphsdk.GetMailTipsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().GetMailTips().Post(options);
+result, err := graphClient.Me().GetMailTips().Post(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 siteId := "site-id"
 sitePageId := "sitePage-id"
-result, err := graphClient.SitesById(&siteId).PagesById(&sitePageId).Get(options);
+result, err := graphClient.SitesById(&siteId).PagesById(&sitePageId).Get(options)
 
 
 ```

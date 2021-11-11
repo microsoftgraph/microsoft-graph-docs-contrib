@@ -14,7 +14,7 @@ options := &msgraphsdk.ChangeScreenSharingRoleRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole().Post(options);
+graphClient.Communications().CallsById(&callId).ChangeScreenSharingRole().Post(options)
 
 
 ```

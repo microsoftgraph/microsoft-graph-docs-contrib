@@ -14,7 +14,7 @@ options := &msgraphsdk.SubscribeToToneRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).SubscribeToTone().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).SubscribeToTone().Post(options)
 
 
 ```

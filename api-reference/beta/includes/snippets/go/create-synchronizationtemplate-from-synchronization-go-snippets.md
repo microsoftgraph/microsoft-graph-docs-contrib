@@ -18,7 +18,7 @@ options := &msgraphsdk.TemplatesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(options);
+result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(options)
 
 
 ```

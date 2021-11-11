@@ -14,7 +14,7 @@ options := &msgraphsdk.MuteRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Mute().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).Mute().Post(options)
 
 
 ```

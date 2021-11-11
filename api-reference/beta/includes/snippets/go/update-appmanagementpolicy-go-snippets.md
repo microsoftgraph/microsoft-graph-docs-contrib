@@ -14,7 +14,7 @@ options := &msgraphsdk.AppManagementPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 appManagementPolicyId := "appManagementPolicy-id"
-graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).Patch(options);
+graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).Patch(options)
 
 
 ```

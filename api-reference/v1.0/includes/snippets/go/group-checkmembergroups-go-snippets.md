@@ -15,7 +15,7 @@ options := &msgraphsdk.CheckMemberGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).CheckMemberGroups().Post(options);
+result, err := graphClient.GroupsById(&groupId).CheckMemberGroups().Post(options)
 
 
 ```

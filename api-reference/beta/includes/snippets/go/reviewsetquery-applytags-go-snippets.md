@@ -20,7 +20,7 @@ options := &msgraphsdk.ApplyTagsRequestBuilderPostOptions{
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags().Post(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags().Post(options)
 
 
 ```

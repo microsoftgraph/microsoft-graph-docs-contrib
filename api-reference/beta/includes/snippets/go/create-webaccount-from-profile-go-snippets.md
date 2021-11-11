@@ -21,7 +21,7 @@ service.SetWebUrl(&webUrl)
 options := &msgraphsdk.WebAccountsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().WebAccounts().Post(options);
+result, err := graphClient.Me().Profile().WebAccounts().Post(options)
 
 
 ```

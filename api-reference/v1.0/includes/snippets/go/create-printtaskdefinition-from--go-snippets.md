@@ -17,7 +17,7 @@ createdBy.SetDisplayName(&displayName)
 options := &msgraphsdk.TaskDefinitionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Print().TaskDefinitions().Post(options);
+result, err := graphClient.Print().TaskDefinitions().Post(options)
 
 
 ```

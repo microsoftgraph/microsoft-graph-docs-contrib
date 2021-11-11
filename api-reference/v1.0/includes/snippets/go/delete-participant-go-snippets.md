@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 callId := "call-id"
 participantId := "participant-id"
-graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Delete(options);
+graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Delete(options)
 
 
 ```

@@ -38,7 +38,7 @@ options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options)
 
 
 ```

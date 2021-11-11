@@ -20,7 +20,7 @@ options := &msgraphsdk.GenerateKeyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).GenerateKey().Post(options);
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).GenerateKey().Post(options)
 
 
 ```

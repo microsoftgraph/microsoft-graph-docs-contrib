@@ -16,7 +16,7 @@ options := &msgraphsdk.CopyToSectionRequestBuilderPostOptions{
 	Body: requestBody,
 }
 onenotePageId := "onenotePage-id"
-result, err := graphClient.Me().Onenote().PagesById(&onenotePageId).CopyToSection().Post(options);
+result, err := graphClient.Me().Onenote().PagesById(&onenotePageId).CopyToSection().Post(options)
 
 
 ```

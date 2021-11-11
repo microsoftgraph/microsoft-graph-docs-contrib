@@ -20,7 +20,7 @@ options := &msgraphsdk.NamedLocationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 namedLocationId := "namedLocation-id"
-graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options);
+graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options)
 
 
 ```

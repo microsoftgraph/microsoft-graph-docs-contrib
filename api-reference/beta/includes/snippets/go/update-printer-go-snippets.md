@@ -22,7 +22,7 @@ options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 printerId := "printer-id"
-graphClient.Print().PrintersById(&printerId).Patch(options);
+graphClient.Print().PrintersById(&printerId).Patch(options)
 
 
 ```

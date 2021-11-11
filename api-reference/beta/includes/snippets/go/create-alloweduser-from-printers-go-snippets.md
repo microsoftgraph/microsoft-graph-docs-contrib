@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 printerShareId := "printerShare-id"
-result, err := graphClient.Print().SharesById(&printerShareId).AllowedUsers().$ref().Post(options);
+result, err := graphClient.Print().SharesById(&printerShareId).AllowedUsers().$ref().Post(options)
 
 
 ```

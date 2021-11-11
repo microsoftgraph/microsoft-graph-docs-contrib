@@ -22,7 +22,7 @@ options := &msgraphsdk.ResourcesRequestBuilderPostOptions{
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Resources().Post(options);
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).Resources().Post(options)
 
 
 ```

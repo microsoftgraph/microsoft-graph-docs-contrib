@@ -20,7 +20,7 @@ options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
 	Body: requestBody,
 }
 setId := "set-id"
-result, err := graphClient.TermStore().SetsById(&setId).Children().Post(options);
+result, err := graphClient.TermStore().SetsById(&setId).Children().Post(options)
 
 
 ```

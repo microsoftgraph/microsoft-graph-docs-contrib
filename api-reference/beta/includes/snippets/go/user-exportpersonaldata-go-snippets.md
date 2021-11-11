@@ -14,7 +14,7 @@ options := &msgraphsdk.ExportPersonalDataRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).ExportPersonalData().Post(options);
+graphClient.UsersById(&userId).ExportPersonalData().Post(options)
 
 
 ```

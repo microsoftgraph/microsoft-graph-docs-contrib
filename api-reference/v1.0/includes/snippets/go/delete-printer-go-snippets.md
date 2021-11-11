@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 printerId := "printer-id"
-graphClient.Print().PrintersById(&printerId).Delete(options);
+graphClient.Print().PrintersById(&printerId).Delete(options)
 
 
 ```

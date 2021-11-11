@@ -14,7 +14,7 @@ options := &msgraphsdk.ForceDeleteRequestBuilderPostOptions{
 	Body: requestBody,
 }
 domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete().Post(options);
+graphClient.DomainsById(&domainId).ForceDelete().Post(options)
 
 
 ```

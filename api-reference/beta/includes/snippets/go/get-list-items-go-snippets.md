@@ -15,7 +15,7 @@ options := &msgraphsdk.ItemsRequestBuilderGetOptions{
 }
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Get(options);
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Get(options)
 
 
 ```

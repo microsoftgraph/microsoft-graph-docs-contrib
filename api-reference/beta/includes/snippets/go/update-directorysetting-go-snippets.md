@@ -19,7 +19,7 @@ options := &msgraphsdk.DirectorySettingRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 directorySettingId := "directorySetting-id"
-graphClient.SettingsById(&directorySettingId).Patch(options);
+graphClient.SettingsById(&directorySettingId).Patch(options)
 
 
 ```

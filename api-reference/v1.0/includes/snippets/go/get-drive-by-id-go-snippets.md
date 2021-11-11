@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 driveId := "drive-id"
-result, err := graphClient.DrivesById(&driveId).Get(options);
+result, err := graphClient.DrivesById(&driveId).Get(options)
 
 
 ```

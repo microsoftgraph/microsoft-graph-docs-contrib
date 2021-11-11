@@ -22,7 +22,7 @@ options := &msgraphsdk.CloneRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Clone().Post(options);
+graphClient.TeamsById(&teamId).Clone().Post(options)
 
 
 ```

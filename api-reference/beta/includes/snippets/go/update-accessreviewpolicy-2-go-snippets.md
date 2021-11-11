@@ -13,7 +13,7 @@ requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled)
 options := &msgraphsdk.PolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.IdentityGovernance().AccessReviews().Policy().Patch(options);
+graphClient.IdentityGovernance().AccessReviews().Policy().Patch(options)
 
 
 ```

@@ -22,7 +22,7 @@ educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
 educationOutcomeId := "educationOutcome-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(options);
+graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).OutcomesById(&educationOutcomeId).Patch(options)
 
 
 ```

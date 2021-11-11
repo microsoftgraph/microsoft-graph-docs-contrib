@@ -20,7 +20,7 @@ options := &msgraphsdk.SchedulingGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().SchedulingGroups().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().SchedulingGroups().Post(options)
 
 
 ```

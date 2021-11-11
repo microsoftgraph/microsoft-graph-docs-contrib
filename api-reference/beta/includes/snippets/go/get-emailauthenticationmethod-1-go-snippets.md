@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 emailAuthenticationMethodId := "emailAuthenticationMethod-id"
-result, err := graphClient.Me().Authentication().EmailMethodsById(&emailAuthenticationMethodId).Get(options);
+result, err := graphClient.Me().Authentication().EmailMethodsById(&emailAuthenticationMethodId).Get(options)
 
 
 ```

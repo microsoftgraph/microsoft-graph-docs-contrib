@@ -14,7 +14,7 @@ options := &msgraphsdk.DirectReportsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 orgContactId := "orgContact-id"
-graphClient.ContactsById(&orgContactId).DirectReports().Post(options);
+graphClient.ContactsById(&orgContactId).DirectReports().Post(options)
 
 
 ```

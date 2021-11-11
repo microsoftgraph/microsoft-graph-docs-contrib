@@ -14,7 +14,7 @@ options := &msgraphsdk.MoveRequestBuilderPostOptions{
 	Body: requestBody,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move().Post(options);
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Move().Post(options)
 
 
 ```

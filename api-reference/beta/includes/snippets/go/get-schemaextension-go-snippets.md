@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 schemaExtensionId := "schemaExtension-id"
-result, err := graphClient.SchemaExtensionsById(&schemaExtensionId).Get(options);
+result, err := graphClient.SchemaExtensionsById(&schemaExtensionId).Get(options)
 
 
 ```

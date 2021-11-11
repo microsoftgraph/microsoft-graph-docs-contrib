@@ -21,7 +21,7 @@ options := &msgraphsdk.LinkedResourcesRequestBuilderPostOptions{
 }
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(options);
+result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(options)
 
 
 ```

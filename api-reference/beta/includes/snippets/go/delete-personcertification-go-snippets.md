@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 userId := "user-id"
 personCertificationId := "personCertification-id"
-graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Delete(options);
+graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Delete(options)
 
 
 ```

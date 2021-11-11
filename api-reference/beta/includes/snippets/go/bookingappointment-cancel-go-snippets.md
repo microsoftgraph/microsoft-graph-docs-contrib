@@ -15,7 +15,7 @@ options := &msgraphsdk.CancelRequestBuilderPostOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingAppointmentId := "bookingAppointment-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Cancel().Post(options);
+graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Cancel().Post(options)
 
 
 ```

@@ -14,7 +14,7 @@ requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.TeamsAppsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().Get(options);
+result, err := graphClient.AppCatalogs().TeamsApps().Get(options)
 
 
 ```

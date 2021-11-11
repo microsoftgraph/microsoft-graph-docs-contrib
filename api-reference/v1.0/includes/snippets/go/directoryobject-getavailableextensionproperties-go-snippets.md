@@ -13,7 +13,7 @@ requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises)
 options := &msgraphsdk.GetAvailableExtensionPropertiesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(options);
+result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(options)
 
 
 ```

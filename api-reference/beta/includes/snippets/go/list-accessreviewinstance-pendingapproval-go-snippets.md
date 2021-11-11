@@ -15,7 +15,7 @@ requestParameters := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetQu
 options := &msgraphsdk.PendingAccessReviewInstancesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Me().PendingAccessReviewInstances().Get(options);
+result, err := graphClient.Me().PendingAccessReviewInstances().Get(options)
 
 
 ```

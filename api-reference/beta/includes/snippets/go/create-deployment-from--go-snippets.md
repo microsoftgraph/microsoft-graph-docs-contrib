@@ -40,7 +40,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.DeploymentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options);
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options)
 
 
 ```

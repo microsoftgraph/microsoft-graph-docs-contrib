@@ -32,7 +32,7 @@ options := &msgraphsdk.ReplyRequestBuilderPostOptions{
 }
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply().Post(options);
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply().Post(options)
 
 
 ```

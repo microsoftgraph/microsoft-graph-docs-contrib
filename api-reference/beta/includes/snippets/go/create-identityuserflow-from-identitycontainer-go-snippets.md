@@ -17,7 +17,7 @@ requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 options := &msgraphsdk.UserFlowsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().UserFlows().Post(options);
+result, err := graphClient.Identity().UserFlows().Post(options)
 
 
 ```

@@ -19,7 +19,7 @@ options := &msgraphsdk.TodoTaskRequestBuilderPatchOptions{
 }
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Patch(options);
+graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Patch(options)
 
 
 ```

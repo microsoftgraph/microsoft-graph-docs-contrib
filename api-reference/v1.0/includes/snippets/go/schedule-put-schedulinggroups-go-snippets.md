@@ -25,7 +25,7 @@ options := &msgraphsdk.SchedulingGroupRequestBuilderPutOptions{
 }
 teamId := "team-id"
 schedulingGroupId := "schedulingGroup-id"
-graphClient.TeamsById(&teamId).Schedule().SchedulingGroupsById(&schedulingGroupId).Put(options);
+graphClient.TeamsById(&teamId).Schedule().SchedulingGroupsById(&schedulingGroupId).Put(options)
 
 
 ```

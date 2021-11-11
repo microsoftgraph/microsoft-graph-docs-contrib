@@ -16,7 +16,7 @@ options := &msgraphsdk.EducationCategoryRequestBuilderPostOptions{
 }
 educationClassId := "educationClass-id"
 educationCategoryId := "educationCategory-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentCategoriesById(&educationCategoryId).Post(options);
+graphClient.Education().ClassesById(&educationClassId).AssignmentCategoriesById(&educationCategoryId).Post(options)
 
 
 ```

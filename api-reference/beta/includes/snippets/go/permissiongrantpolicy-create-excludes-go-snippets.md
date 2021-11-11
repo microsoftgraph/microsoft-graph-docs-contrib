@@ -16,7 +16,7 @@ options := &msgraphsdk.ExcludesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Excludes().Post(options);
+result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Excludes().Post(options)
 
 
 ```

@@ -25,7 +25,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(options);
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(options)
 
 
 ```

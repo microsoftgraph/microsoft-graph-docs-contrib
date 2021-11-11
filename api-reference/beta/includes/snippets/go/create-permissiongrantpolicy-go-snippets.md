@@ -17,7 +17,7 @@ requestBody.SetDescription(&description)
 options := &msgraphsdk.PermissionGrantPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().PermissionGrantPolicies().Post(options);
+result, err := graphClient.Policies().PermissionGrantPolicies().Post(options)
 
 
 ```

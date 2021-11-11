@@ -15,7 +15,7 @@ requestBody.SetValue( []String {
 options := &msgraphsdk.DeleteTiIndicatorsByExternalIdRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(options);
+result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(options)
 
 
 ```

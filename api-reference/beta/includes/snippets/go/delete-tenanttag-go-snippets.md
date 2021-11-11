@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 tenantTagId := "tenantTag-id"
-graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Delete(options);
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Delete(options)
 
 
 ```

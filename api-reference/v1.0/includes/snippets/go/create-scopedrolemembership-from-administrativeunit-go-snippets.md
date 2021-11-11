@@ -18,7 +18,7 @@ options := &msgraphsdk.ScopedRoleMembersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).ScopedRoleMembers().Post(options);
+result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).ScopedRoleMembers().Post(options)
 
 
 ```

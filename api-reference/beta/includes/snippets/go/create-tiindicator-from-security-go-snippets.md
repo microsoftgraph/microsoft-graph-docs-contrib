@@ -41,7 +41,7 @@ requestBody.SetTlpLevel(&tlpLevel)
 options := &msgraphsdk.TiIndicatorsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Security().TiIndicators().Post(options);
+result, err := graphClient.Security().TiIndicators().Post(options)
 
 
 ```

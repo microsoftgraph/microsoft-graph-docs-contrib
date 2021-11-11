@@ -16,7 +16,7 @@ options := &msgraphsdk.RemoveKeyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).RemoveKey().Post(options);
+graphClient.ServicePrincipalsById(&servicePrincipalId).RemoveKey().Post(options)
 
 
 ```

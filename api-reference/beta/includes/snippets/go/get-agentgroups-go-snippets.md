@@ -14,7 +14,7 @@ options := &msgraphsdk.AgentGroupsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroups().Get(options);
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroups().Get(options)
 
 
 ```

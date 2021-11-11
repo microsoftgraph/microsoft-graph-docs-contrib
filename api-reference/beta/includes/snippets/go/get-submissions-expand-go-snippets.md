@@ -15,7 +15,7 @@ options := &msgraphsdk.SubmissionsRequestBuilderGetOptions{
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().Get(options);
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Submissions().Get(options)
 
 
 ```

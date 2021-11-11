@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters
 options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(options);
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(options)
 
 
 ```

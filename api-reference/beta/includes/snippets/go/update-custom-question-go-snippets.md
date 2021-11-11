@@ -22,7 +22,7 @@ options := &msgraphsdk.MeetingRegistrationQuestionRequestBuilderPatchOptions{
 }
 onlineMeetingId := "onlineMeeting-id"
 meetingRegistrationQuestionId := "meetingRegistrationQuestion-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(options);
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(options)
 
 
 ```

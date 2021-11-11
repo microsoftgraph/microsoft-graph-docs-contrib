@@ -20,7 +20,7 @@ options := &msgraphsdk.PermissionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Permissions().Post(options);
+result, err := graphClient.SitesById(&siteId).Permissions().Post(options)
 
 
 ```

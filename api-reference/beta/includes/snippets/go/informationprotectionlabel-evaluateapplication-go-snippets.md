@@ -87,7 +87,7 @@ options := &msgraphsdk.EvaluateApplicationRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(options);
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(options)
 
 
 ```

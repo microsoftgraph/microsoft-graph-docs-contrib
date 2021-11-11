@@ -15,7 +15,7 @@ options := &msgraphsdk.IdentityUserFlowAttributeAssignmentRequestBuilderPatchOpt
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 identityUserFlowAttributeAssignmentId := "identityUserFlowAttributeAssignment-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Patch(options);
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Patch(options)
 
 
 ```

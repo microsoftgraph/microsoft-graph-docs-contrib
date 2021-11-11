@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Delete(options);
+graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Delete(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.AccessPackageRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Get(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Get(options)
 
 
 ```

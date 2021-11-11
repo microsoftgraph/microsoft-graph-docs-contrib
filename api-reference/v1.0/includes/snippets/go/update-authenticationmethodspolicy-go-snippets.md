@@ -24,7 +24,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options);
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
 
 
 ```

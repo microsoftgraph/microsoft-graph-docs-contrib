@@ -15,7 +15,7 @@ requestBody.SetMessageIds( []String {
 options := &msgraphsdk.ArchiveRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Archive().Post(options);
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Archive().Post(options)
 
 
 ```

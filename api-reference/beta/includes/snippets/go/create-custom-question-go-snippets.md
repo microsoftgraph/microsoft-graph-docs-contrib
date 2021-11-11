@@ -18,7 +18,7 @@ options := &msgraphsdk.CustomQuestionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestions().Post(options);
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestions().Post(options)
 
 
 ```

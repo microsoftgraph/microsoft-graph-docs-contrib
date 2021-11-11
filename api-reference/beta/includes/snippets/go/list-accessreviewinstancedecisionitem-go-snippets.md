@@ -16,7 +16,7 @@ options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
 }
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().Get(options);
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Decisions().Get(options)
 
 
 ```

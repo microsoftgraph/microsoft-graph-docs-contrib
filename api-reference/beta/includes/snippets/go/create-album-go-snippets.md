@@ -26,7 +26,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.BundlesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Drive().Bundles().Post(options);
+result, err := graphClient.Drive().Bundles().Post(options)
 
 
 ```

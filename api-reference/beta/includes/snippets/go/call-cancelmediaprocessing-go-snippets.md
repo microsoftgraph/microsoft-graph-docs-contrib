@@ -14,7 +14,7 @@ options := &msgraphsdk.CancelMediaProcessingRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).CancelMediaProcessing().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).CancelMediaProcessing().Post(options)
 
 
 ```

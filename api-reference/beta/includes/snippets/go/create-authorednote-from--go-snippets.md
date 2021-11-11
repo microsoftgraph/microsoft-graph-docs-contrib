@@ -18,7 +18,7 @@ options := &msgraphsdk.NotesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 subjectRightsRequestId := "subjectRightsRequest-id"
-result, err := graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Notes().Post(options);
+result, err := graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Notes().Post(options)
 
 
 ```

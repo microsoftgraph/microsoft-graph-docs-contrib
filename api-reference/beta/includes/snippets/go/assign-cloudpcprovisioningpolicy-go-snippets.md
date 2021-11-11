@@ -21,7 +21,7 @@ options := &msgraphsdk.AssignRequestBuilderPostOptions{
 	Body: requestBody,
 }
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign().Post(options);
+graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign().Post(options)
 
 
 ```

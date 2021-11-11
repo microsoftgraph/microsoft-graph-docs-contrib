@@ -17,7 +17,7 @@ requestBody.SetVisibility(&visibility)
 options := &msgraphsdk.AdministrativeUnitsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Directory().AdministrativeUnits().Post(options);
+result, err := graphClient.Directory().AdministrativeUnits().Post(options)
 
 
 ```

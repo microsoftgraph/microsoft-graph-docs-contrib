@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 contactFolderId := "contactFolder-id"
-graphClient.Me().ContactFoldersById(&contactFolderId).Delete(options);
+graphClient.Me().ContactFoldersById(&contactFolderId).Delete(options)
 
 
 ```

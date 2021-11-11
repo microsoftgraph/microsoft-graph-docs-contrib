@@ -14,7 +14,7 @@ options := &msgraphsdk.CalendarGroupRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 calendarGroupId := "calendarGroup-id"
-graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(options);
+graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(options)
 
 
 ```

@@ -17,7 +17,7 @@ options := &msgraphsdk.PersonCertificationRequestBuilderPatchOptions{
 }
 userId := "user-id"
 personCertificationId := "personCertification-id"
-graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(options);
+graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(options)
 
 
 ```

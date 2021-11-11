@@ -14,7 +14,7 @@ options := &msgraphsdk.DriveItemRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).DriveItem().Get(options);
+result, err := graphClient.SharesById(&sharedDriveItemId).DriveItem().Get(options)
 
 
 ```

@@ -16,7 +16,7 @@ requestBody.SetOfficeLocation(&officeLocation)
 options := &msgraphsdk.MeRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Me().Patch(options);
+graphClient.Me().Patch(options)
 
 
 ```

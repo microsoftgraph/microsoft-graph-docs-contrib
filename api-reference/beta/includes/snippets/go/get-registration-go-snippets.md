@@ -14,7 +14,7 @@ options := &msgraphsdk.RegistrationRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Get(options);
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Get(options)
 
 
 ```

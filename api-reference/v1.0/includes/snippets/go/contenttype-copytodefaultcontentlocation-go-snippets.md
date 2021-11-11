@@ -23,7 +23,7 @@ options := &msgraphsdk.CopyToDefaultContentLocationRequestBuilderPostOptions{
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation().Post(options);
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation().Post(options)
 
 
 ```

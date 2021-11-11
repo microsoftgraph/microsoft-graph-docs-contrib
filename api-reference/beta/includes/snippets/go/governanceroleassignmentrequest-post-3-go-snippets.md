@@ -26,7 +26,7 @@ options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options);
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
 
 
 ```

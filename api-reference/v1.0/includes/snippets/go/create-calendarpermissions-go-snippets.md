@@ -23,7 +23,7 @@ requestBody.SetRole(&role)
 options := &msgraphsdk.CalendarPermissionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Calendar().CalendarPermissions().Post(options);
+result, err := graphClient.Me().Calendar().CalendarPermissions().Post(options)
 
 
 ```

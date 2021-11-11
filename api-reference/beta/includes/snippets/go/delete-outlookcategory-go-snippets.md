@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 outlookCategoryId := "outlookCategory-id"
-graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Delete(options);
+graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Delete(options)
 
 
 ```

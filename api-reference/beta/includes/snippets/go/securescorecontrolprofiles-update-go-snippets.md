@@ -14,7 +14,7 @@ options := &msgraphsdk.SecureScoreControlProfileRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 secureScoreControlProfileId := "secureScoreControlProfile-id"
-graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(options);
+graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(options)
 
 
 ```

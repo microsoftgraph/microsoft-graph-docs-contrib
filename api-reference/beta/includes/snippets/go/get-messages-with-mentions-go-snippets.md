@@ -14,7 +14,7 @@ requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 options := &msgraphsdk.MessagesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Me().Messages().Get(options);
+result, err := graphClient.Me().Messages().Get(options)
 
 
 ```

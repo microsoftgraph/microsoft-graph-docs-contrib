@@ -20,7 +20,7 @@ options := &msgraphsdk.InviteRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().Invite().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).Participants().Invite().Post(options)
 
 
 ```

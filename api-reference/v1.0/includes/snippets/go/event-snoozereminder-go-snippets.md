@@ -18,7 +18,7 @@ options := &msgraphsdk.SnoozeReminderRequestBuilderPostOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).SnoozeReminder().Post(options);
+graphClient.Me().EventsById(&eventId).SnoozeReminder().Post(options)
 
 
 ```

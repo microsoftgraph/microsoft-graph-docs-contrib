@@ -37,7 +37,7 @@ requestBody.SetValues( []SettingValue {
 options := &msgraphsdk.SettingsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Settings().Post(options);
+result, err := graphClient.Settings().Post(options)
 
 
 ```

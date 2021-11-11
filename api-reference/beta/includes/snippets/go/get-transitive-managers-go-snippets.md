@@ -19,7 +19,7 @@ options := &msgraphsdk.MeRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.Me().Get(options);
+result, err := graphClient.Me().Get(options)
 
 
 ```

@@ -72,7 +72,7 @@ options := &msgraphsdk.ExtractLabelRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(options);
+result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(options)
 
 
 ```

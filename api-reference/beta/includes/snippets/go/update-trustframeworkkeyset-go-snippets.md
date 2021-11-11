@@ -16,7 +16,7 @@ options := &msgraphsdk.TrustFrameworkKeySetRequestBuilderPutOptions{
 	Body: requestBody,
 }
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Put(options);
+graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).Put(options)
 
 
 ```

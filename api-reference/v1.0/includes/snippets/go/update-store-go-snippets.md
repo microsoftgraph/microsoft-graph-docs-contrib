@@ -14,7 +14,7 @@ options := &msgraphsdk.TermStoreRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 siteId := "site-id"
-graphClient.SitesById(&siteId).TermStore().Patch(options);
+graphClient.SitesById(&siteId).TermStore().Patch(options)
 
 
 ```

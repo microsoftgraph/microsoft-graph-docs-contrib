@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.DefinitionsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.DefinitionsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(options);
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(options)
 
 
 ```

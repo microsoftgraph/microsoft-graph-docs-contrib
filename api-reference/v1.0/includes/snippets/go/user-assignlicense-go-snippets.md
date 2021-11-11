@@ -23,7 +23,7 @@ requestBody.SetRemoveLicenses( []String {
 options := &msgraphsdk.AssignLicenseRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().AssignLicense().Post(options);
+result, err := graphClient.Me().AssignLicense().Post(options)
 
 
 ```

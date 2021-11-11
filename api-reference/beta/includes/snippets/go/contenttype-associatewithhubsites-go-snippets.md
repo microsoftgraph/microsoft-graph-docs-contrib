@@ -18,7 +18,7 @@ options := &msgraphsdk.AssociateWithHubSitesRequestBuilderPostOptions{
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites().Post(options);
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites().Post(options)
 
 
 ```

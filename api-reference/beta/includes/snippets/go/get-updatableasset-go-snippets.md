@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 updatableAssetId := "updatableAsset-id"
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).Get(options);
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).Get(options)
 
 
 ```

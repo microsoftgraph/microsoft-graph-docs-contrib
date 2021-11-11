@@ -29,7 +29,7 @@ requestBody.SetRoleId(&roleId)
 options := &msgraphsdk.PrivilegedRoleAssignmentRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(options);
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(options)
 
 
 ```

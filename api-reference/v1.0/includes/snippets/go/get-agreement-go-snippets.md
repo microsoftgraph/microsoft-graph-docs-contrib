@@ -14,7 +14,7 @@ options := &msgraphsdk.AgreementRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Get(options);
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Get(options)
 
 
 ```

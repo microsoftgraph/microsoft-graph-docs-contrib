@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Delete(options);
+graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Delete(options)
 
 
 ```

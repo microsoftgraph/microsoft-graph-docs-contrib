@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 printTaskDefinitionId := "printTaskDefinition-id"
-graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Delete(options);
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Delete(options)
 
 
 ```

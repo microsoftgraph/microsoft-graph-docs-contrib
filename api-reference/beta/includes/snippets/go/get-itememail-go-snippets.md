@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 userId := "user-id"
 itemEmailId := "itemEmail-id"
-result, err := graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Get(options);
+result, err := graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Get(options)
 
 
 ```

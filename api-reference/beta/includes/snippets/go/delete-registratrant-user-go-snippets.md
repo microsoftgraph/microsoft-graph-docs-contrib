@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 userId := "user-id"
 onlineMeetingId := "onlineMeeting-id"
 meetingRegistrantId := "meetingRegistrant-id"
-graphClient.UsersById(&userId).OnlineMeetingsById(&onlineMeetingId).Registration().RegistrantsById(&meetingRegistrantId).Delete(options);
+graphClient.UsersById(&userId).OnlineMeetingsById(&onlineMeetingId).Registration().RegistrantsById(&meetingRegistrantId).Delete(options)
 
 
 ```

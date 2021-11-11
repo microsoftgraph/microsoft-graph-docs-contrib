@@ -14,7 +14,7 @@ options := &msgraphsdk.JobsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().Jobs().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().Jobs().Post(options)
 
 
 ```

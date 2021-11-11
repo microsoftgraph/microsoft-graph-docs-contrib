@@ -38,7 +38,7 @@ requestApprovalSettings.SetApprovalStages( []ApprovalStage {
 options := &msgraphsdk.AccessPackageAssignmentPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(options)
 
 
 ```

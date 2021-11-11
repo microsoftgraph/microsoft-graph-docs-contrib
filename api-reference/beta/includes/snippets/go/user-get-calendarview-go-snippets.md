@@ -14,7 +14,7 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
 options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Me().CalendarView().Get(options);
+result, err := graphClient.Me().CalendarView().Get(options)
 
 
 ```

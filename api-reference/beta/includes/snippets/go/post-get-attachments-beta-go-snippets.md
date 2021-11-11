@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Attachments().Get(options);
+result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Attachments().Get(options)
 
 
 ```

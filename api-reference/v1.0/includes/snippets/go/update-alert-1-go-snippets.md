@@ -32,7 +32,7 @@ options := &msgraphsdk.AlertRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 alertId := "alert-id"
-graphClient.Security().AlertsById(&alertId).Patch(options);
+graphClient.Security().AlertsById(&alertId).Patch(options)
 
 
 ```

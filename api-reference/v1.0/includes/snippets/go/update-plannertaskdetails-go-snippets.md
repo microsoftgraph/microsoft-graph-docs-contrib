@@ -15,7 +15,7 @@ options := &msgraphsdk.DetailsRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).Details().Patch(options);
+graphClient.Planner().TasksById(&plannerTaskId).Details().Patch(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.DeletePasswordSingleSignOnCredentialsRequestBuilderPostOp
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).DeletePasswordSingleSignOnCredentials().Post(options);
+graphClient.ServicePrincipalsById(&servicePrincipalId).DeletePasswordSingleSignOnCredentials().Post(options)
 
 
 ```

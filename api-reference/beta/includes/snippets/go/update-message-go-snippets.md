@@ -22,7 +22,7 @@ options := &msgraphsdk.MessageRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Patch(options);
+graphClient.Me().MessagesById(&messageId).Patch(options)
 
 
 ```

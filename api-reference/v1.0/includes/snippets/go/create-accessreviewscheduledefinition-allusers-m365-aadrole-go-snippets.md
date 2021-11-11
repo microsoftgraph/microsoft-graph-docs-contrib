@@ -79,7 +79,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options);
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
 
 
 ```

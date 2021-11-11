@@ -16,7 +16,7 @@ options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
 }
 connectedOrganizationId := "connectedOrganization-id"
 directoryObjectId := "directoryObject-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).InternalSponsorsById(&directoryObjectId).Post(options);
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).InternalSponsorsById(&directoryObjectId).Post(options)
 
 
 ```

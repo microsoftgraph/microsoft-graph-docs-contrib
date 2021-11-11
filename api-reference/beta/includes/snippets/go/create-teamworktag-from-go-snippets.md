@@ -24,7 +24,7 @@ options := &msgraphsdk.TagsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Tags().Post(options);
+result, err := graphClient.TeamsById(&teamId).Tags().Post(options)
 
 
 ```

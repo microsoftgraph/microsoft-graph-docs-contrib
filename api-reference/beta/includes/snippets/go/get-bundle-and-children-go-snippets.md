@@ -14,7 +14,7 @@ options := &msgraphsdk.DriveItemRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 driveItemId := "driveItem-id"
-result, err := graphClient.Drive().ItemsById(&driveItemId).Get(options);
+result, err := graphClient.Drive().ItemsById(&driveItemId).Get(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.GetMemberObjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 orgContactId := "orgContact-id"
-result, err := graphClient.ContactsById(&orgContactId).GetMemberObjects().Post(options);
+result, err := graphClient.ContactsById(&orgContactId).GetMemberObjects().Post(options)
 
 
 ```

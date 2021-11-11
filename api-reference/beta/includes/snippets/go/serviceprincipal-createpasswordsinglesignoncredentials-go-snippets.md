@@ -28,7 +28,7 @@ options := &msgraphsdk.CreatePasswordSingleSignOnCredentialsRequestBuilderPostOp
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CreatePasswordSingleSignOnCredentials().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CreatePasswordSingleSignOnCredentials().Post(options)
 
 
 ```

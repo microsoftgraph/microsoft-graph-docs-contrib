@@ -25,7 +25,7 @@ message.SetMentions( []Mention {
 options := &msgraphsdk.SendMailRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Me().SendMail().Post(options);
+graphClient.Me().SendMail().Post(options)
 
 
 ```

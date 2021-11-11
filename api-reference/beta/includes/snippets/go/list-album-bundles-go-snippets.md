@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.BundlesRequestBuilderGetQueryParameters{
 options := &msgraphsdk.BundlesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Drive().Bundles().Get(options);
+result, err := graphClient.Drive().Bundles().Get(options)
 
 
 ```

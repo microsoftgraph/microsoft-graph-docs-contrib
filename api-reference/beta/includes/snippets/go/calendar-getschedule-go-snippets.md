@@ -33,7 +33,7 @@ options := &msgraphsdk.GetScheduleRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.Me().Calendar().GetSchedule().Post(options);
+result, err := graphClient.Me().Calendar().GetSchedule().Post(options)
 
 
 ```

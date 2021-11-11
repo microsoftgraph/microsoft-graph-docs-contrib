@@ -18,7 +18,7 @@ options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions().Post(options);
+graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions().Post(options)
 
 
 ```

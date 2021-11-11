@@ -27,7 +27,7 @@ detail.SetPostalCode(&postalCode)
 options := &msgraphsdk.AddressesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Addresses().Post(options);
+result, err := graphClient.Me().Profile().Addresses().Post(options)
 
 
 ```

@@ -15,7 +15,7 @@ options := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResourceRoles().Get(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResourceRoles().Get(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.SchemaExtensionsRequestBuilderGetQueryParameter
 options := &msgraphsdk.SchemaExtensionsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.SchemaExtensions().Get(options);
+result, err := graphClient.SchemaExtensions().Get(options)
 
 
 ```

@@ -15,7 +15,7 @@ requestBody.SetIds( []String {
 options := &msgraphsdk.GetPresencesByUserIdRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Communications().GetPresencesByUserId().Post(options);
+result, err := graphClient.Communications().GetPresencesByUserId().Post(options)
 
 
 ```

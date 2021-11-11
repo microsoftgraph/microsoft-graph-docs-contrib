@@ -16,7 +16,7 @@ options := &msgraphsdk.AssignmentDefaultsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentDefaults().Patch(options);
+graphClient.Education().ClassesById(&educationClassId).AssignmentDefaults().Patch(options)
 
 
 ```

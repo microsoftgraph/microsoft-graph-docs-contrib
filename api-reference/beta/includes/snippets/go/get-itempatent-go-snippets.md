@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 itemPatentId := "itemPatent-id"
-result, err := graphClient.Me().Profile().PatentsById(&itemPatentId).Get(options);
+result, err := graphClient.Me().Profile().PatentsById(&itemPatentId).Get(options)
 
 
 ```

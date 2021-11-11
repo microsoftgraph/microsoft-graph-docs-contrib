@@ -20,7 +20,7 @@ options := &msgraphsdk.CreateUploadSessionRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession().Post(options)
 
 
 ```

@@ -11,7 +11,7 @@ siteId := "site-id"
 groupId := "group-id"
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get(options);
+result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get(options)
 
 
 ```

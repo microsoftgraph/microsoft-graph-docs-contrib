@@ -19,7 +19,7 @@ options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
 	H: headers,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).CalendarView().Get(options);
+result, err := graphClient.GroupsById(&groupId).CalendarView().Get(options)
 
 
 ```

@@ -18,7 +18,7 @@ options := &msgraphsdk.ShareRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Share().Post(options);
+graphClient.TeamsById(&teamId).Schedule().Share().Post(options)
 
 
 ```

@@ -38,7 +38,7 @@ message.SetInternetMessageHeaders( []InternetMessageHeader {
 options := &msgraphsdk.SendMailRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Me().SendMail().Post(options);
+graphClient.Me().SendMail().Post(options)
 
 
 ```

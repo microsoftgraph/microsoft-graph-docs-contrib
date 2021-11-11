@@ -14,7 +14,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.RostersRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Planner().Rosters().Post(options);
+result, err := graphClient.Planner().Rosters().Post(options)
 
 
 ```

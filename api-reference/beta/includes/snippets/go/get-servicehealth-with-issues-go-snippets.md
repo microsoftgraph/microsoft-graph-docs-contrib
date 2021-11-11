@@ -14,7 +14,7 @@ options := &msgraphsdk.ServiceHealthRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 serviceHealthId := "serviceHealth-id"
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById(&serviceHealthId).Get(options);
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById(&serviceHealthId).Get(options)
 
 
 ```

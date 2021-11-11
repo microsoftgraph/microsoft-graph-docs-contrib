@@ -25,7 +25,7 @@ requestBody.SetValue( []Alert {
 options := &msgraphsdk.UpdateAlertsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(options);
+result, err := graphClient.Security().Alerts().UpdateAlerts().Post(options)
 
 
 ```

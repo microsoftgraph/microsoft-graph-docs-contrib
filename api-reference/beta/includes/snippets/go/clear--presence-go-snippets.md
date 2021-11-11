@@ -14,7 +14,7 @@ options := &msgraphsdk.ClearPresenceRequestBuilderPostOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().ClearPresence().Post(options);
+graphClient.UsersById(&userId).Presence().ClearPresence().Post(options)
 
 
 ```

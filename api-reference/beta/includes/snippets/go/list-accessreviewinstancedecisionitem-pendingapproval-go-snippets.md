@@ -15,7 +15,7 @@ options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().Get(options);
+result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().Get(options)
 
 
 ```

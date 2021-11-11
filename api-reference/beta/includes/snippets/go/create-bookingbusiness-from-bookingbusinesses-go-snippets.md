@@ -37,7 +37,7 @@ requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso)
 options := &msgraphsdk.BookingBusinessesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.BookingBusinesses().Post(options);
+result, err := graphClient.BookingBusinesses().Post(options)
 
 
 ```

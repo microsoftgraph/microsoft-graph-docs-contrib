@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 siteId := "site-id"
 contentTypeId := "contentType-id"
 columnDefinitionId := "columnDefinition-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Delete(options);
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Delete(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.CopyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Copy().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).Copy().Post(options)
 
 
 ```

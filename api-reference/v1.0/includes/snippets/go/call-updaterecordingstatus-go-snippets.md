@@ -16,7 +16,7 @@ options := &msgraphsdk.UpdateRecordingStatusRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus().Post(options);
+result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus().Post(options)
 
 
 ```

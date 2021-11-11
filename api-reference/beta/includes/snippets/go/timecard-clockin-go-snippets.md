@@ -21,7 +21,7 @@ options := &msgraphsdk.ClockInRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn().Post(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().ClockIn().Post(options)
 
 
 ```

@@ -17,7 +17,7 @@ requestBody.SetOrderHint(&orderHint)
 options := &msgraphsdk.BucketsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Planner().Buckets().Post(options);
+result, err := graphClient.Planner().Buckets().Post(options)
 
 
 ```

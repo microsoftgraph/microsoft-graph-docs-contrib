@@ -20,7 +20,7 @@ requestBody.SetAssets( []UpdatableAsset {
 options := &msgraphsdk.EnrollAssetsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(options);
+graphClient.Admin().Windows().Updates().UpdatableAssets().EnrollAssets().Post(options)
 
 
 ```

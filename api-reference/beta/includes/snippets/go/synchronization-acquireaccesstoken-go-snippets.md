@@ -18,7 +18,7 @@ options := &msgraphsdk.AcquireAccessTokenRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken().Post(options);
+graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken().Post(options)
 
 
 ```

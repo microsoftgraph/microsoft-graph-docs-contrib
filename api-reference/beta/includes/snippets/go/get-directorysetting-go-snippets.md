@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 directorySettingId := "directorySetting-id"
-result, err := graphClient.SettingsById(&directorySettingId).Get(options);
+result, err := graphClient.SettingsById(&directorySettingId).Get(options)
 
 
 ```

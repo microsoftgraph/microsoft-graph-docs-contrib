@@ -16,7 +16,7 @@ options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
 }
 featureRolloutPolicyId := "featureRolloutPolicy-id"
 directoryObjectId := "directoryObject-id"
-graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).AppliesToById(&directoryObjectId).Post(options);
+graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).AppliesToById(&directoryObjectId).Post(options)
 
 
 ```

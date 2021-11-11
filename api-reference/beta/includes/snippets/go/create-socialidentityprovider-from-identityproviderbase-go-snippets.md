@@ -19,7 +19,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().IdentityProviders().Post(options);
+result, err := graphClient.Identity().IdentityProviders().Post(options)
 
 
 ```

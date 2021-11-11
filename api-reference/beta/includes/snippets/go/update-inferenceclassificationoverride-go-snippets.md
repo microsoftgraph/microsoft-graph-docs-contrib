@@ -14,7 +14,7 @@ options := &msgraphsdk.InferenceClassificationOverrideRequestBuilderPatchOptions
 	Body: requestBody,
 }
 inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
-graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Patch(options);
+graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Patch(options)
 
 
 ```

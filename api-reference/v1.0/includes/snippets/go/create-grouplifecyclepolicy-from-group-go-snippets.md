@@ -17,7 +17,7 @@ requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails)
 options := &msgraphsdk.GroupLifecyclePoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.GroupLifecyclePolicies().Post(options);
+result, err := graphClient.GroupLifecyclePolicies().Post(options)
 
 
 ```

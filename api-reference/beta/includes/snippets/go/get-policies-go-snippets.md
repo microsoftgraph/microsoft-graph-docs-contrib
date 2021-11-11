@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.PoliciesRequestBuilderGetQueryParameters{
 options := &msgraphsdk.PoliciesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().Policies().Get(options);
+result, err := graphClient.Identity().ConditionalAccess().Policies().Get(options)
 
 
 ```

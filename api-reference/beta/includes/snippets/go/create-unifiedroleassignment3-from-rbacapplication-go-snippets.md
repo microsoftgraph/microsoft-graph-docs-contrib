@@ -17,7 +17,7 @@ requestBody.SetAppScopeId(&appScopeId)
 options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(options);
+result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(options)
 
 
 ```

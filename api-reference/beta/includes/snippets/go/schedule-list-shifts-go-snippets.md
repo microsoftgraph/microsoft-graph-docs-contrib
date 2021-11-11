@@ -14,7 +14,7 @@ options := &msgraphsdk.ShiftsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Get(options);
+result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Get(options)
 
 
 ```

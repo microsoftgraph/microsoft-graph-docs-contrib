@@ -18,7 +18,7 @@ requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
 options := &msgraphsdk.ActivityBasedTimeoutPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Post(options);
+result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Post(options)
 
 
 ```

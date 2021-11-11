@@ -103,7 +103,7 @@ quality.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.LogTeleconferenceDeviceQualityRequestBuilderPostOptions{
 	Body: requestBody,
 }
-graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(options);
+graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(options)
 
 
 ```

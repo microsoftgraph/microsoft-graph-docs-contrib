@@ -20,7 +20,7 @@ requestBody.SetWebUrl(&webUrl)
 options := &msgraphsdk.InterestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Interests().Post(options);
+result, err := graphClient.Me().Profile().Interests().Post(options)
 
 
 ```

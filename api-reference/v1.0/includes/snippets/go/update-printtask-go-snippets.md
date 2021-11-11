@@ -19,7 +19,7 @@ options := &msgraphsdk.PrintTaskRequestBuilderPatchOptions{
 }
 printTaskDefinitionId := "printTaskDefinition-id"
 printTaskId := "printTask-id"
-graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(options);
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(options)
 
 
 ```

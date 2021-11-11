@@ -15,7 +15,7 @@ options := &msgraphsdk.LegalHoldRequestBuilderPatchOptions{
 }
 caseId := "case-id"
 legalHoldId := "legalHold-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).Patch(options);
+graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).Patch(options)
 
 
 ```

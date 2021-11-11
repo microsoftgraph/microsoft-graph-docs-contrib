@@ -15,7 +15,7 @@ options := &msgraphsdk.AddCopyRequestBuilderPostOptions{
 }
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ContentTypes().AddCopy().Post(options);
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ContentTypes().AddCopy().Post(options)
 
 
 ```

@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppManagementPolicies().$ref().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppManagementPolicies().$ref().Post(options)
 
 
 ```

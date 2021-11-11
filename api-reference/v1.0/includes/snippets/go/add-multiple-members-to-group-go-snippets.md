@@ -19,7 +19,7 @@ options := &msgraphsdk.GroupRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-graphClient.GroupsById(&groupId).Patch(options);
+graphClient.GroupsById(&groupId).Patch(options)
 
 
 ```

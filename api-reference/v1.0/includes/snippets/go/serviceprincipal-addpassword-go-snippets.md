@@ -16,7 +16,7 @@ options := &msgraphsdk.AddPasswordRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword().Post(options)
 
 
 ```

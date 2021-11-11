@@ -50,7 +50,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Education().Schools().Post(options);
+result, err := graphClient.Education().Schools().Post(options)
 
 
 ```

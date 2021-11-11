@@ -14,7 +14,7 @@ options := &msgraphsdk.ReplyAllRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).ReplyAll().Post(options);
+graphClient.Me().MessagesById(&messageId).ReplyAll().Post(options)
 
 
 ```

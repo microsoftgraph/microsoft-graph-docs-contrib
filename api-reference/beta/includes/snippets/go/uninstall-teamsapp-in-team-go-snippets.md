@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 teamId := "team-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Delete(options);
+graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Delete(options)
 
 
 ```

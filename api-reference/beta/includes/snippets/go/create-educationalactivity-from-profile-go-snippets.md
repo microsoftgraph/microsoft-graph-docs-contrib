@@ -55,7 +55,7 @@ requestBody.SetStartMonthYear(&startMonthYear)
 options := &msgraphsdk.EducationalActivitiesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().EducationalActivities().Post(options);
+result, err := graphClient.Me().Profile().EducationalActivities().Post(options)
 
 
 ```

@@ -22,7 +22,7 @@ requestBody.SetMaiden(nil)
 options := &msgraphsdk.NamesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Profile().Names().Post(options);
+result, err := graphClient.Me().Profile().Names().Post(options)
 
 
 ```

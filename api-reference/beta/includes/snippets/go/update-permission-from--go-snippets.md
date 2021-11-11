@@ -16,7 +16,7 @@ options := &msgraphsdk.PermissionRequestBuilderPatchOptions{
 }
 siteId := "site-id"
 permissionId := "permission-id"
-graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(options);
+graphClient.SitesById(&siteId).PermissionsById(&permissionId).Patch(options)
 
 
 ```

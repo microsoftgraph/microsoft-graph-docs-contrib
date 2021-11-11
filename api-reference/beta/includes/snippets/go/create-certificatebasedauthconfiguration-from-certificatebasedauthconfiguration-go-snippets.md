@@ -16,7 +16,7 @@ options := &msgraphsdk.CertificateBasedAuthConfigurationRequestBuilderPostOption
 	Body: requestBody,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(options);
+graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(options)
 
 
 ```

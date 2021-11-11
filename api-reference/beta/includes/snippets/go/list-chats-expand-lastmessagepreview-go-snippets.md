@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.ChatsRequestBuilderGetQueryParameters{
 options := &msgraphsdk.ChatsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.Chats().Get(options);
+result, err := graphClient.Chats().Get(options)
 
 
 ```

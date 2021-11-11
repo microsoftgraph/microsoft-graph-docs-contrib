@@ -20,7 +20,7 @@ options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
 	H: headers,
 }
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.Directory().DeletedItemsById(&directoryObjectId).Get(options);
+result, err := graphClient.Directory().DeletedItemsById(&directoryObjectId).Get(options)
 
 
 ```

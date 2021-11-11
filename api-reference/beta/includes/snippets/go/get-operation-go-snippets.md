@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 userId := "user-id"
 longRunningOperationId := "longRunningOperation-id"
-result, err := graphClient.UsersById(&userId).Authentication().OperationsById(&longRunningOperationId).Get(options);
+result, err := graphClient.UsersById(&userId).Authentication().OperationsById(&longRunningOperationId).Get(options)
 
 
 ```

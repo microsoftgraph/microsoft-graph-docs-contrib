@@ -21,7 +21,7 @@ options := &msgraphsdk.CreateForwardRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateForward().Post(options);
+result, err := graphClient.Me().MessagesById(&messageId).CreateForward().Post(options)
 
 
 ```

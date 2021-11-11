@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 bookingBusinessId := "bookingBusiness-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).Delete(options);
+graphClient.BookingBusinessesById(&bookingBusinessId).Delete(options)
 
 
 ```

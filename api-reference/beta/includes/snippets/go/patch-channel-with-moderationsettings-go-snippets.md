@@ -27,7 +27,7 @@ options := &msgraphsdk.ChannelRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 channelId := "channel-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).Patch(options);
+graphClient.TeamsById(&teamId).ChannelsById(&channelId).Patch(options)
 
 
 ```

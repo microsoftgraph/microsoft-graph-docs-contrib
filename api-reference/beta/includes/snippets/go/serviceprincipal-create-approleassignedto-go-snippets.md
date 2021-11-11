@@ -18,7 +18,7 @@ options := &msgraphsdk.AppRoleAssignedToRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignedTo().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignedTo().Post(options)
 
 
 ```

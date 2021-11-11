@@ -16,7 +16,7 @@ options := &msgraphsdk.PublishedResourcesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(options);
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.NotebooksRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Onenote().Notebooks().Post(options);
+result, err := graphClient.Me().Onenote().Notebooks().Post(options)
 
 
 ```

@@ -31,7 +31,7 @@ expiration.SetType(&type)
 options := &msgraphsdk.RoleEligibilityScheduleRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(options);
+result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(options)
 
 
 ```

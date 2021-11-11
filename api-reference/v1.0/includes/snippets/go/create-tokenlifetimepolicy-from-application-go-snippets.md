@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).TokenLifetimePolicies().$ref().Post(options);
+result, err := graphClient.ApplicationsById(&applicationId).TokenLifetimePolicies().$ref().Post(options)
 
 
 ```

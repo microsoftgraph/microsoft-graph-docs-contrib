@@ -14,7 +14,7 @@ options := &msgraphsdk.CloudPcOnPremisesConnectionRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 cloudPcOnPremisesConnectionId := "cloudPcOnPremisesConnection-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).Get(options);
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).Get(options)
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization)
 options := &msgraphsdk.FeatureRolloutPoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().FeatureRolloutPolicies().Post(options);
+result, err := graphClient.Policies().FeatureRolloutPolicies().Post(options)
 
 
 ```

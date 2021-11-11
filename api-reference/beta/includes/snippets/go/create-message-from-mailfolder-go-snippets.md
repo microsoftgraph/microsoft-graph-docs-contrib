@@ -28,7 +28,7 @@ options := &msgraphsdk.MessagesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Post(options);
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Post(options)
 
 
 ```

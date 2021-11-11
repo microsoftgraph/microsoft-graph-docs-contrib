@@ -17,7 +17,7 @@ options := &msgraphsdk.SubjectRightsRequestRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 subjectRightsRequestId := "subjectRightsRequest-id"
-graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Patch(options);
+graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Patch(options)
 
 
 ```

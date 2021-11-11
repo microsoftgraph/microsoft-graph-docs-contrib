@@ -25,7 +25,7 @@ requestBody.SetMailNickname(&mailNickname)
 options := &msgraphsdk.ClassesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Education().Classes().Post(options);
+result, err := graphClient.Education().Classes().Post(options)
 
 
 ```

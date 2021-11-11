@@ -20,7 +20,7 @@ options := &msgraphsdk.SelfActivateRequestBuilderPostOptions{
 	Body: requestBody,
 }
 privilegedRoleId := "privilegedRole-id"
-result, err := graphClient.PrivilegedRolesById(&privilegedRoleId).SelfActivate().Post(options);
+result, err := graphClient.PrivilegedRolesById(&privilegedRoleId).SelfActivate().Post(options)
 
 
 ```

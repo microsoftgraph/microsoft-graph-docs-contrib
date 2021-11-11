@@ -15,7 +15,7 @@ options := &msgraphsdk.UpdateAdDomainPasswordRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 cloudPcOnPremisesConnectionId := "cloudPcOnPremisesConnection-id"
-graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).UpdateAdDomainPassword().Patch(options);
+graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).UpdateAdDomainPassword().Patch(options)
 
 
 ```

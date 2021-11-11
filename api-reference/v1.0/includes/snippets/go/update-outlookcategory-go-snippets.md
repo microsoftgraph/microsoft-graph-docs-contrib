@@ -14,7 +14,7 @@ options := &msgraphsdk.OutlookCategoryRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 outlookCategoryId := "outlookCategory-id"
-graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Patch(options);
+graphClient.Me().Outlook().MasterCategoriesById(&outlookCategoryId).Patch(options)
 
 
 ```

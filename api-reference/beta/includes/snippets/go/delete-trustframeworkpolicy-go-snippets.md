@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 trustFrameworkPolicyId := "trustFrameworkPolicy-id"
-graphClient.TrustFramework().PoliciesById(&trustFrameworkPolicyId).Delete(options);
+graphClient.TrustFramework().PoliciesById(&trustFrameworkPolicyId).Delete(options)
 
 
 ```

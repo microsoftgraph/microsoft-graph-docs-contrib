@@ -15,7 +15,7 @@ requestBody.SetTitle(&title)
 options := &msgraphsdk.PlansRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Planner().Plans().Post(options);
+result, err := graphClient.Planner().Plans().Post(options)
 
 
 ```

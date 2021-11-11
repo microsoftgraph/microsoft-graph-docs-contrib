@@ -18,7 +18,7 @@ options := &msgraphsdk.DevicesRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.Devices().Get(options);
+result, err := graphClient.Devices().Get(options)
 
 
 ```

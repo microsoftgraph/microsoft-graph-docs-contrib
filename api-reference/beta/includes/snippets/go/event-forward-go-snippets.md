@@ -19,7 +19,7 @@ options := &msgraphsdk.ForwardRequestBuilderPostOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Forward().Post(options);
+graphClient.Me().EventsById(&eventId).Forward().Post(options)
 
 
 ```

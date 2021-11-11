@@ -13,7 +13,7 @@ requestParameters := &msgraphsdk.PrivilegedRoleAssignmentsRequestBuilderGetQuery
 options := &msgraphsdk.PrivilegedRoleAssignmentsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
-result, err := graphClient.PrivilegedRoleAssignments().Get(options);
+result, err := graphClient.PrivilegedRoleAssignments().Get(options)
 
 
 ```

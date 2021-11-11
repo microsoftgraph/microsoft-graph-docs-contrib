@@ -14,7 +14,7 @@ options := &msgraphsdk.OutlookTaskFolderRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 outlookTaskFolderId := "outlookTaskFolder-id"
-graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(options);
+graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(options)
 
 
 ```

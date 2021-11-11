@@ -13,7 +13,7 @@ requestBody.SetSecurityEnabledOnly(&securityEnabledOnly)
 options := &msgraphsdk.GetMemberGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().GetMemberGroups().Post(options);
+result, err := graphClient.Me().GetMemberGroups().Post(options)
 
 
 ```

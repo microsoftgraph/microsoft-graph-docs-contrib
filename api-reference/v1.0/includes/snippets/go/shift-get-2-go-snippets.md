@@ -24,7 +24,7 @@ options := &msgraphsdk.ShiftPreferencesRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ShiftPreferences().Patch(options);
+graphClient.UsersById(&userId).Settings().ShiftPreferences().Patch(options)
 
 
 ```

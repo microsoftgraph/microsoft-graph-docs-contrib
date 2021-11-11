@@ -14,7 +14,7 @@ options := &msgraphsdk.EvaluateDynamicMembershipRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).EvaluateDynamicMembership().Post(options);
+result, err := graphClient.GroupsById(&groupId).EvaluateDynamicMembership().Post(options)
 
 
 ```

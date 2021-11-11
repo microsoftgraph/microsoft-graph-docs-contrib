@@ -16,7 +16,7 @@ options := &msgraphsdk.ConnectorGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroups().Post(options);
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroups().Post(options)
 
 
 ```

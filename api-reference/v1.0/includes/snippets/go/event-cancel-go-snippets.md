@@ -14,7 +14,7 @@ options := &msgraphsdk.CancelRequestBuilderPostOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Cancel().Post(options);
+graphClient.Me().EventsById(&eventId).Cancel().Post(options)
 
 
 ```

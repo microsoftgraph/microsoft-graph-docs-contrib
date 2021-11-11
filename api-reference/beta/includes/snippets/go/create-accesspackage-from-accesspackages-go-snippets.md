@@ -17,7 +17,7 @@ requestBody.SetDescription(&description)
 options := &msgraphsdk.AccessPackagesRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(options);
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(options)
 
 
 ```

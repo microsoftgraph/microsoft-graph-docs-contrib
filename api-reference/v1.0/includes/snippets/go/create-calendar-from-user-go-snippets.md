@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 options := &msgraphsdk.CalendarsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Calendars().Post(options);
+result, err := graphClient.Me().Calendars().Post(options)
 
 
 ```

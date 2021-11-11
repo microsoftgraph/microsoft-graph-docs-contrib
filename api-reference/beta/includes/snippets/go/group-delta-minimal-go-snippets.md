@@ -18,7 +18,7 @@ options := &msgraphsdk.GroupRequestBuilderGetOptions{
 	H: headers,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Get(options);
+result, err := graphClient.GroupsById(&groupId).Get(options)
 
 
 ```

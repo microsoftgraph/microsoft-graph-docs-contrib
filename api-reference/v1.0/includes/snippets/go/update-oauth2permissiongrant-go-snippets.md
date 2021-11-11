@@ -14,7 +14,7 @@ options := &msgraphsdk.OAuth2PermissionGrantRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 oAuth2PermissionGrantId := "oAuth2PermissionGrant-id"
-graphClient.Oauth2PermissionGrantsById(&oAuth2PermissionGrantId).Patch(options);
+graphClient.Oauth2PermissionGrantsById(&oAuth2PermissionGrantId).Patch(options)
 
 
 ```

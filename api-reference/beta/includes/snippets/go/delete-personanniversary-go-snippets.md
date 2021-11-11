@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 personAnnualEventId := "personAnnualEvent-id"
-graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Delete(options);
+graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Delete(options)
 
 
 ```

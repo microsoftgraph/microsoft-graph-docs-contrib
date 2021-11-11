@@ -67,7 +67,7 @@ options := &msgraphsdk.EventsRequestBuilderPostOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.Me().Events().Post(options);
+result, err := graphClient.Me().Events().Post(options)
 
 
 ```

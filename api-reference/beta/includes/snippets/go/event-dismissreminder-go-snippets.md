@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).DismissReminder().Post(options);
+graphClient.Me().EventsById(&eventId).DismissReminder().Post(options)
 
 
 ```

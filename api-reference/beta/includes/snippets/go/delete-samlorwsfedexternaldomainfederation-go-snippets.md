@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 identityProviderBaseId := "identityProviderBase-id"
-graphClient.Directory().FederationConfigurationsById(&identityProviderBaseId).Delete(options);
+graphClient.Directory().FederationConfigurationsById(&identityProviderBaseId).Delete(options)
 
 
 ```

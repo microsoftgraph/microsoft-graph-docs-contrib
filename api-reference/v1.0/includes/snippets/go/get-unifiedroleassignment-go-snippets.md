@@ -14,7 +14,7 @@ options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 unifiedRoleAssignmentId := "unifiedRoleAssignment-id"
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).Get(options);
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).Get(options)
 
 
 ```

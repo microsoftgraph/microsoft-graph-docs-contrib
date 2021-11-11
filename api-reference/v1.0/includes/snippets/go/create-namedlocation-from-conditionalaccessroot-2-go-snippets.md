@@ -21,7 +21,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.NamedLocationsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(options);
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(options)
 
 
 ```

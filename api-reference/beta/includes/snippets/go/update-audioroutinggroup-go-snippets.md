@@ -24,7 +24,7 @@ options := &msgraphsdk.AudioRoutingGroupRequestBuilderPatchOptions{
 }
 callId := "call-id"
 audioRoutingGroupId := "audioRoutingGroup-id"
-graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(options);
+graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(options)
 
 
 ```

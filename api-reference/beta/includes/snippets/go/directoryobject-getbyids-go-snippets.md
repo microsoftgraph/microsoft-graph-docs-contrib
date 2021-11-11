@@ -18,7 +18,7 @@ requestBody.SetTypes( []String {
 options := &msgraphsdk.GetByIdsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.DirectoryObjects().GetByIds().Post(options);
+result, err := graphClient.DirectoryObjects().GetByIds().Post(options)
 
 
 ```

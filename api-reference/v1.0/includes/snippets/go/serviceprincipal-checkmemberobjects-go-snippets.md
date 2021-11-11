@@ -18,7 +18,7 @@ options := &msgraphsdk.CheckMemberObjectsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CheckMemberObjects().Post(options);
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).CheckMemberObjects().Post(options)
 
 
 ```

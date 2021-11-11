@@ -14,7 +14,7 @@ options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).ChildFolders().Post(options);
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).ChildFolders().Post(options)
 
 
 ```

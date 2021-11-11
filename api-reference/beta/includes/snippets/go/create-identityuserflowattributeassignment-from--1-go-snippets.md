@@ -27,7 +27,7 @@ options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().Post(options);
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().Post(options)
 
 
 ```

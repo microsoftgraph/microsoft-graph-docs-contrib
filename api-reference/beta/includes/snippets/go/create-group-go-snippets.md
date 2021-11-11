@@ -24,7 +24,7 @@ requestBody.SetSecurityEnabled(&securityEnabled)
 options := &msgraphsdk.GroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Groups().Post(options);
+result, err := graphClient.Groups().Post(options)
 
 
 ```

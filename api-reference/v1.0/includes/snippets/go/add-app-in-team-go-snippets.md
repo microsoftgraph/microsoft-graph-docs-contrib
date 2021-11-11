@@ -15,7 +15,7 @@ options := &msgraphsdk.InstalledAppsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).InstalledApps().Post(options);
+result, err := graphClient.TeamsById(&teamId).InstalledApps().Post(options)
 
 
 ```

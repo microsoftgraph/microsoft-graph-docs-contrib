@@ -14,7 +14,7 @@ options := &msgraphsdk.SessionsRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 callRecordId := "callRecord-id"
-result, err := graphClient.Communications().CallRecordsById(&callRecordId).Sessions().Get(options);
+result, err := graphClient.Communications().CallRecordsById(&callRecordId).Sessions().Get(options)
 
 
 ```

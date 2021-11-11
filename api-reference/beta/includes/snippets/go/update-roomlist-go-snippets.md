@@ -40,7 +40,7 @@ options := &msgraphsdk.PlaceRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 placeId := "place-id"
-graphClient.PlacesById(&placeId).Patch(options);
+graphClient.PlacesById(&placeId).Patch(options)
 
 
 ```

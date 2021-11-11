@@ -22,7 +22,7 @@ options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutOptions{
 }
 applicationId := "application-id"
 synchronizationTemplateId := "synchronizationTemplate-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).Put(options);
+graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).Put(options)
 
 
 ```

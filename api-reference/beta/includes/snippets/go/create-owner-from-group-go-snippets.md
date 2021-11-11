@@ -15,7 +15,7 @@ options := &msgraphsdk.RefRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Owners().$ref().Post(options);
+result, err := graphClient.GroupsById(&groupId).Owners().$ref().Post(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 userId := "user-id"
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.UsersById(&userId).Outlook().TasksById(&outlookTaskId).Attachments().Get(options);
+result, err := graphClient.UsersById(&userId).Outlook().TasksById(&outlookTaskId).Attachments().Get(options)
 
 
 ```

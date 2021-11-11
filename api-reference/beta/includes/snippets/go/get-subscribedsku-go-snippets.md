@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 subscribedSkuId := "subscribedSku-id"
-result, err := graphClient.SubscribedSkusById(&subscribedSkuId).Get(options);
+result, err := graphClient.SubscribedSkusById(&subscribedSkuId).Get(options)
 
 
 ```

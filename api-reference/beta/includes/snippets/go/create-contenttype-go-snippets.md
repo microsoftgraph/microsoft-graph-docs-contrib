@@ -24,7 +24,7 @@ options := &msgraphsdk.ContentTypesRequestBuilderPostOptions{
 	Body: requestBody,
 }
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).ContentTypes().Post(options);
+result, err := graphClient.SitesById(&siteId).ContentTypes().Post(options)
 
 
 ```

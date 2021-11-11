@@ -14,7 +14,7 @@ options := &msgraphsdk.SectionGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).SectionGroups().Post(options);
+result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).SectionGroups().Post(options)
 
 
 ```
