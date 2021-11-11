@@ -408,6 +408,9 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 ### Properties are missing in the list of teams that a user has joined
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
+### Installation of apps that require resource-specific consent permissions is not supported
+The API calls for [add app to team](/graph/api/team-post-installedapps.md), [add app to chat](/graph/api/chat-post-installedapps.md), and [add app for user](/graph/api/userteamwork-post-installedapps.md) do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+
 ## Users
 
 ### Use the dollar ($) symbol in the userPrincipalName
