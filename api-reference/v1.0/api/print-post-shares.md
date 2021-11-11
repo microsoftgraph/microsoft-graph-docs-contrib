@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Create a new **printerShare** for the specified [printer](../resources/printer.md).
 
 ## Permissions
