@@ -1,7 +1,7 @@
 ---
 title: "Get educationRubric attached to educationAssignment"
 description: "Get the educationRubric attached to an educationAssignment, if one exists."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"

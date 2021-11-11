@@ -161,9 +161,11 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
-      - name: Compliance (preview)
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
+      - name: Compliance
         href: compliance-concept-overview.md
-      - name: Connecting external content (preview)
+      - name: Connecting external content
         displayName: connectors
         items:
           - name: Overview of Microsoft Graph connectors
@@ -232,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
+              - name: Manage safeguards
+                href: windowsupdates-manage-safeguards.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)
@@ -261,10 +265,14 @@ items:
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
-          - name: Authentication methods
-            href: authenticationmethods-get-started.md
+          - name: Directory management
+            items:
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Authentication methods
+                href: authenticationmethods-get-started.md
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
@@ -279,6 +287,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+              - name: Use PIM for Azure AD to assign roles
+                href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -395,9 +405,9 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results (preview)
+          - name: Sort search results
             href: search-concept-sort.md
-          - name: Refine search results (preview)
+          - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
@@ -438,12 +448,11 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
-          - name: Licenses for subscribing to chat messages
+          - name: Licensing and payment requirements
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Activity feed notifications
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +550,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Team membership
+                  - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
                     href: teams-changenotifications-chatmessage.md                  
@@ -617,6 +626,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
+              - name: Configure Azure AD Graph permissions
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Use SDKs
         items:
           - name: Overview
@@ -663,7 +674,7 @@ items:
                 href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
-              - name: Register an Azure Active Directory app
+              - name: Register an Azure AD app
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
@@ -673,8 +684,10 @@ items:
                 href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Build a SharePoint web part
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: Build a Microsoft Teams tab
+              - name: Build a Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build a Teams tab with SSO
+                href: toolkit/get-started/build-a-microsoft-teams-sso-tab.md
               - name: Build an Electron app
                 href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
@@ -683,12 +696,14 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
-              - name: MSAL 2 provider
+              - name: MSAL2 provider
                 href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
-              - name: Microsoft Teams provider
+              - name: Teams provider
                 href: toolkit/providers/teams.md
+              - name: Teams MSAL2 provider
+                href: toolkit/providers/teams-msal2.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
               - name: Proxy provider

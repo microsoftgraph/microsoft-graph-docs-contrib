@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance: filterByCurrentUser"
 description: "Get a list of the unifiedRoleAssignmentScheduleInstance objects and their properties filtered by a particular user principal"
-author: "shauliu1"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "resourceVisualization resource type"
 description: "Complex type containing properties of Insights."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

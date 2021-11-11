@@ -2,7 +2,7 @@
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

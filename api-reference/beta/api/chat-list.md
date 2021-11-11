@@ -2,7 +2,7 @@
 title: "List chats"
 description: "Retrieve the list of chats for a user."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List Bookings calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness, that occurs in the specified date range."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -41,7 +41,7 @@ In the request URL, provide the following required query parameters with values.
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Description|
@@ -56,7 +56,7 @@ If successful, this method returns `200, OK` response code and [bookingAppointme
 
 ## Example
 The following is an example of how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -86,8 +86,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ---
 
 
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,11 +107,15 @@ Content-type: application/json
         {
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
             "customerPhone": "213-555-0156",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",
@@ -188,11 +195,15 @@ Content-type: application/json
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",

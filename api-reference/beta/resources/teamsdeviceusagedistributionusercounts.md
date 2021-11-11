@@ -2,7 +2,7 @@
 title: "teamsDeviceUsageDistributionUserCounts resource type"
 description: "Represents number of users by device type over the selected time period."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

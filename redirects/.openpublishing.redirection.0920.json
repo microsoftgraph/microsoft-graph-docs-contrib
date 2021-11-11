@@ -4,11 +4,6 @@
       "source_path_from_root": "/api-reference/beta/api/application-add-password.md",
       "redirect_url": "/graph/api/application-addpassword?view=graph-rest-beta",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/concepts/migrate-azure-ad-graph-overview.md",
-      "redirect_url": "/graph/migrate-azure-ad-graph-planning-checklist",
-      "redirect_document_id": false
     }
   ]
 }

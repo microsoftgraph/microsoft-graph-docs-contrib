@@ -2,7 +2,7 @@
 title: "teamsUserActivityDistributionUserCounts resource type"
 description: "Represents numbers of users by activity type over the selected time period."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

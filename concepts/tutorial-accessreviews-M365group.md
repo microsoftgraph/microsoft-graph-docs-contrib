@@ -2,7 +2,7 @@
 title: "Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups"
 description: "Use the access reviews API to review guest access to your Microsoft 365 groups"
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 

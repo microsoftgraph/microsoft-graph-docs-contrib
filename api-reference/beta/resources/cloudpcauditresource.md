@@ -2,7 +2,7 @@
 title: "cloudPcAuditResource resource type"
 description: "Represents the audit resource. This shows the target edited resource entity, with multiple edited properties."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the audit resource. This shows the target edited resource entity, with multiple edited properties.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 |Property|Type|Description|

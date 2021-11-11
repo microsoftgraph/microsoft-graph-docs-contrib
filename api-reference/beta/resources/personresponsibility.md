@@ -2,7 +2,7 @@
 title: "personResponsibility resource type"
 description: "personResponsibility resource type"
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create open extension"
 description: "Create an open extension (openTypeExtension object) and add custom properties"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.prod: "extensions"

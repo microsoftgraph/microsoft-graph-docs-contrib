@@ -12,14 +12,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversation *conversation = [[MSGraphConversation alloc] init];
-[conversation setTopic:@"New locations for this quarter"];
+[conversation setTopic:@"Take your wellness days and rest"];
 NSMutableArray *threadsList = [[NSMutableArray alloc] init];
 MSGraphConversationThread *threads = [[MSGraphConversationThread alloc] init];
 NSMutableArray *postsList = [[NSMutableArray alloc] init];
 MSGraphPost *posts = [[MSGraphPost alloc] init];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"What do we know so far?"];
+[body setContent:@"Contoso cares about you: Rest and Recharge"];
 [posts setBody:body];
 NSMutableArray *newParticipantsList = [[NSMutableArray alloc] init];
 MSGraphRecipient *newParticipants = [[MSGraphRecipient alloc] init];

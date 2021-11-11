@@ -1,7 +1,7 @@
 ---
 title: "passwordCredential resource type"
 description: "Contains a password credential associated with an application or a service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

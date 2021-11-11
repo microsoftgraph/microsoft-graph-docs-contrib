@@ -1,7 +1,7 @@
 ---
 title: "List incompatibleGroups"
 description: "Retrieve a list of groups whose access rights are incompatible with a specific access package."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"

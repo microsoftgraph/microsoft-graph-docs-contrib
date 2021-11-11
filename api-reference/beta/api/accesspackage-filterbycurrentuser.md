@@ -1,8 +1,8 @@
 ---
 title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---

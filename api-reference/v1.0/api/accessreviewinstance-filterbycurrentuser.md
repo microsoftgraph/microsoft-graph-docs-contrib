@@ -2,7 +2,7 @@
 title: "accessReviewInstance: filterByCurrentUser"
 description: "Retrieve all accessReviewInstance objects for a given reviewer."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

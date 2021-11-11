@@ -2,7 +2,7 @@
 title: "Create deployment"
 description: "Create a new deployment object."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -11,9 +11,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-> [!NOTE]
-> If you do not specify a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) when creating a deployment, a default monitoring rule is created. This default monitoring rule has a **signal** of `rollback​`, a **threshold** of `20​`, and an **action** of `alertError​`. In a future update of the API, this behavior will change and a default monitoring rule will not be created.
 
 Create a new [deployment](../resources/windowsupdates-deployment.md) object.
 
@@ -57,7 +54,7 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `201 Created` response code and a [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -165,7 +162,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

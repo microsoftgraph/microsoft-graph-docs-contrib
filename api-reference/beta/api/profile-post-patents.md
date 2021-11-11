@@ -1,7 +1,7 @@
 ---
 title: "Create patents"
 description: "Create a new patents object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

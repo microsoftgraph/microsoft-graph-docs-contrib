@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,6 +49,7 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics work from anywhere device.|
+|deviceId|String|The user experience work from anywhere device Id.|
 |deviceName|String|The work from anywhere device's name.|
 |serialNumber|String|The user experience work from anywhere device's serial number.|
 |manufacturer|String|The user experience work from anywhere device's manufacturer.|
@@ -65,6 +66,7 @@ The following table shows the properties that are required when you create the u
 |tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
 |compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
 |otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
+|isCloudManagedGatewayEnabled|Boolean|The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
 |ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
 |storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
@@ -75,6 +77,12 @@ The following table shows the properties that are required when you create the u
 |processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
 |processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
 |osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
+|workFromAnywhereScore|Double|The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|windowsScore|Double|The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudManagementScore|Double|The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudIdentityScore|Double|The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudProvisioningScore|Double|The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -88,10 +96,11 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 1028
+Content-length: 1323
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -108,6 +117,7 @@ Content-length: 1028
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -117,7 +127,13 @@ Content-length: 1028
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -126,11 +142,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1077
+Content-Length: 1372
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
   "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+  "deviceId": "Device Id value",
   "deviceName": "Device Name value",
   "serialNumber": "Serial Number value",
   "manufacturer": "Manufacturer value",
@@ -147,6 +164,7 @@ Content-Length: 1077
   "tenantAttached": true,
   "compliancePolicySetToIntune": true,
   "otherWorkloadsSetToIntune": true,
+  "isCloudManagedGatewayEnabled": true,
   "upgradeEligibility": "unknown",
   "ramCheckFailed": true,
   "storageCheckFailed": true,
@@ -156,10 +174,15 @@ Content-Length: 1077
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "workFromAnywhereScore": 7.0,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

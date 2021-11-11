@@ -2,7 +2,7 @@
 title: "List operations"
 description: "Get the list caseOperations from a case object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

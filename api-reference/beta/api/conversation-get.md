@@ -2,7 +2,7 @@
 title: "Get conversation"
 description: "Retrieve the properties and relationships of conversation object."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest: cancel"
 description: "Cancel a unifiedRoleEligibilityScheduleRequest."
-author: "shauliu1"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

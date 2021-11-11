@@ -2,7 +2,7 @@
 title: "timeCard: startBreak"
 description: "Start break in a specific timecard."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "onPremisesPublishing resource type"
 description: "Represents an Application Proxy onPremisesPublishing object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: resourcePageType

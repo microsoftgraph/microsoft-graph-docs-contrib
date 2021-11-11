@@ -2,7 +2,7 @@
 title: "List trendingAround"
 description: "Calculated insight that returns the list of items trending around a user."
 author: "jpettere"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---

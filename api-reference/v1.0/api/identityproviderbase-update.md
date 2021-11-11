@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties of an identityProvider."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Update identityProvider
 Namespace: microsoft.graph
 
-Update the properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+Update the properties of the specified identity provider configured in the tenant.
 
-For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
+Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 ## Permissions
 
@@ -46,9 +46,9 @@ PATCH /identity/identityProviders/{id}
 
 ## Request body
 
-In the request body, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
+In the request body, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD tenant.
 
-In Azure AD B2C, provide the OData type and the JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
+In Azure AD B2C, provide a JSON object with one or more properties that need to be updated for a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
 
 ### socialIdentityProvider object
 
@@ -57,6 +57,16 @@ In Azure AD B2C, provide the OData type and the JSON object with one or more pro
 |clientId|String|The identifier for the client application obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`.|
 |displayName|String|The display name of the identity provider.|
+
+### appleManagedIdentityProvider object
+
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|displayName|String|The display name of the identity provider.|
+|developerId|String|The Apple developer identifier.|
+|serviceId|String|The Apple service identifier.|
+|keyId|String|The Apple key identifier.|
+|certificateData|String|The certificate data which is a long string of text from the certificate, can be null.|
 
 ## Response
 
@@ -105,8 +115,40 @@ Content-type: application/json
 
 ---
 
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update a specific **Apple identity provider** (only for Azure AD B2C)
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_appleidentityprovider"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+Content-type: application/json
+
+{
+  "displayName": "Apple"
+}
+```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

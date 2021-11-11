@@ -2,7 +2,7 @@
 title: "Update accessReviewPolicy"
 description: "Update the properties of an accessReviewPolicy object."
 author: "kafen"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---

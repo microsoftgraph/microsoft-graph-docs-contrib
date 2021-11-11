@@ -1,7 +1,7 @@
 ---
 title: "tiIndicator: deleteTiIndicatorsByExternalId"
 description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType

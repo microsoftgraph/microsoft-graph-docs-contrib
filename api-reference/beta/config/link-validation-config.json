@@ -21,7 +21,9 @@
         "/previous-versions",
         "/skypeforbusiness",
         "/sharepoint",
+        "/troubleshoot",
         "/windows",
-        "/windows-hardware"
+        "/windows-hardware",
+        "/rest"
     ]
 }

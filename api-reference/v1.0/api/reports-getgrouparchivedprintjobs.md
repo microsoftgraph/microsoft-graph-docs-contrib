@@ -2,7 +2,7 @@
 title: "reports: getGroupArchivedPrintJobs"
 description: Get a list of archived print jobs for a particular group.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

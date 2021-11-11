@@ -1,7 +1,7 @@
 ---
 title: "Create awards"
 description: "Create a new awards object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType

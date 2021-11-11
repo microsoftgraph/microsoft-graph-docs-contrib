@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Get contentType"
 description: "Get a content type in a site or a list."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

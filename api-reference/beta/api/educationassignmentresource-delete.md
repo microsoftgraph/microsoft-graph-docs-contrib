@@ -2,7 +2,7 @@
 title: "Delete educationAssignmentResource"
 description: "Delete a specific resource attached to an assignment."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/resources/{id}
+DELETE /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 
 ```
 ## Request headers
@@ -36,14 +36,14 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "delete_educationassignmentresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/dc1af5c4-8211-4e5d-92e6-f006477c2740/resources/7a686854-6d85-4fc0-9729-e36af26f7deb
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignmentresource-csharp-snippets.md)]
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
 

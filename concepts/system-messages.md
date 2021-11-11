@@ -2,7 +2,7 @@
 title: "Get system messages for Microsoft Teams using Microsoft Graph APIs"
 description: "Learn how Microsoft Teams generates system messages for events using Microsoft Graph APIs."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---

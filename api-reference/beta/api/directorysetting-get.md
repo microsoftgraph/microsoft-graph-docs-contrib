@@ -2,7 +2,7 @@
 title: "Get a directory setting"
 description: "Retrieve the properties of a specific directory setting object."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

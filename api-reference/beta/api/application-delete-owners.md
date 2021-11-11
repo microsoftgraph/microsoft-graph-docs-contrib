@@ -2,7 +2,7 @@
 title: "Remove owner"
 description: "Remove an owner from an application."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---

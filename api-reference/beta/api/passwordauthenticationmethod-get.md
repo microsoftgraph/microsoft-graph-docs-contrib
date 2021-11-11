@@ -1,7 +1,7 @@
 ---
 title: "Get passwordAuthenticationMethod"
 description: "Retrieve the properties and relationships of passwordauthenticationmethod object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

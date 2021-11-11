@@ -1,8 +1,8 @@
 ---
 title: "Update approvalStep"
 description: "Apply approve or deny decision on an approvalStep object."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---

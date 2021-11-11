@@ -1,25 +1,71 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Drive
-localization_priority: Priority
+title: drive resource type
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 
-# Drive resource type
+# drive resource type
 
 Namespace: microsoft.graph
 
-The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
+The top-level object that represents a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
 
+## Methods
+
+|                        Common task                         |         HTTP method         |
+| :--------------------------------------------------------- | :-------------------------- |
+| [Get Drive metadata of another Drive][drive-get]           | `GET /drives/{drive-id}`    |
+| [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
+| [List children under the Drive][item-children]             | `GET /drive/root/children`  |
+| [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
+| [List user's followed driveItems][drive-following]         | `Get /drive/following`       |
+| [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
+| [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
+
+In the previous table, the examples use `/drive`, but other paths are valid too.
+
+## Properties
+
+| Property             | Type                          | Description                                                                                                                                                                                                                      |
+| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdBy            | [identitySet][]               | Identity of the user, device, or application which created the item. Read-only.                                                                                                                                                  |
+| createdDateTime      | dateTimeOffset                | Date and time of item creation. Read-only.                                                                                                                                                                                       |
+| description          | String                        | Provide a user-visible description of the drive. Read-write.
+| driveType            | String                        | Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only. |
+| id                   | String                        | The unique identifier of the drive. Read-only.                                                                                                                                                                                   |
+| lastModifiedBy       | [identitySet][]               | Identity of the user, device, and application which last modified the item. Read-only.                                                                                                                                           |
+| lastModifiedDateTime | dateTimeOffset                | Date and time the item was last modified. Read-only.                                                                                                                                                                             |
+| name                 | string                        | The name of the item. Read-write.                                                                                                                                                                                                |
+| owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
+| quota                | [quota](quota.md)             | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
+| sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                                                                         |
+| system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
+| webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
+
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
+
+## Relationships
+
+| Relationship | Type                                 | Description
+|:-------------|:-------------------------------------|:-----------------------
+| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
+| items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| list         | [List](list.md)                      | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
+
 ## JSON representation
 
-Here is a JSON representation of a Drive resource.
+The following is a JSON representation of this resource.
 
 The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
@@ -66,52 +112,6 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "webUrl": "url"
 }
 ```
-
-## Properties
-
-| Property             | Type                          | Description                                                                                                                                                                                                                      |
-| :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdBy            | [identitySet][]               | Identity of the user, device, or application which created the item. Read-only.                                                                                                                                                  |
-| createdDateTime      | dateTimeOffset                | Date and time of item creation. Read-only.                                                                                                                                                                                       |
-| description          | String                        | Provide a user-visible description of the drive. Read-write.
-| driveType            | String                        | Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only. |
-| id                   | String                        | The unique identifier of the drive. Read-only.                                                                                                                                                                                   |
-| lastModifiedBy       | [identitySet][]               | Identity of the user, device, and application which last modified the item. Read-only.                                                                                                                                           |
-| lastModifiedDateTime | dateTimeOffset                | Date and time the item was last modified. Read-only.                                                                                                                                                                             |
-| name                 | string                        | The name of the item. Read-write.                                                                                                                                                                                                |
-| owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
-| quota                | [quota](quota.md)             | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                                                                         |
-| system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
-| webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
-
-[identitySet]: identityset.md
-[sharepointIds]: sharepointids.md
-[systemFacet]: systemfacet.md
-
-## Relationships
-
-| Relationship | Type                                 | Description
-|:-------------|:-------------------------------------|:-----------------------
-| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
-| items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| list         | [List](list.md)                      | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
-
-## Methods
-
-|                        Common task                         |         HTTP method         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [Get Drive metadata of another Drive][drive-get]           | `GET /drives/{drive-id}`    |
-| [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
-| [List children under the Drive][item-children]             | `GET /drive/root/children`  |
-| [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
-| [List user's followed driveItems][drive-following]         | `Get /drive/following`       |
-| [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
-| [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
-
-In the previous table, the examples use `/drive`, but other paths are valid too.
 
 [item-resource]: driveitem.md
 [identity-set]: identityset.md

@@ -1,7 +1,7 @@
 ---
 title: "alternativeSecurityId resource type"
 description: "For internal use only. This complex type will be deprecated in the future."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
 author: "spunukol"

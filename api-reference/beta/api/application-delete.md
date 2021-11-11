@@ -2,7 +2,7 @@
 title: "Delete application"
 description: "Deletes an application."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
