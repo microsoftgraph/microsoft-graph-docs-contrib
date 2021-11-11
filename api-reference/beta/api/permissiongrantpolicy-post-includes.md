@@ -65,7 +65,7 @@ In this example, *all* delegated permissions for client apps that are from verif
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/includes
+POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/{id}/includes
 Content-Type: application/json
 
 {
@@ -136,7 +136,7 @@ In this example, *all* delegated permissions for all client apps that are Micros
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/includes
+POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/{id}/includes
 Content-Type: application/json
 
 {
