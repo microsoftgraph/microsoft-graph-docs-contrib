@@ -1,5 +1,5 @@
 ---
-title: "Listing versions of a DriveItem"
+title: "List versions of a driveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -7,7 +7,7 @@ author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
-# Listing versions of a DriveItem
+# List versions of a driveItem
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 This example retrieves the versions of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 ## Remarks
 
-Versions are returned in descending order (i.e. newest to oldest). The OData `$orderBy` query string parameter is not supported.
+Versions are returned in descending order (newest to oldest). The OData `$orderBy` query string parameter is not supported.
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
