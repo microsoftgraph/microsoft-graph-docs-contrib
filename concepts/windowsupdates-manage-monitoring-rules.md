@@ -1,5 +1,5 @@
 ---
-title: "Manage monitoring rules for a deployment using the Windows Update for Business deployment service"
+title: "Manage monitoring rules using the Windows Update for Business deployment service"
 description: "For deployments initiated by the deployment service, you can use monitoring rules configure alerts and automated actions based on deployment signals."
 author: "Alice-at-Microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "w10"
 doc_type: conceptualPageType
 ---
 
-# Manage monitoring rules for a feature update deployment using the Windows Update for Business deployment service
+# Manage monitoring rules using the Windows Update for Business deployment service
 
 For deployments initiated by the deployment service, you can use a monitoring rule to configure alerts and automated actions based on deployment signals.
 
@@ -41,7 +41,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -90,7 +89,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -153,7 +153,8 @@ Content-Type: application/json
             "monitoringRules": []
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -178,7 +179,6 @@ Content-Type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 10,
                     "action": "pauseDeployment"
@@ -227,7 +227,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
