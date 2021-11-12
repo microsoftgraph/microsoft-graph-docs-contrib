@@ -90,7 +90,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1044
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
@@ -102,13 +101,25 @@ Content-length: 1044
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
-    "displayName": "Display name",
+    "displayName": "Application Display name",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "testapplication05.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_testapplication05",
+            "verifiedPublisherId": "6232377",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://docs.microsoft.com/en-us/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {
@@ -162,6 +173,3 @@ Content-length: 1044
   ]
 }
 -->
-
-
-
