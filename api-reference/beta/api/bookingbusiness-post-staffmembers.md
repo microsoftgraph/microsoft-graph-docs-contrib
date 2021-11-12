@@ -57,7 +57,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Content-type: application/json
-Content-length: 309
 
 {
     "@odata.type":"#microsoft.graph.bookingStaffMember",

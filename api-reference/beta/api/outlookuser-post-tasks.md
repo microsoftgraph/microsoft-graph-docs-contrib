@@ -64,7 +64,6 @@ The following example shows the use of the `Prefer: outlook.timezone` header. It
 POST https://graph.microsoft.com/beta/me/outlook/tasks
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 276
 
 {
   "subject": "Shop for children's weekend",
@@ -113,7 +112,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",

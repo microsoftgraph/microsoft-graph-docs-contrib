@@ -74,7 +74,6 @@ This is an example of a successful validation request.
 ``` http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -117,7 +116,6 @@ This is an example of a request with validation errors.
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

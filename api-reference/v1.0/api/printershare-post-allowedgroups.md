@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create allowedGroup for printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Grant the specified group access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
 ## Permissions
@@ -61,7 +59,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups/$ref
 Content-Type: application/json
-Content-length: 47
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}"

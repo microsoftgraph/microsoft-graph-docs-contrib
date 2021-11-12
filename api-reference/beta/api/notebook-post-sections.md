@@ -58,7 +58,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -92,7 +91,6 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

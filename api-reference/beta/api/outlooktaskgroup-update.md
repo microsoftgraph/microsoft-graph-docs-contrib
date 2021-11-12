@@ -61,7 +61,6 @@ The following example changes the name of a task group to "Personal Tasks".
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
 Content-type: application/json
-Content-length: 28
 
 {
   "name": "Personal Tasks",
@@ -95,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",

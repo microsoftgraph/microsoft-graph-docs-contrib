@@ -52,7 +52,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
 Content-type: application/json
-Content-length: 508
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14011"

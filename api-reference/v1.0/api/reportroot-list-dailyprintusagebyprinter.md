@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List dailyPrintUsageByPrinter
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of daily print usage summaries, grouped by [printer](../resources/printer.md).
 
 ## Permissions

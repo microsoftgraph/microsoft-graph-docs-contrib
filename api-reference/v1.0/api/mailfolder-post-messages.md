@@ -52,7 +52,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",
@@ -91,7 +90,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

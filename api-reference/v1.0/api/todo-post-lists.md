@@ -65,7 +65,6 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists
 Content-Type: application/json
-Content-length: 60
 
 {
   "displayName": "Travel items"

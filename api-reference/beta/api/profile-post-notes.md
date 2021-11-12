@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [personAn
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
-Content-length: 413
 
 {
   "detail": {

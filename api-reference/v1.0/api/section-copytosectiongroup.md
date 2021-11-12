@@ -66,7 +66,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/copyToSectionGroup
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",
