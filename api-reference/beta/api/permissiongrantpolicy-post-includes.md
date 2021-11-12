@@ -129,20 +129,20 @@ In this example, *all* delegated permissions for all client apps that are Micros
 
 
 <!-- {
-"blockType": "request",
-"truncated": true,
-"name": "permissiongrantpolicy_create_includes"
+  "blockType": "request",
+  "truncated": true,
+  "name": "permissiongrantpolicy_create_includes"
 }-->
 
 ```http
 POST https://graph.microsoft.com/beta/policies/permissionGrantPolicies/{id}/includes
 Content-Type: application/json
+
 {
-"permissionType": "delegated",
-"certifiedClientApplicationsOnly": true
+  "permissionType": "delegated",
+  "certifiedClientApplicationsOnly": true
 }
 ```
-
 
 #### Response
 
