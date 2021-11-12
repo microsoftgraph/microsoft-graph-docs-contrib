@@ -37,7 +37,7 @@ Represents the directory audit items and its collection.
 | result              | operationResult                                              | Indicates the result of the activity. Possible values are: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | String                                              | Indicates the reason for failure if the **result** is `failure` or `timeout`.                                                                                                                                                                                              |
 | targetResources     | [targetResource](targetresource.md) collection      | Information about the resource that changed due to the activity.  | 
-|userAgent|String|Type of userAgent used by a user in the audit event. |                                                                                                      |
+| userAgent | String | Type of user agent used by a user in the activity. |                                                                                                      
 
 ## Relationships
 None
