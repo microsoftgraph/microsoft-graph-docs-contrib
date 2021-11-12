@@ -59,7 +59,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits
 Content-type: application/json
-Content-length: 150
 
 {
     "displayName": "Seattle District Technical Schools",
@@ -99,7 +98,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 172
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",

@@ -54,7 +54,6 @@ Here is an example of the request.
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
-Content-length: xxx
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"

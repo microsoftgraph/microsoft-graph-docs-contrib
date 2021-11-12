@@ -63,7 +63,6 @@ This is an example of approving access for a user represented by an `accessRevie
 ``` http
 PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
 Content-Type: application/json
-Content-length: 730
 
 {
   "decision": "Approve",

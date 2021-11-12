@@ -54,7 +54,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
-Content-length: 272
 
 {
   "roleId": "roleId-value",
@@ -95,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 294
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#scopedRoleMemberships/$entity",

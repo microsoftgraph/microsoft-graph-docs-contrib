@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a new [conn
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization name",

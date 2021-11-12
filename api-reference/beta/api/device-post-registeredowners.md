@@ -54,7 +54,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

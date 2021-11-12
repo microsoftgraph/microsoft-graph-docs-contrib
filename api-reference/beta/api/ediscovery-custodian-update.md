@@ -70,7 +70,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 Content-Type: application/json
-Content-length: 254
 
 {
   "applyHoldToSources": "false",

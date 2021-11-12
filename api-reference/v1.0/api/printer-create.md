@@ -76,7 +76,6 @@ You make a GET request to the linked URL to get the status of an ongoing printer
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/create
 Content-Type: application/json
-Content-length: 287
 
 {
   "displayName": "Test Printer",

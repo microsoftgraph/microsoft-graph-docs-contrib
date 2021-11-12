@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code with an updated [pri
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

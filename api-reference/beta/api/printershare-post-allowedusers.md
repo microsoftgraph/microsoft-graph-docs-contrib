@@ -56,7 +56,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
-Content-length: 66
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

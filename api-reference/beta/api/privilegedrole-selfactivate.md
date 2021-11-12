@@ -72,7 +72,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfActivate
 Content-type: application/json
-Content-length: 142
 
 {
   "reason": "reason-value",
@@ -112,7 +111,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

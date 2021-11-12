@@ -110,7 +110,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
@@ -193,7 +192,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
    "enabled":true,

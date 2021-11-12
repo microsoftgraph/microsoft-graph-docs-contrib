@@ -62,7 +62,6 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"
