@@ -89,7 +89,6 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2577
 
 {
     "id": "{jobId}",

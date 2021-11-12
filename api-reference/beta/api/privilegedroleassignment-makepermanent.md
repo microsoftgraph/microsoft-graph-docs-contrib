@@ -66,7 +66,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makePermanent
 Content-type: application/json
-Content-length: 110
 
 {
   "reason": "reason-value",
@@ -103,7 +102,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

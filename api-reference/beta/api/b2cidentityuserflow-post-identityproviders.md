@@ -71,7 +71,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"

@@ -61,7 +61,6 @@ If successful, this method returns a `201 Created` response code and a [plannerR
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters
 Content-Type: application/json
-Content-length: 55
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster"

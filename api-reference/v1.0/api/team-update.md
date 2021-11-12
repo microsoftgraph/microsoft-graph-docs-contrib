@@ -60,7 +60,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
-Content-length: 211
 
 {  
   "memberSettings": {

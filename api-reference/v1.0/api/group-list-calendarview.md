@@ -102,7 +102,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1354
 Preference-Applied: outlook.body-content-type="text"
 
 {

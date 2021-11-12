@@ -67,7 +67,6 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
-Content-length: 28
 
 {
   "tenantId": "String"

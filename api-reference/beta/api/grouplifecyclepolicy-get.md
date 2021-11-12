@@ -85,7 +85,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 174
 
 {
   "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",

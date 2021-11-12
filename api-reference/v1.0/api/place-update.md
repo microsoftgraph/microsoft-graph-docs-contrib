@@ -83,7 +83,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",

@@ -118,7 +118,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
   "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
@@ -194,7 +193,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -324,7 +322,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -406,7 +403,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
