@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 Contains information associated with meeting attendance report.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of the [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
+|[Get meetingAttendanceReport](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
+|[List attendanceRecords](../api/meetingattendancereport-list-attendancerecords.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get the attendanceRecord resources from the attendanceRecords navigation property.|
+
 ## Properties
 
 | Property              | Type                                               | Description                     |
@@ -43,6 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.meetingAttendanceReport",
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
   "totalParticipantCount": "Int32",
