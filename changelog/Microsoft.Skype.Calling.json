@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceRecord",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **attendanceRecord** resource type.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendanceRecords",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **attendanceRecords** property from [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingEndDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingEndDateTime** property to [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingStartDateTime** property to [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendanceRecords** relationship to [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "Target": "meetingAttendanceReport"
+        }
+      ],
+      "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-12T00:20:34.714968Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fa2e8654-67e0-486d-a6c9-e2a8ba43b95a",
           "ApiChange": "Member",
           "ChangedApiName": "invited",
