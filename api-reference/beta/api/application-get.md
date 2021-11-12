@@ -101,16 +101,16 @@ Content-type: application/json
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
-    "displayName": "Application Display name",
+    "displayName": "contoso",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "testapplication05.com",
+    "publisherDomain": "contoso.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "verifiedPublisher": {
-            "displayName": "publisher_testapplication05",
-            "verifiedPublisherId": "6232377",
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
              "addedDateTime": "2021-04-24T17:49:44Z"
     },
     "certification": {
