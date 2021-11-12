@@ -226,7 +226,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPc/roleDefinitions/$entity",
-    "id": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"
+    "id": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff",
     "description": "A example custom role",
     "displayName": "ExampleCustomRole",
     "isBuiltIn": false,
