@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
+Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
@@ -48,9 +48,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
 |Application      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Note:**  
-> 1. Metadata operation is not supported for personal Microsoft accounts. 
-> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Notes:**  
+> - The metadata operation is not supported for personal Microsoft accounts. 
+> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 
@@ -116,7 +116,7 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 ## Examples
 
 ### Example 1: Get the photo for the signed-in user in the largest available size
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -125,11 +125,11 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ### Example 2: Get the 48x48 photo for the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -139,11 +139,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
 ### Example 3: Get the metadata of the user photo of the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -152,7 +152,7 @@ Contains the binary data of the requested 48x48 photo. The HTTP response code is
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### Response
+#### Response
 
 The following response data shows the photo metadata.
 
