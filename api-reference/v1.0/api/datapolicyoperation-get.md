@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

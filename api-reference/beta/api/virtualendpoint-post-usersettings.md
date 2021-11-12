@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings
 Content-Type: application/json
-Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",

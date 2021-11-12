@@ -81,7 +81,6 @@ If successful, this method returns `200 OK` response code.
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

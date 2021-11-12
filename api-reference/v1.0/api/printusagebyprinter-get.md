@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get printUsageByPrinter
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a usage summary for a [printer](../resources/printer.md) for a particular time period. For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
 
 ## Permissions

@@ -65,7 +65,6 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

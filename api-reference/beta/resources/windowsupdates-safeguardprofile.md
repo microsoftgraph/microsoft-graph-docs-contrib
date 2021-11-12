@@ -18,7 +18,7 @@ Describes the issue(s) against which the service safeguards devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.windowsUpdates.safeguardCategory|Specifies the category of safeguards. The possible values are: `likelyIssues`.|
+|category|microsoft.graph.windowsUpdates.safeguardCategory|Specifies the category of safeguards. The possible values are: `likelyIssues`, `unknownFutureValue`.|
 
 ## Relationships
 None.

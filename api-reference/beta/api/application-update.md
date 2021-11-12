@@ -80,7 +80,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/applications/{id}
 Content-type: application/json
-Content-length: 72
 
 {
   "displayName": "New display name"

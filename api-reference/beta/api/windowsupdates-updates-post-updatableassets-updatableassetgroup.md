@@ -64,7 +64,6 @@ If successful, this method returns a `201 Created` response code and an [updatab
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 Content-Type: application/json
-Content-length: 76
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup"

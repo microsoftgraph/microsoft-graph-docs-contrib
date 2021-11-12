@@ -73,7 +73,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/1a9b4145d8f84e39bc45a7f68c5c5119
 Content-Type: application/json
-Content-length: 247
 
 {
     "displayName": "Quarterly Financials search",

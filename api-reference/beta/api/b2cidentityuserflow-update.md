@@ -78,7 +78,6 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp
 Content-Type: application/json
-Content-length: 469
 
 {
   "isLanguageCustomizationEnabled": true,

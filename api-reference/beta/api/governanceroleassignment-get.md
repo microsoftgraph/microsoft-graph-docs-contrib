@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 182
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments/$entity",

@@ -61,7 +61,6 @@ Add licenses to the user.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -103,7 +102,6 @@ Remove licenses from the user.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [],
@@ -121,7 +119,6 @@ In both examples, the response is the updated user object. Note: The response ob
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,

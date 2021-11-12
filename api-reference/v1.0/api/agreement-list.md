@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "value": [

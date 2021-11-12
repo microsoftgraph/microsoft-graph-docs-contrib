@@ -56,7 +56,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskGroups
 Content-type: application/json
-Content-length: 40
 
 {
   "name": "Leisure tasks"
@@ -91,7 +90,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",

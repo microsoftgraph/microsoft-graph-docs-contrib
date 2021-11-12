@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and an updated [tena
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 Content-Type: application/json
-Content-length: 278
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",

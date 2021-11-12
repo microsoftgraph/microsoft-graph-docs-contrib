@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Delete printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Delete a printer share (unshare the associated [printer](../resources/printer.md)). This action cannot be undone. If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) will need to discover and reinstall it.
 
 ## Permissions

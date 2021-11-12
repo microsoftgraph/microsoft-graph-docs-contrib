@@ -68,7 +68,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
 Content-type: application/json
-Content-length: 319
 
 {
   "displayName": "Test Printer",
