@@ -16,15 +16,21 @@ Namespace: microsoft.graph
 Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider.
 
 The following RBAC providers are currently supported:
+- cloud PC
 - device management (Intune)
 - directory (Azure AD) 
-
-> [!NOTE]
-> The cloud PC RBAC provider currently supports only the [list](rbacapplication-list-roledefinitions.md) and [get](unifiedroledefinition-get.md) operations.
 
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.ReadWrite.All  |
 
 ### For Device management (Intune) provider
 
@@ -71,11 +77,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Example1: Deletes a **unifiedRoleDefinition** for a directory provider
 
 ### Request
-
-The following example deletes a **unifiedRoleDefinition** for a directory provider.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -128,4 +132,27 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
+## Example2: Deletes a **unifiedRoleDefinition** for a CloudPC provider
+### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroledefinition_cloudpc"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```

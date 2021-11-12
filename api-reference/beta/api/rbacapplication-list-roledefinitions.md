@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.
 
 The following RBAC providers are currently supported:
-- Cloud PC 
+- cloud PC 
 - device management (Intune)
 - directory (Azure AD) 
 - entitlement management (Azure AD)
@@ -29,9 +29,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
+|Delegated (work or school account) |  CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Application | CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
 
 ### For Device management (Intune) provider
 

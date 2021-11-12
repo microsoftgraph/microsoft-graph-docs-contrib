@@ -16,15 +16,21 @@ Namespace: microsoft.graph
 Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider.
 
 The following RBAC providers are currently supported:
+- cloud PC
 - device management (Intune)
 - directory (Azure AD)
-
-> [!NOTE]
-> The cloud PC RBAC provider currently supports only the [list](rbacapplication-list-roledefinitions.md) and [get](unifiedroledefinition-get.md) operations.
 
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.ReadWrite.All  |
 
 ### For Device management (Intune) provider
 
@@ -78,12 +84,9 @@ The following table shows the properties that are required when you create a rol
 
 If successful, this method returns `201 Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Example
+## Example1：Create the custom role for a directory provider
 
 ### Request
-
-The following is an example of creating a custom role for a directory provider.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -157,7 +160,7 @@ Content-type: application/json
         {
             "allowedResourceActions": [
                 "microsoft.directory/applications/standard/read",
-				"microsoft.directory/applications/basic/update"
+                "microsoft.directory/applications/basic/update"
             ],
             "condition": null
         }
@@ -177,4 +180,67 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+### Example 2: Create the custom role for a Cloud PC provider
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
+Content-type: application/json
+
+{
+  "description": "A example custom role",
+  "displayName": "ExampleCustomRole",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "Microsoft.CloudPC/CloudPCs/Read"
+            ]
+        }
+    ],
+    "condition" : "null"
+}
+```
+
+### Response
+
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPc/roleDefinitions/$entity",
+    "id": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff"
+    "description": "A example custom role",
+    "displayName": "ExampleCustomRole",
+    "isBuiltIn": false,
+    "isEnabled": true,
+    "templateId": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff",
+    "version": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "Microsoft.CloudPC/CloudPCs/Read"
+            ],
+            "condition": null
+        }
+    ],
+    "resourceScopes":["/"]
+}
+```
