@@ -4,7 +4,7 @@ description: "Represents the certification of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "ardhanap"
+author: "arpitha-dhanapathi"
 ---
 
 # certification resource type
