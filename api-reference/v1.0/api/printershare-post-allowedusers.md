@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create allowedUser for printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Grant the specified user access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
 ## Permissions

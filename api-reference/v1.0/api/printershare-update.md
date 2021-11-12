@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Update the properties of a printer share. This method can be used to swap [printers](../resources/printer.md).
 
 For example, if a physical printer device breaks, an administrator can register a new [printer](../resources/printer.md) device and update this [printerShare](../resources/printerShare.md) to point to the new printer without requiring users to take any action.

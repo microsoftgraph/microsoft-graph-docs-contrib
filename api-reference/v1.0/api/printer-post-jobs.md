@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create printJob
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
 
 Also creates a new [printDocument](../resources/printDocument.md) associated with the printJob.

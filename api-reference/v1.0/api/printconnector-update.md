@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update printConnector
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Update the properties of a **printConnector** object.
 
 ## Permissions
