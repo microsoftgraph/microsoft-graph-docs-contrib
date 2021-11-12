@@ -66,7 +66,6 @@ If successful, this method returns a `201 Created` response code and a [tenantTa
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Support",

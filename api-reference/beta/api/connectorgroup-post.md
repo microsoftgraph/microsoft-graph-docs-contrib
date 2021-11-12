@@ -63,7 +63,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 Content-type: application/json
-Content-length: 99
 
 {
   "name": "Connector Group Demo"
@@ -104,7 +103,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 119
 
 {
   "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",

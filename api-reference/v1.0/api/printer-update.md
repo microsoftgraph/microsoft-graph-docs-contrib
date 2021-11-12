@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update printer
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Update the properties of a [printer](../resources/printer.md) object.
 
 ## Permissions
@@ -113,7 +111,6 @@ If using application permissions, if successful, this method returns `204 No con
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
-Content-length: 581
 
 {
   "name": "PrinterName",

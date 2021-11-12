@@ -54,7 +54,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"

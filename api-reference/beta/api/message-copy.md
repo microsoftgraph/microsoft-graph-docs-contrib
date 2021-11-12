@@ -72,7 +72,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -115,7 +114,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

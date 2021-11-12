@@ -80,7 +80,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -124,7 +123,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

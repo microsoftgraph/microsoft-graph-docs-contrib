@@ -77,7 +77,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
 Content-Type: application/json
-Content-length: 179
 
 {
     "@odata.type": "microsoft.graph.ediscovery.userSource",
@@ -147,7 +146,6 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
 Content-Type: application/json
-Content-length: 179
 
 {
     "@odata.type": "microsoft.graph.ediscovery.siteSource",

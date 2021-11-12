@@ -60,7 +60,6 @@ If successful, this method returns `201 Created` response code and [groupLifecyc
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 100,
@@ -102,7 +101,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 174
 
 {
   "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",

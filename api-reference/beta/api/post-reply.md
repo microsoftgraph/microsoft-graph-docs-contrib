@@ -62,7 +62,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and an updated [stor
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

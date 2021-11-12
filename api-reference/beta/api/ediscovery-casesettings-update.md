@@ -65,7 +65,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings
 Content-Type: application/json
-Content-length: 350
 
 {
     "redundancyDetection": {

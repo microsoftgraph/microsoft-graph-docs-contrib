@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -156,7 +155,6 @@ GET https://graph.microsoft.com/v1.0/me
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -220,7 +218,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
    "displayName": "Adele Vance",

@@ -77,7 +77,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/replyAll
 Content-type: application/json
-Content-length: 32
 
 {
   "comment": "comment-value"

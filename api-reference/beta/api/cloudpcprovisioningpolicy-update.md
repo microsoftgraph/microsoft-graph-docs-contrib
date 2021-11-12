@@ -77,7 +77,6 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
-Content-length: 308
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -125,7 +124,6 @@ Content-length: 308
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 355
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",

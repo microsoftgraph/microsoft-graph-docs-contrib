@@ -65,7 +65,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
-Content-length: 109
 
 {
   "displayName": "ShareName",
@@ -106,7 +105,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

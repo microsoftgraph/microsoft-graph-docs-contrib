@@ -70,7 +70,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

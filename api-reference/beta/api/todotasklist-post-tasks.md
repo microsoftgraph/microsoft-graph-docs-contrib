@@ -81,7 +81,6 @@ The following example creates a **todoTask** in the specified task list, and inc
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
-Content-length: 608
 
 {
    "title":"A new task",

@@ -80,7 +80,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -152,7 +151,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -231,7 +229,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",

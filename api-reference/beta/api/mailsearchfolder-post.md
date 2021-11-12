@@ -75,7 +75,6 @@ The following is an example of the request - it creates a search folder of messa
 ```http
 POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",

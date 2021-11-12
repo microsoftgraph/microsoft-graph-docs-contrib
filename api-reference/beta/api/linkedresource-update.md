@@ -66,7 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [link
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 Content-Type: application/json
-Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",

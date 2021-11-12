@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and an [itemPat
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/patents
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.",

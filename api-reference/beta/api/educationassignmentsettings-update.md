@@ -67,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
-Content-length: 114
 
 {
   "submissionAnimationDisabled": true

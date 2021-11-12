@@ -57,7 +57,6 @@ The following example creates a task folder called Volunteer in the default task
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders 
 Content-type: application/json
-Content-length: 60
 
 {
   "name": "Volunteer"
@@ -96,7 +95,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPWAAA=",

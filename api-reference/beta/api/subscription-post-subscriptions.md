@@ -197,7 +197,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 252
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",

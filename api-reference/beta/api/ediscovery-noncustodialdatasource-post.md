@@ -75,7 +75,6 @@ If successful, this method returns a `201 Created` response code and a [noncusto
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources
 Content-Type: application/json
-Content-length: 206
 
 {
     "applyHoldToSource" : true,
@@ -149,7 +148,6 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/noncustodialdatasources
 Content-Type: application/json
-Content-length: 206
 
 {
     "applyHoldToSource": false,

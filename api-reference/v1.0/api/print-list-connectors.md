@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List printConnectors
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of print connectors.
 
 ## Permissions

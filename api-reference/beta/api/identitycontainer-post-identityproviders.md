@@ -113,7 +113,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.socialIdentityProvider",
@@ -286,7 +285,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.appleManagedIdentityProvider",

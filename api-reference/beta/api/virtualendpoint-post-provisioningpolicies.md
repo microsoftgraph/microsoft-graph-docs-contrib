@@ -77,7 +77,6 @@ If successful, this method returns a `201 Created` response code and a [cloudPcP
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies
 Content-Type: application/json
-Content-length: 309
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -125,7 +124,6 @@ Content-length: 309
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 357
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",

@@ -68,7 +68,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/accept
 Content-type: application/json
-Content-length: 56
 
 {
   "comment": "comment-value",

@@ -77,7 +77,6 @@ If the export is started successfully, this action returns a `202 Accepted` resp
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/reviewsets/e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc/export
 Content-Type: application/json
-Content-length: 186
 
 {
   "outputName": "2020-12-06 Contoso investigation export",

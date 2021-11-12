@@ -73,7 +73,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true

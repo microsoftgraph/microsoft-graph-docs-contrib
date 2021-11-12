@@ -99,7 +99,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1044
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",

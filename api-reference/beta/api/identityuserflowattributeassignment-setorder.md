@@ -71,7 +71,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/setOrder
 Content-Type: application/json
-Content-length: 90
 
 {
   "newAssignmentOrder": {

@@ -63,7 +63,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
-Content-length: 376
 
 {
   "subject": "Shop for dinner",
@@ -113,7 +112,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 376
 
 {
   "createdDateTime": "2016-04-22T05:44:01.2012012Z",

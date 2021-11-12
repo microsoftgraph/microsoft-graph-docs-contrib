@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/copyNotebook
 Content-type: application/json
-Content-length: 108
 
 {
   "groupId": "groupId-value",

@@ -75,7 +75,6 @@ If successful, this method returns a `201 Created` response code and an [itemPub
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/publications
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "One persons journey to the top of the branding management field.",

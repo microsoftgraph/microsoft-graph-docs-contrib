@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
-Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",

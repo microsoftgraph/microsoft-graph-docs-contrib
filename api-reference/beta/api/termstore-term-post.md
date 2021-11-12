@@ -69,7 +69,6 @@ If successful, this method returns a `201 Created` response code and a [term](..
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels": [

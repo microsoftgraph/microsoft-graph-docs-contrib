@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List printerShares for a printer
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of printer shares associated with the [printer](../resources/printer.md).
 >**Note:** Currently, only **one** printer share per printer is supported.
 

@@ -62,7 +62,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/11014
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",
@@ -104,7 +103,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
 
 {
   "id": "11014",

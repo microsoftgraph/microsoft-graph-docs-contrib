@@ -57,7 +57,6 @@ The following example creates a task folder called `Cooking` in the specified ta
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
 Content-type: application/json
-Content-length: 131
 
 {
   "name": "Cooking"
@@ -97,7 +96,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPXAAA=",

@@ -81,7 +81,6 @@ Here is an example of the request to create and send a message on the fly.
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -152,7 +151,6 @@ The next example shows a message by the signed-in user to Samantha Booth. The me
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 344
 
 {
   "Message": {

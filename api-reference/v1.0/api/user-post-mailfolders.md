@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -103,7 +102,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "Clutter",

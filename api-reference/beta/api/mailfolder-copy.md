@@ -70,7 +70,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -114,7 +113,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

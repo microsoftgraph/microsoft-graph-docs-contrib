@@ -143,7 +143,6 @@ You can obtain the ID of the label you want to apply to a Microsoft 365 group by
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "assignedLabels": 

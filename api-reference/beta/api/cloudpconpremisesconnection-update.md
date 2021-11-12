@@ -81,7 +81,6 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 Content-Type: application/json
-Content-length: 800
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
@@ -133,7 +132,6 @@ Content-length: 800
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

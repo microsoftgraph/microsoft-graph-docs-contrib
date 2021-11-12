@@ -59,7 +59,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}
 Content-type: application/json
-Content-length: 211
 
 {  
  "isMembershipLimitedToOwners": true,

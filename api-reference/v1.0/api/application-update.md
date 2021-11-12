@@ -76,7 +76,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/{id}
 Content-type: application/json
-Content-length: 72
 
 {
   "displayName": "New display name"

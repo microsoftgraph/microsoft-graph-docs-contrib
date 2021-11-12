@@ -60,7 +60,6 @@ It also updates the last view time of the plan "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
 ```http
 PATCH https://graph.microsoft.com/beta/me/planner
 Content-type: application/json
-Content-length: 504
 Prefer: return=representation
 If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
 
@@ -109,7 +108,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "favoritePlanReferences": {

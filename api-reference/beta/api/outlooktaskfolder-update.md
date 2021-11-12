@@ -63,7 +63,6 @@ The following example changes the name of the specified task folder to `Charity 
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=
 Content-type: application/json
-Content-length: 31
 
 {
   "name": "Charity work"
@@ -101,7 +100,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPWAAA=",

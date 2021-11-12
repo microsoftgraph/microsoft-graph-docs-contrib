@@ -68,7 +68,6 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization new name",

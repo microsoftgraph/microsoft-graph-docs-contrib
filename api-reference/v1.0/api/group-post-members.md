@@ -68,7 +68,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -127,7 +126,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
-Content-length: 30
 
 {
   "members@odata.bind": [

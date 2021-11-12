@@ -65,7 +65,6 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
-Content-length: 381
 
 {
   "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
@@ -109,7 +108,6 @@ Here is an example of the response. Note: The response object shown here might b
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

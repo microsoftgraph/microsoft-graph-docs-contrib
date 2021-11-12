@@ -59,7 +59,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -99,7 +98,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
     "id": "AAMkAGVmMDEzM",

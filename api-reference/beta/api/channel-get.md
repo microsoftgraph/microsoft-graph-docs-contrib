@@ -105,7 +105,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",

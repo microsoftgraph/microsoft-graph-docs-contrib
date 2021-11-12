@@ -73,7 +73,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -133,7 +132,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -194,7 +192,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "value": [
@@ -237,7 +234,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 547
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedOperationEvents",

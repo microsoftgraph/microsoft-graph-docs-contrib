@@ -73,7 +73,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 Content-Type: application/json
-Content-length: 295
 
 {
   "description": "This is a description for a legalHold"

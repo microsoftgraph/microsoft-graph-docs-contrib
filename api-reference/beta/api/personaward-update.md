@@ -71,7 +71,6 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Association of Branding Management",

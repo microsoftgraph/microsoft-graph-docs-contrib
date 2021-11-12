@@ -59,7 +59,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/contacts/{id}/getMemberObjects
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -100,7 +99,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

@@ -83,7 +83,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
@@ -126,7 +125,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 202
 
 {
     "id": "AAMkADNkN2R",
@@ -154,7 +152,6 @@ Here is an example of the request.
 ```
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -191,7 +188,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
   "id":"AAMkADNkNJp5JVnQIe9r0=",
@@ -219,7 +215,6 @@ The attachment points to a folder on OneDrive.
 ```
 POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M88AADUv0uFAAA=/attachments
 Content-type: application/json
-Content-length: 319
 
 { 
     "@odata.type": "#microsoft.graph.referenceAttachment", 

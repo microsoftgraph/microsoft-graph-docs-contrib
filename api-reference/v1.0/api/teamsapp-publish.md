@@ -80,7 +80,6 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -129,7 +128,6 @@ Content-Type: application/json
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]

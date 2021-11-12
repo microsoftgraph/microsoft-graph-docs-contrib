@@ -59,7 +59,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/contactFolders/{id}
 Content-type: application/json
-Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -98,7 +97,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",

@@ -62,7 +62,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "microsoft.graph.fileAttachment",
@@ -119,7 +118,6 @@ HTTP/1.1 201 Created
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",

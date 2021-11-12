@@ -59,7 +59,6 @@ The following example assigns a built-in role to a user.
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id":"https://graph.microsoft.com/beta/users/0f933635-5b77-4cf4-a577-f78a5eb090a2"
@@ -109,7 +108,6 @@ You can use a specific resource set like users or groups in the request body, or
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id":"https://graph.microsoft.com/beta/directoryObjects/2c891f12-928d-4da2-8d83-7d2434a0d8dc"
@@ -160,7 +158,6 @@ In this request, replace `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` with the value o
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"

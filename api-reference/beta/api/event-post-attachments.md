@@ -70,7 +70,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
-Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
@@ -146,7 +145,6 @@ Here is an example which attaches an event with another event as an item attachm
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
-Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -184,7 +182,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
@@ -215,7 +212,6 @@ The attachment points to a folder on OneDrive.
 ```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
-Content-length: 319
 
 {
     "@odata.type": "#microsoft.graph.referenceAttachment",

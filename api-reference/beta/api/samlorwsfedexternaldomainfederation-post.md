@@ -80,7 +80,6 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 ``` http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations
 Content-Type: application/json
-Content-length: 283
 
 {
     "@odata.type": "microsoft.graph.samlOrWsFedExternalDomainFederation",

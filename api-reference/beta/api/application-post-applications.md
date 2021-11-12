@@ -59,7 +59,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
-Content-length: 67
 
 {
   "displayName": "Display name"
@@ -99,7 +98,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",

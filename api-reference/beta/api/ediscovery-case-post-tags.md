@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 Content-Type: application/json
-Content-length: 235
 
 {
   "displayName":"Privileged",

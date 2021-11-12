@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
-Content-length: 178
 
 {
   "values": [

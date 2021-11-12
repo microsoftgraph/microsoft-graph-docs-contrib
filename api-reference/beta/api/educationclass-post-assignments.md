@@ -56,7 +56,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
-Content-length: 279
 
 {
     "dueDateTime": "2021-09-07T00:00:00Z",
@@ -113,7 +112,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

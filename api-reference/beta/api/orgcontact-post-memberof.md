@@ -53,7 +53,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/memberOf
 Content-type: application/json
-Content-length: 30
 
 {
   "directoryObject": {
@@ -85,7 +84,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 51
 
 {
   "directoryObject": {

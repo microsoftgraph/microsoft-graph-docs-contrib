@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get printOperation
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve the properties and relationships of a [printOperation](../resources/printoperation.md) object.
 
 ## Permissions

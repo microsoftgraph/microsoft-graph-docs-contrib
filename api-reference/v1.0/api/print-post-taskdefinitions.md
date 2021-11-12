@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create printTaskDefinition
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Create a new task definition.
 
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
@@ -65,7 +63,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
 ``` http
 POST https://graph.microsoft.com/v1.0/print/taskDefinitions
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

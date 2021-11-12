@@ -114,7 +114,6 @@ Here is an example of the response. The **completedDateTime** and other date-rel
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 465
 
 {
   "value": [

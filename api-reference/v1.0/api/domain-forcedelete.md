@@ -82,7 +82,6 @@ If successful, this method returns `HTTP/1.1 204 OK` status code.
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

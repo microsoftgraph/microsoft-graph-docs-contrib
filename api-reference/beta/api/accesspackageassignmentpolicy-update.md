@@ -73,7 +73,6 @@ In this policy update, one of the options for the multiple choice question was r
 ``` http
 PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/b2eba9a1-b357-42ee-83a8-336522ed6cbf
 Content-Type: application/json
-Content-length: 1000
 
 {
     "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",

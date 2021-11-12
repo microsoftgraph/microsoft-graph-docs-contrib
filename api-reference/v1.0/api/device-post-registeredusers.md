@@ -53,7 +53,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

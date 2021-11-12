@@ -63,7 +63,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/schools/{id}/users/$ref
 Content-type: application/json
-Content-length: 56
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/education/users/14008"

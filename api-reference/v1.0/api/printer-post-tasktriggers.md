@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create printTaskTrigger
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Create a new [task trigger](../resources/printtasktrigger.md) on the specified [printer](../resources/printer.md). Currently, only **one** task trigger can be specified per printer, but this limit may be removed in the future. 
 
 ## Permissions
@@ -60,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json
-Content-length: 80
 
 {
   "event": "jobStarted",

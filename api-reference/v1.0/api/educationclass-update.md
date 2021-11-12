@@ -63,7 +63,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",

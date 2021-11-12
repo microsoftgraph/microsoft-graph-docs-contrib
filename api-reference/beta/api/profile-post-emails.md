@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and an [itemEma
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/emails
 Content-Type: application/json
-Content-length: 383
 
 {
   "address": "Innocenty.Popov@adventureworks.com",

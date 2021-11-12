@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 Content-Type: application/json
-Content-length: 279
 
 {
     "email":"AdeleV@contoso.com",

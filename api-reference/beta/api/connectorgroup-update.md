@@ -60,7 +60,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 Content-type: application/json
-Content-length: 99
 
 {
   "name": "name-value",
@@ -99,7 +98,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 119
 
 {
   "id": "id-value",

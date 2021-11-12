@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code and an updated [agre
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "Sample ToU display name",
@@ -94,7 +93,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "Sample ToU display name",

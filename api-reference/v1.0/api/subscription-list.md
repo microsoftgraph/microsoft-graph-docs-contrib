@@ -121,7 +121,6 @@ Here's an example of the response.  Note that it may be truncated for brevity.  
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 586
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions",

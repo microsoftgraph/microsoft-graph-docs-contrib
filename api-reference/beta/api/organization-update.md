@@ -73,7 +73,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],

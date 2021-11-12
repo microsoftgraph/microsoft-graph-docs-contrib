@@ -63,7 +63,6 @@ The following is an example of the request.
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",
