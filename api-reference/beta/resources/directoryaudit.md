@@ -36,7 +36,7 @@ Represents the directory audit items and its collection.
 | loggedByService     | String                                              | Indicates information on which service initiated the activity (For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.                                                          |
 | result              | operationResult                                              | Indicates the result of the activity. Possible values are: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | String                                              | Indicates the reason for failure if the **result** is `failure` or `timeout`.                                                                                                                                                                                              |
-| targetResources     | [targetResource](targetresource.md) collection      | Indicates information on which resource was changed due to the activity. Target Resource Type can be `User`, `Device`, `Directory`, `App`, `Role`, `Group`, `Policy` or `Other`. 
+| targetResources     | [targetResource](targetresource.md) collection      | Information about the resource that changed due to the activity.  | 
 |userAgent|String|Type of userAgent used by a user in the audit event. |                                                                                                      |
 
 ## Relationships
