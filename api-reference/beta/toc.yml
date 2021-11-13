@@ -1556,25 +1556,25 @@ items:
           - name: Get
             href: api/meetingattendancereport-get.md
         - name: Meeting registration
-            href: resources/meetingregistration.md
+          href: resources/meetingregistration.md
+          items:
+          - name: Create
+            href: api/meetingregistration-post.md
+          - name: Get
+            href: api/meetingregistration-get.md
+          - name: Update
+            href: api/meetingregistration-update.md
+          - name: Delete
+            href: api/meetingregistration-delete.md
+          - name: Meeting registrant
+            href: resources/meetingregistrant.md
             items:
+            - name: List
+              href: api/meetingregistration-list-registrants.md
             - name: Create
-              href: api/meetingregistration-post.md
-            - name: Get
-              href: api/meetingregistration-get.md
-            - name: Update
-              href: api/meetingregistration-update.md
+              href: api/meetingregistration-post-registrants.md
             - name: Delete
-              href: api/meetingregistration-delete.md
-            - name: Meeting registrant
-              href: resources/meetingregistrant.md
-              items:
-              - name: List
-                href: api/meetingregistration-list-registrants.md
-              - name: Create
-                href: api/meetingregistration-post-registrants.md
-              - name: Delete
-                href: api/meetingregistrant-delete.md
+              href: api/meetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
