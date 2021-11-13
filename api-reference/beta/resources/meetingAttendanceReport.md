@@ -15,20 +15,22 @@ Namespace: microsoft.graph
 
 Contains information associated with meeting attendance report.
 
+Meeting attendance reports are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of the [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
 |[Get meetingAttendanceReport](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
-|[List attendanceRecords](../api/meetingattendancereport-list-attendancerecords.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get the attendanceRecord resources from the attendanceRecords navigation property.|
 
 ## Properties
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
+| id                    | String   | The ID of an attendance report. Read-only. |
 | meetingEndDateTime    | DateTime | The meeting end time in UTC. Read-only.   |
-| meetingStartDateTime  | DateTime | The meeting end time in UTC. Read-only.   |
+| meetingStartDateTime  | DateTime | The meeting start time in UTC. Read-only.   |
 | totalParticipantCount | Int32 | Total number of participants. Read-only.  |
 
 ## Relationships

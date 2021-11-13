@@ -1548,6 +1548,13 @@ items:
             href: api/onlinemeeting-delete.md
           - name: Create or get
             href: api/onlinemeeting-createorget.md
+          - name: Meeting attendance report
+            href: resources/meetingAttendanceReport.md
+            items:
+            - name: List
+              href: api/meetingattendancereport-list.md
+            - name: Get
+              href: api/meetingattendancereport-get.md
           - name: Meeting registration
             href: resources/meetingregistration.md
             items:

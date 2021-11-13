@@ -49,6 +49,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **attendanceRecords** relationship to [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
           "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "78460719-8a72-46f4-b4c5-a2f864882fb5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendanceReports** relationship to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
         }
       ],
       "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
@@ -56,7 +64,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-11-12T00:20:34.714968Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "SubArea": "Online meeting"
     },
     {
       "ChangeList": [
