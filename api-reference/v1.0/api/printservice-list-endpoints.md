@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List endpoints
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of endpoints exposed by a print service.
 
 ## Permissions

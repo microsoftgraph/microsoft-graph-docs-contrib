@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Delete printConnector
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Delete (unregister) a **printConnector**.
 
 ## Permissions

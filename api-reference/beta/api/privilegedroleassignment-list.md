@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRoleAssignment objects, which corresp
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List privilegedRoleAssignments
@@ -90,7 +90,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -146,7 +145,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -210,7 +208,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -274,7 +271,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

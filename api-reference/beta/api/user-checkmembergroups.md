@@ -75,7 +75,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -116,7 +115,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

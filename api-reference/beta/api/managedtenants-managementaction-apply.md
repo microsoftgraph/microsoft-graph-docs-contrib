@@ -67,7 +67,6 @@ If successful, this action returns a `200 OK` response code and a [managementAct
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
 Content-Type: application/json
-Content-length: 95
 
 {
   "tenantId": "String",

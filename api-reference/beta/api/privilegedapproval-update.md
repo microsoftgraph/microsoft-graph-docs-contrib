@@ -4,7 +4,7 @@ description: "Update the properties of privilegedapproval object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Update privilegedapproval
@@ -69,7 +69,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
-Content-length: 180
 
 {
   "approvalState": "approvalState-value",

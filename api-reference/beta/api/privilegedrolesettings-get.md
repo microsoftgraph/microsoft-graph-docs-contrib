@@ -4,7 +4,7 @@ description: "Retrieve the role settings for the given role. A privilegedRoleSet
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get privilegedRoleSettings
@@ -89,7 +89,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 228
 
 {
   "minElevationDuration": "2016-10-19T10:37:00Z",

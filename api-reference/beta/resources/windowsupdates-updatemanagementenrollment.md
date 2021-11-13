@@ -20,7 +20,7 @@ Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates that the service manages. Supports a subset of the values for **updateCategory**. Possible values are: `feature`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates that the service manages. Supports a subset of the values for **updateCategory**. Possible values are: `feature`, `unknownFutureValue`.|
 
 ## Relationships
 None.

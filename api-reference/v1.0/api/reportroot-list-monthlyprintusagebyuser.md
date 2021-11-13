@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List monthlyPrintUsageByUser
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of monthly print usage summaries, grouped by user.
 
 ## Permissions

@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels" : [

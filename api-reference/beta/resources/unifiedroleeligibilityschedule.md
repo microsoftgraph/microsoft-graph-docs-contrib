@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for an eligible role assignment operations through Azure AD Privileged Identity Management."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

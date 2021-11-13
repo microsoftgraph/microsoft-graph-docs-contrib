@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List printers
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve the list of **printers** that are registered in the tenant.
 
 ## Permissions

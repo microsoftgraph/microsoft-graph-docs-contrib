@@ -65,7 +65,6 @@ If successful, this action returns a `200 OK` response code and a [tenantTag](..
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 Content-Type: application/json
-Content-length: 41
 
 {
   "tenantIds": [
