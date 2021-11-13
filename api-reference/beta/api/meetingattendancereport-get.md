@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 <!-- {
   "blockType": "response",
-  "name": "get-attendanceReports",
+  "name": "get-attendanceReport-by-id",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingAttendanceReport"
 }-->
