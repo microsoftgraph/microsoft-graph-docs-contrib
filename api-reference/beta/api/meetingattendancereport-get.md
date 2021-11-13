@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) of an [onlineMeeting](../resources/onlinemeeting.md) by ID. Each time an online meeting is started and ended, an attendance report will be generated.
+Get an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) of an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting is started and ended, an attendance report will be generated for that session.
 
 ## Permissions
 
@@ -25,13 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
 
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+
 ## HTTP request
 
 To get an attendance report by id with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onlineMeetings/{meetingId}/attendanceReports/{id}
-GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{id}
+GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
+GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
 To get the attendance report of the latest session of an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
@@ -40,6 +42,12 @@ To get the attendance report of the latest session of an online meeting with del
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
+
+> [!TIP]
+>
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 
 > [!CAUTION]
 >

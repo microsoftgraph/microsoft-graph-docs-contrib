@@ -28,16 +28,16 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
-| id                    | String   | The ID of an attendance report. Read-only. |
-| meetingEndDateTime    | DateTime | The meeting end time in UTC. Read-only.   |
-| meetingStartDateTime  | DateTime | The meeting start time in UTC. Read-only.   |
+| id                    | String   | Unique identifier for the attendance report. Read-only. |
+| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting was ended. Read-only.   |
+| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting was started. Read-only.   |
 | totalParticipantCount | Int32 | Total number of participants. Read-only.  |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceRecords | [attendanceRecord](attendanceRecord.md) collection | The list of attendance records. Read-only. |
+| attendanceRecords | [attendanceRecord](attendanceRecord.md) collection | List of attendance records of an attendance report. Read-only. |
 
 ## JSON representation
 
