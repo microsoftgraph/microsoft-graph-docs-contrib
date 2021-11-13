@@ -9256,6 +9256,7 @@
     },
     {
       "ChangeList": [
+        {
           "Id": "224526a5-09a4-4895-9b8b-40e8984a4144",
           "ApiChange": "Resource",
           "ChangedApiName": "appleManagedIdentityProvider",
