@@ -30,7 +30,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 ## Policies available for authentication methods registration campaign:
 |Policy       | Description |
 |:---------------------------|:------------|
-|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who should be reminded to set up an authentication method (only supported for the Microsoft Authenticator).|
+|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who should be reminded to set up an authentication method (Currently only supported for the Microsoft Authenticator).|
 
 ## Next steps
 
