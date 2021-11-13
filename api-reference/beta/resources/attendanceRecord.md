@@ -15,36 +15,49 @@ Namespace: microsoft.graph
 
 Contains information associated with attendance record in meeting attendance report.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of the [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
+
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| identity | [Identity](identity.md) | Identifier, such as display name. |
-| emailAddress | String | Email address. |
-| totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 | attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving. |
+| emailAddress | String | Email address. |
+| identity | [Identity](identity.md) | Identifier, such as display name. |
 | role | String | Role of the attendee. Possible values are `None`, `Attendee`, `Presenter`, and `Organizer`.  |
+| totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.attendanceRecord"
-}-->
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.attendanceRecord",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
 
 ```json
 
 {
-    "emailAddress": "String",
-    "totalAttendanceInSeconds": "Int32",
-    "role": "String(None|Attendee|Presenter|Organizer)",
-    "identity": {"@odata.type": "#microsoft.graph.identity"},
-    "attendanceIntervals": [{"@odata.type": "#microsoft.graph.attendanceInterval"}]
+  "@odata.type": "#microsoft.graph.attendanceRecord",
+  "emailAddress": "String",
+  "totalAttendanceInSeconds": "Int32",
+  "role": "String(None|Attendee|Presenter|Organizer)",
+  "identity": {
+    "@odata.type": "#microsoft.graph.identity"
+  },
+  "attendanceIntervals": [
+    {
+      "@odata.type": "#microsoft.graph.attendanceInterval"
+    }
+  ]
 }
 
 ```

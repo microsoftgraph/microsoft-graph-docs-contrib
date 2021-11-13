@@ -1555,6 +1555,11 @@ items:
             href: api/meetingattendancereport-list.md
           - name: Get
             href: api/meetingattendancereport-get.md
+          - name: Attendance record
+            href: api/attendancerecord.md
+            items:
+            - name: List
+              href: api/attedancerecord-list.md
         - name: Meeting registration
           href: resources/meetingregistration.md
           items:

@@ -1,0 +1,129 @@
+---
+title: "List attendanceRecords"
+description: "Get a list of the attendanceRecord objects and their properties."
+author: "mkhribech"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
+doc_type: apiPageType
+---
+
+# List attendanceRecords
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a list of the [attendanceRecord](../resources/attendancerecord.md) objects and their properties.
+
+> [!TIP]
+> The more convenient way to retrieve attendance records is to get them in line with attendance report by using the `expand` query option. See example and more details in [Get attendance report](meetingattendancereport-get.md) .
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type | Permissions (from least to most privileged) |
+|:----------------|:--------------------------------------------|
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | OnlineMeetingArtifact.Read.All |
+
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+
+## HTTP request
+
+To get attendance records of an attendance report with delegated (`/me`) and app (`/users/{userId}`) permission:
+<!-- {"blockType": "ignored"}-->
+``` http
+GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+```
+
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
+
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Name            | Description               |
+| :-------------- | :------------------------ |
+| Authorization   | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [attendanceRecord](../resources/attendancerecord.md) objects in the response body.
+
+## Examples
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_attendancerecord"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/{onlineMeetingId}/meetingAttendanceReport/attendanceRecords
+```
+
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "emailAddress": "(email address)",
+      "totalAttendanceInSeconds": 322,
+      "role": "Organizer",
+      "identity": {
+        "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
+        "displayName": "(display name)",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-05T04:38:27.6027225Z",
+          "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
+          "durationInSeconds": 322
+        }
+      ]
+    },
+    {
+      "emailAddress": "(email address)",
+      "totalAttendanceInSeconds": 314,
+      "role": "Presenter",
+      "identity": {
+        "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
+        "displayName": "(dispaly name)",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-04T23:13:43.3776519Z",
+          "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
+          "durationInSeconds": 314
+        }
+      ]
+    }
+  ]
+}
+```
