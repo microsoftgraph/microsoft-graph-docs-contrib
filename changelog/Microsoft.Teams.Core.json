@@ -78,23 +78,23 @@
           "ApiChange": "Property",
           "ChangedApiName": "isHidden",
           "ChangeType": "Addition",
-          "Description": "Added the **isHidden** property to [chatViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-beta) resource.",
+          "Description": "Added the **isHidden** property to the [chatViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-beta) resource.",
           "Target": "chatViewpoint"
         },
         {
           "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "hideForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [hideForUser](https://docs.microsoft.com/en-us/graph/api/hideForUser?view=graph-rest-beta) method to the [hideForUser](https://docs.microsoft.com/en-us/graph/api/hideForUser?view=graph-rest-beta) resource.",
+          "Description": "Added the [hideForUser](https://docs.microsoft.com/en-us/graph/api/hideForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "hideForUser"
         },
         {
           "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "unhideForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [unhideForUser](https://docs.microsoft.com/en-us/graph/api/unhideForUser?view=graph-rest-beta) method to the [unhideForUser](https://docs.microsoft.com/en-us/graph/api/unhideForUser?view=graph-rest-beta) resource.",
+          "Description": "Added the [unhideForUser](https://docs.microsoft.com/en-us/graph/api/unhideForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "unhideForUser"
         }
       ],

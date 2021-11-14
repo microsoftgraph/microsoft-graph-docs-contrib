@@ -1,6 +1,6 @@
 ---
 title: "chat: hideForUser"
-description: "Hide chat for a user"
+description: "Hide a chat for a user."
 author: "RamjotSingh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Hides [chat](../resources/chat.md) for a user.
+Hides a [chat](../resources/chat.md) for a user.
 
-> **Note:** Chat will be automatically unhidden for the user if an action (like sending a message) is taken on the chat.
+> **Note:** A chat is automatically unhidden for a user if an action such as *Send Message* is taken at chat level.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,14 +42,14 @@ POST /chats/{chatsId}/hideForUser
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated, a user may only hide chat for themselves**.|
-|tenantId|String|Tenant id of the user.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated mode, users may only hide a chat for themselves**.|
+|tenantId|String|Tenant ID of the user.|
 
 ## Response
 
