@@ -2,9 +2,9 @@
 title: "chat: hideForUser"
 description: "Hide a chat for a user."
 author: "RamjotSingh"
-localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
+ms.localizationpriority: medium
 ---
 
 # chat: hideForUser

@@ -2,9 +2,9 @@
 title: "chat: unhideForUser"
 description: "Unhide a chat for a user."
 author: "RamjotSingh"
-localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
+ms.localizationpriority: medium
 ---
 
 # chat: unhideForUser
