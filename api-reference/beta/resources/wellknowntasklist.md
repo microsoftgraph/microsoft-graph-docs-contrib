@@ -1,9 +1,9 @@
 ---
 title: "wellKnownTaskList resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A list in Microsoft To Do that contains one or more Task resources that cannot be modified or deleted"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A built-in task list which cannot be renamed or deleted. To Do has two built-in lists, **Flagged emails** and **Tasks** list.
 
+This resource supports adding your data to custom properties as [open extensions](/graph/extensibility-overview)
 
 Inherits from [baseTaskList](../resources/basetasklist.md).
 
@@ -23,8 +24,6 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 |:---|:---|:---|
 |[List wellKnownTaskLists](../api/wellknowntasklist-list.md)|[wellKnownTaskList](../resources/wellknowntasklist.md) collection|Get a list of the [wellKnownTaskList](../resources/wellknowntasklist.md) objects and their properties.|
 |[Get wellKnownTaskList](../api/wellknowntasklist-get.md)|[wellKnownTaskList](../resources/wellknowntasklist.md)|Read the properties and relationships of a [wellKnownTaskList](../resources/wellknowntasklist.md) object.|
-|[Update wellKnownTaskList](../api/wellknowntasklist-update.md)|[wellKnownTaskList](../resources/wellknowntasklist.md)|Update the properties of a [wellKnownTaskList](../resources/wellknowntasklist.md) object.|
-|[Delete wellKnownTaskList](../api/wellknowntasklist-delete.md)|None|Deletes a [wellKnownTaskList](../resources/wellknowntasklist.md) object.|
 |[List extensions](../api/wellknowntasklist-list-extensions.md)|[extension](../resources/extension.md) collection|Get the extension resources from the extensions navigation property.|
 |[Create extension](../api/wellknowntasklist-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
 |[List tasks](../api/wellknowntasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
@@ -33,15 +32,23 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md).|
-|id|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md).|
-|wellKnownListName|wellKnownListName_v2|**TODO: Add Description**. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|displayName|String|The name of the task list. Inherited from [baseTaskList](../resources/basetasklist.md).|
+|id|String|The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [baseTaskList](../resources/basetasklist.md).|
+|wellKnownListName|wellKnownListName_v2|Property indicating the list name if the given list is a well-known list.. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+
+### wellknownListName values
+|Member|Description|
+|:---|:---|
+|none| User created list.|
+|defaultList| Built-in **Tasks** list.|
+|flaggedEmails| Built-in **Flagged email** list. Tasks from flagged emails are present in this list.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|extensions|[extension](../resources/extension.md) collection|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
-|tasks|[baseTask](../resources/basetask.md) collection|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
+|extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task list. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md)|
+|tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

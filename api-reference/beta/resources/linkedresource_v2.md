@@ -1,9 +1,9 @@
 ---
 title: "linkedResource_v2 resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the source of the todoTask"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an item in a partner application related to a [baseTask](./basetask.md). An example is an email from where the task was created. A **linkedResource** object stores information about that source application, and lets you link back to the related item. You can see the **linkedResource** in the task details view, as shown.
+
+![Linked resource in task details pane](/graph/images/todo-linkedresource-taskdetail.png)
+
+Some **linkedResource** objects are not associated with any web URLs, in which case, the **webUrl** property is not required. For example, the linked item can be from a custom business app or native platform app, such as an SMS app on a mobile phone. Here is how a **linkedResource** appears with and without a URL.
+
+![Linked resource with and without URL](/graph/images/todo-linkedresource.png)
 
 ## Methods
 |Method|Return type|Description|
@@ -27,11 +33,11 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationName|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|webUrl|String|**TODO: Add Description**|
+|applicationName|String|Field indicating the app name of the source that is sending the **linkedResource**.|
+|displayName|String|Field indicating the title of the **linkedResource**.|
+|externalId|String|Id of the object that is associated with this task on the third-party/partner system.|
+|id|String|Server generated ID for the **linkedResource**. Inherited from [entity](../resources/entity.md).|
+|webUrl|String|Deep link to the **linkedResource**.|
 
 ## Relationships
 None.

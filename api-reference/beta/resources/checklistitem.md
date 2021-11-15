@@ -1,9 +1,9 @@
 ---
 title: "checklistItem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents a collection of checklist items on a task"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a collection of checklist items on a task. ChecklistItems helps split complex tasks into smaller more actionable steps.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,11 +27,11 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|checkedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|isChecked|Boolean|**TODO: Add Description**|
+|checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
+|createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
+|displayName|String|Field indicating the title of **checklistItem**.|
+|id|String|Server generated ID for the **checkListItem**|
+|isChecked|Boolean|State indicating whether the item is checked off or not.|
 
 ## Relationships
 None.
