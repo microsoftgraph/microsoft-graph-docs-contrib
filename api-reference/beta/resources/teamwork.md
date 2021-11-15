@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 A container for the range of Microsoft Teams functionalities that are available for the organization.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List devices](../api/teamwork-list-devices.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get the teamworkDevice resources from the devices navigation property.|
+
 ## Properties
 
 | Property | Type | Description |
@@ -26,6 +31,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+|devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The enrolled devices in the personal scope of this user.|
 
 ## JSON representation
 
@@ -60,5 +66,3 @@ The following is a JSON representation of the resource.
 ## See Also
 
 - [userTeamwork resource](userteamwork.md)
-
-
