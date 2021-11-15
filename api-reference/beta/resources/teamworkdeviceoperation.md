@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
 |lastActionBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastActionDateTime|DateTimeOffset|Last modified time.|
-|operationType|teamworkDeviceOperationType|Type of async device operation. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
+|operationType|[teamworkDeviceOperationType](teamworkDeviceOperationType.md)|Type of async device operation. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|Time at which the operation was started.|
 |status|String|NotStarted/Running/Succeeded/Failed etc.|
 

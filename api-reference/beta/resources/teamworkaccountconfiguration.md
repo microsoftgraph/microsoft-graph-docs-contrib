@@ -20,7 +20,7 @@ These details are only available for Teams Room devices.
 |Property|Type|Description|
 |:---|:---|:---|
 |onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|Details of account used to sync calendar.|
-|supportedClient|teamworkSupportedClient|Supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
+|supportedClient|[teamworksupportedclient](teamworksupportedclient.md)|Supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
 
 ## Relationships
 None.
