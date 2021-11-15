@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Contains metadata about long running operation.
 
+
+Inherits from [operation](../resources/operation.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,15 +28,15 @@ Contains metadata about long running operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Time when this operation was created.|
+|createdDateTime|DateTimeOffset|Time when this operation was created. Inherited from [operation](../resources/operation.md).|
 |error|[publicError](../resources/publicerror.md)| Error due to which the operation failed.|
-|id|String|Operation identifier.|
-|lastActionDateTime|DateTimeOffset| Time when last action was performed on this operation.|
+|id|String|Operation identifier. Inherits from [entity](../resources/entity.md).|
+|lastActionDateTime|DateTimeOffset| Time when last action was performed on this operation. Inherited from [operation](../resources/operation.md).|
 |percentageComplete|Int32|A value between 0 and 100 that indicates the progress of the operation.|
 |resourceId|String|A unique identifier for the result.|
-|resourceLocation|String|Canonical url of the resource.|
-|status|longRunningOperationStatus|Status of the opertaion. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
-|statusDetail|String|Detail about the status value.|
+|resourceLocation|String|Canonical url of the resource. Inherited from [operation](../resources/operation.md).|
+|status|longRunningOperationStatus|Status of the opertaion. Inherited from [operation](../resources/operation.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|statusDetail|String|Detail about the status value. Inherited from [operation](../resources/operation.md).|
 |type|String| Type of the operation.|
 
 ## Relationships
