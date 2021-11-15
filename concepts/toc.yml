@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Schedule a deployment
                 href: windowsupdates-schedule-deployment.md
+              - name: Manage safeguards
+                href: windowsupdates-manage-safeguards.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)
@@ -626,6 +628,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
+              - name: Configure Azure AD Graph permissions
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Use SDKs
         items:
           - name: Overview

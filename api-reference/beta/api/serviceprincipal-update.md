@@ -87,7 +87,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true

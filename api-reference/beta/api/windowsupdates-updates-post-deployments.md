@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `201 Created` response code and a [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [deployme
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-Type: application/json
-Content-length: 344
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
@@ -162,7 +161,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

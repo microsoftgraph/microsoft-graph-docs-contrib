@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a governanceRoleSetti
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get governanceRoleSetting
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 370
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings/$entity",

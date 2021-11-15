@@ -69,7 +69,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
 Content-type: application/json
-Content-length: 97
 
 {
   "newReminderTime": {

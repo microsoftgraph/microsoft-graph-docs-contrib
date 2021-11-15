@@ -134,7 +134,6 @@ Note: The response object shown here is truncated for brevity. All of the proper
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 523
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages/$entity",
@@ -196,7 +195,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2248
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages/$entity",

@@ -71,7 +71,6 @@ If successful, this method returns a `201 Created` response code and an [personA
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/awards
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Lifetime Achievement award from the International Association of Branding Managers",

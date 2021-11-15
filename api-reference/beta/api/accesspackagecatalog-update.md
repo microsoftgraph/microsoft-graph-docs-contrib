@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Update an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object to change one or more of its properties, such as the display name or description.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -66,7 +66,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
 Content-Type: application/json
-Content-length: 39
 
 {
   "displayName":"Catalog One"

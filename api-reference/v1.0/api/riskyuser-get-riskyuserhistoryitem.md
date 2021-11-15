@@ -16,7 +16,7 @@ Read the properties and relationships of a [riskyUserHistoryItem](../resources/r
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of privilegedapproval ob
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get privilegedApproval
@@ -88,7 +88,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 193
 
 {
   "id": "id-value",

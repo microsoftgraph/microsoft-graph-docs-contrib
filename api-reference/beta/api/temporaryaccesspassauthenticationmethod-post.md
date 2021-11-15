@@ -88,7 +88,6 @@ If successful, this method returns a `201 Created` response code and a [temporar
 ``` http
 POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
 Content-Type: application/json
-Content-length: 209
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",

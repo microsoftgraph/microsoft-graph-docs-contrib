@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedapproval objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List privilegedApproval
@@ -91,7 +91,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 246
 
 {
   "value": [

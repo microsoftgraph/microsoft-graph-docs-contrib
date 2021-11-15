@@ -88,7 +88,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -165,7 +164,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -241,7 +239,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -317,7 +314,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -393,7 +389,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -469,7 +464,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",

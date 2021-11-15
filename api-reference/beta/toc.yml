@@ -123,6 +123,8 @@ items:
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
       - name: Migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
+      - name: Configure Azure AD Graph permissions
+        href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
@@ -9808,6 +9810,8 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Cloud PC (preview)
         items:
+        - name: Overview
+          href: resources/cloudpc-api-overview.md
         - name: Virtual endpoint
           href: resources/virtualendpoint.md
           items:
@@ -9847,6 +9851,13 @@ items:
             href: api/cloudpcdeviceimage-getsourceimages.md
           - name: Reupload
             href: api/cloudpcdeviceimage-reupload.md
+        - name: Cloud PC gallery image
+          href: resources/cloudpcgalleryimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-galleryimages.md
+          - name: Get
+            href: api/cloudpcgalleryimage-get.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -14276,6 +14287,10 @@ items:
           href: api/chat-list-operations.md
         - name: Get operation
           href: api/teamsasyncoperation-get.md
+        - name: Mark chat as read
+          href: api/chat-markchatreadforuser.md
+        - name: Mark chat as unread
+          href: api/chat-markchatunreadforuser.md
       - name: Chat message
         href: resources/chatmessage.md
         items:

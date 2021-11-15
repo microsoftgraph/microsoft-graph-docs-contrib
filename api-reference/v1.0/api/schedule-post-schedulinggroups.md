@@ -102,7 +102,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",

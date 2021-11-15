@@ -10,8 +10,6 @@ doc_type: apiPageType
 # printer: restoreFactoryDefaults
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Restore a [printer](../resources/printer.md)'s default settings to the values specified by the manufacturer.
 
 ## Permissions

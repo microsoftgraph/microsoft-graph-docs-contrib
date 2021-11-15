@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 303
 
 {
   "value": [

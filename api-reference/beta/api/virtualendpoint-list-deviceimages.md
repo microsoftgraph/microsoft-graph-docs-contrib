@@ -94,7 +94,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
+  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
+  "isCollection": true
 }
 -->
 

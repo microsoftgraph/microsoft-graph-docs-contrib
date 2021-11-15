@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRoleAssignment objects that are assoc
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List assignments
@@ -92,7 +92,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

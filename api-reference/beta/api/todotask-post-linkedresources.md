@@ -74,7 +74,6 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
-Content-length: 166
 
 {
   "webUrl": "https://microsoft.com",

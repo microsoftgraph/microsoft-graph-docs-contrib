@@ -90,7 +90,6 @@ The following is an example of the response.
 } -->
 ```http
 HTTP/1.1 204 NoContent
-Content-length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

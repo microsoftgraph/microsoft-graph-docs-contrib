@@ -4,7 +4,7 @@ description: "Retrieve a collection of privilegedRoleAssignmentRequest. "
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List privilegedRoleAssignmentRequests
@@ -89,7 +89,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 304
 
 {
   "@odata.context":"https://https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests",

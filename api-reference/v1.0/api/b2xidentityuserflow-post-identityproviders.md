@@ -68,7 +68,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"
