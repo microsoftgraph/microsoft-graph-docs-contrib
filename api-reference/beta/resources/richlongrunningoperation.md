@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Contains metadata about long running operation.
 
-
-Inherits from [longRunningOperation](../resources/longrunningoperation.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

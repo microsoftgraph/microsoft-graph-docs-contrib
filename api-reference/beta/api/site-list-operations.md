@@ -1,18 +1,18 @@
 ---
-title: "List operations"
-description: "Get the richLongRunningOperation resources from the operations navigation property."
+title: "List operations in a site"
+description: "Get the richLongRunningOperation resources from the operations navigation property in a site."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# List operations
+# List operations in a site
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the richLongRunningOperation resources from the operations navigation property.
+Get the richLongRunningOperation resources from the operations navigation property in a site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
