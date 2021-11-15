@@ -32,14 +32,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |activityState|teamworkDeviceActivityState|Device activity state. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
 |companyAssetTag|String|Company asset tag assigned by admin on device.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|CreatedBy.|
+|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
 |createdDateTime|DateTimeOffset|Document create time.|
 |currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Logged in user on the device.|
 |deviceType|teamworkDeviceType|Type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|Hardware related properties are captured in it. For example: oemSerialNumber, model.|
 |healthStatus|teamworkDeviceHealthStatus|Device health status. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Last modifiedby.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time.|
 |notes|String|Notes put by admin on device.|
 

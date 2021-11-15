@@ -28,12 +28,12 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|Camera configuration. Applicable only for Teams Room Devices.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|Createdby.|
+|createdBy|[identitySet](../resources/identityset.md)|Createdby.|
 |createdDateTime|DateTimeOffset|Document created time.|
 |displayConfiguration|[teamworkDisplayConfiguration](../resources/teamworkdisplayconfiguration.md)|	Display configuration.|
 |hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|Hardware configuration. Applicable only for Teams Room Devices.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Last modifiedby.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time.|
 |microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|Microphone configuration. Applicable only for Teams Room Devices.|
 |softwareVersions|[teamworkDeviceSoftwareVersions](../resources/teamworkdevicesoftwareversions.md)|Information related to device software version like: Firmware/OS/TeamsApp/AdminAgent.|

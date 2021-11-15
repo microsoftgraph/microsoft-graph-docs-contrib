@@ -1,5 +1,5 @@
 ---
-title: "List operations"
+title: "List device operations"
 description: "Get the teamworkDeviceOperation resources from the operations navigation property."
 author: "adsrivastava2"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "teamwork"
 doc_type: apiPageType
 ---
 
-# List operations
+# List async device operations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -27,11 +27,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Time at which the operation reached into final state: Successful/Failed/Canceled.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|CreatedBy.|
+|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
 |createdDateTime|DateTimeOffset|Document create time.|
 |error|[operationError](../resources/operationerror.md)|Error details available only in case of Failed Status.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionBy|[identitySet](../resources/intune-identityset.md)|Last modifiedby.|
+|lastActionBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastActionDateTime|DateTimeOffset|Last modified time.|
 |operationType|teamworkDeviceOperationType|Type of async device operation. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|Time at which the operation was started.|

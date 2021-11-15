@@ -26,11 +26,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |connection|[teamworkConnection](../resources/teamworkconnection.md)|ConnectionStatus info.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|CreatedBy.|
+|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
 |createdDateTime|DateTimeOffset|Document created time.|
 |hardwareHealth|[teamworkHardwareHealth](../resources/teamworkhardwarehealth.md)|Health related to device hardware.|
 |id|String|Doucument identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Last modifiedby.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time.|
 |loginStatus|[teamworkLoginStatus](../resources/teamworkloginstatus.md)|Login status of teams, skype and exchange.|
 |peripheralsHealth|[teamworkPeripheralsHealth](../resources/teamworkperipheralshealth.md)|Peripherals health-related info like speaker health, microphone health etc.|

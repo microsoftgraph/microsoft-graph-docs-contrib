@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |activePeripherals|[teamworkActivePeripherals](../resources/teamworkactiveperipherals.md)|Active peripherals attached to device.|
-|createdBy|[identitySet](../resources/intune-identityset.md)|CreatedBy.|
+|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
 |createdDateTime|DateTimeOffset|Document create time.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Last modifiedby.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time.|
 
 
