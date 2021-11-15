@@ -1,7 +1,7 @@
 ---
 title: "teamworkDeviceConfiguration resource type"
-description: "Device confiduration details."
-author: "author: "adsrivastava2"
+description: "Device configuration details."
+author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
