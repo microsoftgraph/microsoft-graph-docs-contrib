@@ -202,7 +202,7 @@ To retrieve specific properties, use the OData `$select` query parameter. For ex
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
