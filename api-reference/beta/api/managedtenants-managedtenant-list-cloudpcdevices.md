@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcD
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdevice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdevice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

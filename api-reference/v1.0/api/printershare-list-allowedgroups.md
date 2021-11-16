@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List allowedGroups
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of groups that have been granted access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
 ## Permissions
@@ -74,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

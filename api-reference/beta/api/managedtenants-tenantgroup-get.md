@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGr
 [!INCLUDE [sample-code](../includes/snippets/java/get-tenantgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tenantgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

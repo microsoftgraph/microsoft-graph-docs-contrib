@@ -13,7 +13,7 @@ var tenantGroupId = "String";
 var managementTemplateId = "String";
 
 await graphClient.TenantRelationships.ManagedTenants.ManagementActions["{managedTenants.managementAction-id}"]
-	.Apply(tenantId,tenantGroupId,managementTemplateId)
+	.Apply(tenantId,tenantGroupId,managementTemplateId,null,null,null)
 	.Request()
 	.PostAsync();
 

@@ -57,7 +57,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -85,6 +84,10 @@ Content-length: 185
 [!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,7 +101,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,
