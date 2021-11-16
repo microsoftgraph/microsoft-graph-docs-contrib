@@ -54,7 +54,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "displayName": "My Contoso Tab - updated"
