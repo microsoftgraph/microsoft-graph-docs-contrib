@@ -290,7 +290,7 @@ Other factors that affect a request cost:
 
 | Request type |  Limit per app per tenant |
 | ------------ | ------------------------ |
-| Any | 60 requests per 60 seconds |
+| Any | 5 requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 
