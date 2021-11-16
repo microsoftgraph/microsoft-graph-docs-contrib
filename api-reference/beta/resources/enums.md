@@ -2554,7 +2554,6 @@ Possible values for user account types (group membership), per Windows definitio
 |inProgress|
 |completed|
 |overdue|
-|notCompleted|
 |unknownFutureValue|
 
 ### teamworkCallEventType values
