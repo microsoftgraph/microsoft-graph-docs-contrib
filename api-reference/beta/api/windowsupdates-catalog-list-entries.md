@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 [!INCLUDE [sample-code](../includes/snippets/java/list-catalogentry-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-catalogentry-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

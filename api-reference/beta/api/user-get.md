@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -157,6 +161,10 @@ GET https://graph.microsoft.com/beta/users/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-other-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-other-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,6 +191,47 @@ Content-type: application/json
       "surname": "Vance",
       "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+}
+```
+
+
+
+### Example 3: Use $select to retrieve specific properties of a user
+
+To retrieve specific properties, use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, _postalCode_, and _identities_, you would use the add the following to your query `$select=displayName,givenName,postalCode,identities`
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_select"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
 }
 ```
 
