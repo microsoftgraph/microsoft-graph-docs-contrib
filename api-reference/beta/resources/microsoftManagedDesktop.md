@@ -1,6 +1,6 @@
 ---
 title: "microsoftManagedDesktop resource type"
-description: "Represents specific settings for the Microsoft Managed Desktop (MMD) which enables MMD customers to get device managed experience for a Cloud PC."
+description: "Represents specific settings for the Microsoft Managed Desktop which enables customers to get device managed experience for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,23 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific settings for the Microsoft Managed Desktop (MMD) which enables MMD customers to get device managed experience for a Cloud PC.
+Represents specific settings for the Microsoft Managed Desktop which enables customers to get device managed experience for a Cloud PC.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |profile|String|Indicates the name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates if the provisioning policy enables MMD. If yes, it indicates the plan. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
+|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates if the provisioning policy enables Microsoft Managed Desktop. If yes, it indicates the plan. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
 
 ### microsoftManagedDesktopType values
 
 |Member|Description|
 |:---|:---|
-|notManaged|The device is not managed by MMD.|
-|premiumManaged|The device is managed by MMD premium plan.|
-|standardManaged|The device is managed by MMD standard plan.|
-|starterManaged|The device is managed by MMD starter plan.|
+|notManaged|The device is not managed by Microsoft Managed Desktop.|
+|premiumManaged|The device is managed by Microsoft Managed Desktop premium plan.|
+|standardManaged|The device is managed by Microsoft Managed Desktop standard plan.|
+|starterManaged|The device is managed by Microsoft Managed Desktop starter plan.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
