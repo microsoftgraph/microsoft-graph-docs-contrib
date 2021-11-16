@@ -150,7 +150,7 @@ Content-type: application/json
 ```
 ## Removing a custom attribute
 
-To remove a custom attribute, run the following query in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+To remove a custom attribute, run the following query in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer):
 
 https://graph.microsoft.com/beta/organization/[tenantID]/settings/profileCardProperties/[propertyName]
 
