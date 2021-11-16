@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealthissue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-servicehealthissue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
