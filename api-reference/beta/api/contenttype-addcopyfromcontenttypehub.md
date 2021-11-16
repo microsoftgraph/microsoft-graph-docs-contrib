@@ -120,9 +120,7 @@ Content-length: 33
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.contentType"
+  "blockType": "response"
 }
 -->
 ``` http

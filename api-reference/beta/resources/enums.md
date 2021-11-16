@@ -2626,3 +2626,13 @@ Possible values for user account types (group membership), per Windows definitio
 |faculty|
 |other|
 |unknownFutureValue|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
