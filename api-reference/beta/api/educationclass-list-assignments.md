@@ -39,6 +39,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
 
+> `$expand` options are NOT supported in Delta query
+
+## Delta query support
+
+Delta query supports **Assignments** to effectively query newly created or modified entities without performing a full read of the Assignments every request.
+
+> Deleted operations are not supported.
+
 ## Request headers
 
 | Header        | Value                     |
@@ -47,7 +55,7 @@ The available `$expand` options for this method are: `categories`, `resources`, 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,7 +77,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-csharp-snippets.md)]
@@ -112,48 +120,50 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "19002",
-      "addedStudentAction": "none",
-      "allowLateSubmissions": true,
-      "allowStudentsToAddResourcesToSubmission": true,
-      "assignDateTime": "2014-02-01T00:00:00Z",
-      "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
-      "assignedDateTime": "2014-02-01T00:00:00Z",
-      "classId": "11018",
-      "closeDateTime": "2014-02-11T00:00:00Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "createdDateTime": "2014-02-01T00:00:00Z",
-      "displayName": "published",
-      "dueDateTime": "2014-02-01T00:00:00Z",
-      "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
-      },
-      "instructions": {
-        "contentType": "Text",
-        "content": "Read chapters 1 through 3"
-      },
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2014-02-01T00:00:00Z",
-      "notificationChannelUrl": null,
-      "status": "published"
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments",    
+    "value": [
+        {
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Looper app task",
+            "closeDateTime": null,
+            "dueDateTime": "2021-11-12T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T20:37:59.6432527Z",
+            "lastModifiedDateTime": "2021-11-10T20:38:10.395034Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "draft",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22be973b06-0cdf-42d5-b8c2-fece599f50c0%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addedStudentAction": "none",
+            "id": "be973b06-0cdf-42d5-b8c2-fece599f50c0",
+            "grading": null,
+            "instructions": {
+                "content": "",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            }
+        }
   ]
 }
 ```
@@ -172,7 +182,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignments?$expand=resources
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments?$expand=resources
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-resources-csharp-snippets.md)]
@@ -335,6 +345,360 @@ Content-length: 344
                     }
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example 3: Get assignments with Delta query support
+
+#### Request
+
+The following is an example of the request. 
+
+Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments, otherwise you will get all the assignments in the class.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_assignments_delta"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
+```
+---
+
+
+#### Response
+
+The following is an example of the response. 
+
+>**Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of assignments.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationAssignment)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationAssignment",
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Expand options 3.1",
+            "closeDateTime": "2021-11-14T07:59:00Z",
+            "dueDateTime": "2021-11-14T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": "2021-11-10T23:57:16.1897643Z",
+            "allowLateSubmissions": false,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T23:56:03.7992389Z",
+            "lastModifiedDateTime": "2021-11-11T00:42:20.8999693Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "published",
+            "notificationChannelUrl": "https://graph.microsoft.com/beta/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:e375b98b9d4f4738857fb70f23d329b7@thread.skype",
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "grading": null,
+            "id": "3b870c07-21fe-47fb-8562-cdd6f2c281d6",
+            "instructions": {
+                "content": "follow up",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationAssignment",
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Expand options 4",
+            "closeDateTime": null,
+            "dueDateTime": "2021-11-12T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T23:58:29.2670914Z",
+            "lastModifiedDateTime": "2021-11-10T23:58:39.6191021Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "draft",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "grading": null,
+            "id": "34ab8c17-eaae-4996-9c04-53696934e6ff",
+            "instructions": {
+                "content": "",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Get next set of assignments with Delta query support
+
+#### Request
+
+The following is an example of the request.
+
+Use the `@odata.nextLink` value from the previous call for this request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_assignments_delta"
+}-->
+
+```msgraph-interactive
+GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs
+```
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** You must continue using the `@odata.nextLink` value for the consequent calls until you get the `@odata.deltaLink` property in the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationAssignment)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klERNmJQjnBn7MHqwXZ6L8GlI3VPnya3E-p1bisiZX97jLvQUAopseIYhvnD6v7fiYrk.fVsHempT6X2CiBh6aN9Ex5nVJ71adKdcf-mdke8OHKs",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationAssignment",
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Expand options 2",
+            "closeDateTime": null,
+            "dueDateTime": "2021-11-12T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": "2021-11-10T23:54:15.9533379Z",
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T23:51:08.8548584Z",
+            "lastModifiedDateTime": "2021-11-10T23:54:17.4687411Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "grading": null,
+            "id": "efa3b9a8-b41f-4263-adc5-738c01912153",
+            "instructions": {
+                "content": "",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationAssignment",
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "Expand options in publish",
+            "closeDateTime": null,
+            "dueDateTime": "2021-11-12T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": "2021-11-10T23:48:03.9134549Z",
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T23:42:37.2869391Z",
+            "lastModifiedDateTime": "2021-11-10T23:48:06.490359Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "grading": null,
+            "id": "5cf13354-0156-4483-8c19-3185c6252188",
+            "instructions": {
+                "content": "",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 5: Get the created and modified assignments using Delta token
+
+#### Request
+
+The following is an example of the request.
+
+Use the `@odata.deltaLink` value from the previous call for this request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_assignments_delta"
+}-->
+
+```msgraph-interactive
+GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klERNmJQjnBn7MHqwXZ6L8GlI3VPnya3E-p1bisiZX97jLvQUAopseIYhvnD6v7fiYrk.fVsHempT6X2CiBh6aN9Ex5nVJ71adKdcf-mdke8OHKs
+```
+---
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial Delta call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 344
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(educationAssignment)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klER9TeVMFnEEWX3TRYFAJe1nNUp5s0cjvqM59nMNhcFoIhmt6RUUcXe6vlP9yy00ADA.gT8PrGKC3hZnt4oDxMAmjyX50EASWG4KNcc1E9yTRRo",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationAssignment",
+            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+            "displayName": "expand options 2 updated for delta",
+            "closeDateTime": null,
+            "dueDateTime": "2021-11-12T07:59:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": "2021-11-10T23:54:15.9533379Z",
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "createdDateTime": "2021-11-10T23:51:08.8548584Z",
+            "lastModifiedDateTime": "2021-11-16T15:17:07.518655Z",
+            "allowStudentsToAddResourcesToSubmission": true,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": null,
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "grading": null,
+            "id": "efa3b9a8-b41f-4263-adc5-738c01912153",
+            "instructions": {
+                "content": "",
+                "contentType": "text"
+            },
+            "assignTo": {
+                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            }
         }
     ]
 }
