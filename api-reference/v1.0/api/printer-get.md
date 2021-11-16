@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -195,6 +199,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printer-capabilities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printer-capabilities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

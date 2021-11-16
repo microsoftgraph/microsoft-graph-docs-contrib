@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversationthread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversationthread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

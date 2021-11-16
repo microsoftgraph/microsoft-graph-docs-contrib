@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/java/get-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

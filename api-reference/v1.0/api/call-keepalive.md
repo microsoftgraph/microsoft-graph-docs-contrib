@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-95
 [!INCLUDE [sample-code](../includes/snippets/java/keep-alive-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/keep-alive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

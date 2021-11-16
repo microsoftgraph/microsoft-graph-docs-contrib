@@ -128,6 +128,10 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -235,6 +239,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-user-token-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-user-token-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -389,6 +397,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/education/users
 [!INCLUDE [sample-code](../includes/snippets/java/educationroot-get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationroot-get-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
