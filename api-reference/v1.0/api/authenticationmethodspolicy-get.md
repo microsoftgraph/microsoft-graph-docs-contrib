@@ -109,6 +109,20 @@ Content-Type: application/json
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
     "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
     "policyVersion": "1.4",
+    "registrationEnforcement": {
+        "authenticationMethodsRegistrationCampaign": {
+            "snoozeDurationInDays": 2,
+            "state": "enabled",
+            "excludeTargets": [],
+            "includeTargets": [
+                {
+                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "targetType": "group",
+                    "targetedAuthenticationMethod": "microsoftAuthenticator"
+                }
+            ]
+        }
+    },
     "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
