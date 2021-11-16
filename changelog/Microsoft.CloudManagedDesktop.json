@@ -3,6 +3,74 @@
         {
             "ChangeList": [
                 {
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinConfiguration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **domainJoinConfiguration** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcDomainJoinConfiguration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcDomainJoinConfiguration"
+                },
+                {
+                    "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDomainJoinType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcDomainJoinType** enumeration type.",
+                    "Target": "cloudPcDomainJoinType"
+                }
+            ],
+            "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-05T06:40:50.582Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+            },
+      {
+            "ChangeList": [      
+              {
+                    "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "galleryImages",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **galleryImages** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcGalleryImage",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcGalleryImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcGalleryImageStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcGalleryImageStatus** enumeration type.",
+                    "Target": "cloudPcGalleryImageStatus"
+                }
+            ],
+            "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-05T05:11:26.863Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },    
+        {
+            "ChangeList": [
+                {
                     "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
                     "ApiChange": "Property",
                     "ChangedApiName": "microsoftManagedDesktop",

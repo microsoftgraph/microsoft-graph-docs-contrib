@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/get-tenantappmanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tenantappmanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

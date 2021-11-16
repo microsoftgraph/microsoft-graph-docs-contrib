@@ -100,7 +100,6 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 491
 
 {
   "value": {

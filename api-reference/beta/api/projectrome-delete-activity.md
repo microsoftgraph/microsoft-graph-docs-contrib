@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-activity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

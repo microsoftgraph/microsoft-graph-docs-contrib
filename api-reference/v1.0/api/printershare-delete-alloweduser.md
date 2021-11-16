@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Revoke the specified user's access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
 ## Permissions
