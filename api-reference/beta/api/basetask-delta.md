@@ -1,9 +1,9 @@
 ---
 title: "baseTask: delta"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get a set of baseTask resources that have been added, deleted, or updated in a specified baseTaskList."
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get a set of [baseTask](../resources/basetask.md) resources that have been added, deleted, or updated in a specified [baseTaskList](../resources/basetasklist.md).
+
+A **delta** function call for **baseTask** resources in a **baseTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **baseTask** in that **baseTaskList**. This allows you to maintain and synchronize a local store of a user's **baseTask** resources without having to fetch the entire set from the server every time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,13 +32,42 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/alltasks/delta
+GET /me/tasks/lists/{baseTaskListId}/tasks/delta
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 ```
 
+## Query parameters
+
+Tracking changes in a **baseTask** collection incurs a round of one or more **delta** function calls. If you use any query parameter 
+(other than `$deltatoken` and `$skiptoken`), you must specify 
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
+You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+includes the encoded, desired parameters.
+
+| Query parameter    | Type |Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same baseTask collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same baseTask collection. |
+
+### OData query parameters
+
+- You can use a `$select` query parameter as in any GET request to specify only the properties you need for best performance. The 
+_id_ property is always returned. 
+- Delta query support `$select`, `$top`, and `$expand` for baseTask. 
+- There is limited support for `$filter` and `$orderby`:
+  * The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` 
+  or `$filter=receivedDateTime+gt+{value}`.
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
+  an `$orderby` expression, the return order is not guaranteed. 
+- There is no support for `$search`.
+
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name       | Type | Description |
+|:---------------|:----------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -54,12 +85,12 @@ If successful, this function returns a `200 OK` response code and a [baseTask](.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/alltasks/delta
+GET /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,34 +102,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.baseTask",
-      "body": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "bodyLastModifiedDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "dueDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "startDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "importance": "String",
-      "recurrence": {
-        "@odata.type": "microsoft.graph.patternedRecurrence"
-      },
-      "displayName": "String",
-      "status": "String",
-      "personalProperties": {
-        "@odata.type": "microsoft.graph.personalTaskProperties"
-      },
-      "id": "String (identifier)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(baseTask)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta?$deltatoken=AVCnFFj2r7PtnjtkD-g_6dgDSPbEboZhaMYEytpd57pcJMrR9oGkCIjK_dyVkhNB1EQn1zcQt7YZTwCS0V5MNQo6Iy0-T0csAkLZTMlbiII.lVEHqD5xdDrH30csYKP6tEvoYa3WtFhmYLtKBSxCPpQ",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.task",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAymRBQ==\"",
+            "importance": "normal",
+            "status": "notStarted",
+            "displayName": "Read documentation",
+            "createdDateTime": "2021-11-15T13:16:53.0831814Z",
+            "lastModifiedDateTime": "2021-11-15T13:17:08.8273666Z",
+            "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA",
+            "body": {
+                "content": "",
+                "contentType": "text"
+            },
+            "parentList": {
+                "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="
+            }
+        }
+    ]
 }
 ```
 

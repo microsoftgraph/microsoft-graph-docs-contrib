@@ -1,9 +1,9 @@
 ---
 title: "Get baseTask"
 description: "Read the properties and relationships of a baseTask object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,8 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/alltasks/{baseTaskId}
-GET /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}
+GET /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}
+
+GET /me/tasks/alltasks/{baseTaskId}
+GET /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 ```
 
 ## Optional query parameters
@@ -58,12 +61,12 @@ If successful, this method returns a `200 OK` response code and a [baseTask](../
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/alltasks/{baseTaskId}
+GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,32 +78,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.baseTask",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists('AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA%3D')/tasks/$entity",
+    "@odata.type": "#microsoft.graph.task",
+    "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAymRCA==\"",
+    "importance": "normal",
+    "status": "notStarted",
+    "displayName": "T1",
+    "createdDateTime": "2021-11-15T13:16:53.0831814Z",
+    "lastModifiedDateTime": "2021-11-15T13:17:24.9876101Z",
+    "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA",
     "body": {
-      "@odata.type": "microsoft.graph.itemBody"
+        "content": "",
+        "contentType": "text"
     },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "bodyLastModifiedDateTime": "String (timestamp)",
-    "completedDateTime": "String (timestamp)",
-    "dueDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
-    },
-    "startDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
-    },
-    "importance": "String",
-    "recurrence": {
-      "@odata.type": "microsoft.graph.patternedRecurrence"
-    },
-    "displayName": "String",
-    "status": "String",
-    "personalProperties": {
-      "@odata.type": "microsoft.graph.personalTaskProperties"
-    },
-    "id": "992ac181-c181-992a-81c1-2a9981c12a99"
-  }
+    "parentList@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists('AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA')/microsoft.graph.task/parentList/$entity",
+    "parentList": {
+        "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="
+    }
 }
 ```
 
