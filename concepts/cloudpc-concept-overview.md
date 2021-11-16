@@ -12,7 +12,7 @@ Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virt
 
 ## Why integrate with Windows 365 Cloud PCs? 
 
-By integrating with and building on top of Windows 365, you can provision, manage, and secure Cloud PCs for end users as quickly and easily as possible. By using the Microsoft Graph API, you can provision Cloud PCs, manage device images, create and run health checks on on-premises network connections, create and assign provisioning policies, and more.  
+By integrating with and building on top of Windows 365, you can provision, manage, and secure Cloud PCs for end users as quickly and easily as possible. Using the Microsoft Graph API, you can provision Cloud PCs, manage device images, create and run health checks on on-premises network connections, create and assign provisioning policies, and more.  
 
 ### Create on-premises network connections
 
@@ -33,7 +33,7 @@ Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cl
 ## API reference
 
 Looking for the API reference for the service?
-- [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/virtualEndpoint?view=graph-rest-beta&preserve-view=true)
+- [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 
