@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcprovisioningpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcprovisioningpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +98,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
+  "isCollection": true
 }
 -->
 

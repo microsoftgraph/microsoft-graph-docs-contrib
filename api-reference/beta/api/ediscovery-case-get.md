@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-case-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

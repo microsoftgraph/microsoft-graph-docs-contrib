@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationwordresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationwordresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,7 +92,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -149,6 +152,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationfileresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationfileresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -164,7 +171,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -225,6 +231,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationexcelresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationexcelresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -240,7 +250,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -301,6 +310,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationpowerpointresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationpowerpointresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -316,7 +329,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -377,6 +389,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationlinkresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationlinkresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -392,7 +408,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
@@ -453,6 +468,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationmediaresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationmediaresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -468,7 +487,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1152
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",

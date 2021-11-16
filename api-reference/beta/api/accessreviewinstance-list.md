@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

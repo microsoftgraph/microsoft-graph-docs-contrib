@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 [!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,7 +95,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "isMembershipLimitedToOwners": true,

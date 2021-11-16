@@ -91,7 +91,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
   "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",

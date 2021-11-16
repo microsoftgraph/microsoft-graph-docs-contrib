@@ -73,7 +73,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",

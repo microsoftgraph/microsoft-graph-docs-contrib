@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Delete printConnector
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Delete (unregister) a **printConnector**.
 
 ## Permissions
@@ -79,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-printconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-printconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let mobileAppManagementPolicies = await client.api('/policies/mobileAppManagementPolicies')
+let mobileDeviceManagementPolicies = await client.api('/policies/mobileDeviceManagementPolicies')
 	.version('beta')
 	.get();
 
