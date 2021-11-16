@@ -33,7 +33,7 @@ Once provisioned, list and view end users’ Cloud PCs and all associated proper
 ## API reference
 
 Looking for the API reference for the service?
-- [Windows 365 Cloud PCs APIs in Microsoft Graph beta](/graph/api/resources/virtualEndpoint?view=graph-rest-beta)
+- [Windows 365 Cloud PCs APIs in Microsoft Graph beta](/api-reference/beta/resources/virtualEndpoint.md)
 
 ## Next step
 
