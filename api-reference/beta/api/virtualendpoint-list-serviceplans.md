@@ -1,6 +1,6 @@
 ---
 title: "List servicePlans"
-description: "List the currently available service plans that the organization can purchase for the Cloud PCs."
+description: "List the currently available service plans that an organization can purchase for their Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the currently available service plans that the organization can purchase for the Cloud PCs.
+List the currently available service plans that an organization can purchase for their Cloud PCs.
 
 ## Permissions
 
