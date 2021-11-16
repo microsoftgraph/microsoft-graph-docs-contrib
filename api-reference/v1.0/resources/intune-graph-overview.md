@@ -1,6 +1,6 @@
 ---
-title: "Using the Intune Graph API"
-description: " Intune hybrid deployments are not supported. "
+title: "Working with Intune in Microsoft Graph"
+description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "intune"
@@ -43,18 +43,17 @@ Intune supports both [delegated permissions](/graph/auth-v2-user) and [applicati
 
 The Microsoft Graph API controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
+## Interaction between Microsoft Graph APIs for Windows updates
+
+Microsoft Graph includes two sets of APIs that you can use to manage Windows updates: 
+
+- [Intune APIs](/graph/intune-concept-overview)
+- [Windows updates APIs](/graph/windowsupdates-concept-overview)
+
+You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
-## Interaction between Microsoft Graph APIs for Windows Updates
-
-With Microsoft Graph, there are two sets of APIs you can use to manage Windows Updates: 
-
-- [The Intune APIs](/graph/intune-concept-overview)
-- [The Windows updates APIs](/graph/windowsupdates-concept-overview)
-  
-While you can use either API to manage Windows Updates, use of these two APIs for Windows Updates are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility to that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
-
 
 ## Next Steps
 
