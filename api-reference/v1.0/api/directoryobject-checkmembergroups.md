@@ -11,8 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Check for membership in a specified list of groups, and returns from that list those groups
-of which the specified user, group, or directory object is a member. This function is transitive.
+Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, or directory object is a member. This function is transitive.
 
 ## Permissions
 
@@ -25,6 +24,47 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.Read.All, Directory.Read.All |
 
 The following table lists the permission types to use for different scenarios.
+
+### Group memberships for the signed-in user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read and GroupMember.Read.All, User.Read and Group.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+### Group memberships for any user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a group
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a service principal
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All and GroupMember.Read.All, Application.ReadWrite.All and Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a directory object
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
+
 
 | Scenario | Permissions |
 |:-|:-|

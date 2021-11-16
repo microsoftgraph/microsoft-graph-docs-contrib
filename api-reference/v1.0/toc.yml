@@ -333,15 +333,15 @@ items:
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Check member groups
-          href: api/user-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
           href: api/user-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member objects
-          href: api/user-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Get member groups
-          href: api/user-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects

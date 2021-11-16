@@ -24,6 +24,46 @@ One of the following permissions is required to call this API. To learn more, in
 
 Use the follow scenario guidance to help determine which permission types to use:
 
+### Group memberships for the signed-in user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read and GroupMember.Read.All, User.Read and Group.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
+### Group memberships for any user
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a group
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a service principal
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All and GroupMember.Read.All, Application.ReadWrite.All and Group.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application |  |
+
+### Group memberships for a directory object
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All |
+
 | Scenario | Permissions to use |
 |:-|:-|
 | To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
