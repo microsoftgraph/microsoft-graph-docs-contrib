@@ -218,9 +218,7 @@ items:
             href: intune-concept-overview.md
             displayName: Intune
           - name: Cloud PC (preview)
-            items: 
-              - name: Overview
-                href: cloudpc-concept-overview.md
+            href: cloudpc-concept-overview.md
           - name: Device updates (preview)
             displayName: Windows updates
             items:

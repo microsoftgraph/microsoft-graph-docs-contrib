@@ -1,6 +1,6 @@
 ---
 title: "Working with Windows 365 Cloud PCs using the Microsoft Graph API"
-description: "With Microsoft Graph, you can provision and manage Cloud PCs in your organization and, if used in conjunction with the Intune API, you can manage Cloud PCs alongside physical endpoints as well."
+description: "The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization."
 author: "cohanley"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users. Administrators can easily set up, manage, and scale Windows 365 Cloud PCs to fit the organization's needs. Individual end users can securely stream their rich, personalized Windows experience - including their apps, data, content, and settings - from the Microsoft cloud to any device, any time, with their Windows 365 Cloud PC.
+Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user as a  dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
 
 The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization. The API performs the same operations as those available through Microsoft Endpoint Manager. 
 
