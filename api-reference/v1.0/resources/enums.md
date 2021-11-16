@@ -1698,6 +1698,15 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### callRecordingStatus values 
 
 |Member|

@@ -68,6 +68,10 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-page-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
