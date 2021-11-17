@@ -7,7 +7,7 @@
           "ApiChange": "EnumType",
           "ChangedApiName": "simulationMode",
           "ChangeType": "Deletion",
-          "Description": "Removed the **simulationMode** enumeration type.",
+          "Description": "Removed the **simulationMode** enumeration type. Not required.",
           "Target": "simulationMode"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "notCompleted",
           "ChangeType": "Deletion",
-          "Description": "Removed the **notCompleted** member from the **trainingStatus** enumeration.",
+          "Description": "Removed the **notCompleted** member from the **trainingStatus** enumeration. Not required.",
           "Target": "trainingStatus"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mode",
           "ChangeType": "Deletion",
-          "Description": "Removed the **mode** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **mode** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource. Not used.",
           "Target": "simulation"
         }
       ],
