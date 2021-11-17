@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -84,7 +88,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
 
 {
   "id": "11023",

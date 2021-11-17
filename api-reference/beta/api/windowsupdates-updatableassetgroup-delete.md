@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 [!INCLUDE [sample-code](../includes/snippets/java/delete-updatableassetgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-updatableassetgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

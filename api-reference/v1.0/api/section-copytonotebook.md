@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/copyToNotebook
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",
@@ -83,6 +82,10 @@ Content-length: 84
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
