@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[Restart teamworkDevice](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Restart a device.|
 |[RunDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Run device diagnostics to get device log details.|
 |[UpdateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Update software version.|
-|[List operations](../api/teamworkdevice-list-operations.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|Get the teamworkDeviceOperation resources from the operations navigation property.|
+|[List operations](../api/teamworkdeviceoperation-list.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|Get the teamworkDeviceOperation resources from the operations navigation property.|
 
 ## Properties
 |Property|Type|Description|
