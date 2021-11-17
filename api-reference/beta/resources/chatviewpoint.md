@@ -20,8 +20,8 @@ Represents user-specific properties of a [chat](../resources/chat.md). These pro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isHidden|Boolean|Represents if the chat is hidden for the user.|
-|lastMessageReadDateTime|DateTimeOffset|Represents the dateTime up until which the calling user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
+|isHidden|Boolean|Represents if the chat is hidden for the current user.|
+|lastMessageReadDateTime|DateTimeOffset|Represents the dateTime up until which the current user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
 
 ## Relationships
 None.

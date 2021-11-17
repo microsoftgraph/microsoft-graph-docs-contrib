@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Hides a [chat](../resources/chat.md) for a user.
+Hide a [chat](../resources/chat.md) for a user.
 
 > **Note:** A chat is automatically unhidden for a user if an action such as *Send Message* is taken at chat level.
 
