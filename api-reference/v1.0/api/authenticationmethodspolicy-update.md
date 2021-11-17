@@ -65,6 +65,20 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
+    "registrationEnforcement": {
+    "authenticationMethodsRegistrationCampaign": {
+        "snoozeDurationInDays": 1,
+        "state": "enabled",
+        "excludeTargets": [],
+        "includeTargets": [
+            {
+                "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                "targetType": "group",
+                "targetedAuthenticationMethod": "microsoftAuthenticator"
+            }
+        ]
+      }
+    },
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -91,6 +105,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

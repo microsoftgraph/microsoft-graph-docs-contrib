@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "joinWebUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **joinWebUrl** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "smsNotificationsEnabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "customerTimeZone",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **customerTimeZone** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "addresses",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **addresses** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
+                    "Target": "bookingCustomer"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "phones",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **phones** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
+                    "Target": "bookingCustomer"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "smsNotificationsEnabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "webUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **webUrl** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "timeZone",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **timeZone** property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
+                    "Target": "bookingStaffMember"
+                }
+            ],
+            "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-10-27T11:56:54.877Z",
+            "WorkloadArea": "Customer booking",
+            "SubArea": ""
+        }
+    ]
+}

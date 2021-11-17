@@ -19,7 +19,7 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
+				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=")
 			}
 		}
 	}

@@ -3,7 +3,7 @@ title: "Get photo"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
 ms.localizationpriority: high
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
-
-> **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
+Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
@@ -31,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
+|Delegated (personal Microsoft account)      |   User.Read, User.ReadWrite            |
 |Application      |    User.Read.All, User.ReadWrite.All           |
 
 ### To retrieve the profile photo of a group
@@ -47,10 +45,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Not supported.            |
+|Delegated (personal Microsoft account)      |   Contacts.Read, Contacts.ReadWrite            |
 |Application      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Notes:**  
+> - The metadata operation is not supported for personal Microsoft accounts. 
+> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 
@@ -116,7 +116,7 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 ## Examples
 
 ### Example 1: Get the photo for the signed-in user in the largest available size
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -125,11 +125,11 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ### Example 2: Get the 48x48 photo for the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -139,11 +139,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### Response
+#### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
 ### Example 3: Get the metadata of the user photo of the signed-in user
-##### Request
+#### Request
 <!-- {
   "blockType": "ignored"
 }-->
@@ -152,7 +152,7 @@ Contains the binary data of the requested 48x48 photo. The HTTP response code is
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### Response
+#### Response
 
 The following response data shows the photo metadata.
 

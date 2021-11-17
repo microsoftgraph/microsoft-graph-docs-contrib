@@ -82,7 +82,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true
@@ -102,6 +101,10 @@ Content-length: 391
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

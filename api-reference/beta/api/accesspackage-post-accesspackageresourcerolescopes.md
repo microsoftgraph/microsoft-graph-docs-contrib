@@ -94,6 +94,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -127,7 +131,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+The following is an example of the request for a non-root scope resource.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+
+If the [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object obtained from an earlier request to [list access package resources](accesspackagecatalog-list-accesspackageresources.md) has the resource as a root scope (**isRootScope** set to `true`), include the **isRootScope** property in the **accessPackageResourceScope** object of the request.
 
 
 # [HTTP](#tab/http)
@@ -169,6 +175,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Get macOSTrustedRootCertificate"
 description: "Read properties and relationships of the macOSTrustedRootCertificate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

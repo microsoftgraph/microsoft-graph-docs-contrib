@@ -43,6 +43,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 <!-- {
   "blockType": "resource",
+  truncated: true,
   "optionalProperties": [
 
   ],
@@ -71,6 +72,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 2020-05-06 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
+  truncated: true,
   "description": "educationOneRosterApiDataProvider resource",
   "keywords": "",
   "section": "documentation",
