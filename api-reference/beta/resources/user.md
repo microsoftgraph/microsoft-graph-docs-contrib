@@ -67,7 +67,7 @@ This resource supports:
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of ids. |
-| [getMemberGroups](../api/user-getmembergroups.md) | String collection | Return all the groups that the user is a member of. The check is transitive. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the user is a member of. The check is transitive. |
 | [getMemberObjects](../api/user-getmemberobjects.md) | String collection | Return all the groups, directory roles, and administrative units that the user is a member of. The check is transitive. |
 | [Get transitiveReports](../api/user-get-transitivereports.md) | Integer | Get the count of transitive reports for a user from the transitiveReports navigation property. |
 | [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | Get the directory objects created by the user from the createdObjects navigation property. |

@@ -35,9 +35,9 @@ The following table lists the permission types to use for different scenarios.
 | To get group memberships for a service principal | Use one of the following sets of permissions <br/> <li>**Application.ReadWrite.All** and **GroupMember.Read.All** <li>**Application.ReadWrite.All** and **Group.Read.All** |
 | To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
 
-<!-- These tables will replace the data in lines 24-38 to help with the tooling that parses permissions tables.
+<!-- These tables will replace the data in lines 22-36 to help with the tooling that parses permissions tables.
 + Current data is copy-pasted from incorrect files/file names
-+ To validate these permissions against lines 35-39
++ To validate these permissions against lines 32-36
 
 ### Group memberships for a directory object
 
@@ -83,7 +83,7 @@ The following table lists the permission types to use for different scenarios.
 
 ## HTTP request
 
-Group memberships for a directory object (user, group, or service principal).
+Group memberships for a directory object (user, group, service principal, or organizational contact).
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryObjects/{id}/checkMemberGroups
@@ -94,6 +94,12 @@ Group memberships for the signed-in user or other users.
 ```http
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
+```
+
+Group memberships for a group.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/checkMemberGroups
 ```
 
 Group memberships for a service principal.
@@ -184,10 +190,10 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_checkmembergroups_signedinuser"
+  "name": "directoryobject_checkmembergroups_me"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
+POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
 
 {
