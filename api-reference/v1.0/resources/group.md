@@ -50,7 +50,7 @@ This resource supports:
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group, a security group or a mail-enabled security group through the **owners** navigation property. |
 | [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
-| [checkMemberGroups](../api/group-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
 | [getMemberGroups](../api/group-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups that the group is a member of. The function is transitive. |

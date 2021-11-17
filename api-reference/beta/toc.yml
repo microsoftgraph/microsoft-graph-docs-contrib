@@ -613,7 +613,7 @@ items:
         - name: Get endpoint
           href: api/endpoint-get.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
           href: api/group-getmemberobjects.md
         - name: List deleted groups
@@ -1084,7 +1084,7 @@ items:
           - name: Check member objects
             href: api/serviceprincipal-checkmemberobjects.md
           - name: Get member groups
-            href: api/serviceprincipal-getmembergroups.md
+            href: api/directoryobject-getmembergroups.md
           - name: Get member objects
             href: api/serviceprincipal-getmemberobjects.md
         - name: Owners
@@ -11042,7 +11042,7 @@ items:
             - name: List memberOf
               href: api/orgcontact-list-memberof.md
             - name: Get member groups
-              href: api/orgcontact-getmembergroups.md
+              href: api/directoryobject-getmembergroups.md
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
@@ -14149,7 +14149,7 @@ items:
         - name: Remove owner
           href: api/group-delete-owners.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
           href: api/group-getmemberobjects.md
         - name: Check member groups
