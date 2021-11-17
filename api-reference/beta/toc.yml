@@ -603,7 +603,7 @@ items:
         - name: Assign license
           href: api/group-assignlicense.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
@@ -1079,13 +1079,13 @@ items:
             href: api/serviceprincipal-list-memberof.md
           - name: List transitive memberOf
             href: api/serviceprincipal-list-transitivememberof.md
-          - name: checkMemberGroups
-            href: api/serviceprincipal-checkmembergroups.md
-          - name: checkMemberObjects
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Check member objects
             href: api/serviceprincipal-checkmemberobjects.md
-          - name: getMemberGroups
+          - name: Get member groups
             href: api/serviceprincipal-getmembergroups.md
-          - name: getMemberObjects
+          - name: Get member objects
             href: api/serviceprincipal-getmemberobjects.md
         - name: Owners
           items:
@@ -11044,7 +11044,7 @@ items:
             - name: Get member groups
               href: api/orgcontact-getmembergroups.md
             - name: Check member groups
-              href: api/orgcontact-checkmembergroups.md
+              href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
             href: resources/directoryobject.md
             items:
@@ -14153,7 +14153,7 @@ items:
         - name: Get member objects
           href: api/group-getmemberobjects.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
         - name: Get deleted group
