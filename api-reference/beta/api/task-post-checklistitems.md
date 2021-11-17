@@ -1,9 +1,9 @@
 ---
 title: "Create checklistItem"
 description: "Create a new checklistItem object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
+POST /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
+POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
 ```
 
 ## Request headers
@@ -46,11 +47,10 @@ You can specify the following properties when creating a **checklistItem**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|checkedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|isChecked|Boolean|**TODO: Add Description** Optional.|
-
+|checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
+|createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
+|displayName|String|Field indicating the title of **checklistItem**.|
+|isChecked|Boolean|State indicating whether the item is checked off or not.|
 
 
 ## Response
@@ -66,15 +66,11 @@ If successful, this method returns a `201 Created` response code and a [checklis
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
+POST https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/checklistitems/
 Content-Type: application/json
-Content-length: 154
 
 {
-  "@odata.type": "#microsoft.graph.checklistItem",
-  "displayName": "String",
-  "checkedDateTime": "String (timestamp)",
-  "isChecked": "Boolean"
+    "displayName": "Final sign-off from the team"
 }
 ```
 
@@ -92,12 +88,11 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.checklistItem",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "checkedDateTime": "String (timestamp)",
-  "isChecked": "Boolean",
-  "id": "12a189c4-89c4-12a1-c489-a112c489a112"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('6f9a2a92-8527-4d64-937e-b5312852f35d')/tasks/lists('AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA')/checklistItems/$entity",
+    "displayName": "Final sign-off from the team",
+    "createdDateTime": "2021-11-17T05:35:03.9736453Z",
+    "isChecked": false,
+    "id": "e3a26c2e-7c6f-4317-9d71-c27267008202"
 }
 ```
 

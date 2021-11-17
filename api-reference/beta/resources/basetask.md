@@ -19,21 +19,17 @@ This is an abstract base type inherited by [task](task.md) resource.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List baseTasks](../api/basetask-list.md)|[baseTask](../resources/basetask.md) collection|Get a list of the [baseTask](../resources/basetask.md) objects and their properties.|
-|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new [baseTask](../resources/basetask.md) object.|
-|[Get baseTask](../api/basetask-get.md)|[baseTask](../resources/basetask.md)|Read the properties and relationships of a [baseTask](../resources/basetask.md) object.|
-|[Update baseTask](../api/basetask-update.md)|[baseTask](../resources/basetask.md)|Update the properties of a [baseTask](../resources/basetask.md) object.|
-|[Delete baseTask](../api/basetask-delete.md)|None|Deletes a [baseTask](../resources/basetask.md) object.|
+|[List Tasks](../api/basetask-list.md)|[baseTask](../resources/basetask.md) collection|Get a list of the [baseTask](../resources/basetask.md) objects and their properties.|
+|[Create Task](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new [baseTask](../resources/basetask.md) object.|
+|[Get Task](../api/basetask-get.md)|[baseTask](../resources/basetask.md)|Read the properties and relationships of a [baseTask](../resources/basetask.md) object.|
+|[Update Task](../api/basetask-update.md)|[baseTask](../resources/basetask.md)|Update the properties of a [baseTask](../resources/basetask.md) object.|
+|[Delete Task](../api/basetask-delete.md)|None|Deletes a [baseTask](../resources/basetask.md) object.|
 |[move](../api/basetask-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
 |[delta](../api/basetask-delta.md)|[baseTask](../resources/basetask.md) collection|Get a set of tasks that have been added, deleted, or updated in a specified list.|
 |[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
 |[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
-|[List extensions](../api/basetask-list-extensions.md)|[extension](../resources/extension.md) collection|Get the extension resources from the extensions navigation property.|
-|[Create extension](../api/basetask-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
 |[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
 |[Create linkedResource_v2](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
-|[List baseTaskList](../api/basetask-list-parentlist.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the parentList navigation property.|
-|[Create baseTaskList](../api/basetask-post-parentlist.md)|[baseTaskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
 
 ## Properties
 |Property|Type|Description|
