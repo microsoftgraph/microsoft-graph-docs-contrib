@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
