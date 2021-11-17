@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/profile/languages
 [!INCLUDE [sample-code](../includes/snippets/java/get-languages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-languages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
