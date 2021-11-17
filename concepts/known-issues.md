@@ -294,9 +294,11 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
-### allowExternalSenders property cannot be set in a POST or PATCH operation
+### allowExternalSenders property can only be accessed on unified groups
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
