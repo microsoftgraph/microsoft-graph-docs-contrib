@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the certification of an [application](application.md). For more information, see [M365 App Compliance Program](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). The certification property of an application is read-only, and and can't be manually set. It is updated when the application is certified through the Microsoft 365 App Compliance Program. 
+Represents the certification details of an [application](application.md). For more information, see [Microsoft 365 App Compliance Program](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). The certification property of an application is read-only, and can't be manually set. It is updated when the application is certified through the Microsoft 365 App Compliance Program. 
 
 ## Properties
 |Property|Type|Description|
