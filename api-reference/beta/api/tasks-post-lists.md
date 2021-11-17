@@ -1,9 +1,9 @@
 ---
 title: "Create baseTaskList"
 description: "Create a new baseTaskList object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/tasks/lists
+POST /me/tasks/lists
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## Request headers
@@ -42,11 +43,11 @@ POST /user/tasks/lists
 ## Request body
 In the request body, supply a JSON representation of the [baseTaskList](../resources/basetasklist.md) object.
 
-You can specify the following properties when creating a **baseTaskList**.
+The following table shows the properties that are required when you create a **baseTaskList**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
+|displayName|String|Field indicating title of the task list.|
 
 
 
@@ -63,19 +64,17 @@ If successful, this method returns a `201 Created` response code and a [baseTask
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/tasks/lists
+POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
-Content-length: 82
 
 {
-  "@odata.type": "#microsoft.graph.baseTaskList",
-  "displayName": "String"
+    "displayName": "Shopping list"
 }
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,9 +86,10 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.baseTaskList",
-  "displayName": "String",
-  "id": "9d5b47ac-47ac-9d5b-ac47-5b9dac475b9d"
+    "@odata.type": "#microsoft.graph.taskList",
+    "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAABCE3Uw==\"",
+    "displayName": "Shopping list",
+    "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"
 }
 ```
 

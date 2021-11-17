@@ -54,12 +54,12 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header.|
 |completedDateTime|DateTimeOffset|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description** Optional.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin.|
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |displayName|String|A brief description of the task.|
 |status|taskStatus_v2|Indicates state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|**TODO: Add Description** Required.|
+|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Properties that are personal to a user such as reminderDateTime.|
 
 
 

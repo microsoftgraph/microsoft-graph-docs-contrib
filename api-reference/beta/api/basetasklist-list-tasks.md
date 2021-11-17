@@ -1,9 +1,9 @@
 ---
 title: "List tasks"
-description: "Get the baseTask resources from the tasks navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get the baseTask resources from the tasks navigation property of a specified baseTaskList."
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the baseTask resources from the tasks navigation property.
+Get the **baseTask** resources from the **tasks** navigation property of a specified [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists/{baseTaskListId}/tasks
+GET /me/tasks/lists/{baseTaskListId}/tasks
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## Optional query parameters
@@ -57,12 +58,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}/tasks
+GET https://graph.microsoft.com/beta/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm/tasks
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,34 +75,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.baseTask",
-      "body": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "bodyLastModifiedDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "dueDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "startDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "importance": "String",
-      "recurrence": {
-        "@odata.type": "microsoft.graph.patternedRecurrence"
-      },
-      "displayName": "String",
-      "status": "String",
-      "personalProperties": {
-        "@odata.type": "microsoft.graph.personalTaskProperties"
-      },
-      "id": "992ac181-c181-992a-81c1-2a9981c12a99"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists('AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm')/tasks",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.task",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAABCEtjw==\"",
+            "importance": "normal",
+            "status": "notStarted",
+            "displayName": "Buy medicine",
+            "createdDateTime": "2021-11-17T06:58:32.4882235Z",
+            "lastModifiedDateTime": "2021-11-17T07:02:49.1697427Z",
+            "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
+            "body": {
+                "content": "",
+                "contentType": "text"
+            },
+            "parentList": {
+                "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
+            }
+        }
+    ]
 }
 ```
 

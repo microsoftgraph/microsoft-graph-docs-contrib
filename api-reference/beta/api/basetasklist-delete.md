@@ -1,9 +1,9 @@
 ---
 title: "Delete baseTaskList"
 description: "Deletes a baseTaskList object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /user/tasks/lists/{baseTaskListId}
-DELETE /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/parentList
+DELETE /me/tasks/lists/{baseTaskListId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ```
 
 ## Request headers
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}
+DELETE https://graph.microsoft.com/beta/user/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu
 ```
 
 

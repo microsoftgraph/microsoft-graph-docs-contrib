@@ -1,9 +1,9 @@
 ---
 title: "Get baseTaskList"
 description: "Read the properties and relationships of a baseTaskList object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read|
+|Delegated (personal Microsoft account)|Tasks.Read|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists/{baseTaskListId}
-GET /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/parentList
+GET /me/tasks/lists/{baseTaskListId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ```
 
 ## Optional query parameters
@@ -58,12 +58,12 @@ If successful, this method returns a `200 OK` response code and a [baseTaskList]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}
+GET https://graph.microsoft.com/beta/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAADG6BbDxY
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,11 +75,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.baseTaskList",
-    "displayName": "String",
-    "id": "9d5b47ac-47ac-9d5b-ac47-5b9dac475b9d"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists/$entity",
+    "@odata.type": "#microsoft.graph.wellKnownTaskList",
+    "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAAAAkw==\"",
+    "wellKnownListName": "defaultList",
+    "displayName": "Tasks",
+    "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAADG6BbDxY"
 }
 ```
 

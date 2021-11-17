@@ -1,9 +1,9 @@
 ---
 title: "List lists"
-description: "Get the baseTaskList resources from the lists navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get a list of the baseTaskList objects and their properties."
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the baseTaskList resources from the lists navigation property.
+Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists
+GET /me/tasks/lists
+GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## Optional query parameters
@@ -57,12 +58,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/lists
+GET https://graph.microsoft.com/beta/me/tasks/lists
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,13 +75,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.baseTaskList",
-      "displayName": "String",
-      "id": "9d5b47ac-47ac-9d5b-ac47-5b9dac475b9d"
-    }
-  ]
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.wellKnownTaskList",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAAAAkw==\"",
+            "wellKnownListName": "defaultList",
+            "displayName": "Tasks",
+            "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMj"
+        }
+    ]
 }
 ```
 

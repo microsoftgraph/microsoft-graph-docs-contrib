@@ -1,9 +1,9 @@
 ---
 title: "Create baseTask"
-description: "Create a new baseTask object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Create a new baseTask object in a specified baseTaskList."
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new baseTask object.
+Create a new baseTask object in a specified [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/tasks/lists/{baseTaskListId}/tasks
+POST /me/tasks/lists/{baseTaskListId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## Request headers
@@ -46,18 +47,18 @@ You can specify the following properties when creating a **baseTask**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|bodyLastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description** Optional.|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description** Optional.|
-|importance|importance|**TODO: Add Description**. The possible values are: `low`, `normal`, `high`. Required.|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|status|taskStatus_v2|**TODO: Add Description**. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Required.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|**TODO: Add Description** Required.|
+|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|createdDateTime|DateTimeOffset|The date in the specified time zone that the task was finished.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
+|completedDateTime|DateTimeOffset|The date in the specified time zone that the task was finished.|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin.|
+|importance|importance|The importance of the task. The possible values are: `low`, `normal`, `high`.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
+|displayName|String|A brief description of the task.|
+|status|taskStatus_v2|Indicates the state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Required.|
+|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Properties that are personal to a user such as reminderDateTime.|
 
 
 
@@ -74,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [baseTask
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}/tasks
+POST https://graph.microsoft.com/beta/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi/tasks
 Content-Type: application/json
 Content-length: 634
 
@@ -105,7 +106,7 @@ Content-length: 634
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,30 +118,21 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "bodyLastModifiedDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "importance": "String",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "displayName": "String",
-  "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
-  },
-  "id": "992ac181-c181-992a-81c1-2a9981c12a99"
+    "@odata.type": "#microsoft.graph.task",
+    "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAABCE1Xg==\"",
+    "importance": "normal",
+    "status": "notStarted",
+    "displayName": "Buy medicine",
+    "createdDateTime": "2021-11-17T10:11:18.0229364Z",
+    "lastModifiedDateTime": "2021-11-17T10:11:18.19789Z",
+    "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
+    "body": {
+        "content": "",
+        "contentType": "text"
+    },
+    "parentList": {
+        "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"
+    }
 }
 ```
 

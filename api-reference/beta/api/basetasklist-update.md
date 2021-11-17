@@ -1,9 +1,9 @@
 ---
 title: "Update baseTaskList"
 description: "Update the properties of a baseTaskList object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,15 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /user/tasks/lists/{baseTaskListId}
-PATCH /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/parentList
+PATCH /me/tasks/lists/{baseTaskListId}
+PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
@@ -46,7 +45,7 @@ PATCH /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/parentList
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
+|displayName|String|Field indicating updated title of the task list.|
 
 
 
@@ -63,19 +62,18 @@ If successful, this method returns a `200 OK` response code and an updated [base
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}
+PATCH https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs
 Content-Type: application/json
 Content-length: 82
 
 {
-  "@odata.type": "#microsoft.graph.baseTaskList",
-  "displayName": "String"
+    "displayName": "Travel Plan"
 }
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -86,9 +84,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.baseTaskList",
-  "displayName": "String",
-  "id": "9d5b47ac-47ac-9d5b-ac47-5b9dac475b9d"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists/$entity",
+    "@odata.type": "#microsoft.graph.taskList",
+    "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAABCEf5w==\"",
+    "displayName": "Travel Plan",
+    "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs"
 }
 ```
 

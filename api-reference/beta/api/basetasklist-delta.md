@@ -1,9 +1,9 @@
 ---
 title: "baseTaskList: delta"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Get a set of baseTaskList resources that have been added, deleted, or removed in Microsoft To Do."
+author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get a set of [baseTaskList](../resources/basetasklist.md) resources that have been added, deleted, or removed in Microsoft To Do.
+
+A **delta** function call for **baseTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
+you can query for incremental changes in the **baseTaskList**. This allows you to maintain and synchronize a local store of a user's **baseTaskList** without having to fetch all the **baseTaskList** from the server every time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,13 +33,35 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists/delta
+GET /me/tasks/lists/delta
+GET /users/{userId|userPrincipalName}/tasks/lists/delta
 ```
+
+## Query parameters
+
+Tracking changes in **baseTaskList** resources incurs a round of one or more **delta** function calls. If you use any query parameter 
+(other than `$deltatoken` and `$skiptoken`), you must specify 
+it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
+into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
+You only need to specify any desired query parameters once upfront. 
+In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
+includes the encoded, desired parameters.
+
+| Query parameter    | Type |Description|
+|:---------------|:--------|:----------|
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same **baseTaskList** collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same **baseTaskList** collection. |
+
+### OData query parameters
+
+You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
+_id_ property is always returned. 
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Prefer|string|odata.maxpagesize={x}. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -54,12 +79,12 @@ If successful, this function returns a `200 OK` response code and a [baseTaskLis
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/lists/delta
+GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,13 +96,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.baseTaskList",
-      "displayName": "String",
-      "id": "String (identifier)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(baseTaskList)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/tasks/lists/delta?$skiptoken=AVCnFFj2r7PtnjtkD-g_6Y5Ntek1m4V",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.wellKnownTaskList",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAAAAkw==\"",
+            "wellKnownListName": "defaultList",
+            "displayName": "Tasks",
+            "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
+        }
+    ]
 }
 ```
 
