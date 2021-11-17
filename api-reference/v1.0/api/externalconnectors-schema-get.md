@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get schema
 Namespace: microsoft.graph.externalConnectors
 
-
-
 Read the properties and relationships of a [schema](../resources/externalconnectors-schema.md) object.
 
 ## Permissions
@@ -32,9 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /connections/{connectionsId}/schema
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

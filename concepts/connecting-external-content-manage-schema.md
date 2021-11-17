@@ -40,7 +40,7 @@ If a property is searchable, its value is added to the full text index. When a u
 <!-- markdownlint-disable MD036 -->
 ![A search for "design" displaying results for hits against the property title and content](./images/connectors-images/connecting-external-content-manage-items-schema-1.png)
 
-*A search for "design" displaying results for hits against the property (`title`) and content*
+*A search for "design" displaying results for hits against the property (`title`) and content.*
 
 ### Queryable
 
@@ -51,11 +51,11 @@ If a property is queryable, you can query against it using knowledge query langu
 
 ![A search for "search ba*" displaying results that match this prefix](./images/connectors-images/connecting-external-content-manage-items-schema-2.svg)
 
-*A search for "search ba*" displaying results that match this prefix*
+*A search for "search ba*" displaying results that match this prefix.*
 
 ![A search for "tags:design" scoping down results to items with "design" in the tags property](./images/connectors-images/connecting-external-content-manage-items-schema-3.svg)
 
-*A search for "tags:design" scoping down results to items with "design" in the tags property*
+*A search for "tags:design" scoping down results to items with "design" in the tags property.*
 
 ### Retrievable
 
@@ -63,7 +63,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 ![A set of retrievable properties rendered as a result](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
-*A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result*
+*A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result.*
 
 ### Refinable
 
@@ -71,15 +71,15 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 ![Refine results by tags, a refinable property](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
-*Refine results by `tags`, a refinable property*
+*Refine results by `tags`, a refinable property.*
 
 ## Semantic labels
 
-A semantic label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience.
-Semantic Labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
+A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience.
+Semantic labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
 
 * Data integration in heterogenous experiences
-* Building common Knowledge Graphs (e.g. Cortex, Suggestions & QF)
+* Building common knowledge graphs (for example, Cortex, Suggestions & QF)
 * Default templates for user experiences
 
 You can assign semantic labels to your source properties on the "Assign property labels" page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
@@ -155,10 +155,10 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 ## Schema update capabilities
 
-This section includes information about the update capabilities for the Schema API.
+This section includes information about the update capabilities for the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) API.
 
 > [!NOTE]
-> It is strongly recommended to re-ingest items after an update, to bring them to te latest schema. Without re-ingestion the behavior of the items will be inconsistent.
+> It is strongly recommended to re-ingest items after an update, to bring them to the latest schema. Without re-ingestion, the behavior of the items will be inconsistent.
 
 ### Adding a property
 
@@ -177,7 +177,7 @@ Consider that you will be unable to remove the original alias of a refinable pro
 
 ### Adding/removing a semantic label
 
-You can add or remove semantic labels. Adding a semantic label can affect experiences like Working Set, Relevance, and Project Cortex. If a re-ingestion occurs, these experiences will be fixed.
+Adding a semantic label can affect experiences like `Working Set`, `Relevance`, and `Project Cortex`.
 
 ## Next steps
 

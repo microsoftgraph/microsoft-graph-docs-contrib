@@ -1,7 +1,6 @@
 ---
 title: "Update schema"
 description: "Update the properties of a schema for an externalConnection."
-localization_priority: Normal
 ms.localizationpriority: medium
 author: "mecampos"
 ms.prod: "search"
@@ -34,10 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /external/connections/{connectionId}/schema
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 | Name                  | Description                                                        |
@@ -50,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
-When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property. The `properties` object must contain at least one property, up to a maximum of 64.
+When you register a custom item schema, the `schema` object **must** have the `baseType` property set to `microsoft.graph.externalItem` and must contain the `properties` property. The `properties` object **must** contain at least one property, up to a maximum of 128.
 
 ## Response
 
@@ -62,7 +57,6 @@ If successful, this method returns a `202 Accepted` response code and a URL in t
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schema"
@@ -99,27 +93,6 @@ Content-type: application/json
   ]
 }
 ```
-<!--  
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
-```-->
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-schema-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-schema-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-schema-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-schema-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 <!-- markdownlint-disable MD024 -->
 ### Response
