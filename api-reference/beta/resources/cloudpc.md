@@ -101,7 +101,6 @@ The following is a JSON representation of the resource.
   "servicePlanType": "String",
   "servicePlanName": "String",
   "status": "String",
-  "statusDetails": "String",
   "userPrincipalName": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "gracePeriodEndDateTime": "String (timestamp)",
