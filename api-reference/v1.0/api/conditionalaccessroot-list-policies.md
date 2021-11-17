@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 [!INCLUDE [sample-code](../includes/snippets/java/get-policies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -16,7 +16,7 @@ acl.identitySource = IdentitySourceType.AZURE_ACTIVE_DIRECTORY;
 aclList.add(acl);
 externalItem.acl = aclList;
 
-graphClient.connections("contosohr").items("TSP228082938")
+graphClient.external().connections("contosohr").items("TSP228082938")
 	.buildRequest()
 	.patch(externalItem);
 

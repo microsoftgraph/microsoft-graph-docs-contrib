@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on cloud PCs."
+description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcdeviceimage-getsourceimages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcdeviceimage-getsourceimages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

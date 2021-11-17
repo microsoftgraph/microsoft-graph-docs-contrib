@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2
 [!INCLUDE [sample-code](../includes/snippets/java/delete-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-reviewsetquery-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

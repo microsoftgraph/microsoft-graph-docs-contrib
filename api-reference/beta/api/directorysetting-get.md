@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directorysetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

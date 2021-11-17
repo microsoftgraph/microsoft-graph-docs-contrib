@@ -78,7 +78,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/forward
 Content-type: application/json
-Content-length: 166
 
 {
   "comment": "comment-value",
@@ -106,6 +105,10 @@ Content-length: 166
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-forward-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

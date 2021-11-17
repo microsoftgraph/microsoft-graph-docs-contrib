@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-4
 [!INCLUDE [sample-code](../includes/snippets/java/list-sitesource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sitesource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

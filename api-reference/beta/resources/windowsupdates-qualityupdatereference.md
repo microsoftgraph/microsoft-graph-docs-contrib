@@ -22,8 +22,8 @@ Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Specifies the classification of the referenced content. Supports a subset of the values for **qualityUpdateClassification**. Possible values are: `security`.|
-|releaseDateTime|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Specifies the classification of the referenced content. Supports a subset of the values for **qualityUpdateClassification**. Possible values are: `security`, `unknownFutureValue`.|
+|releaseDateTime|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is `security`.|
 
 ## Relationships
 None.
