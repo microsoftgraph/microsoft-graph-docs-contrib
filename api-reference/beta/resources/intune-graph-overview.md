@@ -1,6 +1,6 @@
 ---
-title: "Using the Intune Graph API - Microsoft Graph API"
-description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization and its devices, apps, access, and resources."
+title: "Working with Intune in Microsoft Graph"
+description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "rolyon"
 ms.localizationpriority: high
 ms.prod: "intune"
