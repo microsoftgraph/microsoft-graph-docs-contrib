@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a Windows 365 service plan configured for a Cloud PC.
 
+For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/en-us/windows-365/business/compare-plans-pricing). Currently, Microsoft Graph API is available for Windows 365 Enterprise.
+
 ## Methods
 
 |Method|Return type|Description|
