@@ -28,7 +28,7 @@ Represents a collection of checklist items on a task. ChecklistItems helps split
 |Property|Type|Description|
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
-|createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
+|createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
 |displayName|String|Field indicating the title of **checklistItem**.|
 |id|String|Server generated ID for the **checkListItem**|
 |isChecked|Boolean|State indicating whether the item is checked off or not.|

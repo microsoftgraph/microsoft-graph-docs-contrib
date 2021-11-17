@@ -1,9 +1,9 @@
 ---
 title: "Create linkedResource_v2"
 description: "Create a new linkedResource_v2 object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## HTTP request
 
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/linkedResources
+POST /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/linkedResources
+POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/linkedResources
 ```
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -46,12 +46,10 @@ You can specify the following properties when creating a **linkedResource_v2**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|webUrl|String|**TODO: Add Description** Optional.|
-|applicationName|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Optional.|
-|externalId|String|**TODO: Add Description** Optional.|
-
-
+|applicationName|String|Field indicating the app name of the source that is sending the **linkedResource**.|
+|displayName|String|Field indicating the title of the **linkedResource**.|
+|externalId|String|Id of the object that is associated with this task on the third-party/partner system.|
+|webUrl|String|Deep link to the **linkedResource**.|
 
 ## Response
 
@@ -66,16 +64,14 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/linkedResources
+POST https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/linkedResources
 Content-Type: application/json
-Content-length: 169
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource_v2",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+    "webUrl": "https://microsoft.com",
+    "applicationName": "Microsoft",
+    "displayName": "Microsoft",
+    "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
 
@@ -93,12 +89,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource_v2",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String",
-  "id": "2a1a29cc-29cc-2a1a-cc29-1a2acc291a2a"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('6f9a2a92-8527-4d64-937e-b5312852f35d')/tasks/lists('AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA')/linkedResources/$entity",
+    "webUrl": "https://microsoft.com",
+    "applicationName": "Microsoft",
+    "displayName": "Microsoft",
+    "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9",
+    "id": "e2c5ed75-7aa4-4f8e-84ab-98b5e0b56ee8"
 }
 ```
 
