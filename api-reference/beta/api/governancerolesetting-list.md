@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 463
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings",

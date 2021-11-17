@@ -91,7 +91,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

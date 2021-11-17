@@ -108,8 +108,12 @@ additionalContent:
           links:
             - text: Microsoft Graph fundamentals
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/
+            - text: Build apps with Microsoft Graph – Associate
+              url: https://docs.microsoft.com/learn/paths/m365-msgraph-associate/
             - text: Explore Microsoft Graph scenarios for JavaScript development
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios
+            - text: Explore Microsoft Graph scenarios for ASP.NET Core development
+              url: https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/             
             - text: Develop apps with Microsoft Graph Toolkit
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit             
         # Card
