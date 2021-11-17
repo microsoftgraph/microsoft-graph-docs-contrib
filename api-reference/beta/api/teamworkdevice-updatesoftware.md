@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: updateSoftware"
-description: "Software Update for the specified device. "
+description: "Software Update for the specified device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -17,10 +17,11 @@ You can specify which software of the device to update:
 
 - **softwareType** - AdminAgent | OperatingSystem | TeamsClient | Firmware | PartnerAgent | CompanyPortal
 
-Get the logs for a specified device.
-Run Diagnostics is a long-running operation.
-After the POST diagnostics returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
-returned by the Location: header to see if it's "running" or "succeeded" or "failed".
+Software update is a long-running operation.
+After the POST software update operation returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
+returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
+You should continue to GET until the status is not "queued".
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +62,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the restart operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the software update operation by making a GET request to this location.
 
 This method also returns a `409 Conflict` response code, if the operation is already in queued state.
 

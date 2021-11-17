@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDevices"
-description: "Get a list of the teamworkDevice objects and their properties."
+description: "Get the list of all Teams devices provisioned for the tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [teamworkDevice](../resources/teamworkdevice.md) objects and their properties.
+Get the list of all Teams [teamworkDevices](../resources/teamworkdevice.md) provisioned for the tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,17 @@ GET /teamwork/devices
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId** and **currentUser/id** properties), `$top`, `$select`, `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+### Supported query patterns
+
+| Pattern                | Supported | Syntax                                 | Notes |
+| ---------------------- | ------- | -------------------------------------- | ----- |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently we are sending continuation token only in list request. |
+| Filter                 |     ✓     | `/devices?$filter=deviceType eq 'TeamsRoom'` | Filter device based on device category |
+| Filter                 |     ✓     | `/devices?$filter=hardwareDetail/uniqueId eq 'value'` | Filter device based on assigned uniqueId to device. |
+| Filter                 |     ✓     | `/devices?$filter=currentUser/id eq 'value'` |  Filter device based on device logged in user.|
+| Page limit                 |     ✓     | `/devices?$top=10'` | Get devices with page size 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|
@@ -46,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamworkDevice](../resources/teamworkdevice.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [teamworkDevice](../resources/teamworkdevice.md) objects in the response body. The API supports pagination with a default limit of 20 devices per request.
 
 ## Examples
 

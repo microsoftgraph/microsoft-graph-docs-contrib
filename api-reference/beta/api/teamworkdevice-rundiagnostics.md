@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the logs for a specified device.
-Run Diagnostics is a long-running operation.
-After the POST diagnostics returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
-returned by the Location: header to see if it's "running" or "succeeded" or "failed".
+Run Diagnostics is a long-running operation used to generate logs for the device.
+After the POST diagnostics operation returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
+returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
+If the operation is successful, you can download the logs from Teams Admin Centre.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the run iagnostics operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the run diagnostics operation by making a GET request to this location.
 
 This method also returns a `409 Conflict` response code, if the operation is already in queued state.
 

@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDeviceOperations"
-description: "Get a list of the teamworkDeviceOperation objects and their properties."
+description: "Get a list of teamworkDeviceOperations linked to a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) objects and their properties.
+Get a list of the [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md) linked to a device.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,14 @@ GET /teamwork/devices/{teamworkDeviceId}/operations
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$select`, `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+### Supported query patterns
+
+| Pattern                | Supported | Syntax                                 | Notes |
+| ---------------------- | ------- | -------------------------------------- | ----- |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently we are sending continuation token only in list request. |
+| Page limit                 |     ✓     | `/devices({deviceId})/operations?$top=10'` | Get operations for a device with page size 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|
@@ -47,6 +54,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) objects in the response body.
+The API supports pagination with a default limit of 20 operations per request.
 
 ## Examples
 

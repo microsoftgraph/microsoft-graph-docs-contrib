@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDevice"
-description: "Read the properties and relationships of a teamworkDevice object."
+description: "Read the properties of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [teamworkDevice](../resources/teamworkdevice.md) object.
+Read the properties (like device type, hardware details, activity status, health status) and relationships of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /teamwork/devices/{teamworkDeviceId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
