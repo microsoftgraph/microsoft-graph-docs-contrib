@@ -1,5 +1,5 @@
 ---
-title: "Add owner"
+title: "Add owners"
 description: "Add a user or service principal to a Microsoft 365 or security group's owners."
 ms.localizationpriority: medium
 author: "Jordanndahl"
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add owner
+# Add owners
 
 Namespace: microsoft.graph
 
