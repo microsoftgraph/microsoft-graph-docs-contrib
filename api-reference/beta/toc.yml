@@ -10114,13 +10114,6 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
-        - name: Risky user
-          href: resources/managedtenants-riskyuser.md
-          items:
-            - name: List risky user
-              href: api/managedtenants-managedtenant-list-riskyusers.md
-            - name: Get risky user
-              href: api/managedtenants-riskyuser-get.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
