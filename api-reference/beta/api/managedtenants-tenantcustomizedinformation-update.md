@@ -75,6 +75,11 @@ Content-Type: application/json
   "contacts": [
     {
       "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
+      "name": "String",
+      "title": "String",
+      "email": "String",
+      "phone": "String",
+      "notes": "String"
     }
   ],
   "website": "String"
