@@ -414,8 +414,6 @@ The following API calls do not support installing apps that require [resource-sp
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Add app to chat](/graph/api/chat-post-installedapps.md)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
-- [Add app for user](/graph/api/userteamwork-post-installedapps.md)
-- [Upgrade app installed for user](/graph/api/userteamwork-teamsappinstallation-upgrade.md)
 
 ## Users
 
