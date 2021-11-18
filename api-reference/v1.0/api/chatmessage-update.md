@@ -31,6 +31,16 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{repl
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
+## Optional query parameters
+
+You can use `model` query parameter which only supports the value `A`. If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. Following are the examples.
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+
 ## Request headers
 
 | Name       | Description|

@@ -24,3 +24,26 @@ ms.localizationpriority: medium
 >`/teams/getAllMembers` and `/chats/getAllMembers` has [licensing and payment requirements](/graph/teams-licenses).
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+### Example request
+
+The `model` query parameter should be specified in the `resource` property in the request body.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_with_model_parameter"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{
+   "changeType": "created",
+   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+   "resource": "chats/getAllMessages?model=A",
+   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
+}
+```
