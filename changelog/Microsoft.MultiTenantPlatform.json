@@ -22,8 +22,8 @@
       "Id": "8d9665e9-6231-4b32-ad28-9811acbf9f0d",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-10-26T19:03:49.1166069Z",
-      "WorkloadArea": "Microsoft.MultiTenantPlatform",
+      "CreatedDateTime": "2021-11-17T19:03:49.1166069Z",
+      "WorkloadArea": "Multi-tenant management",
       "SubArea": ""
     },
     {
