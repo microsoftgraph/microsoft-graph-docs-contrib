@@ -1,7 +1,7 @@
 ---
 title: "Update tenantCustomizedInformation"
 description: "Update the properties of a tenantCustomizedInformation object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
