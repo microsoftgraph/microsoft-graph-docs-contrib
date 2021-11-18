@@ -44,10 +44,11 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.|
-| addIns | [addIn](../resources/addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
+| addIns | [addIn](../resources/addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity).|
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](../resources/approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [application](../resources/application.md) resource. Not nullable. |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.<br/><br/>To update this property, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.|
 |displayName|String|The display name for the service principal.|
 |homepage|String|Home page or landing page of the application.|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
@@ -68,8 +69,12 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `204 No Content` response code and updated [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+
 ## Examples
-### Request
+
+### Example 1: Update properties of the specified service principal
+
+#### Request
 Here is an example of the request.
 
 
@@ -110,7 +115,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
@@ -135,4 +140,47 @@ HTTP/1.1 204 No Content
 -->
 
 
+### Example 2: Assign a custom security attribute with a string value to a service principal
+
+The following example shows how to assign a custom security attribute with a string value to a service principal.
+
++ Attribute set: `Engineering`
++ Attribute: `ProjectDate`
++ Attribute data type: String
++ Attribute value: `"2022-10-01"`
+
+To assign custom security attributes, the calling principal must be assigned the Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+For other similar examples for users, see [Assign, update, or remove custom security attributes using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
+#### Request
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_serviceprincipal_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 

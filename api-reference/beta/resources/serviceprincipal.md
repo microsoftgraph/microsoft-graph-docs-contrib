@@ -86,7 +86,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 | accountEnabled |Boolean| `true` if the service principal account is enabled; otherwise, `false`. Supports `$filter` (`eq`, `ne`, `NOT`, `in`). |
-| addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
+| addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity). Supports `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |appDescription|String|The description exposed by the associated application.|
 |appDisplayName|String|The display name exposed by the associated application.|
@@ -95,6 +95,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appOwnerOrganizationId|String|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`). |
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 | description | String | Free text field to provide an internal end-user facing description of the service principal. End-user portals such [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access) will display the application description in this field. The maximum allowed size is 1024 characters. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `startsWith`) and `$search`.|
 | disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `NOT`).  |
@@ -173,6 +174,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "applicationTemplateId": "string",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "customSecurityAttributes": {
+    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  },
   "disabledByMicrosoftStatus": "string",
   "displayName": "string",
   "errorUrl": "string",
