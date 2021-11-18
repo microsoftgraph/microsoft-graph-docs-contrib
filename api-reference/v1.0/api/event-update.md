@@ -127,7 +127,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
@@ -182,7 +181,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
