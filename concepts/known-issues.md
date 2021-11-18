@@ -339,7 +339,12 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Batch size is limited
 
-JSON batch requests are currently limited to 20 individual requests.
+JSON batch requests are currently limited to 20 individual requests. 
+
+* Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
+
+For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
 
 ### Request dependencies are limited
 
