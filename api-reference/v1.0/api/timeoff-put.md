@@ -99,6 +99,10 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/java/timeoff-put-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timeoff-put-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -118,7 +122,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

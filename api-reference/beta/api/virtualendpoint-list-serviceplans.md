@@ -1,6 +1,6 @@
 ---
 title: "List servicePlans"
-description: "List the service plans that Cloud PCs support for a tenant."
+description: "List the currently available service plans that an organization can purchase for their Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the service plans that Cloud PCs support for a tenant.
+List the currently available service plans that an organization can purchase for their Cloud PCs.
+
+For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, Microsoft Graph API is available for Windows 365 Enterprise.
 
 ## Permissions
 
@@ -83,6 +85,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/servicePla
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-serviceplans-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-serviceplans-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

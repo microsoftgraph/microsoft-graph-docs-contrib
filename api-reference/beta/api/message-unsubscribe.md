@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 [!INCLUDE [sample-code](../includes/snippets/java/message-unsubscribe-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-unsubscribe-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
