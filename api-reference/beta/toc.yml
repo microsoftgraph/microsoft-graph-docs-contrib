@@ -10289,6 +10289,8 @@ items:
           href: api/educationclass-delete-members.md
         - name: List assignments
           href: api/educationclass-list-assignments.md
+        - name: List assignments - delta
+          href: api/educationclass-list-assignments-delta.md          
         - name: Create assignment
           href: api/educationclass-post-assignments.md
         - name: Get assignment settings
@@ -10297,6 +10299,8 @@ items:
           href: api/educationassignmentdefaults-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
+        - name: List categories - delta
+          href: api/educationclass-list-categories-delta.md          
         - name: Create category
           href: api/educationclass-post-category.md
         - name: Get delta
