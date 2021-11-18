@@ -123,6 +123,8 @@ items:
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
       - name: Migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
+      - name: Configure Azure AD Graph permissions
+        href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
