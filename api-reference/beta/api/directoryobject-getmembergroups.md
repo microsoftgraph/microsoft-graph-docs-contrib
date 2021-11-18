@@ -18,27 +18,6 @@ Return all the groups that the specified [user](../resources/user.md), [group](.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
-
-The following table lists the permission types to use for different scenarios.
-
-| Scenario | Permissions |
-|:-|:-|
-| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
-| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
-| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
-| To get group memberships for a service principal | Use one of the following sets of permissions <br/> <li>**Application.ReadWrite.All** and **GroupMember.Read.All** <li>**Application.ReadWrite.All** and **Group.Read.All** |
-| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
-
-<!-- These tables will replace the data in lines 22-36 to help with the tooling that parses permissions tables.
-+ Current data is copy-pasted from incorrect files/file names
-+ To validate these permissions against lines 32-36
-
 ### Group memberships for a directory object
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -79,6 +58,16 @@ The following table lists the permission types to use for different scenarios.
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+<!--
+The following table lists the permission types to use for different scenarios.
+
+| Scenario | Permissions |
+|:-|:-|
+| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
+| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
+| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
+| To get group memberships for a service principal | Use one of the following sets of permissions <br/> <li>**Application.ReadWrite.All** and **GroupMember.Read.All** <li>**Application.ReadWrite.All** and **Group.Read.All** |
+| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
 -->
 
 ## HTTP request
