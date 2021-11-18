@@ -32,7 +32,6 @@ A subscription allows a client app to receive change notifications about changes
 - The [presence][] of a user in Microsoft Teams.*
 - A [team](./team.md) in Microsoft Teams.*
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
-- A [todoTask][] of a user in Microsoft To Do.*
 - A [baseTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
@@ -87,7 +86,6 @@ For the possible resource path values for each supported resource, see [Use the 
 | **presence**        | 60 minutes (1 hour) |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
-| **todoTask**              | 4230 minutes (under 3 days)    |
 | **baseTask**              | 4230 minutes (under 3 days)    |
 
 
@@ -157,7 +155,6 @@ Here is a JSON representation of the resource.
 [presence]: ./presence.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[todoTask]: ./todotask.md
 [baseTask]: ./basetask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
