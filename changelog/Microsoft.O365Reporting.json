@@ -3,325 +3,325 @@
     {
 	  "ChangeList": [
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "office365ActivationsUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **office365ActivationsUserDetail** resource type.",
-		  "Target": "office365ActivationsUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "office365ActivationsUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **office365ActivationsUserDetail** resource type.",
+          "Target": "office365ActivationsUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "userActivationCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **userActivationCounts** resource type.",
-		  "Target": "userActivationCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userActivationCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userActivationCounts** resource type.",
+          "Target": "userActivationCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "office365ActivationCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **office365ActivationCounts** resource type.",
-		  "Target": "office365ActivationCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "office365ActivationCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **office365ActivationCounts** resource type.",
+          "Target": "office365ActivationCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "office365ActivationsUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **office365ActivationsUserCounts** resource type.",
-		  "Target": "office365ActivationsUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "office365ActivationsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **office365ActivationsUserCounts** resource type.",
+          "Target": "office365ActivationsUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "oneDriveActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **oneDriveActivityUserDetail** resource type.",
-		  "Target": "oneDriveActivityUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **oneDriveActivityUserDetail** resource type.",
+          "Target": "oneDriveActivityUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "siteActivitySummary",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **siteActivitySummary** resource type.",
-		  "Target": "siteActivitySummary"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteActivitySummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **siteActivitySummary** resource type.",
+          "Target": "siteActivitySummary"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "oneDriveUsageAccountDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **oneDriveUsageAccountDetail** resource type.",
-		  "Target": "oneDriveUsageAccountDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveUsageAccountDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **oneDriveUsageAccountDetail** resource type.",
+          "Target": "oneDriveUsageAccountDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "oneDriveUsageAccountCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **oneDriveUsageAccountCounts** resource type.",
-		  "Target": "oneDriveUsageAccountCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveUsageAccountCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **oneDriveUsageAccountCounts** resource type.",
+          "Target": "oneDriveUsageAccountCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "oneDriveUsageFileCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **oneDriveUsageFileCounts** resource type.",
-		  "Target": "oneDriveUsageFileCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oneDriveUsageFileCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **oneDriveUsageFileCounts** resource type.",
+          "Target": "oneDriveUsageFileCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "siteUsageStorage",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **siteUsageStorage** resource type.",
-		  "Target": "siteUsageStorage"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteUsageStorage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **siteUsageStorage** resource type.",
+          "Target": "siteUsageStorage"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointActivityUserDetail** resource type.",
-		  "Target": "sharePointActivityUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointActivityUserDetail** resource type.",
+          "Target": "sharePointActivityUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointActivityUserCounts** resource type.",
-		  "Target": "sharePointActivityUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointActivityUserCounts** resource type.",
+          "Target": "sharePointActivityUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointActivityPages",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointActivityPages** resource type.",
-		  "Target": "sharePointActivityPages"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointActivityPages",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointActivityPages** resource type.",
+          "Target": "sharePointActivityPages"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointSiteUsageDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointSiteUsageDetail** resource type.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSiteUsageDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointSiteUsageDetail** resource type.",
+          "Target": "sharePointSiteUsageDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointSiteUsageFileCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointSiteUsageFileCounts** resource type.",
-		  "Target": "sharePointSiteUsageFileCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSiteUsageFileCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointSiteUsageFileCounts** resource type.",
+          "Target": "sharePointSiteUsageFileCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointSiteUsageSiteCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointSiteUsageSiteCounts** resource type.",
-		  "Target": "sharePointSiteUsageSiteCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSiteUsageSiteCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointSiteUsageSiteCounts** resource type.",
+          "Target": "sharePointSiteUsageSiteCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "sharePointSiteUsagePages",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **sharePointSiteUsagePages** resource type.",
-		  "Target": "sharePointSiteUsagePages"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSiteUsagePages",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sharePointSiteUsagePages** resource type.",
+          "Target": "sharePointSiteUsagePages"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessActivityUserDetail** resource type.",
-		  "Target": "skypeForBusinessActivityUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessActivityUserDetail** resource type.",
+          "Target": "skypeForBusinessActivityUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessActivityCounts** resource type.",
-		  "Target": "skypeForBusinessActivityCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessActivityCounts** resource type.",
+          "Target": "skypeForBusinessActivityCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessActivityUserCounts** resource type.",
-		  "Target": "skypeForBusinessActivityUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessActivityUserCounts** resource type.",
+          "Target": "skypeForBusinessActivityUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessPeerToPeerActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessPeerToPeerActivityCounts** resource type.",
-		  "Target": "skypeForBusinessPeerToPeerActivityCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessPeerToPeerActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessPeerToPeerActivityCounts** resource type.",
+          "Target": "skypeForBusinessPeerToPeerActivityCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessPeerToPeerActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessPeerToPeerActivityUserCounts** resource type.",
-		  "Target": "skypeForBusinessPeerToPeerActivityUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessPeerToPeerActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessPeerToPeerActivityUserCounts** resource type.",
+          "Target": "skypeForBusinessPeerToPeerActivityUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessPeerToPeerActivityMinuteCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessPeerToPeerActivityMinuteCounts** resource type.",
-		  "Target": "skypeForBusinessPeerToPeerActivityMinuteCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessPeerToPeerActivityMinuteCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessPeerToPeerActivityMinuteCounts** resource type.",
+          "Target": "skypeForBusinessPeerToPeerActivityMinuteCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessOrganizerActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessOrganizerActivityCounts** resource type.",
-		  "Target": "skypeForBusinessOrganizerActivityCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessOrganizerActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessOrganizerActivityCounts** resource type.",
+          "Target": "skypeForBusinessOrganizerActivityCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessOrganizerActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessOrganizerActivityUserCounts** resource type.",
-		  "Target": "skypeForBusinessOrganizerActivityUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessOrganizerActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessOrganizerActivityUserCounts** resource type.",
+          "Target": "skypeForBusinessOrganizerActivityUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessOrganizerActivityMinuteCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessOrganizerActivityMinuteCounts** resource type.",
-		  "Target": "skypeForBusinessOrganizerActivityMinuteCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessOrganizerActivityMinuteCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessOrganizerActivityMinuteCounts** resource type.",
+          "Target": "skypeForBusinessOrganizerActivityMinuteCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessParticipantActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessParticipantActivityCounts** resource type.",
-		  "Target": "skypeForBusinessParticipantActivityCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessParticipantActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessParticipantActivityCounts** resource type.",
+          "Target": "skypeForBusinessParticipantActivityCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessParticipantActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessParticipantActivityUserCounts** resource type.",
-		  "Target": "skypeForBusinessParticipantActivityUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessParticipantActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessParticipantActivityUserCounts** resource type.",
+          "Target": "skypeForBusinessParticipantActivityUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessParticipantActivityMinuteCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessParticipantActivityMinuteCounts** resource type.",
-		  "Target": "skypeForBusinessParticipantActivityMinuteCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessParticipantActivityMinuteCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessParticipantActivityMinuteCounts** resource type.",
+          "Target": "skypeForBusinessParticipantActivityMinuteCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessDeviceUsageUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessDeviceUsageUserDetail** resource type.",
-		  "Target": "skypeForBusinessDeviceUsageUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessDeviceUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessDeviceUsageUserDetail** resource type.",
+          "Target": "skypeForBusinessDeviceUsageUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessDeviceUsageDistributionUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessDeviceUsageDistributionUserCounts** resource type.",
-		  "Target": "skypeForBusinessDeviceUsageDistributionUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessDeviceUsageDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessDeviceUsageDistributionUserCounts** resource type.",
+          "Target": "skypeForBusinessDeviceUsageDistributionUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "skypeForBusinessDeviceUsageUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **skypeForBusinessDeviceUsageUserCounts** resource type.",
-		  "Target": "skypeForBusinessDeviceUsageUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessDeviceUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **skypeForBusinessDeviceUsageUserCounts** resource type.",
+          "Target": "skypeForBusinessDeviceUsageUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerActivityUserDetail** resource type.",
-		  "Target": "yammerActivityUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerActivityUserDetail** resource type.",
+          "Target": "yammerActivityUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerActivitySummary",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerActivitySummary** resource type.",
-		  "Target": "yammerActivitySummary"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerActivitySummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerActivitySummary** resource type.",
+          "Target": "yammerActivitySummary"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerDeviceUsageUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerDeviceUsageUserDetail** resource type.",
-		  "Target": "yammerDeviceUsageUserDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerDeviceUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerDeviceUsageUserDetail** resource type.",
+          "Target": "yammerDeviceUsageUserDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerDeviceUsageDistributionUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerDeviceUsageDistributionUserCounts** resource type.",
-		  "Target": "yammerDeviceUsageDistributionUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerDeviceUsageDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerDeviceUsageDistributionUserCounts** resource type.",
+          "Target": "yammerDeviceUsageDistributionUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerDeviceUsageUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerDeviceUsageUserCounts** resource type.",
-		  "Target": "yammerDeviceUsageUserCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerDeviceUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerDeviceUsageUserCounts** resource type.",
+          "Target": "yammerDeviceUsageUserCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerGroupsActivityDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerGroupsActivityDetail** resource type.",
-		  "Target": "yammerGroupsActivityDetail"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerGroupsActivityDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerGroupsActivityDetail** resource type.",
+          "Target": "yammerGroupsActivityDetail"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerGroupsActivityGroupCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerGroupsActivityGroupCounts** resource type.",
-		  "Target": "yammerGroupsActivityGroupCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerGroupsActivityGroupCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerGroupsActivityGroupCounts** resource type.",
+          "Target": "yammerGroupsActivityGroupCounts"
+        },
 		{
-		  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "yammerGroupsActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **yammerGroupsActivityCounts** resource type.",
-		  "Target": "yammerGroupsActivityCounts"
-		},
+          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "yammerGroupsActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **yammerGroupsActivityCounts** resource type.",
+          "Target": "yammerGroupsActivityCounts"
+        },
 		{
 		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
@@ -677,141 +677,141 @@
 	{
 	  "ChangeList": [
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailActivitySummary",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailActivitySummary** resource type.",
-		  "Target": "emailActivitySummary"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivitySummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivitySummary** resource type.",
+          "Target": "emailActivitySummary"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailActivityUserDetail** resource type.",
-		  "Target": "emailActivityUserDetail"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivityUserDetail** resource type.",
+          "Target": "emailActivityUserDetail"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailAppUsageAppsUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailAppUsageAppsUserCounts** resource type.",
-		  "Target": "emailAppUsageAppsUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageAppsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageAppsUserCounts** resource type.",
+          "Target": "emailAppUsageAppsUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailAppUsageUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailAppUsageUserCounts** resource type.",
-		  "Target": "emailAppUsageUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserCounts** resource type.",
+          "Target": "emailAppUsageUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailAppUsageUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailAppUsageUserDetail** resource type.",
-		  "Target": "emailAppUsageUserDetail"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserDetail** resource type.",
+          "Target": "emailAppUsageUserDetail"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "emailAppUsageVersionsUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **emailAppUsageVersionsUserCounts** resource type.",
-		  "Target": "emailAppUsageVersionsUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageVersionsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageVersionsUserCounts** resource type.",
+          "Target": "emailAppUsageVersionsUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "mailboxUsageDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **mailboxUsageDetail** resource type.",
-		  "Target": "mailboxUsageDetail"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageDetail** resource type.",
+          "Target": "mailboxUsageDetail"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "mailboxUsageMailboxCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **mailboxUsageMailboxCounts** resource type.",
-		  "Target": "mailboxUsageMailboxCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageMailboxCounts** resource type.",
+          "Target": "mailboxUsageMailboxCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "mailboxUsageQuotaStatusMailboxCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **mailboxUsageQuotaStatusMailboxCounts** resource type.",
-		  "Target": "mailboxUsageQuotaStatusMailboxCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageQuotaStatusMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageQuotaStatusMailboxCounts** resource type.",
+          "Target": "mailboxUsageQuotaStatusMailboxCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "mailboxUsageStorage",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **mailboxUsageStorage** resource type.",
-		  "Target": "mailboxUsageStorage"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageStorage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageStorage** resource type.",
+          "Target": "mailboxUsageStorage"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsDeviceUsageDistributionUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsDeviceUsageDistributionUserCounts** resource type.",
-		  "Target": "teamsDeviceUsageDistributionUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageDistributionUserCounts** resource type.",
+          "Target": "teamsDeviceUsageDistributionUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsDeviceUsageUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsDeviceUsageUserCounts** resource type.",
-		  "Target": "teamsDeviceUsageUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserCounts** resource type.",
+          "Target": "teamsDeviceUsageUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsDeviceUsageUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsDeviceUsageUserDetail** resource type.",
-		  "Target": "teamsDeviceUsageUserDetail"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserDetail** resource type.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsUserActivityCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsUserActivityCounts** resource type.",
-		  "Target": "teamsUserActivityCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityCounts** resource type.",
+          "Target": "teamsUserActivityCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsUserActivityDistributionUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsUserActivityDistributionUserCounts** resource type.",
-		  "Target": "teamsUserActivityDistributionUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityDistributionUserCounts** resource type.",
+          "Target": "teamsUserActivityDistributionUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsUserActivityUserCounts",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsUserActivityUserCounts** resource type.",
-		  "Target": "teamsUserActivityUserCounts"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserCounts** resource type.",
+          "Target": "teamsUserActivityUserCounts"
+        },
         {
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsUserActivityUserDetail",
-		  "ChangeType": "Deletion",
-		  "Description": "Removed the **teamsUserActivityUserDetail** resource type.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserDetail** resource type.",
+          "Target": "teamsUserActivityUserDetail"
+        },
 		{
 		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
 		  "ApiChange": "Method",
@@ -1007,213 +1007,213 @@
     {
       "ChangeList": [
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "isLicensed",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **isLicensed** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLicensed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLicensed** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "meetingsOrganizedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **meetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingsOrganizedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "meetingsAttendedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **meetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingsAttendedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "adHocMeetingsOrganizedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **adHocMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "adHocMeetingsOrganizedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **adHocMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "adHocMeetingsAttendedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **adHocMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "adHocMeetingsAttendedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **adHocMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "scheduledOneTimeMeetingsOrganizedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduledOneTimeMeetingsOrganizedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "scheduledOneTimeMeetingsAttendedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduledOneTimeMeetingsAttendedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "scheduledRecurringMeetingsOrganizedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduledRecurringMeetingsOrganizedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "scheduledRecurringMeetingsAttendedCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduledRecurringMeetingsAttendedCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "audioDuration",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **audioDuration** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "audioDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **audioDuration** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "videoDuration",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **videoDuration** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "videoDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **videoDuration** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "screenShareDuration",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **screenShareDuration** property to the **teamsUserActivityUserDetail** resource.",
-		  "Target": "teamsUserActivityUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "screenShareDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **screenShareDuration** property to the **teamsUserActivityUserDetail** resource.",
+          "Target": "teamsUserActivityUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "isLicensed",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **isLicensed** property to the **teamsDeviceUsageUserDetail** resource.",
-		  "Target": "teamsDeviceUsageUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLicensed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLicensed** property to the **teamsDeviceUsageUserDetail** resource.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "usedChromeOS",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **usedChromeOS** property to the **teamsDeviceUsageUserDetail** resource.",
-		  "Target": "teamsDeviceUsageUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "usedChromeOS",
+          "ChangeType": "Addition",
+          "Description": "Added the **usedChromeOS** property to the **teamsDeviceUsageUserDetail** resource.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "usedLinux",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **usedLinux** property to the **teamsDeviceUsageUserDetail** resource.",
-		  "Target": "teamsDeviceUsageUserDetail"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "usedLinux",
+          "ChangeType": "Addition",
+          "Description": "Added the **usedLinux** property to the **teamsDeviceUsageUserDetail** resource.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "chromeOS",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **chromeOS** property to the **teamsDeviceUsageUserCounts** resource.",
-		  "Target": "teamsDeviceUsageUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "chromeOS",
+          "ChangeType": "Addition",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageUserCounts** resource.",
+          "Target": "teamsDeviceUsageUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "linux",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **linux** property to the **teamsDeviceUsageUserCounts** resource.",
-		  "Target": "teamsDeviceUsageUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "linux",
+          "ChangeType": "Addition",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageUserCounts** resource.",
+          "Target": "teamsDeviceUsageUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "chromeOS",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **chromeOS** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
-		  "Target": "teamsDeviceUsageDistributionUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "chromeOS",
+          "ChangeType": "Addition",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
+          "Target": "teamsDeviceUsageDistributionUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "linux",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **linux** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
-		  "Target": "teamsDeviceUsageDistributionUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Property",
+          "ChangedApiName": "linux",
+          "ChangeType": "Addition",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
+          "Target": "teamsDeviceUsageDistributionUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "Resource",
-		  "ChangedApiName": "teamsUserActivityDistributionUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **teamsUserActivityDistributionUserCounts** resource type.",
-		  "Target": "teamsUserActivityDistributionUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityDistributionUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsUserActivityDistributionUserCounts** resource type.",
+          "Target": "teamsUserActivityDistributionUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsUserActivityTotalCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsUserActivityTotalCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsUserActivityTotalCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsUserActivityTotalCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsUserActivityTotalUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsUserActivityTotalUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsUserActivityTotalUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsUserActivityTotalUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsUserActivityDistributionUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsUserActivityDistributionUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsUserActivityDistributionUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsUserActivityDistributionUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsUserActivityDistributionTotalUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsUserActivityDistributionTotalUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsUserActivityDistributionTotalUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsUserActivityDistributionTotalUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsDeviceUsageTotalUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsDeviceUsageTotalUserCounts"
-		},
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsDeviceUsageTotalUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsDeviceUsageTotalUserCounts"
+        },
         {
-		  "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-		  "ApiChange": "method",
-		  "ChangedApiName": "getTeamsDeviceUsageDistributionTotalUserCounts",
-		  "ChangeType": "Addition",
-		  "Description": "Added the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) method.",
-		  "Target": "getTeamsDeviceUsageDistributionTotalUserCounts"
-		}
+          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
+          "ApiChange": "method",
+          "ChangedApiName": "getTeamsDeviceUsageDistributionTotalUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) method.",
+          "Target": "getTeamsDeviceUsageDistributionTotalUserCounts"
+        }
       ],
       "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
       "Cloud": "prd",
@@ -1225,69 +1225,69 @@
     {
       "ChangeList": [
         {
-		  "Id": "e793c5e3-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "siteSensitivityLabelId",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **siteSensitivityLabelId** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e793c5e3-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "siteSensitivityLabelId",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteSensitivityLabelId** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e79628b9-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "externalSharing",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **externalSharing** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e79628b9-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalSharing** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e7988a6d-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "unmanagedDevicePolicy",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **unmanagedDevicePolicy** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e7988a6d-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "unmanagedDevicePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **unmanagedDevicePolicy** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e79aecbf-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "geolocation",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **geolocation** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e79aecbf-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "geolocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **geolocation** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e79d5001-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "anonymousLinkCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **anonymousLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e79d5001-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "anonymousLinkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **anonymousLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e79fb1a8-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "companyLinkCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **companyLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e79fb1a8-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "companyLinkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **companyLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e7a2132c-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "secureLinkForGuestCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **secureLinkForGuestCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		},
+          "Id": "e7a2132c-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "secureLinkForGuestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **secureLinkForGuestCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
         {
-		  "Id": "e7a48071-5c97-11eb-8de9-f7f8b8b7f046",
-		  "ApiChange": "Property",
-		  "ChangedApiName": "secureLinkForMemberCount",
-		  "ChangeType": "Addition",
-		  "Description": "Added the **secureLinkForMemberCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
-		  "Target": "sharePointSiteUsageDetail"
-		}
+          "Id": "e7a48071-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "secureLinkForMemberCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **secureLinkForMemberCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        }
       ],
       "Id": "e7916352-5c97-11eb-8de9-f7f8b8b7f046",
       "Cloud": "prd",
