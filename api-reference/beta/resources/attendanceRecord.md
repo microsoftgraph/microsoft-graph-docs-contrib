@@ -1,6 +1,6 @@
 ---
 title: "attendanceRecord resource type"
-description: "Contains information associated with attendance record in meeting attendance report."
+description: "Contains information associated with an attendance record in a meeting attendance report."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information associated with attendance record in meeting attendance report.
+Contains information associated with an attendance record in a meeting attendance report.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of the [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
+|[List attendanceRecords](../api/attendancerecord-list.md)|[attendanceRecord](../resources/attendancerecord.md) collection|Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.|
 
 ## Properties
 
