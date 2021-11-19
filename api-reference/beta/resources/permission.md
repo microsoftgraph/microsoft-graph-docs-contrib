@@ -19,6 +19,9 @@ The **permission** resource represents these different forms through facets on t
 
 >**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
 
+OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
+GrantedTo and GrantedToIdentities will be deprecated going forward and the response will be migrated to GrantedToV2 and GrantedToIdentitiesV2 respectively under appropriate property names.
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -35,9 +38,7 @@ Here is a JSON representation of the resource.
     "inheritedFrom",
     "shareId",
     "expirationDateTime",
-    "hasPassword",
-    "@deprecated.GrantedTo",
-    "@deprecated.GrantedToIdentities"
+    "hasPassword"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -57,28 +58,26 @@ Here is a JSON representation of the resource.
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean",
-  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2"
+  "hasPassword": "boolean"
 }
 ```
 
 ## Properties
 
-| Property                         | Type                                      | Description
-|:---------------------------------|:------------------------------------------|:-------------------------
-| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
-| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][])     | For link type permissions, the details of the users to whom permission was granted. Read-only.
-| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
-| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
-| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
-| roles                            | Collection(String)                        | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId                          | String                                    | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only.
-| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
-| hasPassword                      | Boolean                                   | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
-| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only.
+| Property                         | Type                                      | Description |
+|:---------------------------------|:------------------------------------------|:------------------------- |
+| id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only. |
+| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only. |
+| grantedToIdentitiesV2            | Collection([SharePointIdentitySet][])     | For link type permissions, the details of the users to whom permission was granted. Read-only. |
+| invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
+| inheritedFrom                    | [ItemReference][]                         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only. |
+| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only. |
+| roles                            | Collection(String)                        | The type of permission, for example, `read`. See below for the full list of roles. Read-only. |
+| shareId                          | String                                    | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only. |
+| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
+| hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only. |
+| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only. |
+| grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only. |
 
 ### Roles property values
 
@@ -175,7 +174,6 @@ This link provides read and write access to the specific people in the `grantedT
 ```json
 {
   "id": "3",
-  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
   "grantedToIdentities": [
     {
        "user": {
@@ -250,7 +248,6 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 ```json
 {
   "id": "1",
-  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "roles": ["write"],
   "grantedTo": {
     "user": {
@@ -270,7 +267,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
     }
   },
   "invitation": {
-    "email": "jd@outlook.com",
+    "email": "jd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -290,11 +287,6 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 | [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
-
-## Remarks
-
-1. OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
-2. GrantedTo and GrantedToIdentities will be deprecated going forward and the response will be migrated to GrantedToV2 and GrantedToIdentitiesV2 respectively under appropriate property names.
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md

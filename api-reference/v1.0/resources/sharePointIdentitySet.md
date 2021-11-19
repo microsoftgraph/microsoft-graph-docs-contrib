@@ -1,10 +1,10 @@
 ---
 author: tushar20
 ms.date: 09/04/2021
-title: SharePointIdentitySet
+title: sharePointIdentitySet resource type
 ms.localizationpriority: medium
-description: "The SharePointIdentitySet resource is a keyed collection of SharePointIdentity and Identity resources."
-ms.prod: ""
+description: "Represents a keyed collection of SharePointIdentity and Identity resources."
+ms.prod: "sharePoint"
 doc_type: resourcePageType
 ---
 # SharePointIdentitySet resource type
@@ -12,6 +12,19 @@ doc_type: resourcePageType
 The **SharePointIdentitySet** resource is a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. It extends from the **IdentitySet** resource to provide capability to expose SharePoint specific information to the user.
 
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
+
+For usage of **SharePointIdentitySet** resource, see [DriveItem][].
+
+## Properties
+
+| Property    | Type                   | Description |
+|:------------|:-----------------------|:----------------------------------------------------------- |
+| application | [Identity][]           | The application associated with this action. Optional. |
+| device      | [Identity][]           | The device associated with this action. Optional. |
+| group       | [Identity][]           | The group associated with this action. Optional. |
+| user        | [Identity][]           | The user associated with this action. Optional. |
+| siteUser    | [SharePointIdentity][] | The SharePoint user associated with this action. Optional. |
+| siteGroup   | [SharePointIdentity][] | The SharePoint group associated with this action. Optional. |
 
 ## JSON representation
 
@@ -33,22 +46,6 @@ Here is a JSON representation of the resource.
   "siteGroup":{"@odata.type": "microsoft.graph.sharePointIdentity"}
 }
 ```
-
-## Properties
-
-| Property    | Type                   | Description
-|:------------|:-----------------------|:-----------------------------------------------------------
-| application | [Identity][]           | The application associated with this action. Optional
-| device      | [Identity][]           | The device associated with this action. Optional
-| group       | [Identity][]           | The group associated with this action. Optional
-| user        | [Identity][]           | The user associated with this action. Optional
-| siteUser    | [SharePointIdentity][] | The SharePoint User associated with this action. Optional
-| siteGroup   | [SharePointIdentity][] | The SharePoint Group associated with this action. Optional
-
-
-## Remarks
-
-See [DriveItem][] for usage of **SharePointIdentitySet** resources.
 
 [DriveItem]: driveItem.md
 [Identity]: identity.md
