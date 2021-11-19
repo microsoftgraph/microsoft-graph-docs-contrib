@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -129,7 +129,7 @@ The following table shows the properties that are required when you create the [
 |specificationVersion|String|Specification version. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -561,6 +561,7 @@ Content-Length: 8674
   "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```
+
 
 
 

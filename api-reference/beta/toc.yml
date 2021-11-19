@@ -2467,8 +2467,6 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
-          - name: Key/value pair
-            href: resources/intune-androidforwork-keyvaluepair.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -3683,6 +3681,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
+          - name: Android device owner cross profile data sharing
+            href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
           - name: Android device owner default app permission policy type
             href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
           - name: Android device owner derived credential authentication configuration
@@ -5269,6 +5269,84 @@ items:
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
+          - name: Hardware configuration
+            href: resources/intune-deviceconfig-hardwareconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfiguration-update.md
+            - name: assign action
+              href: api/intune-deviceconfig-hardwareconfiguration-assign.md
+          - name: Hardware configuration assignment
+            href: resources/intune-deviceconfig-hardwareconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-update.md
+          - name: Hardware configuration device state
+            href: resources/intune-deviceconfig-hardwareconfigurationdevicestate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-update.md
+          - name: Hardware configuration format
+            href: resources/intune-deviceconfig-hardwareconfigurationformat.md
+          - name: Hardware configuration run summary
+            href: resources/intune-deviceconfig-hardwareconfigurationrunsummary.md
+            items:
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-get.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-update.md
+          - name: Hardware configuration user state
+            href: resources/intune-deviceconfig-hardwareconfigurationuserstate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-update.md
+          - name: Hardware password info
+            href: resources/intune-deviceconfig-hardwarepasswordinfo.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwarepasswordinfo-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwarepasswordinfo-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwarepasswordinfo-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwarepasswordinfo-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwarepasswordinfo-update.md
+          - name: Ingestion source
+            href: resources/intune-grouppolicy-ingestionsource.md
           - name: Ink access setting
             href: resources/intune-deviceconfig-inkaccesssetting.md
           - name: Intended purpose
@@ -5602,10 +5680,6 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: LAN manager authentication level
@@ -7986,8 +8060,6 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -8716,8 +8788,6 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -9478,7 +9548,7 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: action
+            - name: |refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9532,8 +9602,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9621,6 +9691,8 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
@@ -9695,6 +9767,8 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
+          - name: Run state
+            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
