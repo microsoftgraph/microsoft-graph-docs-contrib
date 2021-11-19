@@ -29,11 +29,6 @@ ms.localizationpriority: medium
 
 The `model` query parameter should be specified in the `resource` property in the request body.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_subscription_with_model_parameter"
-}-->
-
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
