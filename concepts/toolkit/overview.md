@@ -44,11 +44,12 @@ The components are also available as [React components](./get-started/mgt-react.
 
 |Providers|Description|
 |---------|-----------|
-|[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
-|[Msal 2.0](./providers/msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.|
+|[MSAL](./providers/msal.md)|Uses msal.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[MSAL2](./providers/msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.|
 |[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[Teams](./providers/teams.md)|Uses msal.js to sign in users and acquire tokens on the client in Microsoft Teams tabs.|
+|[Teams MSAL2](./providers/teams-msal2.md)|Uses msal-browser to sign in users and acquire tokens in Microsoft Teams tabs. Supports Single Sign-On with custom backend. |
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 

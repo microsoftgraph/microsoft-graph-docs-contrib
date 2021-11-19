@@ -43,6 +43,7 @@ Here is a JSON representation of the resource
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
+
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},

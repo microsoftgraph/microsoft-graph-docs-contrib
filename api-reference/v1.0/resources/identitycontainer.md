@@ -29,6 +29,7 @@ None.
 |:-------------|:------------|:------------|
 |apiConnectors|[identityApiConnector](identityApiConnector.md) collection|Represents entry point for API connectors.|
 |b2xUserFlows|[b2xIdentityUserFlow](b2xIdentityUserFlow.md) collection| Represents entry point for B2X/self-service sign-up identity userflows.|
+|conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|
 |identityProvider|[identityProviderBase](identityProviderBase.md) collection| Represents entry point for identity provider base.|
 |userFlowAttributes|[identityUserFlowAttribute](identityUserFlowAttribute.md) collection| Represents entry point for identity userflow attributes.|
 

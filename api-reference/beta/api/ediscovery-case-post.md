@@ -15,6 +15,9 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new [case](../resources/ediscovery-case.md) object.
 
+>[!NOTE]
+>Starting in September 2021, this API will create a large case type. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

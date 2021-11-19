@@ -10,8 +10,6 @@ ms.prod: "search"
 
 Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 Once the content has been imported and indexed, you can use the search API to query the content.

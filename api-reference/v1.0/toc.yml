@@ -88,7 +88,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
+        href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -159,44 +159,88 @@ items:
         items:
           - name: Overview
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: Build a web application (JavaScript)
+          - name: /graph/toolkit for React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+          - name: /graph/toolkit for SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+      - name: Build your first app
+        items:
+          - name: Register an Azure AD app
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
+          - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a web app (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+          - name: Build a web app (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
           - name: Build a SharePoint web part
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Build a Microsoft Teams tab
+          - name: Build a Teams tab
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Use the Toolkit with React
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Use the Toolkit with Angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+          - name: Build a Teams tab with SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+          - name: Build an Electron app
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          - name: MSAL provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: MSAL2 provider
+            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Teams MSAL2 provider
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: Electron provider
+            href: /graph/toolkit/providers/electron?context=graph/api/1.0
+          - name: Proxy provider
+            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Get
+            href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Person
             href: /graph/toolkit/components/person?context=graph/api/1.0
           - name: People
             href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Person card
+            href: /graph/toolkit/components/person-card?context=graph/api/1.0
+          - name: People picker
+            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+          - name: Teams channel picker
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Tasks
+          - name: Planner tasks
             href: /graph/toolkit/components/tasks?context=graph/api/1.0
-      - name: Providers
+          - name: To-do tasks
+            href: /graph/toolkit/components/todo?context=graph/api/1.0
+          - name: File
+            href: /graph/toolkit/components/file?context=graph/api/1.0
+          - name: File list
+            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+      - name: Customize components
         items:
-          - name: Using the providers
-            href: /graph/toolkit/providers?context=graph/api/1.0
-          - name: Msal provider
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: SharePoint provider
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Microsoft Teams provider
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Custom provider
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
-      - name: Styling components
-        href: /graph/toolkit/style?context=graph/api/1.0
-      - name: Templating components
-        href: /graph/toolkit/templates?context=graph/api/1.0
+          - name: Styling components
+            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+          - name: Templating components
+            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+          - name: Handling events
+            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+          - name: Caching Microsoft Graph calls in components
+            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+          - name: Localizing components
+            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+          - name: Right-to-left support
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -1109,6 +1153,10 @@ items:
       - name: Calendar permission
         href: resources/calendarpermission.md
         items:
+        - name: List
+          href: api/calendar-list-calendarpermissions.md
+        - name: Create
+          href: api/calendar-post-calendarpermissions.md
         - name: Get
           href: api/calendarpermission-get.md
         - name: Update
@@ -4592,16 +4640,35 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Create
+              href: api/rbacapplication-post-roledefinitions.md
+            - name: Get
+              href: api/unifiedroledefinition-get.md
+            - name: Update
+              href: api/unifiedroledefinition-update.md
+            - name: Delete
+              href: api/unifiedroledefinition-delete.md
+          - name: Role assignment
+            href: resources/unifiedroleassignment.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roleassignments.md
+            - name: Create
+              href: api/rbacapplication-post-roleassignments.md
+            - name: Get
+              href: api/unifiedroleassignment-get.md
+            - name: Delete
+              href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
-        - name: Authentication flows policy
-          items:
-          - name: Authentication flows policy
-            href: resources/authenticationflowspolicy.md
-          - name: Get
-            href: api/authenticationflowspolicy-get.md
-          - name: Update
-            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -4635,44 +4702,6 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Authentication methods policy
-          items:
-          - name: Overview
-            href: resources/authenticationmethodspolicies-overview.md
-          - name: Authentication method policy
-            href: resources/authenticationmethodspolicy.md
-            items:
-            - name: Get
-              href: api/authenticationmethodspolicy-get.md
-            - name: Update
-              href: api/authenticationmethodspolicy-update.md
-          - name: FIDO2 policy
-            href: resources/fido2authenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/fido2authenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/fido2authenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/fido2authenticationmethodconfiguration-delete.md
-          - name: Microsoft Authenticator policy
-            href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-          - name: Email policy
-            href: resources/emailauthenticationmethodconfiguration.md
-            items:
-            - name: Get
-              href: api/emailauthenticationmethodconfiguration-get.md
-            - name: Update
-              href: api/emailauthenticationmethodconfiguration-update.md
-            - name: Delete
-              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -4861,6 +4890,52 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authentication flows policy
+            items:
+            - name: Authentication flows policy
+              href: resources/authenticationflowspolicy.md
+            - name: Get
+              href: api/authenticationflowspolicy-get.md
+            - name: Update
+              href: api/authenticationflowspolicy-update.md
+          - name: Authentication methods policy
+            items:
+            - name: Overview
+              href: resources/authenticationmethodspolicies-overview.md
+            - name: Authentication method policy
+              href: resources/authenticationmethodspolicy.md
+              items:
+              - name: Get
+                href: api/authenticationmethodspolicy-get.md
+              - name: Update
+                href: api/authenticationmethodspolicy-update.md
+            - name: FIDO2 policy
+              href: resources/fido2authenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/fido2authenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/fido2authenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: Microsoft Authenticator policy
+              href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Email policy
+              href: resources/emailauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/emailauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/emailauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/emailauthenticationmethodconfiguration-delete.md
           - name: Authorization policy
             href: resources/authorizationpolicy.md
             items:
@@ -4868,21 +4943,6 @@ items:
               href: api/authorizationpolicy-get.md
             - name: Update
               href: api/authorizationpolicy-update.md
-          - name: Home realm discovery policy
-            href: resources/homerealmdiscoverypolicy.md
-            items:
-            - name: List
-              href: api/homerealmdiscoverypolicy-list.md
-            - name: Create
-              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-            - name: Get
-              href: api/homerealmdiscoverypolicy-get.md
-            - name: Update
-              href: api/homerealmdiscoverypolicy-update.md
-            - name: Delete
-              href: api/homerealmdiscoverypolicy-delete.md
-            - name: List applied to applications
-              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
@@ -4915,6 +4975,21 @@ items:
               href: api/featurerolloutpolicy-post-appliesto.md
             - name: Delete appliesTo
               href: api/featurerolloutpolicy-delete-appliesto.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: List
+              href: api/homerealmdiscoverypolicy-list.md
+            - name: Create
+              href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+            - name: Get
+              href: api/homerealmdiscoverypolicy-get.md
+            - name: Update
+              href: api/homerealmdiscoverypolicy-update.md
+            - name: Delete
+              href: api/homerealmdiscoverypolicy-delete.md
+            - name: List applied to applications
+              href: api/homerealmdiscoverypolicy-list-appliesto.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -6238,6 +6313,10 @@ items:
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: Provision email address
+          href: api/channel-provisionemail.md  
+        - name: Remove email address
+          href: api/channel-removeemail.md  
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -6656,6 +6735,8 @@ items:
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+        - name: Get operation result (async)
+          href: api/workbook-tablerowoperationresult.md
       - name: Workbook application
         href: resources/workbookapplication.md
         items:

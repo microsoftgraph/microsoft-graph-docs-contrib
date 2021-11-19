@@ -2,7 +2,83 @@
   "changelog": [
     {
       "ChangeList": [
+      {
+        "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
+        "ApiChange": "Method",
+        "ChangedApiName": "Delete",
+        "ChangeType": "Addition",
+        "Description": "Added the [delete](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta) operation to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "Delete"
+      }
+     ],
+     "Id": "aa34ca74-c3b4-4981-ba1c-809256deacb0",
+     "Cloud": "prd",
+     "Version": "beta",
+     "CreatedDateTime": "2021-09-14T14:10:06Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [appScope](https://docs.microsoft.com/en-us/graph/api/resources/appscope?view=graph-rest-v1.0) resource type and related properties.",
+          "Target": "appScope"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rbacApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-v1.0) resource type and related methods.",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/rolemanagement?view=graph-rest-v1.0) resource type and its relationships.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-v1.0) resource type, related methods, properties, and relationships.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-v1.0) resource type, related methods, properties, and relationships.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRolePermission](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrolePermission?view=graph-rest-v1.0) resource type and related properties.",
+          "Target": "unifiedRolePermission"
+        }
+      ],
+      "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-04T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+    "ChangeList": [
+      {
           "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRole",

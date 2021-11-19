@@ -37,7 +37,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-
     "id": "GUID",
     "code": "string",
     "displayName": "string",

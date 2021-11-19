@@ -201,6 +201,36 @@
       "CreatedDateTime": "2021-08-31T22:52:32.5315491Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+          "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisionChannelEmailResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-1.0) resource type.",
+          "Target": "provisionChannelEmailResult"
+      }, {
+          "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
+          "ApiChange": "Method",
+          "ChangedApiName": "provisionEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+      }, {
+          "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+      }],
+      "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-13T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

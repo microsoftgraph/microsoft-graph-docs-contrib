@@ -7,9 +7,11 @@ description: "Represents a keyed collection of SharePointIdentity and Identity r
 ms.prod: "sharePoint"
 doc_type: resourcePageType
 ---
-# SharePointIdentitySet resource type
+# sharePointIdentitySet resource type
 
-The **SharePointIdentitySet** resource is a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. It extends from the **IdentitySet** resource to provide capability to expose SharePoint specific information to the user.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The **sharePointIdentitySet** resource is a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. It extends from the **identitySet** resource to provide capability to expose SharePoint specific information to the user.
 
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 

@@ -8,7 +8,7 @@ ms.prod: "sharePoint"
 doc_type: resourcePageType
 ---
 
-# SharePointIdentity resource type
+# sharePointIdentity resource type
 
 Represents a **sharePointIdentity** of an _actor_.
 It extends from the **Identity** resource to provide capability to expose SharePoint specific information, for example, loginName or SharePoint ID.
@@ -46,7 +46,7 @@ It extends from the **Identity** resource to provide capability to expose ShareP
 <!-- {
   "type": "#page.annotation",
   "description": "SharePoint Identity contains information about an app, user, or group.",
-  "keywords": "sharePointIdentity,loginName, sharePointId, owner, modifier, app, user, group",
+  "keywords": "sharePointIdentity, loginName, sharePointId, owner, modifier, app, user, group",
   "section": "documentation",
   "tocPath": "Resources/SharePointIdentity"
 } -->

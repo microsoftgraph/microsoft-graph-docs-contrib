@@ -8,7 +8,7 @@ ms.prod: "sharePoint"
 doc_type: resourcePageType
 ---
 
-# SharePointIdentity resource type
+# sharePointIdentity resource type
 
 Represents a **sharePointIdentity** of an _actor_.
 It extends from the **Identity** resource to provide capability to expose SharePoint specific information, for example, loginName or SharePoint IDs.

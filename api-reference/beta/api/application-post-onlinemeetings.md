@@ -230,9 +230,6 @@ Content-Type: application/json
 
 ### Example 3: Create a live event with a user token
 
-> [!IMPORTANT]
-> Creating live events with the **broadcastSettings** property has some limitations. For details, see [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).
-
 #### Request
 
 ```http

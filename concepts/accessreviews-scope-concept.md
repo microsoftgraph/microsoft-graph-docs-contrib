@@ -34,6 +34,7 @@ To configure the scope by using the **accessReviewQueryScope** type, set the val
     "queryType": "MicrosoftGraph"
 }
 ```
+
 To review *only inactive users* assigned to the group:
 
 ```http
@@ -43,7 +44,7 @@ To review *only inactive users* assigned to the group:
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
 ### Example 2: Review guest users assigned to a group
 
@@ -70,8 +71,24 @@ To review *only inactive users* assigned to the group:
 ```
 
 Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review.
+    
+### Example 4: Review of all guest users assigned to all Teams
 
-### Example 4: Review access of all inactive guest users to all groups
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+
+### Example 5: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -84,7 +101,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 
 Because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`.
 
-### Example 5: Review of all inactive guest users assigned to all teams
+### Example 6: Review of all inactive guest users assigned to all teams
 
 ```http
 "instanceEnumerationScope": {
@@ -101,7 +118,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams.
 
-### Example 6: Review of Entitlement Management access package assignment
+### Example 7: Review of Entitlement Management access package assignment
 
 ```http
 "scope": {
@@ -111,7 +128,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
 
-### Example 7: Review of all service principals assigned to a privileged role (all active and eligible assignments included)
+### Example 8: Review of all service principals assigned to a privileged role
 
 ```http
 "scope": {
@@ -121,7 +138,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
     
-### Example 8: Review of all users assigned to a privileged role (all active and eligible assignments included)
+### Example 9: Review of all users assigned to a privileged role (all active and eligible assignments included)
 
 ```http
 "scope": {
@@ -131,7 +148,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
     
-### Example 9: Review of all users with eligible assignment to a privileged role
+### Example 10: Review of all users with eligible assignment to a privileged role
 
 ```http
 "scope": {
@@ -141,7 +158,7 @@ Because this review is applied on all teams, configure the **instanceEnumeration
 }
 ```
     
-### Example 10: Review of all users with active assignment to a privileged role
+### Example 11: Review of all users with active assignment to a privileged role
 
 ```http
 "scope": {

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let members = await client.api('/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/microsoft.graph.windowsUpdates.updatableAssetGroup/members')
+let updatableAssets = await client.api('/admin/windows/updates/updatableAssets')
 	.version('beta')
 	.get();
 

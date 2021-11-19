@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
   "keyProperty": "id"
@@ -45,10 +45,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
-  "resourceLocation": "String"
+  "status": "String",
+  "resourceLocation": "String",
+  "statusCode": "Integer",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  }
 }
 ```
 

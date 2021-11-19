@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.identity().b2cUserFlows("B2C_test_signin_signup").userFlowIdentityProviders("MSA-OIDC").reference()
+graphClient.identity().b2xUserFlows("{userflow-id}").userFlowIdentityProviders("{identityProvider-id}").reference()
 	.buildRequest()
 	.delete();
 

@@ -26,9 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/setUpResourcesFolder
+POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ```
 ## Request headers
 | Header       | Value |
@@ -38,7 +37,9 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 ## Request body
 You need to provide an empty json `{}` as request body for this method.
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
+If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
+
+If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
 
 ## Example
 The following example shows how to call this API.
@@ -50,11 +51,11 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],
+  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075", "ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/setUpResourcesFolder
+POST https://graph.microsoft.com/v1.0/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -93,7 +94,7 @@ Content-type: application/json
 Content-length: 279
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
     "classId": "955e0bd5-52c2-41ad-b7e8-5b33a18c5e78",
     "displayName": "Unit 3 Essay",
     "closeDateTime": "2021-04-06T00:00:00Z",
@@ -138,6 +139,33 @@ Content-length: 279
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
+        }
+    }
+}
+```
+
+If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

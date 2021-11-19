@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 ### chatMessage
 
-**chatMessage** subscriptions with delegated permissions don't support resource data (**includeResourceData** must be `false`), and don't require [encryption](/graph/webhooks-with-resource-data).
+**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), and do not require [encryption](/graph/webhooks-with-resource-data). The only exception is the `/users/{id}/chats/getAllMessages` resource (only available in beta) which supports resource data regardless of the permission type.
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified. Before you can create a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
