@@ -43,7 +43,7 @@ None.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method if you wish to retrive a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
+Do not supply a request body for this method if you wish to retrieve a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
