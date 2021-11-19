@@ -25,19 +25,15 @@ Inherits from [baseTask](../resources/basetask.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tasks](../api/task-list.md)|[task](../resources/task.md) collection|Get a list of the [task](../resources/task.md) objects and their properties.|
-|[Get task](../api/task-get.md)|[task](../resources/task.md)|Read the properties and relationships of a [task](../resources/task.md) object.|
-|[Update task](../api/task-update.md)|[task](../resources/task.md)|Update the properties of a [task](../resources/task.md) object.|
-|[Delete task](../api/task-delete.md)|None|Deletes a [task](../resources/task.md) object.|
-|[move](../api/task-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
-|[List checklistItems](../api/task-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
-|[Create checklistItem](../api/task-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
-|[List extensions](../api/task-list-extensions.md)|[extension](../resources/extension.md) collection|Get the extension resources from the extensions navigation property.|
-|[Create extension](../api/task-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
-|[List linkedResources](../api/task-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
-|[Create linkedResource](../api/task-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
-|[List baseTaskList](../api/task-list-parentlist.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the parentList navigation property.|
-|[Create baseTaskList](../api/task-post-parentlist.md)|[baseTaskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
+|[List tasks](../api/basetasklist-list-tasks.md)|[task](../resources/task.md) collection|Get a list of the [task](../resources/task.md) objects and their properties.|
+|[Get task](../api/basetask-get.md)|[task](../resources/task.md)|Read the properties and relationships of a [task](../resources/task.md) object.|
+|[Update task](../api/basetask-update.md)|[task](../resources/task.md)|Update the properties of a [task](../resources/task.md) object.|
+|[Delete task](../api/basetask-delete.md)|None|Deletes a [task](../resources/task.md) object.|
+|[move](../api/basetask-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
+|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
+|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
+|[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
+|[Create linkedResource](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
 
 ## Properties
 |Property|Type|Description|

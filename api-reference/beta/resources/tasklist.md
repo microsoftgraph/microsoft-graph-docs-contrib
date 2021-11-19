@@ -24,12 +24,12 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskLists](../api/tasklist-list.md)|[taskList](../resources/tasklist.md) collection|Get a list of the [taskList](../resources/tasklist.md) objects and their properties.|
-|[Get taskList](../api/tasklist-get.md)|[taskList](../resources/tasklist.md)|Read the properties and relationships of a [taskList](../resources/tasklist.md) object.|
-|[Update taskList](../api/tasklist-update.md)|[taskList](../resources/tasklist.md)|Update the properties of a [taskList](../resources/tasklist.md) object.|
-|[Delete taskList](../api/tasklist-delete.md)|None|Deletes a [taskList](../resources/tasklist.md) object.|
-|[List tasks](../api/tasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
-|[Create baseTask](../api/tasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
+|[List taskLists](../api/tasks-list-lists.md)|[taskList](../resources/tasklist.md) collection|Get a list of the [taskList](../resources/tasklist.md) objects and their properties.|
+|[Get taskList](../api/basetasklist-get.md)|[taskList](../resources/tasklist.md)|Read the properties and relationships of a [taskList](../resources/tasklist.md) object.|
+|[Update taskList](../api/basetasklist-update.md)|[taskList](../resources/tasklist.md)|Update the properties of a [taskList](../resources/tasklist.md) object.|
+|[Delete taskList](../api/basetasklist-delete.md)|None|Deletes a [taskList](../resources/tasklist.md) object.|
+|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
+|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
 ## Properties
 |Property|Type|Description|

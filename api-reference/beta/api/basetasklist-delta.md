@@ -58,10 +58,10 @@ You can use a `$select` query parameter as in any GET request to specify only th
 _id_ property is always returned. 
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Prefer|string|odata.maxpagesize={x}. Optional.|
+| Name       | Type | Description |
+|:---------------|:----------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
 Do not supply a request body for this method.

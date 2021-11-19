@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of checklist items on a task. ChecklistItems helps split complex tasks into smaller more actionable steps.
+Represents a collection of checklist items on a task. **ChecklistItem** helps split complex tasks into smaller more actionable steps.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List checklistItems](../api/checklistitem-list.md)|[checklistItem](../resources/checklistitem.md) collection|Get a list of the [checklistItem](../resources/checklistitem.md) objects and their properties.|
-|[Create checklistItem](../api/task-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new [checklistItem](../resources/checklistitem.md) object.|
+|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get a list of the [checklistItem](../resources/checklistitem.md) objects and their properties.|
+|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new [checklistItem](../resources/checklistitem.md) object.|
 |[Get checklistItem](../api/checklistitem-get.md)|[checklistItem](../resources/checklistitem.md)|Read the properties and relationships of a [checklistItem](../resources/checklistitem.md) object.|
 |[Update checklistItem](../api/checklistitem-update.md)|[checklistItem](../resources/checklistitem.md)|Update the properties of a [checklistItem](../resources/checklistitem.md) object.|
 |[Delete checklistItem](../api/checklistitem-delete.md)|None|Deletes a [checklistItem](../resources/checklistitem.md) object.|

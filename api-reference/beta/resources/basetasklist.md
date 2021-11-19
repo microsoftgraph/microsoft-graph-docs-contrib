@@ -22,19 +22,19 @@ This is an abstract type.
 
 ## Methods
 The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**TaskList**)
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List baseTaskLists](../api/basetasklist-list.md)|[baseTaskList](../resources/basetasklist.md) collection|Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.|
-|[Create baseTaskList](../api/tasks-post-lists.md)|[baseTaskList](../resources/basetasklist.md)|Create a new [baseTaskList](../resources/basetasklist.md) object.|
+|[List baseTaskLists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.|
 |[Get baseTaskList](../api/basetasklist-get.md)|[baseTaskList](../resources/basetasklist.md)|Read the properties and relationships of a [baseTaskList](../resources/basetasklist.md) object.|
-|[List extensions](../api/basetasklist-list-extensions.md)|[extension](../resources/extension.md) collection|Get the extension resources from the extensions navigation property.|
-|[Create extension](../api/basetasklist-post-extensions.md)|[extension](../resources/extension.md)|Create a new extension object.|
 |[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
 |[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
 The following method apply to ***TaskList** type of derived task list.
+
 |Method|Return type|Description|
 |:---|:---|:---|
+|[Create baseTaskList](../api/tasks-post-lists.md)|[baseTaskList](../resources/basetasklist.md)|Create a new [baseTaskList](../resources/basetasklist.md) object.|
 |[Update baseTaskList](../api/basetasklist-update.md)|[baseTaskList](../resources/basetasklist.md)|Update the properties of a [baseTaskList](../resources/basetasklist.md) object.|
 |[Delete baseTaskList](../api/basetasklist-delete.md)|None|Deletes a [baseTaskList](../resources/basetasklist.md) object.|
 
