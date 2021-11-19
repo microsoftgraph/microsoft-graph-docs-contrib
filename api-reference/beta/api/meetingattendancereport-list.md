@@ -1,19 +1,19 @@
 ---
-title: "List meetingAttendanceReport"
-description: "List attendance reports of an online meeting."
+title: "List meetingAttendanceReports"
+description: "Get a list of attendance reports for an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List meetingAttendanceReport
+# List meetingAttendanceReports
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) of an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting is started and ended, an attendance report will be generated for that session.
+Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting is started and ended, an attendance report will be generated for that session.
 
 ## Permissions
 
@@ -25,11 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path).
 
 ## HTTP request
 
-To get all attendance reports of an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get all attendance reports for an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
