@@ -125,13 +125,8 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 // Auth provider
 auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
 
-clientOptions := core.GraphClientOptions{
-    GraphServiceVersion:        "",
-    GraphServiceLibraryVersion: core.CoreVersion,
-}
-
 // Get default middleware from SDK
-defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(&clientOptions)
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(core.ClientOptions)
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
