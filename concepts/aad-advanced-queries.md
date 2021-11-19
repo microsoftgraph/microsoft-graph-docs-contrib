@@ -204,6 +204,6 @@ Content-type: application/json
 ## See also
 
 + [Use query parameters to customize responses](/graph/query-parameters)
-+ [Query parameter limitations](known-issues.md#query-parameter-limitations)
++ [Query parameter limitations](known-issues.md#some-limitations-apply-to-query-parameters)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 + [Explore advanced query capabilities for Azure AD directory objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
