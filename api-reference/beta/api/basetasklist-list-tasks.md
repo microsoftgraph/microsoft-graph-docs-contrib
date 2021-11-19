@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List basetasks"
 description: "Get the baseTask resources from the tasks navigation property of a specified baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium

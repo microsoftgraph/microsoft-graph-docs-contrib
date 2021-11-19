@@ -14535,9 +14535,9 @@ items:
         href: resources/checklistitem.md
         items:
         - name: List
-          href: api/task-list-checklistitems.md
+          href: api/basetask-list-checklistitems.md
         - name: Create
-          href: api/task-post-checklistitems.md
+          href: api/basetask-post-checklistitems.md
         - name: Get
           href: api/checklistitem-get.md
         - name: Update
@@ -14548,9 +14548,9 @@ items:
         href: resources/linkedresource_v2.md
         items:
         - name: List
-          href: api/task-list-linkedresources.md
+          href: api/basetask-list-linkedresources.md
         - name: Create
-          href: api/task-post-linkedresources.md
+          href: api/basetask-post-linkedresources.md
         - name: Get
           href: api/linkedresource_v2-get.md
         - name: Update
