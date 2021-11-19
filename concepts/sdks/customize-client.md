@@ -133,15 +133,12 @@ import (
 auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
 
 // Get default middleware from SDK
-defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(core.ClientOptions)
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.ClientOptions)
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
 // https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
-allMiddleware := []khttp.Middleware{
-    mycustom.NewCustomHandler(),
-    defaultMiddleware...
-}
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
 
 // Create an HTTP client with the middleware
 httpClient := khttp.GetDefaultClient(allMiddleware...)
