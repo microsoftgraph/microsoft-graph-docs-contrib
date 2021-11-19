@@ -35,8 +35,8 @@ This resource supports:
 | [Update group](../api/group-update.md) | None | Update the properties of a group object. |
 | [Delete group](../api/group-delete.md) | None | Delete group object. |
 | [delta](../api/group-delta.md) | group collection | Get incremental changes for groups. |
-| [Add member](../api/group-post-members.md) | None | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only). |
-| [Add owner](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only). |
+| [Add members](../api/group-post-members.md) | None | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
+| [Add owners](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
 | [Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |

@@ -37,8 +37,8 @@ This resource supports:
 | [Delete group](../api/group-delete.md) | None | Delete group object. |
 | [List groups](../api/group-list.md) | [group](group.md) | Read properties and relationships of all group objects. |
 | [delta](../api/group-delta.md) | group collection | Get incremental changes for groups. |
-| [Add member](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only). |
-| [Add owner](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only). |
+| [Add members](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
+| [Add owners](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
 | [Delete setting](../api/directorysetting-delete.md) | None | Delete a setting object. |
 | [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
