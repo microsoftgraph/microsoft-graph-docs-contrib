@@ -9548,7 +9548,9 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: refresh DeviceComplianceReportSummarization action
+            - name: scheduleActionsForRules action
+              href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
+            - name: refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
