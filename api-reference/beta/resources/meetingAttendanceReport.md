@@ -1,6 +1,6 @@
 ---
 title: "meetingAttendanceReport resource type"
-description: "Contains information associated with meeting attendance report."
+description: "Contains information associated with a meeting attendance report."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -21,7 +21,7 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of the [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
+|[List meetingAttendanceReports](../api/meetingattendancereport-list.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get a list of  [meetingAttendanceReport](../resources/meetingattendancereport.md) objects and their properties.|
 |[Get meetingAttendanceReport](../api/meetingattendancereport-get.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Read the properties and relationships of a [meetingAttendanceReport](../resources/meetingattendancereport.md) object.|
 
 ## Properties
@@ -29,8 +29,8 @@ Meeting attendance reports are online meeting artifacts. For details, see [Onlin
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
 | id                    | String   | Unique identifier for the attendance report. Read-only. |
-| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting was ended. Read-only.   |
-| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting was started. Read-only.   |
+| meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
+| meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
 | totalParticipantCount | Int32 | Total number of participants. Read-only.  |
 
 ## Relationships
