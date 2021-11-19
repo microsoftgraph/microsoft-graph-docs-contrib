@@ -3,670 +3,670 @@
     {
 	  "ChangeList": [
 		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "office365ActivationsUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **office365ActivationsUserDetail** resource type.",
-          "Target": "office365ActivationsUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "userActivationCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **userActivationCounts** resource type.",
-          "Target": "userActivationCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "office365ActivationCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **office365ActivationCounts** resource type.",
-          "Target": "office365ActivationCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "office365ActivationsUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **office365ActivationsUserCounts** resource type.",
-          "Target": "office365ActivationsUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "oneDriveActivityUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **oneDriveActivityUserDetail** resource type.",
-          "Target": "oneDriveActivityUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "siteActivitySummary",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **siteActivitySummary** resource type.",
-          "Target": "siteActivitySummary"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "oneDriveUsageAccountDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **oneDriveUsageAccountDetail** resource type.",
-          "Target": "oneDriveUsageAccountDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "oneDriveUsageAccountCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **oneDriveUsageAccountCounts** resource type.",
-          "Target": "oneDriveUsageAccountCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "oneDriveUsageFileCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **oneDriveUsageFileCounts** resource type.",
-          "Target": "oneDriveUsageFileCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "siteUsageStorage",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **siteUsageStorage** resource type.",
-          "Target": "siteUsageStorage"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointActivityUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointActivityUserDetail** resource type.",
-          "Target": "sharePointActivityUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointActivityUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointActivityUserCounts** resource type.",
-          "Target": "sharePointActivityUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointActivityPages",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointActivityPages** resource type.",
-          "Target": "sharePointActivityPages"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointSiteUsageDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointSiteUsageDetail** resource type.",
-          "Target": "sharePointSiteUsageDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointSiteUsageFileCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointSiteUsageFileCounts** resource type.",
-          "Target": "sharePointSiteUsageFileCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointSiteUsageSiteCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointSiteUsageSiteCounts** resource type.",
-          "Target": "sharePointSiteUsageSiteCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharePointSiteUsagePages",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **sharePointSiteUsagePages** resource type.",
-          "Target": "sharePointSiteUsagePages"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessActivityUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessActivityUserDetail** resource type.",
-          "Target": "skypeForBusinessActivityUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessActivityCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessActivityCounts** resource type.",
-          "Target": "skypeForBusinessActivityCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessActivityUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessActivityUserCounts** resource type.",
-          "Target": "skypeForBusinessActivityUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessPeerToPeerActivityCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessPeerToPeerActivityCounts** resource type.",
-          "Target": "skypeForBusinessPeerToPeerActivityCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessPeerToPeerActivityUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessPeerToPeerActivityUserCounts** resource type.",
-          "Target": "skypeForBusinessPeerToPeerActivityUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessPeerToPeerActivityMinuteCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessPeerToPeerActivityMinuteCounts** resource type.",
-          "Target": "skypeForBusinessPeerToPeerActivityMinuteCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessOrganizerActivityCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessOrganizerActivityCounts** resource type.",
-          "Target": "skypeForBusinessOrganizerActivityCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessOrganizerActivityUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessOrganizerActivityUserCounts** resource type.",
-          "Target": "skypeForBusinessOrganizerActivityUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessOrganizerActivityMinuteCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessOrganizerActivityMinuteCounts** resource type.",
-          "Target": "skypeForBusinessOrganizerActivityMinuteCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessParticipantActivityCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessParticipantActivityCounts** resource type.",
-          "Target": "skypeForBusinessParticipantActivityCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessParticipantActivityUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessParticipantActivityUserCounts** resource type.",
-          "Target": "skypeForBusinessParticipantActivityUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessParticipantActivityMinuteCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessParticipantActivityMinuteCounts** resource type.",
-          "Target": "skypeForBusinessParticipantActivityMinuteCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessDeviceUsageUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessDeviceUsageUserDetail** resource type.",
-          "Target": "skypeForBusinessDeviceUsageUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessDeviceUsageDistributionUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessDeviceUsageDistributionUserCounts** resource type.",
-          "Target": "skypeForBusinessDeviceUsageDistributionUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "skypeForBusinessDeviceUsageUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **skypeForBusinessDeviceUsageUserCounts** resource type.",
-          "Target": "skypeForBusinessDeviceUsageUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerActivityUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerActivityUserDetail** resource type.",
-          "Target": "yammerActivityUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerActivitySummary",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerActivitySummary** resource type.",
-          "Target": "yammerActivitySummary"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerDeviceUsageUserDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerDeviceUsageUserDetail** resource type.",
-          "Target": "yammerDeviceUsageUserDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerDeviceUsageDistributionUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerDeviceUsageDistributionUserCounts** resource type.",
-          "Target": "yammerDeviceUsageDistributionUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerDeviceUsageUserCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerDeviceUsageUserCounts** resource type.",
-          "Target": "yammerDeviceUsageUserCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerGroupsActivityDetail",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerGroupsActivityDetail** resource type.",
-          "Target": "yammerGroupsActivityDetail"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerGroupsActivityGroupCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerGroupsActivityGroupCounts** resource type.",
-          "Target": "yammerGroupsActivityGroupCounts"
-        },
-		{
-          "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
-          "ApiChange": "Resource",
-          "ChangedApiName": "yammerGroupsActivityCounts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **yammerGroupsActivityCounts** resource type.",
-          "Target": "yammerGroupsActivityCounts"
-        },
-		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOffice365ActivationsUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getOffice365ActivationsUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "office365ActivationsUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **office365ActivationsUserDetail** resource type.",
+			"Target": "office365ActivationsUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOffice365ActivationCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOffice365ActivationCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "userActivationCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **userActivationCounts** resource type.",
+			"Target": "userActivationCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOffice365ActivationsUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOffice365ActivationsUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "office365ActivationCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **office365ActivationCounts** resource type.",
+			"Target": "office365ActivationCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveActivityUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveActivityUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "office365ActivationsUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **office365ActivationsUserCounts** resource type.",
+			"Target": "office365ActivationsUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "oneDriveActivityUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **oneDriveActivityUserDetail** resource type.",
+			"Target": "oneDriveActivityUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveActivityFileCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveActivityFileCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "siteActivitySummary",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **siteActivitySummary** resource type.",
+			"Target": "siteActivitySummary"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveUsageAccountDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveUsageAccountDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "oneDriveUsageAccountDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **oneDriveUsageAccountDetail** resource type.",
+			"Target": "oneDriveUsageAccountDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveUsageAccountCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveUsageAccountCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "oneDriveUsageAccountCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **oneDriveUsageAccountCounts** resource type.",
+			"Target": "oneDriveUsageAccountCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveUsageFileCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveUsageFileCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "oneDriveUsageFileCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **oneDriveUsageFileCounts** resource type.",
+			"Target": "oneDriveUsageFileCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getOneDriveUsageStorage",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) API to stream.",
-		  "Target": "getOneDriveUsageStorage"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "siteUsageStorage",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **siteUsageStorage** resource type.",
+			"Target": "siteUsageStorage"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointActivityUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointActivityUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointActivityUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointActivityUserDetail** resource type.",
+			"Target": "sharePointActivityUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointActivityFileCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointActivityFileCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointActivityUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointActivityUserCounts** resource type.",
+			"Target": "sharePointActivityUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointActivityPages",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointActivityPages** resource type.",
+			"Target": "sharePointActivityPages"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointActivityPages",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointActivityPages"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointSiteUsageDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointSiteUsageDetail** resource type.",
+			"Target": "sharePointSiteUsageDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointSiteUsageDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointSiteUsageDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointSiteUsageFileCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointSiteUsageFileCounts** resource type.",
+			"Target": "sharePointSiteUsageFileCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointSiteUsageFileCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointSiteUsageFileCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointSiteUsageSiteCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointSiteUsageSiteCounts** resource type.",
+			"Target": "sharePointSiteUsageSiteCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointSiteUsageSiteCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointSiteUsageSiteCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "sharePointSiteUsagePages",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **sharePointSiteUsagePages** resource type.",
+			"Target": "sharePointSiteUsagePages"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointSiteUsageStorage",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointSiteUsageStorage"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessActivityUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessActivityUserDetail** resource type.",
+			"Target": "skypeForBusinessActivityUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSharePointSiteUsagePages",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) API to stream.",
-		  "Target": "getSharePointSiteUsagePages"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessActivityCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessActivityCounts** resource type.",
+			"Target": "skypeForBusinessActivityCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessActivityUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessActivityUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessActivityUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessActivityUserCounts** resource type.",
+			"Target": "skypeForBusinessActivityUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessPeerToPeerActivityCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessPeerToPeerActivityCounts** resource type.",
+			"Target": "skypeForBusinessPeerToPeerActivityCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessPeerToPeerActivityUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessPeerToPeerActivityUserCounts** resource type.",
+			"Target": "skypeForBusinessPeerToPeerActivityUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessPeerToPeerActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessPeerToPeerActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessPeerToPeerActivityMinuteCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessPeerToPeerActivityMinuteCounts** resource type.",
+			"Target": "skypeForBusinessPeerToPeerActivityMinuteCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessPeerToPeerActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessPeerToPeerActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessOrganizerActivityCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessOrganizerActivityCounts** resource type.",
+			"Target": "skypeForBusinessOrganizerActivityCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessPeerToPeerActivityMinuteCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessPeerToPeerActivityMinuteCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessOrganizerActivityUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessOrganizerActivityUserCounts** resource type.",
+			"Target": "skypeForBusinessOrganizerActivityUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessOrganizerActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessOrganizerActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessOrganizerActivityMinuteCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessOrganizerActivityMinuteCounts** resource type.",
+			"Target": "skypeForBusinessOrganizerActivityMinuteCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessOrganizerActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessOrganizerActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessParticipantActivityCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessParticipantActivityCounts** resource type.",
+			"Target": "skypeForBusinessParticipantActivityCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessOrganizerActivityMinuteCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessOrganizerActivityMinuteCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessParticipantActivityUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessParticipantActivityUserCounts** resource type.",
+			"Target": "skypeForBusinessParticipantActivityUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessParticipantActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessParticipantActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessParticipantActivityMinuteCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessParticipantActivityMinuteCounts** resource type.",
+			"Target": "skypeForBusinessParticipantActivityMinuteCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessParticipantActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessParticipantActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessDeviceUsageUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessDeviceUsageUserDetail** resource type.",
+			"Target": "skypeForBusinessDeviceUsageUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessParticipantActivityMinuteCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessParticipantActivityMinuteCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessDeviceUsageDistributionUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessDeviceUsageDistributionUserCounts** resource type.",
+			"Target": "skypeForBusinessDeviceUsageDistributionUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessDeviceUsageUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessDeviceUsageUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "skypeForBusinessDeviceUsageUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **skypeForBusinessDeviceUsageUserCounts** resource type.",
+			"Target": "skypeForBusinessDeviceUsageUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessDeviceUsageDistributionUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessDeviceUsageDistributionUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerActivityUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerActivityUserDetail** resource type.",
+			"Target": "yammerActivityUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getSkypeForBusinessDeviceUsageUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getSkypeForBusinessDeviceUsageUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerActivitySummary",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerActivitySummary** resource type.",
+			"Target": "yammerActivitySummary"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerActivityUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerActivityUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerDeviceUsageUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerDeviceUsageUserDetail** resource type.",
+			"Target": "yammerDeviceUsageUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerDeviceUsageDistributionUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerDeviceUsageDistributionUserCounts** resource type.",
+			"Target": "yammerDeviceUsageDistributionUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerActivityUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerActivityUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerDeviceUsageUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerDeviceUsageUserCounts** resource type.",
+			"Target": "yammerDeviceUsageUserCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerDeviceUsageUserDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerDeviceUsageUserDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerGroupsActivityDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerGroupsActivityDetail** resource type.",
+			"Target": "yammerGroupsActivityDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerDeviceUsageDistributionUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerDeviceUsageDistributionUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerGroupsActivityGroupCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerGroupsActivityGroupCounts** resource type.",
+			"Target": "yammerGroupsActivityGroupCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerDeviceUsageUserCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerDeviceUsageUserCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Resource",
+			"ChangedApiName": "yammerGroupsActivityCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the **yammerGroupsActivityCounts** resource type.",
+			"Target": "yammerGroupsActivityCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerGroupsActivityDetail",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerGroupsActivityDetail"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOffice365ActivationsUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOffice365ActivationsUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getOffice365ActivationsUserDetail"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerGroupsActivityGroupCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerGroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerGroupsActivityGroupCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOffice365ActivationCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOffice365ActivationCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOffice365ActivationCounts"
 		},
 		{
-		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
-		  "ApiChange": "Method",
-		  "ChangedApiName": "getYammerGroupsActivityCounts",
-		  "ChangeType": "Change",
-		  "Description": "Updated the JSON return type of the [getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) API to stream.",
-		  "Target": "getYammerGroupsActivityCounts"
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOffice365ActivationsUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOffice365ActivationsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOffice365ActivationsUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveActivityUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityFileCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveActivityFileCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageAccountDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveUsageAccountDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageAccountCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveUsageAccountCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageFileCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveUsageFileCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageStorage",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) API to stream.",
+			"Target": "getOneDriveUsageStorage"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointActivityUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityFileCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointActivityFileCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityPages",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointActivityPages"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointSiteUsageDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageFileCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointSiteUsageFileCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageSiteCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointSiteUsageSiteCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageStorage",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointSiteUsageStorage"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsagePages",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) API to stream.",
+			"Target": "getSharePointSiteUsagePages"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessActivityUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessActivityUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessActivityCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessPeerToPeerActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessPeerToPeerActivityCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessPeerToPeerActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessPeerToPeerActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessPeerToPeerActivityMinuteCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessPeerToPeerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessPeerToPeerActivityMinuteCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessOrganizerActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessOrganizerActivityCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessOrganizerActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessOrganizerActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessOrganizerActivityMinuteCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessOrganizerActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessOrganizerActivityMinuteCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessParticipantActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessParticipantActivityCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessParticipantActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessParticipantActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessParticipantActivityMinuteCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessParticipantActivityMinuteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessParticipantActivityMinuteCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessDeviceUsageUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessDeviceUsageUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessDeviceUsageDistributionUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessDeviceUsageDistributionUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSkypeForBusinessDeviceUsageUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getSkypeForBusinessDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getSkypeForBusinessDeviceUsageUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerActivityUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerActivityUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerActivityCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerActivityUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerActivityUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerDeviceUsageUserDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerDeviceUsageUserDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerDeviceUsageDistributionUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerDeviceUsageDistributionUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerDeviceUsageUserCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerDeviceUsageUserCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerGroupsActivityDetail",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerGroupsActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerGroupsActivityDetail"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerGroupsActivityGroupCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerGroupsActivityGroupCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerGroupsActivityGroupCounts"
+		},
+		{
+			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
+			"ApiChange": "Method",
+			"ChangedApiName": "getYammerGroupsActivityCounts",
+			"ChangeType": "Change",
+			"Description": "Updated the JSON return type of the [getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) API to stream.",
+			"Target": "getYammerGroupsActivityCounts"
 		}
-	  ],
+	]
 	  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
 	  "Cloud": "prd",
 	  "Version": "beta",
@@ -674,7 +674,7 @@
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
     },
-	{
+    {
 	  "ChangeList": [
 		{
           "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
