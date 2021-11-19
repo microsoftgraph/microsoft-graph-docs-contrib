@@ -55,10 +55,10 @@ This resource supports:
 | [Remove member](../api/group-delete-members.md) | None | Remove a member from a Microsoft 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 | [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
-| [checkMemberGroups](../api/group-checkmembergroups.md) | String collection | Check for membership in a list of groups. The function is transitive. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The function is transitive. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
-| [getMemberGroups](../api/group-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validate a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |||
