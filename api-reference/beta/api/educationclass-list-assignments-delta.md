@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-`$expand` options are NOT supported in Delta query
+`$expand`, `$orderby`, `$search` and `$filter` options are NOT supported in Delta query.
 
 ## HTTP request
 
@@ -345,6 +345,8 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 The following is an example of the response.
 
 >**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial Delta call.
+
+>Sometimes the delta response will be very large in which case an `@odata.nextLink` will be returned to continue fetching changes until you hit an `@odata.deltaLink` again.
 
 <!-- {
   "blockType": "response",
