@@ -136,14 +136,10 @@ defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(&clientOptions)
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
 // https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
-customMiddleware := []khttp.Middleware{mycustom.NewCustomHandler()}
-
-allMiddleware := make([]khttp.Middleware, len(defaultMiddleware)+1)
-
-// Add custom handler first
-copy(allMiddleware, customMiddleware)
-// Add default after
-copy(allMiddleware[1:], defaultMiddleware)
+allMiddleware := []khttp.Middleware{
+    mycustom.NewCustomHandler(),
+    defaultMiddleware...
+}
 
 // Create an HTTP client with the middleware
 httpClient := khttp.GetDefaultClient(allMiddleware...)
