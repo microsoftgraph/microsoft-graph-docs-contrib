@@ -1,6 +1,6 @@
 ---
 title: "Get meetingAttendanceReport"
-description: "Get an attendance report of an online meeting."
+description: "Get the attendance report for an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) of an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting is started and ended, an attendance report will be generated for that session.
+Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting starts and ends, an attendance report will be generated for that session.
 
 ## Permissions
 
@@ -25,11 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path).
 
 ## HTTP request
 
-To get an attendance report by id with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get an attendance report by ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
@@ -51,15 +51,15 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 > [!CAUTION]
 >
->- The `/meetingAttendanceReport` path is deprecated. Going forward, use `/attendanceReports` path to retrieve attendance reports of an online meeting.
->- The `/meetingAttendanceReport` path will remain in beta for backward compatibility. However, to get the same response as before, the `expand` query option must be added. See [next section](#optional-query-parameters) for details.
+>- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
+>- The `/meetingAttendanceReport` path will remain in beta for backward compatibility. However, to get the same response, you need to add the `expand` query option. For details, see the [Optional query parameters](#optional-query-parameters) section.
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property which by default is not returned. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 2](#example-2-get-the-latest-attendance-report-of-an-online-meeting).
+> The **attendanceRecords** property is a navigation property that is not returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 2](#example-2-get-the-latest-attendance-report-of-an-online-meeting).
 
 ## Request headers
 
@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 
 ## Example
 
-### Example 1: Get attendance report of an online meeting by ID
+### Example 1: Get the attendance report for an online meeting by ID
 
 #### Request
 
@@ -143,9 +143,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the latest attendance report of an online meeting
+### Example 2: Get the latest attendance report for an online meeting
 
-The following example shows a request to get a meeting attendance report of the latest session of an online meeting.
+The following example shows a request to get a meeting attendance report for the latest session of an online meeting.
 
 #### Request
 
