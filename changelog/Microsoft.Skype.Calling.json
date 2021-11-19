@@ -6,25 +6,9 @@
           "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **attendanceRecord** resource type.",
+          "ChangeType": "Change",
+          "Description": "Changed resource type of the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource from complex type to entity type",
           "Target": "attendanceRecord"
-        },
-        {
-          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "attendanceRecord",
-          "ChangeType": "Addition",
-          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource",
-          "Target": "attendanceRecord"
-        },
-        {
-          "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
-          "ApiChange": "Property",
-          "ChangedApiName": "attendanceRecords",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **attendanceRecords** property from the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
-          "Target": "meetingAttendanceReport"
         },
         {
           "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
@@ -46,8 +30,8 @@
           "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecords",
-          "ChangeType": "Addition",
-          "Description": "Added the **attendanceRecords** relationship to the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Changed the **attendanceRecords** property of the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource from property to navigation property.",
           "Target": "meetingAttendanceReport"
         },
         {
