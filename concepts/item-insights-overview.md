@@ -9,8 +9,7 @@ ms.custom: scenarios:getting-started
 # Overview of item insights
 Item insights are user-centric recommendations for you and those you work with, based on your collaborative work in Microsoft 365.
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM] 
-> > [!VIDEO https://youtu.be/3-akQlN-Fmw] 
+> [!VIDEO https://www.youtube-nocookie.com/embed/3-akQlN-Fmw] 
 
 ## Computation of item insights
 Microsoft 365 is the world’s productivity cloud, where many features are designed around you, as the user. By interacting with resources such as files in Microsoft 365, you produce signals that Microsoft aggregates and assembles into a graph for your organization. In the graph, the signal data is represented as relationships between you and the other resources. Derived from signals in the graph are insights that power a few Microsoft 365 experiences. Examples of experiences include suggesting the best time for the next team meeting, helping you sort out personal and work information on your phone, and many other intelligence scenarios. 
