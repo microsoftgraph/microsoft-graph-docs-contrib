@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-outlookcategory-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

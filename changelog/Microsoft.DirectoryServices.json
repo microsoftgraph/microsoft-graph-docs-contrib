@@ -483,6 +483,100 @@
       "SubArea": "Identity and sign-in"
     },
     {
+      "ChangeList": [
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "customSecurityAttributeDefinitions",
+              "ChangeType": "Addition",
+              "Description": "Added the **customSecurityAttributeDefinitions** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+              "Target": "directory"
+          },
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "attributeSets",
+              "ChangeType": "Addition",
+              "Description": "Added the **attributeSets** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+              "Target": "directory"
+          },
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "attributeSet",
+              "ChangeType": "Addition",
+              "Description": "Added the [attributeSet](https://docs.microsoft.com/en-us/graph/api/resources/attributeSet?view=graph-rest-beta) resource type.",
+              "Target": "attributeSet"
+          },
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "customSecurityAttributeDefinition",
+              "ChangeType": "Addition",
+              "Description": "Added the [customSecurityAttributeDefinition](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeDefinition?view=graph-rest-beta) resource type and associated methods.",
+              "Target": "customSecurityAttributeDefinition"
+          },
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "allowedValue",
+              "ChangeType": "Addition",
+              "Description": "Added the [allowedValue](https://docs.microsoft.com/en-us/graph/api/resources/allowedValue?view=graph-rest-beta) resource type and associated methods.",
+              "Target": "allowedValue"
+          },
+          {
+              "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "customSecurityAttributeValue",
+              "ChangeType": "Addition",
+              "Description": "Added the [customSecurityAttributeValue](https://docs.microsoft.com/en-us/graph/api/resources/customSecurityAttributeValue?view=graph-rest-beta) resource type and associated methods.",
+              "Target": "customSecurityAttributeValue"
+          }
+      ],
+      "Id": "3daea3c5-06f5-11ec-88de-83063b88343d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-16T05:11:31.325Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+  },
+  {
+      "ChangeList": [
+          {
+              "Id": "3dbcf1b0-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Property",
+              "ChangedApiName": "customSecurityAttributes",
+              "ChangeType": "Addition",
+              "Description": "Added the **customSecurityAttributes** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+              "Target": "servicePrincipal"
+          }
+      ],
+      "Id": "3dbcf1b0-06f5-11ec-88de-83063b88343d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-16T05:11:31.325Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+  },
+  {
+      "ChangeList": [
+          {
+              "Id": "3dc0432a-06f5-11ec-88de-83063b88343d",
+              "ApiChange": "Property",
+              "ChangedApiName": "customSecurityAttributes",
+              "ChangeType": "Addition",
+              "Description": "Added the **customSecurityAttributes** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+              "Target": "user"
+          }
+      ],
+      "Id": "3dc0432a-06f5-11ec-88de-83063b88343d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-16T05:11:31.325Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+  },
+    {
     "ChangeList": [
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
@@ -9269,6 +9363,64 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-11-09T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "advancedConfigState",
+          "ChangeType": "Addition",
+          "Description": "Added the **advancedConfigState** enumeration type.",
+          "Target": "advancedConfigState"
+        },
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodsRegistrationCampaign",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodsRegistrationCampaign](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-1.0) resource type.",
+          "Target": "authenticationMethodsRegistrationCampaign"
+        },
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethodsRegistrationCampaignIncludeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodsRegistrationCampaignIncludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaignIncludeTarget?view=graph-rest-1.0) resource type.",
+          "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+        },
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "excludeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [excludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/excludeTarget?view=graph-rest-1.0) resource type.",
+          "Target": "excludeTarget"
+        },
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "registrationEnforcement",
+          "ChangeType": "Addition",
+          "Description": "Added the [registrationEnforcement](https://docs.microsoft.com/en-us/graph/api/resources/registrationEnforcement?view=graph-rest-1.0) resource type.",
+          "Target": "registrationEnforcement"
+        },
+        {
+          "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationEnforcement",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationEnforcement** property to the [authenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethodsPolicy"
+        }
+      ],
+      "Id": "2df9c094-b6d7-4765-8161-a85fb84c37b9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-11-15T20:42:47.116895Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

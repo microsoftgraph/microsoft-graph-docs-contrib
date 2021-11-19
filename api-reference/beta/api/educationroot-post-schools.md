@@ -66,7 +66,6 @@ Content-type: application/json
 {
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",
@@ -98,6 +97,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationschool-from-educationroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationschool-from-educationroot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -119,7 +122,6 @@ Content-type: application/json
   "id": "10002",
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",

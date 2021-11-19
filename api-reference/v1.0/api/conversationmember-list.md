@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/chats/{id}/members
 [!INCLUDE [sample-code](../includes/snippets/java/list-conversation-members-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-conversation-members-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

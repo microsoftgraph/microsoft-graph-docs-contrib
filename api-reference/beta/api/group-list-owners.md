@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-get-owners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
