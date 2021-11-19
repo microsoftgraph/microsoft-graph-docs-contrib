@@ -1,6 +1,6 @@
 ---
 title: "List attendanceRecords"
-description: "Get a list of the attendanceRecord objects and their properties."
+description: "Get a list of attendanceRecord objects and their properties."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [attendanceRecord](../resources/attendancerecord.md) objects and their properties.
+Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and their properties.
 
 > [!TIP]
-> The more convenient way to retrieve attendance records is to get them in line with attendance report by using the `expand` query option. See example and more details in [Get attendance report](meetingattendancereport-get.md) .
+> A more convenient way to retrieve attendance records is to get them in line with an attendance report by using the `expand` query option. For an example and more details, see  [Get attendance report](meetingattendancereport-get.md) .
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
