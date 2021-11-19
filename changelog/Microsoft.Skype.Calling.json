@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
           "ChangeType": "Change",
-          "Description": "Changed resource type of the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource from complex type to entity type",
+          "Description": "Changed the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource from a complex type to an entity type.",
           "Target": "attendanceRecord"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecords",
           "ChangeType": "Change",
-          "Description": "Changed the **attendanceRecords** property of the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource from property to navigation property.",
+          "Description": "Changed the **attendanceRecords** property of the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-beta) resource from a property to a navigation property.",
           "Target": "meetingAttendanceReport"
         },
         {
