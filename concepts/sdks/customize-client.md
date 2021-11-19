@@ -122,6 +122,13 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 ```go
+import (
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+    core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
 // Auth provider
 auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
 
