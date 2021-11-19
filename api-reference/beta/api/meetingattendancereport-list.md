@@ -60,7 +60,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects in the response body.
 
 > [!TIP]
-> The **attendanceRecords** property is not returned in this API.
+> The **attendanceRecords** property is empty in the response.
 
 ## Example
 
