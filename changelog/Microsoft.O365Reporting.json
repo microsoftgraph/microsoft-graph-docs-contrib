@@ -666,7 +666,7 @@
 			"Description": "Updated the JSON return type of the [getYammerGroupsActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) API to stream.",
 			"Target": "getYammerGroupsActivityCounts"
 		}
-	]
+	],
 	  "Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
 	  "Cloud": "prd",
 	  "Version": "beta",
