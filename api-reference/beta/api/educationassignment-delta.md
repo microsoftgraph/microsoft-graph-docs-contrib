@@ -1,5 +1,5 @@
 ---
-title: "List class assignments: delta"
+title: "educationAssignment: delta"
 description: "Retrieve a list of assignment objects with delta support."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List class assignments: delta
+# educationAssignment: delta
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -38,6 +38,7 @@ The **assignment** APIs are exposed in the class namespace.
 |[Remove category](../api/educationassignment-remove-category.md) |None| Remove an **educationCategory** belonging to the class from this **assignment**.|
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this **assignment**.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this **assignment**.|
+|[Delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get an **educationAssignment** object collection with delta query support.|
 
 ## Properties
 | Property	   | Type	|Description|
