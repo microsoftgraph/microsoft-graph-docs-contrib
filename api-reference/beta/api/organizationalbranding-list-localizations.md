@@ -123,10 +123,7 @@ Content-Type: application/json
               "hideAccountResetCredentials": false,
               "hideTermsOfUse": true,
               "hidePrivacyAndCookies": true
-            },
-            "signInPageText": "Contoso",
-            "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
-            "usernameHintText": ""
+            }
         },
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/fr",
