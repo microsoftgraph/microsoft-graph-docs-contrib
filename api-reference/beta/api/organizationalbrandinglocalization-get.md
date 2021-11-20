@@ -125,7 +125,7 @@ Content-Type: application/json
     "loginPageTextVisibilitySettings": {
       "hideAccountResetCredentials": false,
       "hideTermsOfUse": true,
-      "hidePrivacyAndCookies": true,
+      "hidePrivacyAndCookies": true
     }
 }
 ```

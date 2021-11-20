@@ -122,8 +122,8 @@ Content-Type: application/json
             "loginPageTextVisibilitySettings": {
               "hideAccountResetCredentials": false,
               "hideTermsOfUse": true,
-              "hidePrivacyAndCookies": true,
-            }
+              "hidePrivacyAndCookies": true
+            },
             "signInPageText": "Contoso",
             "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
             "usernameHintText": ""
@@ -150,7 +150,7 @@ Content-Type: application/json
             "loginPageTextVisibilitySettings": {
               "hideAccountResetCredentials": false,
               "hideTermsOfUse": true,
-              "hidePrivacyAndCookies": true,
+              "hidePrivacyAndCookies": true
             }
         }
     ]
