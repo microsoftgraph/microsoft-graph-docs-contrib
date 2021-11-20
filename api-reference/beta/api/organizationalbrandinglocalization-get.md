@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "get_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # [C#](#tab/csharp)
@@ -123,7 +123,6 @@ Content-Type: application/json
     "signInPageText": "Welcome to Contoso France",
     "usernameHintText": "Welcome to Contoso France",
     "loginPageTextVisibilitySettings": {
-      "hideAccountResetCredentials": false,
       "hideTermsOfUse": true,
       "hidePrivacyAndCookies": true
     }
