@@ -57,9 +57,9 @@ You can't change your original configuration's language. However, companies can 
 | squareLogoRelativeUrl | String | A relative url for the **squareLogo** property that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 
-## New complex types
-loginPageTextVisibilitySettings
-This is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+## Ccomplex types
+loginPageTextVisibilitySettings is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | hideAccountResetCredentials | String | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |

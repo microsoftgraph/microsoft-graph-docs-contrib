@@ -64,8 +64,8 @@ The following tables specifiy the properties that can be updated.
 | squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. |
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. |
 
-Complex type: loginPageTextVisibilitySettings
-This is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+loginPageTextVisibilitySettings is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | hideAccountResetCredentials | String | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
