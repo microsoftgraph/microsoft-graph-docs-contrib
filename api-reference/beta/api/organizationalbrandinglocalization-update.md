@@ -62,17 +62,12 @@ The following table specifies the properties that can be updated.
 | favicon | Stream | A custom browser icon (favicon) to replace a default “Microsoft logo” value utilizing AAD Company Branding blade. |
 | headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
 | loginPageTextVisibilitySettings | microsoft.graph.loginPageTextVisibilitySettings | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
-| signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. |
-| squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. |
-| usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. |
-
-loginPageTextVisibilitySettings is a complex type that represents the various texts that can be hidden on the login page for a tenant.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
 | hideAccountResetCredentials | String | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
 | hideTermsOfUse | String | Option to hide “Terms of Use” hyperlink in the footer. |
 | hidePrivacyAndCookies | String | Option to hide "Microsoft Privacy & Cookies" URL in the footer. |
+| signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. |
+| squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. |
+| usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. |
 
 ## Response
 
