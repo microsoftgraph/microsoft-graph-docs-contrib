@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
-### Example request
+### Request example
 
-The `model` query parameter should be specified in the `resource` property in the request body.
+Specify the `model` query parameter in the **resource** property in the request body.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
