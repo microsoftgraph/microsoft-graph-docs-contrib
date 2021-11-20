@@ -121,7 +121,7 @@ Content-Type: application/json
     "faviconRelativeUrl": "null",
     "headerBackgroundColor": "null",
     "signInPageText": "Welcome to Contoso France",
-    "usernameHintText": "Welcome to Contoso France"
+    "usernameHintText": "Welcome to Contoso France",
     "loginPageTextVisibilitySettings": {
       "hideAccountResetCredentials": false,
       "hideTermsOfUse": true,

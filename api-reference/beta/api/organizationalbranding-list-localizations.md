@@ -146,7 +146,7 @@ Content-Type: application/json
             "headerBackgroundColor": "null",
             "signInPageText": "Welcome",
             "squareLogoRelativeUrl": null,
-            "usernameHintText": "hint"
+            "usernameHintText": "hint",
             "loginPageTextVisibilitySettings": {
               "hideAccountResetCredentials": false,
               "hideTermsOfUse": true,
