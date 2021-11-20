@@ -26,6 +26,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This can be set using either the `@odata.bind` annotation or the environment's *originId*.|
+|accessPackageResourceAttribute| [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md)|Contains the attribute information for the resource.|
 |addedBy|String|Read-only.|
 |addedOn|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |description|String|A description for the resource.|
