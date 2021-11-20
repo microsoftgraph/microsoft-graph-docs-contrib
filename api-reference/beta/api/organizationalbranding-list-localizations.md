@@ -107,6 +107,25 @@ Content-Type: application/json
                 "aadcdn.msftauthimages.net",
                 "aadcdn.msauthimages.net"
             ],
+            "customAccountResetCredentialsUrl": "null",
+            "customCannotAccessYourAccountText": "null",
+            "customForgotMyPasswordText": "null",
+            "customPrivacyAndCookiesText": "null",
+            "customPrivacyAndCookiesUrl": "null",
+            "customTermsOfUseText": "null",
+            "customTermsOfUseUrl": "null",
+            "faviconRelativeUrl": "null",
+            "headerBackgroundColor": "null",
+            "signInPageText": "Contoso",
+            "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+            "usernameHintText": "",
+            "loginPageTextVisibilitySettings": {
+                "hideCannotAccessYourAccount": false,
+                "hideTermsOfUse": true,
+                "hidePrivacyAndCookies": true,
+                "hideForgotMyPassword": true,
+                "hideResetItNow": false
+            }
             "signInPageText": "Contoso",
             "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
             "usernameHintText": ""
@@ -118,9 +137,25 @@ Content-Type: application/json
             "backgroundImageRelativeUrl": null,
             "bannerLogoRelativeUrl": null,
             "cdnList": [],
+            "customAccountResetCredentialsUrl": "null",
+            "customCannotAccessYourAccountText": "null",
+            "customForgotMyPasswordText": "null",
+            "customPrivacyAndCookiesText": "null",
+            "customPrivacyAndCookiesUrl": "null",
+            "customTermsOfUseText": "null",
+            "customTermsOfUseUrl": "null",
+            "faviconRelativeUrl": "null",
+            "headerBackgroundColor": "null",
             "signInPageText": "Welcome",
             "squareLogoRelativeUrl": null,
             "usernameHintText": "hint"
+            "loginPageTextVisibilitySettings": {
+                "hideCannotAccessYourAccount": false,
+                "hideTermsOfUse": true,
+                "hidePrivacyAndCookies": true,
+                "hideForgotMyPassword": true,
+                "hideResetItNow": false
+            }
         }
     ]
 }

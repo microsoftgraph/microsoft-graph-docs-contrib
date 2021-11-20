@@ -52,9 +52,27 @@ The following table specifies the properties that can be updated.
 | backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
 | backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. |
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
+| customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be Unicode and not exceed 128 characters. |
+| customCannotAccessYourAccountText | String | String to replace the display text for the "Can’t access your account” hyperlink inside of the sign-in form (username collection screen). This text must be Unicode and not exceed 256 characters. |
+| customForgotMyPasswordText | String | String to replace the default display text of "Forgot my password" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
+| customPrivacyAndCookiesUrl | String | String of custom URL to replace the default value of the Privacy and Cookies Url in the footer.This text must be Unicode and not exceed 128 characters. |
+| customPrivacyAndCookiesText | String | String to replace a default value of the Privacy and Cookies URL display text in the footer.This text must be Unicode and not exceed 256 characters. |
+| customTermsOfUseUrl | String | String of custom URL to replace the default value of the Terms of Use URL in the footer. This text must be Unicode and not exceed 128characters. |
+| customTermsOfUseText | String | String to replace the display text for the Terms of Use” hyperlink in the footer. This text must be Unicode and not exceed 256 characters. |
+| favicon | Stream | A custom browser icon (favicon) to replace a default “Microsoft logo” value utilizing AAD Company Branding blade. |
+| headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
+| loginPageTextVisibilitySettings | microsoft.graph.loginPageTextVisibilitySettings | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
 | signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. |
-| squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo.|
-| usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.|
+| squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. |
+| usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. |
+
+Complex type: loginPageTextVisibilitySettings
+This is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+| hideAccountResetCredentials | String | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
+| hideTermsOfUse | String | Option to hide “Terms of Use” hyperlink in the footer. |
+| hidePrivacyAndCookies | String | Option to hide "Microsoft Privacy & Cookies" URL in the footer. |
 
 ## Response
 

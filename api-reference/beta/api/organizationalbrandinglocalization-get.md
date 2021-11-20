@@ -111,8 +111,24 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
+    "customAccountResetCredentialsUrl": "null",
+    "customCannotAccessYourAccountText": "null",
+    "customForgotMyPasswordText": "null",
+    "customPrivacyAndCookiesText": "null",
+    "customPrivacyAndCookiesUrl": "null",
+    "customTermsOfUseText": "null",
+    "customTermsOfUseUrl": "null",
+    "faviconRelativeUrl": "null",
+    "headerBackgroundColor": "null",
     "signInPageText": "Welcome to Contoso France",
     "usernameHintText": "Welcome to Contoso France"
+    "loginPageTextVisibilitySettings": {
+        "hideCannotAccessYourAccount": false,
+        "hideTermsOfUse": true,
+        "hidePrivacyAndCookies": true,
+        "hideForgotMyPassword": true,
+        "hideResetItNow": false
+    }
 }
 ```
 

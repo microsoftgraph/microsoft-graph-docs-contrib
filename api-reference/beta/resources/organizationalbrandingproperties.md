@@ -36,11 +36,31 @@ None.
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | bannerLogoRelativeUrl | String | A relative url for the **bannerLogo** property that is combined with a CDN base URL from the **cdnList** to provide the read-only version served by a CDN. Read-only. |
 | cdnList | String collection | A list of base URLs for all available CDN providers that are serving the assets of the current resource. Several CDN providers are used at the same time for high availability of read requests. Read-only. |
+| customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be Unicode and not exceed 128 characters. |
+| customCannotAccessYourAccountText | String | String to replace the display text for the "Can’t access your account” hyperlink inside of the sign-in form (username collection screen). This text must be Unicode and not exceed 256 characters. |
+| customForgotMyPasswordText | String | String to replace the default display text of "Forgot my password" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
+| customPrivacyAndCookiesUrl | String | String of custom URL to replace the default value of the Privacy and Cookies Url in the footer.This text must be Unicode and not exceed 128 characters. |
+| customPrivacyAndCookiesText | String | String to replace a default value of the Privacy and Cookies URL display text in the footer.This text must be Unicode and not exceed 256 characters. |
+| customTermsOfUseUrl | String | String of custom URL to replace the default value of the Terms of Use URL in the footer. This text must be Unicode and not exceed 128characters. |
+| customTermsOfUseText | String | String to replace the display text for the Terms of Use” hyperlink in the footer. This text must be Unicode and not exceed 256 characters. |
+| favicon | Stream | A custom browser icon (favicon) to replace a default “Microsoft logo” value utilizing AAD Company Branding blade. |
+| faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base url in cdnList to provide the version served by a CDN. Read-only. |
+| headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
 | id | String | An identifier that represents the locale specified in the ISO 639-1 standard, for example English is `en-US`. The **id** for the default /branding is always the String types `0` or `default`. Read-only. <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. |
+| loginPageTextVisibilitySettings | microsoft.graph.loginPageTextVisibilitySettings | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
 | signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. |
 | squareLogo | Stream | A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size. We recommend using a transparent image with no padding around the logo. |
 | squareLogoRelativeUrl | String | A relative url for the **squareLogo** property that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. |
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. |
+
+## New complex types
+loginPageTextVisibilitySettings
+This is a complex type that represents the various texts that can be hidden on the login page for a tenant.
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+| hideAccountResetCredentials | String | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
+| hideTermsOfUse | String | Option to hide “Terms of Use” hyperlink in the footer. |
+| hidePrivacyAndCookies | String | Option to hide "Microsoft Privacy & Cookies" URL in the footer. |
 
 ## Relationships
 None.
@@ -56,7 +76,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
+  "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
@@ -66,10 +86,28 @@ The following is a JSON representation of the resource.
   "cdnList": [
     "String"
   ],
+  "customAccountResetCredentialsUrl": "String",
+  "customCannotAccessYourAccountText": "String",
+  "customForgotMyPasswordText": "String",
+  "customPrivacyAndCookiesText": "String",
+  
+  "customPrivacyAndCookiesUrl": "String",
+  "customTermsOfUseText": "String",
+  "customTermsOfUseUrl": "String",
+  "favicon": "Stream",
+  "faviconRelativeUrl": "String",
+  "headerBackgroundColor": "String",
   "signInPageText": "String",
   "squareLogo": "Stream",
   "squareLogoRelativeUrl": "String",
-  "usernameHintText": "String"
+  "usernameHintText": "String",
+  "loginPageTextVisibilitySettings": {
+    "hideCannotAccessYourAccount": "boolean",
+        "hideTermsOfUse": "boolean",
+        "hidePrivacyAndCookies": "boolean",
+        "hideForgotMyPassword": "boolean",
+        "hideResetItNow": "boolean"
+  }
 }
 ```
 
