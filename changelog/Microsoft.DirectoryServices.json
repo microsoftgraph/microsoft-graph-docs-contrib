@@ -63,7 +63,7 @@
           "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
           "Target": "accessPackageQuestion"
          },
-	       {
+	 {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceAttribute",
@@ -71,7 +71,7 @@
           "Description": "Added the **accessPackageResourceAttribute** resource.",
           "Target": "accessPackageResourceAttribute"
         },
-	      {
+	{
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceAttributeDestination",
@@ -79,7 +79,7 @@
           "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
           "Target": "accessPackageResourceAttributeDestination"
         },
-	      {
+	{
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
           "ChangedApiName": "accesspackageuserdirectoryattributestore",
@@ -87,7 +87,7 @@
           "Description": "Added the **accesspackageuserdirectoryattributestore** resource.",
           "Target": "accesspackageuserdirectoryattributestore"
         },
-	      {
+	{
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceAttributeSource",
@@ -95,7 +95,7 @@
           "Description": "Added the **accessPackageResourceAttributeSource** resource.",
           "Target": "accessPackageResourceAttributeSource"
         },
-	      {
+        {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceAttributeQuestion",
