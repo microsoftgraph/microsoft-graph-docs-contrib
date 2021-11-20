@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 Represents user-specific properties of a [chat](../resources/chat.md). These properties might change based on who the caller of the API is.
 
-> **Note:** Currently, only the [list chats](../api/chat-list.md) operation supports **chatViewpoint**.
+> **Note:** Currently, only the [List chats](../api/chat-list.md) operation supports **chatViewpoint**.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isHidden|Boolean|Represents if the chat is hidden for the current user.|
+|isHidden|Boolean|Indicates whether the chat is hidden for the current user.|
 |lastMessageReadDateTime|DateTimeOffset|Represents the dateTime up until which the current user has read [chatMessages](../resources/chatmessage.md) in a specific chat.|
 
 ## Relationships
