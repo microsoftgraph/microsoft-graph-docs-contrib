@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unhide the chat for. **In delegated mode, users may only unhide a chat for themselves**.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to unhide the chat for. **In delegated mode, users can only unhide a chat for themselves**.|
 |tenantId|String|Tenant ID of the user.|
 
 ## Response
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
