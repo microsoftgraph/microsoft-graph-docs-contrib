@@ -120,11 +120,11 @@ Content-Type: application/json
             "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
             "usernameHintText": "",
             "loginPageTextVisibilitySettings": {
-                "hideCannotAccessYourAccount": false,
-                "hideTermsOfUse": true,
-                "hidePrivacyAndCookies": true,
-                "hideForgotMyPassword": true,
-                "hideResetItNow": false
+              "hideCannotAccessYourAccount": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true,
+              "hideForgotMyPassword": true,
+              "hideResetItNow": false
             }
             "signInPageText": "Contoso",
             "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
@@ -150,11 +150,11 @@ Content-Type: application/json
             "squareLogoRelativeUrl": null,
             "usernameHintText": "hint"
             "loginPageTextVisibilitySettings": {
-                "hideCannotAccessYourAccount": false,
-                "hideTermsOfUse": true,
-                "hidePrivacyAndCookies": true,
-                "hideForgotMyPassword": true,
-                "hideResetItNow": false
+              "hideCannotAccessYourAccount": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true,
+              "hideForgotMyPassword": true,
+              "hideResetItNow": false
             }
         }
     ]

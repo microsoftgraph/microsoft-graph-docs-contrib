@@ -84,7 +84,6 @@ The following is a JSON representation of the resource.
   "customCannotAccessYourAccountText": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
-  
   "customPrivacyAndCookiesUrl": "String",
   "customTermsOfUseText": "String",
   "customTermsOfUseUrl": "String",
@@ -97,10 +96,10 @@ The following is a JSON representation of the resource.
   "usernameHintText": "String",
   "loginPageTextVisibilitySettings": {
     "hideCannotAccessYourAccount": "boolean",
-        "hideTermsOfUse": "boolean",
-        "hidePrivacyAndCookies": "boolean",
-        "hideForgotMyPassword": "boolean",
-        "hideResetItNow": "boolean"
+    "hideTermsOfUse": "boolean",
+    "hidePrivacyAndCookies": "boolean",
+    "hideForgotMyPassword": "boolean",
+    "hideResetItNow": "boolean"
   }
 }
 ```
