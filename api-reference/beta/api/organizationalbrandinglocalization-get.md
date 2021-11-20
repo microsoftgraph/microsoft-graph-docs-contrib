@@ -123,11 +123,9 @@ Content-Type: application/json
     "signInPageText": "Welcome to Contoso France",
     "usernameHintText": "Welcome to Contoso France"
     "loginPageTextVisibilitySettings": {
-      "hideCannotAccessYourAccount": false,
+      "hideAccountResetCredentials": false,
       "hideTermsOfUse": true,
       "hidePrivacyAndCookies": true,
-      "hideForgotMyPassword": true,
-      "hideResetItNow": false
     }
 }
 ```
