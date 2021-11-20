@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Hide a [chat](../resources/chat.md) for a user.
 
-> **Note:** A chat is automatically unhidden for a user if an action such as *Send Message* is taken at chat level.
+> **Note:** A chat is automatically unhidden for a user if an action such as *Send message* is taken at the chat level.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated mode, users may only hide a chat for themselves**.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User to hide the chat for. **In delegated mode, users can only hide a chat for themselves**.|
 |tenantId|String|Tenant ID of the user.|
 
 ## Response
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
