@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The details of the cloud PC status.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 
 |Property|Type|Description|

@@ -57,13 +57,6 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
-
 ### fido2RestrictionEnforcementType values
 
 |Member|
@@ -115,12 +108,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### allowInvitesFrom values
 
