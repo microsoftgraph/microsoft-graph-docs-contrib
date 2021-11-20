@@ -2,7 +2,7 @@
 title: "loginPageTextVisibilitySettings resource type"
 description: "Contains details of the organization's branding."
 author: "AlexanderMars"
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

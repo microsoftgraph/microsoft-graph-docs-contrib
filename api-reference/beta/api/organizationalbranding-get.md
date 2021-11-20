@@ -105,7 +105,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBranding"
+  "@odata.type": "Collection(microsoft.graph.organizationalBranding)"
 } -->
 
 ```http
