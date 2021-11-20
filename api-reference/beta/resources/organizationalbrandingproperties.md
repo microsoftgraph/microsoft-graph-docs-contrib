@@ -47,6 +47,7 @@ None.
 | faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base url in cdnList to provide the version served by a CDN. Read-only. |
 | headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
 | id | String | An identifier that represents the locale specified in the ISO 639-1 standard, for example English is `en-US`. The **id** for the default /branding is always the String types `0` or `default`. Read-only. <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported. |
+| loginPageTextVisibilitySettings | Complex type | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. Inherited from [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md). |
 | hideAccountResetCredentials | Boolean | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. Inherited from [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md). |
 | hideTermsOfUse | Boolean | Option to hide “Terms of Use” hyperlink in the footer. Inherited from [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md). |
 | hidePrivacyAndCookies | Boolean | Option to hide "Microsoft Privacy & Cookies" URL in the footer. Inherited from [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md). |
