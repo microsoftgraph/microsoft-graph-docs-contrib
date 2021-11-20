@@ -92,7 +92,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.organizationalBrandingLocalization)"
+  "@odata.type": "microsoft.graph.organizationalBrandingLocalization"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -56,7 +56,7 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 
 ## Relationships
-None.
+| text visibility | [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md) complex type | Represent the various texts that can be hidden. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
