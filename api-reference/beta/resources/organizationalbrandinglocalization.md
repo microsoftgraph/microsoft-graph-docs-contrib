@@ -65,7 +65,6 @@ The following is a JSON representation of the resource.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organizationalBrandingLocalization",
   "baseType": "microsoft.graph.organizationalBrandingProperties",
-  "complexType": "microsoft.graph.loginPageTextVisibilitySettings",
   "openType": false
 }
 -->
