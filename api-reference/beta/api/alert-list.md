@@ -52,12 +52,12 @@ The following table lists the `$filter` keywords by each vendor name.
 
 | Vendor name      |$filter keyword|
 |:----------|:----------|
-| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Microsoft Defender for Identity | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
-| Microsoft Cloud App Security | MCAS |
+| Microsoft Defender for Cloud Apps | MCAS |
 | Azure Active Directory Identity Protection | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 |  Not currently supported. |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
