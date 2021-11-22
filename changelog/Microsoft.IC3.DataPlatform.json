@@ -1,34 +1,76 @@
 {
-    "changelog": [{
-            "ChangeList": [{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "acf1705d-a074-4c1c-8f93-956f510d3d6a",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureCommunicationServices",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **azureCommunicationServices** member to the **productFamily** enumeration.",
+                    "Target": "productFamily"
+                }
+            ],
+            "Id": "acf1705d-a074-4c1c-8f93-956f510d3d6a",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-22T22:17:51.1348064Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f1806e6d-d9c1-466d-aa9e-e79e49b63b6d",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureCommunicationServices",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **azureCommunicationServices** member to the **productFamily** enumeration.",
+                    "Target": "productFamily"
+                }
+            ],
+            "Id": "f1806e6d-d9c1-466d-aa9e-e79e49b63b6d",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-11-22T22:17:51.1355598Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "pstnCallDurationSource",
                     "ChangeType": "Addition",
                     "Description": "Added the **pstnCallDurationSource** enumeration type.",
                     "Target": "pstnCallDurationSource"
-                }, {
+                },
+                {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "directRoutingLogRow",
                     "ChangeType": "Addition",
                     "Description": "Added the [directRoutingLogRow](https://docs.microsoft.com/en-us/graph/api/resources/directRoutingLogRow) resource type.",
                     "Target": "directRoutingLogRow"
-                }, {
+                },
+                {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Resource",
                     "ChangedApiName": "pstnCallLogRow",
                     "ChangeType": "Addition",
                     "Description": "Added the [pstnCallLogRow](https://docs.microsoft.com/en-us/graph/api/resources/pstnCallLogRow) resource type.",
                     "Target": "pstnCallLogRow"
-                }, {
+                },
+                {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Method",
                     "ChangedApiName": "getDirectRoutingCalls",
                     "ChangeType": "Addition",
                     "Description": "Added the [getDirectRoutingCalls](https://docs.microsoft.com/en-us/graph/api/getDirectRoutingCalls) method to the [callRecord](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-callrecord) resource.",
                     "Target": "callRecord"
-                }, {
+                },
+                {
                     "Id": "821e2f4f-d33f-4d35-a3ec-18310e43691b",
                     "ApiChange": "Method",
                     "ChangedApiName": "getPstnCalls",
@@ -43,22 +85,26 @@
             "CreatedDateTime": "2021-07-05T13:19:50.7960624Z",
             "WorkloadArea": "Cloud communications",
             "SubArea": "Call records"
-        }, {
-            "ChangeList": [{
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "2e62b4f9-f459-4954-91fa-b97f281a18bc",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "pstnCallDurationSource",
                     "ChangeType": "Addition",
                     "Description": "Added the **pstnCallDurationSource** enumeration type.",
                     "Target": "pstnCallDurationSource"
-                }, {
+                },
+                {
                     "Id": "2e62b4f9-f459-4954-91fa-b97f281a18bc",
                     "ApiChange": "Property",
                     "ChangedApiName": "callDurationSource",
                     "ChangeType": "Addition",
                     "Description": "Added the **callDurationSource** property to [pstnCallLogRow](https://docs.microsoft.com/en-us/graph/api/resources/pstnCallLogRow?view=graph-rest-beta) resource.",
                     "Target": "pstnCallLogRow"
-                }, {
+                },
+                {
                     "Id": "2e62b4f9-f459-4954-91fa-b97f281a18bc",
                     "ApiChange": "Property",
                     "ChangedApiName": "operator",
