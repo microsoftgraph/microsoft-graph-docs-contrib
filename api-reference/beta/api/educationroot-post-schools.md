@@ -66,7 +66,6 @@ Content-type: application/json
 {
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",
@@ -123,7 +122,6 @@ Content-type: application/json
   "id": "10002",
   "displayName": "Fabrikam High School",
   "description": "Magnate school for the arts. Los Angeles School District",
-  "status": "String",
   "externalSource": "String",
   "principalEmail": "AmyR@fabrikam.com",
   "principalName": "Amy Roebuck",

@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
+> **Notes**:
+> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
+> - Currently, this operation does not support installation of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## Permissions
 
