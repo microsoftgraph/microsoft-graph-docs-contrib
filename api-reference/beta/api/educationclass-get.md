@@ -1,6 +1,6 @@
 ---
 title: "Get educationClass"
-description: "Retrieve a class from the system. Group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members."
+description: "Retrieve a class from the system."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
