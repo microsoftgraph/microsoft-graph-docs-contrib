@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|softwareType|[teamworksoftwaretype](../resources/teamworksoftwaretype.md)|SoftwareType to update. Valid types are "adminAgent, operatingSystem, teamsClient, firmware, partnerAgent, companyPortal".|
+|softwareType|[teamworkSoftwareType](../resources/teamworksoftwaretype.md)|SoftwareType to update. Valid types are "adminAgent, operatingSystem, teamsClient, firmware, partnerAgent, companyPortal".|
 |softwareVersion|String|Specifies the version of the software available for update.|
 
 

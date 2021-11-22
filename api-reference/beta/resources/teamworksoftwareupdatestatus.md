@@ -20,7 +20,7 @@ Details of software update status of various components (AdminAgent | CompanyPor
 |:---|:---|:---|
 |availableVersion|String|Available software version to update.|
 |currentVersion|String|Current software version.|
-|softwareFreshness|[teamworksoftwarefreshness](teamworksoftwarefreshness.md)|Software status. The possible values are: `unknown`, `latest`, `updateAvailable`, `unknownFutureValue`.|
+|softwareFreshness|[teamworkSoftwareFreshness](teamworksoftwarefreshness.md)|Software status. The possible values are: `unknown`, `latest`, `updateAvailable`, `unknownFutureValue`.|
 
 
 ## JSON representation

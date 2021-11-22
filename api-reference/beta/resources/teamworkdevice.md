@@ -30,14 +30,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activityState|[teamworkdeviceactivitystate](teamworkDeviceActivityState.md)|Device activity state. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
+|activityState|[teamworkDeviceActivityState](teamworkDeviceActivityState.md)|Device activity state. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
 |companyAssetTag|String|Company asset tag assigned by admin on device.|
 |createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
 |createdDateTime|DateTimeOffset|Document create time.|
 |currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Logged in user on the device.|
-|deviceType|[teamworkdevicetype](teamworkdevicetype.md)|Type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
+|deviceType|[teamworkDeviceType](teamworkdevicetype.md)|Type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|Hardware related properties are captured in it. For example: oemSerialNumber, model.|
-|healthStatus|[teamworkdevicehealthstatus](teamworkDeviceHealthStatus.md)|Device health status. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
+|healthStatus|[teamworkDeviceHealthStatus](teamworkDeviceHealthStatus.md)|Device health status. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time.|

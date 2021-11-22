@@ -19,7 +19,7 @@ This is helpful in calculating device health.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connectionStatus|[teamworkconnectionstatus](teamworkconnectionstatus.md)|Enum indicating whether component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
+|connectionStatus|[teamworkConnectionStatus](teamworkconnectionstatus.md)|Enum indicating whether component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. i.e. Indicates connected since when state is connected and disconnected since when state is disconnected.|
 
 
