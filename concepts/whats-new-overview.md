@@ -16,36 +16,36 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## November 2021: New and generally available
 
 ### Files
-Get the state of a drive up to a specific time by using a URL-encoded timestamp. See an [example](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
+Get the state of a drive as of a specific time by specifying the corresponding URL-encoded timestamp. See an [example](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
 
 ### Identity and access | Identity and sign-in
-- [Enforce registration](/graph/api/resources/registrationEnforcement) at sign-in time. Run [campaigns](/graph/api/resources/authenticationMethodsRegistrationCampaign) to push users to set up targeted authentication methods.
--  Configure an [Apple identity provider](/api/resources/applemanagedidentityprovider) in an Azure AD B2C tenant.
+- Run [campaigns](/graph/api/resources/authenticationMethodsRegistrationCampaign) and [enforce users to register](/graph/api/resources/registrationEnforcement) at sign-in time to set up targeted authentication methods.
+-  Configure an [Apple identity provider](/graph/api/resources/applemanagedidentityprovider) in an Azure AD B2C tenant.
 
 ## November 2021: New in preview only
 
 ### Cloud communications | Online meeting
-Can specify one of two additional types of participants to automatically admit them in an online meeting and bypass the meeting lobby:
+Automatically admit new types of participants in an online meeting and bypass the meeting lobby:
 - Only people the organizer invites.
 - Only the participants from the same company.
 
 ### Devices and apps | Cloud PC
-- Define a [configuration](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true)) of how a provisioned Cloud PC device can join Azure Active Directory (Azure AD): either cloud-only, by joining only to Azure AD, or hybrid, by joining on-premises Active Directory and Azure AD.
-- Get the [gallery image resource](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true)) of the current organization which can be used to provision a Cloud PC.
+- Define a [configuration](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) of how a provisioned Cloud PC device can join Azure Active Directory (Azure AD): either cloud-only and join only to Azure AD, or hybrid and join on-premises Active Directory and Azure AD.
+- Get the [gallery image resource](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true) of the current organization which can be used to provision a Cloud PC.
 
 ### Devices and apps | Device updates
-- Use [safeguard settings](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true)) to opt-out of safeguards against likely issues in a deployment.
-- Support for a [deployment state](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true)) where a deployment is faulted due to the content no longer being deployable, for example, at the end of service.
+- Use [safeguard settings](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true) to opt-out of safeguards against likely issues in a deployment.
+- Support for a [deployment state](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) where a deployment is faulted due to the content no longer being deployable, for example, at the end of service.
 
 ### Identity and access | Directory management
-- Define and assign [custom security attributes](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true)) to Azure AD objects. Use these attributes to store information, categorize objects, or enforce fine-grained access control over specific Azure resources. Use these attributes with [Azure attribute-based access control](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
-- [Create a group within an administrative unit](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true)).
+- Define and assign [custom security attributes](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true) to Azure AD objects. Use these attributes to store information, categorize objects, or enforce fine-grained access control over specific Azure resources. Use these attributes with [Azure attribute-based access control](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
+- [Create a group within an administrative unit](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true).
 
 ### Reports | Microsoft 365 usage reports
-[Microsoft 365 usage reports](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)) in JSON output type are no longer strongly typed and are of the type `Edm.Stream`. For more information, see [OData property changes to Microsoft 365 usage reports API in Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
+[Microsoft 365 usage reports](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) in JSON output type are no longer strongly typed and are of the type `Edm.Stream`. For more information, see [OData property changes to Microsoft 365 usage reports API in Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
 
 ### Teamwork
-[Mark a chat as read](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true)), or [mark a chat as unread](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true)) for a user.
+Mark a chat as [read](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true), or [unread](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true) for a user.
 
 ## October 2021: New and generally available
 
@@ -61,7 +61,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 -->
 
 ### Education
-Support [media](/graph/api/resources/educationMediaResource) files or other [external generic resource](/graph/api/resources/educationExternalResource) as an [assignment resource](/graph/api/resources/educationassignmentresource).
+Support a [media](/graph/api/resources/educationMediaResource) file or some other [external generic resource](/graph/api/resources/educationExternalResource) as an [assignment resource](/graph/api/resources/educationassignmentresource).
 
 ### Identity and access | Applications
 - To drive the consent experience for an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), specify the [resources that the app needs to access](/graph/api/resources/requiredresourceaccess?view=graph-rest-beta&preserve-view=true), including the set of OAuth 2.0 delegated permissions and application roles that the application requires.
