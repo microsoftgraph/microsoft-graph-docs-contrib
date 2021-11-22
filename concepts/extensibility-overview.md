@@ -133,7 +133,7 @@ Additionally, to create and manage schema extension definitions, an application 
 
 ### Open extension limits
 
-The following limits apply to directory resources (such as **user**, **group**, **device**):
+The following limits apply to directory resources (**user**, **group**, **device**, **administrativeUnit**, **organization**):
 
 - Each open extension can have up to 2 KB of data (including the extension definition itself).
 - An application can add up to two open extensions per resource instance.
