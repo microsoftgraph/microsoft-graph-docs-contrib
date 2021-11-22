@@ -133,7 +133,7 @@ import (
 auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
 
 // Get default middleware from SDK
-defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.ClientOptions)
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
