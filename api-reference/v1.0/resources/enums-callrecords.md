@@ -84,6 +84,7 @@ Namespace: microsoft.graph.callRecords
 | skypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### serviceRole values
 
