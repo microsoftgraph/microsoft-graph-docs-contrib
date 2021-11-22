@@ -7,7 +7,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "POST",
         "ChangeType": "Addition",
-        "Description": "Added support for creating a group within an administrative unit through the [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members) method.",
+        "Description": "Added support for creating a group within an administrative unit through the [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members?view=graph-rest-beta) method.",
         "Target": "administrativeUnit"
       }
     ],
