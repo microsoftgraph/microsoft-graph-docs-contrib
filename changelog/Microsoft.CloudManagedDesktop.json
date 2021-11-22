@@ -9,14 +9,6 @@
                     "ChangeType": "Addition",
                     "Description": "Added the `sourceImageNotGeneralized` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
                     "Target": "cloudPcDeviceImageStatusDetails"
-                },
-                {
-                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "unknownFutureValue",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `unknownFutureValue` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
-                    "Target": "cloudPcDeviceImageStatusDetails"
                 }
             ],
             "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",

@@ -56,8 +56,8 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|Source image is inaccessible or not found.|
 |osVersionNotSupported| OS version is not supported.|
 |sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
-|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Re-upload the image after running the sysprep/generalize command. [Learn more](/azure/virtual-machines/generalize?view=graph-rest-beta&preserve-view=true).|
-|unknownFutureValue|Unknown future status details (Reserved, not used right now).|
+|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
