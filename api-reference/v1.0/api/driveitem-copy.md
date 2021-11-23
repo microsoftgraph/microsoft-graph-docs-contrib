@@ -34,7 +34,7 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-## Query parameters
+## Optional query parameters
 
 This method supports the `@microsoft.graph.conflictBehavior` query parameter to customize the behavior when a conflict occurs.
 
@@ -62,6 +62,11 @@ In the request body, provide a JSON object with the following parameters.
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file will be named `contoso plan (copy).txt`.
+
+## Response
+
+Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
+
 
 ### Request
 
@@ -100,8 +105,6 @@ Content-Type: application/json
 
 ### Response
 
-Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
-
 <!-- { "blockType": "response" } -->
 
 ```http
@@ -110,12 +113,12 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 ```
 
 The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.
-You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).
+You can use this information to [determine when the copy has finished](/graph/long-running-actions-overview).
 
 ### Remarks
 
 In many cases the copy action is performed asynchronously.
-The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.
+The response from the API will only indicate that the copy operation was accepted or rejected; for example, due to the destination filename already being in use.
 
 [item-resource]: ../resources/driveitem.md
 
