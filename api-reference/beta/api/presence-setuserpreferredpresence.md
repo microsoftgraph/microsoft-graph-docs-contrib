@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 | activity           | string   | The supplemental information to availability.                                                                                                                                                                                                  |
 | expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.<br/>If not provided, a default expiration will be applied:<br/>DoNotDisturb or Busy: expires in 1 day<br/>All others: expires in 7 days |
 
-Supported combinations of `availability` and `activity` are:
+Supported combinations of **availability** and **activity** are:
 
 | availability | activity     | Description                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
