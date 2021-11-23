@@ -2,7 +2,7 @@
 title: "Delete userExperienceAnalyticsAppHealthApplicationPerformance"
 description: "Deletes a userExperienceAnalyticsAppHealthApplicationPerformance."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

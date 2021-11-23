@@ -2,7 +2,7 @@
 title: "certificateConnectorHealthMetricValue resource type"
 description: "Metric snapshot value returned in response to a GetHealthMetricTimeSeries request."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 # [C#](#tab/csharp)
@@ -120,7 +119,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -142,8 +140,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -181,8 +178,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 
@@ -204,8 +200,7 @@ Content-Type: application/json
 
 {
   "id": "1431b9c38ee647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -243,7 +238,6 @@ Content-Type: application/json
 
 {
   "id": "14m1b9c38qe647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```

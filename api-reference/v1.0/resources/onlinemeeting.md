@@ -32,18 +32,20 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
+| attendeeReport | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Settings related to a live event.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                  |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                               |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                              |
-| isBroadcast  | Boolean                                       | Indicates if this is a live event.                  |
+| isBroadcast  | Boolean                                       | Indicates if this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
 | isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
+| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Create a new [staff member](../resources/bookingstaffmember.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,10 +32,10 @@ POST /bookingBusinesses/{id}/staffMembers
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object. You must include the following properties:
+In the request body, supply a JSON representation of a [bookingStaffMember](../resources/bookingstaffmember.md) object. You must include the following properties:
 
 - **displayName**
 - **emailAddress**
@@ -43,10 +43,10 @@ In the request body, supply a JSON representation of [bookingStaffMember](../res
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -57,7 +57,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Content-type: application/json
-Content-length: 309
 
 {
     "@odata.type":"#microsoft.graph.bookingStaffMember",
@@ -66,6 +65,7 @@ Content-length: 309
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
     "workingHours":[
@@ -153,11 +153,16 @@ Content-length: 309
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingstaffmember-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-bookingstaffmember-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [bookingStaffMember](../resources/bookingstaffmember.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,6 +180,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar":false,
     "colorIndex":1,
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours":[
         {

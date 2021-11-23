@@ -2,7 +2,7 @@
 title: "windowsEdgeKioskType enum type"
 description: "Edge kiosk type"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

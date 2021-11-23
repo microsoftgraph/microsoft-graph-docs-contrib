@@ -2,7 +2,7 @@
 title: "Delete windows10PkcsCertificateProfile"
 description: "Deletes a windows10PkcsCertificateProfile."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

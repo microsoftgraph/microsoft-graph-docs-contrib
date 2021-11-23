@@ -2,7 +2,7 @@
 title: "ratingNewZealandTelevisionType enum type"
 description: "TV content rating labels in New Zealand"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
