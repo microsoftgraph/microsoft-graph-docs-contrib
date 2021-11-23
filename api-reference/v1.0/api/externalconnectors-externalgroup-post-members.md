@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/{connectionsId}/groups/{externalGroupId}/members
+POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
 ## Request headers

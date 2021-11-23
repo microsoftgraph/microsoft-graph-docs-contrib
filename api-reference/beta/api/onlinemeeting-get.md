@@ -17,12 +17,12 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 
 For example, you can:
 
-- Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get the attendee report of a live event in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
-- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-live-event).
+- Get details of an onlineMeeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-teams-live-event).
 - Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-Meeting attendance report, live event attendee report, and live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Meeting attendance report, Teams live event attendee report, and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -70,7 +70,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get the attendee report of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -78,7 +78,7 @@ GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-To get the recordings of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -116,11 +116,11 @@ If successful, this method returns a `200 OK` response code. The response also i
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch the attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
-- If you fetch the attendee report or recording of a live event, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
+- If you fetch the attendee report or recording of a **Microsoft Teams Live Event**, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 ## Examples
 
-### Example 1: Retrieve an online meeting by VideoTeleconferenceId
+### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
 
@@ -147,6 +147,10 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -296,7 +300,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### Example 3: Retrieve an online meeting by JoinWebUrl
+### Example 3: Retrieve an online meeting by joinWebUrl
 You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example in the Microsoft Teams client), and a seperate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
@@ -359,7 +363,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### Example 4: Fetch attendee report of a live event
+### Example 4: Fetch attendee report of a Teams live event
 
 The following example shows a request to download an attendee report.
 
@@ -392,6 +396,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -415,7 +423,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### Example 5: Fetch recording of a live event
+### Example 5: Fetch recording of a Teams live event
 
 The following example shows a request to download a recording.
 
@@ -445,6 +453,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-live-event-recording-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-live-event-recording-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -499,6 +511,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

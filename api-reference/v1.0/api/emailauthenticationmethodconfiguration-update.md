@@ -71,7 +71,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
-Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",

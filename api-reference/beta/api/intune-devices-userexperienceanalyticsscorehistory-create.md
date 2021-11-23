@@ -56,9 +56,11 @@ The following table shows the properties that are required when you create the u
 |coreSigninScore|Int32|The User experience analytics device core sign-in score. Score will be in the range 0-100, 100 is the ideal score.|
 |recommendedSoftwareScore|Int32|The User experience analytics device core sign-in score. Score will be in the range 0-100, 100 is the ideal score.|
 |appHealthOverallScore|Int32|The User experience analytics app health overall score.|
+|batteryHealthScore|Int32|The User experience analytics battery health score.|
 |startupTotalDevices|Int32|The total device count of the user experience analytics category startup performance.|
 |recommendedSoftwareTotalDevices|Int32|The total device count of the user experience analytics category recommended software.|
 |appHealthTotalDevices|Int32|The total device count of the user experience analytics category app health.|
+|batteryHealthTotalDevices|Int32|The total device count of the user experience analytics category battery health.|
 |restartScore|Int32|Restart score. Score will be in the range 0-100, 100 is the ideal score, 0 indicates excessive restarts. Valid values 0 to 9999999|
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 422
+Content-length: 485
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -84,9 +86,11 @@ Content-length: 422
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```
@@ -96,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 534
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -108,9 +112,11 @@ Content-Length: 471
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
 ```

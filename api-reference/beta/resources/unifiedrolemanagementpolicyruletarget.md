@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyRuleTarget resource type"
 description: "A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

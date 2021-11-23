@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
 ### filterMode values
 
 |Member|
@@ -1686,4 +1695,13 @@ Possible values for user account types (group membership), per Windows definitio
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
 |unknownFutureValue|

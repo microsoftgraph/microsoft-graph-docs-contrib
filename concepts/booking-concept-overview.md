@@ -30,7 +30,7 @@ Using the same unified Microsoft Graph REST endpoint, you can access the Booking
 ## API reference
 Looking for the API reference for this service?
 
-See [Microsoft Bookings API in Microsoft Graph beta](/graph/api/resources/booking-api-overviewa).
+See [Microsoft Bookings API in Microsoft Graph beta](/graph/api/resources/booking-api-overview).
 
 
 ## Next steps

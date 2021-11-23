@@ -123,6 +123,8 @@ items:
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
       - name: Migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
+      - name: Configure Azure AD Graph permissions
+        href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
@@ -281,6 +283,8 @@ items:
           href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Validate password
+          href: api/user-validatepassword.md
         - name: Invalidate refresh tokens
           href: api/user-invalidateallrefreshtokens.md
       - name: App role assignments
@@ -875,6 +879,23 @@ items:
               href: api/application-post-extensionproperty.md
             - name: Delete
               href: api/application-delete-extensionproperty.md
+        - name: Federated identity credentials (preview)
+          items:
+          - name: Overview
+            href: resources/federatedidentitycredentials-overview.md
+          - name: Federated identity credentials
+            href: resources/federatedidentitycredential.md
+            items:
+              - name: List
+                href: api/application-list-federatedidentitycredentials.md
+              - name: Create
+                href: api/application-post-federatedidentitycredentials.md
+              - name: Get
+                href: api/federatedidentitycredential-get.md
+              - name: Update
+                href: api/federatedidentitycredential-update.md
+              - name: Delete
+                href: api/federatedidentitycredential-delete.md
         - name: Owners
           items:
           - name: List owners
@@ -4660,6 +4681,8 @@ items:
               href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
             - name: Update
               href: api/intune-deviceconfig-devicecomplianceuserstatus-update.md
+          - name: Device config assignment intent
+            href: resources/intune-deviceconfig-deviceconfigassignmentintent.md
           - name: Device configuration assignment
             href: resources/intune-deviceconfig-deviceconfigurationassignment.md
             items:
@@ -7006,29 +7029,12 @@ items:
             href: resources/intune-auditing-auditproperty.md
           - name: Audit resource
             href: resources/intune-auditing-auditresource.md
-          - name: Binary management condition expression
-            href: resources/intune-fencing-binarymanagementconditionexpression.md
-          - name: Binary management condition expression operator type
-            href: resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md
           - name: Bulk managed device action result
             href: resources/intune-devices-bulkmanageddeviceactionresult.md
           - name: Chassis type
             href: resources/intune-devices-chassistype.md
           - name: Chrome o s device property
             href: resources/intune-devices-chromeosdeviceproperty.md
-          - name: Circular geofence management condition
-            href: resources/intune-fencing-circulargeofencemanagementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-circulargeofencemanagementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-circulargeofencemanagementcondition-get.md
-            - name: Create
-              href: api/intune-fencing-circulargeofencemanagementcondition-create.md
-            - name: Delete
-              href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
-            - name: Update
-              href: api/intune-fencing-circulargeofencemanagementcondition-update.md
           - name: Cloud PC connectivity issue
             href: resources/intune-devices-cloudpcconnectivityissue.md
             items:
@@ -7688,8 +7694,6 @@ items:
             href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
           - name: Device operating system summary
             href: resources/intune-devices-deviceoperatingsystemsummary.md
-          - name: Device platform type
-            href: resources/intune-fencing-deviceplatformtype.md
           - name: Device protection overview
             href: resources/intune-devices-deviceprotectionoverview.md
           - name: Device registration state
@@ -7785,13 +7789,6 @@ items:
               href: api/intune-notification-localizednotificationmessage-update.md
           - name: Locate device action result
             href: resources/intune-devices-locatedeviceactionresult.md
-          - name: Location management condition
-            href: resources/intune-fencing-locationmanagementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-locationmanagementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-locationmanagementcondition-get.md
           - name: Logged on user
             href: resources/intune-devices-loggedonuser.md
           - name: Lost mode state
@@ -7905,71 +7902,8 @@ items:
             href: resources/intune-devices-managedinstallerstatus.md
           - name: Management agent type
             href: resources/intune-devices-managementagenttype.md
-          - name: Management condition
-            href: resources/intune-fencing-managementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-managementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-managementcondition-get.md
-            - name: getManagementConditionsForPlatform
-              href: api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md
-          - name: Management condition expression
-            href: resources/intune-fencing-managementconditionexpression.md
-          - name: Management condition expression model
-            href: resources/intune-fencing-managementconditionexpressionmodel.md
-          - name: Management condition expression string
-            href: resources/intune-fencing-managementconditionexpressionstring.md
-          - name: Management condition statement
-            href: resources/intune-fencing-managementconditionstatement.md
-            items:
-            - name: List
-              href: api/intune-fencing-managementconditionstatement-list.md
-            - name: Get
-              href: api/intune-fencing-managementconditionstatement-get.md
-            - name: Create
-              href: api/intune-fencing-managementconditionstatement-create.md
-            - name: Delete
-              href: api/intune-fencing-managementconditionstatement-delete.md
-            - name: Update
-              href: api/intune-fencing-managementconditionstatement-update.md
-            - name: getManagementConditionStatementsForPlatform
-              href: api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md
           - name: Management state
             href: resources/intune-devices-managementstate.md
-          - name: Network IPv4 configuration management condition
-            href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
-            - name: Create
-              href: api/intune-fencing-networkipv4configurationmanagementcondition-create.md
-            - name: Delete
-              href: api/intune-fencing-networkipv4configurationmanagementcondition-delete.md
-            - name: Update
-              href: api/intune-fencing-networkipv4configurationmanagementcondition-update.md
-          - name: Network IPv6 configuration management condition
-            href: resources/intune-fencing-networkipv6configurationmanagementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
-            - name: Create
-              href: api/intune-fencing-networkipv6configurationmanagementcondition-create.md
-            - name: Delete
-              href: api/intune-fencing-networkipv6configurationmanagementcondition-delete.md
-            - name: Update
-              href: api/intune-fencing-networkipv6configurationmanagementcondition-update.md
-          - name: Network management condition
-            href: resources/intune-fencing-networkmanagementcondition.md
-            items:
-            - name: List
-              href: api/intune-fencing-networkmanagementcondition-list.md
-            - name: Get
-              href: api/intune-fencing-networkmanagementcondition-get.md
           - name: Notification message template
             href: resources/intune-notification-notificationmessagetemplate.md
             items:
@@ -8112,10 +8046,6 @@ items:
             href: resources/intune-devices-sharedappledeviceuser.md
           - name: Tuple_2 of execution type_ i collection_1 of operation
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
-          - name: Unary management condition expression
-            href: resources/intune-fencing-unarymanagementconditionexpression.md
-          - name: Unary management condition expression operator type
-            href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
           - name: Update windows device account action parameter
             href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
           - name: User experience analytics app health app performance by app version
@@ -8250,6 +8180,98 @@ items:
               href: api/intune-devices-userexperienceanalyticsbaseline-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsbaseline-update.md
+          - name: User experience analytics battery health app impact
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-update.md
+          - name: User experience analytics battery health capacity details
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md
+            items:
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-get.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-update.md
+          - name: User experience analytics battery health device app impact
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-update.md
+          - name: User experience analytics battery health device performance
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-update.md
+          - name: User experience analytics battery health device runtime history
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-update.md
+          - name: User experience analytics battery health model performance
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-update.md
+          - name: User experience analytics battery health os performance
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-update.md
+          - name: User experience analytics battery health runtime details
+            href: resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md
+            items:
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-get.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-update.md
           - name: User experience analytics category
             href: resources/intune-devices-userexperienceanalyticscategory.md
             items:
@@ -8516,8 +8538,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
-          - name: Variable management condition expression
-            href: resources/intune-fencing-variablemanagementconditionexpression.md
           - name: Windows defender product status
             href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
@@ -9407,6 +9427,8 @@ items:
               href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
           - name: Android managed store app assignment settings
             href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+          - name: Android managed store auto update mode
+            href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
           - name: Certificate destination store
             href: resources/intune-shared-certificatedestinationstore.md
           - name: Certificate store
@@ -9458,7 +9480,7 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: refreshDeviceComplianceReportSummarization action
+            - name: action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9512,8 +9534,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
+            - name: Create
+              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9790,6 +9812,8 @@ items:
               href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Cloud PC (preview)
         items:
+        - name: Overview
+          href: resources/cloudpc-api-overview.md
         - name: Virtual endpoint
           href: resources/virtualendpoint.md
           items:
@@ -9829,6 +9853,13 @@ items:
             href: api/cloudpcdeviceimage-getsourceimages.md
           - name: Reupload
             href: api/cloudpcdeviceimage-reupload.md
+        - name: Cloud PC gallery image
+          href: resources/cloudpcgalleryimage.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-galleryimages.md
+          - name: Get
+            href: api/cloudpcgalleryimage-get.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -9890,6 +9921,11 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-supportedregions.md
+        - name: Cloud PC service plan
+          href: resources/cloudpcserviceplan.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-serviceplans.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -14216,6 +14252,10 @@ items:
           href: api/chat-list-operations.md
         - name: Get operation
           href: api/teamsasyncoperation-get.md
+        - name: Mark chat as read
+          href: api/chat-markchatreadforuser.md
+        - name: Mark chat as unread
+          href: api/chat-markchatunreadforuser.md
       - name: Chat message
         href: resources/chatmessage.md
         items:

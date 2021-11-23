@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of privilegedRole object
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get privilegedRole
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -91,7 +95,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 46
 
 {
   "id": "id-value",
