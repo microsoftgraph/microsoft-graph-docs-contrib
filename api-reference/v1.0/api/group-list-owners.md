@@ -115,7 +115,7 @@ Content-type: application/json
             "@odata.type": "#microsoft.graph.user",
             "id": "5c70937c-d9ea-4a47-8852-ab77630f803d",
             "accountEnabled": true,
-            "displayName": "Diego Siciliani"
+            "displayName": "Diego Siciliani",
             "userPrincipalName": "DiegoS@contoso.com"
         }
     ]
