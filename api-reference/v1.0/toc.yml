@@ -119,6 +119,8 @@ items:
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
       - name: Migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+      - name: Configure Azure AD Graph permissions
+        href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
@@ -331,15 +333,15 @@ items:
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Check member groups
-          href: api/user-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
           href: api/user-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member objects
-          href: api/user-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Get member groups
-          href: api/user-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
@@ -543,13 +545,13 @@ items:
         - name: Assign license
           href: api/group-assignlicense.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
           href: api/group-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
           href: api/group-getmemberobjects.md
         - name: Group setting
@@ -922,11 +924,11 @@ items:
           - name: List transitive member of
             href: api/serviceprincipal-list-transitivememberof.md
           - name: Check member groups
-            href: api/serviceprincipal-checkmembergroups.md
+            href: api/directoryobject-checkmembergroups.md
           - name: Check member objects
             href: api/serviceprincipal-checkmemberobjects.md
           - name: Get member groups
-            href: api/serviceprincipal-getmembergroups.md
+            href: api/directoryobject-getmembergroups.md
           - name: Get member objects
             href: api/serviceprincipal-getmemberobjects.md
         - name: Owners
@@ -4656,9 +4658,9 @@ items:
             - name: List memberOf
               href: api/orgcontact-list-memberof.md
             - name: Get member groups
-              href: api/orgcontact-getmembergroups.md
+              href: api/directoryobject-getmembergroups.md
             - name: Check member groups
-              href: api/orgcontact-checkmembergroups.md
+              href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
             href: resources/directoryobject.md
             items:
@@ -4859,6 +4861,8 @@ items:
             href: resources/builtinidentityprovider.md
           - name: Social identity provider
             href: resources/socialidentityprovider.md
+          - name: Apple identity provider
+            href: resources/applemanagedidentityprovider.md
           - name: List
             href: api/identitycontainer-list-identityproviders.md
           - name: Create
@@ -6305,11 +6309,11 @@ items:
         - name: Remove owner
           href: api/group-delete-owners.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
           href: api/group-getmemberobjects.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
         - name: Get deleted group
