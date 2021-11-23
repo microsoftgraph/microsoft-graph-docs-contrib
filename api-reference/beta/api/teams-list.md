@@ -1,5 +1,5 @@
 ---
-title: "List teams in an organization"
+title: "List teams"
 description: "List all teams in an organization"
 author: "akhilkohlimicrosoft"
 ms.localizationpriority: high
@@ -113,12 +113,14 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_teams"
 }-->
-``http
+
+```http
 GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&$top=2
 ```
----
+
 
 #### Response
+
 The following is an example of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
