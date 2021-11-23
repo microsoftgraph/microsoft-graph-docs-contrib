@@ -114,7 +114,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_teams"
 }-->
-```msgraph-interactive
+``http
 GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&$top=2
 ```
 ---
@@ -160,7 +160,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_teams"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Team'&$select=id,description
 ```
 ---
