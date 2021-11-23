@@ -63,7 +63,7 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 ![A set of retrievable properties rendered as a result](./images/connectors-images/connecting-external-content-manage-schema-4.svg)
 
-*A set of retrievable properties (`title`, `lastEditedBy` etc.) rendered as a result.*
+*A set of retrievable properties (`title` and `lastEditedBy`) rendered as a result.*
 
 ### Refinable
 
@@ -79,10 +79,10 @@ A semantic label is a well-known tag published by Microsoft that you can add aga
 Semantic labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
 
 * Data integration in heterogenous experiences
-* Building common knowledge graphs (for example, Cortex, Suggestions & QF)
+* Building common knowledge graphs (for example, Cortex, Suggestions, and QF)
 * Default templates for user experiences
 
-You can assign semantic labels to your source properties on the "Assign property labels" page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
+You can assign semantic labels to your source properties on the **Assign property labels** page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
 
 | Label                 | Description                                                                          |
 |---------------------- |------------------------------------------------------------------------------------- |

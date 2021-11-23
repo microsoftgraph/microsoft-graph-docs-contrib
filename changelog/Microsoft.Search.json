@@ -800,10 +800,10 @@
       "ChangeList": [
         {
           "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
-          "ApiChange": "Resource",
+          "ApiChange": "Method",
           "ChangedApiName": "schema",
           "ChangeType": "Addition",
-          "Description": "Added the **update schema** method to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource type.",
+          "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/externalconnectors-schema-update?view=graph-rest-beta) method to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource type.",
           "Target": "schema"
         }
       ],

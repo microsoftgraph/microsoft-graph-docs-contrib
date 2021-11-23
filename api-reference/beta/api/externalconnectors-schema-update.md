@@ -45,7 +45,7 @@ PATCH /external/connections/{connectionId}/schema
 
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
-When you register a custom item schema, the `schema` object **must** have the `baseType` property set to `microsoft.graph.externalItem` and must contain the `properties` property. The `properties` object **must** contain at least one property, up to a maximum of 128.
+When you register a custom item schema, the `schema` object **must** have the `baseType` property set to `microsoft.graph.externalItem` and **must** contain the `properties` property. The `properties` object **must** contain at least one property, up to a maximum of 128.
 
 ## Response
 
