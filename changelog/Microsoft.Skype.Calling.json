@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Action",
+          "ChangedApiName": "setUserPreferredPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the setUserPreferredPresence action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Action",
+          "ChangedApiName": "clearUserPreferredPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the clearUserPreferredPresence action.",
+          "Target": "presence"
+        },
+        {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Concept",
+          "ChangedApiName": "permissions-reference",
+          "ChangeType": "Update",
+          "Description": "Added descriptions for the new presence permissions",
+          "Target": "presence"
+        }
+      ],
+      "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-24T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Presence"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
