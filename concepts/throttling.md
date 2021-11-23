@@ -4,7 +4,6 @@ description: "Throttling limits the number of concurrent calls to a service to p
 author: "davidmu1"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
