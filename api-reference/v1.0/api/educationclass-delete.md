@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an [educationClass](../resources/educationclass.md).
+Delete an [educationClass](../resources/educationclass.md). Because a class is also a universal group, deleting a class deletes the group.
 
 > [!IMPORTANT]
 > Because a class is also a universal group, deleting a class deletes the group.
