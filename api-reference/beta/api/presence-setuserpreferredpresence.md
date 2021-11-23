@@ -26,8 +26,8 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
-| Delegated (personal Microsoft account) | Presence.ReadWrite                          |
+| Delegated (work or school account)     | Presence.ReadWrite                          |
+| Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
 ## HTTP Request
@@ -60,7 +60,7 @@ Supported combinations of `availability` and `activity` are:
 | DoNotDisturb | DoNotDisturb | Set the user preferred presence as DoNotDisturb.    |
 | BeRightBack  | BeRightBack  | Set the user preferred presence as BeRightBack.     |
 | Away         | Away         | Set the user preferred presence as Away.            |
-| Offline      | OffWork      | Set the user preferred presence as Offline/OffWork. |
+| Offline      | OffWork      | Set the user preferred presence as Offline. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.

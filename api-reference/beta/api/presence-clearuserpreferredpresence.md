@@ -20,8 +20,8 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
-| Delegated (personal Microsoft account) | Presence.ReadWrite                          |
+| Delegated (work or school account)     | Presence.ReadWrite                          |
+| Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
 ## HTTP Request
@@ -37,7 +37,7 @@ POST /users/{userId}/presence/clearUserPreferredPresence
 
 ## Request body
 
-This request does not have a body.
+This request only contains an empty object.
 
 ## Response
 If successful, this method returns a `200 OK` response code.
