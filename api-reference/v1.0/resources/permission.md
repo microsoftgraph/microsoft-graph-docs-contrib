@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
 
 Sharing permissions have a number of different forms.
-The **Permission** resource represents these different forms through facets on the resource.
+The **permission** resource represents these different forms through facets on the resource.
 
 OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
-GrantedTo and GrantedToIdentities will be deprecated going forward and the response will be migrated to GrantedToV2 and GrantedToIdentitiesV2 respectively under appropriate property names.
+**grantedTo** and **grantedToIdentities** will be deprecated going forward and the response will be migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
 
 ## JSON representation
 
@@ -65,7 +65,7 @@ Here is a JSON representation of the resource
 | Property                         | Type                                      | Description |
 |:---------------------------------|:------------------------------------------|:-----------------
 | id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only. |
-| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users & applications for this permission. Read-only. |
+| grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only. |
 | grantedToIdentitiesV2            | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only. |
 | invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
 | inheritedFrom                    | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only. |
@@ -74,7 +74,7 @@ Here is a JSON representation of the resource
 | shareId                          | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only. |
 | expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
 | hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.. |
-| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only. |
+| grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users and applications for this permission. Read-only. |
 | grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only. |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.

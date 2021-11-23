@@ -3,7 +3,7 @@ author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentitySet resource type
 ms.localizationpriority: medium
-description: "Represents a keyed collection of SharePointIdentity and Identity resources."
+description: "Represents a keyed collection of sharePointIdentity and identity resources."
 ms.prod: "sharePoint"
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ The **sharePointIdentitySet** resource is a keyed collection of [sharePointIdent
 
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
-For usage of **sharePointIdentitySet** resource, see [DriveItem][].
+For usage of the **sharePointIdentitySet** resource, see [DriveItem][].
 
 ## Properties
 
