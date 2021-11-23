@@ -33,13 +33,6 @@ GET /teams
 ## Optional query parameters
 
 This method supports the  `$filter`, `$select`, `$top`, `$skiptoken`, `$count` [OData query parameters](/graph/query-parameters) to help customize the response.
-| Name       | Description |
-|:---------------|:--------|
-|$select | Filters properties (columns). |
-|$skip	 | Used to implement paging and can be used together with $top to manually page results. |
-|$top	   | Sets the page size of results. |
-|$filter |	Filters results (rows). |
-|$count	 |Retrieves the total count of matching resources. |
 
 ## Request headers
 | Header       | Value |
