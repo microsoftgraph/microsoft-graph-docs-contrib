@@ -4,7 +4,7 @@ ms.date: 09/09/2021
 title: sharePointIdentitySet resource type
 ms.localizationpriority: medium
 description: "Represents a keyed collection of sharePointIdentity and identity resources."
-ms.prod: "sharePoint"
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 # sharePointIdentitySet resource type

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Change sharing permissions
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # Update sharing permission
 

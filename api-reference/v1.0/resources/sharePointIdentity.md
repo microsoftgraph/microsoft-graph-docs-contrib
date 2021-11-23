@@ -4,7 +4,7 @@ ms.date: 09/04/2021
 title: sharePointIdentity resource type
 ms.localizationpriority: medium
 description: "Represents a SharePoint identity of an actor."
-ms.prod: "sharePoint"
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
