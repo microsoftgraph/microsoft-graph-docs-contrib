@@ -656,4 +656,4 @@ You've learned how to review access to privileged roles in Azure AD. You can als
 
 + [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
-+ [https://docs.microsoft.com/en-us/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide)
++ [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide)
