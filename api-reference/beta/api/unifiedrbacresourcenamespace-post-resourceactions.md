@@ -72,7 +72,7 @@ Content-Type: application/json
 Content-length: 227
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.unifiedRbacResourceAction",
+  "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
   "actionVerb": "String",
   "description": "String",
   "isEnabledForCustomRole": "Boolean",
@@ -87,7 +87,7 @@ Content-length: 227
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.unifiedRbacResourceAction"
+  "@odata.type": "microsoft.graph.unifiedRbacResourceAction"
 }
 -->
 ``` http
@@ -95,7 +95,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.unifiedRbacResourceAction",
+  "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
   "id": "c79db7a6-b7a6-c79d-a6b7-9dc7a6b79dc7",
   "actionVerb": "String",
   "description": "String",

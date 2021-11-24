@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectorySer
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.unifiedRbacResourceNamespace)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceNamespace)"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.unifiedRbacResourceNamespace",
+      "@odata.type": "#microsoft.graph.unifiedRbacResourceNamespace",
       "id": "4212987e-987e-4212-7e98-12427e981242",
       "name": "String"
     }

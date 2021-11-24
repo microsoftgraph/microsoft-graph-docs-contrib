@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/unifiedRbacResourceNamespace/resourceAction
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.unifiedRbacResourceAction)"
+  "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.unifiedRbacResourceAction",
+      "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
       "id": "c79db7a6-b7a6-c79d-a6b7-9dc7a6b79dc7",
       "actionVerb": "String",
       "description": "String",
