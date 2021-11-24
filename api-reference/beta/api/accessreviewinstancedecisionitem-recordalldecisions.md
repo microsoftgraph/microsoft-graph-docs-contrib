@@ -66,7 +66,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/recordAllDecisions
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')/recordAllDecisions
 Content-Type: application/json
 Content-length: 113
 
