@@ -37,7 +37,7 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceScope|[unifiedRbacResourceScope](../resources/unifiedrbacresourcescope.md)|**TODO: Add Description**|
+|resourceNamespace|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
