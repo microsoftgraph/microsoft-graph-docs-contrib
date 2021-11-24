@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+As a reviewer for an access review, record a decision on every [accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) assigned to you that matches the principal and/or resource IDs specified. If no IDs are specified, the decisions will apply to every decision item assigned to the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/accessReviews/decisions//filterByCurrentUser(on='reviewer')/recordAllDecisions
+POST /identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')/recordAllDecisions
 ```
 
 ## Request headers
@@ -46,10 +46,10 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|decision|String| The decision to provide |
-|justification|String|Justification to provide|
-|principalId|String|A specific principalId to approve/deny|
-|resourceId|String|A specific resourceId to approve/deny|
+|decision|String| The decision to provide: Approve, Deny, DontKnow. |
+|justification|String|Justification to provide for the decision|
+|principalId|String|If provided, all decision items matching the principalId will have this decision recorded|
+|resourceId|String|If provided, all decision items matching the resourceId will have this decision recorded|
 
 
 
