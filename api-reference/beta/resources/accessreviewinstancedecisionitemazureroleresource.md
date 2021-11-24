@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource that is identified by an accessReviewInstanceDecisionItemAzureRoleResource object. accessReviewInstanceDecisionItemAzureRoleResource is an open type that allows for other properties to be passed in.
+Every decision item in an access review represents a principal's access to a resource. All accessReviewInstanceDecisionItemAzureRoleResource objects represent access to Azure resource roles. accessReviewInstanceDecisionItemAzureRoleResource is an open type that allows for other properties to be passed in.
 
 ## Properties
 |Property|Type|Description|
