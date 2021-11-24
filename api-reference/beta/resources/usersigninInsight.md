@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **usersignininsight** model represents an insight which contains details of the user's last sign in date time.
+The **usersignininsight** model represents an insight for reviewers based on the user's last sign in date time.
 
 ## Properties
 | Property    | Type   | Description |
