@@ -1,6 +1,6 @@
 ---
-title: "userlastsignInrecommendationinsightsetting resource type"
-description: "In the Azure AD access reviews feature, the `userlastsignInrecommendationinsightsetting` represents the settings associated with the last sign in insight included in the review."
+title: "userlastsigninrecommendationinsightsetting resource type"
+description: "In the Azure AD access reviews feature, the `userlastsignInrecommendationinsightsetting` represents the settings associated with the last sign-in based insight included in the review, to aid reviewer decision-making."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **userlastsignInrecommendationinsightsetting** allows you to configure last sign in as an insights for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
+The **userlastsignInrecommendationinsightsetting** allows you to configure last sign-in as an insight to aid reviewer decision-making for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
 
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| signInScope| userSignInRecommendationScope | Indicates whether signInScope is tenant or application |
+| signInScope| userSignInRecommendationScope | Indicates whether inactivity is calculated based on activity in the tenant or in the application. Application is only relevant when the access review is a review of assignment to an application. |
 | recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
 
 ## Relationships
