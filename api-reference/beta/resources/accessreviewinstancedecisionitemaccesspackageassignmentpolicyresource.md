@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource. All accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource objects represent resources that represent access package assignment policies. accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource is an open type that allows for other properties to be passed in.
+Every decision item in an access review represents a principal's access to a resource. All accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource objects represent access to access package assignment policies. accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource is an open type that allows for other properties to be passed in.
 
 ## Properties
 |Property|Type|Description|
