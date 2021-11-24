@@ -393,69 +393,6 @@ You can now record or submit your decisions for the access review instances.
 
 ## Step 4: Record decisions
 
-<!--You'll now record decisions for the access review. The scope of your decision can be one of the options:
-+ A decision that applies for a single principal only
-+ A decision that applies for a single resource only
-+ A decision that applies for a single principal to a single resource
-+ **What does neither do?**
-
-In this step, you'll record a decision that applies for a single principal to a single resource. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll therefore deny Adele access while approving access for the IT Helpdesk group.
-
-In the following requests, replace the following values:
-
-+ `a13c348b-dc1c-47b5-8c58-b0d12b35a18b` with the value of the access review that you created in Step 1.
-+ `f282e54c-4eed-47a4-be9a-da00ab38aa8f` with the value of the access review instance you'd like to retrieve decisions for.
-+ `86da86bd-272e-4ae4-998e-3d803d63cf0d` with the value of IT Helpdesk group's id.
-+ `99e44b05-c10b-4e95-a523-e2732bbaba1e` with the value of Adele's id
-
-`fe930be7-5e62-47db-91af-98c3a49a38b1` is the Azure AD identifier of the User Administrator role that is the resource that's the subject of the review.
-
-### Request
-
-In the following request, you'll approve access for the IT Helpdesk group.
-
-```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/batchRecordDecisions
-Content-type: application/json
-
-{
-    "decision": "Approve",
-    "justification": "The IT Helpdesk requires continued access to the User Administrator role to manage user account support requests, lifecycle, and access to resources",
-    "resourceId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
-    "principalId": "86da86bd-272e-4ae4-998e-3d803d63cf0d"
-}
-```
-
-### Response
-
-```
-HTTP/1.1 204 No Content
-```
-
-### Request
-
-In the following request, we'll deny access for Adele Vance.
-
-```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/batchRecordDecisions
-Content-type: application/json
-
-{
-    "decision": "Approve",
-    "justification": "Adele Vance should join an allowed group to have continued access to the User Administrator role. Refer to the company policy '#132487: Privileged roles' for more details.",
-    "resourceId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
-    "principalId": "99e44b05-c10b-4e95-a523-e2732bbaba1e"
-}
-```
-
-### Response
-
-```
-HTTP/1.1 204 No Content
-```
-
--->
-
 You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll therefore deny Adele access while approving access for the IT Helpdesk group.
 
 In the following requests, replace the following values:
@@ -625,6 +562,75 @@ Content-type: application/json
 }
 ```
 
+<!---
+## Step 6: Retrieve access review history definitions
+
+Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all acecssReviewScheduleDefinitions scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
+
+### Request
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
+
+{
+    "displayName": "Last quarter's group reviews April 2021",
+    "decisions": [],
+    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances')"
+        }
+    ]
+}
+```
+
+### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
+    "id": "1e6049e2-9015-41ed-9d89-8622ff3146bd",
+    "displayName": "Last quarter's group reviews April 2021",
+    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
+    "decisions": [
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
+    ],
+    "status": "requested",
+    "createdDateTime": "2021-11-24T16:33:25.1344465Z",
+    "fulfilledDateTime": null,
+    "downloadUri": null,
+    "createdBy": {
+        "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+        "displayName": "MOD Administrator",
+        "type": null,
+        "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
+    },
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances')",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ]
+}
+```
+The response object above does not contain a downloadUri value. Give it a few moments for the file to be generated and run a GET request. The downloadUri should then be populated with a link that allows you to retrieve the history report.
+
+
+--->
+
+
 ## Step 6: Clean up resources
 
 Delete the accessReviewScheduleDefinition object that you created for this tutorial. This will remove the settings, instances, and decisions associated with the access review.
@@ -641,6 +647,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
+## Conclusion
+
+You've learnt how to review access to privileged roles in Azure AD. In addition to privileged Azure AD roles, you can also use the access reviews API to review access to Azure Resource roles. Using the access reviews API, the organization can continually govern privileged access.
 
 ## See also
 
