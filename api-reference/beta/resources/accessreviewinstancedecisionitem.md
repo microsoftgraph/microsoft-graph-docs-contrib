@@ -54,7 +54,7 @@ Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an i
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 | instance |[accessReviewInstance](accessreviewinstance.md) | There is exactly one accessReviewInstance associated with each decision. The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on. |
-| insights |[governanceInsight](governanceinsight.md) collection | There are multiple insights associated with an accessReviewInstance. Can be expanded |
+| insights |[governanceInsight](governanceinsight.md) collection | There can be multiple insights associated with an accessReviewInstanceDecisionItem. Insights are recommendations to reviewers on whether to approve or deny a decision. |
 
 
 ## JSON representation
