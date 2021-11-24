@@ -98,7 +98,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('9a5e4047-c1dc-4243-9628-580d3c64b80c')/assignmentCategories/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('9a5e4047-c1dc-4243-9628-580d3c64b80c')/assignmentCategories/$entity",
     "displayName": "Quizzes",
     "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
 }
