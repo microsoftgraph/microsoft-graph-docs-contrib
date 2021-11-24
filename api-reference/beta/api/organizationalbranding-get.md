@@ -137,6 +137,7 @@ Content-Type: application/json
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
     "usernameHintText": "",
     "loginPageTextVisibilitySettings": {
+      "hideAccountResetCredentials": false,
       "hideTermsOfUse": true,
       "hidePrivacyAndCookies": true
     }

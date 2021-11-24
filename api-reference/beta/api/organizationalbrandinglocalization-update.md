@@ -61,7 +61,7 @@ The following table specifies the properties that can be updated.
 | customTermsOfUseText | String | String to replace the display text for the Terms of Use” hyperlink in the footer. This text must be Unicode and not exceed 256 characters. |
 | favicon | Stream | A custom browser icon (favicon) to replace a default “Microsoft logo” value utilizing AAD Company Branding blade. |
 | headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
-| loginPageTextVisibilitySettings | Complex type | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
+| loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
 | hideAccountResetCredentials | Boolean | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
 | hideTermsOfUse | Boolean | Option to hide “Terms of Use” hyperlink in the footer. |
 | hidePrivacyAndCookies | Boolean | Option to hide "Microsoft Privacy & Cookies" URL in the footer. |
