@@ -2,6 +2,32 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceNamespace",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceNamespace](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourcenamespace?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceNamespace"
+        },
+        {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceAction](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceAction"
+        }
+      ],
+        "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-11-24T05:11:31.325Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
       { 
         "Id": "4bf37336-391f-4ce3-909b-03314160aade",
         "ApiChange": "Method",
