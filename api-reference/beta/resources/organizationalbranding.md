@@ -64,7 +64,6 @@ You can't change your original configuration's language. However, companies can 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | localizations | [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
-| text visibility | [loginPageTextVisibilitySettings](../resources/loginpagetextvisibilitysettings.md) complex type | Represent the various texts that can be hidden. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
