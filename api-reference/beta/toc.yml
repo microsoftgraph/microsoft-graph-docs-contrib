@@ -11265,6 +11265,32 @@ items:
               href: api/unifiedRoleManagementPolicyRule-get.md
             - name: Update
               href: api/unifiedRoleManagementPolicyRule-update.md
+          - name: Resource namespace
+            href: resources/unifiedrbacresourceaction.md
+            items:
+            - name: List
+              href: api/unifiedrbacresourcenamespace-list.md
+            - name: Get
+              href: api/unifiedrbacresourcenamespace-get.md
+            - name: Update
+              href: api/unifiedrbacresourcenamespace-update.md
+            - name: Delete
+              href: api/unifiedrbacresourcenamespace-delete.md
+            - name: List resource actions
+              href: api/unifiedrbacresourcenamespace-list-resourceactions.md
+          - name: Resource action
+            href: resources/unifiedrbacresourceaction.md
+            items:
+            - name: List
+              href: api/unifiedrbacresourceaction-list.md
+            - name: Create
+              href: api/unifiedrbacresourcenamespace-post-resourceactions.md
+            - name: Get
+              href: api/unifiedrbacresourceaction-get.md
+            - name: Update
+              href: api/unifiedrbacresourceaction-update.md
+            - name: Delete
+              href: api/unifiedrbacresourceaction-delete.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
