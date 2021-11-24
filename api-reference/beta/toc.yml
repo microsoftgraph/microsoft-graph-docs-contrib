@@ -11266,7 +11266,7 @@ items:
             - name: Update
               href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Resource namespace
-            href: resources/unifiedrbacresourceaction.md
+            href: resources/unifiedrbacresourcenamespace.md
             items:
             - name: List
               href: api/unifiedrbacresourcenamespace-list.md
