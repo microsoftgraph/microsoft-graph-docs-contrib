@@ -1,6 +1,6 @@
 ---
 title: "governanceinsight resource type"
-description: "In the Azure AD access reviews feature, the `governanceinsight` represents a type of insight included in the review."
+description: "In the Azure AD access reviews feature, the `governanceinsight` represents a type of insight included in the review to aid reviewer decision making."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **governanceinsight** model represents insights presented to the reviewer for an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md). Note that this object is abstract with multiple derived types
+The **governanceinsight** model represents insights presented to the reviewer for an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md). Insights are recommendations to reviewers to help them complete access reviews. Note that this object is abstract with multiple derived types. 
 
 ## Properties
 | Property    | Type   | Description |
