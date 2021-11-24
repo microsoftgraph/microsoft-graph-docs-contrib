@@ -1,9 +1,9 @@
 ---
 title: "Get unifiedRbacResourceAction"
 description: "Read the properties and relationships of an unifiedRbacResourceAction object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "abhijeetsinha"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
