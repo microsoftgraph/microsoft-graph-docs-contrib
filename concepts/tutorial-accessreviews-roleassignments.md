@@ -10,7 +10,7 @@ ms.prod: "governance"
 
 Contoso Limited is a growing service provider that has delegated various Azure AD administrator privileges to users, groups, and service principals in the organization. The company needs to ensure only the right assignees have access to privileged roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
 
-In this tutorial, you as the Global Administrator of Contoso will use the access reviews API to create a recurring access review of users and groups with access (both active and eligible) to privileged roles. You'll then create a review history report that will be shared with the company’s auditors.
+In this tutorial, you as the Global Administrator of Contoso will use the access reviews API to create a recurring access review of users and groups with access to privileged roles. This access includes both active and eligible roles.
 
 ## Prerequisites
 
@@ -42,10 +42,10 @@ The following access review schedule definition has the following settings:
 + The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator role.
 + The scope (**resourceScopes**) of the review is on both active and eligible User Administrator assignments.
 + You as the user in an Identity Governance Administrator role will be the reviewer.
-+ The user in the Global Administrator role is the fallback reviewer. If decisions aren't recorded when an access review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
++ The user in the Global Administrator role is the fallback reviewer. If the reviewers haven't recorded decisions when the review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
 + The approver must provide justification before they approve access to the privileged role.
-+ The default decision is `Deny` when neither the main nor the fallback reviewers respond to the access review request before an access review instance expires.
-+ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, you must manually apply the decisions.
++ The default decision is `Deny` when the main and fallback reviewers don't respond to the access review request before the instance expires.
++ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, the decisions aren't automatically applied but you must manually apply them.
 + The review recurs every three months over a period of three days and doesn't end.
 
 ### Request
@@ -288,11 +288,11 @@ Content-type: application/json
 }
 ```
 
-The status of this access review instance is `InProgress`. This means that the decisions haven't been made, nor has the period for this access review instance expired.
+The status of this access review instance is `InProgress`. This means that the decisions haven't been made, and the period for this access review instance hasn't expired.
 
 ## Step 3: Retrieve access review decisions before recording any decisions
 
-In this step, you'll retrieve the access review decision items before we complete the access review; that is, either before the reviewer submits a decision or before the access review instance expires.
+In this step, you'll retrieve the access review decision items before we complete the access review. An access review is completed either when all reviewers submit decisions or when the access review instance expires.
 
 ### Request
 
@@ -393,7 +393,7 @@ You can now record or submit your decisions for the access review instances.
 
 ## Step 4: Record decisions
 
-You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll therefore deny Adele access while approving access for the IT Helpdesk group.
+You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll deny Adele access while approving access for the IT Helpdesk group.
 
 In the following requests, replace the following values:
 
@@ -444,13 +444,13 @@ HTTP/1.1 204 No Content
 ```
 
 When you retrieve the access review decisions, they have the following settings:
-+ The access review decision for the IT Helpdesk group is Approve while for Adele is Deny.
++ The access review decision for the IT Helpdesk group is `Approve` while for Adele is `Deny`.
 + The reviewedBy object contains your details as the reviewer.
-+ The applyResult is **New** meaning the decisions haven't yet been applied. You must manually apply the decisions.
++ The applyResult is `New` meaning the decisions haven't been applied.
 
-Even though you've recorded all the decisions that were pending for this accessReviewInstance, these decisions have not yet been applied to the resource and principal objects; for example, Adele still has access to the privileged role. This is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, nor has the accessReviewInstance period expired and autocompleted.
+Even though you've recorded all the decisions that were pending for this accessReviewInstance, these decisions haven't been applied to the resource and principal objects. For example, Adele still has access to the privileged role. This is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, nor has the accessReviewInstance period expired and autocompleted.
 
-In this tutorial, you won't stop the accessReviewInstance manually. Instead, you will let the accessReviewInstance expire and autocomplete and then apply the access review decisions.
+In this tutorial, you won't stop the accessReviewInstance manually but, you'll let the accessReviewInstance expire and autocomplete and then apply the access review decisions.
 
 ## Step 5: Apply access review decisions
 
@@ -650,7 +650,7 @@ Content-type: text/plain
 
 ## Conclusion
 
-You've learnt how to review access to privileged roles in Azure AD. In addition to privileged Azure AD roles, you can also use the access reviews API to review access to Azure Resource roles. Using the access reviews API, the organization can continually govern privileged access.
+You've learned how to review access to privileged roles in Azure AD. You can also use the access reviews API to review access to Azure Resource roles. Using this API, the organization can continually govern privileged access to its resources.
 
 ## See also
 
