@@ -121,7 +121,7 @@ There are no exceptions to this deprecation. Your apps will no longer receive re
 
 ## My organization runs Azure Stack Hub. What actions should I take?
 
-If your organization runs Azure Stack Hub, the most important action is to follow the [Azure Stack Hub servicing policy](https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-servicing-policy?view=azs-2102).
+If your organization runs Azure Stack Hub, the most important action is to follow the [Azure Stack Hub servicing policy](/azure-stack/operator/azure-stack-servicing-policy).
 
 If necessary, Azure Stack Hub will continue using Azure AD Graph beyond June 30, 2022, to ensure all systems migrate to using Microsoft Graph. To migrate, customers will be notified through the Azure Stack Hub admin portal to update their home and guest tenant directories. The migration to Microsoft Graph will be managed by the integrated system update experience.
 
