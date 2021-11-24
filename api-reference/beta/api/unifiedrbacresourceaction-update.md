@@ -85,7 +85,8 @@ Content-length: 215
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRbacResourceAction"
 }
 -->
 ``` http
