@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about a channel that the flag 'isFavoriteByDefault' is unset.
-A channel is no longer visible to all team members in the list of channels under a team if it has the flag 'isFavoriteByDefault' set to false.
+Represents the details of an event message about a channel that the flag `isFavoriteByDefault` is unset.
 
+A channel is no longer visible to all team members in the list of channels under a team if the flag `isFavoriteByDefault` is `false`.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
