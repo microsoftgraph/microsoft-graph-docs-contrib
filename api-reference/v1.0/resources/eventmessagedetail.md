@@ -1,6 +1,6 @@
 ---
 title: "eventMessageDetail resource type"
-description: "Represents the base type for event message detail."
+description: "Represents details of a system event message."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This abstract type represents details of a system event message.
+Represents details of a system event message.
 
 System messages are messages generated for events such as members added to a channel, members added to a chat, and team description updated.
 
