@@ -68,9 +68,7 @@ GET https://graph.microsoft.com/beta/security/incidents/{incidentId}
   "@odata.type": "microsoft.graph.incident"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+``` json
 {
     "@odata.type": "#microsoft.graph.incident",
     "id": "2972395",

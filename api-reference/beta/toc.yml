@@ -13680,6 +13680,14 @@ items:
           href: api/security-list-incidents.md
         - name: Get incident
           href: api/security-get-incident.md   
+      - name: Alerts_v2 (preview)
+        items:
+        - name: Alert_v2
+          href: resources/alert_v2.md
+        - name: List alerts_v2
+          href: api/security-list-alert_v2.md
+        - name: Get alert_v2
+          href: api/security-get-alert_v2.md 
       - name: Information protection
         items:
         - name: Labels

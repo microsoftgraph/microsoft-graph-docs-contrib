@@ -178,6 +178,41 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Alerts_v2 permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Alerts.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
+| _Alerts.ReadWrite.All_ | Read and write to alerts | Allows the app to read and write alerts, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Alerts.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
+| _Alerts.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
+
+### Remarks
+
+Alerts permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _Alerts.Read.All_: Read all alerts in an organization that the user is allowed to read (`GET /security/alerts_v2`)
+* _Alerts.ReadWrite.All_: Read and write to all alerts in an organization that the user is allowed to read and write (`GET /security/alerts_v2`)
+
+#### Application
+
+* _Alerts.Read.All_: Read all alerts in an organization (`GET /security/alerts_v2`)
+* _Alerts.ReadWrite.All_: Read and write to all alerts in an organization (`GET /security/alerts`)
+
+---
+
 ## Analytics resource permissions
 
 #### Delegated permissions
