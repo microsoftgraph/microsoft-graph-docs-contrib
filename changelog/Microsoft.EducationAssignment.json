@@ -7,16 +7,16 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) resource.",
-          "Target": "delta"
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
         },
         {
           "Id": "c18b29da-1826-463a-b628-d0c0b8a612df",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) resource.",
-          "Target": "delta"
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [educationCategory](https://docs.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta) resource.",
+          "Target": "educationCategory"
         }
       ],
       "Id": "c18b29da-1826-463a-b628-d0c0b8a612df",

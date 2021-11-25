@@ -12,13 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. 
+Retrieve a list of [assignment](../resources/educationassignment.md) objects with delta support. 
 
-A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
+A teacher or an application executing with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
-Delta query supports **Assignments** to effectively query newly created or modified entities without performing a full read of the Assignments every request.
+Delta query supports **assignments** to effectively query new or modified entities without performing a full read of the **assignments** every request.
 
-> Delete operations are not covered.
+Delete operations are not covered.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-`$expand`, `$orderby`, `$search` and `$filter` options are NOT supported in Delta query.
+`$expand`, `$orderby`, `$search` and `$filter` options are not supported in delta query.
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this function returns a `200 OK` response code and a [educationAs
 
 ## Examples
 
-### Example 1: Get assignments with Delta query support
+### Example 1: Get assignments with delta query support
 
 #### Request
 
@@ -70,7 +70,7 @@ Use the `$top` parameter to specify the number of assignments to be returned. Th
   "name": "get_assignments_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
 ```
 ---
@@ -189,7 +189,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get next set of assignments with Delta query support
+### Example 2: Get next set of assignments with delta query support
 
 #### Request
 
@@ -202,7 +202,7 @@ Use the `@odata.nextLink` value from the previous call for this request.
   "name": "get_assignments_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs
 ```
 ---
@@ -322,7 +322,7 @@ Content-length: 344
 }
 ```
 
-### Example 3: Get the created and modified assignments using Delta token
+### Example 3: Get the created and modified assignments using delta token
 
 #### Request
 
@@ -335,7 +335,7 @@ Use the `@odata.deltaLink` value from the previous call for this request.
   "name": "get_assignments_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klERNmJQjnBn7MHqwXZ6L8GlI3VPnya3E-p1bisiZX97jLvQUAopseIYhvnD6v7fiYrk.fVsHempT6X2CiBh6aN9Ex5nVJ71adKdcf-mdke8OHKs
 ```
 ---

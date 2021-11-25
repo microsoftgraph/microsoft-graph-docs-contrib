@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Examples 1: Get Assignment Categories
+### Examples 1: Get assignment categories
 
 #### Request
 

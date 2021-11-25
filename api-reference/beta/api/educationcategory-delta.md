@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of [educationCategory](../resources/educationcategory.md) objects with delta support.
 
-Delta query supports **assignment categories** to effectively query newly created or modified entities without performing a full read of the Categories every request.
+Delta query supports **assignment categories** to effectively query new or modified entities without performing a full read of the **categories** every request.
 
-> Delete operations are not covered.
+Delete operations are not covered.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-`$expand`, `$orderby`, `$search` and `$filter` options are NOT supported in Delta query.
+`$expand`, `$orderby`, `$search` and `$filter` options are not supported in Delta query.
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ If successful, this function returns a `200 OK` response code and a [educationCa
 
 ## Examples
 
-### Example 1: Get Assignment Categories with Delta query support
+### Example 1: Get assignment categories with delta query support
 
 #### Request
 
@@ -68,7 +68,7 @@ Use the `$top` parameter to specify the number of categories to be returned. The
   "name": "get_classcategories_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$top=3
 ```
 ---
@@ -114,7 +114,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get next set of categories with Delta query support
+### Example 2: Get next set of categories with delta query support
 
 #### Request
 
@@ -127,7 +127,7 @@ Use the `@odata.nextLink` value from the previous call for this request.
   "name": "get_classcategories_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY
 ```
 ---
@@ -168,7 +168,7 @@ Content-length: 344
 }
 ```
 
-### Example 3: Get the created and modified categories using Delta token
+### Example 3: Get the created and modified categories using delta token
 
 #### Request
 
@@ -181,7 +181,7 @@ Use the `@odata.deltaLink` value from the previous call for this request.
   "name": "get_classcategories_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories/delta?$deltatoken=7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA
 ```
 ---
