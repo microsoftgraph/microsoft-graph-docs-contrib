@@ -11,8 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about a channel that the flag 'isFavoriteByDefault' is set.
-A channel is visible to all team members in the list of channels under a team if it has the flag 'isFavoriteByDefault' set to true.
+Represents the details of an event message about a channel that the flag `isFavoriteByDefault` is set.
+
+A channel is visible to all team members in the list of channels under a team if the flag `isFavoriteByDefault` is `true`.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
