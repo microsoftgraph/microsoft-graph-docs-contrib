@@ -138,7 +138,8 @@ The following example shows a request to get the manager chain up to the root le
 GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
-
+>**Note**: _ConsistencyLevel_ is a http request header which must be set to the value  _eventual_ while invoking the above API query.
+>
 #### Response
 
 The following is an example of the response. Transitive managers are displayed hierarchically.
