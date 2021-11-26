@@ -22,7 +22,7 @@ Currently, the API supports only permissions delegated by the signed-in user.
 
 Before starting with the To Do Tasks API, take a look at the resources and how they relate to one another.
 
-![To Do API entities](/graph/images/todo-api-entities.png)
+![To Do API entities](/graph/images/tasks-api-entities.png)
 
 ## Task list
 
@@ -37,20 +37,20 @@ GET /me/tasks/lists
 A [Task](./basetask.md) represents a task, i.e. a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/tasks/lists/{TaskListId}/tasks
-``
+```
+
+## Checklist Item 
+
+A [ChecklistItem](linkedresource_v2.md) represents an item that helps break down complex task in much smaller steps. To get a checklistItems from a task, make the following HTTP request:
+``` http
+GET /me/todo/lists/{TaskListId}/tasks/{TaskId}/linkedresources/{checklistItems}
+```
 
 ## Linked resource
 
 A [linkedResource](linkedresource_v2.md) represents any item from a partner application related to the task, e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
 ``` http
 GET /me/tasks/lists/{TaskListId}/tasks/{TaskId}/linkedresources/{linkedResourceId}
-```
-
-## ChecklistItem 
-
-A [ChecklistItem](linkedresource_v2.md) represents an item that helps break down complex task in much smaller steps. To get a checklistItems from a task, make the following HTTP request:
-``` http
-GET /me/todo/lists/{TaskListId}/tasks/{TaskId}/linkedresources/{checklistItems}
 ```
 
 ## Track changes using delta query

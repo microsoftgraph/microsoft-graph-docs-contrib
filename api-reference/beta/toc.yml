@@ -14482,7 +14482,7 @@ items:
       displayName: Microsoft To Do
       items:
       - name: Overview
-        href: resources/todo-overview.md
+        href: resources/tasks-overview.md
       - name: Task list
         items:
         - name: Base task list
@@ -14557,7 +14557,7 @@ items:
           href: api/linkedresource_v2-update.md
         - name: Delete
           href: api/linkedresource_v2-delete.md
-      - name: To Do API
+      - name: To-do Tasks(old)
         items:
         - name: Overview
           href: resources/todo-overview.md
