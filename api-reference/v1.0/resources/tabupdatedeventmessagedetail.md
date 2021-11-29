@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents the details of an event message about an updated tab.
-This message is generated when a tab is updated in a channel or a chat.
+This message is generated when a tab is updated in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

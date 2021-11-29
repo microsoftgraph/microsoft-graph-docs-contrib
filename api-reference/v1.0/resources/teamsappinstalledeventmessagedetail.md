@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents the details of an event message about **teamsApp** installed.
-This message is generated when a **teamsApp** is installed in a channel, a chat, or a team.
+This message is generated when a **teamsApp** is installed in a [channel](../resources/channel.md), a [chat](../resources/chat.md), or a [team](../resources/team.md).
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

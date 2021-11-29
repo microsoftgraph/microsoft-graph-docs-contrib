@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about an updated role of a conversation member in a channel or a team.
-This message is generated when the role of a member in a channel or a team is updated.
+Represents the details of an event message about an updated role of a [conversation member](../resources/conversationMember.md) in a [channel](../resources/channel.md) or a [team](../resources/team.md).
+This message is generated when the role of a **member** in a **channel** or a **team** is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -20,8 +20,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conversationMemberRoles|String collection|Roles for the coversation member user.|
-|conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the conversation member user.|
+|conversationMemberRoles|String collection|Roles for the **coversation member** user.|
+|conversationMemberUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Identity of the **conversation member** user.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
@@ -49,5 +49,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an updated role of a conversation member in a channel or a team](/graph/system-messages/#conversation-member-role-updated)
+- [Example response for an event message about an updated role of a **conversation member** in a **channel** or a **team**](/graph/system-messages/#conversation-member-role-updated)
 - For more information about other types of events, see [System messages](/graph/system-messages).

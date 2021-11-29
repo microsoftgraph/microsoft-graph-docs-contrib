@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about members joined.
-This message is generated when members join a meeting chat.
+Represents the details of an event message about [members](../resources/conversationMember.md) joined.
+This message is generated when **members** join a meeting [chat](../resources/chat.md).
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,7 +21,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of members who joined the chat.|
+|members|[teamworkUserIdentity](../resources/teamworkuseridentity.md) collection|List of **members** who joined the **chat**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about members joined](/graph/system-messages/#members-joined)
+- [Example response for an event message about **members** joined](/graph/system-messages/#members-joined)
 - For more information about other types of events, see [System messages](/graph/system-messages).

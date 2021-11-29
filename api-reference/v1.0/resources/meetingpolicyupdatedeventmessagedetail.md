@@ -21,8 +21,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|meetingChatEnabled|Boolean|Represents whether the meeting chat is enabled or not.|
-|meetingChatId|String|Unique identifier of the meeting chat.|
+|meetingChatEnabled|Boolean|Represents whether the meeting [chat](../resources/chat.md) is enabled or not.|
+|meetingChatId|String|Unique identifier of the meeting **chat**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

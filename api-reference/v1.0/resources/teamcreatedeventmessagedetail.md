@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about a created team.
-This message is generated when a team is created.
+Represents the details of an event message about a created [team](../resources/team.md).
+This message is generated when a **team** is created.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,9 +21,9 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamDescription|String|Description for the team.|
-|teamDisplayName|String|Display name of the team.|
-|teamId|String|Unique identifier of the team.|
+|teamDescription|String|Description for the **team**.|
+|teamDisplayName|String|Display name of the **team**.|
+|teamId|String|Unique identifier of the **team**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -47,5 +47,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about a created team](/graph/system-messages/#team-created)
+- [Example response for an event message about a created **team**](/graph/system-messages/#team-created)
 - For more information about other types of events, see [System messages](/graph/system-messages).

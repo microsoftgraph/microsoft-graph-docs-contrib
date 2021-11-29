@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about a renamed channel.
-This message is generated when a channel's name is updated.
+Represents the details of an event message about a renamed [channel](../resources/channel.md).
+This message is generated when a **channel's** name is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -20,8 +20,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|channelDisplayName|String|The updated name of the channel.|
-|channelId|String|Unique identifier of the channel.|
+|channelDisplayName|String|The updated name of the **channel**.|
+|channelId|String|Unique identifier of the **channel**.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about a renamed channel](/graph/system-messages/#channel-renamed)
+- [Example response for an event message about a renamed **channel**](/graph/system-messages/#channel-renamed)
 - For more information about other types of events, see [System messages](/graph/system-messages).

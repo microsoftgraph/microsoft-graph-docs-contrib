@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about an archived team.
-This message is generated when a team is archived.
+Represents the details of an event message about an archived [team](../resources/team.md).
+This message is generated when a **team** is archived.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,7 +21,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamId|String|Unique identifier of the team.|
+|teamId|String|Unique identifier of the **team**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -43,5 +43,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an archived team](/graph/system-messages/#team-archived)
+- [Example response for an event message about an archived **team**](/graph/system-messages/#team-archived)
 - For more information about other types of events, see [System messages](/graph/system-messages).

@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about an updated team description.
-This message is generated when a team's description is updated.
+Represents the details of an event message about an updated [team](../resources/team.md) description.
+This message is generated when a **team's** description is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -21,8 +21,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamDescription|String|The updated description for the team.|
-|teamId|String|Unique identifier of the team.|
+|teamDescription|String|The updated description for the **team**.|
+|teamId|String|Unique identifier of the **team**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about an updated team description](/graph/system-messages/#team-description-updated)
+- [Example response for an event message about an updated **team** description](/graph/system-messages/#team-description-updated)
 - For more information about other types of events, see [System messages](/graph/system-messages).

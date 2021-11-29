@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about a renamed chat.
-This message is generated when a group or a meeting chat topic is updated.
+Represents the details of an event message about a renamed [chat](../resources/chat.md).
+This message is generated when a group or a meeting **chat** topic is updated.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -20,8 +20,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|chatDisplayName|String|The updated name of the chat.|
-|chatId|String|Unique identifier of the chat.|
+|chatDisplayName|String|The updated name of the **chat**.|
+|chatId|String|Unique identifier of the **chat**.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
 
 ## JSON representation
@@ -45,5 +45,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about a renamed chat](/graph/system-messages/#chat-renamed)
+- [Example response for an event message about a renamed **chat**](/graph/system-messages/#chat-renamed)
 - For more information about other types of events, see [System messages](/graph/system-messages).

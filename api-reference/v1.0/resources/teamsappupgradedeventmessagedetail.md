@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of an event message about **teamsApp** upgraded.
-This message is generated when a **teamsApp** is upgraded in a channel, a chat, or a team.
+Represents the details of an event message about [teamsApp](../resources/teamsApp.md) upgraded.
+This message is generated when a **teamsApp** is upgraded in a [channel](../resources/channel.md), a [chat](../resources/chat.md), or a [team](../resources/team.md).
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
