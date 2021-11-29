@@ -59,7 +59,9 @@ In case of asynchronous operation it could take upto 40 minutes to sync or add a
 
 ## Examples
 
-### Request
+### Example 1: Synchronous pull
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -76,7 +78,7 @@ Content-length: 33
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -100,7 +102,9 @@ Content-Type: application/json
   }
 }
 ```
-### Request
+### Example 2: Asynchronous pull
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -117,7 +121,7 @@ Content-length: 33
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"

@@ -13808,6 +13808,8 @@ items:
             href: api/site-update-permission.md
           - name: Delete site permission
             href: api/site-delete-permission.md
+        - name: List operations
+          href: api/site-list-operations.md
       - name: Lists
         items:
         - name: List
@@ -13828,6 +13830,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -13864,6 +13868,10 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: GetCompatibleHubContentTypes
+          href: api/contenttype-getcompatiblehubcontenttypes.md
+        - name: AddCopyFromContentTypeHub
+          href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
         - name: List item
@@ -13956,6 +13964,12 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: RichLongRunningOperation
+        items:
+        - name: RichLongRunningOperation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: resources/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:
