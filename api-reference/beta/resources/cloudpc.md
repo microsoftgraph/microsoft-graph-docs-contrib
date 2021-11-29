@@ -35,25 +35,25 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the Cloud PC. Read-only.|
-|displayName|String|The Cloud PC display name.|
-|imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |aadDeviceId|String|The Cloud PC’s Azure Active Directory (Azure AD) device ID.|
+|displayName|String|The Cloud PC display name.|
+|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|Unique identifier for the Cloud PC. Read-only.|
+|imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
+|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example: `{ "time": "2014-01-01T00:00:00Z"}`.|
+|lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision and troubleshoot.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
 |managedDeviceName|String|The Cloud PC’s Intune device name.|
+|onPremisesConnectionName|String|The on-premises connection that is applied during provisioning of Cloud PCs.|
 |provisioningPolicyId|String|The Cloud PC's provisioning policy ID.|
 |provisioningPolicyName|String|The provisioning policy that is applied during provisioning of Cloud PCs.|
-|onPremisesConnectionName|String|The on-premises connection that is applied during provisioning of Cloud PCs.|
 |servicePlanId|String|The Cloud PC's service plan ID.|
-|servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The Cloud PC's service plan type.|
 |servicePlanName|String|The Cloud PC's service plan name.|
+|servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The Cloud PC's service plan type.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
-|lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision and troubleshoot.|
-|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example: `{ "time": "2014-01-01T00:00:00Z"}`.|
 
 ### cloudPcStatus values
 
