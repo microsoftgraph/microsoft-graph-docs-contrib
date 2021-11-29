@@ -30,17 +30,17 @@ Represents the image resource on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|The image's display name.|
-|version|String|The image version. For example: 0.0.1, 1.5.13.|
-|osBuildNumber|String|The image's OS build version. For example: 1909.|
-|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
-|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
 |expirationDate|Date|The date the image became unavailable.|
-|osStatus|cloudPcDeviceImageOsStatus|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`.|
+|id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
+|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
+|osBuildNumber|String|The image's OS build version. For example: 1909.|
+|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknownFutureValue`.|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|[cloudPcDeviceImageStatusDetails](#cloudpcdeviceimagestatusdetails-values)|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
+|version|String|The image version. For example: 0.0.1, 1.5.13.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -65,7 +65,7 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |supported|The device image is active and ready to be used for provisioning.|
 |supportedWithWarning|The device image has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
-|unknownFutureValue|Unknown future status (Reserved, not used right now).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
