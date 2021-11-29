@@ -71,38 +71,38 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-Memberships for a directory object
+Memberships for a directory object.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryObjects/{id}/checkMemberObjects
 ```
 
-Memberships for a user
+Memberships for a user.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberObjects
 POST /users/{id | userPrincipalName}/checkMemberObjects
 ```
 
-Memberships for a group
+Memberships for a group.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/checkMemberObjects
 ```
 
-Memberships for a service principal
+Memberships for a service principal.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/checkMemberObjects
 ```
 
-Memberships for an organizational contact
+Memberships for an organizational contact.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/checkMemberObjects
 ```
 
-Memberships for a device
+Memberships for a device.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/checkMemberObjects

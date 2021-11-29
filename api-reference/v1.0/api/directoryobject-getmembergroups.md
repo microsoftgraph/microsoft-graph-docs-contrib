@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: getMemberGroups"
-description: "Return all the groups that the specified user, group, or directory object is a member of. This function is transitive."
+description: "Return all the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -11,29 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Return all the groups that the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
+Return all the groups that the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
-
-Use the follow scenario guidance to help determine which permission types to use:
-
-| Scenario | Permissions to use |
-|:-|:-|
-| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
-| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
-| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
-| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
-
-<!-- These tables will replace the data in lines 22-36 to help with the tooling that parses permissions tables.
-+ Current data is copy-pasted from incorrect files/file names
-+ To validate these permissions against lines 32-36
 
 ### Group memberships for a directory object
 
@@ -75,6 +57,28 @@ Use the follow scenario guidance to help determine which permission types to use
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### Group memberships for a device
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+<!--
+
+Use the follow scenario guidance to help determine which permission types to use:
+
+| Scenario | Permissions to use |
+|:-|:-|
+| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
+| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
+| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
+| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
+
+<!-- These tables will replace the data in lines 22-36 to help with the tooling that parses permissions tables.
++ Current data is copy-pasted from incorrect files/file names
++ To validate these permissions against lines 32-36
 -->
 
 ## HTTP request
@@ -108,6 +112,12 @@ Group memberships for an organizational contact.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberGroups
+```
+
+Group memberships for a device.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberGroups
 ```
 
 ## Request headers
