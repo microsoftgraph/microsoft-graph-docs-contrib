@@ -29,7 +29,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "loginPageTextVisibilitySettings": {"@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"}
+  "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
 }
 -->
 ``` json
