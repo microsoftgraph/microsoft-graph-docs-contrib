@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### continuousAccessEvaluationMode values 
 
 |Member|
