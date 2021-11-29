@@ -51,7 +51,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a specified list of groups.|
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String collection|Check for membership in a specified list of group, directory role, or administrative unit objects.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection|Get the list of groups and directory roles that this service principal is a member of.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection|Get the list of groups and directory roles that this service principal is a member of.|
 |**Owners**| | |
 |[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|

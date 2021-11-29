@@ -553,7 +553,7 @@ items:
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -930,7 +930,7 @@ items:
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
           - name: Get member objects
-            href: api/serviceprincipal-getmemberobjects.md
+            href: api/directoryobject-getmemberobjects.md
         - name: Owners
           items:
           - name: List
@@ -4671,7 +4671,7 @@ items:
             - name: Get manager
               href: api/orgcontact-get-manager.md
             - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
+              href: api/directoryobject-getmemberobjects.md
           - name: Subscribed SKU
             href: resources/subscribedsku.md
             items:
@@ -6311,7 +6311,7 @@ items:
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: List member of

@@ -29,7 +29,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [List transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups an organizational contact is a member of, including groups that the organizational contact is nested under. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md)             | String collection                                | Check for group membership.                                                                                                 |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md)                 | String collection                                | Return all the groups that the specified organizational contact is a member of.                                             |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md)               | String collection                                | Returns a list of directoryObjects the organizational contact is a member of.                                               |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md)               | String collection                                | Returns a list of directoryObjects the organizational contact is a member of.                                               |
 
 ## Properties
 

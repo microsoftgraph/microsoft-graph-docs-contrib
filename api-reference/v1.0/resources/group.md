@@ -53,7 +53,7 @@ This resource supports:
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups that the group is a member of. The function is transitive. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups that the group is a member of. The function is transitive. |
 | [renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |||
