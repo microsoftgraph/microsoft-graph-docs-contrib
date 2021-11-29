@@ -18,7 +18,7 @@ Represents an application. Any application that outsources authentication to Azu
 > [!Note]
 > Changes to the application resource type are currently in development. For more information, see [Known issues with Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
-This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/application-delta.md) function.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/application-delta.md) function. This resource is an open type that allows other properties to be passed in.
 
 ## Methods
 
