@@ -76,7 +76,8 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 ## Semantic labels
 
 A semantic label is a well-known tag published by Microsoft that you can add against a property in your schema. Adding a semantic label helps various Microsoft products understand the property and provide a better experience.
-Semantic labels provide a domain independent approach of assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
+
+Semantic labels provide a domain-independent approach to assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
 
 * Data integration in heterogenous experiences
 * Building common knowledge graphs (for example, Cortex, Suggestions, and QF)
@@ -86,28 +87,28 @@ You can assign semantic labels to your source properties on the **Assign propert
 
 | Label                 | Description                                                                          |
 |---------------------- |------------------------------------------------------------------------------------- |
-| title                 | The title of the item that you want shown in search & other experiences              |
-| url                   | The target URL of the item in the data source                                        |
-| createdBy             | Name of the person who created the item in the data source                           |
-| lastModifiedBy        | Name of the person who most recently edited the item in the data source              |
-| authors               | Name of all the people who participated/collaborated on the item in the data source  |
-| createdDateTime       | Date & time that the item was created in the data source                             |
-| lastModifiedDateTime  | Date & time the item was last modified in the data source                            |
-| fileName              | In case of a file, the name of the file in the data source                           |
-| fileExtension         | In case of a file, the extension of the file in the data source                      |
-| iconUrl               | The URL of an icon|
-| containerName         | Name of the container|
-| containerUrl          | The URL of the container|
+| title                 | The title of the item that you want shown in search and other experiences.           |
+| url                   | The target URL of the item in the data source.                                        |
+| createdBy             | Name of the person who created the item in the data source.                           |
+| lastModifiedBy        | Name of the person who most recently edited the item in the data source.              |
+| authors               | Name of all the people who participated/collaborated on the item in the data source.  |
+| createdDateTime       | Date & time that the item was created in the data source.                             |
+| lastModifiedDateTime  | Date & time the item was last modified in the data source.                            |
+| fileName              | In case of a file, the name of the file in the data source.                           |
+| fileExtension         | In case of a file, the extension of the file in the data source .                     |
+| iconUrl               | The URL of an icon.|
+| containerName         | Name of the container.|
+| containerUrl          | The URL of the container.|
 
-For example, the connection property *lastEditedBy* has the same meaning as the Microsoft label *lastModifiedBy*.
+For example, the connection property **lastEditedBy** has the same meaning as the Microsoft label *lastModifiedBy*.
 
-Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn't make sense. Incorrect mappings will deteriorate the experience.
+Add as many labels as you can, but ensure that they are accurately mapped to properties. Do not add a label to a property if it doesn't make sense. Incorrect mappings will degrade the experience.
 
 > [!IMPORTANT]
 > All properties that you map to labels must be retrievable.
 
-The label **title** is the most important label. Make sure you assign a property to this label to allow your connection to participate in the result cluster experience.
-Incorrectly mapping labels will cause a deteriorated search experience. It's okay for some labels not to have a property assigned to them.
+The label **title** is the most important label. Make sure that you assign a property to this label to allow your connection to participate in the result cluster experience.
+Incorrectly mapping labels will degrade the search experience. It's okay for some labels not to have a property assigned to them.
 
 ### Relevance
 
