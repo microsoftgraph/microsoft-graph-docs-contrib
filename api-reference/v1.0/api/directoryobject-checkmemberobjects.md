@@ -1,21 +1,20 @@
 ---
-title: "Get member objects"
-description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
+title: "directoryObject: checkMemberObjects"
+description: "Check for membership in a list of groups, administrative units, or directory roles for the specified user, group, service principal, organizational contact, device, or directory object."
 ms.localizationpriority: medium
-author: "keylimesoda"
-ms.prod: "directory-management"
-doc_type: apiPageType
+author: "jpettere"
+ms.prod: "users"
+doc_type: "apiPageType"
 ---
 
-# Get member objects
+# directoryObject: checkMemberObjects
 
 Namespace: microsoft.graph
 
-Return all the groups, administrative units, and directory roles that a [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
-
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Check for membership in a list of groups, administrative units, or directory roles for the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md). This method is transitive.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Memberships for a directory object
@@ -66,135 +65,148 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+
 ## HTTP request
 
 
 Memberships for a directory object
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryObjects/{id}/getMemberObjects
+POST /directoryObjects/{id}/checkMemberObjects
 ```
 
 Memberships for a user
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/getMemberObjects
-POST /users/{id | userPrincipalName}/getMemberObjects
+POST /me/checkMemberObjects
+POST /users/{id | userPrincipalName}/checkMemberObjects
 ```
 
 Memberships for a group
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/getMemberObjects
+POST /groups/{id}/checkMemberObjects
 ```
 
 Memberships for a service principal
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/getMemberObjects
+POST /servicePrincipals/{id}/checkMemberObjects
 ```
 
 Memberships for an organizational contact
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /contacts/{id}/getMemberObjects
+POST /contacts/{id}/checkMemberObjects
 ```
 
 Memberships for a device
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/{id}/getMemberObjects
+POST /devices/{id}/checkMemberObjects
 ```
 
 ## Request headers
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json  |
+
+| Name          | Description   |
+|:--------------|:--------------|
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| `true` to specify that only security groups that the entity is a member of should be returned; `false` to specify that all groups, administrative units, and directory roles that the entity is a member of should be returned. |
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|ids|String collection|A collection that contains the object IDs of the groups, administrative units, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a new String collection object in the response body.
 
-## Example
+## Examples
 
-##### Request
+The following is an example of how to call this API.
+
+### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getmemberobjects"
+  "name": "user_checkmemberobjects"
 }-->
+
 ```http
-POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberObjects
+POST https://graph.microsoft.com/v1.0/me/checkMemberObjects
 Content-type: application/json
 
 {
-  "securityEnabledOnly": true
+  "ids": [
+    "80a963dd-84af-4eb8-b2a6-781e444d4fb0",
+    "62e90394-69f5-4237-9190-012177145e10",
+    "86a64f51-3a64-4cc6-a8c8-6b8f000c0f52",
+    "ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
+  ]
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmemberobjects-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmemberobjects-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmemberobjects-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### Response
+### Response
+
+The following is an example of the response. 
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "string",
+  "@odata.type": "String",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
-    "value": [
-        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
-        "4fe90ae7-065a-478b-9400-e0a0e1cbd540",
-        "c9ee2d50-9e8a-4352-b97c-4c2c99557c22",
-        "e0c3beaf-eeb4-43d8-abc5-94f037a65697"
-    ]
+  "value": [
+    "80a963dd-84af-4eb8-b2a6-781e444d4fb0", 
+    "62e90394-69f5-4237-9190-012177145e10"
+  ]
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "directoryObject: getMemberObjects",
+  "description": "user: checkMemberObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "tocPath": ""
 }-->
 

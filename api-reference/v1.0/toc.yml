@@ -335,7 +335,7 @@ items:
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
-          href: api/user-checkmemberobjects.md
+          href: api/directoryobject-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member objects
@@ -547,7 +547,7 @@ items:
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
         - name: Get member groups
@@ -926,7 +926,7 @@ items:
           - name: Check member groups
             href: api/directoryobject-checkmembergroups.md
           - name: Check member objects
-            href: api/serviceprincipal-checkmemberobjects.md
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
           - name: Get member objects
@@ -4557,7 +4557,9 @@ items:
           - name: Delete device
             href: api/device-delete.md
           - name: Check member objects
-            href: api/device-checkmemberobjects.md
+            href: api/directoryobject-checkmemberobjects.md
+          - name: Get member objects
+            href: api/directoryobject-getmemberobjects.md
           - name: Create registered owner
             href: api/device-post-registeredowners.md
           - name: Create registered user

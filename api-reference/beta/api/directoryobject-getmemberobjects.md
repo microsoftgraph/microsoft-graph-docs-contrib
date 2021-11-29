@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: getMemberObjects"
-description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, or directory object is a member of. This function is transitive."
+description: "Return all the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all the groups, administrative units, and directory roles that a [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
+Return all the groups, administrative units, and directory roles that a [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
 
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
@@ -60,6 +60,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### Memberships for a device
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+
 ## HTTP request
 
 Memberships for a directory object
@@ -91,6 +100,12 @@ Memberships for an organizational contact
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberObjects
+```
+
+Memberships for a device
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberObjects
 ```
 
 ## Request headers
