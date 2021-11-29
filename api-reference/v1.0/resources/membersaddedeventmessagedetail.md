@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Represents the details of an event message about [members](../resources/conversationMember.md) added.
-This message is generated when members are added to a [chat](../resources/chat.md), a [channel](../resources/channel.md), or a [team](../resources/team.md).
+This message is generated when **members** are added to a [chat](../resources/chat.md), a [channel](../resources/channel.md), or a [team](../resources/team.md).
 The **visibleHistoryStartDateTime** property for an event about **members** added to a **channel** is always set to `0001-01-01T00:00:00Z`, which indicates that all history is shared.
 
 > **Note**: The **visibleHistoryStartDateTime** property for a [conversationMember](conversationmember.md) and the **membersAddedEventMessageDetail** message might have different values if the selected **shareHistoryTime** value for **members** in a **chat** is earlier than the initiator’s visible history time.
