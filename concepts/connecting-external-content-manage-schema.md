@@ -159,22 +159,25 @@ Aliases are friendly names for properties that you assign. These will be used in
 This section includes information about the update capabilities for the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) API.
 
 > [!NOTE]
-> It is strongly recommended to re-ingest items after an update, to bring them to the latest schema. Without re-ingestion, the behavior of the items will be inconsistent.
+> We recommend that you reingest items after an update, to bring them to the latest schema. Without reingestion, the behavior of the items will be inconsistent.
 
 ### Adding a property
 
-You can add a property to your schema, doing so does not require re-ingestion, but it is recommended.
+You can add a property to your schema; doing so does not require reingestion, but it is recommended.
+
 When you add a property, you can include all the search attributes that you need.
 
 ### Adding/removing a search capability
 
-You can add specific search attributes to a property, but keep in mind that you cannot add a refiner search attribute as a schema change. Also it is not possible to use refinable attributes as searchable capabilities.
-Adding a search capability requires re-ingestion.
+You can add specific search attributes to a property, but keep in mind that you cannot add a refiner search attribute as a schema change. Also, it is not possible to use refinable attributes as searchable capabilities.
+
+Adding a search capability requires reingestion.
 
 ### Adding/removing an alias
 
 You can add or remove aliases, and use them for your search queries.
-Consider that you will be unable to remove the original alias of a refinable property that was auto-created by the system.
+
+Consider that you will be unable to remove the original alias of a refinable property that was autocreated by the system.
 
 ### Adding/removing a semantic label
 
