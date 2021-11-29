@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: rename"
-description: "Rename for a specific Cloud PC. Update the Cloud PC entity displayName."
+description: "Rename a specific Cloud PC. Update the Cloud PC entity displayName."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rename for a specific Cloud PC. Update the Cloud PC entity displayName.
+Rename a specific Cloud PC. Update the **displayName** for the Cloud PC entity.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The Cloud PC new display name.|
+|displayName|String|The new display name for the Cloud PC.|
 
 ## Response
 
@@ -68,11 +68,11 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/rename
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/c2bbb5dd-2574-451b-a508-bbaa6ac48ace/rename
 Content-Type: application/json
 
 {
-  displayName: "string"
+  displayName: "Cloud PC-HR"
 }
 ```
 

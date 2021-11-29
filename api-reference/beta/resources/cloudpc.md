@@ -25,7 +25,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[EndGracePeriod](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot for a specific [cloudPC](../resources/cloudpc.md) object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename for a specific [cloudPC](../resources/cloudpc.md) object. Update the Cloud PC entity displayName.|
-|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot for a specific [cloudPC](../resources/cloudpc.md) object. Check the Cloud PC and SessionHost health status.|
+|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot for a specific [cloudPC](../resources/cloudpc.md) object. Check the Cloud PC and the Session Host health status.|
 |[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
 |[Bulk reprovision cloudPCs remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device ID.|
@@ -38,7 +38,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |id|String|Unique identifier for the Cloud PC. Read-only.|
 |displayName|String|The Cloud PC display name.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
-|aadDeviceId|String|The Cloud PC’s Azure Active Directory (AAD) device ID.|
+|aadDeviceId|String|The Cloud PC’s Azure Active Directory (Azure AD) device ID.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
 |managedDeviceName|String|The Cloud PC’s Intune device name.|
 |provisioningPolicyId|String|The Cloud PC's provisioning policy ID.|
@@ -52,8 +52,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 |lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision, troubleshoot.|
-|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. Example: `{ "time": "2014-01-01T00:00:00Z"}`.|
+|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision and troubleshoot.|
+|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example: `{ "time": "2014-01-01T00:00:00Z"}`.|
 
 ### cloudPcStatus values
 

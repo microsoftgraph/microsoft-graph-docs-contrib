@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: reboot"
-description: "Reboot for a specific Cloud PC."
+description: "Reboot a specific Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reboot for a specific Cloud PC.
+Reboot a specific Cloud PC.
 
 ## Permissions
 
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/reboot
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/831dd62e-cfa1-4d49-a3b4-58d4e9920f8e/reboot
 ```
 
 ### Response

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcLoginResult resource type"
-description: "The details of the Cloud PC login results."
+description: "Represents the details of the Cloud PC login results."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of the Cloud PC login results.
+Represents the details of the Cloud PC login results.
 
 ## Properties
 
@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcLoginResult",
-  "time": "String (timestamp)",
+  "time": "String (timestamp)"
 }
 ```
