@@ -615,7 +615,7 @@ items:
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
@@ -1086,7 +1086,7 @@ items:
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
           - name: Get member objects
-            href: api/serviceprincipal-getmemberobjects.md
+            href: api/directoryobject-getmemberobjects.md
         - name: Owners
           items:
           - name: List owners
@@ -11078,6 +11078,11 @@ items:
             href: api/orgcontact-get.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
+          - name: Directory objects
+            href: resources/directoryobject.md
+            items:
+            - name: Get member objects
+              href: api/directoryobject-getmemberobjects.md
           - name: Groups
             href: resources/group.md
             items:
@@ -11096,8 +11101,6 @@ items:
               href: api/orgcontact-list-memberof.md
             - name: Get manager
               href: api/orgcontact-get-manager.md
-            - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
           - name: Subscribed sku
             href: resources/subscribedsku.md
             items:
@@ -14193,7 +14196,7 @@ items:
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: List member of

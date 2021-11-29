@@ -31,7 +31,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get a memberOf object collection. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for group membership. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the specified contact is a member of. |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md) | String collection | Returns a list of directoryObjects the contact is a member of. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Returns a list of directoryObjects the contact is a member of. |
 
 ## Properties
 
