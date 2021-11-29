@@ -332,16 +332,16 @@ items:
         items:
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Check member objects
-          href: api/directoryobject-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
@@ -544,16 +544,16 @@ items:
           href: api/group-post-owners.md
         - name: Assign license
           href: api/group-assignlicense.md
+        - name: Get member groups
+          href: api/directoryobject-getmembergroups.md
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member objects
           href: api/directoryobject-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -925,10 +925,10 @@ items:
             href: api/serviceprincipal-list-transitivememberof.md
           - name: Check member groups
             href: api/directoryobject-checkmembergroups.md
-          - name: Check member objects
-            href: api/directoryobject-checkmemberobjects.md
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
         - name: Owners
@@ -4556,6 +4556,10 @@ items:
             href: api/device-update.md
           - name: Delete device
             href: api/device-delete.md
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Get member groups
+            href: api/directoryobject-getmembergroups.md
           - name: Check member objects
             href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects

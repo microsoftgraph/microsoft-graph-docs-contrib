@@ -346,16 +346,16 @@ items:
           href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Check member objects
-          href: api/directoryobject-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member objects
           href: api/directoryobject-getmemberobjects.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
