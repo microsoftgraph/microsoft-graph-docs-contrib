@@ -349,7 +349,7 @@ items:
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: Check member objects
-          href: api/user-checkmemberobjects.md
+          href: api/directoryobject-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member groups
@@ -602,8 +602,6 @@ items:
           href: api/group-post-owners.md
         - name: Assign license
           href: api/group-assignlicense.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
@@ -612,8 +610,12 @@ items:
           href: api/group-delta.md
         - name: Get endpoint
           href: api/endpoint-get.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get member objects
           href: api/directoryobject-getmemberobjects.md
         - name: List deleted groups
@@ -1082,7 +1084,7 @@ items:
           - name: Check member groups
             href: api/directoryobject-checkmembergroups.md
           - name: Check member objects
-            href: api/serviceprincipal-checkmemberobjects.md
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
           - name: Get member objects
@@ -10956,8 +10958,6 @@ items:
             href: api/device-list-transitivememberof.md
           - name: List device usage rights
             href: api/device-list-usagerights.md
-          - name: Check member objects
-            href: api/device-checkmemberobjects.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
@@ -10965,6 +10965,8 @@ items:
             href: api/directoryobject-get.md
           - name: Delete directory object
             href: api/directoryobject-delete.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
           - name: Get member groups
@@ -11081,13 +11083,21 @@ items:
           - name: Directory objects
             href: resources/directoryobject.md
             items:
+            - name: Get member groups
+              href: api/directoryobject-getmembergroups.md
+            - name: Check member groups
+              href: api/directoryobject-checkmembergroups.md
             - name: Get member objects
               href: api/directoryobject-getmemberobjects.md
+            - name: Check member objects
+              href: api/directoryobject-checkmemberobjects.md
           - name: Groups
             href: resources/group.md
             items:
             - name: List memberOf
               href: api/orgcontact-list-memberof.md
+            - name: Get member groups
+              href: api/directoryobject-getmembergroups.md
             - name: Get member groups
               href: api/directoryobject-getmembergroups.md
             - name: Check member groups
