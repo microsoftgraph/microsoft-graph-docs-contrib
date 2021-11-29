@@ -1550,17 +1550,29 @@ items:
             href: api/onlinemeeting-delete.md
           - name: Create or get
             href: api/onlinemeeting-createorget.md
-          - name: Meeting registration
-            href: resources/meetingregistration.md
+        - name: Attendance report
+          href: resources/meetingAttendanceReport.md
+          items:
+          - name: List
+            href: api/meetingattendancereport-list.md
+          - name: Get
+            href: api/meetingattendancereport-get.md
+          - name: Attendance record
+            href: resources/attendancerecord.md
             items:
-            - name: Create
-              href: api/meetingregistration-post.md
-            - name: Get
-              href: api/meetingregistration-get.md
-            - name: Update
-              href: api/meetingregistration-update.md
-            - name: Delete
-              href: api/meetingregistration-delete.md
+            - name: List
+              href: api/attendancerecord-list.md
+        - name: Meeting registration
+          href: resources/meetingregistration.md
+          items:
+          - name: Create
+            href: api/meetingregistration-post.md
+          - name: Get
+            href: api/meetingregistration-get.md
+          - name: Update
+            href: api/meetingregistration-update.md
+          - name: Delete
+            href: api/meetingregistration-delete.md
           - name: Meeting registrant
             href: resources/meetingregistrant.md
             items:
@@ -14284,6 +14296,10 @@ items:
           href: api/chat-markchatreadforuser.md
         - name: Mark chat as unread
           href: api/chat-markchatunreadforuser.md
+        - name: Hide chat
+          href: api/chat-hideforuser.md
+        - name: Unhide chat
+          href: api/chat-unhideforuser.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
