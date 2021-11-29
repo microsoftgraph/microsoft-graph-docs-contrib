@@ -277,7 +277,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
           "Target": "teamsApp"
         },
         {
@@ -293,7 +293,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
           "Target": "teamworkHostedContent"
         },
         {
@@ -309,7 +309,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
           "Target": "teamsAppIcon"
         },
         {
@@ -325,7 +325,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "AppCatalog.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
           "Target": "teamworkBot"
         }
       ],
