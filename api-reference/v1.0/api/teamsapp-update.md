@@ -23,9 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.ReadWrite.All |
+| Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
+
+> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 
@@ -69,7 +71,6 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
@@ -99,7 +100,6 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```

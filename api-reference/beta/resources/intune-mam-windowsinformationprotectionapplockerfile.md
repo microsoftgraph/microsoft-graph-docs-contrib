@@ -2,7 +2,7 @@
 title: "windowsInformationProtectionAppLockerFile resource type"
 description: "Windows Information Protection AppLocker File"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

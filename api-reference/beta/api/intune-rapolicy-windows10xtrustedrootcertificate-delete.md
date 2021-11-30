@@ -2,7 +2,7 @@
 title: "Delete windows10XTrustedRootCertificate"
 description: "Deletes a windows10XTrustedRootCertificate."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

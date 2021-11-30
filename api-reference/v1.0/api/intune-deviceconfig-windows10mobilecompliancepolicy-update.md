@@ -2,7 +2,7 @@
 title: "Update windows10MobileCompliancePolicy"
 description: "Update the properties of a windows10MobileCompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -140,7 +140,6 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

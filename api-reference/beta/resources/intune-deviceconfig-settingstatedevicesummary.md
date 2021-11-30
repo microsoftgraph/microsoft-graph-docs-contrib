@@ -2,7 +2,7 @@
 title: "settingStateDeviceSummary resource type"
 description: "Device Compilance Policy and Configuration for a Setting State summary"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

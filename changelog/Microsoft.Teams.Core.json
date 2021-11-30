@@ -48,6 +48,66 @@
     {
       "ChangeList": [
         {
+          "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",
+          "ApiChange": "Method",
+          "ChangedApiName": "markChatReadForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [markChatReadForUser](https://docs.microsoft.com/en-us/graph/api/chat-markChatReadForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",
+          "ApiChange": "Method",
+          "ChangedApiName": "markChatUnreadForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [markChatUnreadForUser](https://docs.microsoft.com/en-us/graph/api/chat-markChatUnreadForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "41e96a7c-0409-4138-91d7-8ec8da61341a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-04T17:18:30.8053373Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to the [chatViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/chatViewpoint?view=graph-rest-beta) resource.",
+          "Target": "chatViewpoint"
+        },
+        {
+          "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
+          "ApiChange": "Method",
+          "ChangedApiName": "hideForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [hideForUser](https://docs.microsoft.com/en-us/graph/api/hideForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "hideForUser"
+        },
+        {
+          "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
+          "ApiChange": "Method",
+          "ChangedApiName": "unhideForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [unhideForUser](https://docs.microsoft.com/en-us/graph/api/unhideForUser?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "unhideForUser"
+        }
+      ],
+      "Id": "6adc71c8-6be6-473f-96ea-d00d71babea6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-19T00:58:30.8053373Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "efc25f28-5324-4493-bab5-525f84e9b4f2",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
@@ -3788,7 +3848,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **messageType** property to the [chatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageInfo?view=graph-rest-beta) resource.",
           "Target": "chatMessageInfo"
-        }, 
+        },
         {
           "Id": "342f183f-ef8c-11eb-b6a8-8203ca0139f1",
           "ApiChange": "Property",
@@ -3796,7 +3856,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **eventDetail** property to the [chatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageInfo?view=graph-rest-beta) resource.",
           "Target": "chatMessageInfo"
-        }, 
+        },
         {
           "Id": "343177b9-ef8c-11eb-b6a8-8203ca0139f1",
           "ApiChange": "Property",

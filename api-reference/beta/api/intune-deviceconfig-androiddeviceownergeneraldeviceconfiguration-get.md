@@ -2,7 +2,7 @@
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8848
+Content-Length: 9192
 
 {
   "value": {
@@ -263,6 +263,16 @@ Content-Length: 8848
     "personalProfileAppsAllowInstallFromUnknownSources": true,
     "personalProfileCameraBlocked": true,
     "personalProfileScreenCaptureBlocked": true,
+    "personalProfilePlayStoreMode": "blockedApps",
+    "personalProfilePersonalApplications": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "workProfilePasswordExpirationDays": 1,
     "workProfilePasswordMinimumLength": 0,
     "workProfilePasswordMinimumNumericCharacters": 11,

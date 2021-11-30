@@ -160,7 +160,7 @@ This link does not grant any additional privileges to the user.
 
 This link provides read and write access to the specific people in the `grantedToIdentities` collection.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
 ```json
 {
@@ -193,7 +193,7 @@ This link provides read and write access to the specific people in the `grantedT
 
 Permissions sent by the [invite][] or [grant][] API can have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account. In such cases, the **grantedTo** property might not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
 ```json
 {
@@ -210,7 +210,7 @@ Permissions sent by the [invite][] or [grant][] API can have additional informat
 
 After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+<!-- {"blockType": "example", truncated: true,"@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
 ```json
 {

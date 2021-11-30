@@ -2,7 +2,7 @@
 title: "mobileAppRelationship resource type"
 description: "Describes a relationship between two mobile apps."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
