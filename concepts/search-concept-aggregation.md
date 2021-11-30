@@ -8,8 +8,9 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to refine queries with aggregations
 
-Refine search results with and show their distribution in the index. 
-In the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true), specify the aggregations in [aggregationOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true). Each aggregationOption specifies the property on which the aggregation should be computed, and the number of [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) to be returned in the response.
+You can use the Microsoft Search API in Microsoft Graph to refine search results and show their distribution in the index. 
+
+To refine the results, in the [search request](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true), specify the aggregations in [aggregations](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true) property. Each **aggregationOption** specifies the property on which the aggregation should be computed, and the number of [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) items to be returned in the response.
 
 ## Example 1: Request aggregations by string fields
 
