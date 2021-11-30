@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: getMemberGroups"
-description: "Return all the groups that the specified user, group, service principal, organizational contact, or directory object is a member of. This function is transitive."
+description: "Return all the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all the groups that the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
+Return all the groups that the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member of. This function is transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,6 +58,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### Group memberships for a device
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+
 <!--
 The following table lists the permission types to use for different scenarios.
 
@@ -101,6 +110,12 @@ Group memberships for an organizational contact.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberGroups
+```
+
+Group memberships for a device.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberGroups
 ```
 
 ## Request headers

@@ -332,16 +332,16 @@ items:
         items:
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Check member objects
-          href: api/user-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
@@ -544,16 +544,16 @@ items:
           href: api/group-post-owners.md
         - name: Assign license
           href: api/group-assignlicense.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Check member objects
-          href: api/group-checkmemberobjects.md
-        - name: Get delta
-          href: api/group-delta.md
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get delta
+          href: api/group-delta.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -925,12 +925,12 @@ items:
             href: api/serviceprincipal-list-transitivememberof.md
           - name: Check member groups
             href: api/directoryobject-checkmembergroups.md
-          - name: Check member objects
-            href: api/serviceprincipal-checkmemberobjects.md
           - name: Get member groups
             href: api/directoryobject-getmembergroups.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
-            href: api/serviceprincipal-getmemberobjects.md
+            href: api/directoryobject-getmemberobjects.md
         - name: Owners
           items:
           - name: List
@@ -4556,8 +4556,14 @@ items:
             href: api/device-update.md
           - name: Delete device
             href: api/device-delete.md
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Get member groups
+            href: api/directoryobject-getmembergroups.md
           - name: Check member objects
-            href: api/device-checkmemberobjects.md
+            href: api/directoryobject-checkmemberobjects.md
+          - name: Get member objects
+            href: api/directoryobject-getmemberobjects.md
           - name: Create registered owner
             href: api/device-post-registeredowners.md
           - name: Create registered user
@@ -4671,7 +4677,7 @@ items:
             - name: Get manager
               href: api/orgcontact-get-manager.md
             - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
+              href: api/directoryobject-getmemberobjects.md
           - name: Subscribed SKU
             href: resources/subscribedsku.md
             items:
@@ -6311,7 +6317,7 @@ items:
         - name: Get member groups
           href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member groups
           href: api/directoryobject-checkmembergroups.md
         - name: List member of
