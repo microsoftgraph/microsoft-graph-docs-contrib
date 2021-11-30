@@ -113,7 +113,7 @@
   "Cloud": "prd",
   "Version": "v1.0",
   "CreatedDateTime": "2021-09-11T22:39:56.000Z",
-  "WorkloadArea": "Sites and Lists",
+  "WorkloadArea": "Sites and lists",
   "SubArea": ""
 },
 {
@@ -229,7 +229,7 @@
   "Cloud": "prd",
   "Version": "beta",
   "CreatedDateTime": "2021-11-29T22:39:56.000Z",
-  "WorkloadArea": "Sites and Lists",
+  "WorkloadArea": "Sites and lists",
   "SubArea": ""
 },
     {
