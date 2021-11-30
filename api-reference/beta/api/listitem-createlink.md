@@ -58,6 +58,7 @@ The following table shows the parameters that can be used with this action.
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
+| retainInheritedPermissions |  Boolean          | Optional. If `true` (default), any current existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
 
 ### Link types
 
