@@ -59,16 +59,54 @@ Represents the organization settings for the SharePoint and OneDrive for Busines
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.admin.settings"
+  "@odata.type": "microsoft.graph.admin.settings",
+  "openType": "false"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.termStore.store",
-  "id": "String (identifier)",
-  "defaultLanguageTag": "String",
-  "languageTags": [
-    "String"
-  ]  
+    "@odata.type": "#microsoft.graph.admin.settings",
+    "allowedDomainGuidsForSyncApp": [
+        "bdd1ab9b-3fd0-4def-a761-ec8d7471732c", 
+        "ad31vb6b-5zd0-7tyg-m231-kj8d6578432c"
+    ],
+    "availableManagedPathsForSiteCreation": [
+        "/sites/",
+        "/teams/"
+    ],
+    "deletedUserPersonalSiteRetentionPeriod": 344,
+    "excludedFileExtensionsForSyncApp": [
+        ".md", 
+        ".git"
+    ],
+    "imageTaggingOption": 1,
+    "imageTaggingOptionV2": "basic",
+    "isCommentsOnSitePagesEnabled": true,
+    "isFileActivityNotificationsEnabled": true,
+    "isFluidEnabled": true,
+    "isMacSyncAppEnabled": false,
+    "isResharingByExternalUsersEnabled": true,
+    "isSharePointMobileNotificationsEnabled": true,
+    "isSharePointNewsfeedEnabled": true,
+    "isSiteCreationEnabled": true,
+    "isSiteCreationUxEnabled": true,
+    "isSitePagesEnabled": true,
+    "isSiteStorageLimitsAutomatic": true,
+    "isSyncButtonHiddenOnPersonalSite": true,
+    "isUnmanagedSyncAppForTenantRestricted": true,
+    "personalSiteDefaultStorageLimit": 113664,
+    "sharingAllowedDomainList" : [
+        "contoso.com",
+        "fabrikam.com"
+    ],
+    "sharingBlockedDomainList" : [
+        "contoso.com",
+        "fabrikam.com"
+    ],
+    "sharingCapability": "externalUserAndGuestSharing",
+    "sharingDomainRestrictionMode": "allowList",
+    "siteCreationDefaultManagedPath": "/sites/",
+    "siteCreationDefaultStorageLimit": 808034,
+    "tenantDefaultTimezoneId": 34
 }
 ```

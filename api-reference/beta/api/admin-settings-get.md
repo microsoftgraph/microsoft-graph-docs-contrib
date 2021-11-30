@@ -84,7 +84,7 @@ Content-Type: application/json
     "availableManagedPathsForSiteCreation": [
         "/sites/",
         "/teams/"
-        ],
+    ],
     "deletedUserPersonalSiteRetentionPeriod": 344,
     "excludedFileExtensionsForSyncApp": [
         ".md", 
