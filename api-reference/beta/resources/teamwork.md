@@ -18,7 +18,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List devices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get the teamworkDevice resources from the devices navigation property.|
+|[List devices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get the list of all Teams devices provisioned for the tenant.|
 
 ## Properties
 

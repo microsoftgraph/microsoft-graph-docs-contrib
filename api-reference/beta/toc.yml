@@ -539,6 +539,8 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
+        - name: Enrolled devices
+          href: resources/teamworkdevice.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Add app for user
@@ -555,6 +557,8 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
+        - name: List enrolled devices
+          href: api/teamworkdevice-list.md
       - name: To-do tasks
         items:
         - name: Task
@@ -14350,6 +14354,43 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: Devices
+        items:
+        - name: Enrolled devices
+          href: resources/teamworkdevice.md
+          items:
+            - name: List devices
+              href: api/teamworkdevice-list.md
+            - name: Get device details
+              href: api/teamworkdevice-get.md
+            - name: Restart device
+              href: api/teamworkdevice-restart.md
+            - name: Run device diagnostic
+              href: api/teamworkdevice-rundiagnostics.md
+            - name: Software update
+              href: api/teamworkdevice-updatesoftware.md
+        - name: Devices activity
+          href: resources/teamworkdeviceactivity.md
+          items:
+            - name: Get device activity
+              href: api/teamworkdeviceactivity-get.md
+        - name: Devices configuration
+          href: resources/teamworkdeviceconfiguration.md
+          items:
+            - name: Get device configuration
+              href: api/teamworkdeviceconfiguration-get.md
+        - name: Devices health
+          href: resources/teamworkdevicehealth.md
+          items:
+            - name: Get device health
+              href: api/teamworkdevicehealth-get.md
+        - name: Devices async operation
+          href: resources/teamworkdeviceoperation.md
+          items:
+            - name: List device operations
+              href: api/teamworkdeviceoperation-list
+            - name: Get device operations
+              href: api/teamworkdeviceoperation-get.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
