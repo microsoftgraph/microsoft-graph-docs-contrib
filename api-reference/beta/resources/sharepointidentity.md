@@ -1,6 +1,5 @@
 ---
 author: tushar20
-ms.date: 09/09/2021
 title: sharePointIdentity resource type
 ms.localizationpriority: medium
 description: "Represents the SharePoint identity of an actor."
