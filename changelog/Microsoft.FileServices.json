@@ -7,7 +7,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecation of **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -15,7 +15,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecation of **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -23,7 +23,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -31,7 +31,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -47,14 +47,14 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type. Collection of SharePoint identities.",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     }
   ],
   "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
   "Cloud": "prd",
   "Version": "v1.0",
-  "CreatedDateTime": "2021-09-11T22:39:56.000Z",
+  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
   "WorkloadArea": "Files",
   "SubArea": ""
 },
@@ -65,7 +65,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedTo",
       "ChangeType": "Deprecation",
-      "Description": "Deprecation of **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
       "Target": "permission"
     },
     {
@@ -73,7 +73,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentities",
       "ChangeType": "Deprecation",
-      "Description": "Deprecation of **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
       "Target": "permission"
     },
     {
@@ -81,7 +81,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property which is being deprecated.",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -89,7 +89,7 @@
       "ApiChange": "Property",
       "ChangedApiName": "grantedToIdentitiesV2",
       "ChangeType": "Addition",
-      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property which is being deprecated.",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
       "Target": "permission"
     },
     {
@@ -105,7 +105,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "sharePointIdentitySet",
       "ChangeType": "Addition",
-      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type. Collection of SharePoint identities.",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
       "Target": "permission"
     }
   ],
