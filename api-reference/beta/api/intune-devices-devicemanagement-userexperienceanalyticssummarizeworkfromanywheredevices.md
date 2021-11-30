@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 758
+Content-Length: 1355
 
 {
   "value": {
@@ -68,7 +68,8 @@ Content-Length: 758
     "autopilotDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
       "devicesNotAutopilotRegistered": 13,
-      "devicesWithoutAutopilotProfileAssigned": 6
+      "devicesWithoutAutopilotProfileAssigned": 6,
+      "totalWindows10DevicesWithoutTenantAttached": 10
     },
     "cloudManagementDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -79,11 +80,24 @@ Content-Length: 758
     "windows10DevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
       "unsupportedOSversionDeviceCount": 15
-    }
+    },
+    "cloudIdentityDevicesSummary": {
+      "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+      "deviceWithoutCloudIdentityCount": 15
+    },
+    "totalDevices": 12,
+    "coManagedDevices": 0,
+    "intuneDevices": 13,
+    "tenantAttachDevices": 3,
+    "windows10Devices": 0,
+    "windows10DevicesWithoutTenantAttach": 3,
+    "unsupportedOSversionDevices": 11,
+    "devicesWithoutCloudIdentity": 11,
+    "devicesNotAutopilotRegistered": 13,
+    "devicesWithoutAutopilotProfileAssigned": 6
   }
 }
 ```
-
 
 
 

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1491
+Content-Length: 1534
 
 {
   "value": [
@@ -100,12 +100,12 @@ Content-Length: 1491
       "version": 7,
       "payloadName": "Payload Name value",
       "payloadFileName": "Payload File Name value",
-      "payload": "cGF5bG9hZA=="
+      "payload": "cGF5bG9hZA==",
+      "deploymentChannel": "userChannel"
     }
   ]
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "itemInsights resource type"
 description: "Relationships between a user and items such as OneDrive for Business documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users."
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

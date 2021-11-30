@@ -1,7 +1,7 @@
 ---
 title: "Excel workbooks and charts API overview"
 description: "Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "lumine2008"
 ms.prod: "excel"
 ms.custom: scenarios:getting-started

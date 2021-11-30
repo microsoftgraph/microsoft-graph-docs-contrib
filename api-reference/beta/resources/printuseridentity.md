@@ -2,7 +2,7 @@
 title: printUserIdentity resource type
 description: Represents a user identity within the Universal Print service. Maps to an Azure AD user.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

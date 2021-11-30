@@ -2,7 +2,7 @@
 author: swapnil1993
 title:  "termColumn resource type"
 description: "The termColumn resource indicates that the column's values contains taxonomy data."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

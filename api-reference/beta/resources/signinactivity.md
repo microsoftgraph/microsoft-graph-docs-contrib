@@ -1,7 +1,7 @@
 ---
 title: "signInActivity resource type"
-description: "Provides the last signed-in date for a specific user."
-localization_priority: Normal
+description: "Provides the last interactive or non-interactive sign-in time for a specific user."
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
@@ -13,14 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the last signed-in date for a specific [user](user.md).
+Provides the last interactive or non-interactive sign-in time for a specific [user](user.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |lastSignInDateTime|DateTimeOffset|The last interactive sign-in date for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: `'2014-01-01T00:00:00Z'`. For more information about using the value of this property, see [Manage inactive user accounts in Azure AD](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).|
-|lastSignInRequestId|String|Request ID of the last sign-in performed by this user.|
+|lastSignInRequestId|String|Request identifier of the last interactive sign-in performed by this user.|
+|lastNonInteractiveSignInDateTime|DateTimeOffset|The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: `'2014-01-01T00:00:00Z'`. For more information about using the value of this property, see [Manage inactive user accounts in Azure AD](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).|
+|lastNonInteractiveSignInRequestId|String|Request identifier of the last non-interactive sign-in performed by this user.|
 
 ## JSON representation
 
@@ -38,7 +40,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "lastSignInDateTime": "String (timestamp)",
-  "lastSignInRequestId": "String"
+  "lastSignInRequestId": "String",
+  "lastNonInteractiveSignInDateTime": "String (timestamp)",
+  "lastNonInteractiveSignInRequestId": "String"
 }
 ```
 

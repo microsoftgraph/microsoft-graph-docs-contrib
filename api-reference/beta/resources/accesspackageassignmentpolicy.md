@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentPolicy resource type"
 description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"

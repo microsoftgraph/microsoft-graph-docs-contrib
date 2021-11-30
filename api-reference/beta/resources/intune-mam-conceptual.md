@@ -2,7 +2,7 @@
 title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 ---
 
@@ -28,11 +28,13 @@ The following Graph resources are available to manage app protection polices in 
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
+- [Device platform type](intune-wip-deviceplatformtype.md)
 - [Intune branding profile](intune-wip-intunebrandingprofile.md)
 - [Intune branding profile assignment](intune-wip-intunebrandingprofileassignment.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
+- [Key/value pair](intune-mam-keyvaluepair.md)
 - [Mac app identifier](intune-mam-macappidentifier.md)
 - [Managed app clipboard sharing level](intune-mam-managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune-mam-managedappconfiguration.md)
@@ -58,6 +60,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
+- [Targeted managed app group type](intune-mam-targetedmanagedappgrouptype.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
 - [Windows app identifier](intune-mam-windowsappidentifier.md)

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7435
+Content-Length: 7700
 
 {
   "value": {
@@ -177,6 +177,8 @@ Content-Length: 7435
         ]
       }
     ],
+    "homeScreenGridWidth": 3,
+    "homeScreenGridHeight": 4,
     "notificationSettings": [
       {
         "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -244,7 +246,9 @@ Content-Length: 7435
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "signInHelpText": "Sign In Help Text value",
+      "managedAppsInBundleIdACLIncluded": true
     },
     "iosSingleSignOnExtension": {
       "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -274,12 +278,13 @@ Content-Length: 7435
       "activeDirectorySiteCode": "Active Directory Site Code value",
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+      "signInHelpText": "Sign In Help Text value",
+      "managedAppsInBundleIdACLIncluded": true
     }
   }
 }
 ```
-
 
 
 

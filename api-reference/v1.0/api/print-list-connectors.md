@@ -2,15 +2,13 @@
 title: List printConnectors
 description: Retrieve a list of connectors.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List printConnectors
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of print connectors.
 
@@ -80,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/print/connectors
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printconnector-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-printconnector-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

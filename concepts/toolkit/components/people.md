@@ -1,7 +1,7 @@
 ---
 title: "People component in the Microsoft Graph Toolkit"
 description: "You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -32,7 +32,10 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
 | person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 | show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
-
+| resource | resource | The resource to get from Microsoft Graph (for example, `/me/people`). |
+| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
+| version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
+| fallback-details| fallbackDetails| Array of IDynamicPerson objects representing a person or multiple people when no user/person/contact is found in the graph.
 
 The following example sets the maximum number of people to show.
 
@@ -85,15 +88,16 @@ The following examples shows how to use the `person` template.
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission |
-| - | - |
-| [/me/people](/graph/api/user-list-people) | `People.Read` |
+| Configuration | Permission | API
+| --- | ---------- | ------- |
+| `groupId` set | User.Read.All, People.Read | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
+| `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
+| `resource` set | Permissions specified in `scopes` | Specified in `resource` |
+| default configuration | People.Read | [/me/people](/graph/api/user-list-people) |
+| `showPresence` set | Presence.Read.All | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component, which requires the following.
-
-| Resource | Permission |
-| - | - |
-| [/users](/graph/api/user-list) | User.ReadBasic.All |
+When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component. See its documentation for the list of required permissions.
 
 ## Authentication
 

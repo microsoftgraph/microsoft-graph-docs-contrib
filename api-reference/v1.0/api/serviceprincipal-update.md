@@ -1,7 +1,7 @@
 ---
 title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"
@@ -73,7 +73,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 Content-type: application/json
-Content-length: 391
 
 {
   "appRoleAssignmentRequired": true
@@ -95,15 +94,17 @@ Content-length: 391
 [!INCLUDE [sample-code](../includes/snippets/java/update-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-serviceprincipal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

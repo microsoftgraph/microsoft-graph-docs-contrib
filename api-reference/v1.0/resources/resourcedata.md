@@ -1,7 +1,7 @@
 ---
 title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: resourcePageType
 ms.prod: "change-notifications"

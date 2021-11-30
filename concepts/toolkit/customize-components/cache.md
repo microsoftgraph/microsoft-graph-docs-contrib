@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Toolkit caching"
 description: "Explaining how the Cache works and how to configure the options provided to developers"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adchau
 ---
 
@@ -47,6 +47,14 @@ let config = {
   response: {
     invalidationPeriod: number,
     isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
   }
 };
 ```
@@ -65,7 +73,7 @@ CacheService.config.users.isEnabled = false;
 ```
 Disabling the cache does **not** clear the cache.
 
-Changing the invalditation period is similar:
+Changing the invalidation period is similar:
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';

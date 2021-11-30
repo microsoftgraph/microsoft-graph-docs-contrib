@@ -1,7 +1,7 @@
 ---
 title: "Agenda component in the Microsoft Graph Toolkit"
 description: "The mgt-agenda web component is used to represent events in a user or group calendar."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -124,27 +124,23 @@ To learn more, see [templates](../customize-components/templates.md).
 
 The following events are fired from the control.
 
-| Event | Description |
-| --- | --- |
-| eventClick | The user clicks or taps an event.|
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`eventClick` | The user clicks or taps an event. | Selected [event](/graph/api/resources/event) | No | No | Yes, with custom **event** template
 
-## Permissions
+For more information about handling events, see [events](../customize-components/events.md).
+
+## Microsoft Graph permissions
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission |
-| - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
+| Configuration | Permission | API
+| - | - | - |
+| default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
-When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, which requires the following.
-
-| Resource | Permission |
-| - | - |
-| [/users](/graph/api/user-list) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
+When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, and inherits all permissions.
 
 ## Authentication
 

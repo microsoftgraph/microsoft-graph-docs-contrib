@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 743
+Content-Length: 851
 
 {
   "value": {
@@ -86,11 +86,12 @@ Content-Length: 743
     "blueScreenCount": 15,
     "restartCount": 12,
     "averageBlueScreens": 6.0,
-    "averageRestarts": 5.0
+    "averageRestarts": 5.0,
+    "startupPerformanceScore": 7.666666666666667,
+    "modelStartupPerformanceScore": 9.3333333333333339
   }
 }
 ```
-
 
 
 

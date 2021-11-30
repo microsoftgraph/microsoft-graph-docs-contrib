@@ -1,7 +1,7 @@
 ---
 title: "justifyAction resource type"
 description: "Indicates that a justification is required for the specified operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

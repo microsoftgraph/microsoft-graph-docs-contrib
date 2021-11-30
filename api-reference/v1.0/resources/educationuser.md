@@ -2,7 +2,7 @@
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -159,9 +159,7 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ],
+   ],
   "tocPath": ""
 }-->
 

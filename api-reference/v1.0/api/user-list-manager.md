@@ -1,7 +1,7 @@
 ---
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -49,6 +49,8 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
 > + When the `$levels` parameter is not specified, only the immediate manager is returned.  
 > + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`
+> + In order to select the expanded manager's properties, the `$count=true` parameter must be added to the query as well as the header,
+`ConsistencyLevel=eventual`. You can see this implemented in Example 2.
 
 ## Request headers
 
@@ -97,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -128,6 +134,8 @@ The following example shows a request to get the manager chain up to the root le
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -136,6 +144,12 @@ The following example shows a request to get the manager chain up to the root le
 GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

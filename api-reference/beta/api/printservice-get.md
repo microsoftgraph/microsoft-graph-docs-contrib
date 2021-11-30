@@ -2,7 +2,7 @@
 title: Get printService
 description: Retrieve the properties and relationships of a print service.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -83,7 +87,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 332
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/services/$entity",

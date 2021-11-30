@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 407
+Content-Length: 491
 
 {
   "value": {
@@ -72,12 +72,13 @@ Content-Length: 407
     "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
     "eventType": "Event Type value",
     "appDisplayName": "App Display Name value",
+    "appPublisher": "App Publisher value",
+    "appVersion": "App Version value",
     "deviceId": "Device Id value",
     "deviceDisplayName": "Device Display Name value"
   }
 }
 ```
-
 
 
 

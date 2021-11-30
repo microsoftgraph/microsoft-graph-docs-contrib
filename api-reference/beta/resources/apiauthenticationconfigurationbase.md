@@ -2,7 +2,7 @@
 title: "apiAuthenticationConfigurationBase resource type"
 description: "Represents the base type of authentication configuration used for calling an API."
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

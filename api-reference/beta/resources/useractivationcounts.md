@@ -2,7 +2,7 @@
 title: "userActivationCounts resource type"
 description: "The following is a JSON representation of the resource."
 author: "jpettere"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: resourcePageType
 ---
