@@ -44,7 +44,14 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md/#cloudPcUserAccountType-values)|The account type of user on provisioned Cloud PCs. Possible values: `standardUser`, `administrator` and `unknownFutureValue`.|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md/#cloudPcOperatingSystem-values)|The version of OS to provision on Cloud PCs. Possible values: `windows10`, `windows11` and `unknownFutureValue`.|
 
 ## Response
 
@@ -58,13 +65,21 @@ If successful, this method returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpconpremisesconnection_runhealthcheck_1"
+  "name": "cloudpc_reprovision"
 }
 -->
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
+Content-Type: application/json
+Content-length: 61
+
+{
+  "userAccountType": "String",
+  "osVersion": "String"
+}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpconpremisesconnection-runhealthcheck-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
