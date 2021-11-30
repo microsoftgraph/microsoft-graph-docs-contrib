@@ -1,6 +1,5 @@
 ---
 author: tushar20
-ms.date: 09/09/2021
 title: sharePointIdentitySet resource type
 ms.localizationpriority: medium
 description: "Represents a keyed collection of sharePointIdentity and identity resources."
@@ -11,11 +10,11 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointIdentitySet** resource is a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. It extends from the **identitySet** resource to provide capability to expose SharePoint specific information to the user.
+Represents a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. This resource extends from the **identitySet** resource to provide capability to expose SharePoint-specific information to the user.
 
-It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
+This resource is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
-For usage of the **sharePointIdentitySet** resource, see [DriveItem][].
+For usage information, see [driveItem][].
 
 ## Properties
 
@@ -30,7 +29,7 @@ For usage of the **sharePointIdentitySet** resource, see [DriveItem][].
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.sharePointIdentitySet",
        "optionalProperties": ["user", "application", "group", "device", "siteUser", "siteGroup"],
@@ -49,9 +48,9 @@ Here is a JSON representation of the resource.
 }
 ```
 
-[DriveItem]: driveItem.md
+[DriveItem]: driveitem.md
 [Identity]: identity.md
-[SharePointIdentity]: sharePointIdentity.md
+[SharePointIdentity]: sharePointidentity.md
 
 <!-- {
   "type": "#page.annotation",
