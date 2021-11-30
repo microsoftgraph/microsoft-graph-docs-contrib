@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. This resource extends from the **identitySet** resource to provide capability to expose SharePoint-specific information to the user.
+Represents a keyed collection of [sharePointIdentity](sharePointidentity.md) resources. This resource extends from the **identitySet** resource to provide capability to expose SharePoint-specific information to the user.
 
 This resource is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
@@ -20,12 +20,12 @@ For usage information, see [driveItem][].
 
 | Property    | Type                   | Description |
 |:------------|:-----------------------|:----------------------------------------------------------- |
-| application | [Identity][]           | The application associated with this action. Optional. |
-| device      | [Identity][]           | The device associated with this action. Optional. |
-| group       | [Identity][]           | The group associated with this action. Optional. |
-| user        | [Identity][]           | The user associated with this action. Optional. |
-| siteUser    | [SharePointIdentity][] | The SharePoint user associated with this action. Optional. |
-| siteGroup   | [SharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+| application | [identity][]           | The application associated with this action. Optional. |
+| device      | [identity][]           | The device associated with this action. Optional. |
+| group       | [identity][]           | The group associated with this action. Optional. |
+| user        | [identity][]           | The user associated with this action. Optional. |
+| siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
+| siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
 
 ## JSON representation
 
@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 }
 ```
 
-[DriveItem]: driveitem.md
-[Identity]: identity.md
-[SharePointIdentity]: sharePointidentity.md
+[driveItem]: driveitem.md
+[identity]: identity.md
+[sharePointIdentity]: sharePointidentity.md
 
 <!-- {
   "type": "#page.annotation",
