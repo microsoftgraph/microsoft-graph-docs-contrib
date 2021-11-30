@@ -2,7 +2,7 @@
 title: "appleDeploymentChannel enum type"
 description: "Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

@@ -2075,33 +2075,33 @@
     },
     {
         "ChangeList": [{
-            "Id": "43FB2578-A808-4676-A902-65462F410484",
-            "ApiChange": "Resource",
-            "ChangedApiName": "audio",
-            "ChangeType": "change",
-            "Description": "Document audio resource limited to OneDrive Personal.",
-            "Target": "driveItem"
+            "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
+            "ApiChange": "Method",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
+            "Target": "delta"
         }],
-        "Id": "43FB2578-A808-4676-A902-65462F410484",
+        "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-09-29T12:00:00.000Z",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
         "WorkloadArea": "Files",
         "SubArea": ""
     },
     {
         "ChangeList": [{
-            "Id": "FB1A94F0-EEC1-4278-BFF6-6D36C0379317",
-            "ApiChange": "Resource",
-            "ChangedApiName": "audio",
-            "ChangeType": "change",
-            "Description": "Document audio resource limited to OneDrive Personal.",
-            "Target": "driveItem"
+            "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
+            "ApiChange": "Method",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
+            "Target": "delta"
         }],
-        "Id": "FB1A94F0-EEC1-4278-BFF6-6D36C0379317",
+        "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
         "Cloud": "prd",
         "Version": "v1.0",
-        "CreatedDateTime": "2021-09-29T12:00:00.000Z",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
         "WorkloadArea": "Files",
         "SubArea": ""
     }

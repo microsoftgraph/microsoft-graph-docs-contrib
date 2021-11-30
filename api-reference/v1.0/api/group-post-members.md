@@ -1,24 +1,25 @@
 ---
-title: "Add member"
-description: "Add a member to a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
+title: "Add members"
+description: "Add a member to a Microsoft 365 or security group through the members navigation property."
 ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add member
+# Add members
 
 Namespace: microsoft.graph
 
-Add a member to a Microsoft 365 group or a security group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
 You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
-> + You can only add users to security and Microsoft 365 groups managed through the cloud.
+> + You can only add users to groups that are managed through the cloud.
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
+> + You cannot use this API to add members to a mail-security security group.
 
 ## Permissions
 
@@ -68,7 +69,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -88,6 +88,10 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-member-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-member-to-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,7 +127,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
-Content-length: 30
 
 {
   "members@odata.bind": [
@@ -147,6 +150,10 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

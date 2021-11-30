@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update organizationalBranding
 Namespace: microsoft.graph
 
-Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) object.
+Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -75,6 +75,7 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
+Accept-Language: 0
 
 {
     "signInPageText":"Default",
@@ -95,6 +96,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandinglocaliation-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocaliation-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,6 +126,7 @@ The following request updates the banner logo for the default branding.
 The following is an example of the request.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -142,6 +148,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 #### Response
