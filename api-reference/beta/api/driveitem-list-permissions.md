@@ -126,18 +126,18 @@ Content-Type: application/json
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
         }
       },
       "grantedToV2": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
         },
         "siteUser": {
           "id": "1",
-          "displayName": "John Doe",
-          "loginName": "John Doe"
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {
