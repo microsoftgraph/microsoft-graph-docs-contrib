@@ -11,16 +11,17 @@ doc_type: resourcePageType
 # sharePointIdentity resource type
 
 Represents a **sharePointIdentity** of an _actor_.
-It extends from the **identity** resource to provide capability to expose SharePoint specific information, for example, loginName or SharePoint IDs.
+
+This resource extends from the **identity** resource to provide capability to expose SharePoint-specific information; for example, **loginName** or SharePoint IDs.
 
 ## Properties
 
 | Property         | Type                        | Description |
 |:------------     |:----------------------------|:--------------------------------- |
-| displayName      | String                      | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md). |
-| id               | String                      | Unique identifier for the identity. It can be either Azure Active Directory ID or SharePoint ID. |
-| loginName        | String                      | LoginName of the SharePoint identity. |
-| thumbnails       | [ThumbnailSet][] collection | Collection that contains [ThumbnailSet][] objects associated with the item. For more info, see [List thumbnails for a DriveItem][]. Read-only. Nullable. |
+| displayName      | String                      | The identity's display name. Note that this might not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md). |
+| id               | String                      | Unique identifier for the identity. It can be either an Azure Active Directory ID or a SharePoint ID. |
+| loginName        | String                      | The sign in name of the SharePoint identity. |
+| thumbnails       | [thumbnailSet][] collection | Collection that contains [thumbnailSet][] objects associated with the item. For more information, see [List thumbnails for a driveItem][]. Read-only. Nullable. |
 
 ## JSON representation
 
