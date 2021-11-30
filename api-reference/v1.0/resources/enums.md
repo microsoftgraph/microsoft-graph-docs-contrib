@@ -11,6 +11,13 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### volumeType values
 
 |Member|
