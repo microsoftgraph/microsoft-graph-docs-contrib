@@ -31,6 +31,17 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{repl
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
+## Optional query parameters
+
+You can use `model` query parameter, which only supports the value `A`, as shown in the following examples. 
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
 ## Request headers
 
 | Name       | Description|
@@ -89,6 +100,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

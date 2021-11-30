@@ -2,7 +2,7 @@
 title: "windowsSModeConfiguration enum type"
 description: "The possible options to configure S mode unlock"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

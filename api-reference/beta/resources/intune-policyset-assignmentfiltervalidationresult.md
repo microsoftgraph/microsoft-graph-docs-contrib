@@ -2,7 +2,7 @@
 title: "assignmentFilterValidationResult resource type"
 description: "Represents result of Validation API."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

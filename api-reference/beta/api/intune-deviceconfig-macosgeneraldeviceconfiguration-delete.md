@@ -2,7 +2,7 @@
 title: "Delete macOSGeneralDeviceConfiguration"
 description: "Deletes a macOSGeneralDeviceConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

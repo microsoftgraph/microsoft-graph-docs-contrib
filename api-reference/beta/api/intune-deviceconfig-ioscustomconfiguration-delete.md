@@ -2,7 +2,7 @@
 title: "Delete iosCustomConfiguration"
 description: "Deletes a iosCustomConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

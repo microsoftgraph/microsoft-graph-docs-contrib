@@ -28,7 +28,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
-|[Azure Security Center](/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
@@ -107,12 +107,11 @@ Need more ideas? See [how some of our partners are using Microsoft Graph](https:
 
 Explore other options to connect with the Microsoft Graph Security API:
 
-- [Microsoft Graph Security connectors for Logic Apps, Flow and PowerApps](https://aka.ms/graphsecurityconnectors)
-- [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Microsoft Graph Security connectors for Logic Apps, Flow and Power Apps](https://aka.ms/graphsecurityconnectors)
 - [Jupyter Notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
 
 Engage with the community:
 
-- [Join the tech community](https://aka.ms/graphsecuritycommunity)
+- [Join the tech community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 

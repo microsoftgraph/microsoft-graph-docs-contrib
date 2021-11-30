@@ -11,9 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list-messages.md) method to retrieve the ID of an existing chat before creating a chat message.
+Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API can't create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before you can create a chat message.
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+> **Note**: We don't recommend that you use this API for data migration. It doesn't have the throughput necessary for a typical migration.
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

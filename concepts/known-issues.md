@@ -154,6 +154,12 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
+## Compliance
+
+### Subject rights request API permissions are not currently available
+
+The Subject rights request API entities within the Microsoft Graph privacy API currently do not have permissions available. This issue may prevent users from seeing permissions and consenting to the use of the API in their environment. 
+
 ## Contacts
 
 ### GET operation does not return default contacts folder
@@ -288,9 +294,11 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
-### allowExternalSenders property cannot be set in a POST or PATCH operation
+### allowExternalSenders property can only be accessed on unified groups
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
@@ -331,7 +339,12 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Batch size is limited
 
-JSON batch requests are currently limited to 20 individual requests.
+JSON batch requests are currently limited to 20 individual requests. 
+
+* Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
+
+For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -390,13 +403,24 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams).
 
 ### Unable to filter team members by roles
-The filter query to get members of a team based on their roles, `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`, might not work. The server might respond with a `BAD REQUEST`.
+Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
+
+### Requests to filter team members by role require a parameter
+
+All the requests to filter team members by roles expect either a _skipToken_ parameter or a _top_ paramater in the request, but not both. If both the parameters are passed in the request, the _top_ parameter will be ignored.
 
 ### Some properties for chat members might be missing in the response to a GET request
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ### Properties are missing in the list of teams that a user has joined
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
+
+### Installation of apps that require resource-specific consent permissions is not supported
+The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+- [Add app to team](/graph/api/team-post-installedapps.md)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users
 
@@ -410,7 +434,7 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
 
 ### Access to a user's profile photo is limited
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
 Failure to read or update a photo, in this case, results in the following error:
 
 ```javascript
@@ -458,6 +482,6 @@ The following limitations apply to query parameters:
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
-## Functionality available only in Office 365 REST or Azure AD Graph APIs
+## Functionality available only in Office 365 REST or Azure AD Graph APIs (deprecated)
 
-Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](/previous-versions/office/office-365-api/). For Azure Active Directory, see [Migrate Azure AD Graph apps to Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](/previous-versions/office/office-365-api/). For Azure AD Graph, see [Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph](./migrate-azure-ad-graph-overview.md).

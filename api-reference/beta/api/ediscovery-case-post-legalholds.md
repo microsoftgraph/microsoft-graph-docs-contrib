@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
-Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",
@@ -103,6 +102,10 @@ Content-length: 295
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-legalhold-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-legalhold-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
