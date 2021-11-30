@@ -3,14 +3,14 @@ author: tushar20
 ms.date: 09/09/2021
 title: sharePointIdentity resource type
 ms.localizationpriority: medium
-description: "Represents a SharePoint identity of an actor."
+description: "Represents the SharePoint identity of an actor."
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
 # sharePointIdentity resource type
 
-Represents a **sharePointIdentity** of an _actor_.
+Represents the **sharePointIdentity** of an _actor_.
 
 This resource extends from the **identity** resource to provide capability to expose SharePoint-specific information; for example, **loginName** or SharePoint IDs.
 
@@ -41,8 +41,8 @@ This resource extends from the **identity** resource to provide capability to ex
 }
 ```
 
-[ThumbnailSet]: thumbnailset.md
-[List thumbnails for a DriveItem]: ../api/driveitem-list-thumbnails.md
+[thumbnailSet]: thumbnailset.md
+[List thumbnails for a driveItem]: ../api/driveitem-list-thumbnails.md
 
 <!-- {
   "type": "#page.annotation",
