@@ -131,25 +131,25 @@ Content-type: application/json
       "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
       "grantedToV2": {
         "user": {
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
-          "displayName": "Ryan Gregg"
+          "displayName": "Robin Danielsen"
         },
         "siteUser": {
           "id": "1",
-          "displayName": "Ryan Gregg",
-          "loginName": "Ryan Gregg"
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
