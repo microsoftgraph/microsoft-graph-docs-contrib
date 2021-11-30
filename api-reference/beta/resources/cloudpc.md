@@ -41,14 +41,14 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
 |managedDeviceName|String|The Cloud PC’s Intune device name.|
 |onPremisesConnectionName|String|The on-premises connection that is applied during provisioning of Cloud PCs.|
-|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem--values)|The version of OS to provision on Cloud PCs. Possible values: `windows10`, `windows11` and `unknownFutureValue`.|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of OS to provision on Cloud PCs. Possible values: `windows10`, `windows11` and `unknownFutureValue`.|
 |provisioningPolicyId|String|The Cloud PC's provisioning policy ID.|
 |provisioningPolicyName|String|The provisioning policy that is applied during provisioning of Cloud PCs.|
 |servicePlanId|String|The Cloud PC's service plan ID.|
 |servicePlanName|String|The Cloud PC's service plan name.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed` and `unknownFutureValue`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype--values)|The account type of user on provisioned Cloud PCs. Possible values: `standardUser`, `administrator` and `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of user on provisioned Cloud PCs. Possible values: `standardUser`, `administrator` and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 
 ### cloudPcStatus values

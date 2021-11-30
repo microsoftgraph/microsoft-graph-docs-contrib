@@ -25,8 +25,8 @@ Represents the Cloud PC organization settings for a tenant. And there's only one
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the organization settings.|
-|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem--values)|The account type of user on provisioned Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
-|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype--values)|The version of OS to provision on Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
+|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|The account type of user on provisioned Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|The version of OS to provision on Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 
 ### cloudPcOperatingSystem values
 
