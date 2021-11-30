@@ -58,14 +58,14 @@ In the request body, provide a JSON object with the following parameters.
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
+## Response
+
+Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
+
 ## Example
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file will be named `contoso plan (copy).txt`.
-
-## Response
-
-Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
 
 
 ### Request
