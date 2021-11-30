@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
 conversationMemberId := "conversationMember-id"
-graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Delete(options)
+graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Delete(nil)
 
 
 ```

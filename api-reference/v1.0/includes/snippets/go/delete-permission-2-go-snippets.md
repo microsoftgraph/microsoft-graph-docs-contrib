@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 siteId := "site-id"
 permissionId := "permission-id"
-graphClient.SitesById(&siteId).PermissionsById(&permissionId).Delete(options)
+graphClient.SitesById(&siteId).PermissionsById(&permissionId).Delete(nil)
 
 
 ```
