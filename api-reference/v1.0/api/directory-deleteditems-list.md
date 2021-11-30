@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
 ## Permissions
 

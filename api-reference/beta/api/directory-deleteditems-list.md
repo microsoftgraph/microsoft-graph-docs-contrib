@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ GET /directory/deletedItems/microsoft.graph.user
 This API currently supports retrieving object types of applications (microsoft.graph.application), servicePrincipals (microsoft.graph.serviceprincipal), groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
