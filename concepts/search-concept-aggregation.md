@@ -8,7 +8,8 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to refine queries with aggregations
 
-Refine search results and show their distribution in the index.
+Refine search results with and show their distribution in the index. 
+In the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true), specify the aggregations in [aggregationOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true). Each aggregationOption specifies the property on which the aggregation should be computed, and the number of [searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) to be returned in the response.
 
 ## Example 1: Request aggregations by string fields
 
@@ -40,7 +41,7 @@ Content-Type: application/json
       "size": 25,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 20,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -103,7 +104,7 @@ Content-type: application/json
             "aggregations": [
                 {
                     "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                    "field": "FileType",
+                    "field": "fileType",
                     "buckets": [
                         {
                             "@odata.type": "#microsoft.substrateSearch.searchBucket",
@@ -166,7 +167,7 @@ Content-type: application/json
 
 ## Example 2: Apply an aggregation filter based on a previous request
 
-This example applies an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field and `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` as the `lastModifiedTime` field in example 1.
+This example applies an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `fileType` field and `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` as the `lastModifiedTime` field in example 1.
 
 The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**. If multiple values for the same filter are required, the string value assigned to the **aggregationFilters** property should follow this format : **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**.
 
@@ -192,7 +193,7 @@ Content-Type: application/json
       "size": 20,
       "aggregations": [
           {
-              "field": "FileType",
+              "field": "fileType",
               "size": 10,
               "bucketDefinition": {
                   "sortBy": "count",
@@ -202,7 +203,7 @@ Content-Type: application/json
           }
       ],
       "aggregationFilters": [
-        "FileType:\"ǂǂ68746d6c\"",
+        "fileType:\"ǂǂ68746d6c\"",
         "lastModifiedTime:range(2021-09-01T09:08:19.6224752Z, 2021-11-09T09:08:19.6224752Z)"
       ]
     }
@@ -229,7 +230,7 @@ Content-type: application/json
             "aggregations": [
                 {
                     "@odata.type": "#microsoft.substrateSearch.searchAggregation",
-                    "field": "FileType",
+                    "field": "fileType",
                     "buckets": [
                         {
                             "@odata.type": "#microsoft.substrateSearch.searchBucket",
