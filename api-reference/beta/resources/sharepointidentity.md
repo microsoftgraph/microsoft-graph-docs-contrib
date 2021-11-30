@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Represents the **sharePointIdentity** of an _actor_.
 
-This resource extends from the **identity** resource to provide capability to expose SharePoint-specific information; for example, **loginName** or SharePoint IDs.
+This resource extends from the **identity** resource to provide the ability to expose SharePoint-specific information; for example, **loginName** or SharePoint IDs.
 
 ## Properties
 
