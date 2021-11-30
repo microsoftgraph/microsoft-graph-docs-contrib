@@ -251,22 +251,22 @@ property will contain the information about the account that redeemed the permis
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName": "Robin Danielsen"
     }
   },
   "grantedToV2": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName": "Robin Danielsen"
     },
     "siteUser": {
       "id": "1",
-      "displayName": "John Doe",
-      "loginName": "John Doe"
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "invitation": {
-    "email": "jd@contoso.com",
+    "email": "rd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
