@@ -125,7 +125,7 @@ Content-type: application/json
 
 ### Example 2: Get manager chain up to the root level
 
-The following example shows a request to get the manager chain up to the root level. This request requires the **ConsistencyLevel** header set to eventual because `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](graph/aad-advanced-queries).
+The following example shows a request to get the manager chain up to the root level. This request requires the **ConsistencyLevel** header set to `eventual` because `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 #### Request
 
