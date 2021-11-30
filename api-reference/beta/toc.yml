@@ -14388,7 +14388,7 @@ items:
           href: resources/teamworkdeviceoperation.md
           items:
             - name: List device operations
-              href: api/teamworkdeviceoperation-list
+              href: api/teamworkdeviceoperation-list.md
             - name: Get device operations
               href: api/teamworkdeviceoperation-get.md
       - name: Activity feed
