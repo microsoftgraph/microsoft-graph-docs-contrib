@@ -23,6 +23,7 @@ None.
 |:---|:---|:---|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 |windows|[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|A container for all Windows Update for Business deployment service functionality. Read-only.|
+|sharepoint|[microsoft.graph.admin.sharepoint](../resources/admin-sharepoint.md)|A container for administrative resources to manage a tenant's sharepoint/onedrive settings.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
