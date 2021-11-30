@@ -1,6 +1,6 @@
 ---
 title: "Remove a student"
-description: "Removes an educationUser from an educationClass."
+description: "Remove an educationUser from an educationClass."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes an [educationUser](../resources/educationuser.md) from an [educationClass](../resources/educationclass.md).
+Remove an [educationUser](../resources/educationuser.md) from an [educationClass](../resources/educationclass.md).
 
 >**Note:** Teachers _and_ students are in the class **members** collection. Before calling this API, ensure that the **educationUser** you are removing is not a teacher.  Get the list of teachers by calling [educationclass_list_teachers](educationclass-list-teachers.md) and verifying the user ID of the user to be removed is not in the returned teacher list.
 
