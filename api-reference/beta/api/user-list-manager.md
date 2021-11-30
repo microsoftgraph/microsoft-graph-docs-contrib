@@ -49,7 +49,8 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 >**Note:** 
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
-> + When the `$levels` parameter is not specified, only the immediate manager is returned.  
+> + When the `$levels` parameter is not specified, only the immediate manager is returned.
+> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## Request headers
 
