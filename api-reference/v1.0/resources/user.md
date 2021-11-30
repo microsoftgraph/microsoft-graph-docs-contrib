@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure Active Directory (Azure AD) user account. This resource is an open type that allows other properties to be passed in. Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 

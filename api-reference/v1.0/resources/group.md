@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
 
 Inherits from [directoryObject](directoryobject.md).
 
