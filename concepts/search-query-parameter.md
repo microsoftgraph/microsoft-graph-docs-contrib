@@ -120,7 +120,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search uses a tokenization approach which works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follows:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains` due to performance reasons. Instead it uses a tokenization approach which works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follows:
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -130,7 +130,7 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 ⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`. 
 ⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
-> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
+> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, `李四(David Li)` will match search strings `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李四`.
 
 The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
 
