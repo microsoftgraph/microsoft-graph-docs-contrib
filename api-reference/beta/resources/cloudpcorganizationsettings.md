@@ -28,7 +28,7 @@ Represents the Cloud PC organization settings for a tenant. And there's only one
 |osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem--values)|The account type of user on provisioned Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
 |userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype--values)|The version of OS to provision on Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 
-### cloudPcOperatingSystem  values
+### cloudPcOperatingSystem values
 
 |Member|Description|
 |:---|:---|
@@ -36,7 +36,7 @@ Represents the Cloud PC organization settings for a tenant. And there's only one
 |windows11|The Windows 11 operating system.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
-### cloudPcUserAccountType  values
+### cloudPcUserAccountType values
 
 |Member|Description|
 |:---|:---|
