@@ -22,6 +22,70 @@
       "ChangeList": [
         {
           "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagement",
+          "ChangeType": "Addition",
+          "Description": "Added [entitlementManagement](https://docs.microsoft.com/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource. The entitlementManagement singleton is the container for entitlement management resources, including **accessPackageCatalog**, **connectedOrganization**, and **entitlementManagementSettings**.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added [identityGovernance](https://docs.microsoft.com/graph/api/resources/identitygovernance?view=graph-rest-1.0) resource. The identityGovernance singleton is the container for identity governance resources, including **access reviews** and **entitlement management**.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackage](https://docs.microsoft.com/graph/api/resources/accessPackage?view=graph-rest-1.0) resource and related methods for collecting resource roles which can be assigned to users via entitlement management.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignment](https://docs.microsoft.com/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource and related methods for managing access package assignments in entitlement management.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource and related methods for managing access package assignment requests in entitlement management.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageCatalog",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accessPackageCatalog?view=graph-rest-1.0) resource and related methods for collecting related access packages in entitlement management.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSubject](https://docs.microsoft.com/graph/api/resources/accessPackageSubject?view=graph-rest-1.0) resource for representing the subject user of an access package assignment in entitlement management.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [entitlementManagementSettings](https://docs.microsoft.com/graph/api/resources/entitlementManagementSettings?view=graph-rest-1.0) resource and related methods for managing settings for entitlement management.",
+          "Target": "entitlementManagementSettings"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
           "ApiChange": "EnumType",
           "ChangedApiName": "accessPackageAssignmentFilterByCurrentUserOptions",
           "ChangeType": "Addition",
@@ -103,42 +167,10 @@
         {
           "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
           "ApiChange": "EnumType",
-          "ChangedApiName": "dayOfWeek",
-          "ChangeType": "Addition",
-          "Description": "Added the **dayOfWeek** enumeration type.",
-          "Target": "dayOfWeek"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "EnumType",
           "ChangedApiName": "expirationPatternType",
           "ChangeType": "Addition",
           "Description": "Added the **expirationPatternType** enumeration type.",
           "Target": "expirationPatternType"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "recurrencePatternType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recurrencePatternType** enumeration type.",
-          "Target": "recurrencePatternType"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "recurrenceRangeType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recurrenceRangeType** enumeration type.",
-          "Target": "recurrenceRangeType"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "weekIndex",
-          "ChangeType": "Addition",
-          "Description": "Added the **weekIndex** enumeration type.",
-          "Target": "weekIndex"
         },
         {
           "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
@@ -207,22 +239,6 @@
         {
           "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
           "ApiChange": "Resource",
-          "ChangedApiName": "recurrencePattern",
-          "ChangeType": "Addition",
-          "Description": "Added the [recurrencePattern](https://docs.microsoft.com/graph/api/resources/recurrencePattern?view=graph-rest-1.0) resource type.",
-          "Target": "recurrencePattern"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "recurrenceRange",
-          "ChangeType": "Addition",
-          "Description": "Added the [recurrenceRange](https://docs.microsoft.com/graph/api/resources/recurrenceRange?view=graph-rest-1.0) resource type.",
-          "Target": "recurrenceRange"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
           "ChangedApiName": "requestorManager",
           "ChangeType": "Addition",
           "Description": "Added the [requestorManager](https://docs.microsoft.com/graph/api/resources/requestorManager?view=graph-rest-1.0) resource type.",
@@ -251,54 +267,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [subjectSet](https://docs.microsoft.com/graph/api/resources/subjectSet?view=graph-rest-1.0) resource type.",
           "Target": "subjectSet"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackage",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackage](https://docs.microsoft.com/graph/api/resources/accessPackage?view=graph-rest-1.0) resource and related methods for collecting resource roles which can be assigned to users via entitlement management.",
-          "Target": "accessPackage"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignment",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAssignment](https://docs.microsoft.com/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource and related methods for managing access package assignments in entitlement management.",
-          "Target": "accessPackageAssignment"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentRequest",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource and related methods for managing access package assignment requests in entitlement management.",
-          "Target": "accessPackageAssignmentRequest"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageCatalog",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accessPackageCatalog?view=graph-rest-1.0) resource and related methods for collecting related access packages in entitlement management.",
-          "Target": "accessPackageCatalog"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageSubject",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackageSubject](https://docs.microsoft.com/graph/api/resources/accessPackageSubject?view=graph-rest-1.0) resource for representing the subject user of an access package assignment in entitlement management.",
-          "Target": "accessPackageSubject"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "entitlementManagementSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [entitlementManagementSettings](https://docs.microsoft.com/graph/api/resources/entitlementManagementSettings?view=graph-rest-1.0) resource and related methods for managing settings for entitlement management.",
-          "Target": "entitlementManagementSettings"
         },
         {
           "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
@@ -347,20 +315,12 @@
           "ChangeType": "Addition",
           "Description": "Added the [connectedOrganization](https://docs.microsoft.com/graph/api/resources/connectedOrganization?view=graph-rest-1.0) resource, and related methods, for modeling a reference to another organization whose users can request access via entitlement management.",
           "Target": "connectedOrganization"
-        },
-        {
-          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "entitlementManagement",
-          "ChangeType": "Addition",
-          "Description": "Added [entitlementManagement](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-1.0) resources.",
-          "Target": "entitlementManagement"
         }
       ],
       "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-11-05T00:00:00.2532422Z",
+      "CreatedDateTime": "2021-12-01T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
    },
@@ -2828,14 +2788,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
           "Target": "accessPackageAssignment"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageAssignmentPolicy"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",

@@ -122,15 +122,6 @@ Namespace: microsoft.graph
 |proposed|
 |unknownFutureValue|
 
-### expirationPatternType values
-
-| Member | Description |
-|:---------------|:----------|
-|notSpecified|No expiration schedule was specified.|
-|noExpiration|The requestor did not wish the access to expire.|
-|afterDateTime|Access will expire after a specified date and time.|
-|afterDuration|Access will expire after a specified duration relative to access being granted. Required when the **duration** property is specified.|
-
 ### volumeType values
 
 |Member|

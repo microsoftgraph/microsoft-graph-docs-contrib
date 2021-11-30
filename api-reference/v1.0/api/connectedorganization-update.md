@@ -53,7 +53,7 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{connecte
 
 ## Response
 
-If successful, this method returns a `204 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
 
 ## Examples
 
@@ -67,7 +67,6 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization new name",
@@ -86,7 +85,7 @@ Content-length: 100
 }
 -->
 ``` http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {

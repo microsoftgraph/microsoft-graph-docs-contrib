@@ -1,5 +1,5 @@
 ---
-title: "Add connected organization internal sponsor"
+title: "Add internalSponsors"
 description: "Add a user or group to the connected organization's internal sponsors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a user or a group to the connected organization's internal sponsors. The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Add a user or a group to the connected organization's internal sponsors. The [internal sponsors](../resources/internalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +53,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"

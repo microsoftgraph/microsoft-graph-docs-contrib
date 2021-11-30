@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.accessPackageSubject",
   "id": "String (identifier)",
   "objectId": "String",
+  "onPremisesSecurityIdentifier": "String",
   "displayName": "String",
   "principalName": "String",
   "email": "String",

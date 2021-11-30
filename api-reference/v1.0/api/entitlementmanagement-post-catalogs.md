@@ -67,7 +67,6 @@ If successful, this method returns a 200-series response code and a new [accessP
 ``` http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs
 Content-Type: application/json
-Content-length: 232
 
 {
   "displayName": "sales",

@@ -1,5 +1,5 @@
 ---
-title: "Remove connected organization internal sponsor"
+title: "Remove internalSponsors"
 description: "Remove a user or group from the connected organization's internal sponsors."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,11 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Remove connected organization internal sponsor
+# Remove internalSponsors
 
 Namespace: microsoft.graph
 
-Remove a user or a group from the connected organization's internal sponsors. The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Remove a user or a group from the connected organization's internal sponsors. The [internal sponsors](../resources/internalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
 
 
 ## Permissions

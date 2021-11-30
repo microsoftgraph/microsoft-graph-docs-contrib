@@ -68,9 +68,9 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## See also
 
+- [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 - [subjectSet](subjectset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md).
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
 - [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).
-- [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 
 

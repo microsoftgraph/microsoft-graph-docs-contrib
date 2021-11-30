@@ -56,7 +56,7 @@ You can specify the following properties when creating an **accessPackage**.
 
 ## Response
 
-If successful, this method returns a 201 Created response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.
 
 ## Examples
 
@@ -69,7 +69,6 @@ If successful, this method returns a 201 Created response code and a new [access
 ``` http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages
 Content-Type: application/json
-Content-length: 164
 
 {
   "displayName": "sales reps",

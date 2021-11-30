@@ -1,5 +1,5 @@
 ---
-title: "Remove connected organization external sponsor"
+title: "Remove externalSponsors"
 description: "Remove a user or group from the connected organization's external sponsors."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,11 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Remove connected organization external sponsor
+# Remove externalSponsors
 
 Namespace: microsoft.graph
 
-Remove a user or a group from the connected organization's external sponsors. The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Remove a user or a group from the connected organization's external sponsors. The [external sponsors](../resources/externalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
 
 
 ## Permissions

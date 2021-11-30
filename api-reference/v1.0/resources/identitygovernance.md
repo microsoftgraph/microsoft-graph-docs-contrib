@@ -9,8 +9,21 @@ doc_type: "resourcePageType"
 
 # identityGovernance resource type
 
-The identity governance singleton is the container for identity governance resources, including [access reviews](accessreviewsv2-root.md) and [entitlement management](entitlementmanagement-root.md).
+Namespace: microsoft.graph
+
+The identity governance singleton is the container for identity governance resources, including [access reviews](accessreviewsv2-root.md) and [entitlement management](entitlementmanagement.md).
+
+## Methods
+
+None.
+
+## Properties
+
+None.
 
 ## Relationships
-None.
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Container for entitlement management resources, including [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md), and [entitlementManagementSettings](entitlementmanagementsettings.md).|
 

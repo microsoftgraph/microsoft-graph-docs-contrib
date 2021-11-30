@@ -67,7 +67,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 Content-Type: application/json
-Content-length: 38
 
 {
   "displayName":"Access Package New Name"
