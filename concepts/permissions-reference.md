@@ -214,7 +214,10 @@ None.
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AppCatalog.Read.All_ | Read all app catalogs | Allows the app to read apps in the app catalogs without a signed-in user. | Yes |
+| _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs | Allows the app to create, read, update, and delete apps in the app catalogs without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -661,6 +664,26 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+---
+
+## Custom security attributes permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant on behalf of a signed in user. | Yes | No |
+| _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant on behalf of a signed in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
+| _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Yes |
+
+---
+
 ## Device permissions
 
 #### Delegated permissions
@@ -763,11 +786,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Domain permissions
 
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_Domain.Read.All_ |Read domains|Allows the app to read all domain properties on behalf of the signed-in user. |Yes | No |
+|_Domain.ReadWrite.All_ | Read and write domains |Allows the app to read and write all domain properties on behalf of the signed-in user. Also allows the app to add, verify, and remove domains. |Yes | No |
+
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Domain.Read.All_ | Read domains | Allows the app to read all domain properties without a signed-in user. | Yes |
 | _Domain.ReadWrite.All_ | Read and write domains | Allows the app to read and write domains without a signed-in user. | Yes |
+
+---
 
 ## eDiscovery permissions
 
@@ -2175,28 +2208,6 @@ The following usages are valid for both delegated permissions:
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
-
-## Teams app installation permissions 
-
-#### Delegated permissions
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsAppInstallation.ReadForUser_ | Read user's installed Teams apps| Allows the app to read the Teams apps that are installed for the signed-in user. Does not give the ability to read application-specific settings.| Yes | No |
-| _TeamsAppInstallation.ReadWriteForUser_ | Manage user's installed Teams apps| Allows the app to read, install, upgrade, and uninstall Teams apps installed for the signed in user. Does not give the ability to read application-specific settings.| No | No |
-| _TeamsAppInstallation.ReadWriteSelfForUser_ | Allow the app to manage itself in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
-| _TeamsAppInstallation.ReadForTeam_ | Read installed Teams apps in teams| Allows the app to read the Teams apps that are installed in teams the signed-in user can access. Does not give the ability to read application-specific settings.| Yes | No |
-| _TeamsAppInstallation.ReadWriteForTeam_ | Manage installed Teams apps in teams| Allows the app to read, install, upgrade, and uninstall Teams apps in teams the signed-in user can access. Does not give the ability to read application-specific settings.| Yes | No |
-| _TeamsAppInstallation.ReadWriteSelfForTeam_ | Allow the app to manage itself in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
-
-#### Application permissions
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _TeamsAppInstallation.ReadForUser.All_ | Read installed Teams apps for all users| Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteForUser.All_ | Manage Teams apps for all users| Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteSelfForUser.All_ | Allow the app to manage itself for all users| Allows a Teams app to read, install, upgrade, and uninstall itself to any user, without a signed-in user.| Yes |
-| _TeamsAppInstallation.ReadForTeam.All_ | Read installed Teams apps for all teams| Allows the app to read the Teams apps that are installed in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
-| _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
 
 ## Threat assessment permissions
 

@@ -11,7 +11,6 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|
@@ -120,6 +119,12 @@ Namespace: microsoft.graph
 |:---|
 |configured|
 |proposed|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
 |unknownFutureValue|
 
 ### volumeType values

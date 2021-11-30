@@ -39,6 +39,13 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## Optional query parameters
 
+You can use `model` query parameter which supports the values `A` and `B`, based on the preferred licensing and payment requirements. If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. Following are the examples.
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
+
 This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ```http
