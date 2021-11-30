@@ -49,15 +49,13 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
 > + When the `$levels` parameter is not specified, only the immediate manager is returned.  
 > + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`
-> + In order to select the expanded manager's properties, the `$count=true` parameter must be added to the query as well as the header,
-`ConsistencyLevel=eventual`. You can see this implemented in Example 2.
 
 ## Request headers
 
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. Required when the request includes the `$expand=manager($levels=max)` parameter. |
+| ConsistencyLevel | eventual. Required when the request includes the `$count=true` query string. |
 
 ## Request body
 
@@ -126,7 +124,7 @@ Content-type: application/json
 
 ### Example 2: Get manager chain up to the root level
 
-The following example shows a request to get the manager chain up to the root level.
+The following example shows a request to get the manager chain up to the root level. This request requires the **ConsistencyLevel** header set to `eventual` because `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 #### Request
 
