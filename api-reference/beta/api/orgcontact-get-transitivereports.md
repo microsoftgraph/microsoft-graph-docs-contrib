@@ -96,9 +96,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: text/plain
 
-5
 ```
 
+`5`
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
