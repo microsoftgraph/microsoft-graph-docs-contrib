@@ -72,8 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [base
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_basetask",
-  "@odata.type": "#microsoft.graph.baseTask"
+  "name": "update_basetask"
 }
 -->
 ``` http
@@ -111,7 +110,8 @@ Content-length: 634
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.baseTask"
 }
 -->
 ``` http

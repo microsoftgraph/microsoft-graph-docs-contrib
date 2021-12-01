@@ -77,7 +77,7 @@ Content-length: 82
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.baseTaskList"
+  "@odata.type": "microsoft.graph.baseTaskList"
 }
 -->
 ``` http
