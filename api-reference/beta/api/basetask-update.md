@@ -72,7 +72,8 @@ If successful, this method returns a `200 OK` response code and an updated [base
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_basetask"
+  "name": "update_basetask",
+  "@odata.type": "#microsoft.graph.baseTask"
 }
 -->
 ``` http

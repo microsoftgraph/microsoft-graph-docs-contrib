@@ -76,7 +76,8 @@ Content-length: 82
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "#microsoft.graph.baseTaskList"
 }
 -->
 ``` http
