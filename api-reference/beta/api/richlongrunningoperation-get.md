@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /sites/{sitesId}/operations/{richLongRunningOperationId}
-GET /sites/{sitesId}/lists/{listId}/operations/{richLongRunningOperationId}
+GET /sites/{sitesId}/operations/{richLongRunningOperation-ID}
+GET /sites/{sitesId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 ```
 
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [richLongRunni
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/operations/{richLongRunningOperationId}
+GET https://graph.microsoft.com/beta/sites/{sitesId}/operations/{richLongRunningOperation-ID}
 ```
 
 

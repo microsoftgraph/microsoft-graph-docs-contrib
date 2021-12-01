@@ -54,6 +54,7 @@ All examples below are relative to a site, for example, `https://graph.microsoft
 [Add copy of content type from site]: ../api/contenttype-addCopy.md
 [List columns]: ../api/list-list-columns.md
 [Create column]: ../api/list-post-columns.md
+
 ## JSON representation
 
 Here is a JSON representation of a **list** resource.

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [richLongRunningOperation](../resources/richlongrunningoperation.md) resources from the operations navigation property in a site.
+Get the [richLongRunningOperation](../resources/richlongrunningoperation.md) resources from the operations navigation property in a [site](../resources/site.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/operations
+GET https://graph.microsoft.com/beta/sites/{site-ID}/operations
 ```
 
 

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [richLongRunningOperation](../resources/richlongrunningoperation.md) resources from the operations navigation property in a list.
+Get the [richLongRunningOperation](../resources/richlongrunningoperation.md) resources from the operations navigation property in a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
