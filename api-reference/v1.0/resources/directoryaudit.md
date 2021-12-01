@@ -2,7 +2,7 @@
 title: "directoryAudit resource type"
 description: "Represents the directory audit items and its collection."
 author: "SarahBar"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

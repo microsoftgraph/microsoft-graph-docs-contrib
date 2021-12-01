@@ -1,7 +1,7 @@
 ---
 title: "assignLicense"
 description: "Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this Technet article."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -61,7 +61,6 @@ Add licenses to the user.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -93,6 +92,10 @@ Content-length: 185
 [!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,7 +106,6 @@ Remove licenses from the user.
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [],
@@ -121,7 +123,6 @@ In both examples, the response is the updated user object. Note: The response ob
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,

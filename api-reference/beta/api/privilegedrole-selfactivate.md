@@ -1,10 +1,10 @@
 ---
 title: "privilegedRole: selfActivate"
 description: "Activate the role that is assigned to the requester."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRole: selfActivate
@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Activate the role that is assigned to the requester.
 
@@ -70,7 +72,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfActivate
 Content-type: application/json
-Content-length: 142
 
 {
   "reason": "reason-value",
@@ -95,6 +96,10 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,7 +115,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

@@ -2,7 +2,7 @@
 title: "serviceUpdateMessage: unfavorite"
 description: "Remove the favorite status of serviceUpdateMessage for the signed in user."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -84,6 +84,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -137,6 +141,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-userconsentrequest-inprogress-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-userconsentrequest-inprogress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create bookingAppointment"
 description: "Create a new bookingAppointment for the specified bookingbusiness."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).
+Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,17 +32,17 @@ POST /bookingBusinesses/{id}/appointments
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request. This appointment does not involve booking specific staff members.
 
 # [HTTP](#tab/http)
@@ -83,6 +83,8 @@ Content-type: application/json
     "customerName":"Jordan Miller",
     "customerNotes":"Please be on time.",
     "customerPhone":"213-555-0199",
+    "customerTimeZone":"America/Chicago",
+    "smsNotificationsEnabled":true,
     "end":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-01T12:30:00.0000000+00:00",
@@ -98,6 +100,7 @@ Content-type: application/json
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
     "invoiceStatus":"open",
     "invoiceUrl":"theInvoiceUrl",
+    "isLocationOnline": true,
     "optOutOfCustomerEmail":false,
     "postBuffer":"PT10M",
     "preBuffer":"PT5M",
@@ -177,11 +180,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingappointment-from-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-bookingappointment-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -195,10 +204,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "isLocationOnline": true,
+    "joinWebUrl":"https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+    "smsNotificationsEnabled":true,
     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
     "customerName": "Jordan Miller",
     "customerEmailAddress": "jordanm@contoso.com",
     "customerPhone": "213-555-0199",
+    "customerTimeZone":"America/Chicago",
     "customerNotes": null,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",

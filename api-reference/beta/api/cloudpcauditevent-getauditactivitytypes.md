@@ -2,7 +2,7 @@
 title: "cloudPcAuditEvent: getAuditActivityTypes"
 description: "Get audit activity types by tenant id."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get audit activity types by tenant ID.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -81,6 +79,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcauditevent-getauditactivitytypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcauditevent-getauditactivitytypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Get governanceRoleSetting
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).
 
@@ -88,6 +90,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 [!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-governancerolesetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -99,7 +105,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 370
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings/$entity",

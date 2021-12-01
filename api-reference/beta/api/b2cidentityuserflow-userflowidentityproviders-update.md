@@ -1,7 +1,7 @@
 ---
 title: "Add a userFlowIdentityProvider"
 description: "Add an identityProvider to a b2cIdentityUserFlow."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2cuserflows-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2cuserflows-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

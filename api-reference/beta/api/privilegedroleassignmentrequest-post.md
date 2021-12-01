@@ -1,10 +1,10 @@
 ---
 title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Create privilegedRoleAssignmentRequest
@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.
 
@@ -112,6 +114,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-privilegedroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-privilegedroleassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -124,7 +130,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 304
 
 
 {

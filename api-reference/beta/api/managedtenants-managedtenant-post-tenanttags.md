@@ -2,7 +2,7 @@
 title: "Create tenantTag"
 description: "Create a new tenantTag object."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -66,7 +66,6 @@ If successful, this method returns a `201 Created` response code and a [tenantTa
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Support",
@@ -87,6 +86,10 @@ Content-length: 382
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tenanttag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tenanttag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List availableProviderTypes"
 description: "Retrieve all available identity provider types in the directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

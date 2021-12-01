@@ -1,7 +1,7 @@
 ---
 title: "List connections"
 description: "Retrieve a list of externalConnections."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/external/connections
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

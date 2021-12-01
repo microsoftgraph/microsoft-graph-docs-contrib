@@ -2,6 +2,7 @@
 title: "National cloud deployments"
 description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
 author: "arpitha-dhanapathi"
+ms.localizationpriority: medium
 ---
 
 # National cloud deployments
@@ -49,13 +50,13 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 > [!IMPORTANT]
 > For an app in US Government:
-> 
-> 
+>
+>
 > * If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
 > * If you're working in a Microsoft 365 GCC High environment, use: `https://portal.azure.us` and `https://graph.microsoft.us`.
 > * If you're working in a Microsoft 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
-> 
-> 
+>
+>
 > Access to US Government data using the worldwide endpoint will be disabled in the near future.
 
 > [!NOTE]
@@ -71,7 +72,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
 | Directory schema extensions | ✔ | ✔ | ➖ |
-| Excel | ✔ | ✔\* | ✔ |
+| Excel | ✔ | ➖ | ✔ |
 | Groups | ✔ | ✔ | ✔ |
 | OneDrive | ✔ | ✔\* | ✔ |
 | Open type extensions | ✔ | ➖ | ➖ |
@@ -109,3 +110,9 @@ To learn more about National clouds, see the following topics:
 * [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 * [Azure China 21Vianet](/azure/china/)
 * [Azure Germany](/azure/germany/)
+
+Explore samples for authenticating and working with Azure and Microsoft 365 in National cloud deployments:
+
+* [Work with Azure through Microsoft Graph for US Government](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
+* [Connect to US Government O365 environments (GCC, GCC High and GCC DoD) using Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+

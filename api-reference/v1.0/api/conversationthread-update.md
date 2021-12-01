@@ -1,7 +1,7 @@
 ---
 title: "Update conversationthread"
 description: "Lock or unlock a thread, to allow or avoid further posting to the thread."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType

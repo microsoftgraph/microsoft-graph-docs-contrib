@@ -2,7 +2,7 @@
 author: daspek
 title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 >**Note:** This API only supports a time range of 90 days for daily counts. The value of the `startDateTime` and `endDateTime` parameters must represent a time range of less than 90 days.
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

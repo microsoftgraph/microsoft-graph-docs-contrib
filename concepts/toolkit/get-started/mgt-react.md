@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Toolkit React components"
 description: "The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -88,7 +88,12 @@ import { MgtTemplateProps } from '@microsoft/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
+  return <div>
+    {event.subject}<br />
+    {event.attendees
+      .map((attendee: any) => attendee.emailAddress.name)
+      .join(', ')}
+  </div>;
 };
 ```
 

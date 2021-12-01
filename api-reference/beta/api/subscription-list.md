@@ -1,7 +1,7 @@
 ---
 title: "List subscriptions"
 description: " see the scenarios below for details."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: apiPageType
 ms.prod: "change-notifications"
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/subscriptions
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscriptions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -119,7 +123,6 @@ Here is an example of the response. Note: The response shown here may be truncat
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 586
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions",

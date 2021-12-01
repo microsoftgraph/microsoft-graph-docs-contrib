@@ -2,7 +2,7 @@
 title: "Create cloudPcOnPremisesConnection"
 description: "Create an on-premises connection  for provisioning Cloud PCs."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object for provisioning Cloud PCs.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -81,7 +79,6 @@ If successful, this method returns a `201 Created` response code and a [cloudPcO
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
 Content-Type: application/json
-Content-length: 800
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
@@ -112,6 +109,10 @@ Content-length: 800
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +129,6 @@ Content-length: 800
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

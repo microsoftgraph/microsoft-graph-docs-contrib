@@ -1,7 +1,7 @@
 ---
 title: "Install the Microsoft Graph SDK"
 description: "Provides instructions for installing the C#, Java, Javascript, Objective-C, PHP, and Ruby Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
@@ -16,13 +16,25 @@ The Microsoft Graph .NET SDK is included in the following NuGet packages:
 - [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API. Microsoft.Graph has a dependency on Microsoft.Graph.Core.
 - [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API. Microsoft.Graph.Beta has a dependency on Microsoft.Graph.Core.
 - [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - The core library for making calls to Microsoft Graph.
-- [Microsoft.Graph.Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - Provides an authentication scenario-based wrapper of the Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK. Microsoft.Graph.Auth has a dependency on Microsoft.Graph.Core.
 
-You can use either the [Package Manager UI in Visual Studio or the Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio) to install the Microsoft.Graph packages into your project. The following Package Manager Console commands will install the Microsoft.Graph, Microsoft.Graph.Core, and Microsoft.Graph.Auth libraries. Microsoft.Graph.Core is installed as a dependency of Microsoft.Graph.
+You can use either the [Package Manager UI in Visual Studio or the Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio) to install the Microsoft.Graph packages into your project. The following Package Manager Console commands will install the Microsoft.Graph and Microsoft.Graph.Core libraries. Microsoft.Graph.Core is installed as a dependency of Microsoft.Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
-Install-Package Microsoft.Graph.Auth -IncludePrerelease
+```
+
+## Install the Microsoft Graph Go SDK (preview)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+The Microsoft Graph Go SDK is included in the following packages:
+
+- [Microsoft Graph SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API.
+- [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API.
+- [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - The core library for making calls to Microsoft Graph.
+
+```Shell
+go get -u github.com/microsoftgraph/msgraph-sdk-go
 ```
 
 ## Install the Microsoft Graph Java SDK

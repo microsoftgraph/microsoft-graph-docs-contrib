@@ -2,7 +2,7 @@
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -58,7 +58,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
-Content-length: 30
 
 {
   "displayName": "Section group name"
@@ -80,6 +79,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/java/create-sectiongroup-from-notebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sectiongroup-from-notebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,7 +96,6 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

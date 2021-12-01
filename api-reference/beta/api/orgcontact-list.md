@@ -1,7 +1,7 @@
 ---
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/contacts
 [!INCLUDE [sample-code](../includes/snippets/java/list-orgcontact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-orgcontact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -93,7 +97,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "value": [
@@ -192,6 +195,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -253,6 +260,10 @@ ConsistencyLevel: eventual
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-phone-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-phone-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -18,8 +18,6 @@ Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassig
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
 
@@ -113,6 +111,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroleassignmentmultiple-from-rbacapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -164,6 +166,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

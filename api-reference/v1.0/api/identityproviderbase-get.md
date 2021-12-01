@@ -1,7 +1,7 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties and relationships of an identityProvider object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Get identityProvider
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in Azure AD.
+Get the properties and relationships of the specified identity provider configured in the tenant.
 
-For Azure AD B2C, it can retrieve properties and relationships of a [socialIdentityProvider](../resources/socialidentityprovider.md).
+Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) in the response body for an Azure AD tenant.
 
-For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body.
+For an Azure AD B2C tenant, this method returns a `200 OK` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in the response body.
 
 ## Examples
 
@@ -61,7 +61,6 @@ For an Azure AD B2C tenant, this method returns a `200 OK` response code and a J
 #### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,6 +72,7 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,8 +89,11 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/java/get-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-socialidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -122,7 +125,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -133,6 +135,7 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/MSASignup-OAUTH
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-builtinidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,8 +152,11 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/MSASignup-OAUTH
 [!INCLUDE [sample-code](../includes/snippets/java/get-builtinidentityprovider-from-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-builtinidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
 
@@ -171,5 +177,70 @@ Content-type: application/json
     "id": "MSASignup-OAUTH",
     "identityProviderType": "MicrosoftAccount",
     "displayName": "MicrosoftAccount"
+}
+```
+
+### Example 3: Retrieves Apple identity provider(only for Azure AD B2C)
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+}
+-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applemanagedidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applemanagedidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-applemanagedidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applemanagedidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applemanagedidentityprovider-from-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "Apple-Managed-OIDC",
+    "displayName": "Sign in with Apple",
+    "developerId": "UBF8T346G9",
+    "serviceId": "com.microsoft.rts.b2c.test.client",
+    "keyId": "99P6D879C4",
+    "certificateData": "******"
 }
 ```

@@ -2,7 +2,7 @@
 title: "Add owner"
 description: "Use this API to add an owner to an application."
 author: "sureshja"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
@@ -54,7 +54,6 @@ The following example shows the request.
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
 "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
@@ -75,6 +74,10 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

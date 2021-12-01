@@ -1,7 +1,7 @@
 ---
 title: "user: invalidateAllRefreshTokens"
 description: "Invalidates all of the user's refresh tokens issued to applications and session cookies in a user's browser."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -17,11 +17,15 @@ Invalidates all of the user's refresh tokens issued to applications (as well as 
 
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-+ For an application to allow the signed in user to invalidate applications they've consented to: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All
-+ For an application to allow an administrator to invalidate applications a user has consented to: Directory.ReadWrite.All, Directory.AccessAsUser.All
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -71,6 +75,10 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-invalidateallrefreshtokens-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-invalidateallrefreshtokens-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Get cloudPcAuditEvent"
 description: "Read the properties and relationships of a cloudPcAuditEvent object."
 author: "ecmadao"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -83,6 +81,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcauditevent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcauditevent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,17 +103,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
       "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
       "id": "250473f5-029f-4037-813d-ba4768201d61",
       "displayName": "Display Name value",
       "componentName": "Component Name value",  
       "activity": "Activity value",  
-      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",  
+      "activityDateTime": "2021-02-14T13:10:51.814636+08:00",
       "activityType": " Activity Type value",  
-      "activityOperationType": "Activity Operation Type value",  
+      "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",  
-      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",  
+      "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",
       "category": "Category value",
       "actor": {
           "@odata.type": "microsoft.graph.cloudPcAuditActor",
@@ -150,7 +151,6 @@ Content-Type: application/json
           "type": "Type value",
           "resourceId": "Resource Id value"
         }
-      ],
-  }
+      ]
 }
 ```

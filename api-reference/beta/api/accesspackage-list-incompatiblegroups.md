@@ -1,7 +1,7 @@
 ---
 title: "List incompatibleGroups"
 description: "Retrieve a list of groups whose access rights are incompatible with a specific access package."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-incompatiblegroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-incompatiblegroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

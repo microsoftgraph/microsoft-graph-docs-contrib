@@ -1,7 +1,7 @@
 ---
 title: "Delete appManagementPolicy"
 description: "Delete an application management policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madansr7"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

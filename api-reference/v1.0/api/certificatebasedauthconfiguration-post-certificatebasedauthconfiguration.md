@@ -1,7 +1,7 @@
 ---
 title: "Create certificateBasedAuthConfiguration"
 description: "Use this API to create a new certificateBasedAuthConfiguration."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/certificateBasedAuthConfiguration/$ref
+POST /organization/{id}/certificateBasedAuthConfiguration
 ```
 
 ## Request headers
@@ -94,6 +94,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

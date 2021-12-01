@@ -1,7 +1,7 @@
 ---
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -81,7 +81,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -130,6 +130,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -143,7 +147,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 Content-type: application/json
 
 ```

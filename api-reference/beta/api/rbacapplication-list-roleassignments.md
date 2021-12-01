@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleAssignments"
 description: "Get a list of unifiedRoleAssignment objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -61,6 +61,8 @@ To list role assignments for the entitlement management provider:
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
 ```
 
 ## Query parameters
@@ -113,6 +115,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roleassignments-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -268,6 +274,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roleassignments-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

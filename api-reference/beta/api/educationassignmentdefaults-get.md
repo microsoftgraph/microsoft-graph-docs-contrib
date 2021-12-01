@@ -2,7 +2,7 @@
 title: "Get educationAssignmentDefaults"
 description: "Read the properties and relationships of an educationAssignmentDefaults object."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. These are the class-level assignment defaults respected by new assignments created in the class. Callers can continue to specify custom values on each assignment creation if they do not want the default behaviors.
+Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. 
+
+These are the class-level assignment defaults respected by new [assignments](../resources/educationassignment.md) created in the class. Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,24 +44,25 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f"],
   "name": "get_educationassignmentdefaults"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentdefaults-csharp-snippets.md)]
@@ -75,6 +78,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationassignmentdefaults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationassignmentdefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,12 +101,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "addedStudentAction": "none",
-    "addToCalendarAction": "studentsAndTeamOwners",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignmentDefaults/$entity",
     "dueTime": "23:59:00",
-    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
-  }
+    "notificationChannelUrl": null,
+    "addedStudentAction": "none",
+    "addToCalendarAction": "none"
 }
 ```
 

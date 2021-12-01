@@ -2,14 +2,12 @@
 title: "Upload documents using the Microsoft Graph Universal Print API"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "nilakhan"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).
 

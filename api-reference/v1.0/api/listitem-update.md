@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Update listItem
 description: Update the properties on a **[listItem][]**.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 
 ## Response 
 
-If successful, this method returns a `201 Created` response code and a [fieldValueSet][] in the response body for the updated list item.
+If successful, this method returns a `200 Ok` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
@@ -84,6 +84,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,7 +96,7 @@ Content-Type: application/json
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 
 {

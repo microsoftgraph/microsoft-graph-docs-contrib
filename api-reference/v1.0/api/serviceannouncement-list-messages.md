@@ -2,7 +2,7 @@
 title: "List serviceAnnouncement messages"
 description: "Retrieve the serviceUpdateMessage resources from the messages navigation property."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
 [!INCLUDE [sample-code](../includes/snippets/java/list-serviceupdatemessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-serviceupdatemessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -114,6 +118,7 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
+      "expiryDateTime": null,
       "details": [
         {
           "name": "ExternalLink",

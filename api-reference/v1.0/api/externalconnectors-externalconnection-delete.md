@@ -2,7 +2,7 @@
 title: "Delete externalConnection"
 description: "Deletes an externalConnection object."
 author: "mecampos"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}
+DELETE /external/connections/{connectionsId}
 ```
 
 ## Request headers
@@ -49,6 +49,8 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 ### Request
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -56,7 +58,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/connections/contosohr
+DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalconnection-csharp-snippets.md)]
@@ -74,7 +76,12 @@ DELETE https://graph.microsoft.com/v1.0/connections/contosohr
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 
 

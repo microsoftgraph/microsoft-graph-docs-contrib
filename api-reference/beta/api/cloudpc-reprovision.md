@@ -2,7 +2,7 @@
 title: "cloudPC: reprovision"
 description: "Reprovision a specific Cloud PC."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Reprovision a specific Cloud PC.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,6 +79,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpconpremisesconnection-runhealthcheck-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-runhealthcheck-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

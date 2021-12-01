@@ -2,7 +2,7 @@
 title: "accessReviewScheduleSettings resource type"
 description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings` represents the settings associated with an access review series."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -27,10 +27,10 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | defaultDecision|String | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of `Approve`, `Deny`, or `Recommendation`. |
 | instanceDurationInDays|Int32 | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
 | recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence using the standard Outlook recurrence object. Only `weekly` and `absoluteMonthly` on **recurrencePattern** are supported. Use the property **startDate** on **recurrenceRange** to determine the day the review starts. |
-| autoApplyDecisionsEnabled|Boolean | Indicates whether decisions are automatically applied. When set to `false`, a user must apply the decisions manually once the reviewer completes the access review. When set to `true`, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded. Default value is `false`. |
-| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
-| recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled/disabled. |
-| recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. Supported durations are 30, 60, or 90 days.  |
+| autoApplyDecisionsEnabled|Boolean | Indicates whether decisions are automatically applied. When set to `false`, an admin must apply the decisions manually once the reviewer completes the access review. When set to `true`, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded. Default value is `false`. |
+| applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. |
+| recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled or disabled. |
+| recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
 
 ## Relationships
 None.

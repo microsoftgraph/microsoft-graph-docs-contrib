@@ -2,7 +2,7 @@
 title: List dailyPrintUsageByPrinter
 description: Retrieve a list of daily print usage summaries, grouped by printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -84,7 +84,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 314
 
 {
   "value": [

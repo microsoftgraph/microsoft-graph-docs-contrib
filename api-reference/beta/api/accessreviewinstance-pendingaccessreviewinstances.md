@@ -1,7 +1,7 @@
 ---
 title: "accessReviewInstance: pendingAccessReviewInstances"
 description: "Retrieve accessReviewInstance objects pending approval by calling user."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

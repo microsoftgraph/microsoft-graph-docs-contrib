@@ -1,7 +1,7 @@
 ---
 title: "Delete identityUserFlowAttribute"
 description: "Delete an identityUserFlowAttribute."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/userFlowAttributes/extension_d0
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

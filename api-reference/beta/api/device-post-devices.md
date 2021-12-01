@@ -2,7 +2,7 @@
 title: "Create device"
 description: "Create a new device."
 author: "spunukol"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -31,9 +31,9 @@ POST /devices
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
@@ -56,7 +56,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/devices
 Content-type: application/json
-Content-length: 364
 
 {
   "accountEnabled": true,
@@ -89,6 +88,10 @@ Content-length: 364
 [!INCLUDE [sample-code](../includes/snippets/java/create-device-from-devices-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-device-from-devices-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
@@ -102,7 +105,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 364
 
 {
   "accountEnabled": true,

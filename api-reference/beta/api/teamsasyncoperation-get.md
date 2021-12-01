@@ -2,7 +2,7 @@
 title: "Get teamsAsyncOperation"
 description: "Get the details of a teamsAsyncOperation."
 author: "jecha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chat-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chat-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

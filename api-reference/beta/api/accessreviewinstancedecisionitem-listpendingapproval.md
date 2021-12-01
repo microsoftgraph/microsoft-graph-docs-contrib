@@ -1,7 +1,7 @@
 ---
 title: "List accessReviewInstanceDecisionItem pending approval"
 description: "Retrieve accessReviewInstanceDecisionItem objects pending approval by the calling user."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

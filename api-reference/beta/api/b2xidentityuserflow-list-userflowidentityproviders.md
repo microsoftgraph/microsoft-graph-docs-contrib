@@ -1,7 +1,7 @@
 ---
 title: "List a userflowidentityproviders"
 description: "List all identityProviders in a b2xIdentityUserFlow."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Test/userflowId
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2xuserflow-list-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

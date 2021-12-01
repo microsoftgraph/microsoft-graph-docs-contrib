@@ -1,7 +1,7 @@
 ---
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e1
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directorysettingtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

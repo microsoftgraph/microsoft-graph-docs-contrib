@@ -1,7 +1,7 @@
 ---
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

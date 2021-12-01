@@ -2,7 +2,7 @@
 title: "chat: sendActivityNotification"
 description: Send an activity feed notification in scope of a chat.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -21,7 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send|
+|Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
+
+>**Note:** Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -119,6 +121,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -185,6 +191,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -198,7 +208,55 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Notify a user about an event in relation to a chat
+### Example 3: Notify a user about an approval needed in a chat message using user principal name
+
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/chats/{chatId}/messages/{messageId}"
+    },
+    "activityType": "approvalRequired",
+    "previewText": {
+        "content": "Deployment requires your approval"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "approvalTaskId",
+            "value": "2020AAGGTAPP"
+        }
+    ]
+}
+```
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Notify a user about an event in relation to a chat
 
 As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
 
@@ -252,6 +310,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -265,7 +327,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Notify the chat members about a task created in a chat
+### Example 5: Notify the chat members about a task created in a chat
 
 This example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the `recipient` is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the `chatId` specified in the `recipient` must match the `chatId` specified in the request URL.
 
@@ -318,6 +380,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Delete group"
 description: "Delete a group object in a term store."
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-from-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-group-from-store-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

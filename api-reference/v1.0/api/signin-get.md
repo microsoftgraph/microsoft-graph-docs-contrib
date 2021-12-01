@@ -1,7 +1,7 @@
 ---
 title: "Get signIn"
 description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -15,13 +15,16 @@ Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All and Directory.Read.All |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -42,7 +45,7 @@ GET /auditLogs/signIns/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

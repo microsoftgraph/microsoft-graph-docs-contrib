@@ -2,7 +2,7 @@
 title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -48,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each principal reviewed in an `accessReviewInstance` has a decision item representing if they were approved, denied, or not yet reviewed.|
+|decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each principal reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

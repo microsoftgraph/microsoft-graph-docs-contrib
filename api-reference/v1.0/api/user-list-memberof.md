@@ -2,7 +2,7 @@
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
 author: "Jordanndahl"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

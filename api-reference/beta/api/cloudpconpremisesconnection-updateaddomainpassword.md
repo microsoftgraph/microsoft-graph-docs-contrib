@@ -2,7 +2,7 @@
 title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
 description: "Update AD domain password for a successful onPremisesConnection."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 
 Update Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,7 +69,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
-Content-length: 36
 
 {
   "adDomainPassword": "AdDomainPassword value"
@@ -82,6 +80,10 @@ Content-length: 36
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/cloudpconpremisesconnection-updateaddomainpassword-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-updateaddomainpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

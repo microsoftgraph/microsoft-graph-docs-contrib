@@ -1,7 +1,7 @@
 ---
 title: "Get educationRubric"
 description: "Retrieve the properties and relationships of an educationrubric object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

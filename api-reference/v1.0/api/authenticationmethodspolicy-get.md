@@ -2,7 +2,7 @@
 title: "Get authenticationMethodsPolicy"
 description: "Read the properties and relationships of an authenticationMethodsPolicy object."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -20,6 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
+
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global Reader
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -76,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,6 +109,20 @@ Content-Type: application/json
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
     "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
     "policyVersion": "1.4",
+    "registrationEnforcement": {
+        "authenticationMethodsRegistrationCampaign": {
+            "snoozeDurationInDays": 2,
+            "state": "enabled",
+            "excludeTargets": [],
+            "includeTargets": [
+                {
+                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "targetType": "group",
+                    "targetedAuthenticationMethod": "microsoftAuthenticator"
+                }
+            ]
+        }
+    },
     "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {

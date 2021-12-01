@@ -2,7 +2,7 @@
 title: "List shifts"
 description: "Get the list of shifts in a schedule."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -96,7 +100,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

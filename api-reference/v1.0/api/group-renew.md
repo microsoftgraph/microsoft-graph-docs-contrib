@@ -1,7 +1,7 @@
 ---
 title: "group: renew"
 description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

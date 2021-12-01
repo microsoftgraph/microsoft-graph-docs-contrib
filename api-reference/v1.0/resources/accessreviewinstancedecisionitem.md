@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on an accessReviewInstance."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an instance of a review. This decision represents the determination of an identity's access to a resource for a given [accessReviewInstance](accessreviewinstance.md).
+Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an instance of a review. This decision is the determination of an identity's access to a resource for a given [accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
 
 Each decision item is system-generated based off of the parent [accessReviewInstance](accessreviewinstance.md).
 

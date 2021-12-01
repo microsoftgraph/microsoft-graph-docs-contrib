@@ -2,7 +2,7 @@
 title: "serviceUpdateMessage: markUnread"
 description: "Mark a list of service update messages as unread for the signed in user."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -83,6 +83,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markunread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

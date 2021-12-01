@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: publish"
 description: "Publish a content type present in content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -15,7 +15,7 @@ Publishes a [contentType][] present in a content type hub site.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-publish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

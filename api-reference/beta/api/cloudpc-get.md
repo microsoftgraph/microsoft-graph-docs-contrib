@@ -2,7 +2,7 @@
 title: "Get cloudPC"
 description: "View the properties and relationships of a cloudPC object."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -86,6 +85,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,12 +108,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPC",
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
     "displayName": "Demo-0",
     "imageDisplayName": "Windows-10 19h1-evd",
-    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",
     "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
     "provisioningPolicyName": "Marketing provisioning policy",
@@ -133,6 +135,5 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
-  }
 }
 ```

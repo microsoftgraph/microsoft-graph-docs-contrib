@@ -2,7 +2,7 @@
 title: "Get permission"
 description: "Retrieve the properties and relationships of a permission object on a site."
 author: "BarrySh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-permission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

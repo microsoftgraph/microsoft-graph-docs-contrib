@@ -2,7 +2,7 @@
 title: "Delete teamworkTagMember"
 description: "Delete a teamworkTagMember object."
 author: "anniecolonna"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1ae
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-teamworktagmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-teamworktagmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

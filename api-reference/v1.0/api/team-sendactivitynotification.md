@@ -2,7 +2,7 @@
 title: "team: sendActivityNotification"
 description:  Send an activity feed notification in scope of a team.
 author: eddie-lee-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -20,7 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send|
+|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+
+>**Note:** Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -121,6 +123,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -188,7 +194,83 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Notify a user about an event using custom topic
+### Example 3: Notify a user about a channel tab using user principal name
+
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification will take the user to the tab, where they can check their reservation.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/tabs/{tabId}"
+    },
+    "activityType": "reservationUpdated",
+    "previewText": {
+        "content": "You have moved up the queue"
+    },
+    "recipient": {
+        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "reservationId",
+            "value": "TREEE433"
+        },
+        {
+            "name": "currentSlot",
+            "value": "23"
+        }
+    ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Notify a user about an event using custom topic
 
 As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when setting `topic` source to `text`.
 

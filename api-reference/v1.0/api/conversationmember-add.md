@@ -3,7 +3,7 @@ title: "Add conversationMember"
 description: "Add conversationMember to a channel."
 author: "akjo" 
 doc_type: "apiPageType"
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -87,6 +87,10 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversation-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,7 +108,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 468
 
 {
   "@odata.context": "https://graph.microsoft.com/V1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

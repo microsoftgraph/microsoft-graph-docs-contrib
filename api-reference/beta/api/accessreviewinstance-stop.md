@@ -1,7 +1,7 @@
 ---
 title: "Stop accessReviewInstance"
 description: "Stop a currently active accessReviewInstance."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/stop-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

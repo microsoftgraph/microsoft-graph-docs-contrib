@@ -1,10 +1,10 @@
 ---
 title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Update privilegedapproval
@@ -12,6 +12,8 @@ author: "shauliu1"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Update the properties of privilegedapproval object.
 ## Permissions
@@ -67,7 +69,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
-Content-length: 180
 
 {
   "approvalState": "approvalState-value",
@@ -88,6 +89,10 @@ Content-length: 180
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-privilegedapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-privilegedapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

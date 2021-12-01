@@ -1,7 +1,7 @@
 ---
 title: "application: setVerifiedPublisher"
 description: "Set the verified publisher of an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jesakowi"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

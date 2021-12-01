@@ -2,7 +2,7 @@
 title: "participant: muteAll"
 description: "Mute all participants in the call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -89,6 +89,10 @@ Content-Length: 81
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

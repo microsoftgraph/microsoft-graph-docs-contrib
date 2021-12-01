@@ -1,7 +1,7 @@
 ---
 title: "alertHistoryState resource type"
 description: "Stores changes made to alerts."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType

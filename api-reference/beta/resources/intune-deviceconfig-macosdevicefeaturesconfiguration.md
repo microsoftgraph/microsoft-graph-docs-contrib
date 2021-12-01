@@ -21,7 +21,6 @@ MacOS device features configuration profile.
 Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
 ## Methods
-
 |Method|Return Type|Description|
 |:---|:---|:---|
 |[List macOSDeviceFeaturesConfigurations](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) collection|List properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) objects.|
@@ -31,7 +30,6 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |[Update macOSDeviceFeaturesConfiguration](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-update.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md)|Update the properties of a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -58,7 +56,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -89,7 +87,6 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
 ## Relationships
-
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -237,7 +234,22 @@ Here is a JSON representation of the resource.
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "modeCredentialUsed": "String",
+    "usernameLableCustom": "String",
+    "usernameLabelCustom": "String",
+    "userSetupDelayed": true,
+    "signInHelpText": "String",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "preferredKDCs": [
+      "String"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",
@@ -286,7 +298,6 @@ Here is a JSON representation of the resource.
   "contentCachingPort": 1024
 }
 ```
-
 
 
 

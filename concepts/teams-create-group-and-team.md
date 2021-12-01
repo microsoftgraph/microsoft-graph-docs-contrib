@@ -2,7 +2,7 @@
 title: "Creating teams and managing members using Microsoft Graph"
 description: "Creating a group that includes a team involves the following steps: "
 author: "hachandr"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -53,7 +53,7 @@ All teams are backed by Microsoft 365 groups. The quickest way to get your team 
     ```http
     HTTP/1.1 200 OK
     Content-type: application/json
-    Content-length: xxx
+ 
     {
         "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
         "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"

@@ -2,7 +2,7 @@
 title: "Get windowsProtectionState"
 description: "Read the properties and relationships of a windowsProtectionState object."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/windowsP
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-windowsprotectionstate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-windowsprotectionstate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

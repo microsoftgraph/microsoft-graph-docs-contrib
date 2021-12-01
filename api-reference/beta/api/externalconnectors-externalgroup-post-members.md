@@ -2,7 +2,7 @@
 title: "Create externalGroupMember"
 description: "Create a new externalGroupMember object."
 author: "snlraju-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -45,19 +45,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## Request body
 
-In the request body, supply a JSON representation of the [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
+In the request body, supply a JSON representation of the **externalGroupMember** object.
 
-The following table shows the properties that are required when you create the [externalGroupMember](../resources/externalconnectors-externalgroupmember.md).
+You can specify the following properties when creating an **externalGroupMember**.
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`.                                                                                         |
+| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups. Required.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an **externalGroupMember** object in the response body.
 
 ## Examples
 
@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 # [C#](#tab/csharp)
@@ -120,7 +119,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -142,8 +140,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -181,8 +178,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 
@@ -204,8 +200,7 @@ Content-Type: application/json
 
 {
   "id": "1431b9c38ee647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -243,7 +238,6 @@ Content-Type: application/json
 
 {
   "id": "14m1b9c38qe647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```

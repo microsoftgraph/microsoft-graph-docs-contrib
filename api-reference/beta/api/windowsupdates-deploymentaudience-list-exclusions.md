@@ -2,7 +2,7 @@
 title: "List deployment audience exclusions"
 description: "List the updatableAsset resources that are excluded from a deploymentAudience."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Upload large files using the Microsoft Graph SDKs"
 description: "Provides guidance for uploading large files using the Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 

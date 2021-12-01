@@ -2,7 +2,7 @@
 title: "managementActionTenantDeploymentStatus: changeDeploymentStatus"
 description: "Changes the tenant level deployment status for the management action. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to apply the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -69,7 +69,6 @@ If successful, this action returns a `200 OK` response code and a [managementAct
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/changeDeploymentStatus
 Content-Type: application/json
-Content-length: 153
 
 {
   "tenantGroupId": "String",
@@ -93,6 +92,10 @@ Content-length: 153
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/managementactiontenantdeploymentstatus-changedeploymentstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/managementactiontenantdeploymentstatus-changedeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

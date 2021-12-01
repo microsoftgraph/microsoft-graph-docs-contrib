@@ -2,7 +2,7 @@
 title: "Create teamworkTagMember"
 description: "Create a new teamworkTagMember object."
 author: "anniecolonna"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 ``` http
 POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members
 Content-Type: application/json
-Content-length: 144
 
 {
     "userId":"97f62344-57dc-409c-88ad-c4af14158ff5"
@@ -87,6 +86,10 @@ Content-length: 144
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-teamworktagmember-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-teamworktagmember-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

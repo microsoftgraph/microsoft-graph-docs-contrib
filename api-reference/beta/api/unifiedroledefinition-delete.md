@@ -1,7 +1,7 @@
 ---
 title: "Delete unifiedRoleDefinition"
 description: "Delete a unifiedRoleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -100,6 +100,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

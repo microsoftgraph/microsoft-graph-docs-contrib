@@ -2,7 +2,7 @@
 title: "List group settings"
 description: "Retrieve a list of group setting objects."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

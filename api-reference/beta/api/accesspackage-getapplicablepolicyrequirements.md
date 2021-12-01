@@ -1,7 +1,7 @@
 ---
 title: "accessPackage: getApplicablePolicyRequirements"
 description: "Allow callers to find requirements to request an assignment for a specific accessPackage."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -76,6 +76,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackage-getapplicablepolicyrequirements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

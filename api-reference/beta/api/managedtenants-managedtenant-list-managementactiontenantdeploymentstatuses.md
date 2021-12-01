@@ -2,7 +2,7 @@
 title: "List managementActionTenantDeploymentStatus"
 description: "Get a list of the managementActionTenantDeploymentStatus objects and their properties."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-managementactiontenantdeploymentstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-managementactiontenantdeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

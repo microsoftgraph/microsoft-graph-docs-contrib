@@ -2,7 +2,7 @@
 title: "accessReviewInstance: resetDecisions"
 description: "Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-resetdecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-resetdecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

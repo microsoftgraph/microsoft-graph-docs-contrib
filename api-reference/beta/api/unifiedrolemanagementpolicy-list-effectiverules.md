@@ -1,8 +1,8 @@
 ---
 title: "List effectiveRules"
 description: "Get the unifiedRoleManagementPolicyRule resources from the effectiveRules navigation property."
-author: "shauliu1"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/ba9cc2d6-c2
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

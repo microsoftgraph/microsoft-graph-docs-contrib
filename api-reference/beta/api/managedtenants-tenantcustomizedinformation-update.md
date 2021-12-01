@@ -2,7 +2,7 @@
 title: "Update tenantCustomizedInformation"
 description: "Update the properties of a tenantCustomizedInformation object."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and an updated [tena
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 Content-Type: application/json
-Content-length: 278
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
@@ -95,6 +94,10 @@ Content-length: 278
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantcustomizedinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

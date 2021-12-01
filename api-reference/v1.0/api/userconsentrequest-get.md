@@ -2,7 +2,7 @@
 title: "Get userConsentRequest"
 description: "Read the properties and relationships of a userConsentRequest object."
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

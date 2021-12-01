@@ -3,7 +3,7 @@ title: "List device transitive groups"
 description: "Get groups that the device is a member of."
 author: "spunukol"
 ms.prod: "directory-management"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

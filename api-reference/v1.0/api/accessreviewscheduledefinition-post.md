@@ -1,7 +1,7 @@
 ---
 title: "Create accessReviewScheduleDefinition"
 description: "Create a new accessReviewScheduleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -43,14 +43,15 @@ The following table shows the properties accepted to create an accessReview.
 
 | Property | Type | Description |
 |:-------------|:------------|:------------|
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Defines the list of additional users or group members to be notified of the access review progress. |
+| descriptionForAdmins | String | Context of the review provided to admins. Required. |
+| descriptionForReviewers | String | Context of the review provided to reviewers in email notifications. Email notifications support up to 256 characters. Required. |
 | displayName | String | Name of access review series. Required.|
-| descriptionForAdmins | string | Context of the review provided to admins. Required. |
-  descriptionForReviewers | string | Context of the review provided to reviewers. Required. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) |  Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).|
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept).  |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal.|
+| scope | [accessReviewScope](../resources/accessreviewscope.md) |  Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
@@ -128,10 +129,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
----
 
 
 #### Response
@@ -199,7 +203,8 @@ Content-type: application/json
       }
     },
   "applyActions": []
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -287,6 +292,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -383,7 +392,8 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.removeAccessApplyAction"
       }
     ]
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
 
@@ -395,6 +405,7 @@ This is an example of creating an access review with the following settings:
 + It recurs semi-annually and ends 1 year from the startDate.
 
 #### Request
+
 
 
 # [HTTP](#tab/http)
@@ -471,6 +482,10 @@ Content-type: application/json
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -550,10 +565,10 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
-  }
+  },
+  "additionalNotificationRecipients": []
 }
 ```
-
 
 <!--
 {

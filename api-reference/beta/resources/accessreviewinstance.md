@@ -2,7 +2,7 @@
 title: "accessReviewInstance resource type"
 description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -52,9 +52,9 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `contactedReviewers`   |[accessReviewReviewer](../resources/accessreviewreviewer.md) collection| Returns the collection of reviewers who were contacted to complete this review. While the **reviewers** and **fallbackReviewers** properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports `$select`. Read-only. |
-| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | There is exactly one `accessReviewScheduleDefinition` associated with each instance. It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition. |
-| `decisions`               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Each user reviewed in an `accessReviewInstance` has a decision item representing if they were approved, denied, or not yet reviewed. |
+| contactedReviewers   |[accessReviewReviewer](../resources/accessreviewreviewer.md) collection| Returns the collection of reviewers who were contacted to complete this review. While the **reviewers** and **fallbackReviewers** properties of the **accessReviewScheduleDefinition** might specify group owners or managers as **reviewers**, **contactedReviewers** returns their individual identities. Supports `$select`. Read-only. |
+| definition               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | There is exactly one **accessReviewScheduleDefinition** associated with each instance. It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition. |
+| decisions               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Each user reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed. |
 
 ## JSON representation
 

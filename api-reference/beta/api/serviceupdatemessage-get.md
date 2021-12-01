@@ -2,7 +2,7 @@
 title: "Get serviceUpdateMessage"
 description: "Retrieve the properties and relationships of a serviceUpdateMessage object."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceupdatemessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceupdatemessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

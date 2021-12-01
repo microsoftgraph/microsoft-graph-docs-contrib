@@ -2,7 +2,7 @@
 title: "serviceUpdateMessage: archive"
 description: "Archive a list of service update messages for the signed in user."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -83,6 +83,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-archive-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-archive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

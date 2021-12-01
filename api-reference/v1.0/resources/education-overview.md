@@ -1,7 +1,7 @@
 ---
 title: "Working with education APIs in Microsoft Graph"
 description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: conceptualPageType
@@ -87,7 +87,6 @@ The assignment APIs support the following scenarios:
 - [Submit assignment](../api/educationsubmission-submit.md)
 - [Unsubmit assignment](../api/educationsubmission-unsubmit.md)
 - [Return grades and feedback to student](../api/educationsubmission-return.md)
-- [Get assignment details](../api/educationuser-list-assignments.md)
 
 The following are some common use cases for the assignment-related education APIs.
 

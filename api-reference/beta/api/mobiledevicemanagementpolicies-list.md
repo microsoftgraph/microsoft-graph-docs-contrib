@@ -2,7 +2,7 @@
 title: "List mobileDeviceManagementPolicies"
 description: "Get a list of the mobile device management objects and their properties."
 author: "ravennMSFT"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

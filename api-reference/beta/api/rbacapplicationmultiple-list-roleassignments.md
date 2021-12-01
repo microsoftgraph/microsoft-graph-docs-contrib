@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleAssignmentMultiple"
 description: "Retrieve the properties and relationships of unifiedRoleAssignmentMultiple object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -20,8 +20,6 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 
 For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -161,6 +159,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcunifiedroleassignmentmultiple-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcunifiedroleassignmentmultiple-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -240,6 +242,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments?$fi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcunifiedroleassignmentmultiple-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcunifiedroleassignmentmultiple-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jumaodhiss"
 ms.prod: "change-notifications"
 doc_type: apiPageType
@@ -123,6 +123,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -163,7 +167,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 252
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",

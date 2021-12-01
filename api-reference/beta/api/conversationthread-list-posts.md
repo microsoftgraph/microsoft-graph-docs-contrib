@@ -1,7 +1,7 @@
 ---
 title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-posts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

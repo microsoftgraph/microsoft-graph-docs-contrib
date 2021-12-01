@@ -1,7 +1,7 @@
 ---
 title: "List outcomes"
 description: "Retrieve a list of educationoutcome objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-outcomes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

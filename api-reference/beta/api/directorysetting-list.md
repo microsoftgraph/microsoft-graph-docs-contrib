@@ -2,7 +2,7 @@
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/settings
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-settings-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-settings-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

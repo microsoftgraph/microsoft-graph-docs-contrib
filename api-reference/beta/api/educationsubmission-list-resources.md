@@ -2,7 +2,7 @@
 title: "List submission resources"
 description: "List the resources associated with a submission."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 [!INCLUDE [sample-code](../includes/snippets/java/get-resources-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-resources-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,7 +107,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1045
 
 {
   "value": [

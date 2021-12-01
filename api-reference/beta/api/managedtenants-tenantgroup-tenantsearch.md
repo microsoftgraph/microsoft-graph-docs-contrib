@@ -2,7 +2,7 @@
 title: "tenantGroup: tenantSearch"
 description: "Searches for the specified managed tenants across tenant groups."
 author: "isaiahwilliams"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
@@ -67,7 +67,6 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
-Content-length: 28
 
 {
   "tenantId": "String"
@@ -87,6 +86,10 @@ Content-length: 28
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenantgroup-tenantsearch-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenantgroup-tenantsearch-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

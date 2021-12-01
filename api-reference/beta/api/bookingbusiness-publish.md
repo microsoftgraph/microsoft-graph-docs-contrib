@@ -1,7 +1,7 @@
 ---
 title: "bookingBusiness: publish"
 description: "Make the scheduling page of this business available to external customers."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -68,6 +68,10 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-publish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

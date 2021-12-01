@@ -2,7 +2,7 @@
 title: "Delete mobileDeviceManagementPolicy"
 description: "Delete a mobile device management policy."
 author: "michaelrm97"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

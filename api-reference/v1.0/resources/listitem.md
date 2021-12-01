@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: listItem resource
 description: Represents an item in a sharepoint list.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

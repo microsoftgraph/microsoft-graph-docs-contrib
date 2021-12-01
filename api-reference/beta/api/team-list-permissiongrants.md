@@ -2,7 +2,7 @@
 title: "List permissionGrants of a team"
 description: "Retrieve permissionGrants of a team."
 author: "jecha"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/14c981a4-dca9-4565-bae6-e13ada8861be/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/team-list-permission-grants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-list-permission-grants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

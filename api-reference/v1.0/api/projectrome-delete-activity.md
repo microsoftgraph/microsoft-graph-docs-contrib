@@ -1,7 +1,7 @@
 ---
 title: "Delete an activity"
 description: "Delete an existing user activity for your app."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-activity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

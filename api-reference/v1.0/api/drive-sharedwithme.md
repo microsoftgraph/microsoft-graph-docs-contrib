@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: List Files Shared With Me
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
 doc_type: apiPageType

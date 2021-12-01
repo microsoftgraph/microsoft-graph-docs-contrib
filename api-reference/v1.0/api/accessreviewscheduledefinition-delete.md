@@ -2,7 +2,7 @@
 title: "Delete accessReviewScheduleDefinition"
 description: "Deletes an accessReviewScheduleDefinition object."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -70,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

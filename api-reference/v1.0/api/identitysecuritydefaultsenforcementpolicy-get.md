@@ -1,7 +1,7 @@
 ---
 title: "Get identitySecurityDefaultsEnforcementPolicy"
 description: "Retrieve the properties and relationships of identitysecuritydefaultsenforcementpolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "rohinigoyal1"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/policies/identitySecurityDefaultsEnforcemen
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identitysecuritydefaultsenforcementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identitysecuritydefaultsenforcementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

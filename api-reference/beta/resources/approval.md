@@ -1,8 +1,8 @@
 ---
 title: "approval resource type"
 description: "The approval object associated with an accessPackageAssignmentRequest or userConsentRequest."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
 ---

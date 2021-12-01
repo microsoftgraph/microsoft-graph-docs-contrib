@@ -2,7 +2,7 @@
 title: "accessPackageLocalizedText resource type"
 description: "A complex type used to represent a string in a specific language."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
