@@ -22,26 +22,7 @@ ms.localizationpriority: medium
 | tags/any(p:p)                                 | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |
 | verifiedPublisher/displayName                 | ![Requires advanced query parameters][AQP] | ![Not Supported][NS]                       |                                            |                                            | ![Requires advanced query parameters][AQP] |
 
-#### Contacts properties
-
-| Property Name                                              | eq                                         | startsWith                                 | ge                           | le                           | null value                                 |
-| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
-| companyName                                                | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                              |                              | ![Requires advanced query parameters][AQP] |
-| department                                                 | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| displayName                                                | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| givenName                                                  | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| jobTitle                                                   | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| mail                                                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| mailNickname                                               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-| manager/id                                                 | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
-| onPremisesLastSyncDateTime                                 | ![Supported by Default][RDS]               |                                            | ![Supported by Default][RDS] | ![Supported by Default][RDS] | ![Not Supported][NS]                       |
-| onPremisesProvisioningErrors/any(o:o/category)             | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
-| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
-| onPremisesSyncEnabled                                      | ![Supported by Default][RDS]               |                                            |                              |                              | ![Requires advanced query parameters][AQP] |
-| proxyAddresses/any(p:p)                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS] | ![Supported by Default][RDS] |                                            |
-| surname                                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
-
-#### Device properties
+### Device properties
 
 | Property Name                                    | eq                                         | startsWith                   | ge                                         | le                                         | null value                                 |
 | ------------------------------------------------ | ------------------------------------------ | ---------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
@@ -60,7 +41,7 @@ ms.localizationpriority: medium
 | operatingSystemVersion                           | ![Supported by Default][RDS]               | ![Supported by Default][RDS] |                                            |                                            | ![Requires advanced query parameters][AQP] |
 | physicalIds/any(p:p)                             | ![Supported by Default][RDS]               |                              |                                            |                                            |                                            |
 
-#### Group properties
+### Group properties
 
 | Property Name                                              | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
@@ -89,7 +70,28 @@ ms.localizationpriority: medium
 | resourceProvisioningOptions/any(p:p)                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |
 | securityEnabled                                            | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Not Supported][NS]                       |
 
-#### Service principal properties
+
+### Organizational contacts properties
+
+| Property Name                                              | eq                                         | startsWith                                 | ge                           | le                           | null value                                 |
+| ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ---------------------------- | ---------------------------- | ------------------------------------------ |
+| companyName                                                | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |                              |                              | ![Requires advanced query parameters][AQP] |
+| department                                                 | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| displayName                                                | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| givenName                                                  | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| jobTitle                                                   | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| mail                                                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| mailNickname                                               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+| manager/id                                                 | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
+| onPremisesLastSyncDateTime                                 | ![Supported by Default][RDS]               |                                            | ![Supported by Default][RDS] | ![Supported by Default][RDS] | ![Not Supported][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Supported by Default][RDS]               |                                            |                              |                              | ![Not Supported][NS]                       |
+| onPremisesSyncEnabled                                      | ![Supported by Default][RDS]               |                                            |                              |                              | ![Requires advanced query parameters][AQP] |
+| proxyAddresses/any(p:p)                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS] | ![Supported by Default][RDS] |                                            |
+| surname                                                    | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                              |                              | ![Requires advanced query parameters][AQP] |
+
+
+### Service principal properties
 
 | Property Name                       | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | ----------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
@@ -108,7 +110,7 @@ ms.localizationpriority: medium
 | servicePrincipalNames/any(p:p)      | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |
 | tags/any(p:p)                       | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |
 
-#### User properties
+### User properties
 
 | Property Name                                              | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |
 | ---------------------------------------------------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
