@@ -41,7 +41,6 @@ PATCH /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackag
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the policy.|
@@ -49,11 +48,8 @@ PATCH /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackag
 |allowedTargetScope|allowedTargetScope|Who is allowed to request the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
 |specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The targets for being assigned access from an access package from this policy.|
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Who can request this access package from this policy.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy.|
-
-
-
+|requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
+|requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.
 

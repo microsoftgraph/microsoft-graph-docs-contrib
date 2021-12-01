@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used for the **stages** property of [approval settings](accesspackageapprovalsettings.md) in an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
+Used for the **stages** property of [approval settings](accesspackageassignmentapprovalsettings.md) in an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
 
 ## Properties
 |Property|Type|Description|
