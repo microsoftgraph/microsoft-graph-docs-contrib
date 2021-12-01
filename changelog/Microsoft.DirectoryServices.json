@@ -21,6 +21,312 @@
     {
       "ChangeList": [
         {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagement",
+          "ChangeType": "Addition",
+          "Description": "Added [entitlementManagement](https://docs.microsoft.com/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource. The entitlementManagement singleton is the container for entitlement management resources, including **accessPackageCatalog**, **connectedOrganization**, and **entitlementManagementSettings**.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added [identityGovernance](https://docs.microsoft.com/graph/api/resources/identitygovernance?view=graph-rest-1.0) resource. The identityGovernance singleton is the container for identity governance resources, including **access reviews** and **entitlement management**.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackage](https://docs.microsoft.com/graph/api/resources/accessPackage?view=graph-rest-1.0) resource and related methods for collecting resource roles which can be assigned to users via entitlement management.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignment](https://docs.microsoft.com/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource and related methods for managing access package assignments in entitlement management.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource and related methods for managing access package assignment requests in entitlement management.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageCatalog",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accessPackageCatalog?view=graph-rest-1.0) resource and related methods for collecting related access packages in entitlement management.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSubject](https://docs.microsoft.com/graph/api/resources/accessPackageSubject?view=graph-rest-1.0) resource for representing the subject user of an access package assignment in entitlement management.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [entitlementManagementSettings](https://docs.microsoft.com/graph/api/resources/entitlementManagementSettings?view=graph-rest-1.0) resource and related methods for managing settings for entitlement management.",
+          "Target": "entitlementManagementSettings"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageAssignmentFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageAssignmentFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessPackageAssignmentFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageAssignmentRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageAssignmentRequestFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessPackageAssignmentRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageAssignmentState",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageAssignmentState** enumeration type.",
+          "Target": "accessPackageAssignmentState"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageCatalogState",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCatalogState** enumeration type.",
+          "Target": "accessPackageCatalogState"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageCatalogType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCatalogType** enumeration type.",
+          "Target": "accessPackageCatalogType"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageExternalUserLifecycleAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageExternalUserLifecycleAction** enumeration type.",
+          "Target": "accessPackageExternalUserLifecycleAction"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessPackageFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageRequestState",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageRequestState** enumeration type.",
+          "Target": "accessPackageRequestState"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageRequestType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageRequestType** enumeration type.",
+          "Target": "accessPackageRequestType"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSubjectType** enumeration type.",
+          "Target": "accessPackageSubjectType"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "expirationPatternType",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationPatternType** enumeration type.",
+          "Target": "expirationPatternType"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestRequirements](https://docs.microsoft.com/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectedOrganizationMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectedOrganizationMembers](https://docs.microsoft.com/graph/api/resources/connectedOrganizationMembers?view=graph-rest-1.0) resource type.",
+          "Target": "connectedOrganizationMembers"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionInfo](https://docs.microsoft.com/graph/api/resources/connectionInfo?view=graph-rest-1.0) resource type.",
+          "Target": "connectionInfo"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagementSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [entitlementManagementSchedule](https://docs.microsoft.com/graph/api/resources/entitlementManagementSchedule?view=graph-rest-1.0) resource type.",
+          "Target": "entitlementManagementSchedule"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "expirationPattern",
+          "ChangeType": "Addition",
+          "Description": "Added the [expirationPattern](https://docs.microsoft.com/graph/api/resources/expirationPattern?view=graph-rest-1.0) resource type.",
+          "Target": "expirationPattern"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalSponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalSponsors](https://docs.microsoft.com/graph/api/resources/externalSponsors?view=graph-rest-1.0) resource type.",
+          "Target": "externalSponsors"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupMembers](https://docs.microsoft.com/graph/api/resources/groupMembers?view=graph-rest-1.0) resource type.",
+          "Target": "groupMembers"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internalSponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [internalSponsors](https://docs.microsoft.com/graph/api/resources/internalSponsors?view=graph-rest-1.0) resource type.",
+          "Target": "internalSponsors"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestorManager",
+          "ChangeType": "Addition",
+          "Description": "Added the [requestorManager](https://docs.microsoft.com/graph/api/resources/requestorManager?view=graph-rest-1.0) resource type.",
+          "Target": "requestorManager"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singleServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [singleServicePrincipal](https://docs.microsoft.com/graph/api/resources/singleServicePrincipal?view=graph-rest-1.0) resource type.",
+          "Target": "singleServicePrincipal"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singleUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [singleUser](https://docs.microsoft.com/graph/api/resources/singleUser?view=graph-rest-1.0) resource type.",
+          "Target": "singleUser"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectSet](https://docs.microsoft.com/graph/api/resources/subjectSet?view=graph-rest-1.0) resource type.",
+          "Target": "subjectSet"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "connectedOrganizationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectedOrganizationState** enumeration type.",
+          "Target": "connectedOrganizationState"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureActiveDirectoryTenant",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureActiveDirectoryTenant](https://docs.microsoft.com/graph/api/resources/azureActiveDirectoryTenant?view=graph-rest-1.0) resource type.",
+          "Target": "azureActiveDirectoryTenant"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "domainIdentitySource",
+          "ChangeType": "Addition",
+          "Description": "Added the [domainIdentitySource](https://docs.microsoft.com/graph/api/resources/domainIdentitySource?view=graph-rest-1.0) resource type.",
+          "Target": "domainIdentitySource"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalDomainFederation",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalDomainFederation](https://docs.microsoft.com/graph/api/resources/externalDomainFederation?view=graph-rest-1.0) resource type.",
+          "Target": "externalDomainFederation"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identitySource",
+          "ChangeType": "Addition",
+          "Description": "Added the [identitySource](https://docs.microsoft.com/graph/api/resources/identitySource?view=graph-rest-1.0) resource type.",
+          "Target": "identitySource"
+        },
+        {
+          "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectedOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectedOrganization](https://docs.microsoft.com/graph/api/resources/connectedOrganization?view=graph-rest-1.0) resource, and related methods, for modeling a reference to another organization whose users can request access via entitlement management.",
+          "Target": "connectedOrganization"
+        }
+      ],
+      "Id": "b3431682-f63b-46c0-9317-deb79df71eed",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-01T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+   },
+    {
+      "ChangeList": [
+        {
           "Id": "cc9daa2b-0fbd-42b3-8bfb-b7593e031739",
           "ApiChange": "Method",
           "ChangedApiName": "validatePassword",
@@ -2576,14 +2882,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
           "Target": "accessPackageAssignment"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageAssignmentPolicy"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
