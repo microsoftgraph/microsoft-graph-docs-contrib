@@ -2,7 +2,7 @@
 title: "servicePrincipal: addTokenSigningCertificate"
 description: "Add a signing certificate to a servicePrincipal."
 ms.localizationpriority: medium
-author: "davidmu"
+author: "alamaral"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
