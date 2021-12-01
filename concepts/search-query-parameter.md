@@ -120,7 +120,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead it uses a tokenization approach which works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols to separate the words, as follows:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead it uses a tokenization approach which works by extracting words from the property value and the search string using spaces, numbers, different casing and symbols as shown in examples below.
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
