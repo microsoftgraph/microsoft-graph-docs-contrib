@@ -261,7 +261,7 @@ None.
 ### Remarks
 
 > [!CAUTION]
-> Permissions that allow granting authorization, such as _AppRoleAssignment.ReadWrite.All_ allow an application to grant additional privileges to itself, other applications, or any user. Likewise, permissions that allow managing credentials, such as _Application.ReadWrite.All_, allow an application to act as other entities, and use the privileges they were granted. Use caution when granting any of these permissions.
+> Permissions that allow granting authorization, such as _AppRoleAssignment.ReadWrite.All_, allow an application to grant additional privileges to itself, other applications, or any user. Likewise, permissions that allow managing credentials, such as _Application.ReadWrite.All_, allow an application to act as other entities, and use the privileges they were granted. Use caution when granting any of these permissions.
 
 The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) or [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) resource.
 > NOTE: Using the _Application.ReadWrite.OwnedBy_ permission to call `GET /applications` to list applications will fail with a 403.  Instead use `GET servicePrincipals/{id}/ownedObjects` to list the applications owned by the calling application.
@@ -1749,7 +1749,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 
 > [!CAUTION]
-> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.All_ allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
+> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.All_, allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
 
 With the _RoleManagement.Read.Directory_ permission an application can read directoryRoles and directoryRoleTemplates. This includes reading membership information for directory roles.
 
