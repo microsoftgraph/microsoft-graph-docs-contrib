@@ -33,6 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /external/connections/{id}/schema
 ```
 
+## Optional query parameters
+
+This method does not support optional query parameters.
+
 ## Request headers
 
 | Name          | Description               |

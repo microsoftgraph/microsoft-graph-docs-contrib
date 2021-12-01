@@ -80,7 +80,7 @@ A semantic label is a well-known tag published by Microsoft that you can add aga
 Semantic labels provide a domain-independent approach to assigning properties from different content domains to a set of well-known classes. They find applications in many different content experiences, and provide automated support for tasks like:
 
 * Data integration in heterogenous experiences
-* Building common knowledge graphs (for example, Cortex, Suggestions, and QF)
+* Building common knowledge graphs (for example, Viva Topics)
 * Default templates for user experiences
 
 You can assign semantic labels to your source properties on the **Assign property labels** page. Labels provide semantic meaning, and allow to integrate your connector data into Microsoft 365 experiences.  
@@ -181,7 +181,7 @@ Consider that you will be unable to remove the original alias of a refinable pro
 
 ### Adding/removing a semantic label
 
-Adding a semantic label can affect experiences like `Working Set`, `Relevance`, and `Project Cortex`.
+Adding a semantic label can affect experiences like Relevance and Viva Topics.
 
 ## Next steps
 
