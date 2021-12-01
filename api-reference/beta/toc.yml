@@ -13969,7 +13969,7 @@ items:
         - name: RichLongRunningOperation
           href: resources/richLongRunningOperation.md
         - name: Get
-          href: resources/richlongrunningoperation-get.md
+          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:
