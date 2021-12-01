@@ -143,16 +143,16 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 294
+```
+
+
 
 ### Example 3: List all devices and return only their id and extensionAttributes properties
 
