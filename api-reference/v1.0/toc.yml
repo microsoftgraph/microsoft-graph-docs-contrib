@@ -4254,6 +4254,8 @@ items:
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md       
+        - name: List assignments
+          href: api/educationuser-list-assignments.md          
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4352,6 +4354,8 @@ items:
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Return submission
           href: api/educationsubmission-return.md
+        - name: Reassign submission
+          href: api/educationsubmission-reassign.md          
       - name: Outcome
         items:
         - name: Outcome

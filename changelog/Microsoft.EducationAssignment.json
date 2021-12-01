@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "ApiChange": "Member",
+          "ChangedApiName": "reassigned",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassigned** member to the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        },
+        {
+          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-v1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-v1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "ApiChange": "Method",
+          "ChangedApiName": "reassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-v1.0) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/educationsubmission?view=graph-rest-v1.0) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-01T01:11:35.5314928Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },     
+    {
+      "ChangeList": [
+        {
+          "Id": "6685e5ec-fbe8-425c-824f-7e39ffebd89a",
+          "ApiChange": "Member",
+          "ChangedApiName": "studentsOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the **studentsOnly** member to the **educationAddToCalendarOptions** enumeration.",
+          "Target": "educationAddToCalendarOptions"
+        }
+      ],
+      "Id": "6685e5ec-fbe8-425c-824f-7e39ffebd89a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-01T15:35:00.000Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {
           "Id": "567be8b8-3f3e-44c0-a23c-d3b002cf63f6",
           "ApiChange": "Resource",
           "ChangedApiName": "educationExternalResource",
