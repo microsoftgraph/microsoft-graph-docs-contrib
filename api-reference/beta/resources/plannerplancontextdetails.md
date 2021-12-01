@@ -2,7 +2,7 @@
 title: "plannerPlanContextDetails resource type"
 description: "The **plannerPlanContextDetails** resource contains additional information about a plannerPlanContext."
 ms.localizationpriority: medium
-author: "TarkanSevilmis"
+author: "TarkanSevilmis", "WiRawlinWork"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
@@ -21,6 +21,7 @@ The **plannerPlanContextDetails** resource contains additional information about
 |customLinkText|String|Nullable. Specifies the text to use in a user experience to display a link the the associated [plannerPlanContext](plannerplancontext.md). If null, applications should display the link with a custom text based on the **displayLinkType** property.|
 |displayLinkType|plannerPlanContextType|Specifies how an application should display the link to the associated **plannerPlanContext**. Applications may choose to provide customized text, description, icons, or other experiences based on the type of the link. Possible values are: `teamsTab`, `sharePointPage`, `meetingNotes`, `other`, `unknownFutureValue`.|
 |url|String|URL of the user experience represented by the associated **plannerPlanContext**. |
+|state|plannerContextState| Indicates the state of the associated **plannerPlanContext**. |
 
 ## JSON representation
 
@@ -39,6 +40,7 @@ The following is a JSON representation of the resource.
   "url": "http://www.microsoft.com",
   "customLinkText": "Visit Microsoft's home page.",
   "displayLinkType": "other"
+  "state": "active"
 }
 
 ```
