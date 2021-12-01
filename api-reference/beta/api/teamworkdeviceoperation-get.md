@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the details of an async long-running device [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
 
+>**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

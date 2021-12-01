@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties (like device type, hardware details, activity status, health status) and relationships of a [teamworkDevice](../resources/teamworkdevice.md).
 
+>**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

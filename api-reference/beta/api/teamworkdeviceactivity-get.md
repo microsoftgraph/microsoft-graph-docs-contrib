@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the details of activity/usage state of the device. [TeamworkDeviceActivity](../resources/teamworkdeviceactivity.md) holds the parameters which change based on the activity of the device.
 
+>**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

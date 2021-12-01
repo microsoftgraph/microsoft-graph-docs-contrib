@@ -17,6 +17,8 @@ After the POST diagnostics operation returns, you need to GET the [teamworkDevic
 returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
 If the operation is successful, you can download the logs from Teams Admin Centre.
 
+>**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

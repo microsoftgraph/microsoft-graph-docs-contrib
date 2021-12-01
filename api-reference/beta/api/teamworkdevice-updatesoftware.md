@@ -22,6 +22,7 @@ After the POST software update operation returns, you need to GET the [teamworkD
 returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
 You should continue to GET until the status is not "queued".
 
+>**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
