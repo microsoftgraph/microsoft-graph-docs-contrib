@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleScheduleInstanceBase resource type"
 description: "Base property of unified role schedule instance that combines unified role assignment schedule instance and unified role eligibility schedule instance"
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

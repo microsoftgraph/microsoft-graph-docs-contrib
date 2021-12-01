@@ -2,7 +2,7 @@
 title: "Update windowsManagementAppHealthState"
 description: "Update the properties of a windowsManagementAppHealthState object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

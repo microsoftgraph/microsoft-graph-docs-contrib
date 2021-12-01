@@ -54,7 +54,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/planner/buckets
 Content-type: application/json
-Content-length: 92
 
 {
   "name": "Advertising",
@@ -78,6 +77,10 @@ Content-length: 92
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerbucket-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-plannerbucket-from-planner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.
@@ -91,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 145
 
 {
   "name": "Advertising",

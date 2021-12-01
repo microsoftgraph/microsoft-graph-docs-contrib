@@ -2,7 +2,7 @@
 title: "managedAppDataTransferLevel enum type"
 description: "Data can be transferred from/to these classes of apps"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

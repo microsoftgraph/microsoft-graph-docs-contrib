@@ -15,10 +15,10 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 
 For example, you can:
 
-- Get details of an online meeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use the `/attendeeReport` path to get the attendee report of a live event in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-live-event).
+- Get details of an online meeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
 
-Live event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -56,7 +56,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-To get the attendee report of a live event with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -91,14 +91,14 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you fetch the attendee report of a live event, this method returns a `Location` header that indicates the URI to the attendee report.
+- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report.
 
 ## Examples
 
 > [!NOTE]
 > The response objects of the following examples have been shortened for readability. All the properties will be returned from an actual call.
 
-### Example 1: Retrieve an online meeting by VideoTeleconferenceId
+### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
 The following example shows the request.
@@ -126,6 +126,10 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -237,6 +241,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-user-token-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -291,7 +299,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve an online meeting by JoinWebUrl
+### Example 3: Retrieve an online meeting by joinWebUrl
 You can retrieve meeting information via JoinWebUrl by using either a user or application token. This option is available to support use cases where the meeting ID isn't known but the JoinWebUrl is, such as when a user creates a meeting (for example, in the Microsoft Teams client), and a separate application needs to retrieve meeting details as a follow-up action.
 
 #### Request
@@ -357,7 +365,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Fetch attendee report of a live event
+### Example 4: Fetch attendee report of a Teams live event
 
 The following example shows a request to download an attendee report.
 
@@ -389,6 +397,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
