@@ -2,7 +2,7 @@
 title: "ownerType enum type"
 description: "Owner type of device."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

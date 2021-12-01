@@ -32,6 +32,8 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships
 None
@@ -53,7 +55,17 @@ The following is a JSON representation of the resource.
 {
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "addresses": [
+    {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    }
+  ],
+  "phones": [
+    {
+      "@odata.type": "microsoft.graph.phone"
+    }
+  ]
 }
 
 ```

@@ -2,7 +2,7 @@
 title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

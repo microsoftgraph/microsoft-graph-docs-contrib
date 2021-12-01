@@ -2,7 +2,7 @@
 title: "deviceManagementExchangeAccessState enum type"
 description: "Device Exchange Access State."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---

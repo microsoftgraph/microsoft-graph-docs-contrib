@@ -2,7 +2,7 @@
 title: "androidForWorkEasEmailProfileBase resource type"
 description: "Base for Android For Work EAS Email profiles"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
