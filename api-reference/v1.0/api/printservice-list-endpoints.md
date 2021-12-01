@@ -8,12 +8,20 @@ doc_type: apiPageType
 ---
 
 # List endpoints
+
 Namespace: microsoft.graph
 
 Retrieve a list of endpoints exposed by a print service.
 
 ## Permissions
-One of the **delegated** Universal Print [permissions](/graph/permissions-reference#universal-print-permissions) is required to call this API.
+
+In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Delegated (personal Microsoft account) | Not supported.                      |
+| Application                            | Not supported.                      |
 
 ## HTTP request
 
@@ -21,19 +29,23 @@ One of the **delegated** Universal Print [permissions](/graph/permissions-refere
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /print/services/{printServiceId}/endpoints
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -75,16 +87,16 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints
 
 ---
 
-
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.printServiceEndpoint)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -100,4 +112,3 @@ Content-Type: application/json
   ]
 }
 ```
-

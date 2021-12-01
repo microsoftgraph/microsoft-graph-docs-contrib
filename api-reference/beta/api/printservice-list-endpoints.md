@@ -16,13 +16,14 @@ Namespace: microsoft.graph
 Retrieve a list of endpoints exposed by a print service.
 
 ## Permissions
-No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)|None.|
-|Delegated (personal Microsoft account)|None.|
-|Application|None.|
+In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Delegated (personal Microsoft account) | Not supported.                      |
+| Application                            | Not supported.                      |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,19 +32,27 @@ GET /print/services/{id}/endpoints
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [printServiceEndpoint](../resources/printserviceendpoint.md) objects in the response body.
+
 ## Example
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -77,7 +86,9 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 ---
 
 ##### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -85,6 +96,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.printServiceEndpoint",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -110,5 +122,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
