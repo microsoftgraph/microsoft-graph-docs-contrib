@@ -11,6 +11,30 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessReviewExpirationBehavior values
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### allowedTargetScope values
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|

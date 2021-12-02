@@ -47,7 +47,7 @@ You can specify the following properties when creating an **accessPackageAssignm
 |:---|:---|:---|
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy.|
-|allowedTargetScope|allowedTargetScope|**TODO: Add Description**. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Optional.|
+|allowedTargetScope|allowedTargetScope|Who is allowed to be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Optional.|
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
@@ -81,7 +81,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.graph.accessPackageAssignmentPolicy"
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
 }
 -->
 ``` http

@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.graph.accessPackageAssignmentPolicy)"
+  "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentPolicy)"
 }
 -->
 ``` http
