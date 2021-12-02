@@ -2,6 +2,40 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+            "Id": "6f9968b1-82f2-4ecb-acd1-245e04d5a5e5",
+            "ApiChange": "Method",
+            "ChangedApiName": "servicePrincipal",
+            "ChangeType": "Addition",
+            "Description": "Added the [Add token certificate method](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0) on the [service principal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) to allow programmatic creation of signing certificates for service principals.",
+            "Target": "servicePrincipal"
+          },
+          {
+            "Id": "6f9968b1-82f2-4ecb-acd1-245e04d5a5e5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "servicePrincipal",
+            "ChangeType": "Addition",
+            "Description": "Added the [self signed certificate](https://docs.microsoft.com/en-us/graph/api/resources/selfsignedcertificate?view=graph-rest-1.0) resource and it properties. ",
+            "Target": "servicePrincipal"
+          },        
+          {
+            "Id": "6f9968b1-82f2-4ecb-acd1-245e04d5a5e5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "servicePrincipal",
+            "ChangeType": "Addition",
+            "Description": "Updated the [service principal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-1.0) to include information about [token certificates and its api method](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0)",
+            "Target": "servicePrincipal"
+          }
+        ],
+        "Id": "6f9968b1-82f2-4ecb-acd1-245e04d5a5e5",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-12-01T00:00:00Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Applications"
+    },
+    {
+    "ChangeList": [
       { 
         "Id": "4bf37336-391f-4ce3-909b-03314160aade",
         "ApiChange": "Method",
@@ -583,6 +617,7 @@
       "SubArea": ""
       },
       {
+
       "ChangeList": [
       {
         "Id": "12b6de5f-fe2d-4593-9f24-d95543e71199",
@@ -757,6 +792,7 @@
   {
     "ChangeList": [
       {
+
           "Id": "479558a4-5491-4463-bf2f-4474590767db",
           "ApiChange": "Relationship",
           "ChangedApiName": "appRoleAssignments",
