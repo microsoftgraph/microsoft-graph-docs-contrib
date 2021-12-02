@@ -21,6 +21,112 @@
         {
             "ChangeList": [
                 {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckCredentialsExpired",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckCredentialsExpired` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckAccountLockedOrDisabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckAccountLockedOrDisabled` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckAccountQuotaExceeded",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckAccountQuotaExceeded` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckResourceGroupInvalid",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckResourceGroupInvalid` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckVNetInvalid",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckVNetInvalid` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubnetInvalid",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubnetInvalid` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckResourceGroupBeingDeleted",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckResourceGroupBeingDeleted` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckVNetBeingMoved",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckVNetBeingMoved` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubnetDelegationFailed",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubnetDelegationFailed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubnetWithExternalResources",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubnetWithExternalResources` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckResourceGroupLockedForReadonly",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckResourceGroupLockedForReadonly` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckResourceGroupLockedForDelete",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckResourceGroupLockedForDelete` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-30T010:21:26.512Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "90464e11-e3c0-4626-bddd-0f769f8d170c",
                     "ApiChange": "Property",
                     "ChangedApiName": "domainJoinConfiguration",

@@ -346,16 +346,16 @@ items:
           href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Check member groups
-          href: api/user-checkmembergroups.md
-        - name: Check member objects
-          href: api/user-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
         - name: Get member groups
-          href: api/user-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member objects
-          href: api/user-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
@@ -453,7 +453,7 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/organization.md
+        href: resources/user.md
         items:
         - name: Assign manager
           href: api/user-post-manager.md
@@ -602,8 +602,6 @@ items:
           href: api/group-post-owners.md
         - name: Assign license
           href: api/group-assignlicense.md
-        - name: Check member groups
-          href: api/group-checkmembergroups.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
@@ -612,10 +610,14 @@ items:
           href: api/group-delta.md
         - name: Get endpoint
           href: api/endpoint-get.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List endpoints
@@ -1079,14 +1081,14 @@ items:
             href: api/serviceprincipal-list-memberof.md
           - name: List transitive memberOf
             href: api/serviceprincipal-list-transitivememberof.md
-          - name: checkMemberGroups
-            href: api/serviceprincipal-checkmembergroups.md
-          - name: checkMemberObjects
-            href: api/serviceprincipal-checkmemberobjects.md
-          - name: getMemberGroups
-            href: api/serviceprincipal-getmembergroups.md
-          - name: getMemberObjects
-            href: api/serviceprincipal-getmemberobjects.md
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
+          - name: Get member groups
+            href: api/directoryobject-getmembergroups.md
+          - name: Get member objects
+            href: api/directoryobject-getmemberobjects.md
         - name: Owners
           items:
           - name: List owners
@@ -1550,17 +1552,29 @@ items:
             href: api/onlinemeeting-delete.md
           - name: Create or get
             href: api/onlinemeeting-createorget.md
-          - name: Meeting registration
-            href: resources/meetingregistration.md
+        - name: Attendance report
+          href: resources/meetingAttendanceReport.md
+          items:
+          - name: List
+            href: api/meetingattendancereport-list.md
+          - name: Get
+            href: api/meetingattendancereport-get.md
+          - name: Attendance record
+            href: resources/attendancerecord.md
             items:
-            - name: Create
-              href: api/meetingregistration-post.md
-            - name: Get
-              href: api/meetingregistration-get.md
-            - name: Update
-              href: api/meetingregistration-update.md
-            - name: Delete
-              href: api/meetingregistration-delete.md
+            - name: List
+              href: api/attendancerecord-list.md
+        - name: Meeting registration
+          href: resources/meetingregistration.md
+          items:
+          - name: Create
+            href: api/meetingregistration-post.md
+          - name: Get
+            href: api/meetingregistration-get.md
+          - name: Update
+            href: api/meetingregistration-update.md
+          - name: Delete
+            href: api/meetingregistration-delete.md
           - name: Meeting registrant
             href: resources/meetingregistrant.md
             items:
@@ -10114,13 +10128,6 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
-        - name: Risky user
-          href: resources/managedtenants-riskyuser.md
-          items:
-            - name: List risky user
-              href: api/managedtenants-managedtenant-list-riskyusers.md
-            - name: Get risky user
-              href: api/managedtenants-riskyuser-get.md
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -10870,6 +10877,43 @@ items:
             href: api/contract-get.md
           - name: List contracts
             href: api/contract-list.md
+        - name: Custom security attributes (preview)
+          items:
+          - name: Overview
+            href: resources/custom-security-attributes-overview.md
+          - name: Attribute sets
+            href: resources/attributeset.md
+            items:
+            - name: List
+              href: api/directory-list-attributesets.md
+            - name: Get
+              href: api/attributeset-get.md
+            - name: Create
+              href: api/directory-post-attributesets.md
+            - name: Update
+              href: api/attributeset-update.md
+          - name: Custom security attribute definitions
+            href: resources/customsecurityattributedefinition.md
+            items:
+            - name: List
+              href: api/directory-list-customsecurityattributedefinitions.md
+            - name: Get
+              href: api/customsecurityattributedefinition-get.md
+            - name: Create
+              href: api/directory-post-customsecurityattributedefinitions.md
+            - name: Update
+              href: api/customsecurityattributedefinition-update.md
+          - name: Allowed values
+            href: resources/allowedvalue.md
+            items:
+            - name: List
+              href: api/customsecurityattributedefinition-list-allowedvalues.md
+            - name: Get
+              href: api/allowedvalue-get.md
+            - name: Create
+              href: api/customsecurityattributedefinition-post-allowedvalues.md
+            - name: Update
+              href: api/allowedvalue-update.md
         - name: Deleted items
           href: resources/directory.md
           items:
@@ -10896,6 +10940,10 @@ items:
             href: api/device-update.md
           - name: Delete device
             href: api/device-delete.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
+          - name: Get member objects
+            href: api/directoryobject-getmemberobjects.md
           - name: List registered owners
             href: api/device-list-registeredowners.md
           - name: List registered users
@@ -10914,8 +10962,6 @@ items:
             href: api/device-list-transitivememberof.md
           - name: List device usage rights
             href: api/device-list-usagerights.md
-          - name: Check member objects
-            href: api/device-checkmemberobjects.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
@@ -10923,6 +10969,8 @@ items:
             href: api/directoryobject-get.md
           - name: Delete directory object
             href: api/directoryobject-delete.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
           - name: Get member groups
@@ -11036,15 +11084,28 @@ items:
             href: api/orgcontact-get.md
           - name: Get org contact delta
             href: api/orgcontact-delta.md
+          - name: Directory objects
+            href: resources/directoryobject.md
+            items:
+            - name: Get member groups
+              href: api/directoryobject-getmembergroups.md
+            - name: Check member groups
+              href: api/directoryobject-checkmembergroups.md
+            - name: Get member objects
+              href: api/directoryobject-getmemberobjects.md
+            - name: Check member objects
+              href: api/directoryobject-checkmemberobjects.md
           - name: Groups
             href: resources/group.md
             items:
             - name: List memberOf
               href: api/orgcontact-list-memberof.md
             - name: Get member groups
-              href: api/orgcontact-getmembergroups.md
+              href: api/directoryobject-getmembergroups.md
+            - name: Get member groups
+              href: api/directoryobject-getmembergroups.md
             - name: Check member groups
-              href: api/orgcontact-checkmembergroups.md
+              href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
             href: resources/directoryobject.md
             items:
@@ -11054,8 +11115,6 @@ items:
               href: api/orgcontact-list-memberof.md
             - name: Get manager
               href: api/orgcontact-get-manager.md
-            - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
           - name: Subscribed sku
             href: resources/subscribedsku.md
             items:
@@ -14149,11 +14208,11 @@ items:
         - name: Remove owner
           href: api/group-delete-owners.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
         - name: Get deleted group
@@ -14254,6 +14313,10 @@ items:
           href: api/chat-markchatreadforuser.md
         - name: Mark chat as unread
           href: api/chat-markchatunreadforuser.md
+        - name: Hide chat
+          href: api/chat-hideforuser.md
+        - name: Unhide chat
+          href: api/chat-unhideforuser.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
