@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the **onPremisesConnection**'s type is `hybridAzureADJoin`.
+Update the Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the type of the **onPremisesConnection** is `hybridAzureADJoin`.
 
 
 ## Permissions
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
