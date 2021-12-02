@@ -34,9 +34,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`.
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`, `$select`.
 
-The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
+The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Use `@odata.nextLink` for pagination.
 
@@ -52,6 +52,7 @@ GET /security/attackSimulation/simulations?$filter={property} eq '{property-valu
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}
 GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
 
 For general information, see [OData query parameters](/graph/query-parameters).
@@ -142,7 +143,6 @@ Content-Type: application/json
       "completionDateTime": "2021-01-07T01:01:01.01Z",
       "includeAllAccountTargets": false,
       "enableRegionTimezoneDelivery": false,
-      "mode": "real",
       "isAutomated": false,
       "cleanupArtifacts": false,
       "payloadSource": "global",

@@ -170,7 +170,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
-    "id": "240X240",
+    "id": "240x240",
     "width": 240,
     "height": 240
 }
@@ -193,7 +193,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
-    "id": "1X1",
+    "id": "1x1",
     "width": 1,
     "height": 1
 }
