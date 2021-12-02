@@ -92,7 +92,7 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String",
+  "chatType": string",
   "webUrl": "string"
 }
 ```
