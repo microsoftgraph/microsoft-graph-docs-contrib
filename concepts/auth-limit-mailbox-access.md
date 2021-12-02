@@ -17,10 +17,10 @@ Some apps call Microsoft Graph using their own identity and not on behalf of a u
 > 
 > By default, apps that have been granted application permissions to the following data sets can access all the mailboxes in the organization:
 > 
-> - [Calendars](../permissions-reference.md#calendars-permissions)
-> - [Contacts](../permissions-reference.md#contacts-permissions)
-> - [Mail](../permissions-reference.md#mail-permissions)
-> - [Mailbox settings](../permissions-reference.md#mail-permissions)
+> - [Calendars](permissions-reference.md#calendars-permissions)
+> - [Contacts](permissions-reference.md#contacts-permissions)
+> - [Mail](permissions-reference.md#mail-permissions)
+> - [Mailbox settings](permissions-reference.md#mail-permissions)
 > 
 >Administrators can configure [application access policy](#configure-applicationaccesspolicy) to limit app access to _specific_ mailboxes.
 
