@@ -70,7 +70,7 @@ Microsoft Graph has two types of permissions:
 
 - **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented by non-administrative users, but some higher-privileged permissions require [administrator consent](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
 
-- **Application permissions** are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- **Application permissions** are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant).
 
 _Effective permissions_ are the permissions that your app has when making requests to Microsoft Graph. Within organizations, the privileges of the signed-in user or an app are determined by policy or by membership in one or more [Azure AD administrator roles](/azure/active-directory/active-directory-assign-admin-roles). It's important to understand the difference between the delegated and application permissions that your app is granted, and its effective permissions when making calls to Microsoft Graph.
 
@@ -83,6 +83,17 @@ _Effective permissions_ are the permissions that your app has when making reques
     + If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
 
 - For application permissions, the *effective permissions* of your app are the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
+
+##### Comparison of delegated and application permissions
+
+
+|                    | Delegated permissions                                                                                                                 | Application permissions                                                                                                                 |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| App type scenarios | Web / Mobile / single-page app (SPA)                                                                                                  | Web / Daemon                                                                                                                            |
+| Access context     | Get access on-behalf of a user                                                                                                        | Get access as a service                                                                                                                 |
+| Who can consent    | <li> Users can consent for their data <li> Admins can consent for all users                                                           | Only admin can consent                                                                                                                  |
+| Alternative names  | <li>OAuth2 permissions   <li>Impersonation access permission <li>[OAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | <li> App-roles <li>App-only permissions <li>Direct access permissions <li> [appRoleAssignments](/graph/api/resources/approleassignment) |
+
 
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
 
