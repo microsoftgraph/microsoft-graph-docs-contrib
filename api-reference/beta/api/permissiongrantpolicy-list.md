@@ -123,7 +123,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": true
+          "clientApplicationsFromVerifiedPublisherOnly": true,
+          "certifiedClientApplicationsOnly": false
         }
       ],
       "excludes": []
@@ -153,7 +154,8 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "certifiedClientApplicationsOnly": false
         }
       ],
       "excludes": []

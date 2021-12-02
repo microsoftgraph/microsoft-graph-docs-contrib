@@ -48,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each principal reviewed in an `accessReviewInstance` has a decision item representing if they were approved, denied, or not yet reviewed.|
+|decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each principal reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
