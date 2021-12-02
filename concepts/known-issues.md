@@ -339,7 +339,12 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Batch size is limited
 
-JSON batch requests are currently limited to 20 individual requests.
+JSON batch requests are currently limited to 20 individual requests. 
+
+* Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
+
+For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -409,6 +414,13 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 
 ### Properties are missing in the list of teams that a user has joined
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
+
+### Installation of apps that require resource-specific consent permissions is not supported
+The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+- [Add app to team](/graph/api/team-post-installedapps.md)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users
 
