@@ -76,7 +76,6 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 Content-Type: application/json
-Content-length: 95
 
 {
   "grantees": [

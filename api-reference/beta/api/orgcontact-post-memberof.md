@@ -53,7 +53,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/memberOf
 Content-type: application/json
-Content-length: 30
 
 {
   "directoryObject": {
@@ -66,6 +65,10 @@ Content-length: 30
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-orgcontact-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-orgcontact-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -81,7 +84,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 51
 
 {
   "directoryObject": {
