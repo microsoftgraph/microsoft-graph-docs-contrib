@@ -119,6 +119,8 @@ items:
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
       - name: Migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+      - name: Configure Azure AD Graph permissions
+        href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
@@ -330,16 +332,16 @@ items:
         items:
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Check member groups
-          href: api/user-checkmembergroups.md
-        - name: Check member objects
-          href: api/user-checkmemberobjects.md
         - name: Export personal data
           href: api/user-exportpersonaldata.md
-        - name: Get member objects
-          href: api/user-getmemberobjects.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
         - name: Get member groups
-          href: api/user-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
         - name: List created objects
@@ -425,7 +427,7 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/organization.md
+        href: resources/user.md
         items:
         - name: List direct reports
           href: api/user-list-directreports.md
@@ -542,16 +544,16 @@ items:
           href: api/group-post-owners.md
         - name: Assign license
           href: api/group-assignlicense.md
+        - name: Get member groups
+          href: api/directoryobject-getmembergroups.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md
+          href: api/directoryobject-checkmemberobjects.md
         - name: Get delta
           href: api/group-delta.md
-        - name: Get member groups
-          href: api/group-getmembergroups.md
-        - name: Get member objects
-          href: api/group-getmemberobjects.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -902,6 +904,8 @@ items:
             href: api/serviceprincipal-addkey.md
           - name: Remove key
             href: api/serviceprincipal-removekey.md
+          - name: Add token signing certificate
+            href: api/serviceprincipal-addtokensigningcertificate.md  
         - name: Delegated permission grants
           items:
           - name: List
@@ -922,13 +926,13 @@ items:
           - name: List transitive member of
             href: api/serviceprincipal-list-transitivememberof.md
           - name: Check member groups
-            href: api/serviceprincipal-checkmembergroups.md
-          - name: Check member objects
-            href: api/serviceprincipal-checkmemberobjects.md
+            href: api/directoryobject-checkmembergroups.md
           - name: Get member groups
-            href: api/serviceprincipal-getmembergroups.md
+            href: api/directoryobject-getmembergroups.md
+          - name: Check member objects
+            href: api/directoryobject-checkmemberobjects.md
           - name: Get member objects
-            href: api/serviceprincipal-getmemberobjects.md
+            href: api/directoryobject-getmemberobjects.md
         - name: Owners
           items:
           - name: List
@@ -4554,8 +4558,14 @@ items:
             href: api/device-update.md
           - name: Delete device
             href: api/device-delete.md
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Get member groups
+            href: api/directoryobject-getmembergroups.md
           - name: Check member objects
-            href: api/device-checkmemberobjects.md
+            href: api/directoryobject-checkmemberobjects.md
+          - name: Get member objects
+            href: api/directoryobject-getmemberobjects.md
           - name: Create registered owner
             href: api/device-post-registeredowners.md
           - name: Create registered user
@@ -4656,9 +4666,9 @@ items:
             - name: List memberOf
               href: api/orgcontact-list-memberof.md
             - name: Get member groups
-              href: api/orgcontact-getmembergroups.md
+              href: api/directoryobject-getmembergroups.md
             - name: Check member groups
-              href: api/orgcontact-checkmembergroups.md
+              href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
             href: resources/directoryobject.md
             items:
@@ -4669,7 +4679,7 @@ items:
             - name: Get manager
               href: api/orgcontact-get-manager.md
             - name: Get member objects
-              href: api/orgcontact-getmemberobjects.md
+              href: api/directoryobject-getmemberobjects.md
           - name: Subscribed SKU
             href: resources/subscribedsku.md
             items:
@@ -5237,6 +5247,91 @@ items:
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Entitlement management
+          href: resources/entitlementmanagement-root.md
+          items:
+          - name: Access package
+            href: resources/accesspackage.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-accesspackages.md
+            - name: Create
+              href: api/entitlementmanagement-post-accesspackages.md
+            - name: Get
+              href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
+            - name: Delete
+              href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
+          - name: Access package assignment
+            href: resources/accesspackageassignment.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignments.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment request
+            href: resources/accesspackageassignmentrequest.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignmentrequests.md
+            - name: Get
+              href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
+          - name: Access package catalog
+            href: resources/accesspackagecatalog.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-catalogs.md
+            - name: Create
+              href: api/entitlementmanagement-post-catalogs.md
+            - name: Get
+              href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackagecatalog-update.md
+            - name: Delete
+              href: api/accesspackagecatalog-delete.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-connectedorganizations.md
+            - name: Create
+              href: api/entitlementmanagement-post-connectedorganizations.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
+            - name: List external sponsors
+              href: api/connectedorganization-list-externalsponsors.md
+            - name: List internal sponsors
+              href: api/connectedorganization-list-internalsponsors.md
+            - name: Add external sponsors
+              href: api/connectedorganization-post-externalsponsors.md
+            - name: Add internal sponsors
+              href: api/connectedorganization-post-internalsponsors.md
+            - name: Remove external sponsors
+              href: api/connectedorganization-delete-externalsponsors.md
+            - name: Remove internal sponsors
+              href: api/connectedorganization-delete-internalsponsors.md
+          - name: Entitlement management settings
+            href: resources/entitlementmanagementsettings.md
+            items:
+            - name: Get
+              href: api/entitlementmanagementsettings-get.md
+            - name: Update
+              href: api/entitlementmanagementsettings-update.md
         - name: Terms of use
           items:
           - name: Agreement
@@ -6307,11 +6402,11 @@ items:
         - name: Remove owner
           href: api/group-delete-owners.md
         - name: Get member groups
-          href: api/group-getmembergroups.md
+          href: api/directoryobject-getmembergroups.md
         - name: Get member objects
-          href: api/group-getmemberobjects.md
+          href: api/directoryobject-getmemberobjects.md
         - name: Check member groups
-          href: api/group-checkmembergroups.md
+          href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
         - name: Get deleted group
