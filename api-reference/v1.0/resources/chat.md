@@ -54,10 +54,10 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
-| id| String| The chat's unique identifier. Read-only.|
+| id| string| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
-| topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
-|  webUrl          |   string                  |  A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.     |
+| topic| string|  (Optional) Subject or topic for the chat. Only available for group chats.|
+| webUrl | string| A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only. |
 
 ### chatType values 
 
