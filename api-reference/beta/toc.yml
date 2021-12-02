@@ -9820,9 +9820,9 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List cloud PCs
+          - name: List
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get cloud PC
+          - name: Get
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
