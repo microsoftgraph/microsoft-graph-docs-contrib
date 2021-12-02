@@ -1,19 +1,19 @@
 ---
-title: "Create schema"
-description: "Create the schema for a Microsoft Search connection."
+title: "Update schema"
+description: "Update the properties of a schema for an externalConnection."
 ms.localizationpriority: medium
-author: "snlraju-msft"
+author: "mecampos"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Create schema
+# Update schema
 
 Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create the schema for a Microsoft Search [connection](../resources/externalconnectors-externalconnection.md).
+Update the properties of a [schema](../resources/externalconnectors-schema.md) for an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /external/connections/{id}/schema
+PATCH /external/connections/{connectionId}/schema
 ```
 
 ## Request headers
@@ -53,21 +53,17 @@ If successful, this method returns a `202 Accepted` response code and a URL in t
 
 ## Examples
 
-### Example: Register custom schema asynchronously
-
-#### Request
+### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_schema_from_connection_async",
-  "@odata.type": "microsoft.graph.externalConnectors.schema"
+  "name": "update_schema"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 
 {
@@ -98,45 +94,28 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 <!-- markdownlint-disable MD024 -->
-#### Response
+### Response
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 } -->
 
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create externalItem",
+  "description": "Get schema",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
