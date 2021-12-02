@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: changeUserAccountType"
-description: "**TODO: Add Description**"
+description: "Change the account type of the user on a specific Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -40,13 +40,13 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/changeUserAccountTyp
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of user on provisioned Cloud PCs. Possible values: `standardUser`, `administrator` and `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 
 
 ## Response
@@ -62,12 +62,12 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/changeUserAccountType
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd/changeUserAccountType
 Content-Type: application/json
 Content-length: 35
 
 {
-  "userAccountType": "String"
+  "userAccountType": "administrator"
 }
 ```
 
