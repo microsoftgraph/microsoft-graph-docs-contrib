@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of webhook subscriptions. The content of the response depends on the context in which the app is calling; see the scenarios below for details.
+Retrieve a list of webhook subscriptions. 
+
+The content of the response depends on the context in which the app is calling; for details, see the scenarios in the [Permissions](#permissions) section.
 
 ## Permissions
 
@@ -54,7 +56,7 @@ This API supports the following permission scopes; to learn more, including how 
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-Response results are based on the context of the calling app. The following is a summary of the common scenarios:
+Response results are based on the context of the calling app. The following sections describe the common scenarios.
 
 ### Basic scenarios
 
@@ -62,7 +64,7 @@ Most commonly, an application wants to retrieve subscriptions that it originally
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
+| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>**Note:** This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
 | App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
 
 ### Advanced scenarios
@@ -85,7 +87,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -103,7 +105,7 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -138,9 +140,11 @@ GET https://graph.microsoft.com/beta/subscriptions
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -192,4 +196,4 @@ Content-type: application/json
 
 > **Note:** the `clientState` property value is not returned for security purposes.
 
-When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).
+When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results. To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).
