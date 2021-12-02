@@ -11,7 +11,9 @@ author: "alamaral"
 
 Namespace: microsoft.graph
 
-Contains the public part of a signing certificate. It's the return type of the action [addSelfSignedSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md). Service providers use the public part of the signing certificate to validate the issuer of the token.
+Contains the public part of a signing certificate. 
+
+This resource type is the return type of the [addSelfSignedSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md) action. Service providers use the public part of the signing certificate to validate the issuer of the token.
 
 ## Properties
 Property|Type|Description
@@ -28,7 +30,7 @@ Property|Type|Description
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
