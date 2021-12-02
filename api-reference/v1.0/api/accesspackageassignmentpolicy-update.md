@@ -51,6 +51,7 @@ PATCH /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackag
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
 |reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments from this policy.|
+
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.
 
@@ -65,31 +66,12 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageAssignmentPolicyId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187
 Content-Type: application/json
-Content-length: 677
 
 {
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "allowedTargetScope": "String",
-  "specificAllowedTargets": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
-  "expiration": {
-    "@odata.type": "microsoft.graph.expirationPattern"
-  },
-  "requestorSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
-  },
-  "requestApprovalSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
-  },
-  "reviewSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
-  }
+  "description": "All users can request for access to the directory."
 }
 ```
 
@@ -98,7 +80,8 @@ Content-length: 677
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
 }
 -->
 ``` http
@@ -108,28 +91,7 @@ Content-Type: application/json
 {
   "id": "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "allowedTargetScope": "String",
-  "specificAllowedTargets": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
-  "expiration": {
-    "@odata.type": "microsoft.graph.expirationPattern"
-  },
-  "requestorSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
-  },
-  "requestApprovalSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
-  },
-  "reviewSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
-  },
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "description": "All users can request for access to the directory."
 }
 ```
-
 
