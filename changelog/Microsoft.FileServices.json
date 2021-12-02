@@ -2109,7 +2109,7 @@
       "ChangeList": [
         {
           "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
@@ -2125,7 +2125,7 @@
         },
         {
           "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
@@ -2136,16 +2136,16 @@
           "ApiChange": "Method",
           "ChangedApiName": "addCopyFromContentTypeHub",
           "ChangeType": "Addition",
-          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-beta) method to the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-beta) resource.",
-          "Target": "addCopyFromContentTypeHub"
+          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Target": "contentType"
         },
         {
           "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
           "ApiChange": "Method",
           "ChangedApiName": "getCompatibleHubContentTypes",
           "ChangeType": "Addition",
-          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-beta) method to the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-beta) resource.",
-          "Target": "getCompatibleHubContentTypes"
+          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Target": "contentType"
         }
       ],
       "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
