@@ -1,6 +1,6 @@
 ---
 title: "wellKnownTaskList resource type"
-description: "A list in Microsoft To Do that contains one or more Task resources that cannot be modified or deleted"
+description: "A built-in task list which cannot be renamed or deleted."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"

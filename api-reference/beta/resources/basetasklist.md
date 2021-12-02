@@ -1,6 +1,6 @@
 ---
 title: "baseTaskList resource type"
-description: "A list containing one or more tasks"
+description: "A list containing one or more task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A list that contains one or more [Task](./basetask.md) resources. 
-**baseTaskList** is the base resource for following derived types of attachments
+**baseTaskList** is the base resource for following derived types of task lists.
 * Built-in task list ([wellKnownTaskList](../resources/wellknowntasklist.md) resource)
 * User created task list ([taskList](../resources/tasklist.md) resource) 
 
 This is an abstract type.
 
 ## Methods
-The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**TaskList**)
+The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
 
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -30,7 +30,7 @@ The following method apply to any of the derived types of **baseTaskList** (**we
 |[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
 |[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
-The following method apply to ***TaskList** type of derived task list.
+The following method apply only to ***taskList** type of derived task list.
 
 |Method|Return type|Description|
 |:---|:---|:---|

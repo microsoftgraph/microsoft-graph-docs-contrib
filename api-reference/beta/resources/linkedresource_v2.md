@@ -1,6 +1,6 @@
 ---
 title: "linkedResource_v2 resource type"
-description: "Represents the source of the todoTask"
+description: "Represents an item in a partner application related to a baseTask"
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"

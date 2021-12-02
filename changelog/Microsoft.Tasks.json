@@ -1,0 +1,256 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "bodyType",
+          "ChangeType": "Addition",
+          "Description": "Added the [bodyType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "bodyType"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "dayOfWeek",
+          "ChangeType": "Addition",
+          "Description": "Added the [dayOfWeek](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "dayOfWeek"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "importance",
+          "ChangeType": "Addition",
+          "Description": "Added the [importance](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "importance"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "recurrencePatternType",
+          "ChangeType": "Addition",
+          "Description": "Added the [recurrencePatternType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "recurrencePatternType"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "recurrenceRangeType",
+          "ChangeType": "Addition",
+          "Description": "Added the [recurrenceRangeType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "recurrenceRangeType"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "taskStatus_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskStatus_v2](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "taskStatus_v2"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "weekIndex",
+          "ChangeType": "Addition",
+          "Description": "Added the [weekIndex](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "weekIndex"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "wellKnownListName_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [wellKnownListName_v2](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "wellKnownListName_v2"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "personalTaskProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [personalTaskProperties](https://docs.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) resource",
+          "Target": "personalTaskProperties"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Target": "baseTask"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItems",
+          "ChangeType": "Addition",
+          "Description": "Added the [checklistItems](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Target": "baseTask"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extensions",
+          "ChangeType": "Addition",
+          "Description": "Added the [extensions](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Target": "baseTask"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "linkedResources",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkedResources](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Target": "baseTask"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "parentList",
+          "ChangeType": "Addition",
+          "Description": "Added the [parentList](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource",
+          "Target": "baseTask"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseTaskList",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Target": "baseTaskList"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extensions",
+          "ChangeType": "Addition",
+          "Description": "Added the [extensions](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Target": "baseTaskList"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tasks",
+          "ChangeType": "Addition",
+          "Description": "Added the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/baseTaskList?view=graph-rest-beta) resource",
+          "Target": "baseTaskList"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [checklistItem](https://docs.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-beta) resource",
+          "Target": "checklistItem"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "linkedResource_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkedResource_v2](https://docs.microsoft.com/en-us/graph/api/resources/linkedResource_v2?view=graph-rest-beta) resource",
+          "Target": "linkedResource_v2"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task",
+          "ChangeType": "Addition",
+          "Description": "Added the [task](https://docs.microsoft.com/en-us/graph/api/resources/task?view=graph-rest-beta) resource",
+          "Target": "task"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskList",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskList](https://docs.microsoft.com/en-us/graph/api/resources/taskList?view=graph-rest-beta) resource",
+          "Target": "taskList"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tasks",
+          "ChangeType": "Addition",
+          "Description": "Added the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Target": "tasks"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alltasks",
+          "ChangeType": "Addition",
+          "Description": "Added the [alltasks](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Target": "tasks"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lists",
+          "ChangeType": "Addition",
+          "Description": "Added the [lists](https://docs.microsoft.com/en-us/graph/api/resources/tasks?view=graph-rest-beta) resource",
+          "Target": "tasks"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Resource",
+          "ChangedApiName": "wellKnownTaskList",
+          "ChangeType": "Addition",
+          "Description": "Added the [wellKnownTaskList](https://docs.microsoft.com/en-us/graph/api/resources/wellKnownTaskList?view=graph-rest-beta) resource",
+          "Target": "wellKnownTaskList"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Method",
+          "ChangedApiName": "move",
+          "ChangeType": "Addition",
+          "Description": "Added the [move](https://docs.microsoft.com/en-us/graph/api/move?view=graph-rest-beta) resource",
+          "Target": "move"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) resource",
+          "Target": "delta"
+        }
+      ],
+      "Id": "b9609297-c6ba-42dd-a27f-bd9e1b800898",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-01T12:29:37.2597467Z",
+      "WorkloadArea": "Microsoft.Tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39ba2099-d543-4b85-8e49-515615aa2c2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tasks",
+          "ChangeType": "Addition",
+          "Description": "Added the [tasks](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "39ba2099-d543-4b85-8e49-515615aa2c2a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-01T12:29:37.2613137Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+  ]
+}

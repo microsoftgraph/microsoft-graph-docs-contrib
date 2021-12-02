@@ -1,6 +1,6 @@
 ---
 title: "task resource type"
-description: "A task resource tracks a work item."
+description: "Represents a task, such as a piece of work or personal item, that can be tracked and completed."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **Task** represents a task, such as a piece of work or personal item, that can be tracked and completed. A **Task** is always contained in a [task list](basetasklist.md). 
+Represents a task, such as a piece of work or personal item, that can be tracked and completed. A **Task** is always contained in a [task list](basetasklist.md). 
 
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
