@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through MEM portal, so the Cloud PC also has a corresponding Intune managed device id.
+Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through MEM portal, so the Cloud PC also has a corresponding Intune managed device ID.
 
 ## Methods
 
@@ -26,7 +26,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot for a specific [cloudPC](../resources/cloudpc.md) object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename for a specific [cloudPC](../resources/cloudpc.md) object. Update the Cloud PC entity displayName.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot for a specific [cloudPC](../resources/cloudpc.md) object. Check the Cloud PC and the Session Host health status.|
-|[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
+|[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device ID.|
 |[Bulk reprovision cloudPCs remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Get cloudPC remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
@@ -40,9 +40,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
-|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example: `{ "time": "2014-01-01T00:00:00Z"}`.|
+|lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
 |lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision and troubleshoot.|
+|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the Cloud PC. Now supported remote actions include: rename, reboot, reprovision, and troubleshoot.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
 |managedDeviceName|String|The Cloud PC’s Intune device name.|
 |onPremisesConnectionName|String|The on-premises connection that is applied during provisioning of Cloud PCs.|
