@@ -23,17 +23,27 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` n
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not applicable. | UserAuthenticationMethod.ReadWrite.All |
+### Permissions acting on self
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 

@@ -88,7 +88,7 @@ If successful, this method returns a [fieldValueSet][] in the response body for 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {

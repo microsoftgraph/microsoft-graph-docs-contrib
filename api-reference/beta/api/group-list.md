@@ -412,7 +412,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `NOT` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following is an example of the request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `not` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 # [HTTP](#tab/http)
 <!-- {
