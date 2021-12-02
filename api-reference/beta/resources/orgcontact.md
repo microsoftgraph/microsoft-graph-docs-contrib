@@ -17,7 +17,7 @@ Represents an organizational contact. Organizational contacts are managed by an 
 
 Inherits from [directoryObject](directoryobject.md).
 
-This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/orgcontact-delta.md) function.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/orgcontact-delta.md) function. This resource is an open type that allows other properties to be passed in.
 
 ## Methods
 
@@ -31,7 +31,8 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get a memberOf object collection. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for group membership. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the specified contact is a member of. |
-| [getMemberObjects](../api/orgcontact-getmemberobjects.md) | String collection | Returns a list of directoryObjects the contact is a member of. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in groups, administrative units, and directory roles. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Get the list of groups, administrative units, and directory roles the contact is a member of. |
 
 ## Properties
 
