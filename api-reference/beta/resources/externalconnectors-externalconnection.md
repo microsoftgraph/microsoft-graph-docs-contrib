@@ -27,6 +27,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | [Create schema](../api/externalconnectors-externalconnection-post-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
 | [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)    | [externalItem](externalconnectors-externalitem.md)               | Create a new externalItem by posting to the items collection. |
+|[Get Quota](../api/externalconnectors-connectionQuota-get.md)|[connectionQuota](../resources/externalconnectors-connectionQuota.md)|Calculates quota utilization information of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 
 ## Properties
 
@@ -49,6 +50,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | operations   | [microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) collection | Read-only. Nullable. |
 | schema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Read-only. Nullable. |
 | groups       | [microsoft.graph.externalConnectors.externalGroup](externalconnectors-externalgroup.md) collection             | Read-only. Nullable. |
+| quota        | [microsoft.graph.externalConnectors.connectionQuota](externalconnectors-connectionQuota.md)             | Read-only. Nullable. |
 
 ## JSON representation
 
@@ -69,7 +71,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "name": "String",
   "state": "String",
-  "ingestedItemsCount": "Integer"
+  "ingestedItemsCount": 700000
 }
 ```
 
