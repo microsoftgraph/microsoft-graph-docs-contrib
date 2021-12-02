@@ -50,6 +50,7 @@ PATCH /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackag
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
+|reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments from this policy.|
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.
 
@@ -66,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageAssignmentPolicyId}
 Content-Type: application/json
-Content-length: 572
+Content-length: 677
 
 {
   "displayName": "All Users",
@@ -85,6 +86,9 @@ Content-length: 572
   },
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
+  },
+  "reviewSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   }
 }
 ```
@@ -119,6 +123,9 @@ Content-Type: application/json
   },
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
+  },
+  "reviewSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)"

@@ -95,6 +95,9 @@ Content-Type: application/json
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
   },
+  "reviewSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
+  },
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)"
 }

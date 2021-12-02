@@ -35,6 +35,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
+|reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Settings for access reviews of assignments from this policy.|
 |specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The targets for being assigned access from an access package from this policy.|
 
 ## Relationships
@@ -72,6 +73,9 @@ The following is a JSON representation of the resource.
   },
   "requestApprovalSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
+  },
+  "reviewSettings": {
+    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)"
