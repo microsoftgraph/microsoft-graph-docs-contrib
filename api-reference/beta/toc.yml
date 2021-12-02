@@ -13652,6 +13652,8 @@ items:
             href: api/externalconnectors-externalconnection-post-schema.md
           - name: Get schema
             href: api/externalconnectors-schema-get.md
+          - name: Update schema
+            href: api/externalconnectors-schema-update.md
         - name: External item
           items:
           - name: External item
