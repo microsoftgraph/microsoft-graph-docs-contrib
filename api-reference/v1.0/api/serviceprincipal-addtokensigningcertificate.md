@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. The self-signed signing certificate is composed of the following objects which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
+Create a self-signed signing certificate and return a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. 
+
+The self-signed signing certificate is composed of the following objects, which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
 + The [keyCredentials](../resources/keycredential.md) object with the following objects:
     + A private key object with **usage** set to `Sign`.
     + A public key object with **usage** set to `Verify`.
@@ -20,7 +22,7 @@ Creates a self-signed signing certificate and returns a [selfSignedCertificate](
 
 All the objects have the same value of **customKeyIdentifier**.
 
-The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. Once set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
+The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. When set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
 
 ## Permissions
 
