@@ -19,8 +19,8 @@ Represents specific settings for the Microsoft Managed Desktop which enables cus
 
 |Property|Type|Description|
 |:---|:---|:---|
-|profile|String|Indicates the name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates if the provisioning policy enables Microsoft Managed Desktop. If yes, it indicates the plan. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
+|profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
+|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop. If yes, it indicates the plan. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
 
 ### microsoftManagedDesktopType values
 
