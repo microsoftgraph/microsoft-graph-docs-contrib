@@ -183,7 +183,7 @@ items:
           - name: Manage items
             href: connecting-external-content-manage-items.md
           - name: External groups
-            href: connecting-external-content-external-groups.md            
+            href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
