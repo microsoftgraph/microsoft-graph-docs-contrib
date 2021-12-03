@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Recording().Get(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Recording().Get(nil)
 
 
 ```

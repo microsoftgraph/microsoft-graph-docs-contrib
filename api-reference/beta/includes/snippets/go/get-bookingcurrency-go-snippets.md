@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 bookingCurrencyId := "bookingCurrency-id"
-result, err := graphClient.BookingCurrenciesById(&bookingCurrencyId).Get(options)
+result, err := graphClient.BookingCurrenciesById(&bookingCurrencyId).Get(nil)
 
 
 ```
