@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        { 
+          "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for creating an [access package assignment request](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-assignmentrequests).",
+          "Target": "entitlementmanagement"
+        }
+      ],
+        "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-12-03T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "0bc50a14-e154-4dd9-b0d1-018477ff60e5",
           "ApiChange": "Resource",
