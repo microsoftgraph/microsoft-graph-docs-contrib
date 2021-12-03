@@ -17,7 +17,7 @@ Represents the To Do tasks services available to a user.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
-|[Create baseTaskList](../api/tasks-post-lists.md)|[baseTaskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
+|[Create taskList](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
 
 ## Properties
 None.

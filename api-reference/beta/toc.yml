@@ -14703,9 +14703,9 @@ items:
         - name: Get task list
           href: api/basetasklist-get.md
         - name: Update task list
-          href: api/basetasklist-update.md
+          href: api/tasklist-update.md
         - name: Delete task list
-          href: api/basetasklist-delete.md
+          href: api/tasklist-delete.md
         - name: Get task list delta
           href: api/basetasklist-delta.md
         - name: Create open extension
