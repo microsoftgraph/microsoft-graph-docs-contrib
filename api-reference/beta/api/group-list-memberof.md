@@ -140,16 +140,16 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
+
+
 
 
 ### Example 3: Use OData cast to get only a count of group membership
@@ -173,16 +173,16 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 394
+```
+
+
 
 ### Example 4: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 presenceId := "presence-id"
-result, err := graphClient.Communications().PresencesById(&presenceId).Get(options)
+result, err := graphClient.Communications().PresencesById(&presenceId).Get(nil)
 
 
 ```
