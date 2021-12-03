@@ -44,13 +44,13 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **accessPackageAssignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the accessPackageAssignmentPolicy, and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
+For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the accessPackageAssignmentPolicy, and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
-For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
+For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
