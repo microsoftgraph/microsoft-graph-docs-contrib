@@ -343,7 +343,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "webUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **webUrl** property to [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **webUrl** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         }
       ],
