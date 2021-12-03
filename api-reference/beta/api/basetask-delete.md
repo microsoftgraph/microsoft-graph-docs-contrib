@@ -1,6 +1,6 @@
 ---
 title: "Delete baseTask"
-description: "Deletes a baseTask object."
+description: "Delete a baseTask object."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [baseTask](../resources/basetask.md) object.
+Delete a [baseTask](../resources/basetask.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

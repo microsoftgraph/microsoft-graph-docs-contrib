@@ -1,6 +1,6 @@
 ---
 title: "personalTaskProperties resource type"
-description: Complex type containing personal properties of a task"
+description: Contains personal properties of a task"
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing personal properties of a task. When sharing or assigning a task, these properties will not be seen by other users.
+Contains personal properties of a [task](task.md). When sharing or assigning a **task**, these properties will not be seen by other users.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reminderDatetime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
+|reminderDatetime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the **task** to occur.|
 
 ## Relationships
 None.

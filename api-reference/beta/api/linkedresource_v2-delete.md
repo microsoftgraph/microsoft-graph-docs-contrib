@@ -1,6 +1,6 @@
 ---
 title: "Delete linkedResource_v2"
-description: "Deletes a linkedResource_v2 object."
+description: "Delete a linkedResource_v2 object."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [linkedResource_v2](../resources/linkedresource_v2.md) object.
+Delete a [linkedResource_v2](../resources/linkedresource_v2.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

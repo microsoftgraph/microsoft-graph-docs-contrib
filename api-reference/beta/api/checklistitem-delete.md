@@ -1,6 +1,6 @@
 ---
 title: "Delete checklistItem"
-description: "Deletes a checklistItem object."
+description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [checklistItem](../resources/checklistitem.md) object.
+Delete a [checklistItem](../resources/checklistitem.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
