@@ -19,10 +19,7 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRbacResourceActions](../api/unifiedrbacresourceaction-list.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Get a list of the [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) objects and their properties.|
-|[Create unifiedRbacResourceAction](../api/unifiedrbacresourcenamespace-post-resourceactions.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md)|Create a new [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.|
 |[Get unifiedRbacResourceAction](../api/unifiedrbacresourceaction-get.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md)|Read the properties and relationships of an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.|
-|[Update unifiedRbacResourceAction](../api/unifiedrbacresourceaction-update.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md)|Update the properties of an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.|
-|[Delete unifiedRbacResourceAction](../api/unifiedrbacresourceaction-delete.md)|None|Deletes an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.|
 
 ## Properties
 |Property|Type|Description|
