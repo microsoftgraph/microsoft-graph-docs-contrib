@@ -95,11 +95,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "accountEnabled": true,
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "f0206b06-7c5d-461c-ae24-08f68b7ef463",
+            "accountEnabled": true,
+            "displayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "5c70937c-d9ea-4a47-8852-ab77630f803d",
+            "accountEnabled": true,
+            "displayName": "Diego Siciliani",
+            "userPrincipalName": "DiegoS@contoso.com"
+        }
+    ]
 }
 ```
 
