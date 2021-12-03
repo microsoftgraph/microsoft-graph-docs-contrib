@@ -25,6 +25,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackages|[accessPackage](../resources/accesspackage.md) collection|Access packages.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Access package assignment policies.|
 |assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Access package assignment requests.|
 |assignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Access package assignments.|
 |catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|Access package catalogs.|
