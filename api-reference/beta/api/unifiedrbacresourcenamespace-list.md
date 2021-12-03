@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for Microsoft.DirectoryServices.unifiedRbacResourceNamespace not found
+GET /roleManagement/directory/resourceNamespaces
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.unifiedRbacResourceNamespace not found
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
 
 
