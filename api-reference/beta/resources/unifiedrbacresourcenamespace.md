@@ -21,7 +21,6 @@ Namespace: microsoft.graph
 |[List unifiedRbacResourceNamespaces](../api/unifiedrbacresourcenamespace-list.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Get a list of the [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) objects and their properties.|
 |[Get unifiedRbacResourceNamespace](../api/unifiedrbacresourcenamespace-get.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Read the properties and relationships of an [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) object.|
 |[List resourceActions](../api/unifiedrbacresourcenamespace-list-resourceactions.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Get the unifiedRbacResourceAction resources from the resourceActions navigation property.|
-|[Create unifiedRbacResourceAction](../api/unifiedrbacresourcenamespace-post-resourceactions.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md)|Create a new unifiedRbacResourceAction object.|
 
 ## Properties
 |Property|Type|Description|
