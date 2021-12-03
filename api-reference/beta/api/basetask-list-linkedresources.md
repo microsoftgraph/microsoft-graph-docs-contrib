@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the linkedResource_v2 resources from the linkedResources navigation property.
+Get the [linkedResource_v2](../resources/linkedresource_v2.md) resources from the linkedResources navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

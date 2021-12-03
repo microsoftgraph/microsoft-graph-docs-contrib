@@ -25,11 +25,11 @@ This is an abstract base type inherited by [task](task.md) resource.
 |[Update baseTask](../api/basetask-update.md)|[baseTask](../resources/basetask.md)|Update the properties of a [baseTask](../resources/basetask.md) object.|
 |[Delete baseTask](../api/basetask-delete.md)|None|Deletes a [baseTask](../resources/basetask.md) object.|
 |[move](../api/basetask-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
-|[delta](../api/basetask-delta.md)|[baseTask](../resources/basetask.md) collection|Get a set of tasks that have been added, deleted, or updated in a specified list.|
-|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
-|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
-|[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
-|[Create linkedResource_v2](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
+|[delta](../api/basetask-delta.md)|[baseTask](../resources/basetask.md) collection|Get a set of **baseTask** objects that have been added, deleted, or updated in a specified list.|
+|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the **checklistItem** resources from the checklistItems navigation property.|
+|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new **checklistItem** object.|
+|[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the **linkedResource_v2** resources from the linkedResources navigation property.|
+|[Create linkedResource_v2](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new **linkedResource_v2** object.|
 
 ## Properties
 |Property|Type|Description|

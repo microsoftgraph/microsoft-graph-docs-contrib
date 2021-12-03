@@ -1,6 +1,6 @@
 ---
 title: "taskList resource type"
-description: "A user created list in Microsoft To Do that contains one or more Task resources."
+description: "Represents a list created by a user in Microsoft To Do that contains one or more Task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A user created list in Microsoft To Do that contains one or more [Task](./task.md) resources. 
+Represents a list created by a user in Microsoft To Do that contains one or more [Task](./task.md) resources. 
 
 This resource supports
 * Adding your data to custom properties as [open extensions](/graph/extensibility-overview)

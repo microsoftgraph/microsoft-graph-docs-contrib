@@ -1,6 +1,6 @@
 ---
-title: "Update baseTaskList"
-description: "Update the properties of a baseTaskList object."
+title: "Update taskList"
+description: "Update the properties of a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [baseTaskList](../resources/basetasklist.md) object.
+Update the properties of a [taskList](../resources/tasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [base
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_basetasklist"
+  "name": "update_tasklist"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-length: 82
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTaskList"
+  "@odata.type": "microsoft.graph.taskList"
 }
 -->
 ``` http

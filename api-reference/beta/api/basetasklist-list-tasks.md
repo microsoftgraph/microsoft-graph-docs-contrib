@@ -1,5 +1,5 @@
 ---
-title: "List basetasks"
+title: "List baseTasks"
 description: "Get the baseTask resources from the tasks navigation property of a specified baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List baseTasks
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -31,14 +31,6 @@ The following method apply to any of the derived types of **baseTaskList** (**we
 |[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
 |[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
-The following methods apply only to **taskList** type of derived task list.
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Create baseTaskList](../api/tasks-post-lists.md)|[baseTaskList](../resources/basetasklist.md)|Create a new [baseTaskList](../resources/basetasklist.md) object.|
-|[Update baseTaskList](../api/basetasklist-update.md)|[baseTaskList](../resources/basetasklist.md)|Update the properties of a [baseTaskList](../resources/basetasklist.md) object.|
-|[Delete baseTaskList](../api/basetasklist-delete.md)|None|Deletes a [baseTaskList](../resources/basetasklist.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

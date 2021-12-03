@@ -1,6 +1,6 @@
 ---
-title: "Create baseTaskList"
-description: "Create a new baseTaskList object."
+title: "Create taskList"
+description: "Create a new taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [baseTaskList](../resources/basetasklist.md) object.
+Create a new [taskList](../resources/basetasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [baseTask
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_basetasklist_from_"
+  "name": "create_tasklist_from_"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTaskList"
+  "@odata.type": "microsoft.graph.taskList"
 }
 -->
 ``` http

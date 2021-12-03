@@ -1,5 +1,5 @@
 ---
-title: "Move baseTask"
+title: "baseTask: move"
 description: "Move a baseTask object from one baseTaskList to another."
 author: "devindrajit"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Move baseTask
+# baseTask: move
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,6 +1,6 @@
 ---
-title: "Delete baseTaskList"
-description: "Deletes a baseTaskList object."
+title: "Delete taskList"
+description: "Deletes a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [baseTaskList](../resources/basetasklist.md) object.
+Deletes a [taskList](../resources/tasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_basetasklist"
+  "name": "delete_tasklist"
 }
 -->
 ``` http
