@@ -57,7 +57,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | id| String| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
-| webUrl | String| A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only. |
+| webUrl | String| The URL for the chat in Microsoft Teams. The URL is treated as an opaque blob, and not parsed. Read-only. |
 
 ### chatType values 
 
