@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "joinWebUrl",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "customerTimeZone",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "addresses",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "phones",
                     "ChangeType": "Addition",
@@ -43,7 +43,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -51,7 +51,7 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "webUrl",
                     "ChangeType": "Addition",
@@ -59,15 +59,39 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
                     "ApiChange": "Property",
                     "ChangedApiName": "timeZone",
                     "ChangeType": "Addition",
                     "Description": "Added the **timeZone** property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
                     "Target": "bookingStaffMember"
+                },
+                {
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "answerInputType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **answerInputType** enumeration type.",
+                    "Target": "answerInputType"
+                },
+                {
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "customQuestions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **customQuestions** relationship to [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
+                    "Target": "bookingBusiness"
+                },
+                {
+                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCustomQuestion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingCustomQuestion](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomQuestion?view=graph-rest-beta) resource",
+                    "Target": "bookingCustomQuestion"
                 }
             ],
-            "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+            "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-27T11:56:54.877Z",
