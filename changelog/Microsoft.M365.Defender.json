@@ -53,10 +53,10 @@
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "Resource",
-					"ChangedApiName": "alertComment",
+					"ChangedApiName": "alertComment_v2",
 					"ChangeType": "Addition",
-					"Description": "Added the [alertComment](https://docs.microsoft.com/en-us/graph/api/resources/m365AlertComment?view=graph-rest-beta) resource type.",
-					"Target": "alertComment"
+					"Description": "Added the [alertComment_v2](https://docs.microsoft.com/en-us/graph/api/resources/alertComment_v2?view=graph-rest-beta) resource type.",
+					"Target": "alertComment_v2"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",

@@ -31,7 +31,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |:---|:---|:---|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned. Free editable text.|
 |classification|alertClassification_v2|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
-|comments|[alertComment](alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
+|comments|[alertComment_v2](alertcomment_v2.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |determination|alertDetermination_v2|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
@@ -89,7 +89,7 @@ The following is a JSON representation of the resource.
   ],
   "comments": [
     {
-      "@odata.type": "microsoft.graph.alertComment"
+      "@odata.type": "microsoft.graph.alertComment_v2"
     }
   ]
 }
