@@ -31,9 +31,9 @@ Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
 
 | Property        | Type              | Description                                                                                               |
 | :-------------- | :---------------- | :-------------------------------------------------------------------------------------------------------- |
-| answerInputType | answerInputType   | The type of the answer expected.The possible values are: `text`, `radioButton`, `unknownFutureValue`.     |
-| answerOptions   | String collection | Set of possible answers to chose from.                                                                    |
-| displayName     | String            | The name of the custom question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). |
+| answerInputType | answerInputType   | The expected answer type.The possible values are: `text`, `radioButton`, `unknownFutureValue`.     |
+| answerOptions   | String collection | List of possible answer values.                                                                    |
+| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). |
 | id              | String            | The ID of the custom question. Inherited from [entity](../resources/entity.md).                           |
 
 ## Relationships
