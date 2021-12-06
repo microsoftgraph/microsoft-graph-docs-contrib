@@ -124,6 +124,7 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
 Content-type: application/json
 {
+  
   "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
