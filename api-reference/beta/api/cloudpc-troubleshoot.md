@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: troubleshoot"
-description: "Troubleshoot a specific Cloud PC. Check the Cloud PC and the Session Host health status."
+description: "Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Troubleshoot a specific Cloud PC. Check the Cloud PC and the Session Host health status.
+Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host.
 
 ## Permissions
 

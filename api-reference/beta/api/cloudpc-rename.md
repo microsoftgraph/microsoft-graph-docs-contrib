@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: rename"
-description: "Rename a specific Cloud PC. Update the displayName for the Cloud PC entity."
+description: "Rename a specific Cloud PC. Use this API to update the displayName for the Cloud PC entity."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rename a specific Cloud PC. Update the **displayName** for the Cloud PC entity.
+Rename a specific Cloud PC. Use this API to update the **displayName** for the Cloud PC entity.
 
 ## Permissions
 
