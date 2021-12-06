@@ -142,7 +142,7 @@ Here is an example of the response.
   "blockType": "peopleInsightsresponse",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
-  "name": "update_insightssettings_peopleinsightsresponse"
+  "name": "update_insightssettings_peopleinsightsrequest"
 } -->
 ```http
 HTTP/1.1 200 OK
