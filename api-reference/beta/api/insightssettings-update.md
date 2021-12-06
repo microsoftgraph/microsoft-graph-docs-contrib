@@ -120,7 +120,6 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
   "blockType": "request",
   "name": "update_insightssettings_peopleinsightsrequest"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
 Content-type: application/json
@@ -140,12 +139,11 @@ Here is an example of the response.
 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "peopleInsightsresponse",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_peopleinsightsresponse"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
