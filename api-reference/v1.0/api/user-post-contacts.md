@@ -1,5 +1,5 @@
 ---
-title: "Create Contact"
+title: "Create contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
 author: "kevinbellinger"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Contact
+# Create contact
 
 Namespace: microsoft.graph
 
@@ -44,7 +44,7 @@ If successful, this method returns `201 Created` response code and [contact](../
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
