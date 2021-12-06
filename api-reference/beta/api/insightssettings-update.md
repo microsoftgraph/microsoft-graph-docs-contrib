@@ -115,7 +115,7 @@ Content-type: application/json
 ### Example 2: Update settings for people insights
 #### Request
 
-Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
+The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
 
 
 <!-- {
@@ -127,7 +127,6 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pe
 Content-type: application/json
 
 {
-  
   "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
@@ -137,10 +136,9 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
-
 
 <!-- {
   "blockType": "response",
