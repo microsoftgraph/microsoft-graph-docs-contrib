@@ -17,11 +17,10 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 
 You can add users, service principals or other groups. 
 
-> [!Important]
-> + You can only add users to groups that are managed through the cloud.
+> [!IMPORTANT]
+> + You can only add members to security and Microsoft 365 groups.
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
-> + You cannot use this API to add members to a mail-security security group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

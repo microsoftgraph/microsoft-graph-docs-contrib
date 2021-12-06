@@ -125,6 +125,8 @@ Content-type: application/json
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -154,6 +156,7 @@ Content-type: text/plain
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -223,6 +226,7 @@ Content-type: application/json
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` and the `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 # [HTTP](#tab/http)
 <!-- {
