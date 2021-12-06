@@ -105,7 +105,6 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
