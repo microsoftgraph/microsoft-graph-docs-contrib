@@ -28,7 +28,7 @@ However, your app might still temporarily need Azure AD Graph permissions. This 
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AzureADGraphPermissionsAPI.png" alt-text="Azure AD Graph API is identified by Windows Azure Active Directory and clientID 00000002-0000-0000-c000-000000000000." border="true":::
 
-1. After adding the permissions you need, back in the Configured permissions window, select **Grant admin consent** to grant the permissions to your app registration.
+1. After adding the permissions you need, back in the **Configured permissions** window, select **Grant admin consent** to grant the Azure AD Graph permissions to your app registration.
 
 ## Option 2: Use the Microsoft Graph API
 
