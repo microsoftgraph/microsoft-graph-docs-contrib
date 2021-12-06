@@ -21,12 +21,19 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 10 # number of commits to fetch so that we can query history
+        
+    - name: Get token
+      id: get_token
+      uses: microsoftgraph/get-app-token@main
+      with:
+        application-id: ${{ secrets.APPLICATION_ID }}
+        application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
 
     # Create a pull request [0]
     - name: Create PR using the GitHub REST API via hub
       shell: bash
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ steps.get_token.outputs.app-token }}
         MESSAGE_TITLE: "Snippets Update"
         MESSAGE_BODY: "Scheduled snippets update"
         REVIEWERS: andrueastman
