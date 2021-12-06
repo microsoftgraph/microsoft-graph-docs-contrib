@@ -57,7 +57,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that is not returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 2](#example-2-get-the-latest-attendance-report-for-an-online-meeting).
+> The **attendanceRecords** property is a navigation property that is not returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example](#example).
 
 ## Request headers
 
