@@ -1,6 +1,6 @@
 ---
 title: "List lists"
-description: "Get a list of the baseTaskList objects and their properties."
+description: "Get a list of the baseTaskList objects of a user and their properties."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"

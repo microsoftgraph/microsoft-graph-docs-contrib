@@ -1,6 +1,6 @@
 ---
 title: "Create baseTask"
-description: "Create a new baseTask object in a specified baseTaskList."
+description: "Create a new baseTask object in a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"

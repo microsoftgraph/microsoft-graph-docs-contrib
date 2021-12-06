@@ -1,6 +1,6 @@
 ---
 title: "List baseTasks"
-description: "Get the baseTask resources from the tasks navigation property of a specified baseTaskList."
+description: "Get the baseTask resources from the tasks navigation property of a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [baseTask](../resources/basetask.md) resources from the tasks navigation property of a specified [baseTaskList](../resources/basetasklist.md).
+Get the [baseTask](../resources/basetask.md) resources from the tasks navigation property of a specific [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

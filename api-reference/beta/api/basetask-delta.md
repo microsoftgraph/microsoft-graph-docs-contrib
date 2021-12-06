@@ -1,6 +1,6 @@
 ---
 title: "baseTask: delta"
-description: "Get a set of baseTask resources that have been added, deleted, or updated in a specified baseTaskList."
+description: "Get a set of baseTask resources that have been added, deleted, or updated in a specific baseTaskList."
 author: "devindrajit"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [baseTask](../resources/basetask.md) resources that have been added, deleted, or updated in a specified [baseTaskList](../resources/basetasklist.md).
+Get a set of [baseTask](../resources/basetask.md) resources that have been added, deleted, or updated in a specific [baseTaskList](../resources/basetasklist.md).
 
 A **delta** function call for **baseTask** resources in a **baseTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **baseTask** in that **baseTaskList**. This allows you to maintain and synchronize a local store of a user's **baseTask** resources without having to fetch the entire set from the server every time.
 

@@ -1,6 +1,6 @@
 ---
 title: "List checklistItems"
-description: "Get the checklistItem resources from the checklistItems navigation property."
+description: "Get the checklistItem resources associated to a baseTask from the checklistItems navigation property."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
