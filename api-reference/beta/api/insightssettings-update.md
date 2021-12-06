@@ -143,7 +143,7 @@ Here is an example of the response.
 
 
 <!-- {
-  "blockType": "peopleInsightsresponse",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_peopleinsightsrequest"
