@@ -1,28 +1,30 @@
 ---
-title: "accessreviewinstancedecisionitemserviceprincipalresource resource type"
-description: "Every decision item in an access review represents a principal's access to a resource. accessreviewinstancedecisionitemserviceprincipalresource represents that the decision item represents an application id."
+title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
+description: "Represents assignment to service principals. "
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessreviewinstancedecisionitemserviceprincipalresource resource type
+# accessReviewInstanceDecisionItemServicePrincipalResource resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource. All accessreviewinstancedecisionitemserviceprincipalresource objects represent assignment to service principals. accessreviewinstancedecisionitemserviceprincipalresource is an open type that allows for other properties to be passed in.
+Represents assignment to service principals. accessReviewInstanceDecisionItemServicePrincipalResource is an open type that allows for other properties to be passed in.
+
+Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the resource|
-|id|String|Resource ID|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.|
-|appId|String| Application Id |
+| appId | String | The globally unique identifier of the application to which access has been granted. |
+| displayName | String | Display name of the resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 ## Relationships
@@ -33,6 +35,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessreviewinstancedecisionitemserviceprincipalresource",
+  "baseType": "microsoft.graph.accessReviewInstanceDecisionItemResource",
   "openType": true
 }
 -->

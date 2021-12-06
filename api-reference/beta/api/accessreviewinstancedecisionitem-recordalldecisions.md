@@ -1,5 +1,5 @@
 ---
-title: "Record decisions on accessReviewInstanceDecisionItem"
+title: "accessReviewInstanceDecisionItem: recordAllDecisions"
 description: "Record decisions on accessReviewInstanceDecisionItem."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As a reviewer for an access review, record a decision on every [accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) assigned to you that matches the principal and/or resource IDs specified. If no IDs are specified, the decisions will apply to every decision item assigned to the reviewer.
+As a reviewer of an access review, record a decision for an [accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) that is assigned to you and that matches the principal or resource IDs specified. If no IDs are specified, the decisions will apply to every **accessReviewInstanceDecisionItem** for which you are the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +46,10 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|decision|String| The decision to provide: Approve, Deny, DontKnow. |
-|justification|String|Justification to provide for the decision|
-|principalId|String|If provided, all decision items matching the principalId will have this decision recorded|
-|resourceId|String|If provided, all decision items matching the resourceId will have this decision recorded|
+|decision|String| The decision to provide. The possible values are `Approve`, `Deny`, `DontKnow`. |
+|justification|String|Justification to provide for the decision.|
+|principalId|String|If provided, all decision items matching the principalId will have this decision recorded.|
+|resourceId|String|If provided, all decision items matching the resourceId will have this decision recorded.|
 
 
 
@@ -68,7 +68,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')/recordAllDecisions
 Content-Type: application/json
-Content-length: 113
 
 {
   "decision": "String",
