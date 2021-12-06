@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the **baseTask** resources from the **tasks** navigation property of a specified [baseTaskList](../resources/basetasklist.md).
+Get the [baseTask](../resources/basetask.md) resources from the tasks navigation property of a specified [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$expand`,`$filter` and `top`  [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|

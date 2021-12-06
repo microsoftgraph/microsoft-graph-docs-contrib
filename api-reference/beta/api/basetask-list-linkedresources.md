@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [linkedResource_v2](../resources/linkedresource_v2.md) resources from the linkedResources navigation property.
+Get the [linkedResource_v2](../resources/linkedresource_v2.md) resources associated to a [baseTask](../resources/basetask.md) from the linkedResources navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

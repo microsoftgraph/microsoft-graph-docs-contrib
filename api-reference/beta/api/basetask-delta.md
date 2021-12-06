@@ -53,14 +53,7 @@ includes the encoded, desired parameters.
 
 ### OData query parameters
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties you need for best performance. The 
-_id_ property is always returned. 
-- Delta query support `$select`, `$top`, and `$expand` for baseTask. 
-- There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` 
-  or `$filter=receivedDateTime+gt+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed. 
+- Delta query support `$filter` `$top`, and `$expand` query parameters for **baseTask**. 
 - There is no support for `$search`.
 
 ## Request headers

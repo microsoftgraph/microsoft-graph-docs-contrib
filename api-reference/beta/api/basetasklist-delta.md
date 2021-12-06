@@ -54,8 +54,8 @@ includes the encoded, desired parameters.
 
 ### OData query parameters
 
-You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_id_ property is always returned. 
+- Delta query support `$filter` `$top`, and `$expand` query parameters for **baseTaskList**. 
+- There is no support for `$search`. 
 
 ## Request headers
 | Name       | Type | Description |
