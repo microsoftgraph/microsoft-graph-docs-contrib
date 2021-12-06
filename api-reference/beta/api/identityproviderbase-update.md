@@ -168,6 +168,7 @@ PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "responseType": "id_token"
 }
 ```
@@ -226,6 +227,7 @@ PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "displayName": "Apple"
 }
 ```

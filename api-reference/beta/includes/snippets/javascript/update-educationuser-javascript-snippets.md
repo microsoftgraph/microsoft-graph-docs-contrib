@@ -11,25 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const educationUser = {
-  relatedContacts: [
-    {
-      displayName: 'Father Time',
-      emailAddress: 'father@time.com',
-      mobilePhone: '4251231234',
-      relationship: 'guardian',
-      accessConsent: true
-    },
-    {
-      displayName: 'Mother Nature',
-      emailAddress: 'mother@nature.co.uk',
-      mobilePhone: '3251231234',
-      relationship: 'parent',
-      accessConsent: true
-    }
-  ]
+  displayName: 'Rogelio Cazares',
+  givenName: 'Rogelio',
+  middleName: 'Fernando',
+  surname: 'Cazares',
 };
 
-await client.api('/education/users/{educationUserId}')
+await client.api('/education/users/13020')
 	.version('beta')
 	.update(educationUser);
 
