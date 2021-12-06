@@ -36,14 +36,14 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [Contact](../resources/contact.md) object.
+In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Contact](../resources/contact.md) object in the response body.
+If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -91,9 +91,7 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
-
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
