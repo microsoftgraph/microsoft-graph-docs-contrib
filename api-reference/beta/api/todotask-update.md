@@ -81,7 +81,6 @@ If successful, this method returns a `200 OK` response code and an updated [todo
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 Content-Type: application/json
-Content-length: 608
 
 {
    "dueDateTime":{
@@ -104,6 +103,10 @@ Content-length: 608
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-todotask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-todotask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 Content-Type: application/json
-Content-length: 279
 
 {
     "email":"AdeleV@contoso.com",
@@ -94,6 +93,10 @@ Content-length: 279
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-custodian-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-custodian-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -11,34 +11,29 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
+Create an online meeting on behalf of a user.
 
-> [!NOTE]
-> The meeting does not show up on the user's calendar.
+> [!TIP]
+> This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | OnlineMeetings.ReadWrite.All*               |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to create online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
 
-Request when using a delegated token:
+To create an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
-```
-
-Request when using an application token:
-<!-- { "blockType": "ignored" } -->
-```http
 POST /users/{userId}/onlineMeetings
 ```
 
@@ -60,7 +55,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-## Examples 
+## Examples
 
 ### Example 1: Create an online meeting with user token
 
@@ -97,6 +92,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onlinemeeting-user-token-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -158,7 +157,7 @@ Content-Type: application/json
     }  
 ```
 
-### Example 2: Create a live event with user token
+### Example 2: Create a Microsoft Teams live event with user token
 
 <!-- {
   "blockType": "request",

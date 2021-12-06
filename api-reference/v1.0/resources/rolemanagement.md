@@ -30,6 +30,7 @@ None.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
+|entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Container for all entitlement management resources in Azure AD identity governance.|
 
 ## JSON representation
 

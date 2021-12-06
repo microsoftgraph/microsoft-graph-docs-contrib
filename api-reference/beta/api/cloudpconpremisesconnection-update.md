@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot update it.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -82,7 +81,6 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 Content-Type: application/json
-Content-length: 800
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
@@ -113,6 +111,10 @@ Content-length: 800
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesconnections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesconnections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -130,7 +132,6 @@ Content-length: 800
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

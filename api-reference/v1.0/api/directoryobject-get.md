@@ -11,8 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of directoryObject object.
+Retrieve the properties and relationships of a directoryObject object.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -26,9 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /directoryObjects/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+
 ## Request headers
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -39,8 +42,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+
 ## Example
-##### Request
+
+### Request
 
 
 # [HTTP](#tab/http)
@@ -67,10 +72,16 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryobject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryobject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+### Response
+
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,7 +92,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/Microsoft.DirectoryServices.User",
+    "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+    "businessPhones": [],
+    "displayName": "Conf Room Adams",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": "Adams@Contoso.com",
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "Adams@Contoso.com"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "searchEntity: query"
-description: "Runs the query specified in the request body. Search results are provided in the response."
+description: "Runs the query specified in the request body. Search results are provided in the response"
 ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

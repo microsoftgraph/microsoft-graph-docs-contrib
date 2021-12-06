@@ -1,7 +1,7 @@
 ---
 title: "Create unifiedRoleEligibilityScheduleRequest"
 description: "Create a new unifiedRoleEligibilityScheduleRequest object."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory	|
+|Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -46,7 +46,7 @@ The following table shows the optional and required properties when you create t
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|Represents the type of the operation on the role eligibility assignment. The possible values are: <ul><li>`AdminAdd`: For administrators to assign role eligibility to users or groups to roles.</li><li>`AdminExtend`: For administrators to extend expiring assignments.</li><li>`AdminUpdate`: For administrators to change existing role assignments.</li><li>`AdminRenew`: For administrators to renew expired assignments.</li><li>`AdminRemove`: For administrators to remove users or groups from eligible roles.</li><li>`UserAdd`: For users to activate their eligible assignments.</li><li>`UserExtend`: For users to request to extend their expiring eligible assignments.</li><li>`UserRemove`: For users to deactivate their active eligible assignments.</li><li>`UserRenew`: For users to request to renew their expired eligible assignments.</li></ul>|
+|action|String|Represents the type of the operation on the role eligibility assignment. The possible values are: <ul><li>`AdminAssign`: For administrators to assign role eligibility to users or groups to roles.</li><li>`AdminExtend`: For administrators to extend expiring assignments.</li><li>`AdminUpdate`: For administrators to change existing role assignments.</li><li>`AdminRenew`: For administrators to renew expired assignments.</li><li>`AdminRemove`: For administrators to remove users or groups from eligible roles.</li><li>`UserAdd`: For users to activate their eligible assignments.</li><li>`UserExtend`: For users to request to extend their expiring eligible assignments.</li><li>`UserRemove`: For users to deactivate their active eligible assignments.</li><li>`UserRenew`: For users to request to renew their expired eligible assignments.</li></ul>|
 |appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units or all users.|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only.|
 |isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
@@ -109,6 +109,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,6 +219,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

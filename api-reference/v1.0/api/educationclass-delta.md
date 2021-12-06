@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Delegated (work or school account)     | EduRoster.ReadBasic, EduRoster.Read, or EduRoster.ReadWrite              |
 | Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All, or EduRoster.WriteWrite.All |
+| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All, or EduRoster.ReadWrite.All |
 
 ## HTTP request
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationclass-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationclass-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -55,7 +55,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -79,6 +78,10 @@ Content-length: 211
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

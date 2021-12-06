@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
 ## Permissions
 
@@ -53,10 +53,18 @@ GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-This API currently supports retrieving object types of applications (microsoft.graph.application), groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
+This API currently supports retrieving object types of applications (`microsoft.graph.application`), groups (`microsoft.graph.group`) or users (`microsoft.graph.user`) from deleted items. The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
 
 ## Optional query parameters
-This method supports the `$orderBy` [OData query parameter](/graph/query-parameters) to help customize the response. 
+
+This method supports the query parameters that are supported by the resource that is specified by the OData cast. That is, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` query parameters. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
+
+```msgraph-interactive
+https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+
+This example requires the **ConsistencyLevel** header because the `$orderBy` and `$count` query parameters are used in the query.
 
 ### Examples using the $orderBy OData query parameter
 
@@ -81,9 +89,11 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
-## Example
-##### Request
+## Examples
 
+### Example 1: Retrieve deleted groups
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,10 +119,14 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,6 +153,75 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_deleteditems_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deleteditems-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deleteditems-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,deletedDateTime)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "c31799b8-0683-4d70-9e91-e032c89d3035",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:56:36Z"
+        },
+        {
+            "id": "74e45ce0-a52a-4766-976c-7201b0f99370",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:58:37Z"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

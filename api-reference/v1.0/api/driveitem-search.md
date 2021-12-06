@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
 ---
-# Search for a DriveItems within a drive
+# Search for DriveItems within a drive
 
 Namespace: microsoft.graph
 
@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+
+>**Note:** This method does not support the Sites.Selected application permission.
 
 ## HTTP request
 

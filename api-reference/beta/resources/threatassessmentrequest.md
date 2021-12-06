@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract resouce type used to represent a threat assessment request item.
+An abstract resource type used to represent a threat assessment request item.
 
 A threat assessment request can be one of the following types:
 

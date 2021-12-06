@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceI
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-deviceimages-from-virtualendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-deviceimages-from-virtualendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "List windows10VpnConfigurations"
 description: "List properties and relationships of the windows10VpnConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5260
+Content-Length: 5326
 
 {
   "value": [
@@ -117,6 +117,7 @@ Content-Length: 5260
       "dnsSuffixes": [
         "Dns Suffixes value"
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,

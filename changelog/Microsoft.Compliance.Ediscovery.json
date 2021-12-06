@@ -580,7 +580,43 @@
 			"Id": "37f70209-f95e-11eb-b6a8-8203ca0139f1",
 			"Cloud": "prd",
 			"Version": "beta",
-			"CreatedDateTime": "2021-09-03T22:07:42.610Z",
+			"CreatedDateTime": "2021-08-09T22:07:42.610Z",
+			"WorkloadArea": "eDiscovery",
+			"SubArea": ""
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "9956bf20-942b-4153-bffd-f7b3351fb3c0",
+					"ApiChange": "Resource",
+					"ChangedApiName": "case",
+					"ChangeType": "Change",
+					"Description": "Updated the [Create case](https://docs.microsoft.com/en-us/graph/api/ediscovery-case-post?view=graph-rest-beta&tabs=http) method to create a [large case](https://docs.microsoft.com/en-us/microsoft-365/compliance/advanced-ediscovery-large-cases).",
+					"Target": "custodians"
+				}
+			],
+			"Id": "9956bf20-942b-4153-bffd-f7b3351fb3c0",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-09-10T22:07:42.610Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "1ca6e223-8e4d-4f4c-bd4e-2d2c5da12506",
+					"ApiChange": "Resource",
+					"ChangedApiName": "settings",
+					"ChangeType": "Change",
+					"Description": "Changed the name of the **settings** resource type to [caseSettings](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-casesettings?view=graph-rest-beta).",
+					"Target": "caseSettings"
+				}
+			],
+			"Id": "1ca6e223-8e4d-4f4c-bd4e-2d2c5da12506",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-10-12T16:54:33.510Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
 		}

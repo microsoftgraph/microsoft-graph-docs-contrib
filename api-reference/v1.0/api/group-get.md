@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -102,32 +106,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/b320ee12-b1cd-4cca-b648-a437be61c5cd/Microsoft.DirectoryServices.Group",
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-22T00:51:37Z",
+    "createdDateTime": "2021-09-13T10:07:01Z",
     "creationOptions": [],
     "description": "Self help community for library",
     "displayName": "Library Assist",
+    "expirationDateTime": "2022-01-11T10:07:01Z",
     "groupTypes": [
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "library2@contoso.com",
+    "mail": "library@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:library7423@contoso.com",
-        "SMTP:library2@contoso.com"
+        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_84841066-274d-4ec0-a5c1-276be684bdd3",
+        "SMTP:library@contoso.com"
     ],
-    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "renewedDateTime": "2021-09-13T10:07:01Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
 }
@@ -166,6 +181,10 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-non-default-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-non-default-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

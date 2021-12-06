@@ -68,6 +68,13 @@ You can populate selected people data by doing one of the following:
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
+- Using the `selectGroupsById()` method, which accepts an array of Microsoft graph [group ids](/graph/api/resources/group) to find the group(s) with associated users.
+
+    ```javascript
+    // groupid = Microsoft graph group "id"
+    document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
+    ```
+
 ## Events
 
 The following events are fired from the component.
@@ -136,7 +143,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API
 | --- | ---------- | ------- |
-| `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` set to `Person` or `any` | People.Read | [/me/people](/graph/api/user-list-people) |
 | `type` set to `Group` or searching for users and `type` set to `Group` or `any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |

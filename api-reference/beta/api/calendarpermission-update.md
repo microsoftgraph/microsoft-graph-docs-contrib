@@ -1,8 +1,8 @@
 ---
 title: "Update calendarpermission"
 description: "Update the properties of calendarpermission object."
+author: "Harini84"
 ms.localizationpriority: medium
-author: "sochowdh"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Update calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
 
@@ -46,7 +48,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -96,9 +99,11 @@ Content-type: application/json
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -118,7 +123,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
