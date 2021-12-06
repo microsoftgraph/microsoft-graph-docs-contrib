@@ -7,8 +7,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added support for creating an [access package assignment request](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-assignmentrequests).",
-          "Target": "entitlementmanagement"
+          "Description": "Added the [POST](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-assignmentrequests) operation to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-1.0) resource. This operation allows adding, updating, and removing access package assignment requests by or on behalf of a user.",
+          "Target": "accessPackageAssignmentRequest"
         }
       ],
         "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
