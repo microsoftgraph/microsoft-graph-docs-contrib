@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{i
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

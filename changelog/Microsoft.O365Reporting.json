@@ -1,13 +1,343 @@
 {
   "changelog": [
     {
+	  "ChangeList": [
+		{
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivitySummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivitySummary** resource type.",
+          "Target": "emailActivitySummary"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailActivityUserDetail** resource type.",
+          "Target": "emailActivityUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageAppsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageAppsUserCounts** resource type.",
+          "Target": "emailAppUsageAppsUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserCounts** resource type.",
+          "Target": "emailAppUsageUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageUserDetail** resource type.",
+          "Target": "emailAppUsageUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAppUsageVersionsUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emailAppUsageVersionsUserCounts** resource type.",
+          "Target": "emailAppUsageVersionsUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageDetail** resource type.",
+          "Target": "mailboxUsageDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageMailboxCounts** resource type.",
+          "Target": "mailboxUsageMailboxCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageQuotaStatusMailboxCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageQuotaStatusMailboxCounts** resource type.",
+          "Target": "mailboxUsageQuotaStatusMailboxCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxUsageStorage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mailboxUsageStorage** resource type.",
+          "Target": "mailboxUsageStorage"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageDistributionUserCounts** resource type.",
+          "Target": "teamsDeviceUsageDistributionUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserCounts** resource type.",
+          "Target": "teamsDeviceUsageUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsDeviceUsageUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsDeviceUsageUserDetail** resource type.",
+          "Target": "teamsDeviceUsageUserDetail"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityCounts** resource type.",
+          "Target": "teamsUserActivityCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityDistributionUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityDistributionUserCounts** resource type.",
+          "Target": "teamsUserActivityDistributionUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserCounts",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserCounts** resource type.",
+          "Target": "teamsUserActivityUserCounts"
+        },
+        {
+          "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsUserActivityUserDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **teamsUserActivityUserDetail** resource type.",
+          "Target": "teamsUserActivityUserDetail"
+        },
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailActivityUserDetail",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailActivityUserDetail"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailActivityCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailActivityCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailActivityUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailActivityUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailAppUsageUserDetail",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailAppUsageUserDetail"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailAppUsageAppsUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailAppUsageAppsUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailAppUsageUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailAppUsageUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getEmailAppUsageVersionsUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getEmailAppUsageVersionsUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getMailboxUsageDetail",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getMailboxUsageDetail"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getMailboxUsageMailboxCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getMailboxUsageMailboxCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getMailboxUsageQuotaStatusMailboxCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getMailboxUsageQuotaStatusMailboxCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getMailboxUsageStorage",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) API to stream.",
+		  "Target": "getMailboxUsageStorage"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsDeviceUsageUserDetail",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsDeviceUsageUserDetail"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsDeviceUsageUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsDeviceUsageUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsDeviceUsageTotalUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsDeviceUsageTotalUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsDeviceUsageDistributionUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsDeviceUsageDistributionTotalUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsDeviceUsageDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsDeviceUsageDistributionTotalUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityUserDetail",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityUserDetail"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityTotalCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityTotalCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityTotalUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityTotalUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityDistributionUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributionusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityDistributionUserCounts"
+		},
+		{
+		  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+		  "ApiChange": "Method",
+		  "ChangedApiName": "getTeamsUserActivityDistributionTotalUserCounts",
+		  "ChangeType": "Change",
+		  "Description": "Updated the JSON return type of the [getTeamsUserActivityDistributionTotalUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivitydistributiontotalusercounts?view=graph-rest-beta) API to stream.",
+		  "Target": "getTeamsUserActivityDistributionTotalUserCounts"
+		}
+	  ],
+	  "Id": "c21c4740-959e-4b70-bf0e-f3df67f38cea",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2021-11-16T08:10:58.5561352Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+    },
+    {
       "ChangeList": [
         {
           "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-          "Description": "Added the **isLicensed** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -15,7 +345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -23,7 +353,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **meetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -31,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **adHocMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -39,7 +369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "adHocMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **adHocMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **adHocMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -47,7 +377,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -55,7 +385,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledOneTimeMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledOneTimeMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -63,7 +393,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsOrganizedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsOrganizedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -71,7 +401,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scheduledRecurringMeetingsAttendedCount",
           "ChangeType": "Addition",
-          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **scheduledRecurringMeetingsAttendedCount** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -79,7 +409,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "audioDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **audioDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **audioDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -87,7 +417,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "videoDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **videoDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **videoDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -95,7 +425,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "screenShareDuration",
           "ChangeType": "Addition",
-          "Description": "Added the **screenShareDuration** property to the [teamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivityuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **screenShareDuration** property to the **teamsUserActivityUserDetail** resource.",
           "Target": "teamsUserActivityUserDetail"
         },
         {
@@ -103,7 +433,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isLicensed",
           "ChangeType": "Addition",
-          "Description": "Added the **isLicensed** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **isLicensed** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -111,7 +441,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "usedChromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **usedChromeOS** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedChromeOS** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -119,7 +449,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "usedLinux",
           "ChangeType": "Addition",
-          "Description": "Added the **usedLinux** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **usedLinux** property to the **teamsDeviceUsageUserDetail** resource.",
           "Target": "teamsDeviceUsageUserDetail"
         },
         {
@@ -127,7 +457,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageUserCounts** resource.",
           "Target": "teamsDeviceUsageUserCounts"
         },
         {
@@ -135,7 +465,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-          "Description": "Added the **linux** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageUserCounts** resource.",
           "Target": "teamsDeviceUsageUserCounts"
         },
         {
@@ -143,7 +473,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chromeOS",
           "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **chromeOS** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
         },
         {
@@ -151,7 +481,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
-          "Description": "Added the **linux** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
+          "Description": "Added the **linux** property to the **teamsDeviceUsageDistributionUserCounts** resource.",
           "Target": "teamsDeviceUsageDistributionUserCounts"
         },
         {
@@ -159,7 +489,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsUserActivityDistributionUserCounts",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsUserActivityDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsuseractivitydistributionusercounts?view=graph-rest-beta) resource type.",
+          "Description": "Added the **teamsUserActivityDistributionUserCounts** resource type.",
           "Target": "teamsUserActivityDistributionUserCounts"
         },
         {

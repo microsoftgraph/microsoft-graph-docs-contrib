@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
-
 ## HTTP request
 
 To update settings for item insights:
@@ -65,7 +64,6 @@ In the request body, supply the values for relevant fields that should be update
 |disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 >**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a string, this operation does not check the existence of the corresponding Azure AD group. This means, if you set **disabledForGroup** to an Azure AD group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
@@ -86,7 +84,6 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 Content-type: application/json
-
 {
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
@@ -104,13 +101,10 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_iteminsightrequest"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
-  "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
@@ -129,9 +123,9 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
-Content-Type: application/json
-
+Content-type: application/json
 {
+  "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
@@ -149,11 +143,9 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_peopleinsightsrequest"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
   "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
@@ -161,3 +153,4 @@ Content-type: application/json
 ```
 
 
+ 107  api-reference/beta/api/iteminsightssettings-get.md 

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List taskDefinitions
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of [task definitions](../resources/printtaskdefinition.md) that the requesting app defined in the tenant.
 
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
@@ -82,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/print/taskDefinitions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printtaskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-printtaskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

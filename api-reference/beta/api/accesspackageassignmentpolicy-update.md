@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ### Request
 In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -73,7 +75,6 @@ In this policy update, one of the options for the multiple choice question was r
 ``` http
 PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/b2eba9a1-b357-42ee-83a8-336522ed6cbf
 Content-Type: application/json
-Content-length: 1000
 
 {
     "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
@@ -154,8 +155,6 @@ Content-length: 1000
     }]
 }
 ```
-
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -170,6 +169,10 @@ Content-length: 1000
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
