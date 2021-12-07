@@ -64,7 +64,6 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.
 
 ### Response
 The following is an example of the response. 

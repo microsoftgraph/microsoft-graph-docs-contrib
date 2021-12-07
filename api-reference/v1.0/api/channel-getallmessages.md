@@ -39,6 +39,15 @@ GET /teams/{team-id}/channels/getAllMessages
 
 ## Optional query parameters
 
+You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred licensing and payment requirements, as shown in the following examples. 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
