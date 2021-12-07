@@ -20,6 +20,7 @@ Settings related to a [Microsoft Teams live event](/microsoftteams/teams-live-ev
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the Teams live event. Possible values are listed in the following table. |
+| captions | [broadcastMeetingCaptionSettings](../resources/broadcastmeetingcaptionsettings.md) | Teams live event caption settings. |
 | isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this Teams live event. Default value is `false`.          |
 | isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this Teams live event. Default value is `false`.    |
 | isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this Teams live event. Default value is `false`.                |
@@ -40,16 +41,19 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [],
   "@odata.type": "microsoft.graph.broadcastMeetingSettings"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.broadcastMeetingSettings",
   "allowedAudience": "String",
   "isRecordingEnabled": "Boolean",
   "isAttendeeReportEnabled": "Boolean",
   "isQuestionAndAnswerEnabled": "Boolean",
-  "isVideoOnDemandEnabled": "Boolean"
+  "isVideoOnDemandEnabled": "Boolean",
+  "captions": {
+    "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"
+  }
 }
 ```
 
