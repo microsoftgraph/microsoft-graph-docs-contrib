@@ -1,7 +1,7 @@
 ---
 title: "statusDetails resource type"
 description: "Describes the status of the provisioning event and the associated errors."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
@@ -24,7 +24,7 @@ Describes the status of the provisioning event and the associated errors. It is 
 |status|statusBase|Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
 |additionalDetails|String|Additional details in case of error.|
 |errorCategory|String|Categorizes the error code. Possible values are `Failure`, `NonServiceFailure`, `Success`.|
-|errorCode|String|Unique error code if any occurred. [Learn more](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCode|String|Unique error code if any occurred. [Learn more](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
 |recommendedAction|String|Provides the resolution for the corresponding error.|
 

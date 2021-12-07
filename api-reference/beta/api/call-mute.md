@@ -2,7 +2,7 @@
 title: "call: mute"
 description: "Allows the application to mute itself."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -93,6 +93,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/call-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-mute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,14 +114,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.muteParticipantOperation",
-  "truncated": true
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.muteParticipantOperation",
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",

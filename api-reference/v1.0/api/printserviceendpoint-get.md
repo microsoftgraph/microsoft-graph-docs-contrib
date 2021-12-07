@@ -2,15 +2,13 @@
 title: Get printServiceEndpoint
 description: Retrieve the properties and relationships of a print service endpoint.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Get printServiceEndpoint
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve the properties and relationships of a print service endpoint.
 
@@ -69,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints/{
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printserviceendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printserviceendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

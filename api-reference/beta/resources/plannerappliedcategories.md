@@ -1,7 +1,7 @@
 ---
 title: "plannerAppliedCategories resource type"
 description: "Represents the collection of categories (or labels) that have been applied to a task, which is part of the plannerTask object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAssignmentRequest: cancel"
 description: "Cancel accessPackageAssignmentRequest objects that are in a cancellable state."
-localization_priority: Normal
-author: "sbounouh"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "markwahl-msft"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 

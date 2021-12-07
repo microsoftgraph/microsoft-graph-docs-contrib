@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance resource type"
 description: "Represents a schedule instance for an active role assignment operations through Azure AD Privileged Identity Management."
-author: "shauliu"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "carolinetempleton"
+ms.localizationpriority: medium
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the instance for an active role assignment through Azure AD Privileged Identity Management. A `roleAssignmentInstance` is created by `roleAssignmentSchedule` and and represents an actual roleAssignment created through Privileged Identity Management. We support list and get operations on the roleAssignmentInstance for the purpose of viewing current and future assignments.
+Represents the instance for an active role assignment through Azure AD Privileged Identity Management. A **unifiedRoleAssignmentScheduleInstance** is created by [unifiedRoleAssignmentSchedule](unifiedroleassignmentschedule.md) and and represents an actual role assignment created through Privileged Identity Management. This resource supports the List and Get operations for the purpose of viewing current and future assignments.
 
 Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
@@ -27,17 +27,17 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
 |assignmentType|String|Type of the assignment. It can either be `Assigned` or `Activated`.|
 |createdDateTime|DateTimeOffset|Time that the schedule was created.|
-|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
 |endDateTime|DateTimeOffset|Time that the roleAssignmentInstance will expire|
 |id|String|The unique identifier for the unifiedRoleAssignmentScheduleInstance. Key, not nullable, Read-only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
 |memberType|String|Membership type of the assignment. It can either be `Inherited`, `Direct`, or `Group`.|
-|principalId|String|Objectid of the principal to which the assignment is being granted to. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|principalId|String|Identifier of the principal to which the assignment is being granted to. Can be a group or a user. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
 |roleAssignmentOriginId|String|ID of the roleAssignment in the directory|
 |roleAssignmentScheduleId|String|ID of the parent roleAssignmentSchedule for this instance|
-|roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Read only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).  <br> Supports `$filter` (`eq`).|
 |startDateTime|DateTimeOffset|Time that the roleAssignmentInstance will start|
 
 ## Relationships

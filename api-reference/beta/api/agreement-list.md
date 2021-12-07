@@ -1,7 +1,7 @@
 ---
 title: "List agreements"
 description: "Retrieve a list of agreement objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +93,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "value": [

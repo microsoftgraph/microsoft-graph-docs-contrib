@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 645
 
 {
   "value": {
@@ -74,6 +74,7 @@ Content-Length: 582
     "appCrashCount": 13,
     "crashedAppCount": 15,
     "appHangCount": 12,
+    "processedDateTime": "2017-01-01T00:03:22.2339319-08:00",
     "meanTimeToFailureInMinutes": 10,
     "deviceAppHealthScore": 6.666666666666667,
     "deviceAppHealthStatus": "Device App Health Status value",
@@ -82,7 +83,6 @@ Content-Length: 582
   }
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: Get taskTrigger
 description: Get a task trigger from a printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get printTaskTrigger
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Get a [task trigger](../resources/printtasktrigger.md) from a [printer](../resources/printer.md).
 
@@ -77,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers/{pr
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printtasktrigger-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printtasktrigger-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

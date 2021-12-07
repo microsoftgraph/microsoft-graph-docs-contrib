@@ -1,8 +1,8 @@
 ---
 title: "group: subscribeByMail"
 description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group."
-localization_priority: Normal
-author: "yyuank"
+ms.localizationpriority: medium
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-subscribebymail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-subscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

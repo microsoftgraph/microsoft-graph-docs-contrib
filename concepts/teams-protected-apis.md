@@ -2,7 +2,7 @@
 title: "Protected APIs in Microsoft Teams"
 description: "Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -25,13 +25,10 @@ The following APIs are currently protected:
 * [Create subscription for new chat messages](/graph/api/subscription-post-subscriptions) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [List all hosted content](/graph/api/chatmessage-list-hostedcontents) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get hosted content](/graph/api/chatmessagehostedcontent-get) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
-* [List chat members](/graph/api/conversationmember-list)  using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Get chat member](/graph/api/conversationmember-get)  using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 
 >[!NOTE]
 >[Send message](/graph/api/channel-post-messages) is not a protected API.
 
 To request access to these protected APIs, complete the following [request form](https://aka.ms/teamsgraph/requestaccess). We review access requests every Wednesday and deploy approvals every Friday, 
-except during major holiday weeks in the U.S. Submissions during those weeks will be processed the following non-holiday week.
+except during major holiday weeks in the U.S. Submissions during those weeks will be processed the following non-holiday week. To verify whether your request has been approved, test your application access on the next applicable Monday. If we have additional questions about the request, we will contact the email specified in the form. 
 
-If you would like to provide information in addition to the form, you can contact [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).

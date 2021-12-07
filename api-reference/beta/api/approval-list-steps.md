@@ -1,8 +1,8 @@
 ---
 title: "List approvalSteps"
 description: "List approval steps associated with an approval object."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-approvalstep-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-approvalstep-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewInstance"
 description: "Retrieve an accessReviewInstance object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -33,6 +33,10 @@ In order to call this API, the signed in user must also be in a directory role t
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
+
+## Optional query parameters
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 
@@ -68,6 +72,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

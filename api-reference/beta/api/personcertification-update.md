@@ -1,7 +1,7 @@
 ---
 title: "Update personCertification"
 description: "Update the properties of an personCertification object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -74,7 +74,6 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Academy of Marketing Excellence",
@@ -95,6 +94,10 @@ Content-length: 497
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personcertification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personcertification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

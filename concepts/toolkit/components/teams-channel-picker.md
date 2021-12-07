@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit"
 description: "You can use mgt-teams-channel-picker to search for channels and teams associated with the user from the Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
 ---
 
@@ -72,19 +72,21 @@ mgt-teams-channel-picker {
 ```
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Fired when user makes a change in selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` | No | No | Yes
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
- `mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+`mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
 | loading | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
 | error | null: no data| The template used if user search returns no users. |
-
 
 The following example shows how to use the `error` template.
 
@@ -98,12 +100,29 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions by default.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+In version 2.2, the required permissions have been updated to the less restrictive Teams-based permissions. To avoid a breaking change, you need to opt in to the new permissions via a global config.
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+With `useTeamsBasedScopes` set to `true`, the Teams Channel Picker will use the following scopes. 
+
+| API                                                                                                              | Permission  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+These will be the default permissions in the next major update.
 
 ## Authentication
 

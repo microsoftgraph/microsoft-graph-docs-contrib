@@ -1,7 +1,7 @@
 ---
 title: "Person component in the Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -45,6 +45,9 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
+* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`. 
+
+
 ## Properties
 
 You can use several properties to customize the component.
@@ -74,6 +77,7 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  --avatar-cursor: default;
   
   --initials-color: white;
   --initials-background-color: magenta;
@@ -107,11 +111,13 @@ To learn more, see [styling components](../customize-components/style.md).
 
 The following events are fired from the component.
 
-| Event | Detail | Description |
-| --- | --- | --- |
-| line1clicked | The detail contains the respective `person` object | Fired when line1 is clicked. |
-| line2clicked | The detail contains the respective `person` object | Fired when line2 is clicked. |
-| line3clicked | The detail contains the respective `person` object | Fired when line3 is clicked. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -121,7 +127,7 @@ The `mgt-person` component supports several [templates](../customize-components/
 | --------- | ------------ | ----------- |
 | loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. | 
-| default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person  | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
 | line1 | person: The person details object | The template for the first line of person metadata. |
 | line2 | person: The person details object | The template for the second line of person metadata. |
@@ -200,15 +206,20 @@ The following properties are available on the config object.
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission     |
-| -| - |
-| [/me](/graph/api/user-get)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
+| Configuration | Permission | API |
+| ------------- | ---------- | --- |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
+| `personQuery` set to `me` and `avatarType` set to `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
+| `personQuery` set to `me` and `avatarType` set to something else than `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery` set to a value other than `me` and `useContactApis` set to `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personQuery` set to a value other than `me` and `useContactApis` set to `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
+| `showPresence` set to `true` and `personQuery` set to `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence` set to `true` and `personQuery` set to a value other than `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` set to a value other than `PersonCardInteraction.none` | See [person card permissions](/graph/toolkit/components/person-card#microsoft-graph-permissions) | See [person card API calls](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## Authentication
 

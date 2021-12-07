@@ -1,7 +1,7 @@
 ---
 title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "resourcePageType"

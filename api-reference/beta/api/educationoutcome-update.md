@@ -1,13 +1,13 @@
 ---
 title: "Update educationOutcome"
 description: "Update the properties of educationOutcome object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Update educationoutcome
+# Update educationOutcome
 
 Namespace: microsoft.graph
 
@@ -37,13 +37,13 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome being patched.
+The **educationOutcome** object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome you're updating.
 
 All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Do not update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.
 
@@ -51,13 +51,45 @@ All derived outcome types have a regular and a "published" property appropriate 
 
 If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.
 
+If **pointsGradeType** and **points** are updated to a negative or infinite value, the method returns a `400` error message.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+	"error": {
+		"code": "badRequest",
+		"message": "Bad request.",
+		"innerError": {
+			"code": "invalidGrading",
+			"message": "Points must be less than 9999999 when using PointsGradeType."
+		}
+	}
+}
+```
+
+If an invalid outcome ID is specified, a `404 Not Found` error is returned.
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+
+{
+	"error": {
+		"code": "20241",
+		"message": "Entity not found. Outcome id: 05d0f76c-1dfa-4442-926c-1b094828b505"
+	}
+}
+```
+
 ## Examples
 
-### Example 1: Update a Feedback Outcome
+### Example 1: Update a feedback outcome
 
 #### Request
 
-The following is an example of the request for updating a feedback outcome.
+The following example shows a request to update a feedback outcome.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,6 +125,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationfeedbackoutcome-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationfeedbackoutcome-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,11 +173,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Update a Points Outcome
+### Example 2: Update a points outcome
 
 #### Request
 
-The following is an example of the request for updating a points outcome.
+The following example shows a request to update a points outcome.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -175,6 +211,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationpointsoutcome-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationpointsoutcome-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,11 +256,11 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Update a Rubric Outcome
+### Example 3: Update a rubric outcome
 
 #### Request
 
-The following is an example of the request for updating a rubric outcome.
+The following example shows a request to update a rubric outcome.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -276,6 +316,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationoutcome-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationoutcome-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

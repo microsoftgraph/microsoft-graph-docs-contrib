@@ -2,7 +2,7 @@
 title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
 description: "Learn how to save time by using the Microsoft Graph APIs to automate the configuration of SAML-based single sign-on."
 author: "kenwith"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
 ---
@@ -12,9 +12,6 @@ ms.prod: applications
 In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Azure Active Directory (Azure AD) using the Microsoft Graph API. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Azure AD SAML metadata for additional configuration of the application. 
 
 This article uses an AWS Azure AD application template as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
-
->[!NOTE]
->The response objects and keys shown in this article might be shortened for readability.
 
 ## Prerequisites
 
@@ -26,7 +23,7 @@ This tutorial assumes that you are using Microsoft Graph Explorer, but you can u
 
     ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**. 
+4. In the list of permissions, scroll to and expand **AppRoleAssignment (1)**, and then select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down and expand **Application (2)**, and then select the **Application.ReadWrite.All** permission. Continue to and expand **Policy (13)**, and then select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**.
 
     ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
 
@@ -285,7 +282,7 @@ In this tutorial, you set `saml` as the single sign-on mode in the service princ
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipal/json
+Content-type: application/json
 
 {
   "preferredSingleSignOnMode": "saml"
@@ -306,7 +303,7 @@ Using the **id** for the application that you recorded earlier, set the identifi
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8
-Content-type: applications/json
+Content-type: application/json
 
 {
   "web": {
@@ -338,8 +335,8 @@ Use the **id** for the service principal that you recorded earlier.
 #### Request
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a9be408a-6c31-4141-8cea-52fcd4a61be8
-Content-type: serviceprincipals/json
+PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
+Content-type: application/json
 
 {
   "appRoles": [
@@ -418,7 +415,7 @@ Create the claims mapping policy and record the value of the **id** property to 
 
 ```http
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "definition": [
@@ -433,7 +430,7 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
@@ -455,7 +452,7 @@ Use the **id** for the service principal that you recorded earlier to assign a c
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/claimsMappingPolicies/$ref
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/a4b35718-fd5e-4ca8-8248-a3c9934b1b78"
@@ -479,7 +476,7 @@ Using the **id** of the service principal that you created, create a new certifi
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
+POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -491,11 +488,11 @@ Content-type: application/json
 #### Response
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.selfSignedCertificate",
   "customKeyIdentifier": "p9PEYmuKhP2oaMzGfSdNQC/9ChA=",
   "displayName": "CN=AWSContoso",
   "endDateTime": "2024-01-25T00:00:00Z",
@@ -516,7 +513,7 @@ You need to set the **preferredTokenSigningKeyThumbprint** property of the servi
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
   "preferredTokenSigningKeyThumbprint": "A7D3C4626B8A84FDA868CCC67D274D402FFD0A10"
@@ -561,13 +558,6 @@ Content-type: application/json
   "id": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
   "businessPhones": [],
   "displayName": "MyTestUser1",
-  "givenName": null,
-  "jobTitle": null,
-  "mail": null,
-  "mobilePhone": null,
-  "officeLocation": null,
-  "preferredLanguage": null,
-  "surname": null,
   "userPrincipalName": "MyTestUser1@contoso.com"
 }
 ```
@@ -586,7 +576,7 @@ In the request body, provide these values:
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/a750f6cf-2319-464a-bcc3-456926736a91/appRoleAssignments
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",
@@ -600,7 +590,7 @@ Content-type: appRoleAssignments/json
 
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('a750f6cf-2319-464a-bcc3-456926736a91')/appRoleAssignments/$entity",
@@ -692,13 +682,13 @@ No Content - 204
 
 ## See also
 
-- For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+- For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configuration-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).
 - You can use the applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
-- [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
+- [applicationTemplate](/graph/api/resources/applicationtemplate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [application](/graph/api/resources/application)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
+- [keyCredential](/graph/api/resources/keycredential)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate)

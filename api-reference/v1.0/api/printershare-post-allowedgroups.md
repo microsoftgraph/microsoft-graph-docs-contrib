@@ -2,15 +2,13 @@
 title: Create allowedGroup for printerShare
 description: Grant the specified group access to submit print jobs to the associated printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Create allowedGroup for printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Grant the specified group access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
@@ -61,7 +59,6 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups/$ref
 Content-Type: application/json
-Content-length: 47
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}"
@@ -83,6 +80,10 @@ Content-length: 47
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-group-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -90,8 +91,7 @@ Content-length: 47
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "truncated": true
 }
 -->
 ``` http

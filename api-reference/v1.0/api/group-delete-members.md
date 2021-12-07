@@ -1,8 +1,8 @@
 ---
 title: "Remove member"
 description: "Use this API to remove a member from a group via the **members** navigation property."
-localization_priority: Priority
-author: "yyuank"
+ms.localizationpriority: high
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -29,9 +29,9 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -75,13 +75,16 @@ In the request, specify the identifier of the group and the identifier of the di
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

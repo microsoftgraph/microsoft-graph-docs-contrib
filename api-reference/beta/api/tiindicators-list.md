@@ -1,7 +1,7 @@
 ---
 title: "List threat intelligence indicators"
 description: "Retrieve a list of tiindicator objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

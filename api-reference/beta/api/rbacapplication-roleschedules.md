@@ -1,9 +1,9 @@
 ---
 title: "rbacApplication: roleSchedules"
 description: "Retrieve both roleAssignmentSchedules and roleEligibilitySchedules."
-author: "shauliu"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "carolinetempleton"
+ms.localizationpriority: medium
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -38,10 +38,10 @@ The following table shows the query parameters that can be used with this method
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|directoryScopeId|String|Id of the directory object that represents the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only. |
-|appScopeId|String|Id of the app specific scope. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only. |
-|principalId|String|Objectid of the principal to which the schedules belong. |
-|roleDefinitionId|String|ID of the unifiedRoleDefinition for the assignment. Read only.|
+|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. |
+|appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. |
+|principalId|String| Identifier of the principal to which the assignment is being granted to. Can be a group or a user. |
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition for the assignment. Read only.|
 
 
 ## Request headers
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) collection in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) objects in the response body.
 
 ## Examples
 
@@ -90,7 +90,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
