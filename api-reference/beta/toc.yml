@@ -11375,6 +11375,8 @@ items:
               href: api/authenticationcontextclassreference-update.md
         - name: Cross-tenant access
           items:
+          - name: Overview
+            href: resources/crosstenantaccesspolicy-overview.md
           - name: Policy
             items:
             - name: Cross-tenant access policy
