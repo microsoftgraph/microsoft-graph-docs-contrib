@@ -7,7 +7,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "retainInheritedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added **retainInheritedPermissions** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Added the **retainInheritedPermissions** (string) property to the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "createLink"
         }
     ],
@@ -25,7 +25,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "retainInheritedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added **retainInheritedPermissions** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Description": "Added the **retainInheritedPermissions** (string) property to the [createLink](https://docs.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
           "Target": "listItem"
         }
     ],
@@ -43,7 +43,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "retainInheritedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added **retainInheritedPermissions** (string) property in [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Added the **retainInheritedPermissions** (string) property to the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "invite"
         }
     ],
@@ -61,7 +61,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "retainInheritedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added **retainInheritedPermissions** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **retainInheritedPermissions** (string) property to the [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "createLink"
         }
     ],
@@ -79,7 +79,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "retainInheritedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added **retainInheritedPermissions** (string) property in [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **retainInheritedPermissions** (string) property to the [invite](https://docs.microsoft.com/en-us/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "invite"
         }
     ],
