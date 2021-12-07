@@ -2,7 +2,7 @@
 title: "List user transitive memberOf"
 description: "Get groups, directory roles that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 author: "jpettere"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

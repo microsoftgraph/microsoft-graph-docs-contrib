@@ -1,7 +1,7 @@
 ---
 title: "security resource type"
 description: "The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType

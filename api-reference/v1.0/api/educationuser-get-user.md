@@ -1,19 +1,19 @@
 ---
-title: "Get user"
+title: "Get educationUser"
 description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Get user
+# Get educationUser
 
 Namespace: microsoft.graph
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+>**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
 
 ## Permissions
 A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/education/me/user
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -83,7 +87,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [

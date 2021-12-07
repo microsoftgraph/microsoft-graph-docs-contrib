@@ -55,8 +55,12 @@ Here is a JSON representation of the resource.
           "settingDefinitionId": "String",
           "isRequired": true,
           "simpleSettingValueTemplate": {
-            "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-            "settingValueTemplateId": "String"
+            "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+            "settingValueTemplateId": "String",
+            "defaultValue": {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+              "constantValue": "String"
+            }
           }
         }
       ],
@@ -66,7 +70,6 @@ Here is a JSON representation of the resource.
   "allowUnmanagedValues": true
 }
 ```
-
 
 
 

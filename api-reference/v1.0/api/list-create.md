@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a SharePoint List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.Manage.All                            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+| Application                            | Sites.Manage.All                            |
 
 ## HTTP request
 
@@ -78,6 +78,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

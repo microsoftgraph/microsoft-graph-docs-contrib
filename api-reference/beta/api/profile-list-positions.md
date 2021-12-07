@@ -1,7 +1,7 @@
 ---
 title: "List positions"
 description: "Retrieve a list of workPosition objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/me/profile/positions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-positions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-positions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

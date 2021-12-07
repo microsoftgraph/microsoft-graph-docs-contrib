@@ -2,7 +2,7 @@
 title: "Get contact"
 description: "Retrieve the properties and relationships of contact object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contact-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

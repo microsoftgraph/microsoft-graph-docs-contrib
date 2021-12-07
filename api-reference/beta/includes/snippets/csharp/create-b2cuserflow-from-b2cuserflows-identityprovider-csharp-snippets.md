@@ -15,15 +15,14 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 	{
 		new IdentityProvider
 		{
-			Id = "Facebook-OAuth",
-			Type = "Facebook",
-			Name = "Facebook"
+			Id = "Facebook-OAuth"
 		}
 	}
 };
 
 await graphClient.Identity.B2cUserFlows
 	.Request()
+	.Header("Location","https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')")
 	.AddAsync(b2cIdentityUserFlow);
 
 ```

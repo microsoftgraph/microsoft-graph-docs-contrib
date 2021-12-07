@@ -2,7 +2,7 @@
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -25,6 +25,7 @@ where files are shared, and where tabs are added.
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
+|[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Create channel message post](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create reply to channel message post](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[Get files folder](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
@@ -40,7 +41,8 @@ where files are shared, and where tabs are added.
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
 |[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel.|
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
-
+|[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
+|[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
 
 ## Properties
 
@@ -52,7 +54,7 @@ where files are shared, and where tabs are added.
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Possible values are: `standard` - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. Possible values are: `standard` - Channel inherits the list of members of the parent team; `private` - Channel can have members that are a subset of all the members on the parent team.
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 
 ### Instance attributes

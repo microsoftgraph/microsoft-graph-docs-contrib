@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Identity
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The Identity resource represents an identity of an actor."
 ms.prod: ""
 doc_type: resourcePageType

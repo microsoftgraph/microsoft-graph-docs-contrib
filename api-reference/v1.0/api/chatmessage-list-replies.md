@@ -2,7 +2,7 @@
 title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-listmessagereplies-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-listmessagereplies-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -119,10 +123,10 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989753153?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989753153&parentMessageId=1616989510408",
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -157,10 +161,10 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989750004?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989750004&parentMessageId=1616989510408",
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",
@@ -195,10 +199,10 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989747416?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989747416&parentMessageId=1616989510408",
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
-                "conversation": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
                     "displayName": "Robin Kline",

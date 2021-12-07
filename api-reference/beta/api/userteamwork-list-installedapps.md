@@ -1,9 +1,9 @@
 ---
 title: "List apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps
+GET /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## Optional query parameters
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,6 +214,10 @@ GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

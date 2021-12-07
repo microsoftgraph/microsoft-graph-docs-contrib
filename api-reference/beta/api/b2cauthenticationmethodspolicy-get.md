@@ -1,7 +1,7 @@
 ---
 title: "Get b2cAuthenticationMethodsPolicy"
 description: "Read the properties of a b2cAuthenticationMethodsPolicy object."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2cauthenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cauthenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

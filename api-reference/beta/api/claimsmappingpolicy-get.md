@@ -1,7 +1,7 @@
 ---
 title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of claimsMappingPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -24,6 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+
+> [!IMPORTANT]
+> This method has a [known permissions issue](/graph/known-issues#claims-mapping-policy) and may require consent to both permissions.
 
 ## HTTP request
 
@@ -82,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-claimsmappingpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-claimsmappingpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -102,12 +109,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/8782712b-4368-4bc2-84d9-d47cd0146621/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+    "id": "8782712b-4368-4bc2-84d9-d47cd0146621",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}],\"ClaimsTransformations\":[{\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}]}}"
+    ],
+    "displayName": "UpdateClaimsPolicy",
+    "isOrganizationDefault": false
 }
 ```
 

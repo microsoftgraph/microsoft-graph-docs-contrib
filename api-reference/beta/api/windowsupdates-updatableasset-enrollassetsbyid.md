@@ -2,7 +2,7 @@
 title: "updatableAsset: enrollAssetsById"
 description: "Enroll updatableAsset resources of the same type in update management by the deployment service."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`, `unknownFutureValue`.|
 |memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers corresponding to the **updatableAsset** resources to enroll in update management by the service for the given **updateCategory**.|
 
@@ -59,6 +59,8 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "updatableasset_enrollassetsbyid"
@@ -78,6 +80,28 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/updatableasset-enrollassetsbyid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/updatableasset-enrollassetsbyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/updatableasset-enrollassetsbyid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassetsbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassetsbyid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

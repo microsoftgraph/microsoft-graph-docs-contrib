@@ -17,6 +17,7 @@ const bookingStaffMember = {
     emailAddress: 'danas@contoso.com',
     'role@odata.type':'#microsoft.graph.bookingStaffRole',
     role: 'externalGuest',
+    timeZone: 'America/Chicago',
     useBusinessHours: true,
     'workingHours@odata.type':'#Collection(microsoft.graph.bookingWorkHours)',
     workingHours: [

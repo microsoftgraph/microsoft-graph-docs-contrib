@@ -2,7 +2,7 @@
 title: "Get chat"
 description: "Retrieve a single chat."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -24,14 +24,16 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats/{chat-id}
-GET /users/{user-id}/chats/{chat-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}
 GET /chats/{chat-id}
 ```
 
@@ -63,7 +65,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_group_chat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
 ```
 
@@ -85,7 +87,14 @@ Content-type: application/json
     "topic": "test group 1",
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "onlineMeetingInfo": null,
+    "viewpoint": {
+        "isHidden": true,
+        "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
+    }
 }
 ```
 
@@ -118,6 +127,10 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/java/get-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -139,7 +152,14 @@ Content-type: application/json
     "topic": null,
     "createdDateTime": "2019-04-18T23:51:42.099Z",
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
-    "chatType": "oneOnOne"
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "onlineMeetingInfo": null,
+    "viewpoint": {
+        "isHidden": false,
+        "lastMessageReadDateTime": "2021-07-06T22:26:27.98Z"
+    }
 }
 ```
 
@@ -147,13 +167,37 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_withmembers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2?$expand=members
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-withmembers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-withmembers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-withmembers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-withmembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chat-withmembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following example shows the response.
@@ -174,6 +218,13 @@ Content-type: application/json
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-21T17:13:44.033Z",
     "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+    "onlineMeetingInfo": null,
+    "viewpoint": {
+        "isHidden": false,
+        "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
+    },
     "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
     "members": [
         {
@@ -237,6 +288,78 @@ Content-type: application/json
             "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
+}
+```
+
+### Example 4: Get the meeting details of a chat associated with a Microsoft Teams meeting
+#### Request
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_meeting_chat"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-meeting-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-meeting-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-meeting-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-meeting-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-meeting-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "19:meeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2",
+    "topic": "Test Meeting",
+    "createdDateTime": "2021-08-17T12:21:37.322Z",
+    "lastUpdatedDateTime": "2021-08-18T00:31:31.817Z",
+    "chatType": "meeting",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d35",
+    "viewpoint": {
+        "isHidden": false,
+        "lastMessageReadDateTime": "2021-08-17T18:04:32.583Z"
+    },
+    "onlineMeetingInfo": {
+        "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
+        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
+        "organizer": {
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
+    }
 }
 ```
 

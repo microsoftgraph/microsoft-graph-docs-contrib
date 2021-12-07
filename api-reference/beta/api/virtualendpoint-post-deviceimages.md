@@ -1,8 +1,8 @@
 ---
 title: "Create cloudPcDeviceImage"
-description: "Upload a custom OS image that you can later provision on cloud PCs."
+description: "Upload a custom OS image that you can later provision on Cloud PCs."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on cloud PCs.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
 
 ## Permissions
 
@@ -25,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -78,7 +76,6 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
-Content-length: 363
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
@@ -105,6 +102,10 @@ Content-length: 363
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcdeviceimage-from-cloudpcdeviceimage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcdeviceimage-from-cloudpcdeviceimage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +122,6 @@ Content-length: 363
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 508
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",

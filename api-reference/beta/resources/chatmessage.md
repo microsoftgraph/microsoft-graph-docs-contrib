@@ -2,7 +2,7 @@
 title: "chatMessage resource type"
 description: "Represents an individual chat message in a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 ---
@@ -37,6 +37,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
+|[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
@@ -51,9 +52,9 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
-|from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Details of the sender of the chat message. Can only be set during [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. The possible value is: `message`.|
+|messageType|chatMessageType|The type of chat message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
@@ -61,21 +62,23 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |subject|string| The subject of the chat message, in plaintext.|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the chat message. Representation is specified by the contentType inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
 |summary|string| Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat. |
-|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
-|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
+|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |References to attached objects like files, tabs, meetings etc.|
+|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.|
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
-|chatId|string|If the message was sent in a chat, represents the identity of the chat.|
+|chatId|string|If the message was sent in a **chat**, represents the identity of the **chat**.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |webUrl|string|Read-only. Link to the message in Microsoft Teams.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
+
 ## Relationships
 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams e.g., images, code snippets etc. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
 
 ## JSON representation
 
@@ -105,7 +108,7 @@ The following is a JSON representation of the resource.
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
@@ -123,7 +126,10 @@ The following is a JSON representation of the resource.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

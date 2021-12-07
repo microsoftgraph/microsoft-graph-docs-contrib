@@ -1,7 +1,7 @@
 ---
 title: "Create reviewSet"
 description: "Create an eDiscovery review set."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -41,7 +41,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets
 
 ## Request body
 
-In the request body, supply JSON representation of the [reviewSet](../resources/ediscovery-reviewset.md).  The following table lists the required properties.
+In the request body, supply a JSON representation of the [reviewSet](../resources/ediscovery-reviewset.md).  The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -86,8 +86,6 @@ Content-type: application/json
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response

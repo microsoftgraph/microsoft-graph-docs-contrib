@@ -1,7 +1,7 @@
 ---
 title: "Delete onPremisesAgentGroup"
 description: "Delete an **onPremisesAgentGroup** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegated (work or school account)     | Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-onpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

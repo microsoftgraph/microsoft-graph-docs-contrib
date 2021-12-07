@@ -2,7 +2,7 @@
 title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryroles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -88,12 +92,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
   "value": [
     {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+      "id": "9ed3a0c4-53e1-498c-ab4d-2473476fde14",
+      "deletedDateTime": null,
+      "description": "Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.",
+      "displayName": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "deletedDateTime": null,
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+    },
+    {
+      "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+      "deletedDateTime": null,
+      "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+      "displayName": "Directory Readers",
+      "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
     }
   ]
 }

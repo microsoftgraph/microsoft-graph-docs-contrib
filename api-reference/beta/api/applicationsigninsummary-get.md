@@ -1,7 +1,7 @@
 ---
 title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Report.Read.All |
+|Delegated (work or school account) | Reports.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | Report.Read.All | 
+|Application | Reports.Read.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -90,7 +90,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "appId": "appId-value",

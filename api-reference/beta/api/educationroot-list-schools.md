@@ -2,7 +2,7 @@
 title: "List educationSchools"
 description: "Retrieve a list of all school objects."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/education/schools
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -99,39 +103,38 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
-  "value": [
-    {
-      "id": "10001",
-      "displayName": "Contoso High School",
-      "description": "Public 9-12 high school",
-      "status": "active",
-      "externalSource": "sis",
-      "principalEmail": "amyr@contoso.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10001",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
-      "externalId": "10001",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+   "value":[
+      {
+         "id":"10001",
+         "displayName":"Contoso High School",
+         "description":"Public 9-12 high school",
+         "status":"active",
+         "externalSource":"sis",
+         "principalEmail":"amyr@contoso.com",
+         "principalName":"Amy Roebuck",
+         "externalPrincipalId":"14007",
+         "highestGrade":"12",
+         "lowestGrade":"9",
+         "schoolNumber":"10001",
+         "address":{
+            "city":"Los Angeles",
+            "countryOrRegion":"United States",
+            "postalCode":"98055",
+            "state":"CA",
+            "street":"12345 Main St."
+         },
+         "createdBy":{
+            "user":{
+               "displayName":"Susana Rocha",
+               "id":"14012"
+            }
+         },
+         "externalId":"10001",
+         "phone":"+1 (253) 555-0102"
+      }
+   ]
 }
 ```
 

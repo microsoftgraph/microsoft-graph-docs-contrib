@@ -1,7 +1,7 @@
 ---
 title: "Update onPremisesAgentGroup"
 description: "Update the properties of an **onPremisesAgentGroup** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegated (work or school account)     | Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -89,6 +89,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesagentgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesagentgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,9 +103,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "blockType": "response"
 } -->
 
 ```http

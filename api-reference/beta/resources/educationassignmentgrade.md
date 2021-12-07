@@ -1,7 +1,7 @@
 ---
 title: "educationAssignmentGrade resource type"
-description: " however, all types of grading (points, pass/fail, and so on) are subclasses of this"
-localization_priority: Normal
+description: "Represents the **Grade** object on a Submission."
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the **Grade** object on a Submission. This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this
+Represents the **Grade** object on a Submission. 
+
+This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this
 resource type. This object also tracks who is doing the grading. This is used in the **submission.grade** property.
 
 

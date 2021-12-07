@@ -1,7 +1,7 @@
 ---
 title: "Get workbookApplication"
 description: "Retrieve the properties and relationships of workbookApplication object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -85,7 +85,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationMode": "calculationMode-value"

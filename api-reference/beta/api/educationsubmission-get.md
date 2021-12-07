@@ -2,7 +2,7 @@
 title: "Get educationSubmission"
 description: "Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions. "
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions.
+Retrieve a particular submission.
+
+A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. 
+
+Only the **assignedTo** student can see and modify the submission. A teacher or application with application permissions has full access to all submissions.
 
 The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the assignment has been released.
 
@@ -24,9 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
-
-*Application permissions are currently available to private preview customers only.
+|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +48,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,12 +75,19 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsubmission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationsubmission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+>**Notes:** 
+>The response object shown here might be shortened for readability. 
+>
+>If [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet, the **resourcesFolderUrl** property is `null`.
 
 <!-- {
   "blockType": "response",
@@ -88,30 +97,22 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 712
 
 {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015"
-      },
-      "releasedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "releasedDateTime": "2014-01-01T00:00:00Z",
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
+  "id": "33223",
+  "recipient": {
+    "userId": "13015"
+  },
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+  "status": "working",
+  "submittedBy": {
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
     }
+  },
+  "submittedDateTime": "2014-01-01T00:00:00Z"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

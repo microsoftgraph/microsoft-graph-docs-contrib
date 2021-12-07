@@ -2,7 +2,7 @@
 title: "printJob: redirect"
 description: Redirect a print job to a different printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Redirect a [print job](../resources/printjob.md) to a different [printer](../resources/printer.md).
+
+Redirecting a print job will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created. 
 
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
@@ -132,7 +134,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

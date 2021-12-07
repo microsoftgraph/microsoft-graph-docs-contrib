@@ -1,7 +1,7 @@
 ---
 title: "List namedLocations"
 description: "Get a list of namedLocation objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocations-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -190,6 +194,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocations-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -284,6 +292,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocations-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -358,6 +370,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocations-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

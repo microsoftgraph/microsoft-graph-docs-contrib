@@ -1,7 +1,7 @@
 ---
 title: "Update case"
 description: "Update the properties of a case object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -93,6 +93,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-case-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-case-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -100,9 +104,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.case"
+  "blockType": "response"
 } -->
 
 ```http

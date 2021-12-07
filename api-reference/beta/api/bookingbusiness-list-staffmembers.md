@@ -1,7 +1,7 @@
 ---
 title: "List staffMembers"
 description: "Get a list of bookingStaffMember objects in the specified bookingbusiness."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,19 +29,19 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/staffMembers
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -68,10 +68,16 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/java/get-staffmembers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-staffmembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,6 +98,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":false,
             "colorIndex":1,
             "role":"externalGuest",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {
@@ -148,6 +155,7 @@ Content-type: application/json
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",
+            "timeZone":"America/Chicago",
             "useBusinessHours":true,
             "workingHours":[
                 {

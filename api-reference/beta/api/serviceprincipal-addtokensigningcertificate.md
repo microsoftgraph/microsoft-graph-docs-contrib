@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: addTokenSigningCertificate"
 description: "Add a signing certificate to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -13,9 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md), which is the public part of the generated certificate. The self-signed signing certificate is composed of these resources: the private key ([keyCredential](../resources/keycredential.md) with usage = 'Sign'), the public key ([keyCredential](../resources/keycredential.md) with usage = 'verify'), and the [passwordCredential](../resources/passwordcredential.md). All the created resources have the same **customKeyIdentifier**.
+Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. The self-signed signing certificate is composed of the following objects which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
++ The [keyCredentials](../resources/keycredential.md) object with the following objects:
+    + A private key object with **usage** set to `Sign`.
+    + A public key object with **usage** set to `Verify`.
++ The [passwordCredentials](../resources/passwordcredential.md) object.
 
-The **passwordCredential** is used to open the pfx/private key. Also, it's associated with the privateKey having the same **keyId**. The subject of the certificate is a constant value. It won't be affected by the optional **displayName** provided in the POST call. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
+All the objects have the same value of **customKeyIdentifier**.
+
+The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. Once set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
 
 ## Permissions
 
@@ -41,7 +47,7 @@ In the request body, provide the following required properties.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | displayName | string | Friendly name for the key.  It must start with `CN=`.|
-| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is three years from the time of creation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z' .|
+| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is three years from the time of creation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Response
 
@@ -61,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/7c8d4399-b4bf-413a-8b6a-c577790cae7d/addTokenSigningCertificate
+POST https://graph.microsoft.com/beta/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -85,8 +91,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 
 ### Response
@@ -104,15 +113,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "customKeyIdentifier": null,
-    "displayName": "customDisplayName",
-    "endDateTime": "2023-06-29T00:00:00Z",
-    "key": null,
-    "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
-    "startDateTime": "2020-06-29T00:00:00Z",
-    "type": "AsymmetricX509Cert",
-    "thumbprint":"QWESRTGFWQWEDSASDTGGSADASDWQW",
-    "usage": "Verify"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "2iD8ppbE+D6Kmu1ZvjM2jtQh88E=",
+  "displayName": "CN=customDisplayName",
+  "endDateTime": "2024-01-25T00:00:00Z",
+  "key": "MIICuDCCAaCgAwIBAgIIYXJsNtL4oUMwDQYJKoZIhvcNAQEL...StP8s/w==",
+  "keyId": "93bc223f-7235-4b9c-beea-d66847531c49",
+  "startDateTime": "2021-05-05T18:38:51.8100763Z",
+  "thumbprint": "DA20FCA696C4F83E8A9AED59BE33368ED421F3C1",
+  "type": "AsymmetricX509Cert",
+  "usage": "Verify"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -123,8 +133,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: serviceprincipal_selfsignedcertificate:\r\n      Resource type was null or missing, so we assume there is no response to validate."
-    ]
+  "suppressions": []
 } -->
 

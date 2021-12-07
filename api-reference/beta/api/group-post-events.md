@@ -1,8 +1,8 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-event-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

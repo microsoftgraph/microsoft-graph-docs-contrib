@@ -2,7 +2,7 @@
 title: Get taskDefinition
 description: Get details about a task definition.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-85
 [!INCLUDE [sample-code](../includes/snippets/java/get-taskdefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-taskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,7 +92,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 380
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",

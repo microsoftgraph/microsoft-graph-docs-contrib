@@ -1,8 +1,8 @@
 ---
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group. "
-localization_priority: Priority
-author: "yyuank"
+ms.localizationpriority: high
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -35,8 +35,8 @@ This resource supports:
 | [Update group](../api/group-update.md) | None | Update the properties of a group object. |
 | [Delete group](../api/group-delete.md) | None | Delete group object. |
 | [delta](../api/group-delta.md) | group collection | Get incremental changes for groups. |
-| [Add member](../api/group-post-members.md) | None | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only). |
-| [Add owner](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only). |
+| [Add members](../api/group-post-members.md) | None | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
+| [Add owners](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
 | [Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
@@ -50,10 +50,10 @@ This resource supports:
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group, a security group or a mail-enabled security group through the **owners** navigation property. |
 | [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
-| [checkMemberGroups](../api/group-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
-| [getMemberGroups](../api/group-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups that the group is a member of. The function is transitive. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups, administrative units, or directory roles that the group is a member of. The function is transitive. |
 | [renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |||
@@ -107,43 +107,51 @@ This resource supports:
 | [resetUnseenCount](../api/group-resetunseencount.md) | None | Reset the unseenCount to 0 of all the posts that the signed-in user has not seen since their last visit. Supported for only Microsoft 365 groups. |
 
 ## Properties
+
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties).
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| Indicates if people external to the organization can send messages to the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-|assignedLabels|[assignedLabel](assignedlabel.md) collection|The list of sensitivity label pairs (label ID, label name) associated with an Microsoft 365 group. <br><br>Returned only on `$select`. Read-only.|
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the group. <br><br>Returned only on `$select`. Read-only.|
+|assignedLabels|[assignedLabel](assignedlabel.md) collection|The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. <br><br>Returned only on `$select`. Read-only.|
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the group. <br><br>Returned only on `$select`. Supports `$filter` (`eq`).Read-only.|
 |autoSubscribeNewMembers|Boolean|Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
-|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default.|
-|createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
+|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`).|
+|createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only. |
 |deletedDateTime|DateTimeOffset| For some Azure Active Directory objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is `null`. If the object is restored, this property is updated to `null`. |
-|description|String|An optional description for the group. <br><br>Returned by default.|
-|displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports `$filter` and `$orderby`. |
-|expirationDateTime|DateTimeOffset| Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
-|groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified`, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see [groups overview](groups-overview.md).<br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports `$filter`.|
-|hasMembersWithLicenseErrors|Boolean|Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true). See an [example](../api/group-list.md).|
+|description|String|An optional description for the group. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`.|
+|displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`. |
+|expirationDateTime|DateTimeOffset| Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only. |
+|groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified`, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see [groups overview](groups-overview.md).<br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports `$filter` (`eq`, `not`).|
+|hasMembersWithLicenseErrors|Boolean|Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true). See an [example](../api/group-list.md). <br><br>Supports `$filter` (`eq`).|
 |hideFromAddressLists |Boolean |True if the group is not displayed in certain parts of the Outlook UI: the **Address Book**, address lists for selecting message recipients, and the **Browse Groups** dialog for searching groups; otherwise, false. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
 |hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
-|id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`).|
+|isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true` and the group cannot be a dynamic group (that is, **groupTypes** cannot contain `DynamicMembership`). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the *RoleManagement.ReadWrite.Directory* permission to set this property or update the membership of such groups. For more, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`).|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is `false`. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on `$select`. Read-only.|
-|mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports `$filter`.|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
-|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Returned by default. |
-|membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are `On` or `Paused`. <br><br>Returned by default. |
-|onPremisesSamAccountName|String|Contains the on-premises **SAM account name** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Read-only. |
-|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. <br><br>Returned by default. Read-only. |
-|onPremisesSyncEnabled|Boolean|`true` if this group is synced from an on-premises directory; `false` if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). <br><br>Returned by default. Read-only. Supports `$filter`.|
-|preferredDataLocation|String|The preferred data location for the group. For more information, see  [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Returned by default.|
-|preferredLanguage|String|The preferred language for an Microsoft 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
-|proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports `$filter`. |
-|renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only.|
+|mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`).|
+|mailNickname|String|The mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Required. Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
+|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
+|membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are `On` or `Paused`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`).  |
+|onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. <br><br>Returned by default. Supports `$filter` (`eq`, `not`). |
+|onPremisesSamAccountName|String|Contains the on-premises **SAM account name** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). Read-only. |
+|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. <br><br>Returned by default. Supports `$filter` on `null` values. Read-only. |
+|onPremisesSyncEnabled|Boolean|`true` if this group is synced from an on-premises directory; `false` if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values).|
+|preferredDataLocation|String|The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): <br><ul><li> Global Administrator <li> User Account Administrator <li>Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul><br/> For more information about this property, see  [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Nullable. Returned by default.|
+|preferredLanguage|String|The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example `en-US`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
+|proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+|renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only.|
 |resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for a Microsoft 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
 |resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Microsoft 365 group creation, that are not normally part of default group creation. Possible value is `Team`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
-|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`).|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
-|theme|string|Specifies an Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
+|theme|string|Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-|visibility|String| Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `Hiddenmembership`. `Hiddenmembership` can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value is not specified during group creation on Microsoft Graph, a security group is created as `Private` by default and Microsoft 365 group is `Public`. See [group visibility options](#group-visibility-options) to learn more. <br><br>Returned by default.|
+|visibility|String| Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `Hiddenmembership`. `Hiddenmembership` can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value is not specified during group creation on Microsoft Graph, a security group is created as `Private` by default and Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. See [group visibility options](#group-visibility-options) to learn more. <br><br>Returned by default. Nullable.|
 
 
 ### Group visibility options
@@ -159,7 +167,7 @@ This resource supports:
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a group has been granted for an application. |
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a group has been granted for an application. Supports `$expand`.|
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
@@ -169,12 +177,12 @@ This resource supports:
 |events|[event](event.md) collection|The group's calendar events.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
-|memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
-|members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Microsoft 365 groups, security groups and mail-enabled security groups), DELETE (supported for Microsoft 365 groups and security groups). Nullable.|
+|memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports `$expand`.|
+|members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Microsoft 365 groups, security groups and mail-enabled security groups), DELETE (supported for Microsoft 365 groups and security groups). Nullable. Supports `$expand`.|
 |membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[Onenote](onenote.md)| Read-only.|
-|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 100 owners. HTTP Methods: GET (supported for all groups), POST (supported for Microsoft 365 groups, security groups and mail-enabled security groups), DELETE (supported for Microsoft 365 groups and security groups). Nullable.|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permission that has been granted for a group to a specific application.|
+|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 100 owners. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports `$expand`.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permission that has been granted for a group to a specific application. Supports `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Entry-point to Planner resource that might exist for a Unified Group.|
@@ -203,6 +211,7 @@ The following is a JSON representation of the resource.
     "events",
     "extensions",
     "groupLifecyclePolicies",
+    "isAssignableToRole",
     "memberOf",
     "members",
     "onenote",
@@ -335,6 +344,7 @@ The following is a JSON representation of the resource.
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "isAssignableRole": false,
   "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,

@@ -2,7 +2,7 @@
 title: "clientCertificateAuthentication resource type"
 description: "Represents the configuration for retrieving a clientCertificateAuthentication."
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

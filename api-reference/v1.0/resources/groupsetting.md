@@ -1,8 +1,8 @@
 ---
 title: "groupSetting resource type"
 description: "Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
 ---

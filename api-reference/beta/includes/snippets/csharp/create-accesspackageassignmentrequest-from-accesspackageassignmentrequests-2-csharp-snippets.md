@@ -20,7 +20,7 @@ var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
 		new AccessPackageAnswerString
 		{
 			Value = "Arizona",
-			AnsweredQuestion = new AccessPackageQuestion
+			AnsweredQuestion = new AccessPackageMultipleChoiceQuestion
 			{
 				Id = "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
 			}
@@ -28,7 +28,7 @@ var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
 		new AccessPackageAnswerString
 		{
 			Value = "Need access to marketing campaign material",
-			AnsweredQuestion = new AccessPackageQuestion
+			AnsweredQuestion = new AccessPackageTextInputQuestion
 			{
 				Id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
 			}

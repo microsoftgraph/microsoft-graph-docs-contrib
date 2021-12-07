@@ -2,7 +2,7 @@
 title: "domain resource type"
 description: "Represents a domain associated with the tenant."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

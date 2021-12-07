@@ -1,7 +1,7 @@
 ---
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -61,7 +61,6 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 ```http
 POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"
@@ -83,6 +82,10 @@ Content-length: 48
 [!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -95,8 +98,7 @@ Content-length: 48
 ```
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted

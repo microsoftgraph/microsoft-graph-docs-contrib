@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assign
 
 Content-type: application/json
-Content-length: 524
+Content-length: 593
 
 {
   "assignments": [
@@ -76,7 +76,9 @@ Content-length: 524
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
@@ -87,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 587
 
 {
   "value": [
@@ -99,12 +101,13 @@ Content-Length: 518
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
-
 
 
 

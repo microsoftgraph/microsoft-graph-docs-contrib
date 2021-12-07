@@ -1,7 +1,7 @@
 ---
 title: "Shared resources in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that support multiple workflows for a tenant organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dougeby"
 ms.prod: "intune"
 ---
@@ -24,6 +24,7 @@ The following Graph resources are shared between Intune workflows:
 - [Android enterprise always on VPN package type](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android managed app protection](intune-shared-androidmanagedappprotection.md)
 - [Android managed store app assignment settings](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Android managed store auto update mode](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Certificate destination store](intune-shared-certificatedestinationstore.md)
 - [Certificate store](intune-shared-certificatestore.md)
 - [Certificate validity period scale](intune-shared-certificatevalidityperiodscale.md)
@@ -39,11 +40,9 @@ The following Graph resources are shared between Intune workflows:
 - [Device compliance policy](intune-shared-devicecompliancepolicy.md)
 - [Device configuration](intune-shared-deviceconfiguration.md)
 - [Device enrollment configuration](intune-shared-deviceenrollmentconfiguration.md)
-- [Device enrollment type](intune-shared-deviceenrollmenttype.md)
 - [Device management](intune-shared-devicemanagement.md)
 - [Device management derived credential settings](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Device management script](intune-shared-devicemanagementscript.md)
-- [Device platform type](intune-shared-deviceplatformtype.md)
 - [Enablement](intune-shared-enablement.md)
 - [Enrollment availability options](intune-shared-enrollmentavailabilityoptions.md)
 - [Enrollment state](intune-shared-enrollmentstate.md)
@@ -60,10 +59,10 @@ The following Graph resources are shared between Intune workflows:
 - [IP range](intune-shared-iprange.md)
 - [IPv4 range](intune-shared-ipv4range.md)
 - [IPv6 range](intune-shared-ipv6range.md)
+- [Key long value pair](intune-shared-keylongvaluepair.md)
 - [Key size](intune-shared-keysize.md)
 - [Key storage provider option](intune-shared-keystorageprovideroption.md)
 - [Key usages](intune-shared-keyusages.md)
-- [Key/value pair](intune-shared-keyvaluepair.md)
 - [macOS LOB app assignment settings](intune-shared-macoslobappassignmentsettings.md)
 - [macOS VPP app assignment settings](intune-shared-macosvppappassignmentsettings.md)
 - [Managed device owner type](intune-shared-manageddeviceownertype.md)
@@ -75,14 +74,11 @@ The following Graph resources are shared between Intune workflows:
 - [Mobile app install time settings](intune-shared-mobileappinstalltimesettings.md)
 - [Mobile app troubleshooting event](intune-shared-mobileapptroubleshootingevent.md)
 - [Owner type](intune-shared-ownertype.md)
-- [Policy platform type](intune-shared-policyplatformtype.md)
 - [Proxied domain](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Report root](intune-shared-reportroot.md)
-- [Resultant app state](intune-shared-resultantappstate.md)
 - [RGB color](intune-shared-rgbcolor.md)
 - [Run as account type](intune-shared-runasaccounttype.md)
-- [Run state](intune-shared-runstate.md)
 - [Saved UI state generation options](intune-shared-saveduistategenerationoptions.md)
 - [Setting source type](intune-shared-settingsourcetype.md)
 - [Subject alternative name type](intune-shared-subjectalternativenametype.md)

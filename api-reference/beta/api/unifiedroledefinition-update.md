@@ -1,7 +1,7 @@
 ---
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -13,22 +13,45 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
+Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider.
+
+The following RBAC providers are currently supported:
+- device management (Intune)
+- directory (Azure AD) 
+
+> [!NOTE]
+> The cloud PC RBAC provider currently supports only the [list](rbacapplication-list-roledefinitions.md) and [get](unifiedroledefinition-get.md) operations.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in the [Permissions reference](/graph/permissions-reference). 
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+### For Device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.ReadWrite.All |
+
+### For Directory (Azure AD) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
+To update a role definition for a device management provider:
 <!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/deviceManagement/roleDefinitions/{id}
+```
 
+To update a role definition for a directory provider:
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
@@ -58,13 +81,13 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example updates a **unifiedRoleDefinition** for a directory provider.
 
 
 # [HTTP](#tab/http)
@@ -107,6 +130,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -116,13 +143,11 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+  "blockType": "response"
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 Content-type: application/json
 
 ```
