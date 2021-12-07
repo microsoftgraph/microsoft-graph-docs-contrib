@@ -1,6 +1,6 @@
 ---
 title: "connectionQuota resource type"
-description: "The connection quota returns the the minimum number of items you are able to ingest into connection by taking into account the number of the remaining quota in connection and the remaining quota in the overall tenant.
+description: "The connection quota contains calculated information on the connection's quota utilization."
 author: "josmoran"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-The [connection](externalconnectors-externalconnection.md) quota contains calculated information on the connection's quota utilization.
+The [connection](externalconnectors-externalconnection.md) quota contains calculated information on the connection's quota utilization. It returns the the minimum number of items you are able to ingest into a connection, by taking into account the number of the remaining quota in the connection and the remaining quota in the overall tenant.
 
 ## Methods
 |Method|Return type|Description|
