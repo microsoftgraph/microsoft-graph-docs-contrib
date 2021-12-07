@@ -1,5 +1,5 @@
 ---
-title: "crossTenantAccessPolicy resource type"
+title: "Cross-tenant access settings API overview"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# crossTenantAccessPolicy resource type
+# Cross-tenant access settings API overview
 
 Namespace: microsoft.graph
 
@@ -24,21 +24,21 @@ Granular controls let you determine the people, groups, and apps, both in your o
 
 > **Note:** By configuring B2B direct connect outbound settings, you agree to allow external organizations that you have enabled outbound settings with to access limited contact data about your users. Microsoft shares this data with those organizations to help them send a request to connect with your users. Data collected by external organizations, including limited contact data, is subject to the privacy policies and practices of those organizations.
 
-## Default cross tenant access settings
+## Default cross-tenant access settings
 
-Default cross tenant access settings determine your stance for inbound and outbound collaboration with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross tenant access settings will inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
+Default cross-tenant access settings determine your stance for inbound and outbound collaboration with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings will inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
 
-By default, all Azure AD organizations have a default configuration for cross tenant access settings. These service defaults can be overridden with your own configuration to end up with a default stance that suits your organization. You can confirm whether you are using the service default settings or have modified the default settings by looking at the `isServiceDefault` property returned when you query the default endpoint.
+By default, all Azure AD organizations have a default configuration for cross-tenant access settings. These service defaults can be overridden with your own configuration to end up with a default stance that suits your organization. You can confirm whether you are using the service default settings or have modified the default settings by looking at the `isServiceDefault` property returned when you query the default endpoint.
 
-## Partner cross tenant access settings
+## Partner cross-tenant access settings
 
-Partner specific cross tenant access settings determine your stance for inbound and outbound collaboration with a specific Azure AD organization. Any collaboration with this organization will inherit these partner specific settings. Partner settigns are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
+Partner specific cross-tenant access settings determine your stance for inbound and outbound collaboration with a specific Azure AD organization. Any collaboration with this organization will inherit these partner specific settings. Partner settigns are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
-Even though you have added a partner to your cross tenant access settings, some of your default settings will still apply. For example, if you only configure `b2bCollaborationInbound` for a partner in your cross tenant access settings, all other settings for that partner configuration will be inherited from the default settings that you have specified. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it is inheriting settings from the default policy.
+Even though you have added a partner to your cross-tenant access settings, some of your default settings will still apply. For example, if you only configure `b2bCollaborationInbound` for a partner in your cross-tenant access settings, all other settings for that partner configuration will be inherited from the default settings that you have specified. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it is inheriting settings from the default policy.
 
 ## Interpreting the API response
 
-The cross tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. `b2bSetting` will be used as a catch-all example for any B2B inbound or outbound configuration you could make.
+The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. `b2bSetting` will be used as a catch-all example for any B2B inbound or outbound configuration you could make.
 
 <table>
 <tr>
