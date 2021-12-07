@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "joinWebUrl",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "customerTimeZone",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "bookingAppointment"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "addresses",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "phones",
                     "ChangeType": "Addition",
@@ -43,7 +43,7 @@
                     "Target": "bookingCustomer"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "smsNotificationsEnabled",
                     "ChangeType": "Addition",
@@ -51,7 +51,7 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "webUrl",
                     "ChangeType": "Addition",
@@ -59,7 +59,7 @@
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
                     "ChangedApiName": "timeZone",
                     "ChangeType": "Addition",
@@ -67,7 +67,7 @@
                     "Target": "bookingStaffMember"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "EnumType",
                     "ChangedApiName": "answerInputType",
                     "ChangeType": "Addition",
@@ -75,7 +75,47 @@
                     "Target": "answerInputType"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingQuestionAnswer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingQuestionAnswer](https://docs.microsoft.com/en-us/graph/api/resources/bookingQuestionAnswer?view=graph-rest-beta) resource type.",
+                    "Target": "bookingQuestionAnswer"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingQuestionAssignment",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingQuestionAssignment](https://docs.microsoft.com/en-us/graph/api/resources/bookingQuestionAssignment?view=graph-rest-beta) resource type.",
+                    "Target": "bookingQuestionAssignment"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "customQuestionAnswers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **customQuestionAnswers** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "filledAttendeesCount",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **filledAttendeesCount** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "maximumAttendeesCount",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **maximumAttendeesCount** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "customQuestions",
                     "ChangeType": "Addition",
@@ -83,15 +123,31 @@
                     "Target": "bookingBusiness"
                 },
                 {
-                    "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookingCustomQuestion",
                     "ChangeType": "Addition",
                     "Description": "Added the [bookingCustomQuestion](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomQuestion?view=graph-rest-beta) resource",
                     "Target": "bookingCustomQuestion"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "customQuestions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **customQuestions** property to [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "maximumAttendeesCount",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **maximumAttendeesCount** property to [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
                 }
             ],
-            "Id": "0bbf6612-df8b-47d8-a43c-6370825e5ed1",
+            "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-27T11:56:54.877Z",

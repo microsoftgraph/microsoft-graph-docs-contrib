@@ -45,6 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
+|customQuestionAnswers|[bookingQuestionAnswer](../resources/bookingquestionanswer.md) collection| This contants a custom question, answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment. Optional.|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |invoiceAmount|Double|The billed amount on the invoice.|
@@ -67,6 +68,8 @@ In the request body, supply the values for relevant fields that should be update
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](../resources/bookingstaffmember.md) who is scheduled in this appointment.|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required.|
+|filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
 
 
 ## Response

@@ -63,6 +63,8 @@ In the request body, supply the values for relevant fields that should be update
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains set of custom questions associated with a particular service. Optional.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 
 ## Response
 If successful, this method returns a `204 No content` response code. It does not return anything in the response body.

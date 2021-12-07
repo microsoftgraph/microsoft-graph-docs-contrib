@@ -28,6 +28,7 @@ Represents information about a particular service provided by a [bookingBusiness
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
 |defaultPrice|Double|The default monetary price for the service.|
@@ -39,6 +40,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
@@ -82,6 +84,12 @@ The following is a JSON representation of the resource.
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
+  "customQuestions": [
+    {
+      "@odata.type": "microsoft.graph.bookingQuestionAssignment"
+    }
+  ],
+  "maximumAttendeesCount": "Integer",
   "webUrl": "String"
 }
 
