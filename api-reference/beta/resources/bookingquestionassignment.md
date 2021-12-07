@@ -1,7 +1,7 @@
 ---
 title: "bookingQuestionAssignment resource type"
 description: "This contains set of custom questions associated with a particular service"
-author: "aswin aniyeri"
+author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "Bookings"
 doc_type: resourcePageType

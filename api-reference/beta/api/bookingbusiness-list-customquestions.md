@@ -1,7 +1,7 @@
 ---
 title: "List customQuestions"
 description: "Get the bookingCustomQuestion resources from the customQuestions navigation property."
-author: "aswin aniyeri"
+author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
 doc_type: apiPageType

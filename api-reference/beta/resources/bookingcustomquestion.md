@@ -1,7 +1,7 @@
 ---
 title: "bookingCustomQuestion resource type"
 description: "Represents a custom question for a bookingBusiness"
-author: "aswin aniyeri"
+author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
 doc_type: resourcePageType

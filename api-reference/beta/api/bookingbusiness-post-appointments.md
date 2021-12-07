@@ -84,11 +84,6 @@ Content-type: application/json
     "customerNotes":"Please be on time.",
     "customerPhone":"213-555-0199",
     "customerTimeZone":"America/Chicago",
-    "customQuestionAnswers": [
-      {
-        "@odata.type": "microsoft.graph.bookingQuestionAnswer"
-      }
-    ],
     "smsNotificationsEnabled":true,
     "end":{
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
@@ -166,9 +161,7 @@ Content-type: application/json
         "@odata.type":"#microsoft.graph.dateTimeTimeZone",
         "dateTime":"2018-05-01T12:00:00.0000000+00:00",
         "timeZone":"UTC"
-    },
-    "maximumAttendeesCount": "Integer",
-    "filledAttendeesCount": "Integer"
+    }
 }
 ```
 # [C#](#tab/csharp)

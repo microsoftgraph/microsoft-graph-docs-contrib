@@ -1,7 +1,7 @@
 ---
 title: "Create bookingCustomQuestion"
 description: "Create a new bookingCustomQuestion object."
-author: "aswin aniyeri"
+author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
 doc_type: apiPageType

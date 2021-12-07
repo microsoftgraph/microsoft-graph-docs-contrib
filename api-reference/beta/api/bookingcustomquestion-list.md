@@ -1,7 +1,7 @@
 ---
 title: "List bookingCustomQuestions"
 description: "Get a list of the bookingCustomQuestion objects and their properties."
-author: "aswin aniyeri"
+author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
 doc_type: apiPageType

@@ -102,11 +102,6 @@ Content-type: application/json
     "customerPhone": "213-555-0199",
     "customerNotes": null,
     "customerTimeZone": "America/Chicago",
-    "customQuestionAnswers": [
-      {
-        "@odata.type": "microsoft.graph.bookingQuestionAnswer"
-      }
-    ],
     "smsNotificationsEnabled": true,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
@@ -198,9 +193,7 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    },
-    "maximumAttendeesCount": "Integer",
-    "filledAttendeesCount": "Integer"
+    }
 }
 ```
 
