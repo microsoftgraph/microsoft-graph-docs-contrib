@@ -31,7 +31,8 @@ Only Stream data types, including **backgroundLogo** and **backgroundImage**, ar
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
-PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
+
+PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{backgroundImage | bannerLogo | squareLogo}
 ```
 
 ## Request headers
@@ -75,7 +76,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 PUT https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR/bannerLogo
 Content-Type: image/jpeg
 
@@ -122,7 +123,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocalization6"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 
@@ -175,7 +176,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocalization7"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 
