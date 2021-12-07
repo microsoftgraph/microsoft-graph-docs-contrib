@@ -1,7 +1,7 @@
 ---
 title: "presence: setPresence"
 description: "Set the presence information for a user's application presence session."
-author: "jsandoval-msft"
+author: "mkhribech"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the state of a user's presence session as an application.
+Set the availability and activity status in a presence session of an application.
 
 ### Presence sessions
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
@@ -21,8 +21,8 @@ A user can have multiple presence sessions because the user can be on multiple T
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
 The following is the precedence for how session states are aggregated:
-* User-configured > app-configured (user-configured state overrides others)
-* Among app-configured: DoNotDisturb (currently not supported for set presence) > Busy > Available > Away
+* User-preferred state > session-level states (user-preferred state overrides others)
+* Among session-level states: DoNotDisturb (currently not supported for set presence) > Busy > Available > Away
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
@@ -36,7 +36,7 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 

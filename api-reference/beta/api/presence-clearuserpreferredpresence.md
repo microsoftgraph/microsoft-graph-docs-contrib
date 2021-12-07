@@ -1,5 +1,5 @@
 ---
-title: "presence: clearPreferredPresence"
+title: "presence: clearUserPreferredPresence"
 description: "Clear the user preferred presence for a user"
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# presence: clearPreferredPresence
+# presence: clearUserPreferredPresence
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear the preferred presence if it was earlier set for the user.
+Clear the preferred availability and activity status for a user.
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

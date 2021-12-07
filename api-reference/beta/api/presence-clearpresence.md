@@ -1,7 +1,7 @@
 ---
 title: "presence: clearPresence"
 description: "Clear the presence information for a user's application presence session."
-author: "jsandoval-msft"
+author: "mkhribech"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear the application's presence session for a user. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
+Clear a presence session of an application. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 
 For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
 
@@ -22,7 +22,7 @@ The following permission is required to call the API. To learn more, including h
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | Presence.ReadWrite.All                      |
 
