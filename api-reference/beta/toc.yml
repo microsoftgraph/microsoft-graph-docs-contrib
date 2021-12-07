@@ -13192,14 +13192,14 @@ items:
               href: api/organizationsettings-list-peopleinsights.md
             - name: Update
               href: api/insightssettings-update.md
-            - name: User control (preview)
-              items:
-              - name: User insights settings
-                href: resources/userinsightssettings.md
-              - name: Get
-                href: api/userinsightssettings-get.md
-              - name: Update
-                href: api/userinsightssettings-update.md
+        - name: User control (preview)
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
                 
                 
       - name: Mention (preview)
