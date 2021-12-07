@@ -39,7 +39,7 @@ Represents the image resource on a Cloud PC.
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknownFutureValue`.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|[cloudPcDeviceImageStatusDetails](#cloudpcdeviceimagestatusdetails-values)|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
 |version|String|The image version. For example: 0.0.1, 1.5.13.|
 
 ### cloudPcDeviceImageStatus values
@@ -58,6 +58,8 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|Source image is inaccessible or not found.|
 |osVersionNotSupported| OS version is not supported.|
 |sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcDeviceImageOsStatus values
 
