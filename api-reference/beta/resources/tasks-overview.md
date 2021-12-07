@@ -22,7 +22,7 @@ Currently, the API supports only permissions delegated by the signed-in user.
 
 Before starting with the To Do Tasks API, take a look at the resources and how they relate to one another.
 
-![Screenshot highlighting To Do tasks API entities. Screenshot shows list of task lists on the left, tasks within a specific task list in the center and, checklist items and linked resource on the right along with other task details.](/graph/images/tasks-api-entities.png)
+![Screenshot highlighting To Do tasks API entities. Screenshot shows list of task lists on the left, tasks within a specific task list in the center and, on the right, checklist items and linked resource along with other task properties.](/graph/images/tasks-api-entities.png)
 
 ## Task list
 

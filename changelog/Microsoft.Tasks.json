@@ -7,7 +7,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "taskStatus_v2",
           "ChangeType": "Addition",
-          "Description": "Added the **taskStatus_v2** resource",
+          "Description": "Added the **taskStatus_v2** enumeration",
           "Target": "taskStatus_v2"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "wellKnownListName_v2",
           "ChangeType": "Addition",
-          "Description": "Added the **wellKnownListName_v2** resource",
+          "Description": "Added the **wellKnownListName_v2** enumeration",
           "Target": "wellKnownListName_v2"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personalTaskProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [personalTaskProperties](https://docs.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) resource",
+          "Description": "Added the [personalTaskProperties](https://docs.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) complex type",
           "Target": "personalTaskProperties"
         },
         {
