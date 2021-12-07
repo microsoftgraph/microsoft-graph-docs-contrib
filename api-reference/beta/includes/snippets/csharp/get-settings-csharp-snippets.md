@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var analytics = await graphClient.Me.Analytics
+var caseSettings = await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Settings
 	.Request()
-	.Select("Settings")
 	.GetAsync();
-
-var settings = analytics.Settings;
 
 ```

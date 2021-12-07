@@ -1,7 +1,7 @@
 ---
 title: "Get reviewSetQuery"
 description: "Retrieve the properties and relationships of an eDiscovery reviewsetquery object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-reviewsetquery-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +93,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-4
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

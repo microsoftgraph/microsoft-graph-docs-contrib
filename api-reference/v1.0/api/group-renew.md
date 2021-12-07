@@ -1,8 +1,8 @@
 ---
 title: "group: renew"
 description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
-localization_priority: Normal
-author: "yyuank"
+ms.localizationpriority: medium
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -73,15 +73,17 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 [!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Boolean"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

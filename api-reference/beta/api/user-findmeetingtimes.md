@@ -1,7 +1,7 @@
 ---
 title: "user: findMeetingTimes"
 description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -195,11 +195,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
-Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

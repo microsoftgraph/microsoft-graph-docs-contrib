@@ -2,7 +2,7 @@
 title: "List transitiveMemberOf"
 description: "Get groups that the organizational contact is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/transitiveMemberOf
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-list-transitivememberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-list-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

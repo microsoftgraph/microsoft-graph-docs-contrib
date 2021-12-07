@@ -32,8 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
+GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## Optional query parameters
@@ -56,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### Response
@@ -64,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1681
+Content-Length: 1911
 
 {
   "value": {
@@ -72,7 +75,7 @@ Content-Length: 1681
     "applicability": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
       "description": "Description value",
-      "platform": "macOS",
+      "platform": "android",
       "deviceMode": "kiosk",
       "technologies": "mdm"
     },
@@ -95,6 +98,12 @@ Content-Length: 1681
     "settingUsage": "configuration",
     "uxBehavior": "dropdown",
     "visibility": "settingsCatalog",
+    "referredSettingInformationList": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+        "settingDefinitionId": "Setting Definition Id value"
+      }
+    ],
     "id": "95dc9604-9604-95dc-0496-dc950496dc95",
     "description": "Description value",
     "helpText": "Help Text value",
@@ -121,7 +130,6 @@ Content-Length: 1681
   }
 }
 ```
-
 
 
 

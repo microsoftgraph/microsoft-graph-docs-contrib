@@ -1,7 +1,7 @@
 ---
 title: "Working with Microsoft 365 usage reports in Microsoft Graph"
 description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
@@ -9,7 +9,9 @@ doc_type: conceptualPageType
 
 # Working with Microsoft 365 usage reports in Microsoft Graph
 
-With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all.
+With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all. 
+
+For details about the settings that govern identification/de-identification of information in the Microsoft 365 usage reports data, see [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) .
 
 ## Authorization
 
@@ -25,5 +27,5 @@ Reports resources and APIs can open up new ways for you to engage with users and
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 

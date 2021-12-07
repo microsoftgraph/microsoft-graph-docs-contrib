@@ -1,8 +1,8 @@
 ---
 title: "Remove a member"
 description: "Use this API to remove a member (user or group) from an administrative unit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

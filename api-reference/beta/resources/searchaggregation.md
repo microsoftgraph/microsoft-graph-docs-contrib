@@ -1,7 +1,7 @@
 ---
 title: "searchAggregation resource type"
 description: "Provides the details of the search aggregation in the search response."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

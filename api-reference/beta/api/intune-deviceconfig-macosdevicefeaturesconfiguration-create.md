@@ -73,13 +73,13 @@ The following table shows the properties that are required when you create the m
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
 |logOutDisabledWhileLoggedIn|Boolean|Whether the Log Out menu item on the login window will be disabled while the user is logged in.|
 |screenLockDisableImmediate|Boolean|Whether to disable the immediate screen lock functions.|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|associatedDomains|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
 |appAssociatedDomains|[macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md) collection|Gets or sets a list that maps apps to their associated domains. Application identifiers must be unique. This collection can contain a maximum of 500 elements.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use MacOSSingleSignOnExtension instead.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
@@ -115,7 +115,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 5662
+Content-length: 6256
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -241,7 +241,22 @@ Content-length: 5662
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -296,7 +311,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5834
+Content-Length: 6428
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -425,7 +440,22 @@ Content-Length: 5834
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
+    "modeCredentialUsed": "Mode Credential Used value",
+    "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
+    "userSetupDelayed": true,
+    "signInHelpText": "Sign In Help Text value",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -474,7 +504,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

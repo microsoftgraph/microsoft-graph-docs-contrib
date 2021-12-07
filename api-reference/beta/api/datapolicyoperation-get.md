@@ -1,7 +1,7 @@
 ---
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -64,10 +64,14 @@ GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-datapolicyoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-datapolicyoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,7 +80,6 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

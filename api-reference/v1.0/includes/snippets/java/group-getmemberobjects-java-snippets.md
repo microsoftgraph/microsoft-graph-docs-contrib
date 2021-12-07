@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 Boolean securityEnabledOnly = false;
 
-graphClient.groups("{id}")
+graphClient.groups("1132b215-826f-42a9-8cfe-1643d19d17fd")
 	.getMemberObjects(DirectoryObjectGetMemberObjectsParameterSet
 		.newBuilder()
 		.withSecurityEnabledOnly(securityEnabledOnly)

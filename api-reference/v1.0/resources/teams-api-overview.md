@@ -1,15 +1,13 @@
 ---
 title: "Use the Microsoft Graph API to work with Microsoft Teams"
 description: "Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to work with Microsoft Teams
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
@@ -68,50 +66,19 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
-
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
-| [Remove member](../api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
-| [Remove owner](../api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team-update.md)	| PATCH     | /teams/{id} |
-
-We recommend that when you add an owner, you also add that user as a member.
-If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams.
-In addition, different apps and APIs will handle that differently.
-For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Microsoft Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of.
-To avoid confusion, add all owners to the members list as well.
-
-Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. To work around this, we recommend that you remove the user from both owners and members, then wait 10 seconds, then add them back to members.
-
-When adding and removing members and owners, don't put braces { } around the ID.
-
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
-| Slow | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
-
-Similarly, if the `userId` in the URL or payload is expressed as a UPN rather than as a GUID, the performance will be slower.
-
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Slow | john@example.com |
-
-When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
-If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
-
-> [!Note]
-> Tenant guests are always processed via the slow path.
+| [Add member](../api/team-post-members.md)	| POST	    | /teams/{team-id}/members  |
+| [Remove member](../api/team-delete-members.md)	| DELETE	| /teams/{team-id}/members/{membership-id} |
+| [Update member's role](../api/team-update-members.md)	| PATCH	| /teams/{team-id}/members/{membership-id} |
+| [Update team](../api/team-update.md)	| PATCH     | /teams/{team-id} |
 
 ## Polling requirements
 
 If your app polls to see whether a resource has changed, you can only do that once per day. 
 ([teamsAsyncOperation](teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.) 
 If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
-If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+If you don't find support for the type of subscription you need, we encourage you to provide feedback via the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
 
 When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](../api/chatmessage-delta.md).
 

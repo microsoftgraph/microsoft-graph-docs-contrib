@@ -35,6 +35,7 @@ Inherits from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-wind
 |id|String|The catalog item id. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|String|The display name for the catalog item. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|The last supported date for a catalog item Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |version|String|The feature update version|
 
 ## Relationships
@@ -54,10 +55,10 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "releaseDateTime": "String (timestamp)",
+  "endOfSupportDate": "String (timestamp)",
   "version": "String"
 }
 ```
-
 
 
 

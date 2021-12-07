@@ -2,8 +2,7 @@
 title: "Create temporaryAccessPassAuthenticationMethod"
 description: "Create a new temporaryAccessPassAuthenticationMethod object."
 author: "inbarckMS"
-ms.author: inbarc
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -38,10 +37,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 
@@ -89,7 +88,6 @@ If successful, this method returns a `201 Created` response code and a [temporar
 ``` http
 POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
 Content-Type: application/json
-Content-length: 209
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
@@ -112,6 +110,10 @@ Content-length: 209
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-temporaryaccesspassauthenticationmethod-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

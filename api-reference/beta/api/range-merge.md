@@ -2,7 +2,7 @@
 title: "Range: merge"
 description: "Merge the range cells into one region in the worksheet."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,7 +64,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
-Content-length: 20
 
 {
   "across": true
@@ -92,9 +91,7 @@ Content-length: 20
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

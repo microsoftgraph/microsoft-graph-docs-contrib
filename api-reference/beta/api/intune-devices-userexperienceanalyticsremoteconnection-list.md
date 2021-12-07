@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 613
+Content-Length: 715
 
 {
   "value": [
@@ -71,18 +71,19 @@ Content-Length: 613
       "deviceName": "Device Name value",
       "model": "Model value",
       "virtualNetwork": "Virtual Network value",
+      "manufacturer": "Manufacturer value",
       "deviceCount": 11,
       "cloudPcRoundTripTime": 6.666666666666667,
       "cloudPcSignInTime": 5.666666666666667,
       "remoteSignInTime": 5.333333333333333,
       "coreBootTime": 4.0,
       "coreSignInTime": 4.666666666666667,
-      "cloudPcFailurePercentage": 8.0
+      "cloudPcFailurePercentage": 8.0,
+      "userPrincipalName": "User Principal Name value"
     }
   ]
 }
 ```
-
 
 
 

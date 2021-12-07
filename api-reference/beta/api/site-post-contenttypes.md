@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Create contentType"
 description: "Create a Content type for a site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /sites/{site-id}/contentTypes
-
 ```
 
 ## Request headers
@@ -91,6 +90,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

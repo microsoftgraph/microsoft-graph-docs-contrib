@@ -1,7 +1,7 @@
 ---
 title: "Create namedLocation"
 description: "Create a new namedLocation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [namedLocation](../resources/namedlocation.md) object.
+Create a new [namedLocation](../resources/namedlocation.md) object. Named locations can be either [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) objects.
 
 ## Permissions
 
@@ -42,8 +42,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## Request body
 
-In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object.
+In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object. You must specify the **@odata.type** of the derived type, that is, `#microsoft.graph.ipNamedLocation` for an [ipNamedLocation](../resources/ipnamedlocation.md) object or `#microsoft.graph.countryNamedLocation` for a [countryNamedLocation](../resources/countrynamedlocation.md) object.
 
+The following table lists the properties that are required to create an [ipNamedLocation](../resources/ipnamedlocation.md) object.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|displayName|String|Human-readable name of the location. Required.|
+|ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596. Required. The **@odata.type** of the ipRange is also required.|
+
+The following table lists the properties that are required to create an [countryNamedLocation](../resources/countrynamedlocation.md) object.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2. Required.|
+|displayName|String|Human-readable name of the location. Required.|
 ## Response
 
 If successful, this method returns a `201 Created`response code and a new [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.
@@ -98,6 +111,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,7 +122,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -179,6 +196,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -186,7 +207,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

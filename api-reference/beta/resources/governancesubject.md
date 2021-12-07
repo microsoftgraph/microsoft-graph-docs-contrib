@@ -1,10 +1,10 @@
 ---
 title: "governanceSubject resource type"
 description: "Represents users, groups, and service principals being managed in Privileged Identity Management (PIM)."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # governanceSubject resource type

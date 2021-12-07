@@ -2,7 +2,7 @@
 title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties"
 author: "psignoret"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All.|
+|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## HTTP request
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-appconsentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

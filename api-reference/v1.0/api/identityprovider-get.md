@@ -1,15 +1,16 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
-localization_priority: Priority
-author: "Nickgmicrosoft"
+ms.localizationpriority: high
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Get identityProvider
-
+# Get identityProvider (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
 
@@ -58,6 +59,7 @@ The following example retrieves a specific **identityProvider**.
   "blockType": "request",
   "name": "get-identityprovider"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
@@ -77,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -85,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 ```http
 HTTP/1.1 200 OK

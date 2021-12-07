@@ -2,7 +2,7 @@
 title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

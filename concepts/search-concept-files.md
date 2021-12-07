@@ -1,9 +1,8 @@
 ---
-ms.author: "yiwenwang"
 title: "Use the Microsoft Search API in Microsoft Graph to search files"
 description: "You can use the Microsoft Search API to search files stored in OneDrive or SharePoint."
 author: "nmoreau"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
@@ -359,7 +358,7 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
-Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
+Note that property selection for custom properties in SharePoint is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
 
 To retrieve a custom property for a **driveItem**, query **listItem** instead.
 

@@ -2,15 +2,13 @@
 title: Update printer
 description: Update the properties of a printer object.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Update printer
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update the properties of a [printer](../resources/printer.md) object.
 
@@ -43,7 +41,7 @@ PATCH /print/printers/{printerId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Content-type|`application/json` when using delegated permissions, `application/ipp` or `application/json` when using application permissions. Required.|
 
 ## Request body
 
@@ -81,6 +79,11 @@ With application permissions, a printer can also be updated using an Internet Pr
 The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
 
+> **Note:** Do not pass operation attributes in the request body. The request body should only contain printer attributes.
+
+
+> **Note:** For printers to work with a particular platform, it should meet the requirements of that platform. For example, on windows client, it is expected that printer specifies all attributes that are considered mandatory as per [MOPRIA](https://mopria.org) specs. Please note MOPRIA specs are available to only the paid members of MOPRIA.
+
 ## Response
 
 ### Delegated permissions and JSON payload
@@ -108,7 +111,6 @@ If using application permissions, if successful, this method returns `204 No con
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
-Content-length: 581
 
 {
   "name": "PrinterName",
@@ -125,6 +127,10 @@ Content-length: 581
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

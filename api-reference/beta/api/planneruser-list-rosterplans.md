@@ -2,7 +2,7 @@
 title: "List rosterPlans"
 description: "Get the plannerPlan resources from the rosterPlans navigation property."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/users/{usersId}/planner/rosterPlans
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerplan-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-plannerplan-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

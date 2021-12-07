@@ -2,7 +2,7 @@
 title: "Get bitlockerRecoveryKey"
 description: "Retrieve the properties and relationships of a bitlockerRecoveryKey object."
 author: "hafowler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Delegated (work or school account)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -60,8 +60,8 @@ This method supports the `$select` OData query parameter to return the **key** p
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Name of the client application performing the API call. Required.|
-|ocp-client-version|Version of the client application performing the API call. Required.|
+|ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
+|ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -104,6 +104,10 @@ ocp-client-version: "1.2"
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,6 +169,10 @@ GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKey
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

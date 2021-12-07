@@ -1,7 +1,7 @@
 ---
 title: "Create accessPackage"
 description: "Create a new accessPackage."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [accessPackage](../resources/accesspackage.md) object.
+
+The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md). After the access package is created, you can then create [accessPackageAssignmentPolicies](../resources/accesspackageassignmentpolicy.md) which specify how users are assigned to the access package.
+
 
 ## Permissions
 
@@ -38,11 +41,11 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
-| Content-Type  | application/json  |
+| Content-type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackage](../resources/accesspackage.md) object.
+In the request body, supply a JSON representation of an [accessPackage](../resources/accesspackage.md) object.
 
 ## Response
 
@@ -86,6 +89,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackage-from-accesspackages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackage-from-accesspackages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,7 +100,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

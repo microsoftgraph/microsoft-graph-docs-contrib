@@ -1,8 +1,8 @@
 ---
 title: "Delete onlineMeeting"
 description: "Delete an online meeting."
-author: "jsandoval-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -21,22 +21,17 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 | Delegated (personal Microsoft account) | Not Supported.                         |
 | Application                            | OnlineMeetings.ReadWrite.All*          |
 
-> [!IMPORTANT]
-> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
+To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
 
 ## HTTP request
-To delete the specified onlineMeeting by meeting ID with delegated permission: 
+To get an onlineMeeting using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}
-```
-
-To delete the specified onlineMeeting by meeting ID with application permission:
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **Note:**
+
+> [!NOTE]
 > - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
@@ -80,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-call-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-call-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

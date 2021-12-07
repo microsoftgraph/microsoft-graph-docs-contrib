@@ -1,7 +1,7 @@
 ---
 title: "identityUserFlowAttribute resource type"
 description: "Represents user flow attributes in an Azure Active Directory tenant and an Azure AD B2C tenant."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "jkdouglas"
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Represents user flow attributes in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
 
 Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attribute; for example, Given Name, Surname, City, and Postal Code. You can also configure custom user flow attributes to collect information from a user that is not built in to the directory. Custom user flow attributes are an abstraction over [Azure Active Directory schema extensions](/azure/active-directory/develop/active-directory-schema-extensions).
+
+[identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) and [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) both inherit from this base type.
 
 ## Methods
 

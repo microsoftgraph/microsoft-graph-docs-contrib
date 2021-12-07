@@ -1,7 +1,7 @@
 ---
 title: "Update authorizationpolicy"
 description: "Update the properties of authorizationPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -44,14 +44,16 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String| Display name for this policy. |
-|description|String| Description of this policy.|
-|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. |
-|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Specifies certain customizable permissions for default user role. |
-|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. |
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. |
+|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. |
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
-|allowInvitesFrom|String|Indicates who can invite external users to the organization. Possible values are:<ul><li>`none` - Prevent everyone, including admins, from inviting external users. Default setting for US Government.</li><li>`adminsAndGuestInviters` - Allow members of Global Administrators, User Administrators, and Guest Inviter roles to invite external users.</li><li>`adminsGuestInvitersAndAllMembers` - Allow the above admin roles and all other User role members to invite external users.</li><li>`everyone` - Allow everyone in the organization, including guest users, to invite external users. Default setting for all cloud environments except US Government.</li></ul> |
+|allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` is the default setting for all cloud environments except US Government. See more on the allowed values in this [table](../resources/authorizationpolicy.md#allowinvitesfrom-values). |
+|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell set this property to `true`. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. |
+|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Specifies certain customizable permissions for default user role. |
+|description|String| Description of this policy.|
+|displayName|String| Display name for this policy. |
+|guestUserRoleId|Guid| Represents role templateId for the role that should be granted to guest user. Currently following roles are supported:  User (`a0b1b346-4d3e-4e8b-98f8-753987be4970`), Guest User (`10dae51f-b6af-4016-8d66-8c2a99b929b3`), and Restricted Guest User (`2af84b1e-32c8-42b7-82bc-daa82404023b`). |
+
 
 ## Response
 
@@ -95,6 +97,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-guestuserlevel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-guestuserlevel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,9 +109,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -148,6 +152,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -156,9 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -203,6 +209,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -211,9 +221,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -256,6 +264,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -264,9 +276,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -311,6 +321,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -319,9 +333,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -368,6 +380,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -376,9 +392,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http

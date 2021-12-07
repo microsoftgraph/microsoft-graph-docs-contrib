@@ -206,7 +206,7 @@ The following table shows the properties that are required when you create the i
 |spotlightBlockInternetResults|Boolean|Indicates whether or not to block Spotlight search from returning internet results on supervised device.|
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
-|wiFiConnectOnlyToConfiguredNetworks|Boolean|Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.|
+|wiFiConnectOnlyToConfiguredNetworks|Boolean|Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode. Available for devices running iOS and iPadOS versions 14.4 and earlier. Devices running 14.5+ should use the setting, “WiFiConnectToAllowedNetworksOnlyForced.|
 |classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will request permission from the teacher when attempting to leave the course (iOS 11.3 and later).|
 |keychainBlockCloudSync|Boolean|Indicates whether or not iCloud keychain synchronization is blocked. Requires a supervised device for iOS 13 and later.|
 |pkiBlockOTAUpdates|Boolean|Indicates whether or not over-the-air PKI updates are blocked. Setting this restriction to false does not disable CRL and OCSP checks (iOS 7.0 and later).|
@@ -238,6 +238,13 @@ The following table shows the properties that are required when you create the i
 |sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
 |appClipsBlocked|Boolean|Prevents a user from adding any App Clips and removes any existing App Clips on the device.|
 |applePersonalizedAdsBlocked|Boolean|Limits Apple personalized advertising when true. Available in iOS 14 and later.|
+|nfcBlocked|Boolean|Disable NFC to prevent devices from pairing with other NFC-enabled devices. Available for iOS/iPadOS devices running 14.2 and later.|
+|autoUnlockBlocked|Boolean|Blocks users from unlocking their device with Apple Watch. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|unpairedExternalBootToRecoveryAllowed|Boolean|Allow users to boot devices into recovery mode with unpaired devices. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|onDeviceOnlyDictationForced|Boolean|Disables connections to Siri servers so that users can’t use Siri to dictate text. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|wiFiConnectToAllowedNetworksOnlyForced|Boolean|Require devices to use Wi-Fi networks set up via configuration profiles. Available for devices running iOS and iPadOS versions 14.5 and later.|
+|onDeviceOnlyTranslationForced|Boolean|When set to TRUE, the setting disables connections to Siri servers so that users can’t use Siri to translate text. When set to FALSE, the setting allows connections to to Siri servers to users can use Siri to translate text. Available for devices running iOS and iPadOS versions 15.0 and later.|
+|managedPasteboardRequired|Boolean|Open-in management controls how people share data between unmanaged and managed apps. Setting this to true enforces copy/paste restrictions based on how you configured <b>Block viewing corporate documents in unmanaged apps </b> and <b> Block viewing non-corporate documents in corporate apps.</b>|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -252,7 +259,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10633
+Content-length: 10907
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -543,6 +550,13 @@ Content-length: 10633
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
+  "autoUnlockBlocked": true,
+  "unpairedExternalBootToRecoveryAllowed": true,
+  "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
+  "onDeviceOnlyTranslationForced": true,
+  "managedPasteboardRequired": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -552,7 +566,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10805
+Content-Length: 11079
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -846,10 +860,16 @@ Content-Length: 10805
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
+  "autoUnlockBlocked": true,
+  "unpairedExternalBootToRecoveryAllowed": true,
+  "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
+  "onDeviceOnlyTranslationForced": true,
+  "managedPasteboardRequired": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

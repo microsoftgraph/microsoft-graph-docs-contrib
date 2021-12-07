@@ -1,8 +1,8 @@
 ---
 title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
-localization_priority: Normal
-author: "mmast-msft"
+author: "mlafleur"
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a class. Because a class is also a universal group, deleting a class deletes the group.
+Delete an [educationClass](../resources/educationclass.md). Because a class is also a universal group, deleting a class deletes the group.
+
+> [!IMPORTANT]
+> Because a class is also a universal group, deleting a class deletes the group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}
-
 ```
 ## Request headers
 | Header       | Value |
@@ -41,7 +43,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -68,9 +70,13 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
 <!-- {
@@ -92,4 +98,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

@@ -1,7 +1,7 @@
 ---
 title: "Update icon"
 description: "Update the properties of icon object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.prod: ""
@@ -57,7 +57,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",
@@ -65,7 +64,7 @@ Content-length: 39
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,7 +73,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",

@@ -2,7 +2,7 @@
 title: "teamworkHostedContent resource type"
 description: "Represents rich content hosted by Microsoft Teams."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -34,7 +34,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamworkHostedContent",
   "id": "String (identifier)",
   "contentBytes": "Binary",
   "contentType": "String"

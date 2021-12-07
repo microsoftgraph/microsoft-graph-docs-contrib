@@ -1,7 +1,7 @@
 ---
 title: "Configure synchronization with directory extension attributes"
 description: "Customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -111,6 +111,10 @@ Authorization: Bearer {Token}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

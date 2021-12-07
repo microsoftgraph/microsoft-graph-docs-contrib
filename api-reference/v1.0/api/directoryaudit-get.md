@@ -1,7 +1,7 @@
 ---
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SarahBar"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -21,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+|Application | AuditLog.Read.All and Directory.Read.All |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 
@@ -32,7 +35,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -79,26 +82,27 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
 Here is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit"
+  "@odata.type": "microsoft.graph.directoryAudit"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 218
-```
 
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
@@ -126,9 +130,9 @@ Content-length: 218
 			"modifiedProperties": [{
 				"displayName": "Action Client Name",
 				"oldValue": null,
-				"newValue": "DirectorySync" }],
-			"groupType": "unifiedGroups"
+				"newValue": "DirectorySync" 
 			}],
+			"groupType": "unifiedGroups"
 		}, {
 			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
 			"displayName": null,

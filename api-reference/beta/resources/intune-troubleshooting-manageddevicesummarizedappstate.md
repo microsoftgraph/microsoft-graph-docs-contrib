@@ -2,7 +2,7 @@
 title: "managedDeviceSummarizedAppState resource type"
 description: "Event representing a user's devices with failed or pending apps."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
-
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Event representing a user's devices with failed or pending apps.
@@ -20,7 +18,7 @@ Event representing a user's devices with failed or pending apps.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|summarizedAppState|[runState](../resources/intune-shared-runstate.md)|runState for the object. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|summarizedAppState|[runState](../resources/intune-troubleshooting-runstate.md)|runState for the object. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |deviceId|String|DeviceId of device represented by this object|
 
 ## Relationships

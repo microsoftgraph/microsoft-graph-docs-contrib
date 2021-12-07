@@ -2,7 +2,7 @@
 title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 * This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +97,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 461
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",

@@ -2,7 +2,7 @@
 title: "Create educationUser"
 description: "Create a new user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -56,7 +56,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/users
 Content-type: application/json
-Content-length: 508
 
 {
   "displayName": "Dion Matheson",
@@ -105,13 +104,17 @@ Content-length: 508
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from-educationroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationuser-from-educationroot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -121,7 +124,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13012",

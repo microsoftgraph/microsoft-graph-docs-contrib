@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let riskyUsers = await client.api('/identityProtection/riskyUsers')
+let response = await client.api('/tenantRelationships/managedTenants/riskyUsers/{riskyUserId}')
 	.version('beta')
 	.get();
 

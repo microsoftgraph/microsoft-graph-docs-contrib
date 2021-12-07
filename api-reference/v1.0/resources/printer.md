@@ -2,7 +2,7 @@
 title: printer resource type
 description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printer resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents a printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 
@@ -51,6 +49,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
+|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -92,7 +91,8 @@ The following is a JSON representation of the resource.
   },
   "registeredDateTime": "String (timestamp)",
   "isShared": "Boolean",
-  "hasPhysicalDevice": "Boolean"
+  "hasPhysicalDevice": "Boolean",
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -86,11 +86,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-mute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+> **Note:** The response object shown here might be shortened for readability. 
 
 
 <!-- {

@@ -2,7 +2,7 @@
 title: "Get sourceCollection"
 description: "Read the properties and relationships of a sourceCollection object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -91,12 +91,16 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-sourcecollection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-sourcecollection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,7 +117,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "allTenantMailboxes",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",

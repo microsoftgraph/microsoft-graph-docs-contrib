@@ -1,7 +1,7 @@
 ---
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -84,12 +84,16 @@ GET https://graph.microsoft.com/v1.0/organization
 [!INCLUDE [sample-code](../includes/snippets/java/get-organization-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organization-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +103,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
@@ -107,19 +110,19 @@ Content-length: 411
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "datetime-value",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+          "assignedDateTime": "2017-07-29T02:16:28Z",
+          "capabilityStatus": "Enabled",
+          "service": "SharePoint",
+          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
         }
       ],
       "businessPhones": [
-        "businessPhones-value"
+        "8006427676"
       ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
+      "city": "redmond",
+      "country": null,
+      "countryLetterCode": "US",
+      "displayName": "Contoso"
     }
   ]
 }

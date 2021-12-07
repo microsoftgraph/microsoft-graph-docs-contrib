@@ -1,10 +1,10 @@
 ---
 title: "Get privilegedRoleSettings"
 description: "Retrieve the role settings for the given role. A privilegedRoleSettings object will be returned."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # Get privilegedRoleSettings
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Retrieve the role settings for the given role. A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.
 ## Permissions
@@ -75,10 +77,14 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/settings
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedrolesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +93,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 228
 
 {
   "minElevationDuration": "2016-10-19T10:37:00Z",

@@ -1,7 +1,7 @@
 ---
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SarahBar"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -20,8 +20,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
-| Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | AuditLog.Read.All                           |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | AuditLog.Read.All and Directory.Read.All    |
+
+> [!IMPORTANT]
+> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 
@@ -33,13 +36,13 @@ GET /auditLogs/directoryaudits
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 | Parameter                                                       | Description                                                                   | Example                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$filter](/graph/query_parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
-| [\$top](/graph/query_parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
-| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| [\$filter](/graph/query-parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
+| [\$top](/graph/query-parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### Attributes supported by \$filter parameter
 
@@ -103,6 +106,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,24 +117,21 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit",
+  "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 271
-```
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{

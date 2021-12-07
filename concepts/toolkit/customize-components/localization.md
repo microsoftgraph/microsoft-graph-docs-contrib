@@ -1,7 +1,7 @@
 ---
 title: "Localizing the Microsoft Graph Toolkit components"
 description: "Use LocalizationHelper to localize Microsoft Graph Toolkit components."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
 ---
 
@@ -192,5 +192,22 @@ The strings can be set at a global level or per component (with the `_components
   personalInterestsSubSectionTitle: "Personal Interests",
   birthdaySubSectionTitle: "Birthday",
   currentYearSubtitle: "Current"
+}
+```
+
+### File
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
 }
 ```

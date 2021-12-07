@@ -1,7 +1,7 @@
 ---
 title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "stephenjust"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -95,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -176,6 +180,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-expanded-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,7 +191,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

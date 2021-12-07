@@ -1,7 +1,7 @@
 ---
 title: "Create permissionGrantConditionSet in excludes collection of permissionGrantPolicy"
 description: "Add conditions under which a permission grant event is excluded in a permission grant policy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -87,6 +87,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-create-excludes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-create-excludes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +98,7 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -115,6 +119,7 @@ Content-type: application/json
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": false
+  "clientApplicationsFromVerifiedPublisherOnly": false,
+  "certifiedClientApplicationsOnly": false
 }
 ```

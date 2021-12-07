@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1245
+Content-length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -92,7 +92,8 @@ Content-length: 1245
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
     "aospUserAssociatedCount": 7,
-    "linuxCount": 10
+    "linuxCount": 10,
+    "chromeOSCount": 13
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -119,7 +120,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1358
+Content-Length: 1384
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -143,7 +144,8 @@ Content-Length: 1358
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
     "aospUserAssociatedCount": 7,
-    "linuxCount": 10
+    "linuxCount": 10,
+    "chromeOSCount": 13
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -165,7 +167,6 @@ Content-Length: 1358
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
