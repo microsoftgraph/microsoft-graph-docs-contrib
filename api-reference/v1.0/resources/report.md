@@ -17,6 +17,33 @@ For details about the settings that govern identification/de-identification of i
 
 Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
+## Cloud deployments
+
+The following table shows the availability for each API across all cloud deployments.
+
+| APIs                                                         | Microsoft Graph global service | **Microsoft Cloud for US Government** | **Microsoft Cloud China operated by 21Vianet** | **Microsoft Cloud Germany** |
+| ------------------------------------------------------------ | ------------------------------ | ------------------------------------- | ---------------------------------------------- | --------------------------- |
+| [Microsoft 365 activations](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Microsoft 365 active users](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Microsoft 365 groups activity](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Microsoft Teams device usage](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Microsoft Teams user activity](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Outlook activity](/graph/api/resources/email-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Outlook app usage](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Outlook mailbox usage](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [OneDrive activity](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [OneDrive usage](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [SharePoint activity](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [SharePoint site usage](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Skype for Business activity](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Skype for Business device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Skype for Business organizer activity](/graph/api/resources/skype-for-business-organizer-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Skype for Business participant activity](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Skype for Business peer-to-peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Yammer activity](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Yammer device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Yammer groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
