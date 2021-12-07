@@ -12,6 +12,6 @@ const client = Client.init(options);
 
 await client.api('/me/drive/items/{item-id}/unfollow')
 	.version('beta')
-	.delete();
+	.post();
 
 ```

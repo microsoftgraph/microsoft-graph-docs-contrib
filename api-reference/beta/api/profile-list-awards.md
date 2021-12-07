@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/profile/awards
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemawards-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itemawards-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcServicePlan resource type"
-description: "Represents a defined collection of service plan configurations that Cloud PCs support for a tenant."
+description: "Represents a Windows 365 service plan configured for a Cloud PC."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a defined collection of service plan configurations that Cloud PCs support for a tenant.
+Represents a Windows 365 service plan configured for a Cloud PC.
+
+For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, Microsoft Graph API is available for Windows 365 Enterprise.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the service plans that Cloud PCs support for this tenant.|
+|[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the currently available service plans that the organization can purchase for the Cloud PCs.|
 
 ## Properties
 

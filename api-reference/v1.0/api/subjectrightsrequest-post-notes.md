@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and an [authore
 ``` http
 POST https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 Content-Type: application/json
-Content-length: 203
 
 {
 "content": 
@@ -91,6 +90,10 @@ Content-length: 203
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authorednote-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
