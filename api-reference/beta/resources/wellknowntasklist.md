@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A built-in task list which cannot be renamed or deleted. To Do has two built-in lists, **Flagged emails** and **Tasks** list.
+A built-in task list which cannot be renamed or deleted. To Do has two built-in lists, **flagged email** and **tasks** list.
 
 This resource supports adding your data to custom properties as [open extensions](/graph/extensibility-overview)
 
@@ -38,8 +38,8 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 |Member|Description|
 |:---|:---|
 |none| User created list.|
-|defaultList| Built-in **Tasks** list.|
-|flaggedEmails| Built-in **Flagged email** list. Tasks from flagged emails are present in this list.|
+|defaultList| Built-in **tasks** list.|
+|flaggedEmails| Built-in **flagged email** list. Tasks from flagged emails are present in this list.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
