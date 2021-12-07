@@ -47,6 +47,24 @@
                 {
                     "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
                     "ApiChange": "Member",
+                    "ChangedApiName": "sourceImageNotGeneralized",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageNotGeneralized` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-12-06T11:09:07.127Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckCredentialsExpired",
                     "ChangeType": "Addition",
                     "Description": "Added the `adJoinCheckCredentialsExpired` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
@@ -184,7 +202,7 @@
         },
         {
             "ChangeList": [      
-              {
+                {
                     "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "galleryImages",
