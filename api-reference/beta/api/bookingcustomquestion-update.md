@@ -88,7 +88,8 @@ Content-length: 165
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bookingCustomQuestion"
 }
 -->
 
