@@ -65,8 +65,8 @@ However, your app might still temporarily need Azure AD Graph permissions. This 
     ],
     ```
 
-1. Save your changes.
-1. Select **API permissions** and in the **Configured permissions** for your app registration, select **Grant admin consent** to grant the Azure AD Graph permissions to your app registration.
+7. Save your changes.
+8. Select **API permissions** and in the **Configured permissions** for your app registration, select **Grant admin consent** to grant the Azure AD Graph permissions to your app registration.
 
 ## Option 3: Use the Microsoft Graph API
 
