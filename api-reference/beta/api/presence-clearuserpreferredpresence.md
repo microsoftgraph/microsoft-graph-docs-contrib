@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear the preferred presence if it was earlier set for the user.
+Clear the preferred presence if it was set earlier for the user.
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

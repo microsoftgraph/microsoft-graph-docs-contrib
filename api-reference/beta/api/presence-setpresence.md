@@ -20,9 +20,9 @@ A user can have multiple presence sessions because the user can be on multiple T
 
 Similarly, an application can have its own presence session for a user and be able to update the state.
 
-The following is the precedence for how session states are aggregated:
+The following describes the precedence for how session states are aggregated, with "A > B" representing A having precedence over B:
 * User-configured > app-configured (user-configured state overrides others)
-* Among app-configured: DoNotDisturb (currently not supported for set presence) > Busy > Available > Away
+* Among app-configured: DoNotDisturb (currently not supported by **setPresence**) > Busy > Available > Away
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.

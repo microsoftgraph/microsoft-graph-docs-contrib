@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the preferred presence of a user. If the preferred presence of a user is set, the user's presence will show as the preferred presence.
+Customize the presence of a user based on personalized preference. 
+
+If the preferred presence of a user is set, the user's presence will show as the preferred presence.
 
 > [!IMPORTANT]
 >
-> Preferred presence will take effect only when there is at least one presence session of the user, otherwise, the user's presence stays as Offline.
+> Preferred presence takes effect only when there is at least one [presence session](presence-setpresence.md#presence-sessions) of the user. Otherwise, the user's presence stays as Offline.
 >
-> A presence session can be created if the user is signed in on Teams client, or by calling the setPresence API. For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
+> A presence session can be created if the user is signed in on a Teams client, or by calling the [setPresence](presence-setpresence.md) API. 
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
