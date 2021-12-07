@@ -373,7 +373,7 @@ In both the v1.0 and beta endpoints, the response to `GET /users/id/messages` in
 
 ## Reports
 
-### Azure AD activity reports can return an error
+### License check errors for Azure AD activity reports
 
 When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
 

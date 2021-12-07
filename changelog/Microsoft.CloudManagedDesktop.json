@@ -121,6 +121,24 @@
                 {
                     "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
                     "ApiChange": "Member",
+                    "ChangedApiName": "sourceImageNotGeneralized",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageNotGeneralized` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-12-06T11:09:07.127Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckCredentialsExpired",
                     "ChangeType": "Addition",
                     "Description": "Added the `adJoinCheckCredentialsExpired` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
@@ -218,7 +236,7 @@
             "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-11-30T010:21:26.512Z",
+            "CreatedDateTime": "2021-11-30T01:21:26.512Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
@@ -258,7 +276,7 @@
         },
         {
             "ChangeList": [      
-              {
+                {
                     "Id": "883dd660-201a-11ec-bd5a-a13d1ed8c60f",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "galleryImages",
@@ -290,6 +308,40 @@
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },    
+        {
+            "ChangeList": [
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "microsoftManagedDesktop",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **microsoftManagedDesktop** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "microsoftManagedDesktop",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [microsoftManagedDesktop](https://docs.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Target": "microsoftManagedDesktop"
+                },
+                {
+                    "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "microsoftManagedDesktopType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **microsoftManagedDesktopType** enumeration type.",
+                    "Target": "microsoftManagedDesktopType"
+                }
+            ],
+            "Id": "fa715a9e-b0ec-416c-a5cc-cf51d108c2eb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-12-06T06:22:12.122Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
         {
             "ChangeList": [
                 {
