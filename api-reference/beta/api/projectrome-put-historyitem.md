@@ -64,7 +64,6 @@ Here is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
-Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",

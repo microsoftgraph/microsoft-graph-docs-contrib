@@ -52,6 +52,9 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyLifetime | Enforce a max lifetime range for a symmetric key.   | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019. |
 | asymmetricKeyLifetime | Enforce a max lifetime range for an asymmetric key (certificate).   | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019. |
 
+> [!Note]
+> All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
+
 ### Single vs multi-tenant apps
 
 Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:

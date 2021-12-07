@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List printJobs for a printerShare
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve a list of print jobs associated with the [printerShare](../resources/printershare.md).
 
 ## Permissions

@@ -38,7 +38,7 @@ Apply the following best practices for consent and authorization in your app:
 
   - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 

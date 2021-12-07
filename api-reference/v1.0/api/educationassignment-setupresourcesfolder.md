@@ -91,7 +91,6 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
@@ -154,7 +153,6 @@ If the specified **assignment** already has a folder, this method returns a `400
 ```http
 HTTP/1.1 400 Bad request
 Content-type: application/json
-Content-length: 158
 
 {
     "error": {

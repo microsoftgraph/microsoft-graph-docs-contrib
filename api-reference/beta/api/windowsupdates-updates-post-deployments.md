@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `201 Created` response code and a [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [deployme
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-Type: application/json
-Content-length: 344
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
@@ -107,6 +106,10 @@ Content-length: 344
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-deployment-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-deployment-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -162,7 +165,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"
