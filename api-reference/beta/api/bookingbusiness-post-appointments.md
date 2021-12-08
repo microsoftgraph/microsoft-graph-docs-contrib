@@ -353,7 +353,7 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-01T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
     "maximumAttendeesCount": 5,
     "filledAttendeesCount": 1,
     "customer":[
