@@ -1,6 +1,6 @@
 ---
 title: "educationCategory: delta"
-description: "Retrieve a list of category objects with delta support."
+description: "Get a list of newly created or updated educationCategory objects without performing a full read of the collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of newly created or updated [educationCategory](../resources/educationcategory.md) objects without performing a full read of the collection.
 
-> It doesn't return deleted **categories**.
+> This method doesn't return deleted categories.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,11 +49,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [educationCategory](../resources/educationcategory.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [educationCategory](../resources/educationcategory.md) collection in the response body.
 
 ## Examples
 
-### Example 1: Get assignment categories with delta query support
+### Example 1: Get assignment categories
 
 #### Request
 
@@ -112,7 +112,7 @@ Content-length: 344
 }
 ```
 
-### Example 2: Get next set of categories with delta query support
+### Example 2: Get next set of categories 
 
 #### Request
 
