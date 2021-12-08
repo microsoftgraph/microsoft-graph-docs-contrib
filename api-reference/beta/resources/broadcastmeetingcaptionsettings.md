@@ -90,7 +90,6 @@ The following lists the supported language codes for translation languages.
 | Malagasy (Madagascar)                    | mg      |
 | Malay (Malaysia)                         | ms      |
 | Maltese (Malta)                          | mt      |
-| Norwegian (Norway)                       | nb      |
 | Persian (Iran)                           | fa      |
 | Polish (Poland)                          | pl      |
 | Portuguese (Brazil)                      | pt      |
