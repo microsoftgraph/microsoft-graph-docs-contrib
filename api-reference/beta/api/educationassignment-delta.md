@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-`$expand`, `$orderby`, `$search` and `$filter` options are not supported in delta query.
+This method does not support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
 
 ## HTTP request
 
