@@ -17,7 +17,7 @@ Experiment with new APIs before you integrate them into your application.
 
 ## Authentication
 
-To access the data in Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following:
+To access the data through Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following options:
 
 - The HTTP *Authorization* request header, as a *Bearer* token
 - The graph client constructor, when using a Microsoft Graph client library
@@ -28,22 +28,24 @@ Use the Microsoft Authentication Library API, [MSAL](/azure/active-directory/dev
 
 Apply the following best practices for consent and authorization in your app:
 
-- **Use least privilege**. Only request permissions that are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users), and choose the least privileged permissions. For a full list of permissions, see [permissions reference](permissions-reference.md).
+- **Use permissions for only API operations you app does**. Only request permissions that are necessary, and only when you need them. For example, do not grant an app the *Calendars.Read* permission if it doesn't read the user's calendar.
 
-- **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
+- **Use least privilege**. Grant users and apps only the lowest privileged permission they require to call the API. Check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users)), and choose the least privileged permissions. For example, if the app will read only the profile of the currently signed-in user, grant *User.Read* instead of *User.ReadBasic.All*. For a full list of permissions, see [permissions reference](permissions-reference.md).
 
-    >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
-<!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+- **Use the correct permission type based on scenarios**. **DO NOT** use both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use *application permissions*.
+
+    Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, bypassing policies configured by an administrator.
+
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
-  - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
+  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use will show up in consent and other experiences - so make sure to configure these settings carefully so they are understood by your end users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
+  - Ensure that you understand the difference between [static and dynamic or incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
   - Tenant administrators can disable the ability for end users to consent to applications. In this case, an administrator would need to consent on behalf of their users.
-  - Tenant administrators can set custom authorization policies such as blocking users from reading other user's profiles, or limiting self-service group creation to a limited set of users. In this case, your application should expect to handle 403 error response when acting on behalf of a user.
+  - Tenant administrators can set custom authorization policies such as blocking users from reading other user's profiles, or limiting self-service group creation to a limited set of users. In this case, your application should expect to handle `403 Forbidden` error response when acting on behalf of a user.
 
 ## Handle responses effectively
 
