@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [educationCategory](../resources/educationcategory.md) objects with delta support.
-
-Delta query supports **assignment categories** to effectively query new or modified entities without performing a full read of the **categories** every request.
+Get a list of newly created or updated [educationCategory](../resources/educationcategory.md) objects without performing a full read of the collection.
 
 Delete operations are not covered.
 

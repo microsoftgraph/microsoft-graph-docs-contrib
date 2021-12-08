@@ -12,13 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [assignment](../resources/educationassignment.md) objects with delta support. 
+Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full ready of the collection.
 
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
-Delta query supports **assignments** to effectively query new or modified entities without performing a full read of the **assignments** every request.
-
-Delete operations are not covered.
+> It doesn't return deleted **assignments**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
