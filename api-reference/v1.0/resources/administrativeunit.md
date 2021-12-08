@@ -38,19 +38,23 @@ This topic provides descriptions of the declared properties and navigation prope
 |[Remove a scoped-role member](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role member.|
 
 ## Properties
+
+> [!IMPORTANT]
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#administrative-unit-properties).
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|string|An optional description for the administrative unit.|
-|displayName|string|Display name for the administrative unit.|
-|id|string|Unique identifier for the administrative unit. Read-only.|
+|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`).|
+|displayName|string|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
+|id|string|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
 |visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for this Administrative Unit. Nullable.|
-|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
+|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
 ## JSON representation
 
