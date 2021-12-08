@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: delta"
-description: "Retrieve a list of assignment objects with delta support."
+description: "Get a list of newly created or updated assignments without having to perform a full ready of the collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -16,7 +16,7 @@ Get a list of newly created or updated [assignments](../resources/educationassig
 
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
-> It doesn't return deleted **assignments**.
+> **Note:** This method doesn't return deleted **assignments**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and an [educationA
 
 The following is an example of the request. 
 
-Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments, otherwise you will get all the assignments in the class.
+Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments; otherwise, you will get all the assignments in the class.
 
 <!-- {
   "blockType": "request",
