@@ -195,7 +195,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 <td> All users in group 'g1' are allowed to access any application <b>except</b> application 'a1'. </td>
 </tr>
 <tr>
-<td> Allow users of group 'g1' and block access to application 'a1' </td>
+<td> Block users in group 'g1' from accessing any application </td>
 <td>
 
 ``` json
@@ -223,6 +223,96 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 </td>
 <td> Users of group 'g1' cannot access any application. Other users not in group 'g1' have access to all applications. </td>
+</tr>
+<tr>
+<td> Block users of group 'g1' and allow access to application 'a1' only </td>
+<td>
+
+``` json
+"b2bSetting": {
+    "usersAndGroups": {
+        "accessType": "blocked",
+        "targets": [
+            {
+                "target": "g1",
+                "targetType": "group"
+            }
+        ]
+    },
+    "applications": {
+        "accessType": "allowed",
+        "targets": [
+            {
+                "target": "a1",
+                "targetType": "application"
+            }
+        ]
+    }
+}
+```
+
+</td>
+<td> Users of group 'g1' cannot access any application. Any user not in group 'g1' can only access application 'a1'. </td>
+</tr>
+<tr>
+<td> Allow users of group 'g1' and limit access to only application 'a1' </td>
+<td>
+
+``` json
+"b2bSetting": {
+    "usersAndGroups": {
+        "accessType": "allowed",
+        "targets": [
+            {
+                "target": "g1",
+                "targetType": "group"
+            }
+        ]
+    },
+    "applications": {
+        "accessType": "allowed",
+        "targets": [
+            {
+                "target": "a1",
+                "targetType": "application"
+            }
+        ]
+    }
+}
+```
+
+</td>
+<td> Users in group 'g1' are only allowed to access application 'a1'. All users, including users in group 'g1' are blocked from accessing any other application. </td>
+</tr>
+<tr>
+<td> Allow users of group 'g1' and limit access to only application 'a1' </td>
+<td>
+
+``` json
+"b2bSetting": {
+    "usersAndGroups": {
+        "accessType": "allowed",
+        "targets": [
+            {
+                "target": "g1",
+                "targetType": "group"
+            }
+        ]
+    },
+    "applications": {
+        "accessType": "allowed",
+        "targets": [
+            {
+                "target": "a1",
+                "targetType": "application"
+            }
+        ]
+    }
+}
+```
+
+</td>
+<td> Users of group 'g1' are blocked for application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
 </table>
 
