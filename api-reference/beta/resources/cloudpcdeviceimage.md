@@ -38,7 +38,7 @@ Represents the image resource on a Cloud PC.
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -56,6 +56,8 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotFound|Source image is inaccessible or not found.|
 |osVersionNotSupported| OS version is not supported.|
 |sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
