@@ -21,10 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List userRegistrationDetails](../api/userregistrationdetails-list.md)|[userRegistrationDetails](../resources/userregistrationdetails.md) collection|Get a list of the [userRegistrationDetails](../resources/userregistrationdetails.md) objects and their properties.|
-|[Create userRegistrationDetails](../api/authenticationmethodsroot-post-userregistrationdetails.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Create a new [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
 |[Get userRegistrationDetails](../api/userregistrationdetails-get.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
-|[Update userRegistrationDetails](../api/userregistrationdetails-update.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Update the properties of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
-|[Delete userRegistrationDetails](../api/userregistrationdetails-delete.md)|None|Deletes a [userRegistrationDetails](../resources/userregistrationdetails.md) object.|
 
 ## Properties
 |Property|Type|Description|
