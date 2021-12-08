@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC organization settings for a tenant. And there's only one [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) in one tenant.
+Represents the Cloud PC organization settings for a tenant, which has only one **cloudPcOrganizationSettings** object.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,8 +25,8 @@ Represents the Cloud PC organization settings for a tenant. And there's only one
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the organization settings.|
-|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|The account type of user on provisioned Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
-|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|The version of OS to provision on Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
+|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|The account type of the user on provisioned Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 
 ### cloudPcOperatingSystem values
 
@@ -40,8 +40,8 @@ Represents the Cloud PC organization settings for a tenant. And there's only one
 
 |Member|Description|
 |:---|:---|
-|standardUser|A user without local administrator permissions on the Cloud PC. Can only install content from the Microsoft Store app. Cannot modify Windows settings that require local administrator privileges.|
-|administrator|A user with full local administrator permissions on the Cloud PC. Can install any software and modify any file or setting on the Cloud PC.|
+|standardUser|A user without local administrative permissions on the Cloud PC. Standard users can only install content from the Microsoft Store app but they cannot modify Windows settings that require local administrative privileges.|
+|administrator|A user with full local administrative permissions on the Cloud PC. Administrators can install any software and modify any file or setting on the Cloud PC.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

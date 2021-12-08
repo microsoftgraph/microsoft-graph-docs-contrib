@@ -21,8 +21,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |:---|:---|:---|
 |[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
-|[ChangeUserAccountType](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
-|[EndGracePeriod](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
+|[Change user account type](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
+|[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
 |[Reprovision cloudPC remote action](../api/manageddevice-reprovisioncloudpc.md)|None|Reprovision a Cloud PC with Intune managed device id.|
 |[Bulk reprovision cloudPCs remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
@@ -34,21 +34,21 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The Cloud PC display name.|
-|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning/deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
-|lastModifiedDateTime|DateTimeOffset|The Cloud PC's last modified date and time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |managedDeviceId|String|The Cloud PC’s Intune device ID.|
 |managedDeviceName|String|The Cloud PC’s Intune device name.|
-|onPremisesConnectionName|String|The on-premises connection that is applied during provisioning of Cloud PCs.|
-|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of OS to provision on Cloud PCs. Possible values: `windows10`, `windows11` and `unknownFutureValue`.|
+|onPremisesConnectionName|String|The on-premises connection that is applied during the provisioning of Cloud PCs.|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, and `unknownFutureValue`.|
 |provisioningPolicyId|String|The Cloud PC's provisioning policy ID.|
 |provisioningPolicyName|String|The provisioning policy that is applied during provisioning of Cloud PCs.|
 |servicePlanId|String|The Cloud PC's service plan ID.|
 |servicePlanName|String|The Cloud PC's service plan name.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|Status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed` and `unknownFutureValue`.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`, and `unknownFutureValue`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of user on provisioned Cloud PCs. Possible values: `standardUser`, `administrator` and `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, and `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 
 ### cloudPcStatus values
@@ -63,7 +63,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |failed|The operation on Cloud PC has failed.|
 |provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. The user can continue to use this Cloud PC.|
 |resizing|The Cloud PC is resizing.|
-|pendingProvision|The Cloud PC is pending provisioning. This means the number of Cloud PCs in grace period is more than the number of total available license.|
+|pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

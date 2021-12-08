@@ -9934,6 +9934,8 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Change user accout type
+            href: api/cloudpc-changeuseraccounttype.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
@@ -10030,6 +10032,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC organization settings
+          href: resources/cloudpcorganizationsettings.md
+          items:
+          - name: Get
+            href: api/cloudpcorganizationsettings-get.md
+          - name: Update
+            href: api/cloudpcorganizationsettings-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:

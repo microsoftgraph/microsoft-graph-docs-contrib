@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object. And there's only one [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) in one tenant.
+Update the properties of the [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object in the current tenant, which has only one **cloudPcOrganizationSettings** object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,8 +45,8 @@ PATCH /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userAccountType|cloudPcUserAccountType|The account type of user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`. Optional.|
-|osVersion|cloudPcOperatingSystem|The version of OS to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`. Optional.|
+|userAccountType|cloudPcUserAccountType|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`. Optional.|
+|osVersion|cloudPcOperatingSystem|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`. Optional.|
 
 
 ## Response
@@ -75,7 +75,6 @@ Content-length: 127
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

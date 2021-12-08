@@ -73,7 +73,6 @@ Content-length: 35
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
