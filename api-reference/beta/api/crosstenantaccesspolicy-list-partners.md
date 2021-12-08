@@ -88,7 +88,16 @@ Content-Type: application/json
       "b2bDirectConnectOutbound": null,
       "b2bDirectConnectInbound":
       {
-        "usersAndGroups": null,
+        "usersAndGroups": 
+        {
+          "accessType": "allowed",
+          "targets": [
+            {
+              "target": "AllUsers",
+              "targetType": "user"
+            }
+          ]
+        },
         "applications":
         {
           "accessType": "allowed",
