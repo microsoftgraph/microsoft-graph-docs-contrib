@@ -1,0 +1,19 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/resources/iteminsightssettings.md",
+      "redirect_url": "/graph/api/resources/insightssettings?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/iteminsightssettings-get.md",
+      "redirect_url": "/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/iteminsightssettings-update.md",
+      "redirect_url": "/graph/api/insightssettings-update?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

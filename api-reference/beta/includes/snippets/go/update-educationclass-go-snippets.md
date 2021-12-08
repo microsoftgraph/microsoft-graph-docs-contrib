@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 educationClassId := "educationClass-id"
-graphClient.Education().ClassesById(&educationClassId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).Patch(nil)
 
 
 ```
