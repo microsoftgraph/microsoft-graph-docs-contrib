@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and [meetingReg
 
 <!-- {
   "blockType": "request",
-  "name": "create-external-registration",
+  "name": "create-externalregistration",
   "@odata.type": "microsoft.graph.externalMeetingRegistration"
 }-->
 
@@ -81,7 +81,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "create-external-registration",
+  "name": "create-externalregistration",
   "truncated": true,
   "@odata.type": "microsoft.graph.externalMeetingRegistration"
 }-->

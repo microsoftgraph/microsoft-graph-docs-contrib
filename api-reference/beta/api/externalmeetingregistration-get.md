@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
 
 <!-- {
   "blockType": "request",
-  "name": "get-external-registration"
+  "name": "get-externalregistration"
 }-->
 
 ```msgraph-interactive

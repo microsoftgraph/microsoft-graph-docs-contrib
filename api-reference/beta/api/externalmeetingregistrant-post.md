@@ -128,7 +128,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "name": "add-externalregistratrant-public",
+  "name": "add-externalregistratrant-private",
   "@odata.type": "microsoft.graph.externalMeetingRegistrant"
 }-->
 
