@@ -3,6 +3,22 @@
       {
         "ChangeList": [
             {
+              "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+              "ApiChange": "Resource",
+              "ChangedApiName": "userRegistrationDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the **userRegistrationDetails** relationship to [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+              "Target": "authenticationMethodsRoot"
+            },
+            {
+              "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+              "ApiChange": "Resource",
+              "ChangedApiName": "userRegistrationDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the [userRegistrationDetails](https://docs.microsoft.com/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource",
+              "Target": "userRegistrationDetails"
+            },
+            {
                 "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
                 "ApiChange": "Relationship",
                 "ChangedApiName": "provisioning",
