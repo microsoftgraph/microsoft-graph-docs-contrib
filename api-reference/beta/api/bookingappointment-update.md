@@ -70,6 +70,7 @@ In the request body, supply the values for relevant fields that should be update
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 
 
 ## Response

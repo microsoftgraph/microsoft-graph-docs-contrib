@@ -37,7 +37,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
-|customQuestionAnswers|[bookingQuestionAnswer](../resources/bookingquestionanswer.md) collection|This contains a custom question, answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment |
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment |
@@ -90,9 +90,9 @@ The following is a JSON representation of the resource.
   "customerNotes": "String",
   "customerPhone": "String",
   "customerTimeZone": "String",
-  "customQuestionAnswers": [
+  "customers": [
     {
-      "@odata.type": "microsoft.graph.bookingQuestionAnswer"
+      "@odata.type": "microsoft.graph.bookingCustomerInformation"
     }
   ],
   "duration": "String (timestamp)",

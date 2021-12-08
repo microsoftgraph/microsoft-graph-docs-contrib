@@ -193,7 +193,48 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
+    "maximumAttendeesCount": 5,
+    "filledAttendeesCount": 0,
+    "customer":[
+        {
+            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            "customerName": "Jordan Miller",
+            "customerEmailAddress": "jordanm@contoso.com",
+            "customerPhone": "213-555-0199",
+            "customerNotes": null,
+            "customerLocation": 
+            {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": 
+                {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": null
+            },
+            "customQuestionAnswers":
+            {
+                "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                "question": "What is your age",
+                "answerInputType": "text",
+                "answerOptions": [],
+                "isRequired": "true",
+                "answer": "25",
+                "selectedOptions":[]
+            }
+        }
+    ]
 }
 ```
 
