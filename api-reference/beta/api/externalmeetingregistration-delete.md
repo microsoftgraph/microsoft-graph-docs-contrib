@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete meetingRegistration
+# Delete externalMeetingRegistration
 
 Namespace: microsoft.graph
 

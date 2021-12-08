@@ -1,5 +1,5 @@
 ---
-title: "Delete meetingRegistrant"
+title: "Delete externalMeetingRegistrant"
 description: "Remove an externalMeetingRegistrant from an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Unenroll meeting registrant
+# Delete externalMeetingRegistrant
 
 Namespace: microsoft.graph
 

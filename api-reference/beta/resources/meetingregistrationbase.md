@@ -1,6 +1,6 @@
 ---
 title: "meetingRegistrationBase resource type"
-description: "Contains information about online meeting registration."
+description: "Contains information about base meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"

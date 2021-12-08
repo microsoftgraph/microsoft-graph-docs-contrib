@@ -1,6 +1,6 @@
 ---
 title: "externalMeetingRegistration resource type"
-description: "Represents an external meeting registrant who has enrolled in an online meeting."
+description: "Contains information about external meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"

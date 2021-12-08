@@ -1,13 +1,13 @@
 ---
-title: "List registrants"
-description: "Get a list of the externalMeetingRegistrant of an onlineMeeting."
+title: "List externalMeetingRegistrants"
+description: "Get a list of the externalMeetingRegistrants of an onlineMeeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List registrants
+# List externalMeetingRegistrants
 
 Namespace: microsoft.graph
 

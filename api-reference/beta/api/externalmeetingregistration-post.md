@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create meetingRegistration
+# Create externalMeetingRegistration
 
 Namespace: microsoft.graph
 
