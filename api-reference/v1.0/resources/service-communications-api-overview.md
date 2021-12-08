@@ -49,6 +49,10 @@ Service communications API is available on Microsoft Graph national clouds as we
 |Microsoft Graph Germany|https://graph.microsoft.de/v1.0/admin/serviceAnnouncement/|
 |Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/v1.0/admin/serviceAnnouncement/|
 
+## Service Communications limits
+
+To guarantee the service performance, Service Communications API has throttling limit for the requests per tenant per application. The limits are described in [throttling limits for Service Communications service](/graph/throttling#service-communications-service-limits).
+
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
