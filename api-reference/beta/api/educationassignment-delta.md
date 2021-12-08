@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [assignment](../resources/educationassignment.md) objects with delta support. 
 
-A teacher or an application executing with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
+A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
 Delta query supports **assignments** to effectively query new or modified entities without performing a full read of the **assignments** every request.
 
@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [educationAssignment](../resources/educationassignment.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) collection in the response body.
 
 ## Examples
 
