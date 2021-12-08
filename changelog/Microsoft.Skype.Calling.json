@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "captions",
           "ChangeType": "Addition",
-          "Description": "Added the **captions** property to [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **captions** property to the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-beta) resource.",
           "Target": "broadcastMeetingSettings"
         }
       ],

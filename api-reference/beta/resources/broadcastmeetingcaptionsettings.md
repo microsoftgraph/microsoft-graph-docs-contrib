@@ -1,6 +1,6 @@
 ---
 title: "broadcastMeetingCaptionSettings resource type"
-description: "Caption settings related to Teams live event"
+description: "Represents caption settings of a Microsoft Teams live event."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,23 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Caption settings related to a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Refer to [see also](#see-also) section for Teams client behavior of this feature.
+Represents caption settings related of a Microsoft Teams [live event](/microsoftteams/teams-live-events/what-are-teams-live-events). For details about how to use live captions in Teams client, see [Use live captions in a live event](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a).
 
 ## Properties
 
-| Property             | Type              | Description                          |
-|:---------------------|:------------------|:-------------------------------------|
-| isCaptionEnabled     | Boolean           | Indicates if caption is enabled.     |
-| spokenLanguage       | String            | The spoken language.                 |
-| translationLanguages | String collection | The translation languages (up to 6). |
+| Property             | Type              | Description                                                     |
+|:---------------------|:------------------|:----------------------------------------------------------------|
+| isCaptionEnabled     | Boolean           | Indicates whether caption is enabled for this Teams live event. |
+| spokenLanguage       | String            | The spoken language.                                            |
+| translationLanguages | String collection | The translation languages (choose up to 6).                     |
 
 > [!TIP]
 >
->- See following tables for supported language codes for spoken language and translation languages.
->- You can only provide up to 6 translation languages.
->- Translation language must be different from spoken language.
+> Translation language must be different from spoken language.
 
 ### spokenLanguage values
+
+The following lists the supported language codes for spoken language.
 
 | Spoken language           | Value   |
 |:--------------------------|:--------|
@@ -51,11 +51,13 @@ Caption settings related to a [Microsoft Teams live event](/microsoftteams/teams
 
 ### translationLanguaes values
 
+The following lists the supported language codes for translation languages.
+
 | Translation language                     | Value   |
 |------------------------------------------|---------|
 | Afrikaans (South Africa)                 | af      |
 | Arabic (Egypt)                           | ar      |
-| Bosnia (Latin)                           | bs      |
+| Bosnian (Latin)                          | bs      |
 | Bulgarian (Bulgaria)                     | bg      |
 | Catalan                                  | ca      |
 | Chinese (Simplified, PRC)                | zh-Hans |
@@ -132,7 +134,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
-## See also
-
-- [Use live captions in a live event](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a)
