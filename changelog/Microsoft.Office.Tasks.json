@@ -2,6 +2,22 @@
   "changelog": [
     {
       "ChangeList": [
+      {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTask"
+        },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
