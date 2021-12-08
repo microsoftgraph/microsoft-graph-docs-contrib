@@ -77,6 +77,14 @@
                 {
                     "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCustomerInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingCustomerInformation](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomerInformation?view=graph-rest-beta) resource type.",
+                    "Target": "bookingCustomerInformation"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Resource",
                     "ChangedApiName": "bookingQuestionAnswer",
                     "ChangeType": "Addition",
                     "Description": "Added the [bookingQuestionAnswer](https://docs.microsoft.com/en-us/graph/api/resources/bookingQuestionAnswer?view=graph-rest-beta) resource type.",
@@ -93,9 +101,9 @@
                 {
                     "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
                     "ApiChange": "Property",
-                    "ChangedApiName": "customQuestionAnswers",
+                    "ChangedApiName": "customers",
                     "ChangeType": "Addition",
-                    "Description": "Added the **customQuestionAnswers** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Description": "Added the **customers** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
                     "Target": "bookingAppointment"
                 },
                 {
