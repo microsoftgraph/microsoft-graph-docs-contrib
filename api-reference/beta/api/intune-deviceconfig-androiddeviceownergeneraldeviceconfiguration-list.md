@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9636
+Content-Length: 9759
 
 {
   "value": [
@@ -117,6 +117,9 @@ Content-Length: 9636
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "crossProfilePoliciesAllowCopyPaste": true,
+      "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+      "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
       "microsoftLauncherConfigurationEnabled": true,
       "microsoftLauncherCustomWallpaperEnabled": true,
       "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -234,9 +237,7 @@ Content-Length: 9636
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
-      "safeBootBlocked": true,
       "screenCaptureBlocked": true,
-      "securityAllowDebuggingFeatures": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
@@ -285,6 +286,7 @@ Content-Length: 9636
   ]
 }
 ```
+
 
 
 
