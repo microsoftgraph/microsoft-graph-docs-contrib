@@ -10350,7 +10350,7 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
-        - name: Get Delta
+        - name: Get delta
           href: api/educationassignment-delta.md          
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
@@ -10375,7 +10375,7 @@ items:
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
-        - name: Get Delta
+        - name: Get delta
           href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
