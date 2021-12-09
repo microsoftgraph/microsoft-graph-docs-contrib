@@ -1,6 +1,6 @@
 ---
 title: "broadcastMeetingSettings resource type"
-description: "Settings related to a Teams live event"
+description: "Represents settings related to a live event in Microsoft Teams."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings related to a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).
+Represents settings related to a [live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in Microsoft Teams.
 
 ## Properties
 
