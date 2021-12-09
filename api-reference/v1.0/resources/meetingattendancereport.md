@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.meetingAttendanceReport",
+  "id": "String(identifier)",
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
   "totalParticipantCount": "Int32",

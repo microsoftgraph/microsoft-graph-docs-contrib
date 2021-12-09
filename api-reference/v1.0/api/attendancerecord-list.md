@@ -38,7 +38,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 
 > [!TIP]
 >
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 
@@ -92,12 +92,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
-        "displayName": "(display name)",
+        "displayName": "Frederick Cormier",
         "tenantId": null
       },
       "attendanceIntervals": [
@@ -109,12 +109,12 @@ Content-Type: application/json
       ]
     },
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
-        "displayName": "(display name)",
+        "displayName": "Lisa Adkins",
         "tenantId": null
       },
       "attendanceIntervals": [

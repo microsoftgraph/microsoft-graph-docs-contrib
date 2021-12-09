@@ -36,7 +36,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 
 > [!TIP]
 >
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 
@@ -99,12 +99,12 @@ Content-Type: application/json
   "meetingEndDateTime": "2021-10-05T04:43:49.77Z",
   "attendanceRecords": [
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 1152,
       "role": "Presenter",
       "identity": {
-        "id": "(redacted)",
-        "displayName": "(redacted)",
+        "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
+        "displayName": "Frederick Cormier",
         "tenantId": null
       },
       "attendanceIntervals": [

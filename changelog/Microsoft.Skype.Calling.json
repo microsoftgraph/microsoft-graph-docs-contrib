@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
           "ChangeType": "Addition",
-          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource and supported methods.",
+          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource and a supported method.",
           "Target": "attendanceRecord"
         },
         {

@@ -17,9 +17,9 @@ Contains information associated with an attendance interval in an [attendanceRec
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
+| durationInSeconds | Int32 | Duration of the meeting interval in seconds; that is, the difference between **joinDateTime** and **leaveDateTime**. |
 | joinDateTime | DateTime | The time the attendee joined in UTC. |
 | leaveDateTime | DateTime | The time the attendee left in UTC. |
-| durationInSeconds | Int32 | Duration of the meeting interval in seconds; that is, the difference between **joinDateTime** and **leaveDateTime**. |
 
 > [!TIP]
 > When data is lacking, the value of **joinDateTime** or **leaveDateTime** will be set to `null`, and the value of **durationInSeconds** will be set to `0` in the response body of the [Get meetingAttendanceReport](/graph/api/meetingattendancereport-get?view=graph-rest-v1.0&preserve-view=true) method.
@@ -37,11 +37,9 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-
 {
     "joinDateTime": "String (timestamp)",
     "leaveDateTime": "String (timestamp)",
     "durationInSeconds": "Int32"
 }
-    
 ```

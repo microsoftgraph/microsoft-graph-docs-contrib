@@ -1,6 +1,6 @@
 ---
 title: "attendanceRecord resource type"
-description: "Contains information associated with an attendance record in a meeting attendance report."
+description: "Contains information associated with an attendance record in a meetingAttendanceReport."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information associated with an attendance record in a meeting attendance report.
+Contains information associated with an attendance record in a [meetingAttendanceReport](meetingattendancereport.md).
 
 ## Methods
 
@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 -->
 
 ```json
-
 {
   "@odata.type": "#microsoft.graph.attendanceRecord",
   "emailAddress": "String",
@@ -57,5 +56,4 @@ The following is a JSON representation of the resource.
     }
   ]
 }
-
 ```
