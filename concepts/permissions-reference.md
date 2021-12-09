@@ -1629,12 +1629,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
 | _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
+| _Presence.ReadWrite_ | Read and write a user's presence information | Allows the app to read the presence information and write activity and availability on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.ReadWrite.All_ | Read and write presence information for all users | Allows the app to read all presence information and write activity and availability of all users in the directory without a signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
 
 ### Example usage
 
 * _Presence.Read_: If you're signed in, retrieve your own presence information (`GET /me/presence`)
 * _Presence.Read.All_: Retrieve the presence information of another user (`GET /users/{id}/presence`)
 * _Presence.Read.All_: Retrieve the presence information of multiple users (`POST /communications/getPresencesByUserId`)
+* _Presence.ReadWrite_:
+  * If you're signed in, set the state of your presence session (`POST /me/presence/setPresence`)
+  * If you're signed in, set your own preferred presence (`POST /me/presence/setUserPreferredPresence`)
+* _Presence.ReadWrite.All_:
+  * Set the state of a user's presence session as an application (`POST /users/{id}/presence/setPresence`)
+  * Set the preferred presence of a user as an application (`POST /users/{id}/presence/setUserPreferredPresence`)
 
 ---
 
