@@ -42,6 +42,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## `model=B` requirements
 
+>**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
+
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |

@@ -2,6 +2,14 @@
 ms.localizationpriority: medium
 ---
 
+### Administrative unit properties
+
+| Property Name | eq | startsWith | ge | le | null value |
+|--|--|--|--|--|--|
+| description | ![Requires advanced query parameters][AQP] | ![Requires advanced query parameters][AQP] |  |  | ![Not Supported][NS] |
+| displayName | ![Supported by Default][RDS] | ![Supported by Default][RDS] |  |  | ![Requires advanced query parameters][AQP] |
+
+
 ### Application properties
 
 | Property Name                                 | eq                                         | startsWith                                 | ge                                         | le                                         | null value                                 |

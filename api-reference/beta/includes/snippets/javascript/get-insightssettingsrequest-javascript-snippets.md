@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let itemInsightsSettings = await client.api('/organization/{organizationId}/settings/itemInsights')
+let insightsSettings = await client.api('/organization/{organizationId}/settings/itemInsights')
 	.version('beta')
 	.get();
 
