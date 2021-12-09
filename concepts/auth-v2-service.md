@@ -9,13 +9,13 @@ ms.custom: graphiamtop20
 
 # Get access without a user
 
-Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than those carried by the signed-in user.  
+Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these apps are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than the signed-in user may have.  
 
-Apps that call Microsoft Graph with their own identity use the OAuth 2.0 [client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to get access tokens from Azure AD. This topic describes the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token.
+Apps that call Microsoft Graph with their own identity use the OAuth 2.0 [client credentials grant flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to get access tokens from Azure AD. This article describes the basic steps to configure a service and use the OAuth client credentials grant flow to get an access token.
 
 ## Authentication and authorization steps
 
-The basic steps required to configure a service and get a token from the Microsoft identity platform endpoint that your service can use to call Microsoft Graph under its own identity are:
+The following are the basic steps to configure a service and get a token from the Microsoft identity platform endpoint that your service can use to call Microsoft Graph under its own identity:
 
 1. Register your app.
 2. Configure permissions for Microsoft Graph on your app.
@@ -40,21 +40,25 @@ With the OAuth 2.0 client credentials grant flow, your app authenticates directl
 
 ## 2. Configure permissions for Microsoft Graph
 
-For apps that call Microsoft Graph under their own identity, Microsoft Graph exposes application permissions (Microsoft Graph can also expose delegated permissions for apps that call Microsoft Graph on behalf of a user). You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can either consent to these permissions using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions-reference.md)
+Microsoft Graph exposes **application permissions** for apps that call Microsoft Graph under their own identity (Microsoft Graph can also expose delegated permissions for apps that call Microsoft Graph on behalf of a user).
 
-To configure application permissions for your app in the [Azure app registrations portal](https://go.microsoft.com/fwlink/?linkid=2083908): under an application's **API permissions** page, choose **Add a permission**, select **Microsoft Graph**, and then choose the permissions your app requires under **Application permissions**.
+You pre-configure the application permissions your app needs when you register your app. Application permissions always require administrator consent. An administrator can consent to these permissions either using the [Azure portal](https://portal.azure.com) when your app is installed in their organization, or you can provide a sign-up experience in your app through which administrators can consent to the permissions you configured. Once administrator consent is recorded by Azure AD, your app can request tokens without having to request consent again. For more detailed information about the permissions available with Microsoft Graph, see the [Permissions reference](./permissions-reference.md)
+
+To configure application permissions for your app in the [Azure app registrations portal](https://go.microsoft.com/fwlink/?linkid=2083908), under an application's **API permissions** page, choose **Add a permission**, select **Microsoft Graph**, and then choose the permissions your app requires under **Application permissions**.
 
 The following screenshot shows the **Select Permissions** dialog box for Microsoft Graph application permissions.
 
-![Select Permissions dialog for Microsoft Graph application permissions.](./images/auth-v2/v2-application-permissions.png)
+:::image type="content" source="./images/auth-v2/v2-application-permissions.png" alt-text="Select Permissions dialog for Microsoft Graph application permissions." border="true":::
 
-> **Note**: We recommend that you configure the least privileged set of permissions required by your app. This provides a much more comfortable experience for administrators than having to consent to a long list of permissions.
+> [!IMPORTANT]
+> 
+> We recommend that you configure the least privileged set of permissions required by your app. This improves the privilege security of your app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 ## 3. Get administrator consent
 
 You can rely on an administrator to grant the permissions your app needs at the [Azure portal](https://portal.azure.com); however, often, a better option is to provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint. 
 
-> **Important**: Any time you make a change to the configured permissions, you must also repeat the Admin Consent process. Changes made in the app registration portal will not be reflected until consent has been reapplied by the tenant's administrator.
+> **Note**: Any time you make a change to the configured permissions, you must also repeat the Admin Consent process. Changes made in the app registration portal will not be reflected until consent has been reapplied by the tenant's administrator.
 
 ### Request
 
@@ -71,16 +75,16 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 |:--------------|:------------|:------------
 | tenant        | Required    | The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`.
 | client_id     | Required    | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned to your app.
-| redirect_uri  | Required    | The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments.
+| redirect_uri  | Required    | The redirect URI where you want the response to be sent for your app to handle. It must match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments.
 | state         | Recommended | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
 
 ### Administrator consent experience
 
-With requests to the `/adminconsent` endpoint, Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you have requested for your app in the app registration portal.
+With requests to the `/adminconsent` endpoint, Azure AD enforces that only a tenant administrator can sign in to complete the request. The administrator will be asked to approve all the application permissions that you've requested for your app in the app registration portal.
 
-The following is an example of the consent dialog that Azure AD presents to the administrator:
+The following screenshot is an example of the consent dialog that Azure AD presents to the administrator:
 
-![Administrator consent dialog.](./images/admin-consent.png)
+:::image type="content" source="./images/admin-consent.png" alt-text="Administrator consent dialog." border="true":::
 
 ### Response
 
@@ -101,7 +105,7 @@ GET https://localhost/myapp/permissions
 | admin_consent | Set to **true**.
 
 
-> **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a Global administrator for an Azure AD tenant, you will be presented with the administrator consent dialog box for the app. (This will be a different app than that in the consent dialog box screenshot shown earlier.)
+> **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a global administrator for an Azure AD tenant, you will be presented with the administrator consent dialog box for the app. (This will be a different app than that in the consent dialog box screenshot shown earlier.)
 > 
 > https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
@@ -133,7 +137,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 | tenant        | Required  | The directory tenant that you want to request permission from. This can be in GUID or friendly name format.
 | client_id     | Required  | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
 | scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app in the app registration portal, it should issue a token for the ones associated with the resource you want to use.
-| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal. Ensure that it is URL encoded.
+| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal. Ensure that it's URL encoded.
 | grant_type    | Required  | Must be `client_credentials`.
 
 #### Token response
@@ -200,7 +204,7 @@ Content-Length: 407
 Apps that call Microsoft Graph under their own identity fall into one of two categories:
 
 - [Background services (daemons)](/azure/active-directory/develop/scenario-daemon-overview) that run on a server without a signed-in user.
-- Apps that have a signed-in user but also call Microsoft Graph with their own identity; for example, to use functionality that requires more elevated privileges than those of the user.
+- Apps that have a signed-in user but also call Microsoft Graph with their own identity; for example, to use functionality that requires more elevated privileges than the user may have.
 
 Apps that call Microsoft Graph with their own identity use the OAuth 2.0 client credentials grant to authenticate with Azure AD and get a token. For the Microsoft identity platform endpoint, you can explore this scenario further with the following resources:
 
@@ -218,11 +222,12 @@ Microsoft continues to support the Azure AD endpoint. There are [several differe
 
 You can explore this scenario further with the following resources:
 
-- For information about using the Microsoft identity platform with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform documentation](/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, quickstarts, tutorials, code samples, and protocol documentation for different kinds of apps supported by the Microsoft identity platform.
+- For information about using the Microsoft identity platform with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform documentation](/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview articles, quickstarts, tutorials, code samples, and protocol documentation for different kinds of apps supported by the Microsoft identity platform.
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries).
 
 
 ## See also
 
-- For an example of a web app hosted on Azure App Service calling Microsoft Graph as the app (using managed identities), see [Tutorial: Access Microsoft Graph from a secured app as the app](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). This tutorial shows you how to create a system-assigned managed identity on a web app, add Microsoft Graph API permissions to a managed identity, and call Microsoft Graph.
+- [Choose a Microsoft Graph authentication provider based on scenario](/graph/sdks/choose-authentication-providers?tabs=CS)
+- For an example of a web app hosted on Azure App Service calling Microsoft Graph as the app (using managed identities), see [Access Microsoft Graph from a secured app as the app](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). This tutorial shows you how to create a system-assigned managed identity on a web app, add Microsoft Graph API permissions to a managed identity, and call Microsoft Graph.
 - For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
