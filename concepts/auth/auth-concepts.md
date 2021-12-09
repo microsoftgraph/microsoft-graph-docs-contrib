@@ -92,7 +92,7 @@ _Effective permissions_ are the permissions that your app has when making reques
 | App type scenarios | Web / Mobile / single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on-behalf of a user](../auth-v2-user.md) | [Get access as a service](../auth-v2-service.md) |
 | Who can consent | <li> Users can consent for their data <li> Admins can consent for all users | Only admin can consent |
-| Alternative names | <li>OAuth2 permissions   <li>Impersonation access permission <li>[OAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | <li> App-roles <li>App-only permissions <li>Direct access permissions <li> [appRoleAssignments](/graph/api/resources/approleassignment) |
+| Alternative names | <li>OAuth2 permissions   <li>Impersonation access permission <li>[oAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | <li> App-roles <li>App-only permissions <li>Direct access permissions <li> [appRoleAssignments](/graph/api/resources/approleassignment) |
 
 
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
