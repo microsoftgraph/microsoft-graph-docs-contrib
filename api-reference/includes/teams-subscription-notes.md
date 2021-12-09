@@ -27,7 +27,7 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
-### Request example
+#### Request example
 
 Specify the `model` query parameter in the **resource** property in the request body.
 
