@@ -12924,14 +12924,14 @@ items:
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications (preview)
+    - name: Notifications (deprecated)
       items:
       - name: Overview
         href: resources/notifications-api-overview.md
-      - name: Notification
+      - name: Notification (deprecated)
         href: resources/projectrome-notification.md
         items:
-        - name: Create and send a notification
+        - name: Create and send a notification (deprecated)
           href: api/user-post-notifications.md
     - name: People and workplace intelligence
       items:
