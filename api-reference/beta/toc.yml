@@ -9934,6 +9934,12 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reboot
+            href: api/cloudpc-reboot.md
+          - name: Rename
+            href: api/cloudpc-rename.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
