@@ -25,8 +25,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
 | [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                                                |
 | [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.                                  |
-| [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a presence session of an application. |
-| [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application.                                       |
+| [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a [presence session](../api/presence-setpresence.md#presence-sessions) of an application for a user. |
+| [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                                       |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
 

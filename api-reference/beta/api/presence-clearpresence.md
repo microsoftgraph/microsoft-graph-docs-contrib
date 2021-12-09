@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear a presence session of an application. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
+Clear a [presence session](presence-setpresence.md#presence-sessions) of an application for a user. If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
 
-For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
+Read more about [presence sessions](presence-setpresence.md#presence-sessions) and their [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive). 
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
