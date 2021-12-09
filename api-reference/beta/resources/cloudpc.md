@@ -32,7 +32,6 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Resize cloudPC remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing CloudPC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
 
-
 ## Properties
 
 |Property|Type|Description|
@@ -110,7 +109,7 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "gracePeriodEndDateTime": "String (timestamp)",
   "userAccountType": "String",
-  "osVersion": "String"
+  "osVersion": "String",
   "lastRemoteActionResult": "String",
   "lastLoginResult": "String"
 }
