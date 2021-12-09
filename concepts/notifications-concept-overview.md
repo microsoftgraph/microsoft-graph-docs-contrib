@@ -10,7 +10,7 @@ author: "merzink"
 # Enabling human-centric notification experiences using Microsoft Graph notifications (deprecated)
 
 > [!IMPORTANT]
-> The Microsoft Graph notifications API are being deprecated. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
 
 Notifications are one of the most effective ways to reengage with your application users. A great notification experience can help open a near real-time communication channel between you and your users, and that in turn can increase app engagement at the right time, make users more productive, and alert them to important events or required actions.
 

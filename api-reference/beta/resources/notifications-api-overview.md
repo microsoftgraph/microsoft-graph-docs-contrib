@@ -10,7 +10,7 @@ author: "merzink"
 # Use the notifications REST API in Microsoft Graph (deprecated)
 
 > [!IMPORTANT]
-> The Microsoft Graph notifications API are being deprecated. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.  
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.  
 
 You can use the notifications API in Microsoft Graph to send push notifications to a user. Simply post a notification to your target user, and the platform will deliver the notification to all device endpoints registered to that user. The high-level flow is as follows:
 
