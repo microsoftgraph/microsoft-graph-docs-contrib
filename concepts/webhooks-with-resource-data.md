@@ -380,7 +380,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
+2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8&preserve-view=true)) with the private key.
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.
 
@@ -390,7 +390,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
   
     Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
 
-5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
+5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8&preserve-view=true)) to decrypt the content in **data**.
 
     - Use the following decryption parameters for the AES algorithm:
 
