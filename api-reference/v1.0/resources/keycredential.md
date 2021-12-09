@@ -4,14 +4,14 @@ description: "Contains a key credential associated with an application or a serv
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "sureshja"
+author: "madansr7"
 ---
 
 # keyCredential resource type
 
 Namespace: microsoft.graph
 
-Contains a key credential associated with an application <!--or a service principal-->. The **keyCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> entity is a collection of **keyCredential**.
+Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **keyCredential**.
 
 ## Properties
 | Property	   | Type	|Description|

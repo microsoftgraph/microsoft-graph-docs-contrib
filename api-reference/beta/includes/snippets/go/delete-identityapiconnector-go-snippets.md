@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 identityApiConnectorId := "identityApiConnector-id"
-graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Delete(options)
+graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Delete(nil)
 
 
 ```

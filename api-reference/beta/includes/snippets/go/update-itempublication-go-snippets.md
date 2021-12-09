@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 itemPublicationId := "itemPublication-id"
-graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
+graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(nil)
 
 
 ```
