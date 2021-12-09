@@ -64,7 +64,7 @@ In the request body, provide a JSON object with the following parameters.
 | roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
 | expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
-| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any current existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
+| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
 
 ## Example
 
