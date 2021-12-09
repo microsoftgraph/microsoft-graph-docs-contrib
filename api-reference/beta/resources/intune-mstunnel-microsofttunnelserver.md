@@ -2,7 +2,7 @@
 title: "microsoftTunnelServer resource type"
 description: "Entity that represents a single Microsoft Tunnel server"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -61,6 +61,7 @@ Here is a JSON representation of the resource.
   "serverImageDigest": "String"
 }
 ```
+
 
 
 

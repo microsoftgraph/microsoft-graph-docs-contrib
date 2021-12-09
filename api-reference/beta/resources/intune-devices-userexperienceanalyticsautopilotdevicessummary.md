@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsAutopilotDevicesSummary resource type"
 description: "The user experience analytics summary of Devices not windows autopilot ready."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -42,6 +42,7 @@ Here is a JSON representation of the resource.
   "totalWindows10DevicesWithoutTenantAttached": 1024
 }
 ```
+
 
 
 

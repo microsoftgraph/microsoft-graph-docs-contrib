@@ -2,7 +2,7 @@
 title: "iosSingleSignOnExtension resource type"
 description: "An abstract base class for all iOS-specific single sign-on extension types."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -39,6 +39,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosSingleSignOnExtension"
 }
 ```
+
 
 
 

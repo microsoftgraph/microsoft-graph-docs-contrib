@@ -2,7 +2,7 @@
 title: "deviceManagementSettingComparison resource type"
 description: "Entity representing setting comparison result"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -48,6 +48,7 @@ Here is a JSON representation of the resource.
   "comparisonResult": "String"
 }
 ```
+
 
 
 

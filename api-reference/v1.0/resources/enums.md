@@ -11,6 +11,138 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessPackageAssignmentFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|expired|
+|deliveryFailed|
+|unknownFutureValue|
+
+### accessPackageCatalogState values
+
+|Member|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### accessPackageRequestState values
+
+|Member|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### accessPackageRequestType values
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### accessPackageSubjectType values
+
+|Member|
+|:---|
+|notSpecified|
+|user|
+|servicePrincipal|
+|unknownFutureValue|
+
+### connectedOrganizationState values
+
+|Member|
+|:---|
+|configured|
+|proposed|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
 ### lifecycleEventType values
 
 |Member|
@@ -56,13 +188,6 @@ Namespace: microsoft.graph
 |none|
 |assignIfOpen|
 |unknownFutureValue|
-
-### authenticatorAppContextType values
-
-|Member|
-|:---|
-|location|
-|app|
 
 ### fido2RestrictionEnforcementType values
 
@@ -115,12 +240,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### allowInvitesFrom values
 
@@ -1252,6 +1371,7 @@ Possible values for user account types (group membership), per Windows definitio
 | chatEvent |
 | typing |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessagePolicyViolationDlpActionType values
 
@@ -1639,4 +1759,85 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |critical|
+|unknownFutureValue|
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
 |unknownFutureValue|

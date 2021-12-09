@@ -31,7 +31,8 @@ Only Stream data types, including **backgroundLogo** and **backgroundImage**, ar
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
-PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
+
+PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{backgroundImage | bannerLogo | squareLogo}
 ```
 
 ## Request headers
@@ -68,12 +69,13 @@ The following request updates the banner logo for the fr-FR localization.
 
 The following is an example of the request.
 
+
+
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocalization"
 }-->
-
-```http
+```msgraph-interactive
 PUT https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR/bannerLogo
 Content-Type: image/jpeg
 
@@ -86,7 +88,6 @@ Content-Type: image/jpeg
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 NO CONTENT
 ```
@@ -99,12 +100,12 @@ The following request updates the banner logo for the `fr-FR` localization.
 
 The following is an example of the request.
 
+
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocalization6"
 }-->
-
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 
@@ -120,7 +121,6 @@ Content-Type: application/json
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -132,12 +132,12 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocalization7"
 }-->
-
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 
@@ -147,12 +147,12 @@ Content-Type: application/json
 }
 ```
 
+
 #### Response
 
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```

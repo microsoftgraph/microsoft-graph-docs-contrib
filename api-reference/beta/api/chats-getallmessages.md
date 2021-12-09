@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
+[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,6 +38,13 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## Optional query parameters
+
+You can use `model` query parameter which supports the values `A` and `B`, based on the preferred licensing and payment requirements. If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. Following are the examples.
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
 
 This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
@@ -71,7 +80,6 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
 
 {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",

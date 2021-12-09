@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/profile/account/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-useraccountinformation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-useraccountinformation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

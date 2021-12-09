@@ -2,7 +2,7 @@
 title: "macOSCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSCustomConfiguration resource."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -107,6 +107,7 @@ Here is a JSON representation of the resource.
   "deploymentChannel": "String"
 }
 ```
+
 
 
 
