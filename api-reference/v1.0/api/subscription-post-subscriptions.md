@@ -64,6 +64,10 @@ Additional limitations apply for subscriptions on Outlook items. The limitations
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
   - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
 
+### presence
+
+**presence** subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
