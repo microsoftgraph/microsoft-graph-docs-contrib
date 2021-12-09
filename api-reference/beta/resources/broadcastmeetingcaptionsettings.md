@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents caption settings related of a Microsoft Teams [live event](/microsoftteams/teams-live-events/what-are-teams-live-events). For details about how to use live captions in Teams client, see [Use live captions in a live event](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a).
+Represents caption settings of a Microsoft Teams [live event](/microsoftteams/teams-live-events/what-are-teams-live-events). For details about how to use live captions in Teams client, see [Use live captions in a live event](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a).
 
 ## Properties
 
@@ -25,11 +25,11 @@ Represents caption settings related of a Microsoft Teams [live event](/microsoft
 
 > [!TIP]
 >
-> Translation language must be different from spoken language.
+> Translation languages cannot contain the same language code as the spoken language.
 
 ### spokenLanguage values
 
-The following lists the supported language codes for spoken language.
+The following table shows the supported language codes for spoken languages.
 
 | Spoken language           | Value   |
 |:--------------------------|:--------|
@@ -51,7 +51,7 @@ The following lists the supported language codes for spoken language.
 
 ### translationLanguaes values
 
-The following lists the supported language codes for translation languages.
+The following table shows the supported language codes for translation languages.
 
 | Translation language                     | Value   |
 |------------------------------------------|---------|
