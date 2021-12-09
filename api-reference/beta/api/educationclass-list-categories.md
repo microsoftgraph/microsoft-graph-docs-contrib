@@ -52,9 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Examples 1: Get assignment categories
-
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -92,7 +90,7 @@ GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 
