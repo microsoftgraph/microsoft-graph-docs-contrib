@@ -27,7 +27,7 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
@@ -35,7 +35,7 @@ Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) a
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
 - User's presence information update: `/communications/presences/{id}`
 
-The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
+The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
 This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage**-based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
