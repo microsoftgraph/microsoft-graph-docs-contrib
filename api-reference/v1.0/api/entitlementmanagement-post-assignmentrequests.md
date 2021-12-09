@@ -11,12 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-<<<<<<< HEAD
 In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, or to remove an access package assignment.
-=======
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
-
->>>>>>> e5a047701270ddfc2d4de9bcaf41f1125957d2b8
 
 ## Permissions
 
@@ -49,7 +44,6 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-<<<<<<< HEAD
 For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the accessPackageAssignmentPolicy, and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
@@ -58,15 +52,10 @@ For a non-administrator user to request to create their own assignment for eithe
 
 For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-=======
-For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
-
->>>>>>> e5a047701270ddfc2d4de9bcaf41f1125957d2b8
 ## Response
 
 If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
-<<<<<<< HEAD
 If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](entitlementmanagement-list-assignments.md).
 
 ## Examples
@@ -122,11 +111,6 @@ Content-type: application/json
 ```
 
 ### Example 2: Remove an assignment
-=======
-## Examples
-
-### Example 1: Remove an assignment
->>>>>>> e5a047701270ddfc2d4de9bcaf41f1125957d2b8
 
 To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
 
@@ -137,11 +121,8 @@ To remove assignments, create a new accessPackageAssignmentRequest object with t
 
 The following example shows how to remove an assignment.
 
-<<<<<<< HEAD
-=======
 
 # [HTTP](#tab/http)
->>>>>>> e5a047701270ddfc2d4de9bcaf41f1125957d2b8
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
@@ -158,8 +139,6 @@ Content-type: application/json
     }
 }
 ```
-<<<<<<< HEAD
-=======
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -182,7 +161,6 @@ Content-type: application/json
 
 ---
 
->>>>>>> e5a047701270ddfc2d4de9bcaf41f1125957d2b8
 
 #### Response
 
