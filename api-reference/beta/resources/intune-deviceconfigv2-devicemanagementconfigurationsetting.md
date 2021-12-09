@@ -35,7 +35,7 @@ Setting instance within policy
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions|
+|settingDefinitions|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of related Setting Definitions. This property is read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -266,6 +266,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

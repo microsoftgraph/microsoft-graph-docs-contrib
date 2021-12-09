@@ -1,6 +1,6 @@
 ---
 title: "broadcastMeetingSettings resource type"
-description: "Settings related to a live event"
+description: "Represents settings related to a live event in Microsoft Teams."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,26 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings related to a live event.
+Represents settings related to a [live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in Microsoft Teams.
 
 ## Properties
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the live event. Possible values are listed in the following table. |
-| isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this live event. Default value is `false`.          |
-| isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this live event. Default value is `false`.    |
-| isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this live event. Default value is `false`.                |
-| isVideoOnDemandEnabled     | Boolean                  | Indicates whether video on demand is enabled for this live event. Default value is `false`.    |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the Teams live event. Possible values are listed in the following table. |
+| isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this Teams live event. Default value is `false`.          |
+| isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this Teams live event. Default value is `false`.    |
+| isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this Teams live event. Default value is `false`.                |
+| isVideoOnDemandEnabled     | Boolean                  | Indicates whether video on demand is enabled for this Teams live event. Default value is `false`.    |
 
 ### broadcastMeetingAudience values
 
 | Value              | Description                                                       |
 | ------------------ | ----------------------------------------------------------------- |
-| everyone           | The live event will be open to anyone. This is the default value. |
-| organization       | Everyone in your org can join the live event.                     |
-| roleIsAttendee     | Only the specified people can join the live event.                |
-| unknownFutureValue | Unknown future value.                                             |
+| everyone           | This Teams live event will be open to anyone. This is the default value. |
+| organization       | Everyone in your org can join this Teams live event.                     |
+| roleIsAttendee     | Only the specified people can join this Teams live event.                |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.  |
 
 ## JSON representation
 

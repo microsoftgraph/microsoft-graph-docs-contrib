@@ -35,6 +35,7 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | resource | resource | The resource to get from Microsoft Graph (for example, `/me/people`). |
 | scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
+| fallback-details| fallbackDetails| Array of IDynamicPerson objects representing a person or multiple people when no user/person/contact is found in the graph.
 
 The following example sets the maximum number of people to show.
 

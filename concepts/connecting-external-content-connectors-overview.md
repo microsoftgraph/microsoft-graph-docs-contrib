@@ -26,14 +26,13 @@ The following diagram provides a high-level overview of Microsoft Graph connecto
 
 The 100+ connectors currently available from Microsoft and partners enable you to connect to popular Microsoft and non-Microsoft services. Examples of existing connectors include Azure services, Box, ServiceNow, Salesforce, Google services, MediaWiki, and more.
 
-To learn more about the existing Microsoft Graph connectors, visit the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery).
+To learn more about the existing Microsoft Graph connectors, visit the [Microsoft Graph connectors gallery](https://www.microsoft.com/microsoft-search/connectors/).
 
-While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](/microsoftsearch/connectors-gallery). You can use the Microsoft Graph connectors API to build custom connectors to bring your external data into Microsoft 365 experiences, including Microsoft Search, Viva Topics and more (coming soon), within your organization.
+While these connectors help connect to popular services, you may want to integrate with services that aren't available in the existing [connectors gallery](https://www.microsoft.com/microsoft-search/connectors/). You can use the Microsoft Graph connectors API to build custom connectors to bring your external data into Microsoft 365 experiences, including Microsoft Search, Viva Topics and more (coming soon), within your organization.
 
 ## Get started with custom Graph connectors:
 * [Working with the connectors API](connecting-external-content-connectors-api-overview.md)
 * [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
-<!---**(Articles coming next)**
-* [Build your first custom connector with Microsoft Graph]()
+* [Build your first custom Microsoft Graph connector](connecting-external-content-build-quickstart.yml)
 --->
 

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest resource type"
 description: "Represents the request for active role assignment operations through Azure AD Privileged Identity Management."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

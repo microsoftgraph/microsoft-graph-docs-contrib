@@ -12,8 +12,7 @@ const client = Client.init(options);
 
 const externalGroupMember = {
   id: '1431b9c38ee647f6a',
-  type: 'group',
-  identitySource: 'external'
+  type: 'externalGroup',
 };
 
 await client.api('/external/connections/contosohr/groups/31bea3d537902000/members')

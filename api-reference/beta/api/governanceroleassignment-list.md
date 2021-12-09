@@ -4,7 +4,7 @@ description: "Retrieve a collection of governanceRoleAssignments."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # List governanceRoleAssignments
