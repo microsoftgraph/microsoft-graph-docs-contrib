@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcC
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

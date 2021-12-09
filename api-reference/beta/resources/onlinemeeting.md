@@ -90,8 +90,12 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of an online meeting. Read-only. |
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 | registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
+
+> [!TIP]
+> The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
 
 ## JSON representation
 

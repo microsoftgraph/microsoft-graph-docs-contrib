@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/directReports
 [!INCLUDE [sample-code](../includes/snippets/java/contacts-get-directreports-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contacts-get-directreports-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -87,7 +91,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

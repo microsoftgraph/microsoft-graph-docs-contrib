@@ -43,11 +43,11 @@ Only an administrator with the appropriate permissions can perform this operatio
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 

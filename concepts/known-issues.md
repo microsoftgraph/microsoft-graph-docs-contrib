@@ -294,9 +294,11 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
-### allowExternalSenders property cannot be set in a POST or PATCH operation
+### allowExternalSenders property can only be accessed on unified groups
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
@@ -337,7 +339,12 @@ Always specify relative URIs in batch requests. Microsoft Graph then makes these
 
 ### Batch size is limited
 
-JSON batch requests are currently limited to 20 individual requests.
+JSON batch requests are currently limited to 20 individual requests. 
+
+* Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
+
+For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -366,7 +373,7 @@ In both the v1.0 and beta endpoints, the response to `GET /users/id/messages` in
 
 ## Reports
 
-### Azure AD activity reports can return an error
+### License check errors for Azure AD activity reports
 
 When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
 
@@ -408,15 +415,26 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 ### Properties are missing in the list of teams that a user has joined
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
+### Installation of apps that require resource-specific consent permissions is not supported
+The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+- [Add app to team](/graph/api/team-post-installedapps.md)
+- [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
+- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
+
 ## Users
 
-### Use the dollar ($) symbol in the userPrincipalName
+### Get user by userPrincipalName that starts with a dollar ($) symbol
 
 Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
+### Encode number (#) symbols in userPrincipalName
+
+The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+
 ### Access to user resources is delayed after creation
 
-Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404` HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404 Not Found` HTTP error response.
 
 ### Access to a user's profile photo is limited
 

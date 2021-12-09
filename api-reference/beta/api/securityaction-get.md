@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-securityaction-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
