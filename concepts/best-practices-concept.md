@@ -32,7 +32,7 @@ Apply the following best practices for consent and authorization in your app:
 
 - **Use least privilege**. Grant users and apps only the lowest privileged permission they require to call the API. Check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users)), and choose the least privileged permissions. For example, if the app will read only the profile of the currently signed-in user, grant *User.Read* instead of *User.ReadBasic.All*. For a full list of permissions, see [permissions reference](permissions-reference.md).
 
-- **Use the correct permission type based on scenarios**. **DO NOT** use both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use *application permissions*.
+- **Use the correct permission type based on scenarios**. Avoid using both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use *application permissions*.
 
     Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, bypassing policies configured by an administrator.
 
