@@ -102,7 +102,10 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |:-----------|:--------------------|:-----------|:----------------|
 | Cross-device experiences | Activity feed, device relay | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](cross-device-concept-overview.md) |
 
-## User notifications
+## User notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API are being deprecated. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|

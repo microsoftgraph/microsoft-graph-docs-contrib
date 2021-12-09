@@ -346,7 +346,7 @@ items:
                 href: onenote-branding.md
               - name: Error codes
                 href: onenote-error-codes.md
-      - name: Notifications (preview)
+      - name: Notifications (deprecated)
         displayName: Notifications
         items:
           - name: Overview
