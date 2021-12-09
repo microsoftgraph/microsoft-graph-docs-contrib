@@ -35,10 +35,10 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
 | [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
-| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects belonging to this class.                      |
+| [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
 | [Delete](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
-| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
+| [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
 
