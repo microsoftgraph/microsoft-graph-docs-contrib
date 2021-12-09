@@ -76,7 +76,7 @@ After sending an authorization request, the user will be asked to enter their cr
 
 The following is an example of the consent dialog box presented for a Microsoft account user.
 
-:::image type="content" source="./images/v2-consumer-consent.png" alt-text="Consent dialog for Microsoft account." border="true":::
+:::image type="content" source="./images/auth-v2/v2-consumer-consent.png" alt-text="Consent dialog for Microsoft account." border="true":::
 
 > **Try** If you have a Microsoft account or an Azure AD work or school account, you can try this for yourself by clicking the following link. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
 >

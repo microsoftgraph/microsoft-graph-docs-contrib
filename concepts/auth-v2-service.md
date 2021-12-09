@@ -84,7 +84,7 @@ With requests to the `/adminconsent` endpoint, Azure AD enforces that only a ten
 
 The following screenshot is an example of the consent dialog that Azure AD presents to the administrator:
 
-:::image type="content" source="./images/admin-consent.png" alt-text="Administrator consent dialog." border="true":::
+:::image type="content" source="./images/auth-v2/admin-consent.png" alt-text="Administrator consent dialog." border="true":::
 
 ### Response
 
