@@ -137,7 +137,7 @@ Content-Type: application/json
       "role": "Presenter",
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
-        "displayName": "(dispaly name)",
+        "displayName": "(display name)",
         "tenantId": null
       },
       "attendanceIntervals": [

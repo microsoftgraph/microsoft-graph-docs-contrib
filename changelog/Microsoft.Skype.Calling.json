@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
           "ChangeType": "Addition",
-          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource",
+          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource and supported methods.",
           "Target": "attendanceRecord"
         },
         {
@@ -23,15 +23,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingAttendanceReport",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource",
+          "Description": "Added the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource and supported methods.",
           "Target": "meetingAttendanceReport"
         },
         {
           "Id": "508b0389-2906-4441-8729-d5efb56436f5",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "attendanceReports",
           "ChangeType": "Addition",
-          "Description": "Added the **attendanceReports** relationship to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the **attendanceReports** relationship to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],

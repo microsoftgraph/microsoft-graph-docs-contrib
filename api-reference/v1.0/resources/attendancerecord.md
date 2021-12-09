@@ -23,10 +23,10 @@ Contains information associated with an attendance record in a meeting attendanc
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving. |
-| emailAddress | String | Email address. |
-| identity | [Identity](identity.md) | Identifier, such as display name. |
-| role | String | Role of the attendee. Possible values are `None`, `Attendee`, `Presenter`, and `Organizer`.  |
+| attendanceIntervals | [attendanceInterval](attendanceInterval.md) collection | List of time periods between joining and leaving a meeting. |
+| emailAddress | String | Email address of the user associated with this atttendance record. |
+| identity | [identity](identity.md) | Identity of the user associated with this atttendance record. |
+| role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
 ## JSON representation
