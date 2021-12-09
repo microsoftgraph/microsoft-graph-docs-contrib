@@ -45,6 +45,48 @@
     {
       "ChangeList": [
         {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUserPreferredPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta) action to the [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearUserPreferredPresence",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta) action to the [presence](https://docs.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Presence.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `Presence.ReadWrite` which can be used with [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-beta), [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-beta), [setUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta), and [clearUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta).",
+          "Target": "presence"
+        },
+        {
+          "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Presence.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Presence.ReadWrite.All` which can be used with [setPresence](https://docs.microsoft.com/en-us/graph/api/presence-setpresence?view=graph-rest-beta), [clearPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearpresence?view=graph-rest-beta), [setUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta), and [clearUserPreferredPresence](https://docs.microsoft.com/en-us/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta).",
+          "Target": "presence"
+        }
+      ],
+      "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-08T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Presence"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "78707d6f-571b-4a27-9e90-b290ce1c42ff",
           "ApiChange": "Resource",
           "ChangedApiName": "attendanceRecord",
