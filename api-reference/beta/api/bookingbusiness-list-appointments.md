@@ -102,11 +102,11 @@ Content-type: application/json
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
                     "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
-                    "customerName": "Bob Kelly",
-                    "customerEmailAddress": "bobk@tailspintoys.com",
-                    "customerPhone": "213-555-0108",
-                    "customerNotes": null,
-                    "customerLocation": {
+                    "name": "Bob Kelly",
+                    "emailAddress": "bobk@tailspintoys.com",
+                    "phone": "213-555-0108",
+                    "notes": null,
+                    "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,
                         "locationUri": "",
@@ -130,7 +130,7 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "customerTimeZone": "America/Chicago"                
+                    "timeZone": "America/Chicago"                
                 }
             ],
             "customerTimeZone": "America/Chicago",
@@ -188,11 +188,11 @@ Content-type: application/json
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
                     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-                    "customerName": "Jordan Miller",
-                    "customerEmailAddress": "jordanm@contoso.com",
-                    "customerPhone": "213-555-0199",
-                    "customerNotes": null,
-                    "customerLocation": {
+                    "name": "Jordan Miller",
+                    "emailAddress": "jordanm@contoso.com",
+                    "phone": "213-555-0199",
+                    "notes": null,
+                    "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,
                         "locationUri": "",
@@ -216,7 +216,7 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "customerTimeZone": "America/Chicago"
+                    "timeZone": "America/Chicago"
                 }
             ],
             "customerTimeZone": "America/Chicago",
