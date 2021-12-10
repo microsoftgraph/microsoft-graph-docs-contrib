@@ -65,13 +65,13 @@ In the request body, supply the values for relevant fields that should be update
 |customerName (deprecated)|String|Use the `customers` collection instead.|
 |customerNotes (deprecated)|String|Use the `customers` collection instead.|
 |customerPhone (deprecated)|String|Use the `customers` collection instead.|
-|end (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use endDateTime instead.|
+|end (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use `endDateTime` instead.|
 |invoiceAmount (deprecated)|Double|The billed amount on the invoice.|
 |invoiceDate (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
 |invoiceId (deprecated)|String|The ID of the invoice.|
 |invoiceStatus (deprecated)|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl (deprecated)|String|The URL of the invoice in Microsoft Bookings.|
-|start (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use startDateTime instead.|
+|start (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use `startDateTime` instead.|
 
 
 ## Response
