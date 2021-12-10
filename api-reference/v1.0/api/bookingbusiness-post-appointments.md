@@ -131,11 +131,11 @@ Content-type: application/json
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-            "customerName": "Jordan Miller",
-            "customerEmailAddress": "jordanm@contoso.com",
-            "customerPhone": "213-555-0199",
-            "customerNotes": null,
-            "customerLocation": {
+            "name": "Jordan Miller",
+            "emailAddress": "jordanm@contoso.com",
+            "phone": "213-555-0199",
+            "notes": null,
+            "location": {
                 "@odata.type": "#microsoft.graph.location",
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -161,7 +161,7 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "customerTimeZone":"America/Chicago",
+            "timeZone":"America/Chicago",
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
@@ -286,11 +286,11 @@ Content-type: application/json
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-            "customerName": "Jordan Miller",
-            "customerEmailAddress": "jordanm@contoso.com",
-            "customerPhone": "213-555-0199",
-            "customerNotes": null,
-            "customerLocation": {
+            "name": "Jordan Miller",
+            "emailAddress": "jordanm@contoso.com",
+            "phone": "213-555-0199",
+            "notes": null,
+            "location": {
                 "@odata.type": "#microsoft.graph.location",
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -316,7 +316,7 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "customerTimeZone": "America/Chicago",
+            "timeZone": "America/Chicago",
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",

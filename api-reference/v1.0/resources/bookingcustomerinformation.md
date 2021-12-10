@@ -17,15 +17,14 @@ It lists down the customer properties for an appointment. An appointment will co
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customerEmailAddress|String| The SMTP address of the bookingCustomer who is booking the appointment |
+|emailAddress|String| The SMTP address of the bookingCustomer who is booking the appointment |
 |customerId|String|The ID of the bookingCustomer for this appointment. If no ID is specified when an appointment is created, then a new bookingCustomer object is created. Once set, you should consider the customerId immutable. |
-|customerLocation|[location](../resources/location.md)| Represents location information for the bookingCustomer who is booking the appointment. |
-|customerName|String|The customer's name. |
-|customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this bookingAppointment by its ID. You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by customerId. |
-|customerPhone|String|The customer's phone number. |
-|customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
+|location|[location](../resources/location.md)| Represents location information for the bookingCustomer who is booking the appointment. |
+|name|String|The customer's name. |
+|notes|String|Notes from the customer associated with this appointment. You can get the value only when reading this bookingAppointment by its ID. You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by customerId. |
+|phone|String|The customer's phone number. |
+|timeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |customQuestionAnswers|[bookingQuestionAnswer](../resources/bookingquestionanswer.md) collection|It consists of the list of custom questions and answers given by the customer as part of the appointment |
-|customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 
 ## Relationships
 None.
@@ -41,20 +40,19 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.bookingCustomerInformation",
   "customerId": "String",
-  "customerName": "String",
-  "customerEmailAddress": "String",
-  "customerPhone": "String",
-  "customerNotes": "String",
-  "customerLocation": {
+  "name": "String",
+  "emailAddress": "String",
+  "phone": "String",
+  "notes": "String",
+  "location": {
     "@odata.type": "microsoft.graph.location"
   },
-  "customerTimeZone": "String",
+  "timeZone": "String",
   "customQuestionAnswers": [
     {
       "@odata.type": "microsoft.graph.bookingQuestionAnswer"
     }
-  ],
-  "customerTimeZone": "String"
+  ]
 }
 ```
 
