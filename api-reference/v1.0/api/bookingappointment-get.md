@@ -193,7 +193,7 @@ Content-type: application/json
                     "question": "What is your age",
                     "answerInputType": "text",
                     "answerOptions": [],
-                    "isRequired": "true",
+                    "isRequired": true,
                     "answer": "25",
                     "selectedOptions":[]
                 }

@@ -3,6 +3,7 @@ title: "answerInputType enum type"
 description: "Booking answerInputType types"
 author: "razortbone"
 localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "bookings"
 doc_type: enumPageType
 ---
