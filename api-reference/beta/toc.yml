@@ -9934,7 +9934,7 @@ items:
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
-          - name: Get cloudPC remote action results
+          - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Reboot
             href: api/cloudpc-reboot.md

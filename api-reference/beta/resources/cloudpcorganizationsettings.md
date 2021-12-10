@@ -18,8 +18,8 @@ Represents the Cloud PC organization settings for a tenant, which has only one *
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Read the properties and relationships of the [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object.|
-|[Update cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Update the properties of the [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object.|
+|[Get cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Read the properties and relationships of a [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object.|
+|[Update cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Update the properties of a [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) object.|
 
 ## Properties
 |Property|Type|Description|

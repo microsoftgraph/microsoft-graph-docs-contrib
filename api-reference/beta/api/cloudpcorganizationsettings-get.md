@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcOrganizationSettings"
-description: "Read the properties and relationships of the cloudPcOrganizationSettings object."
+description: "Read the properties and relationships of a cloudPcOrganizationSettings object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of the [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) from the current tenant, which has only one **cloudPcOrganizationSettings** object.
+Read the properties and relationships of a [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) from the current tenant, which has only one **cloudPcOrganizationSettings** object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

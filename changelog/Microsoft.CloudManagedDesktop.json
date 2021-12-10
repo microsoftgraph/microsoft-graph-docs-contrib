@@ -10,7 +10,7 @@
                     "Target": "virtualEndpoint"
                 },
                 {
-                    "Id": "b50bb17f-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Property",
                     "ChangedApiName": "userAccountType",
                     "ChangeType": "Addition",
@@ -18,7 +18,7 @@
                     "Target": "cloudPC"
                 },
                 {
-                    "Id": "b50e1363-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Property",
                     "ChangedApiName": "osVersion",
                     "ChangeType": "Addition",
@@ -26,7 +26,7 @@
                     "Target": "cloudPC"
                 },
                 {
-                    "Id": "b511ff6c-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcOrganizationSettings",
                     "ChangeType": "Addition",
@@ -34,7 +34,7 @@
                     "Target": "cloudPcOrganizationSettings"
                 },
                 {
-                    "Id": "b5146ccd-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Member",
                     "ChangedApiName": "dnsCheckNameWithInvalidCharacter",
                     "ChangeType": "Addition",
@@ -42,7 +42,7 @@
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 },
                 {
-                    "Id": "b516cc7f-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Member",
                     "ChangedApiName": "azureAdDeviceSyncCheckScpNotConfigured",
                     "ChangeType": "Addition",
@@ -50,7 +50,7 @@
                     "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
                 },
                 {
-                    "Id": "b51a0205-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Member",
                     "ChangedApiName": "pendingProvision",
                     "ChangeType": "Addition",
@@ -58,7 +58,7 @@
                     "Target": "cloudPcStatus"
                 },
                 {
-                    "Id": "b51c6603-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcUserAccountType",
                     "ChangeType": "Addition",
@@ -66,7 +66,7 @@
                     "Target": "cloudPcUserAccountType"
                 },
                 {
-                    "Id": "b51ec2db-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcOperatingSystem",
                     "ChangeType": "Addition",
@@ -74,7 +74,7 @@
                     "Target": "cloudPcOperatingSystem"
                 },
                 {
-                    "Id": "b5212949-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Parameter",
                     "ChangedApiName": "userAccountType",
                     "ChangeType": "Addition",
@@ -90,7 +90,7 @@
                     "Target": "reprovision"
                 },
                 {
-                    "Id": "b525ecf3-5191-11ec-a817-519c224fca78",
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Method",
                     "ChangedApiName": "changeUserAccountType",
                     "ChangeType": "Addition",
@@ -98,7 +98,7 @@
                     "Target": "cloudPC"
                 }
             ],
-            "Id": "b525ecf3-5191-11ec-a817-519c224fca78",
+            "Id": "b50951e4-5191-11ec-a817-519c224fca78",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-09T03:57:59.088Z",
