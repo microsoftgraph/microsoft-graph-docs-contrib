@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewEvent()
 originalStartTimeZone := "originalStartTimeZone-value"
@@ -19,8 +19,6 @@ responseStatus.SetResponse(&response)
 time, err := time.Parse(time.RFC3339, "datetime-value")
 responseStatus.SetTime(&time)
 requestBody.SetRecurrence(nil)
-iCalUId := "iCalUId-value"
-requestBody.SetICalUId(&iCalUId)
 reminderMinutesBeforeStart := int32(99)
 requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isOnlineMeeting := true

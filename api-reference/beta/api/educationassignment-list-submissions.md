@@ -1,7 +1,7 @@
 ---
 title: "List submissions"
 description: "List all the submissions associated with an assignment."
-author: "dipakboyed"
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the submissions associated with an [assignment](../resources/educationassignment.md).
+List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md).
 
-A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
+A teacher or an application with application permissions can get all the **submissions**, a student can only get **submissions** that they are associated with.
+
+Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status. For details, see the examples section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/submissions
+GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 ```
 
 ## Optional query parameters
@@ -41,6 +43,7 @@ The following are the available `$expand` options for this method: `outcomes`, `
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Prefer  | `include-unknown-enum-members`. Optional.  |
 
 ## Request body
 Don't supply a request body for this method.
@@ -79,10 +82,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -99,6 +98,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [
@@ -170,10 +170,6 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -298,6 +294,134 @@ Content-length: 4492
                     ]
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example 3: Get submissions - Request with optional Prefer header
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_submissions_prefer"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions
+Prefer: include-unknown-enum-members
+```
+---
+
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions",
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "id": "f51a6687-a4a3-a8d9-ac4a-6ff81c5a8da7",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "reassigned",
+            "submittedDateTime": "2021-11-10T00:57:17.0495233Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": "2021-11-10T01:03:25.7812455Z",
+            "resourcesFolderUrl": null,
+            "id": "869369de-3e5a-89eb-6f2d-83cd88f860b5",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "723e2402-f503-4825-a4d5-5143fbe6f53d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "723e2402-f503-4825-a4d5-5143fbe6f53d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "afc58f1f-7c9e-4770-a448-e53ba43463a5",
+                    "displayName": null
+                }
+            }
         }
     ]
 }

@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Get(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Get(nil)
 
 
 ```

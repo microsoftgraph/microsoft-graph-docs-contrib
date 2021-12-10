@@ -1,17 +1,17 @@
 ---
-title: "Add group owner"
-description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+title: "Add owners"
+description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
 ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add group owner
+# Add owners
 
 Namespace: microsoft.graph
 
-Add a user or service principal to the group's owners. The owners are a set of users or service principals who are allowed to modify the group object.
+Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object.
 
 >**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
 

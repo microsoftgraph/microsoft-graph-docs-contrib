@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewPermissionGrantConditionSet()
 permissionType := "delegated"
 requestBody.SetPermissionType(&permissionType)
-clientApplicationsFromVerifiedPublisherOnly := true
-requestBody.SetClientApplicationsFromVerifiedPublisherOnly(&clientApplicationsFromVerifiedPublisherOnly)
+certifiedClientApplicationsOnly := true
+requestBody.SetCertifiedClientApplicationsOnly(&certifiedClientApplicationsOnly)
 options := &msgraphsdk.IncludesRequestBuilderPostOptions{
 	Body: requestBody,
 }
