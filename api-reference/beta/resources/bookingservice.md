@@ -36,7 +36,6 @@ Represents information about a particular service provided by a [bookingBusiness
 |defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
-|emailAddress|String|An email address|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
@@ -74,7 +73,6 @@ The following is a JSON representation of the resource.
   "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "description": "String",
   "displayName": "String",
-  "emailAddress": "String",
   "id": "String (identifier)",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
