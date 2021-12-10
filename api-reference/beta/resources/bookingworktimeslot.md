@@ -19,8 +19,8 @@ Defines the start and end times for work.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|The time of the day when work stops. For example, 17:00:00.0000000.|
-|start|TimeOfDay|The time of the day when work starts. For example, 08:00:00.0000000.|
+|endTime|TimeOfDay|The time of the day when work stops. For example, 17:00:00.0000000.|
+|startTime|TimeOfDay|The time of the day when work starts. For example, 08:00:00.0000000.|
 
 ## JSON representation
 
@@ -36,8 +36,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "end": "String (timestamp)",
-  "start": "String (timestamp)"
+  "endTime": "String (timestamp)",
+  "startTime": "String (timestamp)"
 }
 
 ```
