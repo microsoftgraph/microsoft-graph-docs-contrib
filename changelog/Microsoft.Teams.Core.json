@@ -3844,16 +3844,16 @@
         {
           "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
           "ApiChange": "Method",
-          "ChangedApiName": "team",
-          "ChangeType": "Change",
-          "Description": "Changed the [List team](https://docs.microsoft.com/en-us/graph/api/teams-list?view=graph-rest-beta&tabs=http) method.",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teams-list?view=graph-rest-beta&tabs=http) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
           "Target": "team"
         }
       ],
       "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-11-22T20:18:40.595Z",
+      "CreatedDateTime": "2021-11-29T20:18:40.595Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
