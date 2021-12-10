@@ -129,6 +129,7 @@ Content-type: application/json
     "filledAttendeesCount": 0,
     "customers": [
         {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
@@ -283,6 +284,7 @@ Content-type: application/json
     "filledAttendeesCount": 1,
     "customers": [
         {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
