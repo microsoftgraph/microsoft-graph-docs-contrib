@@ -128,7 +128,8 @@ Content-type: application/json
                             "accuracy": null,
                             "altitudeAccuracy": null
                         }
-                    }
+                    },
+                    "customerTimeZone": "America/Chicago"                
                 }
             ],
             "customerTimeZone": "America/Chicago",
@@ -212,7 +213,8 @@ Content-type: application/json
                             "accuracy": null,
                             "altitudeAccuracy": null
                         }
-                    }
+                    },
+                    "customerTimeZone": "America/Chicago"
                 }
             ],
             "customerTimeZone": "America/Chicago",

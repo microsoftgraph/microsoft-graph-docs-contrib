@@ -186,6 +186,7 @@ Content-type: application/json
                 },
                 "coordinates": null
             },
+            "customerTimeZone": "America/Chicago",
             "customQuestionAnswers":
             {
                 "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",

@@ -160,6 +160,7 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
+            "customerTimeZone":"America/Chicago",
             "customQuestionAnswers": {
                 "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
                 "question": "What is your age",
@@ -214,9 +215,9 @@ Content-type: application/json
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
-    "joinWebUrl":"https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
-    "smsNotificationsEnabled":true,
-    "customerTimeZone":"America/Chicago",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+    "smsNotificationsEnabled": true,
+    "customerTimeZone": "America/Chicago",
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
     "duration": "PT30M",
@@ -285,18 +286,16 @@ Content-type: application/json
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
             "customerNotes": null,
-            "customerLocation": 
-            {
-                "@odata.type":"#microsoft.graph.location",
+            "customerLocation": {
+                "@odata.type": "#microsoft.graph.location",
                 "displayName": "Customer",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
                 "uniqueId": null,
                 "uniqueIdType": null,
-                "address": 
-                {
-                    "@odata.type":"#microsoft.graph.physicalAddress",
+                "address": {
+                    "@odata.type": "#microsoft.graph.physicalAddress",
                     "type": "home",
                     "postOfficeBox": "",
                     "street": "",
@@ -305,8 +304,7 @@ Content-type: application/json
                     "countryOrRegion": "",
                     "postalCode": ""
                 },
-                "coordinates": 
-                {
+                "coordinates": {
                     "altitude": null,
                     "latitude": null,
                     "longitude": null,
@@ -314,19 +312,18 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "customQuestionAnswers":
-            {
+            "customerTimeZone": "America/Chicago",
+            "customQuestionAnswers": {
                 "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
                 "question": "What is your age",
                 "answerInputType": "text",
                 "answerOptions": [],
                 "isRequired": "true",
                 "answer": "25",
-                "selectedOptions":[]
+                "selectedOptions": []
             }
         }
     ]
-
 }
 ```
 
