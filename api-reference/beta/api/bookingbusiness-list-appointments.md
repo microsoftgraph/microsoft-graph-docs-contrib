@@ -98,12 +98,42 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
-            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
-            "customerName": "Bob Kelly",
-            "customerEmailAddress": "bobk@tailspintoys.com",
-            "customerPhone": "213-555-0108",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
+                    "customerName": "Bob Kelly",
+                    "customerEmailAddress": "bobk@tailspintoys.com",
+                    "customerPhone": "213-555-0108",
+                    "customerNotes": null,
+                    "customerLocation": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "customerTimeZone": "America/Chicago"                
+                }
+            ],
             "customerTimeZone": "America/Chicago",
-            "customerNotes": null,
             "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
@@ -115,39 +145,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
-            "invoiceId": "1002",
-            "invoiceStatus": "open",
-            "invoiceUrl": "theInvoiceUrl",
-            "customerLocation": {
-                "displayName": "Customer",
-                "locationEmailAddress": null,
-                "locationUri": "",
-                "locationType": null,
-                "uniqueId": null,
-                "uniqueIdType": null,
-                "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
-                    "street": "",
-                    "city": "",
-                    "state": "",
-                    "countryOrRegion": "",
-                    "postalCode": ""
-                },
-                "coordinates": {
-                    "altitude": null,
-                    "latitude": null,
-                    "longitude": null,
-                    "accuracy": null,
-                    "altitudeAccuracy": null
-                }
-            },
-            "start": {
+            "startDateTime": {
                 "dateTime": "2018-04-30T13:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "end": {
+            "endDateTime": {
                 "dateTime": "2018-04-30T13:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -175,24 +177,49 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "reminders": [],
-            "invoiceDate": {
-                "dateTime": "2018-04-30T13:30:00.0000000Z",
-                "timeZone": "UTC"
-            }
+            "reminders": []
         },
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
-            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
-            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-            "customerName": "Jordan Miller",
-            "customerEmailAddress": "jordanm@contoso.com",
-            "customerPhone": "213-555-0199",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+                    "customerName": "Jordan Miller",
+                    "customerEmailAddress": "jordanm@contoso.com",
+                    "customerPhone": "213-555-0199",
+                    "customerNotes": null,
+                    "customerLocation": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "customerTimeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
-            "customerNotes": null,
             "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
@@ -204,39 +231,11 @@ Content-type: application/json
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
-            "invoiceAmount": 10,
-            "invoiceId": "1001",
-            "invoiceStatus": "open",
-            "invoiceUrl": "theInvoiceUrl",
-            "customerLocation": {
-                "displayName": "Customer",
-                "locationEmailAddress": null,
-                "locationUri": "",
-                "locationType": null,
-                "uniqueId": null,
-                "uniqueIdType": null,
-                "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
-                    "street": "",
-                    "city": "",
-                    "state": "",
-                    "countryOrRegion": "",
-                    "postalCode": ""
-                },
-                "coordinates": {
-                    "altitude": null,
-                    "latitude": null,
-                    "longitude": null,
-                    "accuracy": null,
-                    "altitudeAccuracy": null
-                }
-            },
-            "start": {
+            "startDateTime": {
                 "dateTime": "2018-05-01T12:00:00.0000000Z",
                 "timeZone": "UTC"
             },
-            "end": {
+            "endDateTime": {
                 "dateTime": "2018-05-01T12:30:00.0000000Z",
                 "timeZone": "UTC"
             },
@@ -264,11 +263,7 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "reminders": [],
-            "invoiceDate": {
-                "dateTime": "2018-05-01T12:30:00.0000000Z",
-                "timeZone": "UTC"
-            }
+            "reminders": []
         }
     ]
 }
