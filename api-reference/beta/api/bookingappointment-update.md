@@ -61,13 +61,13 @@ In the request body, supply the values for relevant fields that should be update
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 |customerEmailAddress (deprecated)|String|Use the `customers` collection instead.|
 |customerId (deprecated)|String|Use the `customers` collection instead.|
-|customerLocation (deprecated)|[location](location.md)|Use the `customers` collection instead.|
+|customerLocation (deprecated)|[location](../resources/location.md)|Use the `customers` collection instead.|
 |customerName (deprecated)|String|Use the `customers` collection instead.|
 |customerNotes (deprecated)|String|Use the `customers` collection instead.|
 |customerPhone (deprecated)|String|Use the `customers` collection instead.|
 |end (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use `endDateTime` instead.|
 |invoiceAmount (deprecated)|Double|The billed amount on the invoice.|
-|invoiceDate (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
+|invoiceDate (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
 |invoiceId (deprecated)|String|The ID of the invoice.|
 |invoiceStatus (deprecated)|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl (deprecated)|String|The URL of the invoice in Microsoft Bookings.|
