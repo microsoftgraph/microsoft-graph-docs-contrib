@@ -34,7 +34,6 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
-- [Key/value pair](intune-mam-keyvaluepair.md)
 - [Mac app identifier](intune-mam-macappidentifier.md)
 - [Managed app clipboard sharing level](intune-mam-managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune-mam-managedappconfiguration.md)
