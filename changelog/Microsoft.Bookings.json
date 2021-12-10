@@ -159,7 +159,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "end",
                     "ChangeType": "Change",
-                    "Description": "Deprecated the **end** property in [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource; use **startDateTime** instead",
+                    "Description": "Deprecated the **end** property in [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource; use **endDateTime** instead",
                     "Target": "bookingAppointment"
                 },
                 {
@@ -257,6 +257,22 @@
                     "ChangeType": "Change",
                     "Description": "Deprecated invoicing related properties in [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
                     "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "end",
+                    "ChangeType": "Change",
+                    "Description": "Deprecated the **end** property in [bookingWorkTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/bookingWorkTimeSlot?view=graph-rest-beta) resource; use **endTime** instead",
+                    "Target": "bookingWorkTimeSlot"
+                },
+                {
+                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "start",
+                    "ChangeType": "Change",
+                    "Description": "Deprecated the **start** property in [bookingWorkTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/bookingWorkTimeSlot?view=graph-rest-beta) resource; use **startTime** instead.",
+                    "Target": "bookingWorkTimeSlot"
                 }
             ],
             "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
