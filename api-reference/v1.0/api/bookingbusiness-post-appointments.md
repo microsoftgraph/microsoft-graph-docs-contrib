@@ -161,15 +161,17 @@ Content-type: application/json
                 }
             },
             "customerTimeZone":"America/Chicago",
-            "customQuestionAnswers": {
-                "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                "question": "What is your age",
-                "answerInputType": "text",
-                "answerOptions": [],
-                "isRequired": "true",
-                "answer": "25",
-                "selectedOptions": []
-            }
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": "true",
+                    "answer": "25",
+                    "selectedOptions": []
+                }
+            ]
         }
     ]
 }
@@ -313,15 +315,17 @@ Content-type: application/json
                 }
             },
             "customerTimeZone": "America/Chicago",
-            "customQuestionAnswers": {
-                "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                "question": "What is your age",
-                "answerInputType": "text",
-                "answerOptions": [],
-                "isRequired": "true",
-                "answer": "25",
-                "selectedOptions": []
-            }
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": "true",
+                    "answer": "25",
+                    "selectedOptions": []
+                }
+            ]
         }
     ]
 }
