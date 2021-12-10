@@ -73,6 +73,7 @@ This resource supports:
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
+|hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Case-sensitive and read-only.|
