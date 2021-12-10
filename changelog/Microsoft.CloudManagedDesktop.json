@@ -3,6 +3,80 @@
         {
             "ChangeList": [
                 {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reboot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reboot](https://docs.microsoft.com/en-us/graph/api/cloudpc-reboot?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "rename",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [rename](https://docs.microsoft.com/en-us/graph/api/cloudpc-rename?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "troubleshoot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [troubleshoot](https://docs.microsoft.com/en-us/graph/api/cloudpc-troubleshoot?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "aadDeviceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **aadDeviceId** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "servicePlanType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **servicePlanType** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "lastRemoteActionResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **lastRemoteActionResult** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "lastLoginResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **lastLoginResult** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcLoginResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcLoginResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcloginresult?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcLoginResult"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-04T011:55:50.282Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "29e4c7bd-179d-45d8-9e84-1e6b6f575f73",
                     "ApiChange": "Property",
                     "ChangedApiName": "type",

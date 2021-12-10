@@ -235,15 +235,31 @@ Content-type: application/json
 The following is an example of the request. `$top=2` is passed to retrieve two messages.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_allchatmessages_w"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
 
 Prefer: include-unknown-enum-members
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-w-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-allchatmessages-w-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-allchatmessages-w-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
