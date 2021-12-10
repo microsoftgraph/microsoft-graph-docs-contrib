@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # bookingWorkHours resource type
 
 Namespace: microsoft.graph
-
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents the set of working hours in a single day of the week, for a [bookingBusiness](bookingbusiness.md) or [bookingStaffMember](bookingstaffmember.md).
 

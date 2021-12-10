@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
 Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md).
 
 Staff members can be part of the Microsoft 365 tenant where the booking business is configured, or they can use email services from other email providers.
