@@ -37,7 +37,7 @@ This method supports the  `$filter`, `$select`, `$top`, `$skiptoken`, `$count` [
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer {token}. Required. |
 | Accept  | application/json|
 
 ## Request body
