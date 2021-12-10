@@ -38,7 +38,9 @@ Operation Approval Policy Type
 |apps|16|Apps|
 |scripts|17|Scripts|
 |roles|18|Roles|
+|deviceResetPasscode|19|Device Reset Passcode Action|
 |unknownFutureValue|99|Placeholder for future Operation Approval Policy Types|
+
 
 
 

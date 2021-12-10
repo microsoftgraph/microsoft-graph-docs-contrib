@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group. This resource is an open type that allows other properties to be passed in.
+
 Inherits from [directoryObject](directoryobject.md).
 
 For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option.
@@ -56,10 +57,10 @@ This resource supports:
 | [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The function is transitive. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups and administrative units that the group is a member of. The function is transitive. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validate a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |||
 | [List appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles which this group has been assigned. |
@@ -109,7 +110,7 @@ This resource supports:
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties).
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -135,7 +136,7 @@ This resource supports:
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on `$select`. Read-only. |
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, and `eq` on `null` values).|
-|mailNickname|String|The mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
+|mailNickname|String|The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are `On` or `Paused`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Describes the processing status for rules-based dynamic groups. The property is `null` for non-rule based dynamic groups or if the dynamic group processing has been paused. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). Read-only. |
@@ -244,7 +245,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "accessType": "string",
+  "accessType": "String",
   "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
@@ -252,38 +253,38 @@ The following is a JSON representation of the resource.
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
+  "description": "String",
+  "displayName": "String",
   "expirationDateTime": "String (timestamp)",
-  "groupTypes": ["string"],
+  "groupTypes": ["String"],
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isFavorite": true,
   "isAssignableRole": false,
   "isSubscribedByMail": true,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "onPremisesDomainName": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesNetBiosName": "string",
+  "onPremisesNetBiosName": "String",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
-  "securityIdentifier": "string",
+  "securityIdentifier": "String",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
@@ -299,13 +300,13 @@ The following is a JSON representation of the resource.
   "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "sites": [{"@odata.type": "microsoft.graph.site"}],
   "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
-  "classification": "string",
+  "classification": "String",
   "hasMembersWithLicenseErrors": true,
-  "membershipRule": "string",
-  "membershipRuleProcessingState": "string",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String",
   "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
-  "preferredLanguage": "string",
-  "theme": "string"
+  "preferredLanguage": "String",
+  "theme": "String"
 }
 ```
 

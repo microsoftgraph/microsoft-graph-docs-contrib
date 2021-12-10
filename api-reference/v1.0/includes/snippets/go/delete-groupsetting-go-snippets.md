@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupSettingId := "groupSetting-id"
-graphClient.GroupSettingsById(&groupSettingId).Delete(options)
+graphClient.GroupSettingsById(&groupSettingId).Delete(nil)
 
 
 ```

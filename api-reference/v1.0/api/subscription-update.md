@@ -83,7 +83,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -124,7 +124,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 
 Here is an example of the response.
 <!-- {
