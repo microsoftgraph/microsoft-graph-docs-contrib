@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 This contains a custom question, answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment.
 
 ## Properties
