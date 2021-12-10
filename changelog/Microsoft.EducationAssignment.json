@@ -3,7 +3,15 @@
     {
       "ChangeList": [
         {
-          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "educationAddToCalendarOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationAddToCalendarOptions** enumeration type.",
+          "Target": "educationAddToCalendarOptions"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
           "ApiChange": "Member",
           "ChangedApiName": "reassigned",
           "ChangeType": "Addition",
@@ -11,37 +19,61 @@
           "Target": "educationSubmissionStatus"
         },
         {
-          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentDefaults"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
           "ApiChange": "Property",
           "ChangedApiName": "reassignedBy",
           "ChangeType": "Addition",
-          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
           "Target": "educationSubmission"
         },
         {
-          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
           "ApiChange": "Property",
           "ChangedApiName": "reassignedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
           "Target": "educationSubmission"
         },
         {
-          "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignments** relationship to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Target": "educationUser"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
           "ApiChange": "Method",
           "ChangedApiName": "reassign",
           "ChangeType": "Addition",
-          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/educationsubmission-reassign?view=graph-rest-v1.0) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/educationsubmission?view=graph-rest-v1.0) resource.",
-          "Target": "educationSubmission"
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) method to the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) resource.",
+          "Target": "reassign"
         }
       ],
-      "Id": "309b9d74-b279-4d1f-89ff-a206481a0936",
+      "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-12-01T01:11:35.5314928Z",
+      "CreatedDateTime": "2021-12-07T03:14:22.628566Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },     
+    },
     {
       "ChangeList": [
         {
