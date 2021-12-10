@@ -115,6 +115,7 @@ Content-type: application/json
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customers": [
                 {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
                     "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
                     "customerName": "Adele Vance",
                     "customerEmailAddress": "adelev@proseware.com",
@@ -200,6 +201,7 @@ Content-type: application/json
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customers": [
                 {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
                     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
                     "customerName": "Jordan Miller",
                     "customerEmailAddress": "jordanm@contoso.com",

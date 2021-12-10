@@ -161,6 +161,7 @@ Content-type: application/json
     "filledAttendeesCount": 0,
     "customers": [
         {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
@@ -187,16 +188,17 @@ Content-type: application/json
                 "coordinates": null
             },
             "customerTimeZone": "America/Chicago",
-            "customQuestionAnswers":
-            {
-                "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                "question": "What is your age",
-                "answerInputType": "text",
-                "answerOptions": [],
-                "isRequired": "true",
-                "answer": "25",
-                "selectedOptions":[]
-            }
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": "true",
+                    "answer": "25",
+                    "selectedOptions":[]
+                }
+            ]
         }
     ]
 }

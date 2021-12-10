@@ -63,6 +63,7 @@ PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M3
 Content-type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.bookingStaffMember",
     "workingHours":[
         {
             "@odata.type":"#microsoft.graph.bookingWorkHours",
