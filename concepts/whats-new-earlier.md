@@ -1489,7 +1489,7 @@ Try the [next version of Graph Explorer](https://developer.microsoft.com/graph/g
 ### Microsoft Graph Security API
 - Preview integration with RSA NetWitness, ServiceNow, and Splunk, to correlate and synchronize [alerts](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts), and improve threat protection and response.
 - New triggers added to the [Microsoft Graph security connector](/connectors/microsoftgraphsecurity/) and [playbooks](/azure/security-center/security-center-playbooks) for Logic Apps and Flow. See [playbook examples](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
-- Support for sending [threat indicators](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) to Microsoft Defender ATP to block or alert on threats using their own intelligence sources. Integrations with partners like ThreatConnect enable customers to send indicators directly from threat intelligence and automation solutions. 
+- Support for sending [threat indicators](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) to Microsoft Defender for Endpoint to block or alert on threats using their own intelligence sources. Integrations with partners like ThreatConnect enable customers to send indicators directly from threat intelligence and automation solutions. 
 
 ### Notifications
 - [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta&preserve-view=true) to all app clients on all device endpoints that a user is signed in to, without having to manage user-delegated permissions.
