@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-The **start** and **end** properties are always returned in UTC.
+The **startDateTime** and **endDateTime** properties are always returned in UTC.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -113,39 +113,11 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "staffMemberIds": [],
-    "invoiceAmount": 10,
-    "invoiceId": "1001",
-    "invoiceStatus": "open",
-    "invoiceUrl": "theInvoiceUrl",
-    "customerLocation": {
-        "displayName": "Customer",
-        "locationEmailAddress": null,
-        "locationUri": "",
-        "locationType": null,
-        "uniqueId": null,
-        "uniqueIdType": null,
-        "address": {
-            "type": "home",
-            "postOfficeBox": "",
-            "street": "",
-            "city": "",
-            "state": "",
-            "countryOrRegion": "",
-            "postalCode": ""
-        },
-        "coordinates": {
-            "altitude": null,
-            "latitude": null,
-            "longitude": null,
-            "accuracy": null,
-            "altitudeAccuracy": null
-        }
-    },
-    "start": {
+    "startDateTime": {
         "dateTime": "2018-05-06T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "end": {
+    "endDateTime": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
     },
@@ -190,13 +162,9 @@ Content-type: application/json
             "message": "Please check traffic for next cater."
         }
     ],
-    "invoiceDate": {
-        "dateTime": "2018-05-06T12:30:00.0000000Z",
-        "timeZone": "UTC"
-    },
     "maximumAttendeesCount": 5,
     "filledAttendeesCount": 0,
-    "customer":[
+    "customers": [
         {
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
@@ -223,6 +191,7 @@ Content-type: application/json
                 },
                 "coordinates": null
             },
+            "customerTimeZone": "America/Chicago",
             "customQuestionAnswers":
             {
                 "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
