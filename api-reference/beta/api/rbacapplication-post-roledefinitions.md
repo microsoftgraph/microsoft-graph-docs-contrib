@@ -16,15 +16,15 @@ Namespace: microsoft.graph
 Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider.
 
 The following RBAC providers are currently supported:
-- cloud PC
+- Cloud PC
 - device management (Intune)
 - directory (Azure AD)
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following tables the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-### For Cloud PC provider
+### For a Cloud PC provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | CloudPC.ReadWrite.All  |
 
-### For Device management (Intune) provider
+### For a device management (Intune) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +40,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.ReadWrite.All |
 
-### For Directory (Azure AD) provider
+### For a directory (Azure AD) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -84,7 +84,7 @@ The following table shows the properties that are required when you create a rol
 
 If successful, this method returns `201 Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Example1：Create the custom role for a directory provider
+## Example 1：Create a custom role for a directory provider
 
 ### Request
 

@@ -16,15 +16,15 @@ Namespace: microsoft.graph
 Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider.
 
 The following RBAC providers are currently supported:
-- cloud PC
+- Cloud PC
 - device management (Intune)
 - directory (Azure AD) 
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following tables the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-### For Cloud PC provider
+### For a Cloud PC provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | CloudPC.ReadWrite.All  |
 
-### For Device management (Intune) provider
+### For a device management (Intune) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +40,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.ReadWrite.All |
 
-### For Directory (Azure AD) provider
+### For a directory (Azure AD) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -77,7 +77,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example1: Deletes a **unifiedRoleDefinition** for a directory provider
+## Example 1: Delete a **unifiedRoleDefinition** resource for a directory provider
 
 ### Request
 
@@ -136,7 +136,7 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-## Example2: Deletes a **unifiedRoleDefinition** for a CloudPC provider
+## Example 2: Delete a **unifiedRoleDefinition** resource for a CloudPC provider
 ### Request
 
 <!-- {
