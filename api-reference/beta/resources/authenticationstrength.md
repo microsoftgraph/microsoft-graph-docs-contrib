@@ -18,7 +18,7 @@ The custom authentication strength enforced in a Conditional Access policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationStrengthId|String|*ID of the authentication strength.|
+|authenticationStrengthId|String|Identifier of the authentication strength.|
 |displayName|String|The name of the authentication strength.|
 
 ## Relationships

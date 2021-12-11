@@ -9,7 +9,23 @@
 				"ChangeType": "Addition",
 				"Description": "Added the **AzureADBackupAuth** member to the **tokenIssuerType** enumeration.",
 				"Target": "tokenIssuerType"
-			  }
+			  },
+			  {
+                                "Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+                                "ApiChange": "Property",
+                                "ChangedApiName": "riskType",
+                                "ChangeType": "Deprecation",
+                                 "Description": "Deprecated the **riskType** property of the [riskDetection](https://docs.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource.",
+                                 "Target": "riskDetection"
+                         },
+			  {
+                                "Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+                                "ApiChange": "Property",
+                                "ChangedApiName": "eventTypes ",
+                                "ChangeType": "Deprecation",
+                                 "Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource.",
+                                 "Target": "riskUserActivity"
+                         }
 			],
 			"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
 			"Cloud": "Prod",

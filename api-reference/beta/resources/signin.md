@@ -34,21 +34,21 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
-|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. For authentications that use protocols other than the possible values listed here, the protocol type is listed as `none`. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`.|
+|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`. For authentications that use protocols other than the possible values listed, the protocol type is listed as `none`. |
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. Supports `$filter` (`eq` and `startsWith` operators only).|
-|autonomousSystemNumber|Int32|Provides the Autonomous System Number (ASN) recorded for the actor in the sign in event. This value can be used along with IP for security detections or threat hunting.|
+|autonomousSystemNumber|Int32|Provides the Autonomous System Number (ASN) recorded for the actor in the sign in event. This value and the IP address can be used for security detections or threat hunting.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange Active Sync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`. Supports `$filter` (`eq` operator only). |
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support. Supports `$filter` (`eq` operator only).|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSytem** properties.|
-|homeTenantId|String|For user sign ins, the ID of the tenant that the user is a member of.|
-|homeTenantName|String|For user sign ins, the ID of the tenant that the user is a member of. Only populated in cases where Azure AD has recorded affirmative consent from the home tenant to show tenant content.|
+|homeTenantId|String|For user sign ins, the identifier of the tenant that the user is a member of.|
+|homeTenantName|String|For user sign ins, the identifier of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Azure AD to show the tenant content.|
 |id|String|The identifier representing the sign-in activity. Supports `$filter` (`eq` operator only).|
-|incomingTokenType|incomingTokenType|Indicates if a token of the types listed here was presented to Azure AD to authenticate the actor in the sign in. Azure AD may have also used token types not listed in this enum to authenticate the actor; you should not infer the lack of a token if its type is not listed as a possible value. The possible values are: `none`, `primaryRefreshToken`, `saml11`, `saml20`, `unknownFutureValue`.|
+|incomingTokenType|incomingTokenType|Indicates the token types that were presented to Azure AD to authenticate the actor in the sign in. The possible values are: `none`, `primaryRefreshToken`, `saml11`, `saml20`, `unknownFutureValue`. <br><br> **NOTE** Azure AD may have also used token types not listed in this Enum type to authenticate the actor. Do not infer the lack of a token if it is not one of the types listed. |
 |ipAddress|String|The IP address of the client from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only).|
-|isInteractive|Boolean|Indicates whether a sign-in is interactive or not.|
-|isTenantRestricted|Boolean|Indicates whether the signin was under a tenant restrictions policy.|
+|isInteractive|Boolean|Indicates whether a sign-in is interactive.|
+|isTenantRestricted|Boolean|Indicates whether the sign in was under a tenant restrictions policy.|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only) on **city**, **state**, and **countryOrRegion** properties.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. Supports `$filter` (`eq` operator only).|
@@ -65,7 +65,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure). Supports `$filter` (`eq` operator only) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. Supports `$filter` (`eq` operator only).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth`.|
-|uniqueTokenIdentifier|String|A unique ID used to track tokens issued by Azure AD as they are redeemed at resource providers. It is the base64 encoded request ID of a token issued by Azure AD.|
+|uniqueTokenIdentifier|String|A unique base64 encoded request identifier used to track tokens issued by Azure AD as they are redeemed at resource providers. |
 |userAgent|String|The user agent information related to sign-in. Supports `$filter` (`eq` and `startsWith` operators only).|
 |userDisplayName|String|The display name of the user. Supports `$filter` (`eq` and `startsWith` operators only).|
 |userId|String|The identifier of the user. Supports `$filter` (`eq` operator only).|

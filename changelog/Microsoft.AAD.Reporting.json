@@ -108,18 +108,10 @@
         },
         {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "homeTenantId",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **homeTenantId** resource type",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
+          "ApiChange": "Property",
           "ChangedApiName": "homeTenantId",
           "ChangeType": "Addition",
-          "Description": "Added the [homeTenantId](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+          "Description": "Added the **homeTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -174,8 +166,8 @@
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Property",
           "ChangedApiName": "riskEventTypes",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **riskEventTypes** property from [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **riskEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -188,10 +180,10 @@
         },
         {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
+          "ApiChange": "Property",
           "ChangedApiName": "tokenIssuerType",
           "ChangeType": "Addition",
-          "Description": "Added the [tokenIssuerType](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+          "Description": "Added the **tokenIssuerType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -207,7 +199,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-09-22T16:44:09.1366489Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },  
      {
