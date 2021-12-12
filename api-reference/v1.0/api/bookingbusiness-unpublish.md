@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Make the scheduling page of this business not available to external customers.
 
 Set the **isPublished** property to false, and **publicUrl** property to null.

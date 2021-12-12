@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -126,7 +124,7 @@ Content-type: application/json
         "timeZone": "UTC"
     },
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",

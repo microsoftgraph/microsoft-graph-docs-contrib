@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
 The **startDateTime** and **endDateTime** properties are always returned in UTC.
@@ -158,7 +156,7 @@ Content-type: application/json
         }
     ],
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",

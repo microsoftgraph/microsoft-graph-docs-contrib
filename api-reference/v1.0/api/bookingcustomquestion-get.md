@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 ## Permissions
