@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## December 2021: New and generally available
 
 ### Cloud communications | Presence
-Subscribe to notifications of changes in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are rich notifications that include encrypted resource data.
+[Subscribe to notifications of changes](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are [rich notifications that include encrypted resource data](webhooks-with-resource-data.md).
 
 ## December 2021: New in preview only
 
