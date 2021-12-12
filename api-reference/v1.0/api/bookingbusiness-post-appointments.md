@@ -163,7 +163,7 @@ Content-type: application/json
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                    "question": "What is your age",
+                    "question": "What is your age?",
                     "answerInputType": "text",
                     "answerOptions": [],
                     "isRequired": true,
@@ -318,7 +318,7 @@ Content-type: application/json
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                    "question": "What is your age",
+                    "question": "What is your age?",
                     "answerInputType": "text",
                     "answerOptions": [],
                     "isRequired": true,

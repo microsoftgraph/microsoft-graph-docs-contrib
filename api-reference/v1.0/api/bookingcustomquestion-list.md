@@ -91,6 +91,18 @@ Content-Type: application/json
       "answerOptions": [
         "String"
       ]
+    },
+    {
+        "@odata.type": "#microsoft.graph.bookingCustomQuestion",
+        "id": "dbb865a6-530d-46e1-8e88-5d76789034b2",
+        "displayName": "What is your nationality?",
+        "answerInputType": "radioButton",
+        "answerOptions": [
+          "US",
+          "UK",
+          "Canada",
+          "India"
+        ]
     }
   ]
 }

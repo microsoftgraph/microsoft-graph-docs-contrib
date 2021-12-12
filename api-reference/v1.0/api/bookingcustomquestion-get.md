@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```
 
 ### Response
@@ -84,12 +84,10 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-    "id": "91f1ef26-ca00-451c-1c64-8f3560c80d3d",
-    "displayName": "String",
-    "answerInputType": "String",
-    "answerOptions": [
-      "String"
-    ]
+    "id": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+    "displayName": "What is your age?",
+    "answerInputType": "text",
+    "answerOptions": []
   }
 }
 ```
