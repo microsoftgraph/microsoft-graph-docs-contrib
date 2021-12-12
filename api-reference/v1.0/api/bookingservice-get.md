@@ -103,9 +103,10 @@ Content-type: application/json
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "customQuestions" : [
         {
-            
+            "questionId" : "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+            "isRequired" : true
         }
-    ]
+    ],
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

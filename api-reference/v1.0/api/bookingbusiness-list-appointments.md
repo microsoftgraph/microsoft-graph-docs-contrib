@@ -216,7 +216,7 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "timeZone": "America/Chicago"
+                    "timeZone": "America/Chicago",
                     "customQuestionAnswers": [
                         {
                             "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
