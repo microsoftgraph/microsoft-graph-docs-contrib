@@ -1,6 +1,6 @@
 ---
 title: "bookingReminder resource type"
-description: "Represents when and to whom to send an email reminder."
+description: "Represents when and whom to send an email reminder."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents when and to whom to send an email reminder.
+Represents when and whom to send an email reminder.
 
 
 ## Properties
