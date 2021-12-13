@@ -193,7 +193,6 @@ Content-length: 262
 #### Request
 
 The following example shows a request to list all shared channels.
-> **Note:** Shared channels are only available in private preview.
 
 
 <!-- {

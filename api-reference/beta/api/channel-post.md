@@ -343,7 +343,6 @@ Content-length: 201
 #### Request
 
 The following example shows how to create a shared channel.
-> **Note:** Shared channels are only available in private preview.
 
 
 <!-- {
@@ -362,7 +361,7 @@ Content-type: application/json
   "members": [
     {
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "user@odata.bind": "https://graph.microsoft.com/beta/users('{user_id}')",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
       "roles": [
         "owner"
       ]
@@ -370,6 +369,8 @@ Content-type: application/json
   ]
 }
 ```
+
+**Note:** Adding member as 'owner' works only in app/admin context.
 
 
 #### Response
