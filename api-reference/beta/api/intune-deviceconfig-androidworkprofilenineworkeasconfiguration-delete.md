@@ -2,7 +2,7 @@
 title: "Delete androidWorkProfileNineWorkEasConfiguration"
 description: "Deletes a androidWorkProfileNineWorkEasConfiguration."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

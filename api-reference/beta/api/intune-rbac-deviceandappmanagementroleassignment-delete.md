@@ -2,7 +2,7 @@
 title: "Delete deviceAndAppManagementRoleAssignment"
 description: "Deletes a deviceAndAppManagementRoleAssignment."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

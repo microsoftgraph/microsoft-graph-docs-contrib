@@ -49,9 +49,9 @@ The following table shows the properties accepted to update an accessReviewSched
 | displayName | String | Name of access review series. |
 | descriptionForAdmins | String | Context of the review provided to admins. |
 | descriptionForReviewers | String | Context of the review provided to reviewers. |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). The **reviewers** property is only updatable if individual users are assigned as reviewers. See [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 
 A **PUT** request expects the full object to be passed in, which includes all writable properties, not just the properties being updated.
 

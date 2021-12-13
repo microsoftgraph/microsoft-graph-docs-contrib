@@ -2,7 +2,7 @@
 title: "iosLobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS LOB mobile app to a group."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

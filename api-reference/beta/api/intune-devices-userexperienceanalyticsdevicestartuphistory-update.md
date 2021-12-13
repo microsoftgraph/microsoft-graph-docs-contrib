@@ -2,7 +2,7 @@
 title: "Update userExperienceAnalyticsDeviceStartupHistory"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupHistory object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
