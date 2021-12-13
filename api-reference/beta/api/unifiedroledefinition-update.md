@@ -64,6 +64,12 @@ To update a role definition for a directory provider:
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
 
+To update a role definition for a Cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/cloudPc/roleDefinitions/{id}
+```
+
 ## Request headers
 
 | Name       | Description|
@@ -91,7 +97,7 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example1: Updates a **unifiedRoleDefinition** for a directory provider
+## Example 1: Updates a **unifiedRoleDefinition** for a directory provider
 
 ### Request
 
@@ -168,7 +174,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-## Example2: Updates a **unifiedRoleDefinition** for a CloudPC provider
+## Example 2: Updates a **unifiedRoleDefinition** for a CloudPC provider
 
 ### Request
 

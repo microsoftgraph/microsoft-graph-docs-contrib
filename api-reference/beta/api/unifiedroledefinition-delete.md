@@ -63,6 +63,13 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ```
 
+To delete a role definition for a Cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/cloudPc/roleDefinitions/{id}
+
+```
+
 ## Request headers
 
 | Name          | Description   |
@@ -136,7 +143,7 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-## Example 2: Delete a **unifiedRoleDefinition** resource for a CloudPC provider
+## Example 2: Delete a **unifiedRoleDefinition** resource for a Cloud PC provider
 ### Request
 
 <!-- {

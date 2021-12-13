@@ -4,10 +4,34 @@
             "ChangeList": [
                 {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "unifiedroledefinition",
-                    "ChangeType": "Change",
-                    "Description": "Cloud PC provider supports create, update and delete operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "POST",
+                    "ChangeType": "Addition",
+                    "Description": "Cloud PC provider supports [create](https://docs.microsoft.com/en-us/graph/rbacapplication-post-roledefinitions?view=graph-rest-beta) operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Target": "unifiedroledefinition"
+                },
+                {
+                    "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "Patch",
+                    "ChangeType": "Addition",
+                    "Description": "Cloud PC provider supports [update](https://docs.microsoft.com/en-us/graph/unifiedroledefinition-update?view=graph-rest-beta) operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Target": "unifiedroledefinition"
+                },
+                {
+                    "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "DELETE",
+                    "ChangeType": "Addition",
+                    "Description": "Cloud PC provider supports [delete](https://docs.microsoft.com/en-us/graph/unifiedroledefinition-delete?view=graph-rest-beta) operation for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Target": "unifiedroledefinition"
+                },
+                {
+                    "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "RoleManagement.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `RoleManagement.Read.All` to the read operations of the for [unifiedroledefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 }
             ],

@@ -62,6 +62,12 @@ To create a role definition for a directory provider:
 POST /roleManagement/directory/roleDefinitions
 ```
 
+To create a role definition for a Cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/cloudPc/roleDefinitions
+```
+
 ## Request headers
 
 | Name          | Description   |
@@ -184,7 +190,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-### Example 2: Create the custom role for a Cloud PC provider
+### Example 2: Create a custom role for a Cloud PC provider
 
 #### Request
 
@@ -198,7 +204,7 @@ POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
 Content-type: application/json
 
 {
-  "description": "A example custom role",
+  "description": "An example custom role",
   "displayName": "ExampleCustomRole",
   "rolePermissions":
     [
@@ -231,7 +237,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPc/roleDefinitions/$entity",
     "id": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff",
-    "description": "A example custom role",
+    "description": "An example custom role",
     "displayName": "ExampleCustomRole",
     "isBuiltIn": false,
     "isEnabled": true,
