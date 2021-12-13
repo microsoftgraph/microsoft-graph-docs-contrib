@@ -125,6 +125,7 @@ Content-type: application/json
     },
     "maximumAttendeesCount": 5,
     "filledAttendeesCount": 1,
+    "customers@odata.type": "#Collection(microsoft.graph.bookingCustomerInformation)",
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",

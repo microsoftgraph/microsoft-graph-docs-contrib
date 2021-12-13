@@ -70,13 +70,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "customerEmailAddress": "String",
-  "customerId": "String",
-  "customerLocation": {"@odata.type": "microsoft.graph.location"},
-  "customerName": "String",
-  "customerNotes": "String",
-  "customerPhone": "String",
-  "customerTimeZone": "String",
   "customers": [
     {
       "@odata.type": "microsoft.graph.bookingCustomerInformation"
