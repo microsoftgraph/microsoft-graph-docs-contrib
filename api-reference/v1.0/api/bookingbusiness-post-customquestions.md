@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 ## Permissions
@@ -70,17 +68,15 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/
 Content-Type: application/json
 Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "displayName": "String",
-  "answerInputType": "String",
-  "answerOptions": [
-    "String"
-  ]
+  "displayName": "What is your age?",
+  "answerInputType": "text",
+  "answerOptions" : []
 }
 ```
 
@@ -101,11 +97,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "id": "91f1ef26-ca00-451c-1c64-8f3560c80d3d",
-  "displayName": "String",
-  "answerInputType": "String",
-  "answerOptions": [
-    "String"
-  ]
+  "id": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+  "displayName": "What is your age?",
+  "answerInputType": "text",
+  "answerOptions": [],
 }
 ```

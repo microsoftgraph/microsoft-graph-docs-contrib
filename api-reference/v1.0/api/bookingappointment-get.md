@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
 The **startDateTime** and **endDateTime** properties are always returned in UTC.
@@ -52,7 +50,7 @@ The following is an example of the request.
   "name": "get_bookingappointment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
@@ -158,7 +156,7 @@ Content-type: application/json
         }
     ],
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",

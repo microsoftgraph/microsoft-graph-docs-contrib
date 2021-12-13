@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +49,7 @@ The following is an example of the request. This appointment does not involve bo
   "name": "create_bookingappointment_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 Content-type: application/json
 
 {
@@ -126,7 +124,7 @@ Content-type: application/json
         "timeZone": "UTC"
     },
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -165,7 +163,7 @@ Content-type: application/json
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                    "question": "What is your age",
+                    "question": "What is your age?",
                     "answerInputType": "text",
                     "answerOptions": [],
                     "isRequired": true,
@@ -320,7 +318,7 @@ Content-type: application/json
             "customQuestionAnswers": [
                 {
                     "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-                    "question": "What is your age",
+                    "question": "What is your age?",
                     "answerInputType": "text",
                     "answerOptions": [],
                     "isRequired": true,

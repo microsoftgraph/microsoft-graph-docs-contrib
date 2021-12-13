@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +50,7 @@ The following is an example of the request.
   "name": "get_appointments"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appointments-csharp-snippets.md)]
@@ -184,6 +182,8 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "maximumAttendeesCount": 5,
+            "filledAttendeesCount": 1,
             "customers": [
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -216,7 +216,18 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "timeZone": "America/Chicago"
+                    "timeZone": "America/Chicago",
+                    "customQuestionAnswers": [
+                        {
+                            "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                            "question": "What is your age?",
+                            "answerInputType": "text",
+                            "answerOptions": [],
+                            "isRequired": true,
+                            "answer": "25",
+                            "selectedOptions": []
+                        }
+                    ]
                 }
             ],
             "customerTimeZone": "America/Chicago",

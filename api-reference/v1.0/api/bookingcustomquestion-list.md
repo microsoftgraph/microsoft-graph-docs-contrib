@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) objects and their properties.
 
 ## Permissions
@@ -65,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/
 ```
 
 ### Response
@@ -93,6 +91,18 @@ Content-Type: application/json
       "answerOptions": [
         "String"
       ]
+    },
+    {
+        "@odata.type": "#microsoft.graph.bookingCustomQuestion",
+        "id": "dbb865a6-530d-46e1-8e88-5d76789034b2",
+        "displayName": "What is your nationality?",
+        "answerInputType": "radioButton",
+        "answerOptions": [
+          "US",
+          "UK",
+          "Canada",
+          "India"
+        ]
     }
   ]
 }

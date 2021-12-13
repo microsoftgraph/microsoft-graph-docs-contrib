@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +58,7 @@ The following example updates the business email address and scheduling policy, 
   "name": "update_bookingbusiness"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 Content-type: application/json
 
 {

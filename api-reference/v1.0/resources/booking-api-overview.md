@@ -39,7 +39,7 @@ Use the **id** property of the new **bookingBusiness** returned in the POST resp
 3. Add individual staff members for the business:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
 Content-Type: application/json
 
@@ -52,7 +52,7 @@ Content-Type: application/json
 4. Define each service offered by the business:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
 Content-Type: application/json
 
@@ -63,7 +63,7 @@ Content-Type: application/json
 5. Publish the scheduling page for the business, to let customers and business operators start booking appointments:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
