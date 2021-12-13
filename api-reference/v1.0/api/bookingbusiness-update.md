@@ -58,7 +58,7 @@ The following example updates the business email address and scheduling policy, 
   "name": "update_bookingbusiness"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 Content-type: application/json
 
 {

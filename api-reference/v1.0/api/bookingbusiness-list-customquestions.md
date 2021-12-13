@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions
 ```
 
 ### Response

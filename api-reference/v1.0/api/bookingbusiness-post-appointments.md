@@ -49,7 +49,7 @@ The following is an example of the request. This appointment does not involve bo
   "name": "create_bookingappointment_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 Content-type: application/json
 
 {

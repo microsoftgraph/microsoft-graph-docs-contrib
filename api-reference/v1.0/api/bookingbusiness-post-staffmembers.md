@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "create_bookingstaffmember_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/{id}/staffMembers
 Content-type: application/json
 
 {

@@ -48,7 +48,7 @@ The following is an example of the request.
   "name": "get_bookingbusiness"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusiness-csharp-snippets.md)]

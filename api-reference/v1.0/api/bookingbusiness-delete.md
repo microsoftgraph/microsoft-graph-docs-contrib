@@ -49,7 +49,7 @@ The following is an example of the request.
   "name": "delete_bookingbusiness"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingbusiness-csharp-snippets.md)]
