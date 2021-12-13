@@ -1,13 +1,13 @@
 ---
-title: "Create officeSuiteApp"
-description: "Create a new officeSuiteApp object."
+title: "Update macOSDmgApp"
+description: "Update the properties of a macOSDmgApp object."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# Create officeSuiteApp
+# Update macOSDmgApp
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) object.
+Update the properties of a [macOSDmgApp](../resources/intune-apps-macosdmgapp.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
@@ -42,9 +44,9 @@ POST /deviceAppManagement/mobileApps
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the officeSuiteApp object.
+In the request body, supply a JSON representation for the [macOSDmgApp](../resources/intune-apps-macosdmgapp.md) object.
 
-The following table shows the properties that are required when you create the officeSuiteApp.
+The following table shows the properties that are required when you create the [macOSDmgApp](../resources/intune-apps-macosdmgapp.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -68,35 +70,31 @@ The following table shows the properties that are required when you create the o
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
-|productIds|[officeProductId](../resources/intune-apps-officeproductid.md) collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
-|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|The property to represent the apps which are excluded from the selected Office365 Product Id.|
-|useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 app suite.|
-|updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|String collection|The property to represent the locales which are installed when the apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|To specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an Office365 app suite is deployed to the device or not.|
-|targetVersion|String|The property to represent the specific target version for the Office365 app suite that should be remained deployed on the devices.|
-|updateVersion|String|The property to represent the update version in which the specific target version is available for the Office365 app suite.|
-|officeConfigurationXml|Binary|The property to represent the XML configuration file that can be specified for Office ProPlus Apps. Takes precedence over all other properties. When present, the XML configuration file will be used to create the app.|
+|committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|primaryBundleId|String|The primary CFBundleIdentifier of the DMG.|
+|primaryBundleVersion|String|The primary CFBundleVersion of the DMG.|
+|includedApps|[macOSIncludedApp](../resources/intune-apps-macosincludedapp.md) collection|The list of apps expected to be installed by the DMG.|
+|ignoreVersionDetection|Boolean|A value indicating whether the app's version will be used to detect the app after it is installed on a device. Set this to true for apps that use a self-update feature. Set this to false to install the app when it is not already installed on the device, or if the deploying app's version number does not match the version that's already installed on the device.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [macOSDmgApp](../resources/intune-apps-macosdmgapp.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1675
+Content-length: 1545
 
 {
-  "@odata.type": "#microsoft.graph.officeSuiteApp",
+  "@odata.type": "#microsoft.graph.macOSDmgApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -120,52 +118,46 @@ Content-length: 1675
   "dependentAppCount": 1,
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
-  "autoAcceptEula": true,
-  "productIds": [
-    "o365BusinessRetail"
+  "committedContentVersion": "Committed Content Version value",
+  "fileName": "File Name value",
+  "size": 4,
+  "primaryBundleId": "Primary Bundle Id value",
+  "primaryBundleVersion": "Primary Bundle Version value",
+  "includedApps": [
+    {
+      "@odata.type": "microsoft.graph.macOSIncludedApp",
+      "bundleId": "Bundle Id value",
+      "bundleVersion": "Bundle Version value"
+    }
   ],
-  "excludedApps": {
-    "@odata.type": "microsoft.graph.excludedApps",
-    "access": true,
-    "bing": true,
-    "excel": true,
-    "groove": true,
-    "infoPath": true,
-    "lync": true,
-    "oneDrive": true,
-    "oneNote": true,
-    "outlook": true,
-    "powerPoint": true,
-    "publisher": true,
-    "sharePointDesigner": true,
-    "teams": true,
-    "visio": true,
-    "word": true
-  },
-  "useSharedComputerActivation": true,
-  "updateChannel": "current",
-  "officePlatformArchitecture": "x86",
-  "localesToInstall": [
-    "Locales To Install value"
-  ],
-  "installProgressDisplayLevel": "full",
-  "shouldUninstallOlderVersionsOfOffice": true,
-  "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value",
-  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+  "ignoreVersionDetection": true,
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+    "v10_7": true,
+    "v10_8": true,
+    "v10_9": true,
+    "v10_10": true,
+    "v10_11": true,
+    "v10_12": true,
+    "v10_13": true,
+    "v10_14": true,
+    "v10_15": true,
+    "v11_0": true,
+    "v12_0": true
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1847
+Content-Length: 1717
 
 {
-  "@odata.type": "#microsoft.graph.officeSuiteApp",
-  "id": "9b263b46-3b46-9b26-463b-269b463b269b",
+  "@odata.type": "#microsoft.graph.macOSDmgApp",
+  "id": "5f40a691-a691-5f40-91a6-405f91a6405f",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -191,39 +183,33 @@ Content-Length: 1847
   "dependentAppCount": 1,
   "supersedingAppCount": 3,
   "supersededAppCount": 2,
-  "autoAcceptEula": true,
-  "productIds": [
-    "o365BusinessRetail"
+  "committedContentVersion": "Committed Content Version value",
+  "fileName": "File Name value",
+  "size": 4,
+  "primaryBundleId": "Primary Bundle Id value",
+  "primaryBundleVersion": "Primary Bundle Version value",
+  "includedApps": [
+    {
+      "@odata.type": "microsoft.graph.macOSIncludedApp",
+      "bundleId": "Bundle Id value",
+      "bundleVersion": "Bundle Version value"
+    }
   ],
-  "excludedApps": {
-    "@odata.type": "microsoft.graph.excludedApps",
-    "access": true,
-    "bing": true,
-    "excel": true,
-    "groove": true,
-    "infoPath": true,
-    "lync": true,
-    "oneDrive": true,
-    "oneNote": true,
-    "outlook": true,
-    "powerPoint": true,
-    "publisher": true,
-    "sharePointDesigner": true,
-    "teams": true,
-    "visio": true,
-    "word": true
-  },
-  "useSharedComputerActivation": true,
-  "updateChannel": "current",
-  "officePlatformArchitecture": "x86",
-  "localesToInstall": [
-    "Locales To Install value"
-  ],
-  "installProgressDisplayLevel": "full",
-  "shouldUninstallOlderVersionsOfOffice": true,
-  "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value",
-  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+  "ignoreVersionDetection": true,
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.macOSMinimumOperatingSystem",
+    "v10_7": true,
+    "v10_8": true,
+    "v10_9": true,
+    "v10_10": true,
+    "v10_11": true,
+    "v10_12": true,
+    "v10_13": true,
+    "v10_14": true,
+    "v10_15": true,
+    "v11_0": true,
+    "v12_0": true
+  }
 }
 ```
 
