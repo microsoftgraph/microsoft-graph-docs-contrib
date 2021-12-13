@@ -627,6 +627,56 @@
             "CreatedDateTime": "2021-06-18T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
-          }
+          },
+          {
+          "ChangeList": [
+            {
+              "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource",
+              "ChangeType": "Addition",
+              "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource?view=graph-rest-1.0) resource type.",
+              "Target": "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource"
+            },
+            {
+              "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "accessReviewInstanceDecisionItemAzureRoleResource",
+              "ChangeType": "Addition",
+              "Description": "Added the [accessReviewInstanceDecisionItemAzureRoleResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource?view=graph-rest-1.0) resource type.",
+              "Target": "accessReviewInstanceDecisionItemAzureRoleResource"
+            },
+            {
+              "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "accessReviewInstanceDecisionItemServicePrincipalResource",
+              "ChangeType": "Addition",
+              "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-1.0) resource type.",
+              "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+            },
+            {
+              "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "contactedReviewers",
+              "ChangeType": "Addition",
+              "Description": "Added the **contactedReviewers** relationship to [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+              "Target": "accessReviewInstance"
+            },
+            {
+              "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "accessReviewReviewer",
+              "ChangeType": "Addition",
+              "Description": "Added the [accessReviewReviewer](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewer?view=graph-rest-1.0) resource",
+              "Target": "accessReviewReviewer"
+            }
+          ],
+          "Id": "b305ef66-8aaf-4a07-8b0e-7ccbdda4475f",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2021-12-13T21:28:51.4190699Z",
+          "WorkloadArea": "Microsoft.IdentityGovernance.AccessReviews",
+          "SubArea": ""
+        }
     ]
 }
