@@ -178,8 +178,6 @@ Content-type: application/json
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition_cloudpc"
