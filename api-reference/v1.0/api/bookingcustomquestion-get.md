@@ -57,11 +57,9 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_bookingcustomquestion"
+  "blockType": "request"
 }
 -->
-
 ```http
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```

@@ -27,8 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "ignored"
-}
--->
+}-->
 
 ```http
 POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
@@ -62,8 +61,7 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 ### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "create_bookingcustomquestion_from_"
+  "blockType": "request"
 }
 -->
 
