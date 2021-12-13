@@ -1,6 +1,6 @@
 ---
 title: "List customQuestions"
-description: "Get the bookingCustomQuestion resources from the customQuestions navigation property."
+description: "Get the bookingCustomQuestion resources associated with a bookingBusiness."
 author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the bookingCustomQuestion resources from the customQuestions navigation property.
+Get the [bookingCustomQuestion](../resources/bookingcustomquestion.md) resources associated with a [bookingBusiness](../resources/bookingbusiness.md).
 
 ## Permissions
 
