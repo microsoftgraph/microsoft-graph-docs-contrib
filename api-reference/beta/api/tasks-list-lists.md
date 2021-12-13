@@ -35,7 +35,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## Optional query parameters
-This method supports `$expand`,`$filter` and `top`  [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports `$expand`, `$filter` and `$top`  [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
