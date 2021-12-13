@@ -17,7 +17,7 @@ Download the contents of the primary stream (file) of a DriveItem. Only driveIte
 
 Read more about CORS and understand how it works:
 - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
-- [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online).
+- [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online&preserve-view=true).
 - [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
 
 ## Permissions
