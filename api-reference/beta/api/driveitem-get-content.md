@@ -16,6 +16,11 @@ Namespace: microsoft.graph
 
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
+Read more about CORS and understand how it works:
+- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+- [Using the OneDrive API in JavaScript apps (CORS support)](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online).
+- [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
