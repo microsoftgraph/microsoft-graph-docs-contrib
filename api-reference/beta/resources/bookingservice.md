@@ -1,6 +1,6 @@
 ---
 title: "bookingService resource type"
-description: "Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service."
+description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -28,7 +28,7 @@ Represents information about a particular service provided by a [bookingBusiness
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains set of custom questions associated with a particular service. |
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
 |defaultPrice|Double|The default monetary price for the service.|
