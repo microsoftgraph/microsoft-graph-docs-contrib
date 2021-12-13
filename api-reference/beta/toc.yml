@@ -14288,6 +14288,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List all teams in an organization
+          href: api/teams-list.md  
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
