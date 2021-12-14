@@ -19,7 +19,7 @@ Represents when and to whom to send an email reminder.
 |:---------------|:--------|:----------|
 |message|String|The message in the reminder.|
 |offset|Duration|The amount of time before the start of an appointment that the reminder should be sent. It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
-|recipients|String| The persons who shouold receive the reminder. Possible values are: `allAttendees`, `staff`, `customer`.|
+|recipients|bookingReminderRecipients|The persons who should receive the reminder. Possible values are: `allAttendees`, `staff`, `customer`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 {
   "message": "String",
   "offset": "String (timestamp)",
-  "recipients": "String"
+  "recipients": {"@odata.type": "microsoft.graph.bookingReminderRecipients"}
 }
 
 ```
