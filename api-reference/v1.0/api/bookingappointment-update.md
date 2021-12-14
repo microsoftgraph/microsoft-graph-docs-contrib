@@ -49,7 +49,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |price|Double|The regular price for an appointment for the specified [bookingService](../resources/bookingservice.md).|
 |priceType|string| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |reminders|[bookingReminder](../resources/bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer. Only supported for appointment if maxAttendeeCount is 1|
+|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer. Only supported for appointment if maxAttendeeCount is 1.|
 |serviceId|String|The ID of the [bookingService](../resources/bookingservice.md) associated with this appointment.|
 |serviceLocation|[location](../resources/location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the [bookingCustomQuestion](../resources/bookingcustomquestion.md) resources from the customQuestions navigation property.
+Get the [bookingCustomQuestion](../resources/bookingcustomquestion.md) resources from the **customQuestions** navigation property.
 
 ## Permissions
 
