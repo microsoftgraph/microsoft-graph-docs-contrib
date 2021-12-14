@@ -93,7 +93,6 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers",
     "value": [
         {
-            "@odata.type": "#microsoft.graph.bookingCustomer",
             "id": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "displayName": "Adele Vance",
             "emailAddress": "adelev@proseware.com",
@@ -101,7 +100,6 @@ Content-type: application/json
             "phones": []
         },
         {
-            "@odata.type": "#microsoft.graph.bookingCustomer",
             "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
             "displayName": "Adele Vance",
             "emailAddress": "adelev@proseware.com",
@@ -137,7 +135,6 @@ Content-type: application/json
             ]
         },
         {
-            "@odata.type": "#microsoft.graph.bookingCustomer",
             "id": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "displayName": "Bob Kelly",
             "emailAddress": "bobk@tailspintoys.com",
@@ -145,7 +142,6 @@ Content-type: application/json
             "phones": []
         },
         {
-            "@odata.type": "#microsoft.graph.bookingCustomer",
             "id": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "displayName": "Jordan Miller",
             "emailAddress": "jordanm@contoso.com",
