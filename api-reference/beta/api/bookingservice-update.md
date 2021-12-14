@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
-|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains set of custom questions associated with a particular service. Optional.|
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains the set of custom questions associated with a particular service. Optional.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 
 ## Response
@@ -77,7 +77,7 @@ The following example updates the duration of the specified service.
   "name": "update_bookingservice"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {

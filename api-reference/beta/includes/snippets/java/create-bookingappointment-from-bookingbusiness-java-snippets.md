@@ -104,7 +104,7 @@ start.dateTime = "2018-05-01T12:00:00+00:00";
 start.timeZone = "UTC";
 bookingAppointment.start = start;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").appointments()
+graphClient.bookingBusinesses("Contosolunchdelivery@M0000000000.onmicrosoft.com").appointments()
 	.buildRequest()
 	.post(bookingAppointment);
 

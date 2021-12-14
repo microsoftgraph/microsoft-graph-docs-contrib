@@ -21,7 +21,7 @@ const bookingBusiness = {
   }
 };
 
-await client.api('/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com')
+await client.api('/bookingBusinesses/fabrikam@M0000000000.onmicrosoft.com')
 	.version('beta')
 	.update(bookingBusiness);
 

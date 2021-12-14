@@ -34,7 +34,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
-|filledAttendeesCount|Int32|The current number of customers in the appointment |
+|filledAttendeesCount|Int32|The current number of customers in the appointment. |
 |id|String| The ID of the **bookingAppointment**. Read-only.|
 |isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
@@ -68,7 +68,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |start (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|Use `startDateTime` instead.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
