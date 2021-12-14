@@ -92,5 +92,6 @@ Content-Type: application/json
 ```
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
+- [List all teams in an organization](../api/teams-list.md)
 - [Get team](../api/team-get.md)
 

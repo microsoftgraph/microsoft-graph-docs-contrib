@@ -117,6 +117,7 @@ Content-type: application/json
 ## See also
 - [List all teams](/graph/teams-list-all-teams)
 - [List associated teams](../api/associatedteaminfo-list.md)
+- [List all teams in an organization](../api/teams-list.md)
 - [Get team](../api/team-get.md)
 
 
