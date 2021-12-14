@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        { 
+          "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [POST](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-assignmentrequests) operation to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-1.0) resource. This operation allows adding, updating, and removing access package assignment requests by or on behalf of a user.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+        "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-12-06T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "0bc50a14-e154-4dd9-b0d1-018477ff60e5",
           "ApiChange": "Resource",
