@@ -35,7 +35,6 @@ When booking appointments, the Bookings API considers the following settings to 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking. |
-|colorIndex|Int32|Identifies a color to represent the staff member. The color corresponds to the color palette in the **Staff details** page in the Bookings app.|
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
@@ -63,7 +62,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 1024,
   "displayName": "String",
   "emailAddress": "String",
   "id": "String (identifier)",
