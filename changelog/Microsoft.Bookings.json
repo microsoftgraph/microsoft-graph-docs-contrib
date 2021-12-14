@@ -7,7 +7,7 @@
                     "ApiChange": "EnumType",
                     "ChangedApiName": "answerInputType",
                     "ChangeType": "Addition",
-                    "Description": "Added the [answerInputType]((https://docs.microsoft.com/en-us/graph/api/resources/bookingAnswerInputType?view=graph-rest-1.0) enumeration type.",
+                    "Description": "Added the **answerInputType** enumeration type.",
                     "Target": "answerInputType"
                 },
                 {

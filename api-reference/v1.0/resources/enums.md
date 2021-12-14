@@ -1860,3 +1860,11 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+
+### answerInputType values 
+
+|Member|
+|:---|
+|text|
+|radioButton|
+|unknownFutureValue|

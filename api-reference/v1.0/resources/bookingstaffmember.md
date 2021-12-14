@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md).
+Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md). 
 
 Staff members can be part of the Microsoft 365 tenant where the **booking business** is configured, or they can use email services from other email providers.
 
@@ -20,6 +20,8 @@ When booking appointments, the Bookings API considers the following settings to 
 1. By default, the hours of operation of the business (the **businessHours** property of the [bookingBusiness](bookingbusiness.md) entity) represents the general availability of the staff member.
 2. If **useBusinessHours** is false, then the staff member's specific work hours (**workingHours** property of the **bookingStaffmember** entity) represents that member's general availability.
 3. If **availabilityIsAffectedByPersonalCalendar** is true, then the Bookings API would first look at the staff member's generally available hours (as determined by either #1 or #2), and verify availability during those hours in the staff member's personal calendar, before making a booking.
+
+Inherits from [bookingPerson](bookingperson.md).
 
 ## Methods
 
@@ -56,7 +58,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.bookingStaffMember"
+  "@odata.type": "microsoft.graph.bookingStaffMember",
+  "baseType": "microsoft.graph.bookingPerson"
 }-->
 
 ```json

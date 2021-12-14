@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 Represents a customer of a [bookingBusiness](bookingbusiness.md).
 
+Inherits from [bookingPerson](bookingperson.md).
 
 ## Methods
 
@@ -46,7 +47,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.bookingCustomer"
+  "@odata.type": "microsoft.graph.bookingCustomer",
+  "baseType": "microsoft.graph.bookingPerson"
 }-->
 
 ```json
