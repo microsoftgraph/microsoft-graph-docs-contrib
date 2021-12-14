@@ -1,6 +1,6 @@
 ---
 title: "bookingQuestionAnswer resource type"
-description: "This contains a custom question, answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment."
+description: "Contains a custom question, the answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment."
 author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This contains a custom question, answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment.
+Contains a custom question, the answer given by the customer for the custom question and the properties of the custom question at the time of creation of the appointment.
 
 ## Properties
 |Property|Type|Description|

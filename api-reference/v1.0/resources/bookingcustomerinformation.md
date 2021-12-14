@@ -1,6 +1,6 @@
 ---
 title: "bookingCustomerInformation resource type"
-description: "It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment."
+description: "Registers the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment."
 author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment.
+Registers the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment.
 
 
 ## Properties
