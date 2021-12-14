@@ -183,7 +183,7 @@ items:
           - name: Manage items
             href: connecting-external-content-manage-items.md
           - name: External groups
-            href: connecting-external-content-external-groups.md            
+            href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
@@ -374,6 +374,8 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize people insights privacy (preview)
+            href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
           - name: Item insights overview

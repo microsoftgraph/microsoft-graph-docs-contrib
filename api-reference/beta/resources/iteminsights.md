@@ -23,7 +23,11 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 ### Limiting item insights
 
-Update [itemInsightsSettings](iteminsightssettings.md) to disable item insights for a specific Azure AD group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0).
+Update [insightsSettings](insightssettings.md) to disable item insights for a specific Azure AD group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy).
+
+## Properties
+
+None.
 
 ## Relationships
 

@@ -10,6 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIdentityProviderBase()
 displayName := "Apple"
 requestBody.SetDisplayName(&displayName)
+requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.socialIdentityProvider",
+}
 options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
 	Body: requestBody,
 }

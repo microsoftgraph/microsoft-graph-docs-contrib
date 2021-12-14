@@ -17,10 +17,9 @@ For example, if you wish to retrieve only inactive user accounts, you can run ei
 + Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
@@ -28,10 +27,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 + Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_not_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
@@ -39,15 +37,15 @@ ConsistencyLevel: eventual
 
 These advanced query capabilities are supported only on the following subsets of Azure AD directory objects and their relationships:
 
-| API / Object                                                                    | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Administrative units](/graph/api/resources/administrativeunit)           | <li>[members](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [Applications](/graph/api/resources/application)                          | <li>[owners](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Contacts](/graph/api/resources/orgContact)                                  | <li>[memberOf](/graph/api/orgcontact-list-memberof)<li> [transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Devices](/graph/api/resources/device)                                    | <li>[memberOf](/graph/api/device-list-memberof) <li> [transitiveMemberOf](/graph/api/device-list-transitivememberof) <li> [registeredUsers](/graph/api/device-list-registeredusers) <li> [registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                             |
-| [Groups](/graph/api/resources/group)                                      | <li>[members](/graph/api/group-list-members) <li> [transitiveMembers](/graph/api/group-list-transitivemembers) <li> [memberOf](/graph/api/group-list-memberof) <li> [transitiveMemberOf](/graph/api/group-list-transitivememberof) <li> [owners](/graph/api/group-list-owners) <li> [appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
-| [Service principals](/graph/api/resources/serviceprincipal)               | <li>[memberOf](/graph/api/serviceprincipal-list-memberof), <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li> [appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li> [appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li> [oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                 |
-| [User](/graph/api/resources/user)                                         | <li>[memberOf](/graph/api/user-list-memberof) <li> [transitiveMemberOf](/graph/api/user-list-transitivememberof)<li> [ownedObjects](/graph/api/user-list-ownedobjects) <li> [registeredDevices](/graph/api/user-list-registereddevices) <li> [ownedDevices](/graph/api/user-list-owneddevices) <li> [transitiveManagers](/graph/api/user-list-manager) <li> [directReports](/graph/api/user-list-directreports) <li> [transitiveReports](/graph/api/user-get-transitivereports) <li> [appRoleAssignments](/graph/api/user-list-approleassignments) <li> [oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
+| Object                                                         | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Administrative unit](/graph/api/resources/administrativeunit) | <li>[members](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [Application](/graph/api/resources/application)                | <li>[owners](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [Device](/graph/api/resources/device)                          | <li>[memberOf](/graph/api/device-list-memberof) <li>[transitiveMemberOf](/graph/api/device-list-transitivememberof) <li>[registeredUsers](/graph/api/device-list-registeredusers) <li>[registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                                   |
+| [Group](/graph/api/resources/group)                            | <li>[members](/graph/api/group-list-members) <li>[transitiveMembers](/graph/api/group-list-transitivemembers) <li>[memberOf](/graph/api/group-list-memberof) <li>[transitiveMemberOf](/graph/api/group-list-transitivememberof) <li>[owners](/graph/api/group-list-owners) <li>[appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
+| [Organizational contact](/graph/api/resources/orgContact)                     | <li>[memberOf](/graph/api/orgcontact-list-memberof) <li>[transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [Service principal](/graph/api/resources/serviceprincipal)     | <li>[memberOf](/graph/api/serviceprincipal-list-memberof) <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li>[appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li>[appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li>[oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                           |
+| [User](/graph/api/resources/user)                              | <li>[memberOf](/graph/api/user-list-memberof) <li>[transitiveMemberOf](/graph/api/user-list-transitivememberof)<li>[ownedObjects](/graph/api/user-list-ownedobjects) <li>[registeredDevices](/graph/api/user-list-registereddevices) <li>[ownedDevices](/graph/api/user-list-owneddevices) <li>[transitiveManagers](/graph/api/user-list-manager) <li>[directReports](/graph/api/user-list-directreports) <li>[transitiveReports](/graph/api/user-get-transitivereports) <li>[appRoleAssignments](/graph/api/user-list-approleassignments) <li>[oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries:
 
@@ -100,10 +98,19 @@ The following tables summarizes support for `$filter` operators by properties of
 
 Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header is not specified, the request returns an error when the `$count` URL segment is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_count_bad"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users/$count
 ```
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "odata.error",
+  "expectError": true
+} -->
 ```json
 {
     "error": {
@@ -120,6 +127,10 @@ https://graph.microsoft.com/v1.0/users/$count
 
 For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_applications_search_displayName"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
@@ -140,6 +151,10 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 
 If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_filer_endsWith"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
@@ -160,8 +175,12 @@ https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 
 If a property has not been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_unindexed_bad"
+} -->
 ```http
-https://graph.microsoft.com/v1.0/users?$filter=id ge '398164b1-5196-49dd-ada2-364b49f99b27'&$count=true
+https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -179,7 +198,9 @@ ConsistencyLevel: eventual
 }
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
+However, it is important to note that query parameters specified in a request might fail silently.
+This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
+In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
 
 ```http
 https://graph.microsoft.com/v1.0/users?$count=true
@@ -205,5 +226,5 @@ Content-type: application/json
 
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](known-issues.md#some-limitations-apply-to-query-parameters)
-+ [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
++ [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Azure AD directory objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

@@ -81,6 +81,8 @@ items:
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
       href: /graph/use-postman?context=graph/api/1.0
+    - name: System messages
+      href: /graph/system-messages?context=graph/api/1.0
   - name: Migrate
     expanded: false
     items:
@@ -904,6 +906,8 @@ items:
             href: api/serviceprincipal-addkey.md
           - name: Remove key
             href: api/serviceprincipal-removekey.md
+          - name: Add token signing certificate
+            href: api/serviceprincipal-addtokensigningcertificate.md  
         - name: Delegated permission grants
           items:
           - name: List
@@ -5245,6 +5249,93 @@ items:
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Entitlement management
+          href: resources/entitlementmanagement-root.md
+          items:
+          - name: Access package
+            href: resources/accesspackage.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-accesspackages.md
+            - name: Create
+              href: api/entitlementmanagement-post-accesspackages.md
+            - name: Get
+              href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
+            - name: Delete
+              href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
+          - name: Access package assignment
+            href: resources/accesspackageassignment.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignments.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment request
+            href: resources/accesspackageassignmentrequest.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignmentrequests.md
+            - name: Create
+              href: api/entitlementmanagement-post-assignmentrequests.md
+            - name: Get
+              href: api/accesspackageassignmentrequest-get.md
+            - name: Delete
+              href: api/accesspackageassignmentrequest-delete.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
+          - name: Access package catalog
+            href: resources/accesspackagecatalog.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-catalogs.md
+            - name: Create
+              href: api/entitlementmanagement-post-catalogs.md
+            - name: Get
+              href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackagecatalog-update.md
+            - name: Delete
+              href: api/accesspackagecatalog-delete.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-connectedorganizations.md
+            - name: Create
+              href: api/entitlementmanagement-post-connectedorganizations.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
+            - name: List external sponsors
+              href: api/connectedorganization-list-externalsponsors.md
+            - name: List internal sponsors
+              href: api/connectedorganization-list-internalsponsors.md
+            - name: Add external sponsors
+              href: api/connectedorganization-post-externalsponsors.md
+            - name: Add internal sponsors
+              href: api/connectedorganization-post-internalsponsors.md
+            - name: Remove external sponsors
+              href: api/connectedorganization-delete-externalsponsors.md
+            - name: Remove internal sponsors
+              href: api/connectedorganization-delete-internalsponsors.md
+          - name: Entitlement management settings
+            href: resources/entitlementmanagementsettings.md
+            items:
+            - name: Get
+              href: api/entitlementmanagementsettings-get.md
+            - name: Update
+              href: api/entitlementmanagementsettings-update.md
         - name: Terms of use
           items:
           - name: Agreement
