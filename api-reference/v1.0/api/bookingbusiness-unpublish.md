@@ -1,6 +1,6 @@
 ---
 title: "bookingBusiness: unpublish"
-description: "Make the scheduling page of this business not available to external customers."
+description: "Make the scheduling page of a business unavailable to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Make the scheduling page of this business not available to external customers.
 
-Set the **isPublished** property to false, and **publicUrl** property to null.
+Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,10 +38,10 @@ POST /bookingBusinesses/{id}/unpublish
 ## Request body
 
 ## Response
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-The following is an example of how to call this API.
+
 ### Request
 The following is an example of the request.
 
@@ -58,7 +58,7 @@ The following is an example of the response.
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

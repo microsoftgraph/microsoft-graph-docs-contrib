@@ -30,7 +30,7 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships

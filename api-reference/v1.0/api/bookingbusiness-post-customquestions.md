@@ -42,15 +42,15 @@ POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
+In the request body, supply a JSON representation of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 You can specify the following properties when creating a **bookingCustomQuestion**.
 
 | Property        | Type              | Description                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
-| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). Required. |
 | answerInputType | answerInputType   | The expected answer type. The possible values are: `text`, `radioButton`, `unknownFutureValue`. Optional.    |
 | answerOptions   | String collection | List of possible answer values. Optional.                                                                     |
+| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). Required. |
 
 ## Response
 

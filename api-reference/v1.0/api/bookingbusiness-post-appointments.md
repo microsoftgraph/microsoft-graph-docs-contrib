@@ -33,7 +33,7 @@ POST /bookingBusinesses/{id}/appointments
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.
+In the request body, supply a JSON representation of a [bookingAppointment](../resources/bookingappointment.md) object.
 
 
 ## Response

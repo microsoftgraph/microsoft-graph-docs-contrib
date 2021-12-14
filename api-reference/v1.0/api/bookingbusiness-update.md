@@ -36,7 +36,7 @@ PATCH /bookingBusinesses/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|The street address of the business.|
+|address|[physicalAddress](../resources/physicaladdress.md)|The street address of the business. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
@@ -47,7 +47,7 @@ PATCH /bookingBusinesses/{id}
 |webSiteUrl|String|The URL of the business web site.|
 
 ## Response
-If successful, this method returns a a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ### Request
 The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.

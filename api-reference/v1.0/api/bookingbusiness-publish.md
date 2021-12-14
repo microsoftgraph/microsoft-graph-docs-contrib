@@ -1,6 +1,6 @@
 ---
 title: "bookingBusiness: publish"
-description: "Make the scheduling page of this business available to external customers."
+description: "Make the scheduling page of a business available to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Make the scheduling page of this business available to external customers.
+Make the scheduling page of a business available to external customers.
 
-Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.
+Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/publish
 ## Request body
 
 ## Response
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -57,7 +57,7 @@ The following is an example of the response.
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

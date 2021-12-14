@@ -18,8 +18,8 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingBusiness](../resources/bookingbusiness.md). |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingBusiness](../resources/bookingbusiness.md). |
 |[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
 |[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
@@ -34,27 +34,26 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment |
 |id|String| The ID of the **bookingAppointment**. Read-only.|
-|isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
+|isLocationOnline|Boolean|If `true`, indicates that the appointment will be held online. Default value is `false`.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment.|
-|optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
+|optOutOfCustomerEmail|Boolean|If `true` indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |price|Double|The regular price for an appointment for the specified [bookingService](bookingservice.md).|
 |priceType|string| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |reminders|[bookingReminder](bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.|
+|selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer. Only supported for appointment if maxAttendeeCount is 1.|
 |serviceId|String|The ID of the [bookingService](bookingservice.md) associated with this appointment.|
 |serviceLocation|[location](location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.|
+|smsNotificationsEnabled|Boolean|If `true`, indicates SMS notifications will be sent to the customers for the appointment. Default value is `false`.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Relationships
-None
-
+None.
 
 ## JSON representation
 
@@ -80,10 +79,10 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
-  "optOutOfCustomerEmail": true,
+  "optOutOfCustomerEmail": "Boolean",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
-  "price": 1024,
+  "price": "Integer",
   "priceType": "string",
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",

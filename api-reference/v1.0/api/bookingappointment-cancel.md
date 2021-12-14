@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameter.
 |cancellationMessage|String|A message to acknowledge with the customer that the appointment has been cancelled.|
 
 ## Response
-If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 If you attempt to cancel an appointment that does not exist, this method returns `404 Not found`.
 
@@ -68,7 +68,7 @@ The following is an example of the response.
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

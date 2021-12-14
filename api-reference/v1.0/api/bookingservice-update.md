@@ -1,5 +1,5 @@
 ---
-title: "Update bookingservice"
+title: "Update bookingService"
 description: "Update the properties of a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
@@ -18,7 +18,7 @@ The following are some examples you can customize for a service:
 - Typical length of an appointment
 - Reminders
 - Any time buffer to set up before or finish up after the service
-- [Scheduling policy](../resources/bookingschedulingpolicy.md) parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+- [Scheduling policy](../resources/bookingschedulingpolicy.md) parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,27 +44,27 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains a set of custom questions associated with a particular service. Optional.|
+|defaultDuration|Duration|The default length of the service represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|The default physical location for the service.|
 |defaultPrice|Double|The default monetary price for the service.|
 |defaultPriceType|string|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
-|id|String| Read-only.|
-|isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|id|String| The unique identifier for the **bookingService**. Read-only.|
+|isHiddenFromCustomers|Boolean|If `true`, the service is not available to customers for booking.|
+|isLocationOnline|Boolean|If `true` it indicates that the appointments for the service will be held online. Default value is `false`.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|The set of policies that determine how appointments for this type of service should be created and managed.|
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.|
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
-|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection|This contains set of custom questions associated with a particular service. Optional.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 
 ## Response
-If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ### Request
 The following example updates the duration of the specified service.

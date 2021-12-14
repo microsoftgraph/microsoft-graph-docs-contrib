@@ -35,11 +35,11 @@ POST /bookingBusinesses
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
+In the request body, supply a JSON representation of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
 
 ## Response
-If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 
 ## Example
 ### Request
@@ -70,7 +70,6 @@ Content-type: application/json
 }
 ```
 
-In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
 ### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {

@@ -36,13 +36,13 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 ## Example
 ### Request
 The following is an example of the request.

@@ -1,6 +1,6 @@
 ---
 title: "Delete bookingCustomQuestion"
-description: "Deletes a bookingCustomQuestion object."
+description: "Delete a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"

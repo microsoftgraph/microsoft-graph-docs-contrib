@@ -38,7 +38,7 @@ This method supports the $count and $expand [OData query parameters](/graph/quer
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [bookingCurrency](../resources/bookingcurrency.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookingCurrency](../resources/bookingcurrency.md) object in the response body.
 ## Example
 ### Request
 The following is an example of the request.

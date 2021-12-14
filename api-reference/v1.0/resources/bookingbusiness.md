@@ -17,29 +17,29 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
+|[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of **bookingBusiness** objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
-|[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of bookingBusiness object.|
+|[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of a **bookingBusiness** object.|
 |[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update properties in a **bookingBusiness** object. |
 |[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
-|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new bookingAppointment by posting to the appointments collection.|
-|[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a bookingAppointment object collection.|
-|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Create a new bookingCustomer by posting to the customers collection.|
-|[List customers](../api/bookingbusiness-list-customers.md) |[bookingCustomer](bookingcustomer.md) collection| Get a bookingCustomer object collection.|
-|[Create bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Create a new bookingService by posting to the services collection.|
-|[List services](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
-|[Create bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
-|[List staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
-|[List customQuestions](../api/bookingbusiness-list-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection|Get the bookingCustomQuestion resources from the customQuestions navigation property.|
-|[Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Create a new bookingCustomQuestion object.|
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new **bookingAppointment** by posting to the appointments collection.|
+|[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a **bookingAppointment** object collection.|
+|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Create a new **bookingCustomer** by posting to the customers collection.|
+|[List customers](../api/bookingbusiness-list-customers.md) |[bookingCustomer](bookingcustomer.md) collection| Get a **bookingCustomer** object collection.|
+|[Create bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Create a new **bookingService** by posting to the services collection.|
+|[List services](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) collection| Get a **bookingService** object collection.|
+|[Create bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new **bookingStaffMember** by posting to the staffMembers collection.|
+|[List staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a **bookingStaffMember** object collection.|
+|[List customQuestions](../api/bookingbusiness-list-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection|Get the **bookingCustomQuestion** resources from the customQuestions navigation property.|
+|[Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Create a new **bookingCustomQuestion** object.|
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
-|[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
-|[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
+|[Publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to `true`, and **publicUrl** property to the URL of the scheduling page.|
+|[Unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
+|address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
@@ -91,8 +91,6 @@ The following is a JSON representation of the resource.
   "webSiteUrl": "String"
 }
 ```
-
-## See also
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
