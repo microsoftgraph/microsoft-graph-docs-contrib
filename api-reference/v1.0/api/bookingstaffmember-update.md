@@ -1,6 +1,6 @@
 ---
 title: "Update bookingstaffmember"
-description: "Update the properties of a bookingStaffMember in the specified bookingbusiness."
+description: "Update the properties of a bookingStaffMember in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -26,13 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ```
-## Optional request headers
+## Request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -54,7 +54,7 @@ The following example changes the staff member's schedule to have Mondays off.
   "blockType": "request"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingCurrencies/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -40,17 +40,17 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [bookingCurrency](../resources/bookingcurrency.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingCurrencies/USD
+GET https://graph.microsoft.com/v1.0/solutions/bookingCurrencies/USD
 ```
 
-##### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -62,7 +62,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingCurrencies/$entity",
     "id": "USD",
     "symbol": "$"
 }

@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of [bookingAppointment](../res
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 
 ## Example
 ### Request
@@ -47,7 +47,7 @@ The following is an example of the request. This appointment does not involve bo
   "blockType": "request"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/appointments
 Content-type: application/json
 
 {
@@ -190,7 +190,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,

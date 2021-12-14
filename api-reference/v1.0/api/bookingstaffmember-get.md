@@ -1,6 +1,6 @@
 ---
 title: "Get bookingStaffMember"
-description: "Get the properties and relationships of a bookingStaffMember in the specified bookingbusiness."
+description: "Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 ### Response
@@ -64,10 +64,10 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.bookingStaffMember",
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "samanthab@M365B489948.OnMicrosoft.com",
+    "emailAddress": "samanthab@M0000000000.OnMicrosoft.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",

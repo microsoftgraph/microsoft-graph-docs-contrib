@@ -37,20 +37,20 @@ Do not supply a request body for this method.
 
 
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M0000000000.onmicrosoft.com
 ```
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",

@@ -34,12 +34,12 @@ In the request URL, provide the following required query parameters with values.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset|The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.|
 |end|DateTimeOffset|The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.|
+|start|DateTimeOffset|The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.|
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
-This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method also supports some of the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Description|
@@ -50,10 +50,10 @@ This method also supports some of the [OData query parameters](/graph/query-para
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.
 
 ## Example
-The following is an example of how to call this API.
+
 ### Request
 The following is an example of the request.
 
@@ -61,7 +61,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 ### Response
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",

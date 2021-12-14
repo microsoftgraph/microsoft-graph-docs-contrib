@@ -26,7 +26,7 @@ Walk through the following steps before booking customer appointments for a busi
 2. Create a new **bookingBusiness** by sending a POST operation to the entity set. At minimum, you should specify a name for the new business that customers will see:
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 Authorization: Bearer {access token}
 Content-Type: application/json
 
@@ -70,7 +70,7 @@ Authorization: Bearer {access token}
 In general, to list all the booking businesses in the Microsoft 365 tenant:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/bookingBusinesses
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 

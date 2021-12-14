@@ -26,13 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /bookingBusinesses/{id}/customers/{id}
 ```
-## Optional request headers
+## Request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,14 +44,14 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 Content-type: application/json
 
 {
@@ -61,7 +61,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -74,7 +74,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.bookingCustomer",
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele",
     "emailAddress": "adele@relecloud.com"

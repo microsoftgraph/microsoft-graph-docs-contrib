@@ -26,13 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /bookingBusinesses/{id}
 ```
-## Optional request headers
+## Request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -47,16 +47,16 @@ In the request body, supply the values for relevant fields that should be update
 |webSiteUrl|String|The URL of the business web site.|
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a a `204 No Content` response code. It does not return anything in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M0000000000.onmicrosoft.com
 Content-type: application/json
 
 {
@@ -71,7 +71,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

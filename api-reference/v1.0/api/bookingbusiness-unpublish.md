@@ -42,17 +42,17 @@ If successful, this method returns `204 No content` response code. It does not r
 
 ## Example
 The following is an example of how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/unpublish
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/unpublish
 ```
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response"

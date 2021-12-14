@@ -42,14 +42,14 @@ In the request body, supply a JSON representation of [bookingBusiness](../resour
 If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 Content-type: application/json
 
 {
@@ -71,7 +71,7 @@ Content-type: application/json
 ```
 
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
-##### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -83,8 +83,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@M365B489948.onmicrosoft.com",
+    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses/$entity",
+    "id":"fourthcoffee@M0000000000.onmicrosoft.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

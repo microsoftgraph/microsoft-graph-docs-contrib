@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingCurrencies
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.
+This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.
 
 ## Request headers
 | Name      |Description|
@@ -37,19 +37,19 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [bookingCurrency](../resources/bookingcurrency.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [bookingCurrency](../resources/bookingcurrency.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/bookingCurrencies
+GET https://graph.microsoft.com/v1.0/solutions/bookingCurrencies
 ```
 
-##### Response
+### Response
 The following is an example of the response. Note: The response object shown here is truncated for brevity. All of the supported currencies and properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -62,7 +62,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingCurrencies",
+    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingCurrencies",
     "value":[
         {
             "id":"AED",

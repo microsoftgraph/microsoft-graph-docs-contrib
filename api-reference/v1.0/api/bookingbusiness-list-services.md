@@ -1,6 +1,6 @@
 ---
 title: "List services"
-description: "Get a list of bookingService objects in the specified bookingbusiness."
+description: "Get a list of bookingService objects in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/services
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -37,7 +37,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [bookingService](../resources/bookingservice.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [bookingService](../resources/bookingservice.md) objects in the response body.
 ## Example
 ### Request
 The following is an example of the request.
@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/services
 ```
 
 ### Response
@@ -64,7 +64,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/services",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/services",
     "value": [
         {
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",
@@ -80,7 +80,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -122,7 +122,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,
@@ -170,7 +170,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,

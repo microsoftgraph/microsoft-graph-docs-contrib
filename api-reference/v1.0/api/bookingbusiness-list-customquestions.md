@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the bookingCustomQuestion resources from the customQuestions navigation property.
+Get the [bookingCustomQuestion](../resources/bookingcustomquestion.md) resources from the customQuestions navigation property.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see $count and $expand [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customQuestions
 ```
 
 ### Response
@@ -69,7 +69,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.bookingCustomQuestion)"
+  "@odata.type": "microsoft.graph.bookingCustomQuestion",
+  "isCollection": true
 }
 -->
 
