@@ -1,6 +1,6 @@
 ---
 title: "List teams"
-description: "List all teams in an organization"
+description: "List all teams in an organization."
 author: "akhilkohlimicrosoft"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -32,7 +32,7 @@ GET /teams
 
 ## Optional query parameters
 
-This method supports the  `$filter`, `$select`, `$top`, `$skiptoken`, `$count` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, `$top`, `$skiptoken`, and `$count` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -93,7 +93,6 @@ Content-type: application/json
       "displayName": "Contoso General Team",
       "description": "This is a general Contoso team"
     },
-    ,
     {
       "id": "98678abcce0-e65d-44ce-9a49-9980bj8kl0e",
       "displayName": "Contoso API Team",
@@ -145,7 +144,7 @@ Content-type: application/json
       "id": "890972b0cce-e65d-44ce-9a49-568hhsd7n",
       "displayName": "A Contoso Notification Team",
       "description": "This is a notification Contoso team"
-    },
+    }
   ]
 }
 ```
