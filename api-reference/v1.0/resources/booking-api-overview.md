@@ -84,6 +84,8 @@ The following table lists the common operations for a business in the Bookings A
 | Update the scheduling policy | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Update a bookingBusiness](../api/bookingbusiness-update.md) |
 | Add, get, update, or delete staff members | [bookingStaffMember](bookingstaffmember.md) | [Methods of bookingStaffMember](bookingstaffmember.md#methods)  |
 | Add, get, update, or delete services | [bookingService](bookingservice.md) | [Methods of bookingService](bookingservice.md#methods)  |
+| Add, get, update, or delete custom questions | [bookingCustomQuestion](bookingcustomquestion.md) | [Methods of bookingCustomQuestion](bookingcustomquestion.md#methods)  |
+| Add, get, update, or delete customers | [bookingCustomer](bookingcustomer.md) | [Methods of bookingCustomer](bookingcustomer.md#methods)  |
 | Publish or unpublish the scheduling page | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness-publish.md) <br> [unpublish](../api/bookingbusiness-unpublish.md) |
 | Create, get, update, delete, or cancel an appointment | [bookingAppointment](bookingappointment.md) | [Methods of bookingAppointment](bookingappointment.md#methods)  |
 | Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness-list-calendarview.md) |

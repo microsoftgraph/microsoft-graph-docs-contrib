@@ -3,79 +3,47 @@
         {
             "ChangeList": [
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "joinWebUrl",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **joinWebUrl** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "smsNotificationsEnabled",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "customerTimeZone",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **customerTimeZone** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "addresses",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **addresses** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
-                    "Target": "bookingCustomer"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "phones",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **phones** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
-                    "Target": "bookingCustomer"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "smsNotificationsEnabled",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
-                    "Target": "bookingService"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "webUrl",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **webUrl** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
-                    "Target": "bookingService"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "timeZone",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **timeZone** property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
-                    "Target": "bookingStaffMember"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "EnumType",
                     "ChangedApiName": "answerInputType",
                     "ChangeType": "Addition",
-                    "Description": "Added the **answerInputType** enumeration type.",
+                    "Description": "Added the [answerInputType]((https://docs.microsoft.com/en-us/graph/api/resources/bookingAnswerInputType?view=graph-rest-1.0) enumeration type.",
                     "Target": "answerInputType"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingAppointment",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingBusiness",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingBusiness"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCurrency",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingCurrency](https://docs.microsoft.com/en-us/graph/api/resources/bookingCurrency?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingCurrency"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCustomer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingCustomer"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookingCustomerInformation",
                     "ChangeType": "Addition",
@@ -83,7 +51,7 @@
                     "Target": "bookingCustomerInformation"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookingQuestionAnswer",
                     "ChangeType": "Addition",
@@ -91,7 +59,7 @@
                     "Target": "bookingQuestionAnswer"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookingQuestionAssignment",
                     "ChangeType": "Addition",
@@ -99,63 +67,169 @@
                     "Target": "bookingQuestionAssignment"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "customers",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **customers** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "filledAttendeesCount",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **filledAttendeesCount** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "maximumAttendeesCount",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **maximumAttendeesCount** property to [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
-                    "Target": "bookingAppointment"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Relationship",
-                    "ChangedApiName": "customQuestions",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **customQuestions** navigation property to [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-1.0) resource.",
-                    "Target": "bookingBusiness"
-                },
-                {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "Resource",
                     "ChangedApiName": "bookingCustomQuestion",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bookingCustomQuestion](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomQuestion?view=graph-rest-1.0) resource",
+                    "Description": "Added the [bookingCustomQuestion](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomQuestion?view=graph-rest-1.0) resource type.",
                     "Target": "bookingCustomQuestion"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "customQuestions",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingNamedIdentity",
                     "ChangeType": "Addition",
-                    "Description": "Added the **customQuestions** property to [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
+                    "Description": "Added the [bookingNamedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/bookingNamedIdentity?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingNamedIdentity"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingPerson",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingPerson](https://docs.microsoft.com/en-us/graph/api/resources/bookingPerson?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingPerson"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingReminder",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingReminder](https://docs.microsoft.com/en-us/graph/api/resources/bookingReminder?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingReminder"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingSchedulingPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingSchedulingPolicy](https://docs.microsoft.com/en-us/graph/api/resources/bookingSchedulingPolicy?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingSchedulingPolicy"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingService",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-1.0) resource type.",
                     "Target": "bookingService"
                 },
                 {
-                    "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "maximumAttendeesCount",
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingStaffMember",
                     "ChangeType": "Addition",
-                    "Description": "Added the **maximumAttendeesCount** property to [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-1.0) resource.",
-                    "Target": "bookingService"
+                    "Description": "Added the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingStaffMember"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingWorkHours",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingWorkHours](https://docs.microsoft.com/en-us/graph/api/resources/bookingWorkHours?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingWorkHours"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingWorkTimeSlot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookingWorkTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/bookingWorkTimeSlot?view=graph-rest-1.0) resource type.",
+                    "Target": "bookingWorkTimeSlot"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "bookingReminderRecipients",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingReminderRecipients** enumeration type.",
+                    "Target": "bookingWorkTimeSlot"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "bookingStaffRole",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingStaffRole** enumeration type.",
+                    "Target": "bookingStaffRole"
                 }
             ],
-            "Id": "cf0d6a74-9a5a-4748-96be-761807da48c7",
+            "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-12-10T19:05:26.8217054Z",
+            "WorkloadArea": "Customer booking",
+            "SubArea": ""
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "joinWebUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **joinWebUrl** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "smsNotificationsEnabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "customerTimeZone",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **customerTimeZone** property to the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+                    "Target": "bookingAppointment"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "addresses",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **addresses** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
+                    "Target": "bookingCustomer"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "phones",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **phones** property to the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingCustomer?view=graph-rest-beta) resource.",
+                    "Target": "bookingCustomer"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "smsNotificationsEnabled",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **smsNotificationsEnabled** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "webUrl",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **webUrl** property to the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+                    "Target": "bookingService"
+                },
+                {
+                    "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "timeZone",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **timeZone** property to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-beta) resource.",
+                    "Target": "bookingStaffMember"
+                }
+            ],
+            "Id": "b6a08196-8a5b-42d5-b69c-901076cbe552",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-27T11:56:54.877Z",
