@@ -267,7 +267,7 @@ Your process should process every change notification it receives. The following
 
     If your processing is expected to take more than 3 seconds, you should persist the notification, return a `202 - Accepted` status code in your response to Microsoft Graph, then process the notifications. If the notification is not persisted, return a 5xx class code to indicate an error so the notification will be retried.
 
-    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - Accepted` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
+    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - OK` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
