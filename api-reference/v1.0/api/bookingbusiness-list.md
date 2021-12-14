@@ -44,7 +44,8 @@ This method also supports the `query` parameter which accepts a string value. Th
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.
-## Example
+
+## Examples
 
 ### Example 1: Get Bookings businesses in a tenant
 #### Request 1

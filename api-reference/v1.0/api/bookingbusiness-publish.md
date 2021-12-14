@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/publish
 ## Request body
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.
