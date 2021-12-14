@@ -59,12 +59,12 @@ In the request body, supply the values for relevant fields that should be update
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](../resources/bookingstaffmember.md) who is scheduled in this appointment.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
-|customerEmailAddress (deprecated)|String|Use the **customers** collection instead.|
-|customerId (deprecated)|String|Use the **customers** collection instead.|
-|customerLocation (deprecated)|[location](../resources/location.md)|Use the **customers** collection instead.|
-|customerName (deprecated)|String|Use the **customers** collection instead.|
-|customerNotes (deprecated)|String|Use the **customers** collection instead.|
-|customerPhone (deprecated)|String|Use the **customers** collection instead.|
+|customerEmailAddress (deprecated)|String|Use the `customers` collection instead.|
+|customerId (deprecated)|String|Use the `customers` collection instead.|
+|customerLocation (deprecated)|[location](../resources/location.md)|Use the `customers` collection instead.|
+|customerName (deprecated)|String|Use the `customers` collection instead.|
+|customerNotes (deprecated)|String|Use the `customers` collection instead.|
+|customerPhone (deprecated)|String|Use the `customers` collection instead.|
 |end (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|Use `endDateTime` instead.|
 |invoiceAmount (deprecated)|Double|The billed amount on the invoice.|
 |invoiceDate (deprecated)|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
@@ -78,7 +78,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 ## Example
 ### Request
-The following example changes the date of service by a day and updates the invoice date.
+The following example changes the date of service by a day.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +86,7 @@ The following example changes the date of service by a day and updates the invoi
   "name": "update_bookingappointment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {

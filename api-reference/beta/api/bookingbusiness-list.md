@@ -99,11 +99,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@M0000000000.onmicrosoft.com",
+            "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@M0000000000.onmicrosoft.com",
+            "id":"Fabrikam@M365B489948.onmicrosoft.com",
             "displayName":"Fabrikam",
         }
     ]

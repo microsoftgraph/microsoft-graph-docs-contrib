@@ -109,7 +109,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@M0000000000.onmicrosoft.com",
+    "id":"fourthcoffee@M365B489948.onmicrosoft.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

@@ -45,15 +45,15 @@ POST /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 ## Request body
 
-In the request body, supply a JSON representation of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
+In the request body, supply a JSON representation of the [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 You can specify the following properties when creating a **bookingCustomQuestion**.
 
 | Property        | Type              | Description                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
+| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). Required. |
 | answerInputType | answerInputType   | The expected answer type. The possible values are: `text`, `radioButton`, `unknownFutureValue`. Optional.    |
 | answerOptions   | String collection | List of possible answer values. Optional.                                                                     |
-| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). Required. |
 
 ## Response
 
@@ -70,15 +70,17 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
 Content-Type: application/json
 Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "displayName": "What is your age?",
-  "answerInputType": "text",
-  "answerOptions": []
+  "displayName": "String",
+  "answerInputType": "String",
+  "answerOptions": [
+    "String"
+  ]
 }
 ```
 
@@ -99,9 +101,11 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "id": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-  "displayName": "What is your age?",
-  "answerInputType": "text",
-  "answerOptions": []
+  "id": "91f1ef26-ca00-451c-1c64-8f3560c80d3d",
+  "displayName": "String",
+  "answerInputType": "String",
+  "answerOptions": [
+    "String"
+  ]
 }
 ```

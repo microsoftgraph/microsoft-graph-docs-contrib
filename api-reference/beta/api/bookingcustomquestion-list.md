@@ -38,7 +38,7 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see  $count and $expand [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,10 +87,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-      "id": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-      "displayName": "What is your age?",
-      "answerInputType": "text",
-      "answerOptions": []
+      "id": "91f1ef26-ca00-451c-1c64-8f3560c80d3d",
+      "displayName": "String",
+      "answerInputType": "String",
+      "answerOptions": [
+        "String"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 title: "Delete bookingCustomQuestion"
-description: "Delete a bookingCustomQuestion object."
+description: "Deletes a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the specified [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
+Deletes the specified [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 ## Permissions
 
@@ -58,11 +58,12 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
