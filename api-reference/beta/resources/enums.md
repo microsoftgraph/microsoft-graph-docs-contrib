@@ -2632,3 +2632,11 @@ Possible values for user account types (group membership), per Windows definitio
 |faculty|
 |other|
 |unknownFutureValue|
+
+### answerInputType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|text|0|Text.|
+|radioButton|1|RadioButton.|
+|unknownFutureValue|2|UnknownFutureValue.|
