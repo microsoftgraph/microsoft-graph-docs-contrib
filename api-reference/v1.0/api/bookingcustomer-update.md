@@ -1,5 +1,5 @@
 ---
-title: "Update bookingcustomer"
+title: "Update bookingCustomer"
 description: "Update the properties of a bookingCustomer object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
@@ -7,7 +7,7 @@ ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
-# Update bookingcustomer
+# Update bookingCustomer
 
 Namespace: microsoft.graph
 

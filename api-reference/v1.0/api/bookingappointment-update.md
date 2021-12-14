@@ -59,8 +59,8 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Response
-If successful, this method returns a a `204 No Content` response code. It does not return anything in the response body.
-## Example
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+## Examples
 ### Request
 The following example changes the date of service by a day.
 

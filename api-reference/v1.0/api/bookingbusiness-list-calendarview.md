@@ -1,5 +1,5 @@
 ---
-title: "List Bookings calendarView"
+title: "List calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness, that occurs in the specified date range."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
@@ -7,7 +7,7 @@ ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
-# List Bookings calendarView
+# List calendarView
 
 Namespace: microsoft.graph
 

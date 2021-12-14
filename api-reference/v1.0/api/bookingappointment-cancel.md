@@ -38,12 +38,12 @@ In the request body, provide a JSON object with the following parameter.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|A message to acknowledge with the customer that the appointment has been cancelled.|
+|cancellationMessage|String|A message to acknowledge with the customer that the **appointment** has been cancelled.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-If you attempt to cancel an appointment that does not exist, this method returns `404 Not found`.
+If you attempt to cancel an **appointment** that does not exist, this method returns a `404 Not found`.
 
 ## Example
 The following is an example of how to call this API.
