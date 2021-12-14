@@ -1859,6 +1859,4 @@ Possible values for user account types (group membership), per Windows definitio
 |administrator|
 |viewer|
 |externalGuest|
-|scheduler|
-|member|
 |unknownFutureValue|
