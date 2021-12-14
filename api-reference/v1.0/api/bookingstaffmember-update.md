@@ -58,7 +58,7 @@ PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchd
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.bookingStaffMember",
+    "@odata.type":"#microsoft.graph.bookingStaffMember",
     "workingHours":[
         {
             "@odata.type":"#microsoft.graph.bookingWorkHours",

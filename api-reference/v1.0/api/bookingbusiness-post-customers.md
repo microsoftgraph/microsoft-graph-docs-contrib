@@ -51,6 +51,7 @@ POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchde
 Content-type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.bookingCustomer",
     "displayName": "Joni Sherman",
     "emailAddress": "jonis@relecloud.com",
     "addresses": [
@@ -100,6 +101,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.bookingCustomer",
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
