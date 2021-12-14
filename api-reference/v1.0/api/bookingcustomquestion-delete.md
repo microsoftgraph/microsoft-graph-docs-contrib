@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes the specified [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
+Delete a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
 ## Permissions
 
