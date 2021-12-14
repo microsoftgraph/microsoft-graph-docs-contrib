@@ -72,8 +72,6 @@ The following request sets the user preferred presence as DoNotDisturb for user 
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "setUserPreferredPresence"

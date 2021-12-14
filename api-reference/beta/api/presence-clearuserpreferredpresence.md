@@ -49,8 +49,6 @@ The following request clears the user preferred presence for user `fa8bf3dc-eca7
 #### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "clearUserPreferredPresence"
