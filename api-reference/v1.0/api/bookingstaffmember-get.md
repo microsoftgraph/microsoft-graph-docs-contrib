@@ -69,7 +69,6 @@ Content-type: application/json
     "displayName": "Samantha Booth",
     "emailAddress": "samanthab@M0000000000.OnMicrosoft.com",
     "availabilityIsAffectedByPersonalCalendar": true,
-    "colorIndex": 0,
     "role": "administrator",
     "timeZone": "America/Chicago",
     "useBusinessHours": true,

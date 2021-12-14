@@ -56,7 +56,6 @@ Content-type: application/json
 
 {
     "@odata.type":"#microsoft.graph.bookingStaffMember",
-    "colorIndex":1,
     "displayName":"Dana Swope",
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
@@ -154,7 +153,6 @@ Content-type: application/json
     "displayName":"Dana Swope",
     "emailAddress":"danas@contoso.com",
     "availabilityIsAffectedByPersonalCalendar":false,
-    "colorIndex":1,
     "role":"externalGuest",
     "timeZone":"America/Chicago",
     "useBusinessHours":true,
