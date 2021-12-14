@@ -12,8 +12,7 @@ const client = Client.init(options);
 
 const externalGroupMember = {
   id: 'e5477431-1038-484e-bf69-1dfedb97a110',
-  type: 'group',
-  identitySource: 'azureActiveDirectory'
+  type: 'externalGroup',
 };
 
 await client.api('/external/connections/contosohr/groups/31bea3d537902000/members')

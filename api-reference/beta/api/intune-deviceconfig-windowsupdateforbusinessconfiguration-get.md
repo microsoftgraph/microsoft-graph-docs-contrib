@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3127
+Content-Length: 3163
 
 {
   "value": {
@@ -139,10 +139,12 @@ Content-Length: 3127
     "scheduleImminentRestartWarningInMinutes": 7,
     "userPauseAccess": "enabled",
     "userWindowsUpdateScanAccess": "enabled",
-    "updateNotificationLevel": "defaultNotifications"
+    "updateNotificationLevel": "defaultNotifications",
+    "allowWindows11Upgrade": true
   }
 }
 ```
+
 
 
 

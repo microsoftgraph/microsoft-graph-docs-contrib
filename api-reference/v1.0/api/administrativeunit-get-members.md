@@ -54,7 +54,6 @@ Here is an example of the respone. Note: The response object shown here might be
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type":"#microsoft.graph.user",

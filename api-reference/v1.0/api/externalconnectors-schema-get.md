@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get schema
 Namespace: microsoft.graph.externalConnectors
 
-
-
 Read the properties and relationships of a [schema](../resources/externalconnectors-schema.md) object.
 
 ## Permissions
@@ -34,7 +32,8 @@ GET /external/connections/{connectionsId}/schema
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -53,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 ### Request
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schema"
@@ -61,6 +62,24 @@ If successful, this method returns a `200 OK` response code and a [schema](../re
 ``` http
 GET https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schema-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

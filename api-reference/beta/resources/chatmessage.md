@@ -68,10 +68,10 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
-|chatId|string|If the message was sent in a chat, represents the identity of the chat.|
+|chatId|string|If the message was sent in a **chat**, represents the identity of the **chat**.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |webUrl|string|Read-only. Link to the message in Microsoft Teams.|
-|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property will be set to `systemEventMessage`.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 
 ## Relationships
 

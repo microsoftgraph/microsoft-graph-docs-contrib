@@ -54,6 +54,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
+|crossProfilePoliciesAllowCopyPaste|Boolean|Indicates whether or not text copied from one profile (personal or work) can be pasted in the other.|
+|crossProfilePoliciesAllowDataSharing|[androidDeviceOwnerCrossProfileDataSharing](../resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)|Indicates whether data from one profile (personal or work) can be shared with apps in the other profile. Possible values are: `notConfigured`, `crossProfileDataSharingBlocked`, `dataSharingFromWorkToPersonalBlocked`, `crossProfileDataSharingAllowed`, `unkownFutureValue`.|
+|crossProfilePoliciesShowWorkContactsInPersonalProfile|Boolean|Indicates whether or not contacts stored in work profile are shown in personal profile contact searches/incoming calls.|
 |microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
 |microsoftLauncherCustomWallpaperEnabled|Boolean|Indicates whether or not to configure the wallpaper on the targeted devices.|
 |microsoftLauncherCustomWallpaperImageUrl|String|Indicates the URL for the image file to use as the wallpaper on the targeted devices.|
@@ -131,9 +134,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Indicates the Play Store mode of the device. Possible values are: `notConfigured`, `allowList`, `blockList`.|
-|safeBootBlocked|Boolean|Indicates whether or not rebooting the device into safe boot is disabled.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|
-|securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |securityDeveloperSettingsEnabled|Boolean|Indicates whether or not the user is allowed to access developer settings like developer options and safe boot on the device.|
 |securityRequireVerifyApps|Boolean|Indicates whether or not verify apps is required.|
 |statusBarBlocked|Boolean|Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.|
@@ -241,6 +242,9 @@ Here is a JSON representation of the resource.
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "crossProfilePoliciesAllowCopyPaste": true,
+  "crossProfilePoliciesAllowDataSharing": "String",
+  "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
   "microsoftLauncherConfigurationEnabled": true,
   "microsoftLauncherCustomWallpaperEnabled": true,
   "microsoftLauncherCustomWallpaperImageUrl": "String",
@@ -358,9 +362,7 @@ Here is a JSON representation of the resource.
   "passwordRequiredType": "String",
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "playStoreMode": "String",
-  "safeBootBlocked": true,
   "screenCaptureBlocked": true,
-  "securityAllowDebuggingFeatures": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
   "statusBarBlocked": true,
@@ -407,6 +409,7 @@ Here is a JSON representation of the resource.
   "workProfilePasswordRequiredType": "String"
 }
 ```
+
 
 
 

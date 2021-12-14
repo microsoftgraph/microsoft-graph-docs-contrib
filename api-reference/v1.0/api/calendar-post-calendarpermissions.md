@@ -108,6 +108,10 @@ POST https://graph.microsoft.com/v1.0/me/calendar/calendarPermissions
 [!INCLUDE [sample-code](../includes/snippets/java/create-calendarpermissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-calendarpermissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -22,6 +22,8 @@ Supported setting types
 |:---|:---|:---|
 |none|0|No setting type specified|
 |configuration|1|Configuration setting|
+|compliance|2|Compliance setting|
+
 
 
 
