@@ -1,6 +1,6 @@
 ---
 title: "bookingService resource type"
-description: "Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service."
+description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
