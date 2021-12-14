@@ -153,6 +153,30 @@
                     "ChangeType": "Addition",
                     "Description": "Added the **bookingStaffRole** enumeration type.",
                     "Target": "bookingStaffRole"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCustomerBase",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingCustomerBase** abstract type.",
+                    "Target": "bookingCustomerBase"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookingCustomerInformationBase",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingCustomerInformationBase** abstract type.",
+                    "Target": "bookingCustomerInformationBase"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "bookingStaffMemberBase",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingStaffMemberBase** abstract type.",
+                    "Target": "bookingStaffMemberBase"
                 }
             ],
             "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
