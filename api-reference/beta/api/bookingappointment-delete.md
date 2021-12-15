@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_bookingappointment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingappointment-csharp-snippets.md)]

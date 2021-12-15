@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_staffmembers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/staffMembers
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-staffmembers-csharp-snippets.md)]
@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/staffMembers",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers",
     "value":[
         {
             "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
@@ -151,7 +151,7 @@ Content-type: application/json
         {
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"samanthab@M0000000000.onmicrosoft.com",
+            "emailAddress":"samanthab@contoso.onmicrosoft.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",

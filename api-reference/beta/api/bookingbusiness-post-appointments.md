@@ -51,7 +51,7 @@ The following is an example of the request. This appointment does not involve bo
   "name": "create_bookingappointment_from_bookingbusiness"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/appointments
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
 Content-type: application/json
 
 {   
@@ -251,7 +251,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADc7zF4J0AAA8v_KnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
