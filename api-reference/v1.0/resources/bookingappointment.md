@@ -28,6 +28,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
@@ -41,7 +42,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |price|Double|The regular price for an appointment for the specified [bookingService](bookingservice.md).|
-|priceType|string| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|priceType|bookingPriceType| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |reminders|[bookingReminder](bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |selfServiceAppointmentId|String|An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer. Only supported for appointment if maxAttendeeCount is 1.|
 |serviceId|String|The ID of the [bookingService](bookingservice.md) associated with this appointment.|
@@ -83,7 +84,7 @@ The following is a JSON representation of the resource.
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "price": "Integer",
-  "priceType": "string",
+  "priceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "reminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "selfServiceAppointmentId": "String",
   "serviceId": "String",
