@@ -12218,6 +12218,8 @@ items:
               href: api/accessreviewinstance-list.md
             - name: Get
               href: api/accessreviewinstance-get.md
+            - name: Update
+              href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
             - name: List pending approval (deprecated)

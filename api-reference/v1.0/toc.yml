@@ -5192,24 +5192,26 @@ items:
             items:
             - name: List
               href: api/accessreviewinstance-list.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
             - name: Get
               href: api/accessreviewinstance-get.md
+            - name: Update
+              href: api/accessreviewinstance-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstance-filterbycurrentuser.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
             - name: Accept recommendations
               href: api/accessreviewinstance-acceptrecommendations.md
             - name: Apply decisions
               href: api/accessreviewinstance-applydecisions.md
             - name: Batch record decisions
               href: api/accessreviewinstance-batchrecorddecisions.md
-            - name: Filter by current user
-              href: api/accessreviewinstance-filterbycurrentuser.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: Send reminder
-              href: api/accessreviewinstance-sendreminder.md
-            - name: Stop
-              href: api/accessreviewinstance-stop.md
+            - name: List decisions
+              href: api/accessreviewinstance-list-decisions.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
