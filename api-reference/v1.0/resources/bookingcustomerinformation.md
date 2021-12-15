@@ -34,7 +34,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.bookingCustomerInformation"
+  "@odata.type": "microsoft.graph.bookingCustomerInformation",
   "baseType": "microsoft.graph.bookingCustomerInformationBase"
 }
 -->
