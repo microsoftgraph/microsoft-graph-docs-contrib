@@ -8,7 +8,7 @@
           "ChangedApiName": "PUT",
           "ChangeType": "Addition",
           "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-update) operation to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-1.0) resource. This operation allows updating the **reviewers** and **fallbackReviewers** properties of an **accessReviewInstance**.",
-          "Target": "accessreviewscheduledefinition"
+          "Target": "accessReviewInstance"
         }
       ],
       "Id": "caa8e78f-474c-4d88-920d-165de2f31c16",
@@ -26,7 +26,7 @@
           "ChangedApiName": "PUT",
           "ChangeType": "Addition",
           "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-update) operation to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource. This operation allows updating the **reviewers** and **fallbackReviewers** properties of an **accessReviewInstance**.",
-          "Target": "accessreviewscheduledefinition"
+          "Target": "accessReviewInstance"
         }
       ],
       "Id": "a41521e8-ce2c-4a7a-b6bc-4df1e968f58a",
