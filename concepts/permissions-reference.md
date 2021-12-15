@@ -41,7 +41,7 @@ Azure AD limits the number of permissions that can be requested and consented by
 | ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
 | AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
 | AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
-| PersonalMicrosoftAccount           | Consumer users (Outlook.com or Live.com accounts, etc.)  | 30                                        | 30                                                        | 30                                                                    |
+| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
 | AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |
 
 ## Permissions availability status
