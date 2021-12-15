@@ -157,7 +157,7 @@ Content-type: application/json
 ```
 ## Deleting a custom attribute
 
-Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](../api/profilecardproperty-delete.md) operation as shown in the example below:
+Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](../api/profilecardproperty-delete?view=graph-rest-beta) operation as shown in the example below:
 
 ### Example
 
