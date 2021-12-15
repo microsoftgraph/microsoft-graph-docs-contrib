@@ -1868,3 +1868,17 @@ Possible values for user account types (group membership), per Windows definitio
 |text|
 |radioButton|
 |unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|

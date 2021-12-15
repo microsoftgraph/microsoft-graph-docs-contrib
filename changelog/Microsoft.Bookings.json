@@ -156,11 +156,19 @@
                 },
                 {
                     "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
-                    "ApiChange": "EnumType",
+                    "ApiChange": "Resource",
                     "ChangedApiName": "bookingStaffMemberBase",
                     "ChangeType": "Addition",
                     "Description": "Added the **bookingStaffMemberBase** abstract type.",
                     "Target": "bookingStaffMemberBase"
+                },
+                {
+                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "bookingPriceType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bookingPriceType** enum type.",
+                    "Target": "bookingPriceType"
                 }
             ],
             "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
