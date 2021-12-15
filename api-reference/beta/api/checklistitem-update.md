@@ -60,6 +60,8 @@ If successful, this method returns a `200 OK` response code and an updated [chec
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_checklistitem"
@@ -73,6 +75,12 @@ Content-Type: application/json
     "displayName": "buy cake"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
