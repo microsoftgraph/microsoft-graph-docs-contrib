@@ -18,7 +18,7 @@ The recurrence pattern and range. This shared object is used to define the recur
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** properties or [recurrencePattern](recurrencepattern.md) are supported.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li>  Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
 |range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## JSON representation
