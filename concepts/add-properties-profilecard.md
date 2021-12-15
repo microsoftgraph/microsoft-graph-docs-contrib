@@ -107,7 +107,7 @@ The following table shows how the Azure AD custom extension attribute names corr
 
 The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
 
-<h4>Request</h4>
+#### Request
 
 
 ``` http
@@ -134,7 +134,7 @@ If a language is not supported, the property name will be shown with the default
 
 If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German on the profile card. For all other users, **Cost center** will be displayed on the profile card.
 
-<h4>Response</h4>
+#### Response
 
 ``` http
 HTTP/1.1 201 OK
@@ -163,15 +163,13 @@ Following the same mapping between Azure AD custom extension attributes and prof
 
 The following example deletes the custom attribute `customAttribute5` from the organization settings. A successful deletion returns `HTTP 204`.
 
-<h4>Request</h4>
-
+#### Request
 
 ``` http
 DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/customAttribute5
 ```
 
-<h4>Response</h4>
-
+#### Response
 
 ``` http
 HTTP/1.1 204 No Content
