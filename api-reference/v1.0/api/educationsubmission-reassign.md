@@ -52,7 +52,6 @@ If successful, this method returns `200 OK` response code and an [educationSubmi
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_reassign"
@@ -130,7 +129,6 @@ The following example shows how to call this method.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_prefer_reassign"

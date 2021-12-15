@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Returns a list of assignments assigned to a user for all classes. 
 
-This utility namespace allows a caller to find all the assignments belonging to a student or a teacher in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
+This utility namespace allows a caller to find all the **assignments** belonging to a student or a teacher in a single call rather than having to request **assignments** from each **class**. The **assignment** list contains what is needed to get the detailed information for the **assignment** from within the **class** namespace. All other operations on the assignment should use the **class** namespace.
 
 ## Permissions
 
@@ -61,14 +61,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_me_assignments"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/me/assignments
 ```
 ---
@@ -179,13 +177,12 @@ Content-type: application/json
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_assignments"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b62a243836/assignments
 ```
 ---
@@ -301,13 +298,12 @@ Content-type: application/json
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_assignments_expand_submissions"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-67898383e226/assignments?expand=submissions
 ```
 ---
