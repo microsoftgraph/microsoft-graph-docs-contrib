@@ -54,15 +54,52 @@ The following is an example of the request. This appointment does not involve bo
 POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/appointments
 Content-type: application/json
 
-{
-    "@odata.type": "#microsoft.graph.bookingAppointment",
-    "customerTimeZone": "America/Chicago",
-    "smsNotificationsEnabled": true,
-    "endDateTime": {
-        "@odata.type": "#microsoft.graph.dateTimeTimeZone",
-        "dateTime": "2018-05-01T12:30:00.0000000+00:00",
-        "timeZone": "UTC"
+{   
+    "@odata.type":"#microsoft.graph.bookingAppointment",
+    "customerEmailAddress":"jordanm@contoso.com",
+    "customerLocation":{
+        "@odata.type":"#microsoft.graph.location",
+        "address":{
+            "@odata.type":"#microsoft.graph.physicalAddress",
+            "city":"Buffalo",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "postOfficeBox":null,
+            "state":"NY",
+            "street":"123 First Avenue",
+            "type@odata.type":"#microsoft.graph.physicalAddressType",
+            "type":null
+        },
+        "coordinates":null,
+        "displayName":"Customer",
+        "locationEmailAddress":null,
+        "locationType@odata.type":"#microsoft.graph.locationType",
+        "locationType":null,
+        "locationUri":null,
+        "uniqueId":null,
+        "uniqueIdType@odata.type":"#microsoft.graph.locationUniqueIdType",
+        "uniqueIdType":null
     },
+    "customerName":"Jordan Miller",
+    "customerNotes":"Please be on time.",
+    "customerPhone":"213-555-0199",
+    "customerTimeZone":"America/Chicago",
+    "smsNotificationsEnabled":true,
+    "end":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-01T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
+    },
+    "invoiceAmount":10.0,
+    "invoiceDate":{
+        "@odata.type":"#microsoft.graph.dateTimeTimeZone",
+        "dateTime":"2018-05-01T12:30:00.0000000+00:00",
+        "timeZone":"UTC"
+    },
+    "invoiceId":"1001",
+    "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",
+    "invoiceStatus":"open",
+    "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
     "postBuffer": "PT10M",
@@ -120,13 +157,13 @@ Content-type: application/json
     },
     "serviceName": "Catered bento",
     "serviceNotes": "Customer requires punctual service.",
-    "startDateTime": {
+    "start": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
         "timeZone": "UTC"
     },
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -220,7 +257,12 @@ Content-type: application/json
     "isLocationOnline": true,
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
     "smsNotificationsEnabled": true,
-    "customerTimeZone": "America/Chicago",
+    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+    "customerName": "Jordan Miller",
+    "customerEmailAddress": "jordanm@contoso.com",
+    "customerPhone": "213-555-0199",
+    "customerTimeZone":"America/Chicago",
+    "customerNotes": null,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
     "duration": "PT30M",
@@ -231,11 +273,39 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "staffMemberIds": [],
-    "startDateTime": {
+    "invoiceAmount": 10,
+    "invoiceId": "1001",
+    "invoiceStatus": "open",
+    "invoiceUrl": "theInvoiceUrl",
+    "customerLocation": {
+        "displayName": "Customer",
+        "locationEmailAddress": null,
+        "locationUri": "",
+        "locationType": null,
+        "uniqueId": null,
+        "uniqueIdType": null,
+        "address": {
+            "type": "home",
+            "postOfficeBox": "",
+            "street": "",
+            "city": "",
+            "state": "",
+            "countryOrRegion": "",
+            "postalCode": ""
+        },
+        "coordinates": {
+            "altitude": null,
+            "latitude": null,
+            "longitude": null,
+            "accuracy": null,
+            "altitudeAccuracy": null
+        }
+    },
+    "start": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"
     },
-    "endDateTime": {
+    "end": {
         "dateTime": "2018-05-01T12:30:00.0000000Z",
         "timeZone": "UTC"
     },
@@ -280,6 +350,10 @@ Content-type: application/json
             "message": "Please check traffic for next cater."
         }
     ],
+    "invoiceDate": {
+        "dateTime": "2018-05-01T12:30:00.0000000Z",
+        "timeZone": "UTC"
+    }
     "maximumAttendeesCount": 5,
     "filledAttendeesCount": 1,
     "customers": [

@@ -30,12 +30,23 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
+|customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
+|customerLocation|[location](location.md)|Represents location information for the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
+|customerName|String|The customer's name.|
+|customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
+|customerPhone|String|The customer's phone number.|
 |customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|It lists down the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
-|endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. |
 |id|String| The ID of the **bookingAppointment**. Read-only.|
+|invoiceAmount|Double|The billed amount on the invoice.|
+|invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
+|invoiceId|String|The ID of the invoice.|
+|invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
 |isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment.|
@@ -52,20 +63,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
-|customerEmailAddress (deprecated)|String|Use the `customers` collection instead.|
-|customerId (deprecated)|String|Use the `customers` collection instead.|
-|customerLocation (deprecated)|[location](location.md)|Use the `customers` collection instead.|
-|customerName (deprecated)|String|Use the `customers` collection instead.|
-|customerNotes (deprecated)|String|Use the `customers` collection instead.|
-|customerPhone (deprecated)|String|Use the `customers` collection instead.|
-|end (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|Use `endDateTime` instead.|
-|invoiceAmount (deprecated)|Double|The billed amount on the invoice.|
-|invoiceDate (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
-|invoiceId (deprecated)|String|The ID of the invoice.|
-|invoiceStatus (deprecated)|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|invoiceUrl (deprecated)|String|The URL of the invoice in Microsoft Bookings.|
-|start (deprecated)|[dateTimeTimeZone](datetimetimezone.md)|Use `startDateTime` instead.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
 ## Relationships
 None.
@@ -98,8 +96,13 @@ The following is a JSON representation of the resource.
     }
   ],
   "duration": "String (timestamp)",
-  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
+  "invoiceAmount": 1024,
+  "invoiceDate": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "invoiceId": "String",
+  "invoiceStatus": "string",
+  "invoiceUrl": "String",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
   "optOutOfCustomerEmail": true,
@@ -115,7 +118,7 @@ The following is a JSON representation of the resource.
   "serviceNotes": "String",
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "maximumAttendeesCount": "Integer",
   "filledAttendeesCount": "Integer"
 }

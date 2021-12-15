@@ -105,8 +105,8 @@ Content-type: application/json
                     "day":"monday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -114,8 +114,8 @@ Content-type: application/json
                     "day":"tuesday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -123,8 +123,8 @@ Content-type: application/json
                     "day":"wednesday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -132,8 +132,8 @@ Content-type: application/json
                     "day":"thursday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -141,8 +141,8 @@ Content-type: application/json
                     "day":"friday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 }
@@ -162,8 +162,8 @@ Content-type: application/json
                     "day":"monday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -171,8 +171,8 @@ Content-type: application/json
                     "day":"tuesday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -180,8 +180,8 @@ Content-type: application/json
                     "day":"wednesday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -189,8 +189,8 @@ Content-type: application/json
                     "day":"thursday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
@@ -198,8 +198,8 @@ Content-type: application/json
                     "day":"friday",
                     "timeSlots":[
                         {
-                            "startTime":"08:00:00.0000000",
-                            "endTime":"17:00:00.0000000"
+                            "start":"08:00:00.0000000",
+                            "end":"17:00:00.0000000"
                         }
                     ]
                 },
