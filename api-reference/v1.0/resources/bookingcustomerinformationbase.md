@@ -1,5 +1,5 @@
 ---
-title: "bookingStaffMemberBase resource type"
+title: "bookingCustomerInformationBase resource type"
 description: "Abstract base type for an appointment's customer information."
 author: "davisjms"
 ms.localizationpriority: medium
