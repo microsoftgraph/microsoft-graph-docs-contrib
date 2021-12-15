@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "508b0389-2906-4441-8729-d5efb56436f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the [attendanceInterval](https://docs.microsoft.com/en-us/graph/api/resources/attendanceInterval?view=graph-rest-1.0) resource type.",
+          "Target": "attendanceInterval"
+        },
+        {
+          "Id": "508b0389-2906-4441-8729-d5efb56436f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendanceRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "attendanceRecord"
+        },
+        {
+          "Id": "508b0389-2906-4441-8729-d5efb56436f5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingAttendanceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingAttendanceReport](https://docs.microsoft.com/en-us/graph/api/resources/meetingAttendanceReport?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "meetingAttendanceReport"
+        },
+        {
+          "Id": "508b0389-2906-4441-8729-d5efb56436f5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "attendanceReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **attendanceReports** relationship to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "508b0389-2906-4441-8729-d5efb56436f5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-06T04:55:32.1798229Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1c09ded-2131-4e15-b265-6ab26cc81c1f",
           "ApiChange": "Resource",
           "ChangedApiName": "broadcastMeetingCaptionSettings",
