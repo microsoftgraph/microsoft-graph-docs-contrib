@@ -26,6 +26,7 @@ Represents information about a particular service provided by a [bookingBusiness
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains the set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
@@ -64,6 +65,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "additionalInformation": "String",
   "defaultDuration": "String (timestamp)",
   "defaultLocation": {"@odata.type": "microsoft.graph.location"},
   "defaultPrice": 1024,
