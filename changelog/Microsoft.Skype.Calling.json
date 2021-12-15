@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a1c09ded-2131-4e15-b265-6ab26cc81c1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "broadcastMeetingCaptionSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [broadcastMeetingCaptionSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingCaptionSettings?view=graph-rest-beta) resource type.",
+          "Target": "broadcastMeetingCaptionSettings"
+        },
+        {
+          "Id": "a1c09ded-2131-4e15-b265-6ab26cc81c1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "captions",
+          "ChangeType": "Addition",
+          "Description": "Added the **captions** property to the [broadcastMeetingSettings](https://docs.microsoft.com/en-us/graph/api/resources/broadcastMeetingSettings?view=graph-rest-beta) resource.",
+          "Target": "broadcastMeetingSettings"
+        }
+      ],
+      "Id": "a1c09ded-2131-4e15-b265-6ab26cc81c1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-06T20:08:47.1923484Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "729577c2-b7b5-42a5-8519-923dd2ae25e3",
           "ApiChange": "Method",
           "ChangedApiName": "setUserPreferredPresence",
