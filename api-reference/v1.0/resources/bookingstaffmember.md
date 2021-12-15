@@ -21,7 +21,7 @@ When booking appointments, the Bookings API considers the following settings to 
 2. If **useBusinessHours** is false, then the staff member's specific work hours (**workingHours** property of the **bookingStaffmember** entity) represents that member's general availability.
 3. If **availabilityIsAffectedByPersonalCalendar** is true, then the Bookings API would first look at the staff member's generally available hours (as determined by either #1 or #2), and verify availability during those hours in the staff member's personal calendar, before making a booking.
 
-Inherits from [bookingPerson](bookingperson.md).
+Inherits from [bookingStaffMemberBase](bookingstaffmemberbase.md).
 
 ## Methods
 
@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.bookingStaffMember",
-  "baseType": "microsoft.graph.bookingPerson"
+  "baseType": "microsoft.graph.bookingStaffMemberBase"
 }-->
 
 ```json
