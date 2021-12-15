@@ -77,22 +77,6 @@
                 {
                     "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "bookingNamedIdentity",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [bookingNamedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/bookingNamedIdentity?view=graph-rest-1.0) resource type.",
-                    "Target": "bookingNamedIdentity"
-                },
-                {
-                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "bookingPerson",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [bookingPerson](https://docs.microsoft.com/en-us/graph/api/resources/bookingPerson?view=graph-rest-1.0) resource type.",
-                    "Target": "bookingPerson"
-                },
-                {
-                    "Id": "d7d85894-54b6-4929-bd3f-fb089163fc19",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "bookingReminder",
                     "ChangeType": "Addition",
                     "Description": "Added the [bookingReminder](https://docs.microsoft.com/en-us/graph/api/resources/bookingReminder?view=graph-rest-1.0) resource type.",
