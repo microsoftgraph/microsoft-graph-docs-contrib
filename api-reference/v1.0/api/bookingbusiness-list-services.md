@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/services
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
 ```
 
 ### Response
@@ -64,7 +64,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/services",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services",
     "value": [
         {
             "id": "f9b9121f-aed7-4c8c-bb3a-a1796a0b0b2d",
@@ -80,7 +80,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -122,7 +122,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,
@@ -170,7 +170,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
-            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
+            "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
                 "locationEmailAddress": null,

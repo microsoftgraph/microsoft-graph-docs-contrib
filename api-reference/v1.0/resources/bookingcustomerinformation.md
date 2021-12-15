@@ -17,11 +17,11 @@ Registers the customer properties for an appointment. An appointment will contai
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|emailAddress|String| The SMTP address of the bookingCustomer who is booking the appointment |
-|customerId|String|The ID of the bookingCustomer for this appointment. If no ID is specified when an appointment is created, then a new bookingCustomer object is created. Once set, you should consider the customerId immutable. |
+|emailAddress|String| The SMTP address of the [bookingCustomer](../resources/bookingcustomer.md) who is booking the appointment |
+|customerId|String|The ID of the **bookingCustomer** for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable. |
 |location|[location](../resources/location.md)| Represents location information for the bookingCustomer who is booking the appointment. |
 |name|String|The customer's name. |
-|notes|String|Notes from the customer associated with this appointment. You can get the value only when reading this bookingAppointment by its ID. You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by customerId. |
+|notes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by the **customerId**. |
 |phone|String|The customer's phone number. |
 |timeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |customQuestionAnswers|[bookingQuestionAnswer](../resources/bookingquestionanswer.md) collection|It consists of the list of custom questions and answers given by the customer as part of the appointment |

@@ -56,7 +56,7 @@ The following example updates the business email address and scheduling policy, 
   "blockType": "request"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M0000000000.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 Content-type: application/json
 
 {

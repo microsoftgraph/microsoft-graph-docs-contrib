@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@M0000000000.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
 ```
 
 ### Response
@@ -62,7 +62,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses/$entity",
-    "id":"Fabrikam@M0000000000.onmicrosoft.com",
+    "id":"Fabrikam@contoso.onmicrosoft.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",
