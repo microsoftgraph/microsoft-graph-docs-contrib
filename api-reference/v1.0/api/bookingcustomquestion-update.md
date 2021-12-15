@@ -65,15 +65,12 @@ If successful, this method returns a `200 OK` response code and an updated [book
 ```http
 PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/91f1ef26-ca00-451c-1c64-8f3560c80d3d
 Content-Type: application/json
-Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "displayName": "String",
-  "answerInputType": "String",
-  "answerOptions": [
-    "String"
-  ]
+  "displayName": "What is your age?",
+  "answerInputType": "text",
+  "answerOptions": []
 }
 ```
 
@@ -95,10 +92,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
   "id": "91f1ef26-ca00-451c-1c64-8f3560c80d3d",
-  "displayName": "String",
-  "answerInputType": "String",
-  "answerOptions": [
-    "String"
-  ]
+  "displayName": "What is your age?",
+  "answerInputType": "text",
+  "answerOptions": []
 }
 ```

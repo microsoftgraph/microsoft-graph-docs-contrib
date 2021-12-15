@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.bookingQuestionAnswer",
   "questionId": "String",
   "question": "String",
-  "answerInputType": "String",
+  "answerInputType": {"@odata.type": "microsoft.graph.answerInputType"},
   "answerOptions": [
     "String"
   ],
