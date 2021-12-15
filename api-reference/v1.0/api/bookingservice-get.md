@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 ### Response
@@ -63,7 +63,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/services/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services/$entity",
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT30M",
@@ -77,7 +77,7 @@ Content-type: application/json
     "staffMemberIds": [],
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
-    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M0000000000.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "customQuestions" : [
         {
             "questionId" : "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",

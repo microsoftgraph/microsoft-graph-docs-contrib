@@ -47,7 +47,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@M0000000000.onmicrosoft.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 
 ### Response

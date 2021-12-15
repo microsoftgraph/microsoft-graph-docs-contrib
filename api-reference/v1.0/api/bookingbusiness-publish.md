@@ -48,7 +48,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/publish
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/publish
 ```
 
 ### Response

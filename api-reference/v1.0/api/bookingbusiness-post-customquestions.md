@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [bookingC
 -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customQuestions/
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/
 Content-Type: application/json
 Content-length: 165
 

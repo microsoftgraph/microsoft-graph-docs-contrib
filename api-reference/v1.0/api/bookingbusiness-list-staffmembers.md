@@ -46,7 +46,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/staffMembers
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers
 ```
 
 ### Response
@@ -64,7 +64,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40M0000000000.onmicrosoft.com')/staffMembers",
+    "@odata.context":"https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers",
     "value":[
         {
             "@odata.type":"#microsoft.graph.bookingStaffMember",
@@ -127,7 +127,7 @@ Content-type: application/json
             "@odata.type":"#microsoft.graph.bookingStaffMember",
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"samanthab@M0000000000.OnMicrosoft.com",
+            "emailAddress":"samanthab@contoso.onmicrosoft.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "role":"administrator",
             "timeZone":"America/Chicago",
