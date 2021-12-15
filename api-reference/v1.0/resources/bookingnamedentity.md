@@ -1,6 +1,6 @@
 ---
 title: "bookingNamedEntity resource type"
-description: "This is a base type for Microsoft Bookings entities that provide a display name, for example, bookingBusiness, bookingPerson, bookingService."
+description: "This is a base type for Microsoft Bookings entities that provide a display name, for example, bookingBusiness, bookingPerson and bookingService."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"

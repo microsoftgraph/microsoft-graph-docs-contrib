@@ -1,6 +1,6 @@
 ---
 title: "bookingQuestionAssignment resource type"
-description: "Contains a set of custom questions associated with a particular service."
+description: "Contains the set of custom questions associated with a particular service."
 ms.localizationpriority: medium
 author: "razortbone"
 ms.prod: "bookings"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains a set of custom questions associated with a particular service.
+Contains the set of custom questions associated with a particular service.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isRequired|Boolean|The id of the custom question |
-|questionId|String|If it is mandatory to answer the custom question |
+|isRequired|Boolean|The ID of the custom question.|
+|questionId|String|Indicates whether it is mandatory to answer the custom question.|
 
 ## Relationships
 None.
