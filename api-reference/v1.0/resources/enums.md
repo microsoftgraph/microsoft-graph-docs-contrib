@@ -11,6 +11,122 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessPackageAssignmentFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|expired|
+|deliveryFailed|
+|unknownFutureValue|
+
+### accessPackageCatalogState values
+
+|Member|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### accessPackageRequestState values
+
+|Member|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### accessPackageRequestType values
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### accessPackageSubjectType values
+
+|Member|
+|:---|
+|notSpecified|
+|user|
+|servicePrincipal|
+|unknownFutureValue|
+
+### connectedOrganizationState values
+
+|Member|
+|:---|
+|configured|
+|proposed|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### volumeType values
 
 |Member|
@@ -1255,6 +1371,7 @@ Possible values for user account types (group membership), per Windows definitio
 | chatEvent |
 | typing |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessagePolicyViolationDlpActionType values
 
@@ -1704,4 +1821,64 @@ Possible values for user account types (group membership), per Windows definitio
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### answerInputType values 
+
+|Member|
+|:---|
+|text|
+|radioButton|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
 |unknownFutureValue|

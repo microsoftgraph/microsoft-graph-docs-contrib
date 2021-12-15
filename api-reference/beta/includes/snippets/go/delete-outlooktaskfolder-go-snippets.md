@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 outlookTaskFolderId := "outlookTaskFolder-id"
-graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Delete(options)
+graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Delete(nil)
 
 
 ```

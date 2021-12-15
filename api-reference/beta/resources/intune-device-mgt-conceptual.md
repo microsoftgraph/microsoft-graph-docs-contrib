@@ -187,7 +187,6 @@ Namespace: microsoft.graph
 - [Revoke apple VPP licenses action result](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Role scope tag info](intune-auditing-rolescopetaginfo.md)
 - [Rotate BitLocker keys device action result](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Run state](intune-devices-runstate.md)
 - [Security baseline category state summary](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Security baseline compliance state](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Security baseline contributing policy](intune-deviceintent-securitybaselinecontributingpolicy.md)

@@ -115,6 +115,9 @@ Content-type: application/json
 The following is an example of a request for a directory role with **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 
+<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

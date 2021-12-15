@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-result, err := graphClient.Reports().CredentialUserRegistrationDetails().Get(options)
+result, err := graphClient.Reports().CredentialUserRegistrationDetails().Get(nil)
 
 
 ```
