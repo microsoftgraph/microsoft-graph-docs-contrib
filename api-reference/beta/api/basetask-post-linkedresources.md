@@ -58,6 +58,8 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_linkedresource_v2_from_"
@@ -74,6 +76,12 @@ Content-Type: application/json
     "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-v2-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

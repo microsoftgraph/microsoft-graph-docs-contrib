@@ -1405,6 +1405,104 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
+    - name: Customer booking
+      displayName: Bookings, Microsoft Bookings
+      items:
+      - name: Overview
+        href: resources/booking-api-overview.md
+      - name: Booking business
+        href: resources/bookingbusiness.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list.md
+        - name: Create
+          href: api/bookingbusiness-post-bookingbusinesses.md
+        - name: Get
+          href: api/bookingbusiness-get.md
+        - name: Update
+          href: api/bookingbusiness-update.md
+        - name: Delete
+          href: api/bookingbusiness-delete.md
+        - name: Publish
+          href: api/bookingbusiness-publish.md
+        - name: Unpublish
+          href: api/bookingbusiness-unpublish.md
+      - name: Booking appointment
+        href: resources/bookingappointment.md
+        items:
+        - name: List calendar view
+          href: api/bookingbusiness-list-calendarview.md
+        - name: List appointments
+          href: api/bookingbusiness-list-appointments.md
+        - name: Create appointment
+          href: api/bookingbusiness-post-appointments.md
+        - name: Get appointment
+          href: api/bookingappointment-get.md
+        - name: Update appointment
+          href: api/bookingappointment-update.md
+        - name: Delete appointment
+          href: api/bookingappointment-delete.md
+        - name: Cancel appointment
+          href: api/bookingappointment-cancel.md
+      - name: Booking currency
+        href: resources/bookingcurrency.md
+        items:
+        - name: List
+          href: api/bookingcurrency-list.md
+        - name: Get
+          href: api/bookingcurrency-get.md
+      - name: Booking custom question
+        href: resources/bookingcustomquestion.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-customquestions.md
+        - name: Create
+          href: api/bookingbusiness-post-customquestions.md
+        - name: Get
+          href: api/bookingcustomquestion-get.md
+        - name: Update
+          href: api/bookingcustomquestion-update.md
+        - name: Delete
+          href: api/bookingcustomquestion-delete.md
+      - name: Booking customer
+        href: resources/bookingcustomer.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-customers.md
+        - name: Create
+          href: api/bookingbusiness-post-customers.md
+        - name: Get
+          href: api/bookingcustomer-get.md
+        - name: Update
+          href: api/bookingcustomer-update.md
+        - name: Delete
+          href: api/bookingcustomer-delete.md
+      - name: Booking service
+        href: resources/bookingservice.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-services.md
+        - name: Create
+          href: api/bookingbusiness-post-services.md
+        - name: Get
+          href: api/bookingservice-get.md
+        - name: Update
+          href: api/bookingservice-update.md
+        - name: Delete
+          href: api/bookingservice-delete.md
+      - name: Booking staff member
+        href: resources/bookingstaffmember.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-staffmembers.md
+        - name: Create
+          href: api/bookingbusiness-post-staffmembers.md
+        - name: Get
+          href: api/bookingstaffmember-get.md
+        - name: Update
+          href: api/bookingstaffmember-update.md
+        - name: Delete
+          href: api/bookingstaffmember-delete.md
     - name: Devices and apps
       expanded: true
       items:
