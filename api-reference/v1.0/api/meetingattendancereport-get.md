@@ -28,7 +28,9 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To get an attendance report by ID with delegated (`/me`) and app (`/users/{userId}`) permission:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
