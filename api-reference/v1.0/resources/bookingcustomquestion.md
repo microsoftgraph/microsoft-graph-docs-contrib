@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Represents a custom question for a [bookingBusiness](bookingbusiness.md).
 
-Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
-
 ## Methods
 
 | Method                                                                         | Return type                                                               | Description                                                                                                       |

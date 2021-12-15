@@ -49,7 +49,7 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
 | answerInputType | answerInputType   | The expected answer type. The possible values are: `text`, `radioButton`, `unknownFutureValue`. Optional.    |
 | answerOptions   | String collection | List of possible answer values. Optional.                                                                   |
-| displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). Required. |
+| displayName     | String            | The question. Required. |
 
 ## Response
 

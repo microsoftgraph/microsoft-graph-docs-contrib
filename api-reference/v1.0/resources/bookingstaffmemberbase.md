@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Abstract base type for Bookings staff members.
 
-Inherits from [entity](../resources/entity.md).
+Base type of [bookingStaffMember](bookingstaffmember.md).
 
 
 ## Properties
