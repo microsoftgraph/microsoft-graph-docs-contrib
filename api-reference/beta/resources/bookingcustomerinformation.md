@@ -19,7 +19,7 @@ Registers the customer properties for an appointment. An appointment contains a 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customerId|String|The ID of the [bookingCustomer] (../resources/bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the customerId immutable. |
+|customerId|String|The ID of the [bookingCustomer](../resources/bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the customerId immutable. |
 |customQuestionAnswers|[bookingQuestionAnswer](../resources/bookingquestionanswer.md) collection|It consists of the list of custom questions and answers given by the customer as part of the appointment. |
 |emailAddress|String| The SMTP address of the **bookingCustomer** who is booking the appointment. |
 |location|[location](../resources/location.md)| Represents location information for the **bookingCustomer** who is booking the appointment. |
