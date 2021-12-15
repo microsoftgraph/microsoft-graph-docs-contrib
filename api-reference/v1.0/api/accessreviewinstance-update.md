@@ -69,8 +69,8 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
   "name": "update_accessreviewinstance"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/5dcfcc88-da88-4252-8629-a0807b4b076d/instances/720b8ee0-cee4-42ac-b164-894c48703acc
 Content-Type: application/json
 
 {
