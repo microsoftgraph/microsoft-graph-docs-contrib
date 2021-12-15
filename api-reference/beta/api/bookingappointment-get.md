@@ -193,9 +193,9 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
     "maximumAttendeesCount": 5,
-    "filledAttendeesCount": 0,
+    "filledAttendeesCount": 1,
     "customers": [
         {
             "@odata.type": "#microsoft.graph.bookingCustomerInformation",
