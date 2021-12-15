@@ -70,7 +70,6 @@ If successful, this method returns a `200 OK` response code and an updated [book
 ```http
 PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M0000000000.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 Content-Type: application/json
-Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
