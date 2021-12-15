@@ -14,7 +14,7 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), 
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
 and requires a [supported license](#required-licenses-for-modela).
 In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains information associated with an attendance record in a [meetingAttendanceReport](meetingattendancereport.md).
 
 ## Methods
