@@ -10,11 +10,13 @@ doc_type: apiPageType
 # Update accessReviewInstance
 Namespace: microsoft.graph
 
-
-
 Update the properties of an [accessReviewInstance](../resources/accessreviewinstance.md) object. Only the **reviewers** and **fallbackReviewers** properties can be updated but the **scope** property is also required in the request body. You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 
 To update an **accessReviewInstance**, it's **status** must be `InProgress`, `Completing`, or `Completed`.
+
+> [!NOTE]
+> 
+> Updating an **accessReviewInstance** will update only that instance. The parent **accessReviewScheduleDefinition** and any future **accessReviewInstance** objects won't change. To make updates that apply to all future instances, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

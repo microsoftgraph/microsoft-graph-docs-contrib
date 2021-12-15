@@ -17,6 +17,10 @@ Update the properties of an [accessReviewInstance](../resources/accessreviewinst
 
 To update an **accessReviewInstance**, it's **status** must be `InProgress`, `Completing`, or `Completed`.
 
+> [!NOTE]
+> 
+> Updating an **accessReviewInstance** will update only that instance. The parent **accessReviewScheduleDefinition** and any future **accessReviewInstance** objects won't change. To make updates that apply to all future instances, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
