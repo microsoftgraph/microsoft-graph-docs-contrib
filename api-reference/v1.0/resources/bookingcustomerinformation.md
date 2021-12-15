@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 
 Registers the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment.
 
+Inherits from [bookingCustomerInformationBase](bookingcustomerinformationbase.md).
 
 ## Properties
 |Property|Type|Description|
@@ -34,6 +35,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingCustomerInformation"
+  "baseType": "microsoft.graph.bookingCustomerInformationBase"
 }
 -->
 ``` json
