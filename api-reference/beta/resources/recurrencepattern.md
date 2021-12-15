@@ -31,13 +31,13 @@ Use the **type** property to specify the different types of **recurrencePattern*
 |index|weekIndex|Specifies on which instance of the allowed days specified in **daysOfWeek** the event occurs, counted from the first instance in the month. The possible values are: `first`, `second`, `third`, `fourth`, `last`. Default is `first`. Optional and used if **type** is `relativeMonthly` or `relativeYearly`. |
 |interval|Int32|The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the **type**. Required. |
 |month|Int32|The month in which the event occurs.  This is a number from 1 to 12.|
-|type|recurrencePatternType|The recurrence pattern type: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Required. For more information, see [recurrencePatternType values](#recurrencepatterntype-values).|
+|type|recurrencePatternType|The recurrence pattern type: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Required. For more information, see [values of type property](#values-of-type-property).|
 
 
 > [!IMPORTANT]
 > For access reviews, only **dayOfMonth**, **interval**, and **type** (`weekly`, `absoluteMonthly`) properties are supported.
 
-### recurrencePatternType values
+### Values of type property
 
 <!-- Note that this isn't a compliant enums declaration format. The recurrencePatternType enum has been declared in the enums.md file so that this H3 section can be customized to provide additional details -->
 
