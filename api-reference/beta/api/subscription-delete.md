@@ -37,6 +37,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Not supported | Not supported | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Not supported | Not supported | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Not supported | Not supported | TeamMember.Read.All, TeamMember.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Not supported | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
