@@ -30,7 +30,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
 |defaultPrice|Double|The default monetary price for the service.|
-|defaultPriceType|string|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|bookingPriceType|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
@@ -67,7 +67,7 @@ The following is a JSON representation of the resource.
   "defaultDuration": "String (timestamp)",
   "defaultLocation": {"@odata.type": "microsoft.graph.location"},
   "defaultPrice": 1024,
-  "defaultPriceType": "string",
+  "defaultPriceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "description": "String",
   "displayName": "String",
