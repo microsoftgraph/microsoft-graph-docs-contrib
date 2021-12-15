@@ -1,6 +1,6 @@
 ---
-title: "Customize the profile card using the profile API in Microsoft Graph (preview)"
-description: "How you can customize the profile card by making additional attributes visible, or adding custom attributes. You can also delete custom attributes."
+title: "Add or delete custom properties from the profile card using the profile card API in Microsoft Graph (preview)"
+description: "How to customize the profile card by making additional attributes visible, or adding custom attributes. You can also delete custom attributes."
 author: "PollyNincevic"
 ms.localizationpriority: high
 ms.prod: "users"
@@ -18,7 +18,7 @@ Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource
 
 Additional properties will display in the **Contact** section of the profile card in Microsoft 365.
 
-You can also delete custom attributes from profile cards of the organization.
+You can also [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) custom attributes from profile cards of the organization.
 
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
@@ -108,7 +108,6 @@ The following table shows how the Azure AD custom extension attribute names corr
 The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
 
 #### Request
-
 
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
