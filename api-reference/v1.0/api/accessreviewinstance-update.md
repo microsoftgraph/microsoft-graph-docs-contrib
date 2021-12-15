@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [accessReviewInstance](../resources/accessreviewinstance.md) object. Only the **reviewers** and **fallbackReviewers** properties can be updated but the **scope** property is also required in the request body. You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 
-To update an **accessReviewInstance**, it's **status** must be `InProgress`, `Completing`, or `Completed`.
+To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 
 > [!NOTE]
 > 
@@ -133,7 +133,7 @@ Content-Type: application/json
     "id": "720b8ee0-cee4-42ac-b164-894c48703acc",
     "startDateTime": "2021-12-14T11:15:43.207Z",
     "endDateTime": "2021-12-15T11:15:43.207Z",
-    "status": "Completed",
+    "status": "InProgress",
     "scope": {
         "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
         "principalScopes": [
