@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Registers the customer properties for an appointment. An appointment contains a list of customer information and each unit indicates the properties of a customer who is part of that appointment.
 
+Inherits from [bookingCustomerInformationBase](bookingcustomerinformationbase.md).
 
 ## Properties
 |Property|Type|Description|

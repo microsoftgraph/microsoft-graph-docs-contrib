@@ -15,6 +15,8 @@ Namespace: microsoft.graph
  
 Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
+Inherits from [bookingNamedEntity](bookingNamedEntity.md).
+
 ## Methods
 
 | Method		   | Return Type	|Description|

@@ -2572,6 +2572,7 @@ Possible values for user account types (group membership), per Windows definitio
 |text|0|Text.|
 |radioButton|1|RadioButton.|
 |unknownFutureValue|2|UnknownFutureValue.|
+
 ### taskStatus_v2 values
 
 |Member|

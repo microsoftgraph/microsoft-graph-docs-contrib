@@ -15,10 +15,12 @@ Namespace: microsoft.graph
  
 This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).
 
+Inherits from [bookingNamedEntity](bookingnamedentity.md)
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|A name for the derived entity, which interfaces with customers.|
+|displayName|String|A name for the derived entity, which interfaces with customers. Inherited from **bookingNamedEntity**.|
 |emailAddress|String|The email address of the person.|
 |id|String| The ID for the derived entity. Read-only.|
 
