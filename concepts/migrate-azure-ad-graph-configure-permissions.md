@@ -10,7 +10,12 @@ ms.prod: "applications"
 
 Azure Active Directory (Azure AD) Graph is deprecated and will be retired on June 30, 2022. As part of this deprecation path, adding Azure AD Graph permissions to an app registration through the Azure portal is now disabled. We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you transition your apps to [Microsoft Graph](/graph/overview) API.
 
-However, your app might still temporarily require Azure AD Graph permissions to access resources. This article provides you with guidance to configure required permissions for Azure AD Graph for your app registration.
+However, your app might still temporarily require Azure AD Graph permissions to access resources. This article describes the following four methods for configuring required Azure AD Graph permissions for your app registration:
+
+1. [Use the Azure portal to find the APIs your organization uses](#option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses)
+1. [Update the application manifest on the Azure portal](#option-2-update-the-application-manifest-on-the-azure-portal)
+1. [Use the Microsoft Graph API](#option-3-use-the-microsoft-graph-api)
+1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
 > Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
@@ -216,7 +221,7 @@ HTTP/1.1 204 No Content
 
 ### Step 3: Verify that the required Azure AD Graph permissions were added to your app
 
-Verify that your app registration has the required API permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** page in the Azure portal.
+Verify that your app registration has the required Azure AD Graph API permissions you added in Step 2 by using the Microsoft Graph API or by checking the **App registrations** page in the Azure portal.
 
 #### Use the Microsoft Graph GET /application/{id} API
 
@@ -228,9 +233,9 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Note:** Though you've configured the permissions the app requires, these permissions haven't been granted. Many permissions require admin consent before they can be used to access organizational data.
 
-## Option 4: Use Microsoft Graph PowerShell
+## Option 4: Use the Microsoft Graph PowerShell SDK
 
-The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the required Azure AD Graph permissions as described in the following steps.
+The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the required Azure AD Graph permissions as described in the following steps.
 
 ### Prerequisites
 
