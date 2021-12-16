@@ -51,8 +51,10 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 - If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Azure Active Directory.
 - If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `everyone`, only supply the **id** from the external registration system.
 
-> [!TIP]
-> The **id** from the external registration system can be any form of string.
+> [!IMPORTANT]
+>
+>- The **id** from the external registration system can be any form of string.
+> You must supply the **@odata.type** property to specify the registrant type. For more details, see the [examples](#examples) section below.
 
 ## Response
 
@@ -115,7 +117,7 @@ The following example shows how to enroll a registrant when the meeting registra
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/registrants
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants
 Content-Type: application/json
 
 {

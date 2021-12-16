@@ -42,6 +42,9 @@ POST /me/onlineMeetings/{id}/registration
 
 In the request body, supply a JSON representation of a [meetingRegistration](../resources/meetingregistration.md) object.
 
+> [!IMPORTANT]
+> You must supply the **@odata.type** property to specify the registration type. For more details, see the [example](#example) below.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingregistration.md) object in the response body.
@@ -68,6 +71,7 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "subject":"Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime":"2021-11-02T08:00:00-08:00",
@@ -134,6 +138,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,2Hui7cZ3e0m1BblvyhKFaw,Bcn5itxWh0ui5zRxG26Akw,XCvoVSOmK0e9fivLeKuR_w",
   "registrationPageWebUrl": "https://teams.microsoft.com/registration/gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E?mode=read&tenantId=eefc0b3a-a334-4fb7-ac60-2f1cf13ec00d",
   "allowedRegistrant": "everyone",
