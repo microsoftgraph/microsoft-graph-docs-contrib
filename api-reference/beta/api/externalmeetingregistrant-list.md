@@ -30,13 +30,15 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To get a list of all external meeting registrants with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/registration/registrants
 GET /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 ```
 
-> **Note:** `userId` is the **objectID** of the meeting organizer.
+> [!TIP]
+> `userId` is the **objectId** of the meeting organizer.
 
 ## Optional query parameters
 
@@ -54,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [externalMeetingRegistrant](../resources/externalmeetingRegistrant.md) objects in the response body. The **joinWebUrl** property will be `null`.
+If successful, this method returns a `200 OK` response code and a collection of [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects in the response body. The **joinWebUrl** property will be `null`.
 
 ## Example
 
@@ -65,8 +67,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list-externalregistratrants"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/registrants
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants
 ```
 
 ### Response
@@ -77,7 +79,8 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/
   "blockType": "response",
   "name": "list-externalregistratrants",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.externalMeetingRegistrant)"
+  "@odata.type": "microsoft.graph.externalMeetingRegistrant",
+  "isCollection": true
 }-->
 
 ```http

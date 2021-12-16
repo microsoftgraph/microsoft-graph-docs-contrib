@@ -30,13 +30,15 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To get external meeting registration with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/registration
 GET /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
-> **Note:** `userId` is the **objectID** of the meeting organizer.
+> [!TIP]
+> `userId` is the **objectId** of the meeting organizer.
 
 ## Optional query parameters
 
@@ -65,8 +67,8 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
   "name": "get-externalregistration"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration
 ```
 
 ### Response

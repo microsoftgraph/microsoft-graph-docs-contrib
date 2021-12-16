@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable registration for an [onlineMeeting](../resources/onlinemeeting.md) with external registration provider. An online meeting can only have one registration enabled.
+Enable registration for an [onlineMeeting](../resources/onlinemeeting.md) using an external registration system. An online meeting can only have one registration enabled.
 
 ## Permissions
 
@@ -30,13 +30,15 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To create external meeting registration with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration
 POST /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
-> **Note:** `userId` is the **objectID** of the meeting organizer.
+> [!TIP]
+> `userId` is the **objectId** of the meeting organizer.
 
 ## Request headers
 
@@ -46,14 +48,14 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration
 
 ## Request body
 
-In the request body, supply a JSON representation of a [externalMeetingRegistration](../resources/externalmeetingregistration.md) object.
+In the request body, supply a JSON representation of an [externalMeetingRegistration](../resources/externalmeetingregistration.md) object.
 
 > [!IMPORTANT]
-> You must supply a `@odata.type` property to specify the registration type. See [example](#example) below.
+> You must supply the **@odata.type** property to specify the registration type. For more details, see the [example](#example) below.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [meetingRegistration](../resources/meetingregistration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and [externalMeetingRegistration](../resources/externalmeetingregistration.md) object in the response body.
 
 ## Example
 
@@ -66,12 +68,12 @@ If successful, this method returns a `201 Created` response code and [meetingReg
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.externalMeetingRegistration",
-  "allowedRegistrant": "everyone",
+  "allowedRegistrant": "everyone"
 }
 ```
 

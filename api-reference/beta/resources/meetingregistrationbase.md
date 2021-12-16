@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base registration details of an online meeting.
+Represents base registration details of an online meeting.
 
 > [!TIP]
-> This is an abstract type and cannot be used directly. Use derived type [meetingRegistration](meetingRegistration.md) or [externalMeetingRegistration](externalMeetingRegistration.md) instead.
-This is an abstract type.
+> This is an abstract type and cannot be used directly. Use the derived type [meetingRegistration](meetingregistration.md) or [externalMeetingRegistration](externalmeetingregistration.md) instead.
 
 ## Properties
 

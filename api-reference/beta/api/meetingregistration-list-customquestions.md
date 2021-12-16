@@ -64,8 +64,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list-custom-questions"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/microsoft.graph.meetingRegistration/customQuestions
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions
 ```
 
 

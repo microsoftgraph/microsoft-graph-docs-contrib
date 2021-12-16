@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a base meeting registrant who has enrolled in an online meeting.
 
 > [!TIP]
-> This is an abstract type and cannot be used directly. Use derived type [meetingRegistrant](meetingregistrant.md) or [externalMeetingRegistrant](externalmeetingregistrant.md) instead.
+> This is an abstract type and cannot be used directly. Use the derived type [meetingRegistrant](meetingregistrant.md) or [externalMeetingRegistrant](externalmeetingregistrant.md) instead.
 
 ## Properties
 

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md). This type inherits from [meetingRegistrantBase](meetingregistrantbase.md).
+Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md). 
+
+Inherits from [meetingRegistrantBase](meetingregistrantbase.md).
 
 ## Methods
 

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external meeting registrant who has enrolled in an online meeting. This type inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
+Represents an external meeting registrant who has enrolled in an online meeting.
+
+Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 
 ## Methods
 
@@ -21,7 +23,7 @@ Represents an external meeting registrant who has enrolled in an online meeting.
 |:---|:---|:---|
 |[List externalMeetingRegistrants](../api/externalmeetingregistrant-list.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md) collection|Get a list of the [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) objects and their properties.|
 |[Create externalMeetingRegistrant](../api/externalmeetingregistrant-post.md)|[externalMeetingRegistrant](../resources/externalmeetingregistrant.md)|Read the properties and relationships of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
-|[Delete externalMeetingRegistrant](../api/externalmeetingregistrant-delete.md)|None|Deletes an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
+|[Delete externalMeetingRegistrant](../api/externalmeetingregistrant-delete.md)|None|Delete an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.|
 
 ## Properties
 
@@ -29,8 +31,8 @@ Represents an external meeting registrant who has enrolled in an online meeting.
 |:-----------|:-------|:-----------------------------------------------------------------------------|
 | id         | String | The unique identifier of the registrant in the external registration system. |
 | joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only.          |
-| tenantId   | String | Tenant ID of this registrant if in Azure Active Directory.                   |
-| userId     | String | User ID of this registrant if in Azure Active Directory.                     |
+| tenantId   | String | The tenant ID of this registrant if in Azure Active Directory.               |
+| userId     | String | The user ID of this registrant if in Azure Active Directory.                 |
 
 ## JSON representation
 

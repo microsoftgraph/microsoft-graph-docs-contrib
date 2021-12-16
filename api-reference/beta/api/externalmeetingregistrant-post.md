@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The meeting organizer enrolls an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) in an online meeting (which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled) by providing an unique **id** in the external registration system and get the unique **joinWebUrl** of this registrant.
+Enroll an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) in an online meeting which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled. The meeting organizer enrolls someone by providing a unique **id** in the external registration system and gets the unique **joinWebUrl** of this registrant.
 
 ## Permissions
 
@@ -30,13 +30,15 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To create an external meeting registrant with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration/registrants
 POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 ```
 
-> **Note:** `userId` is the **objectID** of the meeting organizer.
+> [!TIP]
+> `userId` is the **objectId** of the meeting organizer.
 
 ## Request headers
 
@@ -46,15 +48,15 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 
 ## Request body
 
-- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the `id` from the external registration system, the registrant's `tenantId` and `userId` in Azure Active Directory.
-- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `everyone`, only supply the `id` from the external registration system.
+- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Azure Active Directory.
+- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `everyone`, only supply the **id** from the external registration system.
 
 > [!TIP]
 > The **id** from the external registration system can be any form of string.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [externalMeetingRegistrant](../resources/externalmeetingRegistrant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object in the response body.
 
 ## Examples
 
@@ -70,7 +72,7 @@ The following example shows how to enroll a registrant when the meeting registra
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/registrants
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants
 Content-Type: application/json
 
 {
@@ -103,7 +105,7 @@ Content-Type: application/json
 
 ### Example 2: allowedRegistrant=organization
 
-The following example shows how to enroll a registrant when the meeting registration has **allowedRegistrant** set to `everyone`.
+The following example shows how to enroll a registrant when the meeting registration has **allowedRegistrant** set to `organization`.
 
 #### Request
 

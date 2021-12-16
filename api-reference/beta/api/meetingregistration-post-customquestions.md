@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [meetingR
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/microsoft.graph.meetingRegistration/customQuestions
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions
 Content-Type: application/json
 
 {

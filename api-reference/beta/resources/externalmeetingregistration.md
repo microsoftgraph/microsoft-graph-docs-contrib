@@ -12,14 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents external registration details of an online meeting. This type inherits from [meetingRegistrationBase](meetingregistrationbase.md).
+Represents external registration details of an online meeting.
+
+Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create externalMeetingRegistration](../api/externalmeetingregistration-post.md)|[externalMeetingRegistration](meetingregistrantbase.md)|Create a new externalMeetingRegistration object.|
+|[Create externalMeetingRegistration](../api/externalmeetingregistration-post.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Create a new [externalMeetingRegistration](externalmeetingregistration.md) object.|
 |[Get externalMeetingRegistration](../api/externalmeetingregistration-get.md)|[externalMeetingRegistration](externalmeetingregistration.md)|Read the properties and relationships of an [externalMeetingRegistration](externalmeetingregistration.md) object.|
-|[Delete externalMeetingRegistration](../api/externalmeetingregistration-delete.md)|None|Deletes an [externalMeetingRegistration](externalmeetingregistration.md) object.|
+|[Delete externalMeetingRegistration](../api/externalmeetingregistration-delete.md)|None|Delete an [externalMeetingRegistration](externalmeetingregistration.md) object.|
 
 ## Properties
 

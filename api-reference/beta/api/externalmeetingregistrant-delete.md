@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The meeting organizer removes an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) in an online meeting (which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled).
+The meeting organizer removes an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) from an online meeting which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled.
 
 ## Permissions
 
@@ -30,16 +30,17 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To remove an external meeting registrant with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
-DELTE /me/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
+DELETE /me/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
 DELETE /users/{userId}/onlineMeetings{meetingId}/registration/registrants/{registrantId}
 ```
 
->**Notes:**
+> [!TIP]
 >
-> - `userId` is the **objectID** of the meeting organizer.
-> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlineMeeting.md) object.
+> - `userId` is the **objectId** of the meeting organizer.
+> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 > - `registrantId` is the **id** of an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) object.
 
 ## Request headers
@@ -66,7 +67,7 @@ If successful, this method only returns a `204 No Content` response code.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants/9d96988d-a66a-46ce-aad7-0b245615b297
 ```
 
 ### Response

@@ -1,6 +1,6 @@
 ---
 title: "Delete externalMeetingRegistration"
-description: "Disable external meeting registration."
+description: "Disable and delete an external meeting registration."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -30,13 +30,15 @@ To use application permission for this API, tenant administrators must create an
 ## HTTP request
 
 To delete external meeting registration with delegated (`/me`) and app (`/users/{userId}/`) permission:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}/registration
 DELETE /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
-> **Note:** `userId` is the **objectID** of the meeting organizer.
+> [!TIP]
+> `userId` is the **objectId** of the meeting organizer.
 
 ## Request headers
 
@@ -62,7 +64,7 @@ If successful, this method only returns a `204 No Content` response code.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/registration
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration
 ```
 
 ### Response
