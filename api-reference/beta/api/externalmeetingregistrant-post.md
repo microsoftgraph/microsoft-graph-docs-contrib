@@ -38,7 +38,9 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 ```
 
 > [!TIP]
-> `userId` is the **objectId** of the meeting organizer.
+>
+>- `userId` is the **objectId** of the meeting organizer.
+>- `meetingId` is the **id** of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
 
@@ -54,7 +56,7 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 > [!IMPORTANT]
 >
 >- The **id** from the external registration system can be any form of string.
-> You must supply the **@odata.type** property to specify the registrant type. For more details, see the [examples](#examples) section below.
+>- You must supply the **@odata.type** property to specify the registrant type. For more details, see the following [examples](#examples).
 
 ## Response
 
@@ -62,9 +64,7 @@ If successful, this method returns a `200 OK` response code and an [externalMeet
 
 ## Examples
 
-### Example 1: allowedRegistrant=everyone
-
-The following example shows how to enroll a registrant when the meeting registration has **allowedRegistrant** set to `everyone`.
+### Example 1: Enroll a registrant when the meeting registration has allowedRegistrant set to 'everyone'
 
 #### Request
 
@@ -105,9 +105,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: allowedRegistrant=organization
-
-The following example shows how to enroll a registrant when the meeting registration has **allowedRegistrant** set to `organization`.
+### Example 2: Enroll a registrant when the meeting registration has allowedRegistrant set to 'organization'
 
 #### Request
 

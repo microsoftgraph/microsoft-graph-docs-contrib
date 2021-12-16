@@ -38,7 +38,9 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
 > [!TIP]
-> `userId` is the **objectId** of the meeting organizer.
+>
+>- `userId` is the **objectId** of the meeting organizer.
+>- `meetingId` is the **id** of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
 

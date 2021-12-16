@@ -38,7 +38,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
 > [!TIP]
-> `userId` is the **objectId** of the meeting organizer.
+>
+>- `userId` is the **objectId** of the meeting organizer.
+>- `meetingId` is the **id** of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Optional query parameters
 
@@ -88,6 +90,6 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
   "@odata.type": "#microsoft.graph.externalMeetingRegistration",
   "id": "f23714a3-a2f4-4b1d-96d2-bfe9097e7163",
-  "allowedRegistrant": "everyone",
+  "allowedRegistrant": "everyone"
 }
 ```

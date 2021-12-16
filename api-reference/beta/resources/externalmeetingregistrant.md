@@ -29,8 +29,8 @@ Inherits from [meetingRegistrantBase](../resources/meetingregistrantbase.md).
 
 | Property   | Type   | Description                                                                  |
 |:-----------|:-------|:-----------------------------------------------------------------------------|
-| id         | String | The unique identifier of the registrant in the external registration system. |
-| joinWebUrl | String | A unique web URL for the registrant to join the meeting. Read-only.          |
+| id         | String | The unique identifier of the registrant in the external registration system. Inherited from [meetingRegistrantBase](../resources/meetingregistrantbase.md). |
+| joinWebUrl | String | A unique web URL for the registrant to join the meeting. Inherited from [meetingRegistrantBase](../resources/meetingregistrantbase.md). Read-only.          |
 | tenantId   | String | The tenant ID of this registrant if in Azure Active Directory.               |
 | userId     | String | The user ID of this registrant if in Azure Active Directory.                 |
 

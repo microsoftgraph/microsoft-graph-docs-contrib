@@ -43,7 +43,7 @@ POST /me/onlineMeetings/{id}/registration
 In the request body, supply a JSON representation of a [meetingRegistration](../resources/meetingregistration.md) object.
 
 > [!IMPORTANT]
-> You must supply the **@odata.type** property to specify the registration type. For more details, see the [example](#example) below.
+> You must supply the **@odata.type** property to specify the registration type. For more details, see the following [example](#example).
 
 ## Response
 

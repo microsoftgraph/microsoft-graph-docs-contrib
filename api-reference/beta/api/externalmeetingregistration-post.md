@@ -38,7 +38,9 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration
 ```
 
 > [!TIP]
-> `userId` is the **objectId** of the meeting organizer.
+>
+>- `userId` is the **objectId** of the meeting organizer.
+>- `meetingId` is the **id** of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
 
@@ -51,11 +53,11 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration
 In the request body, supply a JSON representation of an [externalMeetingRegistration](../resources/externalmeetingregistration.md) object.
 
 > [!IMPORTANT]
-> You must supply the **@odata.type** property to specify the registration type. For more details, see the [example](#example) below.
+> You must supply the **@odata.type** property to specify the registration type. For more details, see the following [example](#example).
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [externalMeetingRegistration](../resources/externalmeetingregistration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [externalMeetingRegistration](../resources/externalmeetingregistration.md) object in the response body.
 
 ## Example
 
@@ -96,6 +98,6 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
   "@odata.type": "#microsoft.graph.externalMeetingRegistration",
   "id": "f23714a3-a2f4-4b1d-96d2-bfe9097e7163",
-  "allowedRegistrant": "everyone",
+  "allowedRegistrant": "everyone"
 }
 ```

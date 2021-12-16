@@ -27,7 +27,7 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 
 | Property          | Type                                       | Description                                 |
 |:------------------|:-------------------------------------------|:--------------------------------------------|
-| allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specifies who can register for the meeting. |
+| allowedRegistrant | [meetingAudience](#meetingaudience-values) | Specifies who can register for the meeting. Inherited from [meetingRegistrationBase](meetingregistrationbase.md). |
 
 ### meetingAudience values
 

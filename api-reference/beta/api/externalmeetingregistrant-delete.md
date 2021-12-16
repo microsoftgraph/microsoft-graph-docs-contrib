@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LT
 ### Response
 <!-- {
   "blockType": "response",
-  "name": "delete-externalregistratrant",
+  "name": "delete-externalregistratrant"
 }-->
 
 ```http

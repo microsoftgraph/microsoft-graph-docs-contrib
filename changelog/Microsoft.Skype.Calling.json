@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalMeetingRegistrant",
           "ChangeType": "Addition",
-          "Description": "Added the [externalMeetingRegistrant](https://docs.microsoft.com/en-us/graph/api/resources/externalMeetingRegistrant?view=graph-rest-beta) resource",
+          "Description": "Added the [externalMeetingRegistrant](https://docs.microsoft.com/en-us/graph/api/resources/externalMeetingRegistrant?view=graph-rest-beta) resource.",
           "Target": "externalMeetingRegistrant"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalMeetingRegistration",
           "ChangeType": "Addition",
-          "Description": "Added the [externalMeetingRegistration](https://docs.microsoft.com/en-us/graph/api/resources/externalMeetingRegistration?view=graph-rest-beta) resource",
+          "Description": "Added the [externalMeetingRegistration](https://docs.microsoft.com/en-us/graph/api/resources/externalMeetingRegistration?view=graph-rest-beta) resource.",
           "Target": "externalMeetingRegistration"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistrantBase",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistrantBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrantBase?view=graph-rest-beta) resource",
+          "Description": "Added the [meetingRegistrantBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrantBase?view=graph-rest-beta) resourc.e",
           "Target": "meetingRegistrantBase"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistrationBase",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistrationBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrationBase?view=graph-rest-beta) resource",
+          "Description": "Added the [meetingRegistrationBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrationBase?view=graph-rest-beta) resource.",
           "Target": "meetingRegistrationBase"
         }
       ],

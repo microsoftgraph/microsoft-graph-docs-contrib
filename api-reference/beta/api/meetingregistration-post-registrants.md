@@ -54,7 +54,7 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 In the request body, supply a JSON representation of the editable properties of a [meetingRegistrant](../resources/meetingRegistrant.md) object.
 
 > [!IMPORTANT]
-> You must supply the **@odata.type** property to specify the registrant type. For more details, see the [example](#examples) below.
+> You must supply the **@odata.type** property to specify the registrant type. For more details, see the following [example](#examples).
 
 ## Response
 

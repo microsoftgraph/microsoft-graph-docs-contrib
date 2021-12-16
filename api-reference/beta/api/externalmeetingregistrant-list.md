@@ -38,7 +38,9 @@ GET /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 ```
 
 > [!TIP]
-> `userId` is the **objectId** of the meeting organizer.
+>
+>- `userId` is the **objectId** of the meeting organizer.
+>- `meetingId` is the **id** of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Optional query parameters
 
@@ -103,7 +105,7 @@ Content-Type: application/json
         "joinWebUrl": null,
         "userId": null,
         "tenantId": null
-    },
+    }
   ]
 }
 ```
