@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "meetingRegistrantBase",
           "ChangeType": "Addition",
-          "Description": "Added the [meetingRegistrantBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrantBase?view=graph-rest-beta) resourc.e",
+          "Description": "Added the [meetingRegistrantBase](https://docs.microsoft.com/en-us/graph/api/resources/meetingRegistrantBase?view=graph-rest-beta) resource",
           "Target": "meetingRegistrantBase"
         },
         {
