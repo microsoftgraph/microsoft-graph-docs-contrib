@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents base registration details of an online meeting.
 
+Base type of [meetingRegistration](meetingregistration.md) and [externalMeetingRegistration](externalmeetingregistration.md).
+
 > [!TIP]
 > This is an abstract type and cannot be used directly. Use the derived type [meetingRegistration](meetingregistration.md) or [externalMeetingRegistration](externalmeetingregistration.md) instead.
 

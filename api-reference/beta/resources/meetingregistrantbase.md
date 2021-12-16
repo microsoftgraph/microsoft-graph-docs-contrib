@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a base meeting registrant who has enrolled in an online meeting.
 
+Base type of [meetingRegistrant](meetingregistrant.md) and [externalMeetingRegistrant](externalmeetingregistrant.md).
+
 > [!TIP]
 > This is an abstract type and cannot be used directly. Use the derived type [meetingRegistrant](meetingregistrant.md) or [externalMeetingRegistrant](externalmeetingregistrant.md) instead.
 
