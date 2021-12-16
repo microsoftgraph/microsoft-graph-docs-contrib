@@ -1,6 +1,6 @@
 ---
 title: "Delete externalMeetingRegistrant"
-description: "Remove an externalMeetingRegistrant from an online meeting."
+description: "Delete an externalMeetingRegistrant from an online meeting."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
