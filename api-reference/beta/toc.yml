@@ -1833,7 +1833,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking (preview)
+    - name: Customer booking
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
