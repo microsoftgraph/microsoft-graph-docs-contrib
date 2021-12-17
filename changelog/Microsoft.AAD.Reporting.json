@@ -1,6 +1,104 @@
 {
   "changelog": [
-      {
+    {
+      "ChangeList": [
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "authenticationContextDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationContextDetail** enumeration type.",
+          "Target": "authenticationContextDetail"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Member",
+          "ChangedApiName": "ADFederationServicesMFAAdapter",
+          "ChangeType": "Addition",
+          "Description": "Added the **ADFederationServicesMFAAdapter** member to the **tokenIssuerType** enumeration.",
+          "Target": "tokenIssuerType"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Member",
+          "ChangedApiName": "NPSExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the **NPSExtension** member to the **tokenIssuerType** enumeration.",
+          "Target": "tokenIssuerType"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationContext",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationContext](https://docs.microsoft.com/en-us/graph/api/resources/authenticationContext?view=graph-rest-beta) resource type.",
+          "Target": "authenticationContext"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationContextClassReferences",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationContextClassReferences** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Property",
+          "ChangedApiName": "azureResourceId",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureResourceId** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Property",
+          "ChangedApiName": "federatedCredentialId",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedCredentialId** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceServicePrincipalId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceServicePrincipalId** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "Property",
+          "ChangedApiName": "sessionLifetimePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the [sessionLifetimePolicies](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "String",
+          "ChangedApiName": "tokenIssuerType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **tokenIssuerType** resource type",
+          "Target": "signIn"
+        },
+        {
+          "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+          "ApiChange": "String",
+          "ChangedApiName": "tokenIssuerType",
+          "ChangeType": "Addition",
+          "Description": "Added the [tokenIssuerType](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-07T18:37:30.9583363Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },  
+    {
       "ChangeList": [
             {
                 "Id": "1bb6395b-305e-11ec-a1a6-9e72602561cc",

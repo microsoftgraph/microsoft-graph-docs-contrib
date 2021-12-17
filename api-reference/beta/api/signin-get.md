@@ -124,7 +124,15 @@ Content-type: application/json
   "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
   "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
   "appDisplayName": "Graph explorer",
+  "authenticationContextClassReferences": [
+      {
+        "id":"C1",
+        "details":"required"
+      }
+  ],
   "authenticationRequirement": "MultifactorAuthentication",
+  "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+  "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
   "ipAddress": "131.107.159.37",
   "clientAppUsed": "Browser",
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
@@ -143,10 +151,17 @@ Content-type: application/json
   "riskEventTypes_v2": [],
   "resourceDisplayName": "Microsoft Graph",
   "resourceId": "00000003-0000-0000-c000-000000000000",
+  "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
   "authenticationMethodsUsed": [],
   "alternateSignInName": "testaccount2@contoso.com",
   "servicePrincipalName": null,
   "servicePrincipalId": "",
+  "sessionLifetimePolicies": [
+    {
+      "expirationRequirement": "tenantTokenLifetimePolicy",
+      "detail": "The user was required to sign in again according to the tenant session lifetime policy"
+    }
+  ],
   "mfaDetail": null,
   "status": {
     "errorCode": 0,
