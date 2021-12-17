@@ -29,12 +29,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.sessionlifetimepolicy"
+  "@odata.type": "microsoft.graph.sessionLifetimePolicy"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.sessionlifetimepolicy",
+  "@odata.type": "#microsoft.graph.sessionLifetimePolicy",
   "expirationRequirement": "String",
   "detail": "String"
 }
