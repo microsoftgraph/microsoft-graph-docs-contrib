@@ -1,7 +1,7 @@
 ---
 title: "Get Icon"
 description: "Retrieve the properties and relationships of icon object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.prod: ""
@@ -65,7 +65,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "set": "set-value",

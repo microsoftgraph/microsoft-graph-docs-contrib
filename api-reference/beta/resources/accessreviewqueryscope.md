@@ -2,7 +2,7 @@
 title: "accessReviewQueryScope resource type"
 description: "Defines what will be reviewed in an access review."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

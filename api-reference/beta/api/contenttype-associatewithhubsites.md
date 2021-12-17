@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: associateWithHubSites"
 description: "Associate a content type with list of hubsites."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -19,7 +19,7 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## Permissions  
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
   
 
@@ -71,7 +71,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 Content-Type: application/json
 
 {
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

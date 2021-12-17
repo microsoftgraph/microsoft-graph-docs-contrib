@@ -1,7 +1,7 @@
 ---
 title: "changeNotification resource type"
 description: "Represents the change notification sent to the subscriber."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: resourcePageType
 ms.prod: "change-notifications"

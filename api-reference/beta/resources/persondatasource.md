@@ -1,7 +1,7 @@
 ---
 title: "personDataSource resource type"
 description: "Represents the sources the user data comes from, such as Directory and Outlook Contacts."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType

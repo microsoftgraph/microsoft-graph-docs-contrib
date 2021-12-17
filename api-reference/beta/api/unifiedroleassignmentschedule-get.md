@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleAssignmentSchedule"
 description: "Read the properties and relationships of an unifiedRoleAssignmentSchedule object."
-author: "shauliu"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/226faf5f-61b4-40bb-8726-52e48ec914de
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentschedule-csharp-snippets.md)]
@@ -77,12 +77,18 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentschedule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,21 +100,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdDateTime": "2020-09-09T21:35:27.91Z",
-    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-    "status": "Provisioned",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "assignmentType": "Eligible",
-    "memberType": "direct"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentSchedules/$entity",
+  "id": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "principalId": "7532aaf7-0740-41d2-a79b-4a035f122a66",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "createdUsing": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "createdDateTime": "2021-07-27T09:42:40.087Z",
+  "modifiedDateTime": null,
+  "status": "Provisioned",
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T09:42:40.087Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   }
 }
 ```

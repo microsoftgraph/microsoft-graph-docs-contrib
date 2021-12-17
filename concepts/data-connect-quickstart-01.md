@@ -1,3 +1,7 @@
+---
+ms.localizationpriority: medium
+---
+
 <!-- markdownlint-disable MD002 MD041 -->
 
 Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending Microsoft 365 data into Azure. By integrating in this way, you'll be able to take advantage of the vast suite of compute, storage in Azure while staying compliant with industry standards and keeping your data secure.
@@ -17,7 +21,7 @@ In this tutorial, you will be creating your first Microsoft Graph Data Connect a
 To complete this lab, you will need the following subscriptions or licenses.
 
 1. **Microsoft 365 tenancy**
-  
+
    - If you do not have one, you get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
    - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
@@ -25,7 +29,7 @@ To complete this lab, you will need the following subscriptions or licenses.
       - Must have access to the Microsoft 365 Admin Center.
 
 1. **Microsoft Azure subscription**
-  
+
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
    - The account used to sign in must have the **Global administrator** role granted to it.
    - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.

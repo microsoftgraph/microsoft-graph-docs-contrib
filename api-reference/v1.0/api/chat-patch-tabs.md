@@ -2,7 +2,7 @@
 title: "Update tab in chat"
 description: "Update the properties of the specified tab in a chat."
 author: "subray"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -65,7 +65,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
 Content-type: application/json
-Content-length: 211
 
 {
   "displayName": "My Contoso Tab - updated again"
@@ -85,6 +84,10 @@ Content-length: 211
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tabs-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tabs-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

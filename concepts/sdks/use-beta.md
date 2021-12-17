@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph SDKs with the beta API"
 description: "Describes how use the Microsoft Graph SDKs with the beta version of the API."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 
@@ -11,6 +11,7 @@ Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-r
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
+<!-- markdownlint-disable MD025 -->
 # [C#](#tab/CS)
 
 In order to call the beta API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
@@ -64,7 +65,7 @@ The [Microsoft Graph SDK for ObjC](https://github.com/microsoftgraph/msgraph-sdk
 
 However, the models in the [Microsoft Graph Models SDK](https://github.com/microsoftgraph/msgraph-sdk-objc-models) are generated from objects in the v1.0 API, so they may not work with beta objects.
 
-```objc
+```objectivec
 // GET /me
 NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.microsoft.com/beta"];
 
@@ -98,6 +99,25 @@ class UseBeta
         echo "Hello, I am $user->getGivenName() ";
     }
 }
+```
+
+# [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+In order to call the beta API, you must install the [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) package.
+
+```go
+import (
+    msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+    a "github.com/microsoft/kiota/authentication/go/azure"
+)
+
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+adapter, err := msgraphsdk.NewGraphRequestAdapter(auth)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
 ```
 
 ---

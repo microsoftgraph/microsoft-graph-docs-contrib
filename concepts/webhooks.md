@@ -1,9 +1,9 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.prod: "non-product-specific"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -263,9 +263,11 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
 
 Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
+1. Your process should process every change notification it receives and send a 2xx class code. If Microsoft Graph doesn't receive a 2xx class code within 3 seconds, it will try to publish the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered. If your process consistently does not respond within 3 seconds, your notification might be subject to throttling.
 
-    > **Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance. If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be delayed and retried for a period of 4 hours. If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be dropped.
+    If your processing is expected to take more than 3 seconds, you should persist the notification, return a `202 - Accepted` status code in your response to Microsoft Graph, then process the notifications. If the notification is not persisted, return a 5xx class code to indicate an error so the notification will be retried.
+
+    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - OK` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
@@ -274,6 +276,20 @@ Your process should process every change notification it receives. The following
 1. Update your application based on your business logic.
 
 Repeat for other change notifications in the request.
+
+### Throttling
+
+Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. For most subscriptions, notifications are not subjected to any additional delay during publishing and all notifications are delivered within the SLA unless the service is experiencing an incident. However, if a subscription notification URL is slow or fails to response, notifications might be throttled for the host associated with the subscription. The following process is used to determine when to throttle and how to handle throttled endpoints.
+
+Notifications are published using an HTTP client with a 3 second timeout. Upon completion of publishing of a notification, regardless of outcome, the total time spent attempting to publish, including network latency, is tracked for the host associated with the notification URL. If the publishing time is greater than 2900 ms, the response is considered slow. The responses are accumulated for the host and the percentage of slow responses is calculated after 100 notifications have been received. When the percentage of slow responses reaches 10%, the host associated with the notification URL is flagged as a slow endpoint. Because slow endpoints are associated with the host in the notification URL, all notifications for all subscriptions associated with the host are considered for evaluation and are subjected to throttling.
+
+The evaluation continues in real time. If the publishing time for a host drops below 290 0ms, this non-slow response is included in the total count of responses, the percentage of slow responses is re-calculated, and the endpoint is re-evaluated. Additionally, the accumulation of responses is flushed every 10 minutes and the evaluation starts again, waiting for 100 notifications before evaluating an endpoint. Therefore, a temporary spike in network latency or publishing delay will recover after the delay is mitigated. A more persistent network latency or publishing delay greater than 2900 ms will be continually re-evaluated every 10 minutes. 
+
+While an endpoint is throttled, notifications are subjected to the following additional delays:
+-	Notifications are automatically offloaded to a set of workers dedicated to failed and throttled notifications and an additional delay of 10 minutes is incurred.
+-	Notifications are dropped if the throttled endpoint slow % is >= 15%.
+-	Notifications that failed to deliver due to an unsuccessful HTTP call are retried again in 10 minutes.
+
 
 ## Code samples
 

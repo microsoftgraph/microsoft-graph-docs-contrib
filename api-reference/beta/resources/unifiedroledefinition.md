@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleDefinition resource type"
 description: "A unified role definition is a collection of permissions"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
@@ -21,10 +21,6 @@ The following RBAC providers are currently supported:
 - directory (Azure AD) 
 - entitlement management (Azure AD)
 
-> [!NOTE]
-> The Cloud PC and entitlement management RBAC providers currently support only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 

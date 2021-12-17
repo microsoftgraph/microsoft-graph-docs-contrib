@@ -1,22 +1,22 @@
 ---
-title: "Add member"
-description: "Add a member to a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
-localization_priority: Priority
+title: "Add members"
+description: "Add a member to a Microsoft 365 or security group through the members navigation property."
+ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add member
+# Add members
 
 Namespace: microsoft.graph
 
-Add a member to a Microsoft 365 group or a security group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
 You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
-> + You can only add users to security and Microsoft 365 groups managed through the cloud.
+> + You can only add members to security and Microsoft 365 groups.
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
 
@@ -68,7 +68,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -88,6 +87,10 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-member-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-member-to-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,7 +126,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
-Content-length: 30
 
 {
   "members@odata.bind": [
@@ -149,6 +151,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -163,6 +169,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## See also
+- [Add member to team](team-post-members.md)
+- [Update member's role in team](team-update-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

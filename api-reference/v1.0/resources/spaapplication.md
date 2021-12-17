@@ -1,7 +1,7 @@
 ---
 title: "spaApplication resource type"
 description: "Specifies settings for a single-page application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

@@ -2,7 +2,7 @@
 title: "Get system messages for Microsoft Teams using Microsoft Graph APIs"
 description: "Learn how Microsoft Teams generates system messages for events using Microsoft Graph APIs."
 author: "RamjotSingh"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
@@ -12,10 +12,10 @@ ms.custom: scenarios:getting-started
 Microsoft Teams generates system messages for events such as members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
 
-Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
+Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
 
-System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) objects.
+System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) objects.
 In this case, the **messageType** property is set to `systemEventMessage` and the **eventDetail** property provides the event details.
 
 
@@ -28,7 +28,7 @@ The following GET operations support system messages:
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 
 ## Supported change notifications
 
@@ -754,6 +754,7 @@ The following JSON examples show the responses for each supported event type.
   "reactions": [],
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "members": [{
         "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
         "displayName": null,

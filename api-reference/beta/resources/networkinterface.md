@@ -1,7 +1,7 @@
 ---
 title: "networkInterface resource type"
 description: "Represents a Network Interface Card (NIC) associated with this host."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

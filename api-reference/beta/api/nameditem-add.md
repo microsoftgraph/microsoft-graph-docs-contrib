@@ -1,7 +1,7 @@
 ---
 title: "Add Named Item"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 author: "ruoyingl"
@@ -66,7 +66,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/add
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test5",
@@ -105,7 +104,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",

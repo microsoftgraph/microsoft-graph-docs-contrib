@@ -2,7 +2,7 @@
 title: "List issues"
 description: "Retrieve the serviceHealthIssue resources from the issues navigation property."
 author: "payiAzure"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-servicehealthissue-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

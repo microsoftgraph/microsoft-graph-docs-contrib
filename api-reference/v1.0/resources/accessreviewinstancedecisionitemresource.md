@@ -2,7 +2,7 @@
 title: "accessReviewInstanceDecisionItemResource resource type"
 description: "Represents the resource associated with the decision item."
 author: "isabelleatmsft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Every decision item in an access review represents a principal's access to a resource. The accessReviewInstanceDecisionItemResource object represents the resource associated with the decision item.
+Every decision item in an access review represents a principal's access to a resource that is identified by an accessReviewInstanceDecisionItemResource object. accessReviewInstanceDecisionItemResource is an open type that allows for other properties to be passed in.
 
 ## Properties
 |Property|Type|Description|

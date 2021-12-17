@@ -2,7 +2,7 @@
 title: "eventMessageDetail resource type"
 description: "Represents the base type for event message detail."
 author: "RamjotSingh"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

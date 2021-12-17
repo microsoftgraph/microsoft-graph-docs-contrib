@@ -1,17 +1,17 @@
 ---
 title: "keyCredential resource type"
 description: "Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the application and servicePrincipal entities is a collection of **keyCredential**."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "sureshja"
+author: "madansr7"
 ---
 
 # keyCredential resource type
 
 Namespace: microsoft.graph
 
-Contains a key credential associated with an application <!--or a service principal-->. The **keyCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> entity is a collection of **keyCredential**.
+Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **keyCredential**.
 
 ## Properties
 | Property	   | Type	|Description|

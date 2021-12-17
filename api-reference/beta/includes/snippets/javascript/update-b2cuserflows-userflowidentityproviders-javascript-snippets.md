@@ -11,7 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const userFlowIdentityProviders = {
-  '@odata.id': 'https://graph.microsoft.com/beta/identity/identityProviders/{id}'
+  '@odata.id': 'https://graph.microsoft.com/beta/identity/identityProviders/{id}',
+  '@odata.type': '#microsoft.graph.identityProvider'
 };
 
 await client.api('/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref')

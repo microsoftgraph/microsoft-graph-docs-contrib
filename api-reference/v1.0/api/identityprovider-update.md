@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties in an existing identityProvider"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -70,7 +70,6 @@ The following example updates the definition of the token lifetime **identityPro
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
-Content-length: 41
 
 {
     "clientSecret": "1111111111111"
@@ -90,6 +89,10 @@ Content-length: 41
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

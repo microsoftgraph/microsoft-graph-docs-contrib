@@ -2,7 +2,7 @@
 title: "activateService resource type"
 description: "Represents a service to be activated."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

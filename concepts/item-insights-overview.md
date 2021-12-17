@@ -2,7 +2,7 @@
 title: "Overview of item insights in Microsoft Graph"
 description: "The overview of item insights functionality and customization on the user level"
 author: "simonhult"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---
@@ -60,7 +60,7 @@ After disabling item insights, the following happens:
 ![disabled item insights in persona card](images/disabled-item-insights-in-persona-card.PNG)
 * Experiences that show content trending around you is blocked for you and inaccessible to others, in places such as Delve and Outlook mobile’s **Discover** section. The lack of the trending-insights also affects your personalized relevance in Microsoft Search since it cannot use your trending content as signals for relevance.
 ![disabled item insights in Delve](images/disabled-item-insights-in-delve.PNG)
-* Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their persona card. 
+* Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) from being calculated and shown to the user on their persona card. 
 * For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
 
 ## API reference
@@ -73,4 +73,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the insights API with your own files. Sign in, expand **Insights** in the column on the left, and try the sample queries.
-- Learn more about [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+- Learn more about [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [insights settings API (preview)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.

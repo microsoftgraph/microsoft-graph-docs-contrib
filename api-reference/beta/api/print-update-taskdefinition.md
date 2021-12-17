@@ -2,7 +2,7 @@
 title: Update taskDefinition
 description: Update a task definition.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -63,7 +63,6 @@ The following is an example of the request.
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -86,6 +85,10 @@ Content-length: 122
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/print-update-taskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/print-update-taskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: "List unifiedRoleEligibilityScheduleInstances"
 description: "Get a list of the unifiedRoleEligibilityScheduleInstance objects and their properties."
-author: "shauliu"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -77,12 +77,18 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleeligibilityscheduleinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleeligibilityscheduleinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,17 +100,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleInstances",
   "value": [
     {
-      "id": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "principalId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "roleDefinitionId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "directoryScopeId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "appScopeId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1",
-      "startDateTime": "2020-09-09T21:35:27.91Z",
-      "endDateTime": "2020-09-09T21:35:27.91Z",
-      "memberType": "direct",
-      "roleEligibilityScheduleId": "d12c1ab0-1ab0-d12c-b01a-2cd1b01a2cd1"
+      "id": "UafX_Qu2SkSYTAJlL-j6HCssmvzcHW1IohFf6Mp3-h9xbmLcN0jrQL5KvCnYihF4-2-e",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/administrativeUnits/dc626e71-4837-40eb-be4a-bc29d88a1178",
+      "appScopeId": null,
+      "startDateTime": "2021-07-27T14:03:04.4Z",
+      "endDateTime": null,
+      "memberType": "Direct",
+      "roleEligibilityScheduleId": "3dc04956-5e79-4e84-a2fc-4c168bb30a5f"
+    },
+    {
+      "id": "UafX_Qu2SkSYTAJlL-j6HLFkgTmWUd1JraI2S0n5myc-1-e",
+      "principalId": "398164b1-5196-49dd-ada2-364b49f99b27",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "startDateTime": "2021-07-27T13:51:08.43Z",
+      "endDateTime": null,
+      "memberType": "Direct",
+      "roleEligibilityScheduleId": "313af44a-07c9-43a7-9970-5072a6b5591f"
     }
   ]
 }

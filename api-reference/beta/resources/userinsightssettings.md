@@ -1,7 +1,7 @@
 ---
 title: "userInsightsSettings resource type"
 description: "Represents user privacy settings for item insights and meeting hours insights."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Represents user privacy settings for [itemInsights](iteminsights.md) and [meeti
 - Item insights: Calculates relationship between users and items such as documents or sites in Microsoft 365.  
 - Meeting hours insights: Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook calendar in Microsoft 365.
 
-Use the [itemInsightsSettings](iteminsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights at an organization level.
+Use the [insightsSettings](insightssettings.md) resource to disable/enable calculation and visibility of item insights, meeting hours insights, or people insights at an organization level.
 
 ## Methods
 

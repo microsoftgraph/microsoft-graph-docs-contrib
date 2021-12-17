@@ -2,15 +2,13 @@
 title: List monthlyPrintUsageByPrinter
 description: Retrieve a list of monthly print usage summaries, grouped by printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List monthlyPrintUsageByPrinter
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of monthly print usage summaries, grouped by [printer](../resources/printer.md).
 
@@ -77,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByPrinter
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyprinter-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyprinter-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

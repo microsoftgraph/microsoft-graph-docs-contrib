@@ -1,7 +1,7 @@
 ---
 title: "Electron provider"
 description: "The MSAL provider for Electron uses msal-node to sign in users and acquire tokens to use with the Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
 ---
 # Electron provider

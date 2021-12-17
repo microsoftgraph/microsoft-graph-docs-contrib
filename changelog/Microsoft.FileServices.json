@@ -1,6 +1,238 @@
 {
   "changelog": [
     {
+  "ChangeList":[
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedTo",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentities",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentitiesV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentity",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+      "Target": "permission"
+    },
+    {
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentitySet",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+      "Target": "permission"
+    }
+  ],
+  "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+  "Cloud": "prd",
+  "Version": "v1.0",
+  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+  "WorkloadArea": "Files",
+  "SubArea": ""
+},
+{
+  "ChangeList":[
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedTo",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentities",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentitiesV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentity",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-1.0) resource type.",
+      "Target": "permission"
+    },
+    {
+      "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentitySet",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-1.0) resource type.",
+      "Target": "permission"
+    }
+  ],
+  "Id": "86CABADD-8EB4-4BC7-92A3-F411F0820CF2",
+  "Cloud": "prd",
+  "Version": "v1.0",
+  "CreatedDateTime": "2021-09-11T22:39:56.000Z",
+  "WorkloadArea": "Sites and lists",
+  "SubArea": ""
+},
+{
+  "ChangeList":[
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedTo",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentities",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentitiesV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentity",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+      "Target": "permission"
+    },
+    {
+      "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentitySet",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+      "Target": "permission"
+    }
+  ],
+  "Id": "69153396-A3C3-4B9F-932C-B658C9033966",
+  "Cloud": "prd",
+  "Version": "beta",
+  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+  "WorkloadArea": "Files",
+  "SubArea": ""
+},
+{
+  "ChangeList":[
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedTo",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedTo** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentities",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **grantedToIdentities** property on the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. Use the **grantedToIdentitiesV2** property instead.",
+      "Target": "permission"
+    },
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedTo** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Property",
+      "ChangedApiName": "grantedToIdentitiesV2",
+      "ChangeType": "Addition",
+      "Description": "Added the **grantedToIdentitiesV2** property to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource. The property is of type **sharePointIdentity** and replaces the **grantedToIdentities** property, which is being deprecated.",
+      "Target": "permission"
+    },
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentity",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentity](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentity?view=graph-rest-beta) resource type.",
+      "Target": "permission"
+    },
+    {
+      "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+      "ApiChange": "Resource",
+      "ChangedApiName": "sharePointIdentitySet",
+      "ChangeType": "Addition",
+      "Description": "Added the [sharePointIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource type.",
+      "Target": "permission"
+    }
+  ],
+  "Id": "20663176-4B94-4FD7-AAB1-CA3924ADBA6A",
+  "Cloud": "prd",
+  "Version": "beta",
+  "CreatedDateTime": "2021-11-29T22:39:56.000Z",
+  "WorkloadArea": "Sites and lists",
+  "SubArea": ""
+},
+    {
       "ChangeList":[
         {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
@@ -1644,6 +1876,312 @@
     		"SubArea": ""
     },
     {
+      "ChangeList": [
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "columnTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **columnTypes** enumeration type.",
+          "Target": "columnTypes"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "columnValidation",
+          "ChangeType": "Addition",
+          "Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-1.0) resource type.",
+          "Target": "columnValidation"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentApprovalStatusColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-1.0) resource type.",
+          "Target": "contentApprovalStatusColumn"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "displayNameLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
+          "Target": "displayNameLocalization"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-1.0) resource type.",
+          "Target": "documentSet"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentSetContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-1.0) resource type.",
+          "Target": "documentSetContent"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hyperlinkOrPictureColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-1.0) resource type.",
+          "Target": "hyperlinkOrPictureColumn"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-1.0) resource type.",
+          "Target": "termColumn"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "thumbnailColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-1.0) resource type.",
+          "Target": "thumbnailColumn"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentApprovalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentApprovalStatus** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "hyperlinkOrPicture",
+          "ChangeType": "Addition",
+          "Description": "Added the **hyperlinkOrPicture** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDeletable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDeletable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "isReorderable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isReorderable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSealed",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSealed** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "propagateChanges",
+          "ChangeType": "Addition",
+          "Description": "Added the **propagateChanges** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "term",
+          "ChangeType": "Addition",
+          "Description": "Added the **term** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "thumbnail",
+          "ChangeType": "Addition",
+          "Description": "Added the **thumbnail** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "type",
+          "ChangeType": "Addition",
+          "Description": "Added the **type** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "validation",
+          "ChangeType": "Addition",
+          "Description": "Added the **validation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sourceColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "associatedHubsUrls",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedHubsUrls** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentSet",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentSet** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentTemplate** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "isBuiltIn",
+          "ChangeType": "Addition",
+          "Description": "Added the **isBuiltIn** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Property",
+          "ChangedApiName": "propagateChanges",
+          "ChangeType": "Addition",
+          "Description": "Added the **propagateChanges** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "base",
+          "ChangeType": "Addition",
+          "Description": "Added the **base** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "baseTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **baseTypes** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "columnPositions",
+          "ChangeType": "Addition",
+          "Description": "Added the **columnPositions** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "columns",
+          "ChangeType": "Addition",
+          "Description": "Added the **columns** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalColumns",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalColumns** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "addCopy",
+          "ChangeType": "Addition",
+          "Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) method to the [addCopy](https://docs.microsoft.com/en-us/graph/api/addCopy?view=graph-rest-1.0) resource.",
+          "Target": "addCopy"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "associateWithHubSites",
+          "ChangeType": "Addition",
+          "Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) method to the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/associateWithHubSites?view=graph-rest-1.0) resource.",
+          "Target": "associateWithHubSites"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "copyToDefaultContentLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) method to the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/copyToDefaultContentLocation?view=graph-rest-1.0) resource.",
+          "Target": "copyToDefaultContentLocation"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) method to the [publish](https://docs.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) resource.",
+          "Target": "publish"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "unpublish",
+          "ChangeType": "Addition",
+          "Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) method to the [unpublish](https://docs.microsoft.com/en-us/graph/api/unpublish?view=graph-rest-1.0) resource.",
+          "Target": "unpublish"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "getApplicableContentTypesForList",
+          "ChangeType": "Addition",
+          "Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) method to the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/getApplicableContentTypesForList?view=graph-rest-1.0) resource.",
+          "Target": "getApplicableContentTypesForList"
+        },
+        {
+          "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "isPublished",
+          "ChangeType": "Addition",
+          "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) method to the [isPublished](https://docs.microsoft.com/en-us/graph/api/isPublished?view=graph-rest-1.0) resource.",
+          "Target": "isPublished"
+        }
+      ],
+      "Id": "1e573aef-4ac6-4e73-9424-fc7d8a4203ad",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-08-12T04:06:46.3068795Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
         "ChangeList": [{
             "Id": "27ef62cb-2b26-486e-8c74-fd0ce1e92403",
             "ApiChange": "Resource",
@@ -1704,6 +2242,98 @@
         "Cloud": "prd",
         "Version": "v1.0",
         "CreatedDateTime": "2021-06-11T20:00:00.001Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Property",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Target": "driveItem"
+      }, {
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Resource",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Target": "malware"
+      }, {
+        "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+        "ApiChange": "Resource",
+        "ChangedApiName": "driveItem",
+        "ChangeType": "change",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
+        "Target": "driveItem"
+      }],
+      "Id": "ed0460c6-664f-485e-81ef-2873f63e0350",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-09-07T20:00:00.001Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Property",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the **malware** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+        "Target": "driveItem"
+      }, {
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Resource",
+        "ChangedApiName": "malware",
+        "ChangeType": "Addition",
+        "Description": "Added the [malware](https://docs.microsoft.com/en-us/graph/api/resources/malware?view=graph-rest-beta) resource type.",
+        "Target": "malware"
+      }, {
+        "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+        "ApiChange": "Resource",
+        "ChangedApiName": "driveItem",
+        "ChangeType": "change",
+        "Description": "Removed the SharePoint and OneDrive for Business **driveItem** delta limitation about properties omitted by the delta query for **lastModifiedBy**.",
+        "Target": "driveItem"
+      }],
+      "Id": "6e5018b4-0d57-4ae5-a85e-a15e0a4c0e32",
+      "Cloud": "Prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-09-07T09:20:58.5352861Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
+            "ApiChange": "Method",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
+            "Target": "delta"
+        }],
+        "Id": "F1A3D555-2DA6-4BA2-92C8-7AC9432725A7",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
+            "ApiChange": "Method",
+            "ChangedApiName": "delta",
+            "ChangeType": "Addition",
+            "Description": "Added the ability to use timestamp-based delta tokens.",
+            "Target": "delta"
+        }],
+        "Id": "A6837885-9B04-449F-813E-CBA4C6A1D8CF",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-11-09T20:00:00.000Z",
         "WorkloadArea": "Files",
         "SubArea": ""
     }
