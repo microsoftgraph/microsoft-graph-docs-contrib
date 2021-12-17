@@ -141,6 +141,7 @@ Content-Type: image/jpeg
 ```
 
 
+
 #### Response
 
 The following is an example of the response.

@@ -1600,6 +1600,24 @@ items:
               href: api/meetingregistration-post-registrants.md
             - name: Delete
               href: api/meetingregistrant-delete.md
+        - name: External meeting registration
+          href: resources/externalmeetingregistration.md
+          items:
+          - name: Create
+            href: api/externalmeetingregistration-post.md
+          - name: Get
+            href: api/externalmeetingregistration-get.md
+          - name: Delete
+            href: api/externalmeetingregistration-delete.md
+          - name: External meeting registrant
+            href: resources/externalmeetingregistrant.md
+            items:
+            - name: List
+              href: api/externalmeetingregistrant-list.md
+            - name: Create
+              href: api/externalmeetingregistrant-post.md
+            - name: Delete
+              href: api/externalmeetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1611,6 +1629,10 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
+        - name: Set user preferred presence
+          href: api/presence-setuserpreferredpresence.md
+        - name: Clear user preferred presence
+          href: api/presence-clearuserpreferredpresence.md
     - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -1829,7 +1851,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking (preview)
+    - name: Customer booking
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
@@ -1875,6 +1897,19 @@ items:
           href: api/bookingcurrency-list.md
         - name: Get
           href: api/bookingcurrency-get.md
+      - name: Booking custom question
+        href: resources/bookingcustomquestion.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-customquestions.md
+        - name: Create
+          href: api/bookingbusiness-post-customquestions.md
+        - name: Get
+          href: api/bookingcustomquestion-get.md
+        - name: Update
+          href: api/bookingcustomquestion-update.md
+        - name: Delete
+          href: api/bookingcustomquestion-delete.md    
       - name: Booking customer
         href: resources/bookingcustomer.md
         items:
@@ -9635,7 +9670,7 @@ items:
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Create
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
+              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9934,6 +9969,12 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reboot
+            href: api/cloudpc-reboot.md
+          - name: Rename
+            href: api/cloudpc-rename.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
@@ -10456,6 +10497,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md          
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -10479,6 +10522,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -12204,6 +12249,8 @@ items:
               href: api/accessreviewinstance-list.md
             - name: Get
               href: api/accessreviewinstance-get.md
+            - name: Update
+              href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
             - name: List pending approval (deprecated)
@@ -14274,6 +14321,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List all teams in an organization
+          href: api/teams-list.md  
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -14791,58 +14840,136 @@ items:
       displayName: Microsoft To Do
       items:
       - name: Overview
-        href: resources/todo-overview.md
+        href: resources/tasks-overview.md
       - name: Task list
-        href: resources/todotasklist.md
         items:
+        - name: Base task list
+          href: resources/basetasklist.md
+        - name: Task list
+          href: resources/tasklist.md
+        - name: Well-known task list
+          href: resources/wellknowntasklist.md
         - name: List task lists
-          href: api/todo-list-lists.md
+          href: api/tasks-list-lists.md
         - name: Create task list
-          href: api/todo-post-lists.md
+          href: api/tasks-post-lists.md
         - name: Get task list
-          href: api/todotasklist-get.md
+          href: api/basetasklist-get.md
         - name: Update task list
-          href: api/todotasklist-update.md
+          href: api/tasklist-update.md
         - name: Delete task list
-          href: api/todotasklist-delete.md
+          href: api/tasklist-delete.md
         - name: Get task list delta
-          href: api/todotasklist-delta.md
+          href: api/basetasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Task
-        href: resources/todotask.md
         items:
+        - name: Base task
+          href: resources/basetask.md
+        - name: Task
+          href: resources/task.md
         - name: List tasks
-          href: api/todotasklist-list-tasks.md
+          href: api/basetasklist-list-tasks.md
         - name: Create task
-          href: api/todotasklist-post-tasks.md
+          href: api/basetasklist-post-tasks.md
         - name: Get task
-          href: api/todotask-get.md
+          href: api/basetask-get.md
         - name: Update task
-          href: api/todotask-update.md
+          href: api/basetask-update.md
+        - name: Move task
+          href: api/basetask-move.md
         - name: Delete task
-          href: api/todotask-delete.md
+          href: api/basetask-delete.md
         - name: Get task delta
-          href: api/todotask-delta.md
+          href: api/basetask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Linked resource
-        href: resources/linkedresource.md
+      - name: Checklist
+        href: resources/checklistitem.md
         items:
         - name: List
-          href: api/todotask-list-linkedresources.md
+          href: api/basetask-list-checklistitems.md
         - name: Create
-          href: api/todotask-post-linkedresources.md
+          href: api/basetask-post-checklistitems.md
         - name: Get
-          href: api/linkedresource-get.md
+          href: api/checklistitem-get.md
         - name: Update
-          href: api/linkedresource-update.md
+          href: api/checklistitem-update.md
         - name: Delete
-          href: api/linkedresource-delete.md
+          href: api/checklistitem-delete.md
+      - name: Linked resource
+        href: resources/linkedresource_v2.md
+        items:
+        - name: List
+          href: api/basetask-list-linkedresources.md
+        - name: Create
+          href: api/basetask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource_v2-get.md
+        - name: Update
+          href: api/linkedresource_v2-update.md
+        - name: Delete
+          href: api/linkedresource_v2-delete.md
+      - name: To-do Tasks(old)
+        items:
+        - name: Overview
+          href: resources/todo-overview.md
+        - name: Task list
+          href: resources/todotasklist.md
+          items:
+          - name: List task lists
+            href: api/todo-list-lists.md
+          - name: Create task list
+            href: api/todo-post-lists.md
+          - name: Get task list
+            href: api/todotasklist-get.md
+          - name: Update task list
+            href: api/todotasklist-update.md
+          - name: Delete task list
+            href: api/todotasklist-delete.md
+          - name: Get task list delta
+            href: api/todotasklist-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Task
+          href: resources/todotask.md
+          items:
+          - name: List tasks
+            href: api/todotasklist-list-tasks.md
+          - name: Create task
+            href: api/todotasklist-post-tasks.md
+          - name: Get task
+            href: api/todotask-get.md
+          - name: Update task
+            href: api/todotask-update.md
+          - name: Delete task
+            href: api/todotask-delete.md
+          - name: Get task delta
+            href: api/todotask-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Linked resource
+          href: resources/linkedresource.md
+          items:
+          - name: List
+            href: api/todotask-list-linkedresources.md
+          - name: Create
+            href: api/todotask-post-linkedresources.md
+          - name: Get
+            href: api/linkedresource-get.md
+          - name: Update
+            href: api/linkedresource-update.md
+          - name: Delete
+            href: api/linkedresource-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)
