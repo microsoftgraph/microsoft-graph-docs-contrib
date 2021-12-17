@@ -41,7 +41,7 @@
       "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-7T16:05:49.407Z",
+      "CreatedDateTime": "2021-04-07T16:05:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
@@ -4178,6 +4178,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-03T12:26:47.0467025Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teams-list?view=graph-rest-beta&tabs=http) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T20:18:40.595Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
