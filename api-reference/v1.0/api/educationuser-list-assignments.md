@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns a list of assignments assigned to a user for all classes. 
+Returns a list of [educationAssignment](../resources/educationassignment.md) assigned to a [educationUser](../resources/educationuser.md) for all [educationClass](../resources/educationclass.md). 
 
-This utility namespace allows a caller to find all the **[educationAssignment](../resources/educationassignment.md)** objects belonging to a student or a teacher in a single call rather than having to request **assignments** from each ****[educationClass](../resources/educationclass.md)****. The **assignment** list contains what is needed to get the detailed information for the **assignment** from within the **class** namespace. Use the methods defined for the **[educationAssignment](../resources/educationassignment.md)** for all other operations.
+This method allows a caller to find all the **assignments** belonging to a student or a teacher in a single call rather than having to request **assignments** from each **class**. The **assignment** list contains what is needed to get the detailed information for the **assignment** from within the **class** namespace. Use the methods defined for the **assignment** for all other operations.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /education/users/{user-id}/assignments
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$submissions` and `$categories` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -70,7 +70,6 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/me/assignments
 ```
 ---
-
 
 #### Response
 

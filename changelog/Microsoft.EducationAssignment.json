@@ -52,7 +52,7 @@
         },
         {
           "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "assignments",
           "ChangeType": "Addition",
           "Description": "Added the **assignments** relationship to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
