@@ -41,7 +41,7 @@
       "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-7T16:05:49.407Z",
+      "CreatedDateTime": "2021-04-07T16:05:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
@@ -3868,6 +3868,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teams-list?view=graph-rest-beta&tabs=http) operation to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "2171f260-c87f-46b4-88e4-ea84fc866a5e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "342cb3e4-ef8c-11eb-b6a8-8203ca0139f1",
           "ApiChange": "Property",
           "ChangedApiName": "messageType",
@@ -4526,7 +4544,88 @@
           "ChangeType": "Addition",
           "Description": "Added the [updateSoftware](https://docs.microsoft.com/en-us/graph/api/updateSoftware?view=graph-rest-beta) method to the [updateSoftware](https://docs.microsoft.com/en-us/graph/api/updateSoftware?view=graph-rest-beta) resource.",
           "Target": "updateSoftware"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDevice?view=graph-rest-beta) resource.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDevice?view=graph-rest-beta) resource.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceActivity?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceActivity"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceActivity?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceActivity"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceConfiguration"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceConfiguration"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceHealth?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceHealth"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceHealth?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceHealth"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceOperation?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceOperation"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Permission",
+          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceOperation?view=graph-rest-beta) resource.",
+          "Target": "teamworkDeviceOperation"
         }
+        
       ],
       "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
       "Cloud": "Prod",

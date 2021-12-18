@@ -1604,6 +1604,24 @@ items:
               href: api/meetingregistration-post-registrants.md
             - name: Delete
               href: api/meetingregistrant-delete.md
+        - name: External meeting registration
+          href: resources/externalmeetingregistration.md
+          items:
+          - name: Create
+            href: api/externalmeetingregistration-post.md
+          - name: Get
+            href: api/externalmeetingregistration-get.md
+          - name: Delete
+            href: api/externalmeetingregistration-delete.md
+          - name: External meeting registrant
+            href: resources/externalmeetingregistrant.md
+            items:
+            - name: List
+              href: api/externalmeetingregistrant-list.md
+            - name: Create
+              href: api/externalmeetingregistrant-post.md
+            - name: Delete
+              href: api/externalmeetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1615,6 +1633,10 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
+        - name: Set user preferred presence
+          href: api/presence-setuserpreferredpresence.md
+        - name: Clear user preferred presence
+          href: api/presence-clearuserpreferredpresence.md
     - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -1833,7 +1855,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking (preview)
+    - name: Customer booking
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
@@ -1879,6 +1901,19 @@ items:
           href: api/bookingcurrency-list.md
         - name: Get
           href: api/bookingcurrency-get.md
+      - name: Booking custom question
+        href: resources/bookingcustomquestion.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-customquestions.md
+        - name: Create
+          href: api/bookingbusiness-post-customquestions.md
+        - name: Get
+          href: api/bookingcustomquestion-get.md
+        - name: Update
+          href: api/bookingcustomquestion-update.md
+        - name: Delete
+          href: api/bookingcustomquestion-delete.md    
       - name: Booking customer
         href: resources/bookingcustomer.md
         items:
@@ -2501,8 +2536,6 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
-          - name: Key/value pair
-            href: resources/intune-androidforwork-keyvaluepair.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -3717,6 +3750,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
+          - name: Android device owner cross profile data sharing
+            href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
           - name: Android device owner default app permission policy type
             href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
           - name: Android device owner derived credential authentication configuration
@@ -5303,6 +5338,84 @@ items:
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
+          - name: Hardware configuration
+            href: resources/intune-deviceconfig-hardwareconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfiguration-update.md
+            - name: assign action
+              href: api/intune-deviceconfig-hardwareconfiguration-assign.md
+          - name: Hardware configuration assignment
+            href: resources/intune-deviceconfig-hardwareconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-update.md
+          - name: Hardware configuration device state
+            href: resources/intune-deviceconfig-hardwareconfigurationdevicestate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-update.md
+          - name: Hardware configuration format
+            href: resources/intune-deviceconfig-hardwareconfigurationformat.md
+          - name: Hardware configuration run summary
+            href: resources/intune-deviceconfig-hardwareconfigurationrunsummary.md
+            items:
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-get.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-update.md
+          - name: Hardware configuration user state
+            href: resources/intune-deviceconfig-hardwareconfigurationuserstate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-update.md
+          - name: Hardware password info
+            href: resources/intune-deviceconfig-hardwarepasswordinfo.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwarepasswordinfo-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwarepasswordinfo-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwarepasswordinfo-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwarepasswordinfo-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwarepasswordinfo-update.md
+          - name: Ingestion source
+            href: resources/intune-grouppolicy-ingestionsource.md
           - name: Ink access setting
             href: resources/intune-deviceconfig-inkaccesssetting.md
           - name: Intended purpose
@@ -5636,10 +5749,6 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: LAN manager authentication level
@@ -8020,8 +8129,6 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -8750,8 +8857,6 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -9512,7 +9617,9 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: action
+            - name: scheduleActionsForRules action
+              href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
+            - name: refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9655,6 +9762,8 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
@@ -9729,6 +9838,8 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
+          - name: Run state
+            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
@@ -9862,6 +9973,12 @@ items:
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reboot
+            href: api/cloudpc-reboot.md
+          - name: Rename
+            href: api/cloudpc-rename.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
@@ -10384,6 +10501,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md          
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -10407,6 +10526,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -12132,6 +12253,8 @@ items:
               href: api/accessreviewinstance-list.md
             - name: Get
               href: api/accessreviewinstance-get.md
+            - name: Update
+              href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
             - name: List pending approval (deprecated)
@@ -13196,14 +13319,14 @@ items:
               href: api/organizationsettings-list-peopleinsights.md
             - name: Update
               href: api/insightssettings-update.md
-            - name: User control (preview)
-              items:
-              - name: User insights settings
-                href: resources/userinsightssettings.md
-              - name: Get
-                href: api/userinsightssettings-get.md
-              - name: Update
-                href: api/userinsightssettings-update.md
+        - name: User control (preview)
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
                 
                 
       - name: Mention (preview)
@@ -14202,6 +14325,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List all teams in an organization
+          href: api/teams-list.md  
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -14756,58 +14881,136 @@ items:
       displayName: Microsoft To Do
       items:
       - name: Overview
-        href: resources/todo-overview.md
+        href: resources/tasks-overview.md
       - name: Task list
-        href: resources/todotasklist.md
         items:
+        - name: Base task list
+          href: resources/basetasklist.md
+        - name: Task list
+          href: resources/tasklist.md
+        - name: Well-known task list
+          href: resources/wellknowntasklist.md
         - name: List task lists
-          href: api/todo-list-lists.md
+          href: api/tasks-list-lists.md
         - name: Create task list
-          href: api/todo-post-lists.md
+          href: api/tasks-post-lists.md
         - name: Get task list
-          href: api/todotasklist-get.md
+          href: api/basetasklist-get.md
         - name: Update task list
-          href: api/todotasklist-update.md
+          href: api/tasklist-update.md
         - name: Delete task list
-          href: api/todotasklist-delete.md
+          href: api/tasklist-delete.md
         - name: Get task list delta
-          href: api/todotasklist-delta.md
+          href: api/basetasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Task
-        href: resources/todotask.md
         items:
+        - name: Base task
+          href: resources/basetask.md
+        - name: Task
+          href: resources/task.md
         - name: List tasks
-          href: api/todotasklist-list-tasks.md
+          href: api/basetasklist-list-tasks.md
         - name: Create task
-          href: api/todotasklist-post-tasks.md
+          href: api/basetasklist-post-tasks.md
         - name: Get task
-          href: api/todotask-get.md
+          href: api/basetask-get.md
         - name: Update task
-          href: api/todotask-update.md
+          href: api/basetask-update.md
+        - name: Move task
+          href: api/basetask-move.md
         - name: Delete task
-          href: api/todotask-delete.md
+          href: api/basetask-delete.md
         - name: Get task delta
-          href: api/todotask-delta.md
+          href: api/basetask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Linked resource
-        href: resources/linkedresource.md
+      - name: Checklist
+        href: resources/checklistitem.md
         items:
         - name: List
-          href: api/todotask-list-linkedresources.md
+          href: api/basetask-list-checklistitems.md
         - name: Create
-          href: api/todotask-post-linkedresources.md
+          href: api/basetask-post-checklistitems.md
         - name: Get
-          href: api/linkedresource-get.md
+          href: api/checklistitem-get.md
         - name: Update
-          href: api/linkedresource-update.md
+          href: api/checklistitem-update.md
         - name: Delete
-          href: api/linkedresource-delete.md
+          href: api/checklistitem-delete.md
+      - name: Linked resource
+        href: resources/linkedresource_v2.md
+        items:
+        - name: List
+          href: api/basetask-list-linkedresources.md
+        - name: Create
+          href: api/basetask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource_v2-get.md
+        - name: Update
+          href: api/linkedresource_v2-update.md
+        - name: Delete
+          href: api/linkedresource_v2-delete.md
+      - name: To-do Tasks(old)
+        items:
+        - name: Overview
+          href: resources/todo-overview.md
+        - name: Task list
+          href: resources/todotasklist.md
+          items:
+          - name: List task lists
+            href: api/todo-list-lists.md
+          - name: Create task list
+            href: api/todo-post-lists.md
+          - name: Get task list
+            href: api/todotasklist-get.md
+          - name: Update task list
+            href: api/todotasklist-update.md
+          - name: Delete task list
+            href: api/todotasklist-delete.md
+          - name: Get task list delta
+            href: api/todotasklist-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Task
+          href: resources/todotask.md
+          items:
+          - name: List tasks
+            href: api/todotasklist-list-tasks.md
+          - name: Create task
+            href: api/todotasklist-post-tasks.md
+          - name: Get task
+            href: api/todotask-get.md
+          - name: Update task
+            href: api/todotask-update.md
+          - name: Delete task
+            href: api/todotask-delete.md
+          - name: Get task delta
+            href: api/todotask-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Linked resource
+          href: resources/linkedresource.md
+          items:
+          - name: List
+            href: api/todotask-list-linkedresources.md
+          - name: Create
+            href: api/todotask-post-linkedresources.md
+          - name: Get
+            href: api/linkedresource-get.md
+          - name: Update
+            href: api/linkedresource-update.md
+          - name: Delete
+            href: api/linkedresource-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)

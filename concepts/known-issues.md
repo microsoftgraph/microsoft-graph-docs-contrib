@@ -154,12 +154,6 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
-## Compliance
-
-### Subject rights request API permissions are not currently available
-
-The Subject rights request API entities within the Microsoft Graph privacy API currently do not have permissions available. This issue may prevent users from seeing permissions and consenting to the use of the API in their environment. 
-
 ## Contacts
 
 ### GET operation does not return default contacts folder
@@ -424,13 +418,17 @@ The following API calls do not support installing apps that require [resource-sp
 
 ## Users
 
-### Use the dollar ($) symbol in the userPrincipalName
+### Get user by userPrincipalName that starts with a dollar ($) symbol
 
 Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
+### Encode number (#) symbols in userPrincipalName
+
+The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+
 ### Access to user resources is delayed after creation
 
-Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404` HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404 Not Found` HTTP error response.
 
 ### Access to a user's profile photo is limited
 
