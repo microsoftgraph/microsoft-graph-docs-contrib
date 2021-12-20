@@ -115,7 +115,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "clientState": "String",
   "creatorId": "String",
-  "includeResourceData": "boolean",
+  "includeResourceData": "Boolean",
   "encryptionCertificate": "String",
   "encryptionCertificateId": "String",
   "latestSupportedTlsVersion": "String",
