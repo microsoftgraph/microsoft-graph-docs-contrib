@@ -539,7 +539,7 @@ items:
             displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
-                href: webhooks.md
+                href: /graph/api/resources/webhooks
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
