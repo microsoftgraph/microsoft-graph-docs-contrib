@@ -620,8 +620,6 @@ items:
           href: api/group-assignlicense.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
         - name: Get delta
           href: api/group-delta.md
         - name: Get endpoint
@@ -634,8 +632,6 @@ items:
           href: api/directoryobject-checkmemberobjects.md
         - name: Get member objects
           href: api/directoryobject-getmemberobjects.md
-        - name: List deleted groups
-          href: api/directory-deleteditems-list.md
         - name: List endpoints
           href: api/group-list-endpoints.md
         - name: List joined teams
@@ -656,8 +652,6 @@ items:
           href: api/group-list-photos.md
         - name: List permission grants
           href: api/group-list-permissiongrants.md
-        - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
         - name: Remove favorite
           href: api/group-removefavorite.md
         - name: Remove member
@@ -666,6 +660,14 @@ items:
           href: api/group-delete-owners.md
         - name: Reset unseen count
           href: api/group-resetunseencount.md
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md
+        - name: List deleted groups
+          href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md   
+        - name: Permanently delete group
+          href: api/directory-deleteditems-delete.md     
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
         - name: Subscribe by mail

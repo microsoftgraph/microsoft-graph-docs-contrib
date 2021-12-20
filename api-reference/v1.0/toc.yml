@@ -6530,8 +6530,10 @@ items:
           href: api/directory-deleteditems-get.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md 
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
+          href: api/directory-deleteditems-delete.md       
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Channel
