@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and an [itemPho
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Car Phone",
@@ -93,6 +92,10 @@ Content-length: 382
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itemphone-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-itemphone-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

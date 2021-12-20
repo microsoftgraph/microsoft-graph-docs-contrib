@@ -17,7 +17,7 @@ Represents devices in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter defines the dynamic-device-syntax rule to include/exclude devices. A filter can use device properties (such as extension attributes) to include/exclude them. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Filter that defines the dynamic-device-syntax rule to include/exclude devices. A filter can use device properties (such as extension attributes) to include/exclude them. |
 
 ## Relationships
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let schema = await client.api('/connections/contosohr/schema')
+let schema = await client.api('/external/connections/contosohr/schema')
 	.get();
 
 ```

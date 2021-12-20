@@ -46,7 +46,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | businessPhones | String collection | Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
 | city | String | City name of the address for the organization. |
 | country | String | Country/region name of the address for the organization. |
-| countryLetterCode | String | Country/region abbreviation for the organization. |
+| countryLetterCode | String | Country or region abbreviation for the organization in ISO 3166-2 format. |
 | createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | deletedDateTime | DateTimeOffset | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | displayName | String | The display name for the tenant. |
