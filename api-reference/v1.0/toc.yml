@@ -360,6 +360,14 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
+        - name: Get deleted user
+          href: api/directory-deleteditems-get.md
+        - name: List deleted users
+          href: api/directory-deleteditems-list.md 
+        - name: Permanently delete user
+          href: api/directory-deleteditems-delete.md       
+        - name: Restore deleted user
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
