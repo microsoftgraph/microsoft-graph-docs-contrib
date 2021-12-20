@@ -536,7 +536,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: /graph/api/resources/webhooks
