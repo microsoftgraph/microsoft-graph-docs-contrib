@@ -1610,6 +1610,24 @@ items:
               href: api/meetingregistration-post-registrants.md
             - name: Delete
               href: api/meetingregistrant-delete.md
+        - name: External meeting registration
+          href: resources/externalmeetingregistration.md
+          items:
+          - name: Create
+            href: api/externalmeetingregistration-post.md
+          - name: Get
+            href: api/externalmeetingregistration-get.md
+          - name: Delete
+            href: api/externalmeetingregistration-delete.md
+          - name: External meeting registrant
+            href: resources/externalmeetingregistrant.md
+            items:
+            - name: List
+              href: api/externalmeetingregistrant-list.md
+            - name: Create
+              href: api/externalmeetingregistrant-post.md
+            - name: Delete
+              href: api/externalmeetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1843,7 +1861,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking (preview)
+    - name: Customer booking
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
