@@ -376,10 +376,10 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
-        - name: Get deleted user
-          href: api/directory-deleteditems-get.md
         - name: List deleted users
           href: api/directory-deleteditems-list.md 
+        - name: Get deleted user
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete user
           href: api/directory-deleteditems-delete.md       
         - name: Restore deleted user
@@ -668,12 +668,12 @@ items:
           href: api/group-delete-owners.md
         - name: Reset unseen count
           href: api/group-resetunseencount.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md   
+          href: api/directory-deleteditems-user-owned.md  
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md 
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md     
         - name: Restore deleted group
@@ -878,6 +878,8 @@ items:
           href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
+        - name: List deleted applications owned by user
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
