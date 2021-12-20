@@ -82,6 +82,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
