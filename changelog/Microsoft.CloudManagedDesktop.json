@@ -46,6 +46,40 @@
             "ChangeList": [
                 {
                     "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "expirationDate",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **expirationDate** property to the [cloudPcDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "osStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **osStatus** property to the [cloudPcDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcDeviceImageOsStatus** enumeration type.",
+                    "Target": "cloudPcDeviceImageOsStatus"
+                }
+            ],
+            "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-11-04T11:40:20.512Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "3c45d81c-698b-490c-8fc8-040d23b950b9",
                     "ApiChange": "Method",
                     "ChangedApiName": "reboot",
                     "ChangeType": "Addition",
