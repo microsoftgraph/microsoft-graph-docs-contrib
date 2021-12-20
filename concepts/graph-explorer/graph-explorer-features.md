@@ -2,7 +2,7 @@
 
 title: "Working with Graph Explorer"
 description: "Find out how to use some of the important features in Graph Explorer."
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: bettirosengugi
 
 ---
