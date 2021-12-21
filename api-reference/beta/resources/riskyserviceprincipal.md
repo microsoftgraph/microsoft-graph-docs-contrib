@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure AD workload identities that are at risk, including risk for applications, service principals and Managed Identities. We have combined these various account types into a single collection here. Azure AD continually evaluates workload identity risk based on various signals and machine learning. This API provides programmatic access to all at-risk workload identities in your Azure AD tenant.
+Represents Azure AD service principals that are at risk. Azure AD continually evaluates service principal risk based on various signals and machine learning. This API provides programmatic access to all at-risk service principals in your Azure AD tenant.
+
+Inherits from [entity](../resources/entity.md).
 
 >**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
 
