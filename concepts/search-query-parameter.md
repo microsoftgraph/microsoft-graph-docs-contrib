@@ -147,10 +147,9 @@ The syntax of search follows these rules:
 * Generic format: $search="clause1" \[AND \| OR\] "\[clauseX\]"\.
 * Any number of clauses is supported. Parentheses for precedence is also supported.
 * The syntax for each clause is: "\<property>:\<text to search>".
-* The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property.
-* The whole clause part must be put inside double quotes.
-* Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case.
-* Given that the whole clause part needs to be put inside double quotes, if it contains double quote and backslash, it needs to be escaped with a backslash. No other characters need to be escaped.
+* The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startsWith" if search is not supported on the property.
+* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. No other characters need to be escaped.
+* Logical `AND` and `OR` operators must be put outside double quotes and they must be in upper case.
 
 The following table shows some examples.
 
