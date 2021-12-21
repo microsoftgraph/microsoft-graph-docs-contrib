@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to sort search results
 
- QueryTemplate supposes to support template query method, use ({searchTerms}) instead queryString, add decorations such like KQL or FQL to limit the query.
+ QueryTemplate supposes to support template query method.
 ## Example 1: Single-level sort
 
 ### Request
