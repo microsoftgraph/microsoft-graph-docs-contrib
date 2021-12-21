@@ -22,11 +22,10 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List riskyServicePrincipals](../api/riskyserviceprincipal-list.md)|[riskyServicePrincipal](../resources/riskyserviceprincipal.md) collection|List risky workload identities and their properties.|
-|[Get riskyServicePrincipal](../api/riskyserviceprincipal-get.md)|[riskyServicePrincipal](../resources/riskyserviceprincipal.md)|Get a specific risky workload identity and its properties.|
-|[List history](../api/riskyserviceprincipal-list-history.md)|[riskyServicePrincipalHistoryItem](../resources/riskyserviceprincipalhistoryitem.md) collection|Get the risk history of a workload identity.|
-|[dismiss](../api/riskyserviceprincipal-dismiss.md)|None|Dismiss the risk of a risky workload identity.|
-|[confirmCompromised](../api/riskyserviceprincipal-confirmcompromised.md)|None|Confirm a risky workload identity as compromised.|
+|[List riskyServicePrincipals](../api/identityprotectionroot-list-riskyserviceprincipals.md)|[riskyServicePrincipal](../resources/riskyserviceprincipal.md) collection|List risky service principals and their risk properties.|
+|[Get riskyServicePrincipal](../api/riskyserviceprincipal-get.md)|[riskyServicePrincipal](../resources/riskyserviceprincipal.md)|Get a specific risky service principal and its risk properties.|
+|[dismiss](../api/riskyserviceprincipal-dismiss.md)|None|Dismiss the risk of a risky service principal.|
+|[confirmCompromised](../api/riskyserviceprincipal-confirmcompromised.md)|None|Confirm a risky service principal as compromised.|
 
 
 ## Properties
