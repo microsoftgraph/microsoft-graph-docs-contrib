@@ -1,6 +1,6 @@
 ---
 title: "termsOfUseContainer resource type"
-description: "**TODO: Add Description**"
+description: "Container for the relationships that expose the terms of use API and its features. Currently exposes the agreements and agreementAcceptances relationships."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
