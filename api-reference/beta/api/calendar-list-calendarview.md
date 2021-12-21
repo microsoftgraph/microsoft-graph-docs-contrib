@@ -1,6 +1,6 @@
 ---
 title: "List calendarView"
-description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
+description: "Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range,"
 ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
+Get the occurrences, exceptions and single instances of events in a calendar view defined by a time range,
 from a user's default calendar `(../me/calendarview)` or some other calendar of the user's.
 
 ## Permissions
