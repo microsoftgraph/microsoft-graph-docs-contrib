@@ -1,6 +1,6 @@
 ---
-title: "Use the Microsoft Search API to sort search results (preview)"
-description: "You sort search results using the Microsoft Search API."
+title: "Use Template Query In Microsoft Search API (preview)"
+description: "Provide a template way to help decorate user query "
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
