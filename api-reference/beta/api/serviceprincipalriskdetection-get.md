@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 
 #### Response
->**Note:** The response should include a single object.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
