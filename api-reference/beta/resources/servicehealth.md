@@ -25,7 +25,7 @@ Represents the health information of a service subscribed by a tenant.
 |:---|:---|:---|
 |id|String|The service id.|
 |service|String|The service name. Use the [list healthOverviews](../api/serviceannouncement-list-healthoverviews.md) operation to get exact string names for services subscribed by the tenant.|
-|status|serviceHealthStatus|Show the overral service health status. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. See more in [serviceHealthStatus values table](../resources/servicehealthissue.md#serviceHealthStatus-values)|
+|status|serviceHealthStatus|Show the overral service health status. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. See more in [serviceHealthStatus values table](../resources/servicehealthissue.md#servicehealthstatus-values)|
 
 ## Relationships
 |Relationship|Type|Description|
