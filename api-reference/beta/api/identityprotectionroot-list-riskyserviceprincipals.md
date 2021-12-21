@@ -1,6 +1,6 @@
 ---
 title: "List riskyServicePrincipals"
-description: "Get the riskyServicePrincipal resources from the riskyServicePrincipals navigation property."
+description: "Retrieve the properties and relationships of riskyServicePrincipal objects."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
