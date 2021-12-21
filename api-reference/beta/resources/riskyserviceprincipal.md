@@ -1,6 +1,6 @@
 ---
 title: "riskyServicePrincipal resource type"
-description: "Represents Azure AD workload identities that are at risk, including risk for applications, service principals and Managed Identities. We have combined these various account types into a single collection here. Azure AD continually evaluates workload identity risk based on various signals and machine learning. This API provides programmatic access to all at-risk workload identities in your Azure AD tenant."
+description: "Represents Azure AD workload identities that are at risk, including risk for applications, service principals and Managed Identities. "
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
