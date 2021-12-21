@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Container for base resources that expose the app consent request API and features. Currently exposes only the [appConsentRequests](appconsentrequest.md) relationship.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 
 None.

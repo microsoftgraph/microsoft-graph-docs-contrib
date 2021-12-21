@@ -43,6 +43,7 @@ None.
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Represents the settings that control the behavior of Azure AD entitlement management.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
