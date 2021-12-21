@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of one or more [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
+Read the properties and relationships of a [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) object.
 
 >**Note:** You must have an Azure AD Premium P1 or P2 license to use the servicePrincipalRiskDetection API.
 
