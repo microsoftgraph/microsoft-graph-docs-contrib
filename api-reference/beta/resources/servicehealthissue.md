@@ -44,8 +44,30 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |posts|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Collection of historical posts for the service issue.|
 |service|String|Indicates the service affected by the issue.|
 |startDateTime|DateTimeOffset|The start time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|status|serviceHealthStatus|The status of the service issue. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`.|
+|status|serviceHealthStatus|The status of the service issue. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. See more in the [table below](#serviceHealthStatus-values).|
 |title|String|The title of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+
+### serviceHealthStatus values
+|Member|Description|
+|:---|:---|
+|serviceOperational|We confirm that no issue is happening for the service and the service is healthy.|
+|investigating|We're aware of a potential issue and are gathering more information about what's going on and the scope of impact.|
+|restoringService|The cause of the issue has been identified, we know what corrective action to take, and are in the process of bringing the service back to a healthy state.|
+|verifyingService|The action has been taken to mitigate the issue and we are verifying whetehr the service is back to healthy.|
+|serviceRestored|We've confirmed that corrective action has resolved the underlying problem and the service has been restored to a healthy state. To find out what went wrong, view the issue details.|
+|postIncidentReviewPublished|We've published a Post Incident Report for a specific issue that includes root cause information and next steps to ensure a similar issue doesn't reoccur.|
+|serviceDegradation|We've confirmed that there is an issue that may affect use of a service or feature. You might see this status if a service is performing more slowly than usual, there are intermittent interruptions, or if a feature isn't working, for example.|
+|serviceInterruption|You'll see this status if we determine that an issue affects the ability for users to access the service. In this case, the issue is significant and can be reproduced consistently.|
+|extendedRecovery|This status indicates that corrective action is in progress to restore service to most users but will take some time to reach all the affected systems. You might also see this status if we've made a temporary fix to reduce impact while we wait to apply a permanent fix.|
+|falsePositive|After a detailed investigation, we've confirmed the service is healthy and operating as designed. No impact to the service was observed or the cause of the incident originated outside of the service. Incidents and advisories with this status appear in the history view until they expire (after the period of time stated in the final post for that event).|
+|investigationSuspended|If our detailed investigation of a potential issue results in a request for additional information from customers to allow us to investigate further, you'll see this status. If we need you to act, we'll let you know what data or logs we need.|
+|resolved|The MS Windows service status corresponding for service restored.|
+|mitigatedExternal|The MS Windows service status corresponding for restoring service.|
+|mitigated|The MS Windows service status corresponding for extended recovery.|
+|resolvedExternal|The MS Windows service status corresponding for investigation suspended.|
+|confirmed|The MS Windows service status corresponding for service interruption.|
+|reported|The MS Windows service status corresponding for investagating.|
+
 
 ## Relationships
 None.
