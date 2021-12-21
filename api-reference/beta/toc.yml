@@ -10161,6 +10161,28 @@ items:
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
               href: api/riskyusers-dismiss.md
+            - name: Service principal risk detection
+            items:
+            - name: Service principal risk detection
+              href: resources/serviceprincipalriskdetection.md
+            - name: List service principal risk detections
+              href: api/serviceprincipalriskdetection-list.md
+            - name: Get service principal risk detection
+              href: api/serviceprincipalriskdetection-get.md
+          - name: Risky service principal
+            items:
+            - name: Risky service principal
+              href: resources/riskyserviceprincipal.md
+            - name: List risky service principals
+              href: api/riskyserviceprincipals-list.md
+            - name: Get risky service principal
+              href: api/riskyserviceprincipals-get.md
+            - name: List history
+              href: api/riskyserviceprincipal-list-history.md
+            - name: Confirm compromised
+              href: api/riskyserviceprincipals-confirmcompromised.md
+            - name: Dismiss
+              href: api/riskyserviceprincipals-dismiss.md
         - name: Identity provider
           items:
           - name: Identity provider type
