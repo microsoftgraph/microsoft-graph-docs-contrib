@@ -90,4 +90,3 @@ Content-Type: application/json
     "servicePrincipalType": "Application"
   }
 }
-
