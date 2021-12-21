@@ -1,6 +1,6 @@
 ---
 title: "authenticationContext resource type"
-description: "Provides information about the authenticationContext resource type"
+description: "Describes the conditional access authentication context of a sign-in event."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -18,7 +18,7 @@ Describes the conditional access authentication context of a sign-in event. For 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|detail|authenticationContextDetail|Describes how the conditional access authentication context was triggered. A value of `previouslySatisfied` means the authcontext was because the user already satisfied the requirements for that authentication context in some previous authentication event. A value of `required` means the user had to meet the authentication context requirement as part of the sign-in flow. The possible values are: `required`, `previouslySatisfied`, `notApplicable`, `unknownFutureValue`.|
+|detail|authenticationContextDetail|Describes how the conditional access authentication context was triggered. A value of `previouslySatisfied` means the auth context was because the user already satisfied the requirements for that authentication context in some previous authentication event. A value of `required` means the user had to meet the authentication context requirement as part of the sign-in flow. The possible values are: `required`, `previouslySatisfied`, `notApplicable`, `unknownFutureValue`.|
 |id|String|The identifier of a authentication context in your tenant.|
 
 ## Relationships

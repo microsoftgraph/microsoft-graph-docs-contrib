@@ -1,6 +1,6 @@
 ---
 title: "sessionlifetimepolicy resource type"
-description: "Provides information about the sessionlifetimepolicy resource type"
+description: "Describes the session lifetime policies Azure AD applied to a sign-in event."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
