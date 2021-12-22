@@ -156,22 +156,6 @@
         },
         {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "resourceTenantId",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **resourceTenantId** resource type",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "resourceTenantId",
-          "ChangeType": "Addition",
-          "Description": "Added the [resourceTenantId](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Property",
           "ChangedApiName": "riskEventTypes",
           "ChangeType": "Deprecation",
