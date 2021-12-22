@@ -15,7 +15,7 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 ## Change notification types
 Microsoft Teams supports two types of change notifications:
-- **Change notification to track all changes related to a resource across the tenant** - for example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant.
+- **Change notification to track all changes related to a resource across the tenant** - for example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications may have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
 - **Change notification to track all changes for a specific resource** - for example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).

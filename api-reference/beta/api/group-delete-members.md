@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove a member from a group via the **members** navigation property.
+Use this API to remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,9 +31,9 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

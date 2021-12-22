@@ -52,6 +52,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[teams](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
@@ -131,6 +132,10 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-subscription-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

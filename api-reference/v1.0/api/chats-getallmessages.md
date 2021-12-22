@@ -37,7 +37,15 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## Optional query parameters
 
-This operation supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred licensing and payment requirements, as shown in the following examples.  
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+This operation also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
@@ -55,6 +63,8 @@ If successful, this method returns a `200 OK` response code and a list of [chatM
 ## Example
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_getallmessages_1"
@@ -62,6 +72,28 @@ If successful, this method returns a `200 OK` response code and a list of [chatM
 ``` http
 GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/chats/getAllMessages?$top=2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chat-getallmessages-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chat-getallmessages-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chat-getallmessages-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chat-getallmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-getallmessages-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -74,7 +106,6 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 347
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(chatMessage)",

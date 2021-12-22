@@ -2,7 +2,7 @@
 title: "getDeviceManagementIntentPerSettingContributingProfiles action"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,6 +103,7 @@ Content-Length: 131
   "value": "Z2V0RGV2aWNlTWFuYWdlbWVudEludGVudFBlclNldHRpbmdDb250cmlidXRpbmdQcm9maWxlcyBJbnR1bmUgRG9jIFNhbXBsZSA4OTc0NTYyMg=="
 }
 ```
+
 
 
 

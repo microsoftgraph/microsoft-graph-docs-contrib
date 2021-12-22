@@ -2,7 +2,7 @@
 title: "Get deviceAndAppManagementAssignmentFilter"
 description: "Read properties and relationships of the deviceAndAppManagementAssignmentFilter object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 487
   }
 }
 ```
+
 
 
 

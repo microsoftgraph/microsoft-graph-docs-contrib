@@ -40,9 +40,9 @@ POST /groups
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
 | mailEnabled | boolean | Set to `true` for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. Max. length: 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
+| mailNickname | string | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. Required. |
 | securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.|
 
 > [!IMPORTANT]
@@ -83,7 +83,8 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ### Example 1: Create a Microsoft 365 group
 
-The following example creates a Microsoft 365 group.
+The following example creates a Microsoft 365 group. Because the owners have not been specified, the calling user is automatically added as the owner of the group.
+
 
 #### Request
 
@@ -97,7 +98,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for golf",
@@ -124,6 +124,10 @@ Content-length: 244
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -328,6 +332,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-role-enabled-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

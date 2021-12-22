@@ -4,7 +4,7 @@ description: "Update the properties of governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # Update governanceRoleSetting
@@ -96,7 +96,6 @@ This example updates the role setting for Custom Role 3 in the subscription Wing
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
-Content-length: 350
 
 {
    "adminEligibleSettings":[
@@ -121,6 +120,10 @@ Content-length: 350
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-governancerolesetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-governancerolesetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

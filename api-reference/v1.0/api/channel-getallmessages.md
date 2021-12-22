@@ -39,6 +39,15 @@ GET /teams/{team-id}/channels/getAllMessages
 
 ## Optional query parameters
 
+You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred licensing and payment requirements, as shown in the following examples. 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
@@ -57,6 +66,8 @@ If successful, this method returns a `200 OK` response code and also returns all
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_getallchannelmessages_1"
@@ -64,6 +75,28 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/v1.0/teams/01fe12e0-e720-44fd-8854-28c66d1bee40/channels/getAllMessages?$filter=lastModifiedDateTime+gt+2019-11-01T00:00:00Z+and lastModifiedDateTime+lt+2021-11-01T00:00:00Z
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-getallchannelmessages-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-getallchannelmessages-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-getallchannelmessages-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-getallchannelmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-getallchannelmessages-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/applications/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -90,7 +94,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1044
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
@@ -102,13 +105,25 @@ Content-length: 1044
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
-    "displayName": "Display name",
+    "displayName": "contoso",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "contoso.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://docs.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {
@@ -162,6 +177,3 @@ Content-length: 1044
   ]
 }
 -->
-
-
-

@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
@@ -82,7 +81,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
 
 >[!NOTE]
->[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+>[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
 
 ## Throttling and batching
 
@@ -288,10 +287,9 @@ Other factors that affect a request cost:
 
 ### Identity and access reports service limits
 
-| Request type | Limit per tenant for all apps | Limit per app per tenant |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELETE, PATCH | 200 requests per 20 seconds | 100 requests per 20 seconds |
-| Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 5 requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 

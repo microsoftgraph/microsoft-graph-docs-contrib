@@ -202,7 +202,25 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },  
-     {
+      {
+      "ChangeList": [
+            {
+                "Id": "1bb6395b-305e-11ec-a1a6-9e72602561cc",
+                "ApiChange": "Property",
+                "ChangedApiName": "userAgent",
+                "ChangeType": "Addition",
+                "Description": "Added the **userAgent** property to the [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-beta) resource.",
+                "Target": "directoryAudit"
+            }
+        ],
+        "Id": "1bb6395b-305e-11ec-a1a6-9e72602561cc",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-11-29T21:55:29.147Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+      },  
+    {
         "ChangeList": [
           {
             "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
