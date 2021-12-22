@@ -11,12 +11,53 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### continuousAccessEvaluationMode values 
+
+|Member|
+|:---|
+|strictEnforcement|
+|disabled|
+|unknownFutureValue|
+
+### multiFactorAuthConfiguration values
+
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| notRequired        | 0     | No multifactor authentication is required for a user to complete device registration.|
+| required           | 1     | Multifactor authentication is required for a user to complete device registration.|
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.|
+
+### policyScope values
+
+| Member             | Value | Description |
+|:-------------------|:------| :------|
+| none               | 0     | The policy does not apply to any users or groups in the organization. |
+| all                | 1     | The policy applies to all users and groups in the organization. Default value. |
+| selected           | 2     | The policy applies to specific users or groups in the organization. |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use. |
+
 ### appCredentialRestrictionType values
 
 |Member|
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### appKeyCredentialRestrictionType values
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### synchronizationSecret values
@@ -622,6 +663,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
+
 ### riskLevel values
 
 |Member|
@@ -655,6 +697,7 @@ Namespace: microsoft.graph
 |ADFederationServices|
 |UnknownFutureValue|
 |AzureADBackupAuth|
+
 
 ### usageAuthMethod values
 
@@ -1704,23 +1747,6 @@ Possible values for user account types (group membership), per Windows definitio
 |confirmedCompromised|
 |unknownFutureValue|
 
-### riskDetail values
-
-|Member|
-|:---|
-|none|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
-|hidden|
-|unknownFutureValue|
-
 ### advancedConfigState values
 
 |Member|
@@ -2518,7 +2544,6 @@ Possible values for user account types (group membership), per Windows definitio
 |inProgress|
 |completed|
 |overdue|
-|notCompleted|
 |unknownFutureValue|
 
 ### teamworkCallEventType values
@@ -2528,4 +2553,125 @@ Possible values for user account types (group membership), per Windows definitio
 |call|
 |meeting|
 |screenShare|
+|unknownFutureValue|
+
+### binaryOperator values 
+
+|Member|
+|:---|
+|or|
+|and|
+
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview| 
+|generateReport| 
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
+|unknownFutureValue|
+
+### answerInputType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|text|0|Text.|
+|radioButton|1|RadioButton.|
+|unknownFutureValue|2|UnknownFutureValue.|
+
+### taskStatus_v2 values
+
+|Member|
+|:---|
+|notStarted|
+|inProgress|
+|completed|
+|unknownFutureValue|
+
+
+### wellKnownListName_v2 values
+
+|Member|
+|:---|
+|none|
+|defaultList|
+|flaggedEmail|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
 |unknownFutureValue|

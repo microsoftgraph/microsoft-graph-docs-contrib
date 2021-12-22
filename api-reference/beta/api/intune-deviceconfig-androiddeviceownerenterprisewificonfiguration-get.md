@@ -2,7 +2,7 @@
 title: "Get androidDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerEnterpriseWiFiConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1891
+Content-Length: 1987
 
 {
   "value": {
@@ -109,6 +109,9 @@ Content-Length: 1891
     "preSharedKey": "Pre Shared Key value",
     "preSharedKeyIsSet": true,
     "eapType": "eapTtls",
+    "trustedServerCertificateNames": [
+      "Trusted Server Certificate Names value"
+    ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -116,6 +119,7 @@ Content-Length: 1891
   }
 }
 ```
+
 
 
 

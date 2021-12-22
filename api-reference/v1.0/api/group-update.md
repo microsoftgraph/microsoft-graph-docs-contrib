@@ -49,7 +49,7 @@ The following table specifies the properties that can be updated.
 |autoSubscribeNewMembers|Boolean|Default is `false`. Indicates whether new members added to the group will be auto-subscribed to receive email notifications. **autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.|
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
-|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. |
+|mailNickname|String|The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. |
 |preferredDataLocation|String|The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned one of the following Azure AD roles: <br><ul><li> Global Administrator <li> User Account Administrator <li> Partner Tier1 or Tier2 Support <li>Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see  [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |securityEnabled|Boolean|Specifies whether the group is a security group. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
@@ -60,7 +60,7 @@ The following table specifies the properties that can be updated.
 >
 > + Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](/graph/known-issues#groups) for examples.
 >
-> + The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+> + The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 
 ## Response
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

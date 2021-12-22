@@ -19,9 +19,3 @@ The following Graph resources are available to manage telecom expenses in Intune
 
 - [Device management](intune-tem-devicemanagement.md)
 - [Telecom expense management partner](intune-tem-telecomexpensemanagementpartner.md)
-
-
-
-
-
-

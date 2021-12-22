@@ -2,7 +2,7 @@
 title: "ratingUnitedStatesTelevisionType enum type"
 description: "TV content rating labels in United States"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -28,6 +28,7 @@ TV content rating labels in United States
 |parentalGuidance|5|TV-PG, parental guidance|
 |childrenAbove14|6|TV-14, children age 14 and above|
 |adults|7|TV-MA, adults only|
+
 
 
 

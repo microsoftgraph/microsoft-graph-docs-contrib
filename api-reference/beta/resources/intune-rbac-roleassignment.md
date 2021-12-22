@@ -2,7 +2,7 @@
 title: "roleAssignment resource type"
 description: "The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -64,6 +64,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

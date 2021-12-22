@@ -129,6 +129,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-socialidentityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-socialidentityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -164,6 +168,7 @@ PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "responseType": "id_token"
 }
 ```
@@ -181,6 +186,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-openidconnectprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,6 +227,7 @@ PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "displayName": "Apple"
 }
 ```
@@ -235,6 +245,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-appleidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-appleidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Get groupPolicyPresentationCheckBox"
 description: "Read properties and relationships of the groupPolicyPresentationCheckBox object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -76,6 +76,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

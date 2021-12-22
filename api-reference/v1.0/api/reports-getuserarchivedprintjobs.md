@@ -10,8 +10,6 @@ doc_type: apiPageType
 # reportRoot: getUserArchivedPrintJobs
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Get a list of archived print jobs for a particular user.
 
 ## Permissions

@@ -2,7 +2,7 @@
 title: "List groupPolicyConfigurationAssignments"
 description: "List properties and relationships of the groupPolicyConfigurationAssignment objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -78,6 +78,7 @@ Content-Length: 575
   ]
 }
 ```
+
 
 
 

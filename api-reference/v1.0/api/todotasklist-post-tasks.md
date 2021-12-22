@@ -81,7 +81,6 @@ The following example creates a **todoTask** in the specified task list, and inc
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
-Content-length: 608
 
 {
    "title":"A new task",
@@ -108,6 +107,10 @@ Content-length: 608
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-todotask-from-tasks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-todotask-from-tasks-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
