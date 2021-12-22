@@ -35,8 +35,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "requirementProvider": "user",
-  "detail": "Per-user MFA"
+  "requirementProvider": "string",
+  "detail": "string"
 }
 
 ```

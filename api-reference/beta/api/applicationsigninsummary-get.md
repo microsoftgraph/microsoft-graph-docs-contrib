@@ -95,8 +95,8 @@ Content-type: application/json
 {
   "value": {
     "@odata.type": "#Microsoft.AAD.Reporting.applicationSignInSummary",
-    "appId": "appId-value",
-    "appDisplayName": "appDisplayName-value",
+    "appId": "bfcfc40a-09e6-463e-a530-4ae84870c166",
+    "appDisplayName": "Contoso Test App",
     "successfulSignInCount": 99,
     "failedSignInCount": 99,
     "successPercentage": 99
