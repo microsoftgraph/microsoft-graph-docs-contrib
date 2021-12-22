@@ -44,6 +44,16 @@
       "source_path_from_root": "/api-reference/beta/api/accessreviewscheduledefinition-post.md",
       "redirect_url": "/graph/api/accessreviewset-post-definitions?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewinstance-list.md",
+      "redirect_url": "/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewinstance-list.md",
+      "redirect_url": "/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
