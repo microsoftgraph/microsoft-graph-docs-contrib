@@ -1,8 +1,8 @@
 ---
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -54,12 +54,11 @@ The following request will list the members of the administrative unit, returnin
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[
@@ -86,12 +85,11 @@ The following request will list the member references of the administrative unit
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[

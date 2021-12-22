@@ -2,7 +2,7 @@
 title: "Create custodian userSource"
 description: "Create a new custodian userSource object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 Content-Type: application/json
-Content-length: 233
 
 {
     "email":"megan@contoso.com",
@@ -94,6 +93,10 @@ Content-length: 233
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

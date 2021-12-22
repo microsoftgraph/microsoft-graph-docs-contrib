@@ -1,8 +1,8 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "ananmishr"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
@@ -28,16 +28,24 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Property              | Type                                          | Description                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
+| allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
+| allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
+| attendeeReport | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
+| broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Settings related to a live event.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                  |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                               |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                              |
-| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                     |
+| isBroadcast  | Boolean                                       | Indicates if this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
+| isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
+| recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
@@ -51,6 +59,26 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
+
+> [!TIP]
+>
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
+>- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
+
+### meetingChatMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting chat is enabled.                                               |
+| disabled           | Meeting chat is disabled.                                              |
+| limited            | Meeting chat is enabled but only for the duration of the meeting call. |
+| unknownFutureValue | Unknown future value.                                                  |
+
+## Relationships
+
+| Relationship | Type | Description |
+| ------------ | ---- | ----------- |
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 
 ## JSON representation
 
@@ -75,7 +103,13 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "isBroadcast": "Boolean",
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

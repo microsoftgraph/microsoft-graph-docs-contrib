@@ -13,6 +13,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphConversationMember *conversationMember = [[MSGraphConversationMember alloc] init];
 [conversationMember setVisibleHistoryStartDateTime: "0001-01-01T00:00:00Z"];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[conversationMember setRoles:rolesList];
 
 NSError *error;
 NSData *conversationMemberData = [conversationMember getSerializedDataWithError:&error];

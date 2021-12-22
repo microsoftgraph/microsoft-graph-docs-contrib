@@ -1,7 +1,7 @@
 ---
 title: "List permissionGrantPolicies"
 description: "Retrieve a list of permissionGrantPolicy objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies
 [!INCLUDE [sample-code](../includes/snippets/java/list-permissiongrantpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-permissiongrantpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

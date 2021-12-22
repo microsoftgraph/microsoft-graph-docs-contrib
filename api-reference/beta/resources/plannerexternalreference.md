@@ -1,7 +1,7 @@
 ---
 title: "plannerExternalReference resource type"
 description: "The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It is the value of property-value pairs in the externalReferences object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

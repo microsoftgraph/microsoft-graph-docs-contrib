@@ -2,7 +2,7 @@
 title: "Get signIn"
 doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 ---
@@ -21,11 +21,22 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
+| Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Application | AuditLog.Read.All and Directory.Read.All | 
 
-In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+> [!IMPORTANT]
+> This API has a [known issue](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
+
+Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
 
 ## HTTP request
 
@@ -36,7 +47,7 @@ GET /auditLogs/signIns/{SignInid}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,14 +63,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.
 
-## Examples
+## Example
 
-### Example 1: User signs in using MFA, which is triggered by a conditional access policy. Primary authentication is through FIDO.
-
-#### Request
+### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,7 +75,7 @@ The following is an example of the request.
   "name": "get_signin_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-ff5a759b0100
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
@@ -242,14 +250,17 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-2-java-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signin-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -257,15 +268,12 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.signIn"
 } -->
 
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-  "value": [
-    {
       "id":"b01b1726-0147-425e-a7f7-21f252050400",
       "createdDateTime":"2018-11-06T18:48:33.8527147Z",
       "userDisplayName":"Jon Doe",
@@ -344,6 +352,7 @@ Content-length: 211
       "authenticationProcessingDetails":[],
       "networkLocationDetails":[]
     }
-  ]
+  ],
+  "authenticationRequirementPolicies": []
 }
 ```

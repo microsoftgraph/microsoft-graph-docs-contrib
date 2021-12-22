@@ -1,17 +1,19 @@
 ---
 title: "statusBase resource type"
 description: "Describes the status of the provisioning summary event."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
-# statusBase resource type
+# statusBase resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> The statusBase API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
 Describes the status of the provisioning summary event. 
 

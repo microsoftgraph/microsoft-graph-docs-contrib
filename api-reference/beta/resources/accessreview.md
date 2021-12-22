@@ -1,13 +1,13 @@
 ---
 title: "accessReview resource type"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReview resource type
+# accessReview resource type (deprecated)
 
 Namespace: microsoft.graph
 

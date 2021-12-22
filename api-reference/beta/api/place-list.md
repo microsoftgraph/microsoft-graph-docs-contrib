@@ -1,7 +1,7 @@
 ---
 title: "List places"
 description: "Retrieve a list of place objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -119,6 +119,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -126,7 +130,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -241,6 +245,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -248,7 +256,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -335,7 +343,7 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

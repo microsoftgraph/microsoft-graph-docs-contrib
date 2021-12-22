@@ -1,7 +1,7 @@
 ---
 title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "JeremyKelley"
 ms.prod: ""
 ms.date: 08/06/2019
@@ -103,7 +103,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

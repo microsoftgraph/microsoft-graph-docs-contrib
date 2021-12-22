@@ -2,7 +2,7 @@
 title: "Delete connectedOrganization"
 description: "Delete connectedOrganization."
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

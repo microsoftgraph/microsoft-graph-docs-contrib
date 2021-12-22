@@ -25,9 +25,3 @@ Possible values for internet site security level.
 
 
 
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "SumitParikh"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -71,10 +71,14 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

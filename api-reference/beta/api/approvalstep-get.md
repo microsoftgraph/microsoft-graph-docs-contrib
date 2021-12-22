@@ -1,8 +1,8 @@
 ---
 title: "Get approvalStep"
 description: "Retrieve the properties of an approvalStep object."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-approvalstep-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-approvalstep-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -89,7 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

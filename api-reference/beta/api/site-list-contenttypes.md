@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List contentTypes in a site"
 description: "List content types in a site"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -15,7 +15,7 @@ Get the collection of [contentType][contentType] resources in a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-contenttypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

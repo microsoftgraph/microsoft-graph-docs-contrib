@@ -26,6 +26,7 @@ Devices that are managed or pre-enrolled through Intune
 |[enableLostMode action](../api/intune-devices-manageddevice-enablelostmode.md)|None|Enable lost mode|
 |[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Remote lock|
 |[setDeviceName action](../api/intune-devices-manageddevice-setdevicename.md)|None|Set device name of the device.|
+|[activateDeviceEsim action](../api/intune-devices-manageddevice-activatedeviceesim.md)|None|Activate eSIM on the device.|
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Not yet documented|
 |[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Not yet documented|
 |[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Not yet documented|
@@ -51,6 +52,10 @@ Devices that are managed or pre-enrolled through Intune
 |[rotateBitLockerKeys action](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|None|Rotate BitLockerKeys|
 |[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
 |[triggerConfigurationManagerAction action](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|None|Trigger action on ConfigurationManager client|
+|[deprovision action](../api/intune-devices-manageddevice-deprovision.md)|None|Not yet documented|
+|[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
+|[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
+|[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -59,8 +64,8 @@ Devices that are managed or pre-enrolled through Intune
 |userId|String|Unique Identifier for the user associated with the device. This property is read-only.|
 |deviceName|String|Name of the device. This property is read-only.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc. This property is read-only.|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects. This property is read-only.|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. This property is read-only. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
 |enrolledDateTime|DateTimeOffset|Enrollment time of the device. This property is read-only.|
@@ -70,7 +75,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
@@ -133,13 +138,14 @@ Devices that are managed or pre-enrolled through Intune
 |skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device.|
+|enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. This property is read-only.|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 
@@ -195,7 +201,11 @@ Here is a JSON representation of the resource.
     "osBuildNumber": "String",
     "operatingSystemProductType": 1024,
     "ipAddressV4": "String",
-    "subnetAddress": "String"
+    "subnetAddress": "String",
+    "esimIdentifier": "String",
+    "systemManagementBIOSVersion": "String",
+    "tpmManufacturer": "String",
+    "tpmVersion": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -347,7 +357,8 @@ Here is a JSON representation of the resource.
       "valueType": "String",
       "updatable": true
     }
-  ]
+  ],
+  "enrollmentProfileName": "String"
 }
 ```
 

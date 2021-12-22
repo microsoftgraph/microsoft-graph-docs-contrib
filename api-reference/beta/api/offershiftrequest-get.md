@@ -1,7 +1,7 @@
 ---
 title: "Get offerShiftRequest"
 description: "Retrieve the properties and relationships of an offerShiftRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/
 [!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-offershiftrequest-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +93,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -4,7 +4,7 @@ description: Gets an aged accounts receivable object in Dynamics 365 Business Ce
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "dynamics-365-business-central"
 ---
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsRecei
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

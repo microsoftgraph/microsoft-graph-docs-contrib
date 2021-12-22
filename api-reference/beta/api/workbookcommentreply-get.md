@@ -1,7 +1,7 @@
 ---
 title: "Get workbookCommentReply"
 description: "Retrieve the properties and relationships of workbookcommentreply object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/rep
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

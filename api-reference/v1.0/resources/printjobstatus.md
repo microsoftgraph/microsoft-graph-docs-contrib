@@ -2,7 +2,7 @@
 title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printJobStatus resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents the current status of a print job.
 

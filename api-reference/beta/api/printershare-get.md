@@ -2,7 +2,7 @@
 title: Get printerShare
 description: Retrieve the properties and relationships of a printer share.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -29,8 +29,8 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## Optional query parameters
@@ -83,11 +83,15 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printershare-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +100,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
@@ -107,7 +110,7 @@ Content-length: 225
 ```
 
 The following is an example of the response, when using $select=id,displayName,capabilities
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,7 +119,6 @@ The following is an example of the response, when using $select=id,displayName,c
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

@@ -1,7 +1,7 @@
 ---
 title: "Get conversationThread"
 description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -70,10 +70,14 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversationthread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversationthread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,31 +86,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
 
 {
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
+  "id": "thread-id",
   "topic": "topic-value",
   "hasAttachments": true,
   "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ]
+  "preview": "preview-value",
+  "isLocked": false
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Assign a connectorGroup to an application"
 description: "Use this API to assign a connectorGroup to an application"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -54,7 +54,6 @@ The following is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
@@ -76,6 +75,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/java/create-application-from-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-application-from-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -83,9 +86,7 @@ Content-length: 30
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

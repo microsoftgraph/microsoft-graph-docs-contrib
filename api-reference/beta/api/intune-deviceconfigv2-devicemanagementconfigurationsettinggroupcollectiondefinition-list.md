@@ -32,8 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings
+GET /deviceManagement/complianceSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
+GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions
 ```
 
 ## Request headers
@@ -53,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ```
 
 ### Response
@@ -61,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1859
+Content-Length: 2101
 
 {
   "value": [
@@ -70,7 +73,7 @@ Content-Length: 1859
       "applicability": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
         "description": "Description value",
-        "platform": "macOS",
+        "platform": "android",
         "deviceMode": "kiosk",
         "technologies": "mdm"
       },
@@ -93,6 +96,12 @@ Content-Length: 1859
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "referredSettingInformationList": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+          "settingDefinitionId": "Setting Definition Id value"
+        }
+      ],
       "id": "739da194-a194-739d-94a1-9d7394a19d73",
       "description": "Description value",
       "helpText": "Help Text value",

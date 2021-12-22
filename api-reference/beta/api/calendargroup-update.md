@@ -2,7 +2,7 @@
 title: "Update calendargroup"
 description: "Update the properties of calendargroup object."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -71,7 +71,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
-Content-length: 30
 
 {
   "name": "name-value"
@@ -93,12 +92,16 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-calendargroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -109,7 +112,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

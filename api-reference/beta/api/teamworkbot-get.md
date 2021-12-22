@@ -2,7 +2,7 @@
 title: "Get teamworkBot"
 description: "Read the properties and relationships of a teamworkBot object."
 author: "AkJo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 |Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported.|
+|Application| AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
 ## HTTP request
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

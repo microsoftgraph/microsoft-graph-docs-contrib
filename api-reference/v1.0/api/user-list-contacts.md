@@ -2,7 +2,7 @@
 title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
 author: "kevinbellinger"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -66,7 +66,6 @@ For general information on the `$filter` query parameter, see [OData query param
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -102,12 +101,16 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +120,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
   "value": [

@@ -1,7 +1,7 @@
 ---
 title: "Update publishedResource"
 description: "Update the properties of a [publishedResource](../resources/publishedresource.md) object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -88,6 +88,10 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 [!INCLUDE [sample-code](../includes/snippets/java/update-publishedresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-publishedresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -95,12 +99,10 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.publishedResource"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,15 +1,16 @@
 ---
 title: "List identityProviders"
 description: "Retrieve all identityProviders"
-localization_priority: Priority
-author: "Nickgmicrosoft"
+ms.localizationpriority: high
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List identityProviders
-
+# List identityProviders (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
@@ -58,6 +59,7 @@ The following example retrieves all **identityProvider**.
   "blockType": "request",
   "name": "list-identityproviders"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders
 ```
@@ -77,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -85,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
+  "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
 } -->
 ```http

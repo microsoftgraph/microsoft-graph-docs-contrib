@@ -1,7 +1,7 @@
 ---
 title: "List identityProviders"
 description: "Retrieve a list of identityProvider objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

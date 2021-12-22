@@ -2,7 +2,7 @@
 title: "Get calendarGroup"
 description: "Retrieve the properties and relationships of a calendar group object."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -84,12 +84,16 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendargroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -100,7 +104,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

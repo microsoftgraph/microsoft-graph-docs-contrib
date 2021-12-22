@@ -2,7 +2,7 @@
 title: "Update tablerow"
 description: "Update the properties of tablerow object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookTableRow](../resources/tablerow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookTableRow](../resources/workbooktablerow.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -57,7 +57,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
@@ -83,7 +82,7 @@ Content-length: 45
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +91,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "index": 99,
