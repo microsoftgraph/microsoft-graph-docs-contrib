@@ -6,10 +6,10 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to sort search results
+# Use QueryTemplate Microsoft Search API
 QueryTemplate provides a way to template user query.
 
-## Example 1: Single-level sort
+## Example 1: Use KQL/FQL in Graph Search
 
 ### Request
 

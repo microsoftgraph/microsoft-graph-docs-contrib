@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to sort search results
+# Trim duplicate search results in Microsoft Search API
 
 You can use the Microsoft Search API in Microsoft Graph to dedup search results. To dedup the results, specify the **trimDuplicate** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object.
 TrimDuplicate is only supported to SharePoint and OneDrive items, the default value is false.
