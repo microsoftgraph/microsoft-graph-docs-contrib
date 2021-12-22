@@ -12241,7 +12241,7 @@ items:
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
@@ -12253,8 +12253,6 @@ items:
               href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Send reminder
               href: api/accessreviewinstance-sendreminder.md
             - name: Stop
@@ -12269,6 +12267,8 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
+            - name: List pending approval (deprecated)
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
@@ -12278,10 +12278,10 @@ items:
               href: api/accessreviewinstancedecisionitem-get.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
+            - name: List pending approval (deprecated)
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
             href: resources/accessreviewpolicy.md
             items:
