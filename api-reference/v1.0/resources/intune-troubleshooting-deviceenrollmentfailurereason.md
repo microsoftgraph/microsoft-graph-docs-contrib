@@ -2,7 +2,7 @@
 title: "deviceEnrollmentFailureReason enum type"
 description: "Top level failure categories for enrollment."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -30,18 +30,6 @@ Top level failure categories for enrollment.
 |enrollmentRestrictionsEnforced|9|Enrollment restrictions configured by admin blocked this enrollment.|
 |clientDisconnected|10|Client timed out or enrollment was aborted by enduser.|
 |userAbandonment|11|Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)|
-
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
-  ],
-}
--->
-
-
-
 
 
 

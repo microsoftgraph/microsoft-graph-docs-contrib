@@ -2,15 +2,13 @@
 title: "reports: getUserArchivedPrintJobs"
 description: Get a list of archived print jobs for a particular user.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # reportRoot: getUserArchivedPrintJobs
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Get a list of archived print jobs for a particular user.
 

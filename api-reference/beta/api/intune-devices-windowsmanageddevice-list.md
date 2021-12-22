@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9213
+Content-Length: 9507
 
 {
   "value": [
@@ -110,7 +110,11 @@ Content-Length: 9213
         "osBuildNumber": "Os Build Number value",
         "operatingSystemProductType": 10,
         "ipAddressV4": "Ip Address V4 value",
-        "subnetAddress": "Subnet Address value"
+        "subnetAddress": "Subnet Address value",
+        "esimIdentifier": "Esim Identifier value",
+        "systemManagementBIOSVersion": "System Management BIOSVersion value",
+        "tpmManufacturer": "Tpm Manufacturer value",
+        "tpmVersion": "Tpm Version value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -262,7 +266,8 @@ Content-Length: 9213
           "valueType": "Value Type value",
           "updatable": true
         }
-      ]
+      ],
+      "enrollmentProfileName": "Enrollment Profile Name value"
     }
   ]
 }

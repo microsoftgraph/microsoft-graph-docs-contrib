@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 620
 
 {
   "value": {
@@ -72,6 +72,12 @@ Content-Length: 330
     "displayName": "Display Name value",
     "description": "Description value",
     "publicAddress": "Public Address value",
+    "upgradeWindowUtcOffsetInMinutes": 15,
+    "upgradeWindowStartTime": "12:01:27.3030000",
+    "upgradeWindowEndTime": "11:57:17.9830000",
+    "upgradeAutomatically": true,
+    "upgradeAvailable": true,
+    "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ]

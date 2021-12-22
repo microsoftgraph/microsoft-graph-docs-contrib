@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |managedBy|String|The intune device's managed by.|
 |autoPilotRegistered|Boolean|The intune device's autopilotRegistered.|
 |autoPilotProfileAssigned|Boolean|The intune device's autopilotProfileAssigned.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|The intune device's azureAdRegistered. Possible values are: `no`, `yes`, `unknown`.|
+|azureAdRegistered|Boolean|The intune device's azureAdRegistered.|
 |azureAdJoinType|String|The intune device's azure Ad joinType.|
 
 
@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExperienceAnalyticsNotAutopilotReadyDeviceId}
 Content-type: application/json
-Content-length: 422
+Content-length: 421
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -82,7 +82,7 @@ Content-length: 422
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
@@ -92,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 470
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -104,7 +104,7 @@ Content-Length: 471
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```

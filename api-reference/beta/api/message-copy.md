@@ -2,7 +2,7 @@
 title: "message: copy"
 description: "Copy a message to a folder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Copy a message to a folder.
+Copy a message to a folder within the user's mailbox.
 
 ## Permissions
 
@@ -72,7 +72,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -94,6 +93,10 @@ Content-length: 44
 [!INCLUDE [sample-code](../includes/snippets/java/message-copy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-copy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,7 +104,7 @@ Content-length: 44
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,7 +114,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

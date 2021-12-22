@@ -1,7 +1,7 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
@@ -11,12 +11,167 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessPackageAssignmentFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|expired|
+|deliveryFailed|
+|unknownFutureValue|
+
+### accessPackageCatalogState values
+
+|Member|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### accessPackageRequestState values
+
+|Member|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### accessPackageRequestType values
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### accessPackageSubjectType values
+
+|Member|
+|:---|
+|notSpecified|
+|user|
+|servicePrincipal|
+|unknownFutureValue|
+
+### connectedOrganizationState values
+
+|Member|
+|:---|
+|configured|
+|proposed|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
+### countryLookupMethodType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -26,12 +181,13 @@ Namespace: microsoft.graph
 |disabled|
 |unknownFutureValue|
 
-### authenticatorAppContextType values
+### educationAddedStudentAction values
 
 |Member|
 |:---|
-|location|
-|app|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
 
 ### fido2RestrictionEnforcementType values
 
@@ -84,13 +240,6 @@ Namespace: microsoft.graph
 |normal|
 |weak|
 |unknown|
-
-### authenticatorAppFeatureSettings values
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### allowInvitesFrom values
 
@@ -287,6 +436,25 @@ Namespace: microsoft.graph
 |peerToPeer|
 |unknownFutureValue|
 
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
+
 ### onlineMeetingRole values
 
 |Member|
@@ -433,6 +601,26 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### workforceIntegrationSupportedEntities values
+
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+
 ### timeZoneStandard values
 
 | Member
@@ -496,15 +684,13 @@ Namespace: microsoft.graph
 | lightRed   | 8
 | maxColor   | 9
 
-
 ### educationExternalSource values
 
-| Member
-|:-------------------------
-| sis
-| manual
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| manual             |
+| unknownFutureValue |
 
 ### educationGender values
 
@@ -544,12 +730,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### educationUserRole values
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| none               |
+| unknownFutureValue |
 
 ### meetingMessageType values
 
@@ -1194,6 +1382,16 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessageType values
+
+| Value |
+|:-----------------|
+| message |
+| chatEvent |
+| typing |
+| unknownFutureValue |
+| systemEventMessage |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |
@@ -1243,6 +1441,30 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| Multiline text. |
+|text | Single line text. |
+|choice | Choice column |
+|multichoice | Multichoice column. |
+|number | Number column. |
+|currency | Currency column. |
+|dateTime | DateTime column. |
+|lookup | Lookup column. |
+|boolean | Yes/No column. |
+|user | Person or group column. |
+|url | Hyperlink or picture column. |
+|calculated | Calculated column. |
+|location | Location column. |
+|geolocation | Geolocation column. |
+|term | Managed metadata column. |
+|multiterm | Managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | UnknownFuturevalue |
 
 ### permissionClassificationType values
 
@@ -1354,9 +1576,328 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |unknownFutureValue|
 
+### userFlowType values
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### identityUserFlowAttributeDataType values
+
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeType values
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| required              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
 ### teamworkActivityTopicSource values 
 
 | Member    |
 | :-------- |
 | entityUrl |
 | text      |
+
+
+### provisioningResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|skipped|
+|warning|
+|unknownFutureValue|
+
+### provisioningStepType values 
+
+|Member|
+|:---|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
+|unknownFutureValue|
+
+### provisioningStatusErrorCategory values 
+
+|Member|
+|:---|
+|failure|
+|nonServiceFailure|
+|success|
+|unknownFutureValue|
+
+### provisioningAction values 
+
+|Member|
+|:---|
+|other|
+|create|
+|delete|
+|disable|
+|update|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### initiatorType values 
+
+|Member|
+|:---|
+|user|
+|application|
+|system|
+|unknownFutureValue|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
+|unknownFutureValue|
+
+### subjectRightsRequestStage values 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### subjectRightsRequestStageStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|current| 
+|completed| 
+|failed|
+|unknownFutureValue|
+
+### subjectRightsRequestStatus values 
+
+|Member|
+|:---|
+|active|
+|closed|
+|unknownFutureValue|
+
+### subjectRightsRequestType values 
+
+|Member|
+|:---|
+|export|
+|delete|
+|access|
+|tagForAction|
+|unknownFutureValue|
+
+### dataSubjectType values 
+
+|Member|
+|:---|
+|customer|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|faculty|
+|other|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### answerInputType values 
+
+|Member|
+|:---|
+|text|
+|radioButton|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|

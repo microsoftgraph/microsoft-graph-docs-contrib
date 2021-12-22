@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device health script device state entity. This property is read-only.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
@@ -59,6 +59,7 @@ The following table shows the properties that are required when you create the d
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 
 
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 762
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -85,7 +86,10 @@ Content-length: 762
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 
@@ -94,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 811
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -108,7 +112,10 @@ Content-Length: 811
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 

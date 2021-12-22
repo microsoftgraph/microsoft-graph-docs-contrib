@@ -2,7 +2,7 @@
 title: Get shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegated (work or school account)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -77,11 +77,15 @@ GET https://graph.microsoft.com/beta/print/shares
 [!INCLUDE [sample-code](../includes/snippets/java/get-shares-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-shares-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,14 +95,13 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterShareName",
+      "displayName": "PrinterShareName",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z"
     }
   ]

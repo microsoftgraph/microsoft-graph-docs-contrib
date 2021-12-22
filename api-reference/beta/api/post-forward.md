@@ -1,7 +1,7 @@
 ---
 title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -62,7 +62,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
-Content-length: 166
 
 {
   "comment": "comment-value",
@@ -90,6 +89,10 @@ Content-length: 166
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-forward-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

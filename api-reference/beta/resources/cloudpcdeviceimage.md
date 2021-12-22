@@ -1,8 +1,8 @@
 ---
 title: "cloudPcDeviceImage resource type"
-description: "Represents the image resource on cloud PC."
+description: "Represents the image resource on Cloud PC."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the image resource on cloud PC.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Represents the image resource on a Cloud PC.
 
 ## Methods
 
@@ -26,20 +24,23 @@ Represents the image resource on cloud PC.
 |[Create cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
+|[Reupload cloudPcDeviceImage](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the image resource on cloud PC. Read-only.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|The image's display name.|
-|version|String|The image version. For example: 0.0.1, 1.5.13.|
-|osBuildNumber|String|The image's OS build version. For example: 1909.|
-|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
+|expirationDate|Date|The date the image became unavailable.|
+|id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|The status of the image on cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+|operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
+|osBuildNumber|String|The image's OS build version. For example: 1909.|
+|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknownFutureValue`.|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
+|version|String|The image version. For example: 0.0.1, 1.5.13.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -56,7 +57,17 @@ Represents the image resource on cloud PC.
 |internalServerError|There was an internal server error while processing the image.|
 |sourceImageNotFound|Source image is inaccessible or not found.|
 |osVersionNotSupported| OS version is not supported.|
-|sourceImageInvalid|The source image is not valid for provisioning a windows VM with it.|
+|sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
+### cloudPcDeviceImageOsStatus values
+
+|Member|Description|
+|:---|:---|
+|supported|The device image is active and ready to be used for provisioning.|
+|supportedWithWarning|The device image has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
@@ -85,6 +96,8 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "status": "String",
   "statusDetails": "String",
-  "sourceImageResourceId": "String"
+  "sourceImageResourceId": "String",
+  "expirationDate":"String (timestamp)",
+  "osStatus":"String"
 }
 ```

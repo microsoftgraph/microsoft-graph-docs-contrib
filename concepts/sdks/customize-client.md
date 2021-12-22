@@ -1,7 +1,7 @@
 ---
 title: "Customize the Microsoft Graph SDK service client"
 description: "Provides instructions on how to change the default behavior of the Microsoft Graph SDK service client."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
@@ -113,9 +113,187 @@ final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authenticationProvider)
                 .httpClient(httpClient)
                 .buildClient();
 ```
+
+## [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+    core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := khttp.GetDefaultClient(allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
+
+---
+
+## Configuring the HTTP proxy for the client
+
+Some environments require client applications to use a HTTP proxy before they can access the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
+
+<!-- markdownlint-disable MD024 -->
+## [C#](#tab/csharp)
+
+```csharp
+// URI to proxy
+var proxyAddress = "http://localhost:8888";
+
+// Create a new System.Net.Http.HttpClientHandler with the proxy
+var handler = new HttpClientHandler
+{
+    // Create a new System.Net.WebProxy
+    // See WebProxy documentation for scenarios requiring
+    // authentication to the proxy
+    Proxy = new WebProxy(new Uri(proxyAddress))
+};
+
+// Create an options object for the credential being used
+// For example, here we're using a ClientSecretCredential so
+// we create a ClientSecretCredentialOptions object
+var options = new ClientSecretCredentialOptions
+{
+    // Create a new Azure.Core.HttpClientTransport
+    Transport = new HttpClientTransport(handler)
+};
+
+var credential = new ClientSecretCredential(
+    "YOUR_TENANT_ID",
+    "YOUR_CLIENT_ID",
+    "YOUR_CLIENT_SECRET",
+    options
+);
+
+var scopes = new[] { "https://graph.microsoft.com/.default" };
+
+// This example works with Microsoft.Graph 4+
+var httpClient = GraphClientFactory.Create(new TokenCredentialAuthProvider(credential, scopes), proxy: new WebProxy(new Uri(proxyAddress)));
+
+var graphClient = new GraphServiceClient(httpClient);
+```
+
+## [TypeScript](#tab/typeScript)
+
+```typescript
+// Create a credential from @azure/identity package
+const credential = new ClientSecretCredential(
+  'YOUR_TENANT_ID',
+  'YOUR_CLIENT_ID',
+  'YOUR_CLIENT_SECRET',
+  {
+    proxyOptions: {
+      host: 'localhost',
+      port: 8888,
+      // If proxy requires authentication
+      //username: '',
+      //password: ''
+    },
+  }
+);
+
+// Create a Graph token credential provider
+const tokenAuthProvider = new TokenCredentialAuthenticationProvider(
+  credential,
+  {
+    scopes: [ 'https://graph.microsoft.com/.default' ]
+  });
+
+const client = MicrosoftGraph.Client.initWithMiddleware({
+  authProvider: tokenAuthProvider,
+  // Configure proxy in fetchOptions
+  fetchOptions: {
+    agent: new HttpsProxyAgent('http://localhost:8888')
+  }
+});
+```
+
+## [Java](#tab/java)
+
+```Java
+final int proxyPort = 8080;
+final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
+
+// The section below configures the proxy for the Azure Identity client
+// and is only needed if you rely on Azure Identity for authentication
+final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+final HttpClientOptions clientOptions = new HttpClientOptions();
+clientOptions.setProxyOptions(pOptions);
+final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
+
+// Or any other credential the application is using
+final ClientSecretCredential clientSecretCredential =
+    new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        // don't forget that addition to use the configured client
+        .httpClient(azHttpClient)
+        .build();
+final TokenCredentialAuthProvider authenticationProvider =
+    new TokenCredentialAuthProvider(Arrays.asList(SCOPES), clientSecretCredential);
+
+// The section below configures the proxy for the Microsoft Graph SDK client
+final Proxy proxy = new Proxy(Proxy.Type.HTTP, proxyInetAddress);
+
+// This block is only needed if the proxy requires authentication
+final Authenticator proxyAuthenticator = new Authenticator() {
+  @Override
+  public Request authenticate(Route route, Response response) throws IOException {
+    String credential = Credentials.basic("username", "password");
+    return response.request().newBuilder()
+        .header("Proxy-Authorization", credential)
+        .build();
+  }
+};
+
+final OkHttpClient graphHttpClient =
+    HttpClients.createDefault(authenticationProvider)
+        .newBuilder()
+        .proxy(proxy)
+        .proxyAuthenticator(proxyAuthenticator)
+        .build();
+
+final GraphServiceClient graphServiceClient =
+    GraphServiceClient
+        .builder()
+        .httpClient(graphHttpClient)
+        .buildClient();
+
+```
+
+> [!NOTE]
+> For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
+
+## [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+The Microsoft Graph SDK for Go does not currently support HTTP proxy. See [this GitHub issue](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) for more details.
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "workbookComment resource type"
 description: "Definition of workbookComment resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"

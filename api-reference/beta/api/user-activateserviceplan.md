@@ -2,7 +2,7 @@
 title: "user: activateServicePlan"
 description: "Activate a service plan with a given `servicePlanId` and `skuId` for a given user."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 | :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegated (work or school account) | Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not Supported. |
-| Application | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Application | Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -71,7 +71,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/me/activateServicePlan
 Content-type: application/json
-Content-length: 115
 
 {
   "servicePlanId": "28f42d6f-8034-4a0f-9d8a-a218a63b3299",
@@ -92,6 +91,10 @@ Content-length: 115
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-activateserviceplan-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-activateserviceplan-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

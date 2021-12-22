@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageMailboxCounts"
 description: "Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

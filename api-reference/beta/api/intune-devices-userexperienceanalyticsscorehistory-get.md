@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,17 +63,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 583
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
     "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
     "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+    "overallScore": 12,
     "startupScore": 12,
     "coreBootScore": 13,
     "coreSigninScore": 15,
     "recommendedSoftwareScore": 8,
+    "appHealthOverallScore": 5,
+    "batteryHealthScore": 2,
+    "startupTotalDevices": 3,
+    "recommendedSoftwareTotalDevices": 15,
+    "appHealthTotalDevices": 5,
+    "batteryHealthTotalDevices": 9,
     "restartScore": 12
   }
 }

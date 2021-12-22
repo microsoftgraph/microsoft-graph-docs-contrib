@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentApprovalStatusColumn resource type"
 description: "Indicates that the column contains information about the approval status of the item."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

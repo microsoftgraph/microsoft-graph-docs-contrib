@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 513
 
 {
   "value": [
@@ -70,7 +70,10 @@ Content-Length: 350
       "status": "completed",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-      "sizeInBytes": 11
+      "sizeInBytes": 11,
+      "serverId": "Server Id value",
+      "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+      "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
     }
   ]
 }

@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columns in a site"
 description: "List columns in a site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -19,7 +19,7 @@ Get the collection of columns, represented as [columnDefinition][columnDefinitio
 
   
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
   
 
@@ -39,7 +39,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-
 GET /sites/{site-id}/columns
 ```
 
@@ -89,6 +88,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,39 +109,39 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "description": "",
-      "displayName": "Title",
-      "hidden": false,
-      "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Title",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
+   "value":[
+      {
+         "description":"",
+         "displayName":"Title",
+         "hidden":false,
+         "id":"99ddcf45-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Title",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
+      },
+      {
+         "description":"",
+         "displayName":"Address",
+         "id":"11dfef35-e2f7-4f17-82b0-6fba34445103",
+         "indexed":false,
+         "name":"Address",
+         "readOnly":false,
+         "required":false,
+         "text":{
+            "allowMultipleLines":false,
+            "appendChangesToExistingText":false,
+            "linesForEditing":0,
+            "maxLength":255
+         }
       }
-    },
-    {
-      "description": "",
-      "displayName": "Address",
-      "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
-      "indexed": false,
-      "name": "Address",
-      "readOnly": false,
-      "required": false,
-      "text": {
-        "allowMultipleLines": false,
-        "appendChangesToExistingText": false,
-        "linesForEditing": 0,
-        "maxLength": 255
-      }
-    }
-  ]
+   ]
 }
 ```
 

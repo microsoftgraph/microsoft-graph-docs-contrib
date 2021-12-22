@@ -1,7 +1,7 @@
 ---
 title: "Get bookingAppointment"
 description: "Get the properties and relationships of a bookingAppointment object in the specified bookingbusiness."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
 The **start** and **end** properties are always returned in UTC.
 ## Permissions
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_bookingappointment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
@@ -70,10 +70,17 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingappointment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,14 +91,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+    "isLocationOnline": true,
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
     "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
     "customerName": "Jordan Miller",
     "customerEmailAddress": "jordanm@contoso.com",
     "customerPhone": "213-555-0199",
     "customerNotes": null,
+    "customerTimeZone": "America/Chicago",
+    "smsNotificationsEnabled": true,
     "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "serviceName": "Catered bento",
     "duration": "PT30M",
@@ -182,7 +193,51 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
+    "maximumAttendeesCount": 5,
+    "filledAttendeesCount": 1,
+    "customers": [
+        {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            "name": "Jordan Miller",
+            "emailAddress": "jordanm@contoso.com",
+            "phone": "213-555-0199",
+            "notes": null,
+            "location": 
+            {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": 
+                {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": null
+            },
+            "timeZone": "America/Chicago",
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": true,
+                    "answer": "25",
+                    "selectedOptions":[]
+                }
+            ]
+        }
+    ]
 }
 ```
 

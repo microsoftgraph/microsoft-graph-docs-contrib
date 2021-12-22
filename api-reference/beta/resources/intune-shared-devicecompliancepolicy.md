@@ -1,7 +1,7 @@
 ---
 title: "deviceCompliancePolicy resource type"
 description: "This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. "
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -24,8 +24,8 @@ This is the base class for Compliance policy. Compliance policies are platform s
 |[Get deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Read properties and relationships of the [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) object.|
 |**Device configuration**|
 |[assign action](../api/intune-shared-devicecompliancepolicy-assign.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) collection|Not yet documented|
-|scheduleActionsForRules action|None|Not yet documented|
-|refreshDeviceComplianceReportSummarization action](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|None|Not yet documented|
+|[scheduleActionsForRules action](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|None|Not yet documented|
+|[refreshDeviceComplianceReportSummarization action](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|None|Not yet documented|
 |**Policy Set**|
 |[hasPayloadLinks action](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
 
@@ -74,7 +74,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Add Named Item"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
@@ -65,7 +65,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/add
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test5",
@@ -95,7 +94,7 @@ Content-length: 54
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +103,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
@@ -126,10 +124,7 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: NamedItemcollection_add/value:
-      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
-  ],
+  "suppressions": [],
   "tocPath": ""
 }-->
 
