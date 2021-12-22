@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The identity governance singleton is the container for the following Azure Active Directory identity governance features that are exposed through the following resources and APIs:
 
-+ [Access reviews](accessreviewsv2-root.md)
++ [Access reviews](accessreviewsv2-overview.md)
 + [Entitlement management](entitlementmanagement-root.md)
 + [App consent](consentrequests-root.md)
 + [Terms of use](agreement.md)

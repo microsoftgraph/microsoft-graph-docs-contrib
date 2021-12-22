@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the scheduling of an Azure AD [access review](accessreviewsv2-root.md).
+Represents the scheduling of an Azure AD [access review](accessreviewsv2-overview.md).
 
 An accessReviewScheduleDefinition contains a list of [accessReviewInstance](accessreviewinstance.md) objects. Each recurrence of the schedule definition creates an instance. Instances also represent each unique resource being reviewed. If a schedule definition reviews multiple resources, each resource has a unique instance per each recurrence. In the case of a one-time review, only one instance is created per resource.
 

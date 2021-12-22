@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) decision on an instance of a review. This decision is the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision is the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
 
 >[!NOTE]
 >The property `target` will be deprecated in v1.0 and replaced by the `principal` and `resource` properties.

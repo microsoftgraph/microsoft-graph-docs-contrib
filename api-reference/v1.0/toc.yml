@@ -5285,7 +5285,7 @@ items:
       - name: Governance
         items:
         - name: Access reviews
-          href: resources/accessreviewsv2-root.md
+          href: resources/accessreviewsv2-overview.md
           items:
           - name: Access review schedule definition
             href: resources/accessreviewscheduledefinition.md

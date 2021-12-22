@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). All properties are read-only.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). All properties are read-only.
 
 If the instance is a part of a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource being reviewed in the schedule definition. If a schedule definition reviews multiple resources, each resource will have a unique instance for each recurrence.
 
