@@ -7,8 +7,8 @@ ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to sort search results
+QueryTemplate provides a way to template user query.
 
- QueryTemplate supposes to support template query method.
 ## Example 1: Single-level sort
 
 ### Request
@@ -127,6 +127,7 @@ Content-type: application/json
         }
     ]
 }
+```
 
 ## Next steps
 
