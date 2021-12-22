@@ -12295,9 +12295,9 @@ items:
             - name: Get
               href: api/accessreviewhistorydefinition-get.md
             - name: List
-              href: api/accessreviewhistorydefinition-list.md
+              href: api/accessreviewset-list-historydefinitions
             - name: Create
-              href: api/accessreviewhistorydefinition-post.md
+              href: api/accessreviewset-post-historydefinitions
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (deprecated)

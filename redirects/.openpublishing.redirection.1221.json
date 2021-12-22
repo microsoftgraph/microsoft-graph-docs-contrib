@@ -69,6 +69,11 @@
       "source_path_from_root": "/api-reference/beta/api/accessreviewhistorydefinition-list.md",
       "redirect_url": "/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewhistorydefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
