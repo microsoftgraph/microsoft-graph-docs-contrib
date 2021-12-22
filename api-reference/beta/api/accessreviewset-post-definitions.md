@@ -1,5 +1,5 @@
 ---
-title: "Create accessReviewScheduleDefinition"
+title: "Create definitions"
 description: "Create a new accessReviewScheduleDefinition object."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create accessReviewScheduleDefinition
+# Create definitions
 
 Namespace: microsoft.graph
 

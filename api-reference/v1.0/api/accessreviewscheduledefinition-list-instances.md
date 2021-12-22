@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewInstances"
+title: "List instances"
 description: "Get a list of the accessReviewInstance objects and their properties."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewInstances
+# List instances
 Namespace: microsoft.graph
 
 Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.

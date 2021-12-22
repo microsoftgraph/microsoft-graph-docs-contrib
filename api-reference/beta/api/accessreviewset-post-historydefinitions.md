@@ -1,5 +1,5 @@
 ---
-title: "Create accessReviewHistoryDefinition"
+title: "Create historyDefinitions"
 description: "Create a new accessReviewHistoryDefinition object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create accessReviewHistoryDefinition
+# Create historyDefinitions
 
 Namespace: microsoft.graph
 

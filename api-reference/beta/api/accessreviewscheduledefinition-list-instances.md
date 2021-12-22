@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewInstance"
+title: "List instances"
 description: "Retrieve accessReviewInstance objects."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewInstance
+# List instances
 
 Namespace: microsoft.graph
 

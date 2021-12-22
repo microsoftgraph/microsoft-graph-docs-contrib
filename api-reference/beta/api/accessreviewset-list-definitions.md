@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewScheduleDefinitions"
+title: "List definitions"
 description: "Retrieve accessReviewScheduleDefinition objects."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewScheduleDefinition
+# List definitions
 
 Namespace: microsoft.graph
 
