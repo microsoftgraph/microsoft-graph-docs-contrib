@@ -820,6 +820,22 @@
           "ChangeList": [
             {
               "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
+              "ApiChange": "String",
+              "ChangedApiName": "Org.OData.Validation.V1.OpenPropertyTypeConstraint",
+              "ChangeType": "Addition",
+              "Description": "Added the [Org.OData.Validation.V1.OpenPropertyTypeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/resultTemplateDictionary?view=graph-rest-beta) resource",
+              "Target": "resultTemplateDictionary"
+            },
+            {
+              "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
+              "ApiChange": "String",
+              "ChangedApiName": "Org.OData.Validation.V1.OpenPropertyTypeConstraint",
+              "ChangeType": "Deletion",
+              "Description": "Removed the **Org.OData.Validation.V1.OpenPropertyTypeConstraint** resource type",
+              "Target": "resultTemplateDictionary"
+            },
+            {
+              "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
               "ApiChange": "Property",
               "ChangedApiName": "queryTemplate",
               "ChangeType": "Addition",
