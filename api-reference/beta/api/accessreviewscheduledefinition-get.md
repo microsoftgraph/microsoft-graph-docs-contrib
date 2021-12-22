@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object by ID. This returns all properties of the scheduled access review series except for the associated accessReviewInstances. Each accessReviewScheduleDefinition has at least one instance. An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (e.g., March 2021) of a recurring review.
 
-To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewscheduledefinition-list-instances) API.
+To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -141,7 +141,7 @@ Content-type: application/json
 
 - [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
 - [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
-- [List accessReviewInstance](accessreviewscheduledefinition-list-instances)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

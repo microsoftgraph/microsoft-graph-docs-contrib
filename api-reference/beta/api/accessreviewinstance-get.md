@@ -113,7 +113,7 @@ Content-type: application/json
 ## See also
 
 - [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [List accessReviewInstance](accessreviewscheduledefinition-list-instances)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--
