@@ -14,6 +14,16 @@
       "source_path_from_root": "/api-reference/beta/api/iteminsightssettings-update.md",
       "redirect_url": "/graph/api/insightssettings-update?view=graph-rest-beta",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/accessreviewsv2-root.md",
+      "redirect_url": "/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewsv2-root.md",
+      "redirect_url": "/graph/api/resources/accessreviewsv2-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
     }
   ]
 }
