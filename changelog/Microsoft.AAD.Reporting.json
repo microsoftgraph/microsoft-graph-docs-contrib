@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+          "Id": "add-GUID-here",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the user property from userIdentity to auditUserIdentity.",
+          "Target": "auditActivityInitiator"
+        },
+        {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Member",
           "ChangedApiName": "servicePrincipals",
