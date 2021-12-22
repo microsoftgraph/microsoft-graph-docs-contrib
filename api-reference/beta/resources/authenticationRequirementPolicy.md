@@ -1,7 +1,7 @@
 ---
 title: "authenticationRequirementPolicy resource type"
 description: "Source of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "danielwood95"
 ms.prod: "identity-and-access"
 doc_type: resourcePageType

@@ -53,7 +53,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. Supports `$filter` (`eq` operator only).|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |signInIdentifier|String|The identification used to sign in - includes UPN, but is also populated when a user signs in using other identifiers.|
-|signInIdentiferType|signInIdentiferType|Provides the type of sign-in identifier. Examples include `userPrincipalName`, `qrCode`, `phoneNumber`, `proxyAddress`.|
+|signInIdentifierType|signInIdentifierType|Provides the type of sign-in identifier. Examples include `userPrincipalName`, `qrCode`, `phoneNumber`, `proxyAddress`.|
 |userType|signInUserType|Type of user. Examples include member, guest, or external.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. Supports `$filter` (`eq` operator only).|
 |resourceId|String|The identifier of the resource that the user signed in to. Supports `$filter` (`eq` operator only).|
@@ -119,7 +119,7 @@ Here is a JSON representation of the resource.
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
   "signInIdentifer": "String",
-  "signInIdentiferType": "String",
+  "signInIdentifierType": "String",
   "servicePrincipalId": "String",
   "servicePrincipalName": "String",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},

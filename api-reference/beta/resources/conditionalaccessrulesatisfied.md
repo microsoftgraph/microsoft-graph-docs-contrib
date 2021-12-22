@@ -2,7 +2,7 @@
 title: "conditionalAccessRuleSatisfied resource type"
 description: "List of the Conditional Access conditions and rules satisfied in a Conditional Access evaluation."
 author: "besiler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
