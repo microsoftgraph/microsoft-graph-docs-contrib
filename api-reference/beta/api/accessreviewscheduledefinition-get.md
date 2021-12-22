@@ -139,8 +139,8 @@ Content-type: application/json
 
 ## See also
 
-- [Create accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
-- [List accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
+- [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
 - [List accessReviewInstance](accessreviewinstance-list.md)
 
 

@@ -73,7 +73,7 @@ The value of `{object}` is one of the resources that can be configured in an **a
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
 ```
 
-For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md#use-the-filter-query-parameter).
+For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
 
 ## Response
 

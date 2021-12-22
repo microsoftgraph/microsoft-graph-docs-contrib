@@ -24,6 +24,26 @@
       "source_path_from_root": "/api-reference/v1.0/resources/accessreviewsv2-root.md",
       "redirect_url": "/graph/api/resources/accessreviewsv2-overview?view=graph-rest-1.0",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/resources/accessreviewset-list-definitions?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/resources/accessreviewset-list-definitions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/resources/accessreviewset-post-definitions?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/resources/accessreviewset-post-definitions?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
