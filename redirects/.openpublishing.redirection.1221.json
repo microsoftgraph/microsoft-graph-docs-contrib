@@ -26,23 +26,23 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewscheduledefinition-list.md",
-      "redirect_url": "/graph/api/resources/accessreviewset-list-definitions?view=graph-rest-1.0",
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/beta/resources/accessreviewscheduledefinition-list.md",
-      "redirect_url": "/graph/api/resources/accessreviewset-list-definitions?view=graph-rest-beta",
+      "source_path_from_root": "/api-reference/beta/api/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/accessreviewset-list-definitions?view=graph-rest-beta",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewscheduledefinition-post.md",
-      "redirect_url": "/graph/api/resources/accessreviewset-post-definitions?view=graph-rest-1.0",
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/beta/resources/accessreviewscheduledefinition-post.md",
-      "redirect_url": "/graph/api/resources/accessreviewset-post-definitions?view=graph-rest-beta",
+      "source_path_from_root": "/api-reference/beta/api/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-definitions?view=graph-rest-beta",
       "redirect_document_id": true
     }
   ]

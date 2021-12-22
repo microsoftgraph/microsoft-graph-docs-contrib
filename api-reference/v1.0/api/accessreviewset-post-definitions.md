@@ -407,8 +407,6 @@ This is an example of creating an access review with the following settings:
 #### Request
 
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
