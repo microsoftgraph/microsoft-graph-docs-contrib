@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "add-GUID-here",
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Property",
           "ChangedApiName": "user",
           "ChangeType": "Change",
