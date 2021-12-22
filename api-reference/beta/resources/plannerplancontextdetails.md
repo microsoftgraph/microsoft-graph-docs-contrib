@@ -2,7 +2,7 @@
 title: "plannerPlanContextDetails resource type"
 description: "The **plannerPlanContextDetails** resource contains additional information about a plannerPlanContext."
 ms.localizationpriority: medium
-author: "TarkanSevilmis", "WiRawlinWork"
+author: "TarkanSevilmis, WiRawlinWork"
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
