@@ -12273,7 +12273,7 @@ items:
             href: resources/accessreviewinstancedecisionitem.md
             items:
             - name: List
-              href: api/accessreviewinstancedecisionitem-list.md
+              href: api/accessreviewinstance-list-decisions.md
             - name: Get
               href: api/accessreviewinstancedecisionitem-get.md
             - name: Filter by current user

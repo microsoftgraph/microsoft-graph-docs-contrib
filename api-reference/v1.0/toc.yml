@@ -5333,7 +5333,7 @@ items:
             - name: Get
               href: api/accessreviewinstancedecisionitem-get.md
             - name: List
-              href: api/accessreviewinstancedecisionitem-list.md
+              href: api/accessreviewinstance-list-decisions.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
             - name: Filter by current user
