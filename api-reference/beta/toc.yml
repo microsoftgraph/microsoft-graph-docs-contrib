@@ -12246,7 +12246,7 @@ items:
             href: resources/accessreviewinstance.md
             items:
             - name: List
-              href: api/accessreviewinstance-list.md
+              href: api/accessreviewscheduledefinition-list-instances
             - name: Get
               href: api/accessreviewinstance-get.md
             - name: Update
