@@ -76,7 +76,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 
-If the result set spans multiple pages, CalendarView returns an [@odata.nextLink] (../concepts/paging.md] property in the response that contains a URL to the next page of results.
+If the result set spans multiple pages, CalendarView returns an [@odata.nextLink] (../concepts/paging.md) property in the response that contains a URL to the next page of results.
 
 ## Example
 ##### Request
