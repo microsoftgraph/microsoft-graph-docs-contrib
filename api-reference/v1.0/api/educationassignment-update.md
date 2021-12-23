@@ -2,7 +2,7 @@
 title: "Update educationassignment"
 description: "Update an educationAssigment object."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -53,7 +53,7 @@ Existing properties that are not included in the request body will maintain thei
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
-|grading|educationAssignmentGradeType| How the assignment will be graded.|
+|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
 |notificationChannelUrl|String| The channel to communicate notifications related to the assignment. To change the URL, set the `assignTo` value to [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). The channel URL can't change after the publication of the assignment.|
 

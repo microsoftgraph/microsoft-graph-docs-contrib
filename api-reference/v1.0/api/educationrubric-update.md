@@ -2,7 +2,7 @@
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|educationAssignmentGradeType|Whether this rubric has points or not.|
+|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
