@@ -1,18 +1,18 @@
 ---
-title: "List sharedWithChannelTeamInfoes"
-description: "Retrieve the list of teams shared with this channel."
+title: "List sharedWithChannelTeamInfo"
+description: "Get the list of teams shared with a channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# List sharedWithChannelTeamInfoes
+# List sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) objects shared with this [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Get the list of [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) objects shared with a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,7 +68,8 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.sharedWithChannelTeamInfo)"
+  "@odata.type": "Microsoft.Teams.GraphSvc.sharedWithChannelTeamInfo",
+  "isCollection": true
 }
 -->
 ``` http

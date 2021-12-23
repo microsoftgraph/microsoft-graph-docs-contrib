@@ -1,6 +1,6 @@
 ---
 title: "teamInfo resource type"
-description: "A teamInfo represents a team with fewer properties."
+description: "Represents a team with fewer properties."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamInfo represents a [team](team.md) with basic information.
-
+Represents a [team](team.md) with basic information.
+Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelTeamInfo](sharedwithchannelteaminfo.md).
 
 ## Properties
 |Property|Type|Description|

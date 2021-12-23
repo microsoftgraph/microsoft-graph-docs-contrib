@@ -103,6 +103,7 @@ This resource supports:
 | [removeFavorite](../api/group-removefavorite.md) | None | Remove the group from the list of the signed-in user's favorite groups. Supported for Microsoft 365 groups only. |
 | [List memberOf](../api/group-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups and administrative units that this user is a direct member of, from the **memberOf** navigation property. |
 | [List joinedTeams](../api/user-list-joinedteams.md) | [group](group.md) collection | Get the Microsoft Teams that the user is a direct member of. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedTeamInfo.md) collection | Get the list of [associatedTeamInfo](associatedteaminfo.md) in Microsoft Teams that a [user](user.md) is associated with. |
 | [subscribeByMail](../api/group-subscribebymail.md) | None | Set the isSubscribedByMail property to `true`. Enabling the signed-in user to receive email conversations. Supported for Microsoft 365 groups only. |
 | [unsubscribeByMail](../api/group-unsubscribebymail.md) | None | Set the isSubscribedByMail property to `false`. Disabling the signed-in user from receive email conversations. Supported for Microsoft 365 groups only. |
 | [resetUnseenCount](../api/group-resetunseencount.md) | None | Reset the unseenCount to 0 of all the posts that the signed-in user has not seen since their last visit. Supported for Microsoft 365 groups only. |

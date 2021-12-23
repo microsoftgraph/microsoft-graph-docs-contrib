@@ -109,7 +109,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -189,7 +189,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -241,7 +241,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response. The Content-Location header in the response specifies the path to the channel that is being provisioned.
+The following is an example of the response. The Content-Location header in the response specifies the path to the channel that is being provisioned.
 Once provisioned, this channel can be used for [importing messages](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -324,7 +324,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -343,7 +343,7 @@ Content-type: application/json
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
-    "membershipType": "private"
+    "membershipType": "standard"
 }
 ```
 
@@ -405,7 +405,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -416,11 +416,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
 Content-Length: 0
-```
-
-Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -469,7 +465,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.channel"

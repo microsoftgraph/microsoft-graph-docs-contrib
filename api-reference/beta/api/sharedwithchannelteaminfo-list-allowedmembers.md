@@ -1,26 +1,26 @@
 ---
 title: "List allowedMembers"
-description: "Get the conversationMember resources from the allowedMembers navigation property."
+description: "Get the list of conversationMember resources from the allowedMembers navigation property."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List allowedMembers of sharedWithChannelTeamInfo
+# List allowedMembers
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md) who can access the [channel](../resources/channel.md).
-This does not include below [conversationMembers](../resources/conversationmember.md) from [team](../resources/team.md):
-- Where roles is `Guest`
-- Who is an externally authenticated user in the tenant.
+Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).
+This does not include the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
+- Users with `Guest` role.
+- Users who are externally authenticated in the tenant.
 
 > [!NOTE]
-> The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+> The membership ID returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >
-> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are only from the current tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeam
 ```
 
 ## Optional query parameters
-This operation supports `$select` and `$count` [OData query parameters](/graph/query-parameters) to customize the response.
+This operation supports the `$select` and `$count` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}/allowedMembers
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/sharedWithTeams/893075dd-2487-5634-925f-022c42e20265/allowedMembers
 ```
 
 
@@ -77,7 +77,8 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/shared
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.conversationMember)"
+  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember",
+  "isCollection": true
 }
 -->
 ``` http
@@ -92,9 +93,9 @@ Content-Type: application/json
       "roles": [
         "owner"
       ],
-      "displayName": "Jane Doe",
+      "displayName": "Eric Solomon",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-      "email": "jdoe@teamsip.onmicrosoft.com",
+      "email": "ericsol@teamsip.onmicrosoft.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     }
   ]

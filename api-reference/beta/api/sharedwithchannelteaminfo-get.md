@@ -1,5 +1,5 @@
 ---
-title: "Get sharedWithChannelTeamInfo"
+title: "Get a team shared with a channel."
 description: "Retrieve the teams shared with channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Get sharedWithChannelTeamInfo
+# Get a team shared with a channel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [sharedWithChannelTeamInfo](../resources/sharedWithChannelTeamInfo.md) shared with this [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Get a [sharedWithChannelTeamInfo](../resources/sharedWithChannelTeamInfo.md) shared with a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeam
 ```
 
 ## Optional query parameters
-This method does not suppor the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

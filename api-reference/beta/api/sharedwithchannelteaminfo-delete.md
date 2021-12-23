@@ -1,6 +1,6 @@
 ---
 title: "Delete sharedWithChannelTeamInfo"
-description: "Deletes a sharedWithChannelTeamInfo object."
+description: "Delete a sharedWithChannelTeamInfo object."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) object from [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Delete a [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) object from a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 ---
 title: "List incoming channels"
-description: "Retrieve the list of incoming channels."
+description: "Get the list of incoming channels."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of incoming [channels](../resources/channel.md) ( channels shared with this [team](../resources/team.md)). Response will include `@odata.id` property which can be used to access the channel and do other operation on [Channel](../resources/channel.md) object.
+Get the list of incoming [channels](../resources/channel.md) (channels shared with this [team](../resources/team.md)).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. Response will include `@odata.id` property which can be used to access the channel and do other operation on [Channel](../resources/channel.md) object.
+If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the channel and The response also includes the on the [channel](../resources/channel.md) object.
 
 ## Examples
 
@@ -68,7 +68,8 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.channel)"
+  "@odata.type": "Microsoft.Teams.GraphSvc.channel",
+  "isCollection": true
 }
 -->
 ``` http

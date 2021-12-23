@@ -99,7 +99,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -170,7 +170,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -240,6 +240,8 @@ Content-type: application/json
 
 #### Response
 
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -285,7 +287,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -337,7 +339,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -356,10 +358,10 @@ Content-length: 468
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "YTE4MTAzZDEtYTZlZi00ZjY2LWFjNjQtZTRlZjQyZWE4NjgxIyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjI2JjMzU5OGRkLWNjZTQtNDc0Mi1hZTE1LTE3MzQyOTk1MTQwOA==",
     "roles": [],
-    "displayName": "John Doe",
+    "displayName": "Eric Solomon",
     "visibleHistoryStartDateTime": null,
     "userId": "bc3598dd-cce4-4742-ae15-173429951408",
-    "email": "John_Doe@fabrikam.onmicrosoft.com",
+    "email": "ericsol@fabrikam.onmicrosoft.com",
     "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```

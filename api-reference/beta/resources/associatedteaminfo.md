@@ -1,6 +1,6 @@
 ---
 title: "associatedTeamInfo resource type"
-description: "A associatedTeamInfo represents a team that is associated with a user."
+description: "Represents a team that is associated with a user."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A associatedTeamInfo represents a [team](team.md) that is associated with a user. 
-Today, there are two types of association a user could have with a team:
-  1. User can be a direct member of a [team](../resources/team.md).
-  2. User can be a member of [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
+Represents a [team](team.md) that is associated with a [user](../resources/user.md). 
+Currently, a [user](../resources/user.md) can be associated with a team[team](../resources/team.md) in two different ways:
+* A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
+* A [user](../resources/user.md) can be a member of a [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
 
 
@@ -25,13 +25,13 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List associatedTeamInfoes](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get a list of the [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
+|[List associatedTeamInfo](../api/associatedteaminfo-list.md)|[associatedTeamInfo](../resources/associatedteaminfo.md) collection|Get the list of the [associatedTeamInfo](../resources/associatedteaminfo.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the team. Inherited from [teamInfo](../resources/teaminfo.md).|
-|tenantId|String|The name of the team. Inherited from [teamInfo](../resources/teaminfo.md).|
+|tenantId|String|The ID of the Azure Active Directory tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
 
 ## JSON representation

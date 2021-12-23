@@ -1,21 +1,21 @@
 ---
-title: "List associatedTeamInfoes"
-description: "Get the teams in Microsoft Teams that the user is associated with."
+title: "List associatedTeamInfo"
+description: "Get the teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List associatedTeamInfoes
+# List associatedTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [associatedTeamInfo](../resources/associatedteaminfo.md) in Microsoft Teams that the user is associated with.
-Today, there are two types of association a user could have with a team:
-  1. User can be a direct member of a [team](../resources/team.md).
-  2. User can be a member of [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
+Get the [associatedTeamInfo](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.
+Currently, a [user](../resources/user.md) can be associated with a team[team](../resources/team.md) in two different ways:
+* A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
+* A [user](../resources/user.md) can be a member of a [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,10 +37,10 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /users/{usersId}/teamwork/associatedTeams
 ```
-> **Note**: These APIs also return the host team of the shared channel that the user is a direct member of.
+> **Note**: This API also returns the host team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
-This method does not currently support the OData query parameters to customize the response.
+This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -72,7 +72,8 @@ GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.associatedTeamInfo)"
+  "@odata.type": "Microsoft.Teams.GraphSvc.associatedTeamInfo",
+  "isCollection": true
 }
 -->
 ``` http
