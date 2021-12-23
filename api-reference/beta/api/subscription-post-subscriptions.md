@@ -97,6 +97,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
@@ -215,7 +219,7 @@ Content-type: application/json
 }
 ```
 
-### Notification endpoint validation
+#### Notification endpoint validation
 
 The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
