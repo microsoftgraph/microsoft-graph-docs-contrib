@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a resource to a submission resource list.
+Add an [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
 Only the student assigned to the submission can perform this operation.
 
