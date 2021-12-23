@@ -32,12 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
 | Application                            | Not supported. | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global admin
+* Global administrator
 * Global reader
-* Privileged authentication admin
-* Authentication admin
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 
@@ -94,6 +94,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_bookingstaffmember"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingstaffmember-csharp-snippets.md)]
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingstaffmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingstaffmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -84,10 +88,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "samanthab@M365B489948.OnMicrosoft.com",
+    "emailAddress": "samanthab@contoso.onmicrosoft.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",

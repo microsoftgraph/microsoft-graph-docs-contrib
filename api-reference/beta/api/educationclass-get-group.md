@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 [!INCLUDE [sample-code](../includes/snippets/java/educationclass-get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationclass-get-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

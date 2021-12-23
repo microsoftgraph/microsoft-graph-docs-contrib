@@ -94,6 +94,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-put-schedule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -173,6 +177,10 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-put-schedule-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

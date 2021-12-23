@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/conditio
 [!INCLUDE [sample-code](../includes/snippets/java/get-conditionalaccesspolicycoverage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicycoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

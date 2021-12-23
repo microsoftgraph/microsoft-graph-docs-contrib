@@ -54,6 +54,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[teams](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
@@ -102,7 +103,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -136,10 +137,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-subscription-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 Here is an example of the response.
 <!-- {

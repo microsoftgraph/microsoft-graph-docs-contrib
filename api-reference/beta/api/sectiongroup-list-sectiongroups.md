@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 [!INCLUDE [sample-code](../includes/snippets/java/get-sectiongroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-sectiongroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

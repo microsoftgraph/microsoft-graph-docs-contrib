@@ -8,8 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 ExternalGroupMember externalGroupMember = new ExternalGroupMember();
 externalGroupMember.id = "1431b9c38ee647f6a";
-externalGroupMember.type = ExternalGroupMemberType.GROUP;
-externalGroupMember.identitySource = IdentitySourceType.EXTERNAL;
+externalGroupMember.type = ExternalGroupMemberType.USER;
 
 graphClient.external().connections("contosohr").groups("31bea3d537902000").members()
 	.buildRequest()
