@@ -2,7 +2,7 @@
 title: "Update educationassignment"
 description: "Update an educationAssigment object."
 ms.localizationpriority: medium
-author: "dipakboyed"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -43,10 +43,10 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Cannot be modified when assignment is in **Published** state. |
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
-|assignDateTime|DateTimeOffset| Date the assignment should be published to students. |
+|assignDateTime|DateTimeOffset| Date the assignment should be published to students. Cannot be edited after the assignment has been published. |
 |assignTo|educationAssignmentRecipient| Students who get the assignment.|
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
@@ -169,7 +169,7 @@ Content-type: application/json
 
 ## See also
 
-* [Assignments and Submissions state transition](/graph/assignments-submissions-states-transition)
+* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
