@@ -14370,7 +14370,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Delete incoming channel
+        - name: Remove incoming channel
           href: api/team-delete-incomingchannel.md
         - name: Add member
           href: api/channel-post-members.md
@@ -14414,7 +14414,7 @@ items:
           href: api/sharedwithchannelteaminfo-get.md
         - name: Unshare channel with team
           href: api/sharedwithchannelteaminfo-delete.md
-        - name: Get alloed members of sharedWithChannelTeamInfo
+        - name: List allowed members of sharedWithChannelTeamInfo
           href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md

@@ -89,7 +89,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |:---------------|:--------|:----------|
 |allChannels|[channel](channel.md) collection|List of channels either hosted in or shared with the team (incoming channels).|
 |channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
-|incomingChannels|[channel](channel.md) collection|List of channels shared with a team.|
+|incomingChannels|[channel](channel.md) collection|List of channels shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |

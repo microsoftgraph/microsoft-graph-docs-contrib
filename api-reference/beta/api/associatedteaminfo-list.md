@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [associatedTeamInfo](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.
-Currently, a [user](../resources/user.md) can be associated with a team[team](../resources/team.md) in two different ways:
+Currently, a [user](../resources/user.md) can be associated with a [team](../resources/team.md) in two different ways:
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
 * A [user](../resources/user.md) can be a member of a [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 

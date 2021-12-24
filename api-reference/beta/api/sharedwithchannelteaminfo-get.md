@@ -1,13 +1,13 @@
 ---
-title: "Get a team shared with a channel."
-description: "Retrieve the teams shared with channel."
+title: "Get sharedWithChannelTeamInfo"
+description: "Get a team shared with channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Get a team shared with a channel
+# Get sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

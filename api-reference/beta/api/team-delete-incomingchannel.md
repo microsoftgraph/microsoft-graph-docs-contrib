@@ -1,5 +1,5 @@
 ---
-title: "Delete incoming channel"
+title: "Remove incoming channel"
 description: "Delete an incoming channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
@@ -7,12 +7,12 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Delete incoming channel
+# Remove incoming channel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an incoming [channel](../resources/channel.md) from a [team](../resources/team.md).
+Remove an incoming [channel](../resources/channel.md) from a [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

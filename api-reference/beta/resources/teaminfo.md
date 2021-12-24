@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a [team](team.md) with basic information.
+
 Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelTeamInfo](sharedwithchannelteaminfo.md).
 
 ## Properties

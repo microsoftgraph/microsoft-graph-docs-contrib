@@ -18,7 +18,7 @@ This does not include the following [conversationMembers](../resources/conversat
 - Users who are externally authenticated in the tenant.
 
 > [!NOTE]
-> The membership ID returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+> The membership ID returned by the server must be treated as an opaque string. The client should not try to parse or make any assumptions about this ID.
 >
 > The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are only from the current tenant.
 

@@ -36,7 +36,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allowedMembers|[conversationMember](../resources/conversationmember.md) collection|The members of team who have access to the shared channel.|
+|allowedMembers|[conversationMember](../resources/conversationmember.md) collection|A collection of members of the team who have access to the shared channel.|
 
 
 ## JSON representation
