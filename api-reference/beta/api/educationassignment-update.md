@@ -51,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
-|grading|educationAssignmentGradeType| How the assignment will be graded.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment will be graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
 |notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL is not allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
