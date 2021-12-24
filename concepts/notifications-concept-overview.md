@@ -53,4 +53,4 @@ To get started, see the [integration overview](notifications-integration-e2e-ove
 ## API reference
 Looking for the API reference for this service?
 
-- [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
+- [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true)
