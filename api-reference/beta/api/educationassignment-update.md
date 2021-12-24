@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
 |assignDateTime|DateTimeOffset| Date the assignment should be published to students. Cannot be edited after the assignment has been published. |
-|assignTo|educationAssignmentRecipient| Students who get the assignment.|
+|assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Students who get the assignment.|
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
