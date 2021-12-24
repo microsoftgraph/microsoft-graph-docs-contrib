@@ -60,7 +60,7 @@ The values of `startDateTime` and `endDateTime` are interpreted using the timezo
 
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-**CalendarView** with `$top` has a minimum value of 1 and maximum of 1000.
+**CalendarView** with `$top` has a minimum value of 1 and maximum of 1000. 
 
 > [!NOTE]
 > The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
@@ -77,8 +77,11 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
+
+If the result set spans multiple pages, **calendarView** returns an **@odata.nextLink** property in the response that contains a URL to the next page of results. See [paging](/graph/concepts/paging.md) for details.
+
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -111,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
