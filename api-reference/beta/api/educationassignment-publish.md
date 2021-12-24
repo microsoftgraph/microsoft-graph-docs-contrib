@@ -21,7 +21,7 @@ Only a teacher in the class can make this call. When an assignment is in draft s
 
 The state of the assignment goes back to `draft` if there is any backend failure during publish process.
 
-You can update some properties after publish, see [educationAssignment update](../api/educationassignment-update.md) for more details.
+To update the properties of a published assignment, see [update an assignment](../api/educationassignment-update.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
