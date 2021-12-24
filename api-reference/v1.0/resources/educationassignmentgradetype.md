@@ -11,9 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents how an assignment will be graded.
+Represents how an assignment will be graded. This is used within the **assignments.grading** property. 
 
-This is used within the **assignments.grading** property. This superclass can't be used directly in the assignment property. It exists to allow for multiple different ways to grade assignments, it is a base class for [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
+This superclass can't be used directly in the assignment property. It exists to allow for multiple different ways to grade assignments. 
+
+Base class for [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
 
 ## Properties
