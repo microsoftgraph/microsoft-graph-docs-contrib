@@ -83,7 +83,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[yammerGroupsActivityDetail](../resources/yammergroupsactivitydetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -163,7 +163,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerGroupsActivityDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -172,7 +172,6 @@ Content-Type: application/json
 Content-Length: 441
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

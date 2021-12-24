@@ -24,6 +24,9 @@ The onboarding status of the tenant.
 |inprogress|1|In progress|
 |onboarded|2|Onboarded|
 |failed|3|Failed|
+|offboarding|4|Offboarding|
+|unknownFutureValue|99|UnknownFutureValue|
+
 
 
 
