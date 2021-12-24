@@ -50,7 +50,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_internalsponsor_from_connectedorganization"
+  "name": "delete_externalsponsor_from_connectedorganization"
 }
 -->
 ``` http

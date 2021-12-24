@@ -48,7 +48,7 @@ Existing properties that are not included in the request body will maintain thei
 |addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
 |allowLateSubmissions|Boolean| Whether students can send submission after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission or not. Also, indicates whether all resources in the submission correspond to the assignment resource list. |
-|assignDateTime|DateTimeOffset| Indicates the date to publish the assignment to students. |
+|assignDateTime|DateTimeOffset| Indicates the date to publish the assignment to students. Cannot be edited after the assignment has been published.|
 |assignTo|educationAssignmentRecipient| Students who get the assignment.|
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
