@@ -122,7 +122,7 @@ After you create the required Azure KeyVault and Azure Event Hubs services, you 
 
 #### Creating the subcription
 
-Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The key difference is that they rely on Event Hubs to deliver notifications. All other operations are similar, including [subscription creation](/graph/api/subscription-post-subscriptions?view=graph-rest-beta).  
+Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The key difference is that they rely on Event Hubs to deliver notifications. All other operations are similar, including [subscription creation](/graph/api/subscription-post-subscriptions).  
 
 The main difference during subscription creation will be the **notificationUrl**. You must set it to `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
@@ -159,14 +159,15 @@ Before you can receive the notifications in your application, you'll need to cre
 }
 ```
 
-### What happens if the Microsoft Graph change tracking application is missing?
+### What happens if the Microsoft Graph Change Tracking application is missing?
 
 It's possible that the **Microsoft Graph Change Tracking** service principal is missing from your tenant, depending on when the tenant was created and administrative operations. To resolve this issue, run [the following query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) in [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-Query details:
+Query details: `0bf30f3b-4a52-48df-9a82-234910c4a086` is the global appId for the Microsoft Graph Change Tracking application.
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
+
 {
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
@@ -176,12 +177,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Note:** This API only works with a school or work account, not with a personal account. Make sure that you are signed in with an account on your domain.
 
-Alternatively, you can use this [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) script to add the missing service principal.
+Alternatively, you can use the [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell to add the missing service principal. The following is an example script.
 
 ```PowerShell
-Connect-AzureAD -TenantId <tenant-id>
-# replace tenant-id by the id of your tenant.
-New-AzureADServicePrincipal -AppId 0bf30f3b-4a52-48df-9a82-234910c4a086
+Connect-Graph -Scopes "Application.ReadWrite.All"
+New-MgServicePrincipal -AppId "0bf30f3b-4a52-48df-9a82-234910c4a086"
 ```
 
 ## Next steps

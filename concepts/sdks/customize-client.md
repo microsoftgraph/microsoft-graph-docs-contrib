@@ -117,6 +117,41 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .buildClient();
 ```
 
+## [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    a "github.com/microsoft/kiota/authentication/go/azure"
+    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+    core "github.com/microsoftgraph/msgraph-sdk-go-core"
+)
+
+// Auth provider
+auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)
+
+// Get default middleware from SDK
+defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefaultClientOptions())
+
+// Get instance of custom middleware
+// Implement a custom middleware by implementing the Middleware interface
+// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
+
+// Create an HTTP client with the middleware
+httpClient := khttp.GetDefaultClient(allMiddleware...)
+
+// Create the adapter
+// Passing nil values causes the adapter to use default implementations
+adapter, err :=
+    msgraphsdk.NewGraphRequestAdapterWithParseNodeFactoryAndSerializationWriterFactoryAndHttpClient(
+        auth, nil, nil, httpClient)
+
+client := msgraphsdk.NewGraphServiceClient(adapter)
+```
+
 ---
 
 ## Configuring the HTTP proxy for the client
@@ -254,5 +289,11 @@ final GraphServiceClient graphServiceClient =
 
 > [!NOTE]
 > For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
+
+## [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+The Microsoft Graph SDK for Go does not currently support HTTP proxy. See [this GitHub issue](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) for more details.
 
 ---

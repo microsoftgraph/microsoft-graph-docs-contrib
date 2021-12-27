@@ -1,0 +1,164 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/group-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/group-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/orgcontact-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/orgcontact-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/serviceprincipal-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/serviceprincipal-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/user-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/user-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/group-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/group-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/orgcontact-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/orgcontact-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/serviceprincipal-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/serviceprincipal-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/user-checkmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/user-getmembergroups.md",
+      "redirect_url": "/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/device-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/group-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/serviceprincipal-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/user-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/group-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/orgcontact-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/serviceprincipal-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/user-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/device-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/group-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/serviceprincipal-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/user-checkmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/group-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/orgcontact-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/serviceprincipal-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/user-getmemberobjects.md",
+      "redirect_url": "/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0",
+      "redirect_document_id": false
+    }
+  ]
+}
