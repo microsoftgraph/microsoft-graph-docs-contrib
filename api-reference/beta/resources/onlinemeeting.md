@@ -93,6 +93,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 | registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
+| transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
 > [!TIP]
 >

@@ -14844,6 +14844,18 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Online meetings
+        href: resources/onlinemeeting.md
+        items:        
+        - name: Transcript
+          href: resources/callTranscript.md
+          items:
+          - name: List
+            href: api/callTranscript-list.md
+          - name: Get
+            href: api/callTranscript-get.md
+          - name: Get Content
+            href: api/callTranscript-get-content.md
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:

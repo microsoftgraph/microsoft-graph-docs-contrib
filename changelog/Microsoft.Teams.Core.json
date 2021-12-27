@@ -2,7 +2,33 @@
 
   "changelog": [
     {
-      "ChangeList":[
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callTranscript",
+          "ChangeType": "Addition",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource type.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "List transcripts, Get transcript, Get transcript content",
+          "ChangeType": "Addition",
+          "Description": "Added the [List Transcripts](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-beta), [Get Transcript](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-beta), [Get Transcript Content] (https://docs.microsoft.com/en-us/graph/api/callTranscript-get-content?view=graph-rest-beta) methods.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-27T17:37:11Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
           "ApiChange": "Property",
