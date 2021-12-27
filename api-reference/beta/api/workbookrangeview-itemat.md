@@ -69,7 +69,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 194
 
 {
   "cellAddresses": "cellAddresses-value",

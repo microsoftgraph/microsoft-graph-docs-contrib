@@ -4,7 +4,7 @@ description: "Contains a key credential associated with an application or a serv
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "sureshja"
+author: "madansr7"
 ---
 
 # keyCredential resource type

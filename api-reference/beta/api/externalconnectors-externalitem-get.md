@@ -92,13 +92,11 @@ Content-type: application/json
       "type": "user",
       "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     },
     {
-      "type": "group",
+      "type": "externalGroup",
       "value": "14m1b9c38qe647f6a",
       "accessType": "deny",
-      "identitySource": "external"
     }
   ],
   "properties": {

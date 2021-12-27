@@ -14,7 +14,7 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), 
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
 and requires a [supported license](#required-licenses-for-modela).
 In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
@@ -41,6 +41,8 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
+
+>**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|

@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-itempatent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-itempatent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

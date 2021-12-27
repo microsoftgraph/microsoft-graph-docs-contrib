@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
 [!INCLUDE [sample-code](../includes/snippets/java/get-registeredusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-registeredusers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

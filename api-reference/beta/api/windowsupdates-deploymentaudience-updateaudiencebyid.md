@@ -82,7 +82,6 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 Content-Type: application/json
-Content-length: 204
 
 {
   "memberEntityType": "String",
@@ -114,6 +113,10 @@ Content-length: 204
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/deploymentaudience-updateaudiencebyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

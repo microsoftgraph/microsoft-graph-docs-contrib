@@ -72,6 +72,9 @@ The following table shows the properties that are required when you create the [
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
+|crossProfilePoliciesAllowCopyPaste|Boolean|Indicates whether or not text copied from one profile (personal or work) can be pasted in the other.|
+|crossProfilePoliciesAllowDataSharing|[androidDeviceOwnerCrossProfileDataSharing](../resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)|Indicates whether data from one profile (personal or work) can be shared with apps in the other profile. Possible values are: `notConfigured`, `crossProfileDataSharingBlocked`, `dataSharingFromWorkToPersonalBlocked`, `crossProfileDataSharingAllowed`, `unkownFutureValue`.|
+|crossProfilePoliciesShowWorkContactsInPersonalProfile|Boolean|Indicates whether or not contacts stored in work profile are shown in personal profile contact searches/incoming calls.|
 |microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
 |microsoftLauncherCustomWallpaperEnabled|Boolean|Indicates whether or not to configure the wallpaper on the targeted devices.|
 |microsoftLauncherCustomWallpaperImageUrl|String|Indicates the URL for the image file to use as the wallpaper on the targeted devices.|
@@ -149,9 +152,7 @@ The following table shows the properties that are required when you create the [
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Indicates the Play Store mode of the device. Possible values are: `notConfigured`, `allowList`, `blockList`.|
-|safeBootBlocked|Boolean|Indicates whether or not rebooting the device into safe boot is disabled.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|
-|securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |securityDeveloperSettingsEnabled|Boolean|Indicates whether or not the user is allowed to access developer settings like developer options and safe boot on the device.|
 |securityRequireVerifyApps|Boolean|Indicates whether or not verify apps is required.|
 |statusBarBlocked|Boolean|Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.|
@@ -199,7 +200,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 8571
+Content-length: 8690
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -250,6 +251,9 @@ Content-length: 8571
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "crossProfilePoliciesAllowCopyPaste": true,
+  "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+  "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
   "microsoftLauncherConfigurationEnabled": true,
   "microsoftLauncherCustomWallpaperEnabled": true,
   "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -367,9 +371,7 @@ Content-length: 8571
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "playStoreMode": "allowList",
-  "safeBootBlocked": true,
   "screenCaptureBlocked": true,
-  "securityAllowDebuggingFeatures": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
   "statusBarBlocked": true,
@@ -422,7 +424,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8743
+Content-Length: 8862
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -476,6 +478,9 @@ Content-Length: 8743
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "crossProfilePoliciesAllowCopyPaste": true,
+  "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+  "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
   "microsoftLauncherConfigurationEnabled": true,
   "microsoftLauncherCustomWallpaperEnabled": true,
   "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -593,9 +598,7 @@ Content-Length: 8743
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "playStoreMode": "allowList",
-  "safeBootBlocked": true,
   "screenCaptureBlocked": true,
-  "securityAllowDebuggingFeatures": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
   "statusBarBlocked": true,
@@ -642,6 +645,7 @@ Content-Length: 8743
   "workProfilePasswordRequiredType": "required"
 }
 ```
+
 
 
 
