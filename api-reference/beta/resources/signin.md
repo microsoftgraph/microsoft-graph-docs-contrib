@@ -37,19 +37,18 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. Supports `$filter` (`eq` and `startsWith` operators only).|
 |authenticationRequirementPolicies|[authenticationRequirementPolicy](../resources/authenticationrequirementpolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
-|mfaDetail|String|This property is deprecated.|
 |autonomousSystemNumber|Int32|The Autonomous System Number (ASN) of the network used by the actor.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange Active Sync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`. Supports `$filter` (`eq` operator only). |
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support. Supports `$filter` (`eq` operator only).|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$orderby` and `$filter` (`eq`, `le`, and `ge` operators only).|
-|crossTenantAccessType|signInAccessType|Describes the type of cross tenant access used by the actor to access the resource. Possible values are: `none`, `b2bCollaboration`, `b2bDirectConnect`, `microsoftSupport`, `serviceProvider`, `unknownFutureValue`. If the sign in did not cross tenant boundaries, the value is `none`.|
-|deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSytem** properties.|
+|crossTenantAccessType|signInAccessType|Describes the type of cross-tenant access used by the actor to access the resource. Possible values are: `none`, `b2bCollaboration`, `b2bDirectConnect`, `microsoftSupport`, `serviceProvider`, `unknownFutureValue`. If the sign in did not cross tenant boundaries, the value is `none`.|
+|deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. Supports `$filter` (`eq` and `startsWith` operators only) on **browser** and **operatingSystem** properties.|
 |flaggedForReview|Boolean|During a failed sign in, a user may click a button in the Azure portal to mark the failed event for tenant admins. If a user clicked the button to flag the failed sign in, this value is `true`.|
 |homeTenantId|String|The tenant identifier of the user initiating the sign in. Not applicable in Managed Identity or Service Principal sign ins.|
 |id|String|The identifier representing the sign-in activity. Inherited from [entity](entity.md). Supports `$filter` (`eq` operator only).|
 |ipAddress|String|The IP address of the client from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only).|
-|ipAddressFromResourceProvider|String|The IP address a user used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address Exchange receives from the user may be recorced here. This value is often null.|
+|ipAddressFromResourceProvider|String|The IP address a user used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address Exchange receives from the user may be recorded here. This value is often `null`.|
 |isInteractive|Boolean|Indicates whether a user sign in is interactive. In interactive sign in, the user provides an authentication factor to Azure AD. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Azure AD or an associated app. In non-interactive sign in, the user doesn't provide an authentication factor. Instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user.|
 |isTenantRestricted|Boolean|Shows whether the sign in event was subject to an Azure AD tenant restriction policy.|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred. Supports `$filter` (`eq` and `startsWith` operators only) on **city**, **state**, and **countryOrRegion** properties.|
@@ -81,6 +80,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |userId|String|The identifier of the user. Supports `$filter` (`eq` operator only).|
 |userPrincipalName|String|The UPN of the user. Supports `$filter` (`eq` and `startsWith` operators only).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
+|mfaDetail|String|This property is deprecated.|
 
 
 ## Relationships
@@ -89,55 +89,108 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.signIn"
-}-->
-
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.signIn",
+  "openType": false
+}
+-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.signIn",
   "alternateSignInName": "String",
   "appDisplayName": "String",
   "appId": "String",
-  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
-  "authenticationDetails": [{"@odata.type": "microsoft.graph.authenticationDetail"}],
-  "authenticationMethodsUsed": ["String"],
-  "authenticationProcessingDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
+  "appliedConditionalAccessPolicies": [
+    {
+      "@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"
+    }
+  ],
+  "authenticationDetails": [
+    {
+      "@odata.type": "microsoft.graph.authenticationDetail"
+    }
+  ],
+  "authenticationMethodsUsed": [
+    "String"
+  ],
+  "authenticationProcessingDetails": [
+    {
+      "@odata.type": "microsoft.graph.keyValue"
+    }
+  ],
+  "authenticationRequirement": "String",
+  "authenticationRequirementPolicies": [
+    {
+      "@odata.type": "microsoft.graph.authenticationRequirementPolicy"
+    }
+  ],
+  "autonomousSystemNumber": "Integer",
   "clientAppUsed": "String",
-  "conditionalAccessStatus": "string",
+  "conditionalAccessStatus": "String",
   "correlationId": "String",
   "createdDateTime": "String (timestamp)",
-  "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
+  "crossTenantAccessType": "String",
+  "deviceDetail": {
+    "@odata.type": "microsoft.graph.deviceDetail"
+  },
+  "flaggedForReview": "Boolean",
   "id": "String (identifier)",
+  "homeTenantId": "String",
+  "isInteractive": "Boolean",
+  "isTenantRestricted": "Boolean",
   "ipAddress": "String",
-  "isInteractive": true,
-  "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
-  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}],
+  "ipAddressFromResourceProvider": "String",
+  "location": {
+    "@odata.type": "microsoft.graph.signInLocation"
+  },
+  "mfaDetail": {
+    "@odata.type": "microsoft.graph.mfaDetail"
+  },
+  "networkLocationDetails": [
+    {
+      "@odata.type": "microsoft.graph.networkLocationDetail"
+    }
+  ],
   "originalRequestId": "String",
-  "processingTimeInMilliseconds": 1024,
+  "privateLinkDetails": {
+    "@odata.type": "microsoft.graph.privateLinkDetails"
+  },
+  "processingTimeInMilliseconds": "Integer",
+  "riskDetail": "String",
+  "riskEventTypes": [
+    "String"
+  ],
+  "riskEventTypes_v2": [
+    "String"
+  ],
+  "riskLevelAggregated": "String",
+  "riskLevelDuringSignIn": "String",
+  "riskState": "String",
   "resourceDisplayName": "String",
   "resourceId": "String",
-  "riskDetail": "string",
-  "riskEventTypes": ["string"],
-  "riskEventTypes_v2": ["String"],
-  "riskLevelAggregated": "string",
-  "riskLevelDuringSignIn": "string",
-  "riskState": "string",
+  "resourceTenantId": "String",
+  "servicePrincipalCredentialKeyId": "String",
+  "servicePrincipalCredentialThumbprint": "String",
   "servicePrincipalId": "String",
   "servicePrincipalName": "String",
-  "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "signInEventTypes": [
+    "String"
+  ],
+  "signInIdentifier": "String",
+  "signInIdentifierType": "String",
+  "status": {
+    "@odata.type": "microsoft.graph.signInStatus"
+  },
   "tokenIssuerName": "String",
-  "tokenIssuerType": "string",
+  "tokenIssuerType": "String",
   "userAgent": "String",
   "userDisplayName": "String",
   "userId": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "userType": "String"
 }
 ```
 

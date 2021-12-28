@@ -470,6 +470,11 @@ Namespace: microsoft.graph
 |time|
 |deviceState|
 |client|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
+|servicePrincipals|
+|servicePrincipalRisk|
 
 ### conditionalAccessStatus values
 
@@ -2025,9 +2030,9 @@ Possible values for user account types (group membership), per Windows definitio
 |allDevices|
 |deviceFilter|
 |deviceState|
+|unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
-|unknownFutureValue|
 
 ### signInAccessType values 
 
