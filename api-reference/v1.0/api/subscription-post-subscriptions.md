@@ -82,6 +82,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
@@ -89,7 +93,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request to send a change notification when the user receives a new mail.
 
@@ -138,7 +142,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
-##### Resources examples
+#### Resources examples
 
 The following are valid values for the resource property of the subscription:
 
@@ -161,9 +165,10 @@ The following are valid values for the resource property of the subscription:
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -189,7 +194,7 @@ Content-type: application/json
 }
 ```
 
-## Notification endpoint validation
+#### Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 

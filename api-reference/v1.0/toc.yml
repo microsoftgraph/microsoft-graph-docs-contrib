@@ -42,7 +42,7 @@ items:
       displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
-        href: /graph/webhooks?context=graph/api/1.0
+        href: /graph/api/resources/webhooks?context=graph/api/1.0
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
@@ -360,6 +360,14 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
+        - name: List deleted users
+          href: api/directory-deleteditems-list.md 
+        - name: Get deleted user
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete user
+          href: api/directory-deleteditems-delete.md       
+        - name: Restore deleted user
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -538,24 +546,34 @@ items:
           href: api/group-update.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Renew group
+          href: api/group-renew.md
         - name: Add favorite
           href: api/group-addfavorite.md
+        - name: Remove favorite
+          href: api/group-removefavorite.md
+        - name: List members
+          href: api/group-list-members.md
         - name: Add member
           href: api/group-post-members.md
+        - name: Remove member
+          href: api/group-delete-members.md
+        - name: List member of
+          href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
+        - name: List owners
+          href: api/group-list-owners.md
         - name: Add owner
           href: api/group-post-owners.md
-        - name: Assign license
-          href: api/group-assignlicense.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
-        - name: Check member objects
-          href: api/directoryobject-checkmemberobjects.md
+        - name: Remove owner
+          href: api/group-delete-owners.md
         - name: Get delta
           href: api/group-delta.md
+        - name: Assign license
+          href: api/group-assignlicense.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
@@ -578,28 +596,10 @@ items:
             href: api/groupsettingtemplate-get.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
-        - name: List member of
-          href: api/group-list-memberof.md
-        - name: List transitive member of
-          href: api/group-list-transitivememberof.md
-        - name: List members
-          href: api/group-list-members.md
-        - name: List transitive members
-          href: api/group-list-transitivemembers.md
-        - name: List owners
-          href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
         - name: List permission grants
           href: api/group-list-permissiongrants.md
-        - name: Remove favorite
-          href: api/group-removefavorite.md
-        - name: Remove member
-          href: api/group-delete-members.md
-        - name: Remove owner
-          href: api/group-delete-owners.md
-        - name: Renew group
-          href: api/group-renew.md
         - name: Reset unseen count
           href: api/group-resetunseencount.md
         - name: Subscribe by mail
@@ -714,6 +714,27 @@ items:
           href: api/group-delete-thread.md
         - name: Reply to conversation thread
           href: api/conversationthread-reply.md
+      - name: Directory object
+        href: resources/directoryobject.md
+        items:
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
+        - name: Get member groups
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
+        - name: List deleted groups
+          href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md  
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md 
+        - name: Permanently delete group
+          href: api/directory-deleteditems-delete.md     
+        - name: Restore deleted group
+          href: api/directory-deleteditems-restore.md        
       - name: Drive
         href: resources/drive.md
         items:
@@ -798,6 +819,8 @@ items:
           href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
+        - name: List deleted applications owned by user
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
@@ -6530,12 +6553,14 @@ items:
           href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md 
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
+          href: api/directory-deleteditems-delete.md       
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Channel
