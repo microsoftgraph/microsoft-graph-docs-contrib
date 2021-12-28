@@ -7,24 +7,8 @@
           "ApiChange": "Property",
           "ChangedApiName": "user",
           "ChangeType": "Change",
-          "Description": "Changed the type of the user property from userIdentity to auditUserIdentity.",
+          "Description": "Changed the type of the **user** property of [auditActivityInitiator](https://docs.microsoft.com/en-us/graph/api/resources/auditActivityInitiator?view=graph-rest-beta) from **userIdentity** to [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta). **auditUserIdentity** includes tenant identifiers to support more detailed cross-tenant sign in identification.",
           "Target": "auditActivityInitiator"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Member",
-          "ChangedApiName": "servicePrincipals",
-          "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipals** member to the **conditionalAccessConditions** enumeration.",
-          "Target": "conditionalAccessConditions"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Member",
-          "ChangedApiName": "servicePrincipalRisk",
-          "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipalRisk** member to the **conditionalAccessConditions** enumeration.",
-          "Target": "conditionalAccessConditions"
         },
         {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
@@ -44,22 +28,6 @@
         },
         {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "riskEventType",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **riskEventType** enumeration type.",
-          "Target": "riskEventType"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Member",
-          "ChangedApiName": "AzureADBackupAuth",
-          "ChangeType": "Addition",
-          "Description": "Added the **AzureADBackupAuth** member to the **tokenIssuerType** enumeration.",
-          "Target": "tokenIssuerType"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Property",
           "ChangedApiName": "authenticationStrength",
           "ChangeType": "Addition",
@@ -71,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "auditUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta) resource type.",
+          "Description": "Added the [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta) resource type. This resource includes tenant identifiers to support more detailed cross-tenant sign in identification.",
           "Target": "auditUserIdentity"
         },
         {
@@ -87,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "alternateSignInName",
           "ChangeType": "Deletion",
-          "Description": "Removed the **alternateSignInName** property from [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Removed the deprecated **alternateSignInName** property from the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -95,7 +63,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationProtocol",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationProtocol** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationProtocol** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -103,23 +71,7 @@
           "ApiChange": "String",
           "ChangedApiName": "authenticationRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationRequirement](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "authenticationRequirement",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **authenticationRequirement** resource type",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Property",
-          "ChangedApiName": "homeTenantId",
-          "ChangeType": "Addition",
-          "Description": "Added the **homeTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationRequirement** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -127,7 +79,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "homeTenantName",
           "ChangeType": "Addition",
-          "Description": "Added the **homeTenantName** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **homeTenantName** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -135,47 +87,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "incomingTokenType",
           "ChangeType": "Addition",
-          "Description": "Added the **incomingTokenType** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "isTenantRestricted",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **isTenantRestricted** resource type",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "isTenantRestricted",
-          "ChangeType": "Addition",
-          "Description": "Added the [isTenantRestricted](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Property",
-          "ChangedApiName": "riskEventTypes",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the **riskEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "String",
-          "ChangedApiName": "tokenIssuerType",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **tokenIssuerType** resource type",
-          "Target": "signIn"
-        },
-        {
-          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
-          "ApiChange": "Property",
-          "ChangedApiName": "tokenIssuerType",
-          "ChangeType": "Addition",
-          "Description": "Added the **tokenIssuerType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **incomingTokenType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -183,14 +95,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "uniqueTokenIdentifier",
           "ChangeType": "Addition",
-          "Description": "Added the **uniqueTokenIdentifier** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **uniqueTokenIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],
       "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-09-22T16:44:09.1366489Z",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },  

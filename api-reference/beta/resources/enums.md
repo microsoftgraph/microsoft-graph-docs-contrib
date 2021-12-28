@@ -11,6 +11,28 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### incomingTokenType values 
+
+|Member|
+|:---|
+|none|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### protocolType values 
+
+|Member|
+|:---|
+|none|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
 
 |Member|
@@ -455,9 +477,7 @@ Namespace: microsoft.graph
 |premiumP2|
 |unknownFutureValue|
 
-### conditionalAccessConditions values 
-
-
+### conditionalAccessConditions values
 
 |Member|
 |:---|
@@ -472,11 +492,6 @@ Namespace: microsoft.graph
 |time|
 |deviceState|
 |client|
-|ipAddressSeenByAzureAD|
-|ipAddressSeenByResourceProvider|
-|unknownFutureValue|
-|servicePrincipals|
-|servicePrincipalRisk|
 
 ### conditionalAccessStatus values
 
@@ -501,18 +516,6 @@ Namespace: microsoft.graph
 |:---|
 |unifiedGroups|
 |azureAD|
-|unknownFutureValue|
-
-### incomingTokenType values 
-
-
-
-|Member|
-|:---|
-|none|
-|primaryRefreshToken|
-|saml11|
-|saml20|
 |unknownFutureValue|
 
 ### includedUserRoles values
@@ -569,20 +572,6 @@ Namespace: microsoft.graph
 |success|
 |failure|
 |timeout|
-|unknownFutureValue|
-
-### protocolType values 
-
-
-
-|Member|
-|:---|
-|none|
-|oAuth2|
-|ropc|
-|wsFederation|
-|saml20|
-|deviceCode|
 |unknownFutureValue|
 
 ### provisioningResult values
@@ -662,42 +651,25 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
-
-
-### riskLevel values
+### riskEventType values
 
 |Member|
 |:---|
-|low|
-|medium|
-|high|
-|hidden|
-|none|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
-
-### riskState values
-
-|Member|
-|:---|
-|none|
-|confirmedSafe|
-|remediated|
-|dismissed|
-|atRisk|
-|confirmedCompromised|
-|unknownFutureValue|
-
-### tokenIssuerType values 
-
-
-
-|Member|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
-|AzureADBackupAuth|
-
 
 ### usageAuthMethod values
 
@@ -1777,7 +1749,6 @@ Possible values for user account types (group membership), per Windows definitio
 |oneDriveConsumer|
 |dropbox|
 
-
 ### networkType values
 
 |Member|
@@ -1867,6 +1838,7 @@ Possible values for user account types (group membership), per Windows definitio
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### riskDetectionTimingType values
 

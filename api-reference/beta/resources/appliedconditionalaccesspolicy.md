@@ -19,8 +19,9 @@ Indicates the attributes related to applied conditional access policy or policie
 
 | Property   | Type	|Description|
 |:---------------|:--------|:----------|
-|conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`, `ipAddressSeenByAzureAD`, `ipAddressSeenByResourceProvider`, `unknownFutureValue`, `servicePrincipals`, `servicePrincipalRisk`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals` , `servicePrincipalRisk`.|
-|conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are not satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`, `ipAddressSeenByAzureAD`, `ipAddressSeenByResourceProvider`, `unknownFutureValue`, `servicePrincipals`, `servicePrincipalRisk`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals` , `servicePrincipalRisk`.|
+|authenticationStrength|[authenticationStrength](authenticationstrength.md)| The custom authentication strength enforced in a Conditional Access policy.|
+|conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
+|conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are not satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
 |enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).|
 |enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).|
 |id|String|Identifier of the conditional access policy.|
@@ -39,6 +40,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrength"},
   "displayName": "String",
   "enforcedGrantControls": ["String"],
   "enforcedSessionControls": ["String"],

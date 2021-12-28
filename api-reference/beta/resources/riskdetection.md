@@ -52,6 +52,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |
+|riskType (deprecated)|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
 
 ## JSON representation
 
@@ -70,6 +71,7 @@ The following is a JSON representation of the resource.
  "id": "string",
     "requestId": "string",
     "correlationId": "string",
+    "riskType": {"@odata.type": "microsoft.graph.riskEventType"},
     "riskState": {"@odata.type": "microsoft.graph.riskState"},
     "riskLevel": {"@odata.type": "microsoft.graph.riskLevel"},
     "riskDetail": {"@odata.type": "microsoft.graph.riskDetail"},
