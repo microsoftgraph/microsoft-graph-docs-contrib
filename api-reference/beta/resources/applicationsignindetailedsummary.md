@@ -19,7 +19,6 @@ Represents a detailed summary of an application sign-in.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection | Retrieve **applicationSignInDetailedSummary** objects. |
 | [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
 
 ## Properties

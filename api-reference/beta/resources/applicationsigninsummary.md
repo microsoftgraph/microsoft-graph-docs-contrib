@@ -19,18 +19,16 @@ Represents an application sign-in summary.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getAzureADApplicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) collection| Retrieve **applicationSignInSummary** objects within either the last seven or 30 days. |
+| [Get applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |appDisplayName|String|Name of the application that the user signed in to.|
+|appId|String|  ID of the application that the user signed i nto.|
 |failedSignInCount|Int64|Count of failed sign-ins made by the application.|
 |successPercentage|Int32|Percentage of successful sign-ins made by the application.|
 |successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
-<!--Hiding this because it's not in the metadata nor in public response objects
-|appId|String|  Identifier of the application that the user signed into.|
--->
 
 ## Relationships
 None

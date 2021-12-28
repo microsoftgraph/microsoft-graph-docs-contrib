@@ -2,7 +2,7 @@
 title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 ms.localizationpriority: medium
-author: "besiler"
+author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
