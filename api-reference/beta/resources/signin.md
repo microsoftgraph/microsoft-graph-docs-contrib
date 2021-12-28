@@ -80,7 +80,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |userId|String|The identifier of the user. Supports `$filter` (`eq` operator only).|
 |userPrincipalName|String|The UPN of the user. Supports `$filter` (`eq` and `startsWith` operators only).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
-|mfaDetail|String|This property is deprecated.|
+|mfaDetail (deprecated)|String|This property is deprecated.|
 
 
 ## Relationships
