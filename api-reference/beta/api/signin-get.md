@@ -42,7 +42,7 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /auditLogs/signIns/{SignInid}
+GET /auditLogs/signIns/{id}
 ```
 
 ## Optional query parameters
@@ -93,11 +93,17 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signin-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+
+### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -109,114 +115,103 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
-
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-    "value": [
-        {
-            "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-            "userDisplayName": "Test contoso",
-            "userPrincipalName": "testaccount1@contoso.com",
-            "alternateSignInName": "testaccount1@fabrikam.com",
-            "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-            "homeTenantId": "d2e3ca7c-8f1c-4803-b226-d1cc3232d603",
-            "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-            "appDisplayName": "Graph explorer",
-            "authenticationRequirement": "MultifactorAuthentication",
-            "ipAddress": "131.107.159.37",
-            "clientAppUsed": "Browser",
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-            "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-            "conditionalAccessStatus": "notApplied",
-            "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "isInteractive": true,
-            "tokenIssuerName": "",
-            "tokenIssuerType": "AzureAD",
-            "processingTimeInMilliseconds": 541,
-            "flaggedForReview": false,
-            "riskDetail": "none",
-            "riskLevelAggregated": "none",
-            "riskLevelDuringSignIn": "none",
-            "riskState": "none",
-            "riskEventTypes": [],
-            "riskEventTypes_v2": [],
-            "resourceDisplayName": "Microsoft Graph",
-            "resourceId": "00000003-0000-0000-c000-000000000000",
-            "authenticationMethodsUsed": [],
-            "alternateSignInName": "testaccount2@contoso.com",
-            "servicePrincipalName": null,
-            "servicePrincipalId": "",
-            "mfaDetail": null,
-            "status": {
-                "errorCode": 0,
-                "failureReason": null,
-                "additionalDetails": null
-            },
-            "deviceDetail": {
-                "deviceId": "",
-                "displayName": null,
-                "operatingSystem": "Windows 10",
-                "browser": "Edge 80.0.361",
-                "isCompliant": null,
-                "isManaged": null,
-                "trustType": null
-            },
-            "location": {
-                "city": "Redmond",
-                "state": "Washington",
-                "countryOrRegion": "US",
-                "geoCoordinates": {
-                    "altitude": null,
-                    "latitude": 47.68050003051758,
-                    "longitude": -122.12094116210938
-                }
-            },
-            "appliedConditionalAccessPolicies": [
-                {
-                    "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-                    "displayName": "SharePoint limited access for guest workers",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-                {
-                    "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-                    "displayName": "Medium signin risk block",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-               
-            ],
-            "authenticationProcessingDetails": [],
-            "networkLocationDetails": [],
-            "authenticationDetails": [
-                    {
-			  "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-			  "authenticationMethod":"FIDO2",
-			  "authenticationMethodDetail":"1G54395783",
-			  "succeeded":true,
-			  "authenticationStepResultDetail":"methodSucceeded",
-			  "authenticationStepRequirement":"Primary authentication"
-			},
-			{
-			  "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
-			  "authenticationMethod":"Claim in access token",
-			  "authenticationMethodDetail":null,
-			  "succeeded":true,
-			  "authenticationStepResultDetail":"methodSucceeded",
-			  "authenticationStepRequirement":"MFA"
-			}
-            ],
-            "authenticationRequirementPolicies": []
-        }
-    ]
+  "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+  "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+  "userDisplayName": "Test contoso",
+  "userPrincipalName": "testaccount1@contoso.com",
+  "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
+  "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
+  "appDisplayName": "Graph explorer",
+  "authenticationRequirement": "MultifactorAuthentication",
+  "ipAddress": "131.107.159.37",
+  "clientAppUsed": "Browser",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
+  "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
+  "conditionalAccessStatus": "notApplied",
+  "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+  "isInteractive": true,
+  "tokenIssuerName": "",
+  "tokenIssuerType": "AzureAD",
+  "processingTimeInMilliseconds": 541,
+  "riskDetail": "none",
+  "riskLevelAggregated": "none",
+  "riskLevelDuringSignIn": "none",
+  "riskState": "none",
+  "riskEventTypes": [],
+  "riskEventTypes_v2": [],
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "00000003-0000-0000-c000-000000000000",
+  "authenticationMethodsUsed": [],
+  "alternateSignInName": "testaccount2@contoso.com",
+  "servicePrincipalName": null,
+  "servicePrincipalId": "",
+  "mfaDetail": null,
+  "status": {
+    "errorCode": 0,
+    "failureReason": null,
+    "additionalDetails": null
+  },
+  "deviceDetail": {
+    "deviceId": "",
+    "displayName": null,
+    "operatingSystem": "Windows 10",
+    "browser": "Edge 80.0.361",
+    "isCompliant": null,
+    "isManaged": null,
+    "trustType": null
+  },
+  "location": {
+    "city": "Redmond",
+    "state": "Washington",
+    "countryOrRegion": "US",
+    "geoCoordinates": {
+      "altitude": null,
+      "latitude": 47.68050003051758,
+      "longitude": -122.12094116210938
+    }
+  },
+  "appliedConditionalAccessPolicies": [
+    {
+      "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
+      "displayName": "SharePoint limited access for guest workers",
+      "enforcedGrantControls": [],
+      "enforcedSessionControls": [],
+      "result": "notEnabled",
+      "conditionsSatisfied": "none",
+      "conditionsNotSatisfied": "none"
+    },
+    {
+      "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
+      "displayName": "Medium signin risk block",
+      "enforcedGrantControls": [],
+      "enforcedSessionControls": [],
+      "result": "notEnabled",
+      "conditionsSatisfied": "none",
+      "conditionsNotSatisfied": "none"
+    },
+  ],
+  "authenticationProcessingDetails": [],
+  "networkLocationDetails": [],
+  "authenticationDetails": [
+    {
+      "authenticationStepDateTime": "2018-11-06T18:48:03.8313489Z",
+      "authenticationMethod": "FIDO2",
+      "authenticationMethodDetail": "1G54395783",
+      "succeeded": true,
+      "authenticationStepResultDetail": "methodSucceeded",
+      "authenticationStepRequirement": "Primary authentication"
+    },
+    {
+      "authenticationStepDateTime": "2018-11-06T18:48:12.94725647Z",
+      "authenticationMethod": "Claim in access token",
+      "authenticationMethodDetail": null,
+      "succeeded": true,
+      "authenticationStepResultDetail": "methodSucceeded",
+      "authenticationStepRequirement": "MFA"
+    }
+  ],
+  "authenticationRequirementPolicies": []
 }
 ```

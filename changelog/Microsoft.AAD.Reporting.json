@@ -2,6 +2,24 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInEventTypes",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the deprecated **signInEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
       {
           "Id": "916ccaa0-a3d8-11eb-a835-c815efda831b",
           "ApiChange": "Property",

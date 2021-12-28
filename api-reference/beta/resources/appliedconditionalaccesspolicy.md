@@ -2,7 +2,7 @@
 title: "appliedConditionalAccessPolicy resource type"
 description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity."
 ms.localizationpriority: medium
-author: "besiler"
+author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

@@ -35,10 +35,6 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
-|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationRequirementPolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
-|flaggedForReview|Boolean|Indicates whether there are user flagged sign-ins for review.|
-|homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or Service Principal sign-ins.|
-|ipAddressFromResourceProvider|String|IPAddress seen by the resource provider.|
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. Supports `$filter` (`eq` and `startsWith` operators only).|
 |clientAppUsed|String| Identifies the client used for the sign-in activity. Modern authentication clients include `Browser` and `modern clients`. Legacy authentication clients include `Exchange Active Sync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. Supports `$filter` (`eq` operator only). |
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. Supports `$filter` (`eq` operator only).|
@@ -52,9 +48,6 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. Supports `$filter` (`eq` operator only).|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
-|signInIdentifier|String|The identification used to sign in - includes UPN, but is also populated when a user signs in using other identifiers.|
-|signInIdentifierType|signInIdentifierType|Provides the type of sign-in identifier. Examples include `userPrincipalName`, `qrCode`, `phoneNumber`, `proxyAddress`.|
-|userType|signInUserType|Type of user. Examples include member, guest, or external.|
 |resourceDisplayName|String|The name of the resource that the user signed in to. Supports `$filter` (`eq` operator only).|
 |resourceId|String|The identifier of the resource that the user signed in to. Supports `$filter` (`eq` operator only).|
 |riskDetail|riskDetail|The reason behind a specific state of a risky user, sign-in, or a risk event. Possible values: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, or `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far. Supports `$filter` (`eq` operator only).<br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
@@ -113,13 +106,10 @@ Here is a JSON representation of the resource.
   "resourceDisplayName": "String",
   "resourceId": "String",
   "riskDetail": "string",
-  "riskEventTypes": ["string"],
   "riskEventTypes_v2": ["String"],
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "signInIdentifer": "String",
-  "signInIdentifierType": "String",
   "servicePrincipalId": "String",
   "servicePrincipalName": "String",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
@@ -141,4 +131,5 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
