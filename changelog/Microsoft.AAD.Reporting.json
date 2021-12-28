@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authenticationStrength",
           "ChangeType": "Addition",
-          "Description": "Added the **authenticationStrength** property to [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **authenticationStrength** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
           "Target": "appliedConditionalAccessPolicy"
         },
         {
