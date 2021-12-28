@@ -2,7 +2,7 @@
 title: "List applicationSignInDetailedSummary"
 description: "Retrieve the applicationSignInDetailedSummary objects."
 author: "besiler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.applicationSignInDetailedSummary)"
+  "@odata.type": "Collection(microsoft.graph.applicationSignInDetailedSummary)"
 }
 -->
 ``` http
