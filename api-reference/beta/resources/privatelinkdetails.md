@@ -2,7 +2,7 @@
 title: "privateLinkDetails resource type"
 description: "Provides details about Private Links in your Azure AD tenant"
 author: "besiler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "authenticationRequirementPolicy resource type"
 description: "Azure AD can require users to pass an MFA check before accessing resources. If an MFA check is required, this resource identifies the policy that requires MFA."
 author: "besiler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
