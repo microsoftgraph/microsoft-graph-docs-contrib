@@ -19,6 +19,7 @@ Indicates the attributes related to applied conditional access policy or policie
 
 | Property   | Type	|Description|
 |:---------------|:--------|:----------|
+|authenticationStrength|[authenticationStrength](authenticationstrength.md)| The custom authentication strength enforced in a Conditional Access policy.|
 |conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
 |conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are not satisfied. Possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
 |enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).|
@@ -39,6 +40,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "authenticationStrength": {"@odata.type": "microsoft.graph.authenticationStrength"},
   "displayName": "String",
   "enforcedGrantControls": ["String"],
   "enforcedSessionControls": ["String"],
