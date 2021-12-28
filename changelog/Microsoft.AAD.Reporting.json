@@ -151,7 +151,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "servicePrincipalCredentialThumbprint",
               "ChangeType": "Addition",
-              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the certificate thumbprint of the service principal's certificate'.",
+              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the certificate thumbprint of the service principal's certificate.",
               "Target": "signIn"
           },
           {
@@ -217,6 +217,14 @@
               "ChangeType": "Addition",
               "Description": "Added the `servicePrincipalRisk` member to the **conditionalAccessConditions** enumeration.",
               "Target": "conditionalAccessConditions"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "mfaDetail",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **mfaDetail** property on the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
           }
       ],
       "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
