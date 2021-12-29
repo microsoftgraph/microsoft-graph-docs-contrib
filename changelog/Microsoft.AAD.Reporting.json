@@ -171,6 +171,14 @@
             "Target": "authenticationRequirementPolicy"
           },
           {
+            "Id": "15da826c-5c44-11eb-8de9-f7f8b8b7f046",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "requirementProvider",
+            "ChangeType": "Change",
+            "Description": "Changed the **requirementProvider** enumeration. Removed the current `MFA`, `CA`, and `unknownFutureValue` enumeration members and replaced them with new members. The new enumeration members provide a comprehensive list of possible Azure AD features that require MFA in the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta).",
+            "Target": "requirementProvider"
+          },
+          {
             "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
             "ApiChange": "Resource",
             "ChangedApiName": "conditionalAccessRuleSatisfied",
