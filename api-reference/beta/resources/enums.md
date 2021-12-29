@@ -11,6 +11,28 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### incomingTokenType values 
+
+|Member|
+|:---|
+|none|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### protocolType values 
+
+|Member|
+|:---|
+|none|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
 
 |Member|
@@ -1818,6 +1840,7 @@ Possible values for user account types (group membership), per Windows definitio
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### riskDetectionTimingType values
 
