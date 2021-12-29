@@ -12698,9 +12698,9 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: Create
-            href: api/agreement-post-agreements.md
+            href: api/termsofusecontainer-post-agreements.md
           - name: List
-            href: api/agreement-list.md
+            href: api/termsofusecontainer-list-agreements.md
           - name: Get
             href: api/agreement-get.md
           - name: Update

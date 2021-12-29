@@ -19,8 +19,8 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
-| [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
+| [Create agreements](../api/termsofusecontainer-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
+| [List agreements](../api/termsofusecontainer-list-agreements.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
 | [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
 | [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
 | [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
