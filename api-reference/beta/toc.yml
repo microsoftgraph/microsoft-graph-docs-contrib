@@ -12470,9 +12470,9 @@ items:
             href: resources/accesspackageassignmentpolicy.md
             items:
             - name: List
-              href: api/accesspackageassignmentpolicy-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentpolicies.md
             - name: Create
-              href: api/accesspackageassignmentpolicy-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentpolicies.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
             - name: Update
