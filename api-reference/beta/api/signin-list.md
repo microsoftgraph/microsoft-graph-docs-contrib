@@ -133,7 +133,12 @@ Content-type: application/json
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
       "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
+      "authenticationProtocol": "oAuth2",
+      "incomingTokenType": "Primary Refresh Token",
       "isInteractive":true,
+      "homeTenantId": "4f7a7bc2-28e2-46a3-b90e-5ade5bc90138",
+      "homeTenantName": "",
+      "isTenantRestricted": false,
       "tokenIssuerName":"",
       "tokenIssuerType":"AzureAD",
       "processingTimeInMilliseconds":761,
@@ -141,7 +146,6 @@ Content-type: application/json
       "riskLevelAggregated":"none",
       "riskLevelDuringSignIn":"none",
       "riskState":"none",
-      "riskEventTypes":[],
       "riskEventTypes_v2":[],
       "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
@@ -149,10 +153,11 @@ Content-type: application/json
       "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "authenticationMethodsUsed":[],
       "authenticationRequirement":"singleFactorAuthentication",
-      "alternateSignInName":"testaccount1@contoso.com",
+      "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "signInIdentifier":"testaccount1@contoso.com",
       "signInEventTypes":["interactiveUser"],
       "servicePrincipalId":"",
+      "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "userType":"member",
       "flaggedForReview":false,
       "isTenantRestricted":false,
@@ -177,9 +182,6 @@ Content-type: application/json
           "state":"Washington",
           "countryOrRegion":"US",
           "geoCoordinates":{
-            "altitude":null,
-            "latitude":47.6807,
-            "longitude":-122.1231
           }
         },
       "appliedConditionalAccessPolicies":[],
@@ -211,6 +213,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Azure'
 
 In this example, the response object shows the user signed in using only their primary authentication method—a cloud password. The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
@@ -254,6 +257,9 @@ Content-type: application/json
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
+      "homeTenantId": "4f7a7bc2-28e2-46a3-b90e-5ade5bc90138",
+      "homeTenantName": "",
+      "isTenantRestricted": false,
       "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
       "isInteractive":true,
       "tokenIssuerName":"",
@@ -263,7 +269,6 @@ Content-type: application/json
       "riskLevelAggregated":"none",
       "riskLevelDuringSignIn":"none",
       "riskState":"none",
-      "riskEventTypes":[],
       "riskEventTypes_v2":[],
       "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
@@ -271,7 +276,8 @@ Content-type: application/json
       "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "authenticationMethodsUsed":[],
       "authenticationRequirement":"singleFactorAuthentication",
-      "alternateSignInName":"testaccount1@contoso.com",
+      "authenticationProtocol": "oAuth2",
+      "incomingTokenType": "Primary Refresh Token",
       "signInIdentifier":"testaccount1@contoso.com",
       "signInEventTypes":["interactiveUser"],
       "servicePrincipalId":"",
@@ -285,6 +291,7 @@ Content-type: application/json
           "failureReason":"Error validating credentials due to invalid username or password.",
           "additionalDetails":"The user didn't enter the right credentials. \u00a0It's expected to see some number of these errors in your logs due to users making mistakes."
         },
+      "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "deviceDetail":{
           "deviceId":"",
           "displayName":"",
@@ -299,9 +306,6 @@ Content-type: application/json
           "state":"Washington",
           "countryOrRegion":"US",
           "geoCoordinates":{
-            "altitude":null,
-            "latitude":47.6807,
-            "longitude":-122.1231
           }
         },
       "appliedConditionalAccessPolicies":[],
