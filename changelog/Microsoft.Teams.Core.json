@@ -18,6 +18,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [List Transcripts](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-beta), [Get Transcript](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-beta), [Get Transcript Content] (https://docs.microsoft.com/en-us/graph/api/callTranscript-get-content?view=graph-rest-beta) methods.",
           "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "callTranscript",
+          "ChangeType": "Addition",
+          "Description": "Added the **callTranscript** relationship to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
         }
       ],
       "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
