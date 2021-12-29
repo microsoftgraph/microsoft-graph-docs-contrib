@@ -12445,7 +12445,7 @@ items:
             href: resources/accesspackageassignment.md
             items:
             - name: List
-              href: api/accesspackageassignment-list.md
+              href: api/entitlementmanagement-list-accesspackageassignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess

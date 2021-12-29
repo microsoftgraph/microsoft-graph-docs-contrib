@@ -94,6 +94,11 @@
       "source_path_from_root": "/api-reference/beta/api/accesspackage-post.md",
       "redirect_url": "/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignment-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
