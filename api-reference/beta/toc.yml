@@ -12414,9 +12414,9 @@ items:
             href: resources/accesspackage.md
             items:
             - name: List
-              href: api/accesspackage-list.md
+              href: api/entitlementmanagement-list-accesspackages.md
             - name: Create
-              href: api/accesspackage-post.md
+              href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
               href: api/accesspackage-get.md
             - name: Update

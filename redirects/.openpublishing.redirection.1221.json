@@ -84,6 +84,16 @@
       "source_path_from_root": "/api-reference/v1.0/resources/entitlementmanagement-root.md",
       "redirect_url": "/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackage-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackage-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
