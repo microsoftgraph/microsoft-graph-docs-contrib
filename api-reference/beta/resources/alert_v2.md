@@ -52,7 +52,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
 |lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
-|comments|[alertComment_v2](alertComment_v2.md)|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
+|comments|[alertComment_v2](alertComment_v2.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 
 ### alertClassification_v2 values 
 
@@ -133,7 +133,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.incident",
+  "@odata.type": "microsoft.graph.alert_v2",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }

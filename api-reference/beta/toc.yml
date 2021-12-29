@@ -13688,7 +13688,6 @@ items:
       - name: Overview
         href: resources/security-api-overview.md
       - name: Actions (preview)
-        href: resources/securityaction.md
         items:
         - name: Action
           href: resources/securityaction.md
@@ -13753,7 +13752,7 @@ items:
         - name: List incidents
           href: api/security-list-incidents.md
         - name: Get incident
-          href: api/security-get-incident.md   
+          href: api/incident-get.md   
       - name: Alerts_v2 (preview)
         items:
         - name: Alert_v2

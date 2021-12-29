@@ -79,7 +79,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get incident](https://docs.microsoft.com/en-us/graph/api/security-get-incident?view=graph-rest-beta) operation.",
+					"Description": "Added the [Get incident](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) operation.",
 					"Target": "incident"
 				},
 				{

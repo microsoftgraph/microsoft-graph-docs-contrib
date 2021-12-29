@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Alerts.Read.All, Alerts.ReadWrite.All|
+|Delegated (work or school account)|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Alerts.Read.All, Alerts.ReadWrite.All|
+|Application|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
 
 ## HTTP request
 
@@ -91,7 +91,10 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
   "isCollection": true
 }
 -->
-``` json
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "value": [
     {

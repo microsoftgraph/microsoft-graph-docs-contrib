@@ -30,7 +30,6 @@ None.
 |alerts_v2 | [alert_v2](alert_v2.md) collection | A collection of alerts in Microsoft 365 Defender.|
 |secureScores | [secureScore](securescores.md) collection | Measurements of tenants’ security posture to help protect them from threats. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
-|securityactions|[securityAction](../resources/securityaction.md)|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 
 ## JSON representation

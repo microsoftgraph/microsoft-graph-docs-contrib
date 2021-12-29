@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated metadata that reflects the story of an attack in a tenant.
+An incident in Microsoft 365 Defender is a collection of correlated [alert](../resources/alert_v2.md) instances and associated metadata that reflects the story of an attack in a tenant.
 
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
@@ -23,7 +23,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List incidents](../api/security-list-incidents.md)|[incident](../resources/incident.md) collection|Get a list of the [incident](../resources/incident.md) objects and their properties.|
-|[Get incident](../api/security-get-incident.md)|[incident](../resources/incident.md)|Read the properties and relationships of an [incident](../resources/incident.md) object.|
+|[Get incident](../api/incident-get.md)|[incident](../resources/incident.md)|Read the properties and relationships of an [incident](../resources/incident.md) object.|
 
 
 ## Properties

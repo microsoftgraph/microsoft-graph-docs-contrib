@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Alerts.Read.All, Alerts.ReadWrite.All|
+|Delegated (work or school account)|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Alerts.Read.All, Alerts.ReadWrite.All|
+|Application|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
 
 ## HTTP request
 
@@ -69,7 +69,10 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 }
 -->
 
-``` json
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.alert_v2",
     "id": "da637578995287051192_756343937",
@@ -97,7 +100,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
     "resolvedDateTime": null,
     "firstActivityDateTime": "2021-05-22T15:01:15.2504071Z",
     "lastActivityDateTime": "2021-05-22T15:01:47.7620475Z",
-    comments": [
+    "comments": [
       {
 		"comment": "Demo alert",
 		"createdBy": "BenA@contoso.onmicrosoft.com",

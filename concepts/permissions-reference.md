@@ -184,16 +184,16 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Alerts.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
-| _Alerts.ReadWrite.All_ | Read and write to alerts | Allows the app to read and write alerts, on behalf of the signed-in user. | Yes | No |
+| _SecurityAlert.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
+| _SecurityAlert.ReadWrite.All_ | Read and write to alerts | Allows the app to read and write alerts, on behalf of the signed-in user. | Yes | No |
 
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Alerts.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
-| _Alerts.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
+| _SecurityAlert.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes |
+| _SecurityAlert.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -203,13 +203,13 @@ Alerts permissions are valid only on work or school accounts.
 
 #### Delegated
 
-* _Alerts.Read.All_: Read all alerts in an organization that the user is allowed to read (`GET /security/alerts_v2`)
-* _Alerts.ReadWrite.All_: Read and write to all alerts in an organization that the user is allowed to read and write (`GET /security/alerts_v2`)
+* _SecurityAlert.Read.All_: Read all alerts in an organization that the user is allowed to read (`GET /security/alerts_v2`)
+* _SecurityAlert.ReadWrite.All_: Read and write to all alerts in an organization that the user is allowed to read and write (`GET /security/alerts_v2`)
 
 #### Application
 
-* _Alerts.Read.All_: Read all alerts in an organization (`GET /security/alerts_v2`)
-* _Alerts.ReadWrite.All_: Read and write to all alerts in an organization (`GET /security/alerts`)
+* _SecurityAlert.Read.All_: Read all alerts in an organization (`GET /security/alerts_v2`)
+* _SecurityAlert.ReadWrite.All_: Read and write to all alerts in an organization (`GET /security/alerts`)
 
 ---
 
@@ -1178,16 +1178,16 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Incidents.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
-| _Incidents.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
+| _SecurityIncident.Read.All_ | Read incidents | Allows the app to read incidents, on behalf of the signed-in user. | Yes | No |
+| _SecurityIncident.ReadWrite.All_ | Read and write to incidents | Allows the app to read and write incidents, on behalf of the signed-in user. | Yes | No |
 
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
-| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
+| _SecurityIncident.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
+| _SecurityIncident.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -1197,13 +1197,13 @@ Incidents permissions are valid only on work or school accounts.
 
 #### Delegated
 
-* _Incidents.Read.All_: Read all incidents in an organization that the user is allowed to read (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization that the user is allowed to read and write (`GET /security/incidents`)
+* _SecurityIncident.Read.All_: Read all incidents in an organization that the user is allowed to read (`GET /security/incidents`)
+* _SecurityIncident.ReadWrite.All_: Read and write to all incidents in an organization that the user is allowed to read and write (`GET /security/incidents`)
 
 #### Application
 
-* _Incidents.Read.All_: Read all incidents in an organization (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read and write to all incidents in an organization (`GET /security/incidents`)
+* _SecurityIncident.Read.All_: Read all incidents in an organization (`GET /security/incidents`)
+* _SecurityIncident.ReadWrite.All_: Read and write to all incidents in an organization (`GET /security/incidents`)
 
 ---
 

@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Incidents.Read.All, Incidents.ReadWrite.All|
+|Delegated (work or school account)|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Incidents.Read.All, Incidents.ReadWrite.All|
+|Application|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
 
 ## HTTP request
 
@@ -68,7 +68,11 @@ GET https://graph.microsoft.com/beta/security/incidents/{incidentId}
   "@odata.type": "microsoft.graph.incident"
 }
 -->
-``` json
+
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.incident",
     "id": "2972395",

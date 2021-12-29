@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Incidents.Read.All, Incidents.ReadWrite.All|
+|Delegated (work or school account)|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Incidents.Read.All, Incidents.ReadWrite.All|
+|Application|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
 
 ## HTTP request
 
@@ -71,7 +71,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [incident](../resources/incident.md) objects in the response body.
 
 ## Examples
-
+### Example 1: List all incidents
 ### Request
 <!-- {
   "blockType": "request",
@@ -95,6 +95,7 @@ GET https://graph.microsoft.com/beta/security/incidents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
@@ -125,7 +126,7 @@ Content-Type: application/json
 }
 ```
 
-
+### Example 2: List all incidents with their alerts.
 ### Request
 <!-- {
   "blockType": "request",
@@ -202,7 +203,7 @@ Content-Type: application/json
                 "resolvedDateTime": null,
                 "firstActivityDateTime": "2021-05-22T15:01:15.2504071Z",
                 "lastActivityDateTime": "2021-05-22T15:01:47.7620475Z",
-                comments": [
+                "comments": [
                     {
 		            "comment": "Demo alert",
 		            "createdBy": "BenA@contoso.onmicrosoft.com",
