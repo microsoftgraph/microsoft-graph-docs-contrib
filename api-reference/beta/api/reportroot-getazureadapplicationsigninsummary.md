@@ -1,19 +1,19 @@
 ---
-title: "Get applicationSignInSummary"
-description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
+title: "reportRoot: getAzureADApplicationSignInSummary"
+description: "Retrieve the properties and relationships of an applicationSigninSummary object."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# Get applicationSignInSummary
+# reportRoot: getAzureADApplicationSignInSummary
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [applicationSigninSummary](../resources/applicationsigninsummary.md) object.
+Retrieve [applicationSigninSummary](../resources/applicationsigninsummary.md) objects within either the last seven or 30 days.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,15 +37,15 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 | period | Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors. |
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {code} |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [applicationSignInSummary](../resources/applicationsigninsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [applicationSignInSummary](../resources/applicationsigninsummary.md) objects in the response body.
 
 ## Example
 
@@ -79,9 +79,9 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here mmight be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,14 +91,47 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
-  "appId": "appId-value",
-  "appDisplayName": "appDisplayName-value",
-  "successfulSignInCount": 99,
-  "failedSignInCount": 99,
-  "successPercentage": 99
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(applicationSignInSummary)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.applicationSignInSummary",
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "successfulSignInCount": 9,
+            "failedSignInCount": 0,
+            "appDisplayName": "Graph Explorer",
+            "successPercentage": 100
+        },
+        {
+            "@odata.type": "#microsoft.graph.applicationSignInSummary",
+            "id": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "successfulSignInCount": 2,
+            "failedSignInCount": 0,
+            "appDisplayName": "Azure Portal",
+            "successPercentage": 100
+        },
+        {
+            "@odata.type": "#microsoft.graph.applicationSignInSummary",
+            "id": "8c59ead7-d703-4a27-9e55-c96a0054c8d2",
+            "successfulSignInCount": 1,
+            "failedSignInCount": 0,
+            "appDisplayName": "My Profile",
+            "successPercentage": 100
+        },
+        {
+            "@odata.type": "#microsoft.graph.applicationSignInSummary",
+            "id": "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+            "successfulSignInCount": 3,
+            "failedSignInCount": 0,
+            "appDisplayName": "Office365 Shell WCSS-Client",
+            "successPercentage": 100
+        }
+    ]
 }
 ```
+
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
