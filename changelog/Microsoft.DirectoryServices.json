@@ -5680,7 +5680,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "entitlement management",
           "ChangeType": "Addition",
-          "Description": "Added new [entitlement management](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) resources.",
+          "Description": "Added new [entitlement management](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta) resources.",
           "Target": "entitlement management"
         },
         {

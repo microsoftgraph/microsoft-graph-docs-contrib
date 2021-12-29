@@ -12408,7 +12408,7 @@ items:
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
-          href: resources/entitlementmanagement-root.md
+          href: resources/entitlementmanagement-overview.md
           items:
           - name: Access package
             href: resources/accesspackage.md
