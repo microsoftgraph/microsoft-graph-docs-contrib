@@ -23,7 +23,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
 | [reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
 
->**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+>**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests).
 
 ## Properties
 

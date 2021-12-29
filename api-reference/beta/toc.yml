@@ -12485,7 +12485,7 @@ items:
             - name: List
               href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
-              href: api/accesspackageassignmentrequest-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentrequests
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
@@ -12500,7 +12500,7 @@ items:
             href: resources/accesspackageassignmentresourcerole.md
             items:
             - name: List
-              href: api/accesspackageassignmentresourcerole-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
             - name: Get
               href: api/accesspackageassignmentresourcerole-get.md
           - name: Access package catalog
