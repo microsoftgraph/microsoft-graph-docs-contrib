@@ -12507,9 +12507,9 @@ items:
             href: resources/accesspackagecatalog.md
             items:
             - name: List
-              href: api/accesspackagecatalog-list.md
+              href: api/entitlementmanagement-list-accesspackagecatalogs.md
             - name: Create
-              href: api/accesspackagecatalog-post.md
+              href: api/entitlementmanagement-post-accesspackagecatalogs.md
             - name: Get
               href: api/accesspackagecatalog-get.md
             - name: Update
