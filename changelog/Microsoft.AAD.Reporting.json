@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskEventTypes",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the deprecated **riskEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource. Replaced with the **riskEventTypes_v2** property.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
           "ApiChange": "Property",
           "ChangedApiName": "user",
