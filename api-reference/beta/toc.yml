@@ -13491,10 +13491,12 @@ items:
             href: resources/applicationsigninsummary.md
             items:
             - name: Get sign-in summary
-              href: api/applicationsigninsummary-get.md
+              href: api/reportroot-getazureadapplicationsigninsummary.md
           - name: Sign-in details
             href: resources/applicationsignindetailedsummary.md
             items:
+            - name: List sign-in details
+              href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
         - name: Registration and usage

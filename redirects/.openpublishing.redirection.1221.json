@@ -14,6 +14,11 @@
       "source_path_from_root": "/api-reference/beta/api/iteminsightssettings-update.md",
       "redirect_url": "/graph/api/insightssettings-update?view=graph-rest-beta",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/applicationsigninsummary-get.md",
+      "redirect_url": "/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
