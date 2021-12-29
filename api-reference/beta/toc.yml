@@ -12545,9 +12545,9 @@ items:
             href: resources/connectedorganization.md
             items:
             - name: List
-              href: api/connectedorganization-list.md
+              href: api/entitlementmanagement-list-connectedorganizations.md
             - name: Create
-              href: api/connectedorganization-post.md
+              href: api/entitlementmanagement-post-connectedorganizations.md
             - name: Get
               href: api/connectedorganization-get.md
             - name: Update
