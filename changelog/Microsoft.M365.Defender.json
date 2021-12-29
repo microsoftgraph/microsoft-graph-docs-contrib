@@ -87,7 +87,7 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get alert_v2](https://docs.microsoft.com/en-us/graph/api/security-get-alert_v2?view=graph-rest-beta) operation.",
+					"Description": "Added the [Get alert_v2](https://docs.microsoft.com/en-us/graph/api/alert_v2-get?view=graph-rest-beta) operation.",
 					"Target": "alert_v2"
 				},
 				{

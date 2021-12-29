@@ -21,7 +21,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List alerts_v2](../api/security-list-alerts_v2.md)|[alert_v2](alert_v2.md) collection|Get a list of the [alert_v2](alert_v2.md) objects and their properties.|
-|[Get alert_v2](../api/security-get-alert_v2.md)|[alert_v2](alert_v2.md)|Read the properties and relationships of an [alert_v2](alert_v2.md) object.|
+|[Get alert_v2](../api/alert_v2-get.md)|[alert_v2](alert_v2.md)|Read the properties and relationships of an [alert_v2](alert_v2.md) object.|
 
 
 ## Properties
