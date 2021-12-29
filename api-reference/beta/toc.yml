@@ -12531,7 +12531,7 @@ items:
             href: resources/accesspackageresourceenvironment.md
             items:
             - name: List
-              href: api/accesspackageresourceenvironment-list.md
+              href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
             - name: Get
               href: api/accesspackageresourceenvironment-get.md
           - name: Access package resource role scope
