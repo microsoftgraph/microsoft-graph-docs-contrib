@@ -154,6 +154,36 @@
       "source_path_from_root": "/api-reference/beta/api/connectedorganization-post.md",
       "redirect_url": "/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/appconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/appconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/userconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/userconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/consentrequests-root.md",
+      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/consentrequests-root.md",
+      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
     }
   ]
 }

@@ -17,7 +17,7 @@ The identity governance singleton is the container for the following Azure Activ
 
 + [Access reviews](accessreviewsv2-overview.md)
 + [Entitlement management](entitlementmanagement-overview.md)
-+ [App consent](consentrequests-root.md)
++ [App consent](consentrequests-overview.md)
 + [Terms of use](agreement.md)
 
 ## Methods
