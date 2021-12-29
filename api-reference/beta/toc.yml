@@ -12524,7 +12524,7 @@ items:
             href: resources/accesspackageresourcerequest.md
             items:
             - name: List
-              href: api/accesspackageresourcerequest-list.md
+              href: api/entitlementmanagement-list-accesspackageresourcerequests.md
             - name: Create
               href: api/accesspackageresourcerequest-post.md
           - name: Access package resource environment
