@@ -12483,7 +12483,7 @@ items:
             href: resources/accesspackageassignmentrequest.md
             items:
             - name: List
-              href: api/accesspackageassignmentrequest-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
               href: api/accesspackageassignmentrequest-post.md
             - name: Get

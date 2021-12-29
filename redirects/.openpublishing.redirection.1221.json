@@ -109,6 +109,16 @@
       "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentpolicy-post.md",
       "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentpolicies?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentrequest-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentrequest-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
