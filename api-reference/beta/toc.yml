@@ -12451,18 +12451,21 @@ items:
             - name: Reprocess
               href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment approval
-            href: resources/approval.md
             items:
-            - name: Approval step
-              href: resources/approvalstep.md
-            - name: Get approval
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
               href: api/approval-get.md
-            - name: List approval steps
-              href: api/approval-list-steps.md
-            - name: Get approval step
-              href: api/approvalstep-get.md
-            - name: Update approval step
-              href: api/approvalstep-update.md
+            - name: Approval step
+              items:
+              - name: Approval
+                href: resources/approvalstep.md
+              - name: List
+                href: api/approval-list-steps.md
+              - name: Get
+                href: api/approvalstep-get.md
+              - name: Update
+                href: api/approvalstep-update.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
