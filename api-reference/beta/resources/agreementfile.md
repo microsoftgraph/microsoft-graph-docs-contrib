@@ -15,15 +15,12 @@ Namespace: microsoft.graph
 
 Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).
 
-<!--
+Inherits from [agreementFileProperties](agreementfileproperties.md).
+
+
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
--->
+None.
 
 ## Properties
 | Property     | Type        | Description |
@@ -37,12 +34,11 @@ Represents a customizable terms of use agreement file that a tenant manages with
 |createdDateTime|DateTimeOffset|The date time representing when the file was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.|
 |displayName|String|Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
 
-<!--
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
--->
+|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the terms of use agreement files attached to the agreement.|
+
 
 ## JSON representation
 
