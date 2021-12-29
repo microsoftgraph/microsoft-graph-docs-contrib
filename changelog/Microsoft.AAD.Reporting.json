@@ -11,6 +11,14 @@
           "Target": "authenticationContextDetail"
         },
         {
+          "Id": "91824034-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "expirationRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationRequirement** enumeration type.",
+          "Target": "expirationRequirement"
+        },
+        {
           "Id": "6bebaa87-9dbd-439e-a38b-fd6124a3702c",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationContext",
