@@ -47,40 +47,23 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.agreement"
-}-->
-
-```json
-{
-  "id": "String (identifier)",
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "isPerDeviceAcceptanceRequired": false,
-  "termsExpiration": {
-    "startDateTime": "2018-10-01T00:00:00.0000000Z",
-    "frequency": "PT1M"
-  }
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "agreement resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "@odata.type": "microsoft.graph.agreement",
+  "openType": false
 }
 -->
-
-
+``` json
+{
+  "@odata.type": "#microsoft.graph.agreement",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "termsExpiration": {
+    "@odata.type": "microsoft.graph.termsExpiration"
+  },
+  "userReacceptRequiredFrequency": "String (duration)",
+  "isViewingBeforeAcceptanceRequired": "Boolean",
+  "isPerDeviceAcceptanceRequired": "Boolean"
+}
+```
