@@ -27,11 +27,22 @@ The _constraint_ element of the name determines the potential extent of access y
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
-> **Note**: In delegated scenarios, the effective permissions granted to your app may be constrained by the privileges of the signed-in user in the organization.
+> **Note**: In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user in the organization.
 
 ## Microsoft accounts and work or school accounts
 
 Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both.
+
+## Limits on requested permissions per app
+
+Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for your app, shown in the app's manifest. 
+
+| signInAudience                     | Allowed users                                            | Maximum permissions the app can request   | Maximum Microsoft Graph permissions the app can request   | Maximum permissions that can be consented in a single request         |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
+| AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
+| AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |
 
 ## Permissions availability status
 
@@ -948,6 +959,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
 | _GroupMember.Read.All_ |    Read group memberships | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. | Yes | No |
 | _GroupMember.ReadWrite.All_ |    Read and write group memberships | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. | Yes | No |
+| _UnifiedGroupMember.Read.AsGuest_ |    Read unified (Microsoft 365) group memberships as a guest user | Allows the app to read basic unified group properties, memberships, and owners of the group the signed-in guest is a member of. | Yes | No |
 
 #### Application permissions
 
