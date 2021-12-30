@@ -29,34 +29,52 @@
 		{
 			"ChangeList": [
 				{
-					"Id": "5f1ee305-9406-44ff-aa7d-b2234386ef04",
-					"ApiChange": "EnumType",
-					"ChangedApiName": "tokenIssuerType",
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Member",
+					"ChangedApiName": "AzureADBackupAuth",
 					"ChangeType": "Addition",
-					"Description": "Added the [tokenIssuerType](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+					"Description": "Added the **AzureADBackupAuth** member to the **tokenIssuerType** enumeration.",
 					"Target": "tokenIssuerType"
 				},
 				{
-					"Id": "5f1ee305-9406-44ff-aa7d-b2234386ef04",
-					"ApiChange": "Member",
-					"ChangedApiName": "ADFederationServicesMFAAdapter",
-					"ChangeType": "Addition",
-					"Description": "Added the **ADFederationServicesMFAAdapter** member to the **tokenIssuerType** enumeration.",
-					"Target": "tokenIssuerType"
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "riskType",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **riskType** property of the [riskDetection](https://docs.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskDetection"
 				},
 				{
-					"Id": "5f1ee305-9406-44ff-aa7d-b2234386ef04",
-					"ApiChange": "Member",
-					"ChangedApiName": "NPSExtension",
-					"ChangeType": "Addition",
-					"Description": "Added the **NPSExtension** member to the **tokenIssuerType** enumeration.",
-					"Target": "tokenIssuerType"
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "eventTypes ",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskUserActivity"
 				}
 			],
-			"Id": "5f1ee305-9406-44ff-aa7d-b2234386ef04",
+			"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
 			"Cloud": "Prod",
-			"Version": "v1.0",
-			"CreatedDateTime": "2021-12-07T18:37:30.959166Z",
+			"Version": "beta",
+			"CreatedDateTime": "2021-12-28T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+					"ApiChange": "Property",
+					"ChangedApiName": "disableResilienceDefaults",
+					"ChangeType": "Addition",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessSessionControls"
+				}
+			],
+			"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-08-11T22:32:52.387Z",
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
 		},

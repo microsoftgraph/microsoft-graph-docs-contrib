@@ -47,6 +47,7 @@ Existing properties that are not included in the request body will maintain thei
 |Property|Type|Description|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Class-level default actions for students added after the assignment publication date. Possible values are: `none`, `assignIfOpen`. The default value is `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
 |dueTime|TimeOfDay| Class-level default value for due time field. Default value is `23:59:00`|
 |notificationChannelUrl|String| Default Teams channel to send notifications related to the assignment. Default value is `null`.|
 
