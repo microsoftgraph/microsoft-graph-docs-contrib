@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "accessreviewinstancedecisionitemthis.recordalldecisions"
+  "name": "accessreviewinstancedecisionitem-recordalldecisions"
 }
 -->
 ``` http

@@ -47,7 +47,7 @@ Do not supply a request body.
 ## Response
 If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.
 
-## Example 1
+### Example 1
 ### Request
 The following example shows a request to retrieve all the decisions on an instance of an access review.
 
@@ -174,7 +174,7 @@ Content-type: application/json
     ]
 }
 ```
-## Example 2
+### Example 2
 ### Request
 The following example shows a request to retrieve all the decisions on every instance and defintion that the calling user is the reviewer for.
 
@@ -203,8 +203,8 @@ Content-type: application/json
             "principal": {
                     "odata.type": "#microsoft.graph.userIdentity",
                     "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "Shubham Gupta",
-                    "userPrincipalName": "shugup@microsoft.com"            
+                    "displayName": "Adele Vance,
+                    "userPrincipalName": "adele@contoso.com"            
             },
             "resource": {
                 "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
@@ -234,8 +234,8 @@ Content-type: application/json
             "principal": {
                     "odata.type": "#microsoft.graph.userIdentity",
                     "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "Shubham Gupta",
-                    "userPrincipalName": "shugup@microsoft.com"            
+                    "displayName": "Adele Vance",
+                    "userPrincipalName": "adele@contoso.com"            
             },
             "resource": {
                 "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
@@ -266,7 +266,7 @@ Content-type: application/json
                     "odata.type": "#microsoft.graph.userIdentity",
                     "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
                     "displayName": "John Doe",
-                    "userPrincipalName": "johndoe@microsoft.com"            
+                    "userPrincipalName": "johndoe@contoso.com"            
             },
             "resource": {
                 "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
@@ -297,7 +297,7 @@ Content-type: application/json
                     "odata.type": "#microsoft.graph.userIdentity",
                     "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
                     "displayName": "John Doe 1",
-                    "userPrincipalName": "johndoe1@microsoft.com"            
+                    "userPrincipalName": "johndoe1@contoso.com"            
             },
             "resource": {
                 "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
