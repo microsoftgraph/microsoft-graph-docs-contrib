@@ -13631,7 +13631,7 @@ items:
           - name: Get user detail
             href: api/reportroot-getbrowseruserdetail.md
           - name: Get user counts
-            href: api/reportroot-getbrowserusageusercounts.md
+            href: api/reportroot-getbrowserusercounts.md
           - name: Get user counts distribution
             href: api/reportroot-getbrowserdistributionusercounts.md
         - name: Microsoft 365 groups activity
