@@ -238,7 +238,7 @@
       "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-28T00:0000.572Z",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
   },
