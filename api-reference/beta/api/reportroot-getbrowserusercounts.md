@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getBrowserUserCounts"
 description: "Get a report that provides the trend in the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

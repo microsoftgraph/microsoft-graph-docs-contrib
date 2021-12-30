@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getBrowserDistributionUserCounts"
 description: "Get the number of users by browser over the selected period. The browser types are Edge, Edge Legacy, Internet Explorer."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

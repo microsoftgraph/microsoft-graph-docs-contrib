@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getBrowserUserDetail"
 description: "Get a report that provides the details about which browser users have used."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
