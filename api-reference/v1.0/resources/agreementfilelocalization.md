@@ -36,7 +36,7 @@ None.
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|versions|[agreementFileVersion](agreementfileversion.md) collection|Read-only. Information about acceptances of this agreement.|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|Read-only. Customized versions of the terms of use agreement in the Azure AD tenant.|
 
 ## JSON representation
 
