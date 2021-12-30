@@ -92,7 +92,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Cloud Application Security, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
+| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Defender for Cloud Apps, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
 
 
 
@@ -102,7 +102,10 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |:-----------|:--------------------|:-----------|:----------------|
 | Cross-device experiences | Activity feed, device relay | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](cross-device-concept-overview.md) |
 
-## User notifications
+## User notifications (deprecated)
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
