@@ -19,8 +19,8 @@ Use the Microsoft Browser usage reports to get insights into the Browser usage i
 
 | Method                                                                        | Return Type                                    | Description                                                  |
 | :---------------------------------------------------------------------------- | :--------------------------------------------- | :----------------------------------------------------------- |
-| [Get user detail](../api/reportroot-browserdistributionusercounts.md)         | [report](../resources/intune-shared-report.md) | Get the number of users by browser over the selected period. |
-| [Get user counts](../api/reportroot-browserusageusercounts.md)                | [report](../resources/intune-shared-report.md) | Get the trend in the number of active users for each browser |
-| [Get platform user counts](../api/reportroot-browseruserdetail.md)            | [report](../resources/intune-shared-report.md) | Get the detailed browser useage per user.                    |
+| [Get browser distribution user counts](../api/reportroot-getbrowserdistributionusercounts.md)         | Edm.Stream | Get the number of users by browser over the selected period. |
+| [Get browser user counts](../api/reportroot-getbrowserusercounts.md)                | Edm.Stream | Get the trend in the number of active users for each browser |
+| [Get browser user detail](../api/reportroot-getbrowseruserdetail.md)            | Edm.Stream | Get the detailed browser useage per user.                    |
 
 

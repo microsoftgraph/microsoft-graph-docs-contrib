@@ -107,19 +107,19 @@ The following is an example of the request to get the **content** property.
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserDetail-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowseruserdetail-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserDetail-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowseruserdetail-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserDetail-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowseruserdetail-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserDetail-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowseruserdetail-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,19 +174,19 @@ The following is an example of the request to get the **content** property.
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')/content?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserDetail-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowseruserdetail-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserDetail-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowseruserdetail-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserDetail-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowseruserdetail-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserDetail-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowseruserdetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

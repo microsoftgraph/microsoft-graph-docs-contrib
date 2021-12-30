@@ -103,19 +103,19 @@ The following is an example that outputs CSV.
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserCounts-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserusercounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserCounts-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserusercounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserCounts-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserCounts-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserusercounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -168,19 +168,19 @@ The following is an example that returns JSON.
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserCounts-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserusercounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserCounts-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserusercounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserCounts-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserusercounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserCounts-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

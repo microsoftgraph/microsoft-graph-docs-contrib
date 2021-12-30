@@ -101,19 +101,19 @@ The following is an example that outputs CSV.
 GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')/$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserDistributionUserCounts-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserdistributionusercounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserDistributionUserCounts-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserdistributionusercounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserDistributionUserCounts-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserdistributionusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserDistributionUserCounts-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserdistributionusercounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,19 +165,19 @@ The following is an example that returns JSON.
 GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserDistributionUserCounts-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserdistributionusercounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserDistributionUserCounts-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserdistributionusercounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserDistributionUserCounts-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserdistributionusercounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserDistributionUserCounts-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserdistributionusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
