@@ -1,6 +1,6 @@
 ---
-title: "usersignininsight resource type"
-description: "In the Azure AD access reviews feature, the `usersignininsight` represents a type of insight included in the review."
+title: "userSignInInsight resource type"
+description: "In the Azure AD access reviews, the userSignInInsight resource represents insights provided to reviewers based on the user's last sign-in date and time."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **usersignininsight** model represents an insight for reviewers based on the user's last sign in date time.
+Represents an insight provided to reviewers based on the user's last sign-in date and time.
+
+Inherits from [governanceInsight](governanceinsight.md).
 
 ## Properties
 | Property    | Type   | Description |
@@ -29,12 +31,13 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.usersignininsight"
+  "@odata.type": "microsoft.graph.userSignInInsight",
+  "baseType": "microsoft.graph.governanceInsight"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.usersignininsight",
+  "@odata.type": "#microsoft.graph.userSignInInsight",
   "lastSignInDateTime": "DateTimeOffset"
 }
 ```

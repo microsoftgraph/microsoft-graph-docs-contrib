@@ -643,7 +643,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "accessReviewRecommendationInsightSetting",
               "ChangeType": "Addition",
-              "Description": "Added the [accessReviewRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewRecommendationInsightSetting?view=graph-rest-beta) resource type.",
+              "Description": "Added the [accessReviewRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewRecommendationInsightSetting?view=graph-rest-beta) resource type. This is an abstract type that exposes resources for configuring the type of insights to provide to reviewers and access review decision-makers.",
               "Target": "accessReviewRecommendationInsightSetting"
             },
             {
@@ -651,7 +651,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "recommendationInsightSettings",
               "ChangeType": "Addition",
-              "Description": "Added the **recommendationInsightSettings** property to [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource.",
+              "Description": "Added the **recommendationInsightSettings** property to [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource. Use this property to configure insights that aid reviewers of an access review to make decisions.",
               "Target": "accessReviewScheduleSettings"
             },
             {
@@ -659,7 +659,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "userLastSignInRecommendationInsightSetting",
               "ChangeType": "Addition",
-              "Description": "Added the [userLastSignInRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta) resource type.",
+              "Description": "Added the [userLastSignInRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta) resource type. Use this type to configure insight settings based on the user's last sign-in date and time into a tenant or application.",
               "Target": "userLastSignInRecommendationInsightSetting"
             },
             {
@@ -667,7 +667,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "insights",
               "ChangeType": "Addition",
-              "Description": "Added the **insights** relationship to [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+              "Description": "Added the **insights** navigation property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
               "Target": "accessReviewInstanceDecisionItem"
             },
             {
@@ -675,7 +675,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "governanceInsight",
               "ChangeType": "Addition",
-              "Description": "Added the [governanceInsight](https://docs.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-beta) resource",
+              "Description": "Added the [governanceInsight](https://docs.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-beta) resource. This is an abstract type that exposes resources for configuring the type of insights to provide to decision-makers in an accessReviewDecisionItem.",
               "Target": "governanceInsight"
             },
             {
@@ -683,7 +683,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "userSignInInsight",
               "ChangeType": "Addition",
-              "Description": "Added the [userSignInInsight](https://docs.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-beta) resource",
+              "Description": "Added the [userSignInInsight](https://docs.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-beta) resource. Use this type to configure insights for an **accessReviewDecisionItem** based on the user's last sign-in date and time.",
               "Target": "userSignInInsight"
             }
           ],
@@ -691,8 +691,8 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2021-10-25T22:11:38.5989437Z",
-          "WorkloadArea": "Microsoft.IdentityGovernance.AccessReviews",
-          "SubArea": ""
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Governance"
         }
     ]
 }

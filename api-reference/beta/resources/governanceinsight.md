@@ -1,13 +1,13 @@
 ---
-title: "governanceinsight resource type"
-description: "In the Azure AD access reviews feature, the `governanceinsight` represents a type of insight included in the review to aid reviewer decision making."
+title: "governanceInsight resource type"
+description: "Represents insights presented to the reviewer for an accessReviewInstanceDecisionItem."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# governanceinsight resource type
+# governanceInsight resource type
 
 Namespace: microsoft.graph
 
@@ -15,12 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **governanceinsight** model represents insights presented to the reviewer for an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md). Insights are recommendations to reviewers to help them complete access reviews. Note that this object is abstract with multiple derived types. 
+Represents insights presented to the reviewer for an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md). Insights are recommendations to reviewers to help them complete access reviews.
+
+This resource is an abstract type for the [userSignInInsight](usersignininsight.md) derived type.
 
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| insightCreatedDateTime | DateTimeOffset | Indicates when the insight was created |
+| id | String | Identifier of the insight. Read-only. |
+| insightCreatedDateTime | DateTimeOffset | Indicates when the insight was created. |
 
 ## Relationships
 None.
@@ -29,12 +32,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.governanceinsight"
+  "@odata.type": "microsoft.graph.governanceInsight",
+  "keyProperty": "id"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.governanceinsight",
+  "id": "String"
   "insightCreatedDateTime": "DateTimeOffset"
 }
 ```

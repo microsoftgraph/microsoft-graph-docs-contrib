@@ -1,6 +1,6 @@
 ---
-title: "userlastsigninrecommendationinsightsetting resource type"
-description: "In the Azure AD access reviews feature, the `userlastsignInrecommendationinsightsetting` represents the settings associated with the last sign-in based insight included in the review, to aid reviewer decision-making."
+title: "userLastSignInRecommendationInsightSetting resource type"
+description: "In the Azure AD access reviews, the userLastSignInRecommendationInsightSetting represents the settings associated with the insight that is based on the last sign-in date and time of the user, and that is used to aid reviewers to make decisions."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,13 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **userlastsignInrecommendationinsightsetting** allows you to configure last sign-in as an insight to aid reviewer decision-making for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
+The **userLastSignInRecommendationInsightSetting** allows you to configure the last sign-in date and time of a user as an insight to aid the reviewers to make decisions for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object.
+
+Inherits from [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md).
 
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| signInScope| userSignInRecommendationScope | Indicates whether inactivity is calculated based on activity in the tenant or in the application. Application is only relevant when the access review is a review of assignment to an application. |
-| recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
+| recommendationLookBackDuration | Duration | Optional. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look-back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
+| signInScope | userSignInRecommendationScope | Indicates whether inactivity is calculated based on the user's inactivity in the tenant or in the application. The possible values are `tenant`, `application`, `unknownFutureValue`. `application` is only relevant when the access review is a review of an assignment to an application. |
 
 ## Relationships
 None.
@@ -30,14 +32,15 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.userlastsignInrecommendationinsightsetting"
+  "@odata.type": "microsoft.graph.userLastSignInRecommendationInsightSetting",
+  "baseType": "microsoft.graph.accessReviewRecommendationInsightSetting"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.userlastsignInrecommendationinsightsetting",
   "recommendationLookBackDuration": "Duration",
-  "signInScope": "microsoft.graph.userSignInRecommendationScope"
+  "signInScope": "String"
 }
 ```
 
