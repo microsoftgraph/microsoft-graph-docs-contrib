@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "116d29dd-f97b-421c-9b55-531aac9d4b38",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentId** property to [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-1.0) entity.",
+          "Target": "attachmentItem,createUploadSession"
+        }
+      ],
+      "Id": "116d29dd-f97b-421c-9b55-531aac9d4b38",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-30T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bf68e333-fc87-4f40-bc63-931d4464329d",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentId** property to [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-beta) entity.",
+          "Target": "attachmentItem,createUploadSession"
+        }
+      ],
+      "Id": "bf68e333-fc87-4f40-bc63-931d4464329d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-30T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3e6b1451-c545-4fd8-a064-f1965cfe5a43",
           "ApiChange": "Permission",
           "ChangedApiName": "Contacts.Read",
