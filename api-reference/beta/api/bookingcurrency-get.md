@@ -1,7 +1,7 @@
 ---
 title: "Get bookingCurrency"
 description: "Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrency-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingcurrency-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -81,7 +85,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 50
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",

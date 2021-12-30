@@ -1,7 +1,7 @@
 ---
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "Jumaodhiss"
 ms.prod: "change-notifications"
 doc_type: resourcePageType
@@ -18,12 +18,14 @@ A subscription allows a client app to receive change notifications about changes
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
+- A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
-- A [user][] or [group][] in Azure Active Directory.
+- A [user][] in Azure Active Directory.
 
-See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
+For the possible resource path values for each supported resource and to learn how resources use lifecycle notifications, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
+
 
 ## Methods
 
@@ -39,21 +41,21 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 
 | Property | Type | Description | Supported Resources |
 |:---------|:-----|:------------|:--------------|
-| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.<br><br>Note: Drive root item and list change notifications support only the `updated` changeType. User and group change notifications support `updated` and `deleted` changeType. | All |
-| notificationUrl | string | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. | All |
-| lifecycleNotificationUrl | string | The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. This URL must make use of the HTTPS protocol. Optional. <br><br>[Read more](/graph/webhooks-lifecycle) about how Outlook resources use lifecycle notifications. | All |
-| resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource.| All |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. | All |
-| clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. | All |
-| id | string | Unique identifier for the subscription. Read-only. | All |
-| applicationId | string | Identifier of the application used to create the subscription. Read-only. | All |
-| creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. | All |
-| includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | All |
-| encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when **includeResourceData** is true. | All |
-| encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional.| All |
+| applicationId | String | Identifier of the application used to create the subscription. Read-only. | All |
+| changeType | String | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>**Note:** <li> Drive root item and list change notifications support only the `updated` changeType. <li>[User](../resources/user.md) and [group](../resources/user.md) change notifications support `updated` and `deleted` changeType. | All |
+| clientState | String | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. | All |
+| creatorId | String | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. | All |
+| encryptionCertificate | String | A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when **includeResourceData** is `true`. | All |
+| encryptionCertificateId | String | Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. | All |
+| expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see [the table below](#maximum-length-of-subscription-per-resource-type). | All |
+| id | String | Unique identifier for the subscription. Read-only. | All |
+| includeResourceData | Boolean | Optional. When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). | All |
 | latestSupportedTlsVersion | String | Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. | All |
-| notificationContentType | string | Desired content-type for MS Graph change notifications for supported resource types. The default content-type is the "application/json" content-type. | All |
-| notificationQueryOptions | string | OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource `isFetchable` property value becomes true etc. | [Universal Print Service](/graph/universal-print-webhook-notifications) |
+| lifecycleNotificationUrl | String | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. This URL must make use of the HTTPS protocol. | All |
+| notificationContentType | String | Desired **content-type** for Microsoft Graph change notifications for supported resource types. The default content-type is `application/json`. | All |
+| notificationQueryOptions | String | OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource `isFetchable` property value becomes `true` etc. | [Universal Print Service](/graph/universal-print-webhook-notifications) |
+| notificationUrl | String | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. | All |
+| resource | String | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource.| All |
 
 ### Maximum length of subscription per resource type
 
@@ -63,10 +65,10 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
-| SharePoint **list**    | 4230 minutes (under 3 days)    |
+| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
+| SharePoint **list**    | 42300 minutes (under 30 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 
@@ -104,21 +106,21 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "changeType": "string",
-  "notificationUrl": "string",
-  "lifecycleNotificationUrl": "string",
-  "resource": "string",
-  "applicationId" : "string",
+  "changeType": "String",
+  "notificationUrl": "String",
+  "lifecycleNotificationUrl": "String",
+  "resource": "String",
+  "applicationId" : "String",
   "expirationDateTime": "String (timestamp)",
-  "id": "string (identifier)",
-  "clientState": "string",
-  "creatorId": "string",
-  "includeResourceData": "boolean",
-  "encryptionCertificate": "string",
-  "encryptionCertificateId": "string",
-  "latestSupportedTlsVersion": "string",
-  "notificationContentType": "string",
-  "notificationQueryOptions": "string"
+  "id": "String (identifier)",
+  "clientState": "String",
+  "creatorId": "String",
+  "includeResourceData": "Boolean",
+  "encryptionCertificate": "String",
+  "encryptionCertificateId": "String",
+  "latestSupportedTlsVersion": "String",
+  "notificationContentType": "String",
+  "notificationQueryOptions": "String"
 }
 ```
 

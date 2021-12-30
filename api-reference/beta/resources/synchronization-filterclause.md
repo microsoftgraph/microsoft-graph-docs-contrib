@@ -1,7 +1,7 @@
 ---
 title: "filterClause resource type"
 description: "Represents a single assertion that a candidate object must satisfy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

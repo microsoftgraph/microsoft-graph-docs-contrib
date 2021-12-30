@@ -2,7 +2,7 @@
 title: "Windows updates API overview"
 description: "The Windows Update for Business deployment service gives control to your organization over the updates offered to your devices."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
@@ -13,13 +13,13 @@ The Windows Update for Business deployment service provides control over device 
 
 ## Why use the Windows Update for Business deployment service?
 
-IT Professionals and management tool vendors alike can use the deployment service to:
-* Schedule update deployments to begin on a specific date
-* Stage deployments over a period of days or weeks using rich expressions
-* Bypass pre-configured Windows Update for Business policies to immediately deploy a security update
-* Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s)
+IT professionals and management tool vendors alike can use the deployment service to:
+* Schedule update deployments to begin on a specific date.
+* Stage deployments over a period of days or weeks using rich expressions.
+* Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
+* Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, please see [Overview of the deployment service](https://docs.microsoft.com/windows/deployment/update/deployment-service-overview).
+Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
 
 ## Prerequisites    
 
@@ -57,7 +57,9 @@ To learn more, see [Deploy an expedited security update](windowsupdates-deploy-e
 
 ## Protect devices by default
 
-Enjoy the benefit of [safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise.
+Enjoy the benefit of [safeguard holds](/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
+
+To learn more, see [Manage safeguards for a deployment](windowsupdates-manage-safeguards.md).
 
 Additionally, you can configure monitoring rules that are unique to your organization. These rules can send an alert or pause a deployment based on device signals such as rollbacks.
 

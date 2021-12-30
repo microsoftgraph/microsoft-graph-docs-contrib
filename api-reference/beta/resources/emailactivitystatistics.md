@@ -1,7 +1,7 @@
 ---
 title: "emailActivityStatistics resource type"
 description: "Represents additional information about email activities for users"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

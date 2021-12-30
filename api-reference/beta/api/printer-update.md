@@ -2,7 +2,7 @@
 title: Update printer
 description: Update the properties of a printer object.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -111,7 +111,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/print/printers/{id}
 Content-type: application/json
-Content-length: 124
 
 {
   "name": "PrinterName",
@@ -138,6 +137,10 @@ Content-length: 124
 [!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -154,7 +157,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

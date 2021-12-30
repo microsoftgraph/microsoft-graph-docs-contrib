@@ -1,7 +1,7 @@
 ---
 title: "agreement resource type"
 description: "Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD)."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -11,7 +11,7 @@ author: "raprakasMSFT"
 
 Namespace: microsoft.graph
 
-Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the [Azure Active Directory Terms of Use feature](/azure/active-directory/active-directory-tou) according to your scenario.
+Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the [Azure Active Directory Terms of Use feature](/azure/active-directory/conditional-access/terms-of-use) according to your scenario.
 
 ## Methods
 

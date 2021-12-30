@@ -1,7 +1,7 @@
 ---
 title: "userAnalytics resource type"
 description: "The user's settings and activity statistics."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

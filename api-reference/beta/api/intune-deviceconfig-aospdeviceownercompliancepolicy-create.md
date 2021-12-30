@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the a
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
+|securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |passwordRequired|Boolean|Require a password to unlock device.|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required. Valid values 1 to 8640|
@@ -76,7 +77,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 593
+Content-length: 636
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerCompliancePolicy",
@@ -89,6 +90,7 @@ Content-length: 593
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+  "securityBlockJailbrokenDevices": true,
   "passwordRequired": true,
   "passwordRequiredType": "required",
   "passwordMinutesOfInactivityBeforeLock": 5,
@@ -102,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 765
+Content-Length: 808
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerCompliancePolicy",
@@ -118,6 +120,7 @@ Content-Length: 765
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
+  "securityBlockJailbrokenDevices": true,
   "passwordRequired": true,
   "passwordRequiredType": "required",
   "passwordMinutesOfInactivityBeforeLock": 5,

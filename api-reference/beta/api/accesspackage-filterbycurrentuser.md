@@ -1,8 +1,8 @@
 ---
 title: "accessPackage: filterByCurrentUser"
 description: "Retrieve a list of accesspackage objects filtered on the signed-in user."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequest-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

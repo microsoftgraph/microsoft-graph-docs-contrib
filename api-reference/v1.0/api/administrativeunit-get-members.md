@@ -1,8 +1,8 @@
 ---
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
-author: "anandyadavMSFT"
-localization_priority: Normal
+author: "DougKirschner"
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -54,7 +54,6 @@ Here is an example of the respone. Note: The response object shown here might be
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type":"#microsoft.graph.user",

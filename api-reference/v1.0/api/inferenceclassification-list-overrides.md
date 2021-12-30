@@ -1,7 +1,7 @@
 ---
 title: "List overrides"
 description: "Get the overrides that a user has set up to always classify messages from certain senders in specific ways."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-overrides-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-overrides-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

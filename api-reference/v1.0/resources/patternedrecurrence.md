@@ -1,7 +1,7 @@
 ---
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The recurrence pattern and range.
+The recurrence pattern and range. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Azure AD.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
-|range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
+|range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## JSON representation
 

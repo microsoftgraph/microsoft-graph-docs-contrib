@@ -1,7 +1,7 @@
 ---
 title: "message: send"
 description: "Send an existing draft message."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

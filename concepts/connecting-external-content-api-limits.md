@@ -2,7 +2,7 @@
 title: "Microsoft Graph connector API limits"
 description: "Microsoft Graph connector API limits"
 author: mecampos
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
 ---

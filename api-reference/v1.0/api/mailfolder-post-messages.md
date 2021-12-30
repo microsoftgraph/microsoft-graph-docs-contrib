@@ -2,7 +2,7 @@
 title: "Create message in a mailfolder"
 description: "Use this API to create a new Message in a mailfolder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -52,7 +52,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",
@@ -78,6 +77,10 @@ Content-length: 248
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-message-from-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
@@ -91,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",
