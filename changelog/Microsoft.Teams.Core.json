@@ -484,7 +484,7 @@
           "Description": "Added the ``shared`` member to the **channelMembershipType** enumeration.",
           "Target": "channelMembershipType"
         },
-		{
+        {
           "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
           "ApiChange": "Enum type",
           "ChangedApiName": "teamifyGroup",
@@ -492,19 +492,91 @@
           "Description": "Added the ``teamifyGroup`` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
         },
-		{
+        {
           "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
           "ApiChange": "Enum type",
           "ChangedApiName": "createChannel",
           "ChangeType": "Addition",
           "Description": "Added the ``createChannel`` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharedWithTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedWithTeams** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/team) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "allChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **allChannels** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/team) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "incomingChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingChannels** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/team) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "associatedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedTeams** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/userteamwork) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta) resource.",
+          "Target": "teamInfo"
+        }
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta) resource.",
+          "Target": "associatedTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharedWithChannelTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta) resource.",
+          "Target": "sharedWithChannelTeamInfo"
         }
       ],
       "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-15T21:46:49.407Z",
+      "CreatedDateTime": "2021-12-25T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
