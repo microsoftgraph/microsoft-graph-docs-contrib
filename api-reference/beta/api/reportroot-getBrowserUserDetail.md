@@ -1,5 +1,5 @@
 ---
-title: "reportRoot: browserUserDetail"
+title: "reportRoot: getBrowserUserDetail"
 description: "Get a report that provides the details about which browser users have used."
 localization_priority: Normal
 ms.prod: "reports"
@@ -7,7 +7,7 @@ author: "sarahwxy"
 doc_type: apiPageType
 ---
 
-# reportRoot: browserUserDetail
+# reportRoot: getBrowserUserDetail
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } --> 
 
 ```http
-GET /reports/browserUserDetail(period='{period_value}')
+GET /reports/getBrowserUserDetail(period='{period_value}')
 ```
 
 ## Function parameters
@@ -100,26 +100,26 @@ The following is an example of the request to get the **content** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportroot_browserUserDetail"
+  "name": "reportroot_getBrowserUserDetail"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browseruserdetail-csv-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserDetail-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browseruserdetail-csv-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserDetail-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browseruserdetail-csv-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserDetail-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browseruserdetail-csv-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserDetail-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,7 +151,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id, Report Period, Edge, Edge Legacy, Internet Explorer
+Report Refresh Date,User Principal Name, Report Period, Edge, Edge Legacy, Internet Explorer
 ```
 
 ### Example 2: JSON output
@@ -167,26 +167,26 @@ The following is an example of the request to get the **content** property.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "reportroot_browserUserDetail"
+  "name": "reportroot_getBrowserUserDetail"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')/content?$format=application/json
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-browseruserdetail-json-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getBrowserUserDetail-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-browseruserdetail-json-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getBrowserUserDetail-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-browseruserdetail-json-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getBrowserUserDetail-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-browseruserdetail-json-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getBrowserUserDetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,11 +211,11 @@ Content-Type: application/json
 Content-Length: 304
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/browserUserDetail(period='D7')/content?$format=application/json&$skiptoken=D07uj",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=application/json&$skiptoken=D07uj",
    "value":[
       {
          "reportRefreshDate":"2021-04-17",
-         "userId": "195C9BCCF6704E4CA3A0F5F4A4E6872B",
+         "userPrincipalName": "admin@contoso.com",
          "details":[
             {
                "reportPeriod":7,
