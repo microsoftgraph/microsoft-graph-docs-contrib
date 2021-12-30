@@ -165,7 +165,7 @@ Content-type: application/json
 
 ### Example 2: Create an upload session to add a large in-line attachment to a draft message
 
-The following example demonstrates how to create an upload session that can be used to add a large inline attachment to a draft message.
+The following example shows how to create an upload session that can be used to add a large inline attachment to a draft message.
 
 For an inline attachment, set _isInline_ property to `true` and use the _contentId_ property to specify a CID for the attachment as shown below. In the body of the draft message, use the same CID value to indicate the position where you want to include the attachment using a CID HTML reference tag, for example `<img src="cid:my_inline_picture">`. Upon successfully uploading the file, the rendered message will include the attachment as part of the message body in the specified location.
 
