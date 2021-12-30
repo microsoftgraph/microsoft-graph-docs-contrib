@@ -1,7 +1,7 @@
 ---
 title: "Update approvalStage"
 description: "Apply approve or deny decision on an approvalStage object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -63,8 +63,10 @@ The following is an example of the request.
   "blockType": "request",
   "name": "patch_approvalstage"
 }-->
-
----
+{
+ "reviewResult":"Approve",
+ "justification":"OK"
+}
 
 
 ### Response
