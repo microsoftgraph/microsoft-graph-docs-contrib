@@ -20,7 +20,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
+| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
 
 ## Properties
 
