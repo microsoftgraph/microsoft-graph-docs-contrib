@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Browser usage reports"
 description: "Use the Microsoft 365 Browser usage reports to get insights into the usage of Browsers in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
