@@ -32,13 +32,13 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackageId|String|ID of the access package.|
+|accessPackageId|String|Identifier of the access package.|
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval.|
 |createdBy|String|Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |description|String|The description of the policy.|
-|displayName|String|The display name of the policy.|
+|displayName|String|The display name of the policy. Supports `$filter` (`eq`).|
 |durationInDays|Int32|The number of days in which assignments from this policy last until they are expired.|
 |expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
@@ -53,7 +53,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable.|
+|accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 

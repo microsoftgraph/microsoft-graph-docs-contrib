@@ -46,8 +46,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|The access package associated with the accessPackageAssignmentRequest. An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources. Read-only. Nullable. <br/><br/> Supports `$expand`.|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| For a **requestType** of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a **requestType** of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.  <br/><br/> Supports `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|The access package associated with the accessPackageAssignmentRequest. An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources. Read-only. Nullable. Supports `$expand`.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| For a **requestType** of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a **requestType** of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.  Supports `$expand`.|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable. Supports `$expand`.|
 
 

@@ -36,7 +36,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable.|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable. Supports `$expand`.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Read-only. Nullable.|
 
 ## JSON representation

@@ -44,22 +44,22 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|catalogId|String|ID of the access package catalog referencing this access package. Read-only.|
-|createdBy|String|UPN of the user or identity of the subject who created this resource. Read-only.|
+|catalogId|String|Identifier of the access package catalog referencing this access package. Read-only.|
+|createdBy|String|The userPrincipalName of the user or identity of the subject who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the access package.|
-|displayName|String|The display name of the access package.|
+|displayName|String|The display name of the access package. Supports $filter (`eq`, `contains`).|
 |id|String| Read-only.|
 |isHidden|Boolean|Whether the access package is hidden from the requestor.|
 |isRoleScopesVisible|Boolean|Indicates whether role scopes are visible.|
-|modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
+|modifiedBy|String|The userPrincipalName of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Read-only. Nullable.|
+|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Read-only. Nullable. Supports `$expand`.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Read-only. Nullable.|
 |accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection| Nullable.|
 | incompatibleAccessPackages | [accessPackage](accesspackagecatalog.md) collection | The  access packages whose assigned users are ineligible to be assigned this access package. |

@@ -34,7 +34,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## Optional query parameters
 
-This method supports the `$expand` and `$filter` OData query parameters to help customize the response.
+This method supports the `$select`, `$expand` and `$filter` OData query parameters to help customize the response.
 
 ### Example scenarios for using query parameters
 

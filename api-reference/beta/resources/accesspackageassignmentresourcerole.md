@@ -38,7 +38,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md) collection| The access package assignments resulting in this role assignment. Read-only. Nullable.|
 |accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Read-only. Nullable.|
-|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable.|
+|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable. Supports `$filter` (`eq`) on **objectId** and `$expand` query parameters.|
 
 
 ## JSON representation

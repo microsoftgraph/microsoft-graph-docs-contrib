@@ -19,20 +19,23 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |[List accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[accessPackageAssignment](accesspackageassignment.md) collection|Retrieve a list of **accessPackageAssignment** objects. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
 
+> [!NOTE]
+> To create or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) method.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Read-only.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|When the access assignment is to be in place. Read-only.|
-|state|accessPackageAssignmentState|The state of the access package assignment. The possible values are: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Read-only.|
+|state|accessPackageAssignmentState|The state of the access package assignment. The possible values are: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`).|
 |status|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackage|[accessPackage](accesspackage.md)|Read-only. Nullable.|
-|target|[accessPackageSubject](accesspackagesubject.md)|The subject of the access package assignment. Read-only. Nullable.|
+|accessPackage|[accessPackage](accesspackage.md)|Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
+|target|[accessPackageSubject](accesspackagesubject.md)|The subject of the access package assignment. Read-only. Nullable. Supports `$expand`. Supports `$filter` (`eq`) on **objectId**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

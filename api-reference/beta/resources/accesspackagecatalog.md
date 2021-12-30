@@ -38,7 +38,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |createdBy|String|UPN of the user who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the access package catalog.|
-|displayName|String|The display name of the access package catalog.|
+|displayName|String|The display name of the access package catalog. Supports `$filter` (`eq`, `contains`).|
 |id|String| Read-only.|
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 |modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
@@ -49,7 +49,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable.|
+|accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable. Supports `$expand`.|
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
 
 ## JSON representation

@@ -32,7 +32,7 @@ Each access package is referenced by a single access package catalog, and has li
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the access package.|
-|displayName|String|The display name of the access package.|
+|displayName|String|The display name of the access package. Supports $filter (`eq`, `contains`).|
 |id|String|Read-only.|
 |isHidden|Boolean|Whether the access package is hidden from the requestor.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |

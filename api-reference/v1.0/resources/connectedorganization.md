@@ -33,7 +33,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), a conne
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the connected organization.|
-|displayName|String|The display name of the connected organization.|
+|displayName|String|The display name of the connected organization. Supports `$filter` (`eq`).|
 |id|String|Read-only.|
 |identitySources|[identitySource](../resources/identitysource.md) collection|The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Nullable.|
 |modifiedDateTime|DateTimeOffset|*The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
