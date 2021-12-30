@@ -13629,11 +13629,11 @@ items:
           href: resources/microsoft-365-browser-usage-report.md
           items:
           - name: Get user detail
-            href: api/reportroot-browseruserdetail.md
+            href: api/reportroot-getbrowseruserdetail.md
           - name: Get user counts
-            href: api/reportroot-browserusageusercounts.md
+            href: api/reportroot-getbrowserusageusercounts.md
           - name: Get user counts distribution
-            href: api/reportroot-browserdistributionusercounts.md
+            href: api/reportroot-getbrowserdistributionusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
