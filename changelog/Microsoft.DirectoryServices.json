@@ -8309,7 +8309,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-07T23:28:58.045Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
+      "SubArea": "Identity governance"
     },
     {
       "ChangeList": [
@@ -9473,7 +9473,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
+      "SubArea": "Identity governance"
     },
     {
       "ChangeList": [
@@ -9491,7 +9491,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Calendar",
-      "SubArea": ""
+      "SubArea": "Identity governance"
     },
     {
       "ChangeList": [
