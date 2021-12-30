@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an attachment of a [serviceUpdateMessage](../resources/serviceUpdateMessage.md)
+Represents an attachment of a [serviceUpdateMessage](../resources/serviceupdatemessage.md)
 
 Inherits from [attachment](../resources/attachment.md).
 
@@ -24,12 +24,11 @@ Inherits from [attachment](../resources/attachment.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |content|Stream|The attachment content.|
-|contentType|String|The content type of the attachment. Inherited from [attachment](../resources/attachment.md).|
+|contentType|String|The content type of the attachment.|
 |id|String|The attachment ID. Inherited from [entity](../resources/entity.md).|
-|isInline|Boolean|Set to true if this is an inline attachment. Inherited from [attachment](../resources/attachment.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. Inherited from [attachment](../resources/attachment.md).|
-|name|String|The attachment name. Inherited from [attachment](../resources/attachment.md).|
-|size|Int32|The size in bytes of the attachment. Inherited from [attachment](../resources/attachment.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified.|
+|name|String|The attachment name.|
+|size|Int32|The size in bytes of the attachment.|
 
 ## Relationships
 None.
