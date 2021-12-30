@@ -24,7 +24,7 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 | appId | String | The globally unique identifier of the application to which access has been granted. |
 | displayName | String | Display name of the resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
 | id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | String | Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. Type will always be `ServicePrincipal`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 ## Relationships

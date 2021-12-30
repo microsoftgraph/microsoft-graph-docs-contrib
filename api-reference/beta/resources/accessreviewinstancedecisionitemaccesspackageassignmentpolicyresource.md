@@ -21,9 +21,9 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String | Display name of the resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| displayName | String | Display name of the access package. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
 | id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | String | Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. Type will always be `AccessPackageAssignmentPolicy`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 |accessPackageId|String| Identifier of the access package to which access has been granted. |
 |accessPackageDisplayName|String| Display name of the to which access has been granted. |
 

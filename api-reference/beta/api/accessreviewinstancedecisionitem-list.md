@@ -47,6 +47,7 @@ Do not supply a request body.
 ## Response
 If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.
 
+## Examples
 ### Example 1
 ### Request
 The following example shows a request to retrieve all the decisions on an instance of an access review.
@@ -178,6 +179,10 @@ Content-type: application/json
 ### Request
 The following example shows a request to retrieve all the decisions on every instance and defintion that the calling user is the reviewer for.
 
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewInstanceDecisionItem"
+}-->
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
 
 ---
