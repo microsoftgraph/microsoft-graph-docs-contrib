@@ -19,9 +19,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 |:----------------|:------------|:-----------------------------------------|
 | Cloud printing [printer][] | Changes when a print job is ready to be downloaded (JobFetchable event):<br>`/print/printers/{id}/jobs` | No |
 | Cloud printing [printTaskDefinition][] | Changes when there is a valid job in the queue (JobStarted event) :<br>`/print/printtaskdefinition/{id}/tasks` | No |
-| Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | Yes |
-| Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | Yes |
-| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | Yes |
+| Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | No |
+| Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
+| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 | [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}`<br>Changes to owners of a specific group:<br>`/groups/{id}/owners`<br>Changes to members of a specific group:<br>`/groups/{id}/members`  | No |
 | Microsoft 365 group [conversation][] | Changes to a group's conversations:<br>`groups/{id}/conversations` | No |
