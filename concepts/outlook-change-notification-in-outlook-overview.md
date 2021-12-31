@@ -21,7 +21,6 @@ Outlook supports two types of change notifications:
 - **Change notification to track all changes for a specific resource** - for example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
- 
 
 ## Notification payloads
 
@@ -30,12 +29,11 @@ resource payload along with the notification, which removes the need to call bac
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following.  This payload is for a notification corresponding to the chat message resource. The actual 
-notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification.
+For notifications with resource data, the payload looks like the following.  In the example below, the payload is for a notification corresponding to the outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification.
 
 ```json
 {
-    value: [
+    "value": [
       {
         "subscriptionId": "dfd11b2f-8222-4189-9545-4205c95d6235",
         "subscriptionExpirationDateTime": "2021-12-31T16:16:44.9907405+05:30",
@@ -54,17 +52,17 @@ notification includes the **resource** and **resourceData** properties, which re
           "@odata.type": "#microsoft.graph.message",
           "@odata.id": "Users('722effaf-0433-4272-9ac4-d5ec11c3cd77')/messages('AAMkAGUwNjQ4ZjIxLTQ3Y2Y8AAA=')",
           "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAGDUR8n\"",
-          "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMzNjMwNWM0ZGE2YQBGAAAAAADbrwBIJbBSTKolRbhHUzSHBwCQ2fKdhq8oSKEDSVrdi3lRAAAAAAEMAACQ2fKdhq8oSKEDSVrdi3lRAAGDx268AAA="
+          "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2Y8AAA="
         }
       }
     ]
-    validationTokens: ["<<--ValidationTokens-->>"]
+    "validationTokens": ["<<--ValidationTokens-->>"]
 }
 ```
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the outlook [message](/graph/api/resources/message?preserve-view=true) schema. The payload is similar to that returned by GET operations. Notification for other outlook entities like [contacts](/graph/api/resources/contact?preserve-view=true), [calendar](/graph/api/resources/calendar?preserve-view=true) follow their respective schemas. 
 
 ```json
 {
@@ -92,25 +90,84 @@ Notifications without resource data give you enough information to make GET call
 The payload looks like the following. This payload is for a message sent in a channel.
 
 ```json
-value: [{
-    "subscriptionId": "c6126aa3-0ed8-412f-a988-71e6cee627c4",
-    "subscriptionExpirationDateTime": "2022-01-02T03:12:18.2257768+05:30",
-    "changeType": "created",    
-    "resource": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIxAAA=",
-    "resourceData": {      
-      "@odata.type": "#Microsoft.Graph.Message",
-      "@odata.id": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIAAA=",
-      "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAGDUUXn\"",
-      "id": "AAMkAGUwNjQ4ZjIxAAA="
-    },
-    "clientState": "<<--SpecifiedClientState-->>",
-    "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
-}]
+"value": [
+ {
+   "subscriptionId": "c6126aa3-0ed8-412f-a988-71e6cee627c4",
+   "subscriptionExpirationDateTime": "2022-01-02T03:12:18.2257768+05:30",
+   "changeType": "created",    
+   "resource": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIxAAA=",
+   "resourceData": {      
+     "@odata.type": "#Microsoft.Graph.Message",
+     "@odata.id": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIAAA=",
+     "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAGDUUXn\"",
+     "id": "AAMkAGUwNjQ4ZjIxAAA="
+   },
+   "clientState": "<<--SpecifiedClientState-->>",
+   "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
+ }
+]
 ```
 Previous example above shows a notification that corresponds to a outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 
+## Subscribe to changes in mail, calendar or contacts
+
+To get change notifications for all messages and replies across channels in a tenant, subscribe to /teams/getAllMessages. This resource supports including resource data in the notification.
+Create one or more single-value extended properties in a new or existing instance of a resource.
+
+The following user resources are supported:
+
+- [contact](../resources/contact.md)
+- [event](../resources/event.md)
+- [message](../resources/message.md)
+
+### Permissions
+
+Outlook change notifications support delegated and application permission scopes.
+- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission 
+  Calendars.Read to subscribe to events in another user’s mailbox.
+- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
+  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
+  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they 
+    do **not** support subscribing to change notifications on items in shared or delegated folders.
+
+| Supported resource                | Delegated (work or school account) | Delegated (personal Microsoft account) | Application               |
+|:----------------------------------|:-----------------------------------|:---------------------------------------|:--------------------------|
+|[contact](../resources/contact.md) | Contacts.Read                      | Contacts.Read                          | Contacts.Read             |
+|[event](../resources/event.md)     | Calendars.Read                     | Calendars.Read                         | Calendars.Read            |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read          | Mail.ReadBasic, Mail.Read              | Mail.ReadBasic, Mail.Read |
+
+### HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /subscriptions
+```
+
+### Request headers
+
+| Name           | Type    | Description               |
+|:---------------|:--------|:--------------------------|
+| Authorization  | string  | Bearer {token}. Required. |
+
+### Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
+### Response
+
+If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+For details about how errors are returned, see [Error responses][error-response].
+
+### Examples
+
+#### Example 1: Create subscription to send a change notification without resource data when the user receives a new message
+#### Example 2: Create subscription to send a change notification with resource data when the user receives a new message
+
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
 - [Outlook mail API overview](outlook-mail-concept-overview.md)
+- [Outlook contacts API overview](outlook-contacts-concept-overview.md)
+- [Outlook calendar API overview](outlook-calendar-concept-overview.md)
