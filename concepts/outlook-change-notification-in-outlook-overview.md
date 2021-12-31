@@ -164,7 +164,117 @@ For details about how errors are returned, see [Error responses][error-response]
 ### Examples
 
 #### Example 1: Create subscription to send a change notification without resource data when the user receives a new message
+
+##### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withoutresourcedata_for_message_resource"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+
+{
+    "changeType": "created,updated,deleted",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages",
+    "expirationDateTime": "2021-07-07T21:42:18.2257768+00:00",
+    "clientState": "secretClientState"
+}
+```
+
+##### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "id": "5522bd62-7c96-4530-85b0-00b916f6151a",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages",
+    "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
+    "changeType": "created",
+    "clientState": "secretClientState",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "notificationQueryOptions": null,
+    "notificationContentType": null,
+    "lifecycleNotificationUrl": null,
+    "expirationDateTime": "2022-01-01T21:42:18.2257768Z",
+    "creatorId": "a4c7bd34-4f3b-46b7-a25d-b63c1e2a2842",
+    "includeResourceData": null,
+    "latestSupportedTlsVersion": "v1_2",
+    "encryptionCertificate": null,
+    "encryptionCertificateId": null,
+    "notificationUrlAppId": null
+}
+```
+
 #### Example 2: Create subscription to send a change notification with resource data when the user receives a new message
+
+##### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withresourcedata_for_message_resource"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+
+{ 
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages?$select=Subject,bodyPreview,importance,receivedDateTime,from",
+    "expirationDateTime": "2022-01-01T21:42:18.2257768+00:00",
+    "clientState": "secretClientValue",
+    "includeResourceData": true,
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId"
+}
+```
+
+##### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "id": "178eec5f-cf3c-4e7e-8a9c-8640deb5b5c5",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages?$select=Subject,bodyPreview,importance,receivedDateTime,from",
+    "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
+    "changeType": "created",
+    "clientState": "secretClientValue",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "notificationQueryOptions": null,
+    "notificationContentType": null,
+    "lifecycleNotificationUrl": null,
+    "expirationDateTime": "2022-01-01T12:32:35.1582696Z",
+    "creatorId": "a4c7bd34-4f3b-46b7-a25d-b63c1e2a2842",
+    "includeResourceData": true,
+    "latestSupportedTlsVersion": "v1_2",
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId",
+    "notificationUrlAppId": null
+}
+```
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
