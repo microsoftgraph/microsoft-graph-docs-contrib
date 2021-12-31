@@ -26,9 +26,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}`<br>Changes to owners of a specific group:<br>`/groups/{id}/owners`<br>Changes to members of a specific group:<br>`/groups/{id}/members` | No |
 | [list][] under a SharePoint [site][] | `/sites/{id}/lists/{id}` | No |
 | Microsoft 365 group [conversation][] | Changes to a group's conversations:<br>`groups/{id}/conversations` | No |
-| Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
-| Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | No |
-| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
+| Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | Yes |
+| Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | Yes |
+| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | Yes |
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [channel][] | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
