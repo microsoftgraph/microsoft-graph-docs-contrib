@@ -1,5 +1,5 @@
 ---
-title: "Create accessReviewHistoryDefinition"
+title: "Create historyDefinitions"
 description: "Create a new accessReviewHistoryDefinition object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create accessReviewHistoryDefinition
+# Create historyDefinitions
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-The signed-in user must also be in a directory role that permits them to read an access review to retrieve any data.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
+The signed-in user must also be in a directory role that permits them to read an access review to retrieve any data.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-overview.md).
 
 ## HTTP request
 
@@ -73,7 +73,7 @@ The value of `{object}` is one of the resources that can be configured in an **a
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
 ```
 
-For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md#use-the-filter-query-parameter).
+For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
 
 ## Response
 

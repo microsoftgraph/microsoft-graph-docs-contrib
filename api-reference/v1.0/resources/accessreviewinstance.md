@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). All properties are read-only.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). All properties are read-only.
 
 If the instance is a part of a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource being reviewed in the schedule definition. If a schedule definition reviews multiple resources, each resource will have a unique instance for each recurrence.
 
@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewInstances](../api/accessreviewinstance-list.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.|
+|[List accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.|
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Read the properties and relationships of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
 |[Update accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Update the reviewers of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Returns all instance objects on a definition for which the calling user is the reviewer.|
