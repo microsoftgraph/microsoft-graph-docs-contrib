@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create an ag
 |isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand and view the agreement before accepting.|
 |fileName|String|Name of the agreement file (for example, TOU.pdf).|
 |isDefault|Boolean|Indicates whether this is the default agreement file if the language matches the client preference. If none of the files are marked as default, the first one is treated as default.|
-|language|String|The language of the agreement file in the format languagecode2-country/regioncode2. languagecode2 is a lowercase two-letter code derived from ISO 639-1. country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).|
+|language|String|The language of the agreement file in the format "languagecode2-country/regioncode2". "languagecode2" is a lowercase two-letter code derived from ISO 639-1, while "country/regioncode2" is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is `en-US`.|
 |data|Binary|Data that represents the terms of use for the PDF document.|
 
 ## Response

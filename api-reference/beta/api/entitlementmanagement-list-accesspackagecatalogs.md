@@ -1,19 +1,19 @@
 ---
-title: "List accessPackageAssignmentResourceRoles"
-description: "Retrieve a list of accessPackageAssignmentResourceRole objects."
+title: "List accessPackageCatalogs"
+description: "Retrieve a list of accessPackageCatalog objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageAssignmentResourceRoles
+# List accessPackageCatalogs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects.  The resulting list includes all the resource roles of all assignments that the caller has access to read, across all catalogs and access packages.
+Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.
 
 ## Permissions
 
@@ -30,15 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-For example, to retrieve only access package assignment resource roles for a particular user, you can include a query with a filter targeting the object ID of that user `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'`.
-
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For example, to retrieve the access packages in each catalog, include `$expand=accessPackages` in the query. To search for access package catalogs with a particular name, include a filter such as `$filter=contains(tolower(displayName),'staff')` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects in the response body.
 
 ## Examples
 
@@ -63,30 +60,30 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accesspackageassignmentresourceroles"
+  "name": "get_accesspackagecatalogs"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentresourceroles-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackagecatalogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentresourceroles-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackagecatalogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentresourceroles-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackagecatalogs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentresourceroles-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagecatalogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentresourceroles-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagecatalogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,7 +98,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole",
+  "@odata.type": "microsoft.graph.accessPackageCatalog",
   "isCollection": true
 } -->
 
@@ -112,10 +109,16 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "1bf101d2-4d9c-437f-bbf5-3d13d98f5479",
-      "originId": "originId-value",
-      "originSystem": "SharePointOnline",
-      "status": "Fulfilled"
+      "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
+      "description":"Sample access package catalog",
+      "displayName":"Access package catalog for testing",
+      "isExternallyVisible":false,
+      "catalogType":"UserManaged",
+      "catalogStatus":"Published",
+      "createdDateTime":"2019-01-27T18:19:50.74Z",
+      "modifiedDateTime":"2019-01-27T18:19:50.74Z",
+      "createdBy":"TestGA@example.com",
+      "modifiedBy":"TestGA@example.com"
     }
   ]
 }
@@ -125,7 +128,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List accessPackageAssignmentResourceRoles",
+  "description": "List accessPackageCatalogs",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

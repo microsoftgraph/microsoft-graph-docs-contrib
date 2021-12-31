@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewHistoryDefinitions"
+title: "List historyDefinitions"
 description: "Get a list of the accessReviewHistoryDefinition objects."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewHistoryDefinitions
+# List historyDefinitions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,16 +1,19 @@
 ---
-title: "List accessReviewScheduleDefinitions"
-description: "Get a list of the accessReviewScheduleDefinition objects and their properties."
-author: "isabelleatmsft"
+title: "List definitions"
+description: "Retrieve accessReviewScheduleDefinition objects."
 ms.localizationpriority: medium
+author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewScheduleDefinitions
+# List definitions
+
 Namespace: microsoft.graph
 
-Get a list of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects and their properties.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created. This does not include the associated accessReviewInstance objects.
 
 >[!NOTE]
 >The default page size for this API is 100 accessReviewScheduleDefinition objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
@@ -18,24 +21,25 @@ Get a list of the [accessReviewScheduleDefinition](../resources/accessreviewsche
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- The signed-in user must also be in a directory role that permits them to read an access review. See access review [role and application permission authorization checks](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks).
+ The signed-in user must also be in a directory role that permits them to read an access review. See access review [role and application permission authorization checks](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks).
 
 ## HTTP request
 
 To list all your accessReviewScheduleDefinitions:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$top`, `$skip`,`$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$skip`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Use the $filter query parameter
 The `$filter` query parameter with the `contains` operator is supported on the **scope** property of accessReviewScheduleDefinition. Use the following format for the request:
@@ -48,25 +52,23 @@ The value of `{object}` can be one of the following:
 
 |Value|Description|
 |:---     |:---       |
-|`/groups`  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|`/groups/{group id}`  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
-|`./members`  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
-|`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
-|`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
+|/groups  |List every accessReviewScheduleDefinition on individual groups (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|/groups/{group id}  |List every accessReviewScheduleDefinition on a specific group (excludes definitions scoped to all Microsoft 365 groups with guest users).|
+|./members  |List every accessReviewScheduleDefinition scoped to all Microsoft 365 groups with guest users.|
+|accessPackageAssignments  |List every accessReviewScheduleDefinition on an access package.|
+|roleAssignmentScheduleInstances  |List every accessReviewScheduleDefinition for service principals assigned to a privileged role.|
 
 The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
 
+
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+None.
 
 ## Request body
-Do not supply a request body for this method.
+Do not supply a request body.
 
 ## Response
-
-If successful, this method returns a `200 OK` response code and a collection of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an array of [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects in the response body.
 
 ## Examples
 
@@ -74,14 +76,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition"
 }-->
-```
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions?$top=100&$skip=0
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-csharp-snippets.md)]
@@ -105,7 +106,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ---
 
-
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -119,7 +119,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
     "@odata.count": 1,
     "value": [
         {
@@ -175,6 +175,7 @@ Content-type: application/json
 }
 ```
 
+
 ### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
 
 #### Request
@@ -187,7 +188,7 @@ The following example shows a request to retrieve all the access review series s
   "name": "list_accessReviewScheduleDefinition_allgroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-allgroups-csharp-snippets.md)]
@@ -225,7 +226,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions",
     "@odata.count": 1,
     "value": [
         {
@@ -282,10 +283,28 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
+            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]
 }
 
 ```
+
+
+## See also
+
+- [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List accessReviewScheduleDefinition",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

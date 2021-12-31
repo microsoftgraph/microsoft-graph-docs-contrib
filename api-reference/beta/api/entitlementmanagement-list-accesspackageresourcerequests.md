@@ -1,19 +1,19 @@
 ---
-title: "List accessPackageCatalogs"
-description: "Retrieve a list of accessPackageCatalog objects."
+title: "List accessPackageResourceRequests"
+description: "Retrieve a list of accessPackageResourceRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageCatalogs
+# List accessPackageResourceRequests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.
+Retrieve a list of [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) objects.
 
 ## Permissions
 
@@ -30,18 +30,18 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageCatalogs
+GET /identityGovernance/entitlementManagement/accessPackageResourceRequests
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.  For example, to retrieve the access packages in each catalog, include `$expand=accessPackages` in the query. To search for access package catalogs with a particular name, include a filter such as `$filter=contains(tolower(displayName),'staff')` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For example, to retrieve who requested the addition of a resource to a catalog, include `$expand=requestor` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) objects in the response body.
 
 ## Examples
 
@@ -60,30 +60,30 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_accesspackagecatalogs"
+  "name": "get_accesspackageresourcerequests"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackagecatalogs-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresourcerequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackagecatalogs-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageresourcerequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackagecatalogs-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageresourcerequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagecatalogs-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourcerequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagecatalogs-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourcerequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -98,7 +98,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageCatalog",
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest",
   "isCollection": true
 } -->
 
@@ -109,16 +109,13 @@ Content-type: application/json
 {
   "value": [
     {
-      "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
-      "description":"Sample access package catalog",
-      "displayName":"Access package catalog for testing",
-      "isExternallyVisible":false,
-      "catalogType":"UserManaged",
-      "catalogStatus":"Published",
-      "createdDateTime":"2019-01-27T18:19:50.74Z",
-      "modifiedDateTime":"2019-01-27T18:19:50.74Z",
-      "createdBy":"TestGA@example.com",
-      "modifiedBy":"TestGA@example.com"
+      "catalogId": "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
+      "id": "1fe272f0-d463-42aa-a9a8-b07ab50a1c4d",
+      "isValidationOnly": false,
+      "justification": "String",
+      "requestState": "Delivered",
+      "requestStatus": "Fulfilled",
+      "requestType": "AdminAdd"
     }
   ]
 }
@@ -128,7 +125,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List accessPackageCatalogs",
+  "description": "List accessPackageResourceRequests",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

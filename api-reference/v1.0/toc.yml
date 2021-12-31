@@ -5308,17 +5308,17 @@ items:
       - name: Governance
         items:
         - name: Access reviews
-          href: resources/accessreviewsv2-root.md
+          href: resources/accessreviewsv2-overview.md
           items:
           - name: Access review schedule definition
             href: resources/accessreviewscheduledefinition.md
             items:
             - name: List
-              href: api/accessreviewscheduledefinition-list.md
+              href: api/accessreviewset-list-definitions.md
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
-              href: api/accessreviewscheduledefinition-post.md
+              href: api/accessreviewset-post-definitions.md
             - name: Delete
               href: api/accessreviewscheduledefinition-delete.md
             - name: Update
@@ -5329,7 +5329,7 @@ items:
             href: resources/accessreviewinstance.md
             items:
             - name: List
-              href: api/accessreviewinstance-list.md
+              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
               href: api/accessreviewinstance-get.md
             - name: Update
@@ -5356,13 +5356,13 @@ items:
             - name: Get
               href: api/accessreviewinstancedecisionitem-get.md
             - name: List
-              href: api/accessreviewinstancedecisionitem-list.md
+              href: api/accessreviewinstance-list-decisions.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
         - name: Consent requests
-          href: resources/consentrequests-root.md
+          href: resources/consentrequests-overview.md
           items:
           - name: Admin consent request policy
             href: resources/adminconsentrequestpolicy.md
@@ -5375,7 +5375,7 @@ items:
             href: resources/appconsentrequest.md
             items:
             - name: List
-              href: api/appconsentrequest-list.md
+              href: api/appconsentapprovalroute-list-appconsentrequests.md
             - name: Get
               href: api/appconsentrequest-get.md
             - name: Filter by current user
@@ -5384,13 +5384,13 @@ items:
             href: resources/userconsentrequest.md
             items:
             - name: List
-              href: api/userconsentrequest-list.md
+              href: api/appconsentrequest-list-userconsentrequests.md
             - name: Get
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
-          href: resources/entitlementmanagement-root.md
+          href: resources/entitlementmanagement-overview.md
           items:
           - name: Access package
             href: resources/accesspackage.md
@@ -5481,9 +5481,9 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: List
-            href: api/agreement-list.md
+            href: api/termsofusecontainer-list-agreements.md
           - name: Create
-            href: api/agreement-post-agreements.md
+            href: api/termsofusecontainer-post-agreements.md
           - name: Get
             href: api/agreement-get.md
           - name: Update

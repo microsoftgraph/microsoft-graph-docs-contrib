@@ -1,5 +1,5 @@
 ---
-title: "List accessReviewInstance"
+title: "List instances"
 description: "Retrieve accessReviewInstance objects."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
@@ -7,13 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviewInstance
+# List instances
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects for a specific [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). A list of zero or more **accessReviewInstance** objects are returned, including all of their nested properties. Returned objects do not include associated accessReviewInstanceDecisionItems. To retrieve the decisions on the instance, use [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
+Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects for a specific [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). A list of zero or more **accessReviewInstance** objects are returned, including all of their nested properties. Returned objects do not include associated accessReviewInstanceDecisionItems. To retrieve the decisions on the instance, use [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
 
 >[!NOTE]
 >The default page size for this API is 100 accessReviewInstance objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
@@ -128,7 +128,7 @@ Content-type: application/json
 
 ## See also
 
-- [List accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
+- [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
 - [Get accessReviewInstance](accessreviewinstance-get.md)
 
 

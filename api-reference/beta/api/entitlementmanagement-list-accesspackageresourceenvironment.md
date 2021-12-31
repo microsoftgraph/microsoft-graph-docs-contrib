@@ -33,8 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$filter=originSystem eq 'SharePointOnline'
 ```
 
-## Optional query parameters
-This method requires the `$filter` [OData query parameter](/graph/query-parameters). You must apply `$filter` for an **originSystem** set to (`eq`) `SharePointOnline`.
+## Query parameters
+
+This method requires the `$filter` [OData query parameter](/graph/query-parameters). You must apply `$filter` to retrieve the **originSystem** that's assigned the value `SharePointOnline`.
 
 ## Request headers
 |Name|Description|
