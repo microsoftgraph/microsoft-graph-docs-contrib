@@ -56,13 +56,13 @@ When a threat is detected, alerts are created in the system for an analyst to in
 
 ### alertClassification_v2 values 
 
-| Member              | Description                                                                                                                         |
-| :-------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
-| unknown		      | The alert isn't classified yet.																				                        |
-| falsePositive       | The alert is a false positive and didn't detect malicious activity.                                                                 |
-| truePositive        | The alert is true positive and detected malicious activity.                                                                         |
-| benignPositive      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                                   |
+| Member                             | Description                                                                                                                         |
+| :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
+| unknown		                     | The alert isn't classified yet.																				                       |
+| falsePositive                      | The alert is a false positive and didn't detect malicious activity.                                                                 |
+| truePositive                       | The alert is true positive and detected malicious activity.                                                                         |
+| informationalExpectedActivity      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
+| unknownFutureValue                 | Evolvable enumeration sentinel value. Do not use.                                                                                   |
 
 ### alertDetermination_v2 values 
 
@@ -75,12 +75,12 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
 | unwantedSoftware           | The alert detected unwanted software.                                                                                        |
 | multiStagedAttack          | A true positive alert that detected multiple kill-chain attack stages.                                                       |
-| compromisedUser            | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
+| compromisedAccount         | A true positive alert that detected that the intended user's credentials were compromised or stolen.                         |
 | phishing                   | A true positive alert that detected a phishing email.                                                                        |
 | maliciousUserActivity      | A true positive alert that detected that the logged-on user performs malicious activities.                                   |
-| clean                      | A false alert, no suspicious activity.                                                                                       |
-| insufficientData           | A false alert, without enough information to prove otherwise.                                                                |
-| confirmedUserActivity      | The alert caught a true suspicious activity that is considered OK because it is a known user activity.                       |
+| notMalicious               | A false alert, no suspicious activity.                                                                                       |
+| notEnoughDataToValidate    | A false alert, without enough information to prove otherwise.                                                                |
+| confirmedActivity          | The alert caught a true suspicious activity that is considered OK because it is a known user activity.                       |
 | lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it is a known and confirmed internal application.  |
 | other                      | Other determination.                                                                                                         |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.                                                                            |
@@ -120,7 +120,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | microsoft365Defender         | Microsoft 365 Defender                         |
 | aadIdentityProtection        | Azure Active Directory Identity Protection     |
 | microsoftAppGovernance       | Microsoft App Governance                       |
-| dataLossPrevention           | Data Loss Prevention                           |
+| microsoftDataLossPrevention  | Microsoft Data Loss Prevention                 |
 | unknownFutureValue           | unknownFutureValue for evolvable enums pattern.|
 
 
