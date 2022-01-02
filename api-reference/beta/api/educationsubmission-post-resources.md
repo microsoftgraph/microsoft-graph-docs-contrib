@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a resource to a submission resource list.
+Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
 Only the student assigned to the submission can perform this operation.
 
