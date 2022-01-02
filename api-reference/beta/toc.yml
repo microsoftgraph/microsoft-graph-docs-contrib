@@ -12489,7 +12489,7 @@ items:
             - name: List
               href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
-              href: api/entitlementmanagement-post-accesspackageassignmentrequests
+              href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
