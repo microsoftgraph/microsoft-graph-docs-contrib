@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: runDiagnostics"
-description: "Run diagnostics for the specified device and get logs for the device."
+description: "Run and generate diagnostic logs for the specified device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,10 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Run Diagnostics is a long-running operation used to generate logs for the device.
-After the POST diagnostics operation returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
-returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
-If the operation is successful, you can download the logs from Teams Admin Centre.
+Run and generate diagnostic logs for the specified device. This API triggers a long-running operation used to generate logs for a device.
 
 >**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 
@@ -25,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamworkDevice.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamworkDevice.ReadWrite.All|
 
 ## HTTP request
@@ -48,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the run diagnostics operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) resource. You can check the status of the run diagnostics operation by making a GET request to this location that returns whether the operation is `queued`, `succeeded`, or `failed`. If the operation succeeded, you can download the logs from the Microsoft Teams Admin Center.
 
 This method also returns a `409 Conflict` response code, if the operation is already in queued state.
 

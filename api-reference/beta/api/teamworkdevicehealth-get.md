@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceHealth"
-description: "Get the health details of the device."
+description: "Get the health details of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the health details of a device. [TeamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on device configuration and other device parameters.
+Get the health details of a device. The [TeamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
 
 >**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
 
 ## HTTP request

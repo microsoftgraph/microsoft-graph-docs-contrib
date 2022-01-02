@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All|
 
 ## HTTP request
@@ -36,14 +36,14 @@ GET /teamwork/devices/{teamworkDeviceId}/operations
 ```
 
 ## Optional query parameters
-This method supports the `$top`, `$select`, `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Supported query patterns
 
 | Pattern                | Supported | Syntax                                 | Notes |
 | ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently we are sending continuation token only in list request. |
-| Page limit                 |     ✓     | `/devices({deviceId})/operations?$top=10'` | Get operations for a device with page size 10. Default page limit is 20. Max page limit is 50. |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently, we send the continuation token only in requests that return a list of [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md). |
+| Page limit                 |     ✓     | `/devices({deviceId})/operations?$top=10` | Get operations for a device with a page size of 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|

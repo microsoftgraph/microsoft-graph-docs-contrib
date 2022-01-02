@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: updateSoftware"
-description: "Software Update for the specified device."
+description: "Update the software for the specified device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,15 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the software for a [teamworkDevice](../resources/teamworkDevice.md).
-You can specify which software of the device to update:
-
-- **softwareType** - AdminAgent | OperatingSystem | TeamsClient | Firmware | PartnerAgent | CompanyPortal
-
-Software update is a long-running operation.
-After the POST software update operation returns, you need to GET the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) 
-returned by the Location: header to see if it's "queued" or "succeeded" or "failed".
-You should continue to GET until the status is not "queued".
+Update the software for a [teamworkDevice](../resources/teamworkdevice.md). This API triggers a long-running operation.
 
 >**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 
@@ -50,20 +42,20 @@ POST /teamwork/devices/{teamworkDeviceId}/updateSoftware
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|softwareType|[teamworkSoftwareType](../resources/teamworksoftwaretype.md)|SoftwareType to update. Valid types are "adminAgent, operatingSystem, teamsClient, firmware, partnerAgent, companyPortal".|
+|softwareType|[teamworkSoftwareType](../resources/teamworksoftwaretype.md)|The software type to update. Valid types are: `adminAgent`, `operatingSystem`, `teamsClient`, `firmware`, `partnerAgent`, `companyPortal`.|
 |softwareVersion|String|Specifies the version of the software available for update.|
 
 
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the software update operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) resource. You can check the status of the software update operation by making a GET request to this location that returns whether the operation is `queued`, `succeeded`, or `failed`.
 
 This method also returns a `409 Conflict` response code, if the operation is already in queued state.
 

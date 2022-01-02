@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of an async long-running device [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
+Get the details of an async, long-running [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
 
 >**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 

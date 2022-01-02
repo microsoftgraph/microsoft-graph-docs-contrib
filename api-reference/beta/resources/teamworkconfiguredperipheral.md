@@ -1,6 +1,6 @@
 ---
 title: "teamworkConfiguredPeripheral resource type"
-description: "Details of configured peripheral of a device."
+description: "Represents the details of the configured peripheral of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of configured peripheral of a device.
+Represents the details of the configured peripheral of a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isOptional|Boolean|True if current peripheral is optional. Also used to calculate health state for the device.|
+|isOptional|Boolean|`True` if the current peripheral is optional. This property is also used to calculate the health state for the device.|
 
 ## Relationships
 |Relationship|Type|Description|

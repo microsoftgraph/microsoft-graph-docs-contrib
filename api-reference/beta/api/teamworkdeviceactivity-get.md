@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceActivity"
-description: "Get the activity status of the device."
+description: "Get the activity status of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of activity/usage state of the device. [TeamworkDeviceActivity](../resources/teamworkdeviceactivity.md) holds the parameters which change based on the activity of the device.
+Get the details of the activity/usage state of a device. The [TeamworkDeviceActivity](../resources/teamworkdeviceactivity.md) holds the parameters which change based on the activity of the device.
 
 >**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
 

@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkDeviceOperation.md) resource. Check the status of the restart operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) resource. You can check the status of the restart operation by making a GET request to this location that returns whether the operation is `queued`, `succeeded`, or `failed`.
 
 This method also returns a `409 Conflict` response code, if the operation is already in queued state.
 

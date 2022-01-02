@@ -1,6 +1,6 @@
 ---
 title: "teamworkAccountConfiguration resource type"
-description: "Device Teams client account configuration details"
+description: "Represents the details of the account configuration for a device in Microsoft Teams."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of account configuration of a teams client for a device.
-These details are only available for Teams Room devices.
+Represents the details of the account configuration for a device in Microsoft Teams.
+The details provided are only available for Teams Room devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|Details of account used to sync calendar.|
+|onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|Details of the account used to sync the calendar.|
 |supportedClient|[teamworkSupportedClient](teamworksupportedclient.md)|Supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
 
 ## Relationships

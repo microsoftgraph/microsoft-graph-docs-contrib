@@ -1,6 +1,6 @@
 ---
 title: "teamworkActivePeripherals resource type"
-description: "Active peripherals attached to a device."
+description: "Represents active peripherals attached to a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Active peripherals attached to a device.
+Represents active peripherals attached to a device.
 
 
 ## Relationships
