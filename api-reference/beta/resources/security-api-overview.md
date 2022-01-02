@@ -58,9 +58,9 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 ## Incidents (preview)
 
-An incident is a collection of correlated alerts and associated data that make up the story of an attack. [Incident management](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) is part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true), and is available in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)).
+An incident is a collection of correlated [alerts](alert_v2.md) and associated data that make up the story of an attack. [Incident management](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) is part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true), and is available in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)).
 
-Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
+Microsoft 365 services and apps create [alerts](alert_v2.md) when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple [alerts](alert_v2.md) for multiple entities in your tenant.
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
@@ -72,7 +72,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-The [incident](incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy.
+The [incident](incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related [alerts](alert_v2.md), that were flagged in your network, within the time range you specified in your environment retention policy.
 
 ## Information protection
 
@@ -123,6 +123,7 @@ The following are some of the most popular requests for working with the Microso
 |List simulation users report|[List simulation users report](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Incidents (preview)**|||
 | List incidents | [List incidents](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List incidents with alerts| [List incidents](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents?$expand=alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents?$expand=alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Secure scores**|||
 |List secure scores|[List secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Secure score control profiles**|||
