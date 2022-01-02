@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: restart"
-description: "Restart the specified device. "
+description: "Restart the specified device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restarting is an async operation. A device is restarted once the async operation completes successfully, which may occur subsequent to a response from this API.
+Restart the specified [teamworkDevice](../resources/teamworkdevice.md) asynchronously. A device is restarted once the async operation completes successfully, which may occur subsequent to a response from this API.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) resource. You can check the status of the restart operation by making a GET request to this location that returns whether the operation is `queued`, `succeeded`, or `failed`.
 
-This method also returns a `409 Conflict` response code, if the operation is already in queued state.
+This method also returns a `409 Conflict` response code if the operation is already in queued state.
 
 ## Examples
 
@@ -58,7 +58,7 @@ This method also returns a `409 Conflict` response code, if the operation is alr
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teamwork/devices/{teamworkDeviceId}/restart
+POST https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/restart
 ```
 
 
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/teamwork/devices/{teamworkDeviceId}/restar
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: /teamwork/devices({teamworkDeviceId})/operations({opId})
+Location: /teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations/119eb06d-0c4b-4fb3-a754-33dd0d6b618c
 Content-Type: text/plain
 Content-Length: 0
 ```

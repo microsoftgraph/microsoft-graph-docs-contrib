@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDevices"
-description: "Get the list of all Teams devices provisioned for the tenant."
+description: "Get the list of all Microsoft Teams devices provisioned for the tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all Teams [teamworkDevices](../resources/teamworkdevice.md) provisioned for the tenant.
+Get the list of all Microsoft Teams [teamworkDevices](../resources/teamworkdevice.md) provisioned for the tenant.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,17 +36,17 @@ GET /teamwork/devices
 ```
 
 ## Optional query parameters
-This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId** and **currentUser/id** properties), `$top`, `$select`, `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId** and **currentUser/id** properties), `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Supported query patterns
 
 | Pattern                | Supported | Syntax                                 | Notes |
 | ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently we are sending continuation token only in list request. |
-| Filter                 |     ✓     | `/devices?$filter=deviceType eq 'TeamsRoom'` | Filter device based on device category |
-| Filter                 |     ✓     | `/devices?$filter=hardwareDetail/uniqueId eq 'value'` | Filter device based on assigned uniqueId to device. |
-| Filter                 |     ✓     | `/devices?$filter=currentUser/id eq 'value'` |  Filter device based on device logged in user.|
-| Page limit                 |     ✓     | `/devices?$top=10` | Get devices with page size 10. Default page limit is 20. Max page limit is 50. |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently, we send the continuation token only in requests that return a list of [teamworkDevices](../resources/teamworkdevice.md). |
+| Filter                 |     ✓     | `/devices?$filter=deviceType eq 'TeamsRoom'` | Filter devices based on the device category. |
+| Filter                 |     ✓     | `/devices?$filter=hardwareDetail/uniqueId eq 'value'` | Filter devices based on the **uniqueId** assigned to a device. |
+| Filter                 |     ✓     | `/devices?$filter=currentUser/id eq 'value'` |  Filter devices based on the signed-in user on a device.|
+| Page limit                 |     ✓     | `/devices?$top=10` | Get devices with a page size of 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamworkDevice](../resources/teamworkdevice.md) objects in the response body. The API supports pagination with a default limit of 20 devices per request.
+If successful, this method returns a `200 OK` response code and a collection of [teamworkDevice](../resources/teamworkdevice.md) objects in the response body.
 
 ## Examples
 
@@ -78,7 +78,8 @@ GET https://graph.microsoft.com/beta/teamwork/devices
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamworkDevice)"
+  "@odata.type": "microsoft.graph.teamworkDevice",
+  "isCollection": true
 }
 -->
 ``` http
@@ -95,22 +96,24 @@ Content-Type: application/json
       "id": "0f3ce432-e432-0f3c-32e4-3c0f32e43c0f",
       "deviceType": "CollaborationBar",
       "hardwareDetail": {
-        "@odata.type": "microsoft.graph.teamworkHardwareDetail"
+        "serialNumber": "0189",
+        "uniqueId": "5abcdefgh",
+        "macAddresses": [],
+        "manufacturer": "yealink",
+        "model": "vc210"
       },
       "notes": "CollaborationBar device.",
       "companyAssetTag": "Tag1",
       "healthStatus": "Healthy",
       "activityState": "Idle",
       "createdDateTime": "2021-06-19T19:01:04.185Z",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
+      "createdBy": null,
       "lastModifiedDateTime": "2021-06-19T19:01:04.185Z",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
+      "lastModifiedBy": null,
       "currentUser": {
-        "@odata.type": "microsoft.graph.teamworkUserIdentity"
+        "id": "2a610f6f-adf6-4205",
+        "displayName": "UserDisplayName",
+        "userIdentityType": "aadUser"
       }
     },
     {
@@ -118,22 +121,24 @@ Content-Type: application/json
       "id": "55ab555-e432-0f3c-32e4-3c0f32e43c0f",
       "deviceType": "CollaborationBar",
       "hardwareDetail": {
-        "@odata.type": "microsoft.graph.teamworkHardwareDetail"
+        "serialNumber": "0189",
+        "uniqueId": "5abcdefgh",
+        "macAddresses": [],
+        "manufacturer": "yealink",
+        "model": "vc210"
       },
       "notes": "CollaborationBar device.",
       "companyAssetTag": "Tag2",
       "healthStatus": "Healthy",
       "activityState": "Idle",
       "createdDateTime": "2021-06-10T19:01:04.185Z",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "2021-06-10T19:01:04.185Z",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
+      "createdBy": null,
+      "lastModifiedDateTime": "2021-06-19T19:01:04.185Z",
+      "lastModifiedBy": null,
       "currentUser": {
-        "@odata.type": "microsoft.graph.teamworkUserIdentity"
+        "id": "2a610f6f-adf6-4205",
+        "displayName": "UserDisplayName",
+        "userIdentityType": "aadUser"
       }
     }
   ]

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the software for a [teamworkDevice](../resources/teamworkdevice.md). This API triggers a long-running operation.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +57,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) resource. You can check the status of the software update operation by making a GET request to this location that returns whether the operation is `queued`, `succeeded`, or `failed`.
 
-This method also returns a `409 Conflict` response code, if the operation is already in queued state.
+This method also returns a `409 Conflict` response code if the operation is already in queued state.
 
 ## Examples
 
@@ -68,7 +68,7 @@ This method also returns a `409 Conflict` response code, if the operation is alr
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teamwork/devices/{teamworkDeviceId}/updateSoftware
+POST https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/updateSoftware
 Content-Type: application/json
 Content-length: 64
 
@@ -88,7 +88,7 @@ Content-length: 64
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: /teamwork/devices({teamworkDeviceId})/operations({opId})
+Location: /teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations/119eb06d-0c4b-4fb3-a754-33dd0d6b618c
 Content-Type: text/plain
 Content-Length: 0
 ```

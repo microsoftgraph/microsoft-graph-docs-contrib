@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDevice"
-description: "Read the properties of a device."
+description: "Read the properties and relationships of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties (like device type, hardware details, activity status, health status) and relationships of a [teamworkDevice](../resources/teamworkdevice.md).
+Read the properties (for example, **deviceType**, **hardwareDetail**, **activityState**, and **healthStatus**) and relationships of a [teamworkDevice](../resources/teamworkdevice.md).
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -81,22 +81,24 @@ Content-Type: application/json
     "id": "0f3ce432-e432-0f3c-32e4-3c0f32e43c0f",
     "deviceType": "CollaborationBar",
     "hardwareDetail": {
-      "@odata.type": "microsoft.graph.teamworkHardwareDetail"
+      "serialNumber": "0189",
+      "uniqueId": "5abcdefgh",
+      "macAddresses": [],
+      "manufacturer": "yealink",
+      "model": "vc210"
     },
     "notes": "CollaborationBar device.",
     "companyAssetTag": "Tag1",
     "healthStatus": "Healthy",
     "activityState": "Idle",
     "createdDateTime": "2021-06-19T19:01:04.185Z",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+    "createdBy": null,
     "lastModifiedDateTime": "2021-06-19T19:01:04.185Z",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+    "lastModifiedBy": null,
     "currentUser": {
-      "@odata.type": "microsoft.graph.teamworkUserIdentity"
+      "id": "2a610f6f-adf6-4205",
+      "displayName": "UserDisplayName",
+      "userIdentityType": "aadUser"
     }
   }
 }

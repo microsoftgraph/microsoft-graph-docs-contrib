@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the configuration details of a device. The [TeamworkDeviceConfiguration](../resources/teamworkdeviceconfiguration.md) has properties related to software versions, peripheral configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -134,17 +134,11 @@ Content-Type: application/json
     "hardwareConfiguration": {
       "processorModel": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz"
     },
-    "systemConfiguration": {
-      "@odata.type": "microsoft.graph.teamworkSystemConfiguration"
-    },
-    "createdDateTime": "2021-06-19T19:01:04.185Z",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
+    "systemConfiguration": null,
+    "createdDateTime": "2021-03-19T19:00:04.000Z",
     "lastModifiedDateTime": "2021-06-19T19:01:04.185Z",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
+    "createdBy": null,
+    "lastModifiedBy": null
   }
 }
 ```

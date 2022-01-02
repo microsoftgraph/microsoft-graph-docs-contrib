@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the details of an async, long-running [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,12 +84,24 @@ Content-Type: application/json
     "startedDateTime": "2021-06-19T12-01-03.45Z",
     "completedDateTime": "2021-06-19T12-01-03.45Z",
     "createdDateTime": "2021-06-19T12-01-03.45Z",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
     "lastActionDateTime": "2021-06-19T12-01-03.45Z",
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "2a610f6f-adf6-4205",
+        "displayName": "UserDisplayName",
+        "userIdentityType": "aadUser"
+      }
+    },
     "lastActionBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "2a610f6f-adf6-4205",
+        "displayName": "UserDisplayName",
+        "userIdentityType": "aadUser"
+      }
     }
   }
 }

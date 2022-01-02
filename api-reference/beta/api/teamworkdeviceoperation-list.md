@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of the [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md) linked to a device.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) objects in the response body.
-The API supports pagination with a default limit of 20 operations per request.
 
 ## Examples
 
@@ -67,7 +66,7 @@ The API supports pagination with a default limit of 20 operations per request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teamwork/devices/{teamworkDeviceId}/operations
+GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations
 ```
 
 
@@ -76,7 +75,8 @@ GET https://graph.microsoft.com/beta/teamwork/devices/{teamworkDeviceId}/operati
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamworkDeviceOperation)"
+  "@odata.type": "microsoft.graph.teamworkDeviceOperation",
+  "isCollection": true
 }
 -->
 ``` http
@@ -84,6 +84,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork/devices('18129e1f')/operations",
+  "@odata.count": 1,
   "value": [
     {
       "@odata.type": "#microsoft.graph.teamworkDeviceOperation",
@@ -97,12 +99,24 @@ Content-Type: application/json
       "startedDateTime": "2021-06-19T12-01-03.45Z",
       "completedDateTime": "2021-06-19T12-01-03.45Z",
       "createdDateTime": "2021-06-19T12-01-03.45Z",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
       "lastActionDateTime": "2021-06-19T12-01-03.45Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "id": "2a610f6f-adf6-4205",
+          "displayName": "UserDisplayName",
+          "userIdentityType": "aadUser"
+        }
+      },
       "lastActionBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "device": null,
+        "user": {
+          "id": "2a610f6f-adf6-4205",
+          "displayName": "UserDisplayName",
+          "userIdentityType": "aadUser"
+        }
       }
     }
   ]

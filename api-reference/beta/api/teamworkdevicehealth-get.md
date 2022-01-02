@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the health details of a device. The [TeamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
 
->**Note:** API requirements under the `/beta` version are subject to change. Licensing or payment requirements may apply for this API when made available for production use.
+**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -163,16 +163,25 @@ Content-Type: application/json
       "operatingSystemSoftwareUpdateStatus": null
     },
     "hardwareHealth": {
-      "@odata.type": "microsoft.graph.teamworkHardwareHealth"
-    },
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+      "computeHealth": {
+        "isOptional": false,
+        "connection": {
+            "connectionStatus": "connected",
+            "lastModifiedDateTime": "2021-06-10T19:01:04.185Z"
+        }
+      },
+      "hdmiIngestHealth": {
+        "isOptional": false,
+        "connection": {
+            "connectionStatus": "connected",
+            "lastModifiedDateTime": "2021-06-10T19:01:04.185Z"
+        }
+      }
     },
     "createdDateTime": "2021-03-19T19:00:04.000Z",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "2021-06-19T19:01:04.185Z"
+    "lastModifiedDateTime": "2021-06-19T19:01:04.185Z",
+    "createdBy": null,
+    "lastModifiedBy": null
   }
 }
 ```
