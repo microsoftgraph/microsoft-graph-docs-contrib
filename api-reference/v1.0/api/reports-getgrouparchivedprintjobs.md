@@ -38,8 +38,8 @@ GET /reports/getGroupArchivedPrintJobs
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | Yes       | The ID of the group to return data for.                              |
-| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
-| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
+| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. As this parameter is not required, it can be passed as null but cannot be omitted.|
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from. As this parameter is not required, it can be passed as null but cannot be omitted.|
 
 ## Request headers
 |Name|Description|
