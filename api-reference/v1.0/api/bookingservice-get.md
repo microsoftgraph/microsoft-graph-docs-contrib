@@ -92,7 +92,7 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
+            "type": "Others",
             "postOfficeBox": "",
             "street": "4567 First Street",
             "city": "Buffalo",
