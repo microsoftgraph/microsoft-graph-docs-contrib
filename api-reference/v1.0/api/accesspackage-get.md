@@ -37,8 +37,6 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties.
 
-
-
 ## Request headers
 
 | Name      |Description|
