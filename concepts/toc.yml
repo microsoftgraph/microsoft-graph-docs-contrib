@@ -256,6 +256,8 @@ items:
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
+          - name: Build notificationChannelUrl value
+            href: education-build-notificationchannelurl.md            
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
