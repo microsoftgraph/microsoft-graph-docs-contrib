@@ -38,8 +38,8 @@ GET /reports/getPrinterArchivedPrintJobs
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | Yes       | The ID of the printer to return data for.                            |
-| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
-| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
+| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. As this parameter is not required, it can be passed as null but cannot not be omitted. |
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from. As this parameter is not required, it can be passed as null but cannot not be omitted. |
 
 ## Request headers
 |Name|Description|
