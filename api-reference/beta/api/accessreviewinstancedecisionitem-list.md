@@ -183,7 +183,9 @@ The following example shows a request to retrieve all the decisions on every ins
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem"
 }-->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
+```
 
 ---
 
