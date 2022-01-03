@@ -77,7 +77,7 @@ Content-type: application/json
     "phones": [
         {
             "number": "206-555-0100",
-            "type": "Others"
+            "type": "home"
         },
         {
             "number": "206-555-0200",
@@ -129,7 +129,7 @@ Content-type: application/json
     "phones": [
         {
             "number": "206-555-0100",
-            "type": "Others"
+            "type": "home"
         },
         {
             "number": "206-555-0200",

@@ -89,8 +89,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "Others",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -136,8 +134,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "Others",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -177,8 +173,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "Others",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -235,8 +229,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "Others",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
