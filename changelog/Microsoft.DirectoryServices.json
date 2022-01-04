@@ -793,6 +793,14 @@
           "Description": "Added the **accessPackageResourceAttributeSource** resource.",
           "Target": "accessPackageResourceAttributeSource"
         },
+	{
+   	 "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+    	 "ApiChange": "Property",
+    	 "ChangedApiName": "attributes",
+    	 "ChangeType": "Addition",
+    	 "Description": "Added the **attributes** property to the [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
+    	 "Target": "accessPackageResource"
+  	},
         {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
