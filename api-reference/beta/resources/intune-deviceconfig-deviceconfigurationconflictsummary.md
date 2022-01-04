@@ -2,7 +2,7 @@
 title: "deviceConfigurationConflictSummary resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -63,6 +63,7 @@ Here is a JSON representation of the resource.
   "deviceCheckinsImpacted": 1024
 }
 ```
+
 
 
 

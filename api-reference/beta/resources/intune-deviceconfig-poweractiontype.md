@@ -2,7 +2,7 @@
 title: "powerActionType enum type"
 description: "Power action types"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,6 +25,7 @@ Power action types
 |sleep|2|Put device in sleep state|
 |hibernate|3|Put device in hibernate state|
 |shutdown|4|Shutdown device|
+
 
 
 

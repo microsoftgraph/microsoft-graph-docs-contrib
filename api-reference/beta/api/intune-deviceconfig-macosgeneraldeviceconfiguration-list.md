@@ -2,7 +2,7 @@
 title: "List macOSGeneralDeviceConfigurations"
 description: "List properties and relationships of the macOSGeneralDeviceConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5649
+Content-Length: 5775
 
 {
   "value": [
@@ -201,11 +201,15 @@ Content-Length: 5649
       "eraseContentAndSettingsBlocked": true,
       "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
       "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-      "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+      "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+      "touchIdTimeoutInHours": 5,
+      "iCloudPrivateRelayBlocked": true,
+      "iCloudDesktopAndDocumentsBlocked": true
     }
   ]
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsSummarizedBy enum type"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -26,6 +26,7 @@ Not yet documented
 |modelRegression|4|Not yet documented|
 |manufacturerRegression|5|Not yet documented|
 |operatingSystemVersionRegression|6|Not yet documented|
+
 
 
 

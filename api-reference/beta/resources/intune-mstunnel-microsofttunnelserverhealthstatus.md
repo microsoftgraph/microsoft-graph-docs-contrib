@@ -2,7 +2,7 @@
 title: "microsoftTunnelServerHealthStatus enum type"
 description: "Enum of possible MicrosoftTunnelServer health status types"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -27,6 +27,7 @@ Enum of possible MicrosoftTunnelServer health status types
 |offline|4|The state is offline|
 |upgradeInProgress|5|The state is upgradeInProgress|
 |upgradeFailed|6|The state is upgradeFailed|
+
 
 
 

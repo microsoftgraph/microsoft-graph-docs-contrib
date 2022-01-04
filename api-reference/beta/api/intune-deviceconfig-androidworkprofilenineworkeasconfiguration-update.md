@@ -2,7 +2,7 @@
 title: "Update androidWorkProfileNineWorkEasConfiguration"
 description: "Update the properties of a androidWorkProfileNineWorkEasConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -178,6 +178,7 @@ Content-Length: 1515
   "syncTasks": true
 }
 ```
+
 
 
 

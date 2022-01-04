@@ -2,7 +2,7 @@
 title: "windowsIdentityProtectionConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by Windows Hello for Business."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -127,6 +127,7 @@ Here is a JSON representation of the resource.
   "windowsHelloForBusinessBlocked": true
 }
 ```
+
 
 
 
