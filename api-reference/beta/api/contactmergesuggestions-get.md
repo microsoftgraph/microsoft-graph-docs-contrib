@@ -69,6 +69,8 @@ GET https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.contactMergeSuggestions",
+  "name": "get_contactmergesuggestions"
 }
 -->
 ``` http
