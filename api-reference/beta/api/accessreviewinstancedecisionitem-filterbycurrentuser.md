@@ -12,9 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) for which the calling user is the reviewer.
+Retrieves all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
-If it is a multi-stage access review, retrieves all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
 >[!NOTE]
 >The default page size for this API is 100 accessReviewInstanceDecisionItem objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
@@ -166,7 +165,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->reviewer can retrieve the decisions from other stages if the decisionHistoriesForReviewersEnabled is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)
+>Reviewers can retrieve the decisions from previous stages on the instance if the decisionHistoriesForReviewersEnabled property is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)
 
 ## Function parameters
 The following table shows the query parameters that can be used with this method.
