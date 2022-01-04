@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userSignInRecommendationScope values 
+
+|Member|
+|:---|
+|tenant|
+|application|
+|unknownFutureValue|
+
 ### continuousAccessEvaluationMode values 
 
 |Member|
@@ -2616,12 +2624,4 @@ Possible values for user account types (group membership), per Windows definitio
 |teacher|
 |faculty|
 |other|
-|unknownFutureValue|
-
-### userSignInRecommendationScope values 
-
-|Member|
-|:---|
-|tenant|
-|application|
 |unknownFutureValue|
