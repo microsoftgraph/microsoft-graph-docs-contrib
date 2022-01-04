@@ -47,6 +47,3 @@ The following is a JSON representation of the resource.
   },
   "id": "String (identifier)",
   "isEditable": "String",
-  "isPersistedOnAssignmentRemoval": "Boolean"
-}
-```
