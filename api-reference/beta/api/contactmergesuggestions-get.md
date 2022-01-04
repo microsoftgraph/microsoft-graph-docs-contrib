@@ -1,0 +1,82 @@
+---
+title: "Get contactMergeSuggestions"
+description: "Read the properties and relationships of a contactMergeSuggestions object."
+author: "jagadeesh-vadivel"
+ms.localizationpriority: medium
+ms.prod: "outlook"
+doc_type: apiPageType
+---
+
+# Get contactMergeSuggestions
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of a [contactMergeSuggestions](../resources/contactmergesuggestions.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|User.Read, User.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/settings/contactMergeSuggestions
+GET /user/{userId}/settings/contactMergeSuggestions
+```
+
+>**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
+
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [contactMergeSuggestions](../resources/contactmergesuggestions.md) object in the response body.
+
+## Examples
+
+The following is an example of the request to get user item insights and meeting hours insights settings.
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_contactmergesuggestions"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "isEnabled": true
+}
+```
+
