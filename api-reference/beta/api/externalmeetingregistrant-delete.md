@@ -34,7 +34,7 @@ To remove an external meeting registrant with delegated (`/me`) and app (`/users
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
-DELETE /users/{userId}/onlineMeetings{meetingId}/registration/registrants/{registrantId}
+DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{registrantId}
 ```
 
 > [!TIP]

@@ -34,7 +34,7 @@ To get a list of all external meeting registrants with delegated (`/me`) and app
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/registration/registrants
-GET /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+GET /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]
