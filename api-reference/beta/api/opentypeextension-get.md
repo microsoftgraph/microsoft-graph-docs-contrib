@@ -477,12 +477,13 @@ The fifth example looks at all messages in the signed-in user's mailbox to find 
 expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name 
 `Com.Contoso.Referral`.
 
+
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
 

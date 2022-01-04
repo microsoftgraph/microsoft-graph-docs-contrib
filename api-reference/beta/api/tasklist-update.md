@@ -56,6 +56,8 @@ If successful, this method returns a `200 OK` response code and an updated [base
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tasklist"
@@ -70,6 +72,12 @@ Content-length: 82
     "displayName": "Travel Plan"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
