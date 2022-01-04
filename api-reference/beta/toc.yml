@@ -12502,7 +12502,7 @@ items:
             - name: List
               href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
-              href: api/entitlementmanagement-post-accesspackageassignmentrequests
+              href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
@@ -13944,7 +13944,7 @@ items:
         - name: Alert_v2
           href: resources/alert_v2.md
         - name: List alerts_v2
-          href: api/security-list-alert_v2.md
+          href: api/security-list-alerts_v2.md
         - name: Get alert_v2
           href: api/alert_v2-get.md 
       - name: Information protection
