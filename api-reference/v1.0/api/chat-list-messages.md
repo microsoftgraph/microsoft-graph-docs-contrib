@@ -41,7 +41,7 @@ GET /chats/{chat-id}/messages
 
 | Name      | Description          |
 |:----------|:--------|
-| [$top](/graph/query-parameters#top-parameter)      | Control the number of items per response. Maximum allowed `$top` value is 50.  |
+| [$top](/graph/query-parameters#top-parameter)      | Controls the number of items per response. Maximum allowed `$top` value is 50.  |
 | [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **LastModifiedDateTime** and **CreatedDateTime**.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
