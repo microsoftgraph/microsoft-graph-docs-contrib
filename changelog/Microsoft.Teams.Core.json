@@ -1716,7 +1716,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onBehalfOf",
           "ChangeType": "Addition",
-          "Description": "Added the **onBehalfOf** property to [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Description": "Added the **onBehalfOf** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
           "Target": "chatMessage"
         }
       ],
