@@ -10,7 +10,7 @@ doc_type: apiPageType
 # FilterByCurrentUser accessPackageAssignmentApprovals
 Namespace: microsoft.graph
 
-As an approver, get the access package assignment approvals that one has to take action on
+In Azure AD entitlement management, return a collection of the access package assignment approvals.  With the option of `approver`, this returns the access package assignment approvals that the calling user as an approver is in scope of approving, including those requests they have to take action on.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/f
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the OData query parameters for paging through a large result set. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

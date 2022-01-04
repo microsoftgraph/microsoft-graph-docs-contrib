@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
 
 ## Permissions
 
@@ -49,18 +49,14 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Request
 
-The following is an example of the request.
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_approval"
-}-->
-
-
----
-
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489
+```
 
 ### Response
 

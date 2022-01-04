@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Apply approve or deny decision on an [approvalStage](../resources/approvalStage.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), apply an approve or deny decision on an [approvalStage](../resources/approvalstage.md) object.
 
 ## Permissions
 
@@ -55,19 +55,19 @@ If successful, this method returns a `204 No Content` response code in the respo
 
 ### Request
 
-The following is an example of the request.
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_approvalstage"
-}-->
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/stages/d4fa4045-4716-436d-aec5-57b0a713f095
+
 {
  "reviewResult":"Approve",
  "justification":"OK"
 }
-
+```
 
 ### Response
 
