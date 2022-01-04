@@ -629,7 +629,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessreview",
           "ChangeType": "Deprecation",
-          "Description": "Deprecation of [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta) resource. Replaced with [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta)",
+          "Description": "Deprecation of [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta) resource. Replaced with [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta)",
           "Target": "accessReview"
         },
         {

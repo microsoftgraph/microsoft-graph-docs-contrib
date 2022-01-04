@@ -2547,6 +2547,21 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
+          - name: macOS dmg app
+            href: resources/intune-apps-macosdmgapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosdmgapp-list.md
+            - name: Get
+              href: api/intune-apps-macosdmgapp-get.md
+            - name: Create
+              href: api/intune-apps-macosdmgapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosdmgapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosdmgapp-update.md
+          - name: macOS included app
+            href: resources/intune-apps-macosincludedapp.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -3879,6 +3894,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+          - name: Android device owner system update freeze period
+            href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
           - name: Android device owner system update install type
             href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
           - name: Android device owner trusted root certificate
@@ -5362,6 +5379,8 @@ items:
               href: api/intune-deviceconfig-hardwareconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-hardwareconfiguration-update.md
+            - name: assignHardwareConfiguration action
+              href: api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md
             - name: assign action
               href: api/intune-deviceconfig-hardwareconfiguration-assign.md
           - name: Hardware configuration assignment
@@ -9628,8 +9647,6 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: scheduleActionsForRules action
-              href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
             - name: refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
@@ -12240,36 +12257,34 @@ items:
       - name: Governance
         items:
         - name: Access reviews
-          href: resources/accessreviewsv2-root.md
+          href: resources/accessreviewsv2-overview.md
           items:
           - name: Access review schedule definition
             href: resources/accessreviewscheduledefinition.md
             items:
             - name: List
-              href: api/accessreviewscheduledefinition-list.md
+              href: api/accessreviewset-list-definitions.md
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
-              href: api/accessreviewscheduledefinition-post.md
+              href: api/accessreviewset-post-definitions.md
             - name: Delete
               href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
             - name: List
-              href: api/accessreviewinstance-list.md
+              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
               href: api/accessreviewinstance-get.md
             - name: Update
               href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Send reminder
               href: api/accessreviewinstance-sendreminder.md
             - name: Stop
@@ -12284,19 +12299,21 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
+            - name: List pending approval (deprecated)
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
           - name: Access review instance decision item
             href: resources/accessreviewinstancedecisionitem.md
             items:
             - name: List
-              href: api/accessreviewinstancedecisionitem-list.md
+              href: api/accessreviewinstance-list-decisions.md
             - name: Get
               href: api/accessreviewinstancedecisionitem-get.md
             - name: Filter by current user
               href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
             - name: Update
               href: api/accessreviewinstancedecisionitem-update.md
+            - name: List pending approval (deprecated)
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
             href: resources/accessreviewpolicy.md
             items:
@@ -12310,9 +12327,9 @@ items:
             - name: Get
               href: api/accessreviewhistorydefinition-get.md
             - name: List
-              href: api/accessreviewhistorydefinition-list.md
+              href: api/accessreviewset-list-historydefinitions.md
             - name: Create
-              href: api/accessreviewhistorydefinition-post.md
+              href: api/accessreviewset-post-historydefinitions.md
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (deprecated)
@@ -12380,7 +12397,7 @@ items:
             - name: List
               href: api/programcontroltype-list.md
         - name: Consent requests
-          href: resources/consentrequests-root.md
+          href: resources/consentrequests-overview.md
           items:
           - name: Admin consent request policy
             href: resources/adminconsentrequestpolicy.md
@@ -12393,7 +12410,7 @@ items:
             href: resources/appconsentrequest.md
             items:
             - name: List
-              href: api/appconsentrequest-list.md
+              href: api/appconsentapprovalroute-list-appconsentrequests.md
             - name: Get
               href: api/appconsentrequest-get.md
             - name: Filter by current user
@@ -12402,21 +12419,21 @@ items:
             href: resources/userconsentrequest.md
             items:
             - name: List
-              href: api/userconsentrequest-list.md
+              href: api/appconsentrequest-list-userconsentrequests.md
             - name: Get
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
-          href: resources/entitlementmanagement-root.md
+          href: resources/entitlementmanagement-overview.md
           items:
           - name: Access package
             href: resources/accesspackage.md
             items:
             - name: List
-              href: api/accesspackage-list.md
+              href: api/entitlementmanagement-list-accesspackages.md
             - name: Create
-              href: api/accesspackage-post.md
+              href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
               href: api/accesspackage-get.md
             - name: Update
@@ -12445,31 +12462,34 @@ items:
             href: resources/accesspackageassignment.md
             items:
             - name: List
-              href: api/accesspackageassignment-list.md
+              href: api/entitlementmanagement-list-accesspackageassignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
               href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment approval
-            href: resources/approval.md
             items:
-            - name: Approval step
-              href: resources/approvalstep.md
-            - name: Get approval
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
               href: api/approval-get.md
-            - name: List approval steps
-              href: api/approval-list-steps.md
-            - name: Get approval step
-              href: api/approvalstep-get.md
-            - name: Update approval step
-              href: api/approvalstep-update.md
+            - name: Approval step
+              items:
+              - name: Approval
+                href: resources/approvalstep.md
+              - name: List
+                href: api/approval-list-steps.md
+              - name: Get
+                href: api/approvalstep-get.md
+              - name: Update
+                href: api/approvalstep-update.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
             - name: List
-              href: api/accesspackageassignmentpolicy-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentpolicies.md
             - name: Create
-              href: api/accesspackageassignmentpolicy-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentpolicies.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
             - name: Update
@@ -12480,9 +12500,9 @@ items:
             href: resources/accesspackageassignmentrequest.md
             items:
             - name: List
-              href: api/accesspackageassignmentrequest-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
-              href: api/accesspackageassignmentrequest-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentrequests
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
@@ -12497,16 +12517,16 @@ items:
             href: resources/accesspackageassignmentresourcerole.md
             items:
             - name: List
-              href: api/accesspackageassignmentresourcerole-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
             - name: Get
               href: api/accesspackageassignmentresourcerole-get.md
           - name: Access package catalog
             href: resources/accesspackagecatalog.md
             items:
             - name: List
-              href: api/accesspackagecatalog-list.md
+              href: api/entitlementmanagement-list-accesspackagecatalogs.md
             - name: Create
-              href: api/accesspackagecatalog-post.md
+              href: api/entitlementmanagement-post-accesspackagecatalogs.md
             - name: Get
               href: api/accesspackagecatalog-get.md
             - name: Update
@@ -12521,14 +12541,14 @@ items:
             href: resources/accesspackageresourcerequest.md
             items:
             - name: List
-              href: api/accesspackageresourcerequest-list.md
+              href: api/entitlementmanagement-list-accesspackageresourcerequests.md
             - name: Create
-              href: api/accesspackageresourcerequest-post.md
+              href: api/entitlementmanagement-post-accesspackageresourcerequests.md
           - name: Access package resource environment
             href: resources/accesspackageresourceenvironment.md
             items:
             - name: List
-              href: api/accesspackageresourceenvironment-list.md
+              href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
             - name: Get
               href: api/accesspackageresourceenvironment-get.md
           - name: Access package resource role scope
@@ -12542,9 +12562,9 @@ items:
             href: resources/connectedorganization.md
             items:
             - name: List
-              href: api/connectedorganization-list.md
+              href: api/entitlementmanagement-list-connectedorganizations.md
             - name: Create
-              href: api/connectedorganization-post.md
+              href: api/entitlementmanagement-post-connectedorganizations.md
             - name: Get
               href: api/connectedorganization-get.md
             - name: Update
@@ -12695,9 +12715,9 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: Create
-            href: api/agreement-post-agreements.md
+            href: api/termsofusecontainer-post-agreements.md
           - name: List
-            href: api/agreement-list.md
+            href: api/termsofusecontainer-list-agreements.md
           - name: Get
             href: api/agreement-get.md
           - name: Update

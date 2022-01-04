@@ -17,8 +17,8 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
-| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
+| [List agreements](../api/termsofusecontainer-list-agreements.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
+| [Create agreements](../api/termsofusecontainer-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
 | [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
 | [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
 | [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
@@ -38,49 +38,30 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
-|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. This property is in the process of being deprecated. Use the  **file** property instead.|
 |file|[agreementFile](agreementfile.md) | Default PDF linked to this agreement.|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized versions of the agreement files attached to the agreement.|
-|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
+|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. This property is in the process of being deprecated. Use the  **file** property instead.|
 
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.agreement"
-}-->
-
-```json
-{
-  "id": "String (identifier)",
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "isPerDeviceAcceptanceRequired": false,
-  "termsExpiration": {
-    "startDateTime": "2018-10-01T00:00:00.0000000Z",
-    "frequency": "PT1M"
-  }
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "agreement resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "@odata.type": "microsoft.graph.agreement",
+  "openType": false
 }
 -->
-
-
+``` json
+{
+  "@odata.type": "#microsoft.graph.agreement",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "termsExpiration": {
+    "@odata.type": "microsoft.graph.termsExpiration"
+  },
+  "userReacceptRequiredFrequency": "String (duration)",
+  "isViewingBeforeAcceptanceRequired": "Boolean",
+  "isPerDeviceAcceptanceRequired": "Boolean"
+}
+```
