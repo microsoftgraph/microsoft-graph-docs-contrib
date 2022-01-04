@@ -22,6 +22,10 @@ Update behavior options for macOS software updates.
 |:---|:---|:---|
 |notConfigured|0|Not configured.|
 |default|1|Download and/or install the software update, depending on the current device state.|
+|downloadOnly|2|Download the software update without installing it.|
+|installASAP|3|Install an already downloaded software update.|
+|notifyOnly|4|Download the software update and notify the user via the App Store.|
+|installLater|5|Download the software update and install it at a later time.|
 
 
 
