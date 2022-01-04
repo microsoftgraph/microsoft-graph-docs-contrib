@@ -132,11 +132,11 @@ Outlook change notifications support delegated and application permission scopes
   - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they 
     do **not** support subscribing to change notifications on items in shared or delegated folders.
 
-| Supported resource                | Delegated (work or school account) | Delegated (personal Microsoft account) | Application               |
-|:----------------------------------|:-----------------------------------|:---------------------------------------|:--------------------------|
-|[contact](../resources/contact.md) | Contacts.Read                      | Contacts.Read                          | Contacts.Read             |
-|[event](../resources/event.md)     | Calendars.Read                     | Calendars.Read                         | Calendars.Read            |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read          | Mail.ReadBasic, Mail.Read              | Mail.ReadBasic, Mail.Read |
+| Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
+|:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
+|[contact](../resources/contact.md) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
+|[event](../resources/event.md)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
+|[message](../resources/message.md) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
 ### HTTP request
 
@@ -163,7 +163,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ### Examples
 
-#### Example 1: Create subscription to send a change notification without resource data when the user receives a new message
+#### Example 1: Create a subscription to send change notifications without resource data when the user receives a new message
 
 ##### Request
 <!-- {
@@ -176,7 +176,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
 {
-    "changeType": "created,updated,deleted",
+    "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
     "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages",
     "expirationDateTime": "2021-07-07T21:42:18.2257768+00:00",
@@ -218,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-#### Example 2: Create subscription to send a change notification with resource data when the user receives a new message
+#### Example 2: Create a subscription to send change notifications with resource data when the user receives a new message
 
 ##### Request
 <!-- {
