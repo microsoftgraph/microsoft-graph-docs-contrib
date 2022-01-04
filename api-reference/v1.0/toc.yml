@@ -5431,6 +5431,13 @@ items:
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
               href: api/accesspackageassignmentrequest-cancel.md
+          - name: Access package assignment request approval
+            href: resources/approval.md
+            items:
+            - name: Filter by current user
+              href: api/entitlementmanagement-accesspackageassignmentapproval-filterByCurrentUser.md
+            - name: Update stage
+              href: api/entitlementmanagement-accesspackageassignmentapproval-stage-update.md
           - name: Access package catalog
             href: resources/accesspackagecatalog.md
             items:
