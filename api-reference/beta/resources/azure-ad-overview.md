@@ -58,7 +58,7 @@ The following table lists some common use cases for Azure AD resources.
 | **Access reviews** | | |
 | Ensure group memberships and application access rights are correct with access reviews. | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Consent requests** | | |
-| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-root.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-overview.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

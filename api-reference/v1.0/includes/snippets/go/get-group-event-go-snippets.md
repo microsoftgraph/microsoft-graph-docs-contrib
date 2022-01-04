@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Get(options)
+result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Get(nil)
 
 
 ```

@@ -74,7 +74,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocaliation_1"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
 Accept-Language: 0
@@ -119,7 +119,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update bannerLogo for default branding
+### Example 2: Update bannerLogo for the default branding
 
 The following request updates the banner logo for the default branding.
 
@@ -128,28 +128,17 @@ The following request updates the banner logo for the default branding.
 The following is an example of the request.
 
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocaliation_2"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Content-Type: image/jpeg
 
 <Image>
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocaliation-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

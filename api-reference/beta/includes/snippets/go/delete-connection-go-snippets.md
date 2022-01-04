@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Delete(options)
+graphClient.External().ConnectionsById(&externalConnectionId).Delete(nil)
 
 
 ```
