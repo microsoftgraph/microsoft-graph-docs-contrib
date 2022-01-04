@@ -1851,7 +1851,6 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |unknownFutureValue|
 
-
 ### callRecordingStatus values 
 
 |Member|

@@ -13,6 +13,12 @@ Namespace: microsoft.graph
 
 Represents the approval object for decisions associated with a request.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[filterByCurrentUser](../api/entitlementmanagement-accesspackageassignmentapproval-filterByCurrentUser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management.|
+|[Get approval](../api/entitlementmanagement-accesspackageassignmentapproval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management. |
+
 ## Properties
 
 |Property|Type|Description|
