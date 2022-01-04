@@ -106,5 +106,6 @@ Content-type: application/json
 		"createdBy": "BenA@contoso.onmicrosoft.com",
 		"createdTime": "2021-05-30T12:07:37.2756993Z"
       }
+    ]
 }
 ```
