@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.accessPackageAttribute",
+  "@odata.type": "#microsoft.graph.accessPackageResourceAttribute",
   "attributeDestination": {
     "@odata.type": "microsoft.graph.accessPackageResourceAttributeDestination"
   },
