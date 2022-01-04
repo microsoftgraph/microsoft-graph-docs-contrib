@@ -37,6 +37,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
+``` http
+GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/filterByCurrentUser(on='reviewer')
+```
+
+>[!NOTE]
+>Reviewers can retrieve the decisions from previous stages on the instance if the decisionHistoriesForReviewersEnabled property is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)
+
 ## Function parameters
 The following table shows the query parameters that can be used with this method.
 
@@ -159,38 +166,6 @@ Content-Type: application/json
 }
 -->
 ### Example 2: Retrieves all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer.
-
-``` http
-GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/filterByCurrentUser(on='reviewer')
-```
-
->[!NOTE]
->Reviewers can retrieve the decisions from previous stages on the instance if the decisionHistoriesForReviewersEnabled property is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)
-
-## Function parameters
-The following table shows the query parameters that can be used with this method.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Filter to query decision objects for the current user. Possible values are `reviewer`, `unknownFutureValue`. Use `reviewer`. Required.|
-
-
-## Optional query parameters
-This method supports `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-
-## Request body
-Do not supply a request body for this method.
-
-## Response
-
-If successful, this function returns a `200 OK` response code and a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection in the response body.
-
-## Examples
 
 ### Request
 
