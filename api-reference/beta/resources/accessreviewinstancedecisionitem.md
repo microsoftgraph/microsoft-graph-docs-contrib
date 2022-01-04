@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItem resource type"
-description: "Represents a decision on a user's access on an accessReviewInstance. "
+description: "Represents a decision on a user's access on an accessReviewInstance.  "
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
