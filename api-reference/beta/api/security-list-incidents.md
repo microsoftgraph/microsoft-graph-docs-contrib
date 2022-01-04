@@ -85,6 +85,7 @@ GET https://graph.microsoft.com/beta/security/incidents
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,6 +93,7 @@ GET https://graph.microsoft.com/beta/security/incidents
   "isCollection": true
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -151,6 +153,7 @@ GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
