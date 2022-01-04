@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-root.md) stage. If the  [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has the stageSettings set up, the parent [accessReviewInstance](accessReviewInstance.md) will have stages created. Each stage indicate different set of reviewers who can act on the stage decisions.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) recurrence. If the  [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has the stageSettings set up, the parent [accessReviewInstance](accessReviewInstance.md) will have stages created. Each stage indicate different set of reviewers who can act on the stage decisions.
 
 Every **accessReviewStage** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is one decision per identity being reviewed.
 

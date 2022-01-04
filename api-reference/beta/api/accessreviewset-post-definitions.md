@@ -588,7 +588,7 @@ This is an example of creating an access review with the following settings:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
+  "name": "create_accessReviewScheduleDefinition_group_multiStage"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
@@ -781,8 +781,8 @@ Content-type: application/json
         "endDate": null
       }
     },
-    "decisionHistoriesForReviewersEnabled": true
-  "applyActions": []
+    "decisionHistoriesForReviewersEnabled": true,
+    "applyActions": []
   },
   "additionalNotificationRecipients": []
 }
