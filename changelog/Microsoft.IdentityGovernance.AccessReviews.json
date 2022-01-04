@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-filterByCurrentUser) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
+          "Target": "approval"
+        },
+        {
+          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-get) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
+          "Target": "approval"
+        },
+        {
+          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list approval stages](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-list) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+          "Target": "approval"
+        },
+        {
+          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-get) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+          "Target": "approvalstage"
+        },
+        {
+          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-update) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalstage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+          "Target": "approvalstage"
+        }
+      ],
+      "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-04T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "caa8e78f-474c-4d88-920d-165de2f31c16",
           "ApiChange": "Method",
           "ChangedApiName": "PUT",
