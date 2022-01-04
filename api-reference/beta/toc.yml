@@ -2547,6 +2547,21 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
+          - name: macOS dmg app
+            href: resources/intune-apps-macosdmgapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosdmgapp-list.md
+            - name: Get
+              href: api/intune-apps-macosdmgapp-get.md
+            - name: Create
+              href: api/intune-apps-macosdmgapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosdmgapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosdmgapp-update.md
+          - name: macOS included app
+            href: resources/intune-apps-macosincludedapp.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -3879,6 +3894,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+          - name: Android device owner system update freeze period
+            href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
           - name: Android device owner system update install type
             href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
           - name: Android device owner trusted root certificate
@@ -5362,6 +5379,8 @@ items:
               href: api/intune-deviceconfig-hardwareconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-hardwareconfiguration-update.md
+            - name: assignHardwareConfiguration action
+              href: api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md
             - name: assign action
               href: api/intune-deviceconfig-hardwareconfiguration-assign.md
           - name: Hardware configuration assignment
@@ -9628,8 +9647,6 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: scheduleActionsForRules action
-              href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
             - name: refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
