@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewinstance-list.md) API.	
+To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API.	
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
-To call this API, the signed-in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
+To call this API, the signed-in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-overview.md).
 
 ## HTTP request
 
@@ -155,6 +155,6 @@ Content-Type: application/json
 
 ## See also
 
-- [Create accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
-- [List accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
-- [List accessReviewInstance](accessreviewinstance-list.md)
+- [Create accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [List accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)

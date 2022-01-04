@@ -19,6 +19,201 @@
       "source_path_from_root": "/api-reference/beta/api/applicationsigninsummary-get.md",
       "redirect_url": "/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/accessreviewsv2-root.md",
+      "redirect_url": "/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/accessreviewsv2-root.md",
+      "redirect_url": "/graph/api/resources/accessreviewsv2-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewscheduledefinition-list.md",
+      "redirect_url": "/graph/api/accessreviewset-list-definitions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewscheduledefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-definitions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewinstance-list.md",
+      "redirect_url": "/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewinstance-list.md",
+      "redirect_url": "/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/accessreviewinstancedecisionitem-list.md",
+      "redirect_url": "/graph/api/accessreviewinstance-list-decisions?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewinstancedecisionitem-list.md",
+      "redirect_url": "/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewhistorydefinition-list.md",
+      "redirect_url": "/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accessreviewhistorydefinition-post.md",
+      "redirect_url": "/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/entitlementmanagement-root.md",
+      "redirect_url": "/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/resources/entitlementmanagement-root.md",
+      "redirect_url": "/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackage-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackage-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignment-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentpolicy-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentpolicy-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentpolicies?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentrequest-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentrequest-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageassignmentresourcerole-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentresourceroles?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackagecatalogs?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageresourcerequest-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourcerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageresourcerequest-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/accesspackageresourceenvironment-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourceenvironment?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/connectedorganization-list.md",
+      "redirect_url": "/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/connectedorganization-post.md",
+      "redirect_url": "/graph/api/entitlementmanagement-post-connectedorganizations?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/appconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/appconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/userconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/userconsentrequest-list.md",
+      "redirect_url": "/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/consentrequests-root.md",
+      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/consentrequests-root.md",
+      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agreement-list.md",
+      "redirect_url": "/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/agreement-list.md",
+      "redirect_url": "/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agreement-post-agreements.md",
+      "redirect_url": "/graph/api/termsofusecontainer-post-agreements?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/agreement-post-agreements.md",
+      "redirect_url": "/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0",
+      "redirect_document_id": true
     }
   ]
 }
