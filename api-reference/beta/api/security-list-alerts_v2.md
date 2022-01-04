@@ -84,6 +84,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,13 +125,13 @@ Content-type: application/json
         "resolvedDateTime": null,
         "firstActivityDateTime": "2021-05-22T15:01:15.2504071Z",
         "lastActivityDateTime": "2021-05-22T15:01:47.7620475Z",
-        comments": [
+        "comments": [
           {
 		    "comment": "Demo alert",
 		    "createdBy": "BenA@contoso.onmicrosoft.com",
 		    "createdTime": "2021-05-30T12:07:37.2756993Z"
           }
-	]
+	      ]
     }
   ]
 }
