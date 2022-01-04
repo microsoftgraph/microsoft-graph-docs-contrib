@@ -1,0 +1,71 @@
+---
+title: "accessReviewStage: stop"
+description: "Stop a currently active accessReviewStage."
+ms.localizationpriority: medium
+author: "isabelleatmsft"
+ms.prod: "governance"
+doc_type: apiPageType
+---
+
+# accessReviewStage: stop
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Stop a currently active [accessReviewStage](../resources/accessReviewStage.md). After the access review stage stops, the instance status will be in `Completed` status, the reviewers can no longer give input. If there are other stages depend on the completed stage, new stage will be created. 
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application                            | AccessReview.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/stop
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "accessreviewstage_stop"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d/instances/61a617dd-238f-4037-8fa5-d800e515f5bc/stages/5d431f4b-56f2-4a50-938b-fb1e4e2c91b9/stop
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+

@@ -51,6 +51,7 @@ The following table shows the properties accepted to update an accessReviewSched
 | displayName | String | Name of access review series. |
 | fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|A collection of reviewer scopes used to define the list of fallback reviewers who are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access). The **reviewers** property is only updatable if individual users are assigned as reviewers. See [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection|The stage settings of an access review series. Stages will be created sequentially based on the dependsOn property. Each stage can have different set of reviewer, fallback reviewers and settings. See [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Optional.|
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | The settings for an access review series. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (deprecated)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** automatically populates the same values to the other property. |
 
@@ -93,6 +94,44 @@ Content-type: application/json
     "queryType": "MicrosoftGraph"
   },
   "reviewers": [],
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ],
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,

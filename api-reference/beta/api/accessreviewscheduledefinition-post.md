@@ -53,6 +53,7 @@ The following table shows the properties accepted to create an accessReview.
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection|The stage settings of an access review series. Stages will be created sequentially based on the dependsOn property. Each stage can have different set of reviewer, fallback reviewers and settings. See [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Optional.|
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (deprecated) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** automatically populates the same values to the other property. |
 
@@ -567,6 +568,221 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
+  },
+  "additionalNotificationRecipients": []
+}
+```
+
+### Example 4: Create an access review on a group with multi-stage
+
+This is an example of creating an access review with the following settings:
++ The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ It has two stages
++ A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer for the first stage.
++ The people managers are the reviewers and fallback reviewers are the members of a group for the second stage.
++ It recurs weekly and continues indefinitely.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Group Multi-stage Access Review",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 4,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-09-08T12:02:30.667Z"
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true
+  }
+}
+
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-allusers-m365-aadrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Group Multi-stage Access Review",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ], 
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": false,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true
+  "applyActions": []
   },
   "additionalNotificationRecipients": []
 }

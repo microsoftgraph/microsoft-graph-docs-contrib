@@ -1,0 +1,75 @@
+---
+title: "accessReviewStage resource type"
+description: "Represents a recurrence of an `accessReviewStage`."
+author: "isabelleatmsft"
+ms.localizationpriority: medium
+ms.prod: "governance"
+doc_type: resourcePageType
+---
+
+# accessReviewStage resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
+Represents an Azure AD [access review](accessreviewsv2-root.md) stage. If the  [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has the stageSettings set up, the parent [accessReviewInstance](accessReviewInstance.md) will have stages created. Each stage indicate different set of reviewers who can act on the stage decisions.
+
+Every **accessReviewStage** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is one decision per identity being reviewed.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List accessReviewStages](../api/accessreviewstage-list.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Get a list of the [accessReviewStage](../resources/accessreviewstage.md) objects and their properties.|
+|[Get accessReviewStage](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
+|[Update accessReviewStage](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
+|[stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|
+|[filterByCurrentUser](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is the reviewer of one or more decisions.|
+|[List decisions](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the accessReviewInstanceDecisionItem resources from the decisions navigation property.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier of the instance. Supports `$select`. Read-only.|
+|startDateTime|DateTimeOffset|DateTime when review instance is scheduled to start. May be in the future. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only. |
+|endDateTime|DateTimeOffset|DateTime when review stage is scheduled to end. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
+|status|String|Specifies the status of an accessReview. Possible values: `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
+|reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of access review scopes is used to define who the reviewers are. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Supports $select.|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.|
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.accessReviewStage",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.accessReviewStage",
+  "id": "String (identifier)",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "status": "String",
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ]
+}
+```
+
