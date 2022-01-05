@@ -145,7 +145,6 @@ Content-type: application/json
                 "contentType": "text",
                 "content": "Hello world"
             },
-            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -181,7 +180,6 @@ Content-type: application/json
                 "contentType": "html",
                 "content": "<div><div><div><span><img height=\"63\" src=\"https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value\" width=\"67\" style=\"vertical-align:bottom; width:67px; height:63px\"></span></div></div></div>"
             },
-            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -204,7 +202,6 @@ Content-type: application/json
             "channelIdentity": null,
             "policyViolation": null,
             "from": null,
-            "onBehalfOf": null,
             "body": {
                 "contentType": "html",
                 "content": "<systemEventMessage/>"

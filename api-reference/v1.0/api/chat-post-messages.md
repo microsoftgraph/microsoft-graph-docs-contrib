@@ -143,7 +143,6 @@ Content-type: application/json
         "contentType": "text",
         "content": "Hello World"
     },
-    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []

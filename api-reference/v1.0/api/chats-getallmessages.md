@@ -129,7 +129,6 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
-            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -166,7 +165,6 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
-            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
