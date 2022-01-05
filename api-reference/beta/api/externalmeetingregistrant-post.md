@@ -34,7 +34,7 @@ To create an external meeting registrant with delegated (`/me`) and app (`/users
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration/registrants
-POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]
