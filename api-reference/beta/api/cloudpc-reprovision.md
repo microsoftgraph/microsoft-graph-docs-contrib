@@ -41,6 +41,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
