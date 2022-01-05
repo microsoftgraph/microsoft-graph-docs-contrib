@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## Permissions
 
