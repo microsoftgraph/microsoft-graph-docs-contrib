@@ -340,7 +340,7 @@ items:
           - name: User control (preview)
             items:
             - name: contactMergeSuggestions settings
-            - href: resources/contactmergesuggestions.md
+              href: resources/contactmergesuggestions.md
             - name: Get
               href: api/contactmergesuggestions-get.md
             - name: Update
