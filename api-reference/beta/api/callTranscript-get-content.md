@@ -1,6 +1,6 @@
 ---
 title: "Get callTranscript content"
-description: "Retrieve single callTranscript content associated to a Microsoft Teams Online Meeting."
+description: "Retrieve single callTranscript content associated with a Microsoft Teams Online Meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve single [callTranscript](../resources/callTranscript.md) content associated to a Microsoft Teams Online Meeting.
+Retrieve single [callTranscript](../resources/callTranscript.md) content associated with a Microsoft Teams Online Meeting.
 
 ## Permissions
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/content
+GET me/onlineMeetings({meetingId})/transcripts({transcriptId})/content
+GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/content
 ```
 
 ## Optional query parameters
@@ -115,7 +116,7 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 3: Get a callTranscript Content specifying Accept query param
+### Example 3: Get a callTranscript Content specifying Accept header
 #### Request
 <!-- {
   "blockType": "request",
@@ -128,7 +129,7 @@ Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
 #### Response
 
-Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
+Response contains bytes for the transcript in the body. `Content-type` header specifies type of the transcript content.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -143,7 +144,7 @@ Content-type: application/vnd.openxmlformats-officedocument.wordprocessingml.doc
 <DOCX Content>
 ```
 
-### Example 4: Get a callTranscript Content with $format getting precedence
+### Example 4: Get a callTranscript Content with $format getting precedence over the Accept header
 #### Request
 <!-- {
   "blockType": "request",

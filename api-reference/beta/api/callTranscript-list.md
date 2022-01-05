@@ -1,6 +1,6 @@
 ﻿---
 title: "List callTranscripts"
-description: "Retrieve the list of transcripts associated to a Microsoft Teams Online Meeting."
+description: "Retrieve the list of transcripts associated with a Microsoft Teams Online Meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/callTranscript.md) associated to a Microsoft Teams Online Meeting.
+Retrieve the list of [callTranscript](../resources/callTranscript.md) associated with a Microsoft Teams Online Meeting.
 
 ## Permissions
 
@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings({meetingId})/transcripts
 GET /users({userId})/onlineMeetings({meetingId})/transcripts
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "Get callTranscript"
-description: "Retrieve single callTranscript associated to a Microsoft Teams Online Meeting."
+description: "Retrieve single callTranscript associated with a Microsoft Teams Online Meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve single [callTranscript](../resources/callTranscript.md) associated to a Microsoft Teams Online Meeting.
+Retrieve single [callTranscript](../resources/callTranscript.md) associated with a Microsoft Teams Online Meeting.
 
 ## Permissions
 
@@ -29,12 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET me/onlineMeetings({meetingId})/transcripts({transcriptId})
+GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})
 ```
-
-## Optional query parameters
-
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
