@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windowsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **windowsSettings** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcWindowsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcWindowsSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcWindowsSettings"
+                }
+            ],
+            "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-01-05T15:38:03.127Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",

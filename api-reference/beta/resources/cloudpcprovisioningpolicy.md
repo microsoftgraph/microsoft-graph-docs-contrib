@@ -39,6 +39,7 @@ Represents a Cloud PC provisioning policy.
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|The specific settings for the Microsoft Managed Desktop, which enables customers to get a managed device experience for the Cloud PC. Before you can enable Microsoft Managed Desktop, an admin must configure it.|
 |domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific windows settings to configure while creating Cloud PCs for this provisioning policy.|
 
 ## Relationships
 
@@ -74,6 +75,9 @@ The following is a JSON representation of the resource.
   },
   "domainJoinConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
+  },
+  "windowsSettings": {
+    "language": "en-US"
   }
 }
 ```
