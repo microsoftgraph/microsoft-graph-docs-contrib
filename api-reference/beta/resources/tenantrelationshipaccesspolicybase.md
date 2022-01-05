@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The base type that defines a tenant relationship. This is an abstract type.
+The base type that defines a tenant relationship. This is an abstract type that's inherited by cross-tenant policy objects including [crossTenantAccessPolicy](crosstenantaccesspolicy.md).
 
-Inherits from [policyBase](../resources/policybase.md).
+Inherits from [policyBase](policybase.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|definition|String collection|**TODO: Add Description**|
+| definition | String collection | **TODO: Add Description** |
+| description | String | Description for this policy. Required. Inherited from [policyBase](../resources/policybase.md). |
+| displayName | String collection | Display name for this policy. Required. Inherited from [policyBase](../resources/policybase.md). |
 
 ## Relationships
 
@@ -44,6 +46,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.tenantRelationshipAccessPolicyBase",
   "definition": [
     "String"
-  ]
+  ],
+  "description": "String",
+  "displayName": "String"
 }
 ```

@@ -651,7 +651,7 @@
          "ApiChange": "Resource",
          "ChangedApiName": "crossTenantAccessPolicy",
          "ChangeType": "Addition",
-         "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource.",
+         "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
          "Target": "crossTenantAccessPolicy"
        },
        {
@@ -659,7 +659,7 @@
          "ApiChange": "Resource",
          "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
          "ChangeType": "Addition",
-         "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+         "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource and related methods. Represents the default configuration defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
          "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
@@ -667,7 +667,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -675,7 +675,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource and related methods. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
           "Target": "crossTenantAccessPolicyInboundTrust"
         },
         {
@@ -691,7 +691,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
           "Target": "crossTenantAccessPolicyB2BSetting"
         },
         {
@@ -699,7 +699,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
           "Target": "crossTenantAccessPolicyTarget"
         },
         {
