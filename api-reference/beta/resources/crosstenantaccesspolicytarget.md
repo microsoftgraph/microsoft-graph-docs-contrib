@@ -29,7 +29,7 @@ When setting application targets, you can also use the following reserved values
 
 | Symbol | Description |
 |:---|:---|
-| AllMicrosoftApps | Refers to any [Microsoft cloud application](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). |
+| AllMicrosoftApps | Refers to any [Microsoft cloud application](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). |
 | Office365 | Includes the applications mentioned as part of the [Office365](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite. |
 
 ## Relationships
