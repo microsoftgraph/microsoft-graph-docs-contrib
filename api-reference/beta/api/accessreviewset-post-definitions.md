@@ -53,7 +53,7 @@ The following table shows the properties accepted to create an accessReview.
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
-|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection|The stage settings of an access review series. Stages will be created sequentially based on the dependsOn property. Each stage can have different set of reviewer, fallback reviewers and settings. See [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Optional.|
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection| Defines how many stages each instance of an access review series will have. Stages will be created sequentially based on the dependsOn property. Each stage can have different set of reviewer, fallback reviewers and settings. See [accessReviewStageSettings](../resources/accessreviewstagesettings.md). Optional.|
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | backupReviewers (deprecated) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This property has been replaced by **fallbackReviewers**. However, specifying either **backupReviewers** or **fallbackReviewers** automatically populates the same values to the other property. |
 
@@ -573,7 +573,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create an access review on a group with multi-stage
+### Example 4: Create an access review on a group with multiple stages
 
 This is an example of creating an access review with the following settings:
 + The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.

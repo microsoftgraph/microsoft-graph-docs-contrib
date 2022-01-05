@@ -31,7 +31,7 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. |
 | recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled or disabled. |
 | recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
-|decisionHistoriesForReviewersEnabled|Boolean|Indicate whether decision histories are available for reviewers for multi-stage access review. If not provided, default is disabled.|
+|decisionHistoriesForReviewersEnabled|Boolean| Indicates whether decisions on previous access review stages are available for reviewers on an accessReviewInstance with multiple subsequent stages. If not provided, default is disabled.|
 
 ## Relationships
 None.

@@ -18,7 +18,7 @@ To update an **accessReviewStage**, it's **status** must be `InProgress`.
 
 > [!NOTE]
 > 
-> Updating an **accessReviewStage** will update only that instance. The parent **accessReviewInstance** and any future **accessReviewStage** objects won't change. To make updates that apply to all future instances amd stages, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
+> Updating an **accessReviewStage** will update only that stage. The parent **accessReviewInstance** and any future **accessReviewStage** objects won't change. To make updates that apply to all future instances and stages, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

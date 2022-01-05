@@ -21,7 +21,7 @@ The **accessReviewStageSettings** collection defines the multi-stage settings of
 |Property|Type|Description|
 |:---|:---|:---|
 |stageId|String|Unique identifier of the accessReviewStageSettings. The stageId will be used in dependsOn property to indicate the stage relationship.|
-|dependsOn|String collection|Define the sequential or parallel order of each stageSettings. Currently only support single dependency|
+|dependsOn|String collection|Define the sequential or parallel order of each stageSettings. Only sequential stages are currently supported.|
 |durationInDays|Int32|The duration of the stage. The total duration in days cannot exceed the instanceDurationInDays in settings.|
 |decisionsThatWillMoveToNextStage|String collection|Indicate which decisions will go to the next stage. Can be a sub-set of "Approve", "Deny", "Recommendation", or "NotReviewed". If not provided, all decisions will go to the next stage.|
 |recommendationsEnabled|Boolean|Indicates whether showing recommendations to reviewers is enabled.|

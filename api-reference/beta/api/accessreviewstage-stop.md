@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop a currently active [accessReviewStage](../resources/accessReviewStage.md). After the access review stage stops, the instance status will be in `Completed` status, the reviewers can no longer give input. If there are other stages depend on the completed stage, new stage will be created. 
+Stop a currently active [accessReviewStage](../resources/accessReviewStage.md). After the access review stage stops, the stage status will be in `Completed` status and the reviewers can no longer give input. If there are other stages depend on the completed stage, the next stage will be created. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
