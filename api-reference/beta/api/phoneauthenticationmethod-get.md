@@ -1,7 +1,7 @@
 ---
 title: "Get phoneAuthenticationMethod"
 description: "Retrieve a single phoneAuthenticationMethod object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.
+Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ## Permissions
 
@@ -35,11 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global admin
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global administrator
 * Global reader
-* Privileged authentication admin
-* Authentication admin (only sees masked phone numbers)
+* Privileged authentication administrator
+* Authentication administrator (only sees masked phone numbers)
 
 ## HTTP request
 
@@ -49,6 +49,10 @@ For delegated scenarios where an admin is acting on another user, the admin need
 GET /me/authentication/phoneMethods/{id}
 GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+The value of `id` corresponding to the phoneType to retrieve is one of the following:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` to retrieve the `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to retrieve the `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` to retrieve the `mobile` **phoneType**.
 
 ## Optional query parameters
 
@@ -99,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750
 [!INCLUDE [sample-code](../includes/snippets/java/get-phoneauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-phoneauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

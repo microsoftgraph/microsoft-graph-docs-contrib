@@ -1,9 +1,9 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4 and IPV6 address ranges."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-IP range base class for representing IPV4 and IPV6 address ranges.
+An IP range abstract type from which the [iPv4CidrRange](ipv4cidrrange.md) and [iPv6CidrRange](ipv6cidrrange.md) resource types for configuring [ipNamedLocation](ipnamedlocation.md) objects are derived.
+
+The [iPv4CidrRange](ipv4cidrrange.md) derived type is used to configure IPv4 address ranges while the [iPv6CidrRange](ipv6cidrrange.md) derived type is used to configure IPv6 address ranges.
 
 ## Properties
 
@@ -33,6 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+    "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
 

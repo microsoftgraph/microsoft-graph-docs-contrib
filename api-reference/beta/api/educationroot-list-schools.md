@@ -2,7 +2,7 @@
 title: "List educationSchools"
 description: "Retrieve a list of all school objects."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -60,26 +60,30 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -88,7 +92,7 @@ GET https://graph.microsoft.com/beta/education/schools
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -99,39 +103,38 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
-  "value": [
-    {
-      "id": "10001",
-      "displayName": "Contoso High School",
-      "description": "Public 9-12 high school",
-      "status": "active",
-      "externalSource": "sis",
-      "principalEmail": "amyr@contoso.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10001",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
-      "externalId": "10001",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+   "value":[
+      {
+         "id":"10001",
+         "displayName":"Contoso High School",
+         "description":"Public 9-12 high school",
+         "status":"active",
+         "externalSource":"sis",
+         "principalEmail":"amyr@contoso.com",
+         "principalName":"Amy Roebuck",
+         "externalPrincipalId":"14007",
+         "highestGrade":"12",
+         "lowestGrade":"9",
+         "schoolNumber":"10001",
+         "address":{
+            "city":"Los Angeles",
+            "countryOrRegion":"United States",
+            "postalCode":"98055",
+            "state":"CA",
+            "street":"12345 Main St."
+         },
+         "createdBy":{
+            "user":{
+               "displayName":"Susana Rocha",
+               "id":"14012"
+            }
+         },
+         "externalId":"10001",
+         "phone":"+1 (253) 555-0102"
+      }
+   ]
 }
 ```
 

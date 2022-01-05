@@ -1,7 +1,7 @@
 ---
 title: "Get accessPackage"
 description: "Retrieve the properties and relationships of an accessPackage object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package policies, add `$expand=accessPackageAssignmentPolicies`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For example, to retrieve the access package policies, add `$expand=accessPackageAssignmentPolicies`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

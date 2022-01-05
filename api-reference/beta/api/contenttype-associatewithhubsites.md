@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: associateWithHubSites"
 description: "Associate a content type with list of hubsites."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -19,15 +19,15 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## Permissions  
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
   
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /sites/id/contentTypes/id/associateWithHubSites
+POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
 
 ## Request headers
@@ -63,24 +63,46 @@ If successful, this action returns a `204 No Content` response code.
 ## Example
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_associatewithhubsites"
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 Content-Type: application/json
 
 {
-  "hubSiteUrls":
-    [
+   "hubSiteUrls":[
       "https://graph.microsoft.com/beta/sites/id"
-      
-    ],
-    "propagateToExistingLists": false
+   ],
+   "propagateToExistingLists":false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-associatewithhubsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-associatewithhubsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
@@ -91,7 +113,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
   

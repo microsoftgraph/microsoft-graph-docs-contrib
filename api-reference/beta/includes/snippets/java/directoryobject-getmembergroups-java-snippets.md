@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Boolean securityEnabledOnly = true;
+Boolean securityEnabledOnly = false;
 
-graphClient.me()
-	.getMemberGroups(securityEnabledOnly)
+graphClient.directoryObjects("0049d944-a805-4680-9f54-3ab292090309")
+	.getMemberGroups(DirectoryObjectGetMemberGroupsParameterSet
+		.newBuilder()
+		.withSecurityEnabledOnly(securityEnabledOnly)
+		.build())
 	.buildRequest()
 	.post();
 

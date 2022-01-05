@@ -1,7 +1,7 @@
 ---
 title: "List publications"
 description: "Get the itemPublications from the publications navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/me/profile/publications
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-publications-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-publications-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

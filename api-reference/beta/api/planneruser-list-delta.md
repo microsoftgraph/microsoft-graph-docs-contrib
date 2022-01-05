@@ -2,7 +2,7 @@
 title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

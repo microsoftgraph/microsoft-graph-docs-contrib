@@ -1,8 +1,8 @@
 ---
 title: "Update groupLifecyclePolicy"
 description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code and updated [groupLi
 ```http
 PATCH https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 151
 
 {
   "groupLifetimeInDays": 180,
@@ -87,10 +86,14 @@ Content-length: 151
 [!INCLUDE [sample-code](../includes/snippets/java/update-grouplifecyclepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-grouplifecyclepolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. 
+Note: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,7 +102,6 @@ Note: The response object shown here may be truncated for brevity.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

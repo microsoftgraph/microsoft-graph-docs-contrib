@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph SDKs to batch requests"
 description: "Provides instructions for creating a batch of API requests using the Microsoft Graph SDKs."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
 ---
 
@@ -155,15 +155,13 @@ if (calendarResponse.ok) {
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent();
+final BatchRequestContent batchRequestContent = new BatchRequestContent();
 
 // Use the Graph client to generate the request for GET /me
 final String meGetId = batchRequestContent
                         .addBatchRequestStep(graphClient
                                               .me()
-                                              .buildRequest()
-                                              .withHttpMethod(HttpMethod.GET)
-                                              .getHttpRequest());
+                                              .buildRequest());
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -177,59 +175,17 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest());
-
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
+                                          .buildRequest(calendarViewOptions));
 
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = graphClient.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
-final Response userResponse = batchResponseContent.getResponseById(meGetId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-if (userResponse.isSuccessful()) {
-    final User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
-    System.out.println(String.format("Hello %s!", user.displayName));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
-}
+final User user = batchResponseContent.getResponseById(meGetId).getDeserializedBody(User.class);
+System.out.println(String.format("Hello %s!", user.displayName));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
 ---
@@ -428,7 +384,7 @@ if (calendarResponse.ok)
 
 ```java
 // Create the batch request content with the steps
-final MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+final BatchRequestContent batchRequestContent = new BatchRequestContent(batchSteps);
 
 final ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
 final OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
@@ -452,9 +408,7 @@ final String addEventRequestId = batchRequestContent
                                 .addBatchRequestStep(graphClient
                                                 .me()
                                                 .events()
-                                                .buildRequest()
-                                                .withHttpMethod(HttpMethod.POST)
-                                                .getHttpRequest(newEvent));
+                                                .buildRequest(), HttpMethod.POST, newEvent);
 
 // Use the Graph client to generate the request URL for
 // GET /me/calendarview?startDateTime="start"&endDateTime="end"
@@ -464,61 +418,111 @@ final String calendarViewRequestStepId = batchRequestContent
                                         .addBatchRequestStep(graphClient
                                           .me()
                                           .calendarView()
-                                          .buildRequest(calendarViewOptions)
-                                          .withHttpMethod(HttpMethod.GET)
-                                          .getHttpRequest(),
+                                          .buildRequest(calendarViewOptions),
+                                          HttpMethod.GET,
+                                          null,
                                           addEventRequestId);
 
-final ICoreAuthenticationProvider auth =
-    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
-final OkHttpClient client = HttpClients.createDefault(auth);
-
 // Send the batch request content to the /$batch endpoint
-final String batchContent = batchRequestContent.getBatchRequestContent();
-final Request batchRequest = new Request.Builder()
-    .url("https://graph.microsoft.com/v1.0/$batch")
-    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
-    .build();
-
-final Response batchResponse = client.newCall(batchRequest).execute();
-
-final ISerializer graphSerializer = graphClient.getSerializer();
-
-// Create an MSBatchResponseContent object to parse the response
-final MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+final BatchResponseContent batchResponseContent = client.batch().buildRequest().post(batchRequestContent);
 // Get the user response using the id assigned to the request
-final Response addEventResponse = batchResponseContent.getResponseById(addEventRequestId);
-
-// For a single entity, the JSON payload can be deserialized
-// into the expected type
-  if (addEventResponse.isSuccessful()) {
-    final Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
-    System.out.println(String.format("New event created with ID: %s", event.id));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
-}
+final Event event = batchResponseContent.getResponseById(addEventRequestId).getDeserializedBody(Event.class);
+System.out.println(String.format("New event created with ID: %s", event.id));
 
 // Get the calendar view response by id
-final Response calendarViewResponse = batchResponseContent.getResponseById(calendarViewRequestStepId);
-
-// For a collection of entities, the JSON payload can be deserialized
-// into a *CollectionResponse object. The collection can then be
-// accessed via the value property
-if (calendarViewResponse.isSuccessful()) {
-    final EventCollectionResponse events = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
-    System.out.println(
-        String.format("You have %d events on your calendar today", events.value.size()));
-} else {
-    GraphErrorResponse error = graphSerializer
-        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
-    System.out.println(
-        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
-}
+final EventCollectionResponse events = batchResponseContent.getResponseById(calendarViewRequestStepId).getDeserializedBody(EventCollectionResponse.class);
+System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+---
+
+## Implementing batching using BatchRequestContent, BatchRequestStep, and HttpRequestMessage
+
+The following example shows how to use `BatchRequestContent`,`BatchRequestStep`, and `HttpRequestMessage` to send multiple requests in a batch and how to handle the limit of 20 with Microsoft Graph API requests. This example creates meeting links using the `onlineMeetings/createOrGet` endpoint for the specified user ID. You can use this example with other Microsoft Graph endpoints as well.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Graph;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksToBeGenerated)
+        {            
+            List<string> _joinWebUrls = new List<string>();
+            //Total number of items per batch supported is 20
+            int maxNoBatchItems = 20;
+            try
+            {
+                //valid GraphAccessToken is required to execute the call
+                var graphClient = GetAuthenticatedClient(GraphAccessToken);
+                var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+                foreach (var item in meetingLinksToBeGenerated)
+                {
+                    var externalId = Guid.NewGuid().ToString();
+                    var @event = new OnlineMeetingCreateOrGetRequestBody
+                    {
+                        StartDateTime = item.StartTime,
+                        EndDateTime = item.EndTime,
+                        Subject = "Test Meeting",
+                        ExternalId = externalId,
+                        
+                    };
+                    events.Add(@event);
+                }
+                // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
+                List<BatchRequestContent> batches = new List<BatchRequestContent>();
+                var batchRequestContent = new BatchRequestContent();
+                foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+                { 
+                    //create online meeting for particular user or we can use /me as well
+                    var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
+                    {
+                        Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
+                    };
+                    BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
+                    batchRequestContent.AddBatchRequestStep(requestStep);
+                    if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
+                    {
+                        batches.Add(batchRequestContent);
+                        batchRequestContent = new BatchRequestContent();
+                    }
+                }
+                if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                if (batches.Count == 0 && batchRequestContent != null)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                foreach (BatchRequestContent batch in batches)
+                {
+                    BatchResponseContent response = null;
+                    response = await graphClient.Batch.Request().PostAsync(batch);
+                    Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
+                    foreach (string key in responses.Keys)
+                    {
+                        HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
+                        var responseContent = await httpResponse.Content.ReadAsStringAsync();
+                        JObject eventResponse = JObject.Parse(responseContent);
+                        //do something below
+                        Console.writeline(eventResponse["joinWebUrl"].ToString());                      
+                    }                 
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Writeline(ex.Message + ex.StackTrace);               
+            }
+        }    
+
+```
 ---
 <!-- markdownlint-enable MD024 -->

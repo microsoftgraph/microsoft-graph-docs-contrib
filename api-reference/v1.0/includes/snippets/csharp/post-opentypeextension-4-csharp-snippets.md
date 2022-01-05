@@ -28,7 +28,7 @@ var post = new Post
 	}
 };
 
-await graphClient.Groups["37df2ff0-0de0-4c33-8aee-75289364aef6"].Threads["AAQkADJizZJpEWwqDHsEpV_KA=="].Posts["AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA="]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
 	.Reply(post)
 	.Request()
 	.PostAsync();

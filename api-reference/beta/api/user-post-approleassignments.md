@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
@@ -93,16 +93,20 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-create-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned user.
+In this example, note that the value used as the user **id** in the request URL (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) is the same as the **principalId** property in the body.
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -119,7 +123,7 @@ Content-type: application/json
   "id": "5TDjzVAhEUycWxS_3JSMeY-oHkjrWvBKi7aIZwYGQzg",
   "deletedDateTime": null,
   "appRoleId": "00000000-0000-0000-0000-000000000000",
-  "createdDateTime": "2021-02-15T10:31:53.5164841Z",
+  "creationTimestamp": "2021-02-15T10:31:53.5164841Z",
   "principalDisplayName": "Megan Bowen",
   "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
   "principalType": "User",
@@ -141,5 +145,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

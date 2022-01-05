@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PermissionGrantConditionSet permissionGrantConditionSet = new PermissionGrantConditionSet();
 permissionGrantConditionSet.permissionType = PermissionType.DELEGATED;
-permissionGrantConditionSet.clientApplicationsFromVerifiedPublisherOnly = true;
+permissionGrantConditionSet.certifiedClientApplicationsOnly = true;
 
 graphClient.policies().permissionGrantPolicies("{id}").includes()
 	.buildRequest()

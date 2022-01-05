@@ -1,8 +1,8 @@
 ---
 title: "Get tab in chat"
 description: "Retrieve the properties and relationships of the specified tab in a chat. "
-author: "nkramer"
-localization_priority: Normal
+author: "subray"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -22,10 +22,16 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Application | TeamsTab.Read.Chat*, TeamsTab.ReadWrite.Chat*, TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs/{tab-id}
 ```
@@ -73,6 +79,10 @@ GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@t
 [!INCLUDE [sample-code](../includes/snippets/java/get-tab-in-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tab-in-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -90,7 +100,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "tabId",

@@ -17,7 +17,7 @@ var extension = new OpenTypeExtension
 	}
 };
 
-await graphClient.Me.Messages["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="].Extensions
+await graphClient.Me.Messages["{message-id}"].Extensions
 	.Request()
 	.AddAsync(extension);
 

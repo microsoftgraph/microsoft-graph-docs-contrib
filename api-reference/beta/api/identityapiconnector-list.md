@@ -2,7 +2,7 @@
 title: "List identityApiConnectors"
 description: "Get a list of the identityApiConnector objects and their properties"
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityapiconnectors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-identityapiconnectors-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,16 +114,38 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors",
     "value": [
-      {
-          "id": "<guid>",
-          "displayName": "Test API",
-          "targetUrl": "https://someapi.com/api/endpoint",
-          "authenticationConfiguration": {
-            "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME>",
-            "password": "******"
-          }
-      }
+        {
+            "id": "<guid>",
+            "displayName": "Test API",
+            "targetUrl": "https://someapi.com/api/endpoint",
+            "authenticationConfiguration": {
+              "@odata.type": "#microsoft.graph.basicAuthentication",
+              "username": "<USERNAME>",
+              "password": "******"
+            }
+        },
+        {
+            "id": "<guid>",
+            "displayName": "My API connector",
+            "targetUrl": "https://someotherapi.com/api/endpoint",
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+                "certificateList": [
+                    {
+                        "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                        "notAfter": 1666350522,
+                        "notBefore": 1508670522,
+                        "isActive": true
+                    },
+                    {
+                        "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
+                        "notAfter": 1766350522,
+                        "notBefore": 1608670522,
+                        "isActive": false
+                    }
+                ]
+            }
+        }
   ]
 }
 ```

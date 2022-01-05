@@ -1,7 +1,7 @@
 ---
 title: "iosLobAppProvisioningConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -35,7 +35,7 @@ This topic provides descriptions of the declared methods, properties and relatio
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
-|payloadFileName|String|Payload file name (*.mobileprovision \| *.xml).|
+|payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 |roleScopeTagIds|String collection|List of Scope Tags for this iOS LOB app provisioning configuration entity.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
@@ -78,7 +78,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
 
 
 

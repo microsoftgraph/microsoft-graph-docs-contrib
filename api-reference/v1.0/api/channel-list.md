@@ -3,7 +3,7 @@ title: "List channels"
 description: "Retrieve the list of channels in this team."
 author: "nkramer"
 doc_type: "apiPageType"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -20,16 +20,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels
+GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
@@ -58,6 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 The following example shows a request to list all channels.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -65,9 +68,8 @@ The following example shows a request to list all channels.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,13 +86,19 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 [!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-channels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
+
 
 #### Response
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -101,17 +109,15 @@ The following is the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "standard"
     }
   ]
 }
@@ -123,17 +129,17 @@ Content-length: 262
 
 The following example shows a request to list all private channels.
 
-# [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_private_channels"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,13 +155,19 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-private-channels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -167,17 +179,15 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "test private team",
+      "membershipType": "private"
     }
   ]
 }

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/appCatalogs/teamsApps')
+let teamsApps = await client.api('/appCatalogs/teamsApps')
 	.filter('distributionMethod eq \'organization\'')
 	.get();
 

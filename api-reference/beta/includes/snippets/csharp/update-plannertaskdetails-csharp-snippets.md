@@ -14,7 +14,7 @@ var plannerTaskDetails = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>()
 		{
 			{"http%3A//developer%2Emicrosoft%2Ecom", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"alias\":\"Documentation\",\"previewPriority\":\" !\",\"type\":\"Other\"}"},
-			{"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
+			{"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer", "{\"@odata.type\":\"microsoft.graph.plannerExternalReference\",\"previewPriority\":\"  !!\"}"},
 			{"http%3A//www%2Ebing%2Ecom", "null"}
 		}
 	},
@@ -29,8 +29,9 @@ var plannerTaskDetails = new PlannerTaskDetails
 	}
 };
 
-await graphClient.Planner.Tasks["gcrYAaAkgU2EQUvpkNNXLGQAGTtu"].Details
+await graphClient.Planner.Tasks["{plannerTask-id}"].Details
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerTaskDetails);
 

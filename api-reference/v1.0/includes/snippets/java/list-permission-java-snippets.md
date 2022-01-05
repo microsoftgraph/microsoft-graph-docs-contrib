@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPermissionCollectionPage permissions = graphClient.sites("{sitesId}").permissions()
-	.buildRequest()
+LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new QueryOption("search", "{query}"));
+
+SiteCollectionPage sites = graphClient.sites()
+	.buildRequest( requestOptions )
 	.get();
 
 ```

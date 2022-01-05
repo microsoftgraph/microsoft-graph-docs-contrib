@@ -1,8 +1,8 @@
 ---
-title: "List cloudPcOnPremisesConnection"
+title: "List onPremisesConnections"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -87,6 +85,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpconpremisesconnections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpconpremisesconnections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -96,7 +98,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcOnPremisesConnection)"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
+  "isCollection": true
 }
 -->
 

@@ -55,6 +55,8 @@ var bookingService = new BookingService
 	},
 	Description = "Individual bento box lunch delivery",
 	DisplayName = "Bento",
+	IsLocationOnline = true,
+	SmsNotificationsEnabled = true,
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",
 	PostBuffer = new Duration("PT10M"),
@@ -80,7 +82,7 @@ var bookingService = new BookingService
 	}
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Services
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services
 	.Request()
 	.AddAsync(bookingService);
 

@@ -8,9 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var index = 3;
 
-var values = JToken.Parse("[{}]");
+var values = JsonDocument.Parse("[{}]");
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
 	.Add(index,values,null)
 	.Request()
 	.PostAsync();

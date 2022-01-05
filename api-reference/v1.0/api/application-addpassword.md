@@ -1,7 +1,7 @@
 ---
 title: "application: addPassword"
 description: "Add a strong password to an application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -45,8 +45,8 @@ In the request body, provide an optional `passwordCredential` object with the fo
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | displayName | String | Friendly name for the password. Optional. |
-| endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "startDateTime + 2 years". |
-| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional.  The default value is "now". |
+| endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional. The default value is "startDateTime + 2 years". |
+| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.  The default value is "now". |
 
 ## Response
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-addpassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-addpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

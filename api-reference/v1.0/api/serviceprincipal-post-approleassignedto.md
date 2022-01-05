@@ -1,16 +1,15 @@
 ---
-title: "Grant an appRoleAssignment to a service principal"
-description: "Grant an app role assignment to a service principal."
-localization_priority: Priority
+title: "Grant an appRoleAssignment for a service principal"
+description: "Grant an app role assignment for a service principal."
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment for a service principal
 
 Namespace: microsoft.graph
-
 
 Assign an app role for a resource service principal, to a user, group, or client service principal.
 
@@ -28,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+|Application | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -93,6 +92,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-approleassignedto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -102,7 +105,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -123,7 +126,7 @@ Content-type: application/json
   "principalDisplayName": "Parents of Contoso",
   "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
   "principalType": "Group",
-  "resourceDisplayName": "Yammer",
+  "resourceDisplayName": "Fabrikam App",
   "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```

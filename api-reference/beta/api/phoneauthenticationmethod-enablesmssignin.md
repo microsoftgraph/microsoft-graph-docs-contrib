@@ -1,7 +1,7 @@
 ---
 title: "phoneAuthenticationMethod: enableSmsSignIn"
 description: "Enable SMS sign-in for a mobile phone."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -39,10 +39,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 
@@ -52,6 +52,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
+The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
 
@@ -107,9 +108,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -20,7 +20,7 @@ Update the properties of a [deviceManagementConfigurationPolicyAssignment](../re
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
 
@@ -50,6 +51,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The key of the assignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for the DeviceManagementConfigurationPolicy.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device compliance policy, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|The identifier of the source of the assignment.|
 
 
 
@@ -61,9 +64,9 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 Content-type: application/json
-Content-length: 404
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
@@ -72,7 +75,9 @@ Content-length: 404
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
     "collectionId": "Collection Id value"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -81,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 453
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
@@ -91,7 +96,9 @@ Content-Length: 453
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
     "deviceAndAppManagementAssignmentFilterType": "include",
     "collectionId": "Collection Id value"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 

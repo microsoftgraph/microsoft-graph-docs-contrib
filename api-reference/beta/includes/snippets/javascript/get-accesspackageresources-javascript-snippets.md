@@ -10,8 +10,10 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources')
+let accessPackageResources = await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources')
 	.version('beta')
+	.filter('resourceType eq \'Application\'')
+	.expand('accessPackageResourceScopes')
 	.get();
 
 ```

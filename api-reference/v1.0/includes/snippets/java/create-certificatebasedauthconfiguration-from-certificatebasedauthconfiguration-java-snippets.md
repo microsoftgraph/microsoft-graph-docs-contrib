@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CertificateBasedAuthConfiguration certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration();
 LinkedList<CertificateAuthority> certificateAuthoritiesList = new LinkedList<CertificateAuthority>();
@@ -14,7 +14,7 @@ certificateAuthorities.certificate = Base64.getDecoder().decode("Binary");
 certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 
-graphClient.organization("{id}").certificateBasedAuthConfiguration().references()
+graphClient.organization("{id}").certificateBasedAuthConfiguration()
 	.buildRequest()
 	.post(certificateBasedAuthConfiguration);
 

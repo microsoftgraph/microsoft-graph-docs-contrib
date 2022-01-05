@@ -1,8 +1,8 @@
 ---
 title: "Delete calendarPermission"
 description: "Delete calendarPermission."
-localization_priority: Normal
-author: "sochowdh"
+author: "Harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 # Delete calendarPermission
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete calendarPermission.
 
@@ -22,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Calendars.ReadWrite    |
 |Delegated (personal Microsoft account) | Calendars.ReadWrite    |
 |Application | Calendars.ReadWrite |
+
 ## HTTP request
 
 Delete the specified permissions of a user's primary calendar:
@@ -46,7 +49,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -85,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendarpermission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendarpermission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingStaffMember bookingStaffMember = new BookingStaffMember();
 bookingStaffMember.colorIndex = 1;
@@ -12,6 +12,7 @@ bookingStaffMember.displayName = "Dana Swope";
 bookingStaffMember.emailAddress = "danas@contoso.com";
 bookingStaffMember.additionalDataManager().put("role@odata.type", new JsonPrimitive("#microsoft.graph.bookingStaffRole"));
 bookingStaffMember.role = BookingStaffRole.EXTERNAL_GUEST;
+bookingStaffMember.timeZone = "America/Chicago";
 bookingStaffMember.useBusinessHours = true;
 bookingStaffMember.additionalDataManager().put("workingHours@odata.type", new JsonPrimitive("#Collection(microsoft.graph.bookingWorkHours)"));
 LinkedList<BookingWorkHours> workingHoursList = new LinkedList<BookingWorkHours>();

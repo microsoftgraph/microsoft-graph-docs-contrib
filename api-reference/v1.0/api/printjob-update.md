@@ -2,15 +2,13 @@
 title: Update printJob
 description: Update print job
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Update printJob
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update a [print job](../resources/printjob.md). Only the **configuration** property can be updated.
 
@@ -55,6 +53,8 @@ If successful, this method returns a `200 OK` response code with an updated [pri
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printjob"
@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code with an updated [pri
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {
@@ -99,6 +98,24 @@ Content-length: 376
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

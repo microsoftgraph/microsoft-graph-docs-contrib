@@ -2,7 +2,7 @@
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -80,7 +80,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
@@ -104,6 +103,10 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-message-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-from-message-v1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -119,7 +122,6 @@ Here is an example of the response.
 ```http
 HTTP 201 Created
 Content-type: application/json
-Content-length: 202
 
 {
     "id": "AAMkADNkN2R",
@@ -148,7 +150,6 @@ Here is an example of the request.
 ```
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
-Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
@@ -174,7 +175,7 @@ Content-length: 200
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_v1",
@@ -184,7 +185,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 162
 
 {
   "id":"AAMkADNkNJp5JVnQIe9r0=",

@@ -2,7 +2,7 @@
 title: "Get filesFolder"
 description: "Retrieve the filesFolder navigation path of a channel."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -13,17 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored. 
+Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Application | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -75,12 +76,16 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 [!INCLUDE [sample-code](../includes/snippets/java/get-filesfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-filesfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +94,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/channels('19%3Af253e46c035b42308e9a4a22a87037af%40thread.skype')/filesFolder/$entity",

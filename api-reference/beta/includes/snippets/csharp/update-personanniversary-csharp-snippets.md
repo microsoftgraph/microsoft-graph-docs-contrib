@@ -11,7 +11,7 @@ var personAnnualEvent = new PersonAnnualEvent
 	AllowedAudiences = AllowedAudiences.Contacts
 };
 
-await graphClient.Me.Profile.Anniversaries["{id}"]
+await graphClient.Me.Profile.Anniversaries["{personAnnualEvent-id}"]
 	.Request()
 	.UpdateAsync(personAnnualEvent);
 

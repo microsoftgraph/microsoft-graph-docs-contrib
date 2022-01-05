@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const personAnnualEvent = {
-  type: "birthday",
-  date: "1980-01-08"
+  type: 'birthday',
+  date: '1980-01-08'
 };
 
-let res = await client.api('/me/profile/anniversaries')
+await client.api('/me/profile/anniversaries')
 	.version('beta')
 	.post(personAnnualEvent);
 

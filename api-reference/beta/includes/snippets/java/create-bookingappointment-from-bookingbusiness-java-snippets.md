@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingAppointment bookingAppointment = new BookingAppointment();
 bookingAppointment.customerEmailAddress = "jordanm@contoso.com";
@@ -32,6 +32,8 @@ bookingAppointment.customerLocation = customerLocation;
 bookingAppointment.customerName = "Jordan Miller";
 bookingAppointment.customerNotes = "Please be on time.";
 bookingAppointment.customerPhone = "213-555-0199";
+bookingAppointment.customerTimeZone = "America/Chicago";
+bookingAppointment.smsNotificationsEnabled = true;
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.dateTime = "2018-05-01T12:30:00+00:00";
 end.timeZone = "UTC";
@@ -45,6 +47,7 @@ bookingAppointment.invoiceId = "1001";
 bookingAppointment.additionalDataManager().put("invoiceStatus@odata.type", new JsonPrimitive("#microsoft.graph.bookingInvoiceStatus"));
 bookingAppointment.invoiceStatus = BookingInvoiceStatus.OPEN;
 bookingAppointment.invoiceUrl = "theInvoiceUrl";
+bookingAppointment.isLocationOnline = true;
 bookingAppointment.optOutOfCustomerEmail = false;
 bookingAppointment.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");
 bookingAppointment.preBuffer = DatatypeFactory.newInstance().newDuration("PT5M");

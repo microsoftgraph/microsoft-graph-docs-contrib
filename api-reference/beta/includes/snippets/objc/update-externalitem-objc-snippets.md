@@ -7,17 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/connections/contosohr/items/TSP228082938"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/external/connections/contosohr/items/TSP228082938"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
+MSGraphExternalConnectorsExternalItem *externalItem = [[MSGraphExternalConnectorsExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
-MSGraphAcl *acl = [[MSGraphAcl alloc] init];
-[acl setType: [MSGraphAclType everyone]];
+MSGraphExternalConnectorsAcl *acl = [[MSGraphExternalConnectorsAcl alloc] init];
+[acl setType: [MSGraphExternalConnectorsAclType everyone]];
 [acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
-[acl setAccessType: [MSGraphAccessType grant]];
-[acl setIdentitySource:@"azureActiveDirectory"];
+[acl setAccessType: [MSGraphExternalConnectorsAccessType grant]];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 

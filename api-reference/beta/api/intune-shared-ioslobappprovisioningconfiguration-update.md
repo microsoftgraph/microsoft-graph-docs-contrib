@@ -1,7 +1,7 @@
 ---
 title: "Update iosLobAppProvisioningConfiguration"
 description: "Update the properties of a iosLobAppProvisioningConfiguration object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
-|payloadFileName|String|Payload file name (*.mobileprovision \| *.xml).|
+|payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 |roleScopeTagIds|String collection|List of Scope Tags for this iOS LOB app provisioning configuration entity.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
@@ -114,7 +114,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

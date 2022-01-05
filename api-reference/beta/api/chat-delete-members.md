@@ -2,7 +2,7 @@
 title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| ChatMember.ReadWrite.All |
+|Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| ChatMember.ReadWrite.All |
+|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -49,10 +51,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-remove-members-from-chat).
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -76,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec12
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-members-from-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

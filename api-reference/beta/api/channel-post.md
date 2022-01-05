@@ -1,8 +1,8 @@
 ---
 title: "Create channel"
 description: "Create new channel in a team, as specified in the request body."
-localization_priority: Normal
-author: "laujan"
+ms.localizationpriority: medium
+author: "akjo"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -21,13 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
+> **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported
+using Teamwork.Migrate.All and/or [migration APIs](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -95,6 +98,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-channel-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -115,10 +122,9 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
-  "id": "id-value",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
 }
@@ -172,6 +178,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-private-channel-with-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-private-channel-with-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -191,7 +201,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -212,7 +221,6 @@ Content-length: 201
 The following example shows how to create a channel that will be used for importing messages.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_for_migration"
@@ -224,29 +232,11 @@ Content-Type: application/json
 
 {
   "@microsoft.graph.channelCreationMode": "migration",
-  "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans",
-  "membershipType": "standard",
+  "displayName": "Import_150958_99z",
+  "description": "Import_150958_99z",
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-for-migration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-for-migration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-channel-for-migration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-for-migration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -261,9 +251,21 @@ Once provisioned, this channel can be used for [importing messages](/microsoftte
 } -->
 
 ```http
-HTTP/1.1 202 Accepted
-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/operations/{operationId}
-Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
+HTTP/1.1 201 Created
+Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:987c7a9fbe6447ccb3ea31bcded5c75c@thread.tacv2",
+    "createdDateTime": null,
+    "displayName": "Import_150958_99z",
+    "description": "Import_150958_99z",
+    "isFavoriteByDefault": null,
+    "email": null,
+    "webUrl": null,
+    "membershipType": null,
+    "moderationSettings": null
+}
 ```
 
 ### Example 4: Create standard channel with moderation settings
@@ -311,6 +313,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-with-moderation-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-channel-with-moderation-settings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -328,7 +334,6 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -338,6 +343,91 @@ Content-length: 201
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
+    "membershipType": "private"
+}
+```
+
+### Example 5: Create private channel on behalf of user using user principal name
+
+#### Request
+
+The following example shows a request to create a private channel and add a user as an team owner.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_private_channel_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Graph.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-private-channel-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-private-channel-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-private-channel-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-private-channel-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-private-channel-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_private_channel_upn",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+    "id": "19:33b76eea88574bd1969dca37e2b7a819@thread.skype",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
 ```

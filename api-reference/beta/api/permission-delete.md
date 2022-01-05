@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Remove access to a DriveItem."
 ms.date: 09/10/2017
 title: Remove access to an item
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -54,10 +54,30 @@ If successful, this method returns `204 No Content` response code.
 This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.
 
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite" }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

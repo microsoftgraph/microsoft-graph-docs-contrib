@@ -44,7 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |bundleId|String|Bundle id for targeting.|
-|fileName|String|Configuration file name (*.plist \| *.xml).|
+|fileName|String|Configuration file name (*.plist | *.xml).|
 |configurationXml|Binary|Configuration xml. (UTF8 encoded byte array)|
 
 ## Relationships

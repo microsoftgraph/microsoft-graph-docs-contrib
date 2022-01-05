@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 title: Get a SharePoint list
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Returns the metadata for a list."
 doc_type: apiPageType
@@ -42,25 +42,29 @@ Do not supply a request body with this method.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-1", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,25 +96,29 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 The following example shows how to get a list from a SharePoint Online list title.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-2", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-title}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,6 +169,10 @@ GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-multi-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Delegated (work or school account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -80,10 +80,14 @@ GET https://graph.microsoft.com/beta/me/calendars
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-calendars-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

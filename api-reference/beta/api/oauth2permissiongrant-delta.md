@@ -1,7 +1,7 @@
 ---
 title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -103,11 +103,15 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 [!INCLUDE [sample-code](../includes/snippets/java/oauth2permissiongrant-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/oauth2permissiongrant-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,

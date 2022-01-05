@@ -1,7 +1,7 @@
 ---
 title: "reviewSet resource type"
-description: "Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
-localization_priority: Normal
+description: "Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "resourcePageType"
@@ -19,8 +19,8 @@ Represents static set of electronically stored information collected for use in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List reviewSets](../api/ediscovery-case-list-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get a collection of **reviewset** objects. |
-| [Create reviewSet](../api/ediscovery-case-post-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Create a new **reviewset**. |
+| [List reviewSets](../api/ediscovery-case-list-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get a collection of **reviewSet** objects. |
+| [Create reviewSet](../api/ediscovery-case-post-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Create a new **reviewSet**. |
 | [Get reviewSet](../api/ediscovery-reviewset-get.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [List queries](../api/ediscovery-reviewsetquery-list.md)|[microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get a list of **reviewSetQuery** resources.|
 | [export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewset**. |
@@ -31,7 +31,7 @@ Represents static set of electronically stored information collected for use in 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |createdBy        | [identitySet](/graph/api/resources/identityset) | The user who created the review set. Read-only. |
-|createdDateTime  |DateTimeOffset| The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|createdDateTime  |DateTimeOffset| The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |displayName      |String| The review set name. The name is unique with a maximum limit of 64 characters. |
 |id               |String| The review set unique identifier. Read-only. |
 

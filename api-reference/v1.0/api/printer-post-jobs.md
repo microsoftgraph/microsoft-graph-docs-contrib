@@ -2,15 +2,13 @@
 title: Create printJob
 description: Create a new printJob for a printer. 
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Create printJob
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
 
@@ -55,15 +53,16 @@ If successful, this method returns a `201 Created` response code and a [printJob
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob_from_"
+  "name": "create_printjob_from__1"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {
@@ -101,6 +100,24 @@ Content-length: 376
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-from--1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-from--1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

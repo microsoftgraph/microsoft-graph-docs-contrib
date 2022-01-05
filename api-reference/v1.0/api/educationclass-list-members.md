@@ -1,34 +1,43 @@
 ---
-title: "List members"
+title: "List members of an educationClass"
 description: "Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List members
+# List members of an educationClass
 
 Namespace: microsoft.graph
 
-Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class.
+Retrieves the [educationUser](../resources/educationuser.md) members of an [educationClass](../resources/educationclass.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduRoster.ReadBasic  |
-|Delegated (personal Microsoft account) |  Not supported  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden | 
+| Permission type                        | Permissions (from least to most privileged)                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
+| Delegated (work or school account)     | EduRoster.ReadBasic                                                 |
+| Delegated (personal Microsoft account) | Not supported                                                       |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
+
+> [!NOTE]
+> Note that if the delegated token is used, members can only see information about their own classes.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.
+
+When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+
+For more information on OData query options, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header       | Value |
@@ -67,12 +76,16 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -83,7 +96,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

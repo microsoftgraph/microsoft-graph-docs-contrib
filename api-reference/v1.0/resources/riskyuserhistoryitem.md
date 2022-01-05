@@ -2,7 +2,7 @@
 title: "riskyUserHistoryItem resource type"
 description: "risky user history item"
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

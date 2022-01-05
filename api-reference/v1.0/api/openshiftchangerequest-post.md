@@ -1,7 +1,7 @@
 ---
 title: "Create openShiftChangeRequest"
 description: "Create an instance of an openShiftChangeRequest object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -60,7 +60,6 @@ The following is an example of the request.
 POST https://graph.microsoft.com/v1.0/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftChangeRequests
 Authorization: Bearer {token}
 Content-type: application/json
-Content-length: 244
 
 {
   "senderMessage": "Can I take this shift?",
@@ -72,7 +71,7 @@ Content-length: 244
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

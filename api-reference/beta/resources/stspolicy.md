@@ -1,9 +1,9 @@
 ---
 title: "stsPolicy resource type"
 description: "Represents an abstract base type for policy types that control Microsoft identity platform behavior."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

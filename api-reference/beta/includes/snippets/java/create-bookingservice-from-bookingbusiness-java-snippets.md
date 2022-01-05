@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingService bookingService = new BookingService();
 bookingService.defaultDuration = DatatypeFactory.newInstance().newDuration("PT1H30M");
@@ -43,6 +43,8 @@ defaultRemindersList.add(defaultReminders);
 bookingService.defaultReminders = defaultRemindersList;
 bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
+bookingService.isLocationOnline = true;
+bookingService.smsNotificationsEnabled = true;
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
 bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");

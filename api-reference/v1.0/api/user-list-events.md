@@ -1,7 +1,7 @@
 ---
 title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -112,6 +112,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-events-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -126,7 +130,6 @@ Here is an example of the response. The **body** property is returned in the def
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1932
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageResourceEnvironments')
+let accessPackageResourceEnvironments = await client.api('/identityGovernance/entitlementManagement/accessPackageResourceEnvironments')
 	.version('beta')
 	.filter('originSystem eq \'SharePointOnline\'')
 	.get();

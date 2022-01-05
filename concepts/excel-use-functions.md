@@ -1,7 +1,7 @@
 ---
 title: "Use workbook functions in Excel with Microsoft Graph"
 description: "You can invoke any workbook function by using the following syntax: `POST /me/drive/root/workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
 ---
@@ -10,7 +10,7 @@ ms.prod: "excel"
 
 You can invoke any workbook function by using the following syntax: `POST /me/drive/root/workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.
 
-The complete list of supported functions are listed [here](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
+For a complete list of supported functions, see [Excel.Functions class](/javascript/api/excel/excel.functions?view=excel-js-preview). Refer to the function signature for specific parameter names and data types.
 
 _Important notes:_
 * The range input parameter is supplied using a range object instead of the range address string.  

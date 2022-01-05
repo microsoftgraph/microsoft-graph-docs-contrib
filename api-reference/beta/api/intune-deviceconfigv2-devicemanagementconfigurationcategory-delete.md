@@ -20,7 +20,7 @@ Deletes a [deviceManagementConfigurationCategory](../resources/intune-deviceconf
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+DELETE /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 DELETE /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
@@ -52,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### Response

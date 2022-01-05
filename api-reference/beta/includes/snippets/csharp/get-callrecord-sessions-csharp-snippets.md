@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sessions = await graphClient.Communications.CallRecords["{id}"].Sessions
+var sessions = await graphClient.Communications.CallRecords["{callRecords.callRecord-id}"].Sessions
 	.Request()
 	.GetAsync();
 

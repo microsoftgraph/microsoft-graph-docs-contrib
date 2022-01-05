@@ -2,7 +2,7 @@
 title: "Delete channel"
 description: "Delete the channel."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -22,18 +22,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Channel.Delete.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Delete.Group*, Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Channel.Delete.Group*, Channel.Delete.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}
+DELETE /teams/{team-id}/channels/{channel-id}
 ```
 ## Request headers
 | Header       | Value |
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-channel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

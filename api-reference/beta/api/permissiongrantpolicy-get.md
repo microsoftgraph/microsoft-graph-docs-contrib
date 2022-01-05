@@ -1,7 +1,7 @@
 ---
 title: "Get permissionGrantPolicy"
 description: "Retrieve a single permissionGrantPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/get-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -90,7 +94,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 The following is an example of the response. The policy has two `includes` condition sets, one which matches with delegated permission classified `low` for client apps registered in this tenant, and the other which matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -117,7 +121,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": false
+            "clientApplicationsFromVerifiedPublisherOnly": false,
+            "certifiedClientApplicationsOnly": false
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -128,7 +133,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": true
+            "clientApplicationsFromVerifiedPublisherOnly": true,
+            "certifiedClientApplicationsOnly": false
         }
     ],
     "excludes": []

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms')
+let authenticationMethodConfiguration = await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms')
 	.version('beta')
 	.get();
 

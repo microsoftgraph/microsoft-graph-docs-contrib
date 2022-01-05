@@ -1,8 +1,8 @@
 ---
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
-author: "krbain"
-localization_priority: Priority
+author: "jpettere"
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

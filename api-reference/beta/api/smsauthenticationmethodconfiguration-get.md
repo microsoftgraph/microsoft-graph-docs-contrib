@@ -2,8 +2,8 @@
 title: "Get smsAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a smsAuthenticationMethodConfiguration object."
 author: "mmcla"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the Global admin role. For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global Reader
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 

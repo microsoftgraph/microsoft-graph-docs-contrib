@@ -2,7 +2,7 @@
 title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -16,7 +16,7 @@ Get a list of the [riskDetection](../resources/riskdetection.md) objects and the
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskdetection"
+  "name": "get_riskdetection_2"
 }
 -->
 ``` http

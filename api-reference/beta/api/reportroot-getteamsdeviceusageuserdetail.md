@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getTeamsDeviceUsageUserDetail"
 description: "Get details about Microsoft Teams device usage by user."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -43,7 +43,7 @@ In the request URL, provide one of the following parameters with a valid value.
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 28 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -76,11 +76,14 @@ The CSV file has the following headers for columns.
 - Used Mac
 - Used Android Phone
 - Used Windows
+- Used Chrome OS
+- Used Linux
+- Is Licensed
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 2000 items.
 
@@ -129,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -155,12 +158,12 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(perio
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -169,11 +172,11 @@ Content-Type: application/json
 Content-Length: 374
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -183,6 +186,8 @@ Content-Length: 374
       "usedMac": false, 
       "usedAndroidPhone": false, 
       "usedWindows": true, 
+      "usedChromeOS": false, 
+      "usedLinux": false, 
       "reportPeriod": "7"
     }
   ]

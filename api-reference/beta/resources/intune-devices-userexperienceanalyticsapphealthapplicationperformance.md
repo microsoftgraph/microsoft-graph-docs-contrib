@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsAppHealthApplicationPerformance resource type"
-description: "The user experience analytics applicaiton performance entity contains app performance details."
+description: "The user experience analytics application performance entity contains app performance details."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics applicaiton performance entity contains app performance details.
+The user experience analytics application performance entity contains app performance details.
 
 ## Methods
 |Method|Return Type|Description|
@@ -33,7 +33,7 @@ The user experience analytics applicaiton performance entity contains app perfor
 |appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
 |appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appHealthStatus|String|The overall health status of the app.|
-|allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308.|
+|allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
 |appName|String|The name of the application.|
 |appDisplayName|String|The friendly name of the application.|

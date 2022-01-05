@@ -1,8 +1,8 @@
 ---
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
-localization_priority: Priority
-author: "elisolMS"
+ms.localizationpriority: high
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -54,8 +54,10 @@ The following table shows the properties that are required when you create a inv
 If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+
+### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,10 +67,9 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
-Content-length: 551
 
 {
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
@@ -88,11 +89,17 @@ Content-length: 551
 [!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-invitation-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,13 +108,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 551
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#invitations/$entity",
   "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
   "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "yyy",
-  "invitedUserEmailAddress": "yyy@test.com",
+  "invitedUserDisplayName": "Fabrikam Admin",
+  "invitedUserEmailAddress": "admin@fabrikam.com",
   "sendInvitationMessage": false,
   "invitedUserMessageInfo": {
      "messageLanguage": null,

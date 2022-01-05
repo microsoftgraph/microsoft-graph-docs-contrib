@@ -1,7 +1,7 @@
 ---
 title: "office365GroupsActivityDetail resource type"
 description: "The following is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # office365GroupsActivityDetail resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Properties
 

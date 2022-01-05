@@ -1,16 +1,18 @@
 ---
-title: "notification resource type"
+title: "notification resource type (deprecated)"
 description: "Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. "
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "notifications"
 doc_type: resourcePageType
 author: "merzink"
 ---
 
-# notification resource type
+# notification resource type (deprecated)
 
 Namespace: microsoft.graph
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
 
 Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. 
 
@@ -34,7 +36,7 @@ When a user acts on a visual notification, the app client can then use the clien
 | groupName | String | The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together. |
 | targetPolicy | [targetPolicyEndpoints](targetpolicyendpoints.md) | Target policy object handles notification delivery policy for endpoint types that should be targeted (Windows, iOS, Android and WebPush) for the given user. |
 | payload | [payloadTypes](payloadtypes.md)| This is the data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification. |
-| displayTimeToLive | Int32 | Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center. |
+| displayTimeToLive | Int32 | Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center. |
 | expirationDateTime | DateTimeOffset | Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: `'2019-01-01T00:00:00Z'`). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days. |
 | priority | string | Indicates the priority of a raw user notification. Visual notifications are sent with high priority by default. Valid values are `None`, `High` and `Low`. |
 | fallbackPolicy | [fallbackpolicy](fallbackpolicy.md) | Optional fallback policy object handles notification fallback policy for iOS endpoints only and is designed to be used for high-priority raw notifications that might not be delivered to devices due to platform specific restrictions (e.g. battery saver mode). |

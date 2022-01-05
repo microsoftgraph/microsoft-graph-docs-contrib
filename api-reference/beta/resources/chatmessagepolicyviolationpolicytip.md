@@ -1,9 +1,9 @@
 ---
 title: "chatMessagePolicyViolationPolicyTip resource type"
 description: "Represents the properties of a policy tip on a chatMessagePolicyViolation object. Policy tips provide the sender with information about the policy violation."
-author: "clearab"
+author: "RamjotSingh"
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 # chatMessagePolicyTip resource type

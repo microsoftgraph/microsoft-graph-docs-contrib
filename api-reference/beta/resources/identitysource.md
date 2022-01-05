@@ -1,9 +1,9 @@
 ---
 title: "identitySource resource type"
 description: "The identitySource type is the abstract base type for an identity source for a connected organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

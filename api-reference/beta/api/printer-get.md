@@ -2,7 +2,7 @@
 title: Get printer
 description: Retrieve the properties and relationships of a printer object.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -79,11 +79,15 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,27 +96,43 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "stopped",
-    "processingStateReasons": ["disconnected"],
-    "processingStateDescription": ""
+     "state": "stopped",
+    "details": [
+      "disconnected"
+    ],
+    "description": ""
   },
   "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
+    "copiesPerJob": 1,
+    "finishings": [
+      "none"
+    ],
+    "mediaColor": "Unknown",
+    "mediaType": "stationery",
+    "mediaSize": "North America Letter",
+    "pagesPerSheet": 1,
+    "orientation": "portrait",
+    "outputBin": "auto",
+    "inputBin": "auto",
+    "contentType": "application/oxps",
+    "fitPdfToPage": false,
+    "multipageLayout": null,
+    "colorMode": "color",
+    "quality": "medium",
+    "duplexMode": "oneSided",
+    "dpi": 600,
+    "scaling": null
   },
   "location": {
     "latitude": 1.1,
@@ -128,9 +148,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",
@@ -146,7 +166,7 @@ Content-length: 1313
 ```
 
 The following is an example of the response, when using $select=id,displayName,capabilities
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -155,7 +175,6 @@ The following is an example of the response, when using $select=id,displayName,c
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

@@ -1,15 +1,17 @@
 ---
 title: "Update chatMessage"
-description: "Update policyViolation property of a chatMessage."
-author: "laujan"
+description: "Update the policyViolation property of a chatMessage."
+author: "RamjotSingh"
 doc_type: apiPageType
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
 # Update chatMessage
 
 Update a [chatMessage](../resources/chatMessage.md) object. Only the **policyViolation** property of a **chatMessage** can be updated.
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## Permissions
 
@@ -25,7 +27,20 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
+
+## Optional query parameters
+
+You can use `model` query parameter, which only supports the value `A`, as shown in the following examples. 
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ## Request headers
 
@@ -36,7 +51,8 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, specifying only the **policyViolation** property.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+specifying only the **policyViolation** property.
 
 ## Response
 
@@ -54,11 +70,9 @@ The following is an example of the request to update the **policyViolation** pro
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
-Content-Length: 248
 
 {
   "policyViolation": {
@@ -88,10 +102,13 @@ Content-Length: 248
 [!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chatmessagepatchpolicyviolationall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-<!-- markdownlint-disable MD024 -->
 ### Response
 
 Here is an example of the response.

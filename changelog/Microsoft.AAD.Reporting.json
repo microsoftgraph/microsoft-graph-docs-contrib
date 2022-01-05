@@ -1,6 +1,700 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "excludeRulesSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the **excludeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "includeRulesSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the **includeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "displayName",
+            "ChangeType": "Addition",
+            "Description": "Added the **displayName** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+            "Target": "appliedConditionalAccessPolicy"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "authenticationRequirementPolicies",
+            "ChangeType": "Addition",
+            "Description": "Added the **authenticationRequirementPolicies** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. This property provides details about the sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "crossTenantAccessType",
+            "ChangeType": "Addition",
+            "Description": "Added the **crossTenantAccessType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Where the sign in crossed tenant boundaries, this resource describes the type of cross-tenant access for example, B2B Collaboration or B2B Direct Connect.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "flaggedForReview",
+            "ChangeType": "Addition",
+            "Description": "Added the **flaggedForReview** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "homeTenantId",
+            "ChangeType": "Addition",
+            "Description": "Added the **homeTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "ipAddressFromResourceProvider",
+            "ChangeType": "Addition",
+            "Description": "Added the **ipAddressFromResourceProvider** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "resourceTenantId ",
+            "ChangeType": "Addition",
+            "Description": "Added the **resourceTenantId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "signInEventTypes",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInEventTypes** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "signInIdentifier",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Property",
+            "ChangedApiName": "userType",
+            "ChangeType": "Addition",
+            "Description": "Added the **userType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "signInUserType",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInUserType** enumeration [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "signInIdentifierType",
+            "ChangeType": "Addition",
+            "Description": "Added the **signInIdentifierType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+            "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "autonomousSystemNumber",
+              "ChangeType": "Addition",
+              "Description": "Added the **autonomousSystemNumber** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "isTenantRestricted",
+              "ChangeType": "Addition",
+              "Description": "Added the **isTenantRestricted** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "privateLinkDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the **privateLinkDetails** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "servicePrincipalCredentialKeyId",
+              "ChangeType": "Addition",
+              "Description": "Added the **servicePrincipalCredentialKeyId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the unique identifier of the service principal key credential.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "servicePrincipalCredentialThumbprint",
+              "ChangeType": "Addition",
+              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. In service principal authentication and sign-ins, this property contains the certificate thumbprint of the service principal's certificate.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Resource",
+              "ChangedApiName": "privateLinkDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the [privateLinkDetails](https://docs.microsoft.com/en-us/graph/api/resources/privateLinkDetails?view=graph-rest-beta) resource type.",
+              "Target": "privateLinkDetails"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authenticationRequirementPolicy",
+            "ChangeType": "Addition",
+            "Description": "Added the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta) resource type. This resource provides the attributes of the policy that required MFA for sign in.",
+            "Target": "authenticationRequirementPolicy"
+          },
+          {
+            "Id": "15da826c-5c44-11eb-8de9-f7f8b8b7f046",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "requirementProvider",
+            "ChangeType": "Change",
+            "Description": "Changed the **requirementProvider** enumeration. Removed the current `MFA`, `CA`, and `unknownFutureValue` enumeration members and replaced them with new members. The new enumeration members provide a comprehensive list of possible Azure AD features that require MFA in the [authenticationRequirementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationRequirementPolicy?view=graph-rest-beta).",
+            "Target": "requirementProvider"
+          },
+          {
+            "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+            "ApiChange": "Resource",
+            "ChangedApiName": "conditionalAccessRuleSatisfied",
+            "ChangeType": "Addition",
+            "Description": "Added the [conditionalAccessRuleSatisfied](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRuleSatisfied?view=graph-rest-beta) resource type. This resource provides the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.",
+            "Target": "conditionalAccessRuleSatisfied"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "deviceFilterIncludeRuleNotMatched",
+              "ChangeType": "Addition",
+              "Description": "Added the `deviceFilterIncludeRuleNotMatched` member to the **conditionalAccessRule** enumeration.",
+              "Target": "conditionalAccessRule"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "allDeviceStates",
+              "ChangeType": "Addition",
+              "Description": "Added the `allDeviceStates` member to the **conditionalAccessRule** enumeration.",
+              "Target": "conditionalAccessRule"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "signInAccessType",
+              "ChangeType": "Addition",
+              "Description": "Added the **signInAccessType** enumeration type.",
+              "Target": "signInAccessType"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "servicePrincipals",
+              "ChangeType": "Addition",
+              "Description": "Added the `servicePrincipals` member to the **conditionalAccessConditions** enumeration.",
+              "Target": "conditionalAccessConditions"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "servicePrincipalRisk",
+              "ChangeType": "Addition",
+              "Description": "Added the `servicePrincipalRisk` member to the **conditionalAccessConditions** enumeration.",
+              "Target": "conditionalAccessConditions"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "mfaDetail",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **mfaDetail** property on the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          }
+      ],
+      "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+  },
+  {
+      "ChangeList": [
+        {
+          "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskEventTypes",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the deprecated **riskEventTypes** property of the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta) resource. Replaced with the **riskEventTypes_v2** property.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "78aed1f6-095b-434b-b447-0f1334e476cf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **user** property of [auditActivityInitiator](https://docs.microsoft.com/en-us/graph/api/resources/auditActivityInitiator?view=graph-rest-beta) from **userIdentity** to [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta). **auditUserIdentity** includes tenant identifiers to support more detailed cross-tenant sign in identification.",
+          "Target": "auditActivityInitiator"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "incomingTokenType",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingTokenType** enumeration type.",
+          "Target": "incomingTokenType"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "protocolType",
+          "ChangeType": "Addition",
+          "Description": "Added the **protocolType** enumeration type.",
+          "Target": "protocolType"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationStrength",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationStrength** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Target": "appliedConditionalAccessPolicy"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [auditUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/auditUserIdentity?view=graph-rest-beta) resource type. This resource includes tenant identifiers to support more detailed cross-tenant sign in identification.",
+          "Target": "auditUserIdentity"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationStrength",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationStrength](https://docs.microsoft.com/en-us/graph/api/resources/authenticationStrength?view=graph-rest-beta) resource type.",
+          "Target": "authenticationStrength"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "alternateSignInName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **alternateSignInName** property from the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "authenticationProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationProtocol** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "String",
+          "ChangedApiName": "authenticationRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationRequirement** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "homeTenantName",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeTenantName** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "incomingTokenType",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingTokenType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "uniqueTokenIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueTokenIdentifier** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "bd257a22-af29-466e-9b3d-1386183e61bf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },  
+      {
+      "ChangeList": [
+            {
+                "Id": "1bb6395b-305e-11ec-a1a6-9e72602561cc",
+                "ApiChange": "Property",
+                "ChangedApiName": "userAgent",
+                "ChangeType": "Addition",
+                "Description": "Added the **userAgent** property to the [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryAudit?view=graph-rest-beta) resource.",
+                "Target": "directoryAudit"
+            }
+        ],
+        "Id": "1bb6395b-305e-11ec-a1a6-9e72602561cc",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-11-29T21:55:29.147Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+      },  
+    {
+        "ChangeList": [
+          {
+            "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastNonInteractiveSignInDateTime",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastNonInteractiveSignInDateTime** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Target": "signInActivity"
+          },
+          {
+            "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastNonInteractiveSignInRequestId",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastNonInteractiveSignInRequestId** property to the [signInActivity](https://docs.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+            "Target": "signInActivity"
+          }
+        ],
+        "Id": "8e343c2f-6145-40fe-8d23-80914c7f036e",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2021-08-17T13:54:40.077762Z",
+        "WorkloadArea": "Users",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "provisioning",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioning** relationship to the [auditLogRoot](https://docs.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-1.0) resource.",
+                "Target": "auditLogRoot"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningObjectSummary",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningServicePrincipal",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/provisioningServicePrincipal?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningServicePrincipal"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "initiator",
+                "ChangeType": "Addition",
+                "Description": "Added the [initiator](https://docs.microsoft.com/en-us/graph/api/resources/initiator?view=graph-rest-1.0) resource type.",
+                "Target": "initiator"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystem",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningSystem"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "detailsInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [detailsInfo](https://docs.microsoft.com/en-us/graph/api/resources/detailsInfo?view=graph-rest-1.0) resource type.",
+                "Target": "detailsInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisionedIdentity",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisionedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/provisionedIdentity?view=graph-rest-1.0) resource type.",
+                "Target": "provisionedIdentity"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningStatusInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningErrorInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningErrorInfo"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStep",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStep](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStep?view=graph-rest-1.0) resource type.",
+                "Target": "provisioningStep"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Resource",
+                "ChangedApiName": "identity",
+                "ChangeType": "Addition",
+                "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
+                "Target": "identity"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "initiatorType",
+                "ChangeType": "Addition",
+                "Description": "Added the **initiatorType** enumeration type.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningResult",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningResult** enumeration type.",
+                "Target": "provisioningResult"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStatusErrorCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusErrorCategory** enumeration type.",
+                "Target": "provisioningStatusErrorCategory"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** enumeration type.",
+                "Target": "provisioningAction"
+            },
+            {
+                "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStepType",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStepType** enumeration type.",
+                "Target": "provisioningStepType"
+            }
+        ],
+        "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-05-05T17:42:41.613Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "f4efe15e-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f4f2438e-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusInfo** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f4f4a5df-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystem",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type. Replaces the provisioningSystemDetails type. No schema change.",
+                "Target": "provisioningSystem"
+            },
+            {
+                "Id": "f4f70881-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "provisioningStatusInfo"
+            },
+            {
+                "Id": "f4f96caa-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningErrorInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-beta) resource type.",
+                "Target": "provisioningErrorInfo"
+            },
+            {
+                "Id": "f4fbccdf-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Member",
+                "ChangedApiName": "application",
+                "ChangeType": "Addition",
+                "Description": "Added the `application` member to the **initiatorType** enumeration.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "f4fe2f87-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStatusErrorCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusErrorCategory** enumeration type.",
+                "Target": "provisioningStatusErrorCategory"
+            },
+            {
+                "Id": "f501456d-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** enumeration type.",
+                "Target": "provisioningAction"
+            },
+            {
+                "Id": "f503a958-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "sourceSystem",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **sourceSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f5060b75-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "targetSystem",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **targetSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f5086e9a-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystemDetails",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **provisioningSystemDetails** resource type.",
+                "Target": "provisioningSystemDetails"
+            },
+            {
+                "Id": "f50ad269-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "errorCategory",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **errorCategory** property in the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource.",
+                "Target": "statusDetails"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Member",
+                "ChangedApiName": "app",
+                "ChangeType": "Deletion",
+                "Description": "Replaced the `app` member to `application` member to the **initiatorType** enumeration.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "statusInfo",
+                "ChangeType": "Change",
+                "Description": "Deprecated the **statusInfo** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "action",
+                "ChangeType": "Change",
+                "Description": "Deprecated the **action** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "statusDetails",
+                "ChangeType": "Change",
+                "Description": "Deprecated the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "statusDetails"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "statusBase",
+                "ChangeType": "Change",
+                "Description": "Deprecated the [statusBase](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "statusBase"
+            }
+        ],
+        "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-05-04T08:19:22.097Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+    },
+    {
          "ChangeList":[
             {
                "Id":"c5972090-4edc-11eb-ae35-ed470c456b69",

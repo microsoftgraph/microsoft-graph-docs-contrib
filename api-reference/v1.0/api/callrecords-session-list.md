@@ -1,7 +1,7 @@
 ---
 title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "stephenjust"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -90,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -197,6 +201,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-sessions-expanded-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -204,7 +212,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

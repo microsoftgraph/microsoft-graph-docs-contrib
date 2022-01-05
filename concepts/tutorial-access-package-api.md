@@ -1,9 +1,9 @@
 ---
 title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
 description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
-author: "davidmu1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+author: "FaithOmbongi"
+ms.localizationpriority: medium
+ms.prod: "governance"
 ---
 
 # Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs
@@ -542,7 +542,7 @@ You can also use the **id** of the access package policy that you created to see
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
 #### Response
@@ -560,7 +560,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "assignmentStatus": "Delivered",
       "assignmentState": "Delivered",
       "isExtended": false,
-      "expiredDateTime": null
+      "expiredDateTime": null,
+      "target": {
+         "id": "8586ddc8-0ff7-4c24-9c79-f192bc3566e3",
+         "objectId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0"
+      },
+      "accessPackageAssignmentResourceRoles": [
+         {
+            "id": "bdb7e0a0-a927-42ab-bf30-c5b5533dc54a",
+            "originSystem": "AadGroup",
+            "status": "Fulfilled"
+         }
+      ]
     }
   ]
 }
@@ -720,12 +731,12 @@ No Content - 204
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](/graph/api/resources/group?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [group](/graph/api/resources/group)
+- [user](/graph/api/resources/user?)

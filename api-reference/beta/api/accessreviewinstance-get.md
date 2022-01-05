@@ -1,7 +1,7 @@
 ---
 title: "Get accessReviewInstance"
 description: "Retrieve an accessReviewInstance object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve an [accessReviewInstance](../resources/accessreviewinstance.md) object using the identifier of an accessReviewInstance and its parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). This returns all properties of the instance except for the associated [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md).
 
-To retrieve the decisions on the instance, use [List accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
+To retrieve the decisions on the instance, use [List accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,13 +26,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).
+In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-overview.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
+
+## Optional query parameters
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 
@@ -46,14 +50,13 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 ### Request
 
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessReviewInstance"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/12490cdb-6a18-4c08-ba2c-44442f0a0138
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/6af553ce-104d-4842-ab5f-67d7b556e9dd/instances/9ea56d3c-8746-4cdf-9ccc-c7fe1a267c24
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewinstance-csharp-snippets.md)]
@@ -71,12 +74,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewinstance-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,13 +96,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "12490cdb-6a18-4c08-ba2c-44442f0a0138",
-    "startDateTime": "2020-09-21T20:03:36Z",
-    "endDateTime": "2020-09-23T20:03:36Z",
-    "status": "NotStarted",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('6af553ce-104d-4842-ab5f-67d7b556e9dd')/instances/$entity",
+    "id": "9ea56d3c-8746-4cdf-9ccc-c7fe1a267c24",
+    "startDateTime": "2021-03-11T16:44:59.337Z",
+    "endDateTime": "2021-06-09T16:44:59.337Z",
+    "status": "InProgress",
     "scope": {
-        "query": "/groups/b7a4444b-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
-        "queryType": "MicrosoftGraph"
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+        "query": "/v1.0/groups/97eebd44-61fd-4d42-8b2a-a4de41b6c572/transitiveMembers",
+        "queryType": "MicrosoftGraph",
+        "queryRoot": null
     }
 }
 ```
@@ -101,7 +113,7 @@ Content-type: application/json
 ## See also
 
 - [Get accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [List accessReviewInstance](accessreviewinstance-list.md)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

@@ -2,7 +2,7 @@
 title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -23,9 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
+
+> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -68,18 +70,25 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_1"
 }-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
-Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
@@ -109,16 +118,31 @@ Content-Type: application/json
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_2"
 }-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
-Content-length: 244
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-teamsapp-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -150,7 +174,7 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 <!-- {
   "blockType": "request",
-  "name": "create_teamsapp"
+  "name": "create_teamsapp_3"
 }-->
 
 ```http

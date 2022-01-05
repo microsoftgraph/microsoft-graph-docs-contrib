@@ -1,14 +1,14 @@
 ---
 title: "Combine multiple requests in one HTTP call using JSON batching"
 description: "JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:"
-author: "davidmu1"
-localization_priority: Priority
+author: "FaithOmbongi"
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
 # Combine multiple requests in one HTTP call using JSON batching
 
-JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
+JSON batching allows you to optimize your application by combining multiple requests (up to 20) into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
 1. An image stored in OneDrive
 2. A list of Planner tasks
@@ -126,8 +126,6 @@ The response format for JSON batch requests is similar to the request format. Th
 * Rather than `method` and `url`, individual responses have a `status` property. The value of `status` is a number that represents the HTTP status code.
 
 The status code on a batch response is typically `200` or `400`. If the batch request itself is malformed, the status code is `400`. If the batch request is parseable, the status code is `200`. A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded. This is why each individual response in the `responses` property has a status code.
-
-In addition to the `responses` property, there might be a `nextLink` property in the batch response. This allows Microsoft Graph to return a batch response as soon as any of the individual requests has completed. To ensure that all individual responses have been received, continue to follow the `nextLink` as long as it exists.
 
 ## Sequencing requests with the dependsOn property
 

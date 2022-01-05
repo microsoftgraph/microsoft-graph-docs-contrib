@@ -2,7 +2,7 @@
 title: "Best practices for Excel APIs in Microsoft Graph"
 description: "List best practices and examples for Excel APIs in Microsoft Graph"
 author: "grangeryy"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
@@ -23,7 +23,6 @@ The following example shows you how to add a new number to a table and then find
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -36,7 +35,6 @@ The following is a successful response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -63,7 +61,6 @@ workbook-session-id: {session-id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 42
 
 {
   "index": 6,
@@ -107,7 +104,6 @@ content-type: application/json
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 }
@@ -164,7 +160,6 @@ In some cases, if the creation succeeds within seconds, it won't enter the long-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

@@ -83,6 +83,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -106,9 +107,9 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps. (iOS Only)|
 |protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps. (iOS Only)|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Defines the Android SafetyNet Device Attestation requirement for a managed app to work. Possible values are: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
-|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirement fails. Possible values are: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
-|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirement fails. Possible values are: `block`, `wipe`, `warn`.|
 |customBrowserProtocol|String|A custom browser protocol to open weblink on iOS. (iOS only)|
 |customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android. (Android only)|
 |customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android. (Android only)|
@@ -127,6 +128,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
+|connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -202,6 +204,7 @@ Here is a JSON representation of the resource.
   ],
   "appActionIfUnableToAuthenticateUser": "String",
   "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -265,7 +268,8 @@ Here is a JSON representation of the resource.
   "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
   "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
   "deviceLockRequired": true,
-  "appActionIfDeviceLockNotSet": "String"
+  "appActionIfDeviceLockNotSet": "String",
+  "connectToVpnOnLaunch": true
 }
 ```
 

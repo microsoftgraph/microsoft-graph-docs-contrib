@@ -44,8 +44,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |payloadName|String|Name that is displayed to the user.|
-|payloadFileName|String|Payload file name (*.mobileconfig \| *.xml).|
+|payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|deploymentChannel|[appleDeploymentChannel](../resources/intune-deviceconfig-appledeploymentchannel.md)|Indicates the channel used to deploy the configuration profile. Available choices are DeviceChannel, UserChannel. Possible values are: `deviceChannel`, `userChannel`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -102,7 +103,8 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "payloadName": "String",
   "payloadFileName": "String",
-  "payload": "binary"
+  "payload": "binary",
+  "deploymentChannel": "String"
 }
 ```
 

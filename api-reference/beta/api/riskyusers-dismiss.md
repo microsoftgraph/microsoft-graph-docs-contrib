@@ -2,8 +2,8 @@
 title: Dismiss riskyUser
 description: Dismiss the risk of a riskyUser object.
 author: cloudhandler
-localization_priority: Normal 
-ms.prod: microsoft-identity-platform
+ms.localizationpriority: medium
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
 ---
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
-GET /identityProtection/riskyUsers/dismiss
 ```
 
 
@@ -47,14 +46,14 @@ Specify the userIds to dismiss in the request body.
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Examples
-### Example 1: Dismiss risky users
-#### Request
+<!--### Example 1: Dismiss risky users-->
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "dismiss_riskyuser"
+  "name": "dismiss_riskyuser_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
@@ -68,25 +67,29 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/dismiss-riskyuser-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,6 +98,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+<!--
 ### Example 2: Dismiss a risky user
 #### Request
 Here is an example of the request.
@@ -102,9 +106,9 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "dismiss_riskyuser"
+  "name": "dismiss_riskyuser_2"
 }-->
-```http
+<!--```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
@@ -115,19 +119,19 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -138,7 +142,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```http
+<!--```http
 HTTP/1.1 204 No Content
 ```
 
@@ -153,5 +157,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
 

@@ -1,7 +1,7 @@
 ---
 title: "Create case"
 description: "Use this API to create a new case."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -14,6 +14,9 @@ Namespace: microsoft.graph.ediscovery
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [case](../resources/ediscovery-case.md) object.
+
+>[!NOTE]
+>Starting in September 2021, this API will create a large case type. To learn more about large cases, see [Use large cases in Advanced eDiscovery](/microsoft-365/compliance/advanced-ediscovery-large-cases). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://go.microsoft.com/fwlink/?linkid=2172604) blog post.
 
 ## Permissions
 
@@ -73,19 +76,23 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-case-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-case-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-ediscoverycase-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/post-case-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/post-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,7 +101,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

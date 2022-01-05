@@ -1,8 +1,8 @@
 ---
 title: "List user transitive memberOf"
 description: "Get groups, directory roles that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
-author: "krbain"
-localization_priority: Normal
+author: "jpettere"
+ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/users/{id}/transitiveMemberOf
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -144,9 +148,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### Example 3: Use OData cast to get only a count of transitive membership in groups
 
@@ -173,9 +177,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`588`
+588
+```
 
 ### Example 4: Use $search and OData cast to get transitive membership in groups with display names that contain the letters 'tier' including a count of returned objects
 
@@ -196,7 +200,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -239,7 +243,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

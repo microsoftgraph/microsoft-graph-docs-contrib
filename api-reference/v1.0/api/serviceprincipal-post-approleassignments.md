@@ -1,10 +1,10 @@
 ---
 title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment to a service principal
@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+|Application | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -67,7 +67,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "serviceprincipal_create_approleassignment"
 }-->
 
 ```http
@@ -75,37 +75,41 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/9028d19c-26a9-4809-8e3f-
 Content-Type: application/json
 
 {
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6"
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resourceId}` would be the `id` of the resource service principal (the API).
+In this example, note that the value used as the service principal **id** in the request URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) is the same as the **principalId** property in the body. The **resourceId** value is the **id** of the resource service principal (the API).
 
 ### Response
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -120,13 +124,13 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appRoleAssignments/$entity",
   "id": "2jLOj0YSe0OZzXbR1Gd71fDqFUrPM1xIgUfvWBHJ9n0",
-  "creationTimestamp": "2021-02-15T16:39:38.2975029Z",
-  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
-  "principalDisplayName": "Remote living",
-  "principalId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
-  "principalType": "Group",
-  "resourceDisplayName": "Yammer",
-  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
+  "createdDateTime": "2021-02-15T16:39:38.2975029Z",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+  "principalDisplayName": "Fabrikam App",
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5"
 }
 ```
 

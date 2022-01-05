@@ -1,6 +1,6 @@
 ---
 title: "chromeOSDeviceProperty resource type"
-description: "Not yet documented"
+description: "Represents a property of the ChromeOS device."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Represents a property of the ChromeOS device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Not yet documented|
-|value|String|Not yet documented|
-|valueType|String|Not yet documented|
-|updatable|Boolean|Not yet documented|
+|name|String|Name of the property|
+|value|String|Value of the property|
+|valueType|String|Type of the value|
+|updatable|Boolean|Whether this property is updatable|
 
 ## Relationships
 None
