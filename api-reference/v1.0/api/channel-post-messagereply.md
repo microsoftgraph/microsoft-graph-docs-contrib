@@ -136,6 +136,7 @@ Content-type: application/json
         "contentType": "html",
         "content": "Hello World"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []

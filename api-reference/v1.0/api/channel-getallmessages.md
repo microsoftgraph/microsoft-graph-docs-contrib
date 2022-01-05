@@ -150,6 +150,7 @@ HTTP/1.1 200 OK
                 "teamId": "01fe12e0-e720-44fd-8854-28c66d1bee40",
                 "channelId": "19:fae9a2ff95da4e109a5a87e39cad8f2b@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -189,6 +190,7 @@ HTTP/1.1 200 OK
                 "teamId": "01fe12e0-e720-44fd-8854-28c66d1bee40",
                 "channelId": "19:fae9a2ff95da4e109a5a87e39cad8f2b@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []

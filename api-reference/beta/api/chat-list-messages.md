@@ -132,6 +132,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -167,6 +168,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -210,6 +212,15 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
+            "onBehalfOf": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "6703568a-3b0e-4a3b-9d33-0e1bc5ff1521",
+                    "displayName": "Test User",
+                    "userIdentityType": "aadUser"
+                }
+            },
             "reactions": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",

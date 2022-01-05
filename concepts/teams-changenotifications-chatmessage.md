@@ -357,6 +357,7 @@ The decrypted notification payload looks like the following. The payload conform
     "content": "test"
   },
   "channelIdentity": null,
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "policyViolation": null,
