@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
-PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
