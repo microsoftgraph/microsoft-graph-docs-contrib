@@ -32,11 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
-```
 
-``` http
 GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
-```
 
 ## Optional query parameters
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
