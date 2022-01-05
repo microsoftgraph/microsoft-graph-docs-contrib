@@ -4,24 +4,6 @@
     {
       "ChangeList": [
         {
-          "Id": "fd86ec36-9304-48d5-9e92-b7e2415be80e",
-          "ApiChange": "Property",
-          "ChangedApiName": "OrderBy",
-          "ChangeType": "Addition",
-          "Description": "OrderBy query option has been enabled to allow users to choose sorting order between LastModifiedDateTime and CreatedDateTime when retreiving chat messages.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "fd86ec36-9304-48d5-9e92-b7e2415be80e",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-01-04T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
           "ApiChange": "Property",
           "ChangedApiName": "OrderBy",
