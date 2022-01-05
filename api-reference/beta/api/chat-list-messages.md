@@ -44,9 +44,9 @@ GET /chats/{chat-id}/messages
 ## Optional query parameters
 
 | Name      | Description          |
-|:----------|:--------|
-| [$top](/graph/query-parameters#top-parameter)      | Controls the number of items per response. Maximum allowed `$top` value is 50.  |
-| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **LastModifiedDateTime** and **CreatedDateTime**.|
+|:----------|:---------------------|
+| [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
+| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **LastModifiedDateTime (default)** and **CreatedDateTime**. |
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request. `$top=2` is passed to retrieve two messages.
+The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by createdDateTime.
 
 
 # [HTTP](#tab/http)
@@ -77,7 +77,7 @@ The following is an example of the request. `$top=2` is passed to retrieve two m
   "name": "get_allchatmessages_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
+GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-1-csharp-snippets.md)]
