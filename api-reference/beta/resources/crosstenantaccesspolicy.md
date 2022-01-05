@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicy resource type"
-description: "Cross-tenant access policy represents the base policy in the directory for cross tenant access settings."
+description: "Cross-tenant access policy represents the base policy in the directory for cross-tenant access settings."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cross-tenant access policy represents the base policy in the directory for cross tenant access settings.
+Represents the base policy in the directory for cross-tenant access settings.
 
 Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that defines the properties that are common in a cross-tenant access policy configuration for the default and partner specific settings that govern the Azure Active Directory (Azure AD) B2B and B2B Direct Connect collaboration.
+An abstract type that defines the properties that are common in a cross-tenant access policy configuration for the default and partner-specific settings that govern the Azure Active Directory (Azure AD) B2B and B2B Direct Connect collaboration.
 
 ## Properties
 

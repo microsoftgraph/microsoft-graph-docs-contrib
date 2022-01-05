@@ -1,6 +1,6 @@
 ---
 title: "Update crossTenantAccessPolicyConfigurationDefault"
-description: "Update the default configuration of a cross tenant access policy."
+description: "Update the default configuration of a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross tenant access policy.
+Update the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy.
 
 ## Permissions
 

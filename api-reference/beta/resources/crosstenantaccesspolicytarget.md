@@ -15,16 +15,22 @@ Namespace: microsoft.graph
 
 Defines how to target your cross-tenant access policy settings. Settings can be targeted to specific users, groups, or applications. You can also use keywords to target specific groups or applications.
 
-## Application keyword list
-
-When setting application targets, you can use the `Office365` keyword which includes the applications mentioned as part of the [Office365](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | The identifier of the user, group, or application. Also supports the following keywords: `AllUsers` and `AllApplications`. |
+| target | String | The unique identifier of the user, group, or application; one of the following keywords: `AllUsers`, `AllGroups`, and `AllApplications`; or for targets that are applications, you may use [reserved values](#reserved-values-for-targets-that-are-applications). |
 | targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
+
+### Reserved values for targets that are applications
+
+When setting application targets, you can also use the following reserved values:
+
+| Symbol | Description |
+|:---|:---|
+| AllMicrosoftApps | Refers to any [Microsoft cloud application](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). |
+| Office365 | Includes the applications mentioned as part of the [Office365](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite. |
 
 ## Relationships
 

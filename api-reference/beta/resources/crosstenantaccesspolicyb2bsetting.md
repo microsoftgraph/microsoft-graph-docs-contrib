@@ -1,6 +1,6 @@
 ---
 title: "crossTenantAccessPolicyB2BSetting resource type"
-description: "Used to define the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration."
+description: "Defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to define the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.
+Defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.
 
 ## Properties
 
