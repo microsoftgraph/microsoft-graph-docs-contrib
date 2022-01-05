@@ -108,6 +108,56 @@
         {
             "ChangeList": [
                 {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "restoring",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **restoring** member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "restoreTimeRange",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **restoreTimeRange** enumeration type.",
+                    "Target": "restoreTimeRange"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkRemoteActionResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkRemoteActionResult?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkRemoteActionResult"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bulkRestoreCloudPc",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bulkRestoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkRestoreCloudPc?view=graph-rest-beta) method to the [bulkRestoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkRestoreCloudPc?view=graph-rest-beta) resource.",
+                    "Target": "bulkRestoreCloudPc"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "restoreCloudPc",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [restoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-restoreCloudPc?view=graph-rest-beta) method to the [restoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-restoreCloudPc?view=graph-rest-beta) resource.",
+                    "Target": "restoreCloudPc"
+                }
+            ],
+            "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-01-06T09:03:11.8162423Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",
