@@ -61,7 +61,7 @@ The following table specifies the properties that can be updated.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) object in the response body.
 
 ## Examples
 
