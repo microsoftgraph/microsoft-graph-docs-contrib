@@ -14414,7 +14414,7 @@ items:
           href: api/sharedwithchannelteaminfo-get.md
         - name: Unshare channel with team
           href: api/sharedwithchannelteaminfo-delete.md
-        - name: List allowed members of sharedWithChannelTeamInfo
+        - name: List allowed members
           href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md

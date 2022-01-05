@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.channel",
+  "@odata.type": "microsoft.graph.channel",
   "isCollection": true
 }
 -->

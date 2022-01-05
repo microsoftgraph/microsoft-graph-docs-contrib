@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) objects shared with a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Get the list of [teams](../resources/sharedwithchannelteaminfo.md) shared with a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.sharedWithChannelTeamInfo",
+  "@odata.type": "microsoft.graph.sharedWithChannelTeamInfo",
   "isCollection": true
 }
 -->
@@ -79,7 +79,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.sharedWithChannelTeamInfo",
+      "@odata.type": "#microsoft.graph.sharedWithChannelTeamInfo",
       "id": "2173de69-de69-2173-69de-732169de7321",
       "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "displayName": "Team Contosso",

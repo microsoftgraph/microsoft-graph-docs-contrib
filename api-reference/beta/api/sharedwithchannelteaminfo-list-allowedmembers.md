@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 
 Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).
 This does not include the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
-- Users with `Guest` role.
-- Users who are externally authenticated in the tenant.
+- Users with `Guest` role
+- Users who are externally authenticated in the tenant
 
 > [!NOTE]
 > The membership ID returned by the server must be treated as an opaque string. The client should not try to parse or make any assumptions about this ID.
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember",
+  "@odata.type": "microsoft.graph.conversationMember",
   "isCollection": true
 }
 -->
@@ -88,7 +88,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.conversationMember",
+      "@odata.type": "#microsoft.graph.conversationMember",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ",
       "roles": [
         "owner"

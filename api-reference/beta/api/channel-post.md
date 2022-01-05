@@ -241,7 +241,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The Content-Location header in the response specifies the path to the channel that is being provisioned.
+The following is an example of the response. The ``Content-Location`` header in the response specifies the path to the channel that is being provisioned.
 Once provisioned, this channel can be used for [importing messages](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -472,12 +472,13 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
 Content-Length: 0
 ```
-
+{
+}
 
 ## See also
 

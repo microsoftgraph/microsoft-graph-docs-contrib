@@ -36,12 +36,12 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedTeamInfo.md) collection | Get the list of [associatedTeamInfo](associatedteaminfo.md) in Microsoft Teams that a [user](user.md) is associated with. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedTeamInfo.md) collection | Get the list of [associatedTeamInfo](associatedteaminfo.md) objects in Microsoft Teams that a [user](user.md) is associated with. |
 |[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in this **team** or shared with this **team** (incoming channels).|
-|[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**..|
+|[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**.|
 |[List incoming channels](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) shared with this **team**.|
 |[Remove incoming channel](../api/team-delete-incomingchannel.md) | None| Remove an incoming channel.|
 |[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|

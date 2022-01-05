@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a [team](team.md) that is associated with a [user](../resources/user.md). 
 Currently, a [user](../resources/user.md) can be associated with a [team](../resources/team.md) in two different ways:
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
-* A [user](../resources/user.md) can be a member of a [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
+* A [user](../resources/user.md) can be a member of a shared [channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
 
 
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.associatedTeamInfo",
-  "baseType": "Microsoft.Teams.GraphSvc.teamInfo",
+  "baseType": "microsoft.graph.teamInfo",
   "openType": false
 }
 -->

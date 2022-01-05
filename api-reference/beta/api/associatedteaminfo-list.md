@@ -1,6 +1,6 @@
 ---
 title: "List associatedTeamInfo"
-description: "Get the teams in Microsoft Teams that a user is associated with."
+description: "Get the list of teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [associatedTeamInfo](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.
+Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.
 Currently, a [user](../resources/user.md) can be associated with a [team](../resources/team.md) in two different ways:
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
-* A [user](../resources/user.md) can be a member of a [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
+* A [user](../resources/user.md) can be a member of a shared [channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.GraphSvc.associatedTeamInfo",
+  "@odata.type": "microsoft.graph.associatedTeamInfo",
   "isCollection": true
 }
 -->
@@ -83,7 +83,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.associatedTeamInfo",
+      "@odata.type": "#microsoft.graph.associatedTeamInfo",
       "id": "b695c5a5-c5a5-b695-a5c5-95b6a5c595b6",
       "tenantId": "172b0cce-e65d-7hd4-9a49-91d9f2e8493a",
       "displayName": "Contoso Team"
