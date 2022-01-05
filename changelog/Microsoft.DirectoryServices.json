@@ -2985,66 +2985,130 @@
       "ChangeList": [
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackage",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-beta) operations.",
           "Target": "accessPackage"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignment",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) operations.",
           "Target": "accessPackageAssignment"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentRequest",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) operations.",
           "Target": "accessPackageAssignmentRequest"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentResourceRole",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackageAssignmentResourceRole](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentresourcerole?view=graph-rest-beta) operations.",
           "Target": "accessPackageAssignmentResourceRole"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageCatalog",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) operations.",
           "Target": "accessPackageCatalog"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceRequest",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) read operations.",
           "Target": "accessPackageResourceRequest"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "connectedOrganization",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [connectedOrganization](https://docs.microsoft.com/en-us/graph/api/resources/connectedorganization?view=graph-rest-beta) operations.",
           "Target": "connectedOrganization"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "entitlementManagementSettings",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** application permission to the [entitlementManagementSettings](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) operations.",
+          "Target": "entitlementManagementSettings"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accesspackage?view=graph-rest-beta) read operations.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) read operations.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) read operations.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackageAssignmentResourceRole](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentresourcerole?view=graph-rest-beta) read operations.",
+          "Target": "accessPackageAssignmentResourceRole"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) read operations.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) read operations.",
+          "Target": "accessPackageResourceRequest"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [connectedOrganization](https://docs.microsoft.com/en-us/graph/api/resources/connectedorganization?view=graph-rest-beta) read operations.",
+          "Target": "connectedOrganization"
+        },
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.Read.All** application permission to the [entitlementManagementSettings](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) read operation.",
           "Target": "entitlementManagementSettings"
         }
       ],
