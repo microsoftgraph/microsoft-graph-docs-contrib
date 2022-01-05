@@ -335,6 +335,24 @@
       "CreatedDateTime": "2021-11-29T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6D8BFD24-0663-4FCB-A71D-D60758334258",
+          "ApiChange": "Property",
+          "ChangedApiName": "webUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **webUrl** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "6D8BFD24-0663-4FCB-A71D-D60758334258",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-15T09:20:09.7567921Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
