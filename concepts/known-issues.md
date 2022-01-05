@@ -474,7 +474,7 @@ The following limitations apply to query parameters:
 * `$search`:
   * Full-text search is only available for a subset of entities, such as messages.
   * Cross-workload searching is not supported.
-  * Searching is not supported on Azure AD B2C tenants.
+  * Searching is not supported in Azure AD B2C tenants.
 * `$count`:
   * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
