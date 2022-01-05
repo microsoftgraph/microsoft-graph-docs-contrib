@@ -11,6 +11,23 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+|application|
+|unknownFutureValue|
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
 
 |Member|
@@ -2502,23 +2519,6 @@ Possible values for user account types (group membership), per Windows definitio
 |call|
 |meeting|
 |screenShare|
-|unknownFutureValue|
-
-### crossTenantAccessPolicyTargetConfigurationAccessType values
-
-|Member|
-|:---|
-|allowed|
-|blocked|
-|unknownFutureValue|
-
-### crossTenantAccessPolicyTargetType values
-
-|Member|
-|:---|
-|user|
-|group|
-|application|
 |unknownFutureValue|
 
 ### binaryOperator values 
