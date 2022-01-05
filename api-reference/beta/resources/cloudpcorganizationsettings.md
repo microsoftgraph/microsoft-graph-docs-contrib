@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "id": "String (identifier)",
-  "userAccountType": "String",
-  "osVersion": "String"
+  "osVersion": "String",
+  "userAccountType": "String"
 }
 ```
