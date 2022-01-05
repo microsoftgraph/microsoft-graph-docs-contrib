@@ -48,7 +48,7 @@ PATCH /users/{userId}/settings/contactMergeSuggestions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|'true' if contact merge suggestions feature is enabled for user; 'false' if contact merge suggestions feature is disabled. Default is 'true'.|
+|isEnabled|Boolean|'true' if duplicate contact merge suggestions feature is enabled for user; 'false' if duplicate contact merge suggestions feature is disabled. Default is 'true'.|
 
 
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 
 ## Examples
 
-The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable the contact's merge suggestions feature.
+The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable the duplicate contacts merge suggestions feature.
 
 ### Request
 <!-- {

@@ -335,6 +335,16 @@ items:
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
+        - name: Merge duplicate contacts
+          items:
+          - name: User control (preview)
+            items:
+            - name: contactMergeSuggestions settings
+            - href: resources/contactmergesuggestions.md
+            - name: Get
+              href: api/contactmergesuggestions-get.md
+            - name: Update
+              href: api/contactmergesuggestions-update.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants
