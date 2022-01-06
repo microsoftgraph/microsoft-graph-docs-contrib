@@ -58,7 +58,7 @@ One of the following permissions is required to call this API. To learn more, in
 > 
 > 1. Metadata operation is not supported for personal Microsoft accounts.
 > 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
-> 3. Retrieving a user's photo using Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> 3. Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
 

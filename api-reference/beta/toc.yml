@@ -892,11 +892,11 @@ items:
         - name: Application template
           href: resources/applicationtemplate.md
           items:
-          - name: List application templates
+          - name: List
             href: api/applicationtemplate-list.md
-          - name: Get application template
+          - name: Get
             href: api/applicationtemplate-get.md
-          - name: Instantiate application template
+          - name: Instantiate
             href: api/applicationtemplate-instantiate.md
         - name: Certificates & secrets
           items:

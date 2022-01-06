@@ -25,7 +25,7 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 
 > [!NOTE]
 >
-> Managing users' photos using Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## Properties
 | Property	   | Type	|Description|

@@ -443,7 +443,7 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
     }
     ``` 
 2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
-3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code
 
