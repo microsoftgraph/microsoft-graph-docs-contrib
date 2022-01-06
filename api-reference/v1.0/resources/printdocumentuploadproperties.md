@@ -2,7 +2,7 @@
 author: nilakhan
 description: "Represents information for print document upload"
 title: "printDocumentUploadProperties resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "resourcePageType"
 ms.prod: cloud-printing
 ---
@@ -10,6 +10,8 @@ ms.prod: cloud-printing
 # printDocumentUploadProperties resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Describes the document that is being uploaded
 

@@ -1,7 +1,7 @@
 ---
 title: "Working with education APIs in Microsoft Graph"
 description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. This makes it easy for you to build solutions that integrate with educational resources."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: conceptualPageType

@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
 ms.date: 09/10/2017
 title: RemoteItem
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

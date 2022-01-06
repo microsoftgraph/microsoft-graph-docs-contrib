@@ -1,7 +1,7 @@
 ---
 title: "keyValuePair resource type"
 description: "Key value pair for action parameters."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "openTypeExtension resource type (open extensions)"
 description: "Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
 ms.prod: "extensions"
@@ -35,8 +35,8 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [User](user.md) | GA |
-| [Task](basetask.md)  | GA |
-| [Task list](basetasklist.md)  | GA |
+| [Task](todotask.md)  | GA |
+| [Task list](todotasklist.md)  | GA |
 
 ## Outlook-specific considerations
 
@@ -86,7 +86,7 @@ None
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [Task](basetask.md), or [TaskList](basetasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |

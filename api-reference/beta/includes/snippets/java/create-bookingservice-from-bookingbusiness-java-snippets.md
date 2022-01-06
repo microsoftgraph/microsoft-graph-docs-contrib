@@ -43,8 +43,6 @@ defaultRemindersList.add(defaultReminders);
 bookingService.defaultReminders = defaultRemindersList;
 bookingService.description = "Individual bento box lunch delivery";
 bookingService.displayName = "Bento";
-bookingService.isLocationOnline = true;
-bookingService.smsNotificationsEnabled = true;
 bookingService.isHiddenFromCustomers = false;
 bookingService.notes = "Home-cooked special";
 bookingService.postBuffer = DatatypeFactory.newInstance().newDuration("PT10M");

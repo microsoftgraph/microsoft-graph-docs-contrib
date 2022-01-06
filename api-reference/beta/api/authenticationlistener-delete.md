@@ -2,7 +2,7 @@
 title: "Delete authenticationListener"
 description: "Deletes an authenticationListener from an event supported by an authenticationEventsPolicy."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List includes collection of permissionGrantPolicy"
 description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-includes-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -117,8 +113,7 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false
     },
     {
       "id": "60461179-740e-4d8b-9e00-1456a338c44b",
@@ -129,8 +124,7 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false
     }
   ]
 }

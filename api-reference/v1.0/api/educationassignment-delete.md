@@ -2,7 +2,7 @@
 title: "Delete educationAssignment"
 description: "Delete an existing assignment. Only teachers within a class can delete assignments."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an existing assignment. Only teachers within a class can delete assignments.
+Delete an existing assignment. 
+
+Only teachers within a class can delete assignments.
 
 ## Permissions
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/{id}/assignments/{id}
+DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454
 ```
 
 ## Request headers
@@ -76,10 +78,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/c42f493f-42b4-4e7d-814
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignment-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

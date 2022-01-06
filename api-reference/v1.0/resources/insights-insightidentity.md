@@ -2,7 +2,7 @@
 title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

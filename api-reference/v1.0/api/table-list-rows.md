@@ -2,7 +2,7 @@
 title: "List rows"
 description: "Retrieve a list of tablerow objects."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [WorkbookTableRow](../resources/workbooktablerow.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [WorkbookTableRow](../resources/tablerow.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -85,6 +85,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 82
 
 {
   "value": [

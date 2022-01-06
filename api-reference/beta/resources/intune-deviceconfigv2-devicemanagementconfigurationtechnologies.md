@@ -25,9 +25,6 @@ Describes which technology this setting can be deployed with
 |windows10XManagement|2|Setting can be deployed through the Windows10XManagement channel|
 |configManager|4|Setting can be deployed through the ConfigManager channel|
 |microsoftSense|128|Setting can be deployed through the SENSE agent channel|
-|exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel|
-|linuxMdm|1024|Setting can be deployed through the Linux Mdm channel|
-|unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
 
 
 

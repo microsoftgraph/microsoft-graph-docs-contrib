@@ -1,19 +1,17 @@
 ---
-title: "teamsAppInstallation in team: upgrade"
+title: "teamsAppInstallation: upgrade"
 description: "Upgrade an app installation in a team"
-author: "akjo"
-ms.localizationpriority: medium
+author: "clearab"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# teamsAppInstallation in team: upgrade
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
-
-> **Note:** Currently, this operation does not support upgrade of apps that require resource-specific consent permissions. For details, see [Known issues](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## Permissions
 
@@ -24,8 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-
-> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -77,10 +73,6 @@ POST https://graph.microsoft.com/v1.0/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-in-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

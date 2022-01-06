@@ -2,7 +2,7 @@
 title: "List appleVppTokenTroubleshootingEvents"
 description: "List properties and relationships of the appleVppTokenTroubleshootingEvent objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List appleVppTokenTroubleshootingEvents
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 ```
 
 ### Response

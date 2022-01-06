@@ -2,7 +2,7 @@
 title: "Get primaryChannel"
 description: "Retrieve the navigation property of a team that allows access to its default General channel."
 author: "nkramer"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -80,14 +80,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/primaryChannel
 [!INCLUDE [sample-code](../includes/snippets/java/get-primarychannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-primarychannel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
-The following is an example of the response.
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -98,6 +94,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 401
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/primaryChannel/$entity",

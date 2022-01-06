@@ -1,7 +1,7 @@
 ---
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -46,9 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.
 ## Example
-### Request
+##### Request
 Here is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,7 +55,7 @@ Here is an example of the request.
   "name": "get_directorysettingtemplate"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
+GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplate-csharp-snippets.md)]
@@ -74,16 +73,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e1
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-directorysettingtemplate-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 ##### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,21 +85,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 270
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directorySettingTemplates/$entity",
-  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
-  "deletedDateTime": null,
-  "displayName": "Group.Unified.Guest",
-  "description": "Settings for a specific Unified Group",
+  "id": "id-value",
+  "displayName": "displayName-value",
+  "description": "description-value",
   "values": [
     {
-      "name": "AllowToAddGuests",
-      "type": "System.Boolean",
-      "defaultValue": "true",
-      "description": "Flag indicating if guests are allowed in a specific Unified Group."
+      "name": "name-value",
+      "type": "type-value",
+      "defaultValue": "defaultValue-value",
+      "description": "description-value"
     }
-  ]
+  ],
 }
 ```
 

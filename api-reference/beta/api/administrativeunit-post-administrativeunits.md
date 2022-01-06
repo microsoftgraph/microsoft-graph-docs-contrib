@@ -2,7 +2,7 @@
 title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -59,6 +59,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits
 Content-type: application/json
+Content-length: 150
 
 {
     "displayName": "Seattle District Technical Schools",
@@ -82,10 +83,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-administrativeunit-from-administrativeunits-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
@@ -102,6 +99,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 172
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",

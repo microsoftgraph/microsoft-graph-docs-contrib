@@ -1,7 +1,7 @@
 ---
 title: "securityResource resource type"
 description: "Represents the resources related to an alert."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "todoTask resource type"
 description: "A todoTask resource tracks a work item."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

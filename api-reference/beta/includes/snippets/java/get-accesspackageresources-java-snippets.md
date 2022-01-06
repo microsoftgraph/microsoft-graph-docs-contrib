@@ -8,8 +8,6 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 AccessPackageResourceCollectionPage accessPackageResources = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs("{id}").accessPackageResources()
 	.buildRequest()
-	.filter("resourceType eq 'Application'")
-	.expand("accessPackageResourceScopes")
 	.get();
 
 ```

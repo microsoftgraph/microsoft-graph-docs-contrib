@@ -2,7 +2,7 @@
 title: "printer: restoreFactoryDefaults"
 description: Reset a printer's default settings.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -70,10 +70,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/printer-restorefactorydefaults-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/printer-restorefactorydefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

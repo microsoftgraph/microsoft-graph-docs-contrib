@@ -2,13 +2,15 @@
 title: "printJob: cancel"
 description: Cancel a print job.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # printJob: cancel
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Cancel a print job. Print jobs can be canceled only on behalf of a user, using delegated permissions.
 

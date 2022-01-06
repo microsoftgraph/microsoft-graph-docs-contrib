@@ -1,7 +1,7 @@
 ---
 title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "stephenjust"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -86,10 +86,6 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,10 +174,6 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-expanded-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-callrecord-expanded-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

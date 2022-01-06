@@ -2,7 +2,7 @@
 author: kevklam
 title: Grant permission
 description: Grant a list of users access to use the specified link
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -109,10 +109,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/permission-grant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "workbookIcon resource type"
 description: "Represents a cell icon."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
 author: "ruoyingl"

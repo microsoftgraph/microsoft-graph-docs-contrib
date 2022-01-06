@@ -2,7 +2,7 @@
 title: "List sets"
 description: "Get a list of the set objects and their properties."
 author: mohitpcad
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-set-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-set-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

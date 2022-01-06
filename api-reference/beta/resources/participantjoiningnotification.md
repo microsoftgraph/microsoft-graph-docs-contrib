@@ -2,7 +2,7 @@
 title: "participantJoiningNotification resource type"
 description: "Contains details about the policy-based participant joining a call."
 author: "yizhenww"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

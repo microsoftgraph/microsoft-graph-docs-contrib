@@ -3,7 +3,7 @@ author: daspek
 description: "The contentTypeInfo resource indicates the SharePoint content type of an item."
 ms.date: 09/12/2017
 title: ContentTypeInfo
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

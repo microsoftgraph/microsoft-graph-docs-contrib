@@ -1,7 +1,7 @@
 ---
 title: "Delete activityBasedTimeoutPolicy"
 description: "Delete activityBasedTimeoutPolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{i
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activitybasedtimeoutpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-activitybasedtimeoutpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -57,6 +57,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 100
 
 {
   "value":[
@@ -88,6 +89,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 100
 
 {
   "value":[

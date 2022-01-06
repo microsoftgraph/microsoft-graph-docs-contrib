@@ -1,7 +1,7 @@
 ---
 title: "List messages"
 description: "List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 [!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-messages-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -93,6 +89,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 317
 
 {
   "value": [

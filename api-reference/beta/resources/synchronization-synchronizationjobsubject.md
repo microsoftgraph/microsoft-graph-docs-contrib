@@ -2,7 +2,7 @@
 title: "synchronizationJobSubject resource type"
 description: "Represents the objects that will be provisioned during on-demand provisioning."
 author: "ArvindHarinder1"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "applications"
 doc_type: resourcePageType
 ---

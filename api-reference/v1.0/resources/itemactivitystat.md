@@ -2,7 +2,7 @@
 author: daspek
 title: itemActivityStat resource type
 description: The ItemActivityStat object provides information about activities that took place on an item.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

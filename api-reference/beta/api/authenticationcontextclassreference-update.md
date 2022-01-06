@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationContextClassReference"
 description: "Update the properties of a authenticationContextClassReference object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "calebb"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -83,10 +83,6 @@ Content-type: application/json
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationcontextclassreference-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

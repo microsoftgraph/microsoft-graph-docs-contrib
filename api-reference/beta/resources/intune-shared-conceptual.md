@@ -1,7 +1,7 @@
 ---
 title: "Shared resources in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that support multiple workflows for a tenant organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 ---
@@ -24,7 +24,6 @@ The following Graph resources are shared between Intune workflows:
 - [Android enterprise always on VPN package type](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android managed app protection](intune-shared-androidmanagedappprotection.md)
 - [Android managed store app assignment settings](intune-shared-androidmanagedstoreappassignmentsettings.md)
-- [Android managed store auto update mode](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Certificate destination store](intune-shared-certificatedestinationstore.md)
 - [Certificate store](intune-shared-certificatestore.md)
 - [Certificate validity period scale](intune-shared-certificatevalidityperiodscale.md)
@@ -40,6 +39,7 @@ The following Graph resources are shared between Intune workflows:
 - [Device compliance policy](intune-shared-devicecompliancepolicy.md)
 - [Device configuration](intune-shared-deviceconfiguration.md)
 - [Device enrollment configuration](intune-shared-deviceenrollmentconfiguration.md)
+- [Device enrollment type](intune-shared-deviceenrollmenttype.md)
 - [Device management](intune-shared-devicemanagement.md)
 - [Device management derived credential settings](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Device management script](intune-shared-devicemanagementscript.md)
@@ -59,7 +59,6 @@ The following Graph resources are shared between Intune workflows:
 - [IP range](intune-shared-iprange.md)
 - [IPv4 range](intune-shared-ipv4range.md)
 - [IPv6 range](intune-shared-ipv6range.md)
-- [Key long value pair](intune-shared-keylongvaluepair.md)
 - [Key size](intune-shared-keysize.md)
 - [Key storage provider option](intune-shared-keystorageprovideroption.md)
 - [Key usages](intune-shared-keyusages.md)
@@ -78,6 +77,7 @@ The following Graph resources are shared between Intune workflows:
 - [Proxied domain](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Report root](intune-shared-reportroot.md)
+- [Resultant app state](intune-shared-resultantappstate.md)
 - [RGB color](intune-shared-rgbcolor.md)
 - [Run as account type](intune-shared-runasaccounttype.md)
 - [Run state](intune-shared-runstate.md)

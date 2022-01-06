@@ -2,7 +2,7 @@
 title: "userTeamwork: sendActivityNotification"
 description:  Send an activity feed notification to a user.
 author: eddie-lee-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -109,10 +109,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/userteamwork-sendactivitynotification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userteamwork-sendactivitynotification-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -176,10 +172,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

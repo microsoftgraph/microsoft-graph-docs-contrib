@@ -2,7 +2,7 @@
 title: "plannerRoster resource type"
 description: "The **plannerRoster** resource represents a collection of users who are collaborating on a plannerPlan."
 author: "tarkansevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: resourcePageType
 ---

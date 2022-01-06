@@ -1,7 +1,7 @@
 ---
 title: "Build cross-device apps powered by Project Rome "
 description: "You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. "
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "project-rome"
 ---
 

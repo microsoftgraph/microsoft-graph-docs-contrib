@@ -1,7 +1,7 @@
 ---
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "resourcePageType"

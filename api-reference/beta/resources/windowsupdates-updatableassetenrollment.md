@@ -2,7 +2,7 @@
 title: "updatableAssetEnrollment resource type"
 description: "Represents an enrollment into an area of the service."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

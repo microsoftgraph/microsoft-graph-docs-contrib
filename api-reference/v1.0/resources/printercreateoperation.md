@@ -2,7 +2,7 @@
 title: printerCreateOperation resource type
 description: Represents a long-running printer registration operation. Derived from printOperation.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # printerCreateOperation resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents a long-running printer registration operation. Derived from [printOperation](printoperation.md).
 

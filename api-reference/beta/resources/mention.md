@@ -2,7 +2,7 @@
 title: "mention resource type"
 description: "Represents a notification to a person based on the person's email address."
 author: "simonhult"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

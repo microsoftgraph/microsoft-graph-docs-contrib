@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the Assignment Filter.|
 |displayName|String|DisplayName of the Assignment Filter.|
 |description|String|Description of the Assignment Filter.|
-|platform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Platform type of the devices on which the Assignment Filter will be applicable. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |rule|String|Rule definition of the Assignment Filter.|
 |roleScopeTags|String collection|RoleScopeTags of the Assignment Filter.|
 

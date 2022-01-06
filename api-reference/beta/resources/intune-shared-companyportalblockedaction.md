@@ -20,7 +20,7 @@ Blocked actions on the company portal as per platform and device ownership types
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-wip-deviceplatformtype.md)|Device OS/Platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Device OS/Platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Device ownership type. Possible values are: `unknown`, `company`, `personal`.|
 |action|[companyPortalAction](../resources/intune-shared-companyportalaction.md)|Device Action. Possible values are: `unknown`, `remove`, `reset`.|
 

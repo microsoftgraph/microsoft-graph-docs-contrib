@@ -2,7 +2,7 @@
 title: "callTranscriptionInfo resource type"
 description: "Represents a single DTMF event."
 author: "rzhang"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

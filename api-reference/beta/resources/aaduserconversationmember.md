@@ -1,8 +1,8 @@
 ---
 title: "aadUserConversationMember resource type"
 description: "Represents an Azure Active Directory user in a chat or channel."
-ms.localizationpriority: high
-author: "akjo"
+localization_priority: Priority
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -31,9 +31,9 @@ Represents an Azure Active Directory user in a [team](team.md) or a [channel](ch
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
-|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.|
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
-|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.|
+|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.| 
 
 ## Properties
 

@@ -11,18 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  '@odata.type': '#Microsoft.Graph.Group',
-  description: 'Self help community for golf',
-  displayName: 'Golf Assist',
-  groupTypes: [
-    'Unified'
-  ],
-  mailEnabled: true,
-  mailNickname: 'golfassist',
-  securityEnabled: false
+  '@odata.id':'https://graph.microsoft.com/beta/groups/{id}'
 };
 
-await client.api('/administrativeUnits/{id}/members')
+await client.api('/administrativeUnits/{id}/members/$ref')
 	.version('beta')
 	.post(directoryObject);
 

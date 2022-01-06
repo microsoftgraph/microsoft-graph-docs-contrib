@@ -1,7 +1,7 @@
 ---
 title: "oneNoteIdentitySet resource type"
 description: "**Support coming soon**"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: resourcePageType

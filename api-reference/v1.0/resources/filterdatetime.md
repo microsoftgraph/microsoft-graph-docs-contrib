@@ -1,7 +1,7 @@
 ---
 title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType

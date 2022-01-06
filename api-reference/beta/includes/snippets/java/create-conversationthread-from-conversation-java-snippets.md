@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConversationThread conversationThread = new ConversationThread();
-conversationThread.topic = "Take your wellness days and rest";
+conversationThread.topic = "topic-value";
 LinkedList<Post> postsList = new LinkedList<Post>();
 Post posts = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.HTML;
-body.content = "Waiting for the summer holidays.";
+body.content = "this is body content";
 posts.body = body;
 postsList.add(posts);
 PostCollectionResponse postCollectionResponse = new PostCollectionResponse();
@@ -20,7 +20,7 @@ postCollectionResponse.value = postsList;
 PostCollectionPage postCollectionPage = new PostCollectionPage(postCollectionResponse, null);
 conversationThread.posts = postCollectionPage;
 
-graphClient.groups("4d81ce71-486c-41e9-afc5-e41bf2d0722a").conversations("AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=").threads()
+graphClient.groups("{id}").conversations("{id}").threads()
 	.buildRequest()
 	.post(conversationThread);
 

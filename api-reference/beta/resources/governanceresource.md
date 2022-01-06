@@ -1,10 +1,10 @@
 ---
 title: "governanceResource resource type"
 description: "Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # governanceResource resource type
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc.
 

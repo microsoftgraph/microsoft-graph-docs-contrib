@@ -1,7 +1,7 @@
 ---
 title: "List methods"
 description: "Retrieve a list of authentication method objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects. This API returns only authentication methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
-
+Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
 
 ## Permissions
 
@@ -36,11 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+* Privileged authentication admin
+* Authentication admin (only sees masked phone numbers)
 
 ## HTTP request
 
@@ -98,10 +97,6 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-methods-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

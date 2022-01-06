@@ -1,7 +1,7 @@
 ---
 title: "Get openShiftChangeRequest"
 description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshiftchangerequest-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-openshiftchangerequest-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

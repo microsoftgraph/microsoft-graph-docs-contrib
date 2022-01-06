@@ -2,7 +2,7 @@
 title: "updates resource type"
 description: "Entity that acts as a container for all Windows Update for Business deployment service functionality."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

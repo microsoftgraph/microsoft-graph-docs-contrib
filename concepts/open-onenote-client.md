@@ -2,7 +2,7 @@
 title: "Open the OneNote client"
 description: "You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. "
 author: "Jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ---
 
 # Open the OneNote client

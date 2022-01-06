@@ -1,7 +1,7 @@
 ---
 title: "rubricLevel resource type"
 description: "A level of a rubric."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "resourcePageType"

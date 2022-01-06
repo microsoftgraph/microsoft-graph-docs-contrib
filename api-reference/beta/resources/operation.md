@@ -1,7 +1,7 @@
 ---
 title: "operation resource type"
 description: "The status of a long-running operation."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "billbliss"

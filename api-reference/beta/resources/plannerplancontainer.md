@@ -2,7 +2,7 @@
 title: "plannerPlanContainer resource type"
 description: "Represents a container for a plannerPlan. The container is a resource that specifies authorization rules and the lifetime of the plan."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: resourcePageType
 ---
@@ -26,7 +26,7 @@ Planner currently supports the container types listed in the following table. Wh
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan.|
-|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `unknownFutureValue`, `roster`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`.|
+|type|plannerContainerType| The type of the resource that contains the plan. See the previous table for supported types. Possible values are: `group`, `roster`, `unknownFutureValue`.|
 |url|String|The full canonical URL of the container.|
 
 ## Relationships

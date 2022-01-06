@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,6 @@ The following table shows the properties that are required when you create the m
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-|disableUDPConnections|Boolean|When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.|
 
 
 
@@ -75,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations
 Content-type: application/json
-Content-length: 782
+Content-length: 748
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -106,8 +105,7 @@ Content-length: 782
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "disableUDPConnections": true
+  ]
 }
 ```
 
@@ -116,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 831
+Content-Length: 797
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -148,8 +146,7 @@ Content-Length: 831
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "disableUDPConnections": true
+  ]
 }
 ```
 

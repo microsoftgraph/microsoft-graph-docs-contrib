@@ -1,7 +1,7 @@
 ---
 title: "Templates in the Microsoft Graph Toolkit"
 description: "Use custom templates to modify the content of a component."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: nmetulev
 ---
 

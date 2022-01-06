@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Remove access to a DriveItem."
 ms.date: 09/10/2017
 title: Remove access to an item
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---

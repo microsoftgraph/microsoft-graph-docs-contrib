@@ -2,7 +2,7 @@
 title: "Automate creating, sending, and processing messages"
 description: "Emails are represented by the message resource in Microsoft Graph."
 author: "abheek-das"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ---
 

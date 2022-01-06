@@ -2,7 +2,7 @@
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-audioroutinggroups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-audioroutinggroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

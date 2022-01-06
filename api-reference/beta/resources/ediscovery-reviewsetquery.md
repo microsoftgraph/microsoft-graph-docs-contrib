@@ -1,7 +1,7 @@
 ---
 title: "reviewSetQuery resource type"
 description: "Represents a review set query, which is used to query and cull data stored in an eDiscovery reviewSet."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "resourcePageType"

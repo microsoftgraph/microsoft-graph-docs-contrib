@@ -1,7 +1,7 @@
 ---
 title: "Working with long running actions (beta)"
 description: "This article describes working with long running actions."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "daspek"
 ---
 # Working with long running actions (beta)

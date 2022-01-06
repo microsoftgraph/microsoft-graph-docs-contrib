@@ -1,8 +1,8 @@
 ---
 title: "Get incremental changes to events in a calendar view "
 description: "A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) "
-author: "FaithOmbongi"
-ms.localizationpriority: high
+author: "davidmu1"
+localization_priority: Priority
 ms.custom: graphiamtop20
 ---
 

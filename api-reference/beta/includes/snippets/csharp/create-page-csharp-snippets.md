@@ -20,12 +20,9 @@ var sitePage = new SitePage
 		new WebPart
 		{
 			Type = "rte",
-			Data = new SitePageData
+			AdditionalData = new Dictionary<string, object>()
 			{
-				AdditionalData = new Dictionary<string, object>()
-				{
-					{"innerHTML", "<p>Here are the team's upcoming events:</p>"}
-				}
+				{"innerHTML", "<p>Here are the team's upcoming events:</p>"}
 			}
 		},
 		new WebPart

@@ -1,7 +1,7 @@
 ---
 title: "regionalAndLanguageSettings resource type"
 description: "A resource representing a users regional and language preferences"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jasonbro"
 ms.prod: "users"
 doc_type: resourcePageType

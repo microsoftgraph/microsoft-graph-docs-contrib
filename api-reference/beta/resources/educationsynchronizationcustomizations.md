@@ -1,7 +1,7 @@
 ---
 title: "educationSynchronizationCustomizations resource type"
 description: "Contains the list of entities to sync and their customizations, if any."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -49,39 +49,22 @@ This resource is member of the following data providers:
 ```json
 {
   "school": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "optionalPropertiesToSync": ["String"],
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   },
   "section": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "optionalPropertiesToSync": ["String"],
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   },
   "student": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "optionalPropertiesToSync": ["String"],
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   },
   "teacher": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "optionalPropertiesToSync": ["String"],
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   },
   "studentEnrollment": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "synchronizationStartDate": "DateTimeOffset",
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   },
   "teacherRoster": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
-    "isSyncDeferred": "Boolean",
-    "allowDisplayNameUpdate": "Boolean"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
   }
 }
 ```

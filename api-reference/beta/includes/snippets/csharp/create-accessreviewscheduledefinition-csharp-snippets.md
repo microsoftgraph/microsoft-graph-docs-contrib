@@ -11,7 +11,7 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 	DisplayName = "Test create",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewQueryScope
+	Scope = new AccessReviewScope
 	{
 		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
 		QueryType = "MicrosoftGraph"

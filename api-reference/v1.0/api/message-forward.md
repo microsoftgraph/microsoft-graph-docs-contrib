@@ -2,7 +2,7 @@
 title: "message: forward"
 description: "Forward a message using either JSON or MIME format."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -78,6 +78,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/forward
 Content-type: application/json
+Content-length: 166
 
 {
   "comment": "comment-value",
@@ -107,10 +108,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/message-forward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/message-forward-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -121,7 +118,7 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 ```
 
 ### Example 2: Forward a message using MIME content

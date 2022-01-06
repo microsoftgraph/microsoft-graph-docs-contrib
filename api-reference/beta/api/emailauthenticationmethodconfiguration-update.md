@@ -2,7 +2,7 @@
 title: "Update emailAuthenticationMethodConfiguration"
 description: "Update the properties of an emailAuthenticationMethodConfiguration object."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -24,10 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Authentication Policy Administrator
-* Global Administrator
+* Global admin
 
 ## HTTP request
 
@@ -73,6 +72,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 Content-Type: application/json
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",

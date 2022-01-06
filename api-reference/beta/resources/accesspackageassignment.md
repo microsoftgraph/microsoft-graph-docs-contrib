@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignment resource type"
 description: "An access package assignment is an assignment of an access package to a particular subject, for a period of time."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -13,18 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageAssignments](../api/entitlementmanagement-list-accesspackageassignments.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accessPackageAssignment** objects. |
+| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accessPackageAssignment** objects. |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of **accessPackageAssignment** objects filtered on the signed-in user.|
-| [reprocess](../api/accesspackageassignment-reprocess.md) | None | Automatically reevaluate and enforce a user’s assignments for a specific access package.|
 
-> [!NOTE]
-> To create or remove an access package assignment for a user, use the [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md)
+>**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## Properties
 
@@ -32,7 +30,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |accessPackageId|String|The identifier of the access package. Read-only.|
 |assignmentPolicyId|String|The identifier of the access package assignment policy. Read-only.|
-|assignmentState|String|The state of the access package assignment. Possible values are `Delivering`, `Delivered`, or `Expired`. Read-only. Supports `$filter` (`eq`).|
+|assignmentState|String|The state of the access package assignment. Possible values are `Delivering`, `Delivered`, or `Expired`. Read-only.|
 |assignmentStatus|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -45,10 +43,10 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
-|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property|
+|accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable.|
+|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable.|
 |accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection| The resource roles delivered to the target user for this assignment. Read-only. Nullable.|
-|target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable. Supports `$expand`. Supports `$filter` (`eq`) on **objectId**. |
+|target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -86,3 +84,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

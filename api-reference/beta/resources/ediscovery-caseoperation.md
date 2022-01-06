@@ -1,7 +1,7 @@
 ---
 title: "caseOperation resource type"
 description: "An abstract entity that represents a long-running eDiscovery process."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: resourcePageType

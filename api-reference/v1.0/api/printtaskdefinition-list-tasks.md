@@ -2,13 +2,15 @@
 title: List tasks
 description: Retrieve a list of task associated with a task definition.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List tasks
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of [tasks](../resources/printtask.md) associated with a [task definition](../resources/printtaskdefinition.md).
 
@@ -80,10 +82,6 @@ GET https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/ta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printtask-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-printtask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

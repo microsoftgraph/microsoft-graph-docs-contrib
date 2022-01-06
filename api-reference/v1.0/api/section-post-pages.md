@@ -1,7 +1,7 @@
 ---
 title: "Create page"
 description: "Create a new page in the specified section."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -52,6 +52,7 @@ Here is an example of the request.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
+Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -94,6 +95,7 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 312
 
 {
   "title": "title-value",

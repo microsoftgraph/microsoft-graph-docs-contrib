@@ -2,7 +2,7 @@
 title: "event: snoozeReminder"
 description: "Postpone a reminder for an event in a user calendar until a new time."
 author: "harini84"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -69,6 +69,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
 Content-type: application/json
+Content-length: 97
 
 {
   "newReminderTime": {
@@ -91,10 +92,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-snoozereminder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-snoozereminder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

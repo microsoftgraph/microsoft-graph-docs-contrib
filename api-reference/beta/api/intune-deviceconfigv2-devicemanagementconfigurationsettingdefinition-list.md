@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/reusableSettings
-GET /deviceManagement/complianceSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions
@@ -64,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1498
+Content-Length: 1496
 
 {
   "value": [
@@ -73,7 +72,7 @@ Content-Length: 1498
       "applicability": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
         "description": "Description value",
-        "platform": "android",
+        "platform": "macOS",
         "deviceMode": "kiosk",
         "technologies": "mdm"
       },

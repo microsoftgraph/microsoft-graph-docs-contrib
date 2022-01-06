@@ -2,7 +2,7 @@
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -65,14 +65,68 @@ In this example, `{id}` is the identifier of the tenant-wide groupSetting object
   "name": "update_tenant_setting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
 
 {
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
     {
-      "name": "AllowToAddGuests",
+      "name": "EnableMIPLabels",
       "value": "false"
+    },
+    {
+      "name": "CustomBlockedWordsList",
+      "value": ""
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "false"
+    },
+    {
+      "name": "ClassificationDescriptions",
+      "value": ""
+    },
+    {
+      "name": "DefaultClassification",
+      "value": ""
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": ""
+    },
+    {
+      "name": "AllowGuestsToBeGroupOwner",
+      "value": "false"
+    },
+    {
+      "name": "AllowGuestsToAccessGroups",
+      "value": "true"
+    },
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "GroupCreationAllowedGroupId",
+      "value": ""
+    },
+    {
+      "name": "AllowToAddGuests",
+      "value": "true"
+    },
+    {
+      "name": "UsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "ClassificationList",
+      "value": ""
+    },
+    {
+      "name": "EnableGroupCreation",
+      "value": "true"
     }
   ]
 }
@@ -91,10 +145,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-tenant-setting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,21 +167,22 @@ In this example, the first `{id}` in the request is the identifier of the group,
 #### Request
 
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
 Content-type: application/json
 
 {
+  "displayName": "GroupSettings",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
   "values": [
     {
-      "name": "AllowToAddGuests",
-      "value": "true"
+            "name": "AllowToAddGuests",
+            "value": "false"
     }
   ]
 }
@@ -150,10 +201,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

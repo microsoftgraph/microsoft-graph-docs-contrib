@@ -1,8 +1,8 @@
 ---
 title: "accessPackageAssignmentRequestFilterByCurrentUserOptions enum type"
 description: "Options for current user to use as a filter on access package assignment requests list."
-ms.localizationpriority: medium
-author: "markwahl-msft"
+localization_priority: Normal
+author: "sbounouh"
 ms.prod: "governance"
 doc_type: "enumPageType"
 ---

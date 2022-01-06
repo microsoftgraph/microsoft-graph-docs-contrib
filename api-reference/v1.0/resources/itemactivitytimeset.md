@@ -2,7 +2,7 @@
 author: daspek
 title: itemActivityTimeSet resource type
 description: The itemActionSet object provides information about an activity that took place on an item.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

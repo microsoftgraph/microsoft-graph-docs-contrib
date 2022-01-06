@@ -1,7 +1,7 @@
 ---
 title: "Delete program"
 description: "In the Azure AD access reviews feature, delete a program object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"
@@ -71,10 +71,6 @@ DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f91
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-program-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

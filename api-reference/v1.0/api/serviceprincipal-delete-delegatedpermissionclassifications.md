@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedPermissionClassification"
 description: "Delete a delegated permission classification from an API's service principal."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -33,9 +33,9 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -75,10 +75,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-delegatedpermissionclassifications-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-delegatedpermissionclassifications-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

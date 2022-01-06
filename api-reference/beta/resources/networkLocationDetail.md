@@ -1,7 +1,7 @@
 ---
 title: "networkLocationDetail resource type"
 description: "Provides the name and type of network from which the user signed in."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

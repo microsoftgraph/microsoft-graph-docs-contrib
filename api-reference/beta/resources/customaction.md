@@ -1,7 +1,7 @@
 ---
 title: "customAction resource type"
 description: "Represents any custom actions that a label may provide, if configured by the administrator."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

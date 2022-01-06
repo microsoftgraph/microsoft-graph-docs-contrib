@@ -60,7 +60,6 @@ The following table shows the properties that are required when you create the a
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
-|connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 
 
 
@@ -74,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 642
+Content-length: 609
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -96,8 +95,7 @@ Content-length: 642
       "action": "autoGrant"
     }
   ],
-  "profileApplicability": "androidWorkProfile",
-  "connectedAppsEnabled": true
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
@@ -106,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 814
+Content-Length: 781
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -131,8 +129,7 @@ Content-Length: 814
       "action": "autoGrant"
     }
   ],
-  "profileApplicability": "androidWorkProfile",
-  "connectedAppsEnabled": true
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 

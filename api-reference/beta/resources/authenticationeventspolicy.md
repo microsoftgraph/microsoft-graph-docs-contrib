@@ -2,7 +2,7 @@
 title: "authenticationEventsPolicy resource type"
 description: "Authentication events are used to invoke user flows at specific points in the authentication flow."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

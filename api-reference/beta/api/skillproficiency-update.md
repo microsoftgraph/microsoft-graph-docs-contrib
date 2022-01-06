@@ -1,7 +1,7 @@
 ---
 title: "Update skillProficiency"
 description: "Update the properties of skillProficiency object in a user's profile."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -96,10 +96,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-skillproficiency-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-skillproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

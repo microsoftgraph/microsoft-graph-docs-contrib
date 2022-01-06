@@ -3,7 +3,7 @@ author: rahmit
 description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -59,9 +59,7 @@ Content-Type: application/json
     "webParts": [
         {
             "type": "rte",
-            "data": {
-                "innerHTML": "<p>Here are the team's upcoming events:</p>"
-            }
+            "innerHTML": "<p>Here are the team's upcoming events:</p>"
         },
         {
             "type": "d1d91016-032f-456d-98a4-721247c305e8",
@@ -105,10 +103,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

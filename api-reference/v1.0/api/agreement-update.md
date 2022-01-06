@@ -1,7 +1,7 @@
 ---
 title: "Update agreement"
 description: "Update the properties of an agreement object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -53,6 +53,7 @@ If successful, this method returns a `200 OK` response code and an updated [agre
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
 Content-type: application/json
+Content-length: 85
 
 {
   "displayName": "Sample ToU display name",
@@ -75,10 +76,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -93,6 +90,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 105
 
 {
   "displayName": "Sample ToU display name",

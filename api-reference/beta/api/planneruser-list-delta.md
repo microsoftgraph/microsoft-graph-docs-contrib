@@ -2,7 +2,7 @@
 title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

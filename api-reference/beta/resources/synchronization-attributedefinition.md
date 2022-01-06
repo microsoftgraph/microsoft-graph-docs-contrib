@@ -1,7 +1,7 @@
 ---
 title: "attributeDefinition resource type"
 description: "Describes an attribute of an object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

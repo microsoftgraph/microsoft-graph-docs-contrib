@@ -1,7 +1,7 @@
 ---
 title: "Delete phoneAuthenticationMethod"
 description: "Delete a user's phone authentication method."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -41,10 +41,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global admin
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -102,10 +102,6 @@ DELETE https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-phoneauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List riskyUsers"
 description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "cloudhandler"
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/riskyUsers
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskyusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-riskyusers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -137,10 +133,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskL
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskyusers-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-filter-riskyusers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

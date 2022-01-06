@@ -2,7 +2,7 @@
 title: "Get educationSchool"
 description: "Read the properties and relationships of an educationSchool object."
 author: "mlafleur"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/v1.0/education/schools/{educationSchoolId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationschool-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-educationschool-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

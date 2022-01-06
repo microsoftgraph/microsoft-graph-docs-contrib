@@ -2,12 +2,14 @@
 title: "Upload documents using the Microsoft Graph Universal Print API"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "nilakhan"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).
 
@@ -182,7 +184,7 @@ Content-Type: application/json
     };
     const client = Client.init(options);
    
-    const fileName = "test.txt";
+   const fileName = "test.txt";
     const file = fs.readFileSync(`./${fileName}`);
     const stats = fs.statSync(`./${fileName}`);
     const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
@@ -195,20 +197,14 @@ Content-Type: application/json
     }
     const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
 
-    // Create FileUpload object. 
-    /* Note:
-     * As alternatives to using a javascript `File` object to create a `FileUpload`, 
-     * you can use a `ReadStream` object to create a `StreamUpload`.
-     * const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
-     * const fileObject = new StreamUpload(readStream, fileName, totalsize);
-     * OR
-     * you can also create a custom implementation of the `FileObject` interface.
-     * FileUpload and StreamUpload classes are available in 3.0.0 version of the Microsoft Graph JS client library.
-     */
-    const fileObject = new FileUpload(file, file.name, file.size);
-     
-    // Create LargeFileUploadTask object and start the upload() task
+    const fileObject = {
+        content: file,
+        name: fileName,
+        size: stats.size
+    };
+
     const task = new LargeFileUploadTask(client, fileObject, uploadSession);
+
     const uploadResponse = await task.upload();
 ```
 ---

@@ -1,7 +1,7 @@
 ---
 title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

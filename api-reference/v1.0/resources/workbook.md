@@ -1,7 +1,7 @@
 ---
 title: "workbook resource type"
 description: "The top-level object that contains related workbook objects such as worksheets, tables, and ranges."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "educationLinkResource resource type"
 description: "A subclass of educationResource."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

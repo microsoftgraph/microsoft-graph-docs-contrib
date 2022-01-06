@@ -1,7 +1,7 @@
 ---
 title: "preAuthorizedApplication resource type"
 description: "Lists the pre-authorized client applications"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

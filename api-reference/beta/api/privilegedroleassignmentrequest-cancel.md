@@ -1,10 +1,10 @@
 ---
 title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # Cancel privilegedRoleAssignmentRequest
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
@@ -82,10 +80,6 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 [!INCLUDE [sample-code](../includes/snippets/java/cancel-privilegedroleassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cancel-privilegedroleassignmentrequests-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -98,6 +92,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 304
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",

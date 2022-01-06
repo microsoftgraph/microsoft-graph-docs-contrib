@@ -1,7 +1,7 @@
 ---
 title: "educationUser: delta"
 description: "Get newly created or updated users without having to perform a full read of the entire user collection."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mlafleur"
 ms.prod: "education"
 doc_type: apiPageType
@@ -84,10 +84,6 @@ GET https://graph.microsoft.com/beta/education/users/delta
 [!INCLUDE [sample-code](../includes/snippets/java/educationuser-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/educationuser-delta-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -107,6 +103,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 1039
 
 {
   "value": [

@@ -7,14 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GroupSetting groupSetting = new GroupSetting();
+groupSetting.displayName = "GroupSettings";
+groupSetting.templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9";
 LinkedList<SettingValue> valuesList = new LinkedList<SettingValue>();
 SettingValue values = new SettingValue();
 values.name = "AllowToAddGuests";
-values.value = "true";
+values.value = "false";
 valuesList.add(values);
 groupSetting.values = valuesList;
 
-graphClient.groups("0167b5af-f3d1-4910-82d2-398747fa381c").settings("fa6df613-159b-4f94-add2-7093f961900b")
+graphClient.groups("{id}").settings("{id}")
 	.buildRequest()
 	.patch(groupSetting);
 

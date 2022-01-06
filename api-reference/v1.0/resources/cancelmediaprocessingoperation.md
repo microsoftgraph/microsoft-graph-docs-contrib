@@ -2,7 +2,7 @@
 title: "cancelMediaProcessingOperation resource type"
 description: "This resource type is used to describe the response format of the cancel media processing operation."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

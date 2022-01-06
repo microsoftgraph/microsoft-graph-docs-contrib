@@ -3,7 +3,7 @@ author: daspek
 description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

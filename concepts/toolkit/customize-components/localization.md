@@ -1,7 +1,7 @@
 ---
 title: "Localizing the Microsoft Graph Toolkit components"
 description: "Use LocalizationHelper to localize Microsoft Graph Toolkit components."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: vogtn
 ---
 

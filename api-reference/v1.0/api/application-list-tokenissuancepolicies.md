@@ -1,7 +1,7 @@
 ---
 title: "List assigned tokenIssuancePolicies"
 description: "List tokenIssuancePolicies that are assigned to an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/tokenIssuancePolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tokenissuancepolicies-on-application-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-tokenissuancepolicies-on-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

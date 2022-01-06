@@ -2,7 +2,7 @@
 title: "userSecurityState resource type"
 description: "Contains stateful information about the user account."
 author: "jpettere"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "users"
 doc_type: resourcePageType
 ---

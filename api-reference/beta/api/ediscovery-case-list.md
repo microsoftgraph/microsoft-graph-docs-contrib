@@ -1,7 +1,7 @@
 ---
 title: "List cases"
 description: "Retrieve a list of eDiscovery cases."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-case-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

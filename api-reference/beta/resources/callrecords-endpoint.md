@@ -1,7 +1,7 @@
 ---
 title: "endpoint resource type"
 description: "The endpoint type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

@@ -11,7 +11,7 @@ hubSiteUrlsList.add("https://graph.microsoft.com/beta/sites/id");
 
 Boolean propagateToExistingLists = false;
 
-graphClient.sites("{siteId}").contentTypes("{contentTypeId}")
+graphClient.sites("id").contentTypes("id")
 	.associateWithHubSites(ContentTypeAssociateWithHubSitesParameterSet
 		.newBuilder()
 		.withHubSiteUrls(hubSiteUrlsList)

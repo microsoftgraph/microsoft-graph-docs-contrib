@@ -1,7 +1,7 @@
 ---
 title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

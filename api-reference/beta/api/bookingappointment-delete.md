@@ -1,7 +1,7 @@
 ---
 title: "Delete bookingAppointment"
 description: "Delete a bookingAppointment in the specified bookingbusiness."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_bookingappointment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKqAAA=
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKqAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingappointment-csharp-snippets.md)]
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@c
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bookingappointment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

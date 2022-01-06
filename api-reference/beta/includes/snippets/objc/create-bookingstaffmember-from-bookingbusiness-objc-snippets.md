@@ -16,7 +16,6 @@ MSGraphBookingStaffMember *bookingStaffMember = [[MSGraphBookingStaffMember allo
 [bookingStaffMember setDisplayName:@"Dana Swope"];
 [bookingStaffMember setEmailAddress:@"danas@contoso.com"];
 [bookingStaffMember setRole: [MSGraphBookingStaffRole externalGuest]];
-[bookingStaffMember setTimeZone:@"America/Chicago"];
 [bookingStaffMember setUseBusinessHours: true];
 NSMutableArray *workingHoursList = [[NSMutableArray alloc] init];
 MSGraphBookingWorkHours *workingHours = [[MSGraphBookingWorkHours alloc] init];

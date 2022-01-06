@@ -1,7 +1,7 @@
 ---
 title: "FilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType

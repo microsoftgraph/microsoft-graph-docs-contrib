@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
@@ -89,10 +89,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-create-approleassignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-create-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

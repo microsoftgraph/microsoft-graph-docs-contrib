@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getYammerGroupsActivityDetail"
 description: "Get details about Yammer groups activity by group."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

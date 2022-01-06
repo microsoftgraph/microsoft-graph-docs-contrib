@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getYammerGroupsActivityGroupCounts"
 description: "Get the total number of groups that existed and how many included group conversation activity."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -71,7 +71,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md)** object in the response body.
 
 ## Example
 
@@ -149,7 +149,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream",
+  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts",
   "isCollection": true
 } -->
 
@@ -159,6 +159,7 @@ Content-Type: application/json
 Content-Length: 236
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityGroupCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01",

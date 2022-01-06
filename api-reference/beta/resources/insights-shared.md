@@ -2,7 +2,7 @@
 title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

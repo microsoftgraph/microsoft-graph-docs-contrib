@@ -2,7 +2,7 @@
 title: "workbookChartLegendFormat resource type"
 description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

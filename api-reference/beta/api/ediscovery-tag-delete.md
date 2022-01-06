@@ -2,7 +2,7 @@
 title: "Delete tag"
 description: "Delete a tag object."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -87,10 +87,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tag-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-tag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

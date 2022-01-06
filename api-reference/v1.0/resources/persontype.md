@@ -1,7 +1,7 @@
 ---
 title: "personType resource type"
 description: "Represents the type of person."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType

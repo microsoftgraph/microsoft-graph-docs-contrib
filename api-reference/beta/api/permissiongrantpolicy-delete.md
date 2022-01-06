@@ -1,7 +1,7 @@
 ---
 title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-permissiongrantpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

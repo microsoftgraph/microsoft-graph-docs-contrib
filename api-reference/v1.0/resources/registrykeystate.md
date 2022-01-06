@@ -1,7 +1,7 @@
 ---
 title: "registryKeyState resource type"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "preetikr"
 ms.prod: ""
 doc_type: resourcePageType

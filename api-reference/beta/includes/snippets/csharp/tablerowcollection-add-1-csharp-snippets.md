@@ -6,15 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookTableRow = new WorkbookTableRow
-{
-	Values = JsonDocument.Parse(@"""[\r\n    [1, 2, 3],\r\n    [4, 5, 6]\r\n  ]""")
-};
+var values = JToken.Parse("[[1,2,3],[4,5,6]]");
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows
+	.Add(null,values)
 	.Request()
-	.Header("Prefer","respond-async")
-	.Header("Workbook-Session-Id","{Workbook-Session-Id}")
-	.AddAsync(workbookTableRow);
+	.PostAsync();
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/riskDetections
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-riskdetection-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -148,10 +144,6 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-riskdetection-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -11,7 +11,7 @@ var workbookTableColumn = new WorkbookTableColumn
 	Id = "99",
 	Name = "name-value",
 	Index = 99,
-	Values = JsonDocument.Parse(@"""values-value""")
+	Values = "values-value"
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns

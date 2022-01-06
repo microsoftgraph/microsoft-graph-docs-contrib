@@ -1,7 +1,7 @@
 ---
 title: "Get securityAction"
 description: "Retrieve the properties and relationships of securityAction object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-securityaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

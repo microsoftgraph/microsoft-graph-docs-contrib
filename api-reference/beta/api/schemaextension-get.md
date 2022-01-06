@@ -1,7 +1,7 @@
 ---
 title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
 ms.prod: "extensions"
@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /schemaExtensions/{id}
 ```
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -44,8 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.
 ## Example
-### Request
-The following is an example of the request.
+##### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,14 +73,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 [!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+##### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,6 +85,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 201
 
 {
     "id":"graphlearn_test",

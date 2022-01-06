@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "thumbnailColumn resource type"
 description: "The thumbnailColumn resource indicates that the column contains information about thumbnail."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

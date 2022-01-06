@@ -2,7 +2,7 @@
 title: "plannerRosterMember resource type"
 description: "Represents a member of a plannerRoster."
 author: "tarkansevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: resourcePageType
 ---

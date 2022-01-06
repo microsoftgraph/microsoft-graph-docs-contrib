@@ -1,7 +1,7 @@
 ---
 title: "directorySettingTemplate resource type"
 description: "Directory setting templates represent system-defined settings available to the tenant."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: resourcePageType

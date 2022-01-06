@@ -1,7 +1,7 @@
 ---
 title: "Delete skillProficiency"
 description: "Delete skillProficiency."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -79,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-skillproficiency-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-skillproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

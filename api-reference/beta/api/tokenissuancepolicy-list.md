@@ -1,7 +1,7 @@
 ---
 title: "List tokenIssuancePolicy"
 description: "Get a list of tokenIssuancePolicy objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tokenissuancepolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tokenissuancepolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

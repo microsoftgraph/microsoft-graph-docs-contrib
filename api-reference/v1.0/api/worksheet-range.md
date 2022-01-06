@@ -2,7 +2,7 @@
 title: "Worksheet: Range"
 description: "Gets the range object specified by the address or name."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -86,6 +86,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",
@@ -139,6 +140,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",

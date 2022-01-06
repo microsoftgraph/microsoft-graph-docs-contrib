@@ -2,7 +2,7 @@
 title: "List custodian siteSources"
 description: "Get a list of the siteSource objects and their properties."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sitesource-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-sitesource-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

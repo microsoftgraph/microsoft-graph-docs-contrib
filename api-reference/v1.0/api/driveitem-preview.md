@@ -1,7 +1,7 @@
 ---
 title: "driveItem: preview"
 description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: apiPageType

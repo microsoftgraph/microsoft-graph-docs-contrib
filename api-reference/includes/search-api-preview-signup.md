@@ -2,7 +2,6 @@
 author: jasonjoh
 ms.topic: include
 ms.date: 11/15/2019
-ms.localizationpriority: medium
 ---
 
 <!-- markdownlint-disable MD041-->

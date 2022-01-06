@@ -1,7 +1,7 @@
 ---
 title: "bookingCustomer resource type"
-description: "Represents a customer of a bookingBusiness."
-ms.localizationpriority: medium
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: resourcePageType
@@ -29,11 +29,9 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships
 None
@@ -55,17 +53,7 @@ The following is a JSON representation of the resource.
 {
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)",
-  "addresses": [
-    {
-      "@odata.type": "microsoft.graph.physicalAddress"
-    }
-  ],
-  "phones": [
-    {
-      "@odata.type": "microsoft.graph.phone"
-    }
-  ]
+  "id": "String (identifier)"
 }
 
 ```

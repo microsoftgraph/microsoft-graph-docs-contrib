@@ -1,7 +1,7 @@
 ---
 title: "Create workbookCommentReply"
 description: "Use this API to create a new workbookCommentReply."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "grangeryy"
 ms.prod: ""
 doc_type: "apiPageType"

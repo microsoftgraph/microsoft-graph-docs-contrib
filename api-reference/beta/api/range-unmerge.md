@@ -2,7 +2,7 @@
 title: "Range: unmerge"
 description: "Unmerge the range cells into separate cells."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

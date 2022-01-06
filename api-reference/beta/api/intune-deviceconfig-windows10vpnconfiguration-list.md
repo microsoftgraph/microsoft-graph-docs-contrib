@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5326
+Content-Length: 5260
 
 {
   "value": [
@@ -117,7 +117,6 @@ Content-Length: 5326
       "dnsSuffixes": [
         "Dns Suffixes value"
       ],
-      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "authenticationMethod": "usernameAndPassword",
       "rememberUserCredentials": true,
       "enableConditionalAccess": true,

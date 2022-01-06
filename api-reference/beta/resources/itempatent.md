@@ -1,7 +1,7 @@
 ---
 title: "itemPatent resource type"
 description: "itemPatent resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: resourcePageType

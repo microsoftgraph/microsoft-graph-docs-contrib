@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph eDiscovery API"
 description: "The Microsoft 365 eDiscovery APIs provide functionality for organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build a repeatable workflows that might be required based on industry regulations. You can use the eDiscovery APIs to help with your legal needs."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: conceptualPageType

@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
 description: "Learn how to identify and remediate risk using Microsoft Graph APIs."
-author: "FaithOmbongi"
-ms.localizationpriority: medium
+author: "davidmu1"
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 ---
 

@@ -2,7 +2,7 @@
 title: "Delete siteSource"
 description: "Delete a siteSource object."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -79,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-778
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-sitesource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-sitesource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

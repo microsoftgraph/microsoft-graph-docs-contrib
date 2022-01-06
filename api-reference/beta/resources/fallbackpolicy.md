@@ -1,7 +1,7 @@
 ---
 title: "fallbackPolicy resource type"
 description: "Allows fallback policy to be specified for iOS endpoints only and is designed to be used for high-priority raw notifications. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "merzink"
 ms.prod: "notifications"
 doc_type: "resourcePageType"

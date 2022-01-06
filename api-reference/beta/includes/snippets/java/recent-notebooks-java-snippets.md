@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-NotebookGetRecentNotebooksCollectionPage getRecentNotebooks = graphClient.me().onenote().notebooks()
-	.getRecentNotebooks(NotebookGetRecentNotebooksParameterSet
+NotebookGetrecentnotebooksCollectionPage getrecentnotebooks = graphClient.me().onenote().notebooks()
+	.getrecentnotebooks(NotebookGetrecentnotebooksParameterSet
 		.newBuilder()
 		.withIncludePersonalNotebooks(true)
 		.build())

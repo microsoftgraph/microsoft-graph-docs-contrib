@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

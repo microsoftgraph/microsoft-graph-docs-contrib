@@ -2,7 +2,7 @@
 title: "Microsoft Graph Data Connect frequently asked questions"
 description: "Get tips that will help you take advantage of Microsoft Graph Data Connect."
 author: "fercobo-msft"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "data-connect"
 ---
 

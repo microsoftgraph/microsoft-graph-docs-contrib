@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "documentSetContent resource type"
 description: "The documentSetContent resource contains metadata about a file present in default content location of a content."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Generating proof of possession tokens for rolling keys"
 description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "applications"
-author: "FaithOmbongi"
+author: "davidmu1"
 ---
 
 # Generating proof of possession tokens for rolling keys
@@ -71,5 +71,3 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
     }
 }
 ```
-
-> **Note:** The proof can be generated using other tools, such as PowerShell or signature using Azure KeyVault. It is important to note that padding character '=' must not be included in the JWT header and payload, or an **Authentication_MissingOrMalformed** error will be returned.

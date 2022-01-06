@@ -7,7 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
-claimsMappingPolicy.displayName = "UpdateClaimsPolicy";
+LinkedList<String> definitionList = new LinkedList<String>();
+definitionList.add("definition-value");
+claimsMappingPolicy.definition = definitionList;
+claimsMappingPolicy.displayName = "displayName-value";
+claimsMappingPolicy.isOrganizationDefault = true;
 
 graphClient.policies().claimsMappingPolicies("{id}")
 	.buildRequest()

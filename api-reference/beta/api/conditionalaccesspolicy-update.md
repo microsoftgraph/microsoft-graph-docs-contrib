@@ -1,7 +1,7 @@
 ---
 title: "Update conditionalAccessPolicy"
 description: "Update the properties of a conditionalAccessPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 > [!NOTE]
-> This API has a [known issue](/graph/known-issues##conditional-access-policy) related to permissions.
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
 
 ## HTTP request
 
@@ -93,10 +93,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-conditionalaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

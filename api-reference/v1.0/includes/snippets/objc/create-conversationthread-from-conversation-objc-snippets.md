@@ -12,12 +12,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversationThread *conversationThread = [[MSGraphConversationThread alloc] init];
-[conversationThread setTopic:@"Take your wellness days and rest"];
+[conversationThread setTopic:@"topic-value"];
 NSMutableArray *postsList = [[NSMutableArray alloc] init];
 MSGraphPost *posts = [[MSGraphPost alloc] init];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"Waiting for the summer holidays."];
+[body setContent:@"this is body content"];
 [posts setBody:body];
 [postsList addObject: posts];
 [conversationThread setPosts:postsList];

@@ -2,7 +2,7 @@
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -22,7 +22,6 @@ Contains additional properties about the participant identity
 | identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. Read-only.                                                                             |
 | languageId     | String                        | The language culture string. Read-only.                                                                                                                    |
 | region         | String                        | The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only. |
-| participantId    | String                          | The participant ID of the participant. Read-only.    |
 
 
 ## JSON representation
@@ -35,8 +34,7 @@ The following is a JSON representation of the resource.
     "countryCode",
     "endpointType",
     "languageId",
-    "region",
-    "participantId"
+    "region"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -46,8 +44,7 @@ The following is a JSON representation of the resource.
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
   "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
-  "region": "String",
-  "participantId": "String"
+  "region": "String"
 }
 ```
 

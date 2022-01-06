@@ -1,7 +1,7 @@
 ---
 title: "credential resource type"
 description: "Indicates a single credential used for sign-in to an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "bharathramh92"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

@@ -2,7 +2,7 @@
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-groupsetting-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -96,6 +92,7 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 194
 
 {
   "displayName": "displayName-value",

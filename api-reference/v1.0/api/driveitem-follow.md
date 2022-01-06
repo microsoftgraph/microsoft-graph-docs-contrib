@@ -2,7 +2,7 @@
 author: learafa
 description: "Follow a driveItem."
 title: Follow drive item
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

@@ -1,10 +1,10 @@
 ---
 title: "Get privilegedApproval"
 description: "Retrieve the properties and relationships of privilegedapproval object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # Get privilegedApproval
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Retrieve the properties and relationships of privilegedapproval object.
 ## Permissions
@@ -76,10 +74,6 @@ GET https://graph.microsoft.com/beta/privilegedApproval/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedapproval-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -92,6 +86,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 193
 
 {
   "id": "id-value",

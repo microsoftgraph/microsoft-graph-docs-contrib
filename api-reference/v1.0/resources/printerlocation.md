@@ -2,7 +2,7 @@
 title: printerLocation resource type
 description: Represents the physical and hierarchical location of a printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # printerLocation resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents the physical and hierarchical location of a printer.
 

@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "Represents the column values in a listItem resource."
 ms.prod: ""
 doc_type: resourcePageType

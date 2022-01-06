@@ -1,7 +1,7 @@
 ---
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the groups in an organization, including but not limited to Microsoft 365 groups.
+List all the groups in an organization, including but not limited to Microsoft 365 groups. 
 
 This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
@@ -36,24 +36,28 @@ GET /groups
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-The `$search` query parameter supports tokenization only on the **displayName** and **description** fields and requires the **ConsistencyLevel** header. Fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
+You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
+values, as shown in the following example:
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/groups?$orderby=displayName
+```
+You can also use the `$count` and `$search` query parameters to limit the response. The `$search` query parameter supports tokenization only on the **displayName** and **description** fields. Other fields default to `$filter` behavior. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name | Description |
 |:---- |:----------- |
 | Authorization  | Bearer {token}. Required. |
-| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -93,10 +97,6 @@ GET https://graph.microsoft.com/beta/groups
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,7 +184,7 @@ Content-type: application/json
          "renewedDateTime":"2018-11-19T20:29:40Z",
          "resourceBehaviorOptions":[
          ],
-         "resourceProvisioningOptions":[
+         "resourceProvisioningOptions":[ 
          ],
          "securityEnabled":false,
          "theme":null,
@@ -200,12 +200,8 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
-
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_groups_withlicenseerrors_count"
 }-->
 ```msgraph-interactive
@@ -247,9 +243,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -282,12 +276,10 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -326,12 +318,10 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -371,12 +361,10 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -418,13 +406,12 @@ Content-type: application/json
 }
 ```
 
-### Example 7: List dynamic groups
+### Example 7: List dynamic groups, filtered by enabled membershipRuleProcessingState
 
 #### Request
 
-The following is an example of the request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `not` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following is an example of the request.
 
->**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -432,7 +419,7 @@ The following is an example of the request that filters by the **membershipRuleP
   "name": "get_enabled_dynamic_groups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'&$count=true&$select=id,membershipRule,membershipRuleProcessingState
+GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
@@ -448,10 +435,6 @@ GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and sec
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-enabled-dynamic-groups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-enabled-dynamic-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -472,19 +455,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState)",
-    "@odata.count": 1,
-    "value": [
-        {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b/Microsoft.DirectoryServices.Group",
-            "id": "e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b",
-            "membershipRule": "(user.userType -contains \"Guest\" and user.accountEnabled -eq true) or (user.city -eq \"Nairobi\")",
-            "membershipRuleProcessingState": "On"
-        }
-    ]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
+   "value":[
+      {
+         "id":"1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+         "membershipRule":"user.accountEnabled -eq false",
+         "membershipRuleProcessingState":"On",
+         "membershipRuleProcessingStatus":{
+            "status":"Succeeded",
+            "lastMembershipUpdated":"2020-09-14T00:00:00Z",
+            "errorMessage":null
+         }
+      }
+   ]
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

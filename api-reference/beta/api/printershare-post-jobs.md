@@ -2,7 +2,7 @@
 title: Create printJob for a printerShare
 description: Create a new printJob for a printerShare. 
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -127,6 +127,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 1065
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",

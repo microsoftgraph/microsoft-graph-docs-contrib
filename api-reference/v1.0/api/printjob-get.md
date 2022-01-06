@@ -2,13 +2,15 @@
 title: Get printJob
 description: Retrieve the properties and relationships of a print job.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Get printJob
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve the properties and relationships of a print job.
 

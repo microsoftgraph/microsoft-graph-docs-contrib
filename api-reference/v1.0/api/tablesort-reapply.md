@@ -2,7 +2,7 @@
 title: "TableSort: reapply"
 description: "Reapplies the current sorting parameters to the table."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "abheek-das"

@@ -2,7 +2,7 @@
 title: "userSettings resource type"
 description: "The current user settings for content discovery. "
 author: "jpettere"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "users"
 doc_type: resourcePageType
 ---

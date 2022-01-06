@@ -1,7 +1,7 @@
 ---
 title: "Assign appliesTo"
 description: "Assign a directoryObject to feature rollout."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -84,10 +84,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-featurerolloutpolicy-policies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

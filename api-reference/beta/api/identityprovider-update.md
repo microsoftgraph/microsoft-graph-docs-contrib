@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties of an identityProvider."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -95,6 +95,7 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 Content-type: application/json
+Content-length: 41
 
 {
   "clientSecret": "1111111111111"
@@ -115,10 +116,6 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,6 +148,7 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
 Content-type: application/json
+Content-length: 41
 
 {
   "responseType": "id_token"
@@ -171,10 +169,6 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-openidconnectprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-openidconnectprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

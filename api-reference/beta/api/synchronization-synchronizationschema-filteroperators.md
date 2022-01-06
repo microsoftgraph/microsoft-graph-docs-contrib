@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Get metadata for a list
 description: Return the metadata for a list.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -65,10 +65,6 @@ GET /sites/{site-id}/lists/{list-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-list-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -119,10 +115,6 @@ GET /sites/{site-id}/lists/{list-title}
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-list-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -171,10 +163,6 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-list-multi-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

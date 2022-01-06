@@ -1,7 +1,7 @@
 ---
 title: "List availableProviderTypes"
 description: "Retrieve all available identity provider types in the directory."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

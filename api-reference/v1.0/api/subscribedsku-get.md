@@ -1,7 +1,7 @@
 ---
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "SumitParikh"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

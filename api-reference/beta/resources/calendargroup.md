@@ -2,7 +2,7 @@
 title: "calendarGroup resource type"
 description: "A group of user calendars."
 author: "harini84"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

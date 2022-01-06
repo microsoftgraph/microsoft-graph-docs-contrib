@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1564
+Content-Length: 1496
 
 {
   "value": [
@@ -97,8 +97,7 @@ Content-Length: 1564
       "enableWhiteGlove": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ],
-      "managementServiceAppId": "Management Service App Id value"
+      ]
     }
   ]
 }

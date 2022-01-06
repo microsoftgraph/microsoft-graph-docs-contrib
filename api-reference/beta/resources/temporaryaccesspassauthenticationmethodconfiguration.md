@@ -2,7 +2,7 @@
 title: "temporaryAccessPassAuthenticationMethodConfiguration resource type"
 description: "Represents a Temporary Access Pass authentication methods policy."
 author: "inbarckms"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---

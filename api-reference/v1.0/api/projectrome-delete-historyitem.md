@@ -1,7 +1,7 @@
 ---
 title: "Delete a historyItem"
 description: "Delete an existing history item for an existing user activity."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType
@@ -64,10 +64,6 @@ PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{i
 ```
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

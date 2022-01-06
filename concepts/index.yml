@@ -87,7 +87,7 @@ tools:
       imageSrc: ./images/hub/icon01-sdk.svg
       url: https://docs.microsoft.com/graph/sdks/sdk-installation
     # Card
-    - title: Quick starts
+    - title: Quickstarts
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: https://developer.microsoft.com/graph/quick-start
     # Card
@@ -101,36 +101,32 @@ tools:
 
 additionalContent:
   sections:
-    - title: Tutorials and resources
+    - title: Guides and resources
       items:
         # Card
         - title: Learning paths
           links:
             - text: Microsoft Graph fundamentals
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/
-            - text: Build apps with Microsoft Graph – Associate
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-associate/
             - text: Explore Microsoft Graph scenarios for JavaScript development
               url: https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios
-            - text: Explore Microsoft Graph scenarios for ASP.NET Core development
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/             
             - text: Develop apps with Microsoft Graph Toolkit
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit             
+              url: https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit
         # Card
         - title: How-to
           links:
-            - text: "Connectors: Build your first custom connector"
-              url: https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart  
-            - text: "Microsoft Search: Search content in OneDrive and Sharepoint"
+            - text: Search content in OneDrive and Sharepoint
               url: https://docs.microsoft.com/graph/search-concept-files
-            - text: "Identity: Manage access to resources"
-              url: https://docs.microsoft.com/en-us/graph/tutorial-access-package-api
-            - text: "Outlook: Attach large files to a message or event"
+            - text: Share or delegate a calendar
+              url: https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar
+            - text: Propose new meeting times
+              url: https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals
+            - text: Attach large files to a message or event
               url: https://docs.microsoft.com/graph/outlook-large-attachments
-            - text: "Outlook: Get MIME content of a message"
+            - text: Get MIME content of a message
               url: https://docs.microsoft.com/graph/outlook-get-mime-message
-            - text: "More tutorials..."
-              url: https://docs.microsoft.com/en-us/graph/tutorials
+            - text: Schedule a Windows update deployment
+              url: https://docs.microsoft.com/graph/windowsupdates-schedule-deployment
         # Card
         - title: Resources and community
           links:
@@ -140,8 +136,6 @@ additionalContent:
               url: ./known-issues.md
             - text: Support
               url: https://developer.microsoft.com/graph/support
-            - text: Microsoft Graph on Q&A
-              url: https://docs.microsoft.com/en-us/answers/products/graph
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts

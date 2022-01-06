@@ -2,7 +2,7 @@
 title: "identityApiConnector resource type"
 description: "Represents API connectors in an Azure Active Directory tenant."
 author: "nickgmicrosoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

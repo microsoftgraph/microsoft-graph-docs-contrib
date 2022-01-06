@@ -1,7 +1,7 @@
 ---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType
@@ -53,6 +53,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/planner/tasks
 Content-type: application/json
+Content-length: 285
 
 {
   "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
@@ -74,10 +75,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannertask-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-plannertask-from-planner-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
@@ -91,6 +88,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 677
 
 {
   "createdBy": {

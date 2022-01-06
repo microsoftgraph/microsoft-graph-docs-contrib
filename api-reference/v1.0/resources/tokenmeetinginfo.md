@@ -2,7 +2,7 @@
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

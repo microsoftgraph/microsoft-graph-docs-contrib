@@ -1,7 +1,7 @@
 ---
 title: "internetMessageHeader resource type"
 description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "abheek-das"

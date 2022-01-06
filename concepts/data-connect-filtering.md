@@ -2,7 +2,7 @@
 title: "User selection and filtering capabilities in Microsoft Graph Data Connect"
 description: "Describes how to use Microsoft Graph Data Connect to select users to extract data for and filter the data returned."
 author: "fercobo-msft"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "data-connect"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "List members"
 description: "Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/education/classes/11016/members
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-members-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -89,6 +85,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 593
 
 {
   "value": [

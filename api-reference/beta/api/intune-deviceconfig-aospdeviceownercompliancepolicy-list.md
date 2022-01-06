@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 870
 
 {
   "value": [
@@ -78,7 +78,6 @@ Content-Length: 917
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
-      "securityBlockJailbrokenDevices": true,
       "passwordRequired": true,
       "passwordRequiredType": "required",
       "passwordMinutesOfInactivityBeforeLock": 5,

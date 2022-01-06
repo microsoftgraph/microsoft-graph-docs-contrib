@@ -1,7 +1,7 @@
 ---
 title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "apiPageType"
@@ -94,10 +94,6 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-threatassessmentrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

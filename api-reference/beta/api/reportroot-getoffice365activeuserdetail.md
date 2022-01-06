@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActiveUserDetail"
 description: "Get details about Microsoft 365 active users."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

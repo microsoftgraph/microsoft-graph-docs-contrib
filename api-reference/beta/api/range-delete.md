@@ -2,7 +2,7 @@
 title: "Range: delete"
 description: "Deletes the cells associated with the range."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,6 +64,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
+Content-length: 28
 
 {
   "shift": "shift-value"

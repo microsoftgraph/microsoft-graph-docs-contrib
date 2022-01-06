@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPermissionGrantConditionSet *permissionGrantConditionSet = [[MSGraphPermissionGrantConditionSet alloc] init];
 [permissionGrantConditionSet setPermissionType: [MSGraphPermissionType delegated]];
-[permissionGrantConditionSet setCertifiedClientApplicationsOnly: true];
+[permissionGrantConditionSet setClientApplicationsFromVerifiedPublisherOnly: true];
 
 NSError *error;
 NSData *permissionGrantConditionSetData = [permissionGrantConditionSet getSerializedDataWithError:&error];

@@ -1,7 +1,7 @@
 ---
 title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
@@ -86,6 +86,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 45
 
 {
   "locked": true,

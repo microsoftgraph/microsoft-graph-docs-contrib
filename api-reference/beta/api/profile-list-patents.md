@@ -1,7 +1,7 @@
 ---
 title: "List patents"
 description: "Get the itempatents from the patents navigation property."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/me/profile/patents
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itempatents-from-profile-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-itempatents-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

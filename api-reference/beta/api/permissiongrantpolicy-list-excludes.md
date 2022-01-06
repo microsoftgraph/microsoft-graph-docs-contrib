@@ -1,7 +1,7 @@
 ---
 title: "List excludes collection of permissionGrantPolicy"
 description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is excluded in a permission grant policy."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the **excludes** condition sets of the built-in permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure Active Directory Graph.
+The following is an example of the request to retrieve the **excludes** condition sets of the built-on permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure AD Graph.
 
 
 # [HTTP](#tab/http)
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,8 +113,7 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false
     },
     {
       "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
@@ -129,8 +124,7 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false
     }
   ]
 }

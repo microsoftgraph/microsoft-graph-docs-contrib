@@ -2,7 +2,7 @@
 title: "List emailAuthenticationMethods"
 description: "Get a list of the emailAuthenticationMethod objects and their properties."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -17,28 +17,18 @@ Retrieve a list of a user's [email Authentication Method](../resources/emailauth
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+|Permission type|Permissions acting on self (from least to most privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not applicable. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global administrator
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -95,10 +85,6 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 [!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethod-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-emailauthenticationmethod-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -116,6 +102,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 491
 
 {
   "value": [

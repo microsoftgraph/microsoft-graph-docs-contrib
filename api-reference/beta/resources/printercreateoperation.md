@@ -2,7 +2,7 @@
 title: printerCreateOperation resource type
 description: Represents a long-running printer registration operation. Derived from printOperation.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

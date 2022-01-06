@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site."
 ms.prod: ""
 doc_type: resourcePageType

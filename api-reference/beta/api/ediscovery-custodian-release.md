@@ -2,7 +2,7 @@
 title: "custodian: release"
 description: "Release a custodian from a case."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -80,10 +80,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-release-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/custodian-release-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

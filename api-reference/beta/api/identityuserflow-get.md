@@ -1,7 +1,7 @@
 ---
-title: "Get userFlow (deprecated)"
+title: "Get userFlow"
 description: "Retrieve the properties and relationships of userflow object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -12,8 +12,6 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Retrieve the properties and associations for an [userFlow](../resources/identityuserflow.md) object.
 
@@ -79,10 +77,6 @@ GET https://graph.microsoft.com/beta/identity/userFlows/B2C_1_Pol1
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityuserflow-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-identityuserflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

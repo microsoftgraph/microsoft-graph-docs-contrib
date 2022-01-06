@@ -2,7 +2,7 @@
 title: "Use the cloud communications API to create or join online meetings"
 description: "You'll have the flexibility to create a meeting that takes place in the future, or instantaneously"
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 

@@ -2,8 +2,8 @@
 title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
-ms.localizationpriority: medium
-ms.prod: "taxonomy"
+localization_priority: Normal
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
@@ -67,8 +67,9 @@ If successful, this method returns a `201 Created` response code and a [term](..
 } -->
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
 Content-Type: application/json
+Content-length: 366
 
 {
   "labels": [
@@ -94,10 +95,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-term-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-term-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

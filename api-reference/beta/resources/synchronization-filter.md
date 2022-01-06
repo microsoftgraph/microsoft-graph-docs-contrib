@@ -1,7 +1,7 @@
 ---
 title: "filter resource type"
 description: "Determines which objects should be provisioned to the application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

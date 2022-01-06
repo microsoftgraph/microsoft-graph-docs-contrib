@@ -8,28 +8,17 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var schemaExtension = new SchemaExtension
 {
-	Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
 	Properties = new List<ExtensionSchemaProperty>()
 	{
 		new ExtensionSchemaProperty
 		{
-			Name = "courseId",
-			Type = "Integer"
+			Name = "new-name-value",
+			Type = "new-type-value"
 		},
 		new ExtensionSchemaProperty
 		{
-			Name = "courseName",
-			Type = "String"
-		},
-		new ExtensionSchemaProperty
-		{
-			Name = "courseType",
-			Type = "String"
-		},
-		new ExtensionSchemaProperty
-		{
-			Name = "courseSupervisors",
-			Type = "String"
+			Name = "additional-name-value",
+			Type = "additional-type-value"
 		}
 	}
 };

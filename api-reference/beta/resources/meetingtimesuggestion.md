@@ -1,7 +1,7 @@
 ---
 title: "meetingTimeSuggestion resource type"
 description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType

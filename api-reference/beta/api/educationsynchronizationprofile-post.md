@@ -2,7 +2,7 @@
 title: "Create an educationSynchronizationProfile"
 description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -117,24 +117,12 @@ Content-type: application/json
     "dataProvider": {
         "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
-            "school": {
-                "isSyncDeferred": false,
-                "allowDisplayNameUpdate": false
-            },
-            "section": {
-                "optionalPropertiesToSync": [
-                    "Term Name",
-                    "Course Number",
-                    "Periods"
-                ],
-                "isSyncDeferred": false,
-                "allowDisplayNameUpdate": false
-            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
+                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -148,15 +136,19 @@ Content-type: application/json
                     "Title",
                     "Qualification"
                 ],
+                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
+                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
+                "optionalPropertiesToSync": [],
+                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }

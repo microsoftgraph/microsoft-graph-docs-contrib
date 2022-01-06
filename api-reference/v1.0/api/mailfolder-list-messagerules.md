@@ -1,7 +1,7 @@
 ---
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's Inbox."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-messagerules-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-messagerules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

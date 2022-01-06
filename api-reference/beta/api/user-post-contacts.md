@@ -1,13 +1,13 @@
 ---
-title: "Create contact"
+title: "Create Contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create contact
+# Create Contact
 
 Namespace: microsoft.graph
 
@@ -45,8 +45,8 @@ In the request body, supply a JSON representation of [contact](../resources/cont
 If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
+##### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,14 +97,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
+
+##### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

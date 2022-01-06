@@ -2,7 +2,7 @@
 title: "List sourceCollections"
 description: "Get the list of sourceCollections resources from a case object."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/source
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sourcecollection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-sourcecollection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

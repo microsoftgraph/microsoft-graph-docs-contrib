@@ -18,8 +18,7 @@ const answer = {
   },
   acceptedModalities: [
     'audio'
-  ],
-  participantCapacity: 200
+  ]
 };
 
 await client.api('/communications/calls/{id}/answer')

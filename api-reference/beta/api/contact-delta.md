@@ -1,7 +1,7 @@
 ---
 title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -126,6 +126,7 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 337
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",

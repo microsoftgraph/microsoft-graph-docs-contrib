@@ -2,7 +2,7 @@
 title: "Get presence"
 description: "Get a user's presence information."
 author: "mkhribech"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/me/presence
 [!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-your-presence-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -139,10 +135,6 @@ GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,10 +194,6 @@ GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "Get contentType"
 description: "Get a content type in a site or a list."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contenttype-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

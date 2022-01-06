@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"
 description: "Get the number of users by device type."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

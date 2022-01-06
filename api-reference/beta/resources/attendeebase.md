@@ -1,7 +1,7 @@
 ---
 title: "attendeeBase resource type"
 description: "The type of attendee."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "harini84"

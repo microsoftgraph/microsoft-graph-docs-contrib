@@ -1,7 +1,7 @@
 ---
 title: "Create identityProvider"
 description: "Create a new identityProvider"
-ms.localizationpriority: high
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "policyBase resource type"
 description: "Represents an abstract base type for policy types to inherit from."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for policy types to inherit from. Inherits from [directoryObject](directoryobject.md).
+Represents an abstract base type for policy types to inherit from.
 
 ## Methods
 
@@ -23,9 +23,9 @@ None
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Unique identifier for this policy. Read-only. Inherited from [directoryObject](directoryobject.md).|
-|description|String| Description for this policy. Required.|
-|displayName|String| Display name for this policy. Required.|
+|id|String| Unique identifier for this policy. Read-only.|
+|description|String| Description for this policy.|
+|displayName|String| Display name for this policy. |
 
 ## Relationships
 

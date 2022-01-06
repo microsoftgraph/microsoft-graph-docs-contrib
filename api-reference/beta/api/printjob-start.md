@@ -2,7 +2,7 @@
 title: "printJob: start"
 description: Submits the print job to the associated printer or printerShare. It will be printed once any existing pending jobs are completed, aborted or canceled.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List user devices"
 description: "Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to send a command to your device."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -105,6 +105,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 140
 
 {
   "value": [

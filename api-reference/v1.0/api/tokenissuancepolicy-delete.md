@@ -1,7 +1,7 @@
 ---
 title: "Delete tokenIssuancePolicy"
 description: "Delete tokenIssuancePolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -77,10 +77,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tokenissuancepolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-tokenissuancepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

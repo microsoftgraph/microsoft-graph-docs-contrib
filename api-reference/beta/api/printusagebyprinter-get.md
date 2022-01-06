@@ -2,7 +2,7 @@
 title: Get printUsageByPrinter
 description: Retrieve a printer's usage summary for a particular time period.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 ms.date: 2/4/2020
 doc_type: apiPageType
@@ -92,6 +92,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 269
 
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

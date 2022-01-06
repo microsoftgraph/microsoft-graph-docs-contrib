@@ -1,10 +1,10 @@
 ---
 title: "Create privilegedApproval"
 description: "Use this API to create a new privilegedApproval."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # Create privilegedApproval
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Use this API to create a new privilegedApproval.
 ## Permissions
@@ -58,6 +56,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedApproval
 Content-type: application/json
+Content-length: 180
 
 {
   "userId": "userId-value",
@@ -83,10 +82,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-privilegedapproval-from-privilegedapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-privilegedapproval-from-privilegedapproval-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
@@ -100,6 +95,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 200
 
 {
   "id": "id-value",

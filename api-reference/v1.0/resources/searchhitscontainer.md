@@ -1,7 +1,7 @@
 ---
 title: "searchHitsContainer resource type"
 description: "Represent the list of search results."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

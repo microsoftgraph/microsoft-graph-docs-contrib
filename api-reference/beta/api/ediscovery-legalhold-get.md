@@ -1,7 +1,7 @@
 ---
 title: "Get legalHold"
 description: "Read the properties and relationships of a legalHold object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: apiPageType
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-legalhold-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-legalhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

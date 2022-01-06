@@ -2,13 +2,15 @@
 title: "printer: restoreFactoryDefaults"
 description: Reset a printer's default settings.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # printer: restoreFactoryDefaults
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Restore a [printer](../resources/printer.md)'s default settings to the values specified by the manufacturer.
 
@@ -72,10 +74,6 @@ POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/restoreFactoryD
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/printer-restorefactorydefaults-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/printer-restorefactorydefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

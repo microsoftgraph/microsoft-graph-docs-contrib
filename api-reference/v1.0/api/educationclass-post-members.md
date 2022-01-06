@@ -2,7 +2,7 @@
 title: "Add a student"
 description: "Add a member to a class."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add an [educationUser](../resources/educationuser.md) member to an [educationClass](../resources/educationclass.md).
+Add a member to a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +41,7 @@ In the request body, supply a JSON representation of an [educationUser](../resou
 If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 
 ## Example
-### Request
+##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -52,6 +52,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
 Content-type: application/json
+Content-length: 56
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"
@@ -73,14 +74,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from-educationclass-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-educationuser-from-educationclass-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-### Response
+##### Response
 The following is an example of the response. 
 
 

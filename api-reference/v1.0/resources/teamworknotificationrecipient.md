@@ -2,7 +2,7 @@
 title: "teamworkNotificationRecipient resource type"
 description: Represents the recipient of a notification sent in a Microsoft Teams activity feed.
 author: eddie-lee-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---

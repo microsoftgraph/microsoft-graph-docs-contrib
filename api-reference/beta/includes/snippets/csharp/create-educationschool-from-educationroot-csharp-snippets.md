@@ -10,6 +10,7 @@ var educationSchool = new EducationSchool
 {
 	DisplayName = "Fabrikam High School",
 	Description = "Magnate school for the arts. Los Angeles School District",
+	Status = "String",
 	ExternalSource = EducationExternalSource.Sis,
 	PrincipalEmail = "AmyR@fabrikam.com",
 	PrincipalName = "Amy Roebuck",

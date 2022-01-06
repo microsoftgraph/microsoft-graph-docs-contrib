@@ -2,7 +2,7 @@
 title: "Update mailfolder"
 description: "Update the properties of mailfolder object."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -55,6 +55,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 Content-type: application/json
+Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -76,10 +77,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-mailfolder-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -92,6 +89,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 179
 
 {
   "displayName": "displayName-value",

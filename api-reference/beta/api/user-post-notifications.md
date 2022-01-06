@@ -1,18 +1,16 @@
 ---
-title: "Create and send a notification (deprecated)"
+title: "Create and send a notification"
 description: "Create and send a notification targeting a user through Microsoft Graph."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "notifications"
 doc_type: apiPageType
 author: "merzink"
 ---
 
-# Create and send a notification (deprecated)
+# Create and send a notification
 
 Namespace: microsoft.graph
-
-> [!IMPORTANT]
-> The Microsoft Graph notifications API is deprecated and will stop returning data by the end of January 2022. For an alternative notification experience, see [Microsoft Azure Notification Hubs](/azure/notification-hubs), and [see this blog post](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) for more information.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
@@ -52,7 +50,7 @@ If successful, this method returns a `201 Created` response code that indicates 
 
 The following table lists the possible error and response codes that can be returned.
 
-|Error code             | Descrition                              |
+|Error code             | Descrition             		         |
 |:-----------------------------------|:----------------------------------------------------------|
 |HttpStatusCode.BadRequest           | Body is an array (multiple notifications is not supported).|
 |HttpStatusCode.BadRequest           | Body doesn't match the contract for the API.               |
@@ -62,9 +60,9 @@ The following table lists the possible error and response codes that can be retu
 |HttpStatusCode.UnsupportedMediaType | The header Content-Encoding is present and has compression algorithm values other than `Deflate` or `Gzip`.  |
 |HttpStatusCode.BadRequest           | Invalid payload.                                           |
 |HttpStatusCode.Forbidden            | Caller is not authorized to act on behalf of the user or send notification to the user.                         |
-|HttpStatusCode.Unauthorized         |    Request body contains invalid activity data types.        |
-|HttpStatusCode.OK                   |     Activity successfully created.                            |
-|HttpStatusCode.NotAcceptable        |    Request has been throttled or the server is busy.    |
+|HttpStatusCode.Unauthorized         |	Request body contains invalid activity data types.        |
+|HttpStatusCode.OK                   | 	Activity successfully created.                            |
+|HttpStatusCode.NotAcceptable        |	Request has been throttled or the server is busy.    |
 
 
 ## Example
@@ -87,11 +85,11 @@ Content-type: application/json
     },
     "targetPolicy": {
         "platformTypes": [
-    "windows",
-    "ios",
-    "android"
+	"windows",
+	"ios",
+	"android"
         ]
-    },
+	},
     "priority": "High",
     "groupName": "TestGroup",
     "displayTimeToLive": "60"

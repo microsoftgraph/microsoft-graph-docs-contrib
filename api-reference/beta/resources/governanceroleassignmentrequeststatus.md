@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleAssignmentRequestStatus resource type"
 description: "Represents the status of the governanceRoleAssignmentRequest."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # governanceRoleAssignmentRequestStatus resource type

@@ -2,7 +2,7 @@
 title: "case: close"
 description: "Close an eDiscovery case."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -84,10 +84,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/case-close-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-close-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/case-close-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

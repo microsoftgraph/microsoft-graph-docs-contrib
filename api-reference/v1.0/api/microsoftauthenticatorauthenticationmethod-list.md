@@ -2,7 +2,7 @@
 title: "List microsoftAuthenticatorAuthenticationMethods"
 description: "Get a list of the microsoftAuthenticatorAuthenticationMethod objects and their properties."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+* Privileged authentication admin
+* Authentication admin (only sees masked phone numbers)
 
 ## HTTP request
 
@@ -94,10 +94,6 @@ GET https://graph.microsoft.com/v1.0/users/sandeep@contoso.com/authentication/mi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-microsoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

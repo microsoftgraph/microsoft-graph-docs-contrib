@@ -1,13 +1,13 @@
 ---
-title: "Delete appRoleAssignment"
+title: "Delete an appRoleAssignment from a group"
 description: "Delete an appRoleAssignment that has been granted to a group."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"
 ---
 
-# Delete appRoleAssignment
+# Delete an appRoleAssignment granted to a group
 
 Namespace: microsoft.graph
 
@@ -34,13 +34,13 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend you delete app role assignments using the [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md) method which deletes through the **appRoleAssignedTo** relationship of the _resource_ service principal, instead of this method.
+> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -80,10 +80,6 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-delete-approleassignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

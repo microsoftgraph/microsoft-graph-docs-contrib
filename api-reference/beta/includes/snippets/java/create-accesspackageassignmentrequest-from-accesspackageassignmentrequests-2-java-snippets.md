@@ -16,13 +16,13 @@ accessPackageAssignmentRequest.accessPackageAssignment = accessPackageAssignment
 LinkedList<AccessPackageAnswer> answersList = new LinkedList<AccessPackageAnswer>();
 AccessPackageAnswerString answers = new AccessPackageAnswerString();
 answers.value = "Arizona";
-AccessPackageMultipleChoiceQuestion answeredQuestion = new AccessPackageMultipleChoiceQuestion();
+AccessPackageQuestion answeredQuestion = new AccessPackageQuestion();
 answeredQuestion.id = "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF";
 answers.answeredQuestion = answeredQuestion;
 answersList.add(answers);
 AccessPackageAnswerString answers1 = new AccessPackageAnswerString();
 answers1.value = "Need access to marketing campaign material";
-AccessPackageTextInputQuestion answeredQuestion1 = new AccessPackageTextInputQuestion();
+AccessPackageQuestion answeredQuestion1 = new AccessPackageQuestion();
 answeredQuestion1.id = "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA";
 answers1.answeredQuestion = answeredQuestion1;
 answersList.add(answers1);

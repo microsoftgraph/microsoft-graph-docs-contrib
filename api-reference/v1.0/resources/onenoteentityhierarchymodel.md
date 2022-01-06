@@ -2,7 +2,7 @@
 title: "onenoteEntityHierarchyModel resource"
 description: "This is a base type for OneNote entities."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: resourcePageType
 ---

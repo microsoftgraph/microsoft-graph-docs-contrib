@@ -1,7 +1,7 @@
 ---
 title: "workbookFilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
 author: "ruoyingl"

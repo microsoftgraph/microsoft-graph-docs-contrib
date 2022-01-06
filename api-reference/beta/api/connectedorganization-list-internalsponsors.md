@@ -2,7 +2,7 @@
 title: "List internalSponsors"
 description: "Retrieve a list of connectedOrganization's internalSponsors."
 author: "markwahl-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/connectedorganization-get-internalsponsors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/connectedorganization-get-internalsponsors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

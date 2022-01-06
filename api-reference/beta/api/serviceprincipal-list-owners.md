@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipals: List owners"
 description: "Retrieve a list of owners of the servicePrincipal."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -74,15 +74,11 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-owners-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 ### Response
-Here is an example of the response.
+Here is an example of the response. 
 
 > Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -95,6 +91,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 55
 
 {
   "value": [

@@ -1,7 +1,7 @@
 ---
 title: "segment resource type"
 description: "The segment type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

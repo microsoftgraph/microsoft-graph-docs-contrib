@@ -2,7 +2,7 @@
 title: "plannerBucket resource type"
 description: ") for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: resourcePageType
 ---

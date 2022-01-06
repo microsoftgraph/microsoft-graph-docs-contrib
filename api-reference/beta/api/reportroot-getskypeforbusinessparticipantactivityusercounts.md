@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSkypeForBusinessParticipantActivityUserCounts"
 description: "Get usage trends on the number of unique users and type of conference sessions that users from your organization participated in. Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - 3rd party."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[skypeForBusinessParticipantActivityUserCounts](../resources/skypeforbusinessparticipantactivityusercounts.md)** object in the response body.
 
 ## Example
 
@@ -152,7 +152,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.skypeForBusinessParticipantActivityUserCounts"
 } -->
 
 ```http
@@ -161,6 +161,7 @@ Content-Type: application/json
 Content-Length: 301
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.skypeForBusinessParticipantActivityUserCounts)", 
   "value": [
     {
       "im": 137, 

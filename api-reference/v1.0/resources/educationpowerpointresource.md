@@ -1,7 +1,7 @@
 ---
 title: "educationPowerPointResource resource type"
 description: "A subclass of educationResource."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType

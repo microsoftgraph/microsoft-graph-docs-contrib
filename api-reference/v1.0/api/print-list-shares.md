@@ -2,13 +2,15 @@
 title: List shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List shares
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of **printerShares**.
 
@@ -82,10 +84,6 @@ GET https://graph.microsoft.com/v1.0/print/shares
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printershare-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-printershare-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

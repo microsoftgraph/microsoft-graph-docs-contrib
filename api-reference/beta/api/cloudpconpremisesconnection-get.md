@@ -2,7 +2,7 @@
 title: "Get cloudPcOnPremisesConnection"
 description: "Read the properties and relationships of the cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -87,10 +88,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -109,6 +106,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "value": {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
@@ -121,6 +119,7 @@ Content-Type: application/json
     "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
     "healthCheckStatus": "running"
+  }
 }
 ```
 
@@ -155,10 +154,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-withdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-withdetails-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -177,6 +172,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "value": {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
@@ -229,5 +225,6 @@ Content-Type: application/json
       ]
     },
     "inUse": false
+  }
 }
 ```

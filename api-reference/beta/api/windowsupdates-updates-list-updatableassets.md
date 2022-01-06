@@ -2,7 +2,7 @@
 title: "List updatableAssets"
 description: "Get a list of updatableAsset objects and their properties."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -105,6 +101,10 @@ Content-Type: application/json
 
 {
   "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
+      "id": "5c55730b-730b-5c55-0b73-555c0b73555c"
+    },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",

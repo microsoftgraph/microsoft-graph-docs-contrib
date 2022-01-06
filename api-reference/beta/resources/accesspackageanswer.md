@@ -2,7 +2,7 @@
 title: "accessPackageAnswer resource type"
 description:  "The complex type for answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
 author: "markwahl-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

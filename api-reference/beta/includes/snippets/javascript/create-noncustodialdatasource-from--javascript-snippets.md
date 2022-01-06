@@ -11,10 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const noncustodialDataSource = {
-    '@odata.id': 'https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246'
+    applyHoldToSource: true,
+    dataSource: {
+        '@odata.type': 'microsoft.graph.ediscovery.userSource',
+        email: 'adelev@contoso.com'
+    }
 };
 
-await client.api('/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/sourceCollections/12aab1671c834213a84ba219c06f4c5a/noncustodialSources/$ref')
+await client.api('/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources')
 	.version('beta')
 	.post(noncustodialDataSource);
 

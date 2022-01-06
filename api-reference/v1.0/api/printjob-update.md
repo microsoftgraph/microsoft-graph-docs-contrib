@@ -2,13 +2,15 @@
 title: Update printJob
 description: Update print job
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Update printJob
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update a [print job](../resources/printjob.md). Only the **configuration** property can be updated.
 
@@ -63,6 +65,7 @@ If successful, this method returns a `200 OK` response code with an updated [pri
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
+Content-length: 376
 
 {
   "configuration": {

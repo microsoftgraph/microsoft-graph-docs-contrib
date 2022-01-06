@@ -3,7 +3,7 @@ author: daspek
 description: "The ItemActivity resource provides information about activities that took place on an item or within a container."
 ms.date: 09/14/2017
 title: ItemActivity
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

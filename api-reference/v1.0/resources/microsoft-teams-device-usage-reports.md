@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Teams device usage reports"
 description: "Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType

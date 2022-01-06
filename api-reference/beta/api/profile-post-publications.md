@@ -1,7 +1,7 @@
 ---
 title: "Create publications"
 description: "Create a new publications object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people" 
 doc_type: apiPageType
@@ -75,6 +75,7 @@ If successful, this method returns a `201 Created` response code and an [itemPub
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/publications
 Content-Type: application/json
+Content-length: 497
 
 {
   "description": "One persons journey to the top of the branding management field.",
@@ -99,10 +100,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itempublication-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-itempublication-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

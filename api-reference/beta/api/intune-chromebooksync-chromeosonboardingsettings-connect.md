@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |ownerUserPrincipalName|String|Not yet documented|
-|ownerAccessToken|String|Not yet documented|
+|serviceAccountCredentials|String|Not yet documented|
 
 
 
@@ -64,11 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/chromeOSOnboardingSettings/connect
 
 Content-type: application/json
-Content-length: 118
+Content-length: 136
 
 {
   "ownerUserPrincipalName": "Owner User Principal Name value",
-  "ownerAccessToken": "Owner Access Token value"
+  "serviceAccountCredentials": "Service Account Credentials value"
 }
 ```
 

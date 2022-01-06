@@ -1,7 +1,7 @@
 ---
 title: "callActivityStatistics resource type"
 description: "Represents information about call activities for users."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

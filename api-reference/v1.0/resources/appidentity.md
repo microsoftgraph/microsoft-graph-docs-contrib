@@ -1,7 +1,7 @@
 ---
 title: "appIdentity resource type"
 description: "Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the directoryAudit API"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

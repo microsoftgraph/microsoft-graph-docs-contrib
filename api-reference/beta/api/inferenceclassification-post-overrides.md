@@ -1,7 +1,7 @@
 ---
 title: "Create inferenceClassificationOverride"
 description: "Create a Focused Inbox override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "abheek-das"
 ms.prod: ""
@@ -85,10 +85,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-inferenceclassificationoverride-from-inferenceclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

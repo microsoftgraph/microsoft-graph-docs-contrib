@@ -1,7 +1,7 @@
 ---
 title: "patchContentCommand resource type"
 description: "The changes to make to a OneNote page in a PATCH request."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType

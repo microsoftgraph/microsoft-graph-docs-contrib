@@ -1,7 +1,7 @@
 ---
 title: "List offerShiftRequest"
 description: "Retrieve the properties and relationships of all offerShiftRequest objects in a team."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-offershiftrequest-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-offershiftrequest-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

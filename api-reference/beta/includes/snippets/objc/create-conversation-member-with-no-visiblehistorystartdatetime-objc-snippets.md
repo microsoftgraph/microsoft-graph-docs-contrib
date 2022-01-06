@@ -12,9 +12,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConversationMember *conversationMember = [[MSGraphConversationMember alloc] init];
-NSMutableArray *rolesList = [[NSMutableArray alloc] init];
-[rolesList addObject: @"owner"];
-[conversationMember setRoles:rolesList];
 
 NSError *error;
 NSData *conversationMemberData = [conversationMember getSerializedDataWithError:&error];

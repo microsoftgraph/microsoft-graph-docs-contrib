@@ -2,7 +2,7 @@
 title: "Delete directoryObject"
 description: "Deletes a directoryObject."
 author: "keylimesoda"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 Deletes a directoryObject.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
@@ -25,20 +24,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryObjects/{id}
 
 ```
 ## Request headers
-
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
@@ -46,8 +42,7 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-
-### Request
+##### Request
 
 
 # [HTTP](#tab/http)
@@ -74,13 +69,9 @@ DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response",

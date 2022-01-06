@@ -1,7 +1,7 @@
 ---
 title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: DarrelMiller
 ---
 
@@ -157,7 +157,7 @@ await pageIterator.IterateAsync();
 while (pageIterator.State != PagingState.Complete)
 {
     Console.WriteLine("Iteration paused for 5 seconds...");
-    await Task.Delay(5000);
+    Thread.Sleep(5000);
     // Reset count
     count = 0;
     await pageIterator.ResumeAsync();

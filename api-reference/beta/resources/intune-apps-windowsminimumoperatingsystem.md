@@ -32,7 +32,6 @@ The minimum operating system required for a Windows mobile app.
 |v10_1909|Boolean|Windows 10 1909 or later.|
 |v10_2004|Boolean|Windows 10 2004 or later.|
 |v10_2H20|Boolean|Windows 10 2H20 or later.|
-|v10_21H1|Boolean|Windows 10 21H1 or later.|
 
 ## Relationships
 None
@@ -58,8 +57,7 @@ Here is a JSON representation of the resource.
   "v10_1903": true,
   "v10_1909": true,
   "v10_2004": true,
-  "v10_2H20": true,
-  "v10_21H1": true
+  "v10_2H20": true
 }
 ```
 

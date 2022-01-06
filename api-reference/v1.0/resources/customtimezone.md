@@ -1,7 +1,7 @@
 ---
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType

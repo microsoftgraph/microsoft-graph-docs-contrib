@@ -11,7 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const claimsMappingPolicy = {
-    displayName: 'UpdateClaimsPolicy'
+  definition: [
+    'definition-value'
+  ],
+  displayName: 'displayName-value',
+  isOrganizationDefault: true
 };
 
 await client.api('/policies/claimsMappingPolicies/{id}')

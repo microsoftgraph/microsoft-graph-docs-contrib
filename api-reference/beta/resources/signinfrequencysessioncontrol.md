@@ -1,7 +1,7 @@
 ---
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

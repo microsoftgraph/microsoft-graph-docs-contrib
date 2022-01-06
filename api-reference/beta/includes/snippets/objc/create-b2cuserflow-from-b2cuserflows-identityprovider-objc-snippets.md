@@ -9,7 +9,6 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identity/b2cUserFlows"]]];
 [urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')" forHTTPHeaderField:@"Location"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphB2cIdentityUserFlow *b2cIdentityUserFlow = [[MSGraphB2cIdentityUserFlow alloc] init];
@@ -19,6 +18,8 @@ MSGraphB2cIdentityUserFlow *b2cIdentityUserFlow = [[MSGraphB2cIdentityUserFlow a
 NSMutableArray *identityProvidersList = [[NSMutableArray alloc] init];
 MSGraphIdentityProvider *identityProviders = [[MSGraphIdentityProvider alloc] init];
 [identityProviders setId:@"Facebook-OAuth"];
+[identityProviders setType:@"Facebook"];
+[identityProviders setName:@"Facebook"];
 [identityProvidersList addObject: identityProviders];
 [b2cIdentityUserFlow setIdentityProviders:identityProvidersList];
 

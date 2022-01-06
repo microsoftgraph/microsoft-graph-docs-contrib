@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const invitation = {
-  invitedUserEmailAddress: 'admin@fabrikam.com',
+  invitedUserEmailAddress: 'yyy@test.com',
   inviteRedirectUrl: 'https://myapp.contoso.com'
 };
 

@@ -1,7 +1,7 @@
 ---
 title: "To Do component in the Microsoft Graph Toolkit"
 description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: shweaver-MSFT
 ---
 
@@ -94,11 +94,12 @@ To learn more, see [styling components](https://docs.microsoft.com/graph/toolkit
 
 The following events are fired from the component.
 
-Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
-------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`taskClick` | Fires when the user clicks or taps on a task | Selected [task](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | No | No | No
-
-For more information about handling events, see [events](../customize-components/events.md).
+| Event | Detail | Description |
+| --- | --- | --- |
+| taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
+| taskChanged | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
+| taskClick | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
+| taskRemoved | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
 
 ## Templates
 

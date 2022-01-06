@@ -2,7 +2,7 @@
 title: "WorksheetCollection: add"
 description: ".activate() on it."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookWorksheet](../resources/worksheet.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -58,6 +58,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/add
 Content-type: application/json
+Content-length: 26
 
 {
   "name": "name-value"
@@ -92,6 +93,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 100
 
 {
   "id": "id-value",

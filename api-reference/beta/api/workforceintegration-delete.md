@@ -1,7 +1,7 @@
 ---
 title: "Delete workforceIntegration"
 description: "Delete an instance of a workforceIntegration."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -76,10 +76,6 @@ DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforc
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-workforceintegration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

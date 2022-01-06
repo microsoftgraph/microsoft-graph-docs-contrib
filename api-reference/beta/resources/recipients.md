@@ -1,7 +1,7 @@
 ---
 title: "recipients resource type"
 description: "Here is a JSON representation of the resource"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "MSGraphDocsVteam"

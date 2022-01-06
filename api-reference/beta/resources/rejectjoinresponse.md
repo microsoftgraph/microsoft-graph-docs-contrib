@@ -2,7 +2,7 @@
 title: "rejectJoinResponse resource type"
 description: "Contains a response to reject a participant who tries to join the meeting."
 author: "yizhenww"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

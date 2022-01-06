@@ -2,7 +2,7 @@
 title: "Remove a scopedRoleMember"
 description: "Remove a scoped-role member from an adminstrative unit."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -69,10 +69,6 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembe
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-scopedrolemember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-scopedrolemember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

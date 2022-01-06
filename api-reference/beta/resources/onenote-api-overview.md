@@ -1,7 +1,7 @@
 ---
 title: "Use the OneNote REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's OneNote notebooks, sections, and pages in a personal or organization account. With the appropriate delegated or application permissions, your app can access the OneNote data of the signed-in user or any user in a tenant. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: conceptualPageType

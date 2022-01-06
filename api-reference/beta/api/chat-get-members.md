@@ -2,7 +2,7 @@
 title: "Get conversationMember in a chat"
 description: "Retrieve a member of a chat."
 author: "bhartono"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 [!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-conversation-member-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -103,7 +99,7 @@ GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@t
 
 Here is an example of the response.
 
-<!--
+<!-- 
 {
   "blockType": "response",
   "truncated": true,

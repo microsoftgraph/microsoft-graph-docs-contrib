@@ -16,7 +16,9 @@ const b2cIdentityUserFlow = {
     userFlowTypeVersion: 3,
     identityProviders: [
         {
-            id: 'Facebook-OAuth'
+            id: 'Facebook-OAuth',
+            type: 'Facebook',
+            Name: 'Facebook'
         }
     ]
 };

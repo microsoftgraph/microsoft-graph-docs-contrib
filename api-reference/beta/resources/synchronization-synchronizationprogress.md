@@ -1,7 +1,7 @@
 ---
 title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

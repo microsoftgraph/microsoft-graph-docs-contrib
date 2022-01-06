@@ -64,13 +64,12 @@ The following table shows the properties that are required when you create the w
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |customXml|Binary|Custom XML commands that configures the VPN connection. (UTF8 encoded byte array) Inherited from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Profile target type. Possible values are: `user`, `device`, `autoPilotDevice`.|
-|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`, `unknownFutureValue`, `microsoftTunnel`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Connection type. Possible values are: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`, `ciscoAnyConnect`.|
 |enableSplitTunneling|Boolean|Enable split tunneling.|
 |enableAlwaysOn|Boolean|Enable Always On mode.|
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
 |enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
 |dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
-|microsoftTunnelSiteId|String|ID of the Microsoft Tunnel site associated with the VPN profile.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
@@ -100,7 +99,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4525
+Content-length: 4463
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -151,7 +150,6 @@ Content-length: 4525
   "dnsSuffixes": [
     "Dns Suffixes value"
   ],
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -257,7 +255,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4697
+Content-Length: 4635
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -311,7 +309,6 @@ Content-Length: 4697
   "dnsSuffixes": [
     "Dns Suffixes value"
   ],
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,

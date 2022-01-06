@@ -1,7 +1,7 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties and relationships of an identityProvider object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -88,10 +88,6 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -149,10 +145,6 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-identityprovider-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

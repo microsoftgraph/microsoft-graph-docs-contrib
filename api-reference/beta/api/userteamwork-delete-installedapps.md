@@ -1,9 +1,9 @@
 ---
 title: "Uninstall app for user"
 description: "Uninstall an app from the personal scope of the specified user."
-author: "akjo"
+author: "clearab"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -73,10 +73,6 @@ DELETE https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-delete-teamsapp-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-delete-teamsapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

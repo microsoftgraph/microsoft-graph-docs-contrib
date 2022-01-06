@@ -1,7 +1,7 @@
 ---
 title: "userPurpose resource type"
 description: "Represents the user's recipient or mailbox type in Exchange Online."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
 author: "abheek-das"

@@ -2,13 +2,15 @@
 title: List printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List printers
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve the list of **printers** that are registered in the tenant.
 
@@ -81,10 +83,6 @@ GET https://graph.microsoft.com/v1.0/print/printers
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

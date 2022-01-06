@@ -231,8 +231,7 @@
       "ms.prod": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"],
-      "toc_preview": true,
-      "recommendations": false
+      "toc_preview": true
     },
     "fileMetadata": {
       "breadcrumb_path": {

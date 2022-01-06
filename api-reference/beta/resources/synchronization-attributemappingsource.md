@@ -1,7 +1,7 @@
 ---
 title: "attributeMappingSource resource type"
 description: "Defines how a value should be extracted (or transformed) from the source object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

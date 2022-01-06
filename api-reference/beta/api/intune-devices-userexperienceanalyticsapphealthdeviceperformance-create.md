@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -54,11 +54,9 @@ The following table shows the properties that are required when you create the u
 |appCrashCount|Int32|The number of app crashes for the device. Valid values -2147483648 to 2147483647|
 |crashedAppCount|Int32|The number of distinct app crashes for the device. Valid values -2147483648 to 2147483647|
 |appHangCount|Int32|The number of app hangs for the device. Valid values -2147483648 to 2147483647|
-|processedDateTime|DateTimeOffset|The date and time when the statistics were last computed.|
 |meanTimeToFailureInMinutes|Int32|The mean time to failure for the device in minutes. Valid values -2147483648 to 2147483647|
 |deviceAppHealthScore|Double|The app health score of the device. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |deviceAppHealthStatus|String|The overall app health status of the device.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceId|String|The id of the device.|
 |deviceDisplayName|String|The name of the device.|
 
@@ -74,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance
 Content-type: application/json
-Content-length: 590
+Content-length: 490
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -83,11 +81,9 @@ Content-length: 590
   "appCrashCount": 13,
   "crashedAppCount": 15,
   "appHangCount": 12,
-  "processedDateTime": "2017-01-01T00:03:22.2339319-08:00",
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
-  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -98,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 639
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -108,11 +104,9 @@ Content-Length: 639
   "appCrashCount": 13,
   "crashedAppCount": 15,
   "appHangCount": 12,
-  "processedDateTime": "2017-01-01T00:03:22.2339319-08:00",
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
-  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }

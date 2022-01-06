@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var workbookTableRow = new WorkbookTableRow
 {
 	Index = 99,
-	Values = JsonDocument.Parse(@"""values-value""")
+	Values = "values-value"
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"]

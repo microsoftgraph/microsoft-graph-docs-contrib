@@ -39,8 +39,6 @@ const bookingAppointment = {
     customerName: 'Jordan Miller',
     customerNotes: 'Please be on time.',
     customerPhone: '213-555-0199',
-    customerTimeZone: 'America/Chicago',
-    smsNotificationsEnabled: true,
     end: {
         '@odata.type':'#microsoft.graph.dateTimeTimeZone',
         dateTime: '2018-05-01T12:30:00.0000000+00:00',
@@ -56,7 +54,6 @@ const bookingAppointment = {
     'invoiceStatus@odata.type':'#microsoft.graph.bookingInvoiceStatus',
     invoiceStatus: 'open',
     invoiceUrl: 'theInvoiceUrl',
-    isLocationOnline: true,
     optOutOfCustomerEmail: false,
     postBuffer: 'PT10M',
     preBuffer: 'PT5M',

@@ -1,7 +1,7 @@
 ---
 title: "translationLanguageOverride resource type"
 description: "A resource representing an entry in the translation language override list."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jasonbro"
 ms.prod: "users"
 doc_type: resourcePageType

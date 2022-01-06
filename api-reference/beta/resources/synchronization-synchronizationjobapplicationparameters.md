@@ -2,7 +2,7 @@
 title: "synchronizationJobApplicationParameters resource type"
 description: "Represents the objects to be provisioned and the rules executed during on-demand provisioning."
 author: "ArvindHarinder1"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "applications"
 doc_type: resourcePageType
 ---

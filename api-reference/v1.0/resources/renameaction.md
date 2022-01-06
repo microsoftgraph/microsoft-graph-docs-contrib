@@ -2,7 +2,7 @@
 author: daspek
 title: renameAction resource type
 description: The renameAction object provides information about an activity that renamed an item.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

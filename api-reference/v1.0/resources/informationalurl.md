@@ -1,7 +1,7 @@
 ---
 title: "informationalUrl resource type"
 description: "Basic profile information of the application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

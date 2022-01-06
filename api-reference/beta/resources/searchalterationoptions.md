@@ -1,7 +1,7 @@
 ---
 title: "searchAlterationOptions resource type"
 description: "Provides the search alteration options for spelling correction."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

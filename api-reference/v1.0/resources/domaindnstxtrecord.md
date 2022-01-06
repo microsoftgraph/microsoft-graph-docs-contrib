@@ -2,7 +2,7 @@
 title: "domainDnsTxtRecord resource type"
 description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

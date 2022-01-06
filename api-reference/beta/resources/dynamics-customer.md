@@ -2,7 +2,7 @@
 title: customers resource type 
 description: Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---

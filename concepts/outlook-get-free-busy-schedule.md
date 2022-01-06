@@ -2,7 +2,7 @@
 title: "Get free/busy schedule of users and resources"
 description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
 author: "tariq-sharif"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ---
 
@@ -177,7 +177,7 @@ These conditions apply regardless of whether the signed-in user is an administra
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
-``` http
+```
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 

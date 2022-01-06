@@ -1,7 +1,7 @@
 ---
 title: "List anniversaries"
 description: "Retrieve a list of personAnniversary objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-anniversaries-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-anniversaries-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

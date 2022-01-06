@@ -26,7 +26,7 @@ A class containing the properties used for PolicySet Item.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the PolicySetItem.|
+|id|String|Key of the MobileAppPolicySetItem.|
 |createdDateTime|DateTimeOffset|Creation time of the PolicySetItem.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySetItem.|
 |payloadId|String|PayloadId of the PolicySetItem.|

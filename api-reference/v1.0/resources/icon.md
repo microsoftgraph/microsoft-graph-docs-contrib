@@ -1,7 +1,7 @@
 ---
 title: "Icon resource type"
 description: "Represents a cell icon."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType

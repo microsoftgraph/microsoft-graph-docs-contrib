@@ -1,7 +1,7 @@
 ---
 title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"

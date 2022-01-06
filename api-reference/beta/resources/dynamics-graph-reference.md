@@ -4,7 +4,7 @@ description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 doc_type: conceptualPageType
 ---

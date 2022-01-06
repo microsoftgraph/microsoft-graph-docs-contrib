@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1235
+Content-Length: 1051
 
 {
   "value": [
@@ -78,7 +78,6 @@ Content-Length: 1235
       "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
       "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
       "enrolledDeviceCount": 3,
-      "enrollmentTokenUsageCount": 9,
       "qrCodeContent": "Qr Code Content value",
       "qrCodeImage": {
         "@odata.type": "microsoft.graph.mimeContent",
@@ -87,11 +86,7 @@ Content-Length: 1235
       },
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ],
-      "wifiSsid": "Wifi Ssid value",
-      "wifiPassword": "Wifi Password value",
-      "wifiSecurityType": "wpa",
-      "wifiHidden": true
+      ]
     }
   ]
 }

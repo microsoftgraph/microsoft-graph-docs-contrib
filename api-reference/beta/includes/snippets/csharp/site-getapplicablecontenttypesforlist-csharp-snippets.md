@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getApplicableContentTypesForList = await graphClient.Sites["{site-id}"]
-	.GetApplicableContentTypesForList("{list-id}")
+	.GetApplicableContentTypesForList("listId")
 	.Request()
 	.GetAsync();
 

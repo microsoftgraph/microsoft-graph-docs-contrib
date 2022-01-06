@@ -1,8 +1,8 @@
 ---
 title: "Get approval"
 description: "Retrieve the properties of an approval object."
-ms.localizationpriority: medium
-author: "markwahl-msft"
+localization_priority: Normal
+author: "sbounouh"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieves the properties of an [approval](../resources/approval.md) object.  This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
 
 ## Permissions
 
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-approval-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-approval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

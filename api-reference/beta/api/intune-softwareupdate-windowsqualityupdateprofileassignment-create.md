@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the w
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Identifier of the entity|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target that the quality update profile is assigned to.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target that the feature update profile is assigned to.|
 
 
 

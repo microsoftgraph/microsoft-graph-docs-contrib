@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageStorage"
 description: "Get the amount of storage used in your organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

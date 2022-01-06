@@ -1,7 +1,7 @@
 ---
 title: "printDocument: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of binary file of printDocument."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nilakhan"
 ms.prod: "cloud-printing"
 doc_type: "apiPageType"

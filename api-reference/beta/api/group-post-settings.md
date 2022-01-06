@@ -2,7 +2,7 @@
 title: "Create a directory setting on groups"
 description: "Use this API to create a new directory setting for the group."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -31,7 +31,7 @@ POST /groups/{id}/settings
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required|
+| Authorization  | Bearer <token>. Required|
 
 ## Request body
 In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
@@ -41,9 +41,8 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
-
+##### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -53,6 +52,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/settings
 Content-type: application/json
+Content-length: 222
 
 {
   "directorySetting": {
@@ -67,25 +67,19 @@ Content-type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-directorysetting-from-group-go-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
-### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.
+##### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,6 +88,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 244
 
 {
   "directorySetting": {

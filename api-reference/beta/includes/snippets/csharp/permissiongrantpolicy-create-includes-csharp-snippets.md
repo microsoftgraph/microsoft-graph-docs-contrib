@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var permissionGrantConditionSet = new PermissionGrantConditionSet
 {
 	PermissionType = PermissionType.Delegated,
-	CertifiedClientApplicationsOnly = true
+	ClientApplicationsFromVerifiedPublisherOnly = true
 };
 
 await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes

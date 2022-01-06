@@ -1,7 +1,7 @@
 ---
 title: "Delete accessPackageCatalog"
 description: "Delete accessPackageCatalog."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -76,10 +76,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackagecatalog-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

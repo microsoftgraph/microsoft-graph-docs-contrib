@@ -2,7 +2,7 @@
 title: "tagOperation resource type"
 description: "Represents the operation that handles applying tags to documents in a review set based on a review set query."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

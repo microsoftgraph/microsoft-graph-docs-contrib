@@ -2,7 +2,7 @@
 title: "appConsentRequestScope resource type"
 description: "Details of the dynamic permission scopes for which access is requested."
 author: "psignoret"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

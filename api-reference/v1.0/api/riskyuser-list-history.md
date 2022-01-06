@@ -2,7 +2,7 @@
 title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Get the riskyUserHistoryItems from the history navigation property.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|

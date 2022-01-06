@@ -1,7 +1,7 @@
 ---
 title: "rubricQuality resource type"
 description: "A quality of a rubric"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"

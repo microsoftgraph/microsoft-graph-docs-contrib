@@ -2,7 +2,7 @@
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
 author: "harini84"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -76,6 +76,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/forward
 Content-type: application/json
+Content-length: 56
 
 {
   "ToRecipients":[
@@ -104,10 +105,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-forward-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

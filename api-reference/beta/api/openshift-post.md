@@ -1,7 +1,7 @@
 ---
 title: "Create openShift"
 description: "Create an instance of openshift object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -61,6 +61,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openshifts
 Authorization: Bearer {token}
 Content-type: application/json
+Content-length: 244
 
 {
    "id":"OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

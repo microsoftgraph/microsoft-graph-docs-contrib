@@ -1,11 +1,9 @@
 ---
 title: "Make API calls using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph HTTP requests using the SDKs."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: DarrelMiller
 ---
-
-<!-- markdownlint-disable MD025 -->
 
 # Make API calls using the Microsoft Graph SDKs
 
@@ -33,12 +31,6 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
-
 ---
 
 ## Use $select to control the properties returned
@@ -62,12 +54,6 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
-
 ---
 
 ## Retrieve a list of entities
@@ -89,12 +75,6 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
 
 ---
 
@@ -120,17 +100,11 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
-
 ---
 
 ## Use $expand to access related entities
 
-You can use the `$expand` filter to request a related entity, or collection of entities, at the same time that you request the main entity.
+You can use the `$expand` filter to request a related entity, or collection of entities, at the same that you request the main entity.
 
 # [C#](#tab/CS)
 
@@ -147,12 +121,6 @@ You can use the `$expand` filter to request a related entity, or collection of e
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
 
 ---
 
@@ -176,12 +144,6 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
-
 ---
 
 ## Make a POST request to create a new entity
@@ -203,12 +165,6 @@ For SDKs that support a fluent style, new items can be added to collections with
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
 
 ---
 
@@ -232,12 +188,6 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
-
 ---
 
 ## Use HTTP headers to control request behavior
@@ -260,17 +210,11 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
-
 ---
 
 ## Provide custom query parameters
 
-For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
+For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell, defined query parameters for a given API are exposed as parameters to the corresponding command.
 
 # [C#](#tab/CS)
 
@@ -287,11 +231,5 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
 
 ---

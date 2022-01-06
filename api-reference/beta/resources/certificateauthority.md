@@ -1,7 +1,7 @@
 ---
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "adimitui"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

@@ -2,7 +2,7 @@
 title: "publicInnerError resource type"
 description: "Represents the inner details of an error."
 author: "AkJo"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

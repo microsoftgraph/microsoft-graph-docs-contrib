@@ -2,7 +2,7 @@
 title: "List permissionGrants of a chat"
 description: "Retrieve permissionGrants of a chat."
 author: "akjo"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This list specifies the Azure AD apps that have access to the **chat**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.
 
 ## Permissions
 
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@t
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chat-list-permission-grants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chat-list-permission-grants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

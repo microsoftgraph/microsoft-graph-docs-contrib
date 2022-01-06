@@ -2,7 +2,7 @@
 title: "educationSchool: delta"
 description: "Get newly created or updated schools without having to perform a full read of the entire school collection."
 author: "mlafleur"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/v1.0/education/schools/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/educationschool-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

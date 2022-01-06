@@ -2,7 +2,7 @@
 title: "connectionInfo resource type"
 description: "The connectionInfo object defines the connection information that is used to communicate with a resource."
 author: "hanki-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

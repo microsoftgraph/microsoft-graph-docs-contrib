@@ -2,7 +2,7 @@
 title: "inviteNewBotResponse resource type"
 description: "Contains a response to a request to have a participant joining notification sent out again as a incoming call notification to the desired location."
 author: "yizhenww"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

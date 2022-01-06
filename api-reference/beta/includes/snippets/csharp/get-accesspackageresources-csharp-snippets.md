@@ -8,8 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var accessPackageResources = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].AccessPackageResources
 	.Request()
-	.Filter("resourceType eq 'Application'")
-	.Expand("accessPackageResourceScopes")
 	.GetAsync();
 
 ```

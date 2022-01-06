@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationCategoryCollectionPage categories = graphClient.education().classes("f4a941ff-9da6-4707-ba5b-0eae93cad0b4").assignments("9018ae7a-9953-4796-a152-4c54e0910922").categories()
+EducationCategoryCollectionPage categories = graphClient.education().classes("a17025d0-62a8-4450-9e6e-db31d8c8feb8").assignments("1fdf61ee-c129-4960-9b7c-8df159aa64b0").categories()
 	.buildRequest()
 	.get();
 

@@ -1,7 +1,7 @@
 ---
 title: "Get eventMessage"
 description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -189,10 +185,6 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-event-based-on-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

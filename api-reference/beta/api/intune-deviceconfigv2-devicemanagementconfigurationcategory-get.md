@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
 GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/complianceCategories/{deviceManagementConfigurationCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{deviceManagementConfigurationCategoryId}
 ```
 
 ### Response
@@ -64,18 +63,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 621
+Content-Length: 561
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
     "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
     "description": "Description value",
-    "categoryDescription": "Category Description value",
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
-    "platforms": "android",
+    "platforms": "macOS",
     "technologies": "mdm",
     "settingUsage": "configuration",
     "parentCategoryId": "Parent Category Id value",

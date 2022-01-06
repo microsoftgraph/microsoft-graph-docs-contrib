@@ -66,7 +66,6 @@ The following table shows the properties that are required when you create the a
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices. Inherited from [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)|
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Inherited from [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md). Possible values are: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
 |eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|Indicates the type of EAP protocol set on the Wi-Fi endpoint (router). Possible values are: `eapTls`, `eapTtls`, `peap`.|
-|trustedServerCertificateNames|String collection|Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users' devices when they connect to this Wi-Fi network.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
@@ -86,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1761
+Content-length: 1671
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileEnterpriseWiFiConfiguration",
@@ -124,9 +123,6 @@ Content-length: 1761
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wpaEnterprise",
   "eapType": "eapTtls",
-  "trustedServerCertificateNames": [
-    "Trusted Server Certificate Names value"
-  ],
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -141,7 +137,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1933
+Content-Length: 1843
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileEnterpriseWiFiConfiguration",
@@ -182,9 +178,6 @@ Content-Length: 1933
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wpaEnterprise",
   "eapType": "eapTtls",
-  "trustedServerCertificateNames": [
-    "Trusted Server Certificate Names value"
-  ],
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",

@@ -1,7 +1,7 @@
 ---
 title: "referencedObject resource type"
 description: "Describes a reference to another object defined in the same directory definition."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

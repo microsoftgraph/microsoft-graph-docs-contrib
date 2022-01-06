@@ -2,7 +2,7 @@
 title: "List permissionGrants of a group"
 description: "Retrieve permissionGrants of a group."
 author: "akjo"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This list specifies the Azure AD apps that have access to the **group**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This is a list of Azure AD apps that have access to the group along with the kind of access that each app has.
 
 ## Permissions
 
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/v1.0/groups/14c981a4-dca9-4565-bae6-e13ada8861be
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-list-permission-grants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-list-permission-grants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

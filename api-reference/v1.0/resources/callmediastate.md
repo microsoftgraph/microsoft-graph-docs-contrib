@@ -3,7 +3,7 @@ title: "callMediaState resource type"
 description: "Represents the media state for a call."
 author: "ananmishr"
 ms.prod: "cloud-communications"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ---
 

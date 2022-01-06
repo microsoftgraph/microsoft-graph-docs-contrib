@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-title: Get a driveItem resource
-ms.localizationpriority: high
+ms.date: 09/10/2017
+title: Get a file or folder
+localization_priority: Priority
 ms.prod: "sharepoint"
-description: "Retrieve the metadata for a driveItem in a drive by file system path or ID."
+description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 doc_type: apiPageType
 ---
-# Get a driveItem resource
+# Get a DriveItem resource
 
 Namespace: microsoft.graph
 
-Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
-`item-id` is the ID of a driveItem. It may also be the unique ID of a [SharePoint list item](../resources/listitem.md).
+Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
 
 ## Permissions
 
@@ -59,7 +59,7 @@ This is currently only supported on OneDrive Personal.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [driveItem](../resources/driveitem.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.
 
 ## Example
 
@@ -129,9 +129,10 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Remarks
 
-For details about how errors are returned, see [Error responses][error-response].
+See [Error Responses][error-response] for more info about
+how errors are returned.
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

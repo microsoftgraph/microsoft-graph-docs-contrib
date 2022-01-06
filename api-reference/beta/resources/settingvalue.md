@@ -1,7 +1,7 @@
 ---
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
 author: "dkershaw10"

@@ -1,8 +1,8 @@
 ---
 title: "Get conversationMember"
 description: "Get member of chat or channel."
-author: "akjo"
-ms.localizationpriority: high
+author: "laujan"
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -102,6 +102,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 201
 
 {
   "id": "id-value",

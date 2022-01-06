@@ -1,7 +1,7 @@
 ---
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
-ms.localizationpriority: high
+localization_priority: Priority
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-calendars-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-get-calendars-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

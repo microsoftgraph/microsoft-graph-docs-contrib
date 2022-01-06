@@ -1,9 +1,9 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
-author: "Harini84"
-ms.localizationpriority: medium
-ms.prod: "outlook"
+author: "Jordanndahl"
+localization_priority: Normal
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-group-events-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -94,6 +90,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 354
 
 {
   "value": [

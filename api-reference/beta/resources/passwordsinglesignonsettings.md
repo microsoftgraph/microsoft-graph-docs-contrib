@@ -1,7 +1,7 @@
 ---
 title: "passwordSingleSignOnSettings resource type"
 description: "Settings related to Password-based single sign-on"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

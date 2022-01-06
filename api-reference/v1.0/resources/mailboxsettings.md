@@ -1,7 +1,7 @@
 ---
 title: "mailboxSettings resource type"
 description: "Settings for the primary mailbox of the signed-in user."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType

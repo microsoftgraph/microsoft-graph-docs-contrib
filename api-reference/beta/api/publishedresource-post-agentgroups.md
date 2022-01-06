@@ -1,7 +1,7 @@
 ---
 title: "Assign publishedResource to onPremisesAgentGroup"
 description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

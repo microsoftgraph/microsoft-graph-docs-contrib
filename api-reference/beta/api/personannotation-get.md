@@ -2,7 +2,7 @@
 title: "Get personAnnotation"
 description: "Read the properties and relationships of a personAnnotation object."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-personannotation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-personannotation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
 author: "spunukol"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All |
+|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,9 +29,9 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## Request headers
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
@@ -52,6 +52,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/$ref
 Content-type: application/json
+Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -71,10 +72,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-device-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-device-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

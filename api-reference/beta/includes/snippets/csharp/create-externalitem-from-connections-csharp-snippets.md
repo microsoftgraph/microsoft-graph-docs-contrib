@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
+var externalItem = new ExternalItem
 {
 	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
 	{

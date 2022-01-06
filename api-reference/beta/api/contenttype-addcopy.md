@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: addCopy"
 description: "Add a copy of a site content type to a list."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -17,7 +17,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## Permissions  
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
   
 
@@ -68,7 +68,7 @@ If successful, this call returns a `201 Created` response code and a [contentTyp
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {
@@ -89,10 +89,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

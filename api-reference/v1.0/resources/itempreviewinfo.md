@@ -2,7 +2,7 @@
 author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The itemPreviewInfo resource contains information on how to embed a preview of a driveItem."
 ms.prod: ""
 doc_type: resourcePageType

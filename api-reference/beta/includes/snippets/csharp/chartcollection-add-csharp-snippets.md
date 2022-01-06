@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "ColumnStacked";
 
-var sourceData = JsonDocument.Parse(@"""A1:B1""");
+var sourceData = "A1:B1";
 
 var seriesBy = "Auto";
 

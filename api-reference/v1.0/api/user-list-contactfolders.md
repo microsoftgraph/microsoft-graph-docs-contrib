@@ -2,7 +2,7 @@
 title: "List contactFolders"
 description: "Get the contact folder collection in the default Contacts folder of the signed-in user."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contactfolders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-contactfolders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

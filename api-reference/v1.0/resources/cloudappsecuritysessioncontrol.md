@@ -1,7 +1,7 @@
 ---
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

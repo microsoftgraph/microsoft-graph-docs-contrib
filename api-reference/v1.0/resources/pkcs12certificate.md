@@ -2,7 +2,7 @@
 title: "pkcs12Certificate resource type"
 description: "Represents the configuration for uploading a pkcs12Certificate."
 author: "nickgmicrosoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

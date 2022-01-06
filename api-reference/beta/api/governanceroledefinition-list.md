@@ -1,18 +1,16 @@
 ---
 title: "List governanceRoleDefinitions"
 description: "Get a collection of governanceRoleDefinitions on a resource."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # List governanceRoleDefinitions
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 
@@ -39,9 +37,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 

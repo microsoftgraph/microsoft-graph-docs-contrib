@@ -2,7 +2,7 @@
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -62,6 +62,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
+Content-length: 142
 
 {
   "@odata.type": "microsoft.graph.fileAttachment",
@@ -86,10 +87,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-eventmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-from-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -118,6 +115,7 @@ HTTP/1.1 201 Created
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
+Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
@@ -141,10 +139,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-item-attachment-from-eventmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-item-attachment-from-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

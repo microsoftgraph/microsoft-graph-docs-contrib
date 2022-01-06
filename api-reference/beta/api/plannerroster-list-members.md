@@ -2,7 +2,7 @@
 title: "List members of a roster"
 description: "Get the plannerRosterMember resources from the members navigation property."
 author: "tarkansevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-196
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-plannerrostermember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-plannerrostermember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

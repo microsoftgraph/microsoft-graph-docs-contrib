@@ -2,7 +2,7 @@
 title: "Create unifiedGroupSource"
 description: "Create a new unifiedGroupSource object."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -49,13 +49,10 @@ In the request body, supply a JSON representation of the [unifiedGroupSource](..
 
 The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
->**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
-
 |Property|Type|Description|
 |:---|:---|:---|
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
-|group|String|Specifies the email address for the group. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). You can then query by the name of the group using `$filter`; for example, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
-|group@odata.bind|String|ID of the group. You can get this in the same way that you get the group. |
+|group@odata.bind|String|ID of the group. To get the group ID, use the [List groups](../api/group-list.md) operation.|
 
 ## Response
 
@@ -63,99 +60,20 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ## Examples
 
-### Example 1: Create unifiedGroupSource with group SMTP address
-
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedgroupsource_from_email"
+  "name": "create_unifiedgroupsource_from_"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/custodians/8904528fef4d4578b44f71a80188f400/unifiedGroupSources
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources
 Content-Type: application/json
-
-{
-  "group": {
-    "mail": "SecretGroup@contoso.com"
-  },
-  "includedSources":  "mailbox, site"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from-email-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from-email-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedgroupsource-from-email-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-email-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-email-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
-
-#### Response
-
-> **Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.unifiedGroupSource"
-}
--->
-
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/custodians('8904528fef4d4578b44f71a80188f400')/unifiedGroupSources/$entity",
-    "@odata.id": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
-    "displayName": "Secret Group",
-    "createdDateTime": "2021-03-31T21:22:57.0108027Z",
-    "id": "33434233-3030-3739-3043-393039324633",
-    "includedSources": "mailbox,site",
-    "createdBy": {
-        "user": {
-            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-            "displayName": null
-        }
-    }
-}
-```
-
-### Example 2: Create unifiedGroupSource with group@odata.bind
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_unifiedgroupsource_from_id"
-}
--->
-
-``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/custodians/8904528fef4d4578b44f71a80188f400/unifiedGroupSources
-Content-Type: application/json
+Content-length: 219
 
 {
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
@@ -163,31 +81,25 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from-id-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedgroupsource-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from-id-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedgroupsource-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedgroupsource-from-id-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedgroupsource-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-id-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-id-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
----
-
-#### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -202,9 +114,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/custodians('8904528fef4d4578b44f71a80188f400')/unifiedGroupSources/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('f4c0e095-d140-4392-bfe7-4e0ae637c566')/custodians('46363131333630303541423141324436')/unifiedGroupSources/$entity",
     "@odata.id": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
-    "displayName": "Secret Group",
+    "displayName": "SFA Videos",
     "createdDateTime": "2021-03-31T21:22:57.0108027Z",
     "id": "33434233-3030-3739-3043-393039324633",
     "includedSources": "mailbox,site",

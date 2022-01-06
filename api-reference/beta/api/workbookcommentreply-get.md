@@ -1,7 +1,7 @@
 ---
 title: "Get workbookCommentReply"
 description: "Retrieve the properties and relationships of workbookcommentreply object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"

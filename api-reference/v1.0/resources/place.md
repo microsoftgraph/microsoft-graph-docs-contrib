@@ -1,7 +1,7 @@
 ---
 title: "place resource type"
 description: "Represents a place. This is the base type for a room or roomList."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "resourcePageType"

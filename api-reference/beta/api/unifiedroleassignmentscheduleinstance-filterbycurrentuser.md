@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance: filterByCurrentUser"
 description: "Get a list of the unifiedRoleAssignmentScheduleInstance objects and their properties filtered by a particular user principal"
-author: "carolinetempleton"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Application|PrivilegedAccess.Read.AzureAD|
 
 ## HTTP request
 
@@ -30,19 +30,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser(on='principal')
+GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser
 ```
 
-## Function parameters
+## Query parameters
 The following table shows the parameters that can be used with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
-
-
-## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Id of the current user.|
 
 
 ## Request headers
@@ -55,49 +51,23 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) collection in the response body.
 
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unifiedroleassignmentscheduleinstance_filterbycurrentuser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser(on='principal')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/unifiedRoleAssignmentScheduleInstances/filterByCurrentUser(on='dce468b2-68b2-dce4-b268-e4dcb268e4dc')
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleassignmentscheduleinstance-filterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroleassignmentscheduleinstance-filterbycurrentuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/unifiedroleassignmentscheduleinstance-filterbycurrentuser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/unifiedroleassignmentscheduleinstance-filterbycurrentuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/unifiedroleassignmentscheduleinstance-filterbycurrentuser-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### Response
-
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,21 +79,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleAssignmentScheduleInstance)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleInstance",
-      "id": "lAPpYvVpN0KRkAEhdxReECssmvzcHW1IohFf6Mp3-h8-1",
-      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-      "directoryScopeId": "/",
-      "appScopeId": null,
-      "startDateTime": null,
-      "endDateTime": null,
-      "assignmentType": "Assigned",
-      "memberType": "Direct",
-      "roleAssignmentOriginId": "lAPpYvVpN0KRkAEhdxReECssmvzcHW1IohFf6Mp3-h8-1",
-      "roleAssignmentScheduleId": "lAPpYvVpN0KRkAEhdxReECssmvzcHW1IohFf6Mp3-h8-1"
+      "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "startDateTime": "2020-09-09T21:35:27.91Z",
+      "endDateTime": "2020-09-09T21:35:27.91Z",
+      "assignmentType": "eligible",
+      "memberType": "direct",
+      "roleAssignmentOriginId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
+      "roleAssignmentScheduleId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc"
     }
   ]
 }

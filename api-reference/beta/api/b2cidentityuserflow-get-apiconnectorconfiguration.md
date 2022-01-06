@@ -2,7 +2,7 @@
 title: "Get userFlowApiConnectorConfiguration"
 description: "Get the userFlowApiConnectorConfiguration property of a b2cIdentityUserFlow."
 author: "nickgmicrosoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

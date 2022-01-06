@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentMultiple resource type"
 description: "A role definition assigned to an array of principals (typically a user) over an array of scope."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
@@ -20,8 +20,10 @@ You can create a role assignment with multiple principals and multiple scopes.
 You must provide either **directoryScopeIds** or **appScopeIds**.
 
 The following RBAC providers are currently supported:
-- Cloud PC 
+- cloud PC 
 - Microsoft Intune
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Methods
 

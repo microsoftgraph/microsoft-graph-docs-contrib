@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityStorage"
 description: "Get the total storage used across all group mailboxes and group sites."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

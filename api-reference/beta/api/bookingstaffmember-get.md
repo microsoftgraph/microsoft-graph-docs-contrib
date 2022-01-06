@@ -1,7 +1,7 @@
 ---
 title: "Get bookingStaffMember"
 description: "Get the properties and relationships of a bookingStaffMember in the specified bookingbusiness."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
+Get the properties and relationships of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -39,9 +39,9 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.
 ## Example
-### Request
+##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_bookingstaffmember"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingstaffmember-csharp-snippets.md)]
@@ -68,16 +68,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingstaffmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-bookingstaffmember-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
-The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability.
+##### Response
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,14 +82,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers/$entity",
     "id": "71d64d0e-7225-49b6-b0b1-070d476cda51",
     "displayName": "Samantha Booth",
-    "emailAddress": "samanthab@contoso.onmicrosoft.com",
+    "emailAddress": "samanthab@M365B489948.OnMicrosoft.com",
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",
-    "timeZone": "America/Chicago",
     "useBusinessHours": true,
     "workingHours": [
         {

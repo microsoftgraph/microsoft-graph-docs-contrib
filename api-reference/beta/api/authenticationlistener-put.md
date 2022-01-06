@@ -2,7 +2,7 @@
 title: "Put authenticationListener"
 description: "Replace an authenticationListener object."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

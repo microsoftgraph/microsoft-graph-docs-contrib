@@ -2,13 +2,15 @@
 title: Update printer
 description: Update the properties of a printer object.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Update printer
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update the properties of a [printer](../resources/printer.md) object.
 
@@ -111,6 +113,7 @@ If using application permissions, if successful, this method returns `204 No con
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
+Content-length: 581
 
 {
   "name": "PrinterName",
@@ -127,10 +130,6 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

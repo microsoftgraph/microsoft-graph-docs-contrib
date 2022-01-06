@@ -1,8 +1,8 @@
 ---
 title: "virtualEndpoint: getEffectivePermissions"
-description: "**GetEffectivePermissions is a function that retrieves the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.**"
+description: "**GetEffectivePermissions is a function that retrives the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.**"
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-View the effective permissions of the currently authenticated user. GetEffectivePermissions is a function that retrieves the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.
+View the effective permissions of the currently authenticated user. GetEffectivePermissions is a function that retrives the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 

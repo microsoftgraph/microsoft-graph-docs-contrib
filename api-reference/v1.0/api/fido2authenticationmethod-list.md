@@ -2,7 +2,7 @@
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+* Privileged authentication admin
+* Authentication admin (only sees masked phone numbers)
 
 ## HTTP request
 
@@ -86,6 +86,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 491
 
 {
   "value": [

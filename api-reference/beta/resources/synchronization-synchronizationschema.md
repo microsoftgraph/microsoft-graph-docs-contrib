@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchema resource type"
 description: "Defines what objects will be synchronized and how they will be synchronized."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

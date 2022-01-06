@@ -1,7 +1,7 @@
 ---
 title: "samlSingleSignOnSettings resource type"
 description: "Represents the SAML single sign-on settings."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

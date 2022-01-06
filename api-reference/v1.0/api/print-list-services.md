@@ -2,13 +2,15 @@
 title: List printServices
 description: Retrieve a list of printService objects that represent the services available to your tenant.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List printServices
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of **printService** objects that represent the services available to your tenant.
 
@@ -67,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/print/services
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printservice-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-printservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

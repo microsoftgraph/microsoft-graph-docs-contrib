@@ -2,7 +2,7 @@
 title: "List relations"
 description: "Get the relations from the relations navigation property."
 author: mohitpcad
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-relation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-relation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

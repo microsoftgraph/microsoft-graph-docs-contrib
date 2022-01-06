@@ -2,7 +2,7 @@
 title: "updatableAssetGroup: removeMembersById"
 description: "Remove members of the same type from an updatableAssetGroup."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -92,10 +92,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-removemembersbyid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembersbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

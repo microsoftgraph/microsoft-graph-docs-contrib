@@ -1,7 +1,7 @@
 ---
 title: "Update orgcontact"
 description: "Update the properties of orgcontact object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/contacts/{id}
 Content-type: application/json
+Content-length: 222
 
 {
   "businessPhones": [
@@ -95,10 +96,6 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-orgcontact-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-orgcontact-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

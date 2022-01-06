@@ -1,7 +1,7 @@
 ---
 title: "workbookWorksheet resource type"
 description: "An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType

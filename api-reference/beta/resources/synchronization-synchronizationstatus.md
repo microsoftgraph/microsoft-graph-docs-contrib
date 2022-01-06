@@ -1,7 +1,7 @@
 ---
 title: "synchronizationStatus resource type"
 description: "Represents the current status of the synchronizationJob."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

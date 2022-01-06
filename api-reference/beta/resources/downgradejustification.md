@@ -1,7 +1,7 @@
 ---
 title: "downgradeJustification resource type"
 description: "Represents user input on why downgrade was performed."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

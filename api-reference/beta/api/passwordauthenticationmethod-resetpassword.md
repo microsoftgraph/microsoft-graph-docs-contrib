@@ -1,7 +1,7 @@
 ---
 title: "passwordAuthenticationMethod: resetPassword"
 description: "Reset a user's password"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -23,31 +23,17 @@ This reset is a long-running operation and will return a link in the `Location` 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-The operation cannot be performed on a user's own account.
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
-Only an administrator with the appropriate permissions can perform this operation.
-
-|Permission type      | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not supported. | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+* Global admin
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 

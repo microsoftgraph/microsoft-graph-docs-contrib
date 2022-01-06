@@ -1,7 +1,7 @@
 ---
 title: "searchEntity resource type"
 description: "A top level object representing the Microsoft Search API endpoint."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

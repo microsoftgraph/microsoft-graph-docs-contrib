@@ -2,7 +2,7 @@
 title: "Range: Intersection"
 description: "Gets the range object that represents the rectangular intersection of the given ranges."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -61,6 +61,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/intersection
 Content-type: application/json
+Content-length: 42
 
 {
   "anotherRange": "anotherRange-value"
@@ -77,6 +78,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",

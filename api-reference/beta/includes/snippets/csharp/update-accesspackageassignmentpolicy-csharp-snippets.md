@@ -35,7 +35,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 			{
 				ApprovalStageTimeOutInDays = 14,
 				IsApproverJustificationRequired = true,
-				IsEscalationEnabled = false,
+				IsEscalationEnabled = true,
 				EscalationTimeInMinutes = 11520,
 				PrimaryApprovers = new List<UserSet>()
 				{
@@ -52,6 +52,10 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 				}
 			}
 		}
+	},
+	AccessReviewSettings = new AssignmentReviewSettings
+	{
+		IsEnabled = false
 	},
 	Questions = new List<AccessPackageQuestion>()
 	{

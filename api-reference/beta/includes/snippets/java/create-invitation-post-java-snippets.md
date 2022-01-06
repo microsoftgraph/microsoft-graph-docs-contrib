@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Invitation invitation = new Invitation();
-invitation.invitedUserEmailAddress = "admin@fabrikam.com";
+invitation.invitedUserEmailAddress = "yyy@test.com";
 invitation.inviteRedirectUrl = "https://myapp.contoso.com";
 
 graphClient.invitations()

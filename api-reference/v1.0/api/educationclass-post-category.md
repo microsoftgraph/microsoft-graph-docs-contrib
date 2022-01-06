@@ -1,8 +1,8 @@
 ---
 title: "Create educationCategory"
 description: "Creates a new category."
-ms.localizationpriority: medium
-author: "cristobal-buenrostro"
+localization_priority: Normal
+author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -25,8 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignmentCategories
-
+POST /education/classes/{id}/assignmentCategories/$entity
 ```
 ## Request headers
 | Header       | Value |
@@ -44,27 +43,21 @@ If successful, this method returns a `201 Created` response code and an [educati
 ## Example
 ### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["60eaa744-aa87-4276-b985-1633683119f8"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories
+POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories/$entity
 Content-type: application/json
+Content-length: 33
 
 { 
   "displayName": "Quizzes"
 }
 ```
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-educationcategory-from-educationclass-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.
 
 ### Response
 The following is an example of the response. 
@@ -79,6 +72,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 120
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('60eaa744-aa87-4276-b985-1633683119f8')/assignmentCategories/$entity",

@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getEmailActivityUserDetail"
 description: "Get details about email activity users have performed."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -83,7 +83,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and an **[emailActivityUserDetail](../resources/emailactivityuserdetail.md)** object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -163,7 +163,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.emailActivityUserDetail"
 } -->
 
 ```http
@@ -172,6 +172,7 @@ Content-Type: application/json
 Content-Length: 424
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

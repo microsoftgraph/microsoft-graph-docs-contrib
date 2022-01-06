@@ -2,7 +2,7 @@
 title: "ChartAxisFormat resource type"
 description: "Encapsulates the format properties for the chart axis."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

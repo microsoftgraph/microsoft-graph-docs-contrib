@@ -14,12 +14,13 @@ var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
 		{
 			Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
 			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant
+			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
+			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
 		}
 	}
 };
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
 	.Request()
 	.UpdateAsync(externalItem);
 

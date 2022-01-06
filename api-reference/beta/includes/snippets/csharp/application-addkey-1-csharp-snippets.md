@@ -10,7 +10,7 @@ var keyCredential = new KeyCredential
 {
 	Type = "AsymmetricX509Cert",
 	Usage = "Verify",
-	Key = Convert.FromBase64String("MIIDYDCCAki...")
+	Key = Encoding.ASCII.GetBytes("MIIDYDCCAki...")
 };
 
 PasswordCredential passwordCredential = null;

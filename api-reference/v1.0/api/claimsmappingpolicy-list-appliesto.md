@@ -1,7 +1,7 @@
 ---
 title: "List appliesTo"
 description: "Get a list of directoryObject objects that a claimsMappingPolicy object has been applied to."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -102,26 +102,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.servicePrincipal",
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/335601aa-9c79-48a3-a9f7-d2a6ac9cb730/Microsoft.DirectoryServices.ServicePrincipal",
-            "id": "335601aa-9c79-48a3-a9f7-d2a6ac9cb730",
-            "accountEnabled": true,
-            "createdDateTime": "2021-08-12T07:28:18Z",
-            "appDisplayName": "My App",
-            "appId": "e4d924fc-d18d-4e69-9a17-7095f311bf17",
-            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
-            "displayName": "My App",
-            "publisherName": "Contoso",
-            "servicePrincipalNames": [
-                "e4d924fc-d18d-4e69-9a17-7095f311bf17"
-            ],
-            "servicePrincipalType": "Application",
-            "signInAudience": "AzureADMyOrg"
-        }
-    ]
+  "value": [
+    {
+      "id": "id-value",
+      "deletedDateTime": "datetime-value"
+    }
+  ]
 }
 ```
 

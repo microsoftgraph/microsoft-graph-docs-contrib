@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-   description: 'Contoso Life v2.0',
-   displayName: 'Contoso Life Renewed'
+   description: 'description-value',
+   displayName: 'displayName-value'
 };
 
 await client.api('/groups/{id}')

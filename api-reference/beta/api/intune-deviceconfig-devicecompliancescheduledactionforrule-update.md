@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|ruleName|String|Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.|
+|ruleName|String|Name of the rule which this scheduled action applies to.|
 
 
 

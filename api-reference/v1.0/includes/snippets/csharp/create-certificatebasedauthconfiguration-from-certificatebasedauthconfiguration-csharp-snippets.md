@@ -13,12 +13,12 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
 		new CertificateAuthority
 		{
 			IsRootAuthority = true,
-			Certificate = Convert.FromBase64String("Binary")
+			Certificate = Encoding.ASCII.GetBytes("Binary")
 		}
 	}
 };
 
-await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration
+await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.References
 	.Request()
 	.AddAsync(certificateBasedAuthConfiguration);
 

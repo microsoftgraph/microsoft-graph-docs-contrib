@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleManagementPolicyRule = {
-  '@odata.type': '#microsoft.graph.unifiedRoleManagementPolicyApprovalRule',
+  '@odata.type': '#microsoft.graph.unifiedRoleManagementPolicyRule',
   target: {
     '@odata.type': 'microsoft.graph.unifiedRoleManagementPolicyRuleTarget'
   }

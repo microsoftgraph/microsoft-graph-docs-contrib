@@ -1,7 +1,7 @@
 ---
 title: "networkConnection resource type"
 description: "Contains stateful information about the network connection related to the alert."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "chinguyen1"
 ms.prod: "security"
 doc_type: resourcePageType

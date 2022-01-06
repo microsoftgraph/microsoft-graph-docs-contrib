@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleScheduleInstanceBase resource type"
 description: "Base property of unified role schedule instance that combines unified role assignment schedule instance and unified role eligibility schedule instance"
-author: "carolinetempleton"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -11,16 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Base property of unified role schedule instance that combines unified role assignment schedule instances and unified role eligibility schedule instances.
+"Base property of unified role schedule instance that combines unified role assignment schedule instance and unified role eligibility schedule instance
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. |
-|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. |
+|appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
+|directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
 |id|String|The unique identifier for the unifiedRoleAssignmentScheduleInstance. Key, not nullable, Read-only.|
-|principalId|String|Identifier of the principal to which the assignment is being granted to. Can be a group or a user. |
-|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Read only. <br> Supports `$filter` (`eq`).|
+|principalId|String|Objectid of the principal to which the assignment is being granted to.|
+|roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|
 
 ## Relationships
 |Relationship|Type|Description|

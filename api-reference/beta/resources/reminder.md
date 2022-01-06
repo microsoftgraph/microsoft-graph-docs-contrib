@@ -1,7 +1,7 @@
 ---
 title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
 author: "harini84"

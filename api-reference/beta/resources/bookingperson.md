@@ -1,7 +1,7 @@
 ---
 title: "bookingPerson resource type"
-description: "This is a base type for a person in a Microsoft Bookings business, which can be a bookingCustomer or bookingStaffMember."
-ms.localizationpriority: medium
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: resourcePageType
@@ -15,12 +15,10 @@ Namespace: microsoft.graph
  
 This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).
 
-Inherits from [bookingNamedEntity](bookingnamedentity.md)
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|displayName|String|A name for the derived entity, which interfaces with customers. Inherited from **bookingNamedEntity**.|
+|displayName|String|A name for the derived entity, which interfaces with customers.|
 |emailAddress|String|The email address of the person.|
 |id|String| The ID for the derived entity. Read-only.|
 

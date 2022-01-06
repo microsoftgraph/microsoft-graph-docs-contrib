@@ -1,7 +1,7 @@
 ---
 title: "assignedLabel resource type"
 description: "Represents a sensitivity label assigned to an Microsoft 365 group."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType

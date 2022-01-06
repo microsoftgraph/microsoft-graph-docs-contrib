@@ -1,7 +1,7 @@
 ---
 title: "Update publishedResource"
 description: "Update the properties of a [publishedResource](../resources/publishedresource.md) object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -86,10 +86,6 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-publishedresource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

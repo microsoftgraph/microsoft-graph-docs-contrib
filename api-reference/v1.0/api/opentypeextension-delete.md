@@ -1,7 +1,7 @@
 ---
 title: "Delete open extension"
 description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -100,10 +100,6 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

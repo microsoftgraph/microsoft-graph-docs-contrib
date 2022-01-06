@@ -1,7 +1,7 @@
 ---
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jumaodhiss"
 ms.prod: "change-notifications"
 doc_type: apiPageType
@@ -83,7 +83,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-### Request
+##### Request
 
 Here is an example of the request.
 
@@ -117,14 +117,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-subscription-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-### Response
+##### Response
 
 Here is an example of the response.
 <!-- {
@@ -136,6 +132,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 252
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",

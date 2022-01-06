@@ -2,7 +2,7 @@
 title: "outlookTaskFolder resource type"
 description: "A folder that contains Outlook tasks (collection of outlookTask objects). "
 author: "mashriv"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

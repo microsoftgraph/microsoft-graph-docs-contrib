@@ -1,17 +1,17 @@
 ---
-title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
+title: "Delete an oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Delete oAuth2PermissionGrant (a delegated permission grant)
+# Delete a delegated permission grant (oAuth2PermissionGrant)
 
 Namespace: microsoft.graph
 
-Delete a delegated permission grant, represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+Delete an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
@@ -38,9 +38,9 @@ DELETE /oAuth2Permissiongrants/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -80,16 +80,12 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-oauth2permissiongrant-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 ### Response
 
-The following is an example of the response.
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

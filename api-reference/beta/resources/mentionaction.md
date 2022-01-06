@@ -3,7 +3,7 @@ author: daspek
 description: "The MentionAction resource provides information about an activity that mentioned people."
 ms.date: 09/14/2017
 title: MentionAction
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "accessReviewDecision resource type"
 description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "Choose an API in Microsoft Graph to create and join online meetings"
 description: "You'll have the flexibility to create a meeting that takes place in the future, or instantaneously"
 author: "angelgolfer-ms"
-ms.localizationpriority: high
+localization_priority: Priority
 ---
 
 # Choose an API in Microsoft Graph to create and join online meetings

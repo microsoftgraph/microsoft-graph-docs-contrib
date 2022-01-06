@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 662
+Content-Length: 360
 
 {
   "value": [
@@ -70,12 +70,6 @@ Content-Length: 662
       "displayName": "Display Name value",
       "description": "Description value",
       "publicAddress": "Public Address value",
-      "upgradeWindowUtcOffsetInMinutes": 15,
-      "upgradeWindowStartTime": "12:01:27.3030000",
-      "upgradeWindowEndTime": "11:57:17.9830000",
-      "upgradeAutomatically": true,
-      "upgradeAvailable": true,
-      "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]

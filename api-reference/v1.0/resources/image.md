@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Image
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The Image resource groups image-related properties into a single structure."
 ms.prod: ""
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "resourceAccess resource type"
 description: "Specifies an OAuth 2.0 permission scope or an app role that an application requires."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -11,13 +11,13 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Object used to specify an OAuth 2.0 permission scope or an app role that an application requires, through the **resourceAccess** property of the [requiredResourceAccess](requiredresourceaccess.md) resource type.
+Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [requiredResourceAccess](requiredresourceaccess.md) type is a collection of **ResourceAccess**.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|GUID|The unique identifier for one of the [oauth2PermissionScopes](permissionscope.md) or [appRole](approle.md) instances that the resource application exposes.|
-|type|String|Specifies whether the **id** property references an [oauth2PermissionScopes](permissionscope.md) or an [appRole](approle.md). The possible values are: `Scope` (for OAuth 2.0 permission scopes) or `Role` (for app roles).|
+|id|Guid|The unique identifier for one of the [oauth2PermissionScopes](permissionscope.md) or [appRole](approle.md) instances that the resource application exposes.|
+|type|String|Specifies whether the **id** property references an [oauth2PermissionScopes](permissionscope.md) or an [appRole](approle.md). Possible values are `Scope` or `Role`.|
 
 ## JSON representation
 
@@ -33,8 +33,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "GUID",
-  "type": "String"
+  "id": "guid",
+  "type": "string"
 }
 
 ```

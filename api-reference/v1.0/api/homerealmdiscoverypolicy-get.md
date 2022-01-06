@@ -1,7 +1,7 @@
 ---
 title: "Get homeRealmDiscoveryPolicy"
 description: "Retrieve the properties and relationships of homeRealmDiscoveryPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-homerealmdiscoverypolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-homerealmdiscoverypolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

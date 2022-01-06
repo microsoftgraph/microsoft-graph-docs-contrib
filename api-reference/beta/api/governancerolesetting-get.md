@@ -1,10 +1,10 @@
 ---
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # Get governanceRoleSetting
@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).
 
@@ -41,9 +39,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.
 ## HTTP request
@@ -90,10 +88,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 [!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-governancerolesetting-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -105,6 +99,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 370
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings/$entity",

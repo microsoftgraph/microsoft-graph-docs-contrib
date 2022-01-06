@@ -1,7 +1,7 @@
 ---
 title: "genericError resource type"
 description: "A general-purpose error."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "abheek-das"

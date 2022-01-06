@@ -1,7 +1,7 @@
 ---
 title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "resourcePageType"

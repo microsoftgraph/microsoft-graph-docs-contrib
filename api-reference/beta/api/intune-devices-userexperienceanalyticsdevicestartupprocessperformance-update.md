@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,8 +55,6 @@ The following table shows the properties that are required when you create the [
 |deviceCount|Int64|User experience analytics device startup process summarized count.|
 |medianImpactInMs|Int32|User experience analytics device startup process median impact in milliseconds.|
 |totalImpactInMs|Int32|User experience analytics device startup process total impact in milliseconds.|
-|medianImpactInMs2|Int64|User experience analytics device startup process median impact in milliseconds.|
-|totalImpactInMs2|Int64|User experience analytics device startup process total impact in milliseconds.|
 
 
 
@@ -70,7 +68,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{userExperienceAnalyticsDeviceStartupProcessPerformanceId}
 Content-type: application/json
-Content-length: 338
+Content-length: 285
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -79,9 +77,7 @@ Content-length: 338
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15,
-  "medianImpactInMs2": 1,
-  "totalImpactInMs2": 0
+  "totalImpactInMs": 15
 }
 ```
 
@@ -90,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 387
+Content-Length: 334
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -100,9 +96,7 @@ Content-Length: 387
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15,
-  "medianImpactInMs2": 1,
-  "totalImpactInMs2": 0
+  "totalImpactInMs": 15
 }
 ```
 

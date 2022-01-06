@@ -2,7 +2,7 @@
 title: "dataSourceContainer resource type"
 description: "Base class for Custodians and Non-Custodial data sources."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

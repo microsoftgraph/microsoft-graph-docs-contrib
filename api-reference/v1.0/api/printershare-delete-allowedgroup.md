@@ -2,7 +2,7 @@
 title: Delete allowedGroup from printerShare
 description: Revoke the specified group's access to submit print jobs to the associated printer share.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete allowedGroup from printerShare
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Revoke the specified group's access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 

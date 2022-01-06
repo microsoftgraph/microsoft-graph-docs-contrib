@@ -2,7 +2,7 @@
 title: "commsNotifications resource type"
 description: "List of notifications used by the Communications servers for sending multiple notifications in a single batch."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

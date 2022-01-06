@@ -1,7 +1,7 @@
 ---
 title: "userFeedback resource type"
 description: "The userFeedback type."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

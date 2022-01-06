@@ -1,7 +1,7 @@
 ---
 title: "protectByTemplateAction resource type"
 description: "Informs the application that an Azure Information Protection protection template should be applied."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

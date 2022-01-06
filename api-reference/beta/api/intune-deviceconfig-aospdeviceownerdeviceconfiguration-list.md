@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1976
+Content-Length: 2126
 
 {
   "value": [
@@ -98,10 +98,12 @@ Content-Length: 1976
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "appsBlockInstallFromUnknownSources": true,
+      "appsAllowInstallFromUnknownSources": true,
       "bluetoothBlocked": true,
       "bluetoothBlockConfiguration": true,
+      "bluetoothBlockContactSharing": true,
       "cameraBlocked": true,
+      "cellularBlockWiFiTethering": true,
       "factoryResetBlocked": true,
       "passwordMinimumLength": 5,
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -109,8 +111,10 @@ Content-Length: 1976
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
+      "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
+      "backupBlocked": true,
       "wifiBlockEditConfigurations": true
     }
   ]

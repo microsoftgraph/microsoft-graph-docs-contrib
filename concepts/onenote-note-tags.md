@@ -2,7 +2,7 @@
 title: "Use note tags in OneNote pages"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 ---
 

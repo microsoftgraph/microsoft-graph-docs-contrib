@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: listLabels"
 description: "Retrieve a list of information protection labels."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"

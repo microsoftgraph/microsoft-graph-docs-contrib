@@ -2,7 +2,7 @@
 title: "List onSignUpStart listeners"
 description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the collection of authenticationListener resources supported by the onSignupStart event. The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.
 
-When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
+When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it. Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
 
 ## Permissions
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

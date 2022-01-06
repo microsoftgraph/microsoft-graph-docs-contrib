@@ -2,7 +2,7 @@
 title: "teamsAsyncOperation resource type"
 description: "A Microsoft Teams async operation transcends the lifetime of a single API request. "
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

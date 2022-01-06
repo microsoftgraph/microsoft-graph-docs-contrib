@@ -2,7 +2,7 @@
 title: "Table: clearFilters"
 description: "Clears all the filters currently applied on the table."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

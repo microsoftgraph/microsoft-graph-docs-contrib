@@ -1,7 +1,7 @@
 ---
 title: "Restart synchronizationJob"
 description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -83,10 +83,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-restart-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-restart-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

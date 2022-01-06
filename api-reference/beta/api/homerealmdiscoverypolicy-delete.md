@@ -1,7 +1,7 @@
 ---
 title: "Delete homeRealmDiscoveryPolicy"
 description: "Delete homeRealmDiscoveryPolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -76,10 +76,6 @@ DELETE https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-homerealmdiscoverypolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-homerealmdiscoverypolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

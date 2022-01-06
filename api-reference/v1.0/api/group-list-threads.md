@@ -2,7 +2,7 @@
 title: "List threads"
 description: "Get all the threads of a group."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-threads-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-get-threads-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -92,19 +88,33 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 536
 
 {
   "value": [
     {
-      "id": "thread-id",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
+          }
+        }
+      ],
       "topic": "topic-value",
       "hasAttachments": true,
       "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "preview": "preview-value",
-      "isLocked": false
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
+          }
+        }
+      ]
     }
   ]
 }

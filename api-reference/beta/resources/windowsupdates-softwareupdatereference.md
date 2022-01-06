@@ -2,7 +2,7 @@
 title: "softwareUpdateReference resource type"
 description: "Represents specific update content."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---
@@ -17,7 +17,7 @@ Represents specific update content.
 
 In a deployment, the same **softwareUpdateReference** could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
-All software update references exist as one of the following derived types: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md) and [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md).
+All software update references exist as one of the following derived types: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md).
 
 Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md). Base type for [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
 

@@ -2,7 +2,7 @@
 title: "Get administrativeUnit"
 description: "Retrieve the properties and relationships of an administrativeUnit object."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -91,6 +87,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 134
 
 {
   "displayName": "displayName-value",

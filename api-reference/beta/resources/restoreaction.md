@@ -3,7 +3,7 @@ author: daspek
 description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

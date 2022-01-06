@@ -2,7 +2,7 @@
 title: "Create permission"
 description: "Create a new permission object."
 author: "BarrySh"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -90,10 +90,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-permission-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-permission-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -112,19 +108,10 @@ Content-Type: application/json
 
 {
    "id":"1",
-   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
    "roles":[
       "write"
    ],
    "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
-      }
-   ],
-   "grantedToIdentitiesV2":[
       {
          "application":{
             "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",

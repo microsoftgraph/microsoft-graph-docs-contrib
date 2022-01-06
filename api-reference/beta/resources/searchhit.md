@@ -1,7 +1,7 @@
 ---
 title: "searchHit resource type"
 description: "Description of searchHit entity"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
@@ -25,7 +25,6 @@ Represents a single result within the list of search results.
 |rank|Int32|The rank or the order of the result.|
 |contentSource|String|The name of the content source which the **externalItem** is part of .|
 |summary|String|A summary of the result, if a summary is available.|
-|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 |_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
 |_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
@@ -51,7 +50,6 @@ The following is a JSON representation of the resource.
   "hitId": "String",
   "rank": 1,
   "summary": "String",
-  "resultTemplateId": "String",
   "contentSource": "String",
   "resource": { "@odata.type": "microsoft.graph.entity" },
   "_id": "String",

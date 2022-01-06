@@ -1,7 +1,7 @@
 ---
 title: "Add identityProvider"
 description: "Add an identity provider to a B2X user flow."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
@@ -68,6 +68,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/identityProviders/$ref
 Content-type: application/json
+Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH"
@@ -87,10 +88,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-b2xuserflows-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

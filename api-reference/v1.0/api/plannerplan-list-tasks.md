@@ -1,7 +1,7 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannerTask** objects associated with a plannerPlan object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/tasks
 [!INCLUDE [sample-code](../includes/snippets/java/plannerplan-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/plannerplan-get-tasks-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -88,6 +84,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 833
 
 {
   "value": [

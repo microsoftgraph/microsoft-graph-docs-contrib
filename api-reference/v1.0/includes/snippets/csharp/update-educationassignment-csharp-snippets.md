@@ -8,14 +8,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationAssignment = new EducationAssignment
 {
-	DisplayName = "Reading and review test 09.03 #5",
+	DisplayName = "Week 1 reading assignment",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Read chapter 5 and write your review"
+		Content = "Read chapters 1 through 3"
 	},
-	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
-	AddedStudentAction = EducationAddedStudentAction.None
+	DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
 };
 
 await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"]

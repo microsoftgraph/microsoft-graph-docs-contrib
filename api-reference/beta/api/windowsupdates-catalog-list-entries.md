@@ -2,7 +2,7 @@
 title: "List entries"
 description: "Get a list of catalogEntry resources from the catalog."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-catalogentry-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-catalogentry-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

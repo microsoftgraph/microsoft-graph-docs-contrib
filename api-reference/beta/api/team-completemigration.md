@@ -1,7 +1,7 @@
 ---
 title: "team: completeMigration"
 description: "Complete the migration of external messages by removing migration mode from a team."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -80,10 +80,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/completemigration-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/completemigration-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

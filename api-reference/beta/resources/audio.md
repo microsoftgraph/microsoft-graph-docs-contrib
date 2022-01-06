@@ -3,7 +3,7 @@ author: "ananmishr"
 description: "The Audio resource groups audio-related properties on an item into a single structure."
 ms.date: 09/10/2017
 title: Audio
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -17,8 +17,6 @@ The **Audio** resource groups audio-related properties on an item into a single 
 
 If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file.
 The properties of the **Audio** resource are populated by extracting metadata from the file. 
-
-The **Audio** resource is only supported on OneDrive Personal.
 
 ## JSON representation
 

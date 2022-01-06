@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Priviledged Identity Management."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # governanceRoleAssignmentRequest resource type
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
-
-Represents the request for role assignment operations in Privileged Identity Management.
+Represents the request for role assignment operations in Privilegd Identity Management.
 
 `governanceRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 

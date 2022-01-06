@@ -1,7 +1,7 @@
 ---
 title: "networkInfo resource type"
 description: "The networkInfo type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

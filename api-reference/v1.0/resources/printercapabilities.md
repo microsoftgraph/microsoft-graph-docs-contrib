@@ -2,7 +2,7 @@
 title: printerCapabilities complex type
 description: Represents the capabilities reported by a printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # printerCapabilities resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents the capabilities reported by a printer/printerShare.
 

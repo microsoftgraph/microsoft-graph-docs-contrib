@@ -1,7 +1,7 @@
 ---
 title: "iPv6CidrRange resource type"
 description: "Represents an IPv6 range using the CIDR notation."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an IPv6 range using the Classless inter-domain routing (CIDR) notation.
+Represents an IPv6 range using the CIDR notation.
 
 Inherits from [ipRange](../resources/iprange.md)
 
@@ -19,7 +19,7 @@ Inherits from [ipRange](../resources/iprange.md)
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cidrAddress|String|IPv6 address in CIDR notation. Not nullable.|
+|cidrAddress|String|IPv6 address in CIDR notation|
 
 ## JSON representation
 
@@ -36,7 +36,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.iPv6CidrRange", 
   "cidrAddress": "String"
 }
 ```

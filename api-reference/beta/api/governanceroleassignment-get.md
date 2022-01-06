@@ -1,10 +1,10 @@
 ---
 title: "Get governanceRoleAssignment"
 description: "Retrieve the properties and relationships of a governanceRoleAssignment."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # Get governanceRoleAssignment
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).
 
@@ -40,9 +38,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -89,6 +87,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 182
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleAssignments/$entity",

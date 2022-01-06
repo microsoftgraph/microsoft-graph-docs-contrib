@@ -2,7 +2,7 @@
 title: "listItem: createLink"
 description: "Create a link to share a listItem"
 author: "learafa"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -109,6 +109,7 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 ```http
 POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
+Content-length: 212
 
 {
   "type": "view",
@@ -135,10 +136,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,10 +208,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

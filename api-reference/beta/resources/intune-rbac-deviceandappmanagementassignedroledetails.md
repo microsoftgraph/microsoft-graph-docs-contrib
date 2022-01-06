@@ -20,8 +20,8 @@ The set of Role Definitions and Role Assignments assigned to a user.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roleDefinitionIds|String collection|Role Definition IDs for the specifc Role Definitions assigned to a user. This property is read-only.|
-|roleAssignmentIds|String collection|Role Assignment IDs for the specifc Role Assignments assigned to a user. This property is read-only.|
+|roleDefinitionIds|String collection|Role Definition IDs for the specifc Role Definitions assigned to a user.|
+|roleAssignmentIds|String collection|Role Assignment IDs for the specifc Role Assignments assigned to a user.|
 
 ## Relationships
 None

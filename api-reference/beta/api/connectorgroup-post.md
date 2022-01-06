@@ -1,7 +1,7 @@
 ---
 title: "Create connectorGroup"
 description: "Create a connectorGroup object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -63,6 +63,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 Content-type: application/json
+Content-length: 99
 
 {
   "name": "Connector Group Demo"
@@ -85,10 +86,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-connectorgroup-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
@@ -103,6 +100,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 119
 
 {
   "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",

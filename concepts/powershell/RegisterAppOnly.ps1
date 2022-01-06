@@ -9,11 +9,6 @@ param(
   [String]
   $CertPath,
 
-  [Parameter(Mandatory=$false,
-  HelpMessage="Your Azure Active Directory tenant ID")]
-  [String]
-  $TenantId,
-
   [Parameter(Mandatory=$false)]
   [Switch]
   $StayConnected = $false
@@ -31,14 +26,7 @@ $GroupReadAll = @{
 }
 
 # Requires an admin
-if ($TenantId)
-{
-  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read" -TenantId $TenantId
-}
-else
-{
-  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
-}
+Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
 
 # Get context for access to tenant ID
 $context = Get-MgContext
@@ -49,7 +37,6 @@ Write-Host -ForegroundColor Cyan "Certificate loaded"
 
 # Create app registration
 $appRegistration = New-MgApplication -DisplayName $AppName -SignInAudience "AzureADMyOrg" `
- -Web @{ RedirectUris="http://localhost"; } `
  -RequiredResourceAccess @{ ResourceAppId=$graphResourceId; ResourceAccess=$UserReadAll, $GroupReadAll } `
  -AdditionalProperties @{} -KeyCredentials @(@{ Type="AsymmetricX509Cert"; Usage="Verify"; Key=$cert.RawData })
 Write-Host -ForegroundColor Cyan "App registration created with app ID" $appRegistration.AppId

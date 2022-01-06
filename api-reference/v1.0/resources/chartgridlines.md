@@ -2,7 +2,7 @@
 title: "ChartGridlines resource type"
 description: "Represents major or minor gridlines on a chart axis."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Feature differences between Azure AD Graph and Microsoft Graph"
-description: "Describes feature differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
+description: "Describes feature differences between Azure Active Directory (Azure AD) API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "applications"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Many features in Microsoft Graph work similarly to their Azure Active Directory (Azure AD) Graph counterparts. However, a few have been changed or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
+Many features in Microsoft Graph work similarly to their Azure AD Graph counterparts. However, a few have been changed and/or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
 This article explores how Microsoft Graph handles:
 
@@ -23,7 +23,7 @@ This article explores how Microsoft Graph handles:
 If your app uses Azure AD Graph directory extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
 - Manage extension property definitions using the **extensionProperties** property on the [application][/graph/api/resources/application?view=graph-rest-v1.0) resource.
-- Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) action.
+- Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) action.
 - Read extension values using GET and `$select`
 - Search on extension values using GET and `$filter`
 - Update extension values using PATCH

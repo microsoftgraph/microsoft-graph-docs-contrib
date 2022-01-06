@@ -1,7 +1,7 @@
 ---
 title: "teleconferenceDeviceQuality resource type"
 description: "Represents video teleconferencing device session-level quality data."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dongkyun"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

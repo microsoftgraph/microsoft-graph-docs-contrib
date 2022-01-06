@@ -1,7 +1,7 @@
 ---
 title: "List delegatedPermissionClassifications collection of servicePrincipal"
 description: "Retrieve a list of classifications given to delegated permissions exposed by an API's service principal."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionC
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-delegatedpermissionclassification-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-delegatedpermissionclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

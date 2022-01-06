@@ -2,7 +2,7 @@
 title: "Create deviceManagementAutopilotEvent"
 description: "Create a new deviceManagementAutopilotEvent object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create deviceManagementAutopilotEvent
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -84,7 +86,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/autopilotEvents
+POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
 Content-type: application/json
 Content-length: 1545
 

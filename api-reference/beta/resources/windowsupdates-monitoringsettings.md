@@ -2,7 +2,7 @@
 title: "monitoringSettings resource type"
 description: "Settings controlling automated monitoring and response in a deployment."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

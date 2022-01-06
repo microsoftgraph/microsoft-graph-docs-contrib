@@ -1,7 +1,7 @@
 ---
 title: "Get bookingService"
 description: "Get the properties and relationships of a bookingService object in the specified bookingbusiness."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [bookingService](../resources/bookingservice.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
+Get the properties and relationships of a [bookingService](../resources/bookingservice.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,14 +34,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}. Required.|
+| Authorization  | Bearer {code}|
 
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [bookingService](../resources/bookingservice.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [bookingService](../resources/bookingservice.md) object in the response body.
 ## Example
-### Request
+##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_bookingservice"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingservice-csharp-snippets.md)]
@@ -68,16 +68,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-bookingservice-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
-The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability.
+##### Response
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/services/$entity",
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT30M",
@@ -100,9 +94,6 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "staffMemberIds": [],
-    "isLocationOnline": true,
-    "smsNotificationsEnabled": true,
-    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

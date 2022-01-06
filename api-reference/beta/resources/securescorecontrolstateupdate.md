@@ -1,7 +1,7 @@
 ---
 title: " secureScoreControlStateUpdate resource type"
 description: "This resource contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed)."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

@@ -16,6 +16,7 @@ var transferTarget = new InvitationParticipantInfo
 			DisplayName = "Heidi Steen"
 		}
 	},
+	ReplacesCallId = "replacesCallId-value",
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"endpointType", "default"}
@@ -23,7 +24,7 @@ var transferTarget = new InvitationParticipantInfo
 };
 
 await graphClient.Communications.Calls["{call-id}"]
-	.Transfer(transferTarget,null)
+	.Transfer(transferTarget)
 	.Request()
 	.PostAsync();
 

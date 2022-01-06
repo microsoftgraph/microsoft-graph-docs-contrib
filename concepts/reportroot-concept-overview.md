@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph reports API overview"
 description: "The reports API in Microsoft Graph enables understanding of application and tenant resource activity."
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
@@ -57,7 +57,7 @@ You can use the reports APIs to access the data sets listed in the following tab
 ## API reference
 Looking for the API reference for this service?
 
-- [Identity and access reports API in Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta)
+- [Identity and access retports API in Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta)
 - [Microsoft 365 usage reports API in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
 - [Microsoft 365 usage reports API in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
 

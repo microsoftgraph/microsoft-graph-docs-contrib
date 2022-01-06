@@ -2,7 +2,7 @@
 title: "workbookChartPointFormat resource type"
 description: "Represents formatting object for chart points."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 author: nilakhan
 description: "Represents information for print document upload"
 title: "printDocumentUploadProperties resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "resourcePageType"
 ms.prod: universal-print
 ---

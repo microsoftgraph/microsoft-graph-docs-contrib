@@ -1,7 +1,7 @@
 ---
 title: "Delete accessReview"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

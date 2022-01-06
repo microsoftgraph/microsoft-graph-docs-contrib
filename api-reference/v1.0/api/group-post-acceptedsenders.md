@@ -2,7 +2,7 @@
 title: "Create acceptedSender"
 description: "Add a new user or group to the acceptedSender list."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -51,6 +51,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
+Content-length: 30
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
@@ -70,10 +71,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-acceptedsender-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-acceptedsender-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

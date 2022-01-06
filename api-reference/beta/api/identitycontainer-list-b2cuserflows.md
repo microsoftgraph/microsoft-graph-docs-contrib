@@ -1,7 +1,7 @@
 ---
 title: "List b2cIdentityUserFlows"
 description: "Retrieve a list of b2cIdentityUserFlow objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
@@ -93,10 +93,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2cuserflows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-b2cuserflows-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -168,10 +164,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows?$expand=identityProvi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-b2cuserflows-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-b2cuserflows-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

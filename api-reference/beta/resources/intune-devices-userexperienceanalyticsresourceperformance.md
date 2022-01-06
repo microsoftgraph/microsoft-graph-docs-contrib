@@ -43,7 +43,6 @@ The user experience analytics resource performance entity.
 |ramSpikeTimeScore|Int32|The user experience analytics device RAM spike time score. Valid values 0 to 100|
 |ramSpikeTimePercentageThreshold|Double|Threshold of ramSpikeTimeScore. Valid values 0 to 100|
 |deviceResourcePerformanceScore|Int32|Resource performance score of a specific device. Valid values 0 to 100|
-|averageSpikeTimeScore|Int32|AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100|
 
 ## Relationships
 None
@@ -71,8 +70,7 @@ Here is a JSON representation of the resource.
   "cpuSpikeTimePercentageThreshold": "4.2",
   "ramSpikeTimeScore": 1024,
   "ramSpikeTimePercentageThreshold": "4.2",
-  "deviceResourcePerformanceScore": 1024,
-  "averageSpikeTimeScore": 1024
+  "deviceResourcePerformanceScore": 1024
 }
 ```
 

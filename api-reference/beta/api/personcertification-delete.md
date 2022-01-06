@@ -1,7 +1,7 @@
 ---
 title: "Delete personCertification"
 description: "Deletes an personCertification object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -71,10 +71,6 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{i
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-personcertification-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-personcertification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

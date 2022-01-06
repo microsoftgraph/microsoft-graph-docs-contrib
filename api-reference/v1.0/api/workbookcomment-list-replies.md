@@ -1,7 +1,7 @@
 ---
 title: "List workbookCommentReplies"
 description: "Retrieve a list of workbookcommentreply objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
 author: "sureshja"
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 ---
@@ -81,15 +81,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-serviceprincipal-from-serviceprincipals-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 ### Response
-Here is an example of the response.
+Here is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

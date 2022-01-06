@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Convert to other formats
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 description: "Use this API to retrieve the contents of an item in a specific format."
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Download a file in another format
 
 Namespace: microsoft.graph
-
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.

@@ -2,7 +2,7 @@
 title: "teamsTabConfiguration resource type (Open Type)"
 description: "The settings that determine the content of a tab."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

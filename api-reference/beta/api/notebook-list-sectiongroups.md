@@ -2,7 +2,7 @@
 title: "List sectionGroups"
 description: "Retrieve a list of section groups from the specified notebook."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-get-sectiongroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sectiongroups-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -95,6 +91,7 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 378
 
 {
   "value": [

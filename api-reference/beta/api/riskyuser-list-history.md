@@ -1,7 +1,7 @@
 ---
 title: "List history of riskyUser"
 description: "Retrieve the risk history"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-userriskhitsory-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

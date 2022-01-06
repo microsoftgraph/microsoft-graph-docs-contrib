@@ -3,7 +3,7 @@ author: daspek
 description: "The presence of the CreateAction resource on an itemActivity indicates that the activity created an item."
 ms.date: 09/14/2017
 title: CreateAction
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

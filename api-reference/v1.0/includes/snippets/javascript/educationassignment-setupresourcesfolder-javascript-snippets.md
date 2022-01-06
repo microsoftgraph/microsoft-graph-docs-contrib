@@ -13,7 +13,7 @@ const client = Client.init(options);
 const educationAssignment = {
 };
 
-await client.api('/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder')
+await client.api('/education/classes/d38ffdea-da93-46ac-90ba-d568c6073075/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/setUpResourcesFolder')
 	.post(educationAssignment);
 
 ```

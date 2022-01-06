@@ -2,7 +2,7 @@
 title: "teamsTemplate resource type"
 description: "Describes teamsTemplate entity."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

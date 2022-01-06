@@ -2,7 +2,7 @@
 title: "message: unsubscribe"
 description: "Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list. Uses the information in the `List-Unsubscribe` header."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -78,10 +78,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-unsubscribe-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/message-unsubscribe-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

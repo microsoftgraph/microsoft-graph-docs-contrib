@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 549
+Content-Length: 547
 
 {
   "value": {
@@ -75,7 +75,7 @@ Content-Length: 549
     "description": "Description value",
     "displayVersion": "Display Version value",
     "lifecycleState": "draft",
-    "platforms": "android",
+    "platforms": "macOS",
     "technologies": "mdm",
     "templateFamily": "endpointSecurityAntivirus",
     "allowUnmanagedSettings": true,

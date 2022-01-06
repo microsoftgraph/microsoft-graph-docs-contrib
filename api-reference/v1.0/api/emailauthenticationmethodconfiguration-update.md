@@ -2,7 +2,7 @@
 title: "Update emailAuthenticationMethodConfiguration"
 description: "Update the properties of an emailAuthenticationMethodConfiguration object."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -22,10 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Authentication Policy Administrator
-* Global Administrator
+For delegated scenarios, the administrator needs the Global admin role. For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## HTTP request
 
@@ -35,7 +32,7 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
+PATCH /policies/authenticationMethodsPolicy/email
 ```
 
 ## Request headers
@@ -60,8 +57,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_emailauthenticationmethodconfiguration"
@@ -69,32 +64,15 @@ If successful, this method returns a `204 No Content` response code. It does not
 -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
 Content-Type: application/json
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
   "allowExternalIdToUseEmailOtp": "enabled",
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-emailauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-emailauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-emailauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-emailauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

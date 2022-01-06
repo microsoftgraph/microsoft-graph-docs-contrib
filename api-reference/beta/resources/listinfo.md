@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The listInfo complex type provides additional information about a list."
 ms.date: 09/11/2017
 title: ListInfo
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

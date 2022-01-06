@@ -1,18 +1,17 @@
 ---
-title: "Delete identityProvider from b2xIdentityUserFlow (deprecated)"
-description: "Delete an identityProvider from a b2xIdentityUserFlow. (deprecated)"
-ms.localizationpriority: medium
+title: "Delete identityProvider from b2xIdentityUserFlow"
+description: "Delete an identityProvider from a b2xIdentityUserFlow."
+localization_priority: Normal
 doc_type: apiPageType
-author: "namkedia"
+author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Delete identityProvider from b2xIdentityUserFlow (deprecated)
+# Delete identityProvider from b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Delete an identity provider from a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
@@ -101,3 +100,5 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

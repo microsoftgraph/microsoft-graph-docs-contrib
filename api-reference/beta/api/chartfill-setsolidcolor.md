@@ -2,7 +2,7 @@
 title: "ChartFill: setSolidColor"
 description: "Sets the fill formatting of a chart element to a uniform color."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,6 +64,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
+Content-length: 28
 
 {
   "color": "color-value"

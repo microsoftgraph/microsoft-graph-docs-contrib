@@ -12,17 +12,18 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUnifiedRoleAssignmentScheduleRequest *unifiedRoleAssignmentScheduleRequest = [[MSGraphUnifiedRoleAssignmentScheduleRequest alloc] init];
-[unifiedRoleAssignmentScheduleRequest setAction:@"AdminAssign"];
-[unifiedRoleAssignmentScheduleRequest setJustification:@"Assign User Admin to IT Helpdesk (User) group"];
-[unifiedRoleAssignmentScheduleRequest setRoleDefinitionId:@"fdd7a751-b60b-444a-984c-02652fe8fa1c"];
-[unifiedRoleAssignmentScheduleRequest setDirectoryScopeId:@"/"];
-[unifiedRoleAssignmentScheduleRequest setPrincipalId:@"07706ff1-46c7-4847-ae33-3003830675a1"];
+[unifiedRoleAssignmentScheduleRequest setAction:@"String"];
+[unifiedRoleAssignmentScheduleRequest setPrincipalId:@"String"];
+[unifiedRoleAssignmentScheduleRequest setRoleDefinitionId:@"String"];
+[unifiedRoleAssignmentScheduleRequest setDirectoryScopeId:@"String"];
+[unifiedRoleAssignmentScheduleRequest setAppScopeId:@"String"];
+[unifiedRoleAssignmentScheduleRequest setIsValidationOnly:@"Boolean"];
+[unifiedRoleAssignmentScheduleRequest setTargetScheduleId:@"String"];
+[unifiedRoleAssignmentScheduleRequest setJustification:@"String"];
 MSGraphRequestSchedule *scheduleInfo = [[MSGraphRequestSchedule alloc] init];
-[scheduleInfo setStartDateTime: "2021-07-01T00:00:00Z"];
-MSGraphExpirationPattern *expiration = [[MSGraphExpirationPattern alloc] init];
-[expiration setType: [MSGraphExpirationPatternType noExpiration]];
-[scheduleInfo setExpiration:expiration];
 [unifiedRoleAssignmentScheduleRequest setScheduleInfo:scheduleInfo];
+MSGraphTicketInfo *ticketInfo = [[MSGraphTicketInfo alloc] init];
+[unifiedRoleAssignmentScheduleRequest setTicketInfo:ticketInfo];
 
 NSError *error;
 NSData *unifiedRoleAssignmentScheduleRequestData = [unifiedRoleAssignmentScheduleRequest getSerializedDataWithError:&error];

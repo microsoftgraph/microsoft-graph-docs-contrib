@@ -1,7 +1,7 @@
 ---
 title: "Delete timeOffRequest"
 description: "Delete a timeOffRequest object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -78,10 +78,6 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-timeoffrequest-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-timeoffrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

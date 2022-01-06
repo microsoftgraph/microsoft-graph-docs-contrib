@@ -1,7 +1,7 @@
 ---
 title: "appRole resource type"
 description: "Represents an application role."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "psignoret"

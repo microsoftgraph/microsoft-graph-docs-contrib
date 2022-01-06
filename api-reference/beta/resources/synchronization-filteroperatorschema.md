@@ -1,7 +1,7 @@
 ---
 title: "filterOperatorSchema resource type"
 description: "Describes an operator that can be used in a filter."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

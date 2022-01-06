@@ -66,8 +66,6 @@ The following table shows the properties that are required when you create the i
 |lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
-|homeScreenGridWidth|Int32|Gets or sets the number of columns to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridHeight must be configured as well.|
-|homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
 |wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
@@ -87,7 +85,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7083
+Content-length: 6830
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -195,8 +193,6 @@ Content-length: 7083
       ]
     }
   ],
-  "homeScreenGridWidth": 3,
-  "homeScreenGridHeight": 4,
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -264,9 +260,7 @@ Content-length: 7083
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -296,9 +290,7 @@ Content-length: 7083
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
@@ -308,7 +300,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7255
+Content-Length: 7002
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -419,8 +411,6 @@ Content-Length: 7255
       ]
     }
   ],
-  "homeScreenGridWidth": 3,
-  "homeScreenGridHeight": 4,
   "notificationSettings": [
     {
       "@odata.type": "microsoft.graph.iosNotificationSettings",
@@ -488,9 +478,7 @@ Content-Length: 7255
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   },
   "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
@@ -520,9 +508,7 @@ Content-Length: 7255
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```

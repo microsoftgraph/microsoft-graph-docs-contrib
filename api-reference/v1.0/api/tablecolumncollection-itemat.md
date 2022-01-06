@@ -2,7 +2,7 @@
 title: "TableColumnCollection: ItemAt"
 description: "Gets a column based on its position in the collection."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,6 +64,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
 Content-type: application/json
+Content-length: 20
 
 {
   "index": 3
@@ -90,6 +91,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 81
 
 {
   "id": "99",

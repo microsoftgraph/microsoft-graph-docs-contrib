@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getTeamsUserActivityTotalUserCounts"
 description: "Get the number of Microsoft Teams licensed or non-licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a [teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md) object in the response body.
 
 ## Example
 
@@ -150,7 +150,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
 } -->
 
 ```http
@@ -159,6 +159,7 @@ Content-Type: application/json
 Content-Length: 291
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

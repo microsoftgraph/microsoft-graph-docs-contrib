@@ -4,7 +4,7 @@ description: A company in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
@@ -34,7 +34,7 @@ Represents a companies resource type in Dynamics 365 Business Central.
 
 
 ## Relationships
-None.
+None
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ Here is a JSON representation of the company.
   "systemVersion": "string",
   "businessProfileId": "string"
 }
+
 ```
 
 

@@ -2,7 +2,7 @@
 title: "Delete educationUser"
 description: "Delete a user."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -24,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | EduRoster.ReadWrite.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
@@ -42,8 +41,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
+##### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,13 +68,9 @@ DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
+##### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response",

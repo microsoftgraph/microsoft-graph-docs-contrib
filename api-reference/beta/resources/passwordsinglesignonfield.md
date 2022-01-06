@@ -1,7 +1,7 @@
 ---
 title: "passwordSingleSignOnField resource type"
 description: "Fields to capture the credentials for password SSO"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

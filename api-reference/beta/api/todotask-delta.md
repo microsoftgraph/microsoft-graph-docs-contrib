@@ -1,7 +1,7 @@
 ---
 title: "todoTask: delta"
 description: "Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "avijityadav"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -97,6 +97,7 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 337
 
 {
    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",

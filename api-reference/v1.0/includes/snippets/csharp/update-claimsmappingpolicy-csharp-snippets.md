@@ -8,7 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var claimsMappingPolicy = new ClaimsMappingPolicy
 {
-	DisplayName = "UpdateClaimsPolicy"
+	Definition = new List<String>()
+	{
+		"definition-value"
+	},
+	DisplayName = "displayName-value",
+	IsOrganizationDefault = true
 };
 
 await graphClient.Policies.ClaimsMappingPolicies["{claimsMappingPolicy-id}"]

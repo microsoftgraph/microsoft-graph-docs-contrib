@@ -1,7 +1,7 @@
 ---
 title: "synchronizationJob resource type"
 description: "Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

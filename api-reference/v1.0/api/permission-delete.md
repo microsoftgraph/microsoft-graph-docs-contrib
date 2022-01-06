@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Remove access to an item
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "Remove access to a DriveItem."
 ms.prod: ""
 doc_type: apiPageType

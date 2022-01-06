@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The IdentitySet resource is a keyed collection of identity resources."
 ms.prod: ""
 doc_type: resourcePageType

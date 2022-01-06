@@ -2,7 +2,7 @@
 title: "reports: getPrinterArchivedPrintJobs"
 description: Get a list of archived print jobs that were queued for particular printer.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -92,6 +92,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 236
 
 {
   "value": [

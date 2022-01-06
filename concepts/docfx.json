@@ -46,8 +46,7 @@
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
       "searchScope": ["graph"],
-      "toc_preview": true,
-      "recommendations": false
+      "toc_preview": true
     },
     "fileMetadata": {
       "ms.technology": {

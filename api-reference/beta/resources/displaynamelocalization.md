@@ -1,7 +1,7 @@
 ---
 title: "displayNameLocalization resource type"
 description: "Provides the ability for an administrator to customize the string used in a shared Microsoft 365 experience."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

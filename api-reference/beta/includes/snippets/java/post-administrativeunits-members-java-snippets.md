@@ -6,17 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Group directoryObject = new Group();
-directoryObject.description = "Self help community for golf";
-directoryObject.displayName = "Golf Assist";
-LinkedList<String> groupTypesList = new LinkedList<String>();
-groupTypesList.add("Unified");
-directoryObject.groupTypes = groupTypesList;
-directoryObject.mailEnabled = true;
-directoryObject.mailNickname = "golfassist";
-directoryObject.securityEnabled = false;
+DirectoryObject directoryObject = new DirectoryObject();
+directoryObject.id = "{id}";
 
-graphClient.administrativeUnits("{id}").members()
+graphClient.administrativeUnits("{id}").members().references()
 	.buildRequest()
 	.post(directoryObject);
 

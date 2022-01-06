@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

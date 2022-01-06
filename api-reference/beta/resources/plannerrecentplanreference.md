@@ -1,7 +1,7 @@
 ---
 title: "plannerRecentPlanReference resource type"
 description: "The **plannerRecentPlanReference** resource type repesents a reference to a plannerPlan that has recently been viewed by a user. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

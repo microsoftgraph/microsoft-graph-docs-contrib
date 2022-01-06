@@ -12,11 +12,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] init];
 [chatMessage setCreatedDateTime: "2019-02-04T19:58:15.511Z"];
-MSGraphChatMessageFromIdentitySet *from = [[MSGraphChatMessageFromIdentitySet alloc] init];
+MSGraphIdentitySet *from = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"id-value"];
 [user setDisplayName:@"Joh Doe"];
-[user setUserIdentityType: [MSGraphTeamworkUserIdentityType aadUser]];
+[user setUserIdentityType:@"aadUser"];
 [from setUser:user];
 [chatMessage setFrom:from];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];

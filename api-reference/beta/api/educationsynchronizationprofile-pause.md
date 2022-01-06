@@ -2,7 +2,7 @@
 title: "Pause sync on an educationSynchronizationProfile"
 description: "Pause the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -66,10 +66,6 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-synchronizationprofile-pause-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-synchronizationprofile-pause-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Range: Row"
 description: "Gets a row contained in the range."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -63,6 +63,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
+Content-length: 18
 
 {
   "row": 2
@@ -79,6 +80,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",

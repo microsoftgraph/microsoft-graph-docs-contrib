@@ -2,7 +2,7 @@
 title: "Create responsibilities"
 description: "Create a new responsibilities object."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -70,6 +70,7 @@ If successful, this method returns a `201 Created` response code and a [personRe
 ``` http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
+Content-length: 413
 
 {
   "description": "Member of the Microsoft API Council",

@@ -43,7 +43,7 @@ Graph model for a reusable setting
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting. This property is read-only.|
+|referencingConfigurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) collection|configuration policies referencing the current reusable setting|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

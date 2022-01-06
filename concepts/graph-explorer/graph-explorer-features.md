@@ -2,8 +2,8 @@
 
 title: "Working with Graph Explorer"
 description: "Find out how to use some of the important features in Graph Explorer."
-ms.localizationpriority: high
-author: RabebOthmani
+localization_priority: Normal
+author: bettirosengugi
 
 ---
 # Working with Graph Explorer
@@ -33,7 +33,7 @@ The **Modify  permissions** feature is currently in preview, and some queries mi
 
 ## Get an access or authentication token
 
-Graph Explorer includes an **Access token** tab that shows your access token when you're signed in. On the **Access token** tab, you can copy the token if you need to use it in your favorite REST client application.
+Graph Explorer includes an **Access token** tab that shows your access token when you are signed in. On the **Access token** tab, you can copy the token if you need to use it in your favorite REST client application.
 
 ![Screenshot of the Access token tab in Graph Explorer with the Copy button highlighted](./images/access-token.png)
 
@@ -49,7 +49,7 @@ Graph Explorer includes several features to make implementing UI easier. Reuse t
 
 ### Microsoft Graph Toolkit integration
 
-The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built-in providers that authenticate with and fetch data from Microsoft Graph.
+The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
 Graph Explorer provides sample REST API queries that correspond to Microsoft Graph Toolkit components. A blue dot on the **Toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
 
@@ -81,12 +81,12 @@ Choose the theme for Graph Explorer by selecting the **Change theme** option und
 
 Queries run in Graph Explorer are saved for 30 days in the **History** tab. On the History tab, you can:
 
-1.	Export all history items in `.har` format.
+1.	Export all history items in .har format.
 2.	Delete all history items.
-3.	View a history item.
-4.	Run a query.
-5.	Export a history item in `.har` format.
-6.	Delete a history item.
+3.	View this history item.
+4.	Run this query.
+5.	Export this history item in .har format.
+6.	Delete this history item.
 
 ![Screenshot of the History tab with options highlighted](./images/storing-and-sharing-queries.png)
 

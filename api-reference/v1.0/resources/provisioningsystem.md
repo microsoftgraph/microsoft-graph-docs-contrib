@@ -1,7 +1,7 @@
 ---
 title: "provisioningSystem resource type"
 description: "Represents the system that a user was provisioned to or from."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

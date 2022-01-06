@@ -1,7 +1,7 @@
 ---
 title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -81,10 +81,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-synchronizationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

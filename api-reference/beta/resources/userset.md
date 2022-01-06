@@ -1,7 +1,7 @@
 ---
 title: "userSet complex type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -13,13 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). It is an abstract base type inherited by the following resource types:
-+ [singleUser](singleuser.md)
-+ [groupMembers](groupmembers.md)
-+ [connectedOrganizationMembers](connectedorganizationmembers.md)
-+ [requestorManager](requestormanager.md)
-+ [internalSponsors](internalsponsors.md)
-+ [externalSponsors](externalsponsors.md)
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). The abstract base type for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) types.
 
 ## Properties
 
@@ -29,13 +23,7 @@ Used in the request, approval, and assignment review settings of an [access pack
 
 ## JSON representation
 
-The following is a JSON representation of userSet. A [userSet](userset.md) is an abstract base class and so would not be sent or received.  Instead, one of the following `@odata.type` values representing the inherited types would be used:
-+ `#microsoft.graph.singleUser`
-+ `#microsoft.graph.groupMembers`
-+ `#microsoft.graph.connectedOrganizationMembers`
-+ `#microsoft.graph.requestorManager`
-+ `#microsoft.graph.internalSponsors`
-+ `#microsoft.graph.externalSponsors`
+The following is a JSON representation of userSet.  Note that a userSet is an abstract base class, and so would not be sent or received.  Instead, one of the `@odata.type` of "`#microsoft.graph.singleUser`", "`#microsoft.graph.groupMembers`", "`#microsoft.graph.connectedOrganizationMembers`", "`#microsoft.graph.requestorManager`", "`#microsoft.graph.internalSponsors`" or "`#microsoft.graph.externalSponsors`" would be used.
 
 <!-- {
   "blockType": "resource",
@@ -47,8 +35,7 @@ The following is a JSON representation of userSet. A [userSet](userset.md) is an
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.userSet",
-  "isBackup": false
+       "isBackup": false
 }
 ```
 

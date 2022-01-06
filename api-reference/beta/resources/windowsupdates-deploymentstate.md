@@ -2,7 +2,7 @@
 title: "deploymentState resource type"
 description: "Describes and controls the current state of a deployment."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---
@@ -19,8 +19,8 @@ Describes and controls the current state of a deployment.
 |Property|Type|Description|
 |:---|:---|:---|
 |reasons|[microsoft.graph.windowsUpdates.deploymentStateReason](../resources/windowsupdates-deploymentstatereason.md) collection|Specifies the reasons the deployment has its state value. Read-only.|
-|requestedValue|microsoft.graph.windowsUpdates.requestedDeploymentStateValue|Specifies the requested state of the deployment. Supports a subset of the values for **requestedDeploymentStateValue**. Possible values are: `none`, `paused`, `unknownFutureValue`.|
-|value|microsoft.graph.windowsUpdates.deploymentStateValue|Specifies the state of the deployment. Supports a subset of the values for **deploymentStateValue**. Possible values are: `scheduled`, `offering`, `paused`, `unknownFutureValue`. Read-only.|
+|requestedValue|microsoft.graph.windowsUpdates.requestedDeploymentStateValue|Specifies the requested state of the deployment. Supports a subset of the values for **requestedDeploymentStateValue**. Possible values are: `none`, `paused`.|
+|value|microsoft.graph.windowsUpdates.deploymentStateValue|Specifies the state of the deployment. Supports a subset of the values for **deploymentStateValue**. Possible values are: `scheduled`, `offering`, `paused`. Read-only.|
 
 ## Relationships
 None.

@@ -2,7 +2,7 @@
 title: "Sending emails with MIME content"
 description: "Email clients have the ability to send emails through Exchange in a MIME message format."
 author: "isvargasmsft"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ---
 

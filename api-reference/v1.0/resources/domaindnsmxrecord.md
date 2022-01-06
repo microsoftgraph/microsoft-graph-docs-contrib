@@ -2,7 +2,7 @@
 title: "domainDnsMxRecord resource type"
 description: "Represents a MX record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

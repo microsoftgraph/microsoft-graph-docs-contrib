@@ -1,18 +1,17 @@
 ---
-title: "List all identityProviders in a b2xIdentityUserFlow (deprecated)"
-description: "List all identityProviders in a b2xIdentityUserFlow (deprecated)."
-ms.localizationpriority: medium
+title: "List all identityProviders in a b2xIdentityUserFlow"
+description: "List all identityProviders in a b2xIdentityUserFlow."
+localization_priority: Normal
 doc_type: apiPageType
-author: "namkedia"
+author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2xIdentityUserFlow (deprecated)
+# List all identityProviders in a b2xIdentityUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Get the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
@@ -86,10 +85,6 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProvider
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-b2xuserflow-list-identityproviders-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -126,3 +121,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

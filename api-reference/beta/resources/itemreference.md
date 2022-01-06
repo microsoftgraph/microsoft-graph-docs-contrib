@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The ItemReference resource provides information necessary to address a DriveItem via the API."
 ms.date: 09/10/2017
 title: ItemReference
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sharepoint"
 ---

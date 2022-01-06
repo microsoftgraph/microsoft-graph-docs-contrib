@@ -2,7 +2,7 @@
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of users or groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -23,6 +23,7 @@ A collection of users or groups enabled to use Microsoft Authenticator Passwordl
 |:---|:---|:---|
 |id|String|Object ID of an Azure AD user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method.|
+|shownContext|authenticatorAppContextType|Possible values are: `location`, `app`.|
 |targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
 |useForSignIn|Boolean|Determines whether the authentication method can be used to sign in to Azure AD.|
 
@@ -45,6 +46,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "targetType": "String",
   "isRegistrationRequired": "Boolean",
-  "useForSignIn": "Boolean"
-  }
+  "useForSignIn": "Boolean",
+  "shownContext": "String"
+}
 ```

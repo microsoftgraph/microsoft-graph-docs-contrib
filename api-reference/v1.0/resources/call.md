@@ -1,8 +1,8 @@
 ---
 title: "call resource type"
-description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`."
+description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
 author: "ananmishr"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`.
+The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
 Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store so that your application can rejoin the call in the event that your application crashes.
 

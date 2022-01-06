@@ -1,7 +1,7 @@
 ---
 title: "trustFrameworkKeySet resource type"
 description: "Represents a trust framework keyset/policy keys."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

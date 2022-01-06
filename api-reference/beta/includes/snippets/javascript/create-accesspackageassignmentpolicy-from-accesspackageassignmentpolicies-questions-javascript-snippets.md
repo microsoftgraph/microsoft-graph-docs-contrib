@@ -29,7 +29,7 @@ const accessPackageAssignmentPolicy = {
         approvalStages: [{
                 approvalStageTimeOutInDays: 14,
                 isApproverJustificationRequired: true,
-                isEscalationEnabled: false,
+                isEscalationEnabled: true,
                 escalationTimeInMinutes: 11520,
                 primaryApprovers: [{
                         '@odata.type': '#microsoft.graph.groupMembers',
@@ -44,6 +44,9 @@ const accessPackageAssignmentPolicy = {
                 ]
             }
         ]
+    },
+    accessReviewSettings: {
+        isEnabled: false
     },
     questions: [{
         isRequired: false,

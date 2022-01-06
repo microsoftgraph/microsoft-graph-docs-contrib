@@ -1,7 +1,7 @@
 ---
 title: "searchEntity: query"
-description: "Runs the query specified in the request body. Search results are provided in the response"
-ms.localizationpriority: medium
+description: "Runs the query specified in the request body. Search results are provided in the response."
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "apiPageType"
@@ -162,8 +162,6 @@ Content-type: application/json
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
-- [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

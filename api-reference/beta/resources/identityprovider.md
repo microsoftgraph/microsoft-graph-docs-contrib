@@ -1,7 +1,7 @@
 ---
 title: "identityProvider resource type"
 description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "namkedia"

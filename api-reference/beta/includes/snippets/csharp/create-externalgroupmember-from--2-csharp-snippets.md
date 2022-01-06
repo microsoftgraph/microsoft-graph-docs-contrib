@@ -6,10 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalGroupMember = new Microsoft.Graph.ExternalConnectors.ExternalGroupMember
+var externalGroupMember = new ExternalGroupMember
 {
 	Id = "e5477431-1038-484e-bf69-1dfedb97a110",
-	Type = Microsoft.Graph.ExternalConnectors.ExternalGroupMemberType.User
+	Type = Microsoft.Graph.ExternalConnectors.ExternalGroupMemberType.Group,
+	IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
 };
 
 await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Groups["{externalConnectors.externalGroup-id}"].Members

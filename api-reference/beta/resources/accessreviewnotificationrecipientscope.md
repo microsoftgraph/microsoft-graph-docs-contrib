@@ -2,7 +2,7 @@
 title: "accessreviewnotificationrecipientscope resource type"
 description: "Represents who will receive access review notifications."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -34,3 +34,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.accessReviewNotificationRecipientScope"
 }
 ```
+
+## Relationships
+None.

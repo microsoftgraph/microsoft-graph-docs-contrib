@@ -2,7 +2,7 @@
 title: "Create page"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -62,6 +62,7 @@ In the `../onenote/pages` path, you can use the `sectionName` query parameter to
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
+Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -104,6 +105,7 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 312
 
 {
   "title": "title-value",

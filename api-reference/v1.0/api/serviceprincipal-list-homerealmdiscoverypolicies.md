@@ -1,7 +1,7 @@
 ---
 title: "List assigned homeRealmDiscoveryPolicies"
 description: "List homeRealmDiscoveryPolicies that are assigned to a service principal."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-homerealmdiscoverypolicies-on-application-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-homerealmdiscoverypolicies-on-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

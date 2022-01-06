@@ -2,7 +2,7 @@
 title: "List used"
 description: "Calculate and list the documents the user has viewed or modified."
 author: "simonhult"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "insights"
 doc_type: apiPageType
 ---

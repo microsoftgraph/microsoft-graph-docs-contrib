@@ -2,7 +2,7 @@
 title: "Create plannerRoster"
 description: "Create a new plannerRoster object."
 author: "tarkansevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -61,6 +61,7 @@ If successful, this method returns a `201 Created` response code and a [plannerR
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters
 Content-Type: application/json
+Content-length: 55
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster"
@@ -80,10 +81,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerroster-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-plannerroster-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

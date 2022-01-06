@@ -1,7 +1,7 @@
 ---
 title: "Versioning, support, and breaking change policies for Microsoft Graph "
 description: "This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available."
-ms.localizationpriority: high
+localization_priority: Priority
 ---
 
 # Versioning, support, and breaking change policies for Microsoft Graph
@@ -57,15 +57,14 @@ Our developer community can post feature requests on the [Microsoft 365 Develope
 The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API v1.0 version contains features that are generally available and ready for production use. Browse the [documentation for the v1.0 APIs](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Preview status
-An API or feature in Microsoft Graph is labelled as "(preview)" to indicate its behavior is _unique_ in the beta endpoint. 
+A feature or API is labelled as "(preview)" to indicate its behavior is _unique_ in the beta endpoint. 
 
-The behavior of most APIs and features in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of APIs and features in one of the following two cases: 
+The behavior of most features and APIs in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of features and APIs in one of the following two cases: 
 - Available in only beta
 - Available in beta differently than in v1.0
 
 Like any other API in the beta endpoint, APIs marked in the documentation as "(preview)" may experience breaking changes without notice. Do not access APIs from the beta endpoint in production apps.
 
-As an example, [attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) is a feature that has been generally available for administrators in the [Microsoft 365 Defender portal](https://security.microsoft.com/). When the REST API for attack simulation training becomes available in Microsoft Graph in only the beta endpoint, the REST API [documentation](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#attack-simulation-and-training-preview) is labelled as "(preview)". The "(preview)" label applies to the REST API and its documentation in Microsoft Graph, even though the service itself is generally available.
 
 ### Deprecated and unsupported versions
 

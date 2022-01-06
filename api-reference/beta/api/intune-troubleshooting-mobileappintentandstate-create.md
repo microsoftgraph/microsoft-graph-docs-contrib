@@ -2,7 +2,7 @@
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create mobileAppIntentAndState
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -61,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/v1/users/{usersId}/mobileAppIntentAndStates
+POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
 Content-length: 831
 

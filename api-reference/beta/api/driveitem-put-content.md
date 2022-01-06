@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
 ms.date: 09/10/2017
 title: Upload small files
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

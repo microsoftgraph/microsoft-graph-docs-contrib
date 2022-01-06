@@ -1,8 +1,8 @@
 ---
 title: "Applications API overview"
 description: "Register your application with Azure AD to create an identity configuration for it that allows it to integrate with Azure AD."
-author: "FaithOmbongi"
-ms.localizationpriority: high
+author: "davidmu1"
+localization_priority: Priority
 ms.prod: "applications"
 ms.custom: scenarios:getting-started
 ---

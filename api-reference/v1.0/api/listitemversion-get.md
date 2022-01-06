@@ -1,7 +1,7 @@
 ---
 title: "Get a ListItemVersion resource"
 description: "Retrieve the metadata for a specific version of a ListItem."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: apiPageType
@@ -66,10 +66,6 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expan
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-listitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-single-version-listitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

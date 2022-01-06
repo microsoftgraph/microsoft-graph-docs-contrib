@@ -1,7 +1,7 @@
 ---
 title: "autoReviewSettings resource type"
 description: "Specifies the behavior for when an access review completes."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType

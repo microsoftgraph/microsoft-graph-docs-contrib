@@ -1,7 +1,7 @@
 ---
 title: "List tokenLifetimePolicies"
 description: "Get a list of tokenLifetimePolicy objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/policies/tokenLifetimePolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tokenlifetimepolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-tokenlifetimepolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

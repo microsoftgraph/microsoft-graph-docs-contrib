@@ -1,7 +1,7 @@
 ---
 title: "provisionedIdentity resource type"
 description: "Describes the identity associated with the provisioning object summary event."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

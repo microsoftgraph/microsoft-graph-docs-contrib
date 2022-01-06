@@ -2,7 +2,7 @@
 title: "riskUserActivity resource type"
 description: "riskUserActivity detections"
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 ---
 
@@ -51,7 +51,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
 - [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
-- [Aosp Wi-Fi security type](intune-androidforwork-aospwifisecuritytype.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
 - [Device install state](intune-books-deviceinstallstate.md)
@@ -73,8 +72,6 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP app revoke licenses action result](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP e-book](intune-books-iosvppebook.md)
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
-- [macOS dmg app](intune-apps-macosdmgapp.md)
-- [macOS included app](intune-apps-macosincludedapp.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
 - [macOS mdatp app](intune-apps-macosmdatpapp.md)
@@ -134,7 +131,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Office suite install progress display level](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office update channel](intune-apps-officeupdatechannel.md)
 - [Office user checkin summary](intune-cirrus-officeusercheckinsummary.md)
-- [Resultant app state](intune-apps-resultantappstate.md)
 - [Resultant app state detail](intune-apps-resultantappstatedetail.md)
 - [Symantec code signing certificate](intune-apps-symanteccodesigningcertificate.md)
 - [User app install status](intune-apps-userappinstallstatus.md)

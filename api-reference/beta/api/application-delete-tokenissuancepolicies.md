@@ -1,7 +1,7 @@
 ---
 title: "Remove tokenIssuancePolicy"
 description: "Remove a tokenIssuancePolicy from an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

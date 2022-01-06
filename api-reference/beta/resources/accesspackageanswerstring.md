@@ -2,7 +2,7 @@
 title: "accessPackageAnswerString resource type"
 description: "A string answer to an accessPackageTextInputQuestion"
 author: "markwahl-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Add images, videos, and files to OneNote pages"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "onenote"
 ---
 

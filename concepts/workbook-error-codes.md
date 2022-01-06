@@ -2,7 +2,7 @@
 title: "Error codes for Workbooks and charts APIs in Microsoft Graph"
 description: "Lists and describes the error codes and messages for Workbooks and charts APIs in Microsoft Graph."
 author: "grangeryy"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 ---
 

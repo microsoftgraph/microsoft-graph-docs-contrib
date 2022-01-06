@@ -2,7 +2,7 @@
 title: "WorksheetProtection: protect"
 description: "Protect a worksheet. It throws if the worksheet has been protected."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -58,6 +58,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
 Content-type: application/json
+Content-length: 383
 
 {
   "options": {

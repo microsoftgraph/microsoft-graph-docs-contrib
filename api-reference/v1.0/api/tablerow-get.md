@@ -2,7 +2,7 @@
 title: "Get TableRow"
 description: "Retrieve the properties and relationships of tablerow object."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorkbookTableRow](../resources/workbooktablerow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -84,6 +84,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 45
 
 {
   "index": 99,

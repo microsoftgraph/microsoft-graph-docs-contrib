@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionContentLabel resource type"
 description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

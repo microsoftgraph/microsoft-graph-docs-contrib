@@ -1,7 +1,7 @@
 ---
 title: "workbookRange: resizedRange"
 description: "Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -72,6 +72,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 157
 
 {
   "address": "address-value",

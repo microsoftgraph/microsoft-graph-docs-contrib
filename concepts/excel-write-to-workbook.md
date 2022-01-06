@@ -1,7 +1,7 @@
 ---
 title: "Write data to an Excel workbook with Microsoft Graph"
 description: "q=excelstarter)."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
 ---
@@ -30,7 +30,7 @@ The POST body looks like this:
 {
   "index": null,
   "values": [
-    ["alex darrow", "adarrow@tenant.onmicrosoft.com"]
+    ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
   ]
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "provisioningObjectSummary resource type"
 description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "List permissionGrantPolicies"
 description: "Retrieve a list of permissionGrantPolicy objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 [!INCLUDE [sample-code](../includes/snippets/java/list-permissiongrantpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-permissiongrantpolicies-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -123,8 +119,7 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": true,
-          "certifiedClientApplicationsOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": true
         }
       ],
       "excludes": []
@@ -154,8 +149,7 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false,
-          "certifiedClientApplicationsOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false
         }
       ],
       "excludes": []

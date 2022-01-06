@@ -1,7 +1,7 @@
 ---
 title: "List programControlTypes"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-programcontroltype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

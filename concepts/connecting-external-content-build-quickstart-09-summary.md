@@ -1,7 +1,3 @@
----
-ms.localizationpriority: medium
----
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 You have successfully completed the .NET Core Microsoft Graph connector tutorial. Now you have created a custom connector and used it to power Microsoft Search.

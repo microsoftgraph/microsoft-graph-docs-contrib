@@ -1,7 +1,7 @@
 ---
 title: "averageComparativeScore resource type"
 description: "Contains various different scores based on different scopes."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: preetikr
 ms.prod: ""
 doc_type: resourcePageType

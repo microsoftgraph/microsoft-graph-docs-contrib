@@ -1,7 +1,7 @@
 ---
 title: "website resource type"
 description: "Represents a website."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "AAmatino"
 ms.prod: ""
 doc_type: resourcePageType

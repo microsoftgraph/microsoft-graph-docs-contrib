@@ -2,7 +2,7 @@
 title: "List temporaryAccessPassAuthenticationMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
 author: "inbarckMS"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -36,10 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global administrator
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -94,10 +94,6 @@ GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethod
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-temporaryaccesspassauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1987
+Content-Length: 1891
 
 {
   "value": {
@@ -109,9 +109,6 @@ Content-Length: 1987
     "preSharedKey": "Pre Shared Key value",
     "preSharedKeyIsSet": true,
     "eapType": "eapTtls",
-    "trustedServerCertificateNames": [
-      "Trusted Server Certificate Names value"
-    ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",

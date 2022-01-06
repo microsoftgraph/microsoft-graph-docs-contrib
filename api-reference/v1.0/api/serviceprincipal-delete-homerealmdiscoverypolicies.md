@@ -1,7 +1,7 @@
 ---
 title: "Remove homeRealmDiscoveryPolicy"
 description: "Remove a homeRealmDiscoveryPolicy from a servicePrincipal."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "applications"
 doc_type: "apiPageType"

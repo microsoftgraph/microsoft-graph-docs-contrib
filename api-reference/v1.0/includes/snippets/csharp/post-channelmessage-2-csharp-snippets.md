@@ -9,13 +9,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var chatMessage = new ChatMessage
 {
 	CreatedDateTime = DateTimeOffset.Parse("2019-02-04T19:58:15.511Z"),
-	From = new ChatMessageFromIdentitySet
+	From = new IdentitySet
 	{
 		User = new Identity
 		{
 			Id = "id-value",
 			DisplayName = "Joh Doe",
-			UserIdentityType = TeamworkUserIdentityType.AadUser
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"userIdentityType", "aadUser"}
+			}
 		}
 	},
 	Body = new ItemBody

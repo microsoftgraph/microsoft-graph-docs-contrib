@@ -2,7 +2,7 @@
 title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -31,7 +31,6 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | **Messages** |||
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 
-|[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in. |
 | **Apps** |||
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat (and associated meeting).|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat (and associated meeting).|
@@ -52,12 +51,11 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
-| createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
-| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
-| webUrl | String| The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only. |
+| createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
+| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
 
 ### chatType values 
 
@@ -66,7 +64,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 |oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat; members cannot be removed/added.|
 |group               | 1     | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | 2     | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
-|unknownFutureValue  | 3     | Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue  | 3     | Sentinel value to indicate future values. |
 
 ## Relationships
 
@@ -92,8 +90,7 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "string",
-  "webUrl": "string"
+  "chatType": "String"
 }
 ```
 

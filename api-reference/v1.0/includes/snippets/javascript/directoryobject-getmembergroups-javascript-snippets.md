@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const string = {
-    securityEnabledOnly: false
+  securityEnabledOnly: true
 };
 
-await client.api('/directoryObjects/0049d944-a805-4680-9f54-3ab292090309/getMemberGroups')
+await client.api('/directoryObjects/{object-id}/getMemberGroups')
 	.post(string);
 
 ```

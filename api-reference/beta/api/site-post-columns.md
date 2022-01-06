@@ -3,7 +3,7 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: "Create columnDefinition in a site"
 description: "Create a site column."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---

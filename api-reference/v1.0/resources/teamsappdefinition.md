@@ -2,7 +2,7 @@
 title: "teamsAppDefinition resource type"
 description: "Represents the details of one version of a teamsApp."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "topicModelingSettings resource type"
 description: "Topic modeling settings for an eDiscovery case"
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

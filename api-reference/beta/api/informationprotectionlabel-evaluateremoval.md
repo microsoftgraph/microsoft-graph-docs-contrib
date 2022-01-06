@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on existing content info."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
@@ -150,10 +150,6 @@ User-agent: ContosoLOBApp/1.0
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateremoval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

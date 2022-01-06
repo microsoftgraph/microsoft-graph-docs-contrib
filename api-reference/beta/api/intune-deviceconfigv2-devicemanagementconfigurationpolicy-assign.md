@@ -1,5 +1,5 @@
 ---
-title: "assign action"
+title: "Device management configuration policy assign action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# assign action
+# Device management configuration policy assign action
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assign
 
 Content-type: application/json
-Content-length: 593
+Content-length: 524
 
 {
   "assignments": [
@@ -76,9 +76,7 @@ Content-length: 593
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      },
-      "source": "policySets",
-      "sourceId": "Source Id value"
+      }
     }
   ]
 }
@@ -89,7 +87,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 587
+Content-Length: 518
 
 {
   "value": [
@@ -101,9 +99,7 @@ Content-Length: 587
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      },
-      "source": "policySets",
-      "sourceId": "Source Id value"
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "Use the Planner REST API"
 description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "planner"
 doc_type: conceptualPageType
 ---
@@ -16,7 +16,7 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Microsoft 365 groups.
 
 ## Plan containers
-In Planner, plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups,
+In Planner, plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups, 
 group members will be able to create, edit, resolve, and delete tasks in the plan, as well as changing some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a group is restored, all the plans will be automatically restored.
 
 The most common type of container is a Microsoft 365 group.

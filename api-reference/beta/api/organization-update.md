@@ -1,7 +1,7 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
+Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
@@ -100,10 +101,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-organization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

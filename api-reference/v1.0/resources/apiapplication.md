@@ -1,7 +1,7 @@
 ---
 title: "apiApplication resource type"
 description: "Specifies settings for a Web API application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

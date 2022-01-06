@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphInvitation *invitation = [[MSGraphInvitation alloc] init];
-[invitation setInvitedUserEmailAddress:@"admin@fabrikam.com"];
+[invitation setInvitedUserEmailAddress:@"yyy@test.com"];
 [invitation setInviteRedirectUrl:@"https://myapp.contoso.com"];
 
 NSError *error;

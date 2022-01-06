@@ -1,7 +1,7 @@
 ---
 title: "pendingOperations"
 description: "The pendingOperations resource indicates that one or more operations that might affect the state of the driveItem are pending completion."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "learafa"
 ms.prod: "files"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "orgContact: List directReports"
 description: "Get the contact's direct reports."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/contacts/{id}/directReports
 [!INCLUDE [sample-code](../includes/snippets/java/contacts-get-directreports-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/contacts-get-directreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -90,6 +86,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 55
 
 {
   "value": [

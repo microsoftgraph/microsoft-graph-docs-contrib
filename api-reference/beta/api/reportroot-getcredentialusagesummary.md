@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getCredentialUsageSummary"
 description: "Report the current state of how many users in your organization are using self-service password reset capabilities."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"

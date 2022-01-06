@@ -3,7 +3,7 @@ author: daspek
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.date: 09/12/2017
 title: ColumnLink
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

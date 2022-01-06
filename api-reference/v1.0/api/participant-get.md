@@ -2,7 +2,7 @@
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-participant-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-participant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

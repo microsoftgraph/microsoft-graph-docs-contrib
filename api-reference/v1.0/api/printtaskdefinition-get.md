@@ -2,7 +2,7 @@
 title: Get taskDefinition
 description: Get details about a task definition.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get printTaskDefinition
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Get details about a task definition.
 
@@ -75,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionI
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printtaskdefinition-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-printtaskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

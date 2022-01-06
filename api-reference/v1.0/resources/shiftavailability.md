@@ -1,7 +1,7 @@
 ---
 title: "shiftAvailability resource type"
 description: "Availability of the user to be scheduled for work and its recurrence pattern."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

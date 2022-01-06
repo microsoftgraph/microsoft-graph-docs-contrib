@@ -1,7 +1,7 @@
 ---
 title: "Delete inferenceClassificationOverride"
 description: "Delete an override specified by its ID."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
@@ -66,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-inferenceclassificationoverride-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-inferenceclassificationoverride-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

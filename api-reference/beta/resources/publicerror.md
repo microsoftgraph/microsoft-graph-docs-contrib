@@ -1,7 +1,7 @@
 ---
 title: "publicError resource type"
 description: "Represent a generic error and its details."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
 author: "AkJo"

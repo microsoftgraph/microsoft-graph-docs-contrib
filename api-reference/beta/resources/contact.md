@@ -2,7 +2,7 @@
 title: "contact resource type"
 description: "A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -98,7 +98,7 @@ Here is a JSON representation of the resource
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
+|id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|

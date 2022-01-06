@@ -1,7 +1,7 @@
 ---
 title: "List activityBasedTimeoutPolicies"
 description: "Get a list of activityBasedTimeoutPolicy objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-activitybasedtimeoutpolicies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-activitybasedtimeoutpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

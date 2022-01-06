@@ -1,7 +1,7 @@
 ---
 title: "optionalClaims type"
 description: "Declares the optional claims requested by an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

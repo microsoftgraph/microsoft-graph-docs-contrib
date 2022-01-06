@@ -1,7 +1,7 @@
 ---
-title: "Delete userFlow (deprecated)"
+title: "Delete userFlow"
 description: "Delete userFlow."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -12,8 +12,6 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Delete an existing [userFlow](../resources/identityuserflow.md) object.
 
@@ -78,10 +76,6 @@ DELETE https://graph.microsoft.com/beta/identity/userFlows/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-identityuserflow-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-identityuserflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

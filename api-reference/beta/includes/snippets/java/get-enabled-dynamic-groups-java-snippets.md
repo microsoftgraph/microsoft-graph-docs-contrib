@@ -8,8 +8,8 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 GroupCollectionPage groups = graphClient.groups()
 	.buildRequest()
-	.filter("mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'")
-	.select("id,membershipRule,membershipRuleProcessingState")
+	.filter("membershipRuleProcessingState eq 'On'")
+	.select("id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus")
 	.get();
 
 ```

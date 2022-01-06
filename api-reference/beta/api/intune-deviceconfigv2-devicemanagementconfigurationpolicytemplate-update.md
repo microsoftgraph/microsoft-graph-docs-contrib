@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,9 +55,9 @@ The following table shows the properties that are required when you create the [
 |description|String|Template description|
 |displayVersion|String|Description of template version|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Indicate current lifecycle state of template. Possible values are: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|
-|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this template. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this template. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily for this template. Possible values are: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `baseline`.|
+|platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this template. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this template. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
+|templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily for this template. Possible values are: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
 |allowUnmanagedSettings|Boolean|Allow unmanaged setting templates|
 |settingTemplateCount|Int32|Number of setting templates. Valid values 0 to 2147483647. This property is read-only.|
 
@@ -73,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}
 Content-type: application/json
-Content-length: 455
+Content-length: 453
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -83,7 +83,7 @@ Content-length: 455
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "android",
+  "platforms": "macOS",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,
@@ -96,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 502
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplate",
@@ -107,7 +107,7 @@ Content-Length: 504
   "description": "Description value",
   "displayVersion": "Display Version value",
   "lifecycleState": "draft",
-  "platforms": "android",
+  "platforms": "macOS",
   "technologies": "mdm",
   "templateFamily": "endpointSecurityAntivirus",
   "allowUnmanagedSettings": true,

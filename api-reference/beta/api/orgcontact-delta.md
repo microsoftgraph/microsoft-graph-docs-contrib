@@ -1,7 +1,7 @@
 ---
 title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection." 
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -131,10 +131,6 @@ GET https://graph.microsoft.com/beta/contacts/delta
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -207,10 +203,6 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -273,10 +265,6 @@ Prefer: return=minimal
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-minimal-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

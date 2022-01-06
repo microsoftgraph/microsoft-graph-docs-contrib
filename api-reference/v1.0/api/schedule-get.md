@@ -2,7 +2,7 @@
 title: "Get schedule"
 description: "Retrieve the properties and relationships of a **schedule** object."
 author: "akumar39"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/schedule-get-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ---
@@ -110,6 +106,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 401
 
 {
   "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",

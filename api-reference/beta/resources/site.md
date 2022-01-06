@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The site resource provides metadata and relationships for a SharePoint site."
 ms.date: 09/10/2017
 title: Site
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
@@ -85,7 +85,7 @@ A **site** is identified by a unique ID that is a composite of the following val
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-
+  
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.

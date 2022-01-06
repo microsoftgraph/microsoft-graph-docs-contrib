@@ -2,7 +2,7 @@
 title: Update printTaskDefinition
 description: Update a task definition.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Update printTaskDefinition
 
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update a task definition.
 
@@ -67,6 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [prin
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
+Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -89,10 +92,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-printtaskdefinition-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-printtaskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

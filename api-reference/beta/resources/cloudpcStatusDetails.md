@@ -1,8 +1,8 @@
 ---
 title: "cloudPcStatusDetails resource type"
-description: "The details of the Cloud PC status."
+description: "The details of the cloud PC status."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of the Cloud PC status.
+The details of the cloud PC status.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|The code associated with the Cloud PC status.|
+|code|String|The code associated with the cloud PC status.|
 |message|String|The status message.|
-|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status.|
+|additionalInformation|[KeyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the cloud PC status.|
 
 ## Relationships
 

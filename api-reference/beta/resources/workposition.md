@@ -1,7 +1,7 @@
 ---
 title: "workPosition resource type"
 description: "workPosition resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

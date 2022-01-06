@@ -1,8 +1,8 @@
 ---
 title: "Reduce missing subscriptions and change notifications"
 description: "Apps subscribing to change notifications might get their subscriptions removed and miss some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow."
-author: "FaithOmbongi"
-ms.localizationpriority: high
+author: "davidmu1"
+localization_priority: Priority
 ms.custom: graphiamtop20
 ---
 
@@ -45,7 +45,6 @@ When creating a subscription, you must specify a separate notification endpoint 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
-
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",

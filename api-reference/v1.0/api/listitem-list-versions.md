@@ -1,7 +1,7 @@
 ---
 title: "Listing versions of a ListItem"
 description: "SharePoint can be configured to retain the history for list items."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: apiPageType
@@ -67,10 +67,6 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-listitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-previous-versions-listitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

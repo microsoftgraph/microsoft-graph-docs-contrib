@@ -1,7 +1,7 @@
 ---
 title: "section resource type"
 description: "A section in a OneNote notebook. Sections can contain pages."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType

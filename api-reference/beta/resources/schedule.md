@@ -2,7 +2,7 @@
 title: "schedule resource type"
 description: "A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

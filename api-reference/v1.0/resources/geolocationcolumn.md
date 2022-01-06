@@ -2,7 +2,7 @@
 author: learafa
 description: "The geolocationColumn on a columnDefinition resource indicates that the column holds a geolocation."
 title: GeolocationColumn
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "files"
 ---

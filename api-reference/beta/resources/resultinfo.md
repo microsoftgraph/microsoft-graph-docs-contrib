@@ -2,7 +2,7 @@
 title: "resultInfo resource type"
 description: "Contains success and failure-specific result information."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

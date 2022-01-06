@@ -2,13 +2,15 @@
 title: Get printerShare
 description: Retrieve the properties and relationships of a printer share.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Get printerShare
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve the properties and relationships of a printer share.
 
@@ -90,10 +92,6 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printershare-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-printershare-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -204,10 +202,6 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,di
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printershare-capabilities-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-printershare-capabilities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

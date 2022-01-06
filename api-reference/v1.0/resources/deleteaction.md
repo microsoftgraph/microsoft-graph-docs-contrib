@@ -2,7 +2,7 @@
 author: daspek
 title: deleteAction resource type
 description: The deleteAction object provides information about the deletion of an item.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

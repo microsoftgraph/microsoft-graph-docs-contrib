@@ -2,7 +2,7 @@
 title: "Create legalHold"
 description: "Create a new legalHold object."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
@@ -72,6 +72,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
+Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",
@@ -102,10 +103,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-legalhold-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-legalhold-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

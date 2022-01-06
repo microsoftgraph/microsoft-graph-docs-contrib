@@ -2,7 +2,7 @@
 title: "List all teams in Microsoft Teams for an organization"
 description: "To list all teams "
 author: "nkramer"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
@@ -29,6 +29,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: xxx
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
@@ -66,6 +67,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: xxx
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
@@ -126,6 +128,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 401
 
 {
   "isArchived" : false,

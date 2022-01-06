@@ -3,56 +3,6 @@
         {
             "ChangeList": [
                 {
-                    "Id": "0614e133-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "safeguard",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **safeguard** property to the [deploymentSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-deploymentSettings?view=graph-rest-beta) resource.",
-                    "Target": "deploymentSettings"
-                },
-                {
-                    "Id": "06174066-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "safeguardSettings",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [safeguardSettings](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta) resource type.",
-                    "Target": "safeguardSettings"
-                },
-                {
-                    "Id": "0619a4f5-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "safeguardProfile",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [safeguardProfile](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-safeguardProfile?view=graph-rest-beta) resource type.",
-                    "Target": "safeguardProfile"
-                },
-                {
-                    "Id": "061c0744-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "faultedByContentOutdated",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `faultedByContentOutdated` member to the **deploymentStateReasonValue** enumeration.",
-                    "Target": "deploymentStateReasonValue"
-                },
-                {
-                    "Id": "061e663f-168d-11ec-bd5a-a13d1ed8c60f",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "safeguardCategory",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **safeguardCategory** enumeration type.",
-                    "Target": "safeguardCategory"
-                }
-            ],
-            "Id": "06127aad-168d-11ec-bd5a-a13d1ed8c60f",
-            "Cloud": "prd",
-            "Version": "beta",
-            "CreatedDateTime": "2021-11-02T01:25:48.971Z",
-            "WorkloadArea": "Devices and apps",
-            "SubArea": "Device updates"
-        },
-        {
-            "ChangeList": [
-                {
                     "Id": "477c8612-8dee-11eb-8507-815178c7c041",
                     "ApiChange": "Resource",
                     "ChangedApiName": "deployment",

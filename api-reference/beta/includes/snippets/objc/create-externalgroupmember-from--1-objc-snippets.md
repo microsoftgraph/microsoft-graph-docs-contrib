@@ -14,6 +14,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
 [externalGroupMember setId:@"e811976d-83df-4cbd-8b9b-5215b18aa874"];
 [externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType user]];
+[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
 
 NSError *error;
 NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];

@@ -2,7 +2,7 @@
 title: "Use the Microsoft To Do API"
 description: "You can use the Microsoft Graph API to create an app that connects with tasks in Microsoft To Do."
 author: "avijityadav"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 doc_type: conceptualPageType
 ---

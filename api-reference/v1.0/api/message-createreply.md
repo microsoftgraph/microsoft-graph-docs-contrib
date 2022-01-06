@@ -1,7 +1,7 @@
 ---
 title: "message: createReply"
 description: "Create a draft to reply to a message, in either JSON or MIME format. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -93,10 +93,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/message-createreply-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -111,6 +107,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

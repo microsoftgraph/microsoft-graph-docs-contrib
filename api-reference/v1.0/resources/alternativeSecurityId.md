@@ -1,7 +1,7 @@
 ---
 title: "alternativeSecurityId resource type"
 description: "For internal use only."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: resourcePageType

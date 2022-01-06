@@ -2,7 +2,7 @@
 title: "accessPackageAnswerChoice resource type"
 description: "An answer option for an accessPackageMultipleChoiceQuestion."
 author: "markwahl-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

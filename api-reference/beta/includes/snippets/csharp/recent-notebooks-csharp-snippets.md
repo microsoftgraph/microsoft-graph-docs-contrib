@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getRecentNotebooks = await graphClient.Me.Onenote.Notebooks
-	.GetRecentNotebooks(true)
+var getrecentnotebooks = await graphClient.Me.Onenote.Notebooks
+	.Getrecentnotebooks(true)
 	.Request()
 	.GetAsync();
 

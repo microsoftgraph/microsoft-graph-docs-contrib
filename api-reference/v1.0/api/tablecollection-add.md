@@ -1,7 +1,7 @@
 ---
 title: "TableCollection: add"
 description: "Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -66,6 +66,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
+Content-length: 54
 
 {
   "address": "Sheet1!A1:D5",
@@ -101,6 +102,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 109
 
 {
   "id": "99",

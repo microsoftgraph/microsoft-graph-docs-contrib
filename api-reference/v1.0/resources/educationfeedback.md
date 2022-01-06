@@ -2,7 +2,7 @@
 title: "educationFeedback resource type"
 description: "Feedback from a teacher to a student."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

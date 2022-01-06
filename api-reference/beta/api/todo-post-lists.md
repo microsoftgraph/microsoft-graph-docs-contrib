@@ -2,7 +2,7 @@
 title: "Create todoTaskList"
 description: "Create a new lists object."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -66,6 +66,7 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists
 Content-Type: application/json
+Content-length: 60
 
 {
   "displayName": "Travel items"
@@ -85,10 +86,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-todotasklist-from-lists-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-todotasklist-from-lists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

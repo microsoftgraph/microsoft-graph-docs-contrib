@@ -10,7 +10,7 @@ ExternalConnection externalConnection = new ExternalConnection();
 externalConnection.name = "Contoso HR Service Tickets";
 externalConnection.description = "Connection to index HR service tickets";
 
-graphClient.external().connections("contosohr")
+graphClient.connections("contosohr")
 	.buildRequest()
 	.patch(externalConnection);
 

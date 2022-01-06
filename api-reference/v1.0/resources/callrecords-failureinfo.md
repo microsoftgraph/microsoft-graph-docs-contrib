@@ -1,7 +1,7 @@
 ---
 title: "failureInfo resource type"
 description: "The failureInfo type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

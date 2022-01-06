@@ -2,7 +2,7 @@
 title: "reviewSet: addToReviewSet"
 description: "Start the process of adding a collection from Microsoft 365 services to a review set."
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -73,6 +73,7 @@ If successful, this action returns a `202 Accepted` response code.
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/080e8cad-f21f-4452-8826-0ddf7e949fdd/reviewSets/6fe25d32-8167-4625-b75c-c4181ccbd9d5/addToReviewSet
 Content-Type: application/json
+Content-length: 531
 
 {
     "sourceCollection": {
@@ -97,6 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-addtoreviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 
 ### Response

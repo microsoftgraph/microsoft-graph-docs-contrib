@@ -1,7 +1,7 @@
 ---
 title: "Filter resource type"
 description: "Manages the filtering of a table's column."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType

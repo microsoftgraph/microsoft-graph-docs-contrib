@@ -1,7 +1,7 @@
 ---
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "tariq-sharif"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -91,10 +91,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/calendar-getschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

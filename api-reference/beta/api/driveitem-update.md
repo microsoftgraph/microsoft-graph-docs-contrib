@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Update the metadata for a DriveItem by ID or path."
 ms.date: 09/10/2017
 title: Update a file or folder
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

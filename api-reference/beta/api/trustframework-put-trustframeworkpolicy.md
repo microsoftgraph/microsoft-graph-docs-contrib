@@ -1,7 +1,7 @@
 ---
 title: "Update trustFrameworkPolicy"
 description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -16,7 +16,7 @@ Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

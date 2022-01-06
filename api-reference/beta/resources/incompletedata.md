@@ -3,7 +3,7 @@ author: daspek
 description: "The incompleteData facet indicates that a resource was generated with incomplete data."
 ms.date: 10/06/2017
 title: IncompleteData
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

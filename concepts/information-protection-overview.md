@@ -2,7 +2,7 @@
 title: "Microsoft Information Protection labeling overview"
 description: "Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on Office 365 Security and Compliance Center Sensitivity Labels."
 author: "tommoser"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "security"
 ---
 
@@ -13,7 +13,7 @@ Microsoft Information Protection helps organizations to classify, label, and pro
 Organizations use labels to aid:
 
 * Users in understanding the importance of information that is being handled.
-* Compliance administrators in discovering where sensitive information lives. 
+* Compliance adminstrators in discovering where sensitive information lives. 
 * Security administrators in deploying data access and data loss prevention policies based on more rich label information.
 
 ## Why integrate Microsoft Information Protection? 

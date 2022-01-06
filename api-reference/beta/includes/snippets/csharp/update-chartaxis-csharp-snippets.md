@@ -8,9 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var workbookChartAxis = new WorkbookChartAxis
 {
-	MajorUnit = JsonDocument.Parse("{}"),
-	Maximum = JsonDocument.Parse("{}"),
-	Minimum = JsonDocument.Parse("{}")
+	MajorUnit = JToken.Parse("{}"),
+	Maximum = JToken.Parse("{}"),
+	Minimum = JToken.Parse("{}")
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis

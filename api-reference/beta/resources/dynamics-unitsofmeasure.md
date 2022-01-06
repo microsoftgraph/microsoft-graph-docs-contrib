@@ -4,7 +4,7 @@ description: A unit of measure object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---

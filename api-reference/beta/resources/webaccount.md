@@ -1,7 +1,7 @@
 ---
 title: "webAccount resource type"
 description: "webAccount resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

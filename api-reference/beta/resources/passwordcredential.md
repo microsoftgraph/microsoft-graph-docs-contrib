@@ -1,10 +1,10 @@
 ---
 title: "passwordCredential resource type"
 description: "Contains a password credential associated with an application or a service principal."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "madansr7"
+author: "sureshja"
 ---
 
 # passwordCredential resource type
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entitites is a collection of **passwordCredential** objects.
 
 > [!IMPORTANT]
-> Using POST or PATCH to set **passwordCredential** is not supported. Use the following addPassword and removePassword methods to update the password for an application or a servicePrincipal:
+> Using POST or PATCH to set **passwordCredential** is not supported. Use the addPassword and removePassword methods to update the password for an application or a servicePrincipal:
 >
 > - [application: addPassword](../api/application-addpassword.md)
 > - [application: removePassword](../api/application-removepassword.md)

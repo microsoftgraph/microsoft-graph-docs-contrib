@@ -1,7 +1,7 @@
 ---
 title: "Create awards"
 description: "Create a new awards object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and an [personA
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/awards
 Content-Type: application/json
+Content-length: 497
 
 {
   "description": "Lifetime Achievement award from the International Association of Branding Managers",
@@ -95,10 +96,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personaward-from-profile-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-personaward-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

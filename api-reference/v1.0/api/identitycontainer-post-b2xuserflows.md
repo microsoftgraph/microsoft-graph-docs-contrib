@@ -1,7 +1,7 @@
 ---
 title: "Create b2xIdentityUserFlow"
 description: "Create a new b2xIdentityUserFlow object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
@@ -77,6 +77,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
+Content-length: 154
 
 {
     "id": "Partner",
@@ -98,10 +99,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-b2xuserflow-from-b2xuserflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,6 +145,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
+Content-length: 154
 
 {
     "id": "Partner",
@@ -176,10 +174,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-identityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-b2xuserflow-from-b2xuserflows-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -226,6 +220,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
+Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",
@@ -255,10 +250,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-apiconnectors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-b2xuserflow-from-b2xuserflows-apiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

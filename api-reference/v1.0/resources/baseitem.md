@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The baseItem resource is an abstract resource that contains a common set of properties shared among several other resources types."
 ms.prod: ""
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Get featureRolloutPolicy"
 description: "Retrieve the properties and relationships of a featurerolloutpolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-policies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-policies-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -149,10 +145,6 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-expandappliesto-policies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-expandappliesto-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

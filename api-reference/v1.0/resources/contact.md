@@ -2,7 +2,7 @@
 title: "contact resource type"
 description: "A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders."
 author: "kevinbellinger"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -17,7 +17,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/contact-delta.md) function.
 
 
@@ -62,7 +62,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |givenName|String|The contact's given name.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|
-|id|String|The contact's unique identifier. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only.|
+|id|String|The contact's unique identifier. Read-only.|
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|

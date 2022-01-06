@@ -1,7 +1,7 @@
 ---
 title: "fileHash resource type"
 description: "Contains stateful information about file hashes (cryptographic and location-sensitive)."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

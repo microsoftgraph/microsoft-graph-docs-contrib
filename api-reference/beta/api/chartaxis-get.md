@@ -2,7 +2,7 @@
 title: "Get workbookChartAxis"
 description: "Retrieve the properties and relationships of workbookChartAxis object."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -88,6 +88,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 64
 
 {
   "majorUnit": "string",

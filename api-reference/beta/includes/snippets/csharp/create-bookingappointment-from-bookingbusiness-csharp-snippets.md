@@ -41,8 +41,6 @@ var bookingAppointment = new BookingAppointment
 	CustomerName = "Jordan Miller",
 	CustomerNotes = "Please be on time.",
 	CustomerPhone = "213-555-0199",
-	CustomerTimeZone = "America/Chicago",
-	SmsNotificationsEnabled = true,
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2018-05-01T12:30:00+00:00",
@@ -57,7 +55,6 @@ var bookingAppointment = new BookingAppointment
 	InvoiceId = "1001",
 	InvoiceStatus = BookingInvoiceStatus.Open,
 	InvoiceUrl = "theInvoiceUrl",
-	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,
 	PostBuffer = new Duration("PT10M"),
 	PreBuffer = new Duration("PT5M"),

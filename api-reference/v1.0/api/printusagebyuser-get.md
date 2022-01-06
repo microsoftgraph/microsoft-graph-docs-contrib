@@ -2,13 +2,15 @@
 title: Get printUsageByUser
 description: Retrieve a user's usage summary for a particular time period.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Get printUsageByUser
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a user's usage summary for a particular time period. For descriptions of each endpoint, see [printUsageByUser](../resources/printUsageByUser.md).
 
@@ -76,10 +78,6 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

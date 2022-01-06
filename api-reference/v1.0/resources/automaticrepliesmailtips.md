@@ -1,7 +1,7 @@
 ---
 title: "automaticRepliesMailTips resource type"
 description: "MailTips about any automatic replies that have been set up on a mailbox."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType

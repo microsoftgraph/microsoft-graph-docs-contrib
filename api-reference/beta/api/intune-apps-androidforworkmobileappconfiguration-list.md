@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 943
+Content-Length: 906
 
 {
   "value": [
@@ -87,8 +87,7 @@ Content-Length: 943
           "action": "autoGrant"
         }
       ],
-      "profileApplicability": "androidWorkProfile",
-      "connectedAppsEnabled": true
+      "profileApplicability": "androidWorkProfile"
     }
   ]
 }

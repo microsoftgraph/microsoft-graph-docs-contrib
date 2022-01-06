@@ -1,7 +1,7 @@
 ---
 title: "entity resource type"
 description: "Represents an entity."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "keylimesoda"

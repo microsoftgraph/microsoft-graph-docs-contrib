@@ -1,7 +1,7 @@
 ---
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "SumitParikh"
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -25,7 +25,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliesTo|String| For example, "User" or "Company". |
-|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled**, and `LockedOut` if the customer cancelled their subscription. |
+|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| The number of licenses that have been assigned. |
 |id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |
@@ -38,7 +38,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+Here is a JSON representation of the resource
 
 <!--{
   "blockType": "resource",
@@ -74,11 +74,6 @@ The following is a JSON representation of the resource
 }
 
 ```
-
-## See also
-
-+ [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

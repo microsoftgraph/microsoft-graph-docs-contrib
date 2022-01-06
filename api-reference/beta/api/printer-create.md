@@ -2,7 +2,7 @@
 title: "printer: create"
 description: Creates (registers) a printer with the Universal Print service.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -68,6 +68,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
 Content-type: application/json
+Content-length: 319
 
 {
   "displayName": "Test Printer",
@@ -96,10 +97,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

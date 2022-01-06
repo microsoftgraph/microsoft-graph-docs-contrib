@@ -3,7 +3,7 @@ author: daspek
 description: "The presence of the EditAction resource on an itemActivity indicates that the activity edited an item."
 ms.date: 09/14/2017
 title: EditAction
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

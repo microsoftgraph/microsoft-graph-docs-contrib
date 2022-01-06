@@ -1,7 +1,7 @@
 ---
 title: "List instances"
 description: "Get the instances (occurrences) of an event for a specified time range."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startD
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-instances-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-instances-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

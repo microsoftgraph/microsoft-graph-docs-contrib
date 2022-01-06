@@ -2,7 +2,7 @@
 title: "contactFolder resource type"
 description: "A folder that contains contacts."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

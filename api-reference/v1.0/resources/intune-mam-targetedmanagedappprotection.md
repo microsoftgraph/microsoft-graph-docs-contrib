@@ -24,7 +24,6 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |[List targetedManagedAppProtections](../api/intune-mam-targetedmanagedappprotection-list.md)|[targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) collection|List properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects.|
 |[Get targetedManagedAppProtection](../api/intune-mam-targetedmanagedappprotection-get.md)|[targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|Read properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) object.|
 |[assign action](../api/intune-mam-targetedmanagedappprotection-assign.md)|None|Not yet documented|
-|[targetApps action](../api/intune-mam-targetedmanagedappprotection-targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -118,6 +117,7 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
 
 
 

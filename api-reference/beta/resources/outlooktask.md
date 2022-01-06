@@ -2,7 +2,7 @@
 title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
 author: "mashriv"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -64,7 +64,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |hasAttachments|Boolean|Set to true if the task has attachments.|
-|id|String| Unique identifier for the task. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
+|id|String| Unique identifier for the task. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|importance|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

@@ -123,8 +123,7 @@ Here is a JSON representation of the resource.
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true,
-    "v10_21H1": true
+    "v10_2H20": true
   },
   "productIdentifier": "String",
   "identityVersion": "String"

@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Removes an item from a list."
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-item-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

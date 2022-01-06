@@ -2,7 +2,7 @@
 title: "domain: verify"
 description: "Validates the ownership of the domain."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.ReadWrite.All  |
+|Delegated (work or school account) | Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
 
 ## HTTP request
 
@@ -76,10 +76,6 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 [!INCLUDE [sample-code](../includes/snippets/java/domain-verify-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/domain-verify-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -93,6 +89,7 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

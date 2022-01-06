@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Create a new folder
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
 doc_type: apiPageType

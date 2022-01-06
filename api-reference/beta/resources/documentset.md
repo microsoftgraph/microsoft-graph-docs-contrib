@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "documentSet resource type"
 description: "Contains metadata about document set settings."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

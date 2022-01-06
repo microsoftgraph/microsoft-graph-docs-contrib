@@ -1,7 +1,7 @@
 ---
 title: "Get agreement"
 description: "Retrieve the properties and relationships of an agreement object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

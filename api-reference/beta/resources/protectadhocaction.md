@@ -1,7 +1,7 @@
 ---
 title: "protectAdhocAction resource type"
 description: "Informs the application that ad hoc protection should be applied."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

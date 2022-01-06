@@ -1,7 +1,7 @@
 ---
 title: "openShift resource type"
 description: "Represents an unassigned open shift in a schedule."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"

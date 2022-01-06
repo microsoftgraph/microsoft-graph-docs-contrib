@@ -1,10 +1,10 @@
 ---
 title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # List governanceResources
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.
 
@@ -40,9 +38,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -88,10 +86,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-governanceresources-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-governanceresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

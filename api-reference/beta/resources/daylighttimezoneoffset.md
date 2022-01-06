@@ -1,7 +1,7 @@
 ---
 title: "daylightTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from standard time to daylight saving time."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "abheek-das"

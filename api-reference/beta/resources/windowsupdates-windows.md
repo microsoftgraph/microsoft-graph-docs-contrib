@@ -2,7 +2,7 @@
 title: "windows resource type"
 description: "Entity that acts as a container for Windows functionality."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

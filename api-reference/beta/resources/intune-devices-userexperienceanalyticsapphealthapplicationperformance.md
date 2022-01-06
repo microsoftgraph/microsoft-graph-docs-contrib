@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsAppHealthApplicationPerformance resource type"
-description: "The user experience analytics application performance entity contains app performance details."
+description: "The user experience analytics applicaiton performance entity contains app performance details."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics application performance entity contains app performance details.
+The user experience analytics applicaiton performance entity contains app performance details.
 
 ## Methods
 |Method|Return Type|Description|

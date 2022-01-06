@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: copyToDefaultContentLocation"
 description: "Copy a file to a default content location in a content type."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -15,7 +15,7 @@ Copy a file to a default content location in a [content type][contentType]. The 
 
 ## Permissions  
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
   
 
@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadata about the source file that needs to be copied to the default content location. Required.|
-|destinationFileName| string |Destination filename. |
+|destinationFileName| string |Destination filename. 
 
 ## Response
 
@@ -98,10 +98,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

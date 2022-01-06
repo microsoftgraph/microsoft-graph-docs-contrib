@@ -2,7 +2,7 @@
 title: "Delete cloudPcProvisioningPolicy"
 description: "Delete a cloudPcProvisioningPolicy object."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object. You can’t delete a policy that’s in use.
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -79,10 +80,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-provisioningpolicies-from-virtualendpoint-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-provisioningpolicies-from-virtualendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

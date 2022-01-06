@@ -2,7 +2,7 @@
 title: "Update tablerow"
 description: "Update the properties of tablerow object."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -59,6 +59,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 Content-type: application/json
+Content-length: 45
 
 {
   "index": 99,
@@ -93,6 +94,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 45
 
 {
   "index": 99,

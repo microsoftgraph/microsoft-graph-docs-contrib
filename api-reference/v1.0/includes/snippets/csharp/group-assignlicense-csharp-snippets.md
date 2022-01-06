@@ -12,18 +12,17 @@ var addLicenses = new List<AssignedLicense>()
 	{
 		DisabledPlans = new List<Guid>()
 		{
-			Guid.Parse("113feb6c-3fe4-4440-bddc-54d774bf0318"),
-			Guid.Parse("14ab5db5-e6c4-4b20-b4bc-13e36fd2227f")
+			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
 		},
-		SkuId = Guid.Parse("b05e124f-c7cc-45a0-a6aa-8cf78c946968")
+		SkuId = Guid.Parse("skuId-value-1")
 	},
 	new AssignedLicense
 	{
 		DisabledPlans = new List<Guid>()
 		{
-			Guid.Parse("a413a9ff-720c-4822-98ef-2f37c2a21f4c")
+			Guid.Parse("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235")
 		},
-		SkuId = Guid.Parse("c7df2760-2c81-4ef7-b578-5b5392b571df")
+		SkuId = Guid.Parse("skuId-value-2")
 	}
 };
 

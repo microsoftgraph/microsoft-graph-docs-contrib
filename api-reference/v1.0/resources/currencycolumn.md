@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
 ms.prod: ""
 doc_type: resourcePageType

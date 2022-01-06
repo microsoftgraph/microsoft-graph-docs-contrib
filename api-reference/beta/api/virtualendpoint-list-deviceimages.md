@@ -1,8 +1,8 @@
 ---
-title: "List deviceImages"
-description: "List the properties and relationships of OS images uploaded to Cloud PC."
+title: "List cloudPcDeviceImages"
+description: "List the properties and relationships of OS images uploaded to cloud PC."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to Cloud PC.
+List the properties and relationships of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (OS images) uploaded to cloud PC.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -85,10 +87,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdeviceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdeviceimages-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -98,8 +96,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
 }
 -->
 

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2076
+Content-Length: 1980
 
 {
   "value": {
@@ -107,9 +107,6 @@ Content-Length: 2076
     "connectWhenNetworkNameIsHidden": true,
     "wiFiSecurityType": "wpaEnterprise",
     "eapType": "eapTtls",
-    "trustedServerCertificateNames": [
-      "Trusted Server Certificate Names value"
-    ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",

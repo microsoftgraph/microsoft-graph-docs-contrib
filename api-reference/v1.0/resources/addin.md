@@ -1,7 +1,7 @@
 ---
 title: "addIn resource type"
 description: "Here is a JSON representation of the resource."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

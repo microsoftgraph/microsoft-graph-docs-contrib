@@ -1,7 +1,7 @@
 ---
 title: "List addresses"
 description: "Get the itemAddresses from the addresses navigation property."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/me/profile/addresses
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemaddresses-from-profile-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-itemaddresses-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

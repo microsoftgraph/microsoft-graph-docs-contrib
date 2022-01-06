@@ -2,7 +2,7 @@
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -29,14 +29,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 List tenant-wide or group settings
-
 ```http
 GET /settings
 GET /groups/{id}/settings
 ```
-
 ## Optional query parameters
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -49,10 +47,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directorySetting](../resources/directorysetting.md) objects in the response body.
-
 ## Example
-
-### Request
+##### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -79,15 +75,10 @@ GET https://graph.microsoft.com/beta/settings
 [!INCLUDE [sample-code](../includes/snippets/java/get-settings-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-settings-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,70 +88,18 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 263
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings",
   "value": [
     {
-      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
-      "displayName": "Group.Unified",
-      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+      "id": "id-value",
+      "displayName": "displayName-value",
+      "settingTemplateId": "settingTemplateId-value",
       "values": [
         {
-          "name": "EnableMIPLabels",
-          "value": "true"
-        },
-        {
-          "name": "CustomBlockedWordsList",
-          "value": ""
-        },
-        {
-          "name": "EnableMSStandardBlockedWords",
-          "value": "true"
-        },
-        {
-          "name": "ClassificationDescriptions",
-          "value": ""
-        },
-        {
-          "name": "DefaultClassification",
-          "value": ""
-        },
-        {
-          "name": "PrefixSuffixNamingRequirement",
-          "value": "[Contoso-][GroupName]"
-        },
-        {
-          "name": "AllowGuestsToBeGroupOwner",
-          "value": "false"
-        },
-        {
-          "name": "AllowGuestsToAccessGroups",
-          "value": "true"
-        },
-        {
-          "name": "GuestUsageGuidelinesUrl",
-          "value": "https://privacy.contoso.com/privacystatement"
-        },
-        {
-          "name": "GroupCreationAllowedGroupId",
-          "value": ""
-        },
-        {
-          "name": "AllowToAddGuests",
-          "value": "true"
-        },
-        {
-          "name": "UsageGuidelinesUrl",
-          "value": ""
-        },
-        {
-          "name": "ClassificationList",
-          "value": ""
-        },
-        {
-          "name": "EnableGroupCreation",
-          "value": "true"
+          "name": "name-value",
+          "value": "value-value"
         }
       ]
     }

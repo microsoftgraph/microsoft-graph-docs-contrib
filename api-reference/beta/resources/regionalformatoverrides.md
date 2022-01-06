@@ -1,7 +1,7 @@
 ---
 title: "regionalFormatOverrides resource type"
 description: "A resource representing regional formatting overrides for calendars, dates, and times."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jasonbro"
 ms.prod: "users"
 doc_type: resourcePageType

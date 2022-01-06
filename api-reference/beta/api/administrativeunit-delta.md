@@ -1,7 +1,7 @@
 ---
 title: "administrativeUnit: delta"
 description: "Get newly created, updated, or deleted administrative units without having to perform a full read of the entire resource collection."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -105,10 +105,6 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/administrativeunit-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/administrativeunit-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

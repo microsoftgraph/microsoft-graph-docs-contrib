@@ -1,7 +1,7 @@
 ---
 title: "objectMapping resource type"
 description: "Defines how a given object should be synchronized from source directory to target directory."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

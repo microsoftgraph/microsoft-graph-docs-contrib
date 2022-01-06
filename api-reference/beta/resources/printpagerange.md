@@ -2,7 +2,7 @@
 title: printPageRange resource type
 description: Specifies the range of pages to be printed.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "startPage": "Int32",
-  "endPage": "Int32"
+  "startPage": 123456,
+  "endPage": 123456
 }
 ```
 

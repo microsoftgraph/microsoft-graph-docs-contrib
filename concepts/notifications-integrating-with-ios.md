@@ -1,7 +1,7 @@
 ---
 title: "Integrate your iOS app with the client-side SDK for user notifications"
 description: "Integrate your iOS app with user notifications client SDK."
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "notifications"
 ---
 

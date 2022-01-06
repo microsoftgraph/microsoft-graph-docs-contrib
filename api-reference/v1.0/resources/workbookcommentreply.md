@@ -1,7 +1,7 @@
 ---
 title: "workbookCommentReply resource type"
 description: "Definition of workbookCommentReply resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"

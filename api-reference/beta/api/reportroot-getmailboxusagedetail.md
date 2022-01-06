@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -81,7 +81,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -141,6 +141,7 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
+
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_json"
@@ -160,7 +161,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.mailboxUsageDetail"
 } -->
 
 ```http
@@ -169,6 +170,7 @@ Content-Type: application/json
 Content-Length: 526
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1355
+Content-Length: 758
 
 {
   "value": {
@@ -68,8 +68,7 @@ Content-Length: 1355
     "autopilotDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsAutopilotDevicesSummary",
       "devicesNotAutopilotRegistered": 13,
-      "devicesWithoutAutopilotProfileAssigned": 6,
-      "totalWindows10DevicesWithoutTenantAttached": 10
+      "devicesWithoutAutopilotProfileAssigned": 6
     },
     "cloudManagementDevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudManagementDevicesSummary",
@@ -80,21 +79,7 @@ Content-Length: 1355
     "windows10DevicesSummary": {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
       "unsupportedOSversionDeviceCount": 15
-    },
-    "cloudIdentityDevicesSummary": {
-      "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
-      "deviceWithoutCloudIdentityCount": 15
-    },
-    "totalDevices": 12,
-    "coManagedDevices": 0,
-    "intuneDevices": 13,
-    "tenantAttachDevices": 3,
-    "windows10Devices": 0,
-    "windows10DevicesWithoutTenantAttach": 3,
-    "unsupportedOSversionDevices": 11,
-    "devicesWithoutCloudIdentity": 11,
-    "devicesNotAutopilotRegistered": 13,
-    "devicesWithoutAutopilotProfileAssigned": 6
+    }
   }
 }
 ```

@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleEligibilitySchedule"
 description: "Read the properties and relationships of an unifiedRoleEligibilitySchedule object."
-author: "carolinetempleton"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Application|PrivilegedAccess.Read.AzureAD|
 
 ## HTTP request
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/313af44a-07c9-43a7-9970-5072a6b5591f
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedule-csharp-snippets.md)]
@@ -77,18 +77,12 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleeligibilityschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleeligibilityschedule-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 
 ### Response
-
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,27 +94,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilitySchedules/$entity",
-  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
-  "id": "313af44a-07c9-43a7-9970-5072a6b5591f",
-  "principalId": "398164b1-5196-49dd-ada2-364b49f99b27",
-  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
-  "directoryScopeId": "/",
-  "appScopeId": null,
-  "createdUsing": "313af44a-07c9-43a7-9970-5072a6b5591f",
-  "createdDateTime": "2021-07-27T13:51:08.43Z",
-  "modifiedDateTime": null,
-  "status": "Provisioned",
-  "assignmentType": "Assigned",
-  "memberType": "Direct",
-  "scheduleInfo": {
-    "startDateTime": "2021-07-27T13:51:08.43Z",
-    "recurrence": null,
-    "expiration": {
-      "type": "noExpiration",
-      "endDateTime": null,
-      "duration": null
-    }
+  "value": {
+    "id": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "principalId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "roleDefinitionId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "directoryScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "appScopeId": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "createdUsing": "5cfd7709-7709-5cfd-0977-fd5c0977fd5c",
+    "createdDateTime": "2020-09-09T21:35:27.91Z",
+    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
+    "status": "Provisioned",
+    "scheduleInfo": {
+      "@odata.type": "microsoft.graph.requestSchedule"
+    },
+    "memberType": "direct"
   }
 }
 ```

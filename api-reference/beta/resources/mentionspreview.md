@@ -1,7 +1,7 @@
 ---
 title: "mentionsPreview resource type"
 description: "Represents information about mention objects in a resource instance."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType

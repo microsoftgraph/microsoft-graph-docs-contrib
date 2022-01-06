@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
-recipients.email = "robin@contoso.org";
+recipients.email = "ryan@contoso.org";
 
 recipientsList.add(recipients);
 

@@ -2,7 +2,7 @@
 title: "Configuring the built-in tab types in Microsoft Teams"
 description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs"
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -138,7 +138,3 @@ Configuration is not supported.
 For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
 If you want to configure the tab, consider using a Website tab.
-
-## SharePoint Framework-based tabs
-
-Custom tabs built using SharePoint Framework can be created using Microsoft Graph, but configuration is not supported.

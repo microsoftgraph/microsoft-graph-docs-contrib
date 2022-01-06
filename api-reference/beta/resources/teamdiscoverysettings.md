@@ -1,7 +1,7 @@
 ---
 title: "teamDiscoverySettings resource type"
 description: "Settings to configure team discoverability by others."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

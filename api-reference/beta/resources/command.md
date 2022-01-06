@@ -1,7 +1,7 @@
 ---
 title: "command resource type"
 description: "Set of commands sent to a device."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
 author: "spunukol"

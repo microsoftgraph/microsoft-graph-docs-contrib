@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
@@ -20,7 +20,7 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |:-------------|:------------|:------------|
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session control. |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Session control to apply cloud app security.|
-|disableResilienceDefaults|Boolean| Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage. This lets admins decide whether to block authentications during an outage whenever a policy condition can't be evaluated in real-time or allow policies to be evaluated using data collected at the beginning of the user’s session.|
+|disableResilienceDefaults|Boolean| Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
 

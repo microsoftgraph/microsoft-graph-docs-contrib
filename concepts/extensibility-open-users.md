@@ -2,7 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "This article walks you through an example to demonstrate how to use *open extensions*. "
 author: "dkershaw10"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.custom: graphiamtop20
 ---
 
@@ -43,6 +43,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Content-length: 420
 
 {
     "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -65,6 +66,7 @@ GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-length: 420
 
 {
     "id": "84b80893-8749-40a3-97b7-68513b600544",

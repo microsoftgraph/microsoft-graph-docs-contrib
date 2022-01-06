@@ -2,7 +2,7 @@
 title: "servicePrincipalIdentity resource type"
 description: "Models a service principal identity."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

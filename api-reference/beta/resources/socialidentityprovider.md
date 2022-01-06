@@ -1,7 +1,7 @@
 ---
 title: "socialIdentityProvider resource type"
 description: "Represents social identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "namkedia"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory (Azure AD) and Azure AD B2C tenants.
+Represents social identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
-Inherits from [identityProviderBase](../resources/identityproviderbase.md).
+This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
 For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can be Google or Facebook.
 
@@ -28,26 +28,26 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to si
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the [socialIdentityProvider](../resources/socialidentityprovider.md) object types. There is no way to retrieve only the social identity providers in a tenant.|
-|[Create](../api/identitycontainer-post-identityproviders.md)|socialidentityprovider |Create a new [socialIdentityProvider](../resources/socialidentityprovider.md) object.|
-|[Get](../api/identityproviderbase-get.md) |socialidentityprovider |Retrieve properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object.|
-|[Update](../api/identityproviderbase-update.md)|None|Update a [socialIdentityProvider](../resources/socialidentityprovider.md) object.|
-|[Delete](../api/identityproviderbase-delete.md)|None|Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object.|
-|[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
+|[List](../api/identityproviderbase-list.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the social identity providers.|
+|[Create](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |Create a new social identity provider.|
+|[Get](../api/identityproviderbase-get.md) |socialidentityprovider |Retrieve properties of a social identity provider.|
+|[Update](../api/identityproviderbase-update.md)|None|Update a social identity provider.|
+|[Delete](../api/identityproviderbase-delete.md)|None|Delete a social  identity provider.|
+|[List available provider types](../api/identityproviderbase-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |clientId|String|The client identifier for the application obtained when registering the application with the identity provider. Required.|
-|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns `****`. Required.|
+|clientSecret|String|The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns "\*\*\*\*". Required.|
 |id|String|The identifier of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Read-only.|
 |displayName|String|The display name of the identity provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|String|For a B2B scenario, possible values: `Google`, `Facebook`. For a B2C scenario, possible values: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Required.|
 
 ### Where to get the client identifier and secret
 
-Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client identifier and client secret can be passed to [create identityProvider](../api/identitycontainer-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign-in page. The token from the identity provider is validated by Azure AD before the tenant issues a token to the application.
+Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client identifier and client secret can be passed to [create identityProvider](../api/identityproviderbase-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign-in page. The token from the identity provider is validated by Azure AD before the tenant issues a token to the application.
 
 ## JSON representation
 

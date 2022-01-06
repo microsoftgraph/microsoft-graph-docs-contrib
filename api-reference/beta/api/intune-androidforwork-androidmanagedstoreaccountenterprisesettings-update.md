@@ -60,7 +60,6 @@ The following table shows the properties that are required when you create the [
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 |androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
-|managedGooglePlayInitialScopeTagIds|String collection|Initial scope tags for MGP apps|
 
 
 
@@ -74,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 Content-type: application/json
-Content-length: 1002
+Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -100,10 +99,7 @@ Content-length: 1002
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
-  "managedGooglePlayInitialScopeTagIds": [
-    "Managed Google Play Initial Scope Tag Ids value"
-  ]
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
 
@@ -112,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1115
+Content-Length: 1010
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -140,10 +136,7 @@ Content-Length: 1115
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
-  "managedGooglePlayInitialScopeTagIds": [
-    "Managed Google Play Initial Scope Tag Ids value"
-  ]
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
 

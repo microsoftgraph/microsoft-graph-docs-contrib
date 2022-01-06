@@ -2,7 +2,7 @@
 title: "invokeUserFlowListener resource type"
 description: "A listener that is used to invoke a user flow during an authentication event."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

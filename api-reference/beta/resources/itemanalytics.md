@@ -3,7 +3,7 @@ author: daspek
 description: "The itemAnalytics resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business."
 ms.date: 09/14/2017
 title: ItemAnalytics
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

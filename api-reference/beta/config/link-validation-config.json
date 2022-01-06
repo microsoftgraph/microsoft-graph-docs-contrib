@@ -3,7 +3,6 @@
         "/aspnet",
         "/azure",
         "/cloud-app-security",
-        "/defender-for-identity",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -20,10 +19,8 @@
         "/openspecs",
         "/powershell",
         "/previous-versions",
-        "/rest",
         "/skypeforbusiness",
         "/sharepoint",
-        "/troubleshoot",
         "/windows",
         "/windows-hardware"
     ]

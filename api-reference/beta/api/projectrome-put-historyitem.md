@@ -1,7 +1,7 @@
 ---
 title: "Create or replace a historyItem"
 description: "Create a new or replace an existing history item for an existing user activity."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
 author: "ailae"
@@ -64,6 +64,7 @@ Here is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
+Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",

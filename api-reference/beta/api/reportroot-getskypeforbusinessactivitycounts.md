@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSkypeForBusinessActivityCounts"
 description: "Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -72,7 +72,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md)** object in the response body.
 
 ## Example
 
@@ -150,7 +150,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.skypeForBusinessActivityCounts"
 } -->
 
 ```http
@@ -159,6 +159,7 @@ Content-Type: application/json
 Content-Length: 264
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.skypeForBusinessActivityCounts)", 
   "value": [
     {
       "peerToPeer": 3436, 

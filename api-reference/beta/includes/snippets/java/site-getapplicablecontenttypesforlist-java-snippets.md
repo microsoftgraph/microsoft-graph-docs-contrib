@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 SiteGetApplicableContentTypesForListCollectionPage getApplicableContentTypesForList = graphClient.sites("{siteId}")
 	.getApplicableContentTypesForList(SiteGetApplicableContentTypesForListParameterSet
 		.newBuilder()
-		.withListId("{list-id}")
+		.withListId("listId")
 		.build())
 	.buildRequest()
 	.get();

@@ -1,7 +1,7 @@
 ---
 title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: resourcePageType

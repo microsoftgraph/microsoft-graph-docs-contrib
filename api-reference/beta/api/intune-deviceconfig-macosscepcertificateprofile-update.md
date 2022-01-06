@@ -75,7 +75,6 @@ The following table shows the properties that are required when you create the [
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
-|allowAllAppsAccess|Boolean|AllowAllAppsAccess setting|
 
 
 
@@ -89,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1993
+Content-length: 1962
 
 {
   "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
@@ -148,8 +147,7 @@ Content-length: 1993
       "sanType": "emailAddress",
       "name": "Name value"
     }
-  ],
-  "allowAllAppsAccess": true
+  ]
 }
 ```
 
@@ -158,7 +156,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2165
+Content-Length: 2134
 
 {
   "@odata.type": "#microsoft.graph.macOSScepCertificateProfile",
@@ -220,8 +218,7 @@ Content-Length: 2165
       "sanType": "emailAddress",
       "name": "Name value"
     }
-  ],
-  "allowAllAppsAccess": true
+  ]
 }
 ```
 

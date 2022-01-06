@@ -2,7 +2,7 @@
 title: "printJob: redirect"
 description: Redirect a print job to a different printer.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -134,6 +134,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

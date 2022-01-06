@@ -2,7 +2,7 @@
 author: daspek
 title: createAction resource type
 description: The createAction object provides information about the creation of an item.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---

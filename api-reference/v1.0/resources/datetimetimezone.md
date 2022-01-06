@@ -1,7 +1,7 @@
 ---
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: resourcePageType
 author: "harini84"
 ms.prod: "outlook"

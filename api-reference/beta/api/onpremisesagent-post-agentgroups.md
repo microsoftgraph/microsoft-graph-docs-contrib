@@ -1,7 +1,7 @@
 ---
 title: "Assign onPremisesAgent to onPremisesAgentGroup"
 description: "Assign onPremisesAgent to onPremisesAgentGroup."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -68,10 +68,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onpremisesagentgroup-from-onpremisesagent-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagentgroup-from-onpremisesagent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

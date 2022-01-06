@@ -1,9 +1,9 @@
 ---
 title: "Remove member from channel"
 description: "Remove a member from a channel."
-author: "akjo"
+author: "laujan"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -74,10 +74,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-member-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-channel-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

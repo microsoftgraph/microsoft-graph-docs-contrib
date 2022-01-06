@@ -1,7 +1,7 @@
 ---
 title: "List methods"
 description: "Retrieve a list of authentication method objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects. This API returns only authentication methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
+Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
+
+> **Note:** Only methods supported on v1.0 will be returned.
 
 ## Permissions
 
@@ -33,11 +35,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global administrator
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global admin
 * Global reader
-* Privileged authentication administrator
-* Authentication administrator (only sees masked phone numbers)
+* Privileged authentication admin
+* Authentication admin (only sees masked phone numbers)
 
 ## HTTP request
 

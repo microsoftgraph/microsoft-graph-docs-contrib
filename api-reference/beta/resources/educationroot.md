@@ -2,7 +2,7 @@
 title: "educationRoot resource type"
 description: "The `/education` namespace exposes functionality that is specific to the education sector. "
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

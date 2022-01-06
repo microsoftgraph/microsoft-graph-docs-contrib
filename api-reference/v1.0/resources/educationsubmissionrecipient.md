@@ -2,7 +2,7 @@
 title: "educationSubmissionRecipient resource type"
 description: "Abstract class that represents the different sets of users to whom a submission can be assigned."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

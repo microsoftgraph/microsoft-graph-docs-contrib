@@ -1,7 +1,7 @@
 ---
 title: "removeWatermarkAction resource type"
 description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

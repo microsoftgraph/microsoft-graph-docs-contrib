@@ -2,7 +2,7 @@
 title: "Update chartseries"
 description: "Update the properties of chartseries object."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -57,6 +57,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}
 Content-type: application/json
+Content-length: 26
 
 {
   "name": "name-value"
@@ -90,6 +91,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 26
 
 {
   "name": "name-value"

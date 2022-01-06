@@ -2,7 +2,7 @@
 title: "aadUserConversationMemberResult resource type"
 description: "Resource for modeling responses of bulk operations on aadUserConversationMember."
 author: "AkJo"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

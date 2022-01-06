@@ -2,7 +2,7 @@
 title: "aadUserNotificationRecipient resource type"
 description:  Represents an Azure Active Directory (Azure AD) user recipient of a notification sent in a Microsoft Teams activity feed.
 author: RamjotSingh
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---

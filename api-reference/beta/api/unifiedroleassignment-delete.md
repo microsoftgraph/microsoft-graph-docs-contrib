@@ -1,7 +1,7 @@
 ---
 title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -17,42 +17,21 @@ Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Directory (Azure AD) provider
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.ReadWrite.Directory   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.ReadWrite.Directory |
-
-### For Entitlement management provider
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
-
-Remove a role assignment from a directory provider:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
-
-Remove a role assignment from the entitlement management provider:
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
-```
-
 
 ## Request headers
 
@@ -97,10 +76,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

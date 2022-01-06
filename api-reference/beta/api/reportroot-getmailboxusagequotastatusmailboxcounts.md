@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"
 description: "Get the count of user mailboxes in each quota category."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[mailboxUsageQuotaStatusMailboxCounts](../resources/mailboxusagequotastatusmailboxcounts.md)** object in the response body.
 
 ## Example
 
@@ -152,7 +152,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.mailboxUsageQuotaStatusMailboxCounts"
 } -->
 
 ```http
@@ -161,6 +161,7 @@ Content-Type: application/json
 Content-Length: 311
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageQuotaMailboxStatusCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

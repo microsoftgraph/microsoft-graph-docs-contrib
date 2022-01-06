@@ -2,13 +2,15 @@
 title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: nilakhan    
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Create printerShare
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create a new **printerShare** for the specified [printer](../resources/printer.md).
 
@@ -67,6 +69,7 @@ If successful, this method returns a `201 Created` response code and a [printerS
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares
 Content-Type: application/json
+Content-length: 509
 
 {
   "displayName": "ShareName",
@@ -88,10 +91,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-printershare-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

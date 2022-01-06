@@ -1,7 +1,7 @@
 ---
 title: "removeProtectionAction resource type"
 description: "Represents an action to remove protection from the file or information."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

@@ -2,7 +2,7 @@
 title: "timeOff resource type"
 description: "A unit of non-work in the schedule."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

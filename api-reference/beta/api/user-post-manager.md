@@ -1,7 +1,7 @@
 ---
 title: "Assign a manager"
 description: "Use this API to assign a user's manager."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /users/{id}/manager/$ref
 ```
 ## Request headers
-| Name       | Description|
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
@@ -54,6 +54,7 @@ Here is an example of the request.
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
 Content-type: application/json
+Content-length: xxx
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
@@ -73,10 +74,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-manager-for-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-manager-for-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

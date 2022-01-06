@@ -33,8 +33,6 @@ The user experience analytics device performance entity contains device performa
 |eventDateTime|DateTimeOffset|The time the event occurred.|
 |eventType|String|The type of the event.|
 |appDisplayName|String|The friendly name of the application for which the event occurred.|
-|appPublisher|String|The publisher of the application.|
-|appVersion|String|The version of the application.|
 |deviceId|String|The id of the device.|
 |deviceDisplayName|String|The name of the device.|
 
@@ -56,8 +54,6 @@ Here is a JSON representation of the resource.
   "eventDateTime": "String (timestamp)",
   "eventType": "String",
   "appDisplayName": "String",
-  "appPublisher": "String",
-  "appVersion": "String",
   "deviceId": "String",
   "deviceDisplayName": "String"
 }

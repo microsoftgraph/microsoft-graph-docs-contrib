@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7213
+Content-Length: 6559
 
 {
   "value": [
@@ -192,22 +192,7 @@ Content-Length: 7213
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
         "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-        "modeCredentialUsed": "Mode Credential Used value",
-        "usernameLableCustom": "Username Lable Custom value",
-        "usernameLabelCustom": "Username Label Custom value",
-        "userSetupDelayed": true,
-        "signInHelpText": "Sign In Help Text value",
-        "kerberosAppsInBundleIdACLIncluded": true,
-        "managedAppsInBundleIdACLIncluded": true,
-        "credentialsCacheMonitored": true,
-        "singleSignOnExtensionPreferredKDCs": [
-          "Single Sign On Extension Preferred KDCs value"
-        ],
-        "preferredKDCs": [
-          "Preferred KDCs value"
-        ],
-        "tlsForLDAPRequired": true
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
       },
       "contentCachingEnabled": true,
       "contentCachingType": "userContentOnly",

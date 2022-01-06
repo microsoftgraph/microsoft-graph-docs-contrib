@@ -2,7 +2,7 @@
 title: "Update authenticationFlowsPolicy"
 description: "Update the Boolean selfServiceSignUp property of an authenticationFlowsPolicy object."
 author: "linkhp"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -87,10 +87,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationflowspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationflowspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

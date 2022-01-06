@@ -2,7 +2,7 @@
 title: "Delete updatableAssetGroup"
 description: "Delete an updatableAssetGroup object."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -74,10 +74,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-updatableassetgroup-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-updatableassetgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

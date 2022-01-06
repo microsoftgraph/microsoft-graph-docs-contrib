@@ -1,7 +1,7 @@
 ---
 title: "expressionInputObject resource type"
 description: "Represents an object to be used as input test data when the synchronizationSchema parseExpression action performs an expression evaluation."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

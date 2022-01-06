@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
+IdentityProviderBase identityProviderBase = new IdentityProviderBase();
 identityProviderBase.clientSecret = "1111111111111";
 
 graphClient.identity().identityProviders("Amazon-OAUTH")

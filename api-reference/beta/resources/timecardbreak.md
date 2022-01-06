@@ -2,7 +2,7 @@
 title: "timeCardBreak resource type"
 description: "Represents a specific timecard break."
 author: "akumar39"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

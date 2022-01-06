@@ -3,7 +3,7 @@ title: "List children"
 description: "Get the terms from the children navigation property."
 author: mohitpcad
 ms.prod: "Sharepoint"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ---
 
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-term-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

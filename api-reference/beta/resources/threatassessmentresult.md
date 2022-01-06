@@ -1,7 +1,7 @@
 ---
 title: "threatAssessmentResult resource type"
 description: "Represents a threat assessment result item."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "resourcePageType"

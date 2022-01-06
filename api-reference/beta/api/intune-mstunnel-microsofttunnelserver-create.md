@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,8 +52,6 @@ The following table shows the properties that are required when you create the m
 |displayName|String|The MicrosoftTunnelServer's display name|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|The MicrosoftTunnelServer's health status. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|When the MicrosoftTunnelServer last checked in|
-|agentImageDigest|String|The digest of the current agent image running on this server |
-|serverImageDigest|String|The digest of the current server image running on this server |
 
 
 
@@ -67,15 +65,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 Content-type: application/json
-Content-length: 312
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
-  "agentImageDigest": "Agent Image Digest value",
-  "serverImageDigest": "Server Image Digest value"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
 
@@ -84,16 +80,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 361
+Content-Length: 257
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
-  "agentImageDigest": "Agent Image Digest value",
-  "serverImageDigest": "Server Image Digest value"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
 

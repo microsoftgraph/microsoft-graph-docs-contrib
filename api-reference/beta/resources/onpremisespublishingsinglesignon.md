@@ -1,7 +1,7 @@
 ---
 title: "onPremisesPublishingSingleSignOn resource type"
 description: "Represents the single-sign on settings for an on-premises application published via Application Proxy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "japere"
 ms.prod: "applications"
 doc_type: "resourcePageType"

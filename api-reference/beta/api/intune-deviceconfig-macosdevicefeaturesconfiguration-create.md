@@ -73,7 +73,7 @@ The following table shows the properties that are required when you create the m
 |shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
 |restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
 |sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
-|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `console` special user name.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
 |shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
 |restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
@@ -85,7 +85,7 @@ The following table shows the properties that are required when you create the m
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
 |contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determines what type of content is allowed to be cached by Apple's content caching service. Possible values are: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
-|contentCachingMaxSizeBytes|Int64|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
+|contentCachingMaxSizeBytes|Int32|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
 |contentCachingDataPath|String|The path to the directory used to store cached content. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Boolean|Disables internet connection sharing.|
 |contentCachingForceConnectionSharing|Boolean|Forces internet connection sharing. contentCachingDisableConnectionSharing overrides this setting.|
@@ -115,7 +115,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6256
+Content-length: 5662
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -241,22 +241,7 @@ Content-length: 6256
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
-    "usernameLabelCustom": "Username Label Custom value",
-    "userSetupDelayed": true,
-    "signInHelpText": "Sign In Help Text value",
-    "kerberosAppsInBundleIdACLIncluded": true,
-    "managedAppsInBundleIdACLIncluded": true,
-    "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
-    "preferredKDCs": [
-      "Preferred KDCs value"
-    ],
-    "tlsForLDAPRequired": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",
@@ -311,7 +296,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6428
+Content-Length: 5834
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -440,22 +425,7 @@ Content-Length: 6428
     "activeDirectorySiteCode": "Active Directory Site Code value",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
-    "usernameLabelCustom": "Username Label Custom value",
-    "userSetupDelayed": true,
-    "signInHelpText": "Sign In Help Text value",
-    "kerberosAppsInBundleIdACLIncluded": true,
-    "managedAppsInBundleIdACLIncluded": true,
-    "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
-    "preferredKDCs": [
-      "Preferred KDCs value"
-    ],
-    "tlsForLDAPRequired": true
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   },
   "contentCachingEnabled": true,
   "contentCachingType": "userContentOnly",

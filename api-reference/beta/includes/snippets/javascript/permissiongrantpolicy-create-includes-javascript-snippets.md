@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const permissionGrantConditionSet = {
   permissionType: 'delegated',
-  certifiedClientApplicationsOnly: true
+  clientApplicationsFromVerifiedPublisherOnly: true
 };
 
 await client.api('/policies/permissionGrantPolicies/{id}/includes')

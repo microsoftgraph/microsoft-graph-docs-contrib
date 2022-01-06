@@ -1,7 +1,7 @@
 ---
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 author: "ruoyingl"
@@ -84,6 +84,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",

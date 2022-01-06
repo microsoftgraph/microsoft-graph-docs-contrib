@@ -16,6 +16,7 @@ var @event = new Event
 		Time = DateTimeOffset.Parse("datetime-value")
 	},
 	Recurrence = null,
+	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,

@@ -2,7 +2,7 @@
 title: "List Todo tasks"
 description: "Get the todoTask resources from the tasks navigation property of a specified todoTaskList."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-todotask-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-todotask-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

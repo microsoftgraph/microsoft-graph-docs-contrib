@@ -1,7 +1,7 @@
 ---
 title: "Update case"
 description: "Update the properties of a case object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -91,10 +91,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-case-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-case-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

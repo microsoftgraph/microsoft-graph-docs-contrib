@@ -1,7 +1,7 @@
 ---
 title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -16,35 +16,25 @@ Namespace: microsoft.graph
 Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- Cloud PC 
+- cloud PC 
 - device management (Intune)
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
-### For Cloud PC provider
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.ReadWrite.All  |
-
-### For Device management (Intune) provider
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
-
+|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.ReadWrite.All | Not supported. | CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
-To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
+To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -111,10 +101,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroleassignmentmultiple-from-rbacapplication-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -132,7 +118,7 @@ HTTP/1.1 204 OK
 
 ```
 
-## Example 2: update an existing unfiedRoleAssignmentMultiple in a Cloud PC provider
+## Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider
 
 ### Request
 
@@ -166,10 +152,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

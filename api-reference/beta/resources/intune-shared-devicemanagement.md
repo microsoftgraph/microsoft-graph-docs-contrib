@@ -94,10 +94,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) collection|The Audit Events|
 |**Company terms**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|The terms and conditions associated with device management of the company.|
-|**Configuration Policies**|
-|configurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md) collection|List of all Configuration policies|
-|configurationSettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md) collection|List of all ConfigurationSettings|
-|configurationCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md) collection|List of all Configuration Categories|
 |**Corporate enrollment**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
@@ -141,8 +137,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) collection|User experience analytics device Startup History|
 |userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) collection|User experience analytics device Startup Processes|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) collection|User experience analytics device Startup Process Performance|
-|userExperienceAnalyticsScoreHistory|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userExperienceAnalyticsScoreHistory.md) collection|User experience analytics device Startup Score History|
-|**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
@@ -156,9 +150,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
-|**MicrosoftTunnel**|
-|microsoftTunnelConfigurations|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md) collection|Collection of MicrosoftTunnelConfiguration settings associated with account.|
-|microsoftTunnelSites|[microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md) collection|Collection of MicrosoftTunnelSite settings associated with account.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**Onboarding**|
@@ -216,6 +207,7 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
+
 
 
 

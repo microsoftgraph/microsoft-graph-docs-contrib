@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Shared resource indicates a DriveItem has been shared with others."
 ms.date: 09/10/2017
 title: Shared
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

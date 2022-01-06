@@ -1,7 +1,7 @@
 ---
 title: "group: delta"
 description: "Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
@@ -130,10 +130,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -160,22 +156,23 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
   "value":[
     {
-      "createdDateTime":"2021-03-12T10:36:14Z",
-      "description":"This is the default group for everyone in the network",
-      "displayName":"All Company",
+      "classification": "classification-value",
+      "createdDateTime":"datetime-value",
+      "description":"Test group 1",
+      "displayName":"TestGroup1",
       "groupTypes": [
-        "Unified"
+        "groupTypes-value"
       ],
-      "mail": "allcompany@contoso.com",
+      "mail": "mail-value",
       "members@delta": [
-        {
-          "@odata.type": "#microsoft.graph.user",
-          "id": "693acd06-2877-4339-8ade-b704261fe7a0"
-        },
-        {
-          "@odata.type": "#microsoft.graph.user",
-          "id": "49320844-be99-4164-8167-87ff5d047ace"
-        }
+               {
+                   "@odata.type": "#microsoft.graph.user",
+                   "id": "693acd06-2877-4339-8ade-b704261fe7a0"
+               },
+               {
+                   "@odata.type": "#microsoft.graph.user",
+                   "id": "49320844-be99-4164-8167-87ff5d047ace"
+               }
       ]
     }
   ]
@@ -211,10 +208,6 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -238,9 +231,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "All Company",
+      "displayName": "displayName-value",
       "description": null,
-      "mailNickname": "allcompany@contoso.com"
+      "mailNickname": "mailNickname-value"
     }
   ]
 }
@@ -276,10 +269,6 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -303,7 +292,7 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "Everyone",
+      "displayName": "displayName-value",
       "description": null
     }
   ]

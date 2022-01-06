@@ -1,8 +1,8 @@
 ---
 title: "unifiedRoleManagementPolicyNotificationRule resource type"
 description: "A unifiedRoleManagementPolicyNotificationRule specifies the notification rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
-author: "carolinetempleton"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "agreementFileData resource type"
 description: "Represents an Azure Active Directory (Azure AD) terms of use agreement file."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "raprakasMSFT"

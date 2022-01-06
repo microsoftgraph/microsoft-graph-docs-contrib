@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -97,10 +97,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-approleassignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -108,7 +104,7 @@ In this example, note that the value used as the service principal **id** in the
 
 ### Response
 
-Here is an example of the response.
+Here is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

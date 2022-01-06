@@ -2,7 +2,7 @@
 title: "Outlook mail API overview"
 description: "Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
 author: "angelgolfer-ms"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ms.custom: scenarios:getting-started
 ---

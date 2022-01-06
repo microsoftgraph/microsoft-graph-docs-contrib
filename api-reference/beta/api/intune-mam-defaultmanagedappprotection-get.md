@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5846
+Content-Length: 5743
 
 {
   "value": {
@@ -125,7 +125,6 @@ Content-Length: 5846
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
-    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -189,8 +188,7 @@ Content-Length: 5846
     "warnAfterCompanyPortalUpdateDeferralInDays": 10,
     "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
     "deviceLockRequired": true,
-    "appActionIfDeviceLockNotSet": "wipe",
-    "connectToVpnOnLaunch": true
+    "appActionIfDeviceLockNotSet": "wipe"
   }
 }
 ```

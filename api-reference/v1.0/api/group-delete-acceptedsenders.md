@@ -2,7 +2,7 @@
 title: "Remove acceptedSender"
 description: "Remove a user or group from the accepted-senders list. "
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=htt
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-acceptedsenders-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-acceptedsenders-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

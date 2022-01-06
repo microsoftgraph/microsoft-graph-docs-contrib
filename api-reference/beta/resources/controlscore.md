@@ -1,7 +1,7 @@
 ---
 title: " controlScore resource type"
 description: "This resource contains a tenant score and description for an individual control."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

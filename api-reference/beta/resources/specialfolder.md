@@ -1,20 +1,21 @@
 ---
 author: JeremyKelley
-description: "Groups special folder-related data items into a single structure."
-title: specialFolder resource type
-ms.localizationpriority: medium
+description: "The SpecialFolder resource groups special folder-related data items into a single structure."
+ms.date: 09/10/2017
+title: SpecialFolder
+localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.prod: ""
 ---
-# specialFolder resource type
+# SpecialFolder resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Groups special folder-related data items into a single structure.
+The **SpecialFolder** resource groups special folder-related data items into a single structure.
 
-If a **driveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
+If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
 Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).
 
 Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
@@ -23,16 +24,7 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
-[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
-
->**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
-
-## Properties
-
-| Property  | Type   | Description                                                            |
-|:----------|:-------|:-----------------------------------------------------------------------|
-| name      | string | The unique identifier for this item in the `/drive/special` collection |
-
+**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
 ## JSON representation
 
@@ -49,9 +41,27 @@ If a user deletes one, it is recreated when written to again.
 }
 ```
 
-## See also 
+## Properties
 
-For more information about the facets on a driveItem, see [driveItem](driveitem.md).
+| Property  | Type   | Description                                                            |
+|:----------|:-------|:-----------------------------------------------------------------------|
+| name      | string | The unique identifier for this item in the `/drive/special` collection |
+
+## Special folders
+
+Here are the special folders available in OneDrive Personal and OneDrive for Business.
+
+| Name        | Folder id    | Description                                                              |
+|:------------|:-------------|:-------------------------------------------------------------------------|
+| App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
+| Camera Roll | `cameraroll` | The Camera Roll Backup folder. Not available in OneDrive for Business.   |
+| Documents   | `documents`  | The Documents folder.                                                    |
+| Music       | `music`      | The Music folder. Not available in OneDrive for Business.                |
+| Photos      | `photos`     | The Photos folder.                                                       |
+
+## Remarks 
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

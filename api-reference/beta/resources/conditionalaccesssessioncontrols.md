@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -22,8 +22,6 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |:-------------|:------------|:------------|
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session control. |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Session control to apply cloud app security.|
-|continuousAccessEvaluation|[continuousAccessEvaluationSessionControl](../resources/continuousaccessevaluationsessioncontrol.md)|Session control for continuous access evaluation settings.|
-|disableResilienceDefaults|Boolean| Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
 
@@ -41,9 +39,7 @@ The following is a JSON representation of the resource.
     "applicationEnforcedRestrictions",
     "persistentBrowser",
     "cloudAppSecurity",
-    "signInFrequency",
-    "continuousAccessEvaluation",
-    "disableResilienceDefaults"
+    "signInFrequency"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
   "baseType": null
@@ -53,10 +49,8 @@ The following is a JSON representation of the resource.
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
-  "continuousAccessEvaluation": {"@odata.type": "microsoft.graph.continuousAccessEvaluationSessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
-  "disableResilienceDefaults": false
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
 }
 ```
 

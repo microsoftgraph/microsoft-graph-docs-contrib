@@ -1,7 +1,7 @@
 ---
 title: "educationAssignment: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationAssignment."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sharmas"
 ms.prod: "education"
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # educationAssignment: setUpResourcesFolder
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a SharePoint folder to upload files for a given [educationAssignment](../resources/educationassignment.md). 
 
@@ -30,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
+
 ```
 ## Request headers
 | Header       | Value |
@@ -41,8 +40,6 @@ You need to provide an empty json `{}` as request body for this method.
 ## Response
 If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
 
-If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
-
 ## Example
 The following example shows how to call this API.
 
@@ -53,11 +50,10 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075","ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
+POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -93,6 +89,7 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
@@ -125,7 +122,7 @@ Content-type: application/json
             "42ff222c-571f-497c-a9d3-f77ea9ece327"
         ]
     },
-    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!H0Unq6KJREmMLHgbJXfKw4YTuh2luKRDvUVGQBLOmvaRxxvbedZKT4LKslSIjT9a/items/01SMYGQ3IUCDNLBJ4XCFE3AQMQHTLSLVYX",
+    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!H0Unq6KJREmMLHgbJXfKw4YTuh2luKRDvUVGQBLOmvaRxxvbedZKT4LKslSIjT9a/items/01SMYGQ3IUCDNLBJ4XCFE3AQMQHTLSLVYX",
     "createdBy": {
         "application": null,
         "device": null,
@@ -140,32 +137,6 @@ Content-type: application/json
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
-        }
-    }
-}
-```
-
-If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "odata.error"
-} -->
-```http
-HTTP/1.1 400 Bad request
-Content-type: application/json
-
-{
-    "error": {
-        "code": "badRequest",
-        "message": "Bad request.",
-        "innerError": {
-            "code": "folderAlreadyExists",
-            "message": "Resource folder already exists and has previously been set up.",
-            "date": "2021-09-14T19:05:24",
-            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
-            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

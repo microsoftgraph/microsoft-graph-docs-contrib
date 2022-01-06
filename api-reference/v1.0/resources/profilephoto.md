@@ -1,7 +1,7 @@
 ---
 title: "profilePhoto resource type"
 description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "kevinbellinger"
 ms.prod: ""
 doc_type: resourcePageType

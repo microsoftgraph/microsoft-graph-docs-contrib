@@ -1,7 +1,7 @@
 ---
 title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

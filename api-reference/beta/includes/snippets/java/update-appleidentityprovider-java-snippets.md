@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
+IdentityProviderBase identityProviderBase = new IdentityProviderBase();
 identityProviderBase.displayName = "Apple";
 
 graphClient.identity().identityProviders("Apple-Managed-OIDC")

@@ -95,7 +95,6 @@ The following table shows the properties that are required when you create the w
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to disable user’s access to scan Windows Update. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Specifies what Windows Update notifications users see. Possible values are: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
-|allowWindows11Upgrade|Boolean|Allow eligible Windows 10 devices to upgrade to the latest version of Windows 11.|
 
 
 
@@ -109,7 +108,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2828
+Content-length: 2794
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -179,8 +178,7 @@ Content-length: 2828
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications",
-  "allowWindows11Upgrade": true
+  "updateNotificationLevel": "defaultNotifications"
 }
 ```
 
@@ -189,7 +187,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3000
+Content-Length: 2966
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -262,8 +260,7 @@ Content-Length: 3000
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications",
-  "allowWindows11Upgrade": true
+  "updateNotificationLevel": "defaultNotifications"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "jesakowi"
@@ -17,9 +17,9 @@ Represents the verified publisher of the [application](application.md). For more
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 |displayName|String|The verified publisher name from the app publisher's Partner Center account.|
 |verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
+|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 
 
 ## JSON representation
@@ -39,6 +39,7 @@ Here is a JSON representation of the resource.
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
+
 ```
 
 

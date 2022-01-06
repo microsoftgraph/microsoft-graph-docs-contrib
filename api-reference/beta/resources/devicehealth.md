@@ -2,7 +2,7 @@
 title: deviceHealth resource type
 description: Represents a device's health, including any errors.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

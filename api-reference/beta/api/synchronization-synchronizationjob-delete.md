@@ -1,7 +1,7 @@
 ---
 title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -71,10 +71,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-synchronizationjob-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-synchronizationjob-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

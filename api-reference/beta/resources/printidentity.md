@@ -2,7 +2,7 @@
 title: printIdentity resource type
 description: Represents an identity within the Universal Print service. Maps to an Azure AD group.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

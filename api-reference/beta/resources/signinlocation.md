@@ -1,7 +1,7 @@
 ---
 title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "identity-and-access-reports"
 author: "SarahBar"

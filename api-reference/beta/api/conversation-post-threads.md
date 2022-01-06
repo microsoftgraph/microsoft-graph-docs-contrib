@@ -2,7 +2,7 @@
 title: "Create thread"
 description: "Create a new thread in the specified conversation."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -40,15 +40,15 @@ POST /groups/{id}/conversations/{id}/threads
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [conversationThread](../resources/conversationthread.md) object.
+In the request body, supply a JSON representation of [ConversationThread](../resources/conversationthread.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [conversationThread](../resources/conversationthread.md) object in the response body.
+If successful, this method returns `201 Created` response code and [ConversationThread](../resources/conversationthread.md) object in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
+##### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,19 +56,17 @@ The following is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
+POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
-    "topic": "Take your wellness days and rest",
-    "posts": [
-        {
-            "body": {
-                "contentType": "html",
-                "content": "Waiting for the summer holidays."
-            }
-        }
-    ]
+  "topic": "topic-value",
+  "posts": [{
+      "body": {
+        "contentType": "html",
+        "content": "this is body content"
+      }
+  }]
 }
 ```
 # [C#](#tab/csharp)
@@ -87,18 +85,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-conversation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-conversationthread-from-conversation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
-### Response
+##### Response
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
-
-The following is an example of the response.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,10 +100,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 346
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads/$entity",
-    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAMgNmxDXX0UO0DI-I807i0hAAMgNmxDXX0UO0DI-I807i0g=="
+  "id": "thread-id-value"
 }
 ```
 

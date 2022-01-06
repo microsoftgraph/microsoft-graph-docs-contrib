@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The sharingLink resource groups link-related data items into a single structure."
 ms.date: 09/10/2017
 title: SharingLink
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

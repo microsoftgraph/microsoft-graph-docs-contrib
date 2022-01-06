@@ -2,7 +2,7 @@
 title: "resourceSpecificPermissionGrant resource type"
 description: "Specifies the permission that a specific Azure AD app has."
 author: "AkJo"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Declares the permission that has been granted to a specific Azure AD app for an instance of a resource in Microsoft Graph.
-
-For more information about granting apps consent to access a specific instance of a resource, see [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+A resourceSpecificPermissionGrant declares the permission that has been granted to a specific AzureAD app for an instance of a resource in Microsoft Graph.
 
 ## Methods
 
 |  Method                                                                   |  Return Type                                                                     | Description                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
-|[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted in a specific [group](group.md). |
+|[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific group. |
 
 ## Properties
 
@@ -31,7 +29,7 @@ For more information about granting apps consent to access a specific instance o
 | clientAppId     | string        | ID of the service principal of the Azure AD app that has been granted access. Read-only.   |
 | resourceAppId   | string        | ID of the Azure AD app that is hosting the resource. Read-only.                        |
 | permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
-| permission      | string        | The name of the resource-specific permission. Read-only.                                                |
+| permission      | string        | The name of the permission. Read-only.                                                |
 
 ## JSON representation
 

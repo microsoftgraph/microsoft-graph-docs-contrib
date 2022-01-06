@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "List columnDefinitions in a list"
 description: "List columns in a list."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -19,7 +19,7 @@ Get the collection of columns, represented as [columnDefinition][columnDefinitio
 
   
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
   
 
@@ -86,10 +86,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/columns
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-list-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

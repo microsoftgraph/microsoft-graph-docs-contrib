@@ -1,7 +1,3 @@
----
-ms.localizationpriority: medium
----
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 In this step, you will search for parts in SharePoint.

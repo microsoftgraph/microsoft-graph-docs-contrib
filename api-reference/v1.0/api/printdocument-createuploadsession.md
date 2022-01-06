@@ -1,7 +1,7 @@
 ---
 title: "printDocument: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of binary file of printDocument."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nilakhan"
 ms.prod: "cloud-printing"
 doc_type: "apiPageType"
@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # printDocument: createUploadSession
 Namespace: microsoft.graph
+
+[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
 
@@ -90,6 +92,7 @@ The following example shows how to create an upload session that you can use in 
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/createUploadSession
 Content-Type: application/json
+Content-length: 96
 
 {
   "properties": {

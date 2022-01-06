@@ -2,7 +2,7 @@
 title: "cloudPcSourceDeviceImage resource type"
 description: "The source image associated with your Azure subscription. "
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The source image associated with your Azure subscription.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 

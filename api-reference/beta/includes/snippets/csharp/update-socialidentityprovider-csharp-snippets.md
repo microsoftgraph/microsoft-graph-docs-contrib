@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityProviderBase = new SocialIdentityProvider
+var identityProviderBase = new IdentityProviderBase
 {
 	ClientSecret = "1111111111111"
 };

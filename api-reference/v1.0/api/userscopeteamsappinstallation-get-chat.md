@@ -3,7 +3,7 @@ title: "Get 1:1 chat between the specified user and Teams app"
 description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-chat-teamsapps-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-chat-teamsapps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

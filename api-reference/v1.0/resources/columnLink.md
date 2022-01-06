@@ -2,7 +2,7 @@
 author: daspek
 ms.date: 09/12/2017
 title: ColumnLink
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.prod: ""
 doc_type: resourcePageType

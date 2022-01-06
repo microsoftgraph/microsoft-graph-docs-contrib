@@ -1,8 +1,8 @@
 ---
 title: "Get device"
 description: "Get the properties and relationships of a device object."
-author: "sandeo-MSFT"
-ms.localizationpriority: medium
+author: "spunukol"
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -23,23 +23,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
-
-The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## Optional query parameters
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
-| Name       | Description|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -47,11 +45,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
-## Examples
-
-### Example 1: Get a device
-
-#### Request
+## Example
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -60,7 +55,7 @@ The following example shows a request.
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
+GET https://graph.microsoft.com/beta/devices/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -78,14 +73,12 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 [!INCLUDE [sample-code](../includes/snippets/java/get-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-device-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-#### Response
+> **Note:** The `id` in the request is the **id** property of the device, not the **deviceId** property.
+
+### Response
 The following example shows a response for a device with no **hostNames**. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -97,15 +90,14 @@ The following example shows a response for a device with no **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 322
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
-  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled": true,
-  "approximateLastSignInDateTime": "2021-08-26T21:15:01Z",
-  "deviceId": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
-  "deviceMetadata": null,
-  "deviceVersion": 2,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
   "hostNames": []
 }
 ```
@@ -121,6 +113,7 @@ The following example shows a response for a device with **hostNames**.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 322
 
 {
   "accountEnabled": true,
@@ -132,79 +125,6 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a device and return only its id and extensionAttributes properties
-
-#### Request
-
-The following request retrieves the **id** and **extensionAttributes** property of a device.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_device_select"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-device-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-device-select-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-device-select-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-device-select-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices(id,extensionAttributes)/$entity",
-    "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
-    "extensionAttributes": {
-        "extensionAttribute1": null,
-        "extensionAttribute2": null,
-        "extensionAttribute3": null,
-        "extensionAttribute4": null,
-        "extensionAttribute5": null,
-        "extensionAttribute6": null,
-        "extensionAttribute7": null,
-        "extensionAttribute8": null,
-        "extensionAttribute9": null,
-        "extensionAttribute10": null,
-        "extensionAttribute11": null,
-        "extensionAttribute12": null,
-        "extensionAttribute13": null,
-        "extensionAttribute14": null,
-        "extensionAttribute15": null
-    }
-}
-```
 
 ## See also
 

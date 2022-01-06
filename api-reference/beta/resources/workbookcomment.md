@@ -1,7 +1,7 @@
 ---
 title: "workbookComment resource type"
 description: "Represents a comment in workbook."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,12 +52,6 @@ The following table shows the properties that are required when you create the m
 |displayName|String|The MicrosoftTunnelSite's display name|
 |description|String|The MicrosoftTunnelSite's description|
 |publicAddress|String|The MicrosoftTunnelSite's public domain name or IP address|
-|upgradeWindowUtcOffsetInMinutes|Int32|The site's timezone represented as a minute offset from UTC|
-|upgradeWindowStartTime|TimeOfDay|The site's upgrade window start time of day|
-|upgradeWindowEndTime|TimeOfDay|The site's upgrade window end time of day|
-|upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
-|upgradeAvailable|Boolean|True if an upgrade is available|
-|internalNetworkProbeUrl|String|The MicrosoftTunnelSite's Internal Network Access Probe URL|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
@@ -72,19 +66,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites
 Content-type: application/json
-Content-length: 524
+Content-length: 246
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
-  "upgradeWindowUtcOffsetInMinutes": 15,
-  "upgradeWindowStartTime": "12:01:27.3030000",
-  "upgradeWindowEndTime": "11:57:17.9830000",
-  "upgradeAutomatically": true,
-  "upgradeAvailable": true,
-  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -96,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 573
+Content-Length: 295
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -104,12 +92,6 @@ Content-Length: 573
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
-  "upgradeWindowUtcOffsetInMinutes": 15,
-  "upgradeWindowStartTime": "12:01:27.3030000",
-  "upgradeWindowEndTime": "11:57:17.9830000",
-  "upgradeAutomatically": true,
-  "upgradeAvailable": true,
-  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]

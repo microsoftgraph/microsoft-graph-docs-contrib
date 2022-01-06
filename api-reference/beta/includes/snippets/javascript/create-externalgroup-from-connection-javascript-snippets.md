@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const externalGroup = {
+  '@odata.type': '#microsoft.graph.externalGroup',
   id: '31bea3d537902000',
   displayName: 'Contoso Marketing',
   description: 'The product marketing team'

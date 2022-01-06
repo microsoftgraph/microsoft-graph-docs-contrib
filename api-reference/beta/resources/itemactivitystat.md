@@ -3,7 +3,7 @@ author: daspek
 description: "The itemActivityStat resource provides information about activities that took place within an interval of time."
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

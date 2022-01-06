@@ -2,7 +2,7 @@
 author: learafa
 description: "List the items that have been followed by the signed in user."
 title: List followed items
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

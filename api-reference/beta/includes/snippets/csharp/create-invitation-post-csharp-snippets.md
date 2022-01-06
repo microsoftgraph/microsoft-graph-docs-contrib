@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var invitation = new Invitation
 {
-	InvitedUserEmailAddress = "admin@fabrikam.com",
+	InvitedUserEmailAddress = "yyy@test.com",
 	InviteRedirectUrl = "https://myapp.contoso.com"
 };
 

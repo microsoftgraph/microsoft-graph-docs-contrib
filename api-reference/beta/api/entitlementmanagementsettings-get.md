@@ -1,7 +1,7 @@
 ---
 title: "Get entitlementManagementSettings"
 description: "Retrieve the properties of the entitlementManagementSettings object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/se
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-entitlementmanagementsettings-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-entitlementmanagementsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

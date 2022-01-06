@@ -2,7 +2,7 @@
 title: "List cloudPCs"
 description: "List properties and relationships of the cloudPC objects."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -85,10 +87,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcs-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -111,20 +109,20 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPC",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
-      "displayName": "Demo-1",
-      "imageDisplayName": "Windows-10 19h1-evd",
+      "displayName": "Display Name value",
+      "imageDisplayName": "Image Display Name value",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
-      "managedDeviceName": "A00002GI001",
+      "managedDeviceName": "Managed Device Name value",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
-      "provisioningPolicyName": "HR provisioning policy",
-      "onPremisesConnectionName": "on-Premises connection for HR",
+      "provisioningPolicyName": "Provisioning Policy Name value",
+      "onPremisesConnectionName": "On-premises connection Name value",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
-      "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+      "userPrincipalName": "User Principal Name value",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
       "statusDetails": null,
-      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+      "gracePeriodEndDateTime": "Grace Period End Date Time value "
     }
   ]
 }

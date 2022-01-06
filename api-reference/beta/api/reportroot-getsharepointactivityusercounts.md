@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSharePointActivityUserCounts"
 description: "Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a JSON object in the response body.
+If successful, this method returns a `200 OK` response code and a **[sharePointActivityUserCounts](../resources/sharepointactivityusercounts.md)** object in the response body.
 
 ## Example
 
@@ -152,7 +152,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.sharePointActivityUserCounts"
 } -->
 
 ```http
@@ -161,6 +161,7 @@ Content-Type: application/json
 Content-Length: 302
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

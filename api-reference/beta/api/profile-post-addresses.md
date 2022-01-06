@@ -1,7 +1,7 @@
 ---
 title: "Create addresses"
 description: "Create a new addresses object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -66,6 +66,7 @@ If successful, this method returns a `201 Created` response code and an [itemAdd
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/addresses
 Content-Type: application/json
+Content-length: 497
 
 {
   "displayName": "Home",
@@ -94,10 +95,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itemaddress-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-itemaddress-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

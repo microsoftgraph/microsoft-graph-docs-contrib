@@ -1,7 +1,7 @@
 ---
 title: "application: delta"
 description: "Get created, updated, or deleted applications without performing a full read of the entire resource collection."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: apiPageType
@@ -100,10 +100,6 @@ GET https://graph.microsoft.com/v1.0/applications/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/application-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

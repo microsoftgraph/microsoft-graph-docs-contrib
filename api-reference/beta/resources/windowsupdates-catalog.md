@@ -2,7 +2,7 @@
 title: "catalog resource type"
 description: "Entity representing the catalog of content that you can approve for deployment."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

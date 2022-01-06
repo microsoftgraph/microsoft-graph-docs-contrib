@@ -1,7 +1,7 @@
 ---
 title: "Create and send a notification from your app service"
 description: "Setup your application service to send user-centric notifications to various clients via the Microsoft Graph. "
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "notifications"
 author: "merzink"
 ---

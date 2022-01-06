@@ -2,7 +2,7 @@
 title: "List favoritePlans"
 description: "Retrieve a list of plannerPlans that are marked as favorite by a user. You can mark a plan as favorite by updating the plannerUser resource."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 [!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-favoriteplans-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -90,6 +86,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 979
 
 {
   "value": [

@@ -2,7 +2,7 @@
 title: "Changelog for Microsoft Graph (Archive)"
 description: "This topic contains archived changelog entries for Microsoft Graph."
 author: "MSGraphDocsVteam"
-ms.localizationpriority: high
+localization_priority: Priority
 ---
 
 # Changelog for Microsoft Graph (Archive)
@@ -944,7 +944,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](./permissions-reference.md#user-permissions).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta). |
-| Addition | beta | Added the [AuditLog.Read.All](./permissions-reference.md#user-permissions) permission for listing the sign-in activity of a user.|
+| Addition | beta | Added the [Auditlogs.Read.All](./permissions-reference.md#user-permissions) permission for listing the sign-in activity of a user.|
 | Addition | beta | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), which represents Azure Active Directory security defaults policy.|
 | Addition | beta | Added support for the `$top` and `$skiptoken` filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method. |
 
@@ -1533,7 +1533,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the **signInActivity** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource. |
 | Addition | Beta | Added a new entity type: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | Addition | Beta | Added new entity type: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
-| Addition | Beta | Added new [entitlement management](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta) resources. |
+| Addition | Beta | Added new [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) resources. |
 | Addition | Beta | Added [removePassword](/graph/api/application-removepassword?view=graph-rest-beta) method to the [application](/graph/resources/application?view=graph-rest-beta) resource. |
 | Addition | Beta | Added **addIns** property to the [application](/graph/resources/application?view=graph-rest-beta). |
 | Addition | Beta | Added [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) and [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) methods to the [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta) resource. |

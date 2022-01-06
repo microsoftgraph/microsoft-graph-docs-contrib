@@ -1,7 +1,7 @@
 ---
 title: "webApplication resource type"
 description: "Specifies settings for a web application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

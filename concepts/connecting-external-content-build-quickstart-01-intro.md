@@ -1,7 +1,3 @@
----
-ms.localizationpriority: medium
----
-
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 <!--- # Introduction --->
 

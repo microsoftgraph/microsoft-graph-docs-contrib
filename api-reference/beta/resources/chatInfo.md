@@ -2,7 +2,7 @@
 title: "chatInfo resource type"
 description: "Contains information associated with Microsoft Teams meetings."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

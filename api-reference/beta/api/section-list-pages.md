@@ -1,7 +1,7 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects from the specified section."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -63,6 +63,7 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 393
 
 {
   "value": [

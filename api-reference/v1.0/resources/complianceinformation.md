@@ -1,7 +1,7 @@
 ---
 title: "complianceInformation resource type"
 description: "This resource contains compliance data associated with secure score control."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: preetikr
 ms.prod: ""
 doc_type: resourcePageType

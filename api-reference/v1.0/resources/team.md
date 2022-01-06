@@ -2,7 +2,7 @@
 title: "team resource type"
 description: "A Microsoft Teams team is a collection of channels. "
 author: "AkJo"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -31,7 +31,6 @@ For more information about working with groups and members in teams, see [Use th
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
 |[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
-|[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
 |[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
@@ -72,7 +71,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`. **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
 
-For a POST request example, see [Request (create team in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+For a POST request example, see [Request (create team in migration state)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## Relationships
 

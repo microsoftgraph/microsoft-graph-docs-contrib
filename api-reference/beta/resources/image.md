@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

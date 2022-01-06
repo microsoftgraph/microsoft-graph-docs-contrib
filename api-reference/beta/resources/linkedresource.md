@@ -2,7 +2,7 @@
 title: "linkedResource resource type"
 description: "Represents the source of the todoTask"
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

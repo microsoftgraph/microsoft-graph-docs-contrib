@@ -2,7 +2,7 @@
 title: "chatInfo resource type"
 description: "Information about a message in Microsoft Teams."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

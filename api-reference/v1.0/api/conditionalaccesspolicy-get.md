@@ -1,7 +1,7 @@
 ---
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conditionalaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

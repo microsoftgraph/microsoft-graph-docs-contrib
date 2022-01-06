@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalGroup = new Microsoft.Graph.ExternalConnectors.ExternalGroup
+var externalGroup = new ExternalGroup
 {
 	Id = "31bea3d537902000",
 	DisplayName = "Contoso Marketing",

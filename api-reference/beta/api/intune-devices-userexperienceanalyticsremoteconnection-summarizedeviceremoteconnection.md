@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 715
+Content-Length: 613
 
 {
   "value": [
@@ -78,15 +78,13 @@ Content-Length: 715
       "deviceName": "Device Name value",
       "model": "Model value",
       "virtualNetwork": "Virtual Network value",
-      "manufacturer": "Manufacturer value",
       "deviceCount": 11,
       "cloudPcRoundTripTime": 6.666666666666667,
       "cloudPcSignInTime": 5.666666666666667,
       "remoteSignInTime": 5.333333333333333,
       "coreBootTime": 4.0,
       "coreSignInTime": 4.666666666666667,
-      "cloudPcFailurePercentage": 8.0,
-      "userPrincipalName": "User Principal Name value"
+      "cloudPcFailurePercentage": 8.0
     }
   ]
 }

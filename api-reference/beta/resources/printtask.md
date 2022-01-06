@@ -2,7 +2,7 @@
 title: printTask resource type
 description: Represents a task that is executing or has been executed as a result of a Universal Print event.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

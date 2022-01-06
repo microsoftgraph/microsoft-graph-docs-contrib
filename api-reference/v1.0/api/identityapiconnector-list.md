@@ -2,7 +2,7 @@
 title: "List identityApiConnectors"
 description: "Get a list of the identityApiConnector objects and their properties."
 author: "nickgmicrosoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -88,10 +88,6 @@ GET https://graph.microsoft.com/v1.0/identity/apiConnectors
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityapiconnectors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-identityapiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

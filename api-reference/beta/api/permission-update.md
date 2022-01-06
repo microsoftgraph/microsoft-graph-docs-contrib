@@ -3,9 +3,9 @@ author: JeremyKelley
 description: "Update the properties of a sharing permission by patching the permission resource."
 ms.date: 09/10/2017
 title: Change sharing permissions
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.prod: ""
 ---
 # Update sharing permission
 
@@ -114,22 +114,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Robin Danielsen",
+      "displayName": "Ryan Gregg",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
-    }
-  },
-  "grantedToV2": {
-    "user": {
-      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-      "displayName": "Robin Danielsen"
-    },
-    "siteUser": {
-      "id": "1",
-      "displayName": "Robin Danielsen",
-      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

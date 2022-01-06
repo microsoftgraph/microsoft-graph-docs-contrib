@@ -1,7 +1,7 @@
 ---
 title: "alterationResponse resource type"
 description: "Provides information related to spelling corrections in the alteration response."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"

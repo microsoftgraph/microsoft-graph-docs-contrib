@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Share a file with a link
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 description: "You can use createLink action to share a DriveItem via a sharing link."
 doc_type: apiPageType

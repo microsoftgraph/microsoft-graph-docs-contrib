@@ -35,8 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/definition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition
-PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/nextVersionDefinition
-PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/previousVersionDefinition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/definitions/{groupPolicyDefinitionId}
 ```
@@ -60,11 +58,7 @@ The following table shows the properties that are required when you create the [
 |categoryPath|String|The localized full category path for the policy.|
 |supportedOn|String|Localized string used to specify what operating system or application version is affected by the policy.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
-|hasRelatedDefinitions|Boolean|Signifies whether or not there are related definitions to this definition|
 |groupPolicyCategoryId|Guid|The category id of the parent category|
-|minDeviceCspVersion|String|Minimum required CSP version for device configuration in this definition|
-|minUserCspVersion|String|Minimum required CSP version for user configuration in this definition|
-|version|String|Setting definition version|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -80,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 530
+Content-length: 353
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -90,11 +84,7 @@ Content-length: 530
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
-  "hasRelatedDefinitions": true,
-  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
-  "minDeviceCspVersion": "Min Device Csp Version value",
-  "minUserCspVersion": "Min User Csp Version value",
-  "version": "Version value"
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d"
 }
 ```
 
@@ -103,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 643
+Content-Length: 466
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -113,11 +103,7 @@ Content-Length: 643
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
-  "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
-  "minDeviceCspVersion": "Min Device Csp Version value",
-  "minUserCspVersion": "Min User Csp Version value",
-  "version": "Version value",
   "id": "f9607947-7947-f960-4779-60f9477960f9",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }

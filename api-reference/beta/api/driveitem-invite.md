@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
 title: Send an invite to access an item
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -87,7 +87,7 @@ Content-type: application/json
 {
   "recipients": [
     {
-      "email": "robin@contoso.org"
+      "email": "ryan@contoso.org"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -130,28 +130,16 @@ Content-type: application/json
 {
   "value": [
     {
-      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
-          "displayName": "Robin Danielsen",
+          "displayName": "Ryan Gregg",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
-        }
-      },
-      "grantedToV2": {
-        "user": {
-          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
-          "displayName": "Robin Danielsen"
-        },
-        "siteUser": {
-          "id": "1",
-          "displayName": "Robin Danielsen",
-          "loginName": "Robin Danielsen"
         }
       },
       "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "robin@contoso.com",
+        "email": "ryan@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -179,13 +167,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "Helga Hammeren",
+          "displayName": "John Adams",
           "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
         }
       },
       "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "helga@contoso.com",
+        "email": "adams@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -202,13 +190,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "Robin Danielsen",
+          "displayName": "Ryan Gregg",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "robin@contoso.com",
+        "email": "ryan@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],

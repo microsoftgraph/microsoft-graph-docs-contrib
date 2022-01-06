@@ -1,8 +1,8 @@
 ---
 title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
-description: "Update the Active Directory domain password for a successful on-premises connection. This API is supported when the onPremisesConnection's type is hybridAzureADJoin."
+description: "Update AD domain password for a successful onPremisesConnection."
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -12,8 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the type of the **onPremisesConnection** is `hybridAzureADJoin`.
+Update Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|adDomainPassword|String|The password associated with **adDomainUsername**.|
+|adDomainPassword|String|The password associated with adDomainUsername|
 
 
 
@@ -69,6 +70,7 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
+Content-length: 36
 
 {
   "adDomainPassword": "AdDomainPassword value"
@@ -82,16 +84,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/cloudpconpremisesconnection-updateaddomainpassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-updateaddomainpassword-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 
 ### Response
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

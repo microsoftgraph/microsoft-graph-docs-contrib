@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityFileCounts"
 description: "Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

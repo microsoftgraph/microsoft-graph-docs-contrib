@@ -2,7 +2,7 @@
 title: "Create TableColumn"
 description: "Use this API to create a new TableColumn."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -57,6 +57,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns
 Content-type: application/json
+Content-length: 81
 
 {
   "id": "99",
@@ -94,6 +95,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 81
 
 {
   "id": "99",

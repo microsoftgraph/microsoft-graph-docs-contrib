@@ -2,7 +2,7 @@
 title: "todoTaskList resource type"
 description: "A list in Microsoft To Do that contains one or more todoTask resources."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

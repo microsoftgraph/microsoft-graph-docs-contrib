@@ -2,7 +2,7 @@
 title: "Software updates with the Windows Update for Business deployment service"
 description: "Software updates are the primary type of content the deployment service deploys. You can look up in a catalog to find specific updates available to deploy."
 author: "Alice-at-Microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
@@ -55,7 +55,7 @@ All updates in the deployment service catalog have the following common properti
 
 ### Feature updates
 
-Feature updates in the deployment service catalog are identified by version. Entries aggregate differences across architecture (for example, x86 vs. x64) and product (in the Microsoft Update Catalog, all feature updates are for the *Windows 10* product).
+Feature updates in the deployment service catalog are identified by version. Entries aggregate differences across architecture (e.g., x86 vs. x64) and product (in the Microsoft Update Catalog, all feature updates are for the *Windows 10* product).
 
 | Property | Description                                       |
 |----------|---------------------------------------------------|

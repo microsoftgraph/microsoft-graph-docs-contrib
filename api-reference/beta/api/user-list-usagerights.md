@@ -2,7 +2,7 @@
 title: "List user usageRights"
 description: "Retrieve a list of usageRights objects for a user."
 author: "jeeshnair"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -88,10 +88,6 @@ GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -149,10 +145,6 @@ GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usageright-4-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-usageright-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

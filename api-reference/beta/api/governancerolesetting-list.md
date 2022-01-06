@@ -1,10 +1,10 @@
 ---
 title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # List governanceRoleSettings
@@ -12,8 +12,6 @@ author: "carolinetempleton"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
@@ -40,9 +38,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 ## HTTP request
@@ -85,6 +83,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 463
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#governanceRoleSettings",

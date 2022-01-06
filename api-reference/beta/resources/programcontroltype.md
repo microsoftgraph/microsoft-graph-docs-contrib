@@ -1,7 +1,7 @@
 ---
 title: "programControlType resource type"
 description: "In the Azure AD access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
 author: "markwahl-msft"

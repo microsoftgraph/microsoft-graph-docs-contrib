@@ -1,7 +1,7 @@
 ---
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -99,10 +99,6 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

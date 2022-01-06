@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ExternalConnection externalConnection = graphClient.external().connections("contosohr")
+ExternalConnection externalConnection = graphClient.connections("contosohr")
 	.buildRequest()
 	.get();
 

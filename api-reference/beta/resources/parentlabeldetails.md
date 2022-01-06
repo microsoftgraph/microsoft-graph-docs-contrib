@@ -1,7 +1,7 @@
 ---
 title: "parentLabelDetails resource type"
 description: "Represents the label details of an information protection parent label."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "tommoser"
 ms.prod: "governance"
 doc_type: "resourcePageType"

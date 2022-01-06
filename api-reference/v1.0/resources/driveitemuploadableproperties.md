@@ -1,7 +1,7 @@
 ---
 title: "driveItemUploadableProperties resource type"
 description: "The driveItemUploadableProperties resource represents an item being uploaded when creating an upload session."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "JeremyKelley"
 ms.prod: "files"
 doc_type: "resourcePageType"

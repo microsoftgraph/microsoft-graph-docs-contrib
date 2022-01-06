@@ -1,7 +1,7 @@
 ---
 title: "List organization"
 description: "Retrieve a list of organization objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/organization
 [!INCLUDE [sample-code](../includes/snippets/java/get-organization-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-organization-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -88,6 +84,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 500
 
 {
   "value": [

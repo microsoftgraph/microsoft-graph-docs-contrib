@@ -2,7 +2,7 @@
 title: "conversationThread: reply"
 description: "Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation "
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -61,6 +61,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/reply
 Content-type: application/json
+Content-length: 1131
 
 {
   "post": {
@@ -81,10 +82,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/conversationthread-reply-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/conversationthread-reply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

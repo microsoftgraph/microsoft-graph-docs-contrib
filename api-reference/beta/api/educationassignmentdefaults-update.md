@@ -2,7 +2,7 @@
 title: "Update educationAssignmentDefaults"
 description: "Update the properties of an educationAssignmentDefaults object."
 author: "dipakboyed"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
+Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",
@@ -88,10 +89,6 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentdefaults-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

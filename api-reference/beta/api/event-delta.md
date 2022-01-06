@@ -1,7 +1,7 @@
 ---
 title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -17,7 +17,11 @@ Get a set of [event](../resources/event.md) resources that have been added, dele
 
 You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's. In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
 
-Typically, synchronizing events in a calendar or **calendarView** in a local store entails a round of multiple **delta** function calls. The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates). This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
+A **delta** function call is similar to a `GET /events` or `GET /calendarview` request for
+the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview#state-tokens) in one or more of these calls,
+you can query for incremental changes of events in that calender. This allows you to maintain and synchronize
+a local store of events in the specified calendar, without having to fetch all the events of that calendar
+from the server every time.
 
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
@@ -142,11 +146,7 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
-### OData query parameters
-- Expect a **delta** function call on a **calendarView** to return the same properties you'd normally get from a `GET /calendarview` request. You cannot use `$select` to get only a subset of those properties.
-
-- The **delta** function doesn't support the following query parameters for events in a user calendar, or events in a **calendarView**: `$expand`, `$filter`,`$orderby`, `$search`, and `$select`. 
-
+Does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
 
 
 ## Request headers
@@ -168,12 +168,6 @@ If successful, this method returns a `200 OK` response code and an [event](../re
 
 Expect to get all the properties you'd normally get from a `GET /calendarview` request. 
 
-Within a round of **delta** function calls bound by the date range of a **calendarView**, you may find a **delta** call returning two types of events under `@removed` with the reason `deleted`: 
-- Events that are within the date range and that have been deleted since the previous **delta** call.
-- Events that are _outside_ the date range and that have been added, deleted, or updated since the the previous **delta** call.
-
-Filter the events under `@removed` for the date range that your scenario requires.
-
 ## Examples
 
 ### Example 1: Delta function on events in a calendar (preview)
@@ -183,8 +177,6 @@ The following example shows the initial sync request to get events in the signed
 The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 1. 
 Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get a `@odata.deltaLink` in the response.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_delta_events"
@@ -194,16 +186,6 @@ GET https://graph.microsoft.com/beta/me/calendar/events/delta?startDateTime=2020
 
 Prefer: odata.maxpagesize=1
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-events-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-events-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -250,7 +232,8 @@ Content-type: application/json
 
 The following example shows the initial sync request to get events in the specified calendar of the signed-in user, within the range of dates indicated by the **calendarView**. The initial request does not include any state token. 
 
-The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 2. Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
+The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 2. 
+Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
 in the response.
 
 # [HTTP](#tab/http)
@@ -270,6 +253,10 @@ Prefer: odata.maxpagesize=2
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

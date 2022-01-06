@@ -1,7 +1,7 @@
 ---
 title: "Proxy provider"
 description: "The proxy provider allows you to use your own server-side authentication with the Microsoft Graph Toolkit."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: nmetulev
 ---
 
@@ -56,7 +56,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
     header: 'value',
     header2: 'value2'
   };
-});
+);
 ```
 
 This is useful when you need to pass tokens or other headers to your backend.

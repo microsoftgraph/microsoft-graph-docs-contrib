@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.me().drive().root().workbook().worksheets("{id|name}").pivotTables()
+graphClient.me().drive().root().workbook().worksheets("{id}").pivotTables()
 	.refreshAll()
 	.buildRequest()
 	.post();

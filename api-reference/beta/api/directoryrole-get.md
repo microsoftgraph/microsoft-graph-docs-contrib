@@ -2,7 +2,7 @@
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
 author: "abhijeetsinha"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -29,16 +29,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-id}
-GET /directoryRoles/roleTemplateId={roleTemplateId}
+GET /directoryRoles/{role-objectId}
+GET /directoryRoles/roleTemplateId={role-templateId}
 ```
 ## Optional query parameters
-This method does **not** support any [OData query parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
+This method does **not** support any [OData Query Parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
 
 ## Request headers
-| Name       | Description|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -48,9 +48,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 ## Examples
 
-### Example 1: Get the definition of a directory role using role id
+### Example 1: Get the definition of a directory role using role objectId
 #### Request
-The following is an example of the request.
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26c
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-directoryrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -104,19 +100,37 @@ Content-type: application/json
 ```
 
 
-### Example 2: Get the definition of a directory role using roleTemplateId
+### Example 2: Get the definition of a directory role using role templateId
 #### Request
-The following is an example of the request.
+Here is an example of the request.
 
-<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_directoryrole_templateId"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-templateid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-templateid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-templateid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-templateid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response

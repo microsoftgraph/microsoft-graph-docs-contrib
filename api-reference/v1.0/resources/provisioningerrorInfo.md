@@ -1,7 +1,7 @@
 ---
 title: "provisioningErrorInfo resource type"
 description: "Describes the status of the provisioning event and the associated errors."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

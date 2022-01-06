@@ -2,7 +2,7 @@
 title: "identityUserFlowAttributeAssignment resource type"
 description: "Represents how attributes are collected in an identity user flow."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

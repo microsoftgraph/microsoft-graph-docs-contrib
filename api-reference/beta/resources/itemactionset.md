@@ -3,7 +3,7 @@ author: daspek
 description: "The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item."
 ms.date: 09/14/2017
 title: ItemActionSet
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---

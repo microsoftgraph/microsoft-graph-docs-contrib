@@ -2,7 +2,7 @@
 author: learafa
 description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 title: StoragePlanInformation
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "files"
 ---

@@ -2,7 +2,7 @@
 title: "invitationParticipantInfo resource type"
 description: "Represents an entity that is being invited to a group call."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Get the collection of items in a list."
 ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -61,10 +61,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-list-items-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

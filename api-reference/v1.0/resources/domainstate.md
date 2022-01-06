@@ -2,7 +2,7 @@
 title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

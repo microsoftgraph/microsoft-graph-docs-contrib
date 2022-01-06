@@ -2,7 +2,7 @@
 title: "caseExportOperation: getDownloadUrl"
 description: "Returns the download URL "
 author: "mahage-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---

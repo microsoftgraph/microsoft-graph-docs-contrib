@@ -1,7 +1,7 @@
 ---
 title: "Outlook extended properties overview"
 description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
-ms.localizationpriority: high
+localization_priority: Priority
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType

@@ -2,7 +2,7 @@
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator authentication methods policy."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get page"
 description: "Retrieve the properties and relationships of a page object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -81,6 +81,7 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 312
 
 {
   "title": "title-value",

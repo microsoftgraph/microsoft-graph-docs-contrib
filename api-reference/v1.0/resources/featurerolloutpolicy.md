@@ -1,7 +1,7 @@
 ---
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

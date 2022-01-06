@@ -44,7 +44,6 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune-apps-man
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
-|connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -87,8 +86,7 @@ Here is a JSON representation of the resource.
       "action": "String"
     }
   ],
-  "profileApplicability": "String",
-  "connectedAppsEnabled": true
+  "profileApplicability": "String"
 }
 ```
 

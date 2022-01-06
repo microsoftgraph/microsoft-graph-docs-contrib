@@ -2,7 +2,7 @@
 title: "Remove acceptedSender"
 description: "Remove a user or group from the accepted-senders list. "
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

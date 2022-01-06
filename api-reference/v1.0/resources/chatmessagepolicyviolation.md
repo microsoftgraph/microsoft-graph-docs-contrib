@@ -3,7 +3,7 @@ title: "chatMessagePolicyViolation resource type"
 description: "Represents policy violation on a chat message. Policy violations are typically set by a data loss prevention (DLP) application."
 author: "RamjotSingh"
 doc_type: resourcePageType
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 # chatMessagePolicyViolation resource type

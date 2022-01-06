@@ -2,7 +2,7 @@
 title: "List recentPlans"
 description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 [!INCLUDE [sample-code](../includes/snippets/java/get-recentplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-recentplans-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -87,6 +83,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 979
 
 {
   "value": [

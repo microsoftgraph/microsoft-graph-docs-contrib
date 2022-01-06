@@ -2,7 +2,7 @@
 title: "riskDetection resource type"
 description: "risk detections"
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

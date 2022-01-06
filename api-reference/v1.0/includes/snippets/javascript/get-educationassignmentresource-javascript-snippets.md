@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let educationAssignmentResource = await client.api('/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources/fb92ec62-3996-4c3a-ad41-720dd930c834')
-	.version('beta')
+let educationAssignmentResource = await client.api('/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/resources/8b01c1d0-aafc-4f8c-bd73-89faa3df1c1c')
 	.get();
 
 ```

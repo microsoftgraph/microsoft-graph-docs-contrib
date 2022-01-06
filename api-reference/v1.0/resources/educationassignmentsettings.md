@@ -2,7 +2,7 @@
 title: "educationAssignmentSettings resource type"
 description: "Specifies class-level assignments settings."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

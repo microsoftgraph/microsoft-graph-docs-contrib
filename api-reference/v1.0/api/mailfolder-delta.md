@@ -1,7 +1,7 @@
 ---
 title: "mailFolder: delta"
 description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -124,6 +124,7 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 254
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders/delta?$skiptoken={_skipToken_}",

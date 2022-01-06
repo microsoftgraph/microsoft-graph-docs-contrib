@@ -1,7 +1,7 @@
 ---
 title: "Add a scopedRoleMember"
 description: "Add a new scopedRoleMembership. NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -54,6 +54,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
+Content-length: 272
 
 {
   "roleId": "roleId-value",
@@ -78,10 +79,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-scopedrolemembership-from-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-scopedrolemembership-from-administrativeunit-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.
@@ -95,6 +92,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Content-length: 294
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#scopedRoleMemberships/$entity",

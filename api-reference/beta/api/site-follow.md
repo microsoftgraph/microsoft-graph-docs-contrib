@@ -2,7 +2,7 @@
 author: learafa
 title: Follow site
 description: Follow a user's site/sites.
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

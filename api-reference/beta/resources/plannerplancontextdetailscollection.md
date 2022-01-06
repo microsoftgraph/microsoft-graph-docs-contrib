@@ -2,7 +2,7 @@
 title: "plannerPlanContextDetailsCollection resource type"
 description: " the value is the plannerPlanContextDetails object."
 author: "TarkanSevilmis"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "planner"
 doc_type: resourcePageType
 ---

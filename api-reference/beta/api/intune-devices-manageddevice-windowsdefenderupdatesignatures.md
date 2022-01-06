@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## HTTP Request
 <!-- {

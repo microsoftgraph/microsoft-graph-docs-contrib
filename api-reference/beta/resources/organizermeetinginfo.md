@@ -2,7 +2,7 @@
 title: "organizerMeetingInfo resource type"
 description: "Contains details about the meeting organizer. "
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

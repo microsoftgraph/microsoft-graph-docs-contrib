@@ -2,7 +2,7 @@
 title: "Get MIME content of a message"
 description: "Multipurpose Internet Mail Extensions (MIME) is an industry email standard. You can now use a `$value` segment to get the MIME content of an Outlook message."
 author: "abheek-das"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ---
 

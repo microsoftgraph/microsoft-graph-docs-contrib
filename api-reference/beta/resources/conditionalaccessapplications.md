@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessApplications resource type"
 description: "Represents applications and user actions included in and excluded from the policy scope."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

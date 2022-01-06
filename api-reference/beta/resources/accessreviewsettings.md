@@ -1,7 +1,7 @@
 ---
 title: "accessReviewSettings resource type"
 description: "Provides additional settings when creating an access review."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: resourcePageType

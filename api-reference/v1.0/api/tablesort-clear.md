@@ -1,7 +1,7 @@
 ---
 title: "TableSort: clear"
 description: "Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType

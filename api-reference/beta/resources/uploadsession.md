@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook event and message objects."
 title: "uploadSession resource type"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "resourcePageType"
 ms.prod: "non-product-specific"
 ---

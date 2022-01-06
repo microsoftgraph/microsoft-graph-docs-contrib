@@ -2,7 +2,7 @@
 title: "Range: merge"
 description: "Merge the range cells into one region in the worksheet."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,6 +64,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
+Content-length: 20
 
 {
   "across": true

@@ -1,7 +1,7 @@
 ---
 title: "Delete bookingCustomer"
 description: "Delete the specified bookingCustomer object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_bookingcustomer"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingcustomer-csharp-snippets.md)]
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@c
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bookingcustomer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingcustomer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

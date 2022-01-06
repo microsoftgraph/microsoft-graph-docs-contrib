@@ -2,7 +2,7 @@
 title: "cloudPcManagementGroupAssignmentTarget resource type"
 description: "Complex type that represents the assignment target group. Base type: CloudPcManagementAssignmentTarget"
 author: "AshleyYangSZ"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Complex type that represents the assignment target group.
 Inherits from [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md).
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Properties
 

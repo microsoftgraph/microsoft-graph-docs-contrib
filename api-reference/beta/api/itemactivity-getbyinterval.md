@@ -3,7 +3,7 @@ author: daspek
 description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
 ms.date: 10/06/2017
 title: Get item activity stats by interval
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---

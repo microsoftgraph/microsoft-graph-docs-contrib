@@ -1,7 +1,7 @@
 ---
 title: "Get countryNamedLocation"
 description: "Retrieve the properties and relationships of a countryNamedlocation object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -79,10 +79,6 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-countrynamedlocation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

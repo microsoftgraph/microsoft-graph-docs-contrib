@@ -2,7 +2,7 @@
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
 author: "mkhribech"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -21,10 +21,10 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 | :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
 | dialinUrl                   | String            | A URL to the externally-accessible web page that contains dial-in information. |
 | conferenceId                | String            | The conference id of the online meeting.                                       |
-| tollFreeNumbers             | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
-| tollNumbers                 | String collection | List of toll numbers that are displayed in the meeting invite.                 |
 | tollFreeNumber (deprecated) | String            | The toll-free number that connects to the Audio Conference Provider.           |
+| tollFreeNumbers             | String collection | List of toll-free numbers that are displayed in the meeting invite.            |
 | tollNumber (deprecated)     | String            | The toll number that connects to the Audio Conference Provider.                |
+| tollNumbers                 | String collection | List of toll numbers that are displayed in the meeting invite.                 |
 
 > [!CAUTION]
 >
@@ -46,8 +46,8 @@ The following is a JSON representation of the resource.
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumbers": [ "String" ],
-  "tollNumbers": [ "String" ]
+  "tollFreeNumbers": ["String"],
+  "tollNumbers": ["String"]
 }
 ```
 

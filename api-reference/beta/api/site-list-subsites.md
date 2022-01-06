@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Get a collection of subsites defined for a site."
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -57,10 +57,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-subsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

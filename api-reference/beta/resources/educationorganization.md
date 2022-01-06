@@ -2,7 +2,7 @@
 title: "educationOrganization resource type"
 description: "Abstract entity used to model the commonality between different organization types within the education sector.  "
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
 ---

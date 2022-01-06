@@ -51,8 +51,6 @@ const bookingService = {
     ],
     description: 'Individual bento box lunch delivery',
     displayName: 'Bento',
-    isLocationOnline: true,
-    smsNotificationsEnabled: true,
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
     postBuffer: 'PT10M',

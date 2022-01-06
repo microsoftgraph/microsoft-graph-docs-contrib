@@ -1,7 +1,7 @@
 ---
 title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: resourcePageType

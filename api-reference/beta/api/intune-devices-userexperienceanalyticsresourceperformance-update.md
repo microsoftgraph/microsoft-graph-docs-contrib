@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,6 @@ The following table shows the properties that are required when you create the [
 |ramSpikeTimeScore|Int32|The user experience analytics device RAM spike time score. Valid values 0 to 100|
 |ramSpikeTimePercentageThreshold|Double|Threshold of ramSpikeTimeScore. Valid values 0 to 100|
 |deviceResourcePerformanceScore|Int32|Resource performance score of a specific device. Valid values 0 to 100|
-|averageSpikeTimeScore|Int32|AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100|
 
 
 
@@ -75,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperienceAnalyticsResourcePerformanceId}
 Content-type: application/json
-Content-length: 584
+Content-length: 553
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -90,8 +89,7 @@ Content-length: 584
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14,
-  "averageSpikeTimeScore": 5
+  "deviceResourcePerformanceScore": 14
 }
 ```
 
@@ -100,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 633
+Content-Length: 602
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -116,8 +114,7 @@ Content-Length: 633
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14,
-  "averageSpikeTimeScore": 5
+  "deviceResourcePerformanceScore": 14
 }
 ```
 

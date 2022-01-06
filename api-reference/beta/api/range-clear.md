@@ -1,7 +1,7 @@
 ---
 title: "Range: clear"
 description: "Clear range values, format, fill, border, etc."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear range values such as format, fill, and border.
-
+Clear range values, format, fill, border, etc.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,8 +32,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-```
 
+```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -65,6 +64,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
+Content-length: 32
 
 {
   "applyTo": "applyTo-value"

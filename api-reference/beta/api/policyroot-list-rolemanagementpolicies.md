@@ -1,8 +1,8 @@
 ---
 title: "List roleManagementPolicies"
 description: "Get the unifiedRoleManagementPolicy resources from the roleManagementPolicies navigation property."
-author: "carolinetempleton"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedrolemanagementpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

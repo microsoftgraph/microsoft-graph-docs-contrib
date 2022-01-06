@@ -1,7 +1,7 @@
 ---
 title: "Range: Cell"
 description: "Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -63,6 +63,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/Cell
 Content-type: application/json
+Content-length: 37
 
 {
   "row": {
@@ -82,6 +83,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 169
 
 {
   "address": "address-value",

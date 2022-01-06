@@ -2,7 +2,7 @@
 title: "accessReviewHistoryDefinition resource types"
 description: "Represents a collection of access review history data."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -18,8 +18,8 @@ Represents a collection of access review history data and the scopes used to col
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
-|[Create accessReviewHistoryDefinition](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
+|[List accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
+|[Create accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-post.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generate a URI that can be used to retrieve review history data.|
 
@@ -35,7 +35,7 @@ Represents a collection of access review history data and the scopes used to col
 |id|String|The assigned unique identifier of an access review history definition.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data. Required.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Required.|
-|scopes|[accessReviewQueryScope](accessreviewqueryscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.|
+|scopes|microsoft.graph.accessReviewQueryScope collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. See [accessreviewqueryscope](accessreviewqueryscope.md). Required.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 
 ## JSON representation

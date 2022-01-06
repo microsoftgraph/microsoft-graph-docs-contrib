@@ -1,7 +1,7 @@
 ---
 title: "Update schemaExtension"
 description: "Update properties in the definition of the specified schemaExtension."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -61,13 +61,13 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. Attempting to run this request from an application which you don't own (and without setting the **owner** property to the **appId** of an application you own) returns a `403 Forbidden` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-### Request
+##### Request
 
-The following is an example of the request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,29 +75,21 @@ The following is an example of the request. You must include the **owner** prope
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/schemaExtensions/exto6x7sfft_courses
+PATCH https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 Content-type: application/json
+Content-length: 201
 
 {
-    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        },
-        {
-            "name": "courseSupervisors",
-            "type": "String"
-        }
-    ]
+  "properties": [
+    {
+      "name":"new-name-value",
+      "type":"new-type-value"
+    },
+    {
+      "name":"additional-name-value",
+      "type":"additional-type-value"
+    }
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -116,14 +108,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-### Response
+##### Response
 
 <!-- {
   "blockType": "response"

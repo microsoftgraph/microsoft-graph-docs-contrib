@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Toolkit with Angular"
 description: "Get started using the Microsoft Graph Toolkit in an Angular application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: elisenyang
 ---
 
@@ -35,9 +35,9 @@ npm install @microsoft/mgt
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The provider you use depends on the context in which your solution will be used.
 
-The following example shows how to add the [MSAL2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
+The following example shows how to add the [MSAL 2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
 >[!NOTE] 
->If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
+>If you are currently using the MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
 
 Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 

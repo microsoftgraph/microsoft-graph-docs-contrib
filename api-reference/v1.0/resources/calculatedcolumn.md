@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.localizationpriority: medium
+localization_priority: Normal
 description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
 ms.prod: ""
 doc_type: resourcePageType

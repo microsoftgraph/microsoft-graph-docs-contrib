@@ -2,7 +2,7 @@
 title: "Update contact"
 description: "Update the properties of a contact object."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -100,6 +100,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/contacts/{id}
 Content-type: application/json
+Content-length: 1977
 
 {
   "homeAddress": {
@@ -127,10 +128,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -143,6 +140,7 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 1977
 
 {
   "id": "AAMkAGI2THk0AAA=",

@@ -1,13 +1,15 @@
 ---
-title: "Update oAuth2PermissionGrant (a delegated permission grant)"
+title: "Update an oAuth2PermissionGrant"
 description: "Update the properties of an oAuth2PermissionGrant, representing a delegated permission grant."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Update oAuth2PermissionGrant (a delegated permission grant)
+# Update a delegated permission grant (oAuth2PermissionGrant)
+
+Namespace: microsoft.graph
 
 Namespace: microsoft.graph
 
@@ -86,10 +88,6 @@ Content-Length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-oauth2permissiongrant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

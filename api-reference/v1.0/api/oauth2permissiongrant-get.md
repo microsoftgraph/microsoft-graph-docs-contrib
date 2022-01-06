@@ -1,17 +1,17 @@
 ---
-title: "Get oAuth2PermissionGrant (a delegated permission grant)"
+title: "Get an oAuth2PermissionGrant"
 description: "Retrieve the properties and relationships of single oAuth2PermissionGrant, representing a delegated permission grant."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Get oAuth2PermissionGrant (a delegated permission grant)
+# Get a delegated permission grant (oAuth2PermissionGrant)
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a single delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+Retrieve the properties of a single [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
@@ -35,7 +35,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
 ## Request headers
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrant-csharp-snippets.md)]
@@ -81,16 +81,10 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8Q
 [!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-oauth2permissiongrant-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 ### Response
-
-The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -103,16 +97,15 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-Length: 200
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
-    "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
-    "consentType": "AllPrincipals",
-    "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
-    "principalId": null,
-    "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
-    "scope": "User.Read Group.ReadWrite.All"
+  "id": "id-value",
+  "clientId": "clientId-value",
+  "consentType": "consentType-value",
+  "principalId": "principalId-value",
+  "resourceId": "resourceId-value",
+  "scope": "scope-value"
 }
 ```
 

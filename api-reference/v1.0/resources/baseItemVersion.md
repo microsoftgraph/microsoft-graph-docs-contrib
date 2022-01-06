@@ -1,7 +1,7 @@
 ---
 title: "BaseItemVersion resource type"
 description: "The **baseItemVersion** resource represents a previous version of an item or entity."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "JeremyKelley"
 ms.prod: ""
 doc_type: resourcePageType

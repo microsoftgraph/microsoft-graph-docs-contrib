@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var conversationThread = new ConversationThread
 {
-	Topic = "Take your wellness days and rest",
+	Topic = "topic-value",
 	Posts = new ConversationThreadPostsCollectionPage()
 	{
 		new Post
@@ -16,7 +16,7 @@ var conversationThread = new ConversationThread
 			Body = new ItemBody
 			{
 				ContentType = BodyType.Html,
-				Content = "Waiting for the summer holidays."
+				Content = "this is body content"
 			}
 		}
 	}

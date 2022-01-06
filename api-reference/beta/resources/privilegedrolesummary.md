@@ -1,10 +1,10 @@
 ---
 title: "privilegedRoleSummary resource type"
 description: "The statistics summary for a particular role."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "shauliu"
 ---
 
 # privilegedRoleSummary resource type

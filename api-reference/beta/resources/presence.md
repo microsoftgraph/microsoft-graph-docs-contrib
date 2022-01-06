@@ -1,8 +1,8 @@
 ---
 title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
-author: "mkhribech"
-ms.localizationpriority: medium
+author: "ananmishr"
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
@@ -21,23 +21,20 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 ## Methods
 
-| Method                                                                               | Return Type                                     | Description                                                                       |
-| :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
-| [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                                                |
-| [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.                                  |
-| [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a [presence session](../api/presence-setpresence.md#presence-sessions) of an application for a user. |
-| [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                                       |
-| [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
-| [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
+| Method                                                            | Return Type                                       | Description                                  |
+|:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
+| [Get presence](../api/presence-get.md)     | [presence](../resources/presence.md)     | Get a user's presence information.
+| [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information for multiple users.      |
+
 
 ## Properties
 
-| Relationship        | Type                                          | Description                                                                                                                                                                                                                                                                                    |
-| :------------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                  | string                                        | The user object id                                                                                                                                                                                                                                                                             |
-| availability        | string collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                           |
-| activity            | string collection                             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`. |
-| outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                         |
+| Relationship        | Type                                                 | Description                                                         |
+|:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
+|id    |  string     | 	The user object id   |
+|availability    |  string collection   | 	The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`  |
+|activity    |  string collection      | 	The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`.       |
+|outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 

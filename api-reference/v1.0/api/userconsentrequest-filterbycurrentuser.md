@@ -2,7 +2,7 @@
 title: "userConsentRequest: filterByCurrentUser"
 description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -89,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

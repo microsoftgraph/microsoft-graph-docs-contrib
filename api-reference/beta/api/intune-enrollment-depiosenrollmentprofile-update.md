@@ -97,11 +97,6 @@ The following table shows the properties that are required when you create the [
 |zoomDisabled|Boolean|Indicates if zoom setup pane is disabled|
 |restoreCompletedScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
 |updateCompleteScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
-|forceTemporarySession|Boolean|Indicates if temporary sessions is enabled|
-|temporarySessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
-|userSessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
-|passcodeLockGracePeriodInSeconds|Int32|Indicates timeout before locked screen requires the user to enter the device passocde to unlock it|
-|carrierActivationUrl|String|Carrier URL for activating device eSIM.|
 
 
 
@@ -115,7 +110,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 2336
+Content-length: 2108
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -172,12 +167,7 @@ Content-length: 2336
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true,
-  "forceTemporarySession": true,
-  "temporarySessionTimeoutInSeconds": 0,
-  "userSessionTimeoutInSeconds": 11,
-  "passcodeLockGracePeriodInSeconds": 0,
-  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+  "updateCompleteScreenDisabled": true
 }
 ```
 
@@ -186,7 +176,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2385
+Content-Length: 2157
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -244,12 +234,7 @@ Content-Length: 2385
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true,
-  "forceTemporarySession": true,
-  "temporarySessionTimeoutInSeconds": 0,
-  "userSessionTimeoutInSeconds": 11,
-  "passcodeLockGracePeriodInSeconds": 0,
-  "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
+  "updateCompleteScreenDisabled": true
 }
 ```
 

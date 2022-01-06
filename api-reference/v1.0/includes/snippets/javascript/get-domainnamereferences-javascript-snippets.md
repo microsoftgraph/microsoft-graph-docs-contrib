@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let domainNameReferences = await client.api('/domains/contoso.com/domainNameReferences')
+let domainNameReferences = await client.api('/domains/{domain-name}/domainNameReferences')
 	.get();
 
 ```

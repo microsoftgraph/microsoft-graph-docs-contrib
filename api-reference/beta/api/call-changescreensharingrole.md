@@ -2,7 +2,7 @@
 title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -84,10 +84,6 @@ Content-Length: 24
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/call-changescreensharingrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

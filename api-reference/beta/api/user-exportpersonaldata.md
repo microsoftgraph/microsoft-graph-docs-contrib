@@ -1,7 +1,7 @@
 ---
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -62,6 +62,7 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
+Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"
@@ -81,10 +82,6 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

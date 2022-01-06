@@ -1,21 +1,19 @@
 ---
 title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "keylimesoda"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# directory resource type
+# directory resource type (deleted items)
 
 Namespace: microsoft.graph
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
-Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
-
-Inherits from [entity](entity.md).
+Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md) and [user](user.md) resources.
 
 ## Methods
 
@@ -27,35 +25,38 @@ Inherits from [entity](entity.md).
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
 |[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
-
-## Properties
-
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|id|String| A unique identifier for the object; for example, `12345678-9abc-def0-1234-56789abcde`. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
-
-
 ## Relationships
-
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|administrativeUnits|[administrativeUnit](administrativeunit.md) collection| Conceptual container for user and group directory objects.|
 |deletedItems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 
 ## JSON representation
-
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty":"id",
-  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.directory"
+}
+```
+
+## Example
+
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/directory
+```
+
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
 }
 ```
 

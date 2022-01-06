@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Apps usage reports"
 description: "Use the Microsoft 365 Apps usage reports to get insights into the usage of Microsoft 365 Apps in your organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType

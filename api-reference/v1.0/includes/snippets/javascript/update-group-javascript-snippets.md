@@ -11,13 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: 'Library Assist',
-  displayName: 'Library Assist',
+  description: 'description-value',
+  displayName: 'displayName-value',
   groupTypes: [
-    'Unified'
+    'groupTypes-value'
   ],
+  mail: 'mail-value',
   mailEnabled: true,
-  mailNickname: 'library-help'
+  mailNickname: 'mailNickname-value'
 };
 
 await client.api('/groups/{id}')

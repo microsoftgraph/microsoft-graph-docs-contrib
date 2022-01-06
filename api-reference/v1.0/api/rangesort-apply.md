@@ -2,7 +2,7 @@
 title: "RangeSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -66,6 +66,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
+Content-length: 358
 
 {
   "fields": [

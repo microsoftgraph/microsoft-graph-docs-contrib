@@ -12,7 +12,7 @@ var externalConnection = new Microsoft.Graph.ExternalConnectors.ExternalConnecti
 	Description = "Connection to index HR service tickets"
 };
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"]
 	.Request()
 	.UpdateAsync(externalConnection);
 

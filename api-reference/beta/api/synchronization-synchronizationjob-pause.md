@@ -1,7 +1,7 @@
 ---
 title: "synchronizationJob: pause"
 description: "Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a Start call is made."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -71,10 +71,6 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-pause-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-pause-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

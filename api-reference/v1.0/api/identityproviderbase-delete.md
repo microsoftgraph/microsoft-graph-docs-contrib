@@ -1,7 +1,7 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an identityProvider."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Delete identityProvider
 Namespace: microsoft.graph
 
-Delete an identity provider resource that is of the type specified by the **id** in the request.
+Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-Among the types of providers derived from identityProviderBase, you can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ## Permissions
 
@@ -58,8 +58,6 @@ The following is an example of the request.
 
 
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -69,28 +67,6 @@ The following is an example of the request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 <!-- {

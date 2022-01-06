@@ -1,7 +1,7 @@
 ---
 title: "focusActivityStatistics resource type"
 description: "Represents information about individual focus work for users"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "resourcePageType"

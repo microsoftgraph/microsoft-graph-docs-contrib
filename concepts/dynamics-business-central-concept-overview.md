@@ -4,7 +4,7 @@ description: Overview of why you want to integrate your solutions with Business 
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 

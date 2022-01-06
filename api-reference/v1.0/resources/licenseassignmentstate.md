@@ -2,7 +2,7 @@
 title: "licenseAssignmentState resource type"
 description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState** objects. It provides details about license assignments to a user."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -26,7 +26,6 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 |assignedByGroup|string|The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.|
 |disabledPlans|Collection(String)|The service plans that are disabled in this assignment. Read-Only.|
 |error|String|License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, and `Others`. For more information on how to identify and resolve license assignment errors see [here](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
-|lastUpdatedDateTime|DateTimeOffset|The timestamp when the state of the license assignment was last updated.|
 |skuId|String|The unique identifier for the SKU. Read-Only.|
 |state|String|Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.|
 
@@ -39,7 +38,6 @@ The following is a JSON representation of the resource.
   "assignedByGroup": "String",
   "disabledPlans": "Collection(String)",
   "error": " String ",  
-  "lastUpdatedDateTime": "String (timestamp)",
   "skuId": "String ",
   "state": "String"
 }

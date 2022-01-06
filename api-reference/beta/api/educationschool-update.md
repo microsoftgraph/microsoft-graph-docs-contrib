@@ -2,7 +2,7 @@
 title: "Update educationSchool properties"
 description: "Update the properties of a school object."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -75,6 +75,7 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
+Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -95,10 +96,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-educationschool-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
@@ -115,6 +112,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 292
 
 {
   "id": "10002",

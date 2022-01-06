@@ -2,7 +2,7 @@
 title: "Share or delegate a calendar in Outlook"
 description: "In Outlook, a calendar owner can share the calendar with another user, or delegate another user to manage meetings in the owner's primary calendar."
 author: "juforan"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 ---
 

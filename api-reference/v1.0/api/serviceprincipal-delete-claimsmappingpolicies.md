@@ -1,7 +1,7 @@
 ---
 title: "Remove claimsMappingPolicy"
 description: "Remove a claimsMappingPolicy from a servicePrincipal."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "paulgarn"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -83,6 +83,8 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPoli
 ### Response
 
 The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

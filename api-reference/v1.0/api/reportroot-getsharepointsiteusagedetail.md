@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

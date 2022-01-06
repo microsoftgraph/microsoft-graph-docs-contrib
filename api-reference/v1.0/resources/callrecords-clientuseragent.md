@@ -1,7 +1,7 @@
 ---
 title: "clientUserAgent resource type"
 description: "The clientUserAgent type"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
@@ -21,7 +21,7 @@ the [userAgent](callrecords-useragent.md) type.
 |applicationVersion|String|Identifies the version of application software used by this endpoint.|
 |headerValue|String|User-agent header value reported by this endpoint.|
 |platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `azureCommunicationServices`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 
 ## JSON representation
 

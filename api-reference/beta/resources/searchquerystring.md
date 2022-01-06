@@ -1,7 +1,7 @@
 ---
 title: "searchQueryString resource type"
 description: "searchQueryString"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
