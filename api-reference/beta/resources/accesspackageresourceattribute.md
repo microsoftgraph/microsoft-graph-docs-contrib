@@ -46,6 +46,6 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.accessPackageResourceAttributeSource"
   },
   "id": "String (identifier)",
-  "isEditable": "String",
+  "isEditable": "Boolean",
 }
 ```
