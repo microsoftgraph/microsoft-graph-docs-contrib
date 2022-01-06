@@ -10346,6 +10346,11 @@ items:
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Unassign tenant tag
             href: api/managedtenants-tenanttag-unassigntag.md
+        - name: Tenant usage
+          href: resources/managedtenants-tenantusage.md
+          items:
+          - name: List tenant usage
+            href: api/managedtenants-managedtenant-list-tenantusage.md
         - name: Windows device malware state
           href: resources/managedtenants-windowsdevicemalwarestate.md
           items:

@@ -41,6 +41,7 @@ None.
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|The collection of tenant level customized information across managed tenants.|
 |tenantsDetailedInformation|[microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md) collection|The collection tenant level detailed information across managed tenants.|
 |tenantTags|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) collection|The collection of tenant tags across managed tenants.|
+|tenantUsage|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|The collection of tenant usage across managed tenants.|
 |windowsDeviceMalwareStates|[microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md) collection|The state of malware for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.|
 |windowsProtectionStates|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|The protection state for Windows devices, registered with Microsoft Endpoint Manager, across managed tenants.|
 
