@@ -3,6 +3,24 @@
 		{
 			"ChangeList": [
 				{
+					"Id": "91d733d8-c9f6-425f-9da5-1d4ffc5e07b3",
+					"ApiChange": "Property",
+					"ChangedApiName": "servicePrincipalRiskLevels",
+					"ChangeType": "Addition",
+					"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Allows admin to set a risk-based policy on service principals.",
+					"Target": "conditionalAccessConditionSet"
+				}
+			],
+			"Id": "91d733d8-c9f6-425f-9da5-1d4ffc5e07b3",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-06T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
 					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
 					"ApiChange": "Member",
 					"ChangedApiName": "AzureADBackupAuth",
