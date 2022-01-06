@@ -3,6 +3,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "4a4421fd-e2fe-43e0-9a60-f9d6b2e4c15e",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "snapshots",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **snapshots** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "4a4421fd-e2fe-43e0-9a60-f9d6b2e4c15e",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-01-06T1413:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",

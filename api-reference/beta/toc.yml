@@ -10103,6 +10103,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC snapshot
+          href: api/cloudpcsnapshot.md
+          items:
+          - name: List
+            href: api/virtualenpoint-list-snapshots.md
+          - name: Get
+            href: api/cloudpcsnapshot-get.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
