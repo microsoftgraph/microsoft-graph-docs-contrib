@@ -1,7 +1,7 @@
 ---
 title: "educationRubricOutcome resource type"
 description: "An educationOutcome that provides a graded rubric"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"

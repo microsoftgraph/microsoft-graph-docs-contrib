@@ -2,7 +2,7 @@
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to an event."
 author: "svpsiva"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-attachments-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-get-attachments-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,7 +114,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel resource type"
 description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

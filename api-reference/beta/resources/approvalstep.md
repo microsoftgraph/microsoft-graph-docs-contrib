@@ -1,8 +1,8 @@
 ---
 title: "approvalStep resource type"
 description: "The approvalStep object associated with an accessPackageAssignmentRequest or userConsentRequest."
-localization_priority: Normal
-author: "sbounouh"
+ms.localizationpriority: medium
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), the approvalStep object for decisions associated with the `accessPackageAssignmentRequest`. It is used to distinguish decisions for different steps of an approval workflow that approvers can act on.
+In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the approvalStep object for decisions associated with the `accessPackageAssignmentRequest`. It is used to distinguish decisions for different steps of an approval workflow that approvers can act on.
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval  decisions associated with a request.
 

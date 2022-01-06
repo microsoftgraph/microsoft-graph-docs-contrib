@@ -2,7 +2,7 @@
 title: "Update deviceManagementTroubleshootingEvent"
 description: "Update the properties of a deviceManagementTroubleshootingEvent object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update deviceManagementTroubleshootingEvent
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -53,7 +51,7 @@ The following table shows the properties that are required when you create the [
 |correlationId|String|Id used for tracing the failure in the service.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
 |eventName|String|Event Name corresponding to the Troubleshooting Event. It is an Optional field|
-|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
+|additionalInformation|[keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
 
 
 
@@ -65,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 852
 

@@ -2,7 +2,7 @@
 title: Create allowedGroup for printerShare
 description: Grant the specified group access to submit print jobs to the associated printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -56,7 +56,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/$ref
 Content-type: application/json
-Content-length: 67
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
@@ -76,6 +75,10 @@ Content-length: 67
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-allowedgroup-from-printers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-allowedgroup-from-printers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

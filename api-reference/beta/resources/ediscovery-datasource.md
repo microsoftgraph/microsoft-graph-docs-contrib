@@ -2,7 +2,7 @@
 title: "dataSource resource type"
 description: "The dataSource entity is an abstract base class used to identify sources of content for eDiscovery."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

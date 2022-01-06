@@ -1,7 +1,7 @@
 ---
 title: "List accounts"
 description: "Retrieve a list of userAccountInformation objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile/account
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-account-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-account-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

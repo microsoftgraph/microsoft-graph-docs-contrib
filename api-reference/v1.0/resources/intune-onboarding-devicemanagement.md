@@ -25,7 +25,7 @@ Singleton entity that acts as a container for all device management functionalit
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String|Unique identifier for this entity|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
@@ -83,7 +83,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

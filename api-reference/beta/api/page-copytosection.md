@@ -1,7 +1,7 @@
 ---
 title: "page: copyToSection"
 description: "Copies a page to a specific section."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -67,7 +67,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages/{id}/copyToSection
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",
@@ -88,6 +87,10 @@ Content-length: 52
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/page-copytosection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update accessReviewInstanceDecisionItem"
 description: "Update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -63,7 +63,6 @@ This is an example of approving access for a user represented by an `accessRevie
 ``` http
 PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
 Content-Type: application/json
-Content-length: 730
 
 {
   "decision": "Approve",
@@ -84,6 +83,10 @@ Content-length: 730
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -25,6 +25,7 @@ Contains additional properties about the participant identity
 | languageId       | String                          | The language culture string. Read-only.                                                                                                                                                                          |
 | region           | String                          | The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only. |
 | platformId       | String                          | The client platform ID of the participant. Read-only.    |
+| participantId    | String                          | The participant ID of the participant. Read-only.    |
 
 
 ## JSON representation
@@ -37,7 +38,9 @@ The following is a JSON representation of the resource.
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "platformId",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -49,6 +52,7 @@ The following is a JSON representation of the resource.
   "languageId": "String",
   "region": "String",
   "platformId": "String",
+  "participantId": "String"
 }
 ```
 

@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "You can use createLink action to share a DriveItem via a sharing link."
 title: "driveItem: createLink"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -106,7 +106,6 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 ```http
 POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",
