@@ -7,14 +7,14 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "disableResilienceDefaults",
                 "ChangeType": "Addition",
-                "Description": "Added the **disableResilienceDefaults** property to [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-1.0) resource.",
+                "Description": "Added the **disableResilienceDefaults** property to [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-1.0) resource. Setting this property determines whether to block authentications during an outage whenever a policy condition can't be evaluated in real-time, or allow policies to be evaluated using session information collected prior to an outage.",
                 "Target": "conditionalAccessSessionControls"
             }
         ],
         "Id": "7b7675fc-e198-4b66-add5-df4f0d86b5f1",
         "Cloud": "Prod",
         "Version": "v1.0",
-        "CreatedDateTime": "2021-12-08T23:45:26.5312531Z",
+        "CreatedDateTime": "2022-01-06T00:00:00.5312531Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Identity and sign-in"
     },
