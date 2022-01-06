@@ -39,7 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## Function parameters
