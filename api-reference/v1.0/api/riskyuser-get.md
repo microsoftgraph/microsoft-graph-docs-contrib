@@ -2,7 +2,7 @@
 title: "Get riskyUser"
 description: "Read the properties and relationships of a riskyUser object."
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Read the properties and relationships of a [riskyUser](../resources/riskyuser.md
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -2,7 +2,7 @@
 title: Confirm riskyUser compromised
 description: Confirm a riskyUser object as compromised.
 author: cloudhandler
-localization_priority: Normal 
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/confirmCompromised
-POST /identityProtection/riskyUsers/confirmCompromised
 ```
 
 
@@ -46,9 +45,9 @@ Specify the risky user IDs to dismiss in the request body.
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Examples
-### Example 1: Confirm users as compromised
-#### Request
-Here is an example of the request.
+<!--### Example 1: Confirm users as compromised-->
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,10 +81,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/confirm-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/confirm-riskyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -93,6 +96,8 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!--
 ### Example 2: Confirm a user as compromised
 #### Request
 Here is an example of the request.
@@ -102,7 +107,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "confirm_riskyuser_2"
 }-->
-```http
+<!--```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised
 Content-type: application/json
 
@@ -136,7 +141,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true
 } -->
-```http
+<!--```http
 HTTP/1.1 204 No Content
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -150,5 +155,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
-

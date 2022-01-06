@@ -2,15 +2,13 @@
 title: List printJobs for a printerShare
 description: Retrieve a list of print jobs associated with the printe share.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List printJobs for a printerShare
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of print jobs associated with the [printerShare](../resources/printershare.md).
 

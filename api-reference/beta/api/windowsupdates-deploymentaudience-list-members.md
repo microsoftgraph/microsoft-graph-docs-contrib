@@ -2,17 +2,21 @@
 title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
 author: "Alice-at-Microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
 # List deployment audience members
+
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources that are members of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
+
+> [!NOTE]
+> This API has a [known issue](/Graph/known-issues#accessing-and-updating-deployment-audiences) related to deployments created via Intune.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -79,6 +83,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,10 +105,6 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-      "id": "f5ba7065-7065-f5ba-6570-baf56570baf5"
-    },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "fb95f07d-9e73-411d-99ab-7eca3a5122b1",

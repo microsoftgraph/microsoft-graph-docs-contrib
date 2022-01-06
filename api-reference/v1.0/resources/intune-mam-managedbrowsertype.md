@@ -23,4 +23,3 @@ Type of managed browser
 
 
 
-

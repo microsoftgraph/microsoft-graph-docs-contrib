@@ -15,7 +15,7 @@ const schema = {
   properties: [
     {
       name: 'ticketTitle',
-      type: 'String',
+      type: 'string',
       isSearchable: 'true',
       isRetrievable: 'true',
       labels: [
@@ -24,14 +24,14 @@ const schema = {
     },
     {
       name: 'priority',
-      type: 'String',
+      type: 'string',
       isQueryable: 'true',
       isRetrievable: 'true',
       isSearchable: 'false'
     },
     {
       name: 'assignee',
-      type: 'String',
+      type: 'string',
       isRetrievable: 'true'
     }
   ]

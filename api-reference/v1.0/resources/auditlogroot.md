@@ -2,7 +2,7 @@
 title: "auditLogRoot resource type"
 description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-auditlogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

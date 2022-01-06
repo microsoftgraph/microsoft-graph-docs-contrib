@@ -1,7 +1,7 @@
 ---
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
@@ -49,15 +49,15 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 >**Note:** 
 > + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
-> + When the `$levels` parameter is not specified, only the immediate manager is returned.  
-> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`
+> + When the `$levels` parameter is not specified, only the immediate manager is returned.
+> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## Request headers
 
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | eventual. Required when the request includes the `$expand=manager($levels=max)` parameter. |
+| ConsistencyLevel | eventual. Required when the request includes the `$count=true` query string. |
 
 ## Request body
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -126,10 +130,13 @@ Content-type: application/json
 
 ### Example 2: Get manager chain up to the root level
 
-The following example shows a request to get the manager chain up to the root level.
+The following example shows a request to get the manager chain up to the root level. This request requires the **ConsistencyLevel** header set to `eventual` because `$count=true` query string is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 #### Request
 
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -138,6 +145,13 @@ The following example shows a request to get the manager chain up to the root le
 GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 #### Response
 

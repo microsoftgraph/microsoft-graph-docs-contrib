@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
@@ -73,6 +73,8 @@ The CSV file has the following headers for columns.
 - Prohibit Send/Receive Quota (Byte)
 - Deleted Item Count
 - Deleted Item Size (Byte)
+- Deleted Item Quota (Byte)
+- Has Archive
 - Report Period
 
 ## Example
