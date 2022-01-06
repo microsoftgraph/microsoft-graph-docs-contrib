@@ -2,6 +2,72 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAnswerEditable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageQuestion"
+         },
+	 {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttribute** resource.",
+          "Target": "accessPackageResourceAttribute"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
+          "Target": "accessPackageResourceAttributeDestination"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accesspackageuserdirectoryattributestore",
+          "ChangeType": "Addition",
+          "Description": "Added the **accesspackageuserdirectoryattributestore** resource.",
+          "Target": "accesspackageuserdirectoryattributestore"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeSource** resource.",
+          "Target": "accessPackageResourceAttributeSource"
+        },
+	{
+   	 "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+    	 "ApiChange": "Property",
+    	 "ChangedApiName": "attributes",
+    	 "ChangeType": "Addition",
+    	 "Description": "Added the **attributes** property to the [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
+    	 "Target": "accessPackageResource"
+  	},
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeQuestion** resource.",
+          "Target": "accessPackageResourceAttributeQuestion"
+        }
+      ],
+      "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },	  
+	{
+      "ChangeList": [
         { 
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
           "ApiChange": "Method",
@@ -750,72 +816,6 @@
      "CreatedDateTime": "2021-09-14T14:10:06Z",
      "WorkloadArea": "Identity and access",
      "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Property",
-          "ChangedApiName": "isAnswerEditable",
-          "ChangeType": "Addition",
-          "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
-          "Target": "accessPackageQuestion"
-         },
-	 {
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceAttribute",
-          "ChangeType": "Addition",
-          "Description": "Added the **accessPackageResourceAttribute** resource.",
-          "Target": "accessPackageResourceAttribute"
-        },
-	{
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceAttributeDestination",
-          "ChangeType": "Addition",
-          "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
-          "Target": "accessPackageResourceAttributeDestination"
-        },
-	{
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accesspackageuserdirectoryattributestore",
-          "ChangeType": "Addition",
-          "Description": "Added the **accesspackageuserdirectoryattributestore** resource.",
-          "Target": "accesspackageuserdirectoryattributestore"
-        },
-	{
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceAttributeSource",
-          "ChangeType": "Addition",
-          "Description": "Added the **accessPackageResourceAttributeSource** resource.",
-          "Target": "accessPackageResourceAttributeSource"
-        },
-	{
-   	 "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-    	 "ApiChange": "Property",
-    	 "ChangedApiName": "attributes",
-    	 "ChangeType": "Addition",
-    	 "Description": "Added the **attributes** property to the [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
-    	 "Target": "accessPackageResource"
-  	},
-        {
-          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceAttributeQuestion",
-          "ChangeType": "Addition",
-          "Description": "Added the **accessPackageResourceAttributeQuestion** resource.",
-          "Target": "accessPackageResourceAttributeQuestion"
-        }
-      ],
-      "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2021-09-15T04:03:15.8892294Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
     },
     {
       "ChangeList": [
