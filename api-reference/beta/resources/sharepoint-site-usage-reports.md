@@ -19,12 +19,12 @@ You can get a high level view of the value you are getting from SharePoint in te
 
 ## Reports
 
-| Function                                 | CSV return type | JSON return type                         | Description                              |
-| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Get site detail](../api/reportroot-getsharepointsiteusagedetail.md) | Stream          | [sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md) | Get details about SharePoint site usage. |
-| [Get file counts](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream          | [sharePointSiteUsageFileCounts](../resources/sharepointsiteusagefilecounts.md) | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
-| [Get site counts](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream          | [sharePointSiteUsageSiteCounts](../resources/sharepointsiteusagesitecounts.md) | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
-| [Get storage](../api/reportroot-getsharepointsiteusagestorage.md) | Stream          | [siteUsageStorage](../resources/siteusagestorage.md) | Get the trend of storage allocated and consumed during the reporting period. |
-| [Get pages](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | [sharePointSiteUsagePages](../resources/sharepointsiteusagepages.md) | Get the number of pages viewed across all sites. |
+| Function                                                     | CSV return type | JSON return type | Description                                                  |
+| :----------------------------------------------------------- | :-------------- | :--------------- | ------------------------------------------------------------ |
+| [Get site detail](../api/reportroot-getsharepointsiteusagedetail.md) | Stream          | Stream           | Get details about SharePoint site usage.                     |
+| [Get file counts](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream          | Stream           | Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period. |
+| [Get site counts](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream          | Stream           | Get the trend of total and active site count during the reporting period. |
+| [Get storage](../api/reportroot-getsharepointsiteusagestorage.md) | Stream          | Stream           | Get the trend of storage allocated and consumed during the reporting period. |
+| [Get pages](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | Stream           | Get the number of pages viewed across all sites.             |
 
 

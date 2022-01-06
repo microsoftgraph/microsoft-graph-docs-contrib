@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "raprakasMSFT"
 ms.prod: "users"
 doc_type: apiPageType
 ---
