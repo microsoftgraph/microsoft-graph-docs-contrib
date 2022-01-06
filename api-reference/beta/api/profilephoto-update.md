@@ -1,6 +1,6 @@
 ---
 title: "Update profilephoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there"
+description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "people"
