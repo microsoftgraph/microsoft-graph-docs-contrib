@@ -31,8 +31,14 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
 |id|String|The snapshot id of Cloud PC previous point-in-time state. Inherited from [entity](../resources/entity.md).|
 |lastRestoredDateTime|DateTimeOffset|The date and time that snapshot has been used for restore. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcSnapshotStatus|Status of the Cloud PC snapshot. Possible values include "ready". The possible values are: `ready`, `unknownFutureValue`.|
+|status|[cloudPcSnapshotStatus](#cloudPcSnapshotStatus-values)|Status of the Cloud PC snapshot. Possible values include "ready". The possible values are: `ready`, `unknownFutureValue`.|
 
+### cloudPcSnapshotStatus values 
+
+|Member|
+|:---|
+|ready|
+|unknownFutureValue|
 ## Relationships
 None.
 
