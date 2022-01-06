@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "raprakasMSFT"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/agreementAcceptances
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
@@ -43,7 +44,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,9 +70,13 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreementacceptances-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreementacceptances-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -83,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 303
 
 {
   "value": [

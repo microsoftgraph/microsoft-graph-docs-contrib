@@ -14,7 +14,7 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), 
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
 and requires a [supported license](#required-licenses-for-modela).
 In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
@@ -34,7 +34,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | |
+| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
 |  [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
@@ -42,12 +42,14 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## `model=B` requirements
 
+>**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
+
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
-| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications. |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications. |
-| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
-|  [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
+| [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
+| [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Minimum charge of 1 message per API request. |
+|  [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. |
 
 ## Evaluation mode (default) requirements
 

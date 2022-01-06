@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
+Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -31,10 +31,10 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -43,13 +43,14 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The name of the staff member, as displayed to customers.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
 If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
 ## Example
-##### Request
+### Request
 The following example changes the staff member's schedule to have Mondays off.
 
 # [HTTP](#tab/http)
@@ -58,7 +59,7 @@ The following example changes the staff member's schedule to have Mondays off.
   "name": "update_bookingstaffmember"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {
@@ -145,7 +146,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response",

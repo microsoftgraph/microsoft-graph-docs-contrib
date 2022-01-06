@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest: cancel"
 description: "Cancel a unifiedRoleEligibilityScheduleRequest."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleeligibilityschedulerequest-cancel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedulerequest-cancel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

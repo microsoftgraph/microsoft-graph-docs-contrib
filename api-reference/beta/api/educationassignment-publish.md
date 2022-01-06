@@ -1,8 +1,8 @@
 ---
 title: "educationAssignment: publish"
-description: "This action changes the state of an assignment from its original draft status to the published status."
+description: "Change the state of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
-author: "dipakboyed"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,9 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Change the state of an assignment from its original draft status to the published status. 
+Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
-Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, [educationSubmission](../resources/educationsubmission.md) objects are created and the assignment appears in the student's list.
+You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
+
+Only a teacher in the class can make this call. When an **assignment** is in draft status, students will not see the **assignment**, nor will there be any submission objects. When you call this API, [educationSubmission](../resources/educationsubmission.md) objects are created and the assignment appears in the student's list.
+
+The state of the **assignment** goes back to `draft` if there is any backend failure during publish process.
+
+To update the properties of a published **assignment**, see [update an assignment](../api/educationassignment-update.md).
+
+To update the properties of a published assignment, see [update an assignment](../api/educationassignment-update.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -73,6 +81,10 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

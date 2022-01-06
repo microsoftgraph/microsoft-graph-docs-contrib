@@ -58,9 +58,10 @@ The following table shows the properties that are required when you create the m
 |routesExclude|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
-|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|disableUDPConnections|Boolean|When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.|
 
 
 
@@ -74,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations
 Content-type: application/json
-Content-length: 748
+Content-length: 782
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -105,7 +106,8 @@ Content-length: 748
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 
@@ -114,7 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 831
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -146,9 +148,11 @@ Content-Length: 797
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
+
 
 
 

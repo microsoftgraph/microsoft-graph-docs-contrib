@@ -17,6 +17,34 @@ Namespace: microsoft.graph
 |:---|
 |tenant|
 |application|
+
+### incomingTokenType values 
+
+|Member|
+|:---|
+|none|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### protocolType values 
+
+|Member|
+|:---|
+|none|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
 |unknownFutureValue|
 
 ### continuousAccessEvaluationMode values 
@@ -50,6 +78,15 @@ Namespace: microsoft.graph
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### appKeyCredentialRestrictionType values
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### synchronizationSecret values
@@ -462,6 +499,11 @@ Namespace: microsoft.graph
 |time|
 |deviceState|
 |client|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
+|servicePrincipals|
+|servicePrincipalRisk|
 
 ### conditionalAccessStatus values
 
@@ -591,12 +633,52 @@ Namespace: microsoft.graph
 |mfaRegistered|
 |unknownFutureValue|
 
-### requirementProvider values
+
+### signInIdentifierType values 
 
 |Member|
 |:---|
-|MFA|
-|CA|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+
+### signInUserType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### requirementProvider values 
+
+
+|Member|
+|:---|
+|user|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
 
@@ -621,6 +703,8 @@ Namespace: microsoft.graph
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
 
+
+<!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
 
 |Member|
@@ -640,37 +724,6 @@ Namespace: microsoft.graph
 |investigationsThreatIntelligenceSigninLinked|
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
-
-### riskLevel values
-
-|Member|
-|:---|
-|low|
-|medium|
-|high|
-|hidden|
-|none|
-|unknownFutureValue|
-
-### riskState values
-
-|Member|
-|:---|
-|none|
-|confirmedSafe|
-|remediated|
-|dismissed|
-|atRisk|
-|confirmedCompromised|
-|unknownFutureValue|
-
-### tokenIssuerType values
-
-|Member|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
 
 ### usageAuthMethod values
 
@@ -1720,23 +1773,6 @@ Possible values for user account types (group membership), per Windows definitio
 |confirmedCompromised|
 |unknownFutureValue|
 
-### riskDetail values
-
-|Member|
-|:---|
-|none|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|adminConfirmedSigninCompromised|
-|adminConfirmedUserCompromised|
-|hidden|
-|unknownFutureValue|
-
 ### advancedConfigState values
 
 |Member|
@@ -1766,26 +1802,6 @@ Possible values for user account types (group membership), per Windows definitio
 |oneDriveBusiness|
 |oneDriveConsumer|
 |dropbox|
-
-### riskEventType values
-
-|Member|
-|:---|
-|unlikelyTravel|
-|anonymizedIPAddress|
-|maliciousIPAddress|
-|unfamiliarFeatures|
-|malwareInfectedIPAddress|
-|suspiciousIPAddress|
-|leakedCredentials|
-|investigationsThreatIntelligence|
-|generic|
-|adminConfirmedUserCompromised|
-|mcasImpossibleTravel|
-|mcasSuspiciousInboxManipulationRules|
-|investigationsThreatIntelligenceSigninLinked|
-|maliciousIPAddressValidCredentialsBlockedIP|
-|unknownFutureValue|
 
 ### networkType values
 
@@ -1876,6 +1892,7 @@ Possible values for user account types (group membership), per Windows definitio
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### riskDetectionTimingType values
 
@@ -2019,6 +2036,45 @@ Possible values for user account types (group membership), per Windows definitio
 |approvedApplication|
 |compliantApplication|
 |passwordChange|
+|unknownFutureValue|
+
+### conditionalAccessRule values 
+
+|Member|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|guest|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|unknownFutureValue|
+|deviceFilterIncludeRuleNotMatched|
+|allDeviceStates|
+
+### signInAccessType values 
+
+|Member|
+|:---|
+|none|
+|b2bCollaboration|
+|b2bDirectConnect|
+|microsoftSupport|
+|serviceProvider|
 |unknownFutureValue|
 
 ### signinFrequencyType values
@@ -2553,7 +2609,6 @@ Possible values for user account types (group membership), per Windows definitio
 |inProgress|
 |completed|
 |overdue|
-|notCompleted|
 |unknownFutureValue|
 
 ### teamworkCallEventType values
@@ -2624,4 +2679,64 @@ Possible values for user account types (group membership), per Windows definitio
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### answerInputType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|text|0|Text.|
+|radioButton|1|RadioButton.|
+|unknownFutureValue|2|UnknownFutureValue.|
+
+### taskStatus_v2 values
+
+|Member|
+|:---|
+|notStarted|
+|inProgress|
+|completed|
+|unknownFutureValue|
+
+
+### wellKnownListName_v2 values
+
+|Member|
+|:---|
+|none|
+|defaultList|
+|flaggedEmail|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
 |unknownFutureValue|

@@ -176,8 +176,8 @@ The **assignedLicenses** property of the user resource contains a collection of 
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
-To negate the result of the expression inside the `any` clause, use the `NOT` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
->**Note:** For directory objects like users, the `NOT` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
+To negate the result of the expression inside the `any` clause, use the `not` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
+>**Note:** For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true

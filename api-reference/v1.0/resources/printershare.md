@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a printer that is intended to be discoverable by users and printing applications.
 
 Inherits from [printerBase](../resources/printerbase.md).

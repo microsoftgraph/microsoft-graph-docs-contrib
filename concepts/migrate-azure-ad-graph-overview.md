@@ -1,19 +1,19 @@
 ---
-title: "Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph"
+title: "Migrate Azure AD Graph apps to Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Migrate Azure Active Directory (Azure AD) Graph apps to Microsoft Graph
+# Migrate Azure AD Graph apps to Microsoft Graph
 
 > [!WARNING]
 > **Azure Active Directory (Azure AD) Graph is deprecated**. To avoid loss of functionality, migrate your applications to Microsoft Graph before June 30, 2022 when Azure AD Graph API endpoints will stop responding to requests.
 >
 > Microsoft will continue technical support and apply security fixes for Azure AD Graph until June 30, 2022 when all functionality and support will end. If you fail to migrate your applications to Microsoft Graph before June 30, 2022, you put their functionality and stability at risk.
 
-Azure AD Graph is deprecated. Update your Azure AD Graph apps to use Microsoft Graph now.
+[Azure AD Graph is deprecated](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Update your Azure AD Graph apps to use Microsoft Graph now.
 
 ## Why use Microsoft Graph?
 
@@ -30,7 +30,7 @@ In addition, Microsoft Graph supports many new Azure AD datasets and features th
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
   - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
-  - [Access reviews](/graph/api/resources/accessreviewsv2-root) for one-time or recurring access reviews for attestation of user's access rights.
+  - [Access reviews](/graph/api/resources/accessreviewsv2-overview) for one-time or recurring access reviews for attestation of user's access rights.
   - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices.
 - Security features such as:
   - [Identity risk events](/graph/api/resources/riskdetection).

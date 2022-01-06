@@ -65,7 +65,6 @@ If successful, this method returns `200 OK` response code. If the group is added
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/addGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -78,7 +77,6 @@ Content-length: 57
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true
