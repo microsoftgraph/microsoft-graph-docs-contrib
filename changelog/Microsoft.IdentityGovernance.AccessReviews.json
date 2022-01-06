@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userSignInInsight",
           "ChangeType": "Addition",
-          "Description": "Added the [userSignInInsight](https://docs.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-beta) resource. Use this type to configure insights for an **accessReviewDecisionItem** based on the user's last sign-in date and time.",
+          "Description": "Added the [userSignInInsight](https://docs.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-beta) resource. Use this type to configure insights for an [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) based on the user's last sign-in date and time.",
           "Target": "userSignInInsight"
         }
       ],
