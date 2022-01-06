@@ -29,9 +29,9 @@
 	{
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Resource",
-          "ChangedApiName": "accesspackageuserdirectoryattributestore",
+          "ChangedApiName": "accessPackageUserDirectoryAttributeStore",
           "ChangeType": "Addition",
-          "Description": "Added the **accesspackageuserdirectoryattributestore** resource.",
+          "Description": "Added the **accessPackageUserDirectoryAttributeStore** resource.",
           "Target": "accesspackageuserdirectoryattributestore"
         },
 	{
