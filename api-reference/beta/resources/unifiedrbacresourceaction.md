@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResourceAction resource type"
-description: "**TODO: Add Description**"
+description: "An object that represents an operation that an authorized principal is allowed to perform."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An object that represents an operation that an authorized principal is allowed to perform.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,17 +24,17 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionVerb|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
+|actionVerb|String|HTTP method for the action, such as `DELETE`, `GET`, `PATCH`, `POST`, `PUT`, or `null`. |
+|description|String|Description for the action.|
+|id|String|Unique identifier for the action within the directory resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive.|
 |isEnabledForCustomRole|Boolean|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|name|String|Name for the action within the directory resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive.|
 |resourceScopeId|String|**TODO: Add Description**|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceNamespace|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|**TODO: Add Description**|
+|resourceNamespace|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|A named collection of related actions.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

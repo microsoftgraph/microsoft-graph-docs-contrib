@@ -50,6 +50,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRbacR
 
 ## Examples
 
+The following example gets the action with the identifier `microsoft.insights-programs-update-patch` for the directory resource namespace with the identifier of `microsoft.insights`.
+
 ### Request
 <!-- {
   "blockType": "request",
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRbacR
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId}/resourceActions/{unifiedRbacResourceActionId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.insights/resourceActions/microsoft.insights-programs-update-patch
 ```
 
 
@@ -74,14 +76,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
-    "id": "c79db7a6-b7a6-c79d-a6b7-9dc7a6b79dc7",
-    "actionVerb": "String",
-    "description": "String",
-    "isEnabledForCustomRole": "Boolean",
-    "name": "String",
-    "resourceScopeId": "String"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.insights')/resourceActions/$entity",
+    "actionVerb": "PATCH",
+    "description": "Deploy and manage programs in Insights app",
+    "id": "microsoft.insights-programs-update-patch",
+    "name": "microsoft.insights/programs/update",
+    "resourceScopeId": null
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
-description: "**TODO: Add Description**"
+description: "An object that represents a collection of related actions."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An object that represents a collection of related actions.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,13 +25,13 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|id|String|Unique identifier of the directory resource namespace, such as `microsoft.aad.b2c`.|
+|name|String|Name of the directory resource namespace. Typically, the same name as the `id` property, such as `microsoft.aad.b2c`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceActions|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|**TODO: Add Description**|
+|resourceActions|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

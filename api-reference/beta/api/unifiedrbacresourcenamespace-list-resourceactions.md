@@ -50,6 +50,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+The following example gets the actions for the directory resource namespace with the identifier of `microsoft.insights`.
+
 ### Request
 <!-- {
   "blockType": "request",
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId}/resourceActions
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.insights/resourceActions
 ```
 
 
@@ -74,16 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
-      "id": "c79db7a6-b7a6-c79d-a6b7-9dc7a6b79dc7",
-      "actionVerb": "String",
-      "description": "String",
-      "isEnabledForCustomRole": "Boolean",
-      "name": "String",
-      "resourceScopeId": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.insights')/resourceActions",
+    "value": [
+        {
+            "actionVerb": null,
+            "description": "Manage all aspects of Insights app",
+            "id": "microsoft.insights-allEntities-allTasks",
+            "name": "microsoft.insights/allEntities/allTasks",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "PATCH",
+            "description": "Deploy and manage programs in Insights app",
+            "id": "microsoft.insights-programs-update-patch",
+            "name": "microsoft.insights/programs/update",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "GET",
+            "description": "View reports and dashboard in Insights app",
+            "id": "microsoft.insights-reports-read-get",
+            "name": "microsoft.insights/reports/read",
+            "resourceScopeId": null
+        }
+    ]
 }
 ```
