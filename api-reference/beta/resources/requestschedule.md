@@ -1,7 +1,7 @@
 ---
 title: "requestSchedule resource type"
 description: "An request schedule can be included in an access package assignment request and is present in an access package assignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.
 
 ## Properties
 
@@ -39,8 +39,7 @@ The following is a JSON representation of the resource.
 {
     "startDateTime": "2020-08-11T23:06:53.307Z",
     "expiration": {
-        "endDateTime": "2020-09-10T23:06:53.307Z",
-        "type": "afterDateTime"
+      "@odata.type": "microsoft.graph.expirationPattern"
     }
 }
 ```

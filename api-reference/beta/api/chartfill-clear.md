@@ -2,7 +2,7 @@
 title: "ChartFill: clear"
 description: "Clear the fill color of a chart element."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---

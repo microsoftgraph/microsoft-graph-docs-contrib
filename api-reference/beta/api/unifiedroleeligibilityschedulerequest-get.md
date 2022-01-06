@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleEligibilityScheduleRequest"
 description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object."
-author: "shauliu"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory	|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/26bc6813-5457-4302-a482-afafd4e2962a
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedulerequest-csharp-snippets.md)]
@@ -77,12 +77,18 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleeligibilityschedulerequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleeligibilityschedulerequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,22 +100,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
-    "action": "String",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "isValidationOnly": "Boolean",
-    "targetScheduleId": "String",
-    "justification": "String",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+  "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-26T18:15:33.08Z",
+  "completedDateTime": "2021-07-26T18:15:33.127Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
     }
+  },
+  "scheduleInfo": {
+    "startDateTime": "2021-07-26T18:15:33.1266138Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "afterDateTime",
+      "endDateTime": "2022-06-30T00:00:00Z",
+      "duration": null
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```

@@ -2,7 +2,7 @@
 author: learafa
 title: "Get websocket endpoint"
 description: "Use of these APIs in production applications is not supported."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

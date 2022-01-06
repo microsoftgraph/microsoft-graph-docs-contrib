@@ -1,8 +1,8 @@
 ---
 title: "attendanceInterval resource type"
-description: "Contains information associated with attendance interval in attendanceRecord."
+description: "Contains information associated with an attendance interval in an attendanceRecord."
 author: "mkhribech"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information associated with attendance interval in attendanceRecord.
+Contains information associated with an attendance interval in an [attendanceRecord](attendancerecord.md).
 
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| joinDateTime | DateTime | Time attendee joined in UTC. |
-| leaveDateTime | DateTime | Time attendee left in UTC. |
 | durationInSeconds | Int32 | Duration of the meeting interval in seconds; that is, the difference between **joinDateTime** and **leaveDateTime**. |
+| joinDateTime | DateTime | The time the attendee joined in UTC. |
+| leaveDateTime | DateTime | The time the attendee left in UTC. |
+
+> [!TIP]
+> When data is lacking, the value of **joinDateTime** or **leaveDateTime** will be set to `null`, and the value of **durationInSeconds** will be set to `0` in the response body of the [Get meetingAttendanceReport](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) method.
 
 ## JSON representation
 
@@ -36,11 +39,9 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-
 {
     "joinDateTime": "String (timestamp)",
     "leaveDateTime": "String (timestamp)",
     "durationInSeconds": "Int32"
-}
-    
+}  
 ```

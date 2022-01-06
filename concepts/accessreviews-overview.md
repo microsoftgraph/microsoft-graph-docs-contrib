@@ -2,15 +2,18 @@
 title: "Overview of access reviews API"
 description: "The access reviews API allows you to programmatically review access to your Azure AD resources."
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
+doc_type: conceptualPageType
 ---
 
 # Overview of the access reviews API
 
-The [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This includes:
-+ Creating, reading, updating, and deleting access reviews, access review settings, and schedules.
-+ Investigating past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
+The [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This review helps to ensure that the right people have the right access to the right resources in the organization.
+
+Using the access reviews API, you can do the following actions:
++ Create, read, update, and delete access reviews, access review settings, and schedules.
++ Investigate past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
 
 ## Scope of use
 
@@ -34,12 +37,5 @@ Access reviews are structured logically and are comprised of these building bloc
 
 Try out the following tutorials to manage access reviews:
 
-+ [Use access reviews API for groups to review access to your security groups](tutorial-accessreviews-securitygroup.md)
-+ [Use access reviews API for groups to review access to all your Microsoft 365 groups with guest users](tutorial-accessreviews-M365group.md)
-
-## See also
-
-+ [Planning Azure Active Directory Access Reviews deployment](/azure/active-directory/governance/deploy-access-reviews)
-+ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [Get access on behalf of a user](/graph/auth-v2-user)
-+ [Get access without a user](/graph/auth-v2-service)
++ [Tutorial: Use the access reviews API to review access to your security groups](tutorial-accessreviews-securitygroup.md)
++ [Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups](tutorial-accessreviews-M365group.md)

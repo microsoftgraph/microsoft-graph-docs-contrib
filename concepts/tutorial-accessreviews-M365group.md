@@ -2,7 +2,7 @@
 title: "Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups"
 description: "Use the access reviews API to review guest access to your Microsoft 365 groups"
 author: "FaithOmbongi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 ---
 
@@ -29,7 +29,7 @@ To consent to the required permissions in Graph Explorer:
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. Scroll through the list of permissions to these permissions:
-   + AccessReviews (3), expand and then select **AccessReviews.ReadWrite.All**.
+   + AccessReview (3), expand and then select **AccessReview.ReadWrite.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
    + User (8), expand and then select **User.Invite.All** and **User.ReadWrite.All**.
    
@@ -574,10 +574,13 @@ Congratulations! You have created an access review for all guest users in Micros
 
 ## See also
 
-+ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
 + [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept)
 + [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Invite/add guest users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-
++ [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
++ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

@@ -2,15 +2,13 @@
 title: Create printTaskTrigger
 description: Create a new task trigger on the specified printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Create printTaskTrigger
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create a new [task trigger](../resources/printtasktrigger.md) on the specified [printer](../resources/printer.md). Currently, only **one** task trigger can be specified per printer, but this limit may be removed in the future. 
 
@@ -60,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json
-Content-length: 80
 
 {
   "event": "jobStarted",
@@ -81,6 +78,10 @@ Content-length: 80
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printtasktrigger-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printtasktrigger-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

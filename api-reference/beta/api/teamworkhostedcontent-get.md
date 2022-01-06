@@ -1,7 +1,7 @@
 ---
 title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jecha"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Delegated (personal Microsoft account) | Not supported.                                                   |
-| Application                            | Not supported.                                                   |
+| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## HTTP request
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontent-coloricon-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontent-coloricon-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -146,6 +150,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontentbytes-outlineicon-value-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontentbytes-outlineicon-value-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

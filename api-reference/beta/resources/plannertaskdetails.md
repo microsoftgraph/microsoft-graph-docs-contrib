@@ -1,7 +1,7 @@
 ---
 title: "plannerTaskDetails resource type"
 description: "The **plannerTaskDetails** resource represents the additional information about a task. Each task object has a details object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

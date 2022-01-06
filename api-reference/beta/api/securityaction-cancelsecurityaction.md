@@ -1,7 +1,7 @@
 ---
 title: "securityAction: cancelSecurityAction"
 description: "Cancel a security operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType
@@ -78,6 +78,10 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securityaction-cancelsecurityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityaction-cancelsecurityaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

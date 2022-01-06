@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Returns the metadata for an item in a list."
 ms.date: 09/11/2017
 title: Get an entry from a SharePoint list
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

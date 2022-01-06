@@ -1,17 +1,18 @@
 ---
-title: "Add identityProvider to a b2cIdentityUserFlow"
-description: "Add identityProvider to a b2cIdentityUserFlow."
-localization_priority: Normal
+title: "Add identityProvider to a b2cIdentityUserFlow (deprecated)"
+description: "Add identityProvider to a b2cIdentityUserFlow. (deprecated)"
+ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2cIdentityUserFlow
+# Add identityProvider to a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Add identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
@@ -70,7 +71,6 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
@@ -90,6 +90,10 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2cuserflows-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2cuserflows-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

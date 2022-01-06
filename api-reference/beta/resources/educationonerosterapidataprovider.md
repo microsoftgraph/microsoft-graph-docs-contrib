@@ -2,7 +2,7 @@
 title: "educationOneRosterApiDataProvider resource"
 description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -43,6 +43,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 <!-- {
   "blockType": "resource",
+  truncated: true,
   "optionalProperties": [
 
   ],
@@ -57,7 +58,6 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
     "clientSecret": "String"
   },
@@ -71,6 +71,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 2020-05-06 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
+  truncated: true,
   "description": "educationOneRosterApiDataProvider resource",
   "keywords": "",
   "section": "documentation",

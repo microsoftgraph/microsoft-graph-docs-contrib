@@ -2,7 +2,7 @@
 title: printUsageByUser resource type
 description: Describes print activity for a user during a specified time period (usageDate).
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printUsageByUser resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Describes print activity for a user during a specified time period (usageDate).
 

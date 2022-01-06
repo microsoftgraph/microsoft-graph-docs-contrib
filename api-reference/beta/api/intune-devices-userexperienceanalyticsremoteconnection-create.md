@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the u
 |deviceName|String|The name of the device.|
 |model|String|The user experience analytics device model.|
 |virtualNetwork|String|The user experience analytics virtual network.|
+|manufacturer|String|The user experience analytics manufacturer.|
 |deviceCount|Int32|The count of remote connection. Valid values 0 to 2147483647|
 |cloudPcRoundTripTime|Double|The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |cloudPcSignInTime|Double|The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
@@ -60,6 +61,7 @@ The following table shows the properties that are required when you create the u
 |coreBootTime|Double|The core boot time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |coreSignInTime|Double|The core sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308|
 |cloudPcFailurePercentage|Double|The sign in failure percentage of Cloud PC Device. Valid values 0 to 100|
+|userPrincipalName|String|The user experience analytics userPrincipalName.|
 
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRemoteConnection
 Content-type: application/json
-Content-length: 479
+Content-length: 573
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -81,13 +83,15 @@ Content-length: 479
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -96,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 622
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsRemoteConnection",
@@ -105,13 +109,15 @@ Content-Length: 528
   "deviceName": "Device Name value",
   "model": "Model value",
   "virtualNetwork": "Virtual Network value",
+  "manufacturer": "Manufacturer value",
   "deviceCount": 11,
   "cloudPcRoundTripTime": 6.666666666666667,
   "cloudPcSignInTime": 5.666666666666667,
   "remoteSignInTime": 5.333333333333333,
   "coreBootTime": 4.0,
   "coreSignInTime": 4.666666666666667,
-  "cloudPcFailurePercentage": 8.0
+  "cloudPcFailurePercentage": 8.0,
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
