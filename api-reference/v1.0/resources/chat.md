@@ -57,7 +57,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | id| String| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
-
+| webUrl | String| The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only. |
 
 ### chatType values 
 
@@ -92,7 +92,8 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "string",
+  "webUrl": "string"
 }
 ```
 

@@ -81,7 +81,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Outlook Mail | ✔ | ✔ | ✔ |
 | Personal Contacts | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
-| Reports | ➖ | ✔ | ➖ |
+| Reports | ➖ | ➖ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
 | Security | ✔ | ✔ | ✔ |
 | Service health and communications | ✔ | ✔ | ✔ |

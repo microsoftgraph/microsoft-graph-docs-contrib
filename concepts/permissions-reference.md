@@ -27,11 +27,22 @@ The _constraint_ element of the name determines the potential extent of access y
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
-> **Note**: In delegated scenarios, the effective permissions granted to your app may be constrained by the privileges of the signed-in user in the organization.
+> **Note**: In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user in the organization.
 
 ## Microsoft accounts and work or school accounts
 
 Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both.
+
+## Limits on requested permissions per app
+
+Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for your app, shown in the app's manifest. 
+
+| signInAudience                     | Allowed users                                            | Maximum permissions the app can request   | Maximum Microsoft Graph permissions the app can request   | Maximum permissions that can be consented in a single request         |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
+| AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
+| AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |
 
 ## Permissions availability status
 
@@ -948,6 +959,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
 | _GroupMember.Read.All_ |    Read group memberships | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. | Yes | No |
 | _GroupMember.ReadWrite.All_ |    Read and write group memberships | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. | Yes | No |
+| _UnifiedGroupMember.Read.AsGuest_ |    Read unified (Microsoft 365) group memberships as a guest user | Allows the app to read basic unified group properties, memberships, and owners of the group the signed-in guest is a member of. | Yes | No |
 
 #### Application permissions
 
@@ -1025,70 +1037,42 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity risk event permissions
+## Identity risk permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information  | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user. | Yes | No |
+| _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
+| _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information  | Allows the app to read and update identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
+
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information | Allows the app to read identity risk event information for all users in your organization without a signed-in user. | Yes |
-
-
-### Remarks
-
-_IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
-
-### Example usage
-
-#### Delegated and Application
-
-The following usages are valid for both delegated and application permissions:
-
-* Read all risk events generated for all users in the tenant (`GET /beta/identityRiskEvents`)
-* Read malware risk events generated by the Dorknet botnet (`GET /beta/malwareRiskEvents?$filter=malwareName eq 'Dorkbot'`)
-* Read most recent 50 risk events (`GET /beta/identityRiskEvents?$orderBy=riskEventDateTime desc&top=50`)
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
----
-
-
-## Identity risky user permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
-| _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information  | Allows the app to read and update identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information | Allows the app to read identity user risk information for all users in your organization without a signed-in user. | Yes |
 | _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information | Allows the app to read and update identity user risk information for all users in your organization without a signed-in user. | Yes |
 
 
-### Remarks
-
-_IdentityRiskyUser.Read.All_ and _IdentityRiskyUser.ReadWrite.ALL_ is valid only for work or school accounts. For an app with delegated permissions to read identity user risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+All identity risk permissions are valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference): Global Administrator, Security Administrator, or Security Reader.
 
 ### Example usage
 
-#### Delegated and Application
-
 The following usages are valid for both delegated and application permissions:
 
-* Read all risky users and properties in the tenant (`GET /beta/riskyUsers`)
-* Read all risky users whose aggregate risk level is Medium (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
-* Read the risk information for a specific user (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+#### Read risk events
+
+* Read all risk events generated for all users in the tenant (`GET /identityProtection/riskDetections`)
+* Read most recent 50 risk events (`GET /identityProtection/riskDetections?$orderBy=detectedDateTime desc&top=50`)
+
+#### Read risky users
+
+* Read all risky users and properties in the tenant (`GET /identityProtection/riskyUsers`)
+* Read all risky users whose aggregate risk level is Medium (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
+* Read the risk information for a specific user (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1657,12 +1641,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
 | _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
+| _Presence.ReadWrite_ | Read and write a user's presence information | Allows the app to read the presence information and write activity and availability on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.ReadWrite.All_ | Read and write presence information for all users | Allows the app to read all presence information and write activity and availability of all users in the directory without a signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
 
 ### Example usage
 
 * _Presence.Read_: If you're signed in, retrieve your own presence information (`GET /me/presence`)
 * _Presence.Read.All_: Retrieve the presence information of another user (`GET /users/{id}/presence`)
 * _Presence.Read.All_: Retrieve the presence information of multiple users (`POST /communications/getPresencesByUserId`)
+* _Presence.ReadWrite_:
+  * If you're signed in, set the state of your presence session (`POST /me/presence/setPresence`)
+  * If you're signed in, set your own preferred presence (`POST /me/presence/setUserPreferredPresence`)
+* _Presence.ReadWrite.All_:
+  * Set the state of a user's presence session as an application (`POST /users/{id}/presence/setPresence`)
+  * Set the preferred presence of a user as an application (`POST /users/{id}/presence/setUserPreferredPresence`)
 
 ---
 
@@ -1937,12 +1933,8 @@ The _Sites.Selected_ application permission is available only in the Microsoft G
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-SubjectRightsRequest.Read.All* | Read subject rights requests | Allows the app to read subject rights requests on behalf of the signed-in user. | Yes | No |
-SubjectRightsRequest.ReadWrite.All* | Read and write subject rights requests | Allows the app to read and write subject rights requests on behalf of the signed-in user. | Yes | No |
-
-> **Important**
->Permissions marked with an asterisk (*) are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
-
+SubjectRightsRequest.Read.All | Read subject rights requests | Allows the app to read subject rights requests on behalf of the signed-in user. | Yes | No |
+SubjectRightsRequest.ReadWrite.All | Read and write subject rights requests | Allows the app to read and write subject rights requests on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 None.
@@ -1953,7 +1945,6 @@ None.
 - _SubjectRightsRequest.ReadWrite.All_: Create a subject rights request (`POST /privacy/subjectrightsrequests`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
 
 ## Tasks permissions
 
