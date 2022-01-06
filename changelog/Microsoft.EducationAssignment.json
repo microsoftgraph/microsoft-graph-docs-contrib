@@ -3,6 +3,98 @@
     {
       "ChangeList": [
         {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "educationAddToCalendarOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationAddToCalendarOptions** enumeration type.",
+          "Target": "educationAddToCalendarOptions"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Member",
+          "ChangedApiName": "reassigned",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassigned** member to the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "addToCalendarAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addToCalendarAction** property to [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignmentDefaults?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentDefaults"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedBy** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "reassignedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **reassignedDateTime** property to [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignments** relationship to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Target": "educationUser"
+        },
+        {
+          "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+          "ApiChange": "Method",
+          "ChangedApiName": "reassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) method to the [reassign](https://docs.microsoft.com/en-us/graph/api/reassign?view=graph-rest-1.0) resource.",
+          "Target": "reassign"
+        }
+      ],
+      "Id": "30cd2761-2ec6-47f1-a798-c4ad8e1ea3bd",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-07T03:14:22.628566Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6685e5ec-fbe8-425c-824f-7e39ffebd89a",
+          "ApiChange": "Member",
+          "ChangedApiName": "studentsOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the **studentsOnly** member to the **educationAddToCalendarOptions** enumeration.",
+          "Target": "educationAddToCalendarOptions"
+        }
+      ],
+      "Id": "6685e5ec-fbe8-425c-824f-7e39ffebd89a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-01T15:35:00.000Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {    
           "Id": "c18b29da-1826-463a-b628-d0c0b8a612df",
           "ApiChange": "Method",
           "ChangedApiName": "delta",

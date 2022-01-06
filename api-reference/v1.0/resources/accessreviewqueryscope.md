@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An accessReviewQueryScope object defines what is reviewed in an [access review](../resources/accessreviewsv2-root.md). To scope an access review to inactive users, see [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
+An accessReviewQueryScope object defines what is reviewed in an [access review](../resources/accessreviewsv2-overview.md). To scope an access review to inactive users, see [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
