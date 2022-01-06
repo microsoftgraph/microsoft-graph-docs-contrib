@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "fc913e87-36e8-400f-ac60-05ae8f512440",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "restorePointSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **restorePointSetting** property to the [cloudPcUserSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserSetting?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcUserSetting"
+                },
+                {
+                    "Id": "fc913e87-36e8-400f-ac60-05ae8f512440",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcRestorePointSetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcRestorePointSetting](https://docs.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcRestorePointSetting"
+                }
+            ],
+            "Id": "fc913e87-36e8-400f-ac60-05ae8f512440",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-01-06T14:51:08.271Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",
