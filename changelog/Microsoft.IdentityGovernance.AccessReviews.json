@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "governanceInsight",
           "ChangeType": "Addition",
-          "Description": "Added the [governanceInsight](https://docs.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-beta) resource. This is an abstract type that exposes resources for configuring the type of insights to provide to decision-makers in an accessReviewDecisionItem.",
+          "Description": "Added the [governanceInsight](https://docs.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-beta) resource. This is an abstract type that exposes resources for configuring the type of insights to provide to decision-makers in an accessReviewInstanceDecisionItem.",
           "Target": "governanceInsight"
         },
         {
