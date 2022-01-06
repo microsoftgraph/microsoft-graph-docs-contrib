@@ -19,7 +19,7 @@ Represents Microsoft 365 tenant usage for a managed tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenantUsages](../api/managedtenants-tenantusage-list.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Get a list of the [tenantUsage](../resources/managedtenants-tenantusage.md) objects and their properties.|
+|[List tenantUsages](../api/managedtenants-managedtenant-list-tenantusage.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Get a list of the [tenantUsage](../resources/managedtenants-tenantusage.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
