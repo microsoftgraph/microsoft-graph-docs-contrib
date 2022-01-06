@@ -817,23 +817,7 @@
     {
       "ChangeList": [
         {
-          "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
-          "ApiChange": "String",
-          "ChangedApiName": "Org.OData.Validation.V1.OpenPropertyTypeConstraint",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Validation.V1.OpenPropertyTypeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/resultTemplateDictionary?view=graph-rest-beta) resource",
-          "Target": "resultTemplateDictionary"
-        },
-        {
-          "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
-          "ApiChange": "String",
-          "ChangedApiName": "Org.OData.Validation.V1.OpenPropertyTypeConstraint",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **Org.OData.Validation.V1.OpenPropertyTypeConstraint** resource type",
-          "Target": "resultTemplateDictionary"
-        },
-        {
-          "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
+          "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
           "ApiChange": "Property",
           "ChangedApiName": "queryTemplate",
           "ChangeType": "Addition",
@@ -841,7 +825,7 @@
           "Target": "searchQuery"
         },
         {
-          "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
+          "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
           "ApiChange": "Property",
           "ChangedApiName": "trimDuplicates",
           "ChangeType": "Addition",
@@ -849,10 +833,10 @@
           "Target": "searchRequest"
         }
       ],
-      "Id": "229f6c47-c94b-4dd0-a431-d8048790b653",
+      "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-21T13:55:34.2046726Z",
+      "CreatedDateTime": "2022-01-05T19:09:46.920687Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Analytics"
     }
