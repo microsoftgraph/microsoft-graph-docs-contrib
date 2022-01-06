@@ -1,13 +1,13 @@
 ---
-title: "Get photo"
+title: "Get profilePhoto"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Get photo
+# Get profilePhoto
 
 Namespace: microsoft.graph
 

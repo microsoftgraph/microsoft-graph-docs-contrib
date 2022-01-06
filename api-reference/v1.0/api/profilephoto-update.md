@@ -1,13 +1,13 @@
 ---
-title: "Update profilephoto"
-description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
-ms.localizationpriority: high
+title: "Update profilePhoto"
+description: "Update the photo for the signed-in user, or the specified group or contact."
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Update profilephoto
+# Update profilePhoto
 
 Namespace: microsoft.graph
 
@@ -83,7 +83,7 @@ In the request body, include the binary data of the photo in the request body.
 
 If successful, this method returns a `200 OK` response code.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -112,8 +112,9 @@ Binary data for the image
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

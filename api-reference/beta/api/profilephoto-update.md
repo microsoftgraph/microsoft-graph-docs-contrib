@@ -3,7 +3,7 @@ title: "Update profilephoto"
 description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "people"
 author: "kevinbellinger"
 ---
 
