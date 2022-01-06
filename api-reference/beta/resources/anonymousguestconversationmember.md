@@ -22,8 +22,8 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|anonymousGuestId|String|Unique Id representing the user. **Note:** This Id can change if the user leaves the meeting and join again or joins from a different device.|
-|displayName|String|Name provided by the user when joining meeting. Inherited from [conversationMember](../resources/conversationmember.md).|
+|anonymousGuestId|String|Unique Id representing the user. **Note:** This Id can change if the user leaves the meeting and joins again, or joins from a different device.|
+|displayName|String|Name provided by the user when joining the meeting. Inherited from [conversationMember](../resources/conversationmember.md).|
 |id|String|Membership Id representing this resource. Inherited from [entity](../resources/entity.md).|
 |roles|String collection|Special roles for this user. Inherited from [conversationMember](../resources/conversationmember.md).|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member. Inherited from [conversationMember](../resources/conversationmember.md).|

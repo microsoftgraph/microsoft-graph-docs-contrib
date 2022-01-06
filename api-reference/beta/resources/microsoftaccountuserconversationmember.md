@@ -1,6 +1,6 @@
 ---
 title: "microsoftAccountUserConversationMember resource type"
-description: "Represents a Microsoft personal account user in a chat"
+description: "Represents a personal Microsoft account user in a chat"
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft personal account user in a chat.
+Represents a personal Microsoft account user in a chat.
 
 
 Inherits from [conversationMember](../resources/conversationmember.md).
