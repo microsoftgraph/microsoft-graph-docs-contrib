@@ -2,8 +2,8 @@
 title: "Get regionalAndLanguageSettings resource"
 description: "Retrieve the properties of a user's regionalAndLanguageSettings"
 author: "jasonbro"
-localization_priority: Normal
-ms.prod: "settings"
+ms.localizationpriority: medium
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,6 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
 
 ## Request body
 Do not supply a request body for this method.
@@ -71,6 +70,14 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -125,7 +132,17 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ],
+        "untranslatedLanguages": ["de"]
+     }
 }
 ```
 

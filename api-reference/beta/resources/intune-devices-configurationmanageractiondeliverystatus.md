@@ -29,5 +29,3 @@ Delivery state of Configuration Manager device action
 
 
 
-
-

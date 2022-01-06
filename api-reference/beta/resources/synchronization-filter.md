@@ -1,10 +1,10 @@
 ---
 title: "filter resource type"
 description: "Determines which objects should be provisioned to the application."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # filter resource type

@@ -2,7 +2,7 @@
 title: "Add custom data to groups using schema extensions "
 description: "This article walks you through an example to demonstrate how to use *schema extensions*. "
 author: "dkershaw10"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -36,14 +36,26 @@ with additive changes. In general, this operation returns any schema extensions 
 
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-get"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 420
+
 {
     "value": [
         {
@@ -75,12 +87,17 @@ Then, specify a description (to enable discoverability), target types
 (defining which resources this extension applies to), and the custom properties that make up the schema.  In this example, 
 specify the `courseId`, `courseName` and `courseType` custom properties and their types.
 
-See an [example of the other way to assign **id** in the request](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0#request-2), that requires you to provide only a schema name.
+See an [example of the other way to assign **id** in the request](/graph/api/schemaextension-post-schemaextensions#request-2), that requires you to provide only a schema name.
 
 Notice that when you initially create a schema extension, its status is **InDevelopment**. While you're developing the extension, you can keep it in this status, 
 during which only your app that created it can update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to **Available**.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -106,11 +123,17 @@ Content-type: application/json
     ]
 }
 ```
+
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 420
 {
     "id": "graphlearn_courses",
     "description": "Graph Learn training courses extensions",
@@ -142,6 +165,11 @@ to the **group** resource, with the additional `graphlearn_courses` complex type
 We need to explicitly ```$select``` the extension by name using a ```GET``` operation.
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createGroupWithExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -160,10 +188,15 @@ Content-type: application/json
 }
 ```
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 420
 {
     "id": "dfc8016f-db97-4c47-a582-49cb8f849355",
     "createdDateTime": "2017-02-09T00:17:05Z",
@@ -185,10 +218,14 @@ Content-length: 420
 You can extend and add custom data to an _existing_ group instance with the additional `graphlearn_courses` complex type extension defined in the body of a ```PATCH``` request.  
 
 ### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-updateGroupWithExtension"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
-Content-length: 230
 {
     "graphlearn_courses":{
 	    "courseId":"123",
@@ -197,7 +234,14 @@ Content-length: 230
     }   
 }
 ```
+
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -220,16 +264,25 @@ group properties **displayName**, **id**, and **description**, and the custom da
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-getGroupSelectExtension"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 326
 {
   "value": [
     {
@@ -252,10 +305,5 @@ Content-length: 326
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
 - [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adding and Verifying a Domain for the NEW Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-- [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
-- [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
-- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
-- [Get schemaExtension](/graph/api/schemaextension-get?view=graph-rest-1.0)
-- [Update schemaExtension](/graph/api/schemaextension-update?view=graph-rest-1.0)
-- [Delete schemaExtension](/graph/api/schemaextension-delete?view=graph-rest-1.0)
+- [Adding and verifying a domain for Microsoft 365](/microsoft-365/admin/setup/add-domain)
+- [schemaExtension resource type](/graph/api/resources/schemaextension)

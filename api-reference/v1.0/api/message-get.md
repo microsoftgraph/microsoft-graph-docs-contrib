@@ -1,8 +1,8 @@
 ---
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
-author: "svpsiva"
-localization_priority: Priority
+author: "abheek-das"
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-4-get-mime-content) below.
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -73,7 +73,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 
 
 ## Examples
-### Example 1
+### Example 1: Get a specific message
 #### Request
 Here is an example of the request.
 
@@ -102,10 +102,14 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -180,7 +184,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get Internet message headers
 #### Request
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
 
@@ -207,6 +211,10 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-headers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-headers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -248,7 +256,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get message body in text format
 #### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
@@ -278,6 +286,10 @@ Prefer: outlook.body-content-type="text"
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-in-text-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -315,7 +327,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### Example 4
+### Example 4: Get MIME content
 #### Request
 The fourth example gets the MIME content of a message in the signed-in user's mailbox.
 
@@ -343,6 +355,10 @@ GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-mime-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-message-in-mime-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "educationSchool resource type"
 description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -101,7 +101,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->
 

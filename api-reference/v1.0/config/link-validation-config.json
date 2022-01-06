@@ -3,6 +3,7 @@
         "/aspnet",
         "/azure",
         "/cloud-app-security",
+        "/defender-for-identity",
         "/dotnet",
         "/dynamics-nav",
         "/exchange",
@@ -21,6 +22,8 @@
         "/previous-versions",
         "/skypeforbusiness",
         "/sharepoint",
+        "/universal-print",
+        "/troubleshoot",
         "/windows",
         "/windows-hardware"
     ]

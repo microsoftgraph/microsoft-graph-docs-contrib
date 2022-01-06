@@ -1,7 +1,7 @@
 ---
 title: "List workforceIntegrations"
 description: "Retrieve a list of workforceIntegration objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |  WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
+| Delegated (work or school account)     | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 [!INCLUDE [sample-code](../includes/snippets/java/get-workforceintegrations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-workforceintegrations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

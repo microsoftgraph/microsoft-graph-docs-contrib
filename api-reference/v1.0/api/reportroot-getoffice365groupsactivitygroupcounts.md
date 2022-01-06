@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityGroupCounts"
 description: "Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

@@ -11,19 +11,28 @@ const options = {
 const client = Client.init(options);
 
 const schemaExtension = {
-  properties: [
-    {
-      name:"new-name-value",
-      type:"new-type-value"
-    },
-    {
-      name:"additional-name-value",
-      type:"additional-type-value"
-    }
-  ]
+    owner: 'ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa',
+    properties: [
+        {
+            name: 'courseId',
+            type: 'Integer'
+        },
+        {
+            name: 'courseName',
+            type: 'String'
+        },
+        {
+            name: 'courseType',
+            type: 'String'
+        },
+        {
+            name: 'courseSupervisors',
+            type: 'String'
+        }
+    ]
 };
 
-let res = await client.api('/schemaExtensions/{id}')
+await client.api('/schemaExtensions/exto6x7sfft_courses')
 	.version('beta')
 	.update(schemaExtension);
 

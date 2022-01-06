@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateState resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -66,9 +66,6 @@ Here is a JSON representation of the resource.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
 
 
 

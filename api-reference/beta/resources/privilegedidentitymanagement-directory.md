@@ -1,22 +1,21 @@
 ---
 title: "Privileged Identity Management - Azure AD"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure Active Directory roles."
-localization_priority: Priority
-author: "shauliu"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: high
+author: "carolinetempleton"
+ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Privileged Identity Management - Azure AD
+# Privileged Identity Management - Azure AD (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> The API for [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) to manage Azure AD roles will change between June and November of 2019 to follow the namespace and convention of the [Azure resource API](privilegedidentitymanagement-resources.md). Azure AD PIM will become a resource under the Azure resource convention. If this change will directly affect your tenant, please complete the [Graph API change for Azure AD PIM form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) to get additional information, support, and the ability to schedule a time for this API change.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
-Here is the list of methods that are provided by PIM for Azure AD roles. The service is built on top of OData. To filter the results from a query, use the standard OData ``$filter`` expressions in the URIs.
+The following methods are provided by PIM for Azure AD roles. The service is built on top of OData. To filter the results from a query, use the standard OData `$filter` expressions in the URIs.
 
 ## Methods
 

@@ -32,10 +32,10 @@ Role Scope Tag
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated.|
+|id|String|Key of the entity. This is read-only and automatically generated. This property is read-only.|
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
-|isBuiltIn|Boolean|Description of the Role Scope Tag.|
+|isBuiltIn|Boolean|Description of the Role Scope Tag. This property is read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -59,8 +59,6 @@ Here is a JSON representation of the resource.
   "isBuiltIn": true
 }
 ```
-
-
 
 
 

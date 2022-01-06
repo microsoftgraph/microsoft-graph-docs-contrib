@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var startCell = "startCell-value";
+var startCell = JsonDocument.Parse(@"""startCell-value""");
 
-var endCell = "endCell-value";
+var endCell = JsonDocument.Parse(@"""endCell-value""");
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
 	.SetPosition(startCell,endCell)
 	.Request()
 	.PostAsync();

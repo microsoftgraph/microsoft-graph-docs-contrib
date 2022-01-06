@@ -2,12 +2,12 @@
 title: "relatedContact resource type"
 description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# realtedContact resource type
+# relatedContact resource type
 
 Namespace: microsoft.graph
 

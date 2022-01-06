@@ -24,6 +24,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |Property|Type|Description|
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
+|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
 
 ## Relationships
 None
@@ -38,11 +39,10 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOsVppAppAssignmentSettings",
-  "useDeviceLicensing": true
+  "useDeviceLicensing": true,
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
-
 
 
 

@@ -1,17 +1,18 @@
 ---
-title: "List all identityProviders in a b2cIdentityUserFlow"
-description: "List all identityProviders in a b2cIdentityUserFlow."
-localization_priority: Normal
+title: "List all identityProviders in a b2cIdentityUserFlow (deprecated)"
+description: "List all identityProviders in a b2cIdentityUserFlow. (deprecated)"
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2cIdentityUserFlow
+# List all identityProviders in a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Get the identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
@@ -35,7 +36,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2cUserFlows/{id}/identityProviders
+GET /identity/b2cUserFlows/{id}/identityProviders
 ```
 
 ## Request headers
@@ -81,6 +82,14 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProvider
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflow-list-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,5 +126,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The IdentitySet resource is a keyed collection of identity resources."
 ms.prod: ""
 doc_type: resourcePageType

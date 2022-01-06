@@ -1,7 +1,7 @@
 ---
 title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationPointsOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

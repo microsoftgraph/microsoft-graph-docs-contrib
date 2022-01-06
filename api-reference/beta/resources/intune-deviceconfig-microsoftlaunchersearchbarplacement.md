@@ -28,5 +28,3 @@ Microsoft Launcher Search Bar Placement selection.
 
 
 
-
-

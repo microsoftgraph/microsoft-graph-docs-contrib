@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean bargeInAllowed = true;
+Boolean bargeInAllowed = true;
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
 
@@ -25,7 +25,7 @@ int initialSilenceTimeoutInSeconds = 5;
 
 int maxSilenceTimeoutInSeconds = 2;
 
-boolean playBeep = true;
+Boolean playBeep = true;
 
 LinkedList<String> stopTonesList = new LinkedList<String>();
 stopTonesList.add("#");
@@ -33,7 +33,17 @@ stopTonesList.add("1");
 stopTonesList.add("*");
 
 graphClient.communications().calls("{id}")
-	.recordResponse(promptsList,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,stopTonesList,clientContext)
+	.recordResponse(CallRecordResponseParameterSet
+		.newBuilder()
+		.withPrompts(promptsList)
+		.withBargeInAllowed(bargeInAllowed)
+		.withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
+		.withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
+		.withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
+		.withPlayBeep(playBeep)
+		.withStopTones(stopTonesList)
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

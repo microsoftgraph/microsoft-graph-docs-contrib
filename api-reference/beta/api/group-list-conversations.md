@@ -1,8 +1,8 @@
 ---
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
-author: "yyuank"
-localization_priority: Normal
+author: "Jordanndahl"
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -31,7 +31,7 @@ GET /groups/{id}/conversations
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -68,12 +68,20 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conversations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-#### Response
+### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,21 +91,21 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
-  "value": [
-    {
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "preview": "preview-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f448435d-3ca7-4073-8152-a1fd73c0fd09')/conversations",
+    "value": [
+        {
+            "id": "AAQkAGFhZDhkNGI1LTliZmEtNGEzMi04NTkzLWZjMWExZDkyMWEyZgAQAH4o7SknOTNKqAqMhqJHtUM=",
+            "topic": "The new All Company group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T10:34:00Z",
+            "uniqueSenders": [
+                "All Company"
+            ],
+            "preview": "Welcome to the All Company group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Share filesView, edit, and share all group files, including email attachments.Connect your"
+        }
+    ]
 }
 ```
 

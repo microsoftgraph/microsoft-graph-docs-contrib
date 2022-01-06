@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSharePointActivityFileCounts"
 description: "Get the number of unique, licensed users who interacted with files stored on SharePoint sites."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

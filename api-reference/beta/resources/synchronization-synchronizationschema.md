@@ -1,10 +1,10 @@
 ---
 title: "synchronizationSchema resource type"
 description: "Defines what objects will be synchronized and how they will be synchronized."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema resource type

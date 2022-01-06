@@ -1,8 +1,8 @@
 ---
 title: "messageRuleActions resource type"
 description: "Represents the set of actions that are available to a rule."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

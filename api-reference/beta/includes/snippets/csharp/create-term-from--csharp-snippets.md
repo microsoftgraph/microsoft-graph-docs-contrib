@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var term = new Term
+var term = new Microsoft.Graph.TermStore.Term
 {
-	Labels = new List<LocalizedLabel>()
+	Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
 	{
-		new LocalizedLabel
+		new Microsoft.Graph.TermStore.LocalizedLabel
 		{
 			LanguageTag = "en-US",
 			Name = "Car",
@@ -19,7 +19,7 @@ var term = new Term
 	}
 };
 
-await graphClient.TermStore.Sets["{setId}"].Terms
+await graphClient.TermStore.Sets["{termStore.set-id}"].Children
 	.Request()
 	.AddAsync(term);
 

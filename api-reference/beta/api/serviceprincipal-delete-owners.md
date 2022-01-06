@@ -2,8 +2,8 @@
 title: "Remove owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -55,9 +55,8 @@ The following example shows the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -87,12 +86,10 @@ Content-length: 30
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -111,5 +108,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

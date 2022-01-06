@@ -1,7 +1,7 @@
 ---
 title: "Use the activity feed REST API"
 description: "You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via delegated permissions and the user activity permission, which can be used with either personal or work and school accounts. "
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 doc_type: conceptualPageType
 author: "ailae"
@@ -28,7 +28,7 @@ User activities don’t just launch apps — they are deep links into specific c
 
 Because every app is different, it's up to each app developer to understand the best way to map actions within your application to user activities. For example, games might create an activity for each campaign, document authoring apps might create an activity for each unique document, and line-of-business apps might create an activity for each workflow.
 
-Apply the following guidlines as you define activitites in your app:
+Apply the following guidelines as you define activities in your app:
 
 **DO:** Record a single activity for a group of related user actions.
 If your application is used for a sequence of related content, it probably makes sense to record a single activity for the entire engagement session.

@@ -1,8 +1,8 @@
 ---
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
-author: "svpsiva"
-localization_priority: Normal
+author: "abheek-das"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -62,7 +62,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 Content-type: application/json
-Content-length: 142
 
 {
   "@odata.type": "microsoft.graph.fileAttachment",
@@ -89,17 +88,19 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-from-eventmessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -117,12 +118,13 @@ HTTP/1.1 201 Created
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "{message or event entity}"
+  "item": {
+    "@odata.type": "microsoft.graph.message"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -141,6 +143,10 @@ Content-length: 100
 [!INCLUDE [sample-code](../includes/snippets/java/create-item-attachment-from-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-item-attachment-from-eventmessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -148,9 +154,7 @@ Content-length: 100
 Here is an example of the response. Note: The response object shown here may be
 truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created

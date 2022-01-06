@@ -1,10 +1,10 @@
 ---
 title: "Configuring the invitation message"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "elisolMS"
+ms.prod: "identity-and-sign-in"
+author: "Sammak"
 ---
 
 # Configuring the invitation message

@@ -2,7 +2,7 @@
 title: "termstore enum values"
 description: "Microsoft Graph termstore enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Sharepoint"
 author: mohitpcad
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.termstore
 
 Specifies the value types relations can take in a termstore
 
-|Members|
+|Member|
 |:---|
 |pin|
 |reuse|
@@ -24,7 +24,7 @@ Specifies the value types relations can take in a termstore
 
 Specifies the values different group types can take within the termstore
 
-|Members|
+|Member|
 |:---|
 |global|
 |system|

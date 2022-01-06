@@ -1,8 +1,8 @@
 ---
 title: "Enable an event as an online meeting in an Outlook calendar"
 description: "In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers."
-author: "angelgolfer-ms"
-localization_priority: Priority
+author: "juforan"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 

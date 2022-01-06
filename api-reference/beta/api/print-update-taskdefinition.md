@@ -2,7 +2,7 @@
 title: Update taskDefinition
 description: Update a task definition.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -49,7 +49,7 @@ In the request body, supply the values for the relevant [printTaskDefinition](..
 |createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and an updated [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
 ## Example
 ### Request
 The following is an example of the request.
@@ -63,7 +63,6 @@ The following is an example of the request.
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
 Content-type: application/json
-Content-length: 122
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -84,6 +83,14 @@ Content-length: 122
 [!INCLUDE [sample-code](../includes/snippets/objc/print-update-taskdefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/print-update-taskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/print-update-taskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,10 +99,24 @@ Content-length: 122
 ### Response
 The following is an example of the response.
 <!-- {
-  "blockType": "response"
-} -->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
+  "createdBy": {
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
+    "displayName": "Requesting App Display Name"
+  }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

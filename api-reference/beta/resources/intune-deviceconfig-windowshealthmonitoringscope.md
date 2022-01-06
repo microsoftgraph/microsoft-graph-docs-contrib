@@ -28,5 +28,3 @@ Device health monitoring scope
 
 
 
-
-

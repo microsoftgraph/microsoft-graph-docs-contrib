@@ -2,7 +2,7 @@
 title: "workbookTableColumn resource type"
 description: "Represents a column in a table."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

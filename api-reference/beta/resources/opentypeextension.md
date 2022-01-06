@@ -1,7 +1,7 @@
 ---
 title: "openTypeExtension resource type (open extensions)"
 description: "Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
 ms.prod: "extensions"
@@ -25,7 +25,7 @@ Open extensions are supported by the following resources in the corresponding ve
 
 | Resource | Version |
 |---------------|-------|
-| [Administrative unit](administrativeunit.md)  | Preview only |
+| [Administrative unit](administrativeunit.md)  | GA |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
@@ -35,8 +35,8 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [User](user.md) | GA |
-| [Task](todotask.md)  | Preview only ||
-| [Task list](todotasklist.md)  | Preview only ||
+| [Task](basetask.md)  | GA |
+| [Task list](basetasklist.md)  | GA |
 
 ## Outlook-specific considerations
 
@@ -49,11 +49,8 @@ Apply the following guidelines when you create open extensions on Outlook resour
 
 ### Use open extensions (for Outlook resources) or extended properties
 
-Open extensions is the recommended solution for most scenarios involving storing and accessing custom data. If, however,
-you need to access custom data for Outlook MAPI properties that are not already exposed through the
-[Microsoft Graph API metadata](../index.md), you can use
-[extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
-exposes at [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Open extensions are the recommended solution for most scenarios involving storing and accessing custom data. If, however, you need to access custom data for Outlook MAPI properties that are not already exposed through the [Microsoft Graph API metadata](/graph/traverse-the-graph#microsoft-graph-api-metadata), you can use [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
+exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 ## JSON representation
 
@@ -72,7 +69,6 @@ Here is a JSON representation of the resource
   "extensionName": "string",
   "id": "string (identifier)"
 }
-
 ```
 
 ## Properties
@@ -90,7 +86,8 @@ None
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [Task](basetask.md), or [TaskList](basetasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
 

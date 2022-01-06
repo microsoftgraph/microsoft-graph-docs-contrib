@@ -1,13 +1,13 @@
 ---
-title: "Attach educationRubric to educationAssignment"
+title: "Attach educationRubric to an educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Create educationRubric
+# Attach educationRubric to an educationAssignment
 
 Namespace: microsoft.graph
 
@@ -79,6 +79,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -86,7 +90,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -96,6 +100,9 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 
 

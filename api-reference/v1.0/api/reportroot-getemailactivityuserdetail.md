@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getEmailActivityUserDetail"
 description: "Get details about email activity users have performed."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

@@ -2,8 +2,8 @@
 title: "synchronization: acquireAccessToken"
 description: "Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application"
 author: "ArvindHarinder1"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -15,11 +15,11 @@ Acquire an OAuth Access token to authorize the Azure AD provisioning service to 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## HTTP request
 
@@ -66,7 +66,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/applications/{applicationsId}/synchronization/acquireAccessToken
 Content-Type: application/json
-Content-length: 123
 
 {
   "credentials": [
@@ -86,6 +85,14 @@ Content-length: 123
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronization-acquireaccesstoken-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronization-acquireaccesstoken-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronization-acquireaccesstoken-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

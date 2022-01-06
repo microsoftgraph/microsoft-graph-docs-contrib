@@ -2,8 +2,8 @@
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
 author: "mmcla"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -17,18 +17,18 @@ Retrieve the properties and relationships of the [fido2AuthenticationMethodConfi
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-For delegated scenarios the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global admin
-* Global reader
-* Privileged authentication admin
-* Authentication admin
+* Global Reader
+* Authentication Policy Administrator
+* Global Administrator
+
 
 ## HTTP request
 
@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_fido2authenticationmethodconfiguration"
@@ -63,6 +65,24 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-fido2authenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -78,29 +98,30 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "id": "Fido2",
-    "state": "enabled",
-    "isSelfServiceRegistrationAllowed": true,
-    "isAttestationEnforced": true,
-    "keyRestrictions": {
-        "isEnforced": false,
-        "enforcementType": "block",
-        "aaGuids": []
-    },
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
+      "id":"Fido2",
+      "state":"enabled",
+      "isSelfServiceRegistrationAllowed":true,
+      "isAttestationEnforced":true,
+      "keyRestrictions":{
+         "isEnforced":false,
+         "enforcementType":"block",
+         "aaGuids":[
+            
+         ]
+      },
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false,
+            "useForSignIn":true
+         }
+      ]
+   }
 }
 ```
 

@@ -20,11 +20,11 @@ Read properties and relationships of the [windowsProtectionState](../resources/i
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 971
+Content-Length: 1083
 
 {
   "value": {
@@ -85,12 +85,13 @@ Content-Length: 971
     "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
     "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
     "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+    "productStatus": "serviceNotRunning",
+    "isVirtualMachine": true,
+    "tamperProtectionEnabled": true
   }
 }
 ```
-
-
 
 
 

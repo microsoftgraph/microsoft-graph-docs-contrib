@@ -1,7 +1,7 @@
 ---
 title: "Create plannerPlan"
 description: "Use this API to create a new **plannerPlan**."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (work or school account)     | Tasks.ReadWrite, Group.ReadWrite.All                         |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
@@ -65,7 +65,6 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
-Content-length: 381
 
 {
   "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
@@ -88,6 +87,10 @@ Content-length: 381
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-plannerplan-from-planner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -95,7 +98,7 @@ In the request body, supply a JSON representation of [plannerPlan](../resources/
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -105,7 +108,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

@@ -1,9 +1,9 @@
 ---
 title: "Update agreement"
 description: "Update the properties of an agreement object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -23,10 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Conditional Access Administrator
++ Security Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /agreements/{id}
+PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -46,15 +51,15 @@ If successful, this method returns a `200 OK` response code and an updated [agre
 ## Example
 ##### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agreement"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/agreements/{id}
+PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "displayName-value",
@@ -73,10 +78,19 @@ Content-length: 85
 [!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -86,7 +100,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "displayName-value",

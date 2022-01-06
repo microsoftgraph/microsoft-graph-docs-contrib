@@ -18,11 +18,11 @@ var criteria = new WorkbookFilterCriteria
 		Index = 99
 	},
 	DynamicCriteria = "dynamicCriteria-value",
-	Values = JToken.Parse("{}"),
+	Values = JsonDocument.Parse("{}"),
 	FilterOn = "filterOn-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns["{id|name}"].Filter
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].Filter
 	.Apply(criteria)
 	.Request()
 	.PostAsync();

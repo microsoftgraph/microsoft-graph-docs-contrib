@@ -1,7 +1,7 @@
 ---
 title: "Using the activity feed API in Microsoft Graph to enable cross-device experiences"
 description: "When you use activities, these Microsoft experiences can start driving engagement with your app. You can also display activities in your apps to help users get back to what they were doing on any device, on any platform, including Windows, Android, and iOS."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 ---
 
@@ -26,4 +26,4 @@ Integrating with user activities not only enables users to resume activities in 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
 - [Publish activities and history items with one request using deep insert](/graph/api/projectrome-put-activity?view=graph-rest-1.0#example-2---deep-insert)
-- [Learn more about Project Rome](https://aka.ms/projectrome)
+- [Learn more about Project Rome](/windows/project-rome/)

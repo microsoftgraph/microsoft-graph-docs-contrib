@@ -1,8 +1,8 @@
 ---
 title: "attachmentItem resource type"
 description: "Represents attributes of an item to be attached."
-localization_priority: Normal
-author: "svpsiva"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---

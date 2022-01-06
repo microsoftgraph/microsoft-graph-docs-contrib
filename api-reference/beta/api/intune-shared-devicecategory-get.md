@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCategory"
 description: "Read properties and relationships of the deviceCategory object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 
@@ -101,3 +101,12 @@ Content-Length: 211
   }
 }
 ```
+
+
+
+
+
+
+
+
+

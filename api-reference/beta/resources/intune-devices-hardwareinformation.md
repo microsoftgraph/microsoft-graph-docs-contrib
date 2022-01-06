@@ -47,6 +47,12 @@ Hardware information of a given device.
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |osBuildNumber|String|Operating System Build Number on Android device|
 |operatingSystemProductType|Int32|Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647|
+|ipAddressV4|String|IPAddressV4|
+|subnetAddress|String|SubnetAddress|
+|esimIdentifier|String|eSIM identifier|
+|systemManagementBIOSVersion|String|BIOS version as reported by SMBIOS|
+|tpmManufacturer|String|The identifying information that uniquely names the TPM manufacturer|
+|tpmVersion|String|The version of the TPM, as specified by the manufacturer|
 
 ## Relationships
 None
@@ -95,11 +101,15 @@ Here is a JSON representation of the resource.
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
   "osBuildNumber": "String",
-  "operatingSystemProductType": 1024
+  "operatingSystemProductType": 1024,
+  "ipAddressV4": "String",
+  "subnetAddress": "String",
+  "esimIdentifier": "String",
+  "systemManagementBIOSVersion": "String",
+  "tpmManufacturer": "String",
+  "tpmVersion": "String"
 }
 ```
-
-
 
 
 

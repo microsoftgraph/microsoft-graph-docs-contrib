@@ -2,8 +2,8 @@
 title: "domain: forceDelete"
 description: "Deletes a domain using an asynchronous operation."
 author: "adimitui"
-localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous operation.
 
+Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
+
 The following actions are performed as part of this operation:
 
 * Renames the UPN, EmailAddress, and ProxyAddress of users with references to the deleted domain.
@@ -23,7 +25,7 @@ The following actions are performed as part of this operation:
 
 * Renames the identifierUris of applications with references to the deleted domain.
 
-* If the number of objects to be renamed is greater than 1000, an error is returned.
+* If the number of objects to be renamed is greater than 1,000, an error is returned.
 
 * If one of the applications to be renamed is a multi-tenant app, an error is returned.
 
@@ -36,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Domain.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 
@@ -69,7 +71,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code. 
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,7 +81,6 @@ If successful, this method returns `200 OK` response code.
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true
@@ -97,15 +98,21 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

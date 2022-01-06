@@ -1,10 +1,10 @@
 ---
 title: "synchronizationJobRestartCriteria resource type"
 description: "Defines the scope of the synchronizationJob: restart action."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJobRestartCriteria resource type

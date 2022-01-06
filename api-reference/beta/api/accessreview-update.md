@@ -1,9 +1,9 @@
 ---
 title: "Update accessReview"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -42,17 +42,17 @@ In the request body, supply a JSON representation of the parameters of an [acces
 
 The following table shows the properties that can be supplied when you update an accessReview.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | The access review name.  |
-| `startDateTime`           |`DateTimeOffset`                                                | The DateTime when the review is scheduled to be start.  This must be a date in the future.   |
-| `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
-| `description`             |`String`                                                        | The description, to show to the reviewers. |
+| Property      | Type           | Description                                                                                                |
+|:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
+| displayName   | String         | The access review name.                                                                                    |
+| startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start.  This must be a date in the future.                 |
+| endDateTime   | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date. |
+| description   | String         | The description, to show to the reviewers.                                                                 |
 
 
 
 ## Response
-If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `204 Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 
@@ -87,11 +87,19 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

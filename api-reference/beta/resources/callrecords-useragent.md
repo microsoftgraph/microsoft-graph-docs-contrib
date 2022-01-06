@@ -1,8 +1,8 @@
 ---
 title: "userAgent resource type"
 description: "The userAgent type"
-localization_priority: Normal
-author: "stephenjust"
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

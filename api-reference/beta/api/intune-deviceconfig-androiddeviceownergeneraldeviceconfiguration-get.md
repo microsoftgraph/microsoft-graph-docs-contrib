@@ -20,11 +20,11 @@ Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfigu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6589
+Content-Length: 9557
 
 {
   "value": {
@@ -101,6 +101,15 @@ Content-Length: 6589
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "azureAdSharedDeviceDataClearApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "accountsBlockModification": true,
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
@@ -111,6 +120,9 @@ Content-Length: 6589
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "crossProfilePoliciesAllowCopyPaste": true,
+    "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+    "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
     "microsoftLauncherConfigurationEnabled": true,
     "microsoftLauncherCustomWallpaperEnabled": true,
     "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -132,6 +144,11 @@ Content-Length: 6589
       "proxyAutoConfigURL": "Proxy Auto Config URL value"
     },
     "googleAccountsBlocked": true,
+    "kioskCustomizationDeviceSettingsBlocked": true,
+    "kioskCustomizationPowerButtonActionsBlocked": true,
+    "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+    "kioskCustomizationSystemErrorWarnings": true,
+    "kioskCustomizationSystemNavigation": "navigationEnabled",
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -164,6 +181,45 @@ Content-Length: 6589
     "kioskModeWifiAllowedSsids": [
       "Kiosk Mode Wifi Allowed Ssids value"
     ],
+    "kioskModeAppOrderEnabled": true,
+    "kioskModeAppsInFolderOrderedByName": true,
+    "kioskModeGridHeight": 3,
+    "kioskModeGridWidth": 2,
+    "kioskModeLockHomeScreen": true,
+    "kioskModeManagedFolders": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+        "folderName": "Folder Name value",
+        "folderIdentifier": "Folder Identifier value",
+        "items": [
+          {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        ]
+      }
+    ],
+    "kioskModeAppPositions": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+        "position": 8,
+        "item": {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      }
+    ],
+    "kioskModeManagedHomeScreenAutoSignout": true,
+    "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+    "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+    "kioskModeManagedHomeScreenPinComplexity": "simple",
+    "kioskModeManagedHomeScreenPinRequired": true,
+    "kioskModeManagedHomeScreenPinRequiredToResume": true,
+    "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+    "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+    "kioskModeManagedHomeScreenSignInEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -184,9 +240,8 @@ Content-Length: 6589
     "passwordRequiredType": "required",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "playStoreMode": "allowList",
-    "safeBootBlocked": true,
     "screenCaptureBlocked": true,
-    "securityAllowDebuggingFeatures": true,
+    "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
     "statusBarBlocked": true,
     "stayOnModes": [
@@ -195,6 +250,15 @@ Content-Length: 6589
     "storageAllowUsb": true,
     "storageBlockExternalMedia": true,
     "storageBlockUsbFileTransfer": true,
+    "systemUpdateFreezePeriods": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+        "startMonth": 10,
+        "startDay": 8,
+        "endMonth": 8,
+        "endDay": 6
+      }
+    ],
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
@@ -209,6 +273,16 @@ Content-Length: 6589
     "personalProfileAppsAllowInstallFromUnknownSources": true,
     "personalProfileCameraBlocked": true,
     "personalProfileScreenCaptureBlocked": true,
+    "personalProfilePlayStoreMode": "blockedApps",
+    "personalProfilePersonalApplications": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "workProfilePasswordExpirationDays": 1,
     "workProfilePasswordMinimumLength": 0,
     "workProfilePasswordMinimumNumericCharacters": 11,
@@ -223,8 +297,6 @@ Content-Length: 6589
   }
 }
 ```
-
-
 
 
 

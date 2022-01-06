@@ -10,11 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users')
+let applications = await client.api('/applications')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
-	.filter('startswith(displayName,'a'),')
-	.orderby('displayName ')
+	.filter('startswith(displayName, \'a\')')
+	.orderby('displayName')
 	.top(1)
 	.get();
 

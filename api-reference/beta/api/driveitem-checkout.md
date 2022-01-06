@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Check out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
 title: "driveItem: checkout"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -61,6 +61,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/checkout-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

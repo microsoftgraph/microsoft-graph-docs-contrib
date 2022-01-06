@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var users = await graphClient.Users
+var applications = await graphClient.Applications
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName,'a'),")
-	.OrderBy("displayName ")
+	.Filter("startswith(displayName, 'a')")
+	.OrderBy("displayName")
 	.Top(1)
 	.GetAsync();
 

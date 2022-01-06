@@ -28,5 +28,3 @@ Possible values of Credential Guard settings.
 
 
 
-
-

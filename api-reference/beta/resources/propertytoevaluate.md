@@ -1,9 +1,9 @@
 ---
 title: "propertyToEvaluate resource type"
 description: "Defines the name and the value of the property."
-localization_priority: Normal
-author: "yyuank"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "Jordanndahl"
+ms.prod: "groups"
 doc_type: "resourcePageType"
 ---
 

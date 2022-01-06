@@ -1,10 +1,10 @@
 ---
 title: "objectMapping resource type"
 description: "Defines how a given object should be synchronized from source directory to target directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectMapping resource type

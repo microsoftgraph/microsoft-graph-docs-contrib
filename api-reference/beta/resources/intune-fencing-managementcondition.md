@@ -34,7 +34,7 @@ Management conditions are events that can be triggered dynamically such as geo-f
 |createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side.|
 |eTag|String|ETag of the management condition. Updated service side.|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition.|
+|applicablePlatforms|[devicePlatformType](../resources/intune-fencing-deviceplatformtype.md) collection|The applicable platforms for this management condition.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -64,9 +64,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
 
 
 

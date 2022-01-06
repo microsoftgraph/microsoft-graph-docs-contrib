@@ -27,5 +27,3 @@ Wi-Fi Proxy Settings.
 
 
 
-
-

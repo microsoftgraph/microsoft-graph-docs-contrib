@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
 description: "Use the special collection to access a special folder by name."
-ms.date: 09/10/2017
 title: Get Special Folders
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 # Get a special folder by name
@@ -52,20 +51,15 @@ GET /me/drive/special/{name}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-special-folder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Special folder names
-
-The follow special folder names are available in OneDrive and OneDrive for Business.
-
-| Name        | Folder id    | Description                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
-| Documents   | `documents`  | The Documents folder.                                                    |
-| Photos      | `photos`     | The Photos folder.                                                       |
-| Camera Roll | `cameraroll` | The Camera Roll Backup folder.                                           |
-| App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
-| Music       | `music`      | The Music folder.                                                        |
+[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
 
 
 ### Optional query parameters
@@ -118,6 +112,10 @@ GET /me/drive/special/{name}/children
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

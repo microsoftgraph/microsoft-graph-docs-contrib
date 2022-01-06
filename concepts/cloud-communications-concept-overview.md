@@ -2,7 +2,7 @@
 title: "Cloud communications API overview"
 description: "The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
@@ -11,7 +11,7 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 
 ## Why integrate with the cloud communications APIs?
 
-Discover the benefits of using cloud communications APIs to buid service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
+Discover the benefits of using cloud communications APIs to build service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
 
 ### Handle incoming calls
 

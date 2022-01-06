@@ -29,5 +29,3 @@ Setting comparison result type
 
 
 
-
-

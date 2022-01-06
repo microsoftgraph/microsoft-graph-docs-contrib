@@ -27,5 +27,3 @@ TV content rating labels in United Kingdom
 
 
 
-
-

@@ -64,6 +64,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |md5HashChunkSize|Int32|The chunk size for MD5 hash|
 |md5Hash|String collection|The MD5 hash codes|
 |ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for macOS Line of Business (LoB) apps that use a self update feature.|
+|installAsManaged|Boolean|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -127,7 +128,9 @@ Here is a JSON representation of the resource.
     "v10_12": true,
     "v10_13": true,
     "v10_14": true,
-    "v10_15": true
+    "v10_15": true,
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",
@@ -144,11 +147,10 @@ Here is a JSON representation of the resource.
   "md5Hash": [
     "String"
   ],
-  "ignoreVersionDetection": true
+  "ignoreVersionDetection": true,
+  "installAsManaged": true
 }
 ```
-
-
 
 
 

@@ -2,7 +2,7 @@
 title: Get printJob
 description: Retrieve the properties and relationships of a print job.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -18,7 +18,7 @@ Retrieve the properties and relationships of a print job.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) or [Get printerShare](printershare-get.md) access depending upon whether printer or printerShare is being used.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -28,8 +28,15 @@ In addition to the following permissions, the user or app's tenant must have an 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
+
+To get a job from a printer:
 ```http
 GET /print/printers/{id}/jobs/{id}
+```
+
+To get a job from a printer share:
+```http
+GET /print/shares/{id}/jobs/{id}
 ```
 
 ## Optional query parameters
@@ -71,11 +78,15 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,7 +95,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 408
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
@@ -92,9 +102,14 @@ Content-length: 408
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {},
   "status": {
-    "processingState": "completed",
-    "processingStateDescription": "The print job has completed successfully and no further processing will take place."
-  }
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false
 }
 ```
 
@@ -113,7 +128,7 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,7 +137,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 774
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
@@ -134,8 +148,15 @@ Content-length: 774
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "pendingHeld",
-    "processingStateDescription": "The job is not a candidate for processing yet."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "tasks": [
     {
@@ -174,6 +195,10 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printjob-withdocumentdata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printjob-withdocumentdata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -181,7 +206,7 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -190,7 +215,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1688
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
@@ -204,8 +228,15 @@ Content-length: 1688
     "oDataType": null
   },
   "status": {
-  "processingState": "aborted",
-  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
@@ -213,28 +244,7 @@ Content-length: 1688
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
       "displayName": "",
       "contentType": "application/oxps",
-      "size": 276604,
-      "configuration": {
-        "quality": "medium",
-        "dpi": 300,
-        "feedDirection": null,
-        "orientation": "landscape",
-        "duplexMode": "oneSided",
-        "copies": 2,
-        "colorMode": "color",
-        "inputBin": null,
-        "outputBin": null,
-        "mediaSize": null,
-        "mediaType": null,
-        "finishings": [],
-        "pagesPerSheet": null,
-        "multipageLayout": "clockwiseFromTopLeft",
-        "collate": true,
-        "scaling": null,
-        "fitPdfToPage": null,
-        "margin": null,
-        "pageRanges": []
-      }
+      "size": 276604
     }
   ]
 }

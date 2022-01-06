@@ -2,7 +2,7 @@
 title: "todoTask resource type"
 description: "A todoTask resource tracks a work item."
 author: "avijityadav"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -19,7 +19,9 @@ A **todoTask** is always contained in a [todoTaskList](todotasklist.md). It incl
 
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
+* Subscribing to [change notifications](/graph/webhooks).
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
+
 
 ## Methods
 |Method|Return type|Description|

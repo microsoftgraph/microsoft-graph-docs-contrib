@@ -1,7 +1,7 @@
 ---
 title: "workbookOperation resource type"
 description: "Represents the status of a long-running workbook operations."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "resourcePageType"
@@ -37,19 +37,22 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
-  "resourceLocation": "String"
+  "status": "String",
+  "resourceLocation": "String",
+  "statusCode": "Integer",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  }
 }
 ```
 

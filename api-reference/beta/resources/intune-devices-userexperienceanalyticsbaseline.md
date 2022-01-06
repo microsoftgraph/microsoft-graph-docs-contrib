@@ -41,6 +41,10 @@ The user experience analytics baseline entity contains baseline values against w
 |deviceBootPerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics device boot performance metrics.|
 |bestPracticesMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics best practices metrics.|
 |rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics reboot analytics metrics.|
+|resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics resource performance metrics.|
+|appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics app health metrics.|
+|workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics work from anywhere metrics.|
+|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics battery health metrics.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -60,8 +64,6 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

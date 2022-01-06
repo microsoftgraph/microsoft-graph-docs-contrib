@@ -1,8 +1,8 @@
 ---
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
-localization_priority: Normal
-author: "svpsiva"
+ms.localizationpriority: medium
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -49,6 +49,7 @@ To create an upload session for attaching a file to an **event**:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
 To create an upload session for attaching a file to a **message**: 
@@ -56,6 +57,7 @@ To create an upload session for attaching a file to a **message**:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
 ## Request headers
@@ -128,12 +130,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

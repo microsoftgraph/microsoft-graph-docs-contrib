@@ -1,9 +1,9 @@
 ---
 title: "applicationSignInDetailedSummary resource type"
 description: "Represents an application sign-in summary."
-localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+ms.localizationpriority: medium
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -19,16 +19,18 @@ Represents an application sign-in summary.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
+| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Name of the application that the user signed in to.|
-|appId|String|  ID of the application that the user signed i nto.|
+|appDisplayName|String|Name of the application that the user signed into.|
 |failedSignInCount|Int64|Count of failed sign-ins made by the application.|
 |successPercentage|Int32|Percentage of successful sign-ins made by the application.|
 |successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
+<!--Hiding this because it's not in the metadata nor in public response objects
+|appId|String|  Identifier of the application that the user signed into.|
+-->
 
 ## Relationships
 None

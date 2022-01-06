@@ -32,5 +32,3 @@ Android keyguard feature.
 
 
 
-
-

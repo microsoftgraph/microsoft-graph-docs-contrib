@@ -1,8 +1,8 @@
 ---
 title: "meetingTimeSuggestionsResult resource type"
 description: "A collection of meeting suggestions if there is any, or the reason if there isn't."
-localization_priority: Normal
-author: "angelgolfer-ms"
+ms.localizationpriority: medium
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

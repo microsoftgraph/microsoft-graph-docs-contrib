@@ -1,8 +1,8 @@
 ---
 title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Recurring events are an important part of Outlook calendaring. Whether it's a weekly one-on-one meeting with your manager, or a division-wide review meeting that happens on the second Tuesday of each month, recurring events make it easy to create the event once, and let the server fill in the rest of the series."
-author: "angelgolfer-ms"
-localization_priority: Priority
+author: "harini84"
+ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 

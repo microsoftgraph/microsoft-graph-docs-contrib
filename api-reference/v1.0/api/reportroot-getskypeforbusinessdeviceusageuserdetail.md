@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getSkypeForBusinessDeviceUsageUserDetail"
 description: "Get details about Skype for Business device usage by user."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

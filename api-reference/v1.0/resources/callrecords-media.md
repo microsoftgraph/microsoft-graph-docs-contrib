@@ -1,8 +1,8 @@
 ---
 title: "media resource type"
 description: "The media type"
-localization_priority: Normal
-author: "stephenjust"
+ms.localizationpriority: medium
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
