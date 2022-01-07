@@ -827,6 +827,15 @@ items:
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List
+            href: api/applicationtemplate-list.md
+          - name: Get
+            href: api/applicationtemplate-get.md
+          - name: Instantiate
+            href: api/applicationtemplate-instantiate.md
         - name: Certificates and secrets
           items:
           - name: Add password
@@ -876,15 +885,12 @@ items:
               href: api/application-list-tokenlifetimepolicies.md
             - name: Remove
               href: api/application-delete-tokenlifetimepolicies.md
-        - name: Application template
-          href: resources/applicationtemplate.md
+        - name: Verified publisher
           items:
-          - name: List
-            href: api/applicationtemplate-list.md
-          - name: Get
-            href: api/applicationtemplate-get.md
-          - name: Instantiate
-            href: api/applicationtemplate-instantiate.md
+          - name: Set
+            href: api/application-setverifiedpublisher.md
+          - name: Unset
+            href: api/application-unsetverifiedpublisher.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
