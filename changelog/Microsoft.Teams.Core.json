@@ -1712,6 +1712,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4aa57b33-f891-4008-a401-6666f3f112bb",
+          "ApiChange": "Property",
+          "ChangedApiName": "onBehalfOf",
+          "ChangeType": "Addition",
+          "Description": "Added the **onBehalfOf** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "4aa57b33-f891-4008-a401-6666f3f112bb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T20:51:22.0064326Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "contentBytes",
