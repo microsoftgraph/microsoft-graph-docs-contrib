@@ -2,7 +2,7 @@
 title: "riskyServicePrincipalHistoryItem resource type"
 description: "Represents the risk history of Azure AD service principals"
 author: "ebasseri"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -27,7 +27,7 @@ Represents the risk history of an Azure AD service principal as determined by Az
 |:---------------|:--------|:------------|
 | servicePrincipalId         | string  | The id of the service principal. |
 | initiatedBy    | bool    | The id of actor that does the operation. |
-| activity       | [riskyServicePrincipalHistoryItem](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
+| activity       | [riskyServicePrincipalHistoryItem](riskyserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
 
 ## JSON representation
 
