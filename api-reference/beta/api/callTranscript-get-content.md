@@ -25,6 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+> [!NOTE]
+> This API is in beta and might undergo changes with respect to the request and/or response schema. Use of this API in production applications is not recommended.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
