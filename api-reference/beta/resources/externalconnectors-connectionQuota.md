@@ -11,17 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-The [connection](externalconnectors-externalconnection.md) quota contains calculated information on the connection's quota utilization. It returns the the minimum number of items you are able to ingest into a connection, by taking into account the number of the remaining quota in the connection and the remaining quota in the overall tenant.
+The [connection](externalconnectors-externalconnection.md) quota contains calculated information on the connection's quota utilization. It returns the allowed number of items you are able to ingest into a connection by taking into account items ingested for the connection against the overall tenant-level graph connectors quota.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get Quota](../api/externalconnectors-connectionQuota-get.md) |[connectionQuota](../resources/externalconnectors-connectionQuota.md)| calculated information on the connection's quota utilization. |
+| [Get quota](../api/externalconnectors-connectionQuota-get.md) |[connectionQuota](../resources/externalconnectors-connectionQuota.md)| calculated information on the connection's quota utilization. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| itemsRemaining | Int64 | Returns minimum of **items remaining in connection** and **remaining items at tenant-level** which is represented by this equation: `min(Max capacity in connection – Number of items in connection, Tenant Quota – Number of items indexed in all connections)`. If connection is non-monetized (promo or preivew), then returns the number of remaining items in connection. |
+| itemsRemaining | Int64 | Returns minimum of **items remaining in connection** and **remaining items at tenant-level** which is represented by this equation: `min(Max capacity in connection – Number of items in connection, Tenant Quota – Number of items indexed in all connections)`. If connection is non-monetized (preview connector or preview content experience), then returns the number of remaining items in connection. |
 
 ## Relationships
 None.
