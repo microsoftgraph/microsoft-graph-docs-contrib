@@ -387,7 +387,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "attachmentsArchive",
             "ChangeType": "Addition",
-            "Description": "Added the **attachmentsArchive** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            },
            {
@@ -395,7 +395,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "hasAttachments",
             "ChangeType": "Addition",
-            "Description": "Added the **hasAttachments** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            },
            {
@@ -403,7 +403,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "attachments",
             "ChangeType": "Addition",
-            "Description": "Added the **attachments** relationship to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
+            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-beta) resource.",
             "Target": "serviceUpdateMessage"
            }
          ],
@@ -411,7 +411,7 @@
          "Cloud": "Prod",
          "Version": "beta",
          "CreatedDateTime": "2021-12-05T05:08:42.648878Z",
-         "WorkloadArea": "Service Comms Platform",
+         "WorkloadArea": "Service health and communications",
          "SubArea": ""
        },
        {
@@ -421,7 +421,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "serviceAnnouncementAttachment",
             "ChangeType": "Addition",
-            "Description": "Added the [serviceAnnouncementAttachment](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-1.0) resource",
+            "Description": "Added the [serviceAnnouncementAttachment](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementAttachment?view=graph-rest-1.0) resource.",
             "Target": "serviceAnnouncementAttachment"
           },
           {
@@ -429,7 +429,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "attachmentsArchive",
             "ChangeType": "Addition",
-            "Description": "Added the **attachmentsArchive** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **attachmentsArchive** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           },
           {
@@ -437,7 +437,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "hasAttachments",
             "ChangeType": "Addition",
-            "Description": "Added the **hasAttachments** property to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **hasAttachments** property to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           },
           {
@@ -445,7 +445,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "attachments",
             "ChangeType": "Addition",
-            "Description": "Added the **attachments** relationship to [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+            "Description": "Added the **attachments** relationship to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
             "Target": "serviceUpdateMessage"
           }
         ],
@@ -453,7 +453,7 @@
          "Cloud": "Prod",
          "Version": "v1.0",
          "CreatedDateTime": "2021-12-30T21:43:00.2188867Z",
-         "WorkloadArea": "Service Comms Platform",
+         "WorkloadArea": "Service health and communications",
          "SubArea": ""
        }
     ]
