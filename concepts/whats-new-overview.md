@@ -18,6 +18,16 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Cloud communications | Presence
 [Subscribe to notifications of changes](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are [rich notifications that include encrypted resource data](webhooks-with-resource-data.md).
 
+### Customer booking
+Use the API for Microsoft Bookings in production apps, and take advantage of the following new features and updates:
+- Notify your customers in the US or Canada by SMS for an [appointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment) or specific [service](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice) associated with an appointment.
+- Enable meeting online for a service and auto-generate a Microsoft Teams meeting link for the appointment.
+- Allow one or more customers in a group appointment, setting a maximum attendee count for a service and for an appointment, and tracking the actual attendee count in an appointment.
+- Create a [custom question](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomquestion) for a [business](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness), associate a question with an option to specify it as mandatory for a service, and track questions and answers in an appointment.
+- Get or set the time zone for a customer in an appointment or [staff member](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember).
+- Get or set the location and phone number for a [customer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer).
+- Access the v1 API from the new endpoint `https://graph.microsoft.com/v1.0/solutions/`. Note that the beta API remains in the `https://graph.microsoft.com/beta` endpoint.
+
 ### Identity and access | Governance
 [Update](/graph/api/accessreviewinstance-update) the reviewers and fall-back reviewers for an [instance of an access review](/graph/api/resources/accessreviewinstance).
 
@@ -34,6 +44,17 @@ Enable registration for an [online meeting](/graph/api/resources/onlinemeeting?v
 - Use the [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true) action to clear any preferred availability and activity status for a user.
 - Use `Presence.ReadWrite` as delegated permission with [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true), or [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
 - Use `Presence.ReadWrite.All` as application permission with [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true), or [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
+
+### Devices and apps | Cloud PC
+- Administrators can enable [Microsoft Managed Desktop](/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta) by specifying settings in a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) and configuring a managed device experience for a Cloud PC.
+- [Reboot](/graph/api/cloudpc-reboot?view=graph-rest-beta) a [Cloud PC](/graph/api/resources/cloudpc?view=graph-rest-beta).
+- [Rename](/graph/api/cloudpc-rename?view=graph-rest-beta) to update the display name of a Cloud PC.
+- [Troubleshoot](/graph/api/cloudpc-troubleshoot?view=graph-rest-beta) to check the health status of a Cloud PC and the session host.
+- Track the last remote action result on a Cloud PC, including reboot, rename, reprovision, troubleshoot, by the **lastRemoteActionResult** property.
+- Track the last login timestamp of a Cloud PC by the **lastLoginResult** property.
+- Track the date that a [Cloud PC device image](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) becomes unavailable by the **expirationDate** property.
+- Track the status of the operating system in a [Cloud PC device image](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) by the **osStatus** property.
+- [Create](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta), [update](/graph/api/unifiedroledefinition-update?view=graph-rest-beta), and [delete](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) a [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) object for a Cloud PC RBAC provider.
 
 ### Identity and access | Directory management
 - [Get](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) the certification details of an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) through the **certification** property. The property is set only when the application is certified through the [Microsoft 365 App Compliance Program](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).  
@@ -57,7 +78,7 @@ Get the state of a drive as of a specific time by specifying the corresponding U
 ### Cloud communications | Online meeting
 Automatically admit new types of participants in an online meeting and bypass the meeting lobby:
 - Only people the organizer invites.
-- Only the participants from the same company.
+- Only the participants from the same company.
 
 ### Devices and apps | Cloud PC
 - Define a [configuration](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) of how a provisioned Cloud PC device can join Azure Active Directory (Azure AD): either cloud-only and join only to Azure AD, or hybrid and join on-premises Active Directory and Azure AD.
