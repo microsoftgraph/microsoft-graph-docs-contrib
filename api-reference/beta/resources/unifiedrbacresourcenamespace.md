@@ -25,8 +25,8 @@ An object that represents a collection of related actions.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier of the directory resource namespace, such as `microsoft.aad.b2c`.|
-|name|String|Name of the directory resource namespace. Typically, the same name as the `id` property, such as `microsoft.aad.b2c`.|
+|id|String|Unique identifier of the directory resource namespace, such as `microsoft.aad.b2c`. Required.|
+|name|String|Name of the directory resource namespace. Typically, the same name as the `id` property, such as `microsoft.aad.b2c`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
