@@ -38,7 +38,7 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 | Authorization | Bearer {token}. Required. |
 
 ## Function Parameters
-In the request URL, provide the following function parameters with values.
+In the request URL, provide the following function parameters with values:
 
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
