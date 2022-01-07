@@ -31,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Optional query parameters
