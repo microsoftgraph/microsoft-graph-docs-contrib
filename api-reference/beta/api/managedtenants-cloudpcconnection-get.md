@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcConnection"
 description: "Read the properties and relationships of a cloudPcConnection object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
