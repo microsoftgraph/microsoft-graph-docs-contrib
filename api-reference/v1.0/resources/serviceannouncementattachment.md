@@ -1,6 +1,6 @@
 ---
 title: "serviceAnnouncementAttachment resource type"
-description: "Represents an attachment of a serviceUpdateMessage"
+description: "Represents an attachment associated with a serviceUpdateMessage object."
 author: "payiAzure"
 ms.localizationpriority: medium
 ms.prod: "service-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an attachment of a [serviceUpdateMessage](../resources/serviceupdatemessage.md)
+Represents an attachment associated with a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
 Inherits from [attachment](../resources/attachment.md).
 
