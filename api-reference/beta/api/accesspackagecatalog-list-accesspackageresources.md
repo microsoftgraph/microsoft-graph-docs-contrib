@@ -4,7 +4,7 @@ description: "Retrieve a list of accesspackageresource objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # List accessPackageResources
@@ -116,21 +116,84 @@ Content-type: application/json
       "resourceType": "Application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
       "accessPackageResourceScopes": [
-         {
-            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
-            "displayName": "Root",
-            "description": "Root Scope",
-            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
-            "originSystem": "AadApplication",
-            "isRootScope": true
-         }
+          {
+              "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+              "displayName": "Root",
+              "description": "Root Scope",
+              "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+              "originSystem": "AadApplication",
+              "isRootScope": true
+          }
+      ],
+      "attributes": [
+          {
+              "id": "4f28e638-93de-4152-b631-2135da14c94a",
+              "attributeName": "country",
+              "attributeDefaultValue": null,
+              "isEditable": true,
+              "isPersistedOnAssignmentRemoval": false,
+              "attributeSource": {
+                  "@odata.type": "#microsoft.graph.resourceAttributeQuestion",
+                  "question": {
+                      "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                      "id": "6c797e12-e608-4ac9-90da-a8f18df37a94",
+                      "isRequired": false,
+                      "isAnswerEditable": null,
+                      "sequence": 0,
+                      "allowsMultipleSelection": false,
+                      "text": {
+                          "defaultText": "Enter your country",
+                          "localizedTexts": []
+                      },
+                      "choices": [
+                          {
+                              "actualValue": "USA",
+                              "displayValue": {
+                                  "defaultText": "USA",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "USA",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "Canada",
+                              "displayValue": {
+                                  "defaultText": "Canada",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "Canada",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          },
+                          {
+                              "actualValue": "India",
+                              "displayValue": {
+                                  "defaultText": "India",
+                                  "localizedTexts": [
+                                      {
+                                          "text": "English",
+                                          "languageCode": "en-US"
+                                      }
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              },
+              "attributeDestination": {
+                  "@odata.type": "#microsoft.graph.userDirectoryAttributeStore"
+              }
+          }
       ]
     }
   ]
 }
 ```
-
-https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/e71fafe7-9ccb-4c5a-a7b3-77ec35e83e3c/accessPackageResources
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -141,5 +204,3 @@ https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/access
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
