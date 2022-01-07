@@ -27,7 +27,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | [Create schema](../api/externalconnectors-externalconnection-post-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
 | [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)    | [externalItem](externalconnectors-externalitem.md)               | Create a new externalItem by posting to the items collection. |
-|[Get Quota](../api/externalconnectors-connectionQuota-get.md)|[connectionQuota](../resources/externalconnectors-connectionQuota.md)|Calculates quota utilization information of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
+|[Get quota](../api/externalconnectors-connectionQuota-get.md)|[connectionQuota](../resources/externalconnectors-connectionQuota.md)|Calculates quota utilization information of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 
 ## Properties
 
