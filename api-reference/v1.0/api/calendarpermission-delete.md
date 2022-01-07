@@ -1,7 +1,7 @@
 ---
 title: "Delete calendarPermission"
 description: "Delete calendarPermission."
-author: "Harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"

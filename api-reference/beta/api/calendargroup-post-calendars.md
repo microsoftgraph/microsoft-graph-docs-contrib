@@ -1,7 +1,7 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
-author: "harini84"
+author: "iamgirishck"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType

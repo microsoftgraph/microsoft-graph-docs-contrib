@@ -2,7 +2,7 @@
 title: "List calendarGroups"
 description: "Get the user's calendar groups."
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

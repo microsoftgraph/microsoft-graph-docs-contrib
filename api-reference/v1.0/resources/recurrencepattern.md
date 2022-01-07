@@ -2,7 +2,7 @@
 title: "recurrencePattern resource type"
 description: "Describes the frequency by which a recurring event repeats. "
 ms.localizationpriority: medium
-author: "harini84"
+author: "iamgirishck"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
