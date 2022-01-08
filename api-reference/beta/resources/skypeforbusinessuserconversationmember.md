@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Skype for Business user in a chat. You can learn more about Teams and Skype for Business interoperability [here](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability).
+Represents a Skype for Business user in a chat. 
 
+For information about Teams and Skype for Business interoperability, see [Understand Microsoft Teams and Skype for Business coexistence and interoperability](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability).
 
 Inherits from [conversationMember](../resources/conversationmember.md).
 
@@ -22,10 +23,10 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the user. Inherited from [conversationMember](../resources/conversationmember.md).|
-|id|String|Membership Id representing this resource. Inherited from [entity](../resources/entity.md).|
+|id|String|Membership ID that represents this resource. Inherited from [entity](../resources/entity.md).|
 |roles|String collection|Special roles for this user. Inherited from [conversationMember](../resources/conversationmember.md).|
-|tenantId|String|Id of the tenant that the user belongs to.|
-|userId|String|Id of the user.|
+|tenantId|String|ID of the tenant that the user belongs to.|
+|userId|String|ID of the user.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member. Inherited from [conversationMember](../resources/conversationmember.md).|
 
 ## Relationships
