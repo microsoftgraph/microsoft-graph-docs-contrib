@@ -8,7 +8,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "anonymousGuestConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [anonymousGuestConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [anonymousGuestConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta) resource.",
           "Target": "anonymousGuestConversationMember"
         },
         {
@@ -16,7 +16,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "microsoftAccountUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [microsoftAccountUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [microsoftAccountUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta) resource.",
           "Target": "microsoftAccountUserConversationMember"
         },
         {
@@ -24,7 +24,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeForBusinessUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [skypeForBusinessUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [skypeForBusinessUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta) resource.",
           "Target": "skypeForBusinessUserConversationMember"
         },
         {
@@ -32,7 +32,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "skypeUserConversationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [skypeUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta) resource",
+          "Description": "Added the [skypeUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta) resource.",
           "Target": "skypeUserConversationMember"
         },
         {
@@ -40,7 +40,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added support for creating [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) using application-only permissions",
+          "Description": "Added support for creating [chats](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) using application-only permissions.",
           "Target": "chat"
         }
       ],
@@ -58,7 +58,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added support for creating [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) using application-only permissions",
+          "Description": "Added support for creating [chats](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) using application-only permissions.",
           "Target": "chat"
         }
       ],
