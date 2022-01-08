@@ -20,12 +20,12 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Customer booking
 Use the API for Microsoft Bookings in production apps, and take advantage of the following new features and updates:
-- Notify your customers in the US or Canada by SMS for an [appointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment) or specific [service](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice) associated with an appointment.
+- Notify your customers in the US or Canada by SMS for an [appointment](/graph/api/resources/bookingappointment) or specific [service](/graph/api/resources/bookingservice) associated with an appointment.
 - Enable meeting online for a service and auto-generate a Microsoft Teams meeting link for the appointment.
 - Allow one or more customers in a group appointment, setting a maximum attendee count for a service and for an appointment, and tracking the actual attendee count in an appointment.
-- Create a [custom question](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomquestion) for a [business](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness), associate a question with an option to specify it as mandatory for a service, and track questions and answers in an appointment.
-- Get or set the time zone for a customer in an appointment or [staff member](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember).
-- Get or set the location and phone number for a [customer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer).
+- Create a [custom question](/graph/api/resources/bookingcustomquestion) for a [business](/graph/api/resources/bookingbusiness), associate a question with an option to specify it as mandatory for a service, and track questions and answers in an appointment.
+- Get or set the time zone for a customer in an appointment or [staff member](/graph/api/resources/bookingstaffmember).
+- Get or set the location and phone number for a [customer](/graph/api/resources/bookingcustomer).
 - Access the v1 API from the new endpoint `https://graph.microsoft.com/v1.0/solutions/`. Note that the beta API remains in the `https://graph.microsoft.com/beta` endpoint.
 
 ### Education
@@ -84,7 +84,7 @@ Use the [update](/graph/api/externalconnectors-schema-update?view=graph-rest-bet
   - Differentiate between the currently defined type of tasks, [task](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true), from a base type [baseTask](/graph/api/resources/basetask?view=graph-rest-beta&preserve-view=true).
 - Break down a more complex [task](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) into smaller, more actionable subtasks. Each subtask is represented by a [checklistItem](/graph/api/resources/checklistitem?view=graph-rest-beta&preserve-view=true) resource.
 - [Move](/graph/api/basetask-move?view=graph-rest-beta&preserve-view=true) a task across lists.
-- Refer to this [blog post](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) for more details and migrate any existing apps that use the [earlier To Do API](https://docs.microsoft.com/en-us/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) to the [latest To Do API](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
+- Refer to this [blog post](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) for more details and migrate any existing apps that use the [earlier To Do API](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true) to the [latest To Do API](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
 
 
 ## November 2021: New and generally available
