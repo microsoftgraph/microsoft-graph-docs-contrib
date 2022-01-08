@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC organization settings for a tenant, which has only one **cloudPcOrganizationSettings** object.
+Represents the Cloud PC organization settings for a tenant. A tenant has only one **cloudPcOrganizationSettings** object.
 
 ## Methods
 |Method|Return type|Description|
