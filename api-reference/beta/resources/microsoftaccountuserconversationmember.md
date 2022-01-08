@@ -1,6 +1,6 @@
 ---
 title: "microsoftAccountUserConversationMember resource type"
-description: "Represents a personal Microsoft account user in a chat"
+description: "Represents a personal Microsoft account user in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -22,9 +22,9 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the user. Inherited from [conversationMember](../resources/conversationmember.md).|
-|id|String|Membership Id representing this resource. Inherited from [entity](../resources/entity.md).|
+|id|String|Membership ID that represents this resource. Inherited from [entity](../resources/entity.md).|
 |roles|String collection|Special roles for this user. Inherited from [conversationMember](../resources/conversationmember.md).|
-|userId|String|Id of the user.|
+|userId|String|ID of the user.|
 |visibleHistoryStartDateTime|DateTimeOffset|The timestamp denoting how far back a conversation's history is shared with the conversation member. Inherited from [conversationMember](../resources/conversationmember.md).|
 
 ## Relationships
