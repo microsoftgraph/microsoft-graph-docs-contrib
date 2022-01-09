@@ -111,13 +111,17 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "domainJoinType": "hybridAzureADJoin",
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom"
+    "imageId": "Image ID value",
+    "imageType":"custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
 }
 ```
 
@@ -175,13 +179,17 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "domainJoinType": "hybridAzureADJoin",
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom",
+    "imageId": "Image ID value",
+    "imageType":"custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

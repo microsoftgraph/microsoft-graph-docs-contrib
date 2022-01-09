@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -79,13 +79,9 @@ PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisio
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 }
 ```
 # [C#](#tab/csharp)
@@ -122,17 +118,5 @@ Content-Type: application/json
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "8931f750-f750-8931-50f7-318950f7ffff",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
-}
+HTTP/1.1 204 No Content
 ```
