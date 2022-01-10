@@ -121,25 +121,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
 }
 -->
-
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "8931f750-f750-8931-50f7-318950f7ffff",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom",
-  "windowsSettings": {
-    "language": "en-US"
-  }
-}
+HTTP/1.1 204 No Content
 ```
