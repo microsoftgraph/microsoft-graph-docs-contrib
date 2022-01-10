@@ -54,6 +54,7 @@ The following table shows the properties that are required when you update the [
 |displayName|String|The setting name displayed in the user interface.|
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
 |selfServiceEnabled|Boolean|To turn on the self-service option, change this setting to `True`. |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Restore point setting can be used to define how frequently a restore point is created (i.e a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
 
@@ -80,6 +81,10 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": "16",
+    "userRestoreEnabled": true
+  },
   "localAdminEnabled": false
 }
 ```
