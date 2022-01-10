@@ -19,7 +19,7 @@ The connection status is useful when you calculate the device health.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connectionStatus|[teamworkConnectionStatus](teamworkconnectionstatus.md)|Enum indicates whether a component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
+|connectionStatus|[teamworkConnectionStatus](teamworkconnectionstatus.md)|Indicates whether a component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. For example, indicates _connected since_ when the state is `connected` and _disconnected since_ when the state is `disconnected`.|
 
 
