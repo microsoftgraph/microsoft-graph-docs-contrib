@@ -58,8 +58,7 @@ The following is a JSON representation of the resource.
   "selfServiceEnabled": "Boolean",
   "localAdminEnabled": "Boolean",
   "restorePointSetting": {
-    "frequencyInHours": "Integer",
-    "userRestoreEnabled": "Boolean"
+    "@odata.type": "microsoft.graph.cloudPcRestorePointSetting"
   },
   "lastModifiedDateTime": "String (timestamp)",
   "createdDateTime": "String (timestamp)"
