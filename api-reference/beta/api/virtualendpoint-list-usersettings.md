@@ -113,7 +113,7 @@ Content-Type: application/json
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
       "restorePointSetting": {
-        "frequencyInHours": "16",
+        "frequencyInHours": 16,
         "userRestoreEnabled": true
       },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
