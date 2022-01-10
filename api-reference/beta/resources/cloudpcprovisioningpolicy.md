@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
   },
   "windowsSettings": {
-    "language": "en-US"
+    "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
   }
 }
 ```

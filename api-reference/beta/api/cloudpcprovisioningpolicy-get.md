@@ -187,7 +187,7 @@ Content-Type: application/json
     "imageType": "custom",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",
