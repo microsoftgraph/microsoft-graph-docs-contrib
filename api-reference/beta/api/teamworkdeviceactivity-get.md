@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of the activity/usage state of a device. The [TeamworkDeviceActivity](../resources/teamworkdeviceactivity.md) holds the parameters which change based on the activity of the device.
+Get the details of the activity/usage state of a device. The [teamworkDeviceActivity](../resources/teamworkdeviceactivity.md) holds the parameters which change based on the activity of the device.
 
 **Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
