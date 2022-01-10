@@ -1,6 +1,6 @@
 ---
 title: "teamworkConnection resource type"
-description: "Connection status infromation."
+description: "Represents the details about the connection status of a device and its peripherals."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of the connection status of a device and its peripherals.
-This is helpful in calculating device health.
+Represents the details about the connection status of a device and its peripherals.
+The connection status is useful when you calculate the device health.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connectionStatus|[teamworkConnectionStatus](teamworkconnectionstatus.md)|Enum indicating whether component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
-|lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. i.e. Indicates connected since when state is connected and disconnected since when state is disconnected.|
+|connectionStatus|[teamworkConnectionStatus](teamworkconnectionstatus.md)|Enum indicates whether a component/peripheral is connected/disconnected or its state is unknown. The possible values are: `unknown`, `connected`, `disconnected`, `unknownFutureValue`.|
+|lastModifiedDateTime|DateTimeOffset|Time at which the state was last changed. For example, indicates _connected since_ when the state is `connected` and _disconnected since_ when the state is `disconnected`.|
 
 
 ## JSON representation

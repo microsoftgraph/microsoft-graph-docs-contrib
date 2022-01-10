@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceSoftwareVersions resource type"
-description: "Details of software versions."
+description: "Represents the details about software versions for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information related to device software version like: Firmware/OS/TeamsApp/AdminAgent.
+Represents the details about software versions for a device, including firmware, operating system, Microsoft Teams client, and admin agent.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|adminAgentSoftwareVersion|String|Software version for admin agent running on device.|
-|firmwareSoftwareVersion|String|Software version for firmware running on device.|
-|operatingSystemSoftwareVersion|String|Software version for the operating system on the device.|
-|partnerAgentSoftwareVersion|String|Software version for partner agent running on device.|
-|teamsClientSoftwareVersion|String|Software version for teams client running on device.|
+|adminAgentSoftwareVersion|String|The software version for the admin agent running on the device.|
+|firmwareSoftwareVersion|String|The software version for the firmware running on the device.|
+|operatingSystemSoftwareVersion|String|The software version for the operating system on the device.|
+|partnerAgentSoftwareVersion|String|The software version for the partner agent running on the device.|
+|teamsClientSoftwareVersion|String|The software version for the Teams client running on the device.|
 
 
 ## JSON representation
@@ -36,10 +36,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.teamworkDeviceSoftwareVersions",
   "adminAgentSoftwareVersion": "String",
-  "operatingSystemSoftwareVersion": "String",
-  "teamsClientSoftwareVersion": "String",
   "firmwareSoftwareVersion": "String",
-  "partnerAgentSoftwareVersion": "String"
+  "operatingSystemSoftwareVersion": "String",
+  "partnerAgentSoftwareVersion": "String",
+  "teamsClientSoftwareVersion": "String"
 }
 ```
 

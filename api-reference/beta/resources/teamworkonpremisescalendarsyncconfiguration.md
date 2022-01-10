@@ -34,9 +34,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkOnPremisesCalendarSyncConfiguration",
-  "smtpAddress": "String",
+  "domain": "String",
   "domainUserName": "String",
-  "domain": "String"
+  "smtpAddress": "String"
 }
 ```
 

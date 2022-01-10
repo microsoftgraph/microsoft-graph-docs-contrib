@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of the account configuration for a device in Microsoft Teams.
-The details provided are only available for Teams Room devices.
+The details provided are only available for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|

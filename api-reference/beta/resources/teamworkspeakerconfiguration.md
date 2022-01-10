@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of speaker configuration of a device. These details are applicable only for Teams Room devices.
+Details of speaker configuration of a device. These details are applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
@@ -38,8 +38,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkSpeakerConfiguration",
-  "isSpeakerOptional": "Boolean",
-  "isCommunicationSpeakerOptional": "Boolean"
+  "isCommunicationSpeakerOptional": "Boolean",
+  "isSpeakerOptional": "Boolean"
 }
 ```
 

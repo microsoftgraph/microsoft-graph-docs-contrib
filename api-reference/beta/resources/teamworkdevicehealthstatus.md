@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the health status of a [teamworkdevice](teamworkdevice.md).
+Describes the health status of a [teamworkDevice](teamworkdevice.md).
 
 ## Members
 
@@ -22,6 +22,7 @@ Describes the health status of a [teamworkdevice](teamworkdevice.md).
 |unknown|0|Unknown health status.|
 |offline|1|Offline device.|
 |critical|2|Critical health status.|
-|nonUrgent|3|Non urgent health status.|
+|nonUrgent|3|Nonurgent health status.|
 |healthy|4|Healthy device.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
 

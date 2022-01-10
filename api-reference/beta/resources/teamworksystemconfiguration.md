@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of system configuration of a device. This detail is not applicable for Teams Room devices.
+Details of system configuration of a device. This detail is not applicable for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
@@ -42,22 +42,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkSystemConfiguration",
-  "networkConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkNetworkConfiguration"
-  },
   "dateTimeConfiguration": {
     "@odata.type": "microsoft.graph.teamworkDateTimeConfiguration"
   },
-  "isLoggingEnabled": "Boolean",
-  "loggingLevel": "String",
   "defaultPassword": "String",
-  "isScreenCaptureEnabled": "Boolean",
-  "isDeviceLockEnabled": "Boolean",
   "deviceLockTimeout": "String (duration)",
-  "lockPin": "String",
-  "isSilentModeEnabled": "Boolean",
+  "isDeviceLockEnabled": "Boolean",
+  "isLoggingEnabled": "Boolean",
   "isPowerSavingEnabled": "Boolean",
-  "language": "String"
+  "isScreenCaptureEnabled": "Boolean",
+  "isSilentModeEnabled": "Boolean",
+  "language": "String",
+  "lockPin": "String",
+  "loggingLevel": "String",
+  "networkConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkNetworkConfiguration"
+  }
 }
 ```
 

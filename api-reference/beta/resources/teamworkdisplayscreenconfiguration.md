@@ -18,11 +18,11 @@ Details of display screen configuration.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|backlightBrightness|Int32|Brightness level on the device (0-100). Not Applicable for Teams Room Devices.|
-|backlightTimeout|Duration|Timeout for backlight (30-3600 secs). Not Applicable for Teams Room Devices.|
-|isHighContrastEnabled|Boolean|True if high contrast mode is enabled. Not Applicable for Teams Room Devices.|
-|isScreensaverEnabled|Boolean|True if screensaver is enabled. Not Applicable for Teams Room Devices.|
-|screensaverTimeout|Duration|Screensaver Timeout from 30 to 3600 secs. Not Applicable for Teams Room Devices.|
+|backlightBrightness|Int32|The brightness level on the device (0-100). Not Applicable for Microsoft Teams Rooms devices.|
+|backlightTimeout|Duration|Timeout for backlight (30-3600 secs). Not Applicable for Teams Rooms devices.|
+|isHighContrastEnabled|Boolean|`True` if high contrast mode is enabled. Not Applicable for Teams Rooms devices.|
+|isScreensaverEnabled|Boolean|`True` if screensaver is enabled. Not Applicable for Teams Rooms devices.|
+|screensaverTimeout|Duration|Screensaver timeout from 30 to 3600 secs. Not Applicable for Teams Rooms devices.|
 
 ## Relationships
 None.
@@ -37,11 +37,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDisplayScreenConfiguration",
-  "isScreensaverEnabled": "Boolean",
-  "screensaverTimeout": "String (duration)",
   "backlightBrightness": "Integer",
   "backlightTimeout": "String (duration)",
-  "isHighContrastEnabled": "Boolean"
+  "isHighContrastEnabled": "Boolean",
+  "isScreensaverEnabled": "Boolean",
+  "screensaverTimeout": "String (duration)"
 }
 ```
 

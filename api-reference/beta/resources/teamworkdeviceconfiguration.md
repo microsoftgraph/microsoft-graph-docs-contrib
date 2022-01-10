@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceConfiguration resource type"
-description: "Device configuration details."
+description: "Represents the details about the configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Device configuration details.
-It has properties related to device configuration like software version, peripheral config (camera/display/microphone/speaker), hardware config, and Teams config.
+Represents the details about the configuration for a device, including properties, such as software versions, peripheral configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -27,19 +26,19 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|Camera configuration. Applicable only for Teams Room Devices.|
-|createdBy|[identitySet](../resources/identityset.md)|Createdby.|
-|createdDateTime|DateTimeOffset|Document created time.|
-|displayConfiguration|[teamworkDisplayConfiguration](../resources/teamworkdisplayconfiguration.md)|	Display configuration.|
-|hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|Hardware configuration. Applicable only for Teams Room Devices.|
+|cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|The camera configuration. Applicable only for Microsoft Teams Rooms devices.|
+|createdBy|[identitySet](../resources/identityset.md)|Details of the user that created the document.|
+|createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
+|displayConfiguration|[teamworkDisplayConfiguration](../resources/teamworkdisplayconfiguration.md)|The display configuration.|
+|hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|The hardware configuration. Applicable only for Teams Rooms devices.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
-|lastModifiedDateTime|DateTimeOffset|Last modified time.|
-|microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|Microphone configuration. Applicable only for Teams Room Devices.|
-|softwareVersions|[teamworkDeviceSoftwareVersions](../resources/teamworkdevicesoftwareversions.md)|Information related to device software version like: Firmware/OS/TeamsApp/AdminAgent.|
-|speakerConfiguration|[teamworkSpeakerConfiguration](../resources/teamworkspeakerconfiguration.md)|Speaker configuration. Applicable only for Teams Room Devices.|
-|systemConfiguration|[teamworkSystemConfiguration](../resources/teamworksystemconfiguration.md)|System configuration. Not applicable for Teams Room Devices.|
-|teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|Teams client configuration. Applicable only for Teams Room Devices.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
+|lastModifiedDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
+|microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|The microphone configuration. Applicable only for Teams Rooms devices.|
+|softwareVersions|[teamworkDeviceSoftwareVersions](../resources/teamworkdevicesoftwareversions.md)|Information related to software versions for the device, such as firmware, operating system, Teams client, and admin agent.|
+|speakerConfiguration|[teamworkSpeakerConfiguration](../resources/teamworkspeakerconfiguration.md)|The speaker configuration. Applicable only for Teams Rooms devices.|
+|systemConfiguration|[teamworkSystemConfiguration](../resources/teamworksystemconfiguration.md)|The system configuration. Not applicable for Teams Rooms devices.|
+|teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|The Teams client configuration. Applicable only for Teams Rooms devices.|
 
 
 ## JSON representation
@@ -55,38 +54,38 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDeviceConfiguration",
-  "id": "String (identifier)",
-  "softwareVersions": {
-    "@odata.type": "microsoft.graph.teamworkDeviceSoftwareVersions"
-  },
-  "displayConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkDisplayConfiguration"
-  },
   "cameraConfiguration": {
     "@odata.type": "microsoft.graph.teamworkCameraConfiguration"
   },
-  "speakerConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkSpeakerConfiguration"
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
   },
-  "microphoneConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkMicrophoneConfiguration"
-  },
-  "teamsClientConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkTeamsClientConfiguration"
+  "createdDateTime": "String (timestamp)",
+  "displayConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkDisplayConfiguration"
   },
   "hardwareConfiguration": {
     "@odata.type": "microsoft.graph.teamworkHardwareConfiguration"
   },
-  "systemConfiguration": {
-    "@odata.type": "microsoft.graph.teamworkSystemConfiguration"
-  },
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
+  "id": "String (identifier)",
+  "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+  "microphoneConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkMicrophoneConfiguration"
+  },
+  "softwareVersions": {
+    "@odata.type": "microsoft.graph.teamworkDeviceSoftwareVersions"
+  },
+  "speakerConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkSpeakerConfiguration"
+  },
+  "systemConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkSystemConfiguration"
+  },
+  "teamsClientConfiguration": {
+    "@odata.type": "microsoft.graph.teamworkTeamsClientConfiguration"
   }
 }
 ```

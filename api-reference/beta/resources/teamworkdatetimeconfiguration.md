@@ -1,6 +1,6 @@
 ---
 title: "teamworkDateTimeConfiguration resource type"
-description: "Date & Time Configurations for device."
+description: "Represents the details about date and time configurations for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Date & Time configurations for a device.
+Represents the details about date and time configurations for a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dateFormat|String|Date time format of device.|
-|officeHoursEndTime|TimeOfDay|Office hours end time of device.|
-|officeHoursStartTime|TimeOfDay|Office hours start time of device|
-|timeFormat|String|Time format.|
-|timeZone|String|Timezone.|
+|dateFormat|String|The date format for the device.|
+|officeHoursEndTime|TimeOfDay|The time of the day that the device is turned off.|
+|officeHoursStartTime|TimeOfDay|The time of the day that the device is turned on.|
+|timeFormat|String|The time format for the device.|
+|timeZone|String|The time zone to which the office hours apply.|
 
 ## Relationships
 None.
@@ -37,11 +37,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDateTimeConfiguration",
-  "timeZone": "String",
   "dateFormat": "String",
-  "timeFormat": "String",
+  "officeHoursEndTime": "String (time of day)",
   "officeHoursStartTime": "String (time of day)",
-  "officeHoursEndTime": "String (time of day)"
+  "timeFormat": "String",
+  "timeZone": "String"
 }
 ```
 

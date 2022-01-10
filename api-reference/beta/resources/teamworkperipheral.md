@@ -39,10 +39,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkPeripheral",
-  "id": "String (identifier)",
   "displayName": "String",
-  "vendorId": "String",
-  "productId": "String"
+  "id": "String (identifier)",
+  "productId": "String",
+  "vendorId": "String"
 }
 ```
 

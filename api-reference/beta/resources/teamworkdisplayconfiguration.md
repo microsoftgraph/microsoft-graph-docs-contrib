@@ -1,6 +1,6 @@
 ---
 title: "teamworkDisplayConfiguration resource type"
-description: "Details of device display configuration."
+description: "Represents the details about the display configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of device display configuration.
+Represents the details about the display configuration for a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configuredDisplays|[teamworkConfiguredPeripheral](../resources/teamworkconfiguredperipheral.md) collection|List of configured displays. Applicable only for Teams Room Devices.|
-|displayCount|Int32|Total number of connected displays including inbuilt display. Applicable only for Teams Room Devices.|
-|inBuiltDisplayScreenConfiguration|[teamworkDisplayScreenConfiguration](../resources/teamworkdisplayscreenconfiguration.md)|Configuration for inbuilt display. Not applicable for Teams Room Devices.|
-|isContentDuplicationAllowed|Boolean|True if content duplication is allowed. Applicable only for Teams Room Devices.|
-|isDualDisplayModeEnabled|Boolean|True if dual display mode is enabled. If "isDualDisplayModeEnabled" is true, then when content is shared via the HDMI Ingest module on the MTR device, it will be displayed on both FoR screens vs. 1 screen. Applicable only for Teams Room Devices.|
+|configuredDisplays|[teamworkConfiguredPeripheral](../resources/teamworkconfiguredperipheral.md) collection|The list of configured displays. Applicable only for Microsoft Teams Rooms devices.|
+|displayCount|Int32|Total number of connected displays, including inbuilt display. Applicable only for Teams Rooms devices.|
+|inBuiltDisplayScreenConfiguration|[teamworkDisplayScreenConfiguration](../resources/teamworkdisplayscreenconfiguration.md)|Configuration for inbuilt display. Not applicable for Teams Rooms devices.|
+|isContentDuplicationAllowed|Boolean|`True` if content duplication is allowed. Applicable only for Teams Rooms devices.|
+|isDualDisplayModeEnabled|Boolean|`True` if dual display mode is enabled. If **isDualDisplayModeEnabled** is `true`, then when the content is shared via the HDMI ingest module on the Microsoft Teams Rooms device, it will be displayed on both Front of Room screens instead of just the one screen. Applicable only for Teams Rooms devices.|
 
 
 ## JSON representation
@@ -35,17 +35,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDisplayConfiguration",
-  "displayCount": "Integer",
-  "isDualDisplayModeEnabled": "Boolean",
-  "isContentDuplicationAllowed": "Boolean",
   "configuredDisplays": [
     {
       "@odata.type": "microsoft.graph.teamworkConfiguredPeripheral"
     }
   ],
+  "displayCount": "Integer",
   "inBuiltDisplayScreenConfiguration": {
     "@odata.type": "microsoft.graph.teamworkDisplayScreenConfiguration"
-  }
+  },
+  "isContentDuplicationAllowed": "Boolean",
+  "isDualDisplayModeEnabled": "Boolean"
 }
 ```
 

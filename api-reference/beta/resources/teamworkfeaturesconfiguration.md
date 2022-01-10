@@ -1,6 +1,6 @@
 ---
 title: "teamworkFeaturesConfiguration resource type"
-description: "Details of device teams client feature configuration."
+description: "Represents the details about the configuration of Microsoft Teams client features for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of device teams client feature configuration.
+Represents the details about the configuration of Microsoft Teams client features for a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|emailToSendLogsAndFeedback|String|Email address to send logs and feedbacks.|
-|isAutoScreenShareEnabled|Boolean|Ture if autoScreenShared is enabled.|
-|isBluetoothBeaconingEnabled|Boolean|True if bluetooth beaconing is enabled.|
-|isHideMeetingNamesEnabled|Boolean|True if hide meeting names is enabled.|
-|isSendLogsAndFeedbackEnabled|Boolean|True if send logs and feedback is enabled.|
+|emailToSendLogsAndFeedback|String|Email address to send logs and feedback.|
+|isAutoScreenShareEnabled|Boolean|`True` if auto screen shared is enabled.|
+|isBluetoothBeaconingEnabled|Boolean|`True` if Bluetooth beaconing is enabled.|
+|isHideMeetingNamesEnabled|Boolean|`True` if hiding meeting names is enabled.|
+|isSendLogsAndFeedbackEnabled|Boolean|`True` if sending logs and feedback is enabled.|
 
 
 ## JSON representation
@@ -35,11 +35,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkFeaturesConfiguration",
+  "emailToSendLogsAndFeedback": "String",
   "isAutoScreenShareEnabled": "Boolean",
-  "isHideMeetingNamesEnabled": "Boolean",
   "isBluetoothBeaconingEnabled": "Boolean",
-  "isSendLogsAndFeedbackEnabled": "Boolean",
-  "emailToSendLogsAndFeedback": "String"
+  "isHideMeetingNamesEnabled": "Boolean",
+  "isSendLogsAndFeedbackEnabled": "Boolean"
 }
 ```
 

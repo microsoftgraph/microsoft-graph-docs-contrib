@@ -36,16 +36,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkPeripheralsHealth",
-  "roomCameraHealth": {
+  "communicationSpeakerHealth": {
     "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
   },
   "contentCameraHealth": {
-    "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
-  },
-  "speakerHealth": {
-    "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
-  },
-  "communicationSpeakerHealth": {
     "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
   },
   "displayHealthCollection": [
@@ -54,6 +48,12 @@ The following is a JSON representation of the resource.
     }
   ],
   "microphoneHealth": {
+    "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
+  },
+  "roomCameraHealth": {
+    "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
+  },
+  "speakerHealth": {
     "@odata.type": "microsoft.graph.teamworkPeripheralHealth"
   }
 }

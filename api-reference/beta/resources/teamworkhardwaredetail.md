@@ -1,6 +1,6 @@
 ---
 title: "teamworkHardwareDetail resource type"
-description: "Details of device hardware."
+description: "Represents the details about the hardware properties of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of device hardware related properties.
+Represents the details about the hardware properties of a device.
 
 ## Properties
 |Property|Type|Description|
@@ -22,7 +22,7 @@ Details of device hardware related properties.
 |manufacturer|String|Device manufacturer.|
 |model|String|Devie model.|
 |serialNumber|String|Device serial number.|
-|uniqueId|String|Device unique Id.|
+|uniqueId|String|The unique identifier for the device.|
 
 
 ## JSON representation
@@ -35,13 +35,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkHardwareDetail",
-  "serialNumber": "String",
-  "uniqueId": "String",
   "macAddresses": [
     "String"
   ],
   "manufacturer": "String",
-  "model": "String"
+  "model": "String",
+  "serialNumber": "String",
+  "uniqueId": "String"
 }
 ```
 

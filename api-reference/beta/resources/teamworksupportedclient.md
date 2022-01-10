@@ -24,4 +24,5 @@ Describes the supported client of a [teamworkaccountconfiguration](teamworkaccou
 |teamsDefaultAndSkype|2|Supports both Skype and Teams, but default is Teams.|
 |skypeOnly|3|Supports only Skype.|
 |teamsOnly|4|Supports only Teams.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
 

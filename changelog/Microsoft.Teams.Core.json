@@ -4467,7 +4467,7 @@
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "devices",
           "ChangeType": "Addition",
           "Description": "Added the **devices** relationship to [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deatil of microphone configuration. Applicable only for Teams Room Devices.
+Deatil of microphone configuration. Applicable only for Microsoft Teams Rooms Devices.
 
 ## Properties
 |Property|Type|Description|

@@ -33,9 +33,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkSoftwareUpdateStatus",
-  "softwareFreshness": "String",
+  "availableVersion": "String",
   "currentVersion": "String",
-  "availableVersion": "String"
+  "softwareFreshness": "String"
 }
 ```
 

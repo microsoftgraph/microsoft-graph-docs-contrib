@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice resource type"
-description: "A Teams device details."
+description: "Represents the details about a device in Microsoft Teams."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of a Microsoft Teams device.
+Represents the details about a device in Microsoft Teams.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,34 +22,34 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List teamworkDevices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get a list of the [teamworkDevice](../resources/teamworkdevice.md) objects and their properties.|
 |[Get teamworkDevice](../api/teamworkdevice-get.md)|[teamworkDevice](../resources/teamworkdevice.md)|Read the properties and relationships of a [teamworkDevice](../resources/teamworkdevice.md) object.|
-|[Restart teamworkDevice](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Restart a device.|
-|[RunDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Run device diagnostics to get device log details.|
-|[UpdateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Update software version.|
-|[List operations](../api/teamworkdeviceoperation-list.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|Get the teamworkDeviceOperation resources from the operations navigation property.|
+|[restart](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Restart a device.|
+|[runDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Run and generate diagnostic logs for the specified device.|
+|[updateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Update the software version for a [teamworkDevice](../resources/teamworkdevice.md).|
+|[List operations](../api/teamworkdeviceoperation-list.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|Get the **teamworkDeviceOperation** resources from the **operations** navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activityState|[teamworkDeviceActivityState](teamworkDeviceActivityState.md)|Device activity state. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
-|companyAssetTag|String|Company asset tag assigned by admin on device.|
-|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
-|createdDateTime|DateTimeOffset|Document create time.|
-|currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Logged in user on the device.|
-|deviceType|[teamworkDeviceType](teamworkdevicetype.md)|Type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
-|hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|Hardware related properties are captured in it. For example: oemSerialNumber, model.|
-|healthStatus|[teamworkDeviceHealthStatus](teamworkDeviceHealthStatus.md)|Device health status. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
+|activityState|[teamworkDeviceActivityState](teamworkDeviceActivityState.md)|The activity state of the device. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
+|companyAssetTag|String|The company asset tag assigned by the admin on the device.|
+|createdBy|[identitySet](../resources/identityset.md)|The details of the user that created the document.|
+|createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
+|currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|The signed-in user on the device.|
+|deviceType|[teamworkDeviceType](teamworkdevicetype.md)|The type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
+|hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|A collection of hardware related properties. For example, **oemSerialNumber** and **model**.|
+|healthStatus|[teamworkDeviceHealthStatus](teamworkDeviceHealthStatus.md)|The health status of the device. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
-|lastModifiedDateTime|DateTimeOffset|Last modified time.|
-|notes|String|Notes put by admin on device.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
+|lastModifiedDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
+|notes|String|The notes put by the admin on the device.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activity|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|Holds properties which changes based on device activity.|
-|configuration|[teamworkDeviceConfiguration](../resources/teamworkdeviceconfiguration.md)|DeviceConfiguration which consist device configuration properties.|
-|health|[teamworkDeviceHealth](../resources/teamworkdevicehealth.md)|DeviceHealth which consist device health properties.|
-|operations|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|DeviceOperation which consists of device asyn operations.|
+|activity|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|Holds properties that changes based on the device activity.|
+|configuration|[teamworkDeviceConfiguration](../resources/teamworkdeviceconfiguration.md)|The configuration properties of the device.|
+|health|[teamworkDeviceHealth](../resources/teamworkdevicehealth.md)|The health properties of the device.|
+|operations|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|The async operations on the device.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -64,26 +64,26 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDevice",
-  "id": "String (identifier)",
+  "activityState": "String",
+  "companyAssetTag": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "createdDateTime": "String (timestamp)",
+  "currentUser": {
+    "@odata.type": "microsoft.graph.teamworkUserIdentity"
+  },
   "deviceType": "String",
   "hardwareDetail": {
     "@odata.type": "microsoft.graph.teamworkHardwareDetail"
   },
-  "notes": "String",
-  "companyAssetTag": "String",
   "healthStatus": "String",
-  "activityState": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "currentUser": {
-    "@odata.type": "microsoft.graph.teamworkUserIdentity"
-  }
+  "lastModifiedDateTime": "String (timestamp)",
+  "notes": "String"
 }
 ```
 

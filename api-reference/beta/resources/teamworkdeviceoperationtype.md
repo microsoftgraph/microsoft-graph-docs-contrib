@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceOperationType enum type"
-description: "Describes the type of device async operation."
+description: "Describes the type of an async operation on a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,17 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the type of a device async [teamworkdeviceoperation](teamworkdeviceoperation.md).
+Describes the type of an async [teamworkDeviceOperation](teamworkdeviceoperation.md) on a device.
 
 ## Members
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
-|deviceRestart|0|Restarts a device.|
-|configUpdate|1|Updates device config.|
-|deviceDiagnostics|2|Get device logs.|
-|softwareUpdate|3|Updates device software.|
-|deviceManagementAgentConfigUpdate|4|Device management agent config update.|
+|deviceRestart|0|Restart a device.|
+|configUpdate|1|Update the device configuration.|
+|deviceDiagnostics|2|Get the device logs.|
+|softwareUpdate|3|Update the device software.|
+|deviceManagementAgentConfigUpdate|4|Update the device agent configuration.|
 |remoteLogin|5|Device remote login.|
 |remoteLogout|6|Device remote logout.|
+|unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|
 

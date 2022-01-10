@@ -23,7 +23,7 @@ Represents the details of the configured peripheral of a device.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|More information about the peripheral.|
+|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Details about the peripherals attached to the device.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

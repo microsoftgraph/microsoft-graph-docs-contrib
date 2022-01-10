@@ -39,15 +39,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkNetworkConfiguration",
-  "isDhcpEnabled": "Boolean",
-  "hostName": "String",
-  "domainName": "String",
-  "ipAddress": "String",
-  "subnetMask": "String",
   "defaultGateway": "String",
+  "domainName": "String",
+  "hostName": "String",
+  "ipAddress": "String",
+  "isDhcpEnabled": "Boolean",
+  "isPCPortEnabled": "Boolean",
   "primaryDns": "String",
   "secondaryDns": "String",
-  "isPCPortEnabled": "Boolean"
+  "subnetMask": "String"
 }
 ```
 

@@ -42,16 +42,16 @@ The following is a JSON representation of the resource.
   "companyPortalSoftwareUpdateStatus": {
     "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"
   },
-  "teamsClientSoftwareUpdateStatus": {
+  "firmwareSoftwareUpdateStatus": {
     "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"
   },
-  "firmwareSoftwareUpdateStatus": {
+  "operatingSystemSoftwareUpdateStatus": {
     "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"
   },
   "partnerAgentSoftwareUpdateStatus": {
     "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"
   },
-  "operatingSystemSoftwareUpdateStatus": {
+  "teamsClientSoftwareUpdateStatus": {
     "@odata.type": "microsoft.graph.teamworkSoftwareUpdateStatus"
   }
 }

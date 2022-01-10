@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceOperation resource type"
-description: "Device async operation details."
+description: "Represents the details about async operations on a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Any async operation executed on a device will result into a teamworkDeviceOperation getting created. The status of the operation can be retrieved via teamworkDeviceOperation object.
+Represents the details about async operations on a device. Any async operation ran on a device creates a **teamworkDeviceOperation**. You can retrieve the status of the operation via the **teamworkDeviceOperation** object.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,16 +26,16 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|Time at which the operation reached into final state: Successful/Failed/Canceled.|
-|createdBy|[identitySet](../resources/identityset.md)|CreatedBy.|
-|createdDateTime|DateTimeOffset|Document create time.|
-|error|[operationError](../resources/operationerror.md)|Error details available only in case of Failed Status.|
+|completedDateTime|DateTimeOffset|Time at which the operation reached into final state (for example, successful, failed, and canceled).|
+|createdBy|[identitySet](../resources/identityset.md)|The details of the user that created the document.|
+|createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
+|error|[operationError](../resources/operationerror.md)|Error details are available only in case of failed status.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionBy|[identitySet](../resources/identityset.md)|Last modifiedby.|
-|lastActionDateTime|DateTimeOffset|Last modified time.|
-|operationType|[teamworkDeviceOperationType](teamworkDeviceOperationType.md)|Type of async device operation. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
+|lastActionBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
+|lastActionDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
+|operationType|[teamworkDeviceOperationType](teamworkDeviceOperationType.md)|Type of async operation on a device. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|Time at which the operation was started.|
-|status|String|NotStarted/Running/Succeeded/Failed etc.|
+|status|String|The current status of the async operation, for example, `Queued`, `Scheduled`, `InProgress`,  `Successful`, `Cancelled`, and `Failed`.|
 
 
 ## JSON representation
@@ -51,22 +51,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkDeviceOperation",
-  "id": "String (identifier)",
-  "status": "String",
-  "operationType": "String",
-  "error": {
-    "@odata.type": "microsoft.graph.operationError"
-  },
-  "startedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "lastActionDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "error": {
+    "@odata.type": "microsoft.graph.operationError"
+  },
+  "id": "String (identifier)",
   "lastActionBy": {
     "@odata.type": "microsoft.graph.identitySet"
-  }
+  },
+  "lastActionDateTime": "String (timestamp)",
+  "operationType": "String",
+  "startedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

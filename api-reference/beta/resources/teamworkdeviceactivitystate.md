@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the activity state of a [teamworkdevice](teamworkdevice.md).
+Describes the activity state of a [teamworkDevice](teamworkdevice.md).
 
 ## Members
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |unknown|0|Unknown state.|
-|busy|1|Device is busy.|
-|idle|2|Device is idle.|
-|unavailable|3|Device is unavailable.|
+|busy|1|The device is busy.|
+|idle|2|The device is idle.|
+|unavailable|3|The device is unavailable.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 

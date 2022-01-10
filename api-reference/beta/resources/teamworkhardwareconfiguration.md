@@ -1,6 +1,6 @@
 ---
 title: "teamworkHardwareConfiguration resource type"
-description: "**TODO: Add Description**"
+description: "Represents the details about the hardware configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of device hardware configuration.
+Represents the details about the hardware configuration for a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|processorModel|String|Device CPU model.|
+|processorModel|String|The CPU model on the device.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|compute|[teamworkPeripheral](../resources/teamworkperipheral.md)|Compute peripheral details.|
-|hdmiIngest|[teamworkPeripheral](../resources/teamworkperipheral.md)|HDMI Ingest peripheral details.|
+|compute|[teamworkPeripheral](../resources/teamworkperipheral.md)|The system details for a [teamworkDevice](../resources/teamworkdevice.md).|
+|hdmiIngest|[teamworkPeripheral](../resources/teamworkperipheral.md)|The product details of HDMI ingest of a device.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

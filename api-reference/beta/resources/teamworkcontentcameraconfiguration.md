@@ -1,6 +1,6 @@
 ---
 title: "teamworkContentCameraConfiguration resource type"
-description: "Details of content camera configuration,"
+description: "Represents the details about the configuration for a content camera."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of configuration for content camera.
+Represents the details about the configuration for a content camera.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isContentCameraInverted|Boolean|True if content camera is inverted.|
-|isContentCameraOptional|Boolean|True if content camera is optional.|
-|isContentEnhancementEnabled|Boolean|True if content enhancement is enabled.|
+|isContentCameraInverted|Boolean|`True` if the content camera is inverted.|
+|isContentCameraOptional|Boolean|`True` if the content camera is optional.|
+|isContentEnhancementEnabled|Boolean|`True` if the content enhancement is enabled.|
 
 ## Relationships
 None.
@@ -35,9 +35,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamworkContentCameraConfiguration",
+  "isContentCameraInverted": "Boolean",
   "isContentCameraOptional": "Boolean",
-  "isContentEnhancementEnabled": "Boolean",
-  "isContentCameraInverted": "Boolean"
+  "isContentEnhancementEnabled": "Boolean"
 }
 ```
 
