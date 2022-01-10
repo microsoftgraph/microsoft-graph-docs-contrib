@@ -15,12 +15,11 @@ Namespace: microsoft.graph
 
 Defines how to target your cross-tenant access policy settings. Settings can be targeted to specific users, groups, or applications. You can also use keywords to target specific groups or applications.
 
-
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | The unique identifier of the user, group, or application; one of the following keywords: `AllUsers`, `AllGroups`, and `AllApplications`; or for targets that are applications, you may use [reserved values](#reserved-values-for-targets-that-are-applications). |
+| target | String | The unique identifier of the user, group, or application; one of the following keywords: `AllUsers` and `AllApplications`; or for targets that are applications, you may use [reserved values](#reserved-values-for-targets-that-are-applications). |
 | targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
 
 ### Reserved values for targets that are applications
