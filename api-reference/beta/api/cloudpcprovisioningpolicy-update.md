@@ -47,7 +47,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 In the request body, supply a JSON representation of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
+The following table shows the properties that are can be updated for the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -113,10 +113,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
 }
 -->
-
 ``` http
 HTTP/1.1 204 No Content
 ```
