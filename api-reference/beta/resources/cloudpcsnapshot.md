@@ -35,10 +35,11 @@ Inherits from [entity](../resources/entity.md).
 
 ### cloudPcSnapshotStatus values 
 
-|Member|
-|:---|
-|ready|
-|unknownFutureValue|
+|Member|Description|
+|:---|:---|
+|ready|The snapshot is ready to be used for restore.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
 ## Relationships
 None.
 
