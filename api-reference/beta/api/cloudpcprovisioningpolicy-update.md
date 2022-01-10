@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create the [
 |imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific windows settings to configure while creating Cloud PCs for this provisioning policy.|
 
 ## Response
 
@@ -86,6 +87,9 @@ Content-Type: application/json
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
   "imageType": "custom"
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -113,7 +117,7 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,6 +137,9 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
+  "imageType": "custom",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```

@@ -117,7 +117,10 @@ Content-Type: application/json
     "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
     "imageId": "Image ID value",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom"
+    "imageType": "custom",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```
 
@@ -161,7 +164,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,6 +185,9 @@ Content-Type: application/json
     "imageId": "Image ID value",
     "imageDisplayName": "Image Display Name value",
     "imageType": "custom",
+    "windowsSettings": {
+      "language": "en-US"
+    }
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

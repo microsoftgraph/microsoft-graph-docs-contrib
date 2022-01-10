@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +117,10 @@ Content-Type: application/json
       "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageId": "Image ID value",
       "imageDisplayName": "Image Display Name value",
-      "imageType":"custom"
+      "imageType":"custom",
+      "windowsSettings": {
+        "language": "en-US"
+      }
     }
   ]
 }
