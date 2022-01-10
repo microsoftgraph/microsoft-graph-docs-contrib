@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the software type to be updated in software update [teamworkdeviceoperations](teamworkdeviceoperation.md).
+Describes the software type to be updated in software update [teamworkDeviceOperations](teamworkdeviceoperation.md).
 
 ## Members
 
