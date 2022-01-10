@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Represents the risk history of an Azure AD service principal as determined by Azure AD Identity Protection. 
+Represents the risk history of an Azure AD service principal as determined by Azure AD Identity Protection. Inherits from [riskyServicePrincipal](riskyserviceprincipal.md).
 
 ## Methods
 
@@ -35,13 +35,13 @@ Represents the risk history of an Azure AD service principal as determined by Az
   "blockType": "resource",
   "optionalProperties": [ ],
   "@odata.type": "microsoft.graph.riskyServicePrincipalHistoryItem",
-  "baseType": "microsoft.graph.riskyServicePrincipals"
+  "baseType": "microsoft.graph.riskyServicePrincipal"
 }-->
 
 ```json
 {
-    "servicePrincipalId": "string",
-    "initiatedBy": "string",
+    "servicePrincipalId": "String",
+    "initiatedBy": "String",
     "activity": {"@odata.type": "microsoft.graph.riskyServicePrincipalActivity"}
 }
 ```
