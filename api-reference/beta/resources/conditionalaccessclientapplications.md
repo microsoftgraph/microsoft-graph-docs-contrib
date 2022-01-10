@@ -1,0 +1,49 @@
+---
+title: "conditionalAccessClientApplications resource type"
+description: "Represents client applications (service principals, workload identities) included in and excluded from the policy scope."
+author: "danielwood95"
+ms.localizationpriority: medium
+ms.prod: "identity-and-sign-in"
+doc_type: resourcePageType
+---
+
+# conditionalAccessClientApplications resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents client applications (service principals, workload identities) included in and excluded from the policy scope.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|excludeServicePrincipals|String collection|Service principal IDs excluded from the policy scope.|
+|includeServicePrincipals|String collection|Service principal IDs included in the policy scope, or `ServicePrincipalsInMyTenant`. |
+|servicePrincipalFilter|[conditionalAccessFilter](../resources/conditionalaccessfilter.md)|Filter that defines the dynamic syntax rule to include/exclude service principals based on custom security attributes assigned to the app. Cannot be set if **excludeServicePrincipals** or **includeServicePrincipals** is set. 
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.conditionalAccessClientApplications"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessClientApplications",
+  "includeServicePrincipals": [
+    "String"
+  ],
+  "excludeServicePrincipals": [
+    "String"
+  ],
+  "servicePrincipalFilter": {
+    "@odata.type": "microsoft.graph.conditionalAccessFilter"
+  }
+}
+```
+
