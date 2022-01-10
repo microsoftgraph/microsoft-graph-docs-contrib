@@ -34,7 +34,7 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 | b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B Direct Connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Defines your default configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B Direct Connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the default configuration for trusting other conditional access claims from external Azure AD organizations. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| isServiceDefault | Boolean | If `true`, means the default configuration is set to the system default configuration. If `false`, means that the default settings have been customized. |
+| isServiceDefault | Boolean | If `true`, the default configuration is set to the system default configuration. If `false`, the default settings have been customized. |
 
 ## Relationships
 

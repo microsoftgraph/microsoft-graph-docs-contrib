@@ -2,6 +2,162 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
+          "Target": "crossTenantAccessPolicy"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource and related methods. Represents the default configuration defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource and related methods. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
+          "Target": "crossTenantAccessPolicyInboundTrust"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationBase"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
+          "Target": "crossTenantAccessPolicyB2BSetting"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
+          "Target": "crossTenantAccessPolicyTarget"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyTargetConfiguration"
+        },
+        {
+          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
+        },
+        {
+          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetType"
+        }
+      ],
+      "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAnswerEditable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageQuestion"
+         },
+	 {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttribute** resource.",
+          "Target": "accessPackageResourceAttribute"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
+          "Target": "accessPackageResourceAttributeDestination"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageUserDirectoryAttributeStore",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageUserDirectoryAttributeStore** resource.",
+          "Target": "accesspackageuserdirectoryattributestore"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeSource** resource.",
+          "Target": "accessPackageResourceAttributeSource"
+        },
+	{
+   	 "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+    	 "ApiChange": "Property",
+    	 "ChangedApiName": "attributes",
+    	 "ChangeType": "Addition",
+    	 "Description": "Added the **attributes** property to the [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
+    	 "Target": "accessPackageResource"
+  	},
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeQuestion** resource.",
+          "Target": "accessPackageResourceAttributeQuestion"
+        }
+      ],
+      "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },	  
+	{
+      "ChangeList": [
         { 
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
           "ApiChange": "Method",
@@ -644,96 +800,6 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
-    {
-      "ChangeList": [
-       {
-         "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-         "ApiChange": "Resource",
-         "ChangedApiName": "crossTenantAccessPolicy",
-         "ChangeType": "Addition",
-         "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
-         "Target": "crossTenantAccessPolicy"
-       },
-       {
-         "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-         "ApiChange": "Resource",
-         "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
-         "ChangeType": "Addition",
-         "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource and related methods. Represents the default configuration defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
-         "Target": "crossTenantAccessPolicyConfigurationDefault"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
-          "Target": "crossTenantAccessPolicyConfigurationPartner"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource and related methods. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
-          "Target": "crossTenantAccessPolicyInboundTrust"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicyConfigurationBase"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
-          "Target": "crossTenantAccessPolicyB2BSetting"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyTarget",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
-          "Target": "crossTenantAccessPolicyTarget"
-        },
-        {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
-          "Target": "crossTenantAccessPolicyTargetConfiguration"
-        },
-        {
-          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
-          "ChangeType": "Addition",
-          "Description": "Added the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
-          "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
-        },
-        {
-          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "crossTenantAccessPolicyTargetType",
-          "ChangeType": "Addition",
-          "Description": "Added the **crossTenantAccessPolicyTargetType** enumeration.",
-          "Target": "crossTenantAccessPolicyTargetType"
-        }
-      ],
-      "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-08-24T14:10:06Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-      },
     {
       "ChangeList":[
         {
@@ -8399,7 +8465,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-07T23:28:58.045Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9563,7 +9629,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9581,7 +9647,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Calendar",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9599,7 +9665,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-13T00:00:00",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
