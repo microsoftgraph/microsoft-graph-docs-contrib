@@ -135,8 +135,8 @@ Content-Type: application/json
   "description": "Description value",
   "displayName": "Display Name value",
   "domainJoinConfiguration": {
-      "domainJoinType": "hybridAzureADJoin",
-      "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+      "type": "hybridAzureADJoin"
   },
   "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
   "imageDisplayName": "Windows-10 19h1-evd",
