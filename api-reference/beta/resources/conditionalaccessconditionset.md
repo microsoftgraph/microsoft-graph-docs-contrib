@@ -59,9 +59,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-"@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
-
- "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
+  "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+  "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
