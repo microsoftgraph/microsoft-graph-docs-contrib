@@ -23,6 +23,20 @@
         "SubArea": "Identity and sign-in"
 	}, {
 		"ChangeList": [{
+            "Id": "cad83874-f5f9-459e-9b42-965603408cda",
+            "ApiChange": "Property",
+            "ChangedApiName": "clientApplications",
+            "ChangeType": "Addition",
+            "Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
+            "Target": "conditionalAccessConditionSet"
+        },{
+            "Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "conditionalAccessClientApplications",
+            "ChangeType": "Addition",
+            "Description": "Added the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
+            "Target": "conditionalAccessClientApplications"
+        },{
 			"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
 			"ApiChange": "Property",
 			"ChangedApiName": "includeDevices",
