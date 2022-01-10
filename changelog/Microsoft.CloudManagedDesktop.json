@@ -3,15 +3,31 @@
         {
             "ChangeList": [
                 {
-                    "Id": "4a4421fd-e2fe-43e0-9a60-f9d6b2e4c15e",
-                    "ApiChange": "Relationship",
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
                     "ChangedApiName": "snapshots",
                     "ChangeType": "Addition",
-                    "Description": "Added the **snapshots** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **snapshots** relationship to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcSnapshot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSnapshot?view=graph-rest-beta) resource",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcSnapshotStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcSnapshotStatus** enumeration type.",
+                    "Target": "cloudPcSnapshotStatus"
                 }
             ],
-            "Id": "4a4421fd-e2fe-43e0-9a60-f9d6b2e4c15e",
+            "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-01-06T1413:07.177Z",
