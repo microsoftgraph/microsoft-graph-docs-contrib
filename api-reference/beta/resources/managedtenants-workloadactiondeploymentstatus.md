@@ -1,7 +1,7 @@
 ---
 title: "workloadActionDeploymentStatus resource type"
 description: "Represents the deployment status for the workload action."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
