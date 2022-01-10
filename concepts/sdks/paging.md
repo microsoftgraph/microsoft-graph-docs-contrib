@@ -108,7 +108,7 @@ while(messagesPage != null) {
   if (nextPage == null) {
     break;
   } else {
-    messagePage = nextPage.buildRequest(
+    messagesPage = nextPage.buildRequest(
         // Re-add the header to subsequent requests
         new HeaderOption("Prefer", "outlook.body-content-type=\"text\"")
     ).get();
