@@ -1,7 +1,7 @@
 ---
 title: "externalIdentitiesPolicy resource type"
 description: "Resources for External Identities Policy"
-author: "marthagithui"
+author: "KuiGithui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

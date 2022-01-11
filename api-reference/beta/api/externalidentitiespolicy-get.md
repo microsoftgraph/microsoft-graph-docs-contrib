@@ -1,7 +1,7 @@
 ---
 title: "Get externalIdentitiesPolicy"
 description: "Read the properties and relationships of an externalIdentitiesPolicy object."
-author: "marthagithui"
+author: "KuiGithui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [externalIden
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
+GET https://graph.microsoft.com/v1.0/policies/externalidentitiespolicy
 ```
 
 
@@ -75,13 +75,12 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.externalIdentitiesPolicy",
-    "id": "76444a08-0cd4-a26b-e0f3-17fff0ed7e28",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "allowExternalIdentitiesToLeave": "Boolean",
-    "allowDeletedIdentitiesDataRemoval": "Boolean"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/externalIdentitiesPolicy/$entity",
+    "id": "externalIdentityPolicy",
+    "deletedDateTime": null,
+    "allowExternalIdentitiesToLeave": true,
+    "allowDeletedIdentitiesDataRemoval": false,
+    "displayName": "External Identities Policy"
   }
 }
 ```
