@@ -93,7 +93,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
 }
 -->
 ```http
@@ -149,7 +150,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
 }
 -->
 ```http
@@ -200,7 +202,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
 }
 -->
 ```http
