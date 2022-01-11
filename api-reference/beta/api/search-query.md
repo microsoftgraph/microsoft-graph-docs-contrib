@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns a `HTTP 200 OK` response code and a collection of[searchResponse](../resources/searchresponse.md) objects in the response body.
  
 
 ## Examples

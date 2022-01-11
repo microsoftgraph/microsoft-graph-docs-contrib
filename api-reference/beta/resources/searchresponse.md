@@ -1,6 +1,6 @@
 ---
 title: "searchResponse resource type"
-description: "Description of the searchResponse"
+description: "Represents results from a search query, and the terms used for the query. "
 ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
