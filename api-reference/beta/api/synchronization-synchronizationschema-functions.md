@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchema: functions"
 description: "List all the functions currently supported in the attributeMappingSource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

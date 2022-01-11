@@ -1,7 +1,7 @@
 ---
 title: "implicitGrantSettings resource type"
 description: "Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. "
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

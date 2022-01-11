@@ -1,13 +1,13 @@
 ---
-title: "Update profilephoto"
-description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
-localization_priority: Priority
+title: "Update profilePhoto"
+description: "Update the photo for the signed-in user, or the specified group or contact."
+ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Update profilephoto
+# Update profilePhoto
 
 Namespace: microsoft.graph
 
@@ -22,13 +22,34 @@ You can use either PATCH or PUT for this operation in version 1.0.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-- Profile photo of the signed-in **user** - User.ReadWrite, User.ReadWrite.All
-- Profile photo of a **group** - Group.ReadWrite.All
-- Photo of a **contact** - Contacts.ReadWrite
+### To update the profile photo of the signed-in user
 
-> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   User.ReadWrite, User.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    User.ReadWrite.All           |
 
-> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+### To update the profile photo of a group
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   Group.ReadWrite.All           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    Group.ReadWrite.All           |
+
+### To update the profile photo of a contact
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account)      |   Contacts.ReadWrite           |
+|Delegated (personal Microsoft account)      |   Not supported.            |
+|Application      |    Contacts.ReadWrite           |
+
+> [!NOTE]
+> 1. To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> 2. There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> 3. Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +83,7 @@ In the request body, include the binary data of the photo in the request body.
 
 If successful, this method returns a `200 OK` response code.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -91,8 +112,9 @@ Binary data for the image
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

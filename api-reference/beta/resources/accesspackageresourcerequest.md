@@ -1,7 +1,7 @@
 ---
 title: "accessPackageResourceRequest resource type"
 description: "An access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "resourcePageType"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages, or to remove a resource from a catalog that is no longer needed by the access packages.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource request is a request to add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages, or to remove a resource from a catalog that is no longer needed by the access packages.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
+| [List accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
+| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
 
 ## Properties
 
@@ -40,7 +40,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageResource|[accessPackageResource](accesspackageresource.md)| Nullable.|
-|requestor|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable.|
+|requestor|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 

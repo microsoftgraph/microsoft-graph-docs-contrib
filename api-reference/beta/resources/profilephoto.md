@@ -1,9 +1,9 @@
 ---
 title: "profilePhoto resource type"
 description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online or Azure Active Directory (AAD). It's binary data not encoded in base-64."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "people"
 author: "kevinbellinger"
 ---
 
@@ -25,6 +25,10 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 |[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (**profilePhoto** properties). |
 |[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any. |
 
+> [!NOTE]
+> 
+> Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -38,7 +42,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

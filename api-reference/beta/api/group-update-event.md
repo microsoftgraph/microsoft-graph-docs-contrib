@@ -2,7 +2,7 @@
 title: "Update event"
 description: "Update an event object."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -55,7 +55,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",
@@ -79,6 +78,10 @@ Content-length: 211
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

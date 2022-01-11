@@ -2,7 +2,7 @@
 title: "Update custodian"
 description: "Update the properties of a custodian object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -70,7 +70,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 Content-Type: application/json
-Content-length: 254
 
 {
   "applyHoldToSources": "false",
@@ -90,6 +89,10 @@ Content-length: 254
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-custodian-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

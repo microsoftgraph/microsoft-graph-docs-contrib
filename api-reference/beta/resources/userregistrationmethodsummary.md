@@ -2,7 +2,7 @@
 title: "userRegistrationMethodSummary resource type"
 description: "Summary of number of users registered for each authentication method."
 author: "danielwood95"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

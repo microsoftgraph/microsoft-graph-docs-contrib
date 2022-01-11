@@ -1,8 +1,8 @@
 ---
 title: "Delete deployment"
 description: "Delete a deployment object."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deplo
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

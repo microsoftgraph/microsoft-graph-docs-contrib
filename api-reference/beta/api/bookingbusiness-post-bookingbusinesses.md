@@ -1,7 +1,7 @@
 ---
 title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -89,6 +89,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-bookingbusiness-from-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-bookingbusiness-from-bookingbusinesses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
@@ -105,7 +109,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"fourthcoffee@M365B489948.onmicrosoft.com",
+    "id":"fourthcoffee@contoso.onmicrosoft.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

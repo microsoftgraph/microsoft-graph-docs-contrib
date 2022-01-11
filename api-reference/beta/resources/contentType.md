@@ -2,7 +2,7 @@
 author: daspek
 description: "The contentType resource represents a content type in SharePoint."
 title: contentType
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "sites-and-lists"
 ---

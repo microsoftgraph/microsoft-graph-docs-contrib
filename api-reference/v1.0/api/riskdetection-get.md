@@ -2,7 +2,7 @@
 title: "Get riskDetection"
 description: "Read the properties and relationships of a riskDetection object."
 author: "cloudhandler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -16,7 +16,7 @@ Read the properties and relationships of a [riskDetection](../resources/riskdete
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

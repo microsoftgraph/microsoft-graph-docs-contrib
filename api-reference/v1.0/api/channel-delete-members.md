@@ -1,9 +1,9 @@
 ---
 title: "Remove member from channel"
 description: "Remove a member from a channel."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -76,12 +76,16 @@ DELETE https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-channel-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response"

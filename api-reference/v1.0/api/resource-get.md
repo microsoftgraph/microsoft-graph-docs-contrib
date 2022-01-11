@@ -1,7 +1,7 @@
 ---
 title: "Get resource"
 description: "Retrieve the binary data of a file or image resource object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-resource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

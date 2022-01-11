@@ -2,7 +2,7 @@
 title: "Update deviceManagementAutopilotPolicyStatusDetail"
 description: "Update the properties of a deviceManagementAutopilotPolicyStatusDetail object."
 author: "dougeby"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update deviceManagementAutopilotPolicyStatusDetail
 
 Namespace: microsoft.graph
-
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -66,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 Content-type: application/json
 Content-length: 314
 

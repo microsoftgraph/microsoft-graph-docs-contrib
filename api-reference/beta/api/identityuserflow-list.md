@@ -1,7 +1,7 @@
 ---
-title: "List userFlows"
+title: "List userFlows (deprecated)"
 description: "Retrieve a list of userFlow objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Retrieve a list of [userflows](../resources/identityuserflow.md).
 
@@ -76,6 +78,10 @@ GET https://graph.microsoft.com/beta/identity/userFlows
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

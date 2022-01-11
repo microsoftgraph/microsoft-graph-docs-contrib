@@ -1,8 +1,8 @@
 ---
 title: "Get deployment"
 description: "Read the properties and relationships of a deployment object."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

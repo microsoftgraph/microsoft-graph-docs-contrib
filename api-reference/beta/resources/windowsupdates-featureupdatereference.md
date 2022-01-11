@@ -1,8 +1,8 @@
 ---
 title: "featureUpdateReference resource type"
 description: "Represents Windows 10 feature update content."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

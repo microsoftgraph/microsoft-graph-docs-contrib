@@ -12,7 +12,7 @@ var attachment = new FileAttachment
 	ContentType = "contentType-value",
 	IsInline = false,
 	ContentLocation = "contentLocation-value",
-	ContentBytes = Encoding.ASCII.GetBytes("contentBytes-value")
+	ContentBytes = Convert.FromBase64String("contentBytes-value")
 };
 
 await graphClient.Me.Messages["{message-id}"].Attachments

@@ -4,7 +4,7 @@ description: Creates a tax area object in Dynamics for Financials.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
 ---

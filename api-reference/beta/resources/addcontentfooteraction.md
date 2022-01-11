@@ -1,7 +1,7 @@
 ---
 title: "addContentFooterAction resource type"
 description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

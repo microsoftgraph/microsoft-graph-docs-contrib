@@ -1,7 +1,7 @@
 ---
 title: "Person component in the Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
 ---
 
@@ -62,7 +62,7 @@ You can use several properties to customize the component.
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default)|
+| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `mail` and `jobTitle` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
 | line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
@@ -111,11 +111,13 @@ To learn more, see [styling components](../customize-components/style.md).
 
 The following events are fired from the component.
 
-| Event | Detail | Description |
-| --- | --- | --- |
-| line1clicked | The detail contains the respective `person` object | Fired when line1 is clicked. |
-| line2clicked | The detail contains the respective `person` object | Fired when line2 is clicked. |
-| line3clicked | The detail contains the respective `person` object | Fired when line3 is clicked. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

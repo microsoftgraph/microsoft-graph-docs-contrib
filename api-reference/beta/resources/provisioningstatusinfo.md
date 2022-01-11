@@ -1,7 +1,7 @@
 ---
 title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "governance"
 doc_type: "resourcePageType"

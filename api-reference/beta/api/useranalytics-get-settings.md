@@ -1,7 +1,7 @@
 ---
 title: "Get settings for user analytics"
 description: "Retrieve the properties of the settings object for user analytics."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "apiPageType"
