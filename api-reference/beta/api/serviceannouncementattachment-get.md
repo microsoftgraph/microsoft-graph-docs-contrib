@@ -34,7 +34,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments/{se
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -50,7 +50,9 @@ If successful, this method returns a `200 OK` response code and a [serviceAnnoun
 
 ## Examples
 
-### Example 1: Get an attachment with ID for a message. Return the [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) resource.
+### Example 1: Get an attachment with message ID
+
+The following request returns a [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) resource.
 
 #### Request
 <!-- {
@@ -80,14 +82,14 @@ Content-Type: application/json
     "contentType": "application/csv",
     "isInline": false,
     "lastModifiedDateTime": "2021-09-21T04:07:15.9720778Z",
-    "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365 Message center.",
+    "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the Microsoft 365 Message center.",
     "size": 44583,
     "id": "30356a46-ffad-47e1-acf6-40a99b1538c1"
   }
 }
 ```
 
-### Example 2: Return a file stream of an attachment content for a message.
+### Example 2: Return a file stream of an attachment content for a message
 
 #### Request
 <!-- {
@@ -112,6 +114,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365 Message center."
+  "value": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the Microsoft 365 Message center."
 }
 ```
