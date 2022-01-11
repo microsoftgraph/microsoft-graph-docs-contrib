@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 In examples below, we will consider following set up - 
-* Alice -----> User Admin (at tenant scope) : Role Assignment RA1
-* Alice -----> Group G1 -----> User Admin (at tenant scope) : Role assignment RA2
-* Alice -----> Group G2 -----> Helpdesk Admin (at an admin unit AU1 scope) : Role assignment RA3
+* Alice -----> User Administrator (at tenant scope) : Role Assignment RA1
+* Alice -----> Group G1 -----> User Administrator (at tenant scope) : Role assignment RA2
+* Alice -----> Group G2 -----> Helpdesk Administrator (at an administrative unit AU1 scope) : Role assignment RA3
 
-That is, Alice is assigned User Admin directly over tenant scope (role assignment 1 or RA1). Alice is member of a group G1 and G1 is assigned User Admin role over tenant scope (role assignment 2 or RA2). Alice is also a member of group G2 and G2 is assigned Helpdesk Admin role over an admin unit AU1 scope (role assignment 3 or RA3).
+That is, Alice is assigned User Administrator directly over tenant scope (role assignment 1 or RA1). Alice is member of a group G1 and G1 is assigned User Administrator role over tenant scope (role assignment 2 or RA2). Alice is also a member of group G2 and G2 is assigned Helpdesk Administrator role over an administrative unit AU1 scope (role assignment 3 or RA3).
 
 ### Example 1 : Get direct and transitive role assignments of a principal
 
@@ -107,19 +107,19 @@ Content-type: application/json
             "id": "<RA1's ID>",
             "principalId": "<Alice's ID>",
             "directoryScopeId": "/",
-            "roleDefinitionId": "<User Admin role template ID>"
+            "roleDefinitionId": "<User Administrator role template ID>"
         },
         {
             "id": "<RA2's ID>",
             "principalId": "<G1's ID>",
             "directoryScopeId": "/",
-            "roleDefinitionId": "<User Admin role template ID>"
+            "roleDefinitionId": "<User Administrator role template ID>"
         },
         {
             "id": "<RA3's ID>",
             "principalId": "<G2's ID>",
             "directoryScopeId": "/administrativeUnits/<AU1 ID>",
-            "roleDefinitionId": "<helpdesk Admin role template ID>"
+            "roleDefinitionId": "<Helpdesk Administrator role template ID>"
         }
     ]
 }
@@ -137,7 +137,7 @@ The following is an example of the request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & roleDefinitionId eq '<User Admin role template ID>'
+GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & roleDefinitionId eq '<User Administrator role template ID>'
 ```
 
 
@@ -164,19 +164,19 @@ Content-type: application/json
             "id": "<RA1's ID>",
             "principalId": "<Alice's ID>",
             "directoryScopeId": "/",
-            "roleDefinitionId": "<User Admin role template ID>"
+            "roleDefinitionId": "<User Administrator role template ID>"
         },
         {
             "id": "<RA2's ID>",
             "principalId": "<G2's ID>",
             "directoryScopeId": "/",
-            "roleDefinitionId": "<User Admin role template ID>"
+            "roleDefinitionId": "<User Administrator role template ID>"
         }
     ]
 }
 ```
 
-### Example 3: Get direct and transitive role assignments of a principal, but only admin unit scoped
+### Example 3: Get direct and transitive role assignments of a principal, but only administrative unit scoped
 
 #### Request
 
@@ -216,7 +216,7 @@ Content-type: application/json
             "id": "<RA3's ID>",
             "principalId": "<G2's ID>",
             "directoryScopeId": "/administrativeUnits/<AU1 ID>",
-            "roleDefinitionId": "<helpdesk Admin role template ID>"
+            "roleDefinitionId": "<Helpdesk Administrator role template ID>"
         }
     ]
 }
