@@ -11349,6 +11349,8 @@ items:
             items:
             - name: List role assignment
               href: api/rbacapplication-list-roleassignments.md
+            - name: List role assignment transitive
+              href: api/rbacapplication-list-roleassignments-transitive.md
             - name: Create role assignment
               href: api/rbacapplication-post-roleassignments.md
             - name: Get role assignment

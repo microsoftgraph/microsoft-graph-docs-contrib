@@ -66,7 +66,25 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },	  
-	{
+    {
+      "ChangeList": [
+        { 
+          "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
+          "ApiChange": "Method",
+          "ChangedApiName": "List transitiveRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/rbacapplication-list-roleassignments-transitive) method.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+        "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-01-17T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
+    },
+  	{
       "ChangeList": [
         { 
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
