@@ -33,7 +33,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
-|attachmentsArchive|Stream|The zipfile of all attachments for a message.|
+|attachmentsArchive|Stream|The zip file that contains all attachments for a message.|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
 |details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
@@ -45,14 +45,14 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |services|Collection(string)|The affected services by the service message.|
 |severity|serviceUpdateSeverity|The severity of the service message. Possible values are: `normal`, `high`, `critical`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|tags|Collection(string)|A collection of tags for the service message. Tags are provided by service team/support team who post the message to tell whether this message contains privacy data, or this message is for service new feature update, etc.|
+|tags|Collection(string)|A collection of tags for the service message. Tags are provided by the service team/support team who post the message to tell whether this message contains privacy data, or whether this message is for a service new feature update, and so on.|
 |title|String|The title of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user view points data of the service message. This data includes message status such as whether the user has archived, read, or marked the message as favorite. This property is null when accessed with application permissions.|
+|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Represents user viewpoints data of the service message. This data includes message status such as whether the user has archived, read, or marked the message as favorite. This property is null when accessed with application permissions.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attachments|Collection([serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md))|A collection of [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md).|
+|attachments|Collection([serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md))|A collection of [serviceAnnouncementAttachments](../resources/serviceannouncementattachment.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -34,7 +34,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 ```
 
 ## Optional query parameters
-This method supports the OData query parameters to help customize the response.
+This method supports the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
