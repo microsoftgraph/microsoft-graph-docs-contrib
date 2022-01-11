@@ -3,7 +3,7 @@ title: "riskyServicePrincipalHistoryItem resource type"
 description: "Represents the risk history of Azure AD service principals"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
