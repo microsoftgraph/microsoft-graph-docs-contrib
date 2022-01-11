@@ -76,18 +76,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.riskyServicePrincipal",
-    "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": "true",
-    "isProcessing": "false",
-    "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
-    "riskLevel": "high",
-    "riskState": "atRisk",
-    "riskDetail": "none",
-    "displayName": "Contoso App",
-    "appId": "b55552fe-a272-4b56-990b-95038d917878",
-    "servicePrincipalType": "Application"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyServicePrincipal",
+  "value": [
+    {
+      "id": "9089a539-a539-9089-39a5-899039a58990",
+      "accountEnabled": true,
+      "isProcessing": false,
+      "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
+      "riskLevel": "high",
+      "riskState": "atRisk",
+      "riskDetail": "none",
+      "displayName": "Contoso App",
+      "appId": "b55552fe-a272-4b56-990b-95038d917878",
+      "servicePrincipalType": "Application"
+    }
+  ]
 }
 ```

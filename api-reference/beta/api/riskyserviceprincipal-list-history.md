@@ -71,20 +71,24 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-        {
-            "id": "0fbef39d-9e8c-460b-444e-8ae5abcdffd7",
-            "accountEnabled": true,
-            "isProcessing": false,
-            "riskLastUpdatedDateTime": "2021-10-20T01:14:37.7214159Z",
-            "riskState": "atRisk",
-            "riskDetail": "none",
-            "riskLevel": "high",
-            "displayName": "Contoso App",
-            "appId": "ede08db0-9492-4a0c-8ae3-8ggg056c5d75",
-            "servicePrincipalType": "Application",
-            "servicePrincipalId": "0fbef39d-9e8c-777b-860e-8ae5abcdffd7",
-            "initiatedBy": null,
-            "activity": null
-        }
-    ]
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyServicePrincipalHistoryItem",
+  "value": [
+    {
+       "id": "0fbef39d-9e8c-460b-444e-8ae5abcdffd7",
+       "accountEnabled": true,
+       "isProcessing": false,
+       "riskLastUpdatedDateTime": "2021-10-20T01:14:37.7214159Z",
+       "riskState": "atRisk",
+       "riskDetail": "none",
+       "riskLevel": "high",
+       "displayName": "Contoso App",
+       "appId": "ede08db0-9492-4a0c-8ae3-8ggg056c5d75",
+       "servicePrincipalType": "Application",
+       "servicePrincipalId": "0fbef39d-9e8c-777b-860e-8ae5abcdffd7",
+       "initiatedBy": null,
+       "activity": null
+     }
+  ]
 }
+```
