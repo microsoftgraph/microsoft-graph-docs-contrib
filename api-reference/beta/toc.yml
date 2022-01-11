@@ -11464,8 +11464,6 @@ items:
               href: api/unifiedrbacresourcenamespace-list.md
             - name: Get
               href: api/unifiedrbacresourcenamespace-get.md
-            - name: List resource actions
-              href: api/unifiedrbacresourcenamespace-list-resourceactions.md
           - name: Resource action
             href: resources/unifiedrbacresourceaction.md
             items:
