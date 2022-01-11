@@ -1,6 +1,6 @@
 ---
 title: "contactMergeSuggestions resource type"
-description: "This resource represents user privacy settings for duplicate contacts merge suggestions feature. The user can enable / disable the feature using the same."
+description: "Represents user privacy settings for duplicate contacts merge suggestions feature. The user can enable / disable the feature using the same."
 author: "jagadeesh-vadivel"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents user privacy settings for duplicate contacts merge suggestions feature. The user can enable / disable the feature using the same.
+Represents user privacy settings for duplicate contacts merge suggestions feature. The user can enable / disable the feature using the same.
 
 ## Methods
 |Method|Return type|Description|
