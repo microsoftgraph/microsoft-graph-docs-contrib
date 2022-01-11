@@ -1,21 +1,21 @@
 ---
-title: "Get transtive unifiedRoleAssignment"
-description: "Get list of direct and transitive role assignments for a specific principal."
-localization_priority: Normal
+title: "List transitive unifiedRoleAssignment"
+description: "List direct and transitive role assignments for a specific principal."
+localization_priority: medium
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
-# Get list of direct and transitive unifiedRoleAssignments for a principal
+# List direct and transitive unifiedRoleAssignments for a principal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. It can be used if a user is assigned Azure AD role via a group. To learn more about it, refer to this doc - [Use cloud groups to manage role assignments in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/groups-concept). 
+Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. It can be used if a user is assigned Azure AD role via a group. For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept). 
 
-If the role assignment is transitive, the group's ID will be returned for principalID. Results can also be filtered based on roleDefinitionId and directoryScopeId. 
+If the role assignment is transitive, the group's ID will be returned for `principalID`. Results can also be filtered based on `roleDefinitionId` and `directoryScopeId`. 
 
 Supported only for directory (Azure AD) provider. 
 
@@ -71,8 +71,6 @@ That is, Alice is assigned User Admin directly over tenant scope (role assignmen
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_all"
@@ -129,7 +127,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_transitive"
@@ -179,8 +176,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_tenantscoped"
