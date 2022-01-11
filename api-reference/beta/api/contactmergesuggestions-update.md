@@ -48,13 +48,13 @@ PATCH /users/{userId}/settings/contactMergeSuggestions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|'true' if duplicate contact merge suggestions feature is enabled for user; 'false' if duplicate contact merge suggestions feature is disabled. Default is 'true'.|
+|isEnabled|Boolean|`true` if duplicate contact merge suggestions feature is enabled for user; `false` if duplicate contact merge suggestions feature is disabled. Default is `true`.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [contactMergeSuggestions](../resources/contactmergesuggestions.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and the value is updated in the backend.
 
 ## Examples
 
