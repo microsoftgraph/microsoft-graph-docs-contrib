@@ -30,7 +30,7 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | group-id | groupId | Retrieves people from a specific Microsoft Graph from the respective ID. |
 | user-ids | userIds | Given an array of Microsoft Graph user `ids`, the component will render these users.  |
 | people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
-| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
+| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover`, `click` or `none`. Default value is `hover`. |
 | show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
 | resource | resource | The resource to get from Microsoft Graph (for example, `/me/people`). |
 | scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
@@ -90,7 +90,7 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 | Configuration | Permission | API
 | --- | ---------- | ------- |
-| `groupId` set | User.Read.All, People.Read | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `groupId` set | GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
 | `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
 | `resource` set | Permissions specified in `scopes` | Specified in `resource` |
