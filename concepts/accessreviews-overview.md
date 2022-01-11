@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Overview of the access reviews API
 
-The [access reviews API](/graph/api/resources/accessreviewsv2-root) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This review helps to ensure that the right people have the right access to the right resources in the organization.
+The [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This review helps to ensure that the right people have the right access to the right resources in the organization.
 
 Using the access reviews API, you can do the following actions:
 + Create, read, update, and delete access reviews, access review settings, and schedules.

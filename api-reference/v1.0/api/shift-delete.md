@@ -46,7 +46,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -84,7 +84,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 

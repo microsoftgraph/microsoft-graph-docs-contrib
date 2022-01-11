@@ -154,12 +154,6 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
-## Compliance
-
-### Subject rights request API permissions are not currently available
-
-The Subject rights request API entities within the Microsoft Graph privacy API currently do not have permissions available. This issue may prevent users from seeing permissions and consenting to the use of the API in their environment. 
-
 ## Contacts
 
 ### GET operation does not return default contacts folder
@@ -373,7 +367,7 @@ In both the v1.0 and beta endpoints, the response to `GET /users/id/messages` in
 
 ## Reports
 
-### Azure AD activity reports can return an error
+### License check errors for Azure AD activity reports
 
 When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
 
@@ -424,27 +418,32 @@ The following API calls do not support installing apps that require [resource-sp
 
 ## Users
 
-### Use the dollar ($) symbol in the userPrincipalName
+### Get user by userPrincipalName that starts with a dollar ($) symbol
 
 Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
+### Encode number (#) symbols in userPrincipalName
+
+The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+
 ### Access to user resources is delayed after creation
 
-Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404` HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages, and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a `404 Not Found` HTTP error response.
 
 ### Access to a user's profile photo is limited
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
-Failure to read or update a photo, in this case, results in the following error:
+1. Reading and updating a user's profile photo is only possible if the user has a mailbox. Failure to read or update a photo, in this case, results in the following error:
 
-```javascript
-{
-  "error": {
-    "code": "ErrorNonExistentMailbox",
-    "message": "The SMTP address has no mailbox associated with it."
-  }
-}
-```
+    ```html
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+    ``` 
+2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code
 
@@ -475,9 +474,9 @@ The following limitations apply to query parameters:
 * `$search`:
   * Full-text search is only available for a subset of entities, such as messages.
   * Cross-workload searching is not supported.
-  * Searching is not supported on Azure AD B2C tenants.
+  * Searching is not supported in Azure AD B2C tenants.
 * `$count`:
-  * Not supported on Azure AD B2C tenants.
+  * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 

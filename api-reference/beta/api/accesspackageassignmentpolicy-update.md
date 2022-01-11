@@ -65,6 +65,8 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ### Request
 In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -153,8 +155,6 @@ Content-Type: application/json
     }]
 }
 ```
-
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

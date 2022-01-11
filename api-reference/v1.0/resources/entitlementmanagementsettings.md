@@ -11,7 +11,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-Represents settings that control the behavior of [Azure AD entitlement management](entitlementmanagement-root.md).  This resource does not include the catalog creators setting; to view or change the catalog creators role membership, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
+Represents settings that control the behavior of [Azure AD entitlement management](entitlementmanagement-overview.md). This resource does not include the catalog creators setting; to view or change the catalog creators role membership, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 ## Methods
 |Method|Return type|Description|
