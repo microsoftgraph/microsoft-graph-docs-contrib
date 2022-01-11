@@ -287,7 +287,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
