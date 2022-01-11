@@ -56,7 +56,9 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ## Examples
 
-### Request
+### Example 1: Get the default properties of a Cloud PC
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -92,9 +94,71 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 ---
 
 
-### Response
+#### Response
 
-**Note:** The response object shown here might be shortened for readability.
+**Note:**
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
+    "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
+    "displayName": "Demo-0",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",
+    "managedDeviceName": "A00002GI001",
+    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
+    "provisioningPolicyName": "Marketing provisioning policy",
+    "onPremisesConnectionName": "on-Premises connection for Marketing",
+    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
+    "servicePlanName": "standard",
+    "servicePlanType": "enterprise",
+    "status": "failed",
+    "statusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+    "code": "internalServerError",
+    "message": "There was an internal server error. Please contact support xxx.",
+    "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "correlationId",
+          "value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"
+        }
+      ]
+    },
+    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+}
+```
+
+### Example 2: Get the selected properties of a Cloud PC
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}?$select=id,displayName,,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+```
+
+#### Response
+
+**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,28 +176,18 @@ Content-Type: application/json
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
     "displayName": "Demo-0",
     "imageDisplayName": "Windows-10 19h1-evd",
-    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",
-    "managedDeviceName": "A00002GI001",
-    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
-    "provisioningPolicyName": "Marketing provisioning policy",
-    "onPremisesConnectionName": "on-Premises connection for Marketing",
-    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
-    "servicePlanName": "standard",
-    "status": "failed",
-    "statusDetails": {
-    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
-    "code": "internalServerError",
-    "message": "There was an internal server error. Please contact support xxx.",
-    "additionalInformation": [
-        {
-          "@odata.type": "microsoft.graph.keyValuePair",
-          "name": "correlationId",
-          "value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"
-        }
-      ]
-    },
-    "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
-    "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+    "lastLoginResult": {
+        "time": "2021-06-23T09:28:32.8260335Z"
+    },
+    "lastRemoteActionResult": {
+      "actionName": "Reboot",
+      "actionState": "done",
+      "startDateTime": "2021-06-23T09:28:32.8260335Z",
+      "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
+      "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
+      "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
+      "statusDetails": null
+    }
 }
 ```

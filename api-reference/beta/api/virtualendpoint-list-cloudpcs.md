@@ -110,6 +110,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
+      "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
       "displayName": "Demo-1",
       "imageDisplayName": "Windows-10 19h1-evd",
@@ -120,6 +121,7 @@ Content-Type: application/json
       "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
+      "servicePlanType": "enterprise",
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
