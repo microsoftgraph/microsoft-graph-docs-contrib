@@ -34,7 +34,7 @@ The signed-in user must also be the creator of the associated review history def
 }
 -->
 ``` http
-POST /identityGovernance/accessReviews/historyDefinitions/{definition-id}/generateDownloadUri()
+POST /identityGovernance/accessReviews/historyDefinitions/{definition-id}/instanceId/generateDownloadUri()
 ```
 
 ## Request headers
