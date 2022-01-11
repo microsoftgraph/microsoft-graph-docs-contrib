@@ -1,7 +1,7 @@
 ---
 title: "Delete updatableAsset"
 description: "Delete an updatableAsset object."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
