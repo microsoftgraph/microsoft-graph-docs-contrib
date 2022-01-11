@@ -18,6 +18,10 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ### Cloud communications | Presence
 [Subscribe to notifications of changes](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) in a specified user's [presence](/graph/api/resources/presence) status. Always specify an encryption certificate in the subscription request as these are [rich notifications that include encrypted resource data](webhooks-with-resource-data.md).
 
+
+### Compliance | Subject rights requests
+As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), the [subject rights requests API](/graph/api/resources/subjectrightsrequest) debuts in both v1 and beta endpoints of Microsoft Graph. The API lets users make requests to review or manage their personal data in their organizations. It also lets organizations automate and scale managing these requests, helping them to meet industry regulations more efficiently.
+
 ### Customer booking
 Use the API for Microsoft Bookings in production apps, and take advantage of the following new features and updates:
 - Notify your customers in the US or Canada by SMS for an [appointment](/graph/api/resources/bookingappointment) or specific [service](/graph/api/resources/bookingservice) associated with an appointment.
