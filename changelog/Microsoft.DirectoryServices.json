@@ -73,7 +73,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List transitiveRoleAssignments",
           "ChangeType": "Addition",
-          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/rbacapplication-list-roleassignments-transitive) method.",
+          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignment-list-transitive) method.",
           "Target": "unifiedRoleAssignment"
         }
       ],
