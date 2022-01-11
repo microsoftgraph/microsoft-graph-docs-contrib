@@ -1,7 +1,7 @@
 ---
 title: "List transitive unifiedRoleAssignment"
 description: "List direct and transitive role assignments for a specific principal."
-localization_priority: medium
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -33,8 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 To list transitive role assignments for a directory provider:
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>'
 ```
@@ -74,8 +76,8 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_all"
-}-->
-
+}
+-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '{principal id}'
 ```
@@ -87,12 +89,13 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssi
 The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleAssignment"
-} -->
-
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -130,24 +133,25 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_transitive"
-}-->
-
+}
+-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & roleDefinitionId eq '<User Admin role template ID>'
 ```
----
 
 
 #### Response
 
 The following is an example of the response.
+
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleAssignment"
-} -->
-
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -179,8 +183,8 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_tenantscoped"
-}-->
-
+}
+-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & directoryScopeID eq '/administrativeUnits/AU1 ID>'
 ```
@@ -190,13 +194,15 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssi
 #### Response
 
 The following is an example of the response.
+
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleAssignment"
-} -->
-
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -212,13 +218,3 @@ Content-type: application/json
     ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get transtive unifiedRoleAssignment",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
