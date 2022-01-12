@@ -5,11 +5,11 @@
       "ChangeList": [
         {
           "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
-          "ApiChange": "queryOption",
-          "ChangedApiName": "chatMessage",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
           "ChangeType": "Addition",
           "Description": "OrderBy query option has been enabled to allow users to choose sorting order between LastModifiedDateTime and CreatedDateTime when retreiving chat messages.",
-          "Target": "chat"
+          "Target": "chatMessage"
         }
       ],
       "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
