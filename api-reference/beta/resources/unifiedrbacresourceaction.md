@@ -27,7 +27,6 @@ An object that represents an operation that an authorized principal is allowed t
 |actionVerb|String|HTTP method for the action, such as `DELETE`, `GET`, `PATCH`, `POST`, `PUT`, or `null`.|
 |description|String|Description for the action.|
 |id|String|Unique identifier for an action within the directory resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required.|
-|isEnabledForCustomRole|Boolean|**TODO: Add Description**|
 |name|String|Name for the action within the directory resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required.|
 |resourceScopeId|String|Action applicable resource identifier.|
 
@@ -51,7 +50,6 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "actionVerb": "String",
   "description": "String",
-  "isEnabledForCustomRole": "Boolean",
   "name": "String",
   "resourceScopeId": "String"
 }
