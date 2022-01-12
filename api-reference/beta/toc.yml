@@ -11780,21 +11780,6 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Organizational contacts
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
-          - name: Get org contact delta
-            href: api/orgcontact-delta.md
-          - name: Groups
-            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:

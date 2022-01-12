@@ -4799,11 +4799,11 @@ items:
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
-          - name: List org contacts
+          - name: List
             href: api/orgcontact-list.md
-          - name: Get org contact
+          - name: Get
             href: api/orgcontact-get.md
-          - name: Get org contact delta
+          - name: Get delta
             href: api/orgcontact-delta.md
           - name: Groups
             href: resources/group.md
