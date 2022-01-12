@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) in the response body if the content type is added synchronously or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richLongRunningOperation.md) that was created to handle the copy/sync.
-In case of asynchronous operation it could take upto 40 minutes to sync or add a content type.
+In case of asynchronous operation it could take upto 70 minutes to sync or add a content type.
 
 ## Examples
 
