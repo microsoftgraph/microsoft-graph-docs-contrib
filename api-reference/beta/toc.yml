@@ -11735,7 +11735,7 @@ items:
               href: api/samlorwsfedexternaldomainfederation-delete.md
             - name: List domains
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
-            - name: Create externalDomainName
+            - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
