@@ -34,7 +34,7 @@ GET /roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId
 ```
 
 ## Optional query parameters
-This method supports the `$count`, `$select`, `$top`, and `$skiptoken` OData query parameters to help customize the response. This method supports `$filter` for `actionVerb` and `resourceScopeId`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$top`, and `$skiptoken` OData query parameters to help customize the response. This method supports `$filter` for `actionVerb`, `description`, `id`, and `name`. This method supports `$top` and `$skiptoken` for `resourceActions`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
