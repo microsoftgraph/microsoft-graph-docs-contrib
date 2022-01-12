@@ -19,7 +19,7 @@ Represents the self-service password reset usage for a given tenant. Details inc
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Read properties and relationships of a userCredentialUsageDetails object. |
+| [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Read properties and relationships of a userCredentialUsageDetails object. |
 
 ## Properties
 

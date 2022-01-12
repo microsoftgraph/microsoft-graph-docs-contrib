@@ -2,7 +2,7 @@
 title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationsignindetailedsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

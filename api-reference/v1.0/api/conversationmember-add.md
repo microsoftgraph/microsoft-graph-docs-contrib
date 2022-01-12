@@ -1,6 +1,6 @@
 ---
 title: "Add conversationMember"
-description: "Add conversationMember to a channel."
+description: "Add a conversationMember to a channel."
 author: "akjo" 
 doc_type: "apiPageType"
 ms.localizationpriority: medium
@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -87,12 +87,16 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversation-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
