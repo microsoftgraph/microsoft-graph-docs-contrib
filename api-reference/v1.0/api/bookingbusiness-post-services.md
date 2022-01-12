@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/services
+POST /solutions/bookingBusinesses/{id}/services
 
 ```
 ## Request headers
