@@ -43,6 +43,8 @@ GET /chats/{chat-id}/messages
 
 ## Optional query parameters
 
+This method supports the following [OData query parameters](/graph/query-parameters).
+
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
