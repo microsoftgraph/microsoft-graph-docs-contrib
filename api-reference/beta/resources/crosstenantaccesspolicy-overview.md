@@ -40,7 +40,7 @@ By default, Azure AD assigns all Azure AD tenants a service default configuratio
 Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration with a specific Azure AD organization. Any collaboration with this organization will inherit these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
 Even though you have added a partner to your cross-tenant access settings, some of your default settings will still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration will be inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
-
+## Trust settings in cross-tenant access settings
 ## Interpreting the API response
 
 The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. **b2bSetting** is used as a placeholder for any B2B inbound (**b2bCollaborationInbound** or **b2bDirectConnectInbound**) or outbound (**b2bCollaborationOutbound** or **b2bDirectConnectOutbound**) configuration.
@@ -320,7 +320,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 <td> Users in group 'g1' are allowed access to application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
 </table>
-
+## Cross-tenant access settings vs tenant restrictions
 ## Next steps
 
 + [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type
