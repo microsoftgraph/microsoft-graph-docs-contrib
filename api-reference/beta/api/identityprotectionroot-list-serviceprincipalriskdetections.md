@@ -36,7 +36,7 @@ GET /identityProtection/servicePrincipalRiskDetections
 ```
 
 ## Optional query parameters
-This method supports `$filter` and `$select` to customize the query response. See the example later in this topic.
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
