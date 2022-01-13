@@ -339,7 +339,7 @@ items:
           items:
           - name: User control (preview)
             items:
-            - name: contactMergeSuggestions settings
+            - name: Contact merge suggestions
               href: resources/contactmergesuggestions.md
             - name: Get
               href: api/contactmergesuggestions-get.md
