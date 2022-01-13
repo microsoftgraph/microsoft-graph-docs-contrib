@@ -22,10 +22,12 @@ To manage custom security attributes, the calling principal must be assigned the
 
 - [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-Also, the calling principal must be granted the following permission.
+Also, the calling principal must be granted the following permissions.
 
-- [User.Read.All](permissions-reference.md#user-permissions)
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
+- [User.Read.All](permissions-reference.md#user-permissions)
+
+Permissions to read, assign, update, or remove attributes for an application is granted by *CustomSecAttributeAssignment.ReadWrite.All*. Permissions to read the resource object, such as users, is granted separately using resource object permissions, such as *User.Read.All*.
 
 ## Assign custom security attributes
 
