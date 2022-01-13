@@ -11219,6 +11219,13 @@ items:
             href: api/domain-update.md
           - name: Verify domain
             href: api/domain-verify.md
+        - name: External identities policy
+          href: resources/externalidentitiespolicy.md
+          items:
+          - name: Get
+            href: api/externalidentitiespolicy-get.md
+          - name: Update
+            href: api/externalidentitiespolicy-update.md
         - name: Feature rollout policy
           href: resources/featurerolloutpolicy.md
           items:
