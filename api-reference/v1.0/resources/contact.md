@@ -93,7 +93,7 @@ by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
