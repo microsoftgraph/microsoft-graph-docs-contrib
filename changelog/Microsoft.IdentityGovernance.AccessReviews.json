@@ -663,6 +663,32 @@
       "CreatedDateTime": "2021-06-18T19:40:43.984Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8b32b549-7dd3-46e4-b83e-78f77dd7245e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "decisionItemPrincipalResourceMembership",
+          "ChangeType": "Addition",
+          "Description": "Added the [decisionItemPrincipalResourceMembership](https://docs.microsoft.com/en-us/graph/api/resources/decisionItemPrincipalResourceMembership?view=graph-rest-beta) resource type.",
+          "Target": "decisionItemPrincipalResourceMembership"
+        },
+        {
+          "Id": "b56857a4-8f4a-4d20-a3eb-281016bd81d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "principalResourceMembership",
+          "ChangeType": "Addition",
+          "Description": "Added the **principalResourceMembership** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        }
+      ],
+      "Id": "2c08a551-95b2-43f7-a947-4afe08ea917b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-12T19:40:43.984Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }

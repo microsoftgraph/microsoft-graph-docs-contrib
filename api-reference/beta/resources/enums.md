@@ -2733,3 +2733,11 @@ Possible values for user account types (group membership), per Windows definitio
 |staff|
 |customer|
 |unknownFutureValue|
+
+### decisionItemPrincipalResourceMembershipType values 
+
+|Member|
+|:---|
+|direct|
+|indirect|
+|unknownFutureValue|
