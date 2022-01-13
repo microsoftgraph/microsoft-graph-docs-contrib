@@ -5354,17 +5354,17 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
-          - name: Access review instance decision item
-            href: resources/accessreviewinstancedecisionitem.md
-            items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
-              href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
-            - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Access review instance decision item
+              href: resources/accessreviewinstancedecisionitem.md
+              items:
+              - name: Get
+                href: api/accessreviewinstancedecisionitem-get.md
+              - name: List
+                href: api/accessreviewinstance-list-decisions.md
+              - name: Update
+                href: api/accessreviewinstancedecisionitem-update.md
+              - name: Filter by current user
+                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
         - name: Consent requests
           href: resources/consentrequests-overview.md
           items:
