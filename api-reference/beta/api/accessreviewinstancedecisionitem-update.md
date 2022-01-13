@@ -27,6 +27,14 @@ One of the following permissions is required to call this API. Delegated permiss
 |Delegated (personal Microsoft account)|Not supported.|
 
 ## HTTP request
+
+Update a decision on an accessReviewInstance
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+```
+
+Update a decision from a stage of an accessReviewInstance
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
