@@ -3,7 +3,7 @@ title: "admin resource type"
 description: "Entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: resourcePageType
 ---
 

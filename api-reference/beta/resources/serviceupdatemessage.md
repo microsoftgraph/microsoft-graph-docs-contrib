@@ -3,7 +3,7 @@ title: "serviceUpdateMessage resource type"
 description: "Represents the announcements of changes in a service."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: resourcePageType
 ---
 

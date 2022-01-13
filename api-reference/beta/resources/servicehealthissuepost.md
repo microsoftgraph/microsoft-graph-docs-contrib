@@ -3,7 +3,7 @@ title: "serviceHealthIssuePost resource type"
 description: "Represents a historical post in a service health issue."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: resourcePageType
 ---
 

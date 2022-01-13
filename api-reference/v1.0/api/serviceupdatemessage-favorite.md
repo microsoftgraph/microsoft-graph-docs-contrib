@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: favorite"
 description: "Change the status of a list of service update messages to favorited for the signed in user."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: apiPageType
 ---
 

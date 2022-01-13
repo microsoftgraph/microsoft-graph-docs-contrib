@@ -3,7 +3,7 @@ title: "serviceHealthIssue resource type"
 description: "Represents a service health issue in a service."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: resourcePageType
 ---
 

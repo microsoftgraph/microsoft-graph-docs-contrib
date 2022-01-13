@@ -3,7 +3,7 @@ title: "List issues"
 description: "Retrieve the serviceHealthIssue resources from the issues navigation property."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: apiPageType
 ---
 

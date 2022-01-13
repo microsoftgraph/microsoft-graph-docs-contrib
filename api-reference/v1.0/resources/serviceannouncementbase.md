@@ -3,7 +3,7 @@ title: "serviceAnnouncementBase resource type"
 description: "This is an abstract base type for serviceHealthIssue and serviceUpdateMessage."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.prod: "service-health-and-communications"
 doc_type: resourcePageType
 ---
 
