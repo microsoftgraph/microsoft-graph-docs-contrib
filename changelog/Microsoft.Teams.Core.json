@@ -2,7 +2,25 @@
 
   "changelog": [
     {
-      "ChangeList":[
+      "ChangeList": [
+        {
+          "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
           "ApiChange": "Property",
