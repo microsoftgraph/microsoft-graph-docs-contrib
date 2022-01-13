@@ -77,8 +77,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.riskyServicePrincipal",
     "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": "true",
-    "isProcessing": "false",
+    "accountEnabled": true,
+    "isProcessing": false,
     "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
     "riskLevel": "high",
     "riskState": "atRisk",
@@ -100,7 +100,7 @@ The following example shows how to use `$filter` to get the collection of riskyS
 -->
 
  ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals$filter=riskLevel eq microsoft.graph.riskLevel'high'
+GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'high'
 ```
 
 
@@ -119,8 +119,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.riskyServicePrincipal",
     "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": "true",
-    "isProcessing": "false",
+    "accountEnabled": true,
+    "isProcessing": false,
     "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
     "riskLevel": "high",
     "riskState": "atRisk",
