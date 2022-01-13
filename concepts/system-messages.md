@@ -23,8 +23,8 @@ In this case, the **messageType** property is set to `systemEventMessage` and th
 
 The following GET operations support system messages:
 
-- GET /teams/{team-id}/channel/{channel-id}/messages
-- GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
+- GET /teams/{team-id}/channels/{channel-id}/messages
+- GET /teams/{team-td}/channels/{channel-id}/messages/{message-id}
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
