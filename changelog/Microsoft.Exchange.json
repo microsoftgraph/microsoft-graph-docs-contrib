@@ -8,7 +8,7 @@
           "ChangedApiName": "contentId",
           "ChangeType": "Addition",
           "Description": "Added the **contentId** property to [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-1.0) entity.",
-          "Target": "attachmentItem,createUploadSession"
+          "Target": "attachmentItem"
         }
       ],
       "Id": "116d29dd-f97b-421c-9b55-531aac9d4b38",
@@ -26,7 +26,7 @@
           "ChangedApiName": "contentId",
           "ChangeType": "Addition",
           "Description": "Added the **contentId** property to [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-beta) entity.",
-          "Target": "attachmentItem,createUploadSession"
+          "Target": "attachmentItem"
         }
       ],
       "Id": "bf68e333-fc87-4f40-bc63-931d4464329d",
