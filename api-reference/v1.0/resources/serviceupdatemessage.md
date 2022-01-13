@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.serviceUpdateMessage",
-  "baseType": "microsoft.graph.serviceAnnouncementBase"
+  "baseType": "microsoft.graph.serviceAnnouncementBase",
   "openType": false
 }
 -->
