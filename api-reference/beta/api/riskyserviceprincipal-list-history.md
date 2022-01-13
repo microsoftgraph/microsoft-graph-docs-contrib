@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) resource.
+Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
 >**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
 
