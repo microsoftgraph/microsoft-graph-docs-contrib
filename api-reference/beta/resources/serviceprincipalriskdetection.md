@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a detected workload identity risk in an Azure AD tenant, including risk for applications, service principals and Managed Identities. We have combined these various account types into a single collection here.
+Represents information about a detected at-risk service principal in an Azure AD tenant. Azure AD continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all service principal risk detections in your Azure AD environment.
 
-Azure AD continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all workload identity risk detections in your Azure AD environment.
+Inherits from [entity](../resources/entity.md).
 
-For more information about risk events, see Azure Active Directory Identity Protection. 
+For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). 
 
 >**Note:** You must have an Azure AD Premium P1 or P2 license to use the servicePrincipalRiskDetection API.
 
