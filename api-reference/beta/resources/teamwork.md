@@ -19,6 +19,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List devices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get the list of all Teams devices provisioned for the tenant.|
+| [List workforceIntegrations](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) collection | Get the list of **workforceIntegration** objects associated with this **teamwork**.|
 
 ## Properties
 
@@ -30,12 +31,12 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The enrolled devices in the personal scope of this user.|
+|workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource. 
 
 <!-- {
   "blockType": "resource",

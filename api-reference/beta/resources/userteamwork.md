@@ -57,4 +57,6 @@ The following is a JSON representation of the resource.
 }
 -->
 
+## See also
 
+- [teamwork resource type](teamwork.md)
