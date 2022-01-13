@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: unfavorite"
 description: "Remove the favorite status of serviceUpdateMessage for the signed in user."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-health-and-communications"
+ms.prod: "service-communications"
 doc_type: apiPageType
 ---
 

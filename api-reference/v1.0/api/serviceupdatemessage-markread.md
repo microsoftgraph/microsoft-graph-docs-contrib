@@ -3,7 +3,7 @@ title: "serviceUpdateMessage: markRead"
 description: "Mark a list of service update messages as read for the signed in user."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-health-and-communications"
+ms.prod: "service-communications"
 doc_type: apiPageType
 ---
 

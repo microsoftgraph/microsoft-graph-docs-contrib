@@ -3,7 +3,7 @@ title: "List attachments"
 description: "Get the list of attachments associated with a service message."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-health-and-communications"
+ms.prod: "service-communications"
 doc_type: apiPageType
 ---
 
