@@ -24,7 +24,7 @@ Represents the details about the hardware configuration for a [teamworkDevice](.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |compute|[teamworkPeripheral](../resources/teamworkperipheral.md)|The system details for a [teamworkDevice](../resources/teamworkdevice.md).|
-|hdmiIngest|[teamworkPeripheral](../resources/teamworkperipheral.md)|The product details of HDMI ingest of a device.|
+|hdmiIngest|[teamworkPeripheral](../resources/teamworkperipheral.md)|The product details about the HDMI ingest of a device.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

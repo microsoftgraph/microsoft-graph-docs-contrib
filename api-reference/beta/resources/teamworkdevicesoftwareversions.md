@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about software versions for a device, including firmware, operating system, Microsoft Teams client, and admin agent.
+Represents the details about software versions for a [teamworkDevice](../resources/teamworkdevice.md), including firmware, operating system, Microsoft Teams client, and admin agent.
 
 ## Properties
 |Property|Type|Description|

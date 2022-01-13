@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of Teams client configuration. These details are applicable only for Microsoft Teams Rooms devices. 
+Details of Teams client configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices. 
 
 ## Properties
 |Property|Type|Description|

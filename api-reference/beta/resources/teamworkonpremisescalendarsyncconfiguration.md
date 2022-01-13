@@ -1,6 +1,6 @@
 ---
 title: "teamworkOnPremisesCalendarSyncConfiguration resource type"
-description: "Details of the account used to sync calendar."
+description: "Represents the details about the account used to sync calendars."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Domain details of the account used to sync to calendar.
-These are used when a different account is used to sync calendar.
+Represents the details about the account used to sync calendars.
+These account details are used when a different account is used to sync calendar.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|domain|String|Under "Domain," set the FQDN for the Skype for Business Server. If the Skype for Business SIP domain is different from the Exchange domain of the user, enter the Exchange domain in this field.|
-|domainUserName|String|The domain and user name of the console device, for example Seattle\RanierConf.|
-|smtpAddress|String|This is only used if a different UPN is used to sign in with exchange other than Teams or SfB, normally in a Hybrid environment where a OnPrem exchange server is used.|
+|domain|String|The fully qualified domain name (FQDN) of the Skype for Business Server. Use the Exchange domain if the Skype for Business SIP domain is different from the Exchange domain of the user.|
+|domainUserName|String|The domain and username of the console device, for example, `Seattle\RanierConf`.|
+|smtpAddress|String|The Simple Mail Transfer Protocol (SMTP) address of the user account. This is only required if a different user principal name (UPN) is used to sign in to Exchange other than Microsoft Teams and Skype for Business. This is a common scenario in a hybrid environment where an on-premises Exchange server is used.|
 
 
 ## JSON representation

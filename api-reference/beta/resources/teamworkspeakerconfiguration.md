@@ -1,6 +1,6 @@
 ---
 title: "teamworkSpeakerConfiguration resource type"
-description: "Details of speaker configuration."
+description: "Details of speaker configuration of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of speaker configuration of a device. These details are applicable only for Microsoft Teams Rooms devices.
+Details of speaker configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|

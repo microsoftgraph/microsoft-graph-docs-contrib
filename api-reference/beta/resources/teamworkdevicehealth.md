@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the health details of a device. It is calculated based on the device configuration and other device parameters. 
+Represents the health details of a [teamworkDevice](../resources/teamworkdevice.md). It is calculated based on the device configuration and other device parameters. 
 
 Inherits from [entity](../resources/entity.md).
 

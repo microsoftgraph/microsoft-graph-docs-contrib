@@ -1,6 +1,6 @@
 ---
 title: "teamworkMicrophoneConfiguration resource type"
-description: "Details of microphone configuration."
+description: "Represents the details about the microphone configuration of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deatil of microphone configuration. Applicable only for Microsoft Teams Rooms Devices.
+Represents the details about the microphone configuration of a [teamworkDevice](../resources/teamworkdevice.md). Applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isMicrophoneOptional|Boolean|True if configured microphone is optional. Used to compute health state if speaker is not optional.|
+|isMicrophoneOptional|Boolean|`True` if the configured microphone is optional. `False` if the microphone is not optional and the health state of the device should be computed.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|defaultMicrophone|[teamworkPeripheral](../resources/teamworkperipheral.md)|Info for the deafult microphone.|
-|microphones|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|List of all microphones.|
+|defaultMicrophone|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the default microphone.|
+|microphones|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|A collection of microphones.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

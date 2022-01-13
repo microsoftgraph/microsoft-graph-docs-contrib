@@ -1,6 +1,6 @@
 ---
 title: "teamworkPeripheralHealth resource type"
-description: "Details of a peripheral's health."
+description: "Represents the health details about a particular peripheral of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Health details of particular peripheral of a device.
+Represents the health details about a particular peripheral of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connection|[teamworkConnection](../resources/teamworkconnection.md)|Connected state and time since connected of the peripheral.|
-|isOptional|Boolean|True if peripheral is optional. Used for health computation.|
+|connection|[teamworkConnection](../resources/teamworkconnection.md)|The connected state and time since the peripheral was connected to the device.|
+|isOptional|Boolean|`True` if the peripheral is optional. Used for health computation.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Info about the peripheral.|
+|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the peripheral.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

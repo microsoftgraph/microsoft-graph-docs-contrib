@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about async operations on a device. Any async operation ran on a device creates a **teamworkDeviceOperation**. You can retrieve the status of the operation via the **teamworkDeviceOperation** object.
+Represents the details about async operations on a [teamworkDevice](../resources/teamworkdevice.md). Any async operation ran on a device creates a **teamworkDeviceOperation**. You can retrieve the status of the operation via the **teamworkDeviceOperation** object.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
 |lastActionBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
 |lastActionDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
-|operationType|[teamworkDeviceOperationType](teamworkDeviceOperationType.md)|Type of async operation on a device. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
+|operationType|teamworkDeviceOperationType|Type of async operation on a device. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|Time at which the operation was started.|
 |status|String|The current status of the async operation, for example, `Queued`, `Scheduled`, `InProgress`,  `Successful`, `Cancelled`, and `Failed`.|
 

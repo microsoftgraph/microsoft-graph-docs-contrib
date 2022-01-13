@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the configured peripheral of a device.
+Represents the details of the configured peripheral of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|

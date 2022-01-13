@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the camera configuration of a device.
+Represents the details of the camera configuration of a [teamworkDevice](../resources/teamworkdevice.md).
 This is applicable only for Teams Room devices.
 
 ## Properties

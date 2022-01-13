@@ -14612,7 +14612,7 @@ items:
           items:
             - name: List devices
               href: api/teamworkdevice-list.md
-            - name: Get device details
+            - name: Get device
               href: api/teamworkdevice-get.md
             - name: Restart device
               href: api/teamworkdevice-restart.md

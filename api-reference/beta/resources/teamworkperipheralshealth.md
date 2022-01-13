@@ -1,6 +1,6 @@
 ---
 title: "teamworkPeripheralsHealth resource type"
-description: "Details of all peripherals of a device."
+description: "Represents the health details about all peripherals attached to a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Health details of all the peripherals attached to a device.
+Represents the health details about all peripherals attached to a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|communicationSpeakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Communication speaker health details.|
-|contentCameraHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Content camera health details.|
-|displayHealthCollection|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md) collection|Displays health details.|
-|microphoneHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Microphone health details.|
-|roomCameraHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Roomcamera health details.|
-|speakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Speaker health details.|
+|communicationSpeakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the communication speaker.|
+|contentCameraHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the content camera.|
+|displayHealthCollection|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md) collection|The health details about displays.|
+|microphoneHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the microphone.|
+|roomCameraHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the room camera.|
+|speakerHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the speaker.|
 
 
 ## JSON representation

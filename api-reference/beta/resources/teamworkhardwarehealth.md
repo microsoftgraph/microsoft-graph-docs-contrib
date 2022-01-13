@@ -1,6 +1,6 @@
 ---
 title: "teamworkHardwareHealth resource type"
-description: "Details of device hardware health."
+description: "Represents the details about the hardware health of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of health related to device hardware.
+Represents the details about the hardware health of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|computeHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|Compute peripheral health info.|
-|hdmiIngestHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|HDMI Ingest peripheral health info.|
+|computeHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The system health details for a [teamworkDevice](../resources/teamworkdevice.md).|
+|hdmiIngestHealth|[teamworkPeripheralHealth](../resources/teamworkperipheralhealth.md)|The health details about the HDMI ingest of a device.|
 
 
 ## JSON representation

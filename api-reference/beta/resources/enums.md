@@ -2733,3 +2733,78 @@ Possible values for user account types (group membership), per Windows definitio
 |staff|
 |customer|
 |unknownFutureValue|
+
+### teamworkConnectionStatus values
+
+| Member |
+|:--------|
+|unknown|
+|connected|
+|disconnected|
+|unknownFutureValue|
+
+### teamworkDeviceActivityState values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown state.|
+|busy|1|The device is busy.|
+|idle|2|The device is idle.|
+|unavailable|3|The device is unavailable.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkDeviceHealthStatus values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown health status.|
+|offline|1|The device is offline and can not be used.|
+|critical|2|State requires urgent attention and action as it may have a significant impact on the performance of the device, or make it unusable for calls or meetings.|
+|nonUrgent|3|There are issues or notifications that may have a minimal impact on the performance of an online device.|
+|healthy|4|The device is online and in good condition.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkDeviceOperationType values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|deviceRestart|0|Restart a device.|
+|configUpdate|1|Update the device configuration.|
+|deviceDiagnostics|2|Get the device logs.|
+|softwareUpdate|3|Update the device software.|
+|deviceManagementAgentConfigUpdate|4|Update the device agent configuration.|
+|remoteLogin|5|Device remote login.|
+|remoteLogout|6|Device remote logout.|
+|unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkSoftwareFreshness values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown value.|
+|latest|1|Indicates software up to date for a device component.|
+|updateAvailable|2|Indicates software update available for a device component.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkSoftwareType values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|adminAgent|0|Admin agent update.|
+|operatingSystem|1| Operating system update for rigel devices.|
+|teamsClient|2|Teams client update.|
+|firmware|3|Firmware update.|
+|partnerAgent|4|Partner agent / OEM update.|
+|companyPortal|5|Company portal update.|
+|unknownFutureValue|6|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkSupportedClient values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown value.|
+|skypeDefaultAndTeams|1|Supports both Skype and Teams, but default is Skype.|
+|teamsDefaultAndSkype|2|Supports both Skype and Teams, but default is Teams.|
+|skypeOnly|3|Supports only Skype.|
+|teamsOnly|4|Supports only Teams.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|

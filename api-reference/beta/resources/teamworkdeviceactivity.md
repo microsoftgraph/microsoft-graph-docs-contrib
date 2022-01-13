@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about activity in a device, including the active peripherals attached to the device.
+Represents the details about activity in a [teamworkDevice](../resources/teamworkdevice.md), including the active peripherals attached to the device.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the health details of a device. The [teamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
+Get the health details of a [teamworkDevice](../resources/teamworkdevice.md). The [teamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
 
 **Note:** Licensing or payment requirements may apply for this API when made available for production use.
 

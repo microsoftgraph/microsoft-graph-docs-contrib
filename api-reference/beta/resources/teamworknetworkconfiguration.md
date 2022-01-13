@@ -1,6 +1,6 @@
 ---
 title: "teamworkNetworkConfiguration resource type"
-description: "Details of device network configuration."
+description: "Represents the details about the network configuration of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of device network configuration.
+Represents the details about the network configuration of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
@@ -22,8 +22,8 @@ Details of device network configuration.
 |domainName|String|Network domain.|
 |hostName|String|Hostname.|
 |ipAddress|String|IPAddress.|
-|isDhcpEnabled|Boolean|True if DHCP is enabled.|
-|isPCPortEnabled|Boolean|True if PC Port is enabled.|
+|isDhcpEnabled|Boolean|`True` if DHCP is enabled.|
+|isPCPortEnabled|Boolean|`True` if the PC port is enabled.|
 |primaryDns|String|Primary DNS.|
 |secondaryDns|String|Secondary DNS.|
 |subnetMask|String|Subnet mask.|

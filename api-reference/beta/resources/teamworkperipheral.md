@@ -1,6 +1,6 @@
 ---
 title: "teamworkPeripheral resource type"
-description: "Details about the peripheral."
+description: "Represents the details about the peripherals attached to a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details about the peripherals attached to the device.
+Represents the details about the peripherals attached to a [teamworkDevice](../resources/teamworkdevice.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name for the peripheral.|
-|id|String|Id for the particular peripheral. Inherited from [entity](../resources/entity.md).|
-|productId|String|Product Id for the device. Each product from the vendor has its own id.|
-|vendorId|String|Id of the vendor of the device. Each vendor has a unique id.|
+|id|String|Unique identifier for the particular peripheral. Inherited from [entity](../resources/entity.md).|
+|productId|String|The product ID of the device. Each product from a vendor has its own ID.|
+|vendorId|String|The unique identifier for the vendor of the device. Each vendor has a unique ID.|
 
 
 ## JSON representation
