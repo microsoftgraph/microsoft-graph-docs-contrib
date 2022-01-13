@@ -49,62 +49,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 
 ## Examples
 
-### Example 1: Get all risk detections
-
-#### Request
-<!-- {
-  "blockType": "request",
-  "name": "get_serviceprincipalriskdetection"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections
-```
-
-
-#### Response
->**Note:** The response will usually include multiple objects. Example shown here is shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipalRiskDetection"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
-    "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
-    "requestId": "null",
-    "correlationId": "null",
-    "riskEventType": "investigationsThreatIntelligence",
-    "riskState": "atRisk",
-    "riskLevel": "high",
-    "riskDetail": "none",
-    "source": "IdentityProtection",
-    "detectionTimingType": "offline",
-    "activity": "servicePrincipal",
-    "tokenIssuerType": "AzureAD",
-    "ipAddress": "null",
-    "location": "null",
-    "activityDateTime": "2021-10-26T00:00:00Z",
-    "detectedDateTime": "2021-10-26T00:00:00Z",
-    "lastUpdatedDateTime": "2021-10-26T16:28:17.8202975Z)",
-    "servicePrincipalId": "99b8d28b-11ae-4e84-9bef-0e767e286grg",
-    "servicePrincipalDisplayName": "Contoso App",
-    "appId": "0grb38ac-a572-491d-a9db-b07197643457",
-    "keyIds": [
-      "9d9fea30-d8e3-481b-b57c-0ef569a989e5"
-    ],
-    "additionalInfo": "[{\"Key\":\"alertUrl\",\"Value\":null}]"
-  }
-}
-```
-
-### Example 2: Get a specific risk detection object
+### Example 1: Get a specific risk detection object
 
 #### Request
 <!-- {
@@ -133,8 +78,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
-    "requestId": "null",
-    "correlationId": "null",
+    "requestId": null,
+    "correlationId": null,
     "riskEventType": "investigationsThreatIntelligence",
     "riskState": "atRisk",
     "riskLevel": "high",
@@ -143,8 +88,8 @@ Content-Type: application/json
     "detectionTimingType": "offline",
     "activity": "servicePrincipal",
     "tokenIssuerType": "AzureAD",
-    "ipAddress": "null",
-    "location": "null",
+    "ipAddress": null,
+    "location": null,
     "activityDateTime": "2021-10-26T00:00:00Z",
     "detectedDateTime": "2021-10-26T00:00:00Z",
     "lastUpdatedDateTime": "2021-10-26T16:28:17.8202975Z)",
