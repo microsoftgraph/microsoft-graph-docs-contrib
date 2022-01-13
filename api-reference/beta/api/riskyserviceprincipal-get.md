@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [riskyServiceP
 
 ### Example 1: List risky service principals
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_riskyserviceprincipal"
