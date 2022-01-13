@@ -46,13 +46,13 @@ PATCH /policies/externalIdentitiesPolicy
 |:---|:---|:---|
 |allowDeletedIdentitiesDataRemoval|Boolean|The setting will inform AAD that cleanup of the external identities user information stored within the local tenant should be deleted (or not) when the user is deleted in their home directory. Required.|
 |allowExternalIdentitiesToLeave|Boolean|The setting will inform AAD whether allow or restrict external identities to leave the tenant.If set to false, self service is not enabled, and therefore admin will need to manually perform the clean up. Required.|
-|displayName|String|Contains string data for policy display information. Inherited from [policyBase](../resources/policybase.md). Required.|
 
 ## Response
 
 If successful, this method returns a 204 No Content response code. It does not return anything in the response body.
 
 ## Examples
+## Example 1: Update or set external identity not to leave tenant.
 
 ### Request
 <!-- {
