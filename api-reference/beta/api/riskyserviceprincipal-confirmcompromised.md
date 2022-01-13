@@ -1,6 +1,6 @@
 ---
 title: "riskyServicePrincipal: confirmCompromised"
-description: "Confirm one or more riskyServicePrincipal object as compromised."
+description: "Confirm one or more riskyServicePrincipal objects as compromised."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
