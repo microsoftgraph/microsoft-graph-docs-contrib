@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalIdentitiesPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalIdentitiesPolicy](https://docs.microsoft.com/en-us/graph/api/resources/externalIdentitiesPolicy?view=graph-rest-beta) resource",
+          "Target": "externalIdentitiesPolicy"
+        },
+        {
+          "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalIdentitiesPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalIdentitiesPolicy** relationship to [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "6c5c31e1-51bb-45c2-b769-4928b4977187",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-10T10:45:44.4043801Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Property",
           "ChangedApiName": "isAnswerEditable",
