@@ -1,6 +1,6 @@
 ---
 title: "riskyServicePrincipal: dismiss"
-description: "Dismiss the risk of one or more riskyServicePrincipal object."
+description: "Dismiss the risk of one or more riskyServicePrincipal objects."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
