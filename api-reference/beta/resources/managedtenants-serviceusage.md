@@ -18,7 +18,7 @@ Represents Microsoft 365 service usage for a managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|monthlyActiveUsers|Int32|Number of Monthly Active Users for the service. Required. Read-only.|
+|monthlyActiveUsers|Int32|Number of monthly active users of the service. Required. Read-only.|
 |serviceName|String|Name of the service. Example services: `Excel`, `Exchange`, `Intune`, `Outlook`, `Teams`, `Word`. Required. Read-only.|
 
 ## Relationships
