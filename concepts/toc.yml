@@ -183,7 +183,7 @@ items:
           - name: Manage items
             href: connecting-external-content-manage-items.md
           - name: External groups
-            href: connecting-external-content-external-groups.md            
+            href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
@@ -217,6 +217,8 @@ items:
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Cloud PC (preview)
+            href: cloudpc-concept-overview.md
           - name: Device updates (preview)
             displayName: Windows updates
             items:
@@ -255,8 +257,12 @@ items:
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
       - name: Files
-        href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+        items:
+          - name: Overview
+            href: onedrive-concept-overview.md
+          - name: Addressing drive items
+            href: onedrive-addressing-driveitems.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central
@@ -267,6 +273,8 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
+              - name: Assign custom security attributes (preview)
+                href: custom-security-attributes-examples.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
@@ -342,7 +350,7 @@ items:
                 href: onenote-branding.md
               - name: Error codes
                 href: onenote-error-codes.md
-      - name: Notifications (preview)
+      - name: Notifications (deprecated)
         displayName: Notifications
         items:
           - name: Overview
@@ -532,7 +540,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
@@ -628,6 +636,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
+              - name: Configure Azure AD Graph permissions
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Use SDKs
         items:
           - name: Overview

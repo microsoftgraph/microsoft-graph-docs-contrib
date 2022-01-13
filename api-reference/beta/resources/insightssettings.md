@@ -22,13 +22,14 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 ## Methods
 
 | Method       | Return Type | Description |
-|:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
+|:-------------|:------------|:------------|
 | [List itemInsights](../api/organizationsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying item insights in an organization. |
 | [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the _settings_ in an [insightsSettings](insightssettings.md) object for displaying people insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be item insights or people insights. |
 
 
 ## Properties
+
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
@@ -36,7 +37,8 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [],
@@ -45,9 +47,13 @@ Here is a JSON representation of the resource
 
 ```json
 {
+
   "isEnabledInOrganization": "Boolean",
   "disabledForGroup": "String"
 }
 ```
+
+
+
 
 

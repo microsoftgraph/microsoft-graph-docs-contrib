@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
-
 ## HTTP request
 
 To update settings for item insights:
@@ -65,7 +64,6 @@ In the request body, supply the values for relevant fields that should be update
 |disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 >**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a string, this operation does not check the existence of the corresponding Azure AD group. This means, if you set **disabledForGroup** to an Azure AD group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
@@ -78,6 +76,8 @@ If successful, this method returns a `200 OK` response code and [insightsSetting
 Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_insightssettings_iteminsightrequest"
@@ -91,6 +91,28 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-iteminsightrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-iteminsightrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-iteminsightrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-iteminsightrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-iteminsightrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
@@ -104,13 +126,11 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_iteminsightrequest"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
@@ -119,37 +139,61 @@ Content-type: application/json
 ### Example 2: Update settings for people insights
 #### Request
 
-Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
+The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_insightssettings_peopleinsightsrequest"
 }-->
-
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/peopleInsights
-Content-Type: application/json
+Content-type: application/json
 
 {
+  "isEnabledInOrganization": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-insightssettings-peopleinsightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-insightssettings-peopleinsightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-insightssettings-peopleinsightsrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-insightssettings-peopleinsightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "update_insightssettings_peopleinsightsrequest"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -161,3 +205,4 @@ Content-type: application/json
 ```
 
 
+ 107  api-reference/beta/api/iteminsightssettings-get.md 
