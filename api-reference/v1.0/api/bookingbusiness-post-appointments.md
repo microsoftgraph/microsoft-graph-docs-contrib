@@ -142,8 +142,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -223,8 +221,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "",
             "city": "",
             "state": "",
@@ -276,8 +272,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

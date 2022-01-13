@@ -150,8 +150,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "4567 First Street",
             "city": "Buffalo",
             "state": "NY",
