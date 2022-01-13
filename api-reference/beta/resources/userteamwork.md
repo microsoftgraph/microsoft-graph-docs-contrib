@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) collection|Retrieve the list of apps installed in the personal scope of the specified user.|
+
 ## Properties
 
 | Property | Type | Description |
