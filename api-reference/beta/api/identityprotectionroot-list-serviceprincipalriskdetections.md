@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a collection of servicePrincipalRiskDetection objects.
+Retrieve the properties of a collection of [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
 
 >**Note:** You must have an Azure AD Premium P1 or P2 license to use the servicePrincipalRiskDetection API.
 
