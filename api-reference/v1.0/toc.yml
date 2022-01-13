@@ -437,7 +437,6 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/user.md
         items:
         - name: List direct reports
           href: api/user-list-directreports.md
@@ -4800,11 +4799,11 @@ items:
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
-          - name: List org contacts
+          - name: List
             href: api/orgcontact-list.md
-          - name: Get org contact
+          - name: Get
             href: api/orgcontact-get.md
-          - name: Get org contact delta
+          - name: Get delta
             href: api/orgcontact-delta.md
           - name: Groups
             href: resources/group.md
@@ -4816,7 +4815,6 @@ items:
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
-            href: resources/directoryobject.md
             items:
             - name: List direct reports
               href: api/orgcontact-list-directreports.md
