@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/drive/items/{id}/workbook/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
-POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/rows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 
 ## Request headers

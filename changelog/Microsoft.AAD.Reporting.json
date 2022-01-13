@@ -238,7 +238,7 @@
       "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-28T00:0000.572Z",
+      "CreatedDateTime": "2021-12-28T00:00:00.000Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
   },
@@ -257,7 +257,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-12-28T00:00:00.000Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
@@ -381,7 +381,7 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2021-11-29T21:55:29.147Z",
-        "WorkloadArea": "Reports and audit",
+        "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
       },  
     {
@@ -545,7 +545,7 @@
         "Cloud": "prd",
         "Version": "v1.0",
         "CreatedDateTime": "2021-05-05T17:42:41.613Z",
-        "WorkloadArea": "Reports and audit",
+        "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
       },
       {
@@ -691,7 +691,7 @@
         "Cloud": "prd",
         "Version": "beta",
         "CreatedDateTime": "2021-05-04T08:19:22.097Z",
-        "WorkloadArea": "Reports and audit",
+        "WorkloadArea": "Reports",
         "SubArea": "Identity and access reports"
     },
     {
@@ -857,7 +857,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
@@ -875,7 +875,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
@@ -909,7 +909,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
@@ -927,7 +927,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
@@ -945,7 +945,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
@@ -963,7 +963,7 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {
@@ -1065,7 +1065,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
@@ -1091,7 +1091,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
-      "WorkloadArea": "Reports ",
+      "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     },
     {

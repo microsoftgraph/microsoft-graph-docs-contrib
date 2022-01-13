@@ -1,7 +1,7 @@
 ---
 title: "Create updatableAssetGroup"
 description: "Create a new updatableAssetGroup object."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

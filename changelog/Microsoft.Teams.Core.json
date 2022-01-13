@@ -2,7 +2,25 @@
 
   "changelog": [
     {
-      "ChangeList":[
+      "ChangeList": [
+        {
+          "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
           "ApiChange": "Property",
@@ -1707,6 +1725,24 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
       "WorkloadArea": "Teamwork ",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4aa57b33-f891-4008-a401-6666f3f112bb",
+          "ApiChange": "Property",
+          "ChangedApiName": "onBehalfOf",
+          "ChangeType": "Addition",
+          "Description": "Added the **onBehalfOf** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "4aa57b33-f891-4008-a401-6666f3f112bb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T20:51:22.0064326Z",
+      "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
     {

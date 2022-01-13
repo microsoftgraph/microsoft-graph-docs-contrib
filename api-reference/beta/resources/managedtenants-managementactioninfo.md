@@ -1,7 +1,7 @@
 ---
 title: "managementActionInfo resource type"
 description: "Represents reference information for a management action."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
