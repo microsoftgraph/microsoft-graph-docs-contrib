@@ -92,7 +92,7 @@ Content-Type: application/json
 
 ### Example 2: List a filtered set of risky service principals
 #### Request
-The following example shows how to use `$filter` to get the collection of riskyServicePrincipal whose aggregate risk level is High.
+The following example shows how to use `$filter` to get the collection of riskyServicePrincipal objects whose aggregate risk level is `high`.
 <!-- {
   "blockType": "request",
   "name": "get_riskyserviceprincipal"
