@@ -28,14 +28,14 @@ One of the following permissions is required to call this API. Delegated permiss
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-### Example 1: update a decision on an accessReviewInstance.
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
+
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-|Authorization|Bearer {token}. Required.|
+| Authorization|Bearer {token}. Required.|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -47,12 +47,16 @@ The following table shows the properties accepted to update an `accessReviewInst
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 
 ## Response
-If successful, this method returns a `204, NoContent` response code and no response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 
-### Request
+
 ## Examples
 
-This is an example of approving access for a user represented by an `accessReviewInstanceDecisionItem`.
+### Example 1: Update a decision on an accessReviewInstance
+
+#### Request
+
+The following is an example of a decision to approve access for a user.
 
 
 
@@ -62,7 +66,7 @@ This is an example of approving access for a user represented by an `accessRevie
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/decisions/12348410-67f3-4d4c-b946-6989e050be19
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 Content-Type: application/json
 
 {
@@ -93,11 +97,9 @@ Content-Type: application/json
 ---
 
 
----
 
+#### Response
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->
@@ -105,36 +107,10 @@ Content-Type: application/json
 HTTP/1.1 204 Accepted
 ```
 
-<!-- { "blockType": "ignored" } -->
+
 ### Example 2: update a decision on an accessReviewStage of a multi-stage access review.
-```http
-PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
-```
-## Request headers
-| Name         | Description |
-|:-------------|:------------|
-|Authorization|Bearer {token}. Required.|
-| Content-type | application/json. Required. |
 
-## Request body
-The following table shows the properties accepted to update an `accessReviewInstanceDecisionItem`.
-
-| Property     | Type       | Description |
-|:-------------|:------------|:------------|
-| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
-|  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
-
-## Response
-If successful, this method returns a `204, NoContent` response code and no response body.
-
-### Request
-## Examples
-
-This is an example of approving access for a user represented by an `accessReviewInstanceDecisionItem`.
-
-
-
-# [HTTP](#tab/http)
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
@@ -149,8 +125,8 @@ Content-Type: application/json
 }
 ```
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
 <!-- {
   "blockType": "response"
 } -->
