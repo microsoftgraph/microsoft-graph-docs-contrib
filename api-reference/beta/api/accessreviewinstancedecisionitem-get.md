@@ -25,17 +25,27 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Retrieve a decision on an accessReviewInstance
 <!-- {
   "blockType": "ignored"
 }
 -->
-### Example 1: Retrieves a decision on an accessReviewInstance.
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
+Retrieve a decision from a stage of an accessReviewInstance
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+```
+
 ## Optional query parameters
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -51,7 +61,9 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 
 ## Examples
 
-### Request
+### Example 1: Retrieves a decision on an accessReviewInstance
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +98,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -135,45 +147,20 @@ Content-Type: application/json
     }
 }
 ```
-<!-- {
-  "blockType": "ignored"
-}
--->
-### Example 2: Retrieves a decision on an accessReviewStage of a multi-stage access review.
-``` http
-GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
-```
 
-## Optional query parameters
-This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+### Example 2: Retrieves a decision from a stage of a multi-stage access review
 
-## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-
-## Request body
-Do not supply a request body for this method.
-
-## Response
-
-If successful, this method returns a `200 OK` response code and an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object in the response body.
-
-## Examples
-
-### Request
-
-# [HTTP](#tab/http)
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "get_accessreviewinstancedecisionitem"
+  "name": "get_accessreviewstage_accessreviewinstancedecisionitem"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 ```
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
