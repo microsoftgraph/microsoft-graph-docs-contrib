@@ -24,6 +24,7 @@ To manage custom security attributes, the calling principal must be assigned the
 
 Also, the calling principal must be granted the following permission.
 
+- [User.Read.All](permissions-reference.md#user-permissions)
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
 
 ## Assign custom security attributes
