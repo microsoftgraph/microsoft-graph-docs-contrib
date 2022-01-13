@@ -20,7 +20,7 @@ To get the user current settings, see [current user settings](usersettings-get.m
 It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
 To learn more, see [JSON batching](/graph/json-batching).
 
->**Important**: Only members of the [organization management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update multiple users. 
+>**Important**: Only members of the [organization management](https://docs.microsoft.com/en-us/exchange/permissions/permissions?view=exchserver-2019) role group can update multiple users. 
 
 
 
