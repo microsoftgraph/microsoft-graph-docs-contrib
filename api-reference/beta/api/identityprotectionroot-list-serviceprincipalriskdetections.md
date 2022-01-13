@@ -1,6 +1,6 @@
 ---
 title: "List servicePrincipalRiskDetections"
-description: "Get the servicePrincipalRiskDetection resources from the servicePrincipalRiskDetections navigation property."
+description: "Retrieve the properties of a collection of servicePrincipalRiskDetection objects."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
