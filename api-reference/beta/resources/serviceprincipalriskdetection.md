@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipalRiskDetection resource type"
-description: "Represents information about a detected workload identity risk in an Azure AD tenant, including risk for applications, service principals and Managed Identities."
+description: "Represents information about a detected at-risk service principal in an Azure AD tenant."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
