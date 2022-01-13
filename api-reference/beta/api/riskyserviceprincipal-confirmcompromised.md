@@ -42,7 +42,7 @@ POST /identityProtection/riskyServicePrincipals/confirmCompromised
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-In the request body, specify the servicePrincipalIds to confirm as compromised.
+In the request body, specify the collection of ids of the risky service principals in a **servicePrincipalIds** property. 
 
 ## Response
 
