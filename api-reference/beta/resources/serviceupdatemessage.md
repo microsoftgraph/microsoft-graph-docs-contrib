@@ -29,13 +29,13 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 |[favorite](../api/serviceupdatemessage-favorite.md)|Boolean|Change the status of a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s to favorite for the signed in user.|
 |[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Remove the favorite status of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
-|[List attachments](../api/serviceupdatemessage-list-attachments.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) collection|Get the serviceAnnouncementAttachment resources from the attachments navigation property.|
+|[List attachments](../api/serviceupdatemessage-list-attachments.md)|[serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) collection|Get a list of attachments associated with a service message.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
-|attachmentsArchive|Stream|The zipfile of all attachments for a message.|
+|attachmentsArchive|Stream|The zip file of all attachments for a message.|
 |body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
 |details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|

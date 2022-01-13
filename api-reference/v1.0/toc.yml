@@ -4281,7 +4281,7 @@ items:
         - name: Service announcement attachment
           href: resources/serviceannouncementattachment.md
           items:
-          - name: Get service announcement attachment
+          - name: Get
             href: api/serviceannouncementattachment-get.md
     - name: Education
       items:

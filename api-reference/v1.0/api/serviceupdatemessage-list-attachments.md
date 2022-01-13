@@ -1,6 +1,6 @@
 ---
-title: "List service message attachments"
-description: "Get the serviceAnnouncementAttachment resources from the attachments navigation property."
+title: "List attachments"
+description: "Get the list of attachments associated with a service message."
 author: "payiAzure"
 ms.localizationpriority: medium
 ms.prod: "service-health-and-communications"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List attachments
 Namespace: microsoft.graph
 
-Get the serviceAnnouncementAttachment resources from the attachments navigation property.
+Get the list of attachments associated with a service message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -79,7 +79,7 @@ Content-Type: application/json
             "contentType": "application/csv",
             "isInline": false,
             "lastModifiedDateTime": "2021-09-21T04:07:15.9720778Z",
-            "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365 Message center.",
+            "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the Microsoft 365 Message center.",
             "size": 44583,
             "id": "30356a46-ffad-47e1-acf6-40a99b1538c1"
         },
@@ -87,7 +87,7 @@ Content-Type: application/json
             "contentType": "application/csv",
             "isInline": false,
             "lastModifiedDateTime": "2021-09-21T04:07:15.9720778Z",
-            "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the M365 Message center.",
+            "name": "An attachment for a Data Privacy message regarding your organization is available within Message Center. The contents of this attachment can be accessed within Message Center by a Global Administrator or someone designated as a Message Center Privacy Reader. Please sign in to Admin Center to view the details of this message in the Microsoft 365 Message center.",
             "size": 288849,
             "id": "fdd33417-37b9-49cc-95c1-7af90f2366c8"
         }
