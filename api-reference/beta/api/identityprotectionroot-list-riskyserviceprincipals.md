@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a collection of **riskyServicePrincipal** objects.
+Retrieve the properties and relationships of [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects.
 
 >**Note:** Using the riskyServicePrincipals API requires an Azure AD Premium P2 license.
 
