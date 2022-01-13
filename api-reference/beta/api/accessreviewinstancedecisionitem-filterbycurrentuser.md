@@ -59,7 +59,7 @@ The following table shows the query parameters that can be used with this method
 
 
 ## Optional query parameters
-This method supports `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,7 +75,9 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 
 ## Examples
 
-### Request
+### Example 1: Retrieves all decisions on an accessReviewInstance for which the calling user is the reviewer.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +85,6 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
 }
 -->
-### Example 1: Retrieves all decisions on an accessReviewInstance for which the calling user is the reviewer.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/decisions/filterByCurrentUser(on='reviewer')
 ```
@@ -109,9 +110,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
-
-
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -167,15 +166,10 @@ Content-Type: application/json
 }
 ```
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ### Example 2: Retrieves all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer.
 
-### Request
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
