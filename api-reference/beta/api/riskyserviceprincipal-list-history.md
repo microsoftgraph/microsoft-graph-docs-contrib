@@ -1,6 +1,6 @@
 ---
 title: "List history of riskyServicePrincipal"
-description: "Get the riskyServicePrincipalHistoryItem resources from the history navigation property."
+description: "Get the risk history of a riskyServicePrincipal object."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
