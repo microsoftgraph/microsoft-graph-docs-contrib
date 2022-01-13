@@ -54,7 +54,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |tokenIssuerType|tokenIssuerType|Indicates the type of token issuer for the detected sign-in risk. The possible values are: `AzureAD`, `UnknownFutureValue`, `AzureADBackupAuth`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth`.|
 
 ## Relationships
-riskyServicePrincipals (ADD LINK HERE).
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
