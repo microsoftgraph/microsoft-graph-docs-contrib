@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Retrieve decisions for an instance of an access review for which the calling user is the reviewer.
 <!-- {
   "blockType": "ignored"
 }
@@ -37,6 +38,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
+Retrieve decisions for a stage in an instance of an access review for which the calling user is the reviewer.
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/filterByCurrentUser(on='reviewer')
 ```
