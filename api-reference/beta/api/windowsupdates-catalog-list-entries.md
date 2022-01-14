@@ -1,7 +1,7 @@
 ---
 title: "List entries"
 description: "Get a list of catalogEntry resources from the catalog."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "updatableAssetGroup: removeMembersById"
 description: "Remove members of the same type from an updatableAssetGroup."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
