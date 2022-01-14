@@ -16,7 +16,8 @@ The following table highlights differences between Azure AD Graph and Microsoft 
 
 If a resource is **not** shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with the same name as in Azure AD Graph.
 
-> **NOTE**: Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they are camel-cased.
+> [!NOTE]
+> Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they are camel-cased.
 
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
