@@ -136,7 +136,7 @@ The Azure AD Graph **Device** resource inherited from **DirectoryObject**; it ha
 
 ## DirectoryObject property differences
 
-The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryObject** in Microsoft Graph. The changes to properties will also be seen in other resources that inherit from **DirectoryObject**. Here are the property differences:
+The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryObject** in Microsoft Graph. The changes to its properties will also be seen in other resources that inherit from **DirectoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
