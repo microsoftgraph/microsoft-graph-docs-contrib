@@ -16,7 +16,7 @@ Object used to specify an OAuth 2.0 permission scope or an app role that an appl
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|GUID|The unique identifier for one of the [oauth2PermissionScopes](permissionscope.md) or [appRole](approle.md) instances that the resource application exposes.|
+|id|GUID|The unique identifier for one of the [oauth2PermissionScope](permissionscope.md) or [appRole](approle.md) instances that the resource application exposes.|
 |type|String|Specifies whether the **id** property references an [oauth2PermissionScope](permissionscope.md) or an [appRole](approle.md). The possible values are: `Scope` (for OAuth 2.0 permission scopes) or `Role` (for app roles).|
 
 ## JSON representation
