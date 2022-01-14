@@ -269,15 +269,15 @@ items:
       - name: User
         href: resources/user.md
         items:
-        - name: List users
+        - name: List
           href: api/user-list.md
-        - name: Create user
+        - name: Create
           href: api/user-post-users.md
-        - name: Get user
+        - name: Get
           href: api/user-get.md
-        - name: Update user
+        - name: Update
           href: api/user-update.md
-        - name: Delete user
+        - name: Delete
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
