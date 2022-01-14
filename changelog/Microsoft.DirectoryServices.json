@@ -9909,6 +9909,68 @@
       "CreatedDateTime": "2021-11-15T20:42:47.116895Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "EnumType",
+              "ChangedApiName": "x509CertificateAuthenticationMode",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateAuthenticationMode](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+              "Target": "x509CertificateAuthenticationMode"
+            },
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "EnumType",
+              "ChangedApiName": "x509CertificateRuleType",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateRuleType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+              "Target": "x509CertificateRuleType"
+            },
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "Resource",
+              "ChangedApiName": "x509CertificateAuthenticationModeConfiguration",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateAuthenticationModeConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource",
+              "Target": "x509CertificateAuthenticationModeConfiguration"
+            },
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "Resource",
+              "ChangedApiName": "x509CertificateRule",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateRule](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource",
+              "Target": "x509CertificateRule"
+            },
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "Resource",
+              "ChangedApiName": "x509CertificateUserBinding",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateUserBinding](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource",
+              "Target": "x509CertificateUserBinding"
+            },
+            {
+              "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+              "ApiChange": "Resource",
+              "ChangedApiName": "x509CertificateAuthenticationMethodConfiguration",
+              "ChangeType": "Addition",
+              "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+              "Target": "x509CertificateAuthenticationMethodConfiguration"
+            }
+          ],
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-01-13T12:23:06.8027648Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+        }
+      ]
     }
   ]
 }
