@@ -20,6 +20,7 @@ Represents attributes of an item to be attached.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |attachmentType|String| The type of attachment. Possible values are: `file`, `item`, `reference`. Required.|
+|contentId|String| The CID or Content-Id of the attachment for referencing in case of in-line attachments using `<img src="cid:contentId">` tag in HTML messages. Optional.|
 |contentType|String|The nature of the data in the attachment. Optional.|
 |isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`. Optional.|
 |name|String|The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.|
@@ -32,6 +33,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "contentId",
     "contentType",
     "isInline"
   ],
@@ -42,6 +44,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "attachmentType": "String",
+  "contentId": "String",
   "contentType": "String",
   "isInline": true,
   "name": "String",
