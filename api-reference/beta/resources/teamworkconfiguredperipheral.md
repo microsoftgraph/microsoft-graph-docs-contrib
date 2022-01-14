@@ -1,6 +1,6 @@
 ---
 title: "teamworkConfiguredPeripheral resource type"
-description: "Represents the details of the configured peripheral of a device."
+description: "Represents the details about the configured peripheral of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the configured peripheral of a [teamworkDevice](../resources/teamworkdevice.md).
+Represents the details about the configured peripheral of a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|

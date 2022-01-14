@@ -1,6 +1,6 @@
 ---
 title: "teamworkTeamsClientConfiguration resource type"
-description: "Details of teams client configuration."
+description: "Represents the details about the configuration for the Microsoft Teams client."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of Teams client configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices. 
+Represents the details about the configuration for the Microsoft Teams client of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountConfiguration|[teamworkAccountConfiguration](../resources/teamworkaccountconfiguration.md)|Account details used to sync.|
-|featuresConfiguration|[teamworkFeaturesConfiguration](../resources/teamworkfeaturesconfiguration.md)|Teams client feature config details.|
+|accountConfiguration|[teamworkAccountConfiguration](../resources/teamworkaccountconfiguration.md)|The configuration of Microsoft Teams client user account for a device.|
+|featuresConfiguration|[teamworkFeaturesConfiguration](../resources/teamworkfeaturesconfiguration.md)|The configuration of Microsoft Teams client features for a device.|
 
 
 ## JSON representation

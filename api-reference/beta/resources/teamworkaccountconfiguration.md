@@ -1,6 +1,6 @@
 ---
 title: "teamworkAccountConfiguration resource type"
-description: "Represents the details of the account configuration for a device in Microsoft Teams."
+description: "Represents the details about the account configuration for a device in Microsoft Teams."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the account configuration for a [teamworkDevice](../resources/teamworkdevice.md) in Microsoft Teams.
+Represents the details about the account configuration for a [teamworkDevice](../resources/teamworkdevice.md) in Microsoft Teams.
 The details provided are only available for Microsoft Teams Rooms devices.
 
 ## Properties

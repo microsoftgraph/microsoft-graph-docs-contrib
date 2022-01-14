@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Restart the specified [teamworkDevice](../resources/teamworkdevice.md) asynchronously. A device is restarted once the async operation completes successfully, which may occur subsequent to a response from this API.
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

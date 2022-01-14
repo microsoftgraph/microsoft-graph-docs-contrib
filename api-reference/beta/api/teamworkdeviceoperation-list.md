@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md) linked to a device.
+Get a list of the [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md) linked to a [teamworkDevice](../resources/teamworkdevice.md).
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -105,7 +105,7 @@ Content-Type: application/json
         "device": null,
         "user": {
           "id": "2a610f6f-adf6-4205",
-          "displayName": "UserDisplayName",
+          "displayName": "Evan Lewis",
           "userIdentityType": "aadUser"
         }
       },
@@ -114,7 +114,7 @@ Content-Type: application/json
         "device": null,
         "user": {
           "id": "2a610f6f-adf6-4205",
-          "displayName": "UserDisplayName",
+          "displayName": "Evan Lewis",
           "userIdentityType": "aadUser"
         }
       }

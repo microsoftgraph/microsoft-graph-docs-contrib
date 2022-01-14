@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the health details of a [teamworkDevice](../resources/teamworkdevice.md). The [teamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /teamwork/devices/{teamworkDeviceId}/health
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+This operation supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|

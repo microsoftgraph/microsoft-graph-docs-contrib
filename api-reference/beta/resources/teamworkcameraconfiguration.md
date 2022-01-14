@@ -1,6 +1,6 @@
 ---
 title: "teamworkCameraConfiguration resource type"
-description: "Represents the details of the camera configuration of a device."
+description: "Represents the details about the camera configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the camera configuration of a [teamworkDevice](../resources/teamworkdevice.md).
-This is applicable only for Teams Room devices.
+Represents the details about the camera configuration for a [teamworkDevice](../resources/teamworkdevice.md).
+This is applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ This is applicable only for Teams Room devices.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |cameras|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|List of connected cameras.|
-|defaultContentCamera|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information for the configured content camera.|
+|defaultContentCamera|[teamworkPeripheral](../resources/teamworkperipheral.md)|The configured content camera which is used to share analog whiteboard content in a meeting.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

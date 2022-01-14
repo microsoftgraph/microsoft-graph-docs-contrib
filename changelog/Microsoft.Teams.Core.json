@@ -4270,7 +4270,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkAccountConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkAccountConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkAccountConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkAccountConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkaccountconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkAccountConfiguration"
         },
         {
@@ -4278,7 +4278,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkActivePeripherals",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkActivePeripherals](https://docs.microsoft.com/en-us/graph/api/resources/teamworkActivePeripherals?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkActivePeripherals](https://docs.microsoft.com/en-us/graph/api/resources/teamworkactiveperipherals?view=graph-rest-beta) resource type.",
           "Target": "teamworkActivePeripherals"
         },
         {
@@ -4286,7 +4286,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkCameraConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkCameraConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkCameraConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkCameraConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkcameraconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkCameraConfiguration"
         },
         {
@@ -4294,7 +4294,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkConfiguredPeripheral",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkConfiguredPeripheral](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConfiguredPeripheral?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkConfiguredPeripheral](https://docs.microsoft.com/en-us/graph/api/resources/teamworkconfiguredperipheral?view=graph-rest-beta) resource type.",
           "Target": "teamworkConfiguredPeripheral"
         },
         {
@@ -4302,7 +4302,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkConnection",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkConnection](https://docs.microsoft.com/en-us/graph/api/resources/teamworkConnection?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkConnection](https://docs.microsoft.com/en-us/graph/api/resources/teamworkconnection?view=graph-rest-beta) resource type.",
           "Target": "teamworkConnection"
         },
         {
@@ -4310,7 +4310,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkContentCameraConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkContentCameraConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkContentCameraConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkContentCameraConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkcontentcameraconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkContentCameraConfiguration"
         },
         {
@@ -4318,7 +4318,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDateTimeConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDateTimeConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDateTimeConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkDateTimeConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdatetimeconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkDateTimeConfiguration"
         },
         {
@@ -4326,7 +4326,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDeviceSoftwareVersions",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDeviceSoftwareVersions](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceSoftwareVersions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkDeviceSoftwareVersions](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevicesoftwareversions?view=graph-rest-beta) resource type.",
           "Target": "teamworkDeviceSoftwareVersions"
         },
         {
@@ -4334,7 +4334,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDisplayConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDisplayConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDisplayConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkDisplayConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdisplayconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkDisplayConfiguration"
         },
         {
@@ -4342,7 +4342,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDisplayScreenConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDisplayScreenConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDisplayScreenConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkDisplayScreenConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdisplayscreenconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkDisplayScreenConfiguration"
         },
         {
@@ -4350,7 +4350,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkFeaturesConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkFeaturesConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkFeaturesConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkFeaturesConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkfeaturesconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkFeaturesConfiguration"
         },
         {
@@ -4358,7 +4358,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkHardwareConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkHardwareConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHardwareConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkHardwareConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkhardwareconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkHardwareConfiguration"
         },
         {
@@ -4366,7 +4366,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkHardwareDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkHardwareDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHardwareDetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkHardwareDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamworkhardwaredetail?view=graph-rest-beta) resource type.",
           "Target": "teamworkHardwareDetail"
         },
         {
@@ -4374,7 +4374,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkHardwareHealth",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkHardwareHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHardwareHealth?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkHardwareHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkhardwarehealth?view=graph-rest-beta) resource type.",
           "Target": "teamworkHardwareHealth"
         },
         {
@@ -4382,7 +4382,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkLoginStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkLoginStatus](https://docs.microsoft.com/en-us/graph/api/resources/teamworkLoginStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkLoginStatus](https://docs.microsoft.com/en-us/graph/api/resources/teamworkloginstatus?view=graph-rest-beta) resource type.",
           "Target": "teamworkLoginStatus"
         },
         {
@@ -4390,7 +4390,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkMicrophoneConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkMicrophoneConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkMicrophoneConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkMicrophoneConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkmicrophoneconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkMicrophoneConfiguration"
         },
         {
@@ -4398,7 +4398,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkNetworkConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkNetworkConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkNetworkConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkNetworkConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworknetworkconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkNetworkConfiguration"
         },
         {
@@ -4406,7 +4406,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkOnPremisesCalendarSyncConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkOnPremisesCalendarSyncConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkOnPremisesCalendarSyncConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkOnPremisesCalendarSyncConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkonpremisescalendarsyncconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkOnPremisesCalendarSyncConfiguration"
         },
         {
@@ -4414,7 +4414,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkPeripheralHealth",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkPeripheralHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkPeripheralHealth?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkPeripheralHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkperipheralhealth?view=graph-rest-beta) resource type.",
           "Target": "teamworkPeripheralHealth"
         },
         {
@@ -4422,7 +4422,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkPeripheralsHealth",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkPeripheralsHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkPeripheralsHealth?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkPeripheralsHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkperipheralshealth?view=graph-rest-beta) resource type.",
           "Target": "teamworkPeripheralsHealth"
         },
         {
@@ -4430,7 +4430,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkSoftwareUpdateHealth",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkSoftwareUpdateHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkSoftwareUpdateHealth?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkSoftwareUpdateHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworksoftwareupdatehealth?view=graph-rest-beta) resource type.",
           "Target": "teamworkSoftwareUpdateHealth"
         },
         {
@@ -4438,7 +4438,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkSoftwareUpdateStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkSoftwareUpdateStatus](https://docs.microsoft.com/en-us/graph/api/resources/teamworkSoftwareUpdateStatus?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkSoftwareUpdateStatus](https://docs.microsoft.com/en-us/graph/api/resources/teamworksoftwareupdatestatus?view=graph-rest-beta) resource type.",
           "Target": "teamworkSoftwareUpdateStatus"
         },
         {
@@ -4446,7 +4446,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkSpeakerConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkSpeakerConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkSpeakerConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkSpeakerConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkspeakerconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkSpeakerConfiguration"
         },
         {
@@ -4454,7 +4454,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkSystemConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkSystemConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkSystemConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkSystemConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworksystemconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkSystemConfiguration"
         },
         {
@@ -4462,7 +4462,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkTeamsClientConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkTeamsClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTeamsClientConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamworkTeamsClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkteamsclientconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkTeamsClientConfiguration"
         },
         {
@@ -4475,10 +4475,18 @@
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-list?view=graph-rest-beta&tabs=http) operation to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDevice?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta) resource type.",
           "Target": "teamworkDevice"
         },
         {
@@ -4486,7 +4494,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDeviceActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceactivity?view=graph-rest-beta) resource type.",
           "Target": "teamworkDeviceActivity"
         },
         {
@@ -4494,7 +4502,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDeviceConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceconfiguration?view=graph-rest-beta) resource type.",
           "Target": "teamworkDeviceConfiguration"
         },
         {
@@ -4502,7 +4510,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDeviceHealth",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceHealth?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevicehealth?view=graph-rest-beta) resource type.",
           "Target": "teamworkDeviceHealth"
         },
         {
@@ -4510,7 +4518,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDeviceOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceOperation?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceoperation?view=graph-rest-beta) resource type.",
           "Target": "teamworkDeviceOperation"
         },
         {
@@ -4518,39 +4526,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkPeripheral",
           "ChangeType": "Addition",
-          "Description": "Added the [teamworkPeripheral](https://docs.microsoft.com/en-us/graph/api/resources/teamworkPeripheral?view=graph-rest-beta) resource",
+          "Description": "Added the [teamworkPeripheral](https://docs.microsoft.com/en-us/graph/api/resources/teamworkperipheral?view=graph-rest-beta) resource type.",
           "Target": "teamworkPeripheral"
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Method",
-          "ChangedApiName": "restart",
-          "ChangeType": "Addition",
-          "Description": "Added the [restart](https://docs.microsoft.com/en-us/graph/api/restart?view=graph-rest-beta) method to the [restart](https://docs.microsoft.com/en-us/graph/api/restart?view=graph-rest-beta) resource.",
-          "Target": "restart"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Method",
-          "ChangedApiName": "runDiagnostics",
-          "ChangeType": "Addition",
-          "Description": "Added the [runDiagnostics](https://docs.microsoft.com/en-us/graph/api/runDiagnostics?view=graph-rest-beta) method to the [runDiagnostics](https://docs.microsoft.com/en-us/graph/api/runDiagnostics?view=graph-rest-beta) resource.",
-          "Target": "runDiagnostics"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Method",
-          "ChangedApiName": "updateSoftware",
-          "ChangeType": "Addition",
-          "Description": "Added the [updateSoftware](https://docs.microsoft.com/en-us/graph/api/updateSoftware?view=graph-rest-beta) method to the [updateSoftware](https://docs.microsoft.com/en-us/graph/api/updateSoftware?view=graph-rest-beta) resource.",
-          "Target": "updateSoftware"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
           "ApiChange": "Permission",
           "ChangedApiName": "TeamworkDevice.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDevice?view=graph-rest-beta) resource.",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta), [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceactivity?view=graph-rest-beta), [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceconfiguration?view=graph-rest-beta), [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevicehealth?view=graph-rest-beta), and [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceoperation?view=graph-rest-beta) resources.",
           "Target": "teamworkDevice"
         },
         {
@@ -4558,74 +4542,9 @@
           "ApiChange": "Permission",
           "ChangedApiName": "TeamworkDevice.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDevice?view=graph-rest-beta) resource.",
+          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta), [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceactivity?view=graph-rest-beta), [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceconfiguration?view=graph-rest-beta), [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevicehealth?view=graph-rest-beta), and [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdeviceoperation?view=graph-rest-beta) resources.",
           "Target": "teamworkDevice"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceActivity?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceActivity"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceActivity?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceActivity"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceConfiguration?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceConfiguration"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceConfiguration?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceConfiguration"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceHealth?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceHealth"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceHealth?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceHealth"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.Read.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.Read.All` to the read operations of the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceOperation?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceOperation"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Permission",
-          "ChangedApiName": "TeamworkDevice.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated and application permission `TeamworkDevice.ReadWrite.All` to the read and write operations of the [teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/resources/teamworkDeviceOperation?view=graph-rest-beta) resource.",
-          "Target": "teamworkDeviceOperation"
         }
-        
       ],
       "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
       "Cloud": "Prod",

@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: updateSoftware"
-description: "Update the software for the specified device."
+description: "Update the software for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the software for a [teamworkDevice](../resources/teamworkdevice.md). This API triggers a long-running operation.
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

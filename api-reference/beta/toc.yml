@@ -565,8 +565,6 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: Enrolled devices
-          href: resources/teamworkdevice.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Add app for user
@@ -583,8 +581,6 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-        - name: List enrolled devices
-          href: api/teamworkdevice-list.md
       - name: To-do tasks
         items:
         - name: Task
@@ -14610,9 +14606,9 @@ items:
         - name: Enrolled devices
           href: resources/teamworkdevice.md
           items:
-            - name: List devices
+            - name: List
               href: api/teamworkdevice-list.md
-            - name: Get device
+            - name: Get
               href: api/teamworkdevice-get.md
             - name: Restart device
               href: api/teamworkdevice-restart.md

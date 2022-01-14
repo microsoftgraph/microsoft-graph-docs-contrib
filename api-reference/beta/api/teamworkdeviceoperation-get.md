@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceOperation"
-description: "Get the details of async teamworkDeviceOperation."
+description: "Get the details of an async teamworkDeviceOperation."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the details of an async, long-running [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /teamwork/devices/{teamworkDeviceId}/operations/{teamworkDeviceOperationId}
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+This operation supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -90,7 +90,7 @@ Content-Type: application/json
       "device": null,
       "user": {
         "id": "2a610f6f-adf6-4205",
-        "displayName": "UserDisplayName",
+        "displayName": "Evan Lewis",
         "userIdentityType": "aadUser"
       }
     },
@@ -99,7 +99,7 @@ Content-Type: application/json
       "device": null,
       "user": {
         "id": "2a610f6f-adf6-4205",
-        "displayName": "UserDisplayName",
+        "displayName": "Evan Lewis",
         "userIdentityType": "aadUser"
       }
     }

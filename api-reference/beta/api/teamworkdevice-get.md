@@ -36,7 +36,7 @@ GET /teamwork/devices/{teamworkDeviceId}
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+This operation supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -97,7 +97,7 @@ Content-Type: application/json
     "lastModifiedBy": null,
     "currentUser": {
       "id": "2a610f6f-adf6-4205",
-      "displayName": "UserDisplayName",
+      "displayName": "Evan Lewis",
       "userIdentityType": "aadUser"
     }
   }

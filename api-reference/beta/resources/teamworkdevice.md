@@ -37,16 +37,27 @@ Inherits from [entity](../resources/entity.md).
 |currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|The signed-in user on the device.|
 |deviceType|[teamworkDeviceType](teamworkdevicetype.md)|The type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|A collection of hardware related properties. For example, **oemSerialNumber** and **model**.|
-|healthStatus|teamworkDeviceHealthStatus|The health status of the device. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
+|healthStatus|[teamworkDeviceHealthStatus](../resources/teamworkdevice.md#teamworkdevicehealthstatus-values)|The health status of the device. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
 |lastModifiedDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
-|notes|String|The notes put by the admin on the device.|
+|notes|String|The notes added by the admin to the device.|
+
+### teamworkDeviceHealthStatus values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown health status.|
+|offline|1|The device is offline and can not be used.|
+|critical|2|The state requires urgent attention and action as it may have a significant impact on the performance of the device, or make it unusable for calls or meetings.|
+|nonUrgent|3|There are issues or notifications that may have a minimal impact on the performance of an online device.|
+|healthy|4|The device is online and in good condition.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activity|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|Holds properties that changes based on the device activity.|
+|activity|[teamworkDeviceActivity](../resources/teamworkdeviceactivity.md)|The activity properties that change based on the device usage.|
 |configuration|[teamworkDeviceConfiguration](../resources/teamworkdeviceconfiguration.md)|The configuration properties of the device.|
 |health|[teamworkDeviceHealth](../resources/teamworkdevicehealth.md)|The health properties of the device.|
 |operations|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|The async operations on the device.|

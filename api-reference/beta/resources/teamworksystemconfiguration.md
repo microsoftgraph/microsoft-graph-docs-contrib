@@ -1,6 +1,6 @@
 ---
 title: "teamworkSystemConfiguration resource type"
-description: "Details of device system configuration."
+description: "Represents the details about the system configuration of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,23 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of system configuration of a [teamworkDevice](../resources/teamworkdevice.md). This detail is not applicable for Microsoft Teams Rooms devices.
+Represents the details about the system configuration of a [teamworkDevice](../resources/teamworkdevice.md). This detail is not applicable for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dateTimeConfiguration|[teamworkDateTimeConfiguration](../resources/teamworkdatetimeconfiguration.md)|Date & Time configurations for a device.|
-|defaultPassword|String|Default password for the device. This is write-only.|
-|deviceLockTimeout|Duration|Device lock timeout in seconds.|
-|isDeviceLockEnabled|Boolean|True if device lock is enabled.|
-|isLoggingEnabled|Boolean|True if logging is enabled.|
-|isPowerSavingEnabled|Boolean|True if power saving is enabled.|
-|isScreenCaptureEnabled|Boolean|True if screen capture is enabled.|
-|isSilentModeEnabled|Boolean|True if silent mode is enabled.|
-|language|String|Language option for the device.|
-|lockPin|String|Lockpin for the device. This is write-only.|
-|loggingLevel|String|Logging level for the device.|
-|networkConfiguration|[teamworkNetworkConfiguration](../resources/teamworknetworkconfiguration.md)|Network configuration for a device.|
+|dateTimeConfiguration|[teamworkDateTimeConfiguration](../resources/teamworkdatetimeconfiguration.md)|Date and Time configurations for a device.|
+|defaultPassword|String|The default password for the device. Write-Only.|
+|deviceLockTimeout|Duration|The device lock timeout in seconds.|
+|isDeviceLockEnabled|Boolean|`True` if the device lock is enabled.|
+|isLoggingEnabled|Boolean|`True` if logging is enabled.|
+|isPowerSavingEnabled|Boolean|`True` if power saving is enabled.|
+|isScreenCaptureEnabled|Boolean|`True` if screen capture is enabled.|
+|isSilentModeEnabled|Boolean|`True` if silent mode is enabled.|
+|language|String|The language option for the device.|
+|lockPin|String|The pin that unlocks the device. Write-Only.|
+|loggingLevel|String|The logging level for the device.|
+|networkConfiguration|[teamworkNetworkConfiguration](../resources/teamworknetworkconfiguration.md)|The network configuration for the device.|
 
 
 ## JSON representation

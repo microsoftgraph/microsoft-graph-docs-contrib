@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDevices"
-description: "Get the list of all Microsoft Teams devices provisioned for the tenant."
+description: "Get the list of all Microsoft Teams devices provisioned for a tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all Microsoft Teams [teamworkDevices](../resources/teamworkdevice.md) provisioned for the tenant.
+Get the list of all Microsoft Teams [devices](../resources/teamworkdevice.md) provisioned for a tenant.
 
-**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+>**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /teamwork/devices
 ```
 
 ## Optional query parameters
-This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId** and **currentUser/id** properties), `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId**, and **currentUser/id** properties), `$top`, `$select`, and `$skipToken` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Supported query patterns
 
@@ -112,7 +112,7 @@ Content-Type: application/json
       "lastModifiedBy": null,
       "currentUser": {
         "id": "2a610f6f-adf6-4205",
-        "displayName": "UserDisplayName",
+        "displayName": "Evan Lewis",
         "userIdentityType": "aadUser"
       }
     },
@@ -137,7 +137,7 @@ Content-Type: application/json
       "lastModifiedBy": null,
       "currentUser": {
         "id": "2a610f6f-adf6-4205",
-        "displayName": "UserDisplayName",
+        "displayName": "Evan Lewis",
         "userIdentityType": "aadUser"
       }
     }

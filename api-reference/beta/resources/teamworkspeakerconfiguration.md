@@ -1,6 +1,6 @@
 ---
 title: "teamworkSpeakerConfiguration resource type"
-description: "Details of speaker configuration of a device."
+description: "Represents the details about the speaker configuration of a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of speaker configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices.
+Represents the details about the speaker configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isCommunicationSpeakerOptional|Boolean|True if Communication Speaker is optional. Used to compute health state in case not optional|
-|isSpeakerOptional|Boolean|True if configured speaker is optional. Used to compute health state if speaker is not optional.|
+|isCommunicationSpeakerOptional|Boolean|`True` if the communication speaker is optional. Used to compute the health state if the speaker is not optional.|
+|isSpeakerOptional|Boolean|`True` if the configured speaker is optional. Used to compute the health state if the speaker is not optional.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|defaultCommunicationSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|Info for the deafult communication speaker. This speaker is used for calls.|
-|defaultSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|Info for the default speaker which is used for all media and notification sounds.|
-|speakers|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|List of connected speakers.|
+|defaultCommunicationSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the default communication speaker which is used as speaker for the conference meetings.|
+|defaultSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|The default speaker used for all media and notification sounds.|
+|speakers|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|The list of connected speakers.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
