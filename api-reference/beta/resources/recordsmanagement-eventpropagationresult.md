@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**For event-based retention, this attribute provides the status of event propogation.**
 
 ## Properties
 |Property|Type|Description|

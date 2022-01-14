@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type can be used to retrieve details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](https://docs.microsoft.com/en-us/microsoft-365/compliance/disposition?view=o365-worldwide).
+For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type can be used to retrieve details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
 
 ## Properties
 |Property|Type|Description|

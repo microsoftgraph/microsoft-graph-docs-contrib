@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- When configuring a retention label, the retention period can be based on when a specific type of event occurs. For content with a label that has event-triggered retention period, 'retentionEvent' resource type is useful. To learn more about it, see [Start retention when an event occurs](https://docs.microsoft.com/en-us/microsoft-365/compliance/event-driven-retention?view=o365-worldwide).
+ When configuring a retention label, the retention period can be based on when a specific type of event occurs. For content with a label that has event-triggered retention period, 'retentionEvent' resource type is useful. To learn more about it, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
 Inherits from [entity](../resources/recordsmanagement-entity.md).

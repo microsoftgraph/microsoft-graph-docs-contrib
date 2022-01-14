@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When an event is created, it is associated to a specific event type. The creation of this event then triggers all retentuon labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. For more information, read [Start retention when an event occurs](https://docs.microsoft.com/en-us/microsoft-365/compliance/event-driven-retention?view=o365-worldwide).
+When an event is created, it is associated to a specific event type. The creation of this event then triggers all retentuon labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. For more information, read [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
 Inherits from [entity](../resources/recordsmanagement-entity.md).
