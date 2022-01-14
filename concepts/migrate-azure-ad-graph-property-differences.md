@@ -22,7 +22,7 @@ Because the [user](#user-property-differences) and [group](#group-property-diffe
 
 ## User property differences
 
-The Azure AD Graph **User** resource inherited from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
@@ -44,7 +44,7 @@ The Azure AD Graph **User** resource inherited from **DirectoryObject**; it has 
 
 ## Group property differences
 
-The Azure AD Graph **Group** resource inherited from **DirectoryObject**; it has been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -55,7 +55,7 @@ The Azure AD Graph **Group** resource inherited from **DirectoryObject**; it has
 
 ## Application property differences
 
-The Azure AD Graph **Application** resource inherited from **DirectoryObject**; it has been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it has been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 | Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
@@ -81,7 +81,7 @@ The Azure AD Graph **Application** resource inherited from **DirectoryObject**; 
 
 ## AppRoleAssignment differences
 
-The Azure AD Graph **AppRoleAssignment** resource inherited from **DirectoryObject**; it has been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it has been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -91,7 +91,7 @@ The Azure AD Graph **AppRoleAssignment** resource inherited from **DirectoryObje
 
 ## Contact property differences
 
-The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft Graph.  Here are the property differences:
+The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it has been renamed to **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -110,7 +110,7 @@ The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft 
 
 ## Contract property differences
 
-The Azure AD Graph **Contract** resource inherited from **DirectoryObject**; it has been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it has been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -119,7 +119,7 @@ The Azure AD Graph **Contract** resource inherited from **DirectoryObject**; it 
 
 ## Device property differences
 
-The Azure AD Graph **Device** resource inherited from **DirectoryObject**; it has been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it has been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -146,7 +146,7 @@ The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryO
 
 ## DirectoryObjectReference property differences
 
-The Azure AD Graph **DirectoryObjectReference** resource inherited from **DirectoryObject**; it has been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it has been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -177,7 +177,7 @@ In Microsoft Graph, there are named policy types (such as **tokenIssuancePolicy*
 
 ## ServiceEndpoint property differences
 
-The Azure AD Graph **ServiceEndpoint** resource inherited from **DirectoryObject**; it has been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it has been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -187,7 +187,7 @@ The Azure AD Graph **ServiceEndpoint** resource inherited from **DirectoryObject
 
 ## ServicePrincipal property differences
 
-The Azure AD Graph **ServicePrincipal** resource inherited from **DirectoryObject**; it has been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it has been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -200,7 +200,7 @@ The Azure AD Graph **ServicePrincipal** resource inherited from **DirectoryObjec
 
 ## TenantDetails property differences
 
-The Azure AD Graph **TenantDetails** resource inherited from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **TenantDetails** resource inherits from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
