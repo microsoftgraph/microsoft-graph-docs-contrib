@@ -223,3 +223,77 @@ Content-Type: application/json
     "usePreDefinedValuesOnly": true
 }
 ```
+
+### Example 3: Add a custom security attribute with a list of predefined values
+
+The following example adds a new custom security attribute definition with a list of predefined values as a collection of strings.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Predefined value: `Alpine`
++ Predefined value: `Baker`
++ Predefined value: `Cascade`
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+
+{
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
+    "allowedValue": [
+        {
+            "value": "Alpine",
+            "isActive ": true
+        },
+        {
+            "value": "Baker",
+            "isActive ": true
+        },
+        {
+            "value": "Cascade",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "id": "Engineering_Project",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true
+}
+```
