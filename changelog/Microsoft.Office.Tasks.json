@@ -3,20 +3,20 @@
     {
       "ChangeList": [
       {
-          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
-          "ApiChange": "Permission",
-          "ChangedApiName": "Tasks.Read",
+          "Id": "00a94d5e-7fce-4806-a873-a9f77fd58cdf",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "plannerContextState",
           "ChangeType": "Addition",
-          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
-          "Target": "plannerPlan"
+          "Description": "Added the **plannerContextState** enumeration type.",
+          "Target": "plannerContextState"
         },
         {
-          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
-          "ApiChange": "Permission",
-          "ChangedApiName": "Tasks.Read",
+          "Id": "00a94d5e-7fce-4806-a873-a9f77fd58cdf",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
           "ChangeType": "Addition",
-          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
-          "Target": "plannerTask"
+          "Description": "Added the **state** property to [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContextDetails"
         },
         {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
