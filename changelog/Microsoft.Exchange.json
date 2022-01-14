@@ -14,7 +14,7 @@
       "Id": "116d29dd-f97b-421c-9b55-531aac9d4b38",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-12-30T00:00:00.000Z",
+      "CreatedDateTime": "2022-01-13T00:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
     },
@@ -32,7 +32,7 @@
       "Id": "bf68e333-fc87-4f40-bc63-931d4464329d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-30T00:00:00.000Z",
+      "CreatedDateTime": "2022-01-13T00:00:00.000Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
     },
