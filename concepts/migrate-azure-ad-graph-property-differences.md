@@ -200,7 +200,7 @@ The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject
 
 ## TenantDetails property differences
 
-The Azure AD Graph **TenantDetails** resource inherits from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
