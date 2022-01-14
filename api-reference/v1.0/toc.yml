@@ -267,15 +267,15 @@ items:
       - name: User
         href: resources/user.md
         items:
-        - name: List users
+        - name: List
           href: api/user-list.md
-        - name: Create user
+        - name: Create
           href: api/user-post-users.md
-        - name: Get user
+        - name: Get
           href: api/user-get.md
-        - name: Update user
+        - name: Update
           href: api/user-update.md
-        - name: Delete user
+        - name: Delete
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
@@ -5354,17 +5354,17 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
-          - name: Access review instance decision item
-            href: resources/accessreviewinstancedecisionitem.md
-            items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
-              href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
-            - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Access review instance decision item
+              href: resources/accessreviewinstancedecisionitem.md
+              items:
+              - name: Get
+                href: api/accessreviewinstancedecisionitem-get.md
+              - name: List
+                href: api/accessreviewinstance-list-decisions.md
+              - name: Update
+                href: api/accessreviewinstancedecisionitem-update.md
+              - name: Filter by current user
+                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
         - name: Consent requests
           href: resources/consentrequests-overview.md
           items:
