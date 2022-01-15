@@ -255,17 +255,17 @@ Content-Type: application/json
     "status": "Available",
     "type": "String",
     "usePreDefinedValuesOnly": true,
-    "allowedValue": [
+    "allowedValues": [
         {
-            "value": "Alpine",
-            "isActive ": true
+            "id": "Alpine",
+            "isActive": true
         },
         {
-            "value": "Baker",
-            "isActive ": true
+            "id": "Baker",
+            "isActive": true
         },
         {
-            "value": "Cascade",
+            "id": "Cascade",
             "isActive": true
         }
     ]
