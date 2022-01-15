@@ -117,7 +117,57 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Deactivate a custom security attribute
+### Example 2: Update the predefined values for custom security attribute
+
+The following example updates an existing predefined value and adds a new predefined value for a custom security attribute definition.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Predefined value: `Baker`
++ Predefined value: `Skagit`
+
+> [!NOTE]
+> For this request, you must add the following to the header:
+> Key: odata-version
+> Value: 4.01
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Deactivate a custom security attribute
 
 The following example deactivates a custom security attribute definition.
 
