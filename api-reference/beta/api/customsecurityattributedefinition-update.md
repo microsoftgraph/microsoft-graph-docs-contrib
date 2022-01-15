@@ -117,19 +117,19 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the predefined values for custom security attribute
+### Example 2: Update the predefined values for a custom security attribute
 
 The following example updates an existing predefined value and adds a new predefined value for a custom security attribute definition.
 
 + Attribute set: `Engineering`
 + Attribute: `Project`
 + Attribute data type: Collection of Strings
-+ Predefined value: `Baker`
-+ Predefined value: `Skagit`
++ Update predefined value: `Baker`
++ New predefined value: `Skagit`
 
 > [!NOTE]
-> For this request, you must add the following to the header:
-> Key: odata-version
+> For this request, you must add the following to the header:<br/>
+> Key: odata-version<br/>
 > Value: 4.01
 
 #### Request
