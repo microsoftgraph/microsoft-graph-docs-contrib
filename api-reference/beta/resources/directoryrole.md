@@ -37,16 +37,16 @@ This resource supports:
 ## Properties
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|description|String|The description for the directory role. Read-only. |
-|displayName|String|The display name for the directory role. Read-only. |
-|id|String|The unique identifier for the directory role. Inherited from [directoryObject](directoryobject.md). Key, Not nullable, Read-only.|
-|roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. |
+|description|String|The description for the directory role. Read-only. Supports `$filter` (`eq`), `$search`, `$select`.|
+|displayName|String|The display name for the directory role. Read-only. Supports `$filter` (`eq`), `$search`, `$select`. |
+|id|String|The unique identifier for the directory role. Inherited from [directoryObject](directoryobject.md). Key, Not nullable, Read-only. Supports `$filter` (`eq`), `$select`.|
+|roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. Supports `$filter` (`eq`), `$select`. |
 
 ## Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.|
-|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
+|members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports `$expand`.|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 
