@@ -41,7 +41,7 @@ The following access review schedule definition has the following settings:
 
 + The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator role.
 + The scope (**resourceScopes**) of the review is on both active and eligible User Administrator assignments.
-+ You as the user in an Identity Governance Administrator role will be the reviewer.
++ An individual user is selected as a reviewer. In this example, you'll be the reviewer.
 + The user in the Global Administrator role is the fallback reviewer. If the reviewers haven't recorded decisions when the review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
 + The approver must provide justification before they approve access to the privileged role.
 + The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires.
