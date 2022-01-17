@@ -58,7 +58,7 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`).|
+|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
 |displayName|string|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
 |id|string|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
 |visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
@@ -67,8 +67,8 @@ This topic provides descriptions of the declared properties and navigation prope
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
-|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
+|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. Supports `$expand`.|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit.|
 
 ## JSON representation
 
