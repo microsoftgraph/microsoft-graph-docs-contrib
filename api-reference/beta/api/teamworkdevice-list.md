@@ -46,7 +46,7 @@ This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId**,
 | Filter                 |     ✓     | `/devices?$filter=deviceType eq 'TeamsRoom'` | Filter devices based on the device category. |
 | Filter                 |     ✓     | `/devices?$filter=hardwareDetail/uniqueId eq 'value'` | Filter devices based on the **uniqueId** assigned to a device. |
 | Filter                 |     ✓     | `/devices?$filter=currentUser/id eq 'value'` |  Filter devices based on the signed-in user on a device.|
-| Page limit                 |     ✓     | `/devices?$top=10` | Get devices with a page size of 10. Default page limit is 20. Max page limit is 50. |
+| Page limit             |     ✓     | `/devices?$top=10` | Get devices with a page size of 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|

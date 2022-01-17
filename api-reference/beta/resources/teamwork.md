@@ -36,7 +36,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## JSON representation
 
-The following is a JSON representation of the resource. 
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
