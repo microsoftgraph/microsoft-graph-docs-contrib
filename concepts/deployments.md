@@ -82,7 +82,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Personal Contacts | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
 | Reports | ➖ | ➖ | ➖ |
-| Search (Microsoft Search) | ➖ | ➖ | ➖ |
+| Search (Microsoft Search) | ✔ | ➖ | ➖ |
 | Security | ✔ | ✔ | ✔ |
 | Service health and communications | ✔ | ✔ | ✔ |
 | Service principals | ✔ | ➖ | ➖ |
