@@ -272,7 +272,7 @@ Content-type: application/json
 }
 ```
 
-The status of this access review instance is `InProgress`. This means that the decisions haven't been made, and the period for this access review instance hasn't expired.
+The status of this access review instance is `InProgress`. This means that the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired.
 
 ## Step 3: Retrieve access review decisions before recording any decisions
 
