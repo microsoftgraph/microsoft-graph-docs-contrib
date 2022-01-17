@@ -2,7 +2,7 @@
 title: "Create securityBaselineTemplate"
 description: "Create a new securityBaselineTemplate object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -109,6 +109,7 @@ Content-Length: 454
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

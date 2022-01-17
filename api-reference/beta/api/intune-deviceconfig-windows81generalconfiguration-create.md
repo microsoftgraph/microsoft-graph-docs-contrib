@@ -2,7 +2,7 @@
 title: "Create windows81GeneralConfiguration"
 description: "Create a new windows81GeneralConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -255,6 +255,7 @@ Content-Length: 2869
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
 
 
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the public part of a signing certificate. It's the return type of the action [addSelfSignedSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md). Service providers use the public part of the signing certificate to validate the issuer of the token.
+Contains the public part of a signing certificate. It's the return type of the action [addTokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md). Service providers use the public part of the signing certificate to validate the issuer of the token.
 
 ## Properties
 Property|Type|Description

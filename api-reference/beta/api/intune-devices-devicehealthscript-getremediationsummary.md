@@ -2,7 +2,7 @@
 title: "getRemediationSummary function"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -70,6 +70,7 @@ Content-Length: 155
   }
 }
 ```
+
 
 
 

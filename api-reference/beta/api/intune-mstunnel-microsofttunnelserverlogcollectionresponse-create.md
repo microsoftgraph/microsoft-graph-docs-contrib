@@ -2,7 +2,7 @@
 title: "Create microsoftTunnelServerLogCollectionResponse"
 description: "Create a new microsoftTunnelServerLogCollectionResponse object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -102,6 +102,7 @@ Content-Length: 444
   "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
+
 
 
 
