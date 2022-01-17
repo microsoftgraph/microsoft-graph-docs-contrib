@@ -48,6 +48,9 @@ This topic provides descriptions of the declared properties and navigation prope
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
+> [!NOTE]
+> The URL endpoint for calling the **administrativeUnits** API is `/administrativeUnits` in the `beta` endpoint but `/directory/administrativeUnits` in the `v1.0` endpoint.
+
 ## Properties
 
 > [!IMPORTANT]
