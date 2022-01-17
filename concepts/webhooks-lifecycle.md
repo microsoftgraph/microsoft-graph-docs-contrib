@@ -157,10 +157,28 @@ A few things to note about this type of notification:
 
 When you receive a `reauthorizationRequired` lifecycle notification, you must reauthorize the subscription to maintain the data flow.
 
-You can create a long-lived subscription (3 days), which enables change notifications to flow to the **notificationUrl**. If the conditions of access have changed since the subscription was created, Microsoft Graph may require that you reauthorize the subscription to prove that you still have access to resource data. The following are examples of changes that affect your access to data:
+You can create a long-lived subscription depending on the [maximum supported subscription life time for the resource](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type), which enables change notifications to flow to the **notificationUrl**. If the conditions of access have changed since the subscription was created or Microsoft Graph detects that the notification flow might be inturrupted in the near future, Microsoft Graph may require that you reauthorize the subscription to prove that you still have access to resource data. The following are examples of conditions that may affect your access to data:
 
 - A tenant administrator may revoke your app's permissions to read a resource.
 - In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assessment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to reauthorize the subscription. For more information about dynamic policies that control access, see [Azure AD conditional access policies](/azure/active-directory/conditional-access/overview). 
+- Your access token expires. This only applies to notifications which include resource data
+- The subscription expires before you renew it
+
+Before any of these conditions become true, Microsoft Graph will send an authorization challenge to the **lifecycleNotificationUrl**. The interval of these notifications is illustrated below:
+
+```csharp
+    var TokenTimeToExpirationInMinutes=(TokenExpirationTime-CurrentTime)/4;
+    if((TokenTimeToExpirationInMinutes)<=180 && TokenTimeToExpirationInMinutes>60){
+        //Microsoft Graph will send reauthorizationRequired notification
+        TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes/2;
+    }
+    elseif(TokenTimeToExpirationInMinutes<60 && TokenTimeToExpirationInMinutes>=0){
+            //Microsoft Graph will send reauthorizationRequired notification every 15 mins
+            TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes-15;
+    }else{
+      //Microsoft Graph will stop sending reauthorizationRequired notifications
+    }
+```
 
 The following steps represent the flow of an authorization challenge for an active subscription:
 
@@ -173,14 +191,14 @@ The following steps represent the flow of an authorization challenge for an acti
     Note that the flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action.
 
 3. Respond to this lifecycle notification in one of two ways:
-    - Reauthorize the subscription. This does not extend the expiry date of the subscription.
-    - Renew the subscription. This both reauthorizes and extends the expiry date.
+    - Reauthorize the subscription. This does not extend the expiration date of the subscription.
+    - Renew the subscription. This both reauthorizes and extends the expiration date.
 
-    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiry](webhooks.md#renewing-a-subscription).
+    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiration](webhooks.md#renewing-a-subscription).
 
-4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused.
+4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused. Please note that Microsoft graph will drop the notifications at 4 hour mark after they are paused.
 
-### reauthorizationRequired notification example
+### reauthorizationRequired notification payload example
 
 ```json
 {
@@ -198,9 +216,8 @@ The following steps represent the flow of an authorization challenge for an acti
 
 A few things to note about this type of notification:
 
-- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
+- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge. Other types of lifecycle notifications are also possible <provide link for missed notifications and subscriptionRemoved notifications>, and new ones will be introduced in the future.
 - The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
-- Similar to change notifications, you can batch lifecycle notifications together (in the **value** collection), each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
 
 > **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
