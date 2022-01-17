@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the cloudPcSnapshot resources from the snapshots navigation property.
+Get the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources from the snapshots navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /deviceManagement/virtualEndpoint/snapshots
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -77,11 +77,11 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcSnapshot",
-      "id": "926ff3f0-f3f0-926f-f0f3-6f92f0f36f92",
-      "cloudPcId": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastRestoredDateTime": "String (timestamp)"
+      "id": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
+      "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
+      "status": "ready",
+      "createdDateTime": "2021-08-23T09:28:32.8260335Z",
+      "lastRestoredDateTime": "2021-09-01T09:28:32.8260338Z"
     }
   ]
 }

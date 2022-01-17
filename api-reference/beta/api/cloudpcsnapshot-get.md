@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -76,11 +76,11 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcSnapshot",
-    "id": "926ff3f0-f3f0-926f-f0f3-6f92f0f36f92",
-    "cloudPcId": "String",
-    "status": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastRestoredDateTime": "String (timestamp)"
+    "id": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
+    "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
+    "status": "ready",
+    "createdDateTime": "2021-08-23T09:28:32.8260335Z",
+    "lastRestoredDateTime": "2021-09-01T09:28:32.8260338Z"
   }
 }
 ```
