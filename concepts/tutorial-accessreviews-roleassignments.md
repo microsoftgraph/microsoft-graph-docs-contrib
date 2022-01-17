@@ -35,7 +35,7 @@ To consent to the required permissions in Graph Explorer:
 
 ## Step 1: Create an access review of privileged role assignments
 
-In this tutorial, we create a recurring access review of both *active* and *eligible* assignments to the User Administrator role. An **accessReviewScheduleDefinition** can be used to define the access review of multiple principle types (users and groups, or service principals) to only one privileged role. To review access to multiple privileged roles, create separate accessReviewScheduleDefinition objects.
+In this tutorial, we create a recurring access review of both *active* and *eligible* assignments to the User Administrator role. An **accessReviewScheduleDefinition** can be used to define the access review of multiple principle types (users and groups, or service principals) to only one privileged role. To review access to multiple privileged roles, create separate **accessReviewScheduleDefinition** objects.
 
 The following access review schedule definition has the following settings:
 
@@ -218,7 +218,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, in this scenario representing the first recurrence of only one resource under review.
+In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the **accessReviewScheduleDefinition** object. Only one instance is returned, in this scenario representing the first recurrence of only one resource under review.
 
 ```http
 HTTP/1.1 200 OK
@@ -296,7 +296,7 @@ The following response shows two decision items each corresponding to a decision
 
 + The principal property shows that two principals have access to the User Administrator role—a group named **Role assignable group** and a user named **Adele Vance**.
 + The reviewers haven't reviewed the instances as indicated by the `NotReviewed` value of the **decision** property.
-+ No recommendations are available because recommendations weren't enabled in the accessReviewScheduleDefinition in Step 1.
++ No recommendations are available because recommendations weren't enabled in the **accessReviewScheduleDefinition** in Step 1.
 
 ```http
 HTTP/1.1 200 OK
@@ -456,7 +456,7 @@ Adele has now lost access to the User Administrator role while the IT Support gr
 
 ## Step 6: Retrieve access review decisions
 
-Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the accessReviewScheduleDefinition you created in Step 1.
+Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the **accessReviewScheduleDefinition** you created in Step 1.
 
 ### Request
 
@@ -549,7 +549,7 @@ Content-type: application/json
 <!---
 ## Step 6: Retrieve access review history definitions
 
-Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all accessReviewScheduleDefinitions scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
+Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all **accessReviewScheduleDefinition** objects scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
 
 ### Request
 ```http
@@ -617,7 +617,7 @@ The response object above does not contain a downloadUri value. Give it a few mo
 
 ## Step 6: Clean up resources
 
-Delete the accessReviewScheduleDefinition object that you created for this tutorial. This will remove the settings, instances, and decisions associated with the access review.
+Delete the **accessReviewScheduleDefinition** object that you created for this tutorial. This will remove the settings, instances, and decisions associated with the access review.
 
 ### Request
 
