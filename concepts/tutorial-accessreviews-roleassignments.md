@@ -45,7 +45,7 @@ The following access review schedule definition has the following settings:
 + The user in the Global Administrator role is the fallback reviewer. If the reviewers haven't recorded decisions when the review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
 + The approver must provide justification before they approve access to the privileged role.
 + The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires.
-+ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, the decisions aren't automatically applied but you must manually apply them.
++ **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, the decisions aren't automatically applied so you must manually apply them.
 + The review recurs every three months over a period of three days and doesn't end.
 
 ### Request
