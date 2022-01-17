@@ -93,7 +93,8 @@ For example, the following request returns both the **contact** collection of th
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
+The `$count` query parameter is supported for collections of the following frequently used resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
+- [administrativeUnit](/graph/api/resources/administrativeunit)
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
