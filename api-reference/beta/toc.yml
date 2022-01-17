@@ -342,7 +342,7 @@ items:
       - name: Directory objects
         href: resources/directoryobject.md
         items:
-        - name: Activate service plan
+        - name: Activate service plan (deprecated)
           href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
@@ -11160,7 +11160,7 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
-          - name: Activate service
+          - name: Activate service (deprecated)
             href: api/organization-activateservice.md
         - name: Organization settings
           href: resources/organizationSettings.md

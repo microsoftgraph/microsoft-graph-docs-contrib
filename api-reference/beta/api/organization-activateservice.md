@@ -7,11 +7,14 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# organization: activateService
+# organization: activateService (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The organization `activateService` API will be deprecated and will stop returning data on March 15, 2022.
 
 Activate a service for an organization.
 
