@@ -42,7 +42,7 @@ items:
       displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
-        href: /graph/webhooks?context=graph/api/beta
+        href: /graph/api/resources/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
@@ -269,15 +269,15 @@ items:
       - name: User
         href: resources/user.md
         items:
-        - name: List users
+        - name: List
           href: api/user-list.md
-        - name: Create user
+        - name: Create
           href: api/user-post-users.md
-        - name: Get user
+        - name: Get
           href: api/user-get.md
-        - name: Update user
+        - name: Update
           href: api/user-update.md
-        - name: Delete user
+        - name: Delete
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
@@ -376,6 +376,14 @@ items:
           href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
+        - name: List deleted users
+          href: api/directory-deleteditems-list.md 
+        - name: Get deleted user
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete user
+          href: api/directory-deleteditems-delete.md       
+        - name: Restore deleted user
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -406,12 +414,20 @@ items:
             href: api/insights-list-used.md
         - name: Organization control (preview)
           items:
-          - name: Item insights settings
-            href: resources/iteminsightssettings.md
-          - name: Get
-            href: api/iteminsightssettings-get.md
-          - name: Update
-            href: api/iteminsightssettings-update.md
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: Settings for item insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Settings for people insights
+            items:
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -453,7 +469,6 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/user.md
         items:
         - name: Assign manager
           href: api/user-post-manager.md
@@ -501,6 +516,14 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
+        - name: Settings for people insights
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-peopleinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -594,64 +617,50 @@ items:
           href: api/group-update.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Renew group
+          href: api/group-renew.md
         - name: Add favorite
           href: api/group-addfavorite.md
+        - name: Remove favorite
+          href: api/group-removefavorite.md
+        - name: List members
+          href: api/group-list-members.md
         - name: Add member
           href: api/group-post-members.md
+        - name: Remove member
+          href: api/group-delete-members.md
+        - name: List member of
+          href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
+        - name: List owners
+          href: api/group-list-owners.md
         - name: Add owner
           href: api/group-post-owners.md
+        - name: Remove owner
+          href: api/group-delete-owners.md
+        - name: Get delta
+          href: api/group-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
         - name: Evaluate dynamic membership
           href: api/group-evaluatedynamicmembership.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
-        - name: Get delta
-          href: api/group-delta.md
         - name: Get endpoint
           href: api/endpoint-get.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Check member objects
-          href: api/directoryobject-checkmemberobjects.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
-        - name: List deleted groups
-          href: api/directory-deleteditems-list.md
         - name: List endpoints
           href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
-        - name: List member of
-          href: api/group-list-memberof.md
-        - name: List transitive member of
-          href: api/group-list-transitivememberof.md
-        - name: List members
-          href: api/group-list-members.md
-        - name: List transitive members
-          href: api/group-list-transitivemembers.md
-        - name: List owners
-          href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
         - name: List permission grants
           href: api/group-list-permissiongrants.md
-        - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
-        - name: Remove favorite
-          href: api/group-removefavorite.md
-        - name: Remove member
-          href: api/group-delete-members.md
-        - name: Remove owner
-          href: api/group-delete-owners.md
         - name: Reset unseen count
           href: api/group-resetunseencount.md
-        - name: Restore deleted group
-          href: api/directory-deleteditems-restore.md
         - name: Subscribe by mail
           href: api/group-subscribebymail.md
         - name: Unsubscribe by mail
@@ -749,6 +758,25 @@ items:
           href: api/conversationthread-reply.md
       - name: Directory object
         href: resources/directoryobject.md
+        items:
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
+        - name: Get member groups
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member objects
+          href: api/directoryobject-checkmemberobjects.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
+        - name: List deleted groups
+          href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md  
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md 
+        - name: Permanently delete group
+          href: api/directory-deleteditems-delete.md     
+        - name: Restore deleted group
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -852,12 +880,23 @@ items:
           href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
+        - name: List deleted applications owned by user
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted application
           href: api/directory-deleteditems-get.md
         - name: Permanently delete application
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List
+            href: api/applicationtemplate-list.md
+          - name: Get
+            href: api/applicationtemplate-get.md
+          - name: Instantiate
+            href: api/applicationtemplate-instantiate.md
         - name: Certificates & secrets
           items:
           - name: Add password
@@ -924,15 +963,12 @@ items:
               href: api/application-list-tokenlifetimepolicies.md
             - name: Remove
               href: api/application-delete-tokenlifetimepolicies.md
-        - name: Application template
-          href: resources/applicationtemplate.md
+        - name: Verified publisher
           items:
-          - name: List application templates
-            href: api/applicationtemplate-list.md
-          - name: Get application template
-            href: api/applicationtemplate-get.md
-          - name: Instantiate application template
-            href: api/applicationtemplate-instantiate.md
+          - name: Set
+            href: api/application-setverifiedpublisher.md
+          - name: Unset
+            href: api/application-unsetverifiedpublisher.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
         items:
@@ -1584,6 +1620,24 @@ items:
               href: api/meetingregistration-post-registrants.md
             - name: Delete
               href: api/meetingregistrant-delete.md
+        - name: External meeting registration
+          href: resources/externalmeetingregistration.md
+          items:
+          - name: Create
+            href: api/externalmeetingregistration-post.md
+          - name: Get
+            href: api/externalmeetingregistration-get.md
+          - name: Delete
+            href: api/externalmeetingregistration-delete.md
+          - name: External meeting registrant
+            href: resources/externalmeetingregistrant.md
+            items:
+            - name: List
+              href: api/externalmeetingregistrant-list.md
+            - name: Create
+              href: api/externalmeetingregistrant-post.md
+            - name: Delete
+              href: api/externalmeetingregistrant-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -1595,6 +1649,10 @@ items:
           href: api/presence-setpresence.md
         - name: Clear presence
           href: api/presence-clearpresence.md
+        - name: Set user preferred presence
+          href: api/presence-setuserpreferredpresence.md
+        - name: Clear user preferred presence
+          href: api/presence-clearuserpreferredpresence.md
     - name: Compliance 
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -1813,7 +1871,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking (preview)
+    - name: Customer booking
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
@@ -1859,6 +1917,19 @@ items:
           href: api/bookingcurrency-list.md
         - name: Get
           href: api/bookingcurrency-get.md
+      - name: Booking custom question
+        href: resources/bookingcustomquestion.md
+        items:
+        - name: List
+          href: api/bookingbusiness-list-customquestions.md
+        - name: Create
+          href: api/bookingbusiness-post-customquestions.md
+        - name: Get
+          href: api/bookingcustomquestion-get.md
+        - name: Update
+          href: api/bookingcustomquestion-update.md
+        - name: Delete
+          href: api/bookingcustomquestion-delete.md    
       - name: Booking customer
         href: resources/bookingcustomer.md
         items:
@@ -2481,8 +2552,21 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
-          - name: Key/value pair
-            href: resources/intune-androidforwork-keyvaluepair.md
+          - name: macOS dmg app
+            href: resources/intune-apps-macosdmgapp.md
+            items:
+            - name: List
+              href: api/intune-apps-macosdmgapp-list.md
+            - name: Get
+              href: api/intune-apps-macosdmgapp-get.md
+            - name: Create
+              href: api/intune-apps-macosdmgapp-create.md
+            - name: Delete
+              href: api/intune-apps-macosdmgapp-delete.md
+            - name: Update
+              href: api/intune-apps-macosdmgapp-update.md
+          - name: macOS included app
+            href: resources/intune-apps-macosincludedapp.md
           - name: macOS LOB app
             href: resources/intune-apps-macoslobapp.md
             items:
@@ -3697,6 +3781,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
+          - name: Android device owner cross profile data sharing
+            href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
           - name: Android device owner default app permission policy type
             href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
           - name: Android device owner derived credential authentication configuration
@@ -3813,6 +3899,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+          - name: Android device owner system update freeze period
+            href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
           - name: Android device owner system update install type
             href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
           - name: Android device owner trusted root certificate
@@ -5283,6 +5371,86 @@ items:
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
+          - name: Hardware configuration
+            href: resources/intune-deviceconfig-hardwareconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfiguration-update.md
+            - name: assignHardwareConfiguration action
+              href: api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md
+            - name: assign action
+              href: api/intune-deviceconfig-hardwareconfiguration-assign.md
+          - name: Hardware configuration assignment
+            href: resources/intune-deviceconfig-hardwareconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationassignment-update.md
+          - name: Hardware configuration device state
+            href: resources/intune-deviceconfig-hardwareconfigurationdevicestate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationdevicestate-update.md
+          - name: Hardware configuration format
+            href: resources/intune-deviceconfig-hardwareconfigurationformat.md
+          - name: Hardware configuration run summary
+            href: resources/intune-deviceconfig-hardwareconfigurationrunsummary.md
+            items:
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-get.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationrunsummary-update.md
+          - name: Hardware configuration user state
+            href: resources/intune-deviceconfig-hardwareconfigurationuserstate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwareconfigurationuserstate-update.md
+          - name: Hardware password info
+            href: resources/intune-deviceconfig-hardwarepasswordinfo.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-hardwarepasswordinfo-list.md
+            - name: Get
+              href: api/intune-deviceconfig-hardwarepasswordinfo-get.md
+            - name: Create
+              href: api/intune-deviceconfig-hardwarepasswordinfo-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-hardwarepasswordinfo-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-hardwarepasswordinfo-update.md
+          - name: Ingestion source
+            href: resources/intune-grouppolicy-ingestionsource.md
           - name: Ink access setting
             href: resources/intune-deviceconfig-inkaccesssetting.md
           - name: Intended purpose
@@ -5616,10 +5784,6 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
-          - name: Key/value pair
-            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: LAN manager authentication level
@@ -8000,8 +8164,6 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -8730,8 +8892,6 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
-          - name: Key/value pair
-            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -9492,7 +9652,7 @@ items:
               href: api/intune-shared-devicecompliancepolicy-get.md
             - name: assign action
               href: api/intune-shared-devicecompliancepolicy-assign.md
-            - name: action
+            - name: refreshDeviceComplianceReportSummarization action
               href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9635,6 +9795,8 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
+          - name: Key/value pair
+            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
@@ -9709,6 +9871,8 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
+          - name: Run state
+            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
@@ -9834,14 +9998,20 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List cloud PCs
+          - name: List
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get cloud PC
+          - name: Get
             href: api/cloudpc-get.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Reboot
+            href: api/cloudpc-reboot.md
+          - name: Rename
+            href: api/cloudpc-rename.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
@@ -10364,6 +10534,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md          
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -10387,6 +10559,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -11107,7 +11281,6 @@ items:
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
-            href: resources/directoryobject.md
             items:
             - name: List direct reports
               href: api/orgcontact-list-directreports.md
@@ -11562,7 +11735,7 @@ items:
               href: api/samlorwsfedexternaldomainfederation-delete.md
             - name: List domains
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
-            - name: Create externalDomainName
+            - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
@@ -11607,21 +11780,6 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Organizational contacts
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
-          - name: Get org contact delta
-            href: api/orgcontact-delta.md
-          - name: Groups
-            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -12088,34 +12246,34 @@ items:
       - name: Governance
         items:
         - name: Access reviews
-          href: resources/accessreviewsv2-root.md
+          href: resources/accessreviewsv2-overview.md
           items:
           - name: Access review schedule definition
             href: resources/accessreviewscheduledefinition.md
             items:
             - name: List
-              href: api/accessreviewscheduledefinition-list.md
+              href: api/accessreviewset-list-definitions.md
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
-              href: api/accessreviewscheduledefinition-post.md
+              href: api/accessreviewset-post-definitions.md
             - name: Delete
               href: api/accessreviewscheduledefinition-delete.md
             - name: Update
               href: api/accessreviewscheduledefinition-update.md
             - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
           - name: Access review instance
             href: resources/accessreviewinstance.md
             items:
             - name: List
-              href: api/accessreviewinstance-list.md
+              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
               href: api/accessreviewinstance-get.md
+            - name: Update
+              href: api/accessreviewinstance-update.md
             - name: Filter by current user
               href: api/accessreviewinstance-filterbycurrentuser.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Send reminder
               href: api/accessreviewinstance-sendreminder.md
             - name: Stop
@@ -12130,19 +12288,21 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
-          - name: Access review instance decision item
-            href: resources/accessreviewinstancedecisionitem.md
-            items:
-            - name: List
-              href: api/accessreviewinstancedecisionitem-list.md
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
             - name: List pending approval (deprecated)
-              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
+            - name: Access review instance decision item
+              href: resources/accessreviewinstancedecisionitem.md
+              items:
+              - name: List
+                href: api/accessreviewinstance-list-decisions.md
+              - name: Get
+                href: api/accessreviewinstancedecisionitem-get.md
+              - name: Filter by current user
+                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+              - name: Update
+                href: api/accessreviewinstancedecisionitem-update.md
+              - name: List pending approval (deprecated)
+                href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
             href: resources/accessreviewpolicy.md
             items:
@@ -12156,9 +12316,9 @@ items:
             - name: Get
               href: api/accessreviewhistorydefinition-get.md
             - name: List
-              href: api/accessreviewhistorydefinition-list.md
+              href: api/accessreviewset-list-historydefinitions.md
             - name: Create
-              href: api/accessreviewhistorydefinition-post.md
+              href: api/accessreviewset-post-historydefinitions.md
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (deprecated)
@@ -12226,7 +12386,7 @@ items:
             - name: List
               href: api/programcontroltype-list.md
         - name: Consent requests
-          href: resources/consentrequests-root.md
+          href: resources/consentrequests-overview.md
           items:
           - name: Admin consent request policy
             href: resources/adminconsentrequestpolicy.md
@@ -12239,7 +12399,7 @@ items:
             href: resources/appconsentrequest.md
             items:
             - name: List
-              href: api/appconsentrequest-list.md
+              href: api/appconsentapprovalroute-list-appconsentrequests.md
             - name: Get
               href: api/appconsentrequest-get.md
             - name: Filter by current user
@@ -12248,21 +12408,21 @@ items:
             href: resources/userconsentrequest.md
             items:
             - name: List
-              href: api/userconsentrequest-list.md
+              href: api/appconsentrequest-list-userconsentrequests.md
             - name: Get
               href: api/userconsentrequest-get.md
             - name: Filter by current user
               href: api/userconsentrequest-filterByCurrentUser.md
         - name: Entitlement management
-          href: resources/entitlementmanagement-root.md
+          href: resources/entitlementmanagement-overview.md
           items:
           - name: Access package
             href: resources/accesspackage.md
             items:
             - name: List
-              href: api/accesspackage-list.md
+              href: api/entitlementmanagement-list-accesspackages.md
             - name: Create
-              href: api/accesspackage-post.md
+              href: api/entitlementmanagement-post-accesspackages.md
             - name: Get
               href: api/accesspackage-get.md
             - name: Update
@@ -12291,31 +12451,34 @@ items:
             href: resources/accesspackageassignment.md
             items:
             - name: List
-              href: api/accesspackageassignment-list.md
+              href: api/entitlementmanagement-list-accesspackageassignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
               href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment approval
-            href: resources/approval.md
             items:
-            - name: Approval step
-              href: resources/approvalstep.md
-            - name: Get approval
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
               href: api/approval-get.md
-            - name: List approval steps
-              href: api/approval-list-steps.md
-            - name: Get approval step
-              href: api/approvalstep-get.md
-            - name: Update approval step
-              href: api/approvalstep-update.md
+            - name: Approval step
+              items:
+              - name: Approval
+                href: resources/approvalstep.md
+              - name: List
+                href: api/approval-list-steps.md
+              - name: Get
+                href: api/approvalstep-get.md
+              - name: Update
+                href: api/approvalstep-update.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
             - name: List
-              href: api/accesspackageassignmentpolicy-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentpolicies.md
             - name: Create
-              href: api/accesspackageassignmentpolicy-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentpolicies.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
             - name: Update
@@ -12326,9 +12489,9 @@ items:
             href: resources/accesspackageassignmentrequest.md
             items:
             - name: List
-              href: api/accesspackageassignmentrequest-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
             - name: Create
-              href: api/accesspackageassignmentrequest-post.md
+              href: api/entitlementmanagement-post-accesspackageassignmentrequests.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
             - name: Delete
@@ -12343,16 +12506,16 @@ items:
             href: resources/accesspackageassignmentresourcerole.md
             items:
             - name: List
-              href: api/accesspackageassignmentresourcerole-list.md
+              href: api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
             - name: Get
               href: api/accesspackageassignmentresourcerole-get.md
           - name: Access package catalog
             href: resources/accesspackagecatalog.md
             items:
             - name: List
-              href: api/accesspackagecatalog-list.md
+              href: api/entitlementmanagement-list-accesspackagecatalogs.md
             - name: Create
-              href: api/accesspackagecatalog-post.md
+              href: api/entitlementmanagement-post-accesspackagecatalogs.md
             - name: Get
               href: api/accesspackagecatalog-get.md
             - name: Update
@@ -12367,14 +12530,14 @@ items:
             href: resources/accesspackageresourcerequest.md
             items:
             - name: List
-              href: api/accesspackageresourcerequest-list.md
+              href: api/entitlementmanagement-list-accesspackageresourcerequests.md
             - name: Create
-              href: api/accesspackageresourcerequest-post.md
+              href: api/entitlementmanagement-post-accesspackageresourcerequests.md
           - name: Access package resource environment
             href: resources/accesspackageresourceenvironment.md
             items:
             - name: List
-              href: api/accesspackageresourceenvironment-list.md
+              href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
             - name: Get
               href: api/accesspackageresourceenvironment-get.md
           - name: Access package resource role scope
@@ -12388,9 +12551,9 @@ items:
             href: resources/connectedorganization.md
             items:
             - name: List
-              href: api/connectedorganization-list.md
+              href: api/entitlementmanagement-list-connectedorganizations.md
             - name: Create
-              href: api/connectedorganization-post.md
+              href: api/entitlementmanagement-post-connectedorganizations.md
             - name: Get
               href: api/connectedorganization-get.md
             - name: Update
@@ -12541,9 +12704,9 @@ items:
           - name: Agreement
             href: resources/agreement.md
           - name: Create
-            href: api/agreement-post-agreements.md
+            href: api/termsofusecontainer-post-agreements.md
           - name: List
-            href: api/agreement-list.md
+            href: api/termsofusecontainer-list-agreements.md
           - name: Get
             href: api/agreement-get.md
           - name: Update
@@ -12818,14 +12981,14 @@ items:
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications (preview)
+    - name: Notifications (deprecated)
       items:
       - name: Overview
         href: resources/notifications-api-overview.md
-      - name: Notification
+      - name: Notification (deprecated)
         href: resources/projectrome-notification.md
         items:
-        - name: Create and send a notification
+        - name: Create and send a notification (deprecated)
           href: api/user-post-notifications.md
     - name: People and workplace intelligence
       items:
@@ -12837,6 +13000,14 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
+        - name: Settings for people insights
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-peopleinsights.md
+          - name: Update
+            href: api/insightssettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -13145,37 +13316,39 @@ items:
           items:
           - name: Item insights (preview)
             href: resources/iteminsights.md
-          - name: Shared
-            href: resources/insights-shared.md
+          
+          - name: List shared
+            href: api/insights-list-shared.md
+          - name: List trending
+            href: api/insights-list-trending.md
+          - name: List used
+            href: api/insights-list-used.md
+        - name: Organization control (preview)
+          items:
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: Settings for item insights
             items:
-            - name: List shared
-              href: api/insights-list-shared.md
-          - name: Trending
-            href: resources/insights-trending.md
-            items:
-            - name: List trending
-              href: api/insights-list-trending.md
-          - name: Used
-            href: resources/insights-used.md
-            items:
-            - name: List used
-              href: api/insights-list-used.md
-          - name: Organization control (preview)
-            items:
-            - name: Item insights settings
-              href: resources/iteminsightssettings.md
-            - name: Get
-              href: api/iteminsightssettings-get.md
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
             - name: Update
-              href: api/iteminsightssettings-update.md
-          - name: User control (preview)
+              href: api/insightssettings-update.md
+          - name: Settings for people insights
             items:
-            - name: User insights settings
-              href: resources/userinsightssettings.md
-            - name: Get
-              href: api/userinsightssettings-get.md
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
             - name: Update
-              href: api/userinsightssettings-update.md
+              href: api/insightssettings-update.md
+        - name: User control (preview)
+          items:
+          - name: User insights settings
+            href: resources/userinsightssettings.md
+          - name: Get
+            href: api/userinsightssettings-get.md
+          - name: Update
+            href: api/userinsightssettings-update.md
+                
+                
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
@@ -13327,10 +13500,12 @@ items:
             href: resources/applicationsigninsummary.md
             items:
             - name: Get sign-in summary
-              href: api/applicationsigninsummary-get.md
+              href: api/reportroot-getazureadapplicationsigninsummary.md
           - name: Sign-in details
             href: resources/applicationsignindetailedsummary.md
             items:
+            - name: List sign-in details
+              href: api/reportroot-list-applicationsignindetailedsummary.md
             - name: Get sign-in details
               href: api/applicationsignindetailedsummary-get.md
         - name: Registration and usage
@@ -14172,6 +14347,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List all teams in an organization
+          href: api/teams-list.md  
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -14217,12 +14394,14 @@ items:
           href: api/directoryobject-checkmembergroups.md
         - name: List member of
           href: api/group-list-memberof.md
-        - name: Get deleted group
-          href: api/directory-deleteditems-get.md
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
+        - name: List deleted groups owned by user
+          href: api/directory-deleteditems-user-owned.md  
+        - name: Get deleted group
+          href: api/directory-deleteditems-get.md 
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md
+          href: api/directory-deleteditems-delete.md     
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
         - name: List permission grants
@@ -14689,58 +14868,136 @@ items:
       displayName: Microsoft To Do
       items:
       - name: Overview
-        href: resources/todo-overview.md
+        href: resources/tasks-overview.md
       - name: Task list
-        href: resources/todotasklist.md
         items:
+        - name: Base task list
+          href: resources/basetasklist.md
+        - name: Task list
+          href: resources/tasklist.md
+        - name: Well-known task list
+          href: resources/wellknowntasklist.md
         - name: List task lists
-          href: api/todo-list-lists.md
+          href: api/tasks-list-lists.md
         - name: Create task list
-          href: api/todo-post-lists.md
+          href: api/tasks-post-lists.md
         - name: Get task list
-          href: api/todotasklist-get.md
+          href: api/basetasklist-get.md
         - name: Update task list
-          href: api/todotasklist-update.md
+          href: api/tasklist-update.md
         - name: Delete task list
-          href: api/todotasklist-delete.md
+          href: api/tasklist-delete.md
         - name: Get task list delta
-          href: api/todotasklist-delta.md
+          href: api/basetasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Task
-        href: resources/todotask.md
         items:
+        - name: Base task
+          href: resources/basetask.md
+        - name: Task
+          href: resources/task.md
         - name: List tasks
-          href: api/todotasklist-list-tasks.md
+          href: api/basetasklist-list-tasks.md
         - name: Create task
-          href: api/todotasklist-post-tasks.md
+          href: api/basetasklist-post-tasks.md
         - name: Get task
-          href: api/todotask-get.md
+          href: api/basetask-get.md
         - name: Update task
-          href: api/todotask-update.md
+          href: api/basetask-update.md
+        - name: Move task
+          href: api/basetask-move.md
         - name: Delete task
-          href: api/todotask-delete.md
+          href: api/basetask-delete.md
         - name: Get task delta
-          href: api/todotask-delta.md
+          href: api/basetask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Linked resource
-        href: resources/linkedresource.md
+      - name: Checklist
+        href: resources/checklistitem.md
         items:
         - name: List
-          href: api/todotask-list-linkedresources.md
+          href: api/basetask-list-checklistitems.md
         - name: Create
-          href: api/todotask-post-linkedresources.md
+          href: api/basetask-post-checklistitems.md
         - name: Get
-          href: api/linkedresource-get.md
+          href: api/checklistitem-get.md
         - name: Update
-          href: api/linkedresource-update.md
+          href: api/checklistitem-update.md
         - name: Delete
-          href: api/linkedresource-delete.md
+          href: api/checklistitem-delete.md
+      - name: Linked resource
+        href: resources/linkedresource_v2.md
+        items:
+        - name: List
+          href: api/basetask-list-linkedresources.md
+        - name: Create
+          href: api/basetask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource_v2-get.md
+        - name: Update
+          href: api/linkedresource_v2-update.md
+        - name: Delete
+          href: api/linkedresource_v2-delete.md
+      - name: To-do Tasks(old)
+        items:
+        - name: Overview
+          href: resources/todo-overview.md
+        - name: Task list
+          href: resources/todotasklist.md
+          items:
+          - name: List task lists
+            href: api/todo-list-lists.md
+          - name: Create task list
+            href: api/todo-post-lists.md
+          - name: Get task list
+            href: api/todotasklist-get.md
+          - name: Update task list
+            href: api/todotasklist-update.md
+          - name: Delete task list
+            href: api/todotasklist-delete.md
+          - name: Get task list delta
+            href: api/todotasklist-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Task
+          href: resources/todotask.md
+          items:
+          - name: List tasks
+            href: api/todotasklist-list-tasks.md
+          - name: Create task
+            href: api/todotasklist-post-tasks.md
+          - name: Get task
+            href: api/todotask-get.md
+          - name: Update task
+            href: api/todotask-update.md
+          - name: Delete task
+            href: api/todotask-delete.md
+          - name: Get task delta
+            href: api/todotask-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Linked resource
+          href: resources/linkedresource.md
+          items:
+          - name: List
+            href: api/todotask-list-linkedresources.md
+          - name: Create
+            href: api/todotask-post-linkedresources.md
+          - name: Get
+            href: api/linkedresource-get.md
+          - name: Update
+            href: api/linkedresource-update.md
+          - name: Delete
+            href: api/linkedresource-delete.md
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)

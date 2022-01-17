@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipals = await graphClient.ServicePrincipals
+var applications = await graphClient.Applications
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.Filter("startswith(displayName, 'a')")

@@ -13,6 +13,8 @@ ms.localizationpriority: medium
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified. Before you can create a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
+You must use the `Prefer: include-unknown-enum-members` request header to get the following values in **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` for `/teams/{id}/channels/{id}/messages` and `/chats/{id}/messages` resource.
+
 > [!NOTE]
 >`/teams/getAllMessages` and `/chats/getAllMessages` has [licensing and payment requirements](/graph/teams-licenses).
 > `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` query parameters.
@@ -25,7 +27,7 @@ ms.localizationpriority: medium
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
-### Request example
+#### Request example
 
 Specify the `model` query parameter in the **resource** property in the request body.
 
