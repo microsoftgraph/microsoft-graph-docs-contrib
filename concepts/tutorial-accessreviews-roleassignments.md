@@ -266,11 +266,6 @@ Content-type: application/json
                 }
             ],
             "fallbackReviewers": [
-                {
-                    "query": "/v1.0/users/77f8b7b6-1119-4a86-b4c3-e7d68e990424",
-                    "queryType": "MicrosoftGraph",
-                    "queryRoot": null
-                }
             ]
         }
     ]
