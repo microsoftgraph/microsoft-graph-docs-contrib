@@ -218,7 +218,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, in this scenario representing only one resource under review.
+In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the accessReviewScheduleDefinition. Only one instance is returned, in this scenario representing the first recurrence of only one resource under review.
 
 ```http
 HTTP/1.1 200 OK
