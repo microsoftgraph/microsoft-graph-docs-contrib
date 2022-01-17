@@ -549,7 +549,7 @@ Content-type: application/json
 <!---
 ## Step 6: Retrieve access review history definitions
 
-Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all acecssReviewScheduleDefinitions scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
+Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all accessReviewScheduleDefinitions scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
 
 ### Request
 ```http
