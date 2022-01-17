@@ -373,7 +373,7 @@ Content-type: application/json
 }
 ```
 
-You can now record or submit your decisions for the access review instances.
+As the reviewer, you can now submit your decisions for the access review instance.
 
 ## Step 4: Record decisions
 
