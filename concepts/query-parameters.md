@@ -139,11 +139,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 | Operator type | Operator |
 | --- | --- |
-| Equality operators | <ul><li> equals `eq` </li><li> not equals `ne`</li><li> Negation `not`</li><li> in `in`</li></ul> |
-| Relational operators | <ul><li> less than `lt` </li><li> greater than `gt`</li><li> less than or equal to `le`</li><li> greater than or equal to `ge`</li></ul> |
-| Lambda operators | <ul><li> any `any` </li><li> all `all`</li></ul>|
-| Conditional operators | <ul><li> and `and` </li><li> or `or`</li> |
-| Functions | <ul><li> Starts with `startsWith` </li><li> Ends with `endsWith`</li><li> Contains `contains`</li></ul>|
+| Equality operators | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li></ul> |
+| Relational operators | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
+| Lambda operators | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>|
+| Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li> |
+| Functions | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>|
 
 
 > **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
