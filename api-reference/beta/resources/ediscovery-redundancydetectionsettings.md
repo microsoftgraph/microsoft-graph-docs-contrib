@@ -1,6 +1,6 @@
 ---
 title: "redundancyDetectionSettings resource type"
-description: "Redundancy settings for an eDiscovery case"
+description: "Redundancy settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -20,9 +20,9 @@ Redundancy (email threading and near duplicate detection) settings for an eDisco
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabled|Boolean|Indicates whether email threading and near duplicate detection are enabled.|
-|maxWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
-|minWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
-|similarityThreshold|Int32|See [Document and email similarity threshold](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|maxWords|Int32|Specifies the maximum number of words used for email threading and near duplicate detection. To learn more, see [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
+|minWords|Int32|Specifies the minimum number of words used for email threading and near duplicate detection. To learn more, see [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
+|similarityThreshold|Int32|Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see [Document and email similarity threshold](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
 
 ## Relationships
 

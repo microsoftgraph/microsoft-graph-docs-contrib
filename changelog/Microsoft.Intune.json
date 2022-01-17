@@ -3,6 +3,160 @@
     {
       "ChangeList": [
         {
+          "Id": "a2002e2d-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "quickScan",
+          "ChangeType": "Addition",
+          "Description": "Added the `quickScan` member to the **configurationManagerActionType** enumeration.",
+          "Target": "configurationManagerActionType"
+        },
+        {
+          "Id": "a20290ac-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "fullScan",
+          "ChangeType": "Addition",
+          "Description": "Added the `fullScan` member to the **configurationManagerActionType** enumeration.",
+          "Target": "configurationManagerActionType"
+        },
+        {
+          "Id": "a204f199-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsDefenderUpdateSignatures",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsDefenderUpdateSignatures` member to the **configurationManagerActionType** enumeration.",
+          "Target": "configurationManagerActionType"
+        },
+        {
+          "Id": "a2075528-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "durationInMinutes",
+          "ChangeType": "Addition",
+          "Description": "Added the **durationInMinutes** parameter to the [playLostModeSound](https://docs.microsoft.com/en-us/graph/api/intune-managedDevice-playLostModeSound?view=graph-rest-beta) method.",
+          "Target": "playLostModeSound"
+        },
+        {
+          "Id": "82625b24-5799-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "macOSDmgApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [macOSDmgApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSDmgApp?view=graph-rest-beta) resource type.",
+          "Target": "macOSDmgApp"
+        },
+        {
+          "Id": "8264bcdb-5799-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "macOSIncludedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [macOSIncludedApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSIncludedApp?view=graph-rest-beta) resource type.",
+          "Target": "macOSIncludedApp"
+        },
+        {
+          "Id": "36a957da-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "systemUpdateFreezePeriods",
+          "ChangeType": "Addition",
+          "Description": "Added the **systemUpdateFreezePeriods** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "36abb08b-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "iCloudDesktopAndDocumentsBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the **iCloudDesktopAndDocumentsBlocked** property to the [macOSGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "36ae366c-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidDeviceOwnerSystemUpdateFreezePeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the [androidDeviceOwnerSystemUpdateFreezePeriod](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerSystemUpdateFreezePeriod?view=graph-rest-beta) resource type.",
+          "Target": "androidDeviceOwnerSystemUpdateFreezePeriod"
+        },
+        {
+          "Id": "36b07401-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "downloadOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the `downloadOnly` member to the **macOSSoftwareUpdateBehavior** enumeration.",
+          "Target": "macOSSoftwareUpdateBehavior"
+        },
+        {
+          "Id": "36b2d787-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "installASAP",
+          "ChangeType": "Addition",
+          "Description": "Added the `installASAP` member to the **macOSSoftwareUpdateBehavior** enumeration.",
+          "Target": "macOSSoftwareUpdateBehavior"
+        },
+        {
+          "Id": "36b53db3-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "notifyOnly",
+          "ChangeType": "Addition",
+          "Description": "Added the `notifyOnly` member to the **macOSSoftwareUpdateBehavior** enumeration.",
+          "Target": "macOSSoftwareUpdateBehavior"
+        },
+        {
+          "Id": "36b79f0b-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "installLater",
+          "ChangeType": "Addition",
+          "Description": "Added the `installLater` member to the **macOSSoftwareUpdateBehavior** enumeration.",
+          "Target": "macOSSoftwareUpdateBehavior"
+        },
+        {
+          "Id": "36ba01cd-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "bluetoothBlockContactSharing",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **bluetoothBlockContactSharing** property from the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "36bc648b-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "cellularBlockWiFiTethering",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **cellularBlockWiFiTethering** property from the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "36bec53c-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupBlocked",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **backupBlocked** property from the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "580d28e1-579a-11ec-a817-519c224fca78",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "skipToken",
+          "ChangeType": "Addition",
+          "Description": "Added the **skipToken** parameter to the [getQuietTimePolicyUsersReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getQuietTimePolicyUsersReport?view=graph-rest-beta) method.",
+          "Target": "getQuietTimePolicyUsersReport"
+        },
+        {
+          "Id": "2a1b8430-579c-11ec-a817-519c224fca78",
+          "ApiChange": "Method",
+          "ChangedApiName": "syncInventory",
+          "ChangeType": "Addition",
+          "Description": "Added the [syncInventory](https://docs.microsoft.com/en-us/graph/api/intune-windowsDriverUpdateProfile-syncInventory?view=graph-rest-beta) method to the [windowsDriverUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsDriverUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsDriverUpdateProfile"
+        }
+      ],
+      "Id": "2a1924f2-579c-11ec-a817-519c224fca78",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-07T20:27:57.444Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e42859a9-482b-11ec-a817-519c224fca78",
           "ApiChange": "Parameter",
           "ChangedApiName": "description",
