@@ -438,7 +438,7 @@ In this tutorial, you won't stop the accessReviewInstance manually but, you'll l
 
 ## Step 5: Apply access review decisions
 
-As an admin, after the **status** of the accessReviewInstance is set to `Completed`, you can apply the access review decisions.
+As an admin, after the 3 day duration has passed and the **status** of the accessReviewInstance is set to `Completed`, you can apply the access review decisions.
 
 ### Request
 
