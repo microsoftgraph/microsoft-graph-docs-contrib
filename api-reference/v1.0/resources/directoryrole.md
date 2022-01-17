@@ -42,7 +42,7 @@ This resource supports:
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports `$expand`.|
-|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable. Supports `$expand`.|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
 
 ## JSON representation
 
