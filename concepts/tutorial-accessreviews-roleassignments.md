@@ -276,7 +276,7 @@ The status of this access review instance is `InProgress`. This means that the r
 
 ## Step 3: Retrieve access review decisions before recording any decisions
 
-In this step, you'll retrieve the access review decision items before we complete the access review. An access review is completed either when all reviewers submit decisions or when the access review instance expires.
+In this step, you'll retrieve the access review decision items before we complete the access review. An access review is completed either when the access review instance duration expires, or if an administrator manually stops the instance.
 
 ### Request
 
