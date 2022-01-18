@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft 365 service usage for a managed tenant.
+Represents monthly active usage data for a service in a managed tenant.
 
 ## Properties
 |Property|Type|Description|

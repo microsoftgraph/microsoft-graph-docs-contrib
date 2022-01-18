@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft 365 tenant usage for a managed tenant.
+Represents the number of monthly active users per service in a managed tenant for the previous month. The time period for the data is a sliding window that takes a snapshot once a day.
 
 
 ## Methods
@@ -26,9 +26,9 @@ Represents Microsoft 365 tenant usage for a managed tenant.
 |:---|:---|:---|
 |id|String|The unique identifier for the tenant. Required. Read-only.|
 |reportDateTime|DateTimeOffset|The day the report was generated for the previous month. Required. Read-only.|
-|serviceUsages|[microsoft.graph.managedTenants.serviceUsage](../resources/managedtenants-serviceusage.md) collection|The number of active users by service. Example services: `Excel`, `Exchange`, `Intune`, `Outlook`, `Teams`, `Word`. Required. Read-only.|
+|serviceUsages|[microsoft.graph.managedTenants.serviceUsage](../resources/managedtenants-serviceusage.md) collection|The number of monthly active users for each service in the tenant. Example services: `Excel`, `Exchange`, `Intune`, `Outlook`, `Teams`, `Word`. Required. Read-only.|
 |tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Read-only.|
-|totalActiveUsers|Int32|The total number of active users. Required. Read-only.|
+|totalActiveUsers|Int32|The total number of unique, active users. Required. Read-only.|
 
 ## Relationships
 None.
