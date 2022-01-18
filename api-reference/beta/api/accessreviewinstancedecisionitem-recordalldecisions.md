@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItem: recordAllDecisions"
-description: "Record decisions on accessReviewInstanceDecisionItem."
+description: "Record the decisions for an accessReviewInstanceDecisionItem object."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
