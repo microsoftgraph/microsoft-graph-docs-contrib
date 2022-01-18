@@ -49,7 +49,7 @@ The following access review schedule definition has the following settings:
 
 ### Request
 
-In the following request, replace the `4562bcc8-c436-4f95-b7c0-4f8ce89dca5e` with the value of your user's ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
+In the following request, replace the `4562bcc8-c436-4f95-b7c0-4f8ce89dca5e` with the value of your user ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -166,8 +166,7 @@ Content-type: application/json
             "queryRoot": null
         }
     ],
-    "fallbackReviewers": [
-    ],
+    "fallbackReviewers": [],
     "settings": {
         "mailNotificationsEnabled": true,
         "reminderNotificationsEnabled": true,
@@ -202,7 +201,7 @@ Content-type: application/json
 
 ## Step 2: Retrieve instances of the access review
 
-Each access review instance represents each unique resource that is under review. In Step 1, only one access review was created to review access to the User Administrator resource that is identified by the role definition **id** `e930be7-5e62-47db-91af-98c3a49a38b1`.
+Each access review instance represents each recurrence with each unique resource that is under review having a unique instance. In Step 1, only one access review was created scoped to the User Administrator resource.
 
 ### Request
 
@@ -271,8 +270,6 @@ Content-type: application/json
 The status of this access review instance is `InProgress`. This means that the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired.
 
 ## Step 3: Retrieve access review decisions before recording any decisions
-
-In this step, you'll retrieve the access review decision items before we complete the access review. An access review is completed either when the access review instance duration expires, or if an administrator manually stops the instance.
 
 ### Request
 
@@ -373,7 +370,7 @@ As the reviewer, you can now submit your decisions for the access review instanc
 
 ## Step 4: Record decisions
 
-You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll deny Adele access while approving access for the IT Helpdesk group.
+You'll now record decisions for the access review. The company policy requires that access to privileged roles be granted to only groups and not individual users. In compliance with the company policy, you'll deny Adele access while approving access for the group.
 
 In the following requests, replace the following values:
 
@@ -385,7 +382,7 @@ In the following requests, replace the following values:
 
 ### Request
 
-In the following request, you'll approve access for the IT Helpdesk group.
+In the following request, you approve access for the IT Helpdesk group.
 
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/decisions/09c27ef4-4709-47b7-b661-3eac0d6a8627
@@ -405,7 +402,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-In the following request, we'll deny access for Adele Vance.
+In the following request, you deny access for Adele Vance.
 
 ```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/a13c348b-dc1c-47b5-8c58-b0d12b35a18b/instances/f282e54c-4eed-47a4-be9a-da00ab38aa8f/decisions/115d96e2-a235-4cfa-8273-f8b66c4fc6ab
@@ -465,7 +462,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 The following response object is different from the response object you received in Step 3 with the following settings:
 + The access review decision for IT Helpdesk is Approve while for Adele is Deny
 + The reviewedBy object contains your details as the reviewer
-+ The applyResult is New meaning the decisions haven't yet been applied. You must manually apply the decisions.
 
 ```http
 HTTP/1.1 200 OK
@@ -511,8 +507,8 @@ Content-type: application/json
             "reviewedDateTime": "2021-10-14T19:06:12.213Z",
             "decision": "Deny",
             "justification": "Adele Vance should join an allowed group to have continued access to the User Administrator role. Refer to the company policy '#132487: Privileged roles' for more details.",
-            "appliedDateTime": null,
-            "applyResult": "New",
+            "appliedDateTime": "2022-01-18T09:36:05.023Z",
+            "applyResult": "AppliedSuccessfully",
             "recommendation": "NoInfoAvailable",
             "principalLink": "https://graph.microsoft.com/v1.0/users/99e44b05-c10b-4e95-a523-e2732bbaba1e",
             "resourceLink": null,
@@ -524,10 +520,10 @@ Content-type: application/json
                 "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
             },
             "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
+                "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+                "displayName": "MOD Administrator",
                 "type": null,
-                "userPrincipalName": ""
+                "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
@@ -547,7 +543,7 @@ Content-type: application/json
 
 Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all **accessReviewScheduleDefinition** objects scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
 
-### Request
+### Request: Define the scope of history definitions
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 
@@ -574,7 +570,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
-    "id": "1e6049e2-9015-41ed-9d89-8622ff3146bd",
+    "id": "95cfc9f5-9181-498c-ac85-a1fb91e96fe9",
     "displayName": "Last quarter's group reviews April 2021",
     "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
     "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
@@ -586,7 +582,7 @@ Content-type: application/json
         "notNotified"
     ],
     "status": "requested",
-    "createdDateTime": "2021-11-24T16:33:25.1344465Z",
+    "createdDateTime": "2022-01-18T09:38:55.7433246Z",
     "fulfilledDateTime": null,
     "downloadUri": null,
     "createdBy": {
@@ -607,6 +603,53 @@ Content-type: application/json
 ```
 The response object above does not contain a downloadUri value. Give it a few moments for the file to be generated and run a GET request. The downloadUri should then be populated with a link that allows you to retrieve the history report.
 
+### Request: Generate the downloadUri that contains a link to download the history report
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/95cfc9f5-9181-498c-ac85-a1fb91e96fe9/generateDownloadUri()
+```
+
+### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewHistoryDefinition",
+    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+    "id": "95cfc9f5-9181-498c-ac85-a1fb91e96fe9",
+    "displayName": "Last quarter's group reviews April 2021",
+    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
+    "decisions": [
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
+    ],
+    "status": "done",
+    "createdDateTime": "2022-01-18T09:38:55.7433246Z",
+    "fulfilledDateTime": "2022-01-18T09:38:58.7176521Z",
+    "downloadUri": "https://ermconsolreportweu.blob.core.windows.net/erm-reports/Last quarter's group reviews April 2021-95cfc9f5-9181-498c-ac85-a1fb91e96fe9.csv?skoid=4ad0868b-7b78-4869-abb7-8f29151d8428&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2022-01-18T09:44:18Z&ske=2022-01-18T09:46:18Z&sks=b&skv=2020-04-08&sv=2020-04-08&st=2022-01-18T09:44:18Z&se=2022-01-19T09:44:18Z&sr=b&sp=r&sig=EbLjyNMCFqk563iusd9MW7hYVMhMdmuhJpWNlAUk8pM%3D",
+    "createdBy": {
+        "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+        "displayName": "MOD Administrator",
+        "type": null,
+        "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
+    },
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances')",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ]
+}
+```
+
+The downloadUri property contains a link to download the history report. To download the report, the auditors select this link. This link is active for only 24 hours.
 
 --->
 
