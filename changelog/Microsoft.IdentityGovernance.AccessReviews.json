@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contactedReviewers",
           "ChangeType": "Addition",
-          "Description": "Added the **contactedReviewers** relationship to [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+          "Description": "Added the **contactedReviewers** relationship to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
           "Target": "accessReviewInstance"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewReviewer",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewReviewer](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewer?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessReviewReviewer](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewReviewer?view=graph-rest-1.0) resource.",
           "Target": "accessReviewReviewer"
         }
       ],

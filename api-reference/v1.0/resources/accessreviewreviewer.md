@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Object representing the identities of the reviewers who were contacted to complete a review.
+Represents the identities of the reviewers who were contacted to complete a review.
 
 Inherits from [entity](entity.md).
 
@@ -21,7 +21,7 @@ Inherits from [entity](entity.md).
 | createdDateTime | DateTimeOffset | The date when the reviewer was added for the access review. |
 | displayName | String | Name of reviewer. |
 | id | String | Identifier of the reviewer. Inherited from [entity](entity.md). |
-| userPrincipalName | String | User principal name of the user. |
+| userPrincipalName | String | User principal name of the reviewer. |
 
 
 ## Relationships
