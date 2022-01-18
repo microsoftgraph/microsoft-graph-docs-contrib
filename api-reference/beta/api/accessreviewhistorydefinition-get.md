@@ -39,7 +39,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## Optional query parameters
 
-This method supports `?$expand=instances` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Including `?$expand=instances` will return the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) along with its associated instances.
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. Including `?$expand=instances` will include in the response object the instances associated with the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 

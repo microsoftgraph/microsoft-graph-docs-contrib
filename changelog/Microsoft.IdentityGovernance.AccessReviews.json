@@ -671,7 +671,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewHistoryScheduleSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryScheduleSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistoryschedulesettings?view=graph-rest-beta) resource type. Use this resource to configure the settings of an [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) object.",
           "Target": "accessReviewHistoryScheduleSettings"
         },
         {
@@ -687,7 +687,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "instances",
           "ChangeType": "Addition",
-          "Description": "Added the **instances** relationship to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the **instances** relationship to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource. Represents the instances of a recurring acecss review history definition.",
           "Target": "accessReviewHistoryDefinition"
         },
         {

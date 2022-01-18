@@ -24,7 +24,7 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |[List accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
 |[Create accessReviewHistoryDefinition](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
-|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI for each unexpired [accessReviewHistoryInstance](accessReviewHistoryInstance.md) contained in this definition. The URI can be used to retrieve each instance's review history data.|
+|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI for each `done` [accessReviewHistoryInstance](accessReviewHistoryInstance.md) contained in this definition. The URI can be used to retrieve each instance's review history data.|
 
 ## Properties
 
@@ -35,8 +35,8 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required.|
 |id|String|The assigned unique identifier of an access review history definition.|
-|reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews ending on or before this date will be included in the fetched history data. Only required if `scheduleSettings` is not defined. |
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or before this date will be included in the fetched history data. Only required if `scheduleSettings` is not defined.|
+|reviewHistoryPeriodEndDateTime|DateTimeOffset| A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined. |
+|reviewHistoryPeriodStartDateTime|DateTimeOffset|A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.|
 |scopes|[accessReviewQueryScope](accessreviewqueryscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.|
 |status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
 | instances |[accessReviewHistoryInstance](accessReviewHistoryInstance.md) collection|  Set of access review history instances for this access review definition. Definitions that do not recur will only have one instance; otherwise, there is an instance for each recurrence. |
@@ -72,8 +72,6 @@ The following is a JSON representation of the resource.
     "String"
   ],
   "createdDateTime": "String (timestamp)",
-  "fulfilledDateTime": "String (timestamp)",
-  "downloadUri": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.userIdentity"
   },

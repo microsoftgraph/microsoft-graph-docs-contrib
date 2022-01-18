@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generates URIs for each unexpired [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) contained in a [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). Each URI can be used to retrieve the instance's review history data. Each URI is valid for one day and can be retrieved by fetching the **downloadUri** property from the desired [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object.
+Generates URIs for each `done` [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) contained in a [accessReviewHistoryDefinition](../resources/accessReviewHistoryDefinition.md). Each URI can be used to retrieve the instance's review history data. Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the desired [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) in the response body with the object's associated [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) expanded.
+If successful, this action returns a `200 OK` response code and an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) in the response body with the object's associated [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) object automatically expanded.
 
 ## Examples
 

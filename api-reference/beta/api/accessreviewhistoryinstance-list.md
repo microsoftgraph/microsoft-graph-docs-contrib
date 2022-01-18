@@ -1,6 +1,6 @@
 ---
-title: "List accessReviewHistoryInstances"
-description: "Get a list of the accessReviewHistoryInstance objects."
+title: "List instances"
+description: "Retrieve the instances of an access review history definition."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) objects for a given [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) which have been created in the last 30 days.
+Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-If the signed-in user is not a Global Admin directory role member or a Global Reader directory role member, only the definitions that the signed-in user created will be returned.
+If the signed-in user is not a global administrator or a global reader, only the definitions that the signed-in user created will be returned.
 
 ## HTTP request
 
