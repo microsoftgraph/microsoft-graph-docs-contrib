@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessClientApplications resource type"
-description: "Represents client applications (service principals, workload identities) included in and excluded from the policy scope."
+description: "Represents client applications (service principals and workload identities) included in and excluded from the policy scope."
 author: "danielwood95"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
