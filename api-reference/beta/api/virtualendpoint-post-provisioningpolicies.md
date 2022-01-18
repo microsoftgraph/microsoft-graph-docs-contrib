@@ -79,13 +79,18 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "gallery"
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "description": "Description value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "domainJoinType": "hybridAzureADJoin",
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
+    "imageType":"gallery",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
 }
 ```
 # [C#](#tab/csharp)
@@ -127,12 +132,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-  "displayName": "Display Name value",
   "description": "Description value",
-  "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
+  "displayName": "Display Name value",
+  "domainJoinConfiguration": {
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+      "type": "hybridAzureADJoin"
+  },
+  "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+  "imageDisplayName": "Windows-10 19h1-evd",
+  "imageId": "MicrosoftWindowsDesktop_Windows-10_19h1-evd",
+  "imageType":"gallery",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
   }
 ```

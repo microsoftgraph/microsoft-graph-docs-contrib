@@ -1,7 +1,7 @@
 ---
 title: "List managementActionTenantDeploymentStatus"
 description: "Get a list of the managementActionTenantDeploymentStatus objects and their properties."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
