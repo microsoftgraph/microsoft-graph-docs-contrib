@@ -300,7 +300,7 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create calendar
+        - name: Create
           href: api/user-post-calendars.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
@@ -314,7 +314,7 @@ items:
           href: api/user-findroomlists.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
-        - name: List calendars
+        - name: List
           href: api/user-list-calendars.md
         - name: List calendar groups
           href: api/user-list-calendargroups.md
@@ -327,11 +327,11 @@ items:
       - name: Contacts
         href: resources/contact.md
         items:
-        - name: Create contact
+        - name: Create
           href: api/user-post-contacts.md
         - name: Create contact folder
           href: api/user-post-contactfolders.md
-        - name: List contacts
+        - name: List
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
@@ -14317,15 +14317,15 @@ items:
       - name: Team
         href: resources/team.md
         items:
-        - name: Create team
+        - name: Create
           href: api/team-post.md
         - name: Create team from group
           href: api/team-put-teams.md
-        - name: Get team
+        - name: Get
           href: api/team-get.md
-        - name: Update team
+        - name: Update
           href: api/team-update.md
-        - name: Delete team
+        - name: Delete
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
@@ -14362,15 +14362,15 @@ items:
       - name: Group (team)
         href: resources/group.md
         items:
-        - name: Create group
+        - name: Create
           href: api/group-post-groups.md
-        - name: Get group
+        - name: Get
           href: api/group-get.md
-        - name: List groups
+        - name: List
           href: api/group-list.md
-        - name: Update group
+        - name: Update
           href: api/group-update.md
-        - name: Delete group
+        - name: Delete
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
