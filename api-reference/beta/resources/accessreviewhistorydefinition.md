@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInstance](accessReviewHistoryInstance.md) objects. Each recurrence of the history definition creates an instance. In the case of a one-time history definition, only one instance is created.
+Represents a collection of access review historical data and the scopes used to collect that data.
 
- A **accessReviewHistoryDefinition** along with its instances represent a collection of access review history data and the scopes used to collect that data.
+An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInstance](accessReviewHistoryInstance.md) objects. Each recurrence of the history definition creates an instance. In the case of a one-time history definition, only one instance is created.
 
 ## Methods
 
