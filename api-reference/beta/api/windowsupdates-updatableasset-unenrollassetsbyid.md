@@ -1,7 +1,7 @@
 ---
 title: "updatableAsset: unenrollAssetsById"
 description: "Unenroll updatableAsset resources of the same type from update management by the deployment service."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

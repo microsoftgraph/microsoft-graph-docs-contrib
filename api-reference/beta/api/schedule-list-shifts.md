@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 

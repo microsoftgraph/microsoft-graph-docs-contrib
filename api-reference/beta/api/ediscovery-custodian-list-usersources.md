@@ -115,6 +115,7 @@ Content-Type: application/json
             "id": "46384443-4137-3032-3437-363939433735",
             "email": "megan@contoso.com",
             "includedSources": "mailbox,site",
+            "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
             "createdBy": {
                 "user": {
                     "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

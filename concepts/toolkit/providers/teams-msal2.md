@@ -50,7 +50,7 @@ import {Providers} from '@microsoft/mgt-element';
 import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider(config);
 ```
