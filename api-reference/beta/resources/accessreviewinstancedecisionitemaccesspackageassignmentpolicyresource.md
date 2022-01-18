@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource resource type"
-description: "Represents a principal's access to an access package assignment policy. "
+description: "Represents an access package assignment policy for which access is represented through an accessReviewInstanceDecisionItem object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
