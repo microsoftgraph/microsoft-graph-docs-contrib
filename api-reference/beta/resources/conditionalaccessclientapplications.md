@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents client applications (service principals, workload identities) included in and excluded from the policy scope.
+Represents client applications (service principals and workload identities) included in and excluded from the policy scope.
 
 ## Properties
 |Property|Type|Description|
