@@ -196,7 +196,7 @@ The following steps represent the flow of an authorization challenge for an acti
 
     Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiration](webhooks.md#renewing-a-subscription).
 
-4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused. Please note that Microsoft graph will drop the notifications at 4 hour mark after they are paused.
+4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused. Please note that Microsoft graph will drop the notifications four hours after they are paused.
 
 ### reauthorizationRequired notification payload example
 
