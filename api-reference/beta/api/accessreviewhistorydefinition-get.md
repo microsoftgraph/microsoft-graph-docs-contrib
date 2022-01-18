@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by its identifier. All of the properties of the access review history definition object are returned. If the download link is still valid, it is returned along with the definition. If the definition is 30 days or older, a 404 error is returned.
+Retrieve an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object by its identifier. All of the properties of the access review history definition object are returned. If the definition is 30 days or older, a 404 error is returned.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. Including `?$expand=instances` will include in the response object the instances associated with the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object. For general information, see [OData query parameters](/graph/query-parameters). 
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. Including `?$expand=instances` will include in the response object the instances associated with the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

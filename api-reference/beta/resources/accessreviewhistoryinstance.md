@@ -15,13 +15,14 @@ Namespace: microsoft.graph
 
  Represents a recurrence of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object. A history definition that does not recur will have exactly one instance.
 
- Every **accessReviewHistoryInstance** along with its associated **accessReviewHistoryDefinition** contain the properties **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime**, **decisions**, **scheduleSettings**, and **scopes**. These properties are used when scheduling recurrences as well as selecting review data and can be modified. Each **accessReviewHistoryInstance** object and data is only available for 30 days. Once an **accessReviewHistoryInstance** status has been moved to `done` a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md) on the parent [accessReviewHistoryDefinition](accessreviewhistorydefinition.md).
+ Every **accessReviewHistoryInstance** along with its associated **accessReviewHistoryDefinition** contain the properties **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime**, **decisions**, **scheduleSettings**, and **scopes**. These properties are used when scheduling recurrences as well as selecting review data and can be modified. Each **accessReviewHistoryInstance** object and data is only available for 30 days. Once an **accessReviewHistoryInstance** status has been moved to `done` a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri-instance.md).
 
 ## Methods
 
 | Method  | Return type | Description |
 |:---|:---|:---|
 |[List accessReviewHistoryInstances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| Retrieve a list of the [accessReviewHistoryInstance](accessreviewhistoryinstance.md) objects and their properties.|
+|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri-instance.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI which can be used to retrieve the instance's review history data.|
 
 ## Properties
 
@@ -34,7 +35,7 @@ Namespace: microsoft.graph
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews ending on or before this date will be included in the fetched history data.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data.|
 |runDateTime|DateTimeOffset|Timestamp when the instance's history data is scheduled to be generated.|
-|status|String collection|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** has been marked as `done`, a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md) method.|
+|status|String collection|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** has been marked as `done`, a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri-instance.md) method.|
 
 ## JSON representation
 

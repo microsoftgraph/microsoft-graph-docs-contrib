@@ -1,5 +1,5 @@
 ---
-title: "accessReviewHistoryDefinition resource types"
+title: "accessReviewHistoryDefinition resource type"
 description: "Represents a collection of access review history data."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -24,7 +24,6 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |[List accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
 |[Create accessReviewHistoryDefinition](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Create a new [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
 |[Get accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Read the properties and relationships of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.|
-|[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Generates a URI for each `done` [accessReviewHistoryInstance](accessReviewHistoryInstance.md) contained in this definition. The URI can be used to retrieve each instance's review history data.|
 
 ## Properties
 
@@ -45,7 +44,7 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|instances|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| If the **accessReviewHistoryDefinition** is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance. Automatically returned when you call the [generateDownloadUri ](../api/accessreviewhistorydefinition-generatedownloaduri.md) method.|
+|instances|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| If the **accessReviewHistoryDefinition** is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.|
 
 ## JSON representation
 

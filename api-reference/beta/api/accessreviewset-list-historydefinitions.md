@@ -114,55 +114,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.count": 2,
+    "@odata.count": 1,
     "value": [
-        {
-            "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-            "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-            "displayName": "Last years's group and ELM reviews April 2021 - recurring",
-            "decisions": [
-                "approve",
-                "deny",
-                "dontKnow",
-                "notReviewed",
-                "notNotified"
-            ],
-            "status": "Inprogress",
-            "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-            "createdBy": {
-                "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@contoso.com"
-            },
-            "scopes": [
-                {
-                    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                    "queryType": "MicrosoftGraph",
-                    "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-                    "queryRoot": null
-                },
-                {
-                    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                    "queryType": "MicrosoftGraph",
-                    "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-                    "queryRoot": null
-                }
-            ],
-            "scheduleSettings": {
-                "reportRange": "P1M",
-                "recurrence": {
-                    "pattern": {
-                        "type": "monthly",
-                        "interval": 1
-                    },
-                    "range": {
-                        "type": "noEnd",
-                        "startDate": "2018-08-03T21:02:30.667Z",
-                        "count": 0
-                    }
-                }
-            }
-        },
         {
             "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
             "id": "67e3de15-d263-45a9-8f4f-71271b495db7",

@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDefinitionId}/instances
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/90e28cb7-4b9a-48f7-ba4e-a2756fda01b2/instances
 ```
 
 ### Response
