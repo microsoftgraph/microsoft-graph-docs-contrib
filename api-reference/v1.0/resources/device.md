@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a device registered in the organization. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
+This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview). This resource is an open type that allows other properties to be passed in.
 
 
 ## Methods
@@ -27,7 +27,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a direct member of. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the device is a member of. The check is transitive. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -37,7 +38,7 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#device-properties).
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 bookingBusinessId := "bookingBusiness-id"
 bookingServiceId := "bookingService-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Delete(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Delete(nil)
 
 
 ```

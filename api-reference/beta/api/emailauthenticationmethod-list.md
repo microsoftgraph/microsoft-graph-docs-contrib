@@ -35,10 +35,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global admin
+* Global administrator
 * Global reader
-* Privileged authentication admin
-* Authentication admin
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 

@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | OnlineMeetingArtifact.Read.All |
 
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 
@@ -64,6 +64,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_attendancerecord"
@@ -73,6 +75,28 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ``` http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-attendancerecord-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-attendancerecord-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-attendancerecord-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-attendancerecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -91,12 +115,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
-        "displayName": "(display name)",
+        "displayName": "Frederick Cormier",
         "tenantId": null
       },
       "attendanceIntervals": [
@@ -108,12 +132,12 @@ Content-Type: application/json
       ]
     },
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
-        "displayName": "(dispaly name)",
+        "displayName": "Lisa Adkins",
         "tenantId": null
       },
       "attendanceIntervals": [

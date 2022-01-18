@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -50,10 +50,6 @@ This resource supports:
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group, a security group or a mail-enabled security group through the **owners** navigation property. |
 | [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check this group for membership in a list of groups. The function is transitive. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | String collection | Return all of the groups that the group is a member of. The function is transitive. |
 | [renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | **App role assignments** |||
@@ -84,6 +80,17 @@ This resource supports:
 | [Add rejectedSender](../api/group-post-rejectedsenders.md)  | [directoryObject](directoryobject.md) | Add a new User or Group to the rejectedSenders collection. |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Remove new User or Group from the rejectedSenders collection. |
 | [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| **Directory objects** |||
+| [List deleted groups](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
+| [List deleted groups owned by user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that are owned by a user. |
+| [Get deleted group](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted group by ID. |
+| [Restore deleted group](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a group deleted in the tenant in the last 30 days. |
+| [Permanently delete group](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted group from the tenant. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | String collection | Check for membership in a list of groups. The function is transitive. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | String collection | Return all the groups that the group is a member of. The function is transitive. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups and administrative units that the group is a member of. The function is transitive. |
+| **Group settings** |||
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
 | [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 | [Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
@@ -109,7 +116,7 @@ This resource supports:
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties).
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -133,7 +140,7 @@ This resource supports:
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is `false`. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on `$select`. Read-only.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`).|
-|mailNickname|String|The mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Required. Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
+|mailNickname|String|The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Required. Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are `On` or `Paused`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`).  |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
@@ -334,34 +341,34 @@ The following is a JSON representation of the resource.
   "allowExternalSenders": false,
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
-  "classification": "string",
+  "classification": "String",
   "createdDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
-  "groupTypes": ["string"],
+  "description": "String",
+  "displayName": "String",
+  "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isSubscribedByMail": true,
   "isAssignableRole": false,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
+  "mailNickname": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "String",
   "unseenCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarView": [{ "@odata.type": "microsoft.graph.event" }],

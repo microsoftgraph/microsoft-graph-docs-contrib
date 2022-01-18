@@ -22,6 +22,8 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
+For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+
 **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
@@ -72,13 +74,13 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
 | content              | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
 | deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
+| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
 | eTag                 | String             | eTag for the entire item (metadata + content). Read-only.
 | file                 | [file][]           | File metadata, if the item is a file. Read-only.
 | fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.

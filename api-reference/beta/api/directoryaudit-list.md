@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | AuditLog.Read.All and Directory.Read.All | 
 
 > [!IMPORTANT]
-> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
+> This API has a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -167,6 +167,7 @@ Content-type: application/json
 			"modifiedProperties": [],
 			"userPrincipalName": "jdoe@contoso.com"
 		}],
+		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
 		"additionalDetails": [{
 			"key": "Additional Detail Name",
 			"value": "Additional Detail Value"
