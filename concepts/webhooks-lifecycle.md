@@ -216,7 +216,7 @@ The following steps represent the flow of an authorization challenge for an acti
 
 A few things to note about this type of notification:
 
-- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge. Other types of lifecycle notifications are also possible <provide link for missed notifications and subscriptionRemoved notifications>, and new ones will be introduced in the future.
+- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge. `missed` and `subscriptionRemoved` **lifecycleEvent** notifications are also supported.
 - The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
 
 > **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
