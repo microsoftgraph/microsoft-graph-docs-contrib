@@ -192,7 +192,7 @@ The following steps represent the flow of an authorization challenge for an acti
 
 3. Respond to this lifecycle notification in one of two ways:
     - Reauthorize the subscription. This does not extend the expiration date of the subscription.
-    - Renew the subscription. This both reauthorizes and extends the expiration date.
+    - Renew the subscription. This reauthorizes and extends the expiration date.
 
     Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiration](webhooks.md#renewing-a-subscription).
 
