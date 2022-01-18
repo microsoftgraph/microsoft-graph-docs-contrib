@@ -42,7 +42,6 @@ The following access review schedule definition has the following settings:
 + The principals (**principalScopes**) whose access will be reviewed are groups and users, and the resource (**resourceScopes**) is the User Administrator role.
 + The scope (**resourceScopes**) of the review is on both active and eligible User Administrator assignments.
 + An individual user is selected as a reviewer. In this example, you'll be the reviewer.
-+ The user in the Global Administrator role is the fallback reviewer. If the reviewers haven't recorded decisions when the review instance nears expiry, the fallback reviewer is notified of the pending access review for action.
 + The approver must provide justification before they approve access to the privileged role.
 + The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires.
 + **autoApplyDecisionsEnabled** isn't set and defaults to `false`. In this case, after the review completes, the decisions aren't automatically applied so you must manually apply them.
@@ -50,10 +49,7 @@ The following access review schedule definition has the following settings:
 
 ### Request
 
-In the following request, replace the following values:
-
-+ `4562bcc8-c436-4f95-b7c0-4f8ce89dca5e` with the value of your user identifier.
-+ `77f8b7b6-1119-4a86-b4c3-e7d68e990424` with the value of the global administrator's user identifier.
+In the following request, replace the `4562bcc8-c436-4f95-b7c0-4f8ce89dca5e` with the value of your user's ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -640,4 +636,4 @@ You've learned how to review access to privileged roles in Azure AD. You can als
 
 + [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
-+ [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide)
++ [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management-overviewe)
