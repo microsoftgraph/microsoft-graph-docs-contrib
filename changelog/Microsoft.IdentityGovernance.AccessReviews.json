@@ -697,6 +697,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-beta) resource",
           "Target": "accessReviewHistoryInstance"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Property",
+          "ChangedApiName": "downloadUri",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **downloadUri** property from the [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) resource. Use the **downloadUri** property in the [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) instead.",
+          "Target": "accessReviewHistoryDefinition"
         }
       ],
       "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
