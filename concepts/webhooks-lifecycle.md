@@ -161,8 +161,8 @@ You can create a long-lived subscription depending on the [maximum supported sub
 
 - A tenant administrator may revoke your app's permissions to read a resource.
 - In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assessment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to reauthorize the subscription. For more information about dynamic policies that control access, see [Azure AD conditional access policies](/azure/active-directory/conditional-access/overview). 
-- Your access token expires. This only applies to notifications which include resource data
-- The subscription expires before you renew it
+- Your access token expires. This only applies to notifications that include resource data.
+- The subscription expires before you renew it.
 
 Before any of these conditions become true, Microsoft Graph will send an authorization challenge to the **lifecycleNotificationUrl**. The interval of these notifications is illustrated below:
 
