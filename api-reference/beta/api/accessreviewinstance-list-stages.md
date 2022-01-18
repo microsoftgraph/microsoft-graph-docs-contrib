@@ -1,6 +1,6 @@
 ---
 title: "List stages"
-description: "Get the accessReviewStage resources from the stages navigation property."
+description: "Retrieve the stages in a multi-stage access review instance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [accessReviewStage](../resources/accessReviewStage.md) objects from the decisions on an [accessReviewInstance](../resources/accessreviewinstance.md).
+Retrieve the stages in a multi-stage access review instance.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$filter` (`eq` only) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

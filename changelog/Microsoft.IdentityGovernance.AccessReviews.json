@@ -671,7 +671,7 @@
                "ApiChange":"Property",
                "ChangedApiName":"decisionHistoriesForReviewersEnabled",
                "ChangeType":"Addition",
-               "Description":"Added the **decisionHistoriesForReviewersEnabled** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource.",
+               "Description":"Added the **decisionHistoriesForReviewersEnabled** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewschedulesettings?view=graph-rest-beta) resource. Indicates whether decisions on previous access review stages are available for reviewers in a multi-stage access review.",
                "Target":"accessReviewScheduleSettings"
             },
             {
@@ -679,7 +679,7 @@
                "ApiChange":"Property",
                "ChangedApiName":"stageSettings",
                "ChangeType":"Addition",
-               "Description":"Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
+               "Description":"Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) resource. Defines the stages and their settings in a multi-stage access review.",
                "Target":"accessReviewScheduleDefinition"
             },
             {
@@ -695,7 +695,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"accessReviewStageSettings",
                "ChangeType":"Addition",
-               "Description":"Added the [accessReviewStageSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStageSettings?view=graph-rest-beta) resource type.",
+               "Description":"Added the [accessReviewStageSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta) resource type. Exposes the properties used to configure stages and their settings in a multi-stage access review.",
                "Target":"accessReviewStageSettings"
             },
             {
@@ -703,7 +703,7 @@
                "ApiChange":"Resource",
                "ChangedApiName":"accessReviewStage",
                "ChangeType":"Addition",
-               "Description":"Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-beta) resource type.",
+               "Description":"Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewstage?view=graph-rest-beta) resource type and associated methods. Represents a stage in an [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta).",
                "Target":"accessReviewStage"
             },
             {

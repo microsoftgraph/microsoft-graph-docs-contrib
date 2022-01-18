@@ -116,7 +116,7 @@ HTTP/1.1 204 Accepted
 ```
 
 
-### Example 2: update a decision on an accessReviewStage of a multi-stage access review.
+### Example 2: Update a decision on an stage in a multi-stage access review
 
 #### Request
 <!-- {

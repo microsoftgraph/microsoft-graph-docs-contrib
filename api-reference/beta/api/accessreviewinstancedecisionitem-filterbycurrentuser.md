@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
-description: "Retrieves all accessReviewInstanceDecisionItem objects on an accessReviewInstance or accessReviewStage for which the calling user is the reviewer."
+description: "Retrieves all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
+Retrieves all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
 
 >[!NOTE]

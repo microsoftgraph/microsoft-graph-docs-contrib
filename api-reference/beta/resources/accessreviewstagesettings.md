@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStageSettings resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewStageSettings` represents the stage settings associated with an multi-stage access review series."
+description: "In Azure AD access reviews, the accessReviewStageSettings represents the settings of the stages associated with a multi-stage access review."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **accessReviewStageSettings** collection defines the multi-stage settings of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
+Represents the settings of the stages associated with a [multi-stage access review](accessreviewscheduledefinition.md) object. 
 
 ## Properties
 |Property|Type|Description|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object. Only the **reviewers** and **fallbackReviewers** properties can be updated. You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 
-To update an **accessReviewStage**, it's **status** must be `NotStarted`, `Initializing`, or `InProgress`.
+To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
 
 > [!NOTE]
 > 
@@ -73,7 +73,6 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5dcfcc88-da88-4252-8629-a0807b4b076d/instances/720b8ee0-cee4-42ac-b164-894c48703acc/stages/7d244ab1-4ab1-7d24-b14a-247db14a247d
 Content-Type: application/json
-Content-length: 380
 
 {
   "@odata.type": "#microsoft.graph.accessReviewStage",

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStage resource type"
-description: "Represents a recurrence of an `accessReviewStage`."
+description: "Represents a stage of an accessReviewInstance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents a stage of an Azure AD [access review](accessreviewsv2-overview.md) recurrence. If the  [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has the stageSettings property filled, the parent [accessReviewInstance](accessReviewInstance.md) will be comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions will pass from stage to stage.
+Represents a stage of an Azure AD [access review](accessreviewsv2-overview.md) recurrence. If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) will be comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions will pass from stage to stage.
 
 Every **accessReviewStage** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is one decision per identity being reviewed.
 
@@ -26,8 +26,8 @@ Every **accessReviewStage** contains a list of [decisions](accessreviewinstanced
 |[Get accessReviewStage](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[Update accessReviewStage](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|
-|[filterByCurrentUser](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is the reviewer of one or more decisions.|
-|[List decisions](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the accessReviewInstanceDecisionItem resources from the decisions navigation property.|
+|[filterByCurrentUser](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is a reviewer.|
+|[List decisions](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the decisions made in an accessReviewStage.|
 
 ## Properties
 |Property|Type|Description|
