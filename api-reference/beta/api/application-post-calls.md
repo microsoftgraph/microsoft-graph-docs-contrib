@@ -588,7 +588,7 @@ This information can be obtained from [Get Online Meetings API](../api/onlinemee
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
 
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ##### Request
 
@@ -950,7 +950,7 @@ Content-Type: application/json
 ### Example 6: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
 
->**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
+>**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
