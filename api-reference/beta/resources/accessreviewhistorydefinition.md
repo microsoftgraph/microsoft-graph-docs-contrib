@@ -37,16 +37,15 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |id|String|The assigned unique identifier of an access review history definition.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset| A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined. |
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.|
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](accessReviewHistoryScheduleSettings.md)| The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined.|
 |scopes|[accessReviewQueryScope](accessreviewqueryscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.|
-|status|String collection|Represents the status of the review history data collection. Possible values are: `done`, `inprogress`, `error`, `requested`.|
-| instances |[accessReviewHistoryInstance](accessReviewHistoryInstance.md) collection|  Set of access review history instances for this access review definition. Definitions that do not recur will only have one instance; otherwise, there is an instance for each recurrence. |
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](accessReviewHistoryScheduleSettings.md)| The settings for a recurring access review history definition series. Only required if `reviewHistoryPeriodStartDateTime` or `reviewHistoryPeriodEndDateTime` are not defined.|
+|status|String collection|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|instances|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| If the `accessReviewHistoryDefinition` is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance. |
+|instances|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| If the **accessReviewHistoryDefinition** is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance. Automatically returned when you call the [generateDownloadUri ](../api/accessreviewhistorydefinition-generatedownloaduri.md) method.|
 
 ## JSON representation
 
