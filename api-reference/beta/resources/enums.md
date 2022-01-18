@@ -2760,7 +2760,7 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceRestart|0|Restart a device.|
 |configUpdate|1|Update the device configuration.|
 |deviceDiagnostics|2|Get the device logs.|
-|softwareUpdate|3|Update the device software.|
+|softwareUpdate|3|Update a software on the device.|
 |deviceManagementAgentConfigUpdate|4|Update the device agent configuration.|
 |remoteLogin|5|Device remote login.|
 |remoteLogout|6|Device remote logout.|
@@ -2771,7 +2771,7 @@ Possible values for user account types (group membership), per Windows definitio
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |unknown|0|Unknown value.|
-|latest|1|Indicates if a device component runs the latest version of the software.|
+|latest|1|Indicates whether a device component runs the latest version of the software.|
 |updateAvailable|2|Indicates that a software update is available for a device component.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
 
@@ -2792,8 +2792,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |unknown|0|Unknown value.|
-|skypeDefaultAndTeams|1|Supports both `Skype` and `Teams`.Default is `Skype`.|
-|teamsDefaultAndSkype|2|Supports both `Skype` and `Teams`.Default is `Teams`.|
+|skypeDefaultAndTeams|1|Supports both `Skype` and `Teams`. Default is `Skype`.|
+|teamsDefaultAndSkype|2|Supports both `Skype` and `Teams`. Default is `Teams`.|
 |skypeOnly|3|Supports only `Skype`.|
 |teamsOnly|4|Supports only `Teams`.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|

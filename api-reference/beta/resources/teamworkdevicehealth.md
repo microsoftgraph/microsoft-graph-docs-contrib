@@ -26,13 +26,13 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |connection|[teamworkConnection](../resources/teamworkconnection.md)|Information about the connection status.|
-|createdBy|[identitySet](../resources/identityset.md)|The details of the user that created the document.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
-|hardwareHealth|[teamworkHardwareHealth](../resources/teamworkhardwarehealth.md)|Health related to the device hardware.|
+|hardwareHealth|[teamworkHardwareHealth](../resources/teamworkhardwarehealth.md)|Health details about the device hardware.|
 |id|String|Doucument identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The details of the user that modified the document.|
-|lastModifiedDateTime|DateTimeOffset|The last UTC date and time when the document was modified.|
-|loginStatus|[teamworkLoginStatus](../resources/teamworkloginstatus.md)|The login status of Teams, Skype, and Exchange.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
+|lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
+|loginStatus|[teamworkLoginStatus](../resources/teamworkloginstatus.md)|The login status of Microsoft Teams, Skype for Business, and Exchange.|
 |peripheralsHealth|[teamworkPeripheralsHealth](../resources/teamworkperipheralshealth.md)|Health details about all peripherals (for example, speaker and microphone) attached to a device.|
 |softwareUpdateHealth|[teamworkSoftwareUpdateHealth](../resources/teamworksoftwareupdatehealth.md)|Software updates available for the device.|
 
