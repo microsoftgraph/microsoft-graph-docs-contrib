@@ -7,7 +7,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "clientApplications",
 					"ChangeType": "Addition",
-					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
