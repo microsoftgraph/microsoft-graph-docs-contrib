@@ -10002,24 +10002,26 @@ items:
             href: api/virtualendpoint-list-cloudpcs.md
           - name: Get
             href: api/cloudpc-get.md
-          - name: Reprovision
-            href: api/cloudpc-reprovision.md
+          - name: Change user accout type
+            href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get remote action results
+            href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
             href: api/cloudpc-rename.md
-          - name: Troubleshoot
-            href: api/cloudpc-troubleshoot.md
+          - name: Reprovision
+            href: api/cloudpc-reprovision.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
             href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize remote action
             href: api/manageddevice-resizecloudpc.md
-          - name: Get remote action results
-            href: api/manageddevice-getcloudpcremoteactionresults.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -10108,6 +10110,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC organization settings
+          href: resources/cloudpcorganizationsettings.md
+          items:
+          - name: Get
+            href: api/cloudpcorganizationsettings-get.md
+          - name: Update
+            href: api/cloudpcorganizationsettings-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
