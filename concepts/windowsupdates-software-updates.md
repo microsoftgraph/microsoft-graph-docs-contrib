@@ -21,7 +21,7 @@ The deployment service [catalog](/graph/api/resources/windowsupdates-catalog?vie
 
 Effectively, the deployment service currently deploys only feature updates and _security_ quality updates as defined in its catalog. The service currently does not deploy non-security quality updates or driver updates.
 
-To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start).
+To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](/windows/deployment/update/waas-quick-start).
 
 ## Identifying updates for deployment
 
