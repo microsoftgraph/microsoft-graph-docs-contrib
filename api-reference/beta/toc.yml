@@ -12336,7 +12336,7 @@ items:
               href: api/accessreviewset-list-historydefinitions.md
             - name: Create
               href: api/accessreviewset-post-historydefinitions.md
-            - name: Access review history definition instance
+            - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
               items: 
               - name: List
