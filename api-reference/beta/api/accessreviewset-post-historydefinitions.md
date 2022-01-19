@@ -61,7 +61,7 @@ The following table shows the required properties used to create an [accessRevie
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
-The **scopes** property of [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) is based on **accessReviewQueryScope**, a resource that allows you to configure different resources in it's **query** property. These resources then represent the scope of the history definition and dictate the type of review history data that is included in the downloadable CSV file which is generated when the history definition is created.
+The **scopes** property of [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) is based on **accessReviewQueryScope**, a resource that allows you to configure different resources in it's **query** property. These resources then represent the scope of the history definition and dictate the type of review history data that is included in the downloadable CSV file which is generated when the history definition's [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) are created.
 
 Use the following format for the **query** property:
 
