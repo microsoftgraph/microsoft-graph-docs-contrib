@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemServicePrincipalResource resource type"
-description: "Represents assignment to service principals. "
+description: "Represents service principals whose access to a resource is represented through an accessReviewInstanceDecisionItem object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents assignment to service principals. accessReviewInstanceDecisionItemServicePrincipalResource is an open type that allows for other properties to be passed in.
+Represents service principals whose access to a resource is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemServicePrincipalResource** is an open type that allows for other properties to be passed in.
 
 Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
@@ -19,9 +19,9 @@ Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedec
 |Property|Type|Description|
 |:---|:---|:---|
 | appId | String | The globally unique identifier of the application to which access has been granted. |
-| displayName | String | Display name of the service principal. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| displayName | String | Display name of the resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
 | id | String | Identifier of the decision item resource. Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | String | Type of resource. Type will always be:  `ServicePrincipal`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | String | Type of resource. Type will always be `ServicePrincipal`.  Inherited from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 ## Relationships
