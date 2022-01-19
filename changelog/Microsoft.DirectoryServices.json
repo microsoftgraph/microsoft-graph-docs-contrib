@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalIdentitiesPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [externalIdentitiesPolicy](https://docs.microsoft.com/en-us/graph/api/resources/externalIdentitiesPolicy?view=graph-rest-beta) resource",
+          "Description": "Added the [externalIdentitiesPolicy](https://docs.microsoft.com/en-us/graph/api/resources/externalIdentitiesPolicy?view=graph-rest-beta) resource and associated methods. The external identity policy represents the tenant-wide policy that controls whether external users can leave an Azure AD tenant via self-service controls.",
           "Target": "externalIdentitiesPolicy"
         },
         {
