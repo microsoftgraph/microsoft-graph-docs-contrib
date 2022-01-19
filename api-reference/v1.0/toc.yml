@@ -4304,6 +4304,13 @@ items:
             href: api/serviceupdatemessage-favorite.md
           - name: Remove favorite status
             href: api/serviceupdatemessage-unfavorite.md
+          - name: List message attachments
+            href: api/serviceupdatemessage-list-attachments.md
+        - name: Service announcement attachment
+          href: resources/serviceannouncementattachment.md
+          items:
+          - name: Get
+            href: api/serviceannouncementattachment-get.md
     - name: Education
       items:
       - name: Overview
