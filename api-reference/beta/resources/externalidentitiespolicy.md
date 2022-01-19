@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gives tenant administrator control over external identities by allowing or restricting external identities to leave an organization via self-service controls. When permitted by the administrator, external identities will have access to self-service controls via the My Account portal.
+Represents the tenant-wide policy that controls whether external users can leave the guest Azure AD tenant via self-service controls. When permitted by the administrator, external users can leave the guest Azure AD tenant through the **organizations** menu of the [My Account](https://myaccount.microsoft.com/) portal.
 
 Inherits from [policyBase](../resources/policybase.md).
 
