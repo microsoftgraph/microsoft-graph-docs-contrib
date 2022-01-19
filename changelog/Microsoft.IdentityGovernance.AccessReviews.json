@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource?view=graph-rest-1.0) resource type. This resource represents an access package assignment policy for which access is represented through an [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) object.",
           "Target": "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemAzureRoleResource",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemAzureRoleResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemAzureRoleResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource?view=graph-rest-1.0) resource type. This resource represents Azure resource roles for which access is represented through an [accessReviewInstanceDecisionItem]((https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) object.",
           "Target": "accessReviewInstanceDecisionItemAzureRoleResource"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewInstanceDecisionItemServicePrincipalResource",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [accessReviewInstanceDecisionItemServicePrincipalResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-1.0) resource type. This resource represents service principals whose access to a resource is represented through an [accessReviewInstanceDecisionItem]((https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) object",
           "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
         },
         {
