@@ -117,9 +117,9 @@ Create one or more single-value extended properties in a new or existing instanc
 
 The following user resources are supported:
 
-- [contact](../resources/contact.md)
-- [event](../resources/event.md)
-- [message](../resources/message.md)
+- [contact](../api-reference/v1.0/resources/contact.md)
+- [event](../api-reference/v1.0/resources/event.md)
+- [message](../api-reference/v1.0/resources/message.md)
 
 ### Permissions
 
@@ -133,9 +133,9 @@ Outlook change notifications support delegated and application permission scopes
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
-|[contact](../resources/contact.md) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
-|[event](../resources/event.md)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](../resources/message.md) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[contact](../api-reference/v1.0/resources/contact.md) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
+|[event](../api-reference/v1.0/resources/event.md)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
+|[message](../api-reference/v1.0/resources/message.md) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
 ### Refine the conditions for a notification
 You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
@@ -166,11 +166,11 @@ POST /subscriptions
 
 ## Request body
 
-In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+In the request body, supply a JSON representation of [subscription](../api-reference/v1.0/resources/subscription.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the response body.
 For details about how errors are returned, see [Error responses][error-response].
 
 ## Examples
