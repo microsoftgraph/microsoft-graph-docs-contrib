@@ -1,6 +1,6 @@
 ---
 title: "Get externalIdentitiesPolicy"
-description: "Read the properties and relationships of an externalIdentitiesPolicy object."
+description: "Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave an Azure AD tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
