@@ -45,11 +45,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-"id": "String (identifier)",
-"deletedDateTime":null,
-"allowExternalIdentitiesToLeave": true,
-"allowDeletedIdentitiesDataRemoval": false,
-"displayName": "String"
+  "@odata.type": "#microsoft.graph.externalIdentitiesPolicy",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "allowExternalIdentitiesToLeave": "Boolean",
+  "allowDeletedIdentitiesDataRemoval": "Boolean"
 }
 ```
 
