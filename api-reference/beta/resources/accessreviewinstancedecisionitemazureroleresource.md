@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents Azure resource roles for which access is represented through an [accessReviewInstanceDecisionItem]((https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) object. **accessReviewInstanceDecisionItemAzureRoleResource** is an open type that allows for other properties to be passed in.
+Represents Azure resource roles for which access is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemAzureRoleResource** is an open type that allows for other properties to be passed in.
 
 Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
