@@ -167,6 +167,7 @@ You can create a long-lived subscription depending on the [maximum supported sub
 Before any of these conditions become true, Microsoft Graph will send an authorization challenge to the **lifecycleNotificationUrl**. The interval of these notifications is illustrated below:
 
 ```csharp
+    //The following code is for illustrative purposes only
     var TokenTimeToExpirationInMinutes=(TokenExpirationTime-CurrentTime)/4;
     if((TokenTimeToExpirationInMinutes)<=180 && TokenTimeToExpirationInMinutes>60){
         //Microsoft Graph will send reauthorizationRequired notification
