@@ -12342,7 +12342,7 @@ items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
-                href: api/accessreviewhistorydefinition-generatedownloaduri-instance.md
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
