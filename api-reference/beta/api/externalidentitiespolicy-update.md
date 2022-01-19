@@ -45,8 +45,8 @@ PATCH /policies/externalIdentitiesPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowDeletedIdentitiesDataRemoval|Boolean|The setting will inform AAD that cleanup of the external identities user information stored within the local tenant should be deleted (or not) when the user is deleted in their home directory. Required.|
-|allowExternalIdentitiesToLeave|Boolean|The setting will inform AAD whether allow or restrict external identities to leave the tenant.If set to false, self service is not enabled, and therefore admin will need to manually perform the clean up. Required.|
+|allowDeletedIdentitiesDataRemoval|Boolean|Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant. Required.|
+|allowExternalIdentitiesToLeave|Boolean|Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant. Required.|
 
 ## Response
 
