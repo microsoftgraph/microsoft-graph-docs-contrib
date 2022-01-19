@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItemAzureRoleResource resource type"
-description: "Represents access to Azure resource roles."
+description: "Represents Azure resource roles for which access is represented through an accessReviewInstanceDecisionItem object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents access to Azure resource roles. accessReviewInstanceDecisionItemAzureRoleResource is an open type that allows for other properties to be passed in.
+Represents Azure resource roles for which access is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemAzureRoleResource** is an open type that allows for other properties to be passed in.
 
 Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
