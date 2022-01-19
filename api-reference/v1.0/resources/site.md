@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-title: site resource type
+title: "site resource type"
 description: The site resource provides metadata and relationships for a Sharepoint site. 
 ms.localizationpriority: high
 ms.prod: "sharepoint"
