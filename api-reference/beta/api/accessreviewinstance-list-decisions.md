@@ -188,7 +188,7 @@ The following example shows a request to retrieve all the decisions on every ins
 
 <!-- {
   "blockType": "request",
-  "name": "list_accessReviewInstanceDecisionItem"
+  "name": "list_accessReviewInstanceDecisionItem_expand"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
@@ -206,6 +206,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewInstanceDecisionItems",
     "@odata.count": 10,
@@ -215,7 +216,7 @@ Content-type: application/json
             "principal": {
                     "odata.type": "#microsoft.graph.userIdentity",
                     "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
-                    "displayName": "Adele Vance,
+                    "displayName": "Adele Vance",
                     "userPrincipalName": "adele@contoso.com"            
             },
             "resource": {
