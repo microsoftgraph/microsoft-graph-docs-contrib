@@ -77,9 +77,11 @@ PATCH /subscriptions/{id}
 
 ## Request body
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| ExpirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource |
+| expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource. |
 
 ## Response
 
