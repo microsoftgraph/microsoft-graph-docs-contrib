@@ -42,20 +42,20 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|contentTypeId|String| Id of the content type in content type hub which is to be added to the target site or a list.|
+|contentTypeId|String| ID of the content type in the content type hub that is to be added to the target site or a list.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) in the response body if the content type is added synchronously or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richLongRunningOperation.md) that was created to handle the copy/sync.
-In case of asynchronous operation it could take upto 70 minutes to sync or add a content type.
+If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously, or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richLongRunningOperation.md) that was created to handle the copy/sync.
+In case of an asynchronous operation, it can take up to 70 minutes to sync or add a content type.
 
 ## Examples
 
