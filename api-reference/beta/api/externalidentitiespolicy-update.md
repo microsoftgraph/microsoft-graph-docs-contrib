@@ -53,7 +53,6 @@ PATCH /policies/externalIdentitiesPolicy
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
-## Example 1: Update or set external identity not to leave tenant.
 
 ### Request
 <!-- {
