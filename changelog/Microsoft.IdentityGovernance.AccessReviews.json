@@ -667,6 +667,14 @@
     {
       "ChangeList": [
         {
+          "Id": "ef441c70-5467-4012-ba7b-e40e86069b11",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "decisionItemPrincipalResourceMembershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisionItemPrincipalResourceMembershipType** enumeration type.",
+          "Target": "decisionItemPrincipalResourceMembershipType"
+        },
+        {
           "Id": "8b32b549-7dd3-46e4-b83e-78f77dd7245e",
           "ApiChange": "Resource",
           "ChangedApiName": "decisionItemPrincipalResourceMembership",
