@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve all decisions for an instance of an access review
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/16d424f6-0100-4bf1-9ebc-fe009c5e5006/instances/bb14c722-51b8-4962-9bd2-1d96ba773d80/decisions
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
@@ -88,7 +90,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,42 +103,223 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('16d424f6-0100-4bf1-9ebc-fe009c5e5006')/instances('bb14c722-51b8-4962-9bd2-1d96ba773d80')/decisions",
-    "@odata.count": 1,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "bfbd4d74-275c-4368-aaa1-06c93838d0d5",
-            "accessReviewId": "bb14c722-51b8-4962-9bd2-1d96ba773d80",
-            "reviewedDateTime": "2021-05-05T16:48:28.79Z",
-            "decision": "Deny",
-            "justification": "bye alexxxxx",
-            "appliedDateTime": "2021-05-05T16:50:30.9Z",
-            "applyResult": "AppliedSuccessfully",
+            "id": "e6cafba0-cbf0-4748-8868-0810c7f4cc06",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
             "recommendation": "Approve",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/540da31b-4d25-4934-b7f7-98bc230eb15a",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
             "resourceLink": null,
             "resource": null,
             "reviewedBy": {
-                "id": "ff15bedb-22de-49ad-b2d7-59656607484d",
-                "displayName": "group owner",
-                "userPrincipalName": "group owner"
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
             },
             "appliedBy": {
-                "id": "8798d204-fa3c-4d7b-977d-bc939b8a0848",
-                "displayName": "Access Reviews",
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
                 "userPrincipalName": ""
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "540da31b-4d25-4934-b7f7-98bc230eb15a",
-                "userDisplayName": "Alex Wilber",
-                "userPrincipalName": "AlexW@contoso.com"
+                "userId": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "userDisplayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "540da31b-4d25-4934-b7f7-98bc230eb15a",
-                "displayName": "Alex Wilber",
-                "userPrincipalName": "AlexW@contoso.com"
+                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "displayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
+            }
+        },
+        {
+            "id": "4bde8d40-9224-4aa3-936b-08d73e1baf47",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/11feb738-0039-4a6c-a045-dcb91a47969a",
+            "resourceLink": null,
+            "resource": null,
+            "reviewedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
+            },
+            "appliedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
+            },
+            "target": {
+                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
+                "userId": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "userDisplayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "displayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
+            }
+        }
+    ]
+}
+```
+
+
+### Example 2: Retrieve all decision items for which you're a reviewer and expand the definitions
+
+#### Request
+The following example shows a request to retrieve all the decisions on every instance and defintion that the calling user is the reviewer for.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewInstanceDecisionItem"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')?$expand=instance($expand=definition)
+```
+
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewInstanceDecisionItems",
+    "@odata.count": 10,
+    "value": [
+        {
+            "id": "fa73e90b-5bf1-45fd-a182-35ce5fc0674d",
+            "principal": {
+                    "odata.type": "#microsoft.graph.userIdentity",
+                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
+                    "displayName": "Adele Vance,
+                    "userPrincipalName": "adele@contoso.com"            
+            },
+            "resource": {
+                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
+                "id": "b4cbd87c-0ee2-4647-a7e3-41b580ea6fed",
+                "displayName": "Priviliged Role Administrator",
+                "type": "azureRole",
+                "scope": {
+                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
+                    "displayName": "Hello world",
+                    "type": "subscription"
+                }
+            },
+            "instance": {
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "endDate": "2018-08-05T21:02:30.667Z",
+                "definition": {
+                     "displayName": "Hello world",
+                     "descriptionForAdmins": "Hello world"
+                }
+            }
+        },
+        {
+            "id": "fa73e90b-5bf1-45fd-a182-35ce5fc0674d",
+            "principal": {
+                    "odata.type": "#microsoft.graph.userIdentity",
+                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
+                    "displayName": "Adele Vance",
+                    "userPrincipalName": "adele@contoso.com"            
+            },
+            "resource": {
+                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
+                "id": "f1edce7a-edad-49fb-83eb-b7f1eda48dd2",
+                "displayName": "Global Administrator",
+                "type": "azureRole",
+                "scope": {
+                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
+                    "displayName": "Hello world",
+                    "type": "subscription"
+                }
+            },
+            "instance": {
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "endDate": "2018-08-05T21:02:30.667Z",
+                "definition": {
+                     "displayName": "Hello world",
+                     "descriptionForAdmins": "Hello world"
+                }
+            }
+        },
+        {
+            "id": "fa73e90b-5bf1-45fd-a182-35ce5fc0674d",
+            "principal": {
+                    "odata.type": "#microsoft.graph.userIdentity",
+                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
+                    "displayName": "John Doe",
+                    "userPrincipalName": "johndoe@contoso.com"            
+            },
+            "resource": {
+                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
+                "id": "f1edce7a-edad-49fb-83eb-b7f1eda48dd2",
+                "displayName": "Global Administrator",
+                "type": "azureRole",
+                "scope": {
+                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
+                    "displayName": "Hello world",
+                    "type": "subscription"
+                }
+            },
+            "instance": {
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "endDate": "2018-08-05T21:02:30.667Z",
+                "definition": {
+                     "displayName": "Hello world",
+                     "descriptionForAdmins": "Hello world"
+                }
+            }
+        },
+        {
+            "id": "2e8e717b-a857-49f0-918a-013cf0415456",
+            "principal": {
+                    "odata.type": "#microsoft.graph.userIdentity",
+                    "id": "a6c7aecb-cbfd-4763-87ef-e91b4bd509d9",
+                    "displayName": "John Doe 1",
+                    "userPrincipalName": "johndoe1@contoso.com"            
+            },
+            "resource": {
+                "odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemAzureRoleResource",              
+                "id": "20a97808-56dd-490a-97a9-73bf2344cce7",
+                "displayName": "Hello world",
+                "type": "azureRole",
+                "scope": {
+                    "id": "b649368b-d667-40c6-acc9-b45b822a3037",
+                    "displayName": "Hello world",
+                    "type": "subscription"
+                }
+            },
+            "instance": {
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "endDate": "2018-08-05T21:02:30.667Z",
+                "definition": {
+                     "displayName": "Hello world",
+                     "descriptionForAdmins": "Hello world"
+                }
             }
         }
     ]
