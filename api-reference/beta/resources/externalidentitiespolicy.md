@@ -1,6 +1,6 @@
 ---
 title: "externalIdentitiesPolicy resource type"
-description: "Resources for External Identities Policy"
+description: "Represents the tenant-wide policy that controls whether external users can leave an Azure AD tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
