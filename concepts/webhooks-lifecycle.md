@@ -278,14 +278,14 @@ You should implement your code in a future-proof way, so it does not break when 
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Delete subscription](/graph/api/subscription-delete?view=graph-rest-1.0)
-- [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Subscription resource type](/graph/api/resources/subscription)
+- [Get subscription](/graph/api/subscription-get)
+- [Create subscription](/graph/api/subscription-post-subscriptions)
+- [Delete subscription](/graph/api/subscription-delete)
+- [Update subscription](/graph/api/subscription-update)
 
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
 [chatMessage]: /graph/api/resources/chatmessage
