@@ -75,7 +75,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/externalIdentitiesPolicy/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/externalIdentitiesPolicy/$entity",
     "id": "externalIdentityPolicy",
     "deletedDateTime": null,
     "allowExternalIdentitiesToLeave": true,
