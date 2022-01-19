@@ -26,9 +26,9 @@ Inherits from [policyBase](../resources/policybase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowDeletedIdentitiesDataRemoval|Boolean|The setting will inform AAD that cleanup of the external identities user information stored within the local tenant should be deleted (or not) when the user is deleted in their home directory.|
-|allowExternalIdentitiesToLeave|Boolean|The setting will inform AAD whether allow or restrict external identities to leave the tenant.If set to false, self service is not enabled, and therefore admin will need to manually perform the clean up.|
-|displayName|String|Contains string data for policy display information. Inherited from [policyBase](../resources/policybase.md).|
+|allowDeletedIdentitiesDataRemoval|Boolean|Notifies Azure AD whether to clean up the user information about the external identity, from the guest tenant, when the user is deleted in their home tenant. |
+|allowExternalIdentitiesToLeave|Boolean|Defines whether external users can leave the guest tenant. If set to `false`, self-service controls are not enabled, and the admin of the guest tenant must manually remove the external user from the guest tenant.|
+|displayName|String|The policy name. Inherited from [policyBase](../resources/policybase.md).|
 
 ## Relationships
 None.
