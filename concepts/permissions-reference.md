@@ -1274,6 +1274,20 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Managed tenant permissions
+
+#### Application permissions
+
+None.
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Read all managed tenant specific information | Allows the app to read all managed tenant information on behalf of the signed-in user. | Yes | No |
+| _ManagedTenants.ReadWrite.All_ | Read and write all managed tenant specific information | Allows the app to read and write all managed tenant information on behalf of the signed-in user. | Yes | No |
+
+
 ## Member permissions
 
 #### Delegated permissions
