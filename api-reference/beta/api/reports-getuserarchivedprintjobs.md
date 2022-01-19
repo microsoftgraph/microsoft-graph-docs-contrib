@@ -38,13 +38,15 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 | Authorization | Bearer {token}. Required. |
 
 ## Function Parameters
+In the request URL, provide the following function parameters with values:
 
 | Parameter     | Type                 | Required? | Description                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | Yes       | The ID of the user to return data for.                               |
 | `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
-| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from. |
 
+>**Note:** If a value is not required, pass the parameter with null value.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
 
@@ -92,7 +94,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 236
 
 {
   "value": [

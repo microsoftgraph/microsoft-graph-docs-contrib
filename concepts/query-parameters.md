@@ -93,7 +93,8 @@ For example, the following request returns both the **contact** collection of th
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
+The `$count` query parameter is supported for collections of the following frequently used resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) and only in [advanced queries](/graph/aad-advanced-queries):
+- [administrativeUnit](/graph/api/resources/administrativeunit)
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -139,11 +140,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 | Operator type | Operator |
 | --- | --- |
-| Equality operators | <ul><li> equals `eq` </li><li> not equals `ne`</li><li> Negation `not`</li><li> in `in`</li></ul> |
-| Relational operators | <ul><li> less than `lt` </li><li> greater than `gt`</li><li> less than or equal to `le`</li><li> greater than or equal to `ge`</li></ul> |
-| Lambda operators | <ul><li> any `any` </li><li> all `all`</li></ul>|
-| Conditional operators | <ul><li> and `and` </li><li> or `or`</li> |
-| Functions | <ul><li> Starts with `startsWith` </li><li> Ends with `endsWith`</li><li> Contains `contains`</li></ul>|
+| Equality operators | <ul><li> Equals (`eq`) </li><li> Not equals (`ne`)</li><li> Logical negation (`not`)</li><li> In (`in`)</li></ul> |
+| Relational operators | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
+| Lambda operators | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>|
+| Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li> |
+| Functions | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>|
 
 
 > **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
@@ -176,8 +177,8 @@ The **assignedLicenses** property of the user resource contains a collection of 
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
-To negate the result of the expression inside the `any` clause, use the `NOT` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
->**Note:** For directory objects like users, the `NOT` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
+To negate the result of the expression inside the `any` clause, use the `not` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
+>**Note:** For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
