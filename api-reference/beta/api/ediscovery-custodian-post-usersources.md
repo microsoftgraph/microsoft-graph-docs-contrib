@@ -101,9 +101,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -125,6 +122,7 @@ Content-Type: application/json
     "id": "34383036-3741-4545-3242-373530353435",
     "email": "megan@contoso.com",
     "includedSources": "mailbox,site",
+    "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
     "createdBy": {
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

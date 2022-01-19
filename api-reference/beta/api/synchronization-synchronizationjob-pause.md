@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a [Start](../api/synchronization-synchronizationjob-start.md) call is made.
+Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job will continue from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ If successful, returns a `204 No Content` response. It does not return anything 
 
 ## Example
 
-##### Request
+### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -80,7 +80,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ---
 
 
-##### Response
+### Response
 The following is an example of a response.
 <!-- {
   "blockType": "response"
