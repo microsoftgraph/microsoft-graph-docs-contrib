@@ -4988,7 +4988,7 @@ items:
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
-          href: resources/identityprotectionroot.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             href: resources/riskdetection.md

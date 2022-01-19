@@ -11685,7 +11685,7 @@ items:
               - name: Update org details
                 href: api/organization-update.md
         - name: Identity protection
-          href: resources/identityprotection-root.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             items:
