@@ -36,14 +36,6 @@
             },
             {
               "Id": "c749c50d-8b7b-4274-ab46-45a49b9609c3",
-              "ApiChange": "Resource",
-              "ChangedApiName": "decisions",
-              "ChangeType": "Addition",
-              "Description": "Added the **decisions** relationship to [accessReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-beta) resource.",
-              "Target": "accessReviewSet"
-            },
-            {
-              "Id": "c749c50d-8b7b-4274-ab46-45a49b9609c3",
               "ApiChange": "Method",
               "ChangedApiName": "recordAllDecisions",
               "ChangeType": "Addition",
