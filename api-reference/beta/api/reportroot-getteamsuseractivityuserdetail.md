@@ -187,7 +187,7 @@ Content-Length: 452
 {
   "value": [
     {
-      "reportRefreshDate": "2017-09-01",
+      "reportRefreshDate": "2017-09-01", 
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
