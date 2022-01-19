@@ -267,15 +267,15 @@ items:
       - name: User
         href: resources/user.md
         items:
-        - name: List users
+        - name: List
           href: api/user-list.md
-        - name: Create user
+        - name: Create
           href: api/user-post-users.md
-        - name: Get user
+        - name: Get
           href: api/user-get.md
-        - name: Update user
+        - name: Update
           href: api/user-update.md
-        - name: Delete user
+        - name: Delete
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
@@ -294,7 +294,7 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create calendar
+        - name: Create
           href: api/user-post-calendars.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
@@ -304,7 +304,7 @@ items:
           href: api/user-findmeetingtimes.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
-        - name: List calendars
+        - name: List
           href: api/user-list-calendars.md
         - name: List calendar groups
           href: api/user-list-calendargroups.md
@@ -317,11 +317,11 @@ items:
       - name: Contacts
         href: resources/contact.md
         items:
-        - name: Create contact
+        - name: Create
           href: api/user-post-contacts.md
         - name: Create contact folder
           href: api/user-post-contactfolders.md
-        - name: List contacts
+        - name: List
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
@@ -437,7 +437,6 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/user.md
         items:
         - name: List direct reports
           href: api/user-list-directreports.md
@@ -4305,6 +4304,13 @@ items:
             href: api/serviceupdatemessage-favorite.md
           - name: Remove favorite status
             href: api/serviceupdatemessage-unfavorite.md
+          - name: List message attachments
+            href: api/serviceupdatemessage-list-attachments.md
+        - name: Service announcement attachment
+          href: resources/serviceannouncementattachment.md
+          items:
+          - name: Get
+            href: api/serviceannouncementattachment-get.md
     - name: Education
       items:
       - name: Overview
@@ -4800,11 +4806,11 @@ items:
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
-          - name: List org contacts
+          - name: List
             href: api/orgcontact-list.md
-          - name: Get org contact
+          - name: Get
             href: api/orgcontact-get.md
-          - name: Get org contact delta
+          - name: Get delta
             href: api/orgcontact-delta.md
           - name: Groups
             href: resources/group.md
@@ -4816,7 +4822,6 @@ items:
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
-            href: resources/directoryobject.md
             items:
             - name: List direct reports
               href: api/orgcontact-list-directreports.md
@@ -5356,17 +5361,17 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List decisions
               href: api/accessreviewinstance-list-decisions.md
-          - name: Access review instance decision item
-            href: resources/accessreviewinstancedecisionitem.md
-            items:
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: List
-              href: api/accessreviewinstance-list-decisions.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
-            - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+            - name: Access review instance decision item
+              href: resources/accessreviewinstancedecisionitem.md
+              items:
+              - name: Get
+                href: api/accessreviewinstancedecisionitem-get.md
+              - name: List
+                href: api/accessreviewinstance-list-decisions.md
+              - name: Update
+                href: api/accessreviewinstancedecisionitem-update.md
+              - name: Filter by current user
+                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
         - name: Consent requests
           href: resources/consentrequests-overview.md
           items:
@@ -6488,15 +6493,15 @@ items:
       - name: Team
         href: resources/team.md
         items:
-        - name: Create team
+        - name: Create
           href: api/team-post.md
         - name: Create team from group
           href: api/team-put-teams.md
-        - name: Get team
+        - name: Get
           href: api/team-get.md
-        - name: Update team
+        - name: Update
           href: api/team-update.md
-        - name: Delete team
+        - name: Delete
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
@@ -6527,15 +6532,15 @@ items:
       - name: Group (team)
         href: resources/group.md
         items:
-        - name: Create group
+        - name: Create
           href: api/group-post-groups.md
-        - name: Get group
+        - name: Get
           href: api/group-get.md
-        - name: List groups
+        - name: List
           href: api/group-list.md
-        - name: Update group
+        - name: Update
           href: api/group-update.md
-        - name: Delete group
+        - name: Delete
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md

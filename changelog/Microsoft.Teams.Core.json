@@ -2,7 +2,93 @@
 
   "changelog": [
     {
-      "ChangeList":[
+      "ChangeList": [
+        {
+          "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousGuestConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousGuestConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta) resource.",
+          "Target": "anonymousGuestConversationMember"
+        },
+        {
+          "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAccountUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAccountUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "microsoftAccountUserConversationMember"
+        },
+        {
+          "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeForBusinessUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeForBusinessUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "skypeForBusinessUserConversationMember"
+        },
+        {
+          "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "skypeUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [skypeUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "skypeUserConversationMember"
+        },
+        {
+          "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for creating [chats](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) using application-only permissions.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "66e067ca-5d57-4ed0-a345-1bf71cc005c7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "438d8714-1580-43a4-addf-5934fa545321",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for creating [chats](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) using application-only permissions.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "438d8714-1580-43a4-addf-5934fa545321",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-06T07:01:10.9353119Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retreiving chat messages.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "659f7727-40cf-4616-92ea-56d9950d8588",
           "ApiChange": "Property",

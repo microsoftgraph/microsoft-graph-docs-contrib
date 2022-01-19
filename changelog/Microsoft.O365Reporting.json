@@ -3,6 +3,232 @@
     {
 	  "ChangeList": [
 		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailActivityUserDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailActivityCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailActivityUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailAppUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailAppUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailAppUsageUserDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailAppUsageAppsUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailAppUsageAppsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailAppUsageAppsUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailAppUsageUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailAppUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailAppUsageUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getEmailAppUsageVersionsUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getEmailAppUsageVersionsUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getMailboxUsageDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getMailboxUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getMailboxUsageDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getMailboxUsageMailboxCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getMailboxUsageMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getMailboxUsageMailboxCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getMailboxUsageQuotaStatusMailboxCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getMailboxUsageQuotaStatusMailboxCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getMailboxUsageQuotaStatusMailboxCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getMailboxUsageStorage",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getMailboxUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getMailboxUsageStorage"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveActivityUserDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveActivityUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveActivityFileCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveActivityFileCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageAccountDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveUsageAccountDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveUsageAccountDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageAccountCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveUsageAccountCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveUsageAccountCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageFileCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveUsageFileCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getOneDriveUsageStorage",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getOneDriveUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getOneDriveUsageStorage"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "method",
+			"ChangedApiName": "getSharePointActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointActivityUserDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityFileCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointActivityFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointActivityFileCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointActivityUserCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointActivityPages",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointActivityPages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointActivityPages"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointSiteUsageDetail"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageFileCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointSiteUsageFileCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointSiteUsageFileCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageSiteCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointSiteUsageSiteCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointSiteUsageSiteCounts"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsageStorage",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointSiteUsageStorage](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointSiteUsageStorage"
+		},
+		{
+			"Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+			"ApiChange": "Method",
+			"ChangedApiName": "getSharePointSiteUsagePages",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getSharePointSiteUsagePages](https://docs.microsoft.com/en-us/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta) method in Microsoft Graph for US Government.",
+			"Target": "getSharePointSiteUsagePages"
+		}
+	],
+	  "Id": "d380c5ce-88a6-477d-b0f2-b476b5918c62",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2022-01-18T03:31:26.4142315Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+	  "ChangeList": [
+		{
 			"Id": "fd995ffd-5650-4e3b-a6e1-2996dbb8b0a8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "office365ActivationsUserDetail",
