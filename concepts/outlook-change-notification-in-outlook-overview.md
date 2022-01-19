@@ -13,19 +13,14 @@ Change notifications enable you to subscribe to changes (create, update, and del
 you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid 
 calling the API to get the payload.
 
-> **Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
-
-## Change notification types
-Outlook supports two types of change notifications:
-- **Change notification to track all changes related to a resource across the tenant** - for example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications may have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
-- **Change notification to track all changes for a specific resource** - for example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
-
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the 
 resource payload along with the notification, which removes the need to call back and get the content.
+
+> **Note:** The maximum time a subscription can last is 5 days for notification without resource data and 1 day for notification with resource data; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ### Notifications with resource data
 
@@ -62,7 +57,11 @@ For notifications with resource data, the payload looks like the following.  In 
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the outlook [message](/graph/api/resources/message?preserve-view=true) schema. The payload is similar to that returned by GET operations. Notification for other outlook entities like [contacts](/graph/api/resources/contact?preserve-view=true), [calendar](/graph/api/resources/calendar?preserve-view=true) follow their respective schemas. 
+The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the outlook [message](/graph/api/resources/message?preserve-view=true) schema. The payload is similar to that returned by GET operations. However, only those properties are returned in the notification payload that are specified using `$select` while specifying the _resource_ during subscription creation. Notification for other outlook entities like [contacts](/graph/api/resources/contact?preserve-view=true), [calendar](/graph/api/resources/calendar?preserve-view=true) follow their respective schemas. 
+
+> **Note:** `$select` query parameter is mandatory when subscribing to change notification with resource data for Outlook resources. Using this you can specify the properties of the _resource_ that you want included in the notification payload while creating the subscription. See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message).
+
+> **Note:** Notifications with resource data is currently available only in Microsoft Graph Beta endpoint.
 
 ```json
 {
@@ -138,7 +137,20 @@ Outlook change notifications support delegated and application permission scopes
 |[event](../resources/event.md)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
 |[message](../resources/message.md) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
-### HTTP request
+### Refine the conditions for a notification
+You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
+
+One common application of $filter is to get notification on a change in a specific property of the specified resource. For example, you can use $filter to subscribe to unread messages in a folder (the _isRead_ property is false), and include all the change types:
+- A message added to or marked unread in the folder would trigger a `Created` notification.
+- Reading a message or marking it as read in the folder would trigger a `Deleted` notification.
+- A change to any property, other than _isRead_, of a message in the folder would trigger an `Updated` notification.
+
+If you don’t use a $filter when creating the subscription:
+- Adding a message to the folder would result in a `Created` notification.
+- Reading a message in the folder, marking the message as read, or changing any other property of a message in that folder would result in an `Updated` notification.
+- Deleting the message would result in a `Delete` notification.
+
+## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -152,20 +164,21 @@ POST /subscriptions
 |:---------------|:--------|:--------------------------|
 | Authorization  | string  | Bearer {token}. Required. |
 
-### Request body
+## Request body
 
 In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
 
-### Response
+## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
 For details about how errors are returned, see [Error responses][error-response].
 
-### Examples
+## Examples
 
-#### Example 1: Create a subscription to send change notifications without resource data when the user receives a new message
+### Example 1: Create a subscription to get change notifications without resource data when the user receives a new message
+The following example requests a notification for a message being created in the user's mailbox.
 
-##### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withoutresourcedata_for_message_resource"
@@ -184,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+#### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -218,16 +231,17 @@ Content-type: application/json
 }
 ```
 
-#### Example 2: Create a subscription to send change notifications with resource data when the user receives a new message
+### Example 2: Create a subscription to get change notifications with resource data when the user receives a new message
+The following example requests a notification with resource data for a message being created in the user's mailbox. The properties of the message resource to be included in the notification payload are specified using `$select` query parameter.
 
-##### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withresourcedata_for_message_resource"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 { 
@@ -242,7 +256,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+#### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -267,6 +281,65 @@ Content-type: application/json
     "notificationContentType": null,
     "lifecycleNotificationUrl": null,
     "expirationDateTime": "2022-01-01T12:32:35.1582696Z",
+    "creatorId": "a4c7bd34-4f3b-46b7-a25d-b63c1e2a2842",
+    "includeResourceData": true,
+    "latestSupportedTlsVersion": "v1_2",
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId",
+    "notificationUrlAppId": null
+}
+```
+
+### Example 3: Create a subscription to get change notifications with resource data for a message based on a condition
+The following example requests a notification with resource data for a message being created in the Drafts folder, containing one or more attachments, and importance being High.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withresourcedata_for_message_resource_basedonfilter"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{ 
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'",
+    "expirationDateTime": "2022-01-01T21:42:18.2257768+00:00",
+    "clientState": "secretClientValue",
+    "includeResourceData": true,
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId"
+}
+```
+
+#### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "id": "239dbc5f-cf3c-4e7e-8c9c-3340abc5b5c5",
+    "resource": "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'",
+    "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
+    "changeType": "created",
+    "clientState": "secretClientValue",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "notificationQueryOptions": null,
+    "notificationContentType": null,
+    "lifecycleNotificationUrl": null,
+    "expirationDateTime": "2022-01-20T12:32:35.1582696Z",
     "creatorId": "a4c7bd34-4f3b-46b7-a25d-b63c1e2a2842",
     "includeResourceData": true,
     "latestSupportedTlsVersion": "v1_2",
