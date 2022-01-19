@@ -1,6 +1,6 @@
 ---
 title: "teamworkLoginStatus resource type"
-description: "Represents the details about the login status of Microsoft Teams, Skype for Business, and Exchange."
+description: "Represents the details about the login status of Microsoft Teams, Skype for Business, and Exchange in a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"

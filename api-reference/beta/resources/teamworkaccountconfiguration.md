@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the account configuration for a [teamworkDevice](../resources/teamworkdevice.md) in Microsoft Teams.
-The details provided are only available for Microsoft Teams Rooms devices.
+Represents the details about the account configuration for a [teamworkDevice](../resources/teamworkdevice.md) in Microsoft Teams. Applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|Details of the account used to sync the calendar.|
-|supportedClient|teamworkSupportedClient|Supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
+|onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|The account used to sync the calendar.|
+|supportedClient|teamworkSupportedClient|The supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
 
 ## Relationships
 None.

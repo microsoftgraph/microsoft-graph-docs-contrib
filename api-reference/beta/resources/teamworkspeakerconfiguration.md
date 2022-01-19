@@ -1,6 +1,6 @@
 ---
 title: "teamworkSpeakerConfiguration resource type"
-description: "Represents the details about the speaker configuration of a device."
+description: "Represents the details about the speaker configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the speaker configuration of a [teamworkDevice](../resources/teamworkdevice.md). These details are applicable only for Microsoft Teams Rooms devices.
+Represents the details about the speaker configuration for a [teamworkDevice](../resources/teamworkdevice.md). Applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +24,7 @@ Represents the details about the speaker configuration of a [teamworkDevice](../
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|defaultCommunicationSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the default communication speaker which is used as speaker for the conference meetings.|
+|defaultCommunicationSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|The default communication speaker used for conference meetings.|
 |defaultSpeaker|[teamworkPeripheral](../resources/teamworkperipheral.md)|The default speaker used for all media and notification sounds.|
 |speakers|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|The list of connected speakers.|
 

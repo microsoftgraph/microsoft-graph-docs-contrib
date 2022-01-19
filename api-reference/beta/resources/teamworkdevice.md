@@ -50,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 |:---------------|:--------|:----------|
 |unknown|0|Unknown device.|
 |ipPhone|1|IP Phone devices are the desk phones for users to make and receive audio calls or join meetings.|
-|teamsRoom|2|Microsoft Teams Rooms are Windows Iot based devices designed to extend the meeting experience to the conference room.|
+|teamsRoom|2|Microsoft Teams Rooms are Windows IoT based devices designed to extend the meeting experience to the conference room.|
 |surfaceHub|3|Surface Hub devices are wall-mounted or roller-stand-mounted devices with interactive whiteboard.|
 |collaborationBar|4|Collaboration bars are Microsoft Teams Rooms on Android used for small meeting spaces.|
 |teamsDisplay|5|Teams display devices are the evolution of Teams phones. These devices are a category of all-in-one dedicated Teams devices that feature an ambient touchscreen and a hands-free experience powered by Cortana.|

@@ -19,8 +19,8 @@ Represents the details about date and time configurations for a [teamworkDevice]
 |Property|Type|Description|
 |:---|:---|:---|
 |dateFormat|String|The date format for the device.|
-|officeHoursEndTime|TimeOfDay|The time of the day that the device is turned off.|
-|officeHoursStartTime|TimeOfDay|The time of the day that the device is turned on.|
+|officeHoursEndTime|TimeOfDay|The time of the day when the device is turned off.|
+|officeHoursStartTime|TimeOfDay|The time of the day when the device is turned on.|
 |timeFormat|String|The time format for the device.|
 |timeZone|String|The time zone to which the office hours apply.|
 

@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restart the specified [teamworkDevice](../resources/teamworkdevice.md) asynchronously. A device is restarted once the async operation completes successfully, which may occur subsequent to a response from this API.
+Restart the specified [teamworkDevice](../resources/teamworkdevice.md) asynchronously. A device is restarted once the async operation completes successfully, which might occur subsequent to a response from this API.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 

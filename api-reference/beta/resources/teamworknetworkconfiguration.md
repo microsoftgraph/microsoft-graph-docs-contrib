@@ -1,6 +1,6 @@
 ---
 title: "teamworkNetworkConfiguration resource type"
-description: "Represents the details about the network configuration of a device."
+description: "Represents the details about the network configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the network configuration of a [teamworkDevice](../resources/teamworkdevice.md).
+Represents the details about the network configuration for a [teamworkDevice](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|

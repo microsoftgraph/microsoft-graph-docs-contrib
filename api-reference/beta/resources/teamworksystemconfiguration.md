@@ -1,6 +1,6 @@
 ---
 title: "teamworkSystemConfiguration resource type"
-description: "Represents the details about the system configuration of a device."
+description: "Represents the details about the system configuration for a device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the system configuration of a [teamworkDevice](../resources/teamworkdevice.md). This detail is not applicable for Microsoft Teams Rooms devices.
+Represents the details about the system configuration for a [teamworkDevice](../resources/teamworkdevice.md). Not applicable for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dateTimeConfiguration|[teamworkDateTimeConfiguration](../resources/teamworkdatetimeconfiguration.md)|Date and Time configurations for a device.|
+|dateTimeConfiguration|[teamworkDateTimeConfiguration](../resources/teamworkdatetimeconfiguration.md)|The date and time configurations for a device.|
 |defaultPassword|String|The default password for the device. Write-Only.|
 |deviceLockTimeout|Duration|The device lock timeout in seconds.|
 |isDeviceLockEnabled|Boolean|`True` if the device lock is enabled.|

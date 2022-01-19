@@ -36,7 +36,7 @@ GET /teamwork/devices/{teamworkDeviceId}/operations/{teamworkDeviceOperationId}
 ```
 
 ## Optional query parameters
-This operation supports the `$select` [OData query parameters](/graph/query-parameters) to customize the response.
+This operation supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|

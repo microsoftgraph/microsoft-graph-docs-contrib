@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details about the camera configuration for a [teamworkDevice](../resources/teamworkdevice.md).
-This is applicable only for Microsoft Teams Rooms devices.
+Applicable only for Microsoft Teams Rooms devices.
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +24,7 @@ This is applicable only for Microsoft Teams Rooms devices.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|cameras|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|List of connected cameras.|
+|cameras|[teamworkPeripheral](../resources/teamworkperipheral.md) collection|The list of connected cameras.|
 |defaultContentCamera|[teamworkPeripheral](../resources/teamworkperipheral.md)|The configured content camera which is used to share analog whiteboard content in a meeting.|
 
 ## JSON representation
