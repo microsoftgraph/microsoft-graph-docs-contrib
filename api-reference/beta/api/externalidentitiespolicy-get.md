@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [externalIden
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/policies/externalidentitiespolicy
+GET https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
 ```
 
 
