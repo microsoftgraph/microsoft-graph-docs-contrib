@@ -1898,15 +1898,15 @@ items:
         items:
         - name: List calendar view
           href: api/bookingbusiness-list-calendarview.md
-        - name: List appointments
+        - name: List
           href: api/bookingbusiness-list-appointments.md
-        - name: Create appointment
+        - name: Create
           href: api/bookingbusiness-post-appointments.md
-        - name: Get appointment
+        - name: Get
           href: api/bookingappointment-get.md
-        - name: Update appointment
+        - name: Update
           href: api/bookingappointment-update.md
-        - name: Delete appointment
+        - name: Delete
           href: api/bookingappointment-delete.md
         - name: Cancel appointment
           href: api/bookingappointment-cancel.md

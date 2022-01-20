@@ -12,8 +12,12 @@ createdDateTime, err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
 requestBody.SetCreatedDateTime(&createdDateTime)
 from := msgraphsdk.NewChatMessageFromIdentitySet()
 requestBody.SetFrom(from)
-from.SetAdditionalData(map[string]interface{}{
-}
+user := msgraphsdk.NewIdentity()
+from.SetUser(user)
+id := "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca"
+user.SetId(&id)
+displayName := "John Doe"
+user.SetDisplayName(&displayName)
 body := msgraphsdk.NewItemBody()
 requestBody.SetBody(body)
 contentType := "html"

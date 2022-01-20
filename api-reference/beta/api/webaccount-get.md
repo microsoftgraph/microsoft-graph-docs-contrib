@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-webaccount-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
