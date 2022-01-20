@@ -1,25 +1,28 @@
 ---
-title: "Use the Azure AD Identity Protection APIs"
-description: "Use Microsoft Graph to query the Identity Protection APIs to receive information about risk detected by Azure AD Identity Protection."
+title: "Use the Microsoft Graph identity protection APIs"
+description: "Use Microsoft Graph to query and receive information about risks detected by Azure AD Identity Protection."
 author: "cloudhandler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
 ---
 
-# Use the Azure AD Identity Protection APIs
+# Use the Microsoft Graph identity protection APIs
 
 Namespace: microsoft.graph
 
-Identity Protection is a tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization. You can use the following Microsoft Graph APIs to query risks detected by Identity Protection:
+[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
+
+Azure Active Directory (Azure AD) [Identity Protection](/security/business/identity-access-management/identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization. You can use the following Microsoft Graph APIs to query risks detected by Azure AD Identity Protection:
 
 * [riskDetection](riskdetection.md) - Query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection. Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory.
 
-* [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Identity Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
+* [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Azure AD Identity Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
 * [signIn](signin.md) - Query Microsoft Graph for information about Azure AD sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that a given authentication request isn’t authorized by the identity owner. These risks can be calculated in real-time or calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
-## What can I do with Identity Protection APIs in Microsoft Graph?
+
+## What can I do with identity protection APIs in Microsoft Graph?
 
 The following are popular requests for working with audit log data:
 
@@ -35,9 +38,9 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 ## What licenses do I need?
 
-Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the riskDetection API (note: P1 licenses receive limited risk information). The riskyUsers API is only available to Azure AD Premium P2 licenses only.
+Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license.
 
 ## See also
 
 * [About Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-* [Get started with Azure Active Directory identity protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+* [Get started with Azure Active Directory Identity Protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

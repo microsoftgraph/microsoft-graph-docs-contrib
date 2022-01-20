@@ -1,6 +1,6 @@
 ---
 title: "identityProtectionRoot resource type"
-description: "Container for navigation properties for Azure AD identity protection resources."
+description: "Container for navigation properties for Microsoft Graph identity protection resources."
 author: "cloudhandler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Container for the navigation properties for Azure AD identity protection resources.
+Container for the navigation properties for Microsoft Graph identity protection resources.
 
 ## Methods
 
