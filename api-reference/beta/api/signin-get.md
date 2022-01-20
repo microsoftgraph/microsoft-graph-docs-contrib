@@ -128,6 +128,12 @@ Content-type: application/json
   "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
   "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
   "appDisplayName":"Azure Portal",
+  "authenticationContextClassReferences": [
+      {
+        "id":"C1",
+        "details":"required"
+      }
+  ],
   "authenticationProtocol": "oAuth2",
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
@@ -150,14 +156,23 @@ Content-type: application/json
   "riskEventTypes_v2":[],
   "resourceDisplayName":"Windows Azure Service Management API",
   "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+  "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
   "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
   "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "authenticationMethodsUsed":[],
   "authenticationRequirement":"singleFactorAuthentication",
+  "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+  "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
   "signInIdentifier":"testaccount1@contoso.com",
   "signInEventTypes":["interactiveUser"],
   "servicePrincipalId":"",
+  "sessionLifetimePolicies": [
+    {
+      "expirationRequirement": "tenantTokenLifetimePolicy",
+      "detail": "The user was required to sign in again according to the tenant session lifetime policy"
+    }
+  ],
   "userType":"member",
   "flaggedForReview":false,
   "isTenantRestricted":false,
