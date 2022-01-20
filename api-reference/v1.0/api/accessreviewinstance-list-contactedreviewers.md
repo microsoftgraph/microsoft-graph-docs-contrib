@@ -81,8 +81,8 @@ Content-Type: application/json
     "value": [
         {
             "id": "139166ec-d214-4835-95aa-3c1d89581e51",
-            "displayName": "John Doe",
-            "userPrincipalName": "johndoe@contoso.com",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@contoso.com",
             "createdDateTime": "2021-03-09T23:10:28.83Z"
         }
     ]
