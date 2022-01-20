@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes
 [!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enum-contenttypes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

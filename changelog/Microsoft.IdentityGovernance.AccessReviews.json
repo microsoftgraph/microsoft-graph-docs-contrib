@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "userSignInRecommendationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **userSignInRecommendationScope** enumeration type.",
+          "Target": "userSignInRecommendationScope"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewRecommendationInsightSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewRecommendationInsightSetting?view=graph-rest-beta) resource type. This is an abstract type that exposes resources for configuring the type of insights to provide to reviewers and access review decision-makers.",
+          "Target": "accessReviewRecommendationInsightSetting"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "recommendationInsightSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationInsightSettings** property to [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource. Use this property to configure insights that aid reviewers of an access review to make decisions.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userLastSignInRecommendationInsightSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [userLastSignInRecommendationInsightSetting](https://docs.microsoft.com/en-us/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta) resource type. Use this type to configure insight settings based on the user's last sign-in date and time into a tenant or application.",
+          "Target": "userLastSignInRecommendationInsightSetting"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** navigation property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceInsight](https://docs.microsoft.com/en-us/graph/api/resources/governanceInsight?view=graph-rest-beta) resource. This is an abstract type that exposes resources for configuring the type of insights to provide to decision-makers in an accessReviewInstanceDecisionItem.",
+          "Target": "governanceInsight"
+        },
+        {
+          "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSignInInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSignInInsight](https://docs.microsoft.com/en-us/graph/api/resources/userSignInInsight?view=graph-rest-beta) resource. Use this type to configure insights for an [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) based on the user's last sign-in date and time.",
+          "Target": "userSignInInsight"
+        }
+      ],
+      "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-19T00:00:00.5989437Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewHistoryScheduleSettings",
