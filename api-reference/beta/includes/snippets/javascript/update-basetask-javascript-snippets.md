@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
+const baseTask = {
   '@odata.type': '#microsoft.graph.baseTask',
   body: {
     '@odata.type': 'microsoft.graph.itemBody'
@@ -36,6 +36,6 @@ const aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT = {
 
 await client.api('/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT')
 	.version('beta')
-	.update(aAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT);
+	.update(baseTask);
 
 ```
