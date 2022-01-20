@@ -4,6 +4,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f55c7c44-403f-4fb6-baf3-2d9bc723556b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "teamworkTag",
+          "ChangeType": "Addition",
+          "Description": "[teamworkTag](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTag?view=graph-rest-beta) APIs now support delegated permissions.",
+          "Target": "teamworkTag"
+        },
+        {
+          "Id": "f55c7c44-403f-4fb6-baf3-2d9bc723556b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "teamworkTagMember",
+          "ChangeType": "Addition",
+          "Description": "[teamworkTagMember](https://docs.microsoft.com/en-us/graph/api/resources/teamworkTagMember?view=graph-rest-beta) APIs now support delegated permissions.",
+          "Target": "teamworkTagMember"
+        }
+      ],
+      "Id": "f55c7c44-403f-4fb6-baf3-2d9bc723556b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ebf148a1-9b8d-4c5b-80db-8476f0aa6264",
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
