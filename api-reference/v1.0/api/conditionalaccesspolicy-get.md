@@ -2,7 +2,7 @@
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
