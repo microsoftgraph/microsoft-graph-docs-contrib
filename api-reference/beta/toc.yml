@@ -469,7 +469,6 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/user.md
         items:
         - name: Assign manager
           href: api/user-post-manager.md
@@ -11282,7 +11281,6 @@ items:
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
-            href: resources/directoryobject.md
             items:
             - name: List direct reports
               href: api/orgcontact-list-directreports.md
@@ -11737,7 +11735,7 @@ items:
               href: api/samlorwsfedexternaldomainfederation-delete.md
             - name: List domains
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
-            - name: Create externalDomainName
+            - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
@@ -11782,21 +11780,6 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Organizational contacts
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
-          - name: Get org contact delta
-            href: api/orgcontact-delta.md
-          - name: Groups
-            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:
