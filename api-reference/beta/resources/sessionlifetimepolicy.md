@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the session lifetime policies Azure AD applied to a sign-in event. For more information on session management with conditional access in Azure AD, see the [conditional access session management documentation](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). 
+Describes the session lifetime policies Azure AD applied to a sign-in event. 
+
+For more details about session management with conditional access in Azure AD, see the [conditional access session management documentation](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). 
 
 ## Properties
 |Property|Type|Description|
