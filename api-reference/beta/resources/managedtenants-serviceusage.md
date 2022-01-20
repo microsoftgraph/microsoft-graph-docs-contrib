@@ -1,6 +1,6 @@
 ---
 title: "serviceUsage resource type"
-description: "Represents Microsoft 365 service usage for a managed tenant."
+description: "Represents monthly active usage data for a service in a managed tenant."
 author: "kylewirpel"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"

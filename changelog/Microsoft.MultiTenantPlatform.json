@@ -517,7 +517,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "tenantUsage",
             "ChangeType": "Addition",
-            "Description": "Added the [tenantUsage](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource",
+            "Description": "Added the [tenantUsage](https://docs.microsoft.com/graph/api/resources/managedTenant?view=graph-rest-beta) resource",
             "Target": "managedTenant"
           },
           {
