@@ -40,10 +40,10 @@ This method supports the `$top`, `$select`, and `$skipToken` [OData query parame
 
 ### Supported query patterns
 
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | Currently, we send the continuation token only in requests that return a list of [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md). |
-| Page limit                 |     ✓     | `/devices({deviceId})/operations?$top=10` | Get operations for a device with a page size of 10. Default page limit is 20. Max page limit is 50. |
+| Pattern                | Syntax                                 | Notes |
+| ---------------------- | -------------------------------------- | ----- |
+| Server-side pagination | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
+| Page limit                 | `/devices({deviceId})/operations?$top=10` | Get operations for a device with a page size of 10. Default page limit is 20. Max page limit is 50. |
 
 ## Request headers
 |Name|Description|

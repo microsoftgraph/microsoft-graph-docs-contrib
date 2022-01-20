@@ -4470,7 +4470,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "devices",
           "ChangeType": "Addition",
-          "Description": "Added the **devices** relationship to [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the **devices** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
         },
         {

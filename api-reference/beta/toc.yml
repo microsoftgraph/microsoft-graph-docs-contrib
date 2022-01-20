@@ -14619,24 +14619,24 @@ items:
         - name: Devices activity
           href: resources/teamworkdeviceactivity.md
           items:
-            - name: Get device activity
+            - name: Get
               href: api/teamworkdeviceactivity-get.md
         - name: Devices configuration
           href: resources/teamworkdeviceconfiguration.md
           items:
-            - name: Get device configuration
+            - name: Get
               href: api/teamworkdeviceconfiguration-get.md
         - name: Devices health
           href: resources/teamworkdevicehealth.md
           items:
-            - name: Get device health
+            - name: Get
               href: api/teamworkdevicehealth-get.md
         - name: Devices async operation
           href: resources/teamworkdeviceoperation.md
           items:
-            - name: List device operations
+            - name: List
               href: api/teamworkdeviceoperation-list.md
-            - name: Get device operations
+            - name: Get
               href: api/teamworkdeviceoperation-get.md
       - name: Activity feed
         items:

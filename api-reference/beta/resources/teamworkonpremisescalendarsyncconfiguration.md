@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details about the account used to sync calendars in the Microsoft Teams client of a [teamworkDevice](../resources/teamworkdevice.md).
-These account details are used when a different account is used to sync calendar.
 
 ## Properties
 |Property|Type|Description|

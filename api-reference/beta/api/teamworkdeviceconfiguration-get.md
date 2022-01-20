@@ -118,9 +118,9 @@ Content-Type: application/json
       "accountConfiguration": {
         "supportedClient": "teamsOnly",
         "onPremisesCalendarSyncConfiguration": {
-          "smtpAddress": "admin@m365x975529.onmicrosoft.com",
+          "smtpAddress": "john@contoso.com",
           "domainUserName": null,
-          "domain": null
+          "domain": "contoso.com"
         }
       },
       "featuresConfiguration": {
@@ -128,7 +128,7 @@ Content-Type: application/json
         "isHideMeetingNamesEnabled": false,
         "isBluetoothBeaconingEnabled": true,
         "isSendLogsAndFeedbackEnabled": true,
-        "emailToSendLogsAndFeedback": "admin@domain.com"
+        "emailToSendLogsAndFeedback": "john@contoso.com"
       }
     },
     "hardwareConfiguration": {
