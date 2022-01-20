@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@t
 [!INCLUDE [sample-code](../includes/snippets/go/get-tab-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tab-in-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
