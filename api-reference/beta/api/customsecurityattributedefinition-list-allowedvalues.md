@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
 
++ Attribute Assignment Reader
 + Attribute Definition Reader
 + Attribute Assignment Administrator
 + Attribute Definition Administrator
