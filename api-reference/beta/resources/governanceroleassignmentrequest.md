@@ -33,7 +33,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 | Property	                | Type	        |Description|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |The identifier of the role assignment request.|
-|resourceId                 |String         |Required. The unique identifier of the Azure resource that is associated with the role assignment request. Are resources can include subscriptions and resource groups.|
+|resourceId                 |String         |Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.|
 |roleDefinitionId           |String         |Required. The identifier of the Azure role definition that the role assignment request is associated with.|
 |subjectId                  |String         |Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.|
 |type                       |String        |Required. Representing the type of the operation on the role assignment. The possible values are: `AdminAdd` , `UserAdd` , `AdminUpdate` , `AdminRemove` , `UserRemove` , `UserExtend` , `AdminExtend` , `UserRenew` , `AdminRenew`.|

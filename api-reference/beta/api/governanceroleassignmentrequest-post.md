@@ -77,9 +77,9 @@ In the request body, supply a JSON representation of a [governanceRoleAssignment
 
 | Property         | Type                                                     | Description |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | The ID of the resource. Required. |
-| roleDefinitionId | String                                                   | The ID of the role definition. Required. |
-| subjectId        | String                                                   | The ID of the subject. Required. |
+| resourceId       | String                                                   | The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases. Required. |
+| roleDefinitionId | String                                                   | The identifier of the Azure role definition that the role assignment request is associated with. Required. |
+| subjectId        | String                                                   | The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals. Required. |
 | assignmentState  | String                                                   | The state of assignment. The value can be `Eligible` and `Active`. Required. |
 | type             | String                                                   | The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`. Required. |
 | reason           | String                                                   | The reason needs to be provided for the role assignment request for audit and review purpose. |
