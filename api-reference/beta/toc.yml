@@ -1842,7 +1842,7 @@ items:
       items:
       - name: Overview
         href: resources/project-rome-overview.md
-      - name: List user devices
+      - name: List user devices (deprecated)
         href: api/user-list-devices.md
       - name: Send device command
         href: api/send-device-command.md
