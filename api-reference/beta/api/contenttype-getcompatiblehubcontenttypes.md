@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get compatible content types in content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
+Get compatible content types in the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
