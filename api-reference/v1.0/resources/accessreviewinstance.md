@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance resource type"
-description: "Represents a recurrence of an `accessReviewScheduleDefinition`."
+description: "Represents a recurrence of an accessReviewScheduleDefinition object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-overview.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). All properties are read-only.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) recurrence. System-generated based off of the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. All properties are read-only.
 
 If the instance is a part of a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource being reviewed in the schedule definition. If a schedule definition reviews multiple resources, each resource will have a unique instance for each recurrence.
 
@@ -26,6 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Read the properties and relationships of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
 |[Update accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Update the reviewers of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Returns all instance objects on a definition for which the calling user is the reviewer.|
+|[List contacted reviewers](../api/accessreviewinstance-list-contactedreviewers.md)|[accessReviewReviewer](../resources/accessreviewreviewer.md) collection|Get the reviewers who received notifications for an access review instance.|
 |[sendReminder](../api/accessreviewinstance-sendreminder.md)|None|Send a reminder to the reviewers of an accessReviewInstance.|
 |[stop](../api/accessreviewinstance-stop.md)|None|Manually stop an accessReviewInstance.|
 |[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md)|None| Allows the calling user to accept the decision recommendation for each NotReviewed accessReviewInstanceDecisionItem that they are the reviewer on for a specific accessReviewInstance.|
