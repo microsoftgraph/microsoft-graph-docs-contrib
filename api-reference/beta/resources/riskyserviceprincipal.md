@@ -43,7 +43,9 @@ Inherits from [entity](../resources/entity.md).
 |servicePrincipalType|String|Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. Inherits from [servicePrincipal](../resources/servicePrincipal.md). 
 
 ## Relationships
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+history|[riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|The [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) of the service principal.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
