@@ -62,7 +62,7 @@ staffMemberIdsList.add("d90d1e8c-5cfe-48cf-a2d5-966267375b6a");
 staffMemberIdsList.add("2f5f8794-0b29-45b5-b56a-2eb5ff7aa880");
 bookingService.staffMemberIds = staffMemberIdsList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").services()
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services()
 	.buildRequest()
 	.post(bookingService);
 

@@ -8,34 +8,34 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Advanced query capabilities on Azure AD directory objects
 
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`not`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameters.
+As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`not`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-+ Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
++ Option 1: Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
+    ```
 
-+ Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
++ Option 2: Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_users_not_enabled"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
-ConsistencyLevel: eventual
-```
+    <!-- {
+      "blockType": "request",
+      "name": "get_users_not_enabled"
+    } -->
+    ```msgraph-interactive
+    GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+    ConsistencyLevel: eventual
+    ```
 
-These advanced query capabilities are supported only on the following subsets of Azure AD directory objects and their relationships:
+These advanced query capabilities are supported only on Azure AD directory objects and their relationships, including the following frequently used objects:
 
 | Object                                                         | Relationships                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
