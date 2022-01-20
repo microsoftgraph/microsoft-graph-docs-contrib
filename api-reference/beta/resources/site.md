@@ -1,8 +1,7 @@
 ---
 author: JeremyKelley
 description: "The site resource provides metadata and relationships for a SharePoint site."
-ms.date: 09/10/2017
-title: Site
+title: "site resource type"
 ms.localizationpriority: high
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
@@ -125,7 +124,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-Here is a JSON representation of a **site** resource.
+The following is a JSON representation of the resource.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

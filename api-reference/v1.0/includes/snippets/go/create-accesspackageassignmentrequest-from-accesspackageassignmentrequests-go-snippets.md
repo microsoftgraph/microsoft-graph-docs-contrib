@@ -12,9 +12,8 @@ requestType := "AdminRemove"
 requestBody.SetRequestType(&requestType)
 assignment := msgraphsdk.NewAccessPackageAssignment()
 requestBody.SetAssignment(assignment)
-assignment.SetAdditionalData(map[string]interface{}{
-	"id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
-}
+id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
+assignment.SetId(&id)
 options := &msgraphsdk.AssignmentRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }
