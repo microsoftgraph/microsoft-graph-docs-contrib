@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests
 [!INCLUDE [sample-code](../includes/snippets/go/get-timeoffrequest-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-timeoffrequest-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---

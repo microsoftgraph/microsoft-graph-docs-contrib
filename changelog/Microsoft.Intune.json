@@ -157,6 +157,648 @@
     {
       "ChangeList": [
         {
+          "Id": "e42859a9-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** parameter to the [createCopy](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementIntent-createCopy?view=graph-rest-beta) method.",
+          "Target": "createCopy"
+        },
+        {
+          "Id": "f5cd9d18-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "systemManagementBIOSVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **systemManagementBIOSVersion** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "f5cfff30-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "tpmManufacturer",
+          "ChangeType": "Addition",
+          "Description": "Added the **tpmManufacturer** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "f5d26137-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "tpmVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **tpmVersion** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "f5d4c7d8-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "healthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **healthStatus** property to the [userExperienceAnalyticsAppHealthDevicePerformance](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsAppHealthDevicePerformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsAppHealthDevicePerformance"
+        },
+        {
+          "Id": "f5d72709-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "healthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **healthStatus** property to the [userExperienceAnalyticsAppHealthDeviceModelPerformance](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsAppHealthDeviceModelPerformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsAppHealthDeviceModelPerformance"
+        },
+        {
+          "Id": "cec4e80c-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowPartnerToCollectIOSPersonalApplicationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowPartnerToCollectIOSPersonalApplicationMetadata** property to the [mobileThreatDefenseConnector](https://docs.microsoft.com/en-us/graph/api/resources/intune-mobileThreatDefenseConnector?view=graph-rest-beta) resource.",
+          "Target": "mobileThreatDefenseConnector"
+        },
+        {
+          "Id": "95b651ed-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwareConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareConfigurations** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "95b8b43a-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwarePasswordInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwarePasswordInfo** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "95bb1665-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "azureAdSharedDeviceDataClearApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureAdSharedDeviceDataClearApps** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95be3838-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "personalProfilePlayStoreMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **personalProfilePlayStoreMode** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95c09b29-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "personalProfilePersonalApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **personalProfilePersonalApplications** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95c2fa8a-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "crossProfilePoliciesAllowCopyPaste",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossProfilePoliciesAllowCopyPaste** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95c55d0b-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "crossProfilePoliciesAllowDataSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossProfilePoliciesAllowDataSharing** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95c7bf67-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "crossProfilePoliciesShowWorkContactsInPersonalProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossProfilePoliciesShowWorkContactsInPersonalProfile** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95ca21b0-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "appsBlockInstallFromUnknownSources",
+          "ChangeType": "Addition",
+          "Description": "Added the **appsBlockInstallFromUnknownSources** property to the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "95cc8c38-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "trustedServerCertificateNames",
+          "ChangeType": "Addition",
+          "Description": "Added the **trustedServerCertificateNames** property to the [androidDeviceOwnerEnterpriseWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerEnterpriseWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerEnterpriseWiFiConfiguration"
+        },
+        {
+          "Id": "95ceead5-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "iCloudPrivateRelayBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the **iCloudPrivateRelayBlocked** property to the [iosGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "iosGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95d14aa9-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "touchIdTimeoutInHours",
+          "ChangeType": "Addition",
+          "Description": "Added the **touchIdTimeoutInHours** property to the [macOSGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95d3b5b8-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "iCloudPrivateRelayBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the **iCloudPrivateRelayBlocked** property to the [macOSGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95d6130c-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfigurationAssignment?view=graph-rest-beta) resource type.",
+          "Target": "hardwareConfigurationAssignment"
+        },
+        {
+          "Id": "95d8704b-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwarePasswordInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwarePasswordInfo](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwarePasswordInfo?view=graph-rest-beta) resource type.",
+          "Target": "hardwarePasswordInfo"
+        },
+        {
+          "Id": "95dad41c-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "hardwareConfiguration"
+        },
+        {
+          "Id": "95dd384e-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationRunSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationRunSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfigurationRunSummary?view=graph-rest-beta) resource type.",
+          "Target": "hardwareConfigurationRunSummary"
+        },
+        {
+          "Id": "95df990a-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationDeviceState",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationDeviceState](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfigurationDeviceState?view=graph-rest-beta) resource type.",
+          "Target": "hardwareConfigurationDeviceState"
+        },
+        {
+          "Id": "95e1fad7-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationUserState",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationUserState](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfigurationUserState?view=graph-rest-beta) resource type.",
+          "Target": "hardwareConfigurationUserState"
+        },
+        {
+          "Id": "95e45d0f-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "androidDeviceOwnerCrossProfileDataSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidDeviceOwnerCrossProfileDataSharing** enumeration type.",
+          "Target": "androidDeviceOwnerCrossProfileDataSharing"
+        },
+        {
+          "Id": "95e6be1e-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "hardwareConfigurationFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareConfigurationFormat** enumeration type.",
+          "Target": "hardwareConfigurationFormat"
+        },
+        {
+          "Id": "95e9222d-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "runState",
+          "ChangeType": "Addition",
+          "Description": "Added the **runState** enumeration type.",
+          "Target": "runState"
+        },
+        {
+          "Id": "95eb8309-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the [assign](https://docs.microsoft.com/en-us/graph/api/intune-hardwareConfiguration-assign?view=graph-rest-beta) method to the [hardwareConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-hardwareConfiguration?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfiguration"
+        },
+        {
+          "Id": "95ede695-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "safeBootBlocked",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **safeBootBlocked** property from the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95f04a9f-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityAllowDebuggingFeatures",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **securityAllowDebuggingFeatures** property from the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "95f2ab71-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "appsAllowInstallFromUnknownSources",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **appsAllowInstallFromUnknownSources** property from the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "95f50dcd-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "storageAllowUsb",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **storageAllowUsb** property from the [aospDeviceOwnerDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerDeviceConfiguration"
+        },
+        {
+          "Id": "95f77021-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCachingMaxSizeBytes",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **contentCachingMaxSizeBytes** property in the [macOSDeviceFeaturesConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-macOSDeviceFeaturesConfiguration?view=graph-rest-beta) resource.",
+          "Target": "macOSDeviceFeaturesConfiguration"
+        },
+        {
+          "Id": "6bc3481b-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboarding",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboarding` member to the **chromeOSOnboardingStatus** enumeration.",
+          "Target": "chromeOSOnboardingStatus"
+        },
+        {
+          "Id": "6bc5ab29-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **chromeOSOnboardingStatus** enumeration.",
+          "Target": "chromeOSOnboardingStatus"
+        },
+        {
+          "Id": "6bc8123e-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboarding",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboarding` member to the **onboardingStatus** enumeration.",
+          "Target": "onboardingStatus"
+        },
+        {
+          "Id": "6bca7194-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **onboardingStatus** enumeration.",
+          "Target": "onboardingStatus"
+        },
+        {
+          "Id": "6bccd721-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "ownerAccessToken",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerAccessToken** parameter to the [connect](https://docs.microsoft.com/en-us/graph/api/intune-chromeOSOnboardingSettings-connect?view=graph-rest-beta) method.",
+          "Target": "connect"
+        },
+        {
+          "Id": "6bcf35e3-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Method",
+          "ChangedApiName": "disconnect",
+          "ChangeType": "Addition",
+          "Description": "Added the [disconnect](https://docs.microsoft.com/en-us/graph/api/intune-chromeOSOnboardingSettings-disconnect?view=graph-rest-beta) method to the [chromeOSOnboardingSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-chromeOSOnboardingSettings?view=graph-rest-beta) resource.",
+          "Target": "chromeOSOnboardingSettings"
+        },
+        {
+          "Id": "6bd19781-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "serviceAccountCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **serviceAccountCredentials** parameter from the [connect](https://docs.microsoft.com/en-us/graph/api/intune-chromeOSOnboardingSettings-connect?view=graph-rest-beta) method.",
+          "Target": "connect"
+        },
+        {
+          "Id": "6bd3fec4-482b-11ec-a817-519c224fca78",
+          "ApiChange": "Method",
+          "ChangedApiName": "connect",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **connect** method from the [connect](https://docs.microsoft.com/en-us/graph/api/resources/intune-connect?view=graph-rest-beta) resource.",
+          "Target": "connect"
+        },
+        {
+          "Id": "441be5cb-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "appLockerRuleCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the `appLockerRuleCollection` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "441e5232-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "dataSourcesSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `dataSourcesSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "4420b419-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "devicesSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `devicesSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "44230a3b-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "driveMapSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `driveMapSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "44256de7-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "environmentVariables",
+          "ChangeType": "Addition",
+          "Description": "Added the `environmentVariables` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "4427d1e8-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "filesSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `filesSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "442a314d-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "folderOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the `folderOptions` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "442c949f-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "folders",
+          "ChangeType": "Addition",
+          "Description": "Added the `folders` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "442f443c-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "iniFiles",
+          "ChangeType": "Addition",
+          "Description": "Added the `iniFiles` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "4433bc91-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "internetOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the `internetOptions` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "443624bd-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "localUsersAndGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the `localUsersAndGroups` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "44388066-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "networkOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the `networkOptions` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "443ae3bd-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "networkShares",
+          "ChangeType": "Addition",
+          "Description": "Added the `networkShares` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "443d45f3-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "ntServices",
+          "ChangeType": "Addition",
+          "Description": "Added the `ntServices` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "443fa7a4-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "powerOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the `powerOptions` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "44420d12-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "printers",
+          "ChangeType": "Addition",
+          "Description": "Added the `printers` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "44446deb-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "regionalOptionsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `regionalOptionsSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "4446cf90-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "registrySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `registrySettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "4449314c-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "scheduledTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the `scheduledTasks` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "444b94c6-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "shortcutSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `shortcutSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "444df6c0-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "startMenuSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `startMenuSettings` member to the **groupPolicySettingType** enumeration.",
+          "Target": "groupPolicySettingType"
+        },
+        {
+          "Id": "ddf2b849-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Member",
+          "ChangedApiName": "notConfigured",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `notConfigured` member from the **remoteAssistanceState** enumeration.",
+          "Target": "remoteAssistanceState"
+        },
+        {
+          "Id": "ef472ec7-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reportSchedules",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **reportSchedules** relationship from the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "ef498f66-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportScheduleName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **reportScheduleName** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef4bf3bd-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "subject",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **subject** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef4e553a-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "emails",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **emails** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef50b81f-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "recurrence",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **recurrence** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef531a22-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **startDateTime** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef557ccb-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **endDateTime** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef57df90-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "userId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userId** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef5a41cf-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **reportName** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef5ca40c-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "filter",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **filter** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef5f072b-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "select",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **select** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef616927-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "orderBy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **orderBy** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef63d887-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Property",
+          "ChangedApiName": "format",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **format** property from the [deviceManagementReportSchedule](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReportSchedule?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "ef66369c-482c-11ec-a817-519c224fca78",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementScheduledReportRecurrence",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagementScheduledReportRecurrence** enumeration type.",
+          "Target": "deviceManagementScheduledReportRecurrence"
+        }
+      ],
+      "Id": "ef44cb42-482c-11ec-a817-519c224fca78",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-18T05:03:57.166Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "be5445d4-2e00-11ec-a1a6-9e72602561cc",
           "ApiChange": "Property",
           "ChangedApiName": "rolloutSettings",

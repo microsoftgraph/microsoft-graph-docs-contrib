@@ -105,6 +105,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-contacts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
