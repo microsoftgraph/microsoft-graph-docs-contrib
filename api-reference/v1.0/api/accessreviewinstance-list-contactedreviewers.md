@@ -1,6 +1,6 @@
 ---
-title: "List contacted reviewers"
-description: "Get the contacted reviewers for an access review instance."
+title: "List contactedReviewers"
+description: "Get the reviewers who received notifications for an access review instance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,10 +10,10 @@ doc_type: apiPageType
 # List decisions
 Namespace: microsoft.graph
 
-Get the [accessReviewReviewer](../resources/accessreviewreviewer.md) resources from the decisions navigation property on a given [accessReviewInstance](../resources/accessreviewinstance.md). A list of zero or more accessReviewReviewer objects are returned, including all of their nested properties.
+Get the reviewers who received notifications for an [access review instance](../resources/accessreviewinstance.md). The reviewers are represented by an [accessReviewReviewer](../resources/accessreviewreviewer.md) object. A list of zero or more objects are returned, including all of their nested properties.
 
 >[!NOTE]
->The default page size for this API is 100 accessReviewReviewer objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+>The default page size for this API is 100 **accessReviewReviewer** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,37 +53,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_accessreviewinstancedecisionitem"
+  "name": "list_accessReviewInstance_contactedReviewers"
 }
 -->
-``` http
+``` msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances/8d035c9d-798d-47fa-beb4-f986a4b8126f/contactedReviewers
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessReviewReviewer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessReviewReviewer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-accessReviewReviewer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-accessReviewReviewer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-accessReviewReviewer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### Response
@@ -105,8 +82,8 @@ Content-Type: application/json
         {
             "id": "139166ec-d214-4835-95aa-3c1d89581e51",
             "displayName": "John Doe",
-            "userPrincipalName": "johndoe@contoso.com"
-            "createdDateTime": "2021-03-09T23:10:28.83Z",
+            "userPrincipalName": "johndoe@contoso.com",
+            "createdDateTime": "2021-03-09T23:10:28.83Z"
         }
     ]
 }
