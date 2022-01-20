@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /sites/{sitesId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
+POST /sites/{siteId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
 POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 ```
 
@@ -68,7 +68,7 @@ In case of asynchronous operation it could take upto 70 minutes to sync or add a
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
+POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
 Content-Type: application/json
 Content-length: 33
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
+POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
 Content-Type: application/json
 Content-length: 33
 
@@ -129,5 +129,5 @@ Content-length: 33
 -->
 ``` http
 HTTP/1.1 202 Accepted
-location: https://graph.microsoft.com/beta/sites/{sitesId}/lists/{listId}/operations/{operationId}
+location: https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/operations/{operationId}
 ```

@@ -1,18 +1,18 @@
 ---
-title: "List operations in a list"
-description: "Get the richLongRunningOperation resources from the operations navigation property in a list."
+title: "List operations"
+description: "Get the list of richLongRunningOperations associated with a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# List operations in a list
+# List operations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [richLongRunningOperation](../resources/richlongrunningoperation.md) resources from the operations navigation property in a [list](../resources/list.md).
+Get the list of [richLongRunningOperations](../resources/richlongrunningoperation.md) associated with a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /sites/{sitesId}/lists/{listId}/operations
+GET /sites/{siteId}/lists/{listId}/operations
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/lists/{listId}
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}
 ```
 
 
