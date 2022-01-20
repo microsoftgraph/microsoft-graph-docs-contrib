@@ -1,6 +1,6 @@
 ---
 title: "List userRegistrationDetails"
-description: "Get the userRegistrationDetails resources from the userRegistrationDetails navigation property."
+description: "Get a list of the authentication methods registered for the user as defined in the userRegistrationDetails object."
 author: "danielwood95"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
