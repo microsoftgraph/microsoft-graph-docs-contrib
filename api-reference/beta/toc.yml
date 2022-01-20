@@ -10020,6 +10020,10 @@ items:
             href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize remote action
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore remote action
+            href: api/manageddevice-restorecloudpc.md
+          - name: Bulk restore remote action
+            href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
