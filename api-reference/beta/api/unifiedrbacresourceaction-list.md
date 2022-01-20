@@ -82,22 +82,19 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Manage all aspects of Insights app",
             "id": "microsoft.insights-allEntities-allTasks",
-            "name": "microsoft.insights/allEntities/allTasks",
-            "resourceScopeId": null
+            "name": "microsoft.insights/allEntities/allTasks"
         },
         {
             "actionVerb": "PATCH",
             "description": "Deploy and manage programs in Insights app",
             "id": "microsoft.insights-programs-update-patch",
-            "name": "microsoft.insights/programs/update",
-            "resourceScopeId": null
+            "name": "microsoft.insights/programs/update"
         },
         {
             "actionVerb": "GET",
             "description": "View reports and dashboard in Insights app",
             "id": "microsoft.insights-reports-read-get",
-            "name": "microsoft.insights/reports/read",
-            "resourceScopeId": null
+            "name": "microsoft.insights/reports/read"
         }
     ]
 }
