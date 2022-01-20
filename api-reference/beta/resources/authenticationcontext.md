@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the conditional access authentication context of a sign-in event. For more information on authentication context in conditional access, see the [conditional access context documentation](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview). 
+Describes the conditional access authentication context of a sign-in event. 
+
+For more details about authentication context in conditional access, see the [conditional access context documentation](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview). 
 
 ## Properties
 |Property|Type|Description|
