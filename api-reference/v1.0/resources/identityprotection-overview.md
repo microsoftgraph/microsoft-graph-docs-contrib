@@ -11,8 +11,6 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Azure Active Directory (Azure AD) [Identity Protection](/security/business/identity-access-management/identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization. You can use the following Microsoft Graph APIs to query risks detected by Azure AD Identity Protection:
 
 * [riskDetection](riskdetection.md) - Query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection. Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory.
