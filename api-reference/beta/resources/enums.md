@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userSignInRecommendationScope values 
+
+|Member|
+|:---|
+|tenant|
+|application|
+
 ### incomingTokenType values 
 
 |Member|
