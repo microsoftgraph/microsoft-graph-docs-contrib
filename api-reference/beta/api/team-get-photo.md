@@ -54,7 +54,7 @@ This endpoint will retrieve the binary data for the photo.
 }-->
 
 ```http
-GET /beta/teams/{id}/photo/$value
+GET /teams/{id}/photo/$value
 ```
 
 ## Request headers
