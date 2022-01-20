@@ -1,5 +1,5 @@
 ---
-title: "Use the Azure AD Identity Protection APIs"
+title: "Use the Azure AD Identity Protection API"
 description: "Use Microsoft Graph to query the Identity Protection APIs to receive information about risk detected by Azure AD Identity Protection."
 author: "cloudhandler"
 ms.localizationpriority: medium
