@@ -24,6 +24,6 @@ The [identity protection risk events API](identityprotection-overview.md) gives 
 - [Why use the security API?](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [Use the security API to integrate with Intelligent Security Graph](security-api-overview.md)
 - [Why use Azure AD to protect identities in your organization?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
-- [Use the Microsoft Graph identity protection API](identityprotection-overview.md)
+- [Use the Microsoft Graph identity protection APIs](identityprotection-overview.md)
 
 
