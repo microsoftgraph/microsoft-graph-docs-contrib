@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [riskyServiceP
 
 ### Example 1: List risky service principals
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_riskyserviceprincipal"
@@ -77,8 +77,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.riskyServicePrincipal",
     "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": "true",
-    "isProcessing": "false",
+    "accountEnabled": true,
+    "isProcessing": false,
     "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
     "riskLevel": "high",
     "riskState": "atRisk",
@@ -92,7 +92,7 @@ Content-Type: application/json
 
 ### Example 2: List a filtered set of risky service principals
 #### Request
-The following example shows how to use `$filter` to get the collection of riskyServicePrincipal whose aggregate risk level is High.
+The following example shows how to use `$filter` to get the collection of riskyServicePrincipal objects whose aggregate risk level is `high`.
 <!-- {
   "blockType": "request",
   "name": "get_riskyserviceprincipal"
@@ -100,7 +100,7 @@ The following example shows how to use `$filter` to get the collection of riskyS
 -->
 
  ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals$filter=riskLevel eq microsoft.graph.riskLevel'high'
+GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'high'
 ```
 
 
@@ -119,8 +119,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.riskyServicePrincipal",
     "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": "true",
-    "isProcessing": "false",
+    "accountEnabled": true,
+    "isProcessing": false,
     "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
     "riskLevel": "high",
     "riskState": "atRisk",

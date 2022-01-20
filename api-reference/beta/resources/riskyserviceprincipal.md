@@ -32,15 +32,15 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accountEnabled|Boolean|`true` if the service principal account is enabled; otherwise, `false`.|
-|appId|String|The unique identifier for the associated application (its appId property), if any.|
+|appId|String|The globally unique identifier for the associated application (its **appId** property), if any.|
 |displayName|String|The display name for the service principal.|
-|id|String|The unique identifier for the service principal. Inherited from [directoryObject](../resources/entity.md).|
-|isProcessing|Boolean|Indicates whether a workload identity's risky state is being processed by the backend.|
-|riskDetail|riskDetail|The possible values are: `none`, `hidden`,  `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
+|id|String|The unique identifier assigned to the service principal at risk. Inherited from [entity](../resources/entity.md).|
+|isProcessing|Boolean|Indicates whether Azure AD is currently processing the service principal's risky state.|
+|riskDetail|riskDetail|The possible values are: `none`, `hidden`,  `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
 |riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z.`|
 |riskLevel|riskLevel|Level of the detected risky workload identity. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|riskState|riskState|State of the workload identity's risk. The possible values are: `none`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|servicePrincipalType|String|Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. Inherits from [servicePrincipal](../resources/servicePrincipal.md). 
+|riskState|riskState|State of the service principal's risk. The possible values are: `none`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|servicePrincipalType|String|Identifies whether the service principal represents an `Application`, a `ManagedIdentity`, or a legacy application (`socialIdp`). This is set by Azure AD internally and is inherited from [servicePrincipal](../resources/servicePrincipal.md). 
 
 ## Relationships
 |Method|Return type|Description|

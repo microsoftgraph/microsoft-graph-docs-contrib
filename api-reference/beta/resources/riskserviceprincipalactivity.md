@@ -18,7 +18,7 @@ Represents the risk activity of an Azure AD service principal as determined by A
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|riskEventType|string|The type of risk event detected. The possible values are `investigationsThreatIntelligence`, `suspiciousSignIns`,`leakedCredentials`, and `unknownFutureValue`.|
+|riskEventType|String|The type of risk event detected. The possible values are `investigationsThreatIntelligence`, `suspiciousSignIns`,`leakedCredentials`, and `unknownFutureValue`.|
 | detail     | riskDetail  | The possible values are `none`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `adminConfirmedSigninCompromised`, `hidden`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`.
 
 ## JSON representation

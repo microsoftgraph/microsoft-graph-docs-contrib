@@ -1,6 +1,6 @@
 ---
 title: "List servicePrincipalRiskDetections"
-description: "Get the servicePrincipalRiskDetection resources from the servicePrincipalRiskDetections navigation property."
+description: "Retrieve the properties of a collection of servicePrincipalRiskDetection objects."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a collection of servicePrincipalRiskDetection objects.
+Retrieve the properties of a collection of [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
 
 >**Note:** You must have an Azure AD Premium P1 or P2 license to use the servicePrincipalRiskDetection API.
 
@@ -36,7 +36,7 @@ GET /identityProtection/servicePrincipalRiskDetections
 ```
 
 ## Optional query parameters
-This method supports `$filter` and `$select` to customize the query response. See the example later in this topic.
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -89,8 +89,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
-    "requestId": "null",
-    "correlationId": "null",
+    "requestId": null,
+    "correlationId": null,
     "riskEventType": "investigationsThreatIntelligence",
     "riskState": "atRisk",
     "riskLevel": "high",
@@ -99,8 +99,8 @@ Content-Type: application/json
     "detectionTimingType": "offline",
     "activity": "servicePrincipal",
     "tokenIssuerType": "AzureAD",
-    "ipAddress": "null",
-    "location": "null",
+    "ipAddress": null,
+    "location": null,
     "activityDateTime": "2021-10-26T00:00:00Z",
     "detectedDateTime": "2021-10-26T00:00:00Z",
     "lastUpdatedDateTime": "2021-10-26T16:28:17.8202975Z)",
@@ -144,8 +144,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
-    "requestId": "null",
-    "correlationId": "null",
+    "requestId": null,
+    "correlationId": null,
     "riskEventType": "investigationsThreatIntelligence",
     "riskState": "atRisk",
     "riskLevel": "high",
@@ -154,8 +154,8 @@ Content-Type: application/json
     "detectionTimingType": "offline",
     "activity": "servicePrincipal",
     "tokenIssuerType": "AzureAD",
-    "ipAddress": "null",
-    "location": "null",
+    "ipAddress": null,
+    "location": null,
     "activityDateTime": "2021-10-26T00:00:00Z",
     "detectedDateTime": "2021-10-26T00:00:00Z",
     "lastUpdatedDateTime": "2021-10-26T16:28:17.8202975Z)",
@@ -200,8 +200,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
-    "requestId": "null",
-    "correlationId": "null",
+    "requestId": null,
+    "correlationId": null,
     "riskEventType": "investigationsThreatIntelligence",
     "riskState": "atRisk",
     "riskLevel": "high",
@@ -210,8 +210,8 @@ Content-Type: application/json
     "detectionTimingType": "offline",
     "activity": "servicePrincipal",
     "tokenIssuerType": "AzureAD",
-    "ipAddress": "null",
-    "location": "null",
+    "ipAddress": null,
+    "location": null,
     "activityDateTime": "2021-10-26T00:00:00Z",
     "detectedDateTime": "2021-10-26T00:00:00Z",
     "lastUpdatedDateTime": "2021-10-26T16:28:17.8202975Z)",

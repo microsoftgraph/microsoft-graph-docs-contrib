@@ -1,6 +1,6 @@
 ---
 title: "riskyServicePrincipal: dismiss"
-description: "Dismiss the risk of one or more riskyServicePrincipal object."
+description: "Dismiss the risk of one or more riskyServicePrincipal objects."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,9 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
 
-Dismiss the risk of one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects. This action sets the targeted account's risk level to none. The maximum count of accounts to dismiss in one call is 60.
+
+Dismiss the risk of one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects. This action sets the targeted service principal account's risk level to `none`. You can dismiss up to 60 service principal accounts in one request.
+
+>**Note:** Using the riskyServicePrincipal API requires an Azure AD Premium P2 license.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ POST /identityProtection/riskyServicePrincipals/dismiss
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-In the request body, specify the servicePrincipalIds to dismiss. 
+In the request body, specify the collection of ids of the risky service principals in a **servicePrincipalIds** property. 
 
 ## Response
 
