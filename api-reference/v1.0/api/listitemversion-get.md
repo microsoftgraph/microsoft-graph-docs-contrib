@@ -72,6 +72,10 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expan
 [!INCLUDE [sample-code](../includes/snippets/go/get-single-version-listitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-single-version-listitem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

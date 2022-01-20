@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/go/get-signins-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -127,6 +131,12 @@ Content-type: application/json
       "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
+      "authenticationContextClassReferences": [
+        {
+          "id":"C1",
+          "details":"required"
+       }
+      ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
@@ -149,14 +159,23 @@ Content-type: application/json
       "riskEventTypes_v2":[],
       "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
       "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
       "authenticationMethodsUsed":[],
       "authenticationRequirement":"singleFactorAuthentication",
+      "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+      "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
       "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "signInIdentifier":"testaccount1@contoso.com",
       "signInEventTypes":["interactiveUser"],
       "servicePrincipalId":"",
+      "sessionLifetimePolicies": [
+        {
+          "expirationRequirement": "tenantTokenLifetimePolicy",
+          "detail": "The user was required to sign in again according to the tenant session lifetime policy"
+        }
+      ],
       "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
       "userType":"member",
       "flaggedForReview":false,
@@ -219,6 +238,8 @@ Content-type: application/json
 In this example, the response object shows the user signed in using only their primary authentication method—a cloud password. The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signins_2"
@@ -226,6 +247,32 @@ In this example, the response object shows the user signed in using only their p
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signins-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

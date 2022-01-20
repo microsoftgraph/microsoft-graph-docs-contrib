@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets
 [!INCLUDE [sample-code](../includes/snippets/go/list-attributeset-all-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-all-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -159,6 +163,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$top=10
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-attributeset-top-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-top-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -227,6 +235,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-attributeset-orderby-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attributeset-orderby-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

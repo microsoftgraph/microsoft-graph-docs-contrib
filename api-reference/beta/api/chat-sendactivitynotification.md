@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
 
->**Note:** Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+>**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies
 [!INCLUDE [sample-code](../includes/snippets/go/get-homerealmdiscoverypolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-homerealmdiscoverypolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
