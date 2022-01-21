@@ -1,6 +1,40 @@
 {
     "changelog": [
-    {
+        {
+            "ChangeList": [
+              {
+                "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
+                "ApiChange": "Resource",
+                "ChangedApiName": "auditEvent",
+                "ChangeType": "Addition",
+                "Description": "Added the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource",
+                "Target": "auditEvent"
+              },
+              {
+                "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
+                "ApiChange": "Resource",
+                "ChangedApiName": "auditEvents",
+                "ChangeType": "Addition",
+                "Description": "Added the **auditEvents** relationship to [managedTenant](https://docs.microsoft.com/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+                "Target": "managedTenant"
+              },
+              {
+                "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
+                "ApiChange": "Method",
+                "ChangedApiName": "GET",
+                "ChangeType": "Addition",
+                "Description": "Added the [list](https://docs.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+                "Target": "managedTenant"
+              },
+            ],
+            "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-01-21T15:17:41.9924643Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Multi-tenant management"
+          },
+        {
         "ChangeList": [
         {
           "Id": "6b679f45-03ac-44cc-8480-417c677b4629",
