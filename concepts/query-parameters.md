@@ -37,6 +37,7 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 | [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
+To know the OData system query options that an API and its properties support, see the **Properties** table in the resource page, and the **Optional query parameters** section of the LIST and GET operations for the API.
 
 ## Other query parameters
 
