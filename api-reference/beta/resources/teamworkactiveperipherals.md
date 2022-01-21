@@ -1,6 +1,6 @@
 ---
 title: "teamworkActivePeripherals resource type"
-description: "Represents the details about the active peripherals attached to a Microsoft Teams-enabled device."
+description: "Represents the details about the active peripheral devices attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the active peripherals attached to a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
+Represents the details about the active peripheral devices attached to a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 None.
