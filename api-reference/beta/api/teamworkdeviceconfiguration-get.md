@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [configuration](../resources/teamworkdeviceconfiguration.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripherals configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
+Get the [configuration](../resources/teamworkdeviceconfiguration.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
