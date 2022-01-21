@@ -1,7 +1,7 @@
 ---
 title: "tenantTag: unassignTag"
 description: "Un-assigns the tenant tag from the specified managed tenants."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType

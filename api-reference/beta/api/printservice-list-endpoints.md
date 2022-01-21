@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 [!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-endpoints-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

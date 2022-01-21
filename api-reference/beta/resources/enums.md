@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### userSignInRecommendationScope values 
+
+|Member|
+|:---|
+|tenant|
+|application|
+
 ### incomingTokenType values 
 
 |Member|
@@ -742,6 +749,15 @@ Namespace: microsoft.graph
 |weak|
 |unknown|
 
+### authenticationContextDetail values
+
+|Member|
+|:---|
+|required|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
 ### educationAddedStudentAction values
 
 |Member|
@@ -785,6 +801,19 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### expirationRequirement values
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
 
 ### replyRestriction values
 
@@ -1886,6 +1915,9 @@ Possible values for user account types (group membership), per Windows definitio
 |ADFederationServices|
 |unknownFutureValue|
 |AzureADBackupAuth|
+|ADFederationServicesMFAAdapter|
+|NPSExtension|
+
 
 ### riskDetectionTimingType values
 
@@ -2797,3 +2829,13 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeOnly|3|Supports only `Skype`.|
 |teamsOnly|4|Supports only `Teams`.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|

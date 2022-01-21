@@ -160,6 +160,7 @@ The following table shows the properties that are required when you create the [
 |storageAllowUsb|Boolean|Indicates whether or not to allow USB mass storage.|
 |storageBlockExternalMedia|Boolean|Indicates whether or not to block external media.|
 |storageBlockUsbFileTransfer|Boolean|Indicates whether or not to block USB file transfer.|
+|systemUpdateFreezePeriods|[androidDeviceOwnerSystemUpdateFreezePeriod](../resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md) collection|Indicates the annually repeating time periods during which system updates are postponed. This collection can contain a maximum of 500 elements.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|The type of system update configuration. Possible values are: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
@@ -200,7 +201,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 8690
+Content-length: 8916
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -381,6 +382,15 @@ Content-length: 8690
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 10,
+      "startDay": 8,
+      "endMonth": 8,
+      "endDay": 6
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
@@ -424,7 +434,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8862
+Content-Length: 9088
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -608,6 +618,15 @@ Content-Length: 8862
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 10,
+      "startDay": 8,
+      "endMonth": 8,
+      "endDay": 6
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
