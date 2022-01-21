@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceConfiguration"
-description: "Get the configuration details of a device."
+description: "Get the configuration details of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the configuration details of a [teamworkDevice](../resources/teamworkdevice.md). The [teamworkDeviceConfiguration](../resources/teamworkdeviceconfiguration.md) has properties related to software versions, peripheral configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
+Get the [configuration](../resources/teamworkdeviceconfiguration.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripherals configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
