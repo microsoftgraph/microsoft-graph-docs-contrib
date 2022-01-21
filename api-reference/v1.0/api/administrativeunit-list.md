@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directory/administrativeUnits
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count`, `$select`, `$search`, `$filter` (`eq`), and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunits-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunits-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

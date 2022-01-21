@@ -68,6 +68,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Access reviews | ✔ | ✔ | ➖ |
 | Applications | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
@@ -90,7 +91,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Teams | ✔ | ✔ | ✔ |
 | Users | ✔ | ✔ | ✔ |
 
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (v1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts
 * Applications

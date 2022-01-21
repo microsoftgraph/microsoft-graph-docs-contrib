@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforc
 [!INCLUDE [sample-code](../includes/snippets/go/delete-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-workforceintegration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a detected at-risk service principal in an Azure AD tenant. Azure AD continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all service principal risk detections in your Azure AD environment.
+Represents information about detected at-risk service principals in an Azure AD tenant. Azure AD continually evaluates risks based on various signals and machine learning. This API provides programmatic access to all service principal risk detections in your Azure AD environment.
 
 Inherits from [entity](../resources/entity.md).
 

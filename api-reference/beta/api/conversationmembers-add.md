@@ -42,7 +42,7 @@ POST /teams/{team-id}/members/add
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team.
+In the request body, supply the JSON representation of the list of `conversationMember` derivatives that need to be added to the team. A maximum of 200 `conversationMember` derivatives can be added in one single request.
 
 The following table shows the parameters that can be used with this action.
 

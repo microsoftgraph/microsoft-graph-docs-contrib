@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/group-delete-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delete-approleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

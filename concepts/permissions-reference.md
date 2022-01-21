@@ -1753,7 +1753,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 
 > [!CAUTION]
-> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.All_, allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
+> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.Directory_, allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
 
 With the _RoleManagement.Read.Directory_ permission an application can read directoryRoles and directoryRoleTemplates. This includes reading membership information for directory roles.
 

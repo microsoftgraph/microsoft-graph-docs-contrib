@@ -264,6 +264,7 @@ final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.ho
 // The section below configures the proxy for the Azure Identity client
 // and is only needed if you rely on Azure Identity for authentication
 final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+pOptions.setCredentials("username", "password");
 final HttpClientOptions clientOptions = new HttpClientOptions();
 clientOptions.setProxyOptions(pOptions);
 final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);

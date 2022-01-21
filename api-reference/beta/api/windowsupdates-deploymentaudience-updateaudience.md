@@ -1,7 +1,7 @@
 ---
 title: "deploymentAudience: updateAudience"
 description: "Update the members and exclusions collections of a deploymentAudience."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType

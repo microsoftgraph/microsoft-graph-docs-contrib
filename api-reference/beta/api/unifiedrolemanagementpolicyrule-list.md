@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRol
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

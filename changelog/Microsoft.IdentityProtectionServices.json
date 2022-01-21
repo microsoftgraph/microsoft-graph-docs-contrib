@@ -7,7 +7,7 @@
 					"ApiChange": "Property",
 					"ChangedApiName": "servicePrincipalRiskLevels",
 					"ChangeType": "Addition",
-					"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Allows admin to set a risk-based policy on service principals.",
+					"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy on service principals.",
 					"Target": "conditionalAccessConditionSet"
 				}
 			],
@@ -15,6 +15,32 @@
 			"Cloud": "Prod",
 			"Version": "beta",
 			"CreatedDateTime": "2022-01-06T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "ADFederationServicesMFAAdapter",
+					"ChangeType": "Addition",
+					"Description": "Added the **ADFederationServicesMFAAdapter** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				},
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "NPSExtension",
+					"ChangeType": "Addition",
+					"Description": "Added the **NPSExtension** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				}
+			],
+			"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-19T00:00:00.000Z",
 			"WorkloadArea": "Identity and access",
 			"SubArea": "Identity and sign-in"
 		},
