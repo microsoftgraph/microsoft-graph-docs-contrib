@@ -18,7 +18,7 @@ Represents Microsoft 365 Lighthouse audit events for managed tenants.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List auditEvents](../api/managedtenants-auditevent-list.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md) collection|Get a list of the [auditEvent](../resources/managedtenants-auditevent.md) objects and their properties.|
+|[List auditEvents](../api/managedtenants-managedtenant-list-auditevents.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md) collection|Get a list of the [auditEvent](../resources/managedtenants-auditevent.md) objects and their properties.|
 |[Get auditEvent](../api/managedtenants-auditevent-get.md)|[microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|Read the properties and relationships of an [auditEvent](../resources/managedtenants-auditevent.md) object.|
 
 ## Properties
