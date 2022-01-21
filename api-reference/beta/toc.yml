@@ -12317,6 +12317,8 @@ items:
                 href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
               - name: Update
                 href: api/accessreviewinstancedecisionitem-update.md
+              - name: Record all decisions
+                href: api/accessreviewinstancedecisionitem-recordalldecisions.md
               - name: List pending approval (deprecated)
                 href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
