@@ -40,7 +40,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection|Credentials to validate. Ignored when the **useSavedCredentials** parameter is `true`.|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) collection|Credentials to validate. Ignored when the **useSavedCredentials** parameter is `true`.|
 
 ## Response
 If the secrets are successfully saved, this method returns a `204 No Content` response code. It does not return anything in the response body.
