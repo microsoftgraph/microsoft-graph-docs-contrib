@@ -37,7 +37,7 @@ Represents a set of configurations used to synchronize education entities and ro
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 | id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                               |
 | displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                         |
-| dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                           |
+| dataProvider                         | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)                | The data provider used for the profile.                                                                                           |
 | expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. When `null`. the profile will never expire. (optional)       |
 | handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] AAD Users.                                  |
@@ -91,7 +91,7 @@ The following is a JSON representation of the **educationSynchronizationProfile*
     }
   ],
   "dataProvider": {
-    "@odata.type": "microsoft.graph.educationCsvDataProvider"
+    "@odata.type": "microsoft.graph.educationSynchronizationDataProvider"
   },
   "identitySynchronizationConfiguration": {
     "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
