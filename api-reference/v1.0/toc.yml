@@ -5359,8 +5359,8 @@ items:
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
+            - name: List contacted reviewers
+              href: api/accessreviewinstance-list-contactedreviewers.md
             - name: Access review instance decision item
               href: resources/accessreviewinstancedecisionitem.md
               items:
