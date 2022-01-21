@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceHealth"
-description: "Get the health details of a device."
+description: "Get the health details of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the health details of a [teamworkDevice](../resources/teamworkdevice.md). The [teamworkDeviceHealth](../resources/teamworkdevicehealth.md) is calculated based on the device configuration and other device parameters.
+Get the [health](../resources/teamworkdevicehealth.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). Device health is calculated based on the device configuration and other device parameters.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
