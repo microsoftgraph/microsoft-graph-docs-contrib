@@ -31,10 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /me/settings/contactMergeSuggestions
-PATCH /users/{userId}/settings/contactMergeSuggestions
 ```
-
->**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference).
 
 ## Request headers
 |Name|Description|
@@ -67,7 +64,7 @@ The following is an example request on how user updates "**isEnabled**" privacy 
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{userId}/settings/contactMergeSuggestions
+PATCH https://graph.microsoft.com/beta/me/settings/contactMergeSuggestions
 Content-Type: application/json
 
 {
