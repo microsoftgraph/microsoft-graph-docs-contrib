@@ -1,6 +1,6 @@
 ---
 title: "synchronization resource type"
-description: "**TODO: Add Description**"
+description: "Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Azure AD to supported cloud applications. For more information, see [How Application Provisioning works in Azure Active Directory](/azure/active-directory/app-provisioning/how-provisioning-works)
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Azure AD to supported cloud applications. For more information, see [How Application Provisioning works in Azure Active Directory](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 ## Methods
 
