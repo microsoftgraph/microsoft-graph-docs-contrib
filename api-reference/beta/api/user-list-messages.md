@@ -132,6 +132,10 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 [!INCLUDE [sample-code](../includes/snippets/go/get-messages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-messages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -197,6 +201,10 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-messages-with-mentions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-messages-with-mentions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -267,6 +275,10 @@ Prefer: outlook.body-content-type="text"
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-messages-in-text-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-messages-in-text-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

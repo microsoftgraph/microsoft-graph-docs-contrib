@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Filter: "startswith(displayName,%20'a')",
 	Count: true,
 	Top: 1,
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.DevicesRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DevicesRequestBuilderGetOptions{
+options := &msgraphsdk.ServicePrincipalsRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
-result, err := graphClient.Devices().Get(options)
+result, err := graphClient.ServicePrincipals().Get(options)
 
 
 ```

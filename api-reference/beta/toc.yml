@@ -269,15 +269,15 @@ items:
       - name: User
         href: resources/user.md
         items:
-        - name: List users
+        - name: List
           href: api/user-list.md
-        - name: Create user
+        - name: Create
           href: api/user-post-users.md
-        - name: Get user
+        - name: Get
           href: api/user-get.md
-        - name: Update user
+        - name: Update
           href: api/user-update.md
-        - name: Delete user
+        - name: Delete
           href: api/user-delete.md
         - name: Change password
           href: api/user-changepassword.md
@@ -300,7 +300,7 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create calendar
+        - name: Create
           href: api/user-post-calendars.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
@@ -314,7 +314,7 @@ items:
           href: api/user-findroomlists.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
-        - name: List calendars
+        - name: List
           href: api/user-list-calendars.md
         - name: List calendar groups
           href: api/user-list-calendargroups.md
@@ -327,11 +327,11 @@ items:
       - name: Contacts
         href: resources/contact.md
         items:
-        - name: Create contact
+        - name: Create
           href: api/user-post-contacts.md
         - name: Create contact folder
           href: api/user-post-contactfolders.md
-        - name: List contacts
+        - name: List
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
@@ -469,7 +469,6 @@ items:
         - name: List notebooks
           href: api/onenote-list-notebooks.md
       - name: Org hierarchy
-        href: resources/user.md
         items:
         - name: Assign manager
           href: api/user-post-manager.md
@@ -1899,15 +1898,15 @@ items:
         items:
         - name: List calendar view
           href: api/bookingbusiness-list-calendarview.md
-        - name: List appointments
+        - name: List
           href: api/bookingbusiness-list-appointments.md
-        - name: Create appointment
+        - name: Create
           href: api/bookingbusiness-post-appointments.md
-        - name: Get appointment
+        - name: Get
           href: api/bookingappointment-get.md
-        - name: Update appointment
+        - name: Update
           href: api/bookingappointment-update.md
-        - name: Delete appointment
+        - name: Delete
           href: api/bookingappointment-delete.md
         - name: Cancel appointment
           href: api/bookingappointment-cancel.md
@@ -10003,24 +10002,26 @@ items:
             href: api/virtualendpoint-list-cloudpcs.md
           - name: Get
             href: api/cloudpc-get.md
-          - name: Reprovision
-            href: api/cloudpc-reprovision.md
+          - name: Change user accout type
+            href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get remote action results
+            href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
             href: api/cloudpc-rename.md
-          - name: Troubleshoot
-            href: api/cloudpc-troubleshoot.md
+          - name: Reprovision
+            href: api/cloudpc-reprovision.md
           - name: Reprovision remote action
             href: api/manageddevice-reprovisioncloudpc.md
           - name: Bulk reprovision remote action
             href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize remote action
             href: api/manageddevice-resizecloudpc.md
-          - name: Get remote action results
-            href: api/manageddevice-getcloudpcremoteactionresults.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -10109,6 +10110,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC organization settings
+          href: resources/cloudpcorganizationsettings.md
+          items:
+          - name: Get
+            href: api/cloudpcorganizationsettings-get.md
+          - name: Update
+            href: api/cloudpcorganizationsettings-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -10407,6 +10415,13 @@ items:
             href: api/serviceupdatemessage-favorite.md
           - name: Remove favorite status
             href: api/serviceupdatemessage-unfavorite.md
+          - name: List message attachments
+            href: api/serviceupdatemessage-list-attachments.md
+        - name: Service announcement attachment
+          href: resources/serviceannouncementattachment.md
+          items:
+          - name: Get
+            href: api/serviceannouncementattachment-get.md
     - name: Education
       items:
       - name: Overview
@@ -11282,7 +11297,6 @@ items:
             - name: Check member groups
               href: api/directoryobject-checkmembergroups.md
           - name: Org hierarchy
-            href: resources/directoryobject.md
             items:
             - name: List direct reports
               href: api/orgcontact-list-directreports.md
@@ -11673,7 +11687,7 @@ items:
               - name: Update org details
                 href: api/organization-update.md
         - name: Identity protection
-          href: resources/identityprotection-root.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             items:
@@ -11739,7 +11753,7 @@ items:
               href: api/samlorwsfedexternaldomainfederation-delete.md
             - name: List domains
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
-            - name: Create externalDomainName
+            - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
@@ -11784,21 +11798,6 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Organizational contacts
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
-          - name: Get org contact delta
-            href: api/orgcontact-delta.md
-          - name: Groups
-            href: resources/group.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -12305,23 +12304,25 @@ items:
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
+            - name: List contacted reviewers
+              href: api/accessreviewinstance-list-contactedreviewers.md
             - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
-          - name: Access review instance decision item
-            href: resources/accessreviewinstancedecisionitem.md
-            items:
-            - name: List
-              href: api/accessreviewinstance-list-decisions.md
-            - name: Get
-              href: api/accessreviewinstancedecisionitem-get.md
-            - name: Filter by current user
-              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-            - name: Update
-              href: api/accessreviewinstancedecisionitem-update.md
-            - name: List pending approval (deprecated)
-              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Access review instance decision item
+              href: resources/accessreviewinstancedecisionitem.md
+              items:
+              - name: List
+                href: api/accessreviewinstance-list-decisions.md
+              - name: Get
+                href: api/accessreviewinstancedecisionitem-get.md
+              - name: Filter by current user
+                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+              - name: Update
+                href: api/accessreviewinstancedecisionitem-update.md
+              - name: Record all decisions
+                href: api/accessreviewinstancedecisionitem-recordalldecisions.md
+              - name: List pending approval (deprecated)
+                href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
             href: resources/accessreviewpolicy.md
             items:
@@ -13826,15 +13827,15 @@ items:
           items:
           - name: External connection
             href: resources/externalconnectors-externalconnection.md
-          - name: List external connections
+          - name: List
             href: api/externalconnectors-externalconnection-list.md
-          - name: Create external connection
+          - name: Create
             href: api/externalconnectors-external-post-connections.md
-          - name: Get external connection
+          - name: Get
             href: api/externalconnectors-externalconnection-get.md
-          - name: Update external connection
+          - name: Update
             href: api/externalconnectors-externalconnection-update.md
-          - name: Delete external connection
+          - name: Delete
             href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
             href: api/externalconnectors-connectionoperation-get.md
@@ -13842,39 +13843,39 @@ items:
           items:
           - name: Schema
             href: resources/externalconnectors-schema.md
-          - name: Create schema
+          - name: Create
             href: api/externalconnectors-externalconnection-post-schema.md
-          - name: Get schema
+          - name: Get
             href: api/externalconnectors-schema-get.md
-          - name: Update schema
+          - name: Update
             href: api/externalconnectors-schema-update.md
         - name: External item
           items:
           - name: External item
             href: resources/externalconnectors-externalitem.md
-          - name: Create external item
+          - name: Create
             href: api/externalconnectors-externalconnection-put-items.md
-          - name: Get external item
+          - name: Get
             href: api/externalconnectors-externalitem-get.md
-          - name: Update external item
+          - name: Update
             href: api/externalconnectors-externalitem-update.md
-          - name: Delete external item
+          - name: Delete
             href: api/externalconnectors-externalitem-delete.md
         - name: External group
           items:
           - name: External group
             href: resources/externalconnectors-externalgroup.md
-          - name: Create external group
+          - name: Create
             href: api/externalconnectors-externalconnection-post-groups.md
-          - name: Delete external group
+          - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
           - name: External group member
             href: resources/externalconnectors-externalgroupmember.md
-          - name: Create external group member
+          - name: Create
             href: api/externalconnectors-externalgroup-post-members.md
-          - name: Delete external group member
+          - name: Delete
             href: api/externalconnectors-externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
@@ -14049,6 +14050,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           items:
           - name: Permission
@@ -14083,6 +14086,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -14119,6 +14124,10 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible hubs
+          href: api/contenttype-getcompatiblehubcontenttypes.md
+        - name: Add copy from hubs
+          href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
         - name: List item
@@ -14211,6 +14220,12 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -14336,15 +14351,15 @@ items:
       - name: Team
         href: resources/team.md
         items:
-        - name: Create team
+        - name: Create
           href: api/team-post.md
         - name: Create team from group
           href: api/team-put-teams.md
-        - name: Get team
+        - name: Get
           href: api/team-get.md
-        - name: Update team
+        - name: Update
           href: api/team-update.md
-        - name: Delete team
+        - name: Delete
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
@@ -14381,15 +14396,15 @@ items:
       - name: Group (team)
         href: resources/group.md
         items:
-        - name: Create group
+        - name: Create
           href: api/group-post-groups.md
-        - name: Get group
+        - name: Get
           href: api/group-get.md
-        - name: List groups
+        - name: List
           href: api/group-list.md
-        - name: Update group
+        - name: Update
           href: api/group-update.md
-        - name: Delete group
+        - name: Delete
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
