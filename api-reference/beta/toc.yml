@@ -14217,9 +14217,9 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: RichLongRunningOperation
+      - name: Rich long-running operation
         items:
-        - name: RichLongRunningOperation
+        - name: Rich long-running operation
           href: resources/richLongRunningOperation.md
         - name: Get
           href: api/richlongrunningoperation-get.md
