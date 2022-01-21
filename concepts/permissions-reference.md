@@ -1046,8 +1046,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information  | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user. | Yes | No |
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
 | _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information  | Allows the app to read and update identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
-| _IdentityRiskyServicePrincipal.Read.All_ |   Read all risky service principal information  | Allows the app to read all risky service principal information for your organization, on behalf of the signed-in user. | Yes |
-| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and write all risky service principal information  | Allows the app to read and update risky service principal information for all service principals in your organization, on behalf of the signed-in user. Update operations include dismissing risky service principals.| Yes |
+| _IdentityRiskyServicePrincipal.Read.All_ |   Read all risky service principal information  | Allows the app to read all risky service principal information for your organization, on behalf of the signed-in user. | Yes | No |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and write all risky service principal information  | Allows the app to read and update risky service principal information for all service principals in your organization, on behalf of the signed-in user. Update operations include dismissing risky service principals.| Yes | No |
 
 #### Application permissions
 
