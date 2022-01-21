@@ -13,6 +13,8 @@ Change notifications enable you to subscribe to changes (create, update, and del
 you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid 
 calling the API to get the payload.
 
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed for Outlook resources.
+
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
 ## Notification payloads
@@ -20,7 +22,7 @@ For details about which resources support which types of change notifications, s
 Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the 
 resource payload along with the notification, which removes the need to call back and get the content.
 
-> **Note:** The maximum time a subscription can last is 5 days for notification without resource data and 1 day for notification with resource data; however, subscriptions can be renewed until the caller has permissions to access to resource.
+> **Note:** The maximum time a subscription can last is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
 ### Notifications with resource data
 
