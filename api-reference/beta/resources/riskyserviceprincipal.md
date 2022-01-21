@@ -26,9 +26,10 @@ Inherits from [entity](../resources/entity.md).
 |[Get riskyServicePrincipal](../api/riskyserviceprincipal-get.md)|[riskyServicePrincipal](../resources/riskyserviceprincipal.md)|Get a specific risky service principal and its risk properties.|
 |[dismiss](../api/riskyserviceprincipal-dismiss.md)|None|Dismiss the risk of a risky service principal.|
 |[confirmCompromised](../api/riskyserviceprincipal-confirmcompromised.md)|None|Confirm a risky service principal as compromised.|
-
+|[List history](../api/riskyserviceprincipal-list-history.md) | [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Get the risk history of an Azure AD service principal.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accountEnabled|Boolean|`true` if the service principal account is enabled; otherwise, `false`.|
@@ -36,16 +37,17 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The display name for the service principal.|
 |id|String|The unique identifier assigned to the service principal at risk. Inherited from [entity](../resources/entity.md).|
 |isProcessing|Boolean|Indicates whether Azure AD is currently processing the service principal's risky state.|
-|riskDetail|riskDetail|The possible values are: `none`, `hidden`,  `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
-|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z.`|
-|riskLevel|riskLevel|Level of the detected risky workload identity. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|riskState|riskState|State of the service principal's risk. The possible values are: `none`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|servicePrincipalType|String|Identifies whether the service principal represents an `Application`, a `ManagedIdentity`, or a legacy application (`socialIdp`). This is set by Azure AD internally and is inherited from [servicePrincipal](../resources/servicePrincipal.md). 
+|riskDetail|riskDetail|Details of the detected risk. <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`. <br/>The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`,  `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised` , `adminDismissedAllRiskForServicePrincipal`.|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is `2021-01-01T00:00:00Z`. Supports `$filter` (`eq`).|
+|riskLevel|riskLevel|Level of the detected risky workload identity. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|riskState|riskState|State of the service principal's risk. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|servicePrincipalType|String|Identifies whether the service principal represents an `Application`, a `ManagedIdentity`, or a legacy application (`socialIdp`). This is set by Azure AD internally and is inherited from [servicePrincipal](../resources/servicePrincipal.md). |
 
 ## Relationships
+
 |Method|Return type|Description|
 |:---|:---|:---|
-history|[riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|The [riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) of the service principal.|
+|history|[riskyServicePrincipalHistoryItem](riskyserviceprincipalhistoryitem.md) collection|Represents the risk history of Azure AD service principals.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

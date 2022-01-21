@@ -1,5 +1,5 @@
 ---
-title: "List history of riskyServicePrincipal"
+title: "List history (risk history of riskyServicePrincipal)"
 description: "Get the risk history of a riskyServicePrincipal object."
 author: "ebasseri"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List history
+# List history (risk history of riskyServicePrincipal)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
