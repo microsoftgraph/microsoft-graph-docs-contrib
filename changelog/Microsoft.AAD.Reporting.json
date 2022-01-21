@@ -18,7 +18,7 @@
               "Description": "Added the [userRegistrationDetails](https://docs.microsoft.com/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource and related methods. The userRegistrationDetails resource provides details of the authentication methods registered for the user.",
               "Target": "userRegistrationDetails"
             }
-        },
+        ],
         "Id": "07c2453e-e776-4768-a5cb-75d0f3d1fe22",
         "Cloud": "prd",
         "Version": "beta",
