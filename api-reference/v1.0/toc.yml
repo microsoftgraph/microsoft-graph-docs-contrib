@@ -4988,7 +4988,7 @@ items:
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
-          href: resources/identityprotectionroot.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             href: resources/riskdetection.md
@@ -5359,8 +5359,8 @@ items:
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
+            - name: List contacted reviewers
+              href: api/accessreviewinstance-list-contactedreviewers.md
             - name: Access review instance decision item
               href: resources/accessreviewinstancedecisionitem.md
               items:
@@ -6120,15 +6120,15 @@ items:
           items:
           - name: External connection
             href: resources/externalconnectors-externalconnection.md
-          - name: List external connections
+          - name: List
             href: api/externalconnectors-externalconnection-list.md
-          - name: Create external connection
+          - name: Create
             href: api/externalconnectors-external-post-connections.md
-          - name: Get external connection
+          - name: Get
             href: api/externalconnectors-externalconnection-get.md
-          - name: Update external connection
+          - name: Update
             href: api/externalconnectors-externalconnection-update.md
-          - name: Delete external connection
+          - name: Delete
             href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
             href: api/externalconnectors-connectionoperation-get.md
@@ -6136,41 +6136,41 @@ items:
           items:
           - name: Schema
             href: resources/externalconnectors-schema.md
-          - name: Create schema
+          - name: Create
             href: api/externalconnectors-schema-create.md
-          - name: Get schema
+          - name: Get
             href: api/externalconnectors-schema-get.md
         - name: External item
           items:
           - name: External item
             href: resources/externalconnectors-externalitem.md
-          - name: Create external item
+          - name: Create
             href: api/externalconnectors-externalitem-create.md
-          - name: Get external item
+          - name: Get
             href: api/externalconnectors-externalitem-get.md
-          - name: Update external item
+          - name: Update
             href: api/externalconnectors-externalitem-update.md
-          - name: Delete external item
+          - name: Delete
             href: api/externalconnectors-externalitem-delete.md
         - name: External group
           items:
           - name: External group
             href: resources/externalconnectors-externalgroup.md
-          - name: Create external group
+          - name: Create
             href: api/externalconnectors-externalconnection-post-groups.md
-          - name: Get external group
+          - name: Get
             href: api/externalconnectors-externalgroup-get.md
-          - name: Update external group
+          - name: Update
             href: api/externalconnectors-externalgroup-update.md
-          - name: Delete external group
+          - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
           - name: Identity
             href: resources/externalconnectors-identity.md
-          - name: Create identity for member
+          - name: Create
             href: api/externalconnectors-externalgroup-post-members.md
-          - name: Delete identity of member
+          - name: Delete
             href: api/externalconnectors-identity-delete.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
