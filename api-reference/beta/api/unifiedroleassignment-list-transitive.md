@@ -13,11 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. It can be used if a user is assigned Azure AD role via a group. For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept). 
+Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. For example, this request can be used if a user is a member of a group and that group is assigned an Azure AD role. For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept).
 
-If the role assignment is transitive, the group's ID will be returned for `principalID`. Results can also be filtered based on `roleDefinitionId` and `directoryScopeId`. 
+If the role assignment is transitive, the group's ID will be returned for `principalID`. Results can also be filtered based on `roleDefinitionId` and `directoryScopeId`.
 
-Supported only for directory (Azure AD) provider. 
+Supported only for directory (Azure AD) provider.
+
+> [!NOTE]
+> This request might have replication delays for role assignments that were recently created, updated, or deleted.
 
 ## Permissions
 
@@ -49,7 +52,8 @@ This method supports OData query parameters to help customize the response. For 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token} Required. |
+| ConsistencyLevel | eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
 
@@ -60,18 +64,21 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.
 
 ## Examples
-In examples below, we will consider following set up - 
-* Alice -----> User Administrator (at tenant scope) : Role Assignment RA1
-* Alice -----> Group G1 -----> User Administrator (at tenant scope) : Role assignment RA2
-* Alice -----> Group G2 -----> Helpdesk Administrator (at an administrative unit AU1 scope) : Role assignment RA3
+For the examples in this section, consider the following set up:
 
-That is, Alice is assigned User Administrator directly over tenant scope (role assignment 1 or RA1). Alice is member of a group G1 and G1 is assigned User Administrator role over tenant scope (role assignment 2 or RA2). Alice is also a member of group G2 and G2 is assigned Helpdesk Administrator role over an administrative unit AU1 scope (role assignment 3 or RA3).
+| Principal | Role | Scope | Role assignment |
+| --- | --- | --- | --- |
+| Alice | User Administrator | Tenant | RA1 |
+| Group G1<br/>(Alice is a member) | User Administrator | Tenant | RA2 |
+| Group G2<br/>(Alice is a member) | Helpdesk Administrator | Administrative unit (AU1) | RA3 |
+
+Alice is assigned the User Administrator directly at tenant scope with role assignment 1 or RA1. Alice is member of a group G1 and G1 is assigned the User Administrator role at tenant scope with role assignment 2 or RA2. Alice is also a member of group G2 and G2 is assigned the Helpdesk Administrator role at an administrative unit AU1 scope with role assignment 3 or RA3.
 
 ### Example 1 : Get direct and transitive role assignments of a principal
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "request",
@@ -80,6 +87,7 @@ The following is an example of the request.
 -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '{principal id}'
+ConsistencyLevel: eventual
 ```
 ---
 
@@ -130,7 +138,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "request",
@@ -139,6 +147,7 @@ The following is an example of the request.
 -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & roleDefinitionId eq '<User Administrator role template ID>'
+ConsistencyLevel: eventual
 ```
 
 
@@ -182,7 +191,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "request",
@@ -190,7 +199,8 @@ The following is an example of the request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & directoryScopeID eq '/administrativeUnits/AU1 ID>'
+GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>' & directoryScopeID eq '/administrativeUnits/<AU1 ID>'
+ConsistencyLevel: eventual
 ```
 ---
 
