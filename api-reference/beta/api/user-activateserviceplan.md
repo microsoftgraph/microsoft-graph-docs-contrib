@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The user `activateServicePlan` API will be deprecated and will stop return data on March 15, 2022.
+> The **activateServicePlan** API is deprecated and will stop returning data on March 15, 2022.
 
 Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 

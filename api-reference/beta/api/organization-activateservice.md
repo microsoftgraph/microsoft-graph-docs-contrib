@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The organization `activateService` API will be deprecated and will stop returning data on March 15, 2022.
+> The **activateService** API is deprecated and will stop returning data on March 15, 2022.
 
 Activate a service for an organization.
 
@@ -47,7 +47,7 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [activateService](../resources/activateService.md) (deprecated) object.
+In the request body, supply a JSON representation of the [activateService](../resources/activateService.md) object.
 You must define **service** or (**servicePlanId** _and_ **skuId**) for this action to be valid.
 
 | Property         | Type         | Description                           |
