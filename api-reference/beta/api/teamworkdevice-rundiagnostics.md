@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: runDiagnostics"
-description: "Run and generate diagnostic logs for the specified device."
+description: "Run and generate diagnostic logs for the specified Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Run and generate diagnostic logs for the specified [teamworkDevice](../resources/teamworkdevice.md). This API triggers a long-running operation used to generate logs for a device.
+Run and generate diagnostic logs for the specified Microsoft Teams-enabled [device](../resources/teamworkdevice.md). This API triggers a long-running operation used to generate logs for a device.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
