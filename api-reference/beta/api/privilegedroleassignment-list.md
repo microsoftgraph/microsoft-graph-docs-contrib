@@ -1,10 +1,10 @@
 ---
 title: "List privilegedRoleAssignments"
 description: "Retrieve a list of privilegedRoleAssignment objects, which correspond to all role assignments for the organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # List privilegedRoleAssignments
@@ -12,6 +12,8 @@ author: "shauliu"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.
 ## Permissions
@@ -75,6 +77,14 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -88,7 +98,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -131,6 +140,14 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -144,7 +161,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -195,6 +211,14 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -208,7 +232,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [
@@ -259,6 +282,14 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignments-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response 
@@ -272,7 +303,6 @@ The following example shows the response. Note: The response object shown here m
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 237
 
 {
   "value": [

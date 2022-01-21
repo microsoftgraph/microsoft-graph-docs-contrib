@@ -2,7 +2,7 @@
 title: "List legalHold siteSources"
 description: "Get the list of siteSource objecs associated with a legal hold."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -83,6 +83,14 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-4
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sitesource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sitesource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-sitesource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

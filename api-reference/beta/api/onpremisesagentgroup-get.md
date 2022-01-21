@@ -1,7 +1,7 @@
 ---
 title: "Get onPremisesAgentGroup"
 description: "Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesagentgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesagentgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

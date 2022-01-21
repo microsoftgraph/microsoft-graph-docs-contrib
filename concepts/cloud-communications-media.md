@@ -2,7 +2,7 @@
 title: "Media overview"
 description: "Enable your bots to send and receive audio and video related content."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
@@ -17,7 +17,7 @@ If you want your bot to play a custom prompt when a customer dials your business
 
 **If your media needs are simpler, explore this option first**. Because the heavy media processing is offloaded remotely, this is a lighter weight solution that allows you to build your bot in a more flexible way.
 
-For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples).
+For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples).
 
 ![Remote hosting diagram](images/communications-remote-media.PNG)
 

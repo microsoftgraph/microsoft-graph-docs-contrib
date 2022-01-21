@@ -1,7 +1,7 @@
 ---
 title: "Update schemaExtension"
 description: "Update properties in the definition of the specified schemaExtension."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.prod: "extensions"
@@ -61,13 +61,13 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. Attempting to run this request from an application which you don't own (and without setting the **owner** property to the **appId** of an application you own) returns a `403 Forbidden` response code.
 
 ## Example
 
-##### Request
+### Request
 
-
+The following is an example of the request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,21 +75,29 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/beta/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # [C#](#tab/csharp)
@@ -108,10 +116,18 @@ Content-length: 201
 [!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"

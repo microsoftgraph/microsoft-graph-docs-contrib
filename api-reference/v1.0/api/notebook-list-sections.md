@@ -2,7 +2,7 @@
 title: "List sections"
 description: "Retrieve a list of onenoteSection objects from the specified notebook."
 author: "jewan-microsoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "onenote"
 doc_type: apiPageType
 ---
@@ -77,6 +77,14 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-get-sections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sections-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -90,7 +98,6 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

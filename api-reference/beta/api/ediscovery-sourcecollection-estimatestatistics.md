@@ -2,7 +2,7 @@
 title: "sourceCollection: estimateStatistics"
 description: "Runs an estimate of the source collection."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Run an estimate of the number of emails and documents in the source collection. To learn more about source collections (also known as searches in eDiscovery), see [Collect data for a case in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery).
+Run an estimate of the number of emails and documents in the source collection. To learn more about source collections (also known as searches in eDiscovery), see [Collect data for a case in Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 ## Permissions
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sourcecollection-estimatestatistics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

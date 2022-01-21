@@ -1,7 +1,7 @@
 ---
 title: "Update page"
 description: "Update the content of a OneNote page."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType
@@ -53,7 +53,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content
 Content-type: application/json
-Content-length: 312
 
 [
    {
@@ -83,6 +82,10 @@ Content-length: 312
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

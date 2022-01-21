@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignment"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -17,20 +17,40 @@ Retrieve the properties and relationships of a [unifiedRoleAssignment](../resour
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+
+### For Directory (Azure AD) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+### For Entitlement management provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
+
+Get a role assignment for a directory provider:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
+```
+
+Get a role assignment for the entitlement management provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## Optional query parameters
@@ -83,6 +103,14 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lA
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignment-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -143,6 +171,14 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lA
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignment-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

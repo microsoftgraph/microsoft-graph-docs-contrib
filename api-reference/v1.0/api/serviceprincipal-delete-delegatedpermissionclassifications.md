@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedPermissionClassification"
 description: "Delete a delegated permission classification from an API's service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -33,9 +33,9 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -75,6 +75,14 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-delegatedpermissionclassifications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-delegatedpermissionclassifications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delete-delegatedpermissionclassifications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

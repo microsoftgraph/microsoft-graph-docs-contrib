@@ -2,7 +2,7 @@
 title: "List shifts"
 description: "Get the list of shifts in a schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
@@ -80,12 +80,20 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-shifts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+---
 
-#### Response
+
+### Response
 
 The following is an example of the response. 
 
@@ -100,7 +108,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

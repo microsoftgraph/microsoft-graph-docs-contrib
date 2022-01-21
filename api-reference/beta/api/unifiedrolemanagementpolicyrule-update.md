@@ -1,8 +1,8 @@
 ---
 title: "Update unifiedRoleManagementPolicyRule"
 description: "Update the properties of an unifiedRoleManagementPolicyRule object."
-author: "shauliu"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -67,10 +67,9 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
 Content-Type: application/json
-Content-length: 170
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyRule",
+  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
   "target": {
     "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
   }
@@ -90,6 +89,14 @@ Content-length: 170
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

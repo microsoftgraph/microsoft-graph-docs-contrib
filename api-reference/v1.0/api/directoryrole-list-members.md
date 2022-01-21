@@ -2,7 +2,7 @@
 title: "List members of a directory role"
 description: "Retrieve the list of principals that are assigned to the directory role."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}/members
-GET /directoryRoles/roleTemplateId={role-templateId}/members
+GET /directoryRoles/{role-id}/members
+GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Examples
 
-### Example 1: Get the members of a directory role using role objectId
+### Example 1: Get the members of a directory role using role id
 
 #### Request
 
@@ -75,6 +75,14 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e495
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-objectid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryrole-members-objectid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryrole-members-objectid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,38 +115,21 @@ Content-type: application/json
   ]
 }
 ```
-### Example 2: Get the members of a directory role using role templateId
+### Example 2: Get the members of a directory role using roleTemplateId
 
-##### Request
+### Request
 
+<!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_directoryrole_members_templateId"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-templateid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-templateid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-templateid-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-templateid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

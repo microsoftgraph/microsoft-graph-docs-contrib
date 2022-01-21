@@ -1,7 +1,7 @@
 ---
 title: "Update permissionGrantPolicy"
 description: "Update a permissionGrantPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
@@ -87,6 +87,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permissiongrantpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-permissiongrantpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-permissiongrantpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

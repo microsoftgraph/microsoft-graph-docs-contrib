@@ -3,7 +3,7 @@ title: "Get installed app for user"
 description: "Retrieve the app installed in the personal scope of the specified user."
 author: "AkJo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -135,6 +143,14 @@ GET https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-details-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

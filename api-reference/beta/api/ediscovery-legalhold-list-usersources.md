@@ -2,7 +2,7 @@
 title: "List legalHold userSources"
 description: "Get the userSource resources from the userSources navigation property."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -83,6 +83,14 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-4
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-usersource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-usersource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-usersource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

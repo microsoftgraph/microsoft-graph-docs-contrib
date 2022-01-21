@@ -2,7 +2,7 @@
 title: "Create timeCard"
 description: "Create a timeCard instance in the schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -105,6 +105,14 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

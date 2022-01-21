@@ -1,7 +1,7 @@
 ---
 title: "List appRoleAssignments granted to a user"
 description: "Retrieve the list of app role assignments granted to a user."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -81,6 +81,14 @@ GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-approleassignments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-approleassignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-approleassignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,6 +158,14 @@ GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-approleassignments-filterby-resourceid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-get-approleassignments-filterby-resourceid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-approleassignments-filterby-resourceid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

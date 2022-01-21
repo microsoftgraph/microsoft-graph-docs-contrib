@@ -2,7 +2,7 @@
 title: "List educationSchools"
 description: "Get a list of the educationSchool objects and their properties."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -81,6 +81,14 @@ GET https://graph.microsoft.com/v1.0/education/schools
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-educationschool-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-educationschool-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-educationschool-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

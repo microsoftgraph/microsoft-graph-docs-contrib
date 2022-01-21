@@ -2,15 +2,13 @@
 title: List taskDefinitions
 description: Retrieve a list of task definitions that the requesting app defined in the tenant.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List taskDefinitions
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of [task definitions](../resources/printtaskdefinition.md) that the requesting app defined in the tenant.
 
@@ -82,6 +80,14 @@ GET https://graph.microsoft.com/v1.0/print/taskDefinitions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printtaskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-printtaskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printtaskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

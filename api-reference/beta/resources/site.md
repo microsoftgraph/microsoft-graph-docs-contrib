@@ -1,9 +1,8 @@
 ---
 author: JeremyKelley
 description: "The site resource provides metadata and relationships for a SharePoint site."
-ms.date: 09/10/2017
-title: Site
-localization_priority: Priority
+title: "site resource type"
+ms.localizationpriority: high
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
@@ -40,6 +39,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |[Create contentType][]        | POST /sites/{site-id}/contentTypes
 |[List columns][]               | GET /sites/{site-id}/columns
 |[Create column][]              | POST /sites/{site-id}/columns
+|[List operations](../api/site-list-operations.md)|GET /sites/{site-id}/operations
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -85,7 +85,7 @@ A **site** is identified by a unique ID that is a composite of the following val
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-  
+
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
@@ -102,6 +102,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | The collection of lists under this site.
+|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection| The collection of long running operations for the site.
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
@@ -125,7 +126,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-Here is a JSON representation of a **site** resource.
+The following is a JSON representation of the resource.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

@@ -2,7 +2,7 @@
 title: "shift resource type"
 description: "A shift is a unit of scheduled work in the schedule."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -39,7 +39,7 @@ A unit of scheduled work in a [schedule](schedule.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -1,7 +1,7 @@
 ---
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ GET /organization
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports only the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -86,6 +86,14 @@ GET https://graph.microsoft.com/beta/organization
 [!INCLUDE [sample-code](../includes/snippets/java/get-organization-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organization-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,7 +109,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",

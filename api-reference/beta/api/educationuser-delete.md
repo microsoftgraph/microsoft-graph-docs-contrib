@@ -2,7 +2,7 @@
 title: "Delete educationUser"
 description: "Delete a user."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -47,9 +47,9 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,9 +75,17 @@ DELETE https://graph.microsoft.com/beta/education/users/13019
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 The following is an example of the response. 
 <!-- {

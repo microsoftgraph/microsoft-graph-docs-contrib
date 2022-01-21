@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchema: functions"
 description: "List all the functions currently supported in the attributeMappingSource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-functions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-functions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

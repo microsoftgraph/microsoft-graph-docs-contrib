@@ -1,7 +1,7 @@
 ---
 title: "List appRoleAssignments granted to a service principal"
 description: "Retrieve the list of app role assignments granted to a service principal."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -84,12 +84,20 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-approleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-approleassignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-approleassignments-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

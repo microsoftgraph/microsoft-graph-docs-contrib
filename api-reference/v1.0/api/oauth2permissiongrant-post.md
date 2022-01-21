@@ -1,18 +1,18 @@
 ---
-title: "Create an oAuth2PermissionGrant"
+title: "Create oAuth2PermissionGrant (a delegated permission grant)"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# Create a delegated permission grant (oAuth2PermissionGrant)
+# Create oAuth2PermissionGrant (a delegated permission grant)
 
 Namespace: microsoft.graph
 
 
-Create a delegated permission grant. A delegated permission grant is represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
+Create a delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
@@ -46,7 +46,15 @@ In the request body, supply a JSON representation of an [oAuth2PermissionGrant](
 
 ## Response
 
-If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body. The following table shows the properties that are required when you create the [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+| clientId | String | The **id** of the client [service principal](../resources/serviceprincipal.md) for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required.  |
+| consentType | String | Indicates whether authorization is granted for the client application to impersonate all users or only a specific user. *AllPrincipals* indicates authorization to impersonate all users. *Principal* indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required.  |
+| principalId | String | The **id** of the [user](../resources/user.md) on behalf of whom the client is authorized to access the resource, when **consentType** is *Principal*. If **consentType** is *AllPrincipals* this value is null. Required when **consentType** is *Principal*. |
+| resourceId | String | The **id** of the resource [service principal](../resources/serviceprincipal.md) to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user. |
+| scope | String | A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, `openid User.Read GroupMember.Read.All`. Each claim value should match the **value** field of one of the delegated permissions defined by the API, listed in the **publishedPermissionScopes** property of the resource [service principal](../resources/serviceprincipal.md). |
 
 ## Example
 
@@ -62,7 +70,6 @@ If successful, this method returns a 200-series response code and a new [oAuth2P
 ```http
 POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
-Content-Length: 30
 
 {
   "clientId": "clientId-value",
@@ -86,6 +93,14 @@ Content-Length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-oauth2permissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-oauth2permissiongrant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

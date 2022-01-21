@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"
@@ -95,6 +95,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-create-approleassignment-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-create-approleassignment-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -102,7 +110,7 @@ In this example, `{id}` and `{principalId-value}` would both be the `id` of the 
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

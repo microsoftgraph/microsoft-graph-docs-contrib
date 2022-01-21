@@ -2,7 +2,7 @@
 title: "Get todoTask"
 description: "Read the properties and relationships of a todoTask object."
 author: "avijityadav"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -76,6 +76,14 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a3
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-todotask-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-todotask-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-todotask-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: "conditionalAccessDeviceStates resource type"
 description: "Represents device states in the policy scope."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

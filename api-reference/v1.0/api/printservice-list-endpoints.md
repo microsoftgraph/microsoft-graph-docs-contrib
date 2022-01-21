@@ -2,15 +2,13 @@
 title: List printServiceEndpoints
 description: Retrieve a list of endpoints exposed by a print service.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List endpoints
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of endpoints exposed by a print service.
 
@@ -69,6 +67,14 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-printserviceendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-printserviceendpoint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printserviceendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

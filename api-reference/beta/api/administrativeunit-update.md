@@ -2,7 +2,7 @@
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "DougKirschner"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -66,7 +66,6 @@ If successful, this method returns a `204 No Content` response code.
 ```http
 PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",
@@ -88,6 +87,14 @@ Content-length: 114
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-administrativeunit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-administrativeunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

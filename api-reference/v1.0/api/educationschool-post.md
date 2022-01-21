@@ -2,7 +2,7 @@
 title: "Create educationSchool"
 description: "Create a new educationSchool object."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -84,7 +84,6 @@ If successful, this method returns a `201 Created` response code and an [educati
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools
 Content-Type: application/json
-Content-length: 583
 
 {
   "@odata.type": "#microsoft.graph.educationSchool",
@@ -123,6 +122,14 @@ Content-length: 583
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationschool-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationschool-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationschool-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionLabel: evaluateApplication"
 description: "Evaluate which label to apply based on existing content info and desired content state."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
@@ -165,6 +165,10 @@ User-agent: ContosoLOBApp/1.0
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateapplication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

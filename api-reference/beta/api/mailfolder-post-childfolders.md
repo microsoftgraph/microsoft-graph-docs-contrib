@@ -2,7 +2,7 @@
 title: "Create child folder"
 description: "Use this API to create a new child mailFolder."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -74,7 +74,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/childFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -97,6 +96,14 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailfolder-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-mailfolder-from-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mailfolder-from-mailfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -114,7 +121,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

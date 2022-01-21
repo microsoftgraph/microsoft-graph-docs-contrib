@@ -1,7 +1,7 @@
 ---
 title: "List keySets"
 description: "Retrieve a list of trustframeworkkeyset objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -76,6 +76,14 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-keysets-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-keysets-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-keysets-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

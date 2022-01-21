@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Priviledged Identity Management."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "shauliu"
+author: "carolinetempleton"
 ---
 
 # governanceRoleAssignmentRequest resource type
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the request for role assignment operations in Privilegd Identity Management.
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+Represents the request for role assignment operations in Privileged Identity Management.
 
 `governanceRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 
@@ -30,10 +32,10 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 ## Properties
 | Property	                | Type	        |Description|
 |:--------------------------|:--------------|:----------|
-|id                         |String         |The id of the role assignment request.|
-|resourceId                 |String         |Required. The id of the resource which the role assignment request is associated with.|
-|roleDefinitionId           |String         |Required. The id of the role definition which the role assignment request is associated with.|
-|subjectId                  |String         |Required. The id of the subject which the role assignment request is associated with.|
+|id                         |String         |The identifier of the role assignment request.|
+|resourceId                 |String         |Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.|
+|roleDefinitionId           |String         |Required. The identifier of the Azure role definition that the role assignment request is associated with.|
+|subjectId                  |String         |Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.|
 |type                       |String        |Required. Representing the type of the operation on the role assignment. The possible values are: `AdminAdd` , `UserAdd` , `AdminUpdate` , `AdminRemove` , `UserRemove` , `UserExtend` , `AdminExtend` , `UserRenew` , `AdminRenew`.|
 |assignmentState|String  |Required. The state of the assignment. The possible values are: `Eligible` (for eligible assignment),  `Active` (if it is directly assigned), `Active` (by administrators, or activated on an eligible assignment by the users).|
 |requestedDateTime          |DateTimeOffset |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|

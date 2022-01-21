@@ -2,7 +2,7 @@
 title: "Create groupLifecyclePolicy"
 description: "Creates a new groupLifecyclePolicy."
 author: "Jordanndahl"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -23,14 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application |  Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
-
 ```
 
 ## Request headers
@@ -49,7 +48,7 @@ If successful, this method returns `201 Created` response code and [groupLifecyc
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -60,7 +59,6 @@ If successful, this method returns `201 Created` response code and [groupLifecyc
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 100,
@@ -84,10 +82,17 @@ Content-length: 125
 [!INCLUDE [sample-code](../includes/snippets/java/create-grouplifecyclepolicy-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-grouplifecyclepolicy-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-grouplifecyclepolicy-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -98,7 +103,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 174
 
 {
   "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",

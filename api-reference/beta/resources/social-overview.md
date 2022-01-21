@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to integrate people and workplace intelligence in an app"
 description: "Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context."
-localization_priority: Priority
+ms.localizationpriority: high
 author: "simonhult"
 ms.prod: "insights"
 doc_type: conceptualPageType
@@ -28,9 +28,9 @@ lets you browse, sort, select, filter, or search for persons based on your crite
 
 Feature: Profile (preview)
 
-People who seek to contextualize others within their organization commonly view a person's profile or profile card. 
+People who seek to contextualize others within their organization commonly view a person's profile or profile card.
 
-The [profile](../resources/profile.md) resource is a rich source of information about people within a tenant and provides a lightweight mechanism for storing and retrieving information about a person. 
+The [profile](../resources/profile.md) resource is a rich source of information about people within a tenant and provides a lightweight mechanism for storing and retrieving information about a person.
 
 ## Personalize people experiences within your organization
 
@@ -49,7 +49,7 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
-- Explore ways to [customize privacy settings for item insights](/graph/insights-customize-item-insights-privacy.md) in an organization.
+- Explore ways to [customize privacy settings for item insights](/graph/insights-customize-item-insights-privacy) in an organization.
 
 ## Manage @-Mentions
 

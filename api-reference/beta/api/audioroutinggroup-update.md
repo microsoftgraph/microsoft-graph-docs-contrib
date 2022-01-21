@@ -2,7 +2,7 @@
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
@@ -90,6 +90,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

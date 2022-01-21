@@ -1,8 +1,8 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleInstance"
 description: "Read the properties and relationships of an unifiedRoleAssignmentScheduleInstance object."
-author: "shauliu"
-localization_priority: Normal
+author: "carolinetempleton"
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|PrivilegedAccess.Read.AzureAD|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/{unifiedRoleAssign
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -51,18 +51,48 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentscheduleinstance"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/unifiedRoleAssignmentScheduleInstances/eb18c026-c026-eb18-26c0-18eb26c018eb
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentscheduleinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentscheduleinstance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentscheduleinstance-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentscheduleinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentscheduleinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentscheduleinstance-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,19 +104,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "principalId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "roleDefinitionId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "directoryScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "appScopeId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "startDateTime": "2020-09-09T21:35:27.91Z",
-    "endDateTime": "2020-09-09T21:35:27.91Z",
-    "assignmentType": "eligible",
-    "memberType": "direct",
-    "roleAssignmentOriginId": "eb18c026-c026-eb18-26c0-18eb26c018eb",
-    "roleAssignmentScheduleId": "eb18c026-c026-eb18-26c0-18eb26c018eb"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleInstances/$entity",
+  "id": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+  "principalId": "939a0aff-aee7-4748-986e-35fd46116d46",
+  "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "startDateTime": null,
+  "endDateTime": null,
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "roleAssignmentOriginId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1",
+  "roleAssignmentScheduleId": "4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1"
 }
 ```
 

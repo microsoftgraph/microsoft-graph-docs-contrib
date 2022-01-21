@@ -2,7 +2,7 @@
 title: "Delete event"
 description: "Delete event."
 author: "harini84"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -79,6 +79,14 @@ DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

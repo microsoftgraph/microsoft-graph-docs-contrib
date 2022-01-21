@@ -2,7 +2,7 @@
 title: "message resource type"
 description: "A message in a mailbox folder."
 author: "abheek-das"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -106,7 +106,7 @@ Here is a JSON representation of the resource
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
-|id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
+|id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |importance|importance| The importance of the message. The possible values are: `low`, `normal`, and `high`.|
 |inferenceClassification|inferenceClassificationType| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | A collection of message headers defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message. <br><br> Returned only on applying a `$select` query option. Read-only.|

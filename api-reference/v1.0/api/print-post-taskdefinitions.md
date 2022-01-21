@@ -2,15 +2,13 @@
 title: Create printTaskDefinition
 description: Create a new task definition.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
 # Create printTaskDefinition
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create a new task definition.
 
@@ -65,7 +63,6 @@ If successful, this method returns a `201 Created` response code and a [printTas
 ``` http
 POST https://graph.microsoft.com/v1.0/print/taskDefinitions
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -88,6 +85,14 @@ Content-length: 163
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printtaskdefinition-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printtaskdefinition-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-printtaskdefinition-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

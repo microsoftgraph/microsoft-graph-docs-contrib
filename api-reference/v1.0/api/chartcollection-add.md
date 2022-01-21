@@ -2,7 +2,7 @@
 title: "ChartCollection: add"
 description: "Creates a new chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -60,7 +60,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
 Content-type: application/json
-Content-length: 94
 
 {
   "type": "ColumnStacked",
@@ -97,7 +96,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

@@ -2,7 +2,7 @@
 title: "Get installed app in chat"
 description: "Get installed app in a chat."
 author: "subray"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -73,6 +73,14 @@ GET https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-installedapps-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-installedapps-in-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-installedapps-in-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

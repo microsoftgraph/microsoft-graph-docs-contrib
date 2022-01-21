@@ -1,7 +1,7 @@
 ---
 title: "List existing synchronization templates"
 description: "List the synchronization templates associated with a given application or service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"
@@ -72,6 +72,14 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationtemplate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

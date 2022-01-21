@@ -2,7 +2,7 @@
 title: "Update authenticationMethodsPolicy"
 description: "Update the properties of an authenticationMethodsPolicy object."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -22,6 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
+
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -62,7 +67,6 @@ If successful, this method returns a `200 OK` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 Content-Type: application/json
-Content-length: 293
 
 {
   "registrationEnforcement": {
@@ -95,6 +99,14 @@ Content-length: 293
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationmethodspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationmethodspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

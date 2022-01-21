@@ -1,7 +1,7 @@
 ---
 title: "Get tokenIssuancePolicy"
 description: "Retrieve the properties and relationships of tokenIssuancePolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tokenissuancepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tokenissuancepolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tokenissuancepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

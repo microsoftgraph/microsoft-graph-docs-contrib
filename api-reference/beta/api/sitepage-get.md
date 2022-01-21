@@ -3,7 +3,7 @@ author: rahmit
 description: "Returns the metadata for a sitePage in the site pages list in a site."
 ms.date: 03/15/2018
 title: Get a page in a site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -60,6 +60,14 @@ GET /sites/{site-id}/pages/{page-id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-page-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-page-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

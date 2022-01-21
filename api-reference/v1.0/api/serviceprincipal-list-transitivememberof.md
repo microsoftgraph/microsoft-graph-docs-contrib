@@ -1,7 +1,7 @@
 ---
 title: "List servicePrincipal transitive memberOf"
 description: "Get the groups and directory roles that this service principal is a member of."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"
@@ -79,6 +79,14 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-tranitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-tranitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-tranitivememberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -139,9 +147,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+294
 ```
 
-`294`
 
 ### Example 3: Use OData cast to get only a count of transitive membership in groups
 
@@ -168,9 +177,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+294
 ```
 
-`294`
 
 ### Example 4: Use $search and OData cast to get group membership with display names that contain the letters 'Video' including a count of returned objects
 

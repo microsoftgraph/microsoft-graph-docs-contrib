@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Jumaodhiss"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
@@ -32,11 +32,12 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [channel][] | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
-| Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
-| Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` | Yes |
+| Teams [chat][] | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}` | Yes |
+| Teams [chatmessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages` | Yes |
+| Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` <br> Changes to membership in a specific chat:<br>`/chats/{id}/members` <br> Changes to membership in all chats:<br>`/chats/getAllMembers` <br> Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers` | Yes |
 | Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` <br> Changes to multiple user presences:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Yes |
-| Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to specific team:<br>`/teams/{id}` | Yes |
-| [todoTask][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks` | No |
+| Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
+| [baseTask][] | Changes to all task in a specific task list:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/tasks/lists/alltasks` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 
 
@@ -48,9 +49,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][] |
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][],[todoTask][]                                     |
-| Application                            | [alert][], [channel][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
+| Delegated - work or school account     | [alert][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [baseTask][] |
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
+| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [printer][], [printTaskDefinition][], [team][] |
 
 ## See also
 
@@ -61,6 +62,7 @@ In general, subscription operations require read permission to the resource. For
 - [Update subscription](../api/subscription-update.md)
 - [Delete subscription](../api/subscription-delete.md)
 
+[chat]: ./chat.md
 [chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [conversation]: ./conversation.md
@@ -79,5 +81,5 @@ In general, subscription operations require read permission to the resource. For
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [team]: ./team.md
-[todoTask]: ./todoTask.md
+[baseTask]: ./baseTask.md
 

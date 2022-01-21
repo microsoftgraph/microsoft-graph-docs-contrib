@@ -1,7 +1,7 @@
 ---
 title: "List programs"
 description: "In the Azure AD access reviews feature, list all the program objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "markwahl-msft"
@@ -67,6 +67,14 @@ GET https://graph.microsoft.com/beta/programs
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-program-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-program-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-program-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

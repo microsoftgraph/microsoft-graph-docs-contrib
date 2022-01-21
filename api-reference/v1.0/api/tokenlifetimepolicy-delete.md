@@ -1,7 +1,7 @@
 ---
 title: "Delete tokenLifetimePolicy"
 description: "Delete tokenLifetimePolicy."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -77,6 +77,14 @@ DELETE https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tokenlifetimepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tokenlifetimepolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-tokenlifetimepolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

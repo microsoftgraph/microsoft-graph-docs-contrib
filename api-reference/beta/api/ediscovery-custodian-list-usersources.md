@@ -2,7 +2,7 @@
 title: "List custodian userSources"
 description: "Get a list of the userSource objects and their properties."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4
 [!INCLUDE [sample-code](../includes/snippets/java/get-usersource-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-usersource-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-usersource-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -111,6 +119,7 @@ Content-Type: application/json
             "id": "46384443-4137-3032-3437-363939433735",
             "email": "megan@contoso.com",
             "includedSources": "mailbox,site",
+            "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
             "createdBy": {
                 "user": {
                     "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

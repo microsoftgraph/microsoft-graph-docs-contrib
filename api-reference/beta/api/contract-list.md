@@ -1,7 +1,7 @@
 ---
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -79,6 +79,14 @@ GET https://graph.microsoft.com/beta/contracts
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-contract-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contract-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-contract-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get calendar"
 description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendar-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

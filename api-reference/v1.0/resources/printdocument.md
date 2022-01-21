@@ -2,7 +2,7 @@
 title: printDocument resource type
 description: Represents a document being printed.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printDocument resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents a document being printed.
 

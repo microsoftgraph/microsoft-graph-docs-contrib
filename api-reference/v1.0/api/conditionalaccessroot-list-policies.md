@@ -1,8 +1,8 @@
 ---
 title: "List policies"
 description: "Retrieve a list of conditionalaccesspolicy objects."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -78,6 +78,14 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

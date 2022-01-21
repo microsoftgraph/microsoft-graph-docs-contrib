@@ -1,7 +1,7 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an identityProvider."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

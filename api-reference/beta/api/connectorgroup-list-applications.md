@@ -1,7 +1,7 @@
 ---
 title: "List applications"
 description: "Retrieve a list of application objects associated with the connectorGroup."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -72,6 +72,14 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sample-code](../includes/snippets/java/get-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applications-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -85,7 +93,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 420
 
 {
   "value": [

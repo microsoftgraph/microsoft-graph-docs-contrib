@@ -1,7 +1,7 @@
 ---
 title: "List securityActions"
 description: "Retrieve a list of securityAction objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "preetikr"
 ms.prod: "security"
 doc_type: apiPageType
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/security/securityActions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-securityactions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-securityactions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securityactions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

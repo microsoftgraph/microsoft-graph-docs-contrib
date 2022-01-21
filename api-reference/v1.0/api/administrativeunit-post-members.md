@@ -2,7 +2,7 @@
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
 author: "DougKirschner"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -34,6 +34,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
@@ -55,7 +56,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
-Content-length: 109
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/groups/{id}"
@@ -76,6 +76,14 @@ Content-length: 109
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

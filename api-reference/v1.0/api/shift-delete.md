@@ -2,7 +2,7 @@
 title: "Delete shift"
 description: "Delete a shift from the schedule."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -46,7 +46,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -75,12 +75,20 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 [!INCLUDE [sample-code](../includes/snippets/java/shift-delete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/shift-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/shift-delete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+---
 
-#### Response
+
+### Response
 
 The following is an example of the response. 
 

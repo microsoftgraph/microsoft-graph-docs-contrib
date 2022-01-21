@@ -2,7 +2,7 @@
 title: "List timesOff"
 description: "Get the list of timesOff in this schedule."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -81,6 +81,14 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timesoff-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-list-timesoff-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-timesoff-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,7 +107,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

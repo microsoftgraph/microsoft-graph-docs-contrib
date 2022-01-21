@@ -1,7 +1,7 @@
 ---
 title: "List connectorGroups"
 description: "Retrieve a list of connectorgroup objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -75,6 +75,14 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectorgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectorgroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connectorgroups-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -88,7 +96,6 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 164
 
 {
   "value": [

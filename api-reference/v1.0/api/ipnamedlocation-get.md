@@ -1,8 +1,8 @@
 ---
 title: "Get ipNamedLocation"
 description: "Retrieve the properties and relationships of an ipnamedlocation object."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -79,6 +79,14 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/0
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-ipnamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-ipnamedlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-ipnamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

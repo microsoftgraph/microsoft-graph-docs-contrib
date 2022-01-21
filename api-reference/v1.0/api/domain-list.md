@@ -2,7 +2,7 @@
 title: "List domains"
 description: "Retrieve a list of domain objects."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
@@ -70,6 +70,14 @@ GET https://graph.microsoft.com/v1.0/domains
 [!INCLUDE [sample-code](../includes/snippets/java/get-domains-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domains-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-domains-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -83,7 +91,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 245
 
 {
   "value": [

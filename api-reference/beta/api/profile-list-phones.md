@@ -1,7 +1,7 @@
 ---
 title: "List phones"
 description: "Retrieve a list of itemPhone objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -89,6 +89,14 @@ GET https://graph.microsoft.com/beta/me/profile/phones
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itemphone-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-itemphone-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

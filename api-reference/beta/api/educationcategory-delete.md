@@ -2,7 +2,7 @@
 title: "Delete educationCategory"
 description: "Delete an existing category."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -77,6 +77,14 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCatego
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignment-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationassignment-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

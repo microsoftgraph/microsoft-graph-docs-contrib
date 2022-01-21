@@ -1,7 +1,7 @@
 ---
 title: "List places"
 description: "Retrieve a list of place objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "apiPageType"
@@ -118,6 +118,14 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-rooms-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -241,6 +249,14 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-roomlists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

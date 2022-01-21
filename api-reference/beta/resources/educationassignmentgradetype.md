@@ -1,8 +1,8 @@
 ---
 title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment will be graded. This is used within the **assignments.grading** property."
-localization_priority: Normal
-author: "dipakboyed"
+ms.localizationpriority: medium
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Represents how an assignment will be graded. This is used within the **assignments.grading** property.
 
 This superclass can not be used directly in the assignment property. It exists to allow for multiple different ways to grade assignments.
+
+Base class for [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
 
 ## Properties

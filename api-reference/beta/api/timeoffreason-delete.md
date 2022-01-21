@@ -2,7 +2,7 @@
 title: "Delete timeOffReason"
 description: "Mark a timeOffReason as inactive by setting the isActive property."
 author: "akumar39"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -80,6 +80,14 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timeoffreason-delete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

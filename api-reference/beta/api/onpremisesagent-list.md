@@ -1,7 +1,7 @@
 ---
 title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agents-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agents-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

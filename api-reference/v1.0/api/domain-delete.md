@@ -2,7 +2,7 @@
 title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Domain.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 
@@ -78,6 +78,14 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-domain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

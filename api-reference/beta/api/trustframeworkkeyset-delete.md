@@ -1,7 +1,7 @@
 ---
 title: "Delete trustFrameworkKeySet"
 description: "Delete a **trustFrameworkKeySet** object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -76,6 +76,14 @@ DELETE https://graph.microsoft.com/beta/trustFramework/keySets/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-trustframeworkkeyset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-trustframeworkkeyset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-trustframeworkkeyset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

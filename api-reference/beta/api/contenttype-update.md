@@ -1,8 +1,8 @@
 ---
 author: swapnil1993
 title: "Update contentType"
-description: "Update a content type"
-localization_priority: Normal
+description: "Update a content type."
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -18,7 +18,7 @@ Update a [content type][contentType].
 
   
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
   
 
@@ -71,42 +71,47 @@ PATCH https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType
 Content-Type: application/json
 
 {
-    "name": "updatedCt",
-	"documentSet": {
-		"shouldPrefixNameToFile": true,
-		"allowedContentTypes": [{
-			"id": "0x0101",
-			"name": "Document"
-		}],
-		"defaultContents": [{
-				"fileName": "a.txt",
-				"contentType": {
-					"id": "0x0101"
-				}
-			},
-			{
-				"fileName": "b.txt",
-				"contentType": {
-					"id": "0x0101"
-				}
-			}
-		],
-		"sharedColumns": [{
-				"name": "Description",
-				"id": "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
-			},
-			{
-				"name": "Address",
-				"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50"
-			}
-		],
-		"welcomePageColumns": [{
-			"name": "Address",
-			"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50"
-		}]
-	}
+   "name":"updatedCt",
+   "documentSet":{
+      "shouldPrefixNameToFile":true,
+      "allowedContentTypes":[
+         {
+            "id":"0x0101",
+            "name":"Document"
+         }
+      ],
+      "defaultContents":[
+         {
+            "fileName":"a.txt",
+            "contentType":{
+               "id":"0x0101"
+            }
+         },
+         {
+            "fileName":"b.txt",
+            "contentType":{
+               "id":"0x0101"
+            }
+         }
+      ],
+      "sharedColumns":[
+         {
+            "name":"Description",
+            "id":"cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
+         },
+         {
+            "name":"Address",
+            "id":"fc2e188e-ba91-48c9-9dd3-16431afddd50"
+         }
+      ],
+      "welcomePageColumns":[
+         {
+            "name":"Address",
+            "id":"fc2e188e-ba91-48c9-9dd3-16431afddd50"
+         }
+      ]
+   }
 }
-
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contenttype-javascript-snippets.md)]
@@ -114,6 +119,14 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contenttype-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -130,19 +143,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "0x0101009B237E76EF94DC49B4E58139041E7C60",
-    "description": "",
-    "eTag": "\"7\"",
-    "group": "Custom Content Types",
-    "hidden": false,
-    "name": "testdoc",
-    "parentId": "0x0101",
-    "base": {
-        "id": "0x0101",
-        "name": "Document"
-    }
+   "id":"0x0101009B237E76EF94DC49B4E58139041E7C60",
+   "description":"",
+   "eTag":"\"7\"",
+   "group":"Custom Content Types",
+   "hidden":false,
+   "name":"testdoc",
+   "parentId":"0x0101",
+   "base":{
+      "id":"0x0101",
+      "name":"Document"
+   }
 }
-
 ```
 
 [contentType]: ../resources/contentType.md

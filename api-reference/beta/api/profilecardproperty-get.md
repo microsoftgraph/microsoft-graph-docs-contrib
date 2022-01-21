@@ -1,7 +1,7 @@
 ---
 title: "Get profileCardProperty"
 description: "Retrieve the properties and relationships of a profileCardProperty object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -82,6 +82,14 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-profilecardproperty-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-profilecardproperty-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "outlookUser: supportedTimeZones"
 description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-default-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-supportedtimezones-default-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

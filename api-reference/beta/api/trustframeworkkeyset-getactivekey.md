@@ -1,7 +1,7 @@
 ---
 title: "trustFrameworkKeySet: getActiveKey"
 description: "Get the active key in the keyset."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-getactivekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-getactivekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

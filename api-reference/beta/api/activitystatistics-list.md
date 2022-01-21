@@ -1,7 +1,7 @@
 ---
 title: "List activityStatistics"
 description: "Get a collection of activityStatistics objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "apiPageType"
@@ -82,6 +82,14 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-activitystatistics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-activitystatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-activitystatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

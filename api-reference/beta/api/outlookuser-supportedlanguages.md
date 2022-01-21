@@ -1,7 +1,7 @@
 ---
 title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedlanguages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-supportedlanguages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

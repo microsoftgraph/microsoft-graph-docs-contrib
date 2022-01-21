@@ -2,7 +2,7 @@
 title: "Delete windowsHelloForBusinessAuthenticationMethod"
 description: "Deletes a windowsHelloForBusinessAuthenticationMethod object."
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -34,10 +34,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 
@@ -89,6 +89,14 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/win
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-windowshelloforbusinessauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-windowshelloforbusinessauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-windowshelloforbusinessauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

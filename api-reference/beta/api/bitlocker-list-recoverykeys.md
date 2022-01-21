@@ -2,7 +2,7 @@
 title: "List recoveryKeys"
 description: "Get a list of the bitlockerRecoveryKey objects and their properties."
 author: "hafowler"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->**Note**: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from: 
+For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or the calling user must be in one of the following directory roles:
+
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -64,8 +65,8 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Name of the client application performing the API call. Required.|
-|ocp-client-version|Version of the client application performing the API call. Required.|
+|ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
+|ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -109,6 +110,14 @@ ocp-client-version: "1.2"
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -116,7 +125,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,6 +189,14 @@ ocp-client-version: "1.2"
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -187,7 +204,7 @@ ocp-client-version: "1.2"
 #### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

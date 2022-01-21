@@ -27,7 +27,7 @@ highlightedContent:
       url: ./whats-new-overview.md
     - title: Microsoft Graph REST API
       itemType: reference
-      url: https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0
+      url: /graph/api/overview?view=graph-rest-1.0
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -85,9 +85,9 @@ tools:
     - title: SDKs
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/hub/icon01-sdk.svg
-      url: https://docs.microsoft.com/graph/sdks/sdk-installation
+      url: /graph/sdks/sdk-installation
     # Card
-    - title: Quickstarts
+    - title: Quick starts
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: https://developer.microsoft.com/graph/quick-start
     # Card
@@ -101,32 +101,36 @@ tools:
 
 additionalContent:
   sections:
-    - title: Guides and resources
+    - title: Tutorials and resources
       items:
         # Card
         - title: Learning paths
           links:
             - text: Microsoft Graph fundamentals
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/
+              url: /learn/paths/m365-msgraph-fundamentals/
+            - text: Build apps with Microsoft Graph – Associate
+              url: /learn/paths/m365-msgraph-associate/
             - text: Explore Microsoft Graph scenarios for JavaScript development
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios
+              url: /learn/paths/m365-msgraph-scenarios
+            - text: Explore Microsoft Graph scenarios for ASP.NET Core development
+              url: /learn/paths/m365-msgraph-dotnet-core-scenarios/
             - text: Develop apps with Microsoft Graph Toolkit
-              url: https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit
+              url: /learn/paths/m365-msgraph-toolkit
         # Card
         - title: How-to
           links:
-            - text: Search content in OneDrive and Sharepoint
-              url: https://docs.microsoft.com/graph/search-concept-files
-            - text: Share or delegate a calendar
-              url: https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar
-            - text: Propose new meeting times
-              url: https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals
-            - text: Attach large files to a message or event
-              url: https://docs.microsoft.com/graph/outlook-large-attachments
-            - text: Get MIME content of a message
-              url: https://docs.microsoft.com/graph/outlook-get-mime-message
-            - text: Schedule a Windows update deployment
-              url: https://docs.microsoft.com/graph/windowsupdates-schedule-deployment
+            - text: "Connectors: Build your first custom connector"
+              url: /graph/connecting-external-content-build-quickstart
+            - text: "Microsoft Search: Search content in OneDrive and Sharepoint"
+              url: /graph/search-concept-files
+            - text: "Identity: Manage access to resources"
+              url: /graph/tutorial-access-package-api
+            - text: "Outlook: Attach large files to a message or event"
+              url: /graph/outlook-large-attachments
+            - text: "Outlook: Get MIME content of a message"
+              url: /graph/outlook-get-mime-message
+            - text: "More tutorials..."
+              url: /graph/tutorials
         # Card
         - title: Resources and community
           links:
@@ -136,6 +140,8 @@ additionalContent:
               url: ./known-issues.md
             - text: Support
               url: https://developer.microsoft.com/graph/support
+            - text: Microsoft Graph on Q&A
+              url: /answers/products/graph
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts

@@ -1,7 +1,7 @@
 ---
 title: "Delete bookingBusiness"
 description: "Delete a bookingBusiness object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_bookingbusiness"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingbusiness-csharp-snippets.md)]
@@ -67,6 +67,14 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.o
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bookingbusiness-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

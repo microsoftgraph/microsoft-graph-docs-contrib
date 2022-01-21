@@ -1,7 +1,7 @@
 ---
 title: "Create mailSearchFolder"
 description: "Use this API to create a new mailSearchFolder in the specified user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -75,7 +75,6 @@ The following is an example of the request - it creates a search folder of messa
 ```http
 POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
@@ -99,6 +98,14 @@ Content-length: 159
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

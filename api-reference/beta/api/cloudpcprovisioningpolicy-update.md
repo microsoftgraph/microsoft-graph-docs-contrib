@@ -2,7 +2,7 @@
 title: "Update cloudPcProvisioningPolicy"
 description: "Update the properties of a cloudPcProvisioningPolicy object."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
@@ -49,20 +47,20 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 In the request body, supply a JSON representation of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
+The following table shows the properties that can be updated for the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for the provisioning policy. |
 |description|String|The provisioning policy description.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the cloud PC service.|
-|imageId|String|The ID of the OS image you want to provision on cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
+|imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>offer: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
-|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on cloud PCs. Possible values are: `gallery`, `custom`.|
+|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -79,16 +77,11 @@ If successful, this method returns a `200 OK` response code and an updated [clou
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
-Content-length: 308
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 }
 ```
 # [C#](#tab/csharp)
@@ -107,32 +100,24 @@ Content-length: 308
 [!INCLUDE [sample-code](../includes/snippets/java/update-provisioningpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-provisioningpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-provisioningpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
 }
 -->
-
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-length: 355
-
-{
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "8931f750-f750-8931-50f7-318950f7ffff",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
-}
+HTTP/1.1 204 No Content
 ```

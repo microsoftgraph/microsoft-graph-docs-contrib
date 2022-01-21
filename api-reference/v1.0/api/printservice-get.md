@@ -2,15 +2,13 @@
 title: Get printService
 description: Retrieve the properties and relationships of a print service.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Get printService
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve the properties and relationships of a print service.
 
@@ -69,6 +67,14 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-printservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

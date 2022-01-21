@@ -2,7 +2,7 @@
 title: "TableSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,7 +64,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
 Content-type: application/json
-Content-length: 298
 
 {
   "fields": [

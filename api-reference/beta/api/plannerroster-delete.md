@@ -2,7 +2,7 @@
 title: "Delete plannerRoster"
 description: "Deletes a plannerRoster object."
 author: "tarkansevilmis"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "planner"
 doc_type: apiPageType
 ---
@@ -72,6 +72,14 @@ DELETE https://graph.microsoft.com/beta/planner/rosters/5ba84f7a-aa11-4a51-a298-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-plannerroster-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-plannerroster-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-plannerroster-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

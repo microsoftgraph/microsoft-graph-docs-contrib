@@ -1,7 +1,7 @@
 ---
 title: "Update activitybasedtimeoutpolicy"
 description: "Update the properties of an activityBasedTimeoutPolicy object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -93,6 +93,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-activitybasedtimeoutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-activitybasedtimeoutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-activitybasedtimeoutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

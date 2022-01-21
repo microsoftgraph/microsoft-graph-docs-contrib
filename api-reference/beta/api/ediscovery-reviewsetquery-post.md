@@ -1,7 +1,7 @@
 ---
 title: "Create reviewSetQuery"
 description: "Use this API to create a new reviewSetQuery."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -86,6 +86,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-reviewsetquery-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-reviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get started with the Microsoft Graph PowerShell SDK"
 description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
 ---
 
@@ -87,7 +87,7 @@ Verify that worked by entering the following.
 $user.DisplayName
 ```
 
-### List the user's joined Teams
+### List the user's joined teams
 
 Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 
@@ -95,19 +95,15 @@ Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Just like the `Get-MgUser` command, this gives a list of Teams. Select one of the user's joined Teams and use its `DisplayName` to filter the list.
+Just like the `Get-MgUser` command, this gives a list of teams. Select one of the user's joined teams and copy its `Id`.
 
-```powershell
-$team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
-```
+### List team channels
 
-### List Team channels
-
-Now use the Team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
+Now use the team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
-$channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
+$channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName eq 'General'"
 ```
 
 ### Send a message

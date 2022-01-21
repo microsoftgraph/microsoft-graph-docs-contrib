@@ -2,7 +2,7 @@
 author: swapnil1993
 title: "contentType: isPublished"
 description: "Check the publishing status of a content type in a content type hub site."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
->**Note:** The siteId represents a content type hub site.
+>**Note:** _siteId_ represents a content type hub site.
 
 ## Request headers
 |Name|Description|
@@ -38,7 +38,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Authorization|Bearer {token}. Required.|
 
 ## Response
-If successful, this call returns a `200 OK` response and a boolean value specifying the publishing state of the content type.
+If successful, this call returns a `200 OK` response and a boolean value that specifies the publishing state of the content type.
 
 ## Request body
 Do not supply a request body for this method.
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

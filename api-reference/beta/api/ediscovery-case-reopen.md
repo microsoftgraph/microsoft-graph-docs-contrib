@@ -2,7 +2,7 @@
 title: "case: reopen"
 description: "Reopen an eDiscovery case that was closed."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/case-reopen-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/case-reopen-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

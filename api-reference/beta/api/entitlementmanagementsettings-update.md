@@ -1,7 +1,7 @@
 ---
 title: "Update entitlementManagementSettings"
 description: "Update a entitlementManagementSettings object to change one or more of its properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: apiPageType
@@ -74,6 +74,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-entitlementmanagementsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-entitlementmanagementsettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-entitlementmanagementsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

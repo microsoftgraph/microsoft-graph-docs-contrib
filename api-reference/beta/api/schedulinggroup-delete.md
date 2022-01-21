@@ -2,7 +2,7 @@
 title: "Delete schedulingGroup"
 description: "Mark a schedulingGroup as inactive by setting its isActive property"
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -75,6 +75,14 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-delete-schedulinggroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-delete-schedulinggroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-delete-schedulinggroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

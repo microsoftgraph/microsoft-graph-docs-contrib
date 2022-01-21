@@ -2,7 +2,7 @@
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryRoleTemplate objects."
 author: "abhijeetsinha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -68,6 +68,14 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryroletemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryroletemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryroletemplates-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

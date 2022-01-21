@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
@@ -16,26 +16,50 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 - directory (Azure AD) 
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+- entitlement management (Azure AD)
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following tables the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference).
 
-|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
-| Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
-| Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+### For a Cloud PC provider
 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
+
+### For a device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+
+### For a directory (Azure AD) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### For an entitlement management provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 
-To list role definitions for a cloud PC provider:
+To list role definitions for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
@@ -51,6 +75,12 @@ To list role definitions for a directory provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
+```
+
+To list role definitions for the entitlement management provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
@@ -102,6 +132,14 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-directory-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-directory-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,7 +256,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List role definitions for a cloud PC provider
+### Example 2: List role definitions for a Cloud PC provider
 
 #### Request
 
@@ -248,6 +286,14 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-cloudpc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-cloudpc-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -334,6 +380,106 @@ Content-type: application/json
                         "Microsoft.CloudPC/Roles/Read"
                     ],
                     "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Example 3: List role definitions for the entitlement management provider
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-entitlementmanagement-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-entitlementmanagement-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-entitlementmanagement-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-entitlementmanagement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-entitlementmanagement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_entitlementmanagement",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ]
                 }
             ]
         }
