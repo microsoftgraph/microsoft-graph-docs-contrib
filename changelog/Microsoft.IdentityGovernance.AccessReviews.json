@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewHistoryScheduleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistoryschedulesettings?view=graph-rest-beta) resource type. Use this resource to configure the settings of an [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) object.",
+          "Target": "accessReviewHistoryScheduleSettings"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Property",
+          "ChangedApiName": "scheduleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **scheduleSettings** property to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
+          "Target": "accessReviewHistoryDefinition"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Resource",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource. Represents the instances of a recurring acecss review history definition.",
+          "Target": "accessReviewHistoryDefinition"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewHistoryInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-beta) resource.",
+          "Target": "accessReviewHistoryInstance"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Property",
+          "ChangedApiName": "downloadUri",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **downloadUri** property from the [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) resource. Use the **downloadUri** property in the [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) object instead.",
+          "Target": "accessReviewHistoryDefinition"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Property",
+          "ChangedApiName": "fulfilledDateTime",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **fulfilledDateTime** property from the [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) resource. Use the **fulfilledDateTime** property in the [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) object instead.",
+          "Target": "accessReviewHistoryDefinition"
+        },
+        {
+          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+          "ApiChange": "Method",
+          "ChangedApiName": "generateDownloadUri",
+          "ChangeType": "Change",
+          "Description": "Changed the bindingParameter and return type of the **generateDownloadUri** action from an [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) object to an [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) object.",
+          "Target": "generateDownloadUri"
+        }
+      ],
+      "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-21T00:00:00.7122989Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e96e9533-1955-47a6-92ed-3e9a45e87e1f",
           "ApiChange": "EnumType",
           "ChangedApiName": "userSignInRecommendationScope",
@@ -65,90 +131,6 @@
       "CreatedDateTime": "2022-01-19T00:00:00.5989437Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessReviewHistoryScheduleSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistoryschedulesettings?view=graph-rest-beta) resource type. Use this resource to configure the settings of an [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) object.",
-          "Target": "accessReviewHistoryScheduleSettings"
-        },
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Property",
-          "ChangedApiName": "scheduleSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **scheduleSettings** property to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
-          "Target": "accessReviewHistoryDefinition"
-        },
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Resource",
-          "ChangedApiName": "instances",
-          "ChangeType": "Addition",
-          "Description": "Added the **instances** relationship to [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource. Represents the instances of a recurring acecss review history definition.",
-          "Target": "accessReviewHistoryDefinition"
-        },
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessReviewHistoryInstance",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-beta) resource",
-          "Target": "accessReviewHistoryInstance"
-        },
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Property",
-          "ChangedApiName": "downloadUri",
-          "ChangeType": "Deletion",
-          "Description": "Deleted the **downloadUri** property from the [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) resource. Use the **downloadUri** property in the [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) instead.",
-          "Target": "accessReviewHistoryDefinition"
-        },
-        {
-          "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-          "ApiChange": "Property",
-          "ChangedApiName": "fulfilledDateTime",
-          "ChangeType": "Deletion",
-          "Description": "Deleted the **fulfilledDateTime** property from the [accessReviewHistoryDefinition](https://docs.microsoft.com/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-beta) resource. Use the **fulfilledDateTime** property in the [accessReviewHistoryInstance](https://docs.microsoft.com/graph/api/resources/accessreviewhistoryinstance?view=graph-rest-beta) instead.",
-          "Target": "accessReviewHistoryDefinition"
-        }
-      ],
-      "Id": "fe79cc68-75c6-47a3-95d9-7b1a3c772919",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-01-11T20:58:41.7122989Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
-          "ApiChange": "Method",
-          "ChangedApiName": "generateDownloadUri",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **generateDownloadUri** method from the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) resource.",
-          "Target": "generateDownloadUri"
-        },
-        {
-          "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
-          "ApiChange": "Method",
-          "ChangedApiName": "generateDownloadUri",
-          "ChangeType": "Addition",
-          "Description": "Added the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) method to the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) resource.",
-          "Target": "generateDownloadUri"
-        }
-      ],
-      "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-01-20T23:36:29.9232408Z",
-      "WorkloadArea": "Microsoft.IdentityGovernance.AccessReviews",
-      "SubArea": ""
     },
     {
       "ChangeList": [
