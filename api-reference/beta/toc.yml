@@ -11685,7 +11685,7 @@ items:
               - name: Update org details
                 href: api/organization-update.md
         - name: Identity protection
-          href: resources/identityprotection-root.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             items:
@@ -12302,8 +12302,8 @@ items:
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
+            - name: List contacted reviewers
+              href: api/accessreviewinstance-list-contactedreviewers.md
             - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Access review instance decision item
