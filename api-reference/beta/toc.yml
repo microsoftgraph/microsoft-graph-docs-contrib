@@ -14121,9 +14121,9 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
-        - name: GetCompatibleHubContentTypes
+        - name: Get compatible hubs
           href: api/contenttype-getcompatiblehubcontenttypes.md
-        - name: AddCopyFromContentTypeHub
+        - name: Add copy from hubs
           href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
