@@ -11,14 +11,14 @@ ms.custom: scenarios:getting-started
 
 The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. 
 
-The profile API lets you, as app developers, model and represent people in Microsoft 365 services, and the profile card API lets administrators control the information showing on users' profile cards in the organization.
+The _profile API_ lets you, as app developers, model and represent people in Microsoft 365 services, and the profile card API lets administrators control the information showing on users' profile cards in the organization.
 
 As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
 - "Search for People who’s name starts with ‘J’"
 - "Which documents are most interesting to this person?"
 
-You can use the people API and insights API in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
+You can use the _people API_ and _insights API_ in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
 
 The people API returns people ordered by relevance to a user, based on that user's contacts, social networks, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
 
@@ -57,7 +57,7 @@ Profile cards let users in an organization see information about one another, su
 
 ### Use intelligence to improve collaboration
 
-During a typical work day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always can find what they need, when they need it.
+During a typical work day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always find what they need, when they need it.
 
 You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared), and [used](/graph/api/resources/insights-used) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights, and control the availability of these insights in specific Microsoft 365 experiences.
 

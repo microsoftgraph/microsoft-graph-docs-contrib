@@ -2,7 +2,7 @@
 title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of an [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -75,6 +75,14 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationsignindetailedsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationsignindetailedsummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationsignindetailedsummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -90,7 +98,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 295
 
 {
   "id": "id-value",

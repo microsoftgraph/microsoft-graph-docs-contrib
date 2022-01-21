@@ -87,6 +87,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,7 +113,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
@@ -118,7 +125,6 @@ Content-Type: application/json
     "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
     "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
     "healthCheckStatus": "running"
-  }
 }
 ```
 
@@ -153,6 +159,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-withdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-withdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-withdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -171,7 +185,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "displayName": "Display Name value",
@@ -224,6 +237,5 @@ Content-Type: application/json
       ]
     },
     "inUse": false
-  }
 }
 ```

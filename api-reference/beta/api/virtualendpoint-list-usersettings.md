@@ -83,6 +83,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcusersetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcusersetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcusersetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,7 +100,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcUserSetting)"
+  "@odata.type": "microsoft.graph.cloudPcUserSetting",
+  "isCollection": true
 }
 -->
 ``` http

@@ -1,7 +1,7 @@
 ---
 title: "updatableAsset: enrollAssets"
 description: "Enroll updatableAsset resources in update management by the deployment service."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for the service to manage. Supports a subset of the values for **updateCategory**. Possible values are: `feature`, `unknownFutureValue`.|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to enroll in update management by the service for the given **updateCategory**.|
 
 ## Response
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-enrollassets-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

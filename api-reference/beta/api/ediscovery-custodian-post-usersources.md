@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 Content-Type: application/json
-Content-length: 233
 
 {
     "email":"megan@contoso.com",
@@ -96,8 +95,13 @@ Content-length: 233
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -122,6 +126,7 @@ Content-Type: application/json
     "id": "34383036-3741-4545-3242-373530353435",
     "email": "megan@contoso.com",
     "includedSources": "mailbox,site",
+    "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
     "createdBy": {
         "user": {
             "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

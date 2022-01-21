@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/6362a3a4-c24c-4ce7-b491-e32c8a087071/terms/81be9856-9856-81be-5698-be815698be81
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels" : [
@@ -95,6 +94,14 @@ Content-length: 366
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-term-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-term-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-term-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

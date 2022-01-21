@@ -17,7 +17,7 @@ var managementTemplateId = "String";
 var status = "String";
 
 await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses
-	.ChangeDeploymentStatus(tenantGroupId,tenantId,managementActionId,managementTemplateId,status)
+	.ChangeDeploymentStatus(null,tenantGroupId,tenantId,managementActionId,managementTemplateId,status)
 	.Request()
 	.PostAsync();
 

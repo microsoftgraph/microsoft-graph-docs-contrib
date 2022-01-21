@@ -68,7 +68,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
-Content-length: 358
 
 {
   "fields": [

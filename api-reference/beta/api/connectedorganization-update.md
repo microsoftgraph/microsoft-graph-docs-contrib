@@ -68,7 +68,6 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization new name",
@@ -90,6 +89,14 @@ Content-length: 100
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-connectedorganization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

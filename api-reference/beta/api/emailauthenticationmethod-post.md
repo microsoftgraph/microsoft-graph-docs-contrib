@@ -35,9 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Global admin
-* Privileged authentication admin
-* Authentication admin
+* Global administrator
+* Privileged authentication administrator
+* Authentication administrator
 
 ## HTTP request
 
@@ -104,6 +104,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-emailauthenticationmethod-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-emailauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-emailauthenticationmethod-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +129,6 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",

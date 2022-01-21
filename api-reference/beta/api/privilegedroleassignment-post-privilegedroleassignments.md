@@ -57,7 +57,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments
 Content-type: application/json
-Content-length: 164
 
 {
   "userId": "userId-value",
@@ -80,6 +79,14 @@ Content-length: 164
 [!INCLUDE [sample-code](../includes/snippets/java/create-privilegedroleassignment-from-privilegedroleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-privilegedroleassignment-from-privilegedroleassignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-privilegedroleassignment-from-privilegedroleassignments-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.
@@ -93,7 +100,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdeviceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdeviceimages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcdeviceimages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +102,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
+  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
+  "isCollection": true
 }
 -->
 

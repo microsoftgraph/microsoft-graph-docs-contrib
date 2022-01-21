@@ -31,8 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
@@ -74,6 +75,14 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-federatedidentitycredential-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

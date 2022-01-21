@@ -21,8 +21,6 @@ The following RBAC providers are currently supported:
 - directory (Azure AD) 
 - entitlement management (Azure AD)
 
-> [!NOTE]
-> The Cloud PC and entitlement management RBAC providers currently support only the [list](../api/rbacapplication-list-roledefinitions.md) and [get](../api/unifiedroledefinition-get.md) operations.
 
 ## Methods
 
