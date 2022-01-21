@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDeviceOperation"
-description: "Get the details of an async teamworkDeviceOperation."
+description: "Get the details of an async, long-running operation on a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of an async, long-running [teamworkDeviceOperation](../resources/teamworkdeviceoperation.md).
+Get the details of an async, long-running operation on a Microsoft Teams-enabled [device](../resources/teamworkdeviceoperation.md).
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
