@@ -127,6 +127,32 @@
     {
       "ChangeList": [
         {
+          "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
+          "ApiChange": "Method",
+          "ChangedApiName": "generateDownloadUri",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **generateDownloadUri** method from the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) resource.",
+          "Target": "generateDownloadUri"
+        },
+        {
+          "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
+          "ApiChange": "Method",
+          "ChangedApiName": "generateDownloadUri",
+          "ChangeType": "Addition",
+          "Description": "Added the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) method to the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/generateDownloadUri?view=graph-rest-beta) resource.",
+          "Target": "generateDownloadUri"
+        }
+      ],
+      "Id": "28496ce5-24f4-4635-9e88-8c3b42a07939",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-20T23:36:29.9232408Z",
+      "WorkloadArea": "Microsoft.IdentityGovernance.AccessReviews",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "caa8e78f-474c-4d88-920d-165de2f31c16",
           "ApiChange": "Method",
           "ChangedApiName": "PUT",

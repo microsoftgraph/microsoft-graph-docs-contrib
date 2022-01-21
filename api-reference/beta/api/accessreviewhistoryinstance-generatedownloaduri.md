@@ -35,7 +35,7 @@ The signed-in user must also be the creator of the associated review history def
 -->
 
 ``` http
-POST /identityGovernance/accessReviews/historyDefinitions/{definition-id}/instances/{instance-id}/generateDownloadUri()
+POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDefinitionId}/instances/{accessReviewHistoryInstanceId}/generateDownloadUri
 ```
 
 ## Request headers
@@ -107,10 +107,12 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.accessReviewHistoryInstance",
     "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-    "status": "Done",
-    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-    "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-    "fulfilledDateTime": "2022-02-01T01:38:15.7998393Z",
-    "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's reviews - via graph 2-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-02-01T19:39:38.0000000Z&se=2021-02-02T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D"
+    "reviewHistoryPeriodStartDateTime": "2000-06-19T08:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "2100-06-19T07:00:00Z",
+    "status": "done",
+    "runDateTime": "2022-01-20T17:46:54.6085806Z",
+    "fulfilledDateTime": "2022-01-20T10:00:24.9114365-08:00",
+    "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last months reviews for ELM-e642e792-9884-413d-9299-982b37bfe369.csv?skoid=fa04d013-9f36-4d7d-8b8e-7276fb3bd36e&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2022-01-20T18:03:59Z&ske=2022-01-20T18:05:59Z&sks=b&skv=2020-04-08&sv=2020-04-08&st=2022-01-20T18:04:01Z&se=2022-01-21T18:04:01Z&sr=b&sp=r&sig=...",
+    "expiration": "2022-02-19T10:00:24.9114365-08:00"
 }
 ```
