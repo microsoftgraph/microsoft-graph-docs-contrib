@@ -66,13 +66,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 For the examples in this section, consider the following set up:
 
-| Principal | Role | Scope | Role assignment |
-| --- | --- | --- | --- |
-| Alice | User Administrator | Tenant | RA1 |
-| Group G1<br/>(Alice is a member) | User Administrator | Tenant | RA2 |
-| Group G2<br/>(Alice is a member) | Helpdesk Administrator | Administrative unit (AU1) | RA3 |
+| User | Group | Role | Scope | Role assignment |
+| :---: | :---: | :---: | :---: | :---: |
+| Alice |  | User Administrator | Tenant | RA1 |
+|  | G1<br/>(Alice is a member) | User Administrator | Tenant | RA2 |
+|  | G2<br/>(Alice is a member) | Helpdesk Administrator | Administrative unit (AU1) | RA3 |
 
-Alice is assigned the User Administrator directly at tenant scope with role assignment 1 or RA1. Alice is member of a group G1 and G1 is assigned the User Administrator role at tenant scope with role assignment 2 or RA2. Alice is also a member of group G2 and G2 is assigned the Helpdesk Administrator role at an administrative unit AU1 scope with role assignment 3 or RA3.
+Alice is assigned the User Administrator role directly at tenant scope with role assignment RA1. Alice is member of a group G1 and G1 is assigned the User Administrator role at tenant scope with role assignment RA2. Alice is also a member of group G2 and G2 is assigned the Helpdesk Administrator role at an administrative unit AU1 scope with role assignment RA3.
 
 ### Example 1 : Get direct and transitive role assignments of a principal
 
