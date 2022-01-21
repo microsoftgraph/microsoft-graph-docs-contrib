@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDevices"
-description: "Get the list of all Microsoft Teams devices provisioned for a tenant."
+description: "Get a list of all Microsoft Teams-enabled devices provisioned for a tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all Microsoft Teams [devices](../resources/teamworkdevice.md) provisioned for a tenant.
+Get a list of all Microsoft Teams-enabled [devices](../resources/teamworkdevice.md) provisioned for a tenant.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 

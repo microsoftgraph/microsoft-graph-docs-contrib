@@ -1,6 +1,6 @@
 ---
 title: "Get teamworkDevice"
-description: "Read the properties and relationships of a device."
+description: "Read the properties and relationships of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties (for example, **deviceType**, **hardwareDetail**, **activityState**, and **healthStatus**) and relationships of a [teamworkDevice](../resources/teamworkdevice.md).
+Get the properties of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 

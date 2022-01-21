@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about a device in Microsoft Teams.
+Represents the details about a Microsoft Teams-enabled device.
 
 Inherits from [entity](../resources/entity.md).
 
