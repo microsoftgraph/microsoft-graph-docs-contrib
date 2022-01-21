@@ -14046,6 +14046,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           items:
           - name: Permission
@@ -14080,6 +14082,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -14116,6 +14120,10 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible hubs
+          href: api/contenttype-getcompatiblehubcontenttypes.md
+        - name: Add copy from hubs
+          href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
         - name: List item
@@ -14208,6 +14216,12 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:
