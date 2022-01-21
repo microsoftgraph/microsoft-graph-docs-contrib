@@ -1,6 +1,6 @@
 ---
 title: "List teamworkDeviceOperations"
-description: "Get a list of teamworkDeviceOperations linked to a device."
+description: "Get a list of operations that are linked to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [teamworkDeviceOperations](../resources/teamworkdeviceoperation.md) linked to a [teamworkDevice](../resources/teamworkdevice.md).
+Get a list of the [operations](../resources/teamworkdeviceoperation.md) that are linked to a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
