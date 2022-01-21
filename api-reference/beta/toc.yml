@@ -11685,7 +11685,7 @@ items:
               - name: Update org details
                 href: api/organization-update.md
         - name: Identity protection
-          href: resources/identityprotection-root.md
+          href: resources/identityprotection-overview.md
           items:
           - name: Risk detection
             items:
@@ -12302,8 +12302,8 @@ items:
               href: api/accessreviewinstance-batchrecorddecisions.md
             - name: Reset decisions
               href: api/accessreviewinstance-resetdecisions.md
-            - name: List decisions
-              href: api/accessreviewinstance-list-decisions.md
+            - name: List contacted reviewers
+              href: api/accessreviewinstance-list-contactedreviewers.md
             - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
             - name: Access review instance decision item
@@ -12317,6 +12317,8 @@ items:
                 href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
               - name: Update
                 href: api/accessreviewinstancedecisionitem-update.md
+              - name: Record all decisions
+                href: api/accessreviewinstancedecisionitem-recordalldecisions.md
               - name: List pending approval (deprecated)
                 href: api/accessreviewinstancedecisionitem-listpendingapproval.md
           - name: Access review policy
@@ -13823,15 +13825,15 @@ items:
           items:
           - name: External connection
             href: resources/externalconnectors-externalconnection.md
-          - name: List external connections
+          - name: List
             href: api/externalconnectors-externalconnection-list.md
-          - name: Create external connection
+          - name: Create
             href: api/externalconnectors-external-post-connections.md
-          - name: Get external connection
+          - name: Get
             href: api/externalconnectors-externalconnection-get.md
-          - name: Update external connection
+          - name: Update
             href: api/externalconnectors-externalconnection-update.md
-          - name: Delete external connection
+          - name: Delete
             href: api/externalconnectors-externalconnection-delete.md
           - name: Get operation
             href: api/externalconnectors-connectionoperation-get.md
@@ -13839,39 +13841,39 @@ items:
           items:
           - name: Schema
             href: resources/externalconnectors-schema.md
-          - name: Create schema
+          - name: Create
             href: api/externalconnectors-externalconnection-post-schema.md
-          - name: Get schema
+          - name: Get
             href: api/externalconnectors-schema-get.md
-          - name: Update schema
+          - name: Update
             href: api/externalconnectors-schema-update.md
         - name: External item
           items:
           - name: External item
             href: resources/externalconnectors-externalitem.md
-          - name: Create external item
+          - name: Create
             href: api/externalconnectors-externalconnection-put-items.md
-          - name: Get external item
+          - name: Get
             href: api/externalconnectors-externalitem-get.md
-          - name: Update external item
+          - name: Update
             href: api/externalconnectors-externalitem-update.md
-          - name: Delete external item
+          - name: Delete
             href: api/externalconnectors-externalitem-delete.md
         - name: External group
           items:
           - name: External group
             href: resources/externalconnectors-externalgroup.md
-          - name: Create external group
+          - name: Create
             href: api/externalconnectors-externalconnection-post-groups.md
-          - name: Delete external group
+          - name: Delete
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
           - name: External group member
             href: resources/externalconnectors-externalgroupmember.md
-          - name: Create external group member
+          - name: Create
             href: api/externalconnectors-externalgroup-post-members.md
-          - name: Delete external group member
+          - name: Delete
             href: api/externalconnectors-externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
@@ -14046,6 +14048,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           items:
           - name: Permission
@@ -14080,6 +14084,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -14116,6 +14122,10 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible hubs
+          href: api/contenttype-getcompatiblehubcontenttypes.md
+        - name: Add copy from hubs
+          href: api/contenttype-addcopyfromcontenttypehub.md
       - name: List items
         items:
         - name: List item
@@ -14208,6 +14218,12 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:

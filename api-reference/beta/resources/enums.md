@@ -2765,3 +2765,13 @@ Possible values for user account types (group membership), per Windows definitio
 |staff|
 |customer|
 |unknownFutureValue|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
