@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice: updateSoftware"
-description: "Update the software for a device."
+description: "Update the software for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the software for a [teamworkDevice](../resources/teamworkdevice.md). This API triggers a long-running operation.
+Update the software for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). This API triggers a long-running operation.
 
 >**Note:** Licensing or payment requirements may apply for this API when made available for production use.
 
