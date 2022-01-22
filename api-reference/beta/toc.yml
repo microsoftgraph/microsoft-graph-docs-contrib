@@ -14106,10 +14106,10 @@ items:
           href: api/contenttype-update.md
         - name: Delete
           href: api/contenttype-delete.md
-        - name: Add copy from hubs
-          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
         - name: Check publishing status
@@ -14118,7 +14118,7 @@ items:
           href: api/contenttype-copytodefaultcontentlocation.md
         - name: Create column
           href: api/contenttype-post-columns.md
-        - name: Get compatible hubs
+        - name: Get compatible from hub
           href: api/contenttype-getcompatiblehubcontenttypes.md
         - name: List columns
           href: api/contenttype-list-columns.md
