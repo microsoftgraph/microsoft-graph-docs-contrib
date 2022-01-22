@@ -1,6 +1,6 @@
 ---
 title: "teamworkFeaturesConfiguration resource type"
-description: "Represents the details about the configuration of Microsoft Teams client features for a device."
+description: "Represents the Microsoft Teams client configuration details for a Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the configuration of Microsoft Teams client features for a [teamworkDevice](../resources/teamworkdevice.md).
+Represents the Microsoft Teams client configuration details for a Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
