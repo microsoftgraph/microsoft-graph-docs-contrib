@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceActivity resource type"
-description: "Represents the details about activity in a device."
+description: "Represents activity details for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about activity in a [teamworkDevice](../resources/teamworkdevice.md), including the active peripherals attached to the device.
+Represents activity details for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including the active peripheral devices attached to the device.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activePeripherals|[teamworkActivePeripherals](../resources/teamworkactiveperipherals.md)|The active peripherals attached to the device.|
+|activePeripherals|[teamworkActivePeripherals](../resources/teamworkactiveperipherals.md)|The active peripheral devices attached to the device.|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
