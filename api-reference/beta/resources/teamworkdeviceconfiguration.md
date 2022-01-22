@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceConfiguration resource type"
-description: "Represents the details about the configuration for a device."
+description: "Represents configuration details for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the configuration for a [teamworkDevice](../resources/teamworkdevice.md), including properties, such as software versions, peripheral configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
+Represents configuration details for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Teams client configuration.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -26,19 +26,19 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|The camera configuration. Applicable only for Microsoft Teams Rooms devices.|
+|cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|The camera configuration. Applicable only for Microsoft Teams Rooms-enabled devices.|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |displayConfiguration|[teamworkDisplayConfiguration](../resources/teamworkdisplayconfiguration.md)|The display configuration.|
-|hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|The hardware configuration. Applicable only for Teams Rooms devices.|
+|hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|The hardware configuration. Applicable only for Teams Rooms-enabled devices.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
-|microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|The microphone configuration. Applicable only for Teams Rooms devices.|
+|microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|The microphone configuration. Applicable only for Teams Rooms-enabled devices.|
 |softwareVersions|[teamworkDeviceSoftwareVersions](../resources/teamworkdevicesoftwareversions.md)|Information related to software versions for the device, such as firmware, operating system, Teams client, and admin agent.|
-|speakerConfiguration|[teamworkSpeakerConfiguration](../resources/teamworkspeakerconfiguration.md)|The speaker configuration. Applicable only for Teams Rooms devices.|
-|systemConfiguration|[teamworkSystemConfiguration](../resources/teamworksystemconfiguration.md)|The system configuration. Not applicable for Teams Rooms devices.|
-|teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|The Teams client configuration. Applicable only for Teams Rooms devices.|
+|speakerConfiguration|[teamworkSpeakerConfiguration](../resources/teamworkspeakerconfiguration.md)|The speaker configuration. Applicable only for Teams Rooms-enabled devices.|
+|systemConfiguration|[teamworkSystemConfiguration](../resources/teamworksystemconfiguration.md)|The system configuration. Not applicable for Teams Rooms-enabled devices.|
+|teamsClientConfiguration|[teamworkTeamsClientConfiguration](../resources/teamworkteamsclientconfiguration.md)|The Teams client configuration. Applicable only for Teams Rooms-enabled devices.|
 
 
 ## JSON representation
