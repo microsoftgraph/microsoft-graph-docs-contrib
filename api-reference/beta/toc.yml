@@ -12816,6 +12816,26 @@ items:
           href: api/outlookcategory-update.md
         - name: Delete category
           href: api/outlookcategory-delete.md
+      - name: Extended properties
+        items:
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
+          items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
+          - name: Create single-value property
+            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+          - name: Get single-value property
+            href: api/singlevaluelegacyextendedproperty-get.md
+        - name: Multi-value extended properties
+          items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
+          - name: Create multi-value property
+            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+          - name: Get multi-value property
+            href: api/multivaluelegacyextendedproperty-get.md
       - name: Focused Inbox
         href: resources/manage-focused-inbox.md
         items:
@@ -12886,26 +12906,6 @@ items:
           href: api/messagerule-update.md
         - name: Delete rule
           href: api/messagerule-delete.md
-      - name: Extended properties
-        items:
-        - name: Overview
-          href: resources/extended-properties-overview.md
-        - name: Single-value extended properties
-          items:
-          - name: Single-value extended property
-            href: resources/singlevaluelegacyextendedproperty.md
-          - name: Create single-value property
-            href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-          - name: Get single-value property
-            href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended properties
-          items:
-          - name: Multi-value extended property
-            href: resources/multivaluelegacyextendedproperty.md
-          - name: Create multi-value property
-            href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-          - name: Get multi-value property
-            href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
       displayName: OneNote
       items:
@@ -14106,26 +14106,26 @@ items:
           href: api/contenttype-update.md
         - name: Delete
           href: api/contenttype-delete.md
-        - name: Check publishing status
-          href: api/contenttype-ispublished.md
-        - name: Publish
-          href: api/contenttype-publish.md
-        - name: Unpublish
-          href: api/contenttype-unpublish.md
+        - name: Add copy from hubs
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
+        - name: Check publishing status
+          href: api/contenttype-ispublished.md
         - name: Copy to default content location
           href: api/contenttype-copytodefaultcontentlocation.md
-        - name: List columns
-          href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
         - name: Get compatible hubs
           href: api/contenttype-getcompatiblehubcontenttypes.md
-        - name: Add copy from hubs
-          href: api/contenttype-addcopyfromcontenttypehub.md
+        - name: List columns
+          href: api/contenttype-list-columns.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
       - name: List items
         items:
         - name: List item
@@ -14140,28 +14140,38 @@ items:
           href: api/listitem-update.md
         - name: Delete item
           href: api/listitem-delete.md
-        - name: List versions
-          href: api/listitem-list-versions.md
-        - name: Get item analytics
-          href: api/itemanalytics-get.md
-        - name: Get activities by interval
-          href: api/itemactivity-getbyinterval.md
         - name: Create sharing link
           href: api/listitem-createlink.md
+        - name: Get activities by interval
+          href: api/itemactivity-getbyinterval.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
+        - name: List versions
+          href: api/listitem-list-versions.md
       - name: Pages
         items:
         - name: Site page
           href: resources/sitepage.md
         - name: List
           href: api/sitepage-list.md
-        - name: Get
-          href: api/sitepage-get.md
         - name: Create
           href: api/sitepage-create.md
+        - name: Get
+          href: api/sitepage-get.md
         - name: Delete
           href: api/sitepage-delete.md
         - name: Publish
           href: api/sitepage-publish.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: List operations in a site
+          href: api/site-list-operations.md
+        - name: List operations in a list
+          href: api/list-list-operations.md
+        - name: Get operation
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -14218,12 +14228,6 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Rich long-running operation
-        items:
-        - name: Rich long-running operation
-          href: resources/richLongRunningOperation.md
-        - name: Get
-          href: api/richlongrunningoperation-get.md
     - name: Tasks and plans
       displayName: Planner
       items:

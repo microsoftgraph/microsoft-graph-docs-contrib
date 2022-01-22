@@ -55,7 +55,7 @@ If successful, this function returns a `200 OK` response code and a [contentType
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
 ```
 
 
