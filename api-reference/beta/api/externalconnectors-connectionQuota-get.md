@@ -1,6 +1,6 @@
 ---
 title: "Get connectionQuota"
-description: "Retrieve the properties of connectionQuota."
+description: "Retrieve the properties and relationships of a connectionQuota."
 ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [connectionQuota](../resources/externalconnectors-connectionQuota.md).
+Retrieve the properties and relationships of a [connectionQuota](../resources/externalconnectors-connectionQuota.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /external/connections/{id}/quota
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) such like `$search`, `$select`, and `$top` help customize the response.
 
 ## Request headers
 
@@ -57,9 +57,6 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 The following is an example of the request.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connection"
