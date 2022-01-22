@@ -1,6 +1,6 @@
 ---
 title: "teamworkLoginStatus resource type"
-description: "Represents the details about the login status of Microsoft Teams, Skype for Business, and Exchange in a device."
+description: "Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the login status of Microsoft Teams, Skype for Business, and Exchange in a [teamworkDevice](../resources/teamworkdevice.md).
+Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
