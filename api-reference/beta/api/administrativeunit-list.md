@@ -89,10 +89,15 @@ Content-length: 179
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "visibility": "visibility-value",
-      "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
     }
   ]
 }

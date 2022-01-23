@@ -45,6 +45,9 @@ In the request body, supply the values for relevant fields that should be update
 |description|string|Description for the administrative unit.|
 |displayName|string|Display name for the administrative unit.|
 |visibility|string|Visibility for the administrative unit. If not set then the default is "public". Can be set to "HiddenMembership", which hides the membership from non-members.|
+|membershipType|string|Membership type for the administrative unit. Can be "dynamic" or "assigned".|
+|membershipRule|string|Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).|
+|membershipRuleProcessingState|string|Used to control whether the dynamic membership rule is actively processed. Set to "On" when you want the dynamic membership rule to be active and "Paused" if you want to stop updating membership dynamically.|
 
 Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
@@ -54,6 +57,7 @@ add, update, or delete your own app-specific data in custom properties of an ext
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
+The following example sets a dynamic membership rule on an existing administrative unit to include all users whose country is United States.
 
 ##### Request
 
@@ -69,9 +73,9 @@ Content-type: application/json
 Content-length: 114
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # [C#](#tab/csharp)
