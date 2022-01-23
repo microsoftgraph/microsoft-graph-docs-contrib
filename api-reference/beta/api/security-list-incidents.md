@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [incident](../resources/incident.md) objects and their properties.
+Get a list of the [incident](../resources/security-incident.md) objects and their properties.
 
 The list incidents operation allows you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list.
 
@@ -68,7 +68,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [incident](../resources/incident.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [incident](../resources/security-incident.md) objects in the response body.
 
 ## Examples
 ### Example 1: List all incidents
