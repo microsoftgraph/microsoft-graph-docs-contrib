@@ -62,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a [set](../
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
-Content-length: 288
 
 {
   "@odata.type": "#microsoft.graph.termStore.set",

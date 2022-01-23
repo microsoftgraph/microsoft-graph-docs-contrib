@@ -58,7 +58,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedApproval
 Content-type: application/json
-Content-length: 180
 
 {
   "userId": "userId-value",
@@ -84,6 +83,14 @@ Content-length: 180
 [!INCLUDE [sample-code](../includes/snippets/java/create-privilegedapproval-from-privilegedapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-privilegedapproval-from-privilegedapproval-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-privilegedapproval-from-privilegedapproval-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [privilegedApproval](../resources/privilegedapproval.md) object.
@@ -97,7 +104,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 200
 
 {
   "id": "id-value",

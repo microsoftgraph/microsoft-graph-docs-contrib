@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "raprakasMSFT"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 303
 
 {
   "value": [
