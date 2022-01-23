@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 # Get incident
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

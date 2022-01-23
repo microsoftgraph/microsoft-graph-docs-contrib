@@ -13,34 +13,34 @@
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "EnumType",
-					"ChangedApiName": "alertClassification_v2",
+					"ChangedApiName": "alertClassification",
 					"ChangeType": "Addition",
-					"Description": "Added the **alertClassification_v2** enumeration type.",
-					"Target": "alertClassification_v2"
+					"Description": "Added the **alertClassification** enumeration type.",
+					"Target": "alertClassification"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "EnumType",
-					"ChangedApiName": "alertDetermination_v2",
+					"ChangedApiName": "alertDetermination",
 					"ChangeType": "Addition",
-					"Description": "Added the **alertDetermination_v2** enumeration type.",
-					"Target": "alertDetermination_v2"
+					"Description": "Added the **alertDetermination** enumeration type.",
+					"Target": "alertDetermination"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "EnumType",
-					"ChangedApiName": "alertSeverity_v2",
+					"ChangedApiName": "alertSeverity",
 					"ChangeType": "Addition",
-					"Description": "Added the **alertSeverity_v2** enumeration type.",
-					"Target": "alertSeverity_v2"
+					"Description": "Added the **alertSeverity** enumeration type.",
+					"Target": "alertSeverity"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "EnumType",
-					"ChangedApiName": "alertStatus_v2",
+					"ChangedApiName": "alertStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the **alertStatus_v2** enumeration type.",
-					"Target": "alertStatus_v2"
+					"Description": "Added the **alertStatus** enumeration type.",
+					"Target": "alertStatus"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
@@ -53,33 +53,33 @@
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "Resource",
-					"ChangedApiName": "alertComment_v2",
+					"ChangedApiName": "alertComment",
 					"ChangeType": "Addition",
-					"Description": "Added the [alertComment_v2](https://docs.microsoft.com/en-us/graph/api/resources/alertComment_v2?view=graph-rest-beta) resource type.",
-					"Target": "alertComment_v2"
+					"Description": "Added the [alertComment](https://docs.microsoft.com/en-us/graph/api/resources/security-alertComment?view=graph-rest-beta) resource type.",
+					"Target": "alertComment"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "Resource",
 					"ChangedApiName": "incident",
 					"ChangeType": "Addition",
-					"Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/incident?view=graph-rest-beta) resource type.",
+					"Description": "Added the [incident](https://docs.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource type.",
 					"Target": "incident"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "Resource",
-					"ChangedApiName": "alert_v2",
+					"ChangedApiName": "alert",
 					"ChangeType": "Addition",
-					"Description": "Added the [alert_v2](https://docs.microsoft.com/en-us/graph/api/resources/alert_V2?view=graph-rest-beta) resource type.",
-					"Target": "alert_v"
+					"Description": "Added the [alert](https://docs.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource type.",
+					"Target": "alert"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get incident](https://docs.microsoft.com/en-us/graph/api/incident-get?view=graph-rest-beta) operation.",
+					"Description": "Added the [Get incident](https://docs.microsoft.com/en-us/graph/api/security-incident-get?view=graph-rest-beta) operation.",
 					"Target": "incident"
 				},
 				{
@@ -87,8 +87,8 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "Get",
 					"ChangeType": "Addition",
-					"Description": "Added the [Get alert_v2](https://docs.microsoft.com/en-us/graph/api/alert_v2-get?view=graph-rest-beta) operation.",
-					"Target": "alert_v2"
+					"Description": "Added the [Get alert](https://docs.microsoft.com/en-us/graph/api/security-alert-get?view=graph-rest-beta) operation.",
+					"Target": "alert"
 				},
 				{
 					"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",
@@ -103,8 +103,8 @@
 					"ApiChange": "Method",
 					"ChangedApiName": "List",
 					"ChangeType": "Addition",
-					"Description": "Added the [List alerts_v2](https://docs.microsoft.com/en-us/graph/api/security-list-alerts_v2?view=graph-rest-beta) operation.",
-					"Target": "alert_v2"
+					"Description": "Added the [List alerts](https://docs.microsoft.com/en-us/graph/api/security-list-alerts?view=graph-rest-beta) operation.",
+					"Target": "alert"
 				}
 			],
 			"Id": "de26487d-676f-4dd1-b4b3-55d39ee37879",

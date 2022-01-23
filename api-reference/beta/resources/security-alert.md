@@ -1,5 +1,5 @@
 ---
-title: "alert_v2 resource type"
+title: "alert resource type"
 description: "Represents potential security issues within a customer's tenant that Microsoft 365 Defender have identified."
 ms.date: 09/09/2021
 author: "BenAlfasi"
@@ -8,20 +8,20 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# alert_v2 resource type
+# alert resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents potential security issues within a customer's tenant that Microsoft 365 Defender have identified.
-When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an [incident](incident.md). Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
+When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an [incident](security-incident.md). Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts_v2](../api/security-list-alerts_v2.md)|[alert_v2](alert_v2.md) collection|Get a list of the [alert_v2](alert_v2.md) objects and their properties.|
-|[Get alert_v2](../api/alert_v2-get.md)|[alert_v2](alert_v2.md)|Read the properties and relationships of an [alert_v2](alert_v2.md) object.|
+|[List alerts](../api/security-list-alerts.md)|[alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
+|[Get alert](../api/security-alert-get.md)|[alert](security-alert.md)|Read the properties and relationships of an [alert](security-alert.md) object.|
 
 
 ## Properties
@@ -29,11 +29,11 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |:---|:---|:---|
 |id|String|Unique identifier to represent the alert.|
 |providerAlertId|String|The ID of the alert as it appears in the provider product that generated the alert.|
-|incidentId|String|Unique identifier to represent the [incident](incident.md) this alert is associated with.|
-|status|[alertStatus_v2](#alertstatus_v2-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|severity|[alertSeverity_v2](#alertseverity_v2-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|classification|[alertClassification_v2](#alertclassification_v2-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
-|determination|[alertDetermination_v2](#alertdetermination_v2-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|incidentId|String|Unique identifier to represent the [incident](security-incident.md) this alert is associated with.|
+|status|[alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|severity|[alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|classification|[alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|determination|[alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |serviceSource|[serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |aadTenantId|String|The Azure Active Directory tenant the alert was created in.|
@@ -52,9 +52,9 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
 |lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
-|comments|[alertComment_v2](alertComment_v2.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
+|comments|[alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 
-### alertClassification_v2 values 
+### alertClassification values 
 
 | Member                             | Description                                                                                                                         |
 | :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | informationalExpectedActivity      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
 | unknownFutureValue                 | Evolvable enumeration sentinel value. Do not use.                                                                                   |
 
-### alertDetermination_v2 values 
+### alertDetermination values 
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
@@ -85,7 +85,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | other                      | Other determination.                                                                                                         |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.                                                                            |
 
-### alertSeverity_v2 values 
+### alertSeverity values 
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 
-### alertStatus_v2 values 
+### alertStatus values 
 
 | Member              | Description                                           |
 | :-------------------| :---------------------------------------------------- |
@@ -133,7 +133,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.alert_v2",
+  "@odata.type": "microsoft.graph.security.alert",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
@@ -141,7 +141,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-    "@odata.type": "#microsoft.graph.alert_v2",
+    "@odata.type": "#microsoft.graph.security.alert",
     "id": "String (identifier)",
     "providerAlertId": "String",
     "incidentId": "String",
@@ -171,7 +171,7 @@ The following is a JSON representation of the resource.
     "lastActivityDateTime": "String (timestamp)",
     "comments": [
         {
-          "@odata.type": "microsoft.graph.alertComment_v2"
+          "@odata.type": "microsoft.graph.security.alertComment"
         }
     ]
 }

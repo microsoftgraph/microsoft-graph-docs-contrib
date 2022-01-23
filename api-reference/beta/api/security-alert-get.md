@@ -1,6 +1,6 @@
 ---
-title: "Get alert_v2"
-description: "Retrieve the properties and relationships of an alert_v2 object."
+title: "Get cu"
+description: "Retrieve the properties and relationships of an security alert object."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -8,12 +8,12 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get alert_v2
-Namespace: microsoft.graph
+# Get alert
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [alert_v2](../resources/alert_v2.md) object.
+Retrieve the properties and relationships of an [alert](../resources/security-alert.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,14 +45,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [alert_v2](../resources/alert_v2.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [alert](../resources/security-alert.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_alert_v2"
+  "name": "get_security_alert"
 }
 -->
 ``` http
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.alert_v2"
+  "@odata.type": "microsoft.graph.security.alert"
 }
 -->
 
@@ -74,7 +74,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.alert_v2",
+    "@odata.type": "#microsoft.graph.security.alert",
     "id": "da637578995287051192_756343937",
     "providerAlertId": null,
     "incidentId": "31000",

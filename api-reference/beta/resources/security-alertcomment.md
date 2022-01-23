@@ -1,5 +1,5 @@
 ---
-title: "alertComment_v2 resource type"
+title: "alertComment resource type"
 description: "An analyst-generated comment that is associated with an alert or incident."
 ms.date: 09/09/2021
 author: "BenAlfasi"
@@ -8,9 +8,9 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# alertComment_v2 resource type
+# alertComment resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,12 +30,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.alertComment_v2"
+  "@odata.type": "microsoft.graph.security.alertComment"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.alertComment_v2",
+  "@odata.type": "#microsoft.graph.security.alertComment",
   "comment": "String",
   "createdByDisplayName": "String",
   "createdDateTime": "String (timestamp)"

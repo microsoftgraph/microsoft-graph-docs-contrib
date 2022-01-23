@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 # List incidents
-Namespace: microsoft.graph
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/security/incidents
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.incident",
+  "@odata.type": "microsoft.graph.security.incident",
   "isCollection": true
 }
 -->
@@ -101,7 +101,7 @@ Content-Type: application/json
 {
   "value": [
     {
-        "@odata.type": "#microsoft.graph.incident",
+        "@odata.type": "#microsoft.graph.security.incident",
         "id": "2972395",
         "incidentWebUrl": "https://security.microsoft.com/incidents/2972395?tid=12f988bf-16f1-11af-11ab-1d7cd011db47",
         "redirectIncidentId": null,
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.incident",
+  "@odata.type": "microsoft.graph.security.incident",
   "isCollection": true
 }
 -->
@@ -157,7 +157,7 @@ Content-Type: application/json
 {
   "value": [
     {
-        "@odata.type": "#microsoft.graph.incident",
+        "@odata.type": "#microsoft.graph.security.incident",
         "id": "2972395",
         "incidentWebUrl": "https://security.microsoft.com/incidents/2972395?tid=12f988bf-16f1-11af-11ab-1d7cd011db47",
         "redirectIncidentId": null,
@@ -182,7 +182,7 @@ Content-Type: application/json
         ],
         "alerts": [
             {
-                "@odata.type": "#microsoft.graph.alert_v2",
+                "@odata.type": "#microsoft.graph.security.alert",
                 "id": "da637578995287051192_756343937",
                 "providerAlertId": null,
                 "incidentId": "2972395",

@@ -13934,19 +13934,19 @@ items:
       - name: Incidents (preview)
         items:
         - name: Incident
-          href: resources/incident.md
+          href: resources/security-incident.md
         - name: List incidents
           href: api/security-list-incidents.md
         - name: Get incident
-          href: api/incident-get.md   
-      - name: Alerts_v2 (preview)
+          href: api/security-incident-get.md   
+      - name: Alerts (preview)
         items:
-        - name: Alert_v2
-          href: resources/alert_v2.md
-        - name: List alerts_v2
-          href: api/security-list-alerts_v2.md
-        - name: Get alert_v2
-          href: api/alert_v2-get.md 
+        - name: Alert
+          href: resources/security-alert.md
+        - name: List alerts
+          href: api/security-list-alerts.md
+        - name: Get alert
+          href: api/security-alert-get.md 
       - name: Information protection
         items:
         - name: Labels

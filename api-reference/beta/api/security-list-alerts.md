@@ -1,6 +1,6 @@
 ---
-title: "List alerts_v2"
-description: "Get a list of the alert_v2 objects and their properties."
+title: "List alerts"
+description: "Get a list of the security alert objects and their properties."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -8,12 +8,12 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List alerts_v2
-Namespace: microsoft.graph
+# List alerts
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [alert_v2](../resources/alert_v2.md) objects and their properties.
+Get a list of the [alert](../resources/security-alert.md) objects and their properties.
 
 The list alerts operation allows you to sort through alerts in your organization to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
@@ -67,14 +67,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [alert_v2](../resources/alert_v2.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [alert](../resources/security-alert.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_alerts_v2"
+  "name": "security_list_alerts"
 }
 -->
 ``` http
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.alert_v2",
+  "@odata.type": "microsoft.graph.security.alert",
   "isCollection": true
 }
 -->
@@ -99,7 +99,7 @@ Content-type: application/json
 {
   "value": [
     {
-        "@odata.type": "#microsoft.graph.alert_v2",
+        "@odata.type": "#microsoft.graph.security.alert",
         "id": "da637578995287051192_756343937",
         "providerAlertId": null,
         "incidentId": "31000",
