@@ -68,6 +68,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Access reviews | ✔ | ✔ | ➖ |
 | Applications | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
@@ -81,7 +82,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Outlook Mail | ✔ | ✔ | ✔ |
 | Personal Contacts | ✔ | ✔ | ✔ |
 | Planner | ✔ | ✔ | ✔ |
-| Reports | ➖ | ✔ | ➖ |
+| Reports | ➖ | ➖ | ➖ |
 | Search (Microsoft Search) | ➖ | ➖ | ➖ |
 | Security | ✔ | ✔ | ✔ |
 | Service health and communications | ✔ | ✔ | ✔ |
@@ -90,7 +91,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Teams | ✔ | ✔ | ✔ |
 | Users | ✔ | ✔ | ✔ |
 
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (v1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts
 * Applications
@@ -110,3 +111,9 @@ To learn more about National clouds, see the following topics:
 * [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 * [Azure China 21Vianet](/azure/china/)
 * [Azure Germany](/azure/germany/)
+
+Explore samples for authenticating and working with Azure and Microsoft 365 in National cloud deployments:
+
+* [Work with Azure through Microsoft Graph for US Government](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
+* [Connect to US Government O365 environments (GCC, GCC High and GCC DoD) using Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+

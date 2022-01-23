@@ -795,6 +795,24 @@
       "CreatedDateTime": "2021-10-05T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
+          "ApiChange": "Method",
+          "ChangedApiName": "schema",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/externalconnectors-schema-update?view=graph-rest-beta) method to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource type.",
+          "Target": "schema"
+        }
+      ],
+      "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-01T23:34:36.128237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }    
   ]
 }

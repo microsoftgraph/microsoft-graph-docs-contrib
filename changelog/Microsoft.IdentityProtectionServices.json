@@ -1,105 +1,196 @@
 {
-    "changelog": [{
-		"ChangeList": [
-		  {
-			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
-			"ApiChange": "Property",
-			"ChangedApiName": "deviceFilter",
-			"ChangeType": "Addition",
-			"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
-			"Target": "conditionalAccessDevices"
-		  },
-		  {
-			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
-			"ApiChange": "ComplexType",
-			"ChangedApiName": "conditionalAccessFilter",
-			"ChangeType": "Addition",
-			"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
-			"Target": "conditionalAccessPolicy"
-		  }
-		],
-		"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
-		"Cloud": "Prod",
-		"Version": "beta",
-		"CreatedDateTime": "2021-06-21T18:03:46.8906341Z",
-		"WorkloadArea": "Identity and access",
-		"SubArea": "Identity and sign-in"
-	}, {
-		"ChangeList": [
+	"changelog": [
 		{
-		"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
-		"ApiChange": "Property",
-		"ChangedApiName": "migrate",
-		"ChangeType": "Addition",
-		"Description": "Added the **migrate** property to the [continuousAccessEvaluationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource.",
-		"Target": "continuousAccessEvaluationPolicy"
-		}
-		],
-		"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
-		"Cloud": "Prod",
-		"Version": "beta",
-		"CreatedDateTime": "2021-10-22T23:46:51.9090188Z",
-		"WorkloadArea": "Identity and access",
-		"SubArea": "Identity and sign-in"
-		}, {
-        "ChangeList": [{
-            "Id": "d4673d1c-2924-11eb-9746-158983535857",
-            "ApiChange": "Property",
-            "ChangedApiName": "userRiskLevels",
-            "ChangeType": "Addition",
-            "Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
-            "Target": "conditionalAccessConditionSet"
-        }, {
-            "Id": "d469a259-2924-11eb-9746-158983535857",
-            "ApiChange": "Member",
-            "ChangedApiName": "passwordChange",
-            "ChangeType": "Addition",
-            "Description": "Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration.",
-            "Target": "conditionalAccessGrantControl"
-        }],
-        "Id": "d464db13-2924-11eb-9746-158983535857",
-        "Cloud": "prd",
-        "Version": "v1.0",
-        "CreatedDateTime": "2020-11-17T22:32:52.387Z",
-        "WorkloadArea": "Identity and access",
-        "SubArea": "Identity and sign-in"
-	}, {
-		"ChangeList": [{
-			"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
-			"ApiChange": "Property",
-			"ChangedApiName": "includeDevices",
-			"ChangeType": "Addition",
-			"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
-			"Target": "conditionalAccessDevices"
-		}, {
-			"Id": "d4daff8e-3f0c-11eb-8849-810a86a5025c",
-			"ApiChange": "Property",
-			"ChangedApiName": "excludeDevices",
-			"ChangeType": "Addition",
-			"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
-			"Target": "conditionalAccessDevices"
-		}, {
-			"Id": "d4d6369e-3f0d-11ec-8840-810a86a5025d",
-			"ApiChange": "Property",
-			"ChangedApiName": "includeDeviceStates",
-			"ChangeType": "Change",
-			"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
-			"Target": "conditionalAccessDevices"
-		}, {
-			"Id": "d4daff8d-3f0d-11ec-8840-810a86a5025d",
-			"ApiChange": "Property",
-			"ChangedApiName": "excludeDeviceStates",
-			"ChangeType": "Change",
-			"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
-			"Target": "conditionalAccessDevices"
-		}],
-		"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",
-		"Cloud": "prd",
-		"Version": "beta",
-		"CreatedDateTime": "2020-12-15T19:36:30.757Z",
-		"WorkloadArea": "Identity and access",
-		"SubArea": "Identity and sign-in"
-	},{
+			"ChangeList": [
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "ADFederationServicesMFAAdapter",
+					"ChangeType": "Addition",
+					"Description": "Added the **ADFederationServicesMFAAdapter** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				},
+				{
+					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+					"ApiChange": "Member",
+					"ChangedApiName": "NPSExtension",
+					"ChangeType": "Addition",
+					"Description": "Added the **NPSExtension** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				}
+			],
+			"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-19T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Member",
+					"ChangedApiName": "AzureADBackupAuth",
+					"ChangeType": "Addition",
+					"Description": "Added the **AzureADBackupAuth** member to the **tokenIssuerType** enumeration.",
+					"Target": "tokenIssuerType"
+				},
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "riskType",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **riskType** property of the [riskDetection](https://docs.microsoft.com/en-us/graph/api/resources/riskdetection?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskDetection"
+				},
+				{
+					"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+					"ApiChange": "Property",
+					"ChangedApiName": "eventTypes ",
+					"ChangeType": "Deprecation",
+					"Description": "Deprecated the **eventTypes** property of the [riskUserActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskuseractivity?view=graph-rest-beta) resource. Replaced with the **riskEventType** property.",
+					"Target": "riskUserActivity"
+				}
+			],
+			"Id": "822f057e-6a5f-4eba-876f-2b9b465df5e5",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-12-28T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+					"ApiChange": "Property",
+					"ChangedApiName": "disableResilienceDefaults",
+					"ChangeType": "Addition",
+					"Description": "Added the **disableResilienceDefaults** property to the [conditionalAccessSessionControls](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessSessionControls"
+				}
+			],
+			"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-08-11T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "Property",
+					"ChangedApiName": "deviceFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+					"ApiChange": "ComplexType",
+					"ChangedApiName": "conditionalAccessFilter",
+					"ChangeType": "Addition",
+					"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessPolicy"
+				}
+			],
+			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-06-21T18:03:46.8906341Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
+					"ApiChange": "Property",
+					"ChangedApiName": "migrate",
+					"ChangeType": "Addition",
+					"Description": "Added the **migrate** property to the [continuousAccessEvaluationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource.",
+					"Target": "continuousAccessEvaluationPolicy"
+				}
+			],
+			"Id": "0a7f2e5c-7af6-4546-ad77-7e068f3a718c",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-10-22T23:46:51.9090188Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4673d1c-2924-11eb-9746-158983535857",
+					"ApiChange": "Property",
+					"ChangedApiName": "userRiskLevels",
+					"ChangeType": "Addition",
+					"Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "d469a259-2924-11eb-9746-158983535857",
+					"ApiChange": "Member",
+					"ChangedApiName": "passwordChange",
+					"ChangeType": "Addition",
+					"Description": "Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration.",
+					"Target": "conditionalAccessGrantControl"
+				}
+			],
+			"Id": "d464db13-2924-11eb-9746-158983535857",
+			"Cloud": "prd",
+			"Version": "v1.0",
+			"CreatedDateTime": "2020-11-17T22:32:52.387Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "d4d6369d-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **includeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8e-3f0c-11eb-8849-810a86a5025c",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDevices",
+					"ChangeType": "Addition",
+					"Description": "Added the **excludeDevices** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4d6369e-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "includeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **includeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				},
+				{
+					"Id": "d4daff8d-3f0d-11ec-8840-810a86a5025d",
+					"ApiChange": "Property",
+					"ChangedApiName": "excludeDeviceStates",
+					"ChangeType": "Change",
+					"Description": "Deprecated the **excludeDeviceStates** property on the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource",
+					"Target": "conditionalAccessDevices"
+				}
+			],
+			"Id": "d4d13c07-3f0c-11eb-8849-810a86a5025c",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-15T19:36:30.757Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
 			"ChangeList": [
 				{
 					"Id": "7c1c8d8c-3183-40da-9594-8fbb62ba6249",

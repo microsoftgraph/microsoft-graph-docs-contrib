@@ -74,7 +74,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocaliation_1"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
 Accept-Language: 0
@@ -100,6 +100,14 @@ Accept-Language: 0
 [!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandinglocaliation-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocaliation-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocaliation-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -115,7 +123,7 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update bannerLogo for default branding
+### Example 2: Update bannerLogo for the default branding
 
 The following request updates the banner logo for the default branding.
 
@@ -131,7 +139,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocaliation_2"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Content-Type: image/jpeg
 
@@ -146,6 +154,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 

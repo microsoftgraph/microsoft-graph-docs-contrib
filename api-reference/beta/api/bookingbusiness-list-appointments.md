@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_appointments"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appointments-csharp-snippets.md)]
@@ -68,6 +68,14 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-appointments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-appointments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-appointments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -87,7 +95,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments",
     "value": [
         {
             "id": "AAMkADKoAAA=",
@@ -98,6 +106,41 @@ Content-type: application/json
             "customerName": "Bob Kelly",
             "customerEmailAddress": "bobk@tailspintoys.com",
             "customerPhone": "213-555-0108",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
+                    "name": "Bob Kelly",
+                    "emailAddress": "bobk@tailspintoys.com",
+                    "phone": "213-555-0108",
+                    "notes": null,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"                
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,
@@ -187,6 +230,41 @@ Content-type: application/json
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customers": [
+                {
+                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+                    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+                    "name": "Jordan Miller",
+                    "emailAddress": "jordanm@contoso.com",
+                    "phone": "213-555-0199",
+                    "notes": null,
+                    "location": {
+                        "displayName": "Customer",
+                        "locationEmailAddress": null,
+                        "locationUri": "",
+                        "locationType": null,
+                        "uniqueId": null,
+                        "uniqueIdType": null,
+                        "address": {
+                            "type": "home",
+                            "postOfficeBox": "",
+                            "street": "",
+                            "city": "",
+                            "state": "",
+                            "countryOrRegion": "",
+                            "postalCode": ""
+                        },
+                        "coordinates": {
+                            "altitude": null,
+                            "latitude": null,
+                            "longitude": null,
+                            "accuracy": null,
+                            "altitudeAccuracy": null
+                        }
+                    },
+                    "timeZone": "America/Chicago"
+                }
+            ],
             "customerTimeZone": "America/Chicago",
             "customerNotes": null,
             "smsNotificationsEnabled": true,
