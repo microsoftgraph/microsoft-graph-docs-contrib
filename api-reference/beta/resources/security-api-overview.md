@@ -60,7 +60,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 An incident is a collection of correlated [alerts](security-alert.md) and associated data that make up the story of an attack. [Incident management](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) is part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true), and is available in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)).
 
-Microsoft 365 services and apps create [alerts](security-alert.md) when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple [alerts](alert_v2.md) for multiple entities in your tenant.
+Microsoft 365 services and apps create [alerts](security-alert.md) when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple [alerts](security-alert.md) for multiple entities in your tenant.
 
 Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
 
