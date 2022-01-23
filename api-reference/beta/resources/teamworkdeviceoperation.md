@@ -1,6 +1,6 @@
 ---
 title: "teamworkDeviceOperation resource type"
-description: "Represents the details about async operations on a device."
+description: "Represents details about async operations running on a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about async operations on a [teamworkDevice](../resources/teamworkdevice.md). Any async operation ran on a device creates a **teamworkDeviceOperation**. You can retrieve the status of the operation via the **teamworkDeviceOperation** object.
+Represents details about async operations running on a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including operation status. Any async operation running on a device creates a **teamworkDeviceOperation** object.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|Time at which the operation reached into final state (for example, `Successful`, `Failed`, and `Cancelled`).|
+|completedDateTime|DateTimeOffset|Time at which the operation reached a final state (for example, `Successful`, `Failed`, and `Cancelled`).|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |error|[operationError](../resources/operationerror.md)|Error details are available only in case of a failed status.|

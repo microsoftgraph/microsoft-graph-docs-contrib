@@ -18,11 +18,11 @@ Represent the details about the display screen configuration for a [teamworkDevi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|backlightBrightness|Int32|The brightness level on the device (0-100). Not Applicable for Microsoft Teams Rooms devices.|
-|backlightTimeout|Duration|Timeout for backlight (30-3600 secs). Not Applicable for Teams Rooms devices.|
-|isHighContrastEnabled|Boolean|`True` if high contrast mode is enabled. Not Applicable for Teams Rooms devices.|
-|isScreensaverEnabled|Boolean|`True` if screensaver is enabled. Not Applicable for Teams Rooms devices.|
-|screensaverTimeout|Duration|Screensaver timeout from 30 to 3600 secs. Not Applicable for Teams Rooms devices.|
+|backlightBrightness|Int32|The brightness level on the device (0-100). Not applicable for Microsoft Teams Rooms devices.|
+|backlightTimeout|Duration|Timeout for backlight (30-3600 secs). Not applicable for Teams Rooms devices.|
+|isHighContrastEnabled|Boolean|`True` if high contrast mode is enabled. Not applicable for Teams Rooms devices.|
+|isScreensaverEnabled|Boolean|`True` if screensaver is enabled. Not applicable for Teams Rooms devices.|
+|screensaverTimeout|Duration|Screensaver timeout from 30 to 3600 secs. Not applicable for Teams Rooms devices.|
 
 ## Relationships
 None.

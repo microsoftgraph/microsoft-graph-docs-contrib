@@ -14639,7 +14639,7 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
-      - name: Devices
+      - name: Device
         items:
         - name: Enrolled devices
           href: resources/teamworkdevice.md
@@ -14654,22 +14654,22 @@ items:
               href: api/teamworkdevice-rundiagnostics.md
             - name: Software update
               href: api/teamworkdevice-updatesoftware.md
-        - name: Devices activity
+        - name: Device activity
           href: resources/teamworkdeviceactivity.md
           items:
             - name: Get
               href: api/teamworkdeviceactivity-get.md
-        - name: Devices configuration
+        - name: Device configuration
           href: resources/teamworkdeviceconfiguration.md
           items:
             - name: Get
               href: api/teamworkdeviceconfiguration-get.md
-        - name: Devices health
+        - name: Device health
           href: resources/teamworkdevicehealth.md
           items:
             - name: Get
               href: api/teamworkdevicehealth-get.md
-        - name: Devices async operation
+        - name: Device operation
           href: resources/teamworkdeviceoperation.md
           items:
             - name: List

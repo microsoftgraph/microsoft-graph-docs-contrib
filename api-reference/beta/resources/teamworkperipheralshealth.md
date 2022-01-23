@@ -1,6 +1,6 @@
 ---
 title: "teamworkPeripheralsHealth resource type"
-description: "Represents the health details about all peripherals attached to a device."
+description: "Represents health details for all peripheral devices attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the health details about all peripherals attached to a [teamworkDevice](../resources/teamworkdevice.md).
+Represents health details for all peripheral devices attached to a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
