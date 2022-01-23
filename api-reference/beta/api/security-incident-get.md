@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [incident](../resources/incident.md) object.
+Retrieve the properties and relationships of an [incident](../resources/security-incident.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [incident](../resources/incident.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [incident](../resources/security-incident.md) object in the response body.
 
 ## Examples
 
