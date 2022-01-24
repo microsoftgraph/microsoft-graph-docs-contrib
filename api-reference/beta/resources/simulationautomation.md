@@ -21,13 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulationAutomations](../api/simulationautomation-list.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of the [simulationAutomation](../resources/simulationautomation.md) objects and their properties.|
-|[Create simulationAutomation](../api/attacksimulationroot-post-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md)|Create a new [simulationAutomation](../resources/simulationautomation.md) object.|
-|[Get simulationAutomation](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md)|Read the properties and relationships of a [simulationAutomation](../resources/simulationautomation.md) object.|
-|[Update simulationAutomation](../api/simulationautomation-update.md)|[simulationAutomation](../resources/simulationautomation.md)|Update the properties of a [simulationAutomation](../resources/simulationautomation.md) object.|
-|[Delete simulationAutomation](../api/simulationautomation-delete.md)|None|Deletes a [simulationAutomation](../resources/simulationautomation.md) object.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of the [simulationAutomation](../resources/simulationautomation.md) objects and their properties.|
 |[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get the simulationAutomationRun resources from the runs navigation property.|
-|[Create simulationAutomationRun](../api/simulationautomation-post-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md)|Create a new simulationAutomationRun object.|
 
 ## Properties
 |Property|Type|Description|

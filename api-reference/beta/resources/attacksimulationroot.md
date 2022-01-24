@@ -20,6 +20,7 @@ This is an abstract type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get the simulation resources from the simulations navigation property.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get the simulationAutomation resources from the simulationAutomations navigation property.|
 
 ## Properties
 |Property|Type|Description|
@@ -28,6 +29,7 @@ This is an abstract type.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represent simulation automation of a tenant.|
 |simulations|[simulation](../resources/simulation.md) collection|Represent attack simulation and training campaign of a tenant.|
 
 ## JSON representation

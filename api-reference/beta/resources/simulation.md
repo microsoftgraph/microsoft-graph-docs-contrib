@@ -45,7 +45,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationStatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of the tenant admin for the source of training content to assign to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
 |trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to be completed by users in the attack simulation and training campaign.|
 
 ### simulationStatus values
@@ -84,16 +83,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, Internet-of-things devices. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
-### trainingContentPreference values
-
-|Member|Description |
-|:---|:---|
-|unknown| Training content preference not identified. |
-|microsoft| Training content from a collection of trainings supplied by Microsoft. |
-|custom| Training content supplied by tenant. |
-|noTraining| No training assignment to end users as part of the campaign. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-
 ## Relationships
 None.
 
@@ -130,7 +119,6 @@ The following is a JSON representation of the resource.
   "isAutomated": "Boolean",
   "cleanupArtifacts": "Boolean",
   "payloadDeliveryPlatform": "String",
-  "trainingContentPreference": "String",
   "trainingDueDateTime": "String (timestamp)",
   "report": {
     "@odata.type": "microsoft.graph.simulationReport"
