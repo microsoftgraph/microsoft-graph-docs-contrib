@@ -21,6 +21,8 @@ The source image associated with your Azure subscription.
 |:---|:---|:---|
 |id|String|The ID of the source image.|
 |displayName|String|The display name for the source image.|
+|subscriptionId|String|The ID of subscription that hosts the source image.|
+|subscriptionDisplayName|String|The display name of subscription that hosts the source image.|
 
 ## Relationships
 
@@ -39,6 +41,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "subscriptionId": "String",
+  "subscriptionDisplayName": "String"
 }
 ```
