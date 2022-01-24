@@ -33,7 +33,7 @@ Or, in the following Microsoft 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the
-[Microsoft Graph API metadata](../index.md).
+[Microsoft Graph API metadata](/graph/call-api).
 
 ## Types of extended properties
 
