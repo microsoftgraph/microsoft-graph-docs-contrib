@@ -32,14 +32,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |activityState|teamworkDeviceActivityState|The activity state of the device. The possible values are: `unknown`, `busy`, `idle`, `unavailable`, `unknownFutureValue`.|
 |companyAssetTag|String|The company asset tag assigned by the admin on the device.|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who enrolled the device to the tenant.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |currentUser|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|The signed-in user on the device.|
 |deviceType|[teamworkDeviceType](../resources/teamworkdevice.md#teamworkdevicetype-values)|The type of device. The possible values are: `unknown`, `ipPhone`, `teamsRoom`, `surfaceHub`, `collaborationBar`, `teamsDisplay`, `touchConsole`, `lowCostPhone`, `teamsPanel`, `sip`, `unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|A collection of hardware related properties. For example, **oemSerialNumber** and **model**.|
 |healthStatus|[teamworkDeviceHealthStatus](../resources/teamworkdevice.md#teamworkdevicehealthstatus-values)|The health status of the device. The possible values are: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
 |id|String|Device identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device details.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
 |notes|String|The notes added by the admin to the device.|
 

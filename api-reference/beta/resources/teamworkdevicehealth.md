@@ -26,11 +26,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |connection|[teamworkConnection](../resources/teamworkconnection.md)|Information about the connection status.|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the device health document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |hardwareHealth|[teamworkHardwareHealth](../resources/teamworkhardwarehealth.md)|Health details about the device hardware.|
 |id|String|Doucument identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device health details.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
 |loginStatus|[teamworkLoginStatus](../resources/teamworkloginstatus.md)|The login status of Microsoft Teams, Skype for Business, and Exchange.|
 |peripheralsHealth|[teamworkPeripheralsHealth](../resources/teamworkperipheralshealth.md)|Health details about all peripherals (for example, speaker and microphone) attached to a device.|

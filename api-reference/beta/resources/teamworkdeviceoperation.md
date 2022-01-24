@@ -27,11 +27,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Time at which the operation reached a final state (for example, `Successful`, `Failed`, and `Cancelled`).|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the device operation.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |error|[operationError](../resources/operationerror.md)|Error details are available only in case of a failed status.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
+|lastActionBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device operation.|
 |lastActionDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
 |operationType|teamworkDeviceOperationType|Type of async operation on a device. The possible values are: `deviceRestart`, `configUpdate`, `deviceDiagnostics`, `softwareUpdate`, `deviceManagementAgentConfigUpdate`, `remoteLogin`, `remoteLogout`, `unknownFutureValue`.|
 |startedDateTime|DateTimeOffset|Time at which the operation was started.|

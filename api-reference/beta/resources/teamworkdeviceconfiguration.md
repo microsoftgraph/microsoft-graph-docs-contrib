@@ -27,12 +27,12 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |cameraConfiguration|[teamworkCameraConfiguration](../resources/teamworkcameraconfiguration.md)|The camera configuration. Applicable only for Microsoft Teams Rooms-enabled devices.|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the document.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the device configuration document.|
 |createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
 |displayConfiguration|[teamworkDisplayConfiguration](../resources/teamworkdisplayconfiguration.md)|The display configuration.|
 |hardwareConfiguration|[teamworkHardwareConfiguration](../resources/teamworkhardwareconfiguration.md)|The hardware configuration. Applicable only for Teams Rooms-enabled devices.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the document.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device configuration.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
 |microphoneConfiguration|[teamworkMicrophoneConfiguration](../resources/teamworkmicrophoneconfiguration.md)|The microphone configuration. Applicable only for Teams Rooms-enabled devices.|
 |softwareVersions|[teamworkDeviceSoftwareVersions](../resources/teamworkdevicesoftwareversions.md)|Information related to software versions for the device, such as firmware, operating system, Teams client, and admin agent.|
