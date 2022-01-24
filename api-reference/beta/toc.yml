@@ -377,11 +377,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted users
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted user
           href: api/directory-deleteditems-get.md
         - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted user
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -770,11 +770,11 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md  
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
-          href: api/directory-deleteditems-get.md 
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md     
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -1582,7 +1582,7 @@ items:
             href: api/application-post-onlinemeetings.md
           - name: Get
             href: api/onlinemeeting-get.md
-          - name: Update 
+          - name: Update
             href: api/onlinemeeting-update.md
           - name: Delete
             href: api/onlinemeeting-delete.md
@@ -1653,7 +1653,7 @@ items:
           href: api/presence-setuserpreferredpresence.md
         - name: Clear user preferred presence
           href: api/presence-clearuserpreferredpresence.md
-    - name: Compliance 
+    - name: Compliance
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
       - name: Overview
@@ -1929,7 +1929,7 @@ items:
         - name: Update
           href: api/bookingcustomquestion-update.md
         - name: Delete
-          href: api/bookingcustomquestion-delete.md    
+          href: api/bookingcustomquestion-delete.md
       - name: Booking customer
         href: resources/bookingcustomer.md
         items:
@@ -10551,7 +10551,7 @@ items:
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
         - name: Get delta
-          href: api/educationassignment-delta.md          
+          href: api/educationassignment-delta.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -10576,7 +10576,7 @@ items:
         - name: Delete category
           href: api/educationcategory-delete.md
         - name: Get delta
-          href: api/educationcategory-delta.md          
+          href: api/educationcategory-delta.md
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -13332,7 +13332,7 @@ items:
           items:
           - name: Item insights (preview)
             href: resources/iteminsights.md
-          
+
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
@@ -13363,8 +13363,8 @@ items:
             href: api/userinsightssettings-get.md
           - name: Update
             href: api/userinsightssettings-update.md
-                
-                
+
+
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
@@ -13912,6 +13912,18 @@ items:
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
+        - name: SimulationAutomations
+          items:
+          - name: SimulationAutomation
+            href: resources/simulationautomation.md
+          - name: List simulation automations
+            href: api/attacksimulationroot-list-simulationautomations.md
+        - name: SimulationAutomationRuns
+          items:
+          - name: SimulationAutomationRun
+            href: resources/simulationautomationrun.md
+          - name: List simulation automation runs
+            href: api/simulationautomation-list-runs.md
         - name: Reports
           items:
           - name: Attack simulation reports
@@ -14364,7 +14376,7 @@ items:
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams in an organization
-          href: api/teams-list.md  
+          href: api/teams-list.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -14413,11 +14425,11 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md  
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
-          href: api/directory-deleteditems-get.md 
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md     
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
         - name: List permission grants
