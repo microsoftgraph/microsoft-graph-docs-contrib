@@ -29,15 +29,13 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
 |attackType|[simulationAttackType](#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|cleanupArtifacts|Boolean|Flag representing if artifacts were cleaned up in the attack simulation and training campaign.|
+|automationId|String|Id of the simulation automation.|
 |completionDateTime|DateTimeOffset|Date and time of completion of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
 |createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation and training campaign.|
 |description|String|Description of the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
-|enableRegionTimezoneDelivery|Boolean|Flag representing whether to enable or disable timezone-aware delivery of phishing payload in the attack simulation and training campaign.|
-|id|String|ID of the attack simulation and training campaign.|
-|includeAllAccountTargets|Boolean|Flag representing inclusion of all the users of a tenant in the attack simulation and training campaign.|
+|id|String|Id of the attack simulation and training campaign.|
 |isAutomated|Boolean|Flag representing if the attack simulation and training campaign was created from a simulation automation flow. Supports `$filter` and `$orderby`. |
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
@@ -45,7 +43,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationStatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to be completed by users in the attack simulation and training campaign.|
 
 ### simulationStatus values
 
@@ -114,12 +111,9 @@ The following is a JSON representation of the resource.
   },
   "launchDateTime": "String (timestamp)",
   "completionDateTime": "String (timestamp)",
-  "includeAllAccountTargets": "Boolean",
-  "enableRegionTimezoneDelivery": "Boolean",
   "isAutomated": "Boolean",
-  "cleanupArtifacts": "Boolean",
+  "automationId": "String",
   "payloadDeliveryPlatform": "String",
-  "trainingDueDateTime": "String (timestamp)",
   "report": {
     "@odata.type": "microsoft.graph.simulationReport"
   }

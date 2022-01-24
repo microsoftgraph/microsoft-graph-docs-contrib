@@ -145,12 +145,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadDeliveryPlatform": "email",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+	  "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }
