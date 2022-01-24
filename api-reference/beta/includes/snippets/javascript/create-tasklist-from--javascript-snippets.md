@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const lists = {
+const baseTaskList = {
     displayName: 'Shopping list'
 };
 
 await client.api('/me/tasks/lists')
 	.version('beta')
-	.post(lists);
+	.post(baseTaskList);
 
 ```

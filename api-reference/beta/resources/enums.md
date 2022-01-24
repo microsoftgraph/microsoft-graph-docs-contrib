@@ -25,6 +25,12 @@ Namespace: microsoft.graph
 |:---|
 |user|
 |group|
+
+### userSignInRecommendationScope values 
+
+|Member|
+|:---|
+|tenant|
 |application|
 
 ### incomingTokenType values 
@@ -758,6 +764,15 @@ Namespace: microsoft.graph
 |weak|
 |unknown|
 
+### authenticationContextDetail values
+
+|Member|
+|:---|
+|required|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
 ### educationAddedStudentAction values
 
 |Member|
@@ -801,6 +816,19 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### expirationRequirement values
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
 
 ### replyRestriction values
 
@@ -1902,6 +1930,9 @@ Possible values for user account types (group membership), per Windows definitio
 |ADFederationServices|
 |unknownFutureValue|
 |AzureADBackupAuth|
+|ADFederationServicesMFAAdapter|
+|NPSExtension|
+
 
 ### riskDetectionTimingType values
 
@@ -2747,4 +2778,14 @@ Possible values for user account types (group membership), per Windows definitio
 |allAttendees|
 |staff|
 |customer|
+|unknownFutureValue|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
 |unknownFutureValue|

@@ -410,7 +410,7 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ### Installation of apps that require resource-specific consent permissions is not supported
-The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 - [Add app to team](/graph/api/team-post-installedapps.md)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Add app to chat](/graph/api/chat-post-installedapps.md)
