@@ -38,7 +38,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 |resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
-|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags to for spelling correction. Optional. |
+|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
 
 ## JSON representation
 
