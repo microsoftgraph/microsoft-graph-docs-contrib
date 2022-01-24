@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the traditional Azure AD B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways. 
+In the traditional Azure AD B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
 **Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. This collaboration is mainly through the Azure Active Directory (Azure AD) B2B and Azure AD B2B Direct Connect (future) features. The control can be on either **outbound access** (how your users collaborate with other organizations), **inbound access** (how other organizations collaborate with you), or both.
 
@@ -40,7 +40,13 @@ By default, Azure AD assigns all Azure AD tenants a service default configuratio
 Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration with a specific Azure AD organization. Any collaboration with this organization will inherit these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
 Even though you have added a partner to your cross-tenant access settings, some of your default settings will still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration will be inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
-## Trust settings in cross-tenant access settings
+
+## Inbound trust settings in cross-tenant access settings
+
+Inbound trust settings enable you to trust the MFA external users perform in their home directories. This addresses the feedback you've given us around your external users having to perform MFA multiple times, both in their home directories and in your directory. Now you can enable a seamless authentication experience for your external users by trusting the MFA they perform in their home directories so they don't need to complete MFA with you. You'll also save on the MFA costs incurred by your organization.  
+
+Inbound trust settings also enable you to trust devices that are compliant, or hybrid Azure AD joined in their home directories. Devices can only be managed and compliant in their home directories. You can now protect access to your apps and resources by requiring that external users use compliant, or hybrid Azure AD joined devices and using inbound trust settings to trust the device your external users are using to access your resources.
+
 ## Interpreting the API response
 
 The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. **b2bSetting** is used as a placeholder for any B2B inbound (**b2bCollaborationInbound** or **b2bDirectConnectInbound**) or outbound (**b2bCollaborationOutbound** or **b2bDirectConnectOutbound**) configuration.
@@ -320,7 +326,11 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 <td> Users in group 'g1' are allowed access to application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
 </table>
+
 ## Cross-tenant access settings vs tenant restrictions
+
+Cross tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions is to control how your employees use **other Azure AD organization's accounts while the employee is on your networks or devices**. Critically, outbound controls work all of the time because they're associated with your accounts, while Tenant Restrictions requires additional signals be injected into the authentication requests to be enforced, because Tenant Restrictions is scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+
 ## Next steps
 
 + [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type
