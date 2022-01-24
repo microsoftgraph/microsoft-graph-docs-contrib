@@ -27,15 +27,15 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|User object identifier in Azure AD. Inherited from [entity](../resources/entity.md).|
-|isMfaCapable|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Possible values are `true`, `false`.|
-|isMfaRegistered|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Possible values are `true`, `false`.|
-|isPasswordlessCapable|Boolean|Whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Possible values are `true`, `false`.|
-|isSsprCapable|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy. Possible values are `true`, `false`.|
-|isSsprEnabled|Boolean|Whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Possible values are `true`, `false`.|
-|isSsprRegistered|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Possible values are `true`, `false`.|
-|methodsRegistered|String collection|Collection of authentication methods registered, such as `mobilePhone`, `email`, `fido2`.|
-|userDisplayName|String| The user display name, such as `Adele Vance`.|
-|userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`.|
+|isMfaCapable|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
+|isMfaRegistered|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md).  Supports `$filter` (`eq`).|
+|isPasswordlessCapable|Boolean|Whether the user has registered a passwordless strong authentication method (including FIDO2, Windows Hello for Business, and Microsoft Authenticator (Passwordless)) that is allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
+|isSsprCapable|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy. Supports `$filter` (`eq`).|
+|isSsprEnabled|Boolean|Whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Supports `$filter` (`eq`).|
+|isSsprRegistered|Boolean|Whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Supports `$filter` (`eq`).|
+|methodsRegistered|String collection|Collection of authentication methods registered, such as `mobilePhone`, `email`, `fido2`. Supports `$filter` (`any` with `eq`).|
+|userDisplayName|String| The user display name, such as `Adele Vance`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
+|userPrincipalName|String|The user principal name, such as `AdeleV@contoso.com`. Supports `$filter` (`eq`, `startsWith`) and `$orderBy`.|
 
 ## Relationships
 None.
