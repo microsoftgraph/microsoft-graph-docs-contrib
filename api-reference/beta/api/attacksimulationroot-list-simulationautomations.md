@@ -1,6 +1,6 @@
 ---
 title: "List simulationAutomations"
-description: "Get the simulationAutomation resources from the simulationAutomations navigation property."
+description: "List attack simulation automations of a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the simulationAutomation resources from the simulationAutomations navigation property.
+List attack simulation automations of a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## HTTP request
 
@@ -34,7 +34,28 @@ GET /security/attackSimulation/simulationAutomations
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skip`, `$top`, `$select`.
+
+The following properties support `$filter` and `$orderby`: **displayName**, **status**.
+
+Use `@odata.nextLink` for pagination.
+
+The following are examples of their use:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/attackSimulation/simulationAutomations?$count=true
+GET /security/attackSimulation/simulationAutomations?$filter={property} eq '{property-value}'
+GET /security/attackSimulation/simulationAutomations?$filter={property} eq '{property-value}'&$top=5
+GET /security/attackSimulation/simulationAutomations?$orderby={property}
+GET /security/attackSimulation/simulationAutomations?$top=1
+GET /security/attackSimulation/simulationAutomations?$select={property}
+```
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -78,19 +99,23 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.simulationAutomation",
       "id": "fbad62b0-b32d-b6ac-9f48-d84bbea08f96",
-      "displayName": "String",
-      "description": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
+      "displayName": "Sample Simulation Automation",
+      "description": "Sample Simulation Automation Description",
+      "status": "running",
+      "createdDateTime": "2022-01-01T01:01:01.01Z",
       "createdBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
       },
-      "lastModifiedDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "2022-01-01T01:01:01.01Z",
       "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.emailIdentity"
+        "id": "99af58b9-ef1a-412b-a581-cb42fe8c8e21",
+        "displayName": "Sample User",
+        "email": "sampleuser@contoso.com"
       },
-      "lastRunDateTime": "String (timestamp)",
-      "nextRunDateTime": "String (timestamp)"
+      "lastRunDateTime": "2022-01-01T01:01:01.01Z",
+      "nextRunDateTime": "2022-01-01T01:01:01.01Z"
     }
   ]
 }

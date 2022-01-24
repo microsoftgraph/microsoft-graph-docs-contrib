@@ -1,6 +1,6 @@
 ---
 title: "List runs"
-description: "Get the simulationAutomationRun resources from the runs navigation property."
+description: "List runs of an attack simulation automation of a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the simulationAutomationRun resources from the runs navigation property.
+List runs of an attack simulation automation of a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | SecurityEvents.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## HTTP request
 
@@ -34,7 +34,23 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$skiptoken`, `$top`, `$select`.
+
+Use `@odata.nextLink` for pagination.
+
+The following are examples of their use:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$count=true
+GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$top=1
+GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$select={property}
+```
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -78,10 +94,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.simulationAutomationRun",
       "id": "ac4936a5-3865-a0ec-7254-67a22f6121e2",
-      "status": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "simulationId": "String"
+      "status": "succeeded",
+      "startDateTime": "2021-01-01T02:01:01.01Z",
+      "endDateTime": "2021-01-01T02:01:01.01Z",
+      "simulationId": "bc4936a5-3865-a0ec-7254-67a22f6121e2"
     }
   ]
 }
