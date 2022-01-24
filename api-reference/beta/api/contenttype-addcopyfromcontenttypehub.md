@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 Add or sync a copy of a published content type from the content type hub to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
+This API is part of new content type publishing changes as described in this [blog post](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -73,7 +74,7 @@ Content-Type: application/json
 Content-length: 33
 
 {
-  "contentTypeId": "String"
+  "contentTypeId": "0x0101"
 }
 ```
 
@@ -91,15 +92,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.contentType",
-    "id": "String (identifier)",
-    "description": "String",
-    "group": "String",
-    "hidden": "Boolean",
-    "isBuiltIn": "Boolean",
-    "name": "String"
-  }
+    "id": "0x0101",
+    "description": "Document content type",
+    "group": "Document Content Types",
+    "hidden": false,
+    "isBuiltIn": true,
+    "name": "Document"
 }
 ```
 ### Example 2: Asynchronous pull

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get compatible content types in the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
+This API is part of new content type publishing changes as described in this [blog post](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,11 +77,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.contentType",
-      "id": "String (identifier)",
-      "description": "String",
-      "group": "String",
-      "isBuiltIn": "Boolean",
-      "name": "String"
+      "id": "0x0101",
+      "description": "Document content type",
+      "group": "Document Content Types",
+      "hidden": false,
+      "isBuiltIn": true,
+      "name": "Document"
     }
   ]
 }
