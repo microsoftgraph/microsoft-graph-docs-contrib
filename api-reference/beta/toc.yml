@@ -1844,9 +1844,9 @@ items:
         href: resources/project-rome-overview.md
       - name: List user devices (deprecated)
         href: api/user-list-devices.md
-      - name: Send device command
+      - name: Send device command (deprecated)
         href: api/send-device-command.md
-      - name: Get device command status
+      - name: Get device command status (deprecated)
         href: api/get-device-command-status.md
       - name: Activity feed
         href: resources/activity-feed-api-overview.md

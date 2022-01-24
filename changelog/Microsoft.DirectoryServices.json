@@ -5,16 +5,16 @@
         {
           "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
           "ApiChange": "Method",
-          "ChangedApiName": "LIST",
-          "ChangeType": "Addition",
-          "Description": "Deprecated the [/me/devices](https://docs.microsoft.com/en-us/graph/api/user-list-devices?view=graph-rest-beta) endpoint that retrieves the signed-in user's devices that support Project Rome capabilities.",
+          "ChangedApiName": "devices",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **/me/devices**, **/me/devices/{id}/commands**, and **/me/devices/{id}/commands/{id}** endpoints that allow discovering and sending commands to user devices that support Project Rome capabilities.",
           "Target": "users"
          }
         ],
         "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
         "Cloud": "Prod",
         "Version": "beta",
-        "CreatedDateTime": "2022-01-20T00:00:00.8892294Z",
+        "CreatedDateTime": "2022-01-24T00:00:00.8892294Z",
         "WorkloadArea": "Users",
         "SubArea": ""
       },	  
