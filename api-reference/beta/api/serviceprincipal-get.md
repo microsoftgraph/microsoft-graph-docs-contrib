@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -233,6 +237,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecuri
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-customsecurityattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-customsecurityattributes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

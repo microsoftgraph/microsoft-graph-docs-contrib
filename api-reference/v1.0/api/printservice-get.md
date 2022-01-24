@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}
 [!INCLUDE [sample-code](../includes/snippets/go/get-printservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printservice-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

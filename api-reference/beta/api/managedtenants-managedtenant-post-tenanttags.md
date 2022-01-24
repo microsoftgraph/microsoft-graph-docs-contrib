@@ -1,7 +1,7 @@
 ---
 title: "Create tenantTag"
 description: "Create a new tenantTag object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType

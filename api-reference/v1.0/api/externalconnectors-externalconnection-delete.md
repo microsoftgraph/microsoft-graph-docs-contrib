@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr
 [!INCLUDE [sample-code](../includes/snippets/go/delete-externalconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-externalconnection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
