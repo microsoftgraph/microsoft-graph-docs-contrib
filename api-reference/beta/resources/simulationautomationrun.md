@@ -1,6 +1,6 @@
 ---
 title: "simulationAutomationRun resource type"
-description: "Represent run of a simulation automation of a tenant."
+description: "Represent run of an attack simulation automation of a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,10 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represent run of an attack simulation automation of a tenant.
 
-
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -26,11 +24,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|simulationId|String|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|[simulationAutomationRunStatus](#simulationautomationrunstatus-values)|Status of the simulation automation run. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
+|endDateTime|DateTimeOffset|Date and time when the run ends in an attack simulation automation.|
+|id|String|Id of the run of attack simulation automation.|
+|simulationId|String|Id of the attack simulation campaign initiated in the attack simulation automation run.|
+|startDateTime|DateTimeOffset|Date and time when the run starts in an attack simulation automation.|
+|status|[simulationAutomationRunStatus](#simulationautomationrunstatus-values)|Status of the run of an attack simulation automation. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 
 ### simulationAutomationRunStatus values
 

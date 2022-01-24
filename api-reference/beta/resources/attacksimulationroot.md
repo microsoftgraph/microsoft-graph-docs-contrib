@@ -29,7 +29,7 @@ This is an abstract type.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represent simulation automation of a tenant.|
+|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represent attack simulation automation of a tenant.|
 |simulations|[simulation](../resources/simulation.md) collection|Represent attack simulation and training campaign of a tenant.|
 
 ## JSON representation

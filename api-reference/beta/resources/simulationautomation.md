@@ -1,6 +1,6 @@
 ---
 title: "simulationAutomation resource type"
-description: "Represent simulation automation of a tenant."
+description: "Represent attack simulation automation of a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,10 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represent attack simulation automation of a tenant.
 
-
-Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -27,16 +25,16 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastRunDateTime|DateTimeOffset|**TODO: Add Description**|
-|nextRunDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|[simulationAutomationStatus](#simulationautomationstatus-values)|Status of the simulation automation. The possible values are: `unknown`, `draft`, `notRunning`, `running`, `completed`, `unknownFutureValue`.|
+|createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation automation.|
+|createdDateTime|DateTimeOffset|Date and time of creation of the attack simulation automation.|
+|description|String|Description of the attack simulation automation.|
+|displayName|String|Display name of the attack simulation automation. Supports `$filter` and `$orderby`.|
+|id|String|Id of the attack simulation automation.|
+|lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation automation.|
+|lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation automation.|
+|lastRunDateTime|DateTimeOffset|Date and time of the latest run of the attack simulation automation.|
+|nextRunDateTime|DateTimeOffset|Date and time of the upcoming run of the attack simulation automation.|
+|status|[simulationAutomationStatus](#simulationautomationstatus-values)|Status of the attack simulation automation. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `draft`, `notRunning`, `running`, `completed`, `unknownFutureValue`.|
 
 ### simulationAutomationStatus values
 
