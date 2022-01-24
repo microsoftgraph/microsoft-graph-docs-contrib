@@ -149,7 +149,6 @@ Content-Type: application/json
       "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
       "cleanupArtifacts": false,
-      "payloadSource": "global",
       "payloadDeliveryPlatform": "email",
       "trainingAssignmentPreference": "manual",
       "trainingContentPreference": "microsoft",

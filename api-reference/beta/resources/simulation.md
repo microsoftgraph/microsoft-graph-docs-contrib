@@ -43,7 +43,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
-|payloadSource|[payloadSource](#payloadsource-values)|Source of phishing payload in the attack simulation and training campaign. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|simulationStatus|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
 |trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of the tenant admin to assign training to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
@@ -70,15 +69,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |social| Attack that uses social skills to manipulate victims psychologically, creating a false sense of curiosity, urgency, or fear. |
 |cloud| Attack on a host or user in a cloud environment, for example, denial of service attacks.|
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, Internet-of-things devices. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-
-### payloadSource values
-
-|Member|Description |
-|:---|:---|
-|unknown| Payload source not identified. |
-|global| Payload from a collection of payloads supplied by Microsoft. |
-|tenant| Payload from a collection of payloads supplied by tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### trainingAssignmentPreference values
@@ -135,7 +125,6 @@ The following is a JSON representation of the resource.
   "enableRegionTimezoneDelivery": "Boolean",
   "isAutomated": "Boolean",
   "cleanupArtifacts": "Boolean",
-  "payloadSource": "String",
   "payloadDeliveryPlatform": "String",
   "trainingAssignmentPreference": "String",
   "trainingContentPreference": "String",
