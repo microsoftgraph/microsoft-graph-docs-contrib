@@ -45,7 +45,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationStatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of the tenant admin to assign training to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
 |trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of the tenant admin for the source of training content to assign to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
 |trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to be completed by users in the attack simulation and training campaign.|
 
@@ -83,15 +82,6 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |social| Attack that uses social skills to manipulate victims psychologically, creating a false sense of curiosity, urgency, or fear. |
 |cloud| Attack on a host or user in a cloud environment, for example, denial of service attacks.|
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, Internet-of-things devices. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-
-### trainingAssignmentPreference values
-
-|Member|Description |
-|:---|:---|
-|unknown| Training assignment preference not identified. |
-|auto| Assign trainings to end users based on pre-defined criteria. |
-|manual| Assign trainings to end users based on admin-defined criteria. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### trainingContentPreference values
@@ -140,7 +130,6 @@ The following is a JSON representation of the resource.
   "isAutomated": "Boolean",
   "cleanupArtifacts": "Boolean",
   "payloadDeliveryPlatform": "String",
-  "trainingAssignmentPreference": "String",
   "trainingContentPreference": "String",
   "trainingDueDateTime": "String (timestamp)",
   "report": {

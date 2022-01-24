@@ -150,7 +150,6 @@ Content-Type: application/json
       "isAutomated": false,
       "cleanupArtifacts": false,
       "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
       "trainingContentPreference": "microsoft",
       "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
     }
