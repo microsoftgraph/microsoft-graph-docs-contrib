@@ -1,9 +1,9 @@
 ---
 title: "simulationAutomationRun resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represent run of a simulation automation of a tenant."
+author: "Gopal-MSFT"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
 |simulationId|String|**TODO: Add Description**|
 |startDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|[simulationAutomationRunStatus](#simulationAutomationRunStatus-values)|Status of the simulation automation run. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
+|status|[simulationAutomationRunStatus](#simulationautomationrunstatus-values)|Status of the simulation automation run. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 
 ### simulationAutomationRunStatus values
 

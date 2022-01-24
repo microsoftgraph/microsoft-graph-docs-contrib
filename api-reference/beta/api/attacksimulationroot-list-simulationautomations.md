@@ -1,9 +1,9 @@
 ---
 title: "List simulationAutomations"
 description: "Get the simulationAutomation resources from the simulationAutomations navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "Gopal-MSFT"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
