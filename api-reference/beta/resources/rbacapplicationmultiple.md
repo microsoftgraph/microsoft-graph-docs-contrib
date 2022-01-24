@@ -38,7 +38,7 @@ None
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|roleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups. |
+|roleAssignments|[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) collection| Resource to grant access to users or groups. |
 |roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
 
 ## JSON representation
