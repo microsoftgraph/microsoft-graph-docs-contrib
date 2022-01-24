@@ -2598,23 +2598,6 @@ Possible values for user account types (group membership), per Windows definitio
 |chunkFinished|
 |unknownFutureValue|
 
-### simulationStatus values
-
-|Member|
-|:---|
-|unknown|
-|draft|
-|inProgress|
-|scheduled|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelled|
-|excluded|
-|deleted|
-|included|
-|unknownFutureValue|
-
 ### payloadDeliveryPlatform values
 
 |Member|

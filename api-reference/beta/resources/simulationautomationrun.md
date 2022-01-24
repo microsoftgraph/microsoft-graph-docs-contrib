@@ -34,7 +34,18 @@ Inherits from [entity](../resources/entity.md).
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
 |simulationId|String|**TODO: Add Description**|
 |startDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|simulationAutomationRunStatus|**TODO: Add Description**.The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
+|status|[simulationAutomationRunStatus](#simulationAutomationRunStatus-values)|Status of the simulation automation run. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
+
+### simulationAutomationRunStatus values
+
+|Member|
+|:---|
+|unknown|
+|running|
+|succeeded|
+|failed|
+|skipped|
+|unknownFutureValue|
 
 ## Relationships
 None.

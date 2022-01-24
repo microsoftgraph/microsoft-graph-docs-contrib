@@ -44,10 +44,24 @@ The attack simulation and training _API_ enables tenant administrators to list l
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
-|status|simulationStatus|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `inProgress`, `scheduled`, `completed`, `partiallyCompleted`, `failed`, `cancelled`, `excluded`, `deleted`, `included`, `unknownFutureValue`.|
+|status|[simulationStatus](#simulationStatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 |trainingAssignmentPreference|[trainingAssignmentPreference](#trainingassignmentpreference-values)|Preference of the tenant admin to assign training to users in the attack simulation and training campaign. Possible values are: `unknown`, `auto`, `manual`, `unknownFutureValue`.|
 |trainingContentPreference|[trainingContentPreference](#trainingcontentpreference-values)|Preference of the tenant admin for the source of training content to assign to users in the attack simulation and training campaign. Possible values are: `unknown`, `microsoft`, `custom`, `noTraining`, `unknownFutureValue`.|
 |trainingDueDateTime|DateTimeOffset|Date and time before which the trainings need to be completed by users in the attack simulation and training campaign.|
+
+### simulationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|running|
+|scheduled|
+|succeeded|
+|failed|
+|cancelled|
+|excluded|
+|unknownFutureValue|
 
 ### simulationAttackTechnique values
 

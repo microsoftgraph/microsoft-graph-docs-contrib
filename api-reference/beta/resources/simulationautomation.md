@@ -41,7 +41,18 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
 |lastRunDateTime|DateTimeOffset|**TODO: Add Description**|
 |nextRunDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|simulationAutomationStatus|**TODO: Add Description**.The possible values are: `unknown`, `draft`, `notRunning`, `running`, `completed`, `unknownFutureValue`.|
+|status|[simulationAutomationStatus](#simulationAutomationStatus-values)|Status of the simulation automation. The possible values are: `unknown`, `draft`, `notRunning`, `running`, `completed`, `unknownFutureValue`.|
+
+### simulationAutomationStatus values
+
+|Member|
+|:---|
+|unknown|
+|draft|
+|notRunning|
+|running|
+|completed|
+|unknownFutureValue|
 
 ## Relationships
 |Relationship|Type|Description|
