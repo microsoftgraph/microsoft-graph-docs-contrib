@@ -1,6 +1,6 @@
 ---
 title: "Add owners"
-description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object."
 ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
