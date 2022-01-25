@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
           "Target": "list"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **operations** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         },
         {
