@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the software for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). This API triggers a long-running operation.
 
->**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+[!INCLUDE [teamworkdevice-api-disclaimer](../../includes/teamworkdevice-api-disclaimer.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

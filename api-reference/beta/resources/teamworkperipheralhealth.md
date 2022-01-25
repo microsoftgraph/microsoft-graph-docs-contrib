@@ -18,13 +18,13 @@ Represents health details for a peripheral device attached to a Microsoft Teams-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connection|[teamworkConnection](../resources/teamworkconnection.md)|The connected state and time since the peripheral was connected to the device.|
+|connection|[teamworkConnection](../resources/teamworkconnection.md)|The connected state and time since the peripheral device was connected.|
 |isOptional|Boolean|`True` if the peripheral is optional. Used for health computation.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the peripheral.|
+|peripheral|[teamworkPeripheral](../resources/teamworkperipheral.md)|Information about the peripheral device.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

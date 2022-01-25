@@ -1,6 +1,6 @@
 ---
 title: "teamworkConnection resource type"
-description: "Represents the details about the connection status of a device and its peripherals."
+description: "Represents the details about the connection status of a Microsoft Teams-enabled device and its peripherals."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the connection status of a [teamworkDevice](../resources/teamworkdevice.md) and its peripherals.
-The connection status is useful when you calculate the device health.
+Represents the details about the connection status of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md) and its peripherals.
+The connection status is useful when you calculate the device health as when the required peripheral is not connected properly the device health changes to critical state.
 
 ## Properties
 |Property|Type|Description|

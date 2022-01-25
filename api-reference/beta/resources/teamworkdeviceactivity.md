@@ -27,10 +27,10 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |activePeripherals|[teamworkActivePeripherals](../resources/teamworkactiveperipherals.md)|The active peripheral devices attached to the device.|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the device activity document.|
-|createdDateTime|DateTimeOffset|The UTC date and time when the document was created.|
+|createdDateTime|DateTimeOffset|The UTC date and time when the device activity document was created.|
 |id|String|Document identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user who last modified the device activity details.|
-|lastModifiedDateTime|DateTimeOffset|The UTC date and time when the document was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The UTC date and time when the device activity detail was last modified.|
 
 
 ## JSON representation

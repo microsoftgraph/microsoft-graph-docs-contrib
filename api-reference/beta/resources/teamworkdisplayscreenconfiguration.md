@@ -1,6 +1,6 @@
 ---
 title: "teamworkDisplayScreenConfiguration resource type"
-description: "Represents the details about the display screen configuration for a device."
+description: "Represents the details about the display screen configuration for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent the details about the display screen configuration for a [teamworkDevice](../resources/teamworkdevice.md).
+Represent the details about the display screen configuration for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|

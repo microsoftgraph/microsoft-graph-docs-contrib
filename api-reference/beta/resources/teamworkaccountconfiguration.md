@@ -19,7 +19,7 @@ Represents the details about the account configuration for a Microsoft Teams-ena
 |Property|Type|Description|
 |:---|:---|:---|
 |onPremisesCalendarSyncConfiguration|[teamworkOnPremisesCalendarSyncConfiguration](../resources/teamworkonpremisescalendarsyncconfiguration.md)|The account used to sync the calendar.|
-|supportedClient|teamworkSupportedClient|The supported Teams client. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
+|supportedClient|teamworkSupportedClient|The supported client for Teams Rooms devices. The possible values are: `unknown`, `skypeDefaultAndTeams`, `teamsDefaultAndSkype`, `skypeOnly`, `teamsOnly`, `unknownFutureValue`.|
 
 ## Relationships
 None.

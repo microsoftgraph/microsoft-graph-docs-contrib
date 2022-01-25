@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the details of an async, long-running operation on a Microsoft Teams-enabled [device](../resources/teamworkdeviceoperation.md).
 
->**Note:** Licensing or payment requirements may apply for this API when made available for production use.
+[!INCLUDE [teamworkdevice-api-disclaimer](../../includes/teamworkdevice-api-disclaimer.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

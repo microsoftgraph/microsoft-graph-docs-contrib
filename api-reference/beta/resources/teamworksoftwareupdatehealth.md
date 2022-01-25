@@ -1,6 +1,6 @@
 ---
 title: "teamworkSoftwareUpdateHealth resource type"
-description: "Represents the details about the software updates available for different components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client."
+description: "Represents the details about the software updates available for different components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client, in a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the software updates available for different components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client, in a [teamworkDevice](../resources/teamworkdevice.md).
+Represents the details about the software updates available for different components, such as admin agent, company portal, firmware, operating system, partner agent, and Microsoft Teams client, in a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
