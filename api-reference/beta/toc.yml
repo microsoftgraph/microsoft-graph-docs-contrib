@@ -13533,32 +13533,32 @@ items:
           - name: Credential User Registration Count
             href: resources/credentialuserregistrationcount.md
             items:
-            - name: Get registration count
+            - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
           - name: Credential User Registration Details
             href: resources/credentialuserregistrationdetails.md
             items:
-            - name: List registration details
+            - name: List
               href: api/reportroot-list-credentialuserregistrationdetails.md
           - name: User Credential Usage Details
             href: resources/usercredentialusagedetails.md
             items:
-            - name: List usage details
+            - name: List
               href: api/reportroot-list-usercredentialusagedetails.md
           - name: Credential Usage Summary
             href: resources/credentialusagesummary.md
             items:
-            - name: Get usage summary
+            - name: List
               href: api/reportroot-getcredentialusagesummary.md
           - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
-            - name: Get users registered by feature
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbyfeature.md
           - name: Users registered by method
             href: resources/userregistrationmethodsummary.md
             items:
-            - name: Get users registered by authentication method
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: User registration details
             href: resources/userregistrationdetails.md
