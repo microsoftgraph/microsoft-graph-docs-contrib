@@ -1,6 +1,6 @@
 ---
 title: "cloudPcUserSetting resource type"
-description: "Represent a Cloud PC user setting"
+description: "Represents a Cloud PC user setting"
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
