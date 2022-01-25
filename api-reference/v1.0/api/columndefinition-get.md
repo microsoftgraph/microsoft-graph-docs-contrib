@@ -93,6 +93,10 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-column-from-contenttype-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

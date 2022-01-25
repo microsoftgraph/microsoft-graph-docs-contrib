@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-DeviceCollectionPage devices = graphClient.devices()
+ServicePrincipalCollectionPage servicePrincipals = graphClient.servicePrincipals()
 	.buildRequest( requestOptions )
 	.filter("startswith(displayName, 'a')")
 	.orderBy("displayName")
