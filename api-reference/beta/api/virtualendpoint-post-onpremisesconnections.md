@@ -83,16 +83,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-  "displayName": "Display Name value",
-  "type": "Azure Active Directory join type",
+  "displayName": "test-canary-02",
+  "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-  "subscriptionName": "Subscription Name value",
-  "adDomainName": "Active Directory Domain Name value",
-  "adDomainUsername": "Active Directory Domain User Name value",
-  "organizationalUnit": "Organization Unit value",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
+  "subscriptionName": "CPC customer 001 test subscription",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin",
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 }
 ```
 # [C#](#tab/csharp)
@@ -124,7 +124,6 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** Here is an example of the response. The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,16 +138,16 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "ac2ad805-167e-49ee-9bef-196c4ce7ffff",
-  "displayName": "Display Name value",
-  "type": "Azure Active Directory join type",
+  "displayName": "test-canary-02",
+  "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-  "subscriptionName": "Subscription Name value",
-  "adDomainName": "Active Directory Domain Name value",
-  "adDomainUsername": "Active Directory Domain User Name value",
-  "organizationalUnit": "Organization Unit value",
-  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
+  "subscriptionName": "CPC customer 001 test subscription",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin",
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
   "healthCheckStatus": "pending"
 }
 ```

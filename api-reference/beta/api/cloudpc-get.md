@@ -64,12 +64,12 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc"
+  "name": "get_cloudpc_default_properties"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-csharp-snippets.md)]
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 
 #### Response
 
-**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -152,17 +151,16 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc"
+  "name": "get_cloudpc_selected_properties"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}?$select=id,displayName,,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
 ```
 
 #### Response
 
-**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,
