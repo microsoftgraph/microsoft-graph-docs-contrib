@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc",
+  "name": "get_cloudpc_default_properties",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
@@ -164,7 +164,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc",
+  "name": "get_cloudpc_selected_properties",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
