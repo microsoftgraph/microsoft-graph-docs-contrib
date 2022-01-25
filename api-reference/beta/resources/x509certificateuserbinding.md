@@ -1,7 +1,6 @@
 ---
 title: "x509CertificateUserBinding resource type"
-description: "A complex type that defines the mapping from X.509 certificate field to directory user attribute to bind the certificate to the user account. This controls which certificate fields and which Azure AD user attributes are used
-to bind the certificate to the user."
+description: "A complex type that defines the mapping from X.509 certificate field to directory user attribute to bind the certificate to the user account. This controls which certificate fields and which Azure AD user attributes are used to bind the certificate to the user."
 author: "Vimala"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
