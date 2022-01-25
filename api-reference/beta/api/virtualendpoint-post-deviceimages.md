@@ -106,6 +106,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcdeviceimage-from-cloudpcdeviceimage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcdeviceimage-from-cloudpcdeviceimage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

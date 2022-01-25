@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/go/get-allowedusers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-allowedusers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

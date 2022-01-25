@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGr
 [!INCLUDE [sample-code](../includes/snippets/go/delete-audioroutinggroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-audioroutinggroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

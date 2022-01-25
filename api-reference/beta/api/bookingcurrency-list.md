@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingcurrencies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingcurrencies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

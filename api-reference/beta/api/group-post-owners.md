@@ -1,6 +1,6 @@
 ---
 title: "Add owners"
-description: "Add a user or service principal to a Microsoft 365 or security group's owners."
+description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object."
 ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
@@ -38,14 +38,14 @@ POST /groups/{id}/owners/$ref
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation with the **@odata.id** of a [user](../resources/user.md) or [servicePrincipal](../resources/user.md) object to be added.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
-#### Request
-The following is an example of the request.
+### Request
+The following is an example of the request that adds a user as a group owner.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,11 +80,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-owner-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-owner-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation with the **@odata.id** of a [user](../resources/user.md) or [servicePrincipal](../resources/user.md) object to be added.
 
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
