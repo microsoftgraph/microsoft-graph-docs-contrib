@@ -36,7 +36,7 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Create or replace a history item](../api/projectrome-put-historyitem.md)
 - [Delete a history item](../api/projectrome-delete-historyitem.md)
 
-## Devices
+## Devices (deprecated)
 
 You can use Project Rome APIs in Microsoft Graph to:
 
