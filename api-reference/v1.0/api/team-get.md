@@ -36,7 +36,7 @@ GET /teams/{team-id}
 ```
 
 ## Optional query parameters
-This method supports the $select and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -50,8 +50,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.
 ## Example
-#### Request
-The following is an example of the request.
+### Request
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 
-#### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
