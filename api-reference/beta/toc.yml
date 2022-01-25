@@ -13560,6 +13560,13 @@ items:
             items:
             - name: Get users registered by authentication method
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
+          - name: User registration details
+            href: resources/userregistrationdetails.md
+            items:
+            - name: List 
+              href: api/authenticationmethodsroot-list-userregistrationdetails.md
+            - name: Get 
+              href: api/userregistrationdetails-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
