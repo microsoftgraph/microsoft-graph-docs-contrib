@@ -10429,15 +10429,15 @@ items:
       - name: Schools
         href: resources/educationschool.md
         items:
-        - name: List schools
+        - name: List
           href: api/educationroot-list-schools.md
-        - name: Create school
+        - name: Create
           href: api/educationroot-post-schools.md
-        - name: Get school
+        - name: Get
           href: api/educationschool-get.md
-        - name: Update school
+        - name: Update
           href: api/educationschool-update.md
-        - name: Delete school
+        - name: Delete
           href: api/educationschool-delete.md
         - name: List classes
           href: api/educationschool-list-classes.md
@@ -10458,15 +10458,15 @@ items:
         items:
         - name: List schools
           href: api/educationclass-list-schools.md
-        - name: List classes
+        - name: List
           href: api/educationroot-list-classes.md
-        - name: Create class
+        - name: Create
           href: api/educationroot-post-classes.md
-        - name: Get class
+        - name: Get
           href: api/educationclass-get.md
-        - name: Update class
+        - name: Update
           href: api/educationclass-update.md
-        - name: Delete class
+        - name: Delete
           href: api/educationclass-delete.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
@@ -10497,9 +10497,9 @@ items:
       - name: Users
         href: resources/educationuser.md
         items:
-        - name: Get user
+        - name: Get
           href: api/educationuser-get.md
-        - name: Delete user
+        - name: Delete
           href: api/educationuser-delete.md
         - name: List classes
           href: api/educationuser-list-classes.md
@@ -10516,13 +10516,13 @@ items:
       - name: Assignment
         href: resources/educationassignment.md
         items:
-        - name: Create assignment
+        - name: Create
           href: api/educationclass-post-assignments.md
-        - name: Get assignment
+        - name: Get
           href: api/educationassignment-get.md
-        - name: Update assignment
+        - name: Update
           href: api/educationassignment-update.md
-        - name: Delete assignment
+        - name: Delete
           href: api/educationassignment-delete.md
         - name: List assignment resources
           href: api/educationassignment-list-resources.md
@@ -10555,38 +10555,38 @@ items:
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
-        - name: Get assignment settings
+        - name: Get
           href: api/educationassignmentsettings-get.md
-        - name: Update assignment settings
+        - name: Update
           href: api/educationassignmentsettings-update.md
       - name: Assignment defaults
         href: resources/educationassignmentdefaults.md
         items:
-        - name: Get assignment defaults
+        - name: Get
           href: api/educationassignmentdefaults-get.md
-        - name: Update assignment defaults
+        - name: Update
           href: api/educationassignmentdefaults-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
-        - name: Create category
+        - name: Create
           href: api/educationclass-post-category.md
-        - name: Get category
+        - name: Get
           href: api/educationcategory-get.md
-        - name: Delete category
+        - name: Delete
           href: api/educationcategory-delete.md
         - name: Get delta
           href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
         items:
-        - name: Create rubric
+        - name: Create
           href: api/educationuser-post-rubrics.md
-        - name: Get rubric
+        - name: Get
           href: api/educationrubric-get.md
-        - name: Update rubric
+        - name: Update
           href: api/educationrubric-update.md
-        - name: Delete rubric
+        - name: Delete
           href: api/educationrubric-delete.md
       - name: Submission
         href: resources/educationsubmission.md
@@ -10599,7 +10599,7 @@ items:
           href: api/educationsubmissionresource-get.md
         - name: Delete submission resource
           href: api/educationsubmissionresource-delete.md
-        - name: Get submission
+        - name: Get
           href: api/educationsubmission-get.md
         - name: Set up submission resources folder
           href: api/educationsubmission-setupresourcesfolder.md
@@ -10627,18 +10627,18 @@ items:
           href: resources/educationpointsoutcome.md
         - name: Rubric outcome type
           href: resources/educationrubricoutcome.md
-        - name: Update outcome
+        - name: Update
           href: api/educationoutcome-update.md
       - name: Synchronization profile
         href: resources/educationsynchronizationprofile.md
         items:
-        - name: List profile
+        - name: List
           href: api/educationsynchronizationprofile-list.md
-        - name: Create profile
+        - name: Create
           href: api/educationsynchronizationprofile-post.md
-        - name: Get profile
+        - name: Get
           href: api/educationsynchronizationprofile-get.md
-        - name: Delete profile
+        - name: Delete
           href: api/educationsynchronizationprofile-delete.md
         - name: Start sync
           href: api/educationsynchronizationprofile-start.md
@@ -10653,12 +10653,12 @@ items:
       - name: Synchronization profile status
         href: resources/educationsynchronizationprofilestatus.md
         items:
-        - name: Get sync status
+        - name: Get
           href: api/educationsynchronizationprofilestatus-get.md
       - name: Synchronization errors
         href: resources/educationsynchronizationerror.md
         items:
-        - name: Get sync errors
+        - name: Get
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:
