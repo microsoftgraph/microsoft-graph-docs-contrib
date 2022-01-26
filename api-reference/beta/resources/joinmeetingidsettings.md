@@ -1,7 +1,7 @@
 ---
 title: "joinMeetingIdSettings resource type"
 description: "Specifies the joinMeetingId and the meeting passcode, as well as the passcode requirement."
-author: "yuyaolian"
+author: "yuyaolian-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -34,7 +34,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.joinMeetingIdSettings",
   "isPasscodeRequired": "Boolean",
   "joinMeetingId": "String",
   "passcode": "String"
