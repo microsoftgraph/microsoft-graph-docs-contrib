@@ -713,22 +713,6 @@
                "ChangeType":"Addition",
                "Description":"Added the **accessReviewStageFilterByCurrentUserOptions** enumeration type.",
                "Target":"accessReviewStageFilterByCurrentUserOptions"
-            },
-            {
-               "Id":"da4c17a4-690f-11ec-ae3f-e486bb3b9c86",
-               "ApiChange":"Method",
-               "ChangedApiName":"stop",
-               "ChangeType":"Addition",
-               "Description":"Added the [stop](https://docs.microsoft.com/en-us/graph/api/accessReviewStage-stop?view=graph-rest-beta) method to the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-beta) resource.",
-               "Target":"accessReviewStage"
-            },
-            {
-               "Id":"da4e7b49-690f-11ec-ae3f-e486bb3b9c86",
-               "ApiChange":"Method",
-               "ChangedApiName":"filterByCurrentUser",
-               "ChangeType":"Addition",
-               "Description":"Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewStage-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-beta) resource.",
-               "Target":"accessReviewStage"
             }
          ],
          "Id":"da1a057a-690f-11ec-ae3f-e486bb3b9c86",
