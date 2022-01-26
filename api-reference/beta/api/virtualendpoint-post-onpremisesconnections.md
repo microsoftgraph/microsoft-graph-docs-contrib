@@ -69,6 +69,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcO
 
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,6 +124,8 @@ Content-Type: application/json
 
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

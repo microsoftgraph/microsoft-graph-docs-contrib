@@ -60,6 +60,8 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 #### Request
 
+The following is an example of a request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,6 +101,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -149,6 +153,8 @@ Content-Type: application/json
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_cloudpc_selected_properties"
@@ -160,6 +166,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 ```
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
