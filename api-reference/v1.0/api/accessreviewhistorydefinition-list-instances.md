@@ -1,5 +1,5 @@
 ---
-title: "List instances"
+title: "List access review history definition instances"
 description: "Retrieve the instances of an access review history definition."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
