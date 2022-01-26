@@ -1,7 +1,7 @@
 ---
 title: "x509CertificateRule resource type"
 description: "Defines the strong authentication configuration rules for the X.509 certificate. Rules are configured in addition to the authentication mode."
-author: "Vimala"
+author: "charlenezheng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

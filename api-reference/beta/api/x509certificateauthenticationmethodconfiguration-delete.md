@@ -1,7 +1,7 @@
 ---
 title: "Disable x509CertificateAuthenticationMethodConfiguration"
 description: "Disable a x509CertificateAuthenticationMethodConfiguration object and restores all the other properties to their default settings"
-author: "Vimala"
+author: "charlenezheng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
