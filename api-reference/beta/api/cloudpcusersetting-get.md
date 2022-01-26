@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcusersetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcusersetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -154,6 +158,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettin
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcusersetting-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcusersetting-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 [!INCLUDE [sample-code](../includes/snippets/go/get-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-registeredowners-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/columns
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

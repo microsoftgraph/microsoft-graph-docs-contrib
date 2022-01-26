@@ -1,7 +1,7 @@
 ---
 title: "deploymentAudience: updateAudienceById"
 description: "Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
