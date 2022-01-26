@@ -5,7 +5,7 @@ ms.date: 09/12/2017
 title: DefaultColumnValue
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+
 ---
 # DefaultColumnValue resource type
 

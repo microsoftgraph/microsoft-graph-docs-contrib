@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: CalculatedColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+
 ---
 # CalculatedColumn resource type
 
