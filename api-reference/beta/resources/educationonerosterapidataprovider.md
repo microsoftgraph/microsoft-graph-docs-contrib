@@ -77,7 +77,6 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.ediscovery.settings"
   ]
 }-->
 
