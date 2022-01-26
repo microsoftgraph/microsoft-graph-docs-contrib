@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 [!INCLUDE [sample-code](../includes/snippets/go/chat-getallmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-getallmessages-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

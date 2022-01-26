@@ -86,6 +86,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-directoryrole-objectid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-directoryrole-objectid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

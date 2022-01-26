@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 [!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

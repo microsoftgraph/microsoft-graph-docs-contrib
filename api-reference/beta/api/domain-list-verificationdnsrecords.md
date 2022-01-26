@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 [!INCLUDE [sample-code](../includes/snippets/go/get-verificationdnsrecords-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-verificationdnsrecords-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
