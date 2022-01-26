@@ -47,6 +47,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the joinMeetingId and the meeting passcode, as well as the passcode requirement. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
@@ -125,6 +126,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "allowedPresenters": "String",
   "isBroadcast": "Boolean",
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
