@@ -1,5 +1,5 @@
 ---
-title: "Get tenantInformationByTenantId"
+title: "findTenantInformationByDomainName"
 description: "Given a domain name, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get tenantInformationByDomainName
+# findTenantInformationByDomainName
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -3,7 +3,7 @@ title: "tenantInformation resource type"
 description: "Information about your tenant that can be displayed to users from external tenants, without the external tenants needing to form a relationship with your tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

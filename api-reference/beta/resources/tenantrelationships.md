@@ -3,7 +3,7 @@ title: "tenantRelationships resource type"
 description: "Represents how external tenants interact with your tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Represents how external tenants interact with your tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get tenantInformationByTenantId](../api/tenantinformationbytenantid-get.md)|[tenantInformation](../resources/tenantinformation.md)|Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantinformation.md).|
-|[Get tenantInformationByDomainName](../api/tenantinformationbydomainname-get.md)|[tenantInformation](../resources/tenantinformation.md)|Given a domain name, search for a tenant and read its [tenantInformation](../resources/tenantinformation.md).|
+|[findTenantInformationByTenantId](../api/tenantrelationships-findtenantinformationbytenantid.md)|[tenantInformation](../resources/tenantinformation.md)|Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantinformation.md).|
+|[findTenantInformationByDomainName](../api/tenantrelationships-findtenantinformationbydomainname.md)|[tenantInformation](../resources/tenantinformation.md)|Given a domain name, search for a tenant and read its [tenantInformation](../resources/tenantinformation.md).|
 
 ## Properties
 None.

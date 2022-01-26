@@ -1,13 +1,13 @@
 ---
-title: "Get tenantInformationByTenantId"
+title: "findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get tenantInformationByTenantId
+# findTenantInformationByTenantId
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
