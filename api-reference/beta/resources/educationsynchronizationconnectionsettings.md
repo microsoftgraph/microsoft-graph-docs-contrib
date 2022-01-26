@@ -49,5 +49,9 @@ The following is a JSON representation of this resource.
 }-->
 
 ```json
-{}
+{
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
+  "clientId": "String",
+  "clientSecret": "String",
+}
 ```

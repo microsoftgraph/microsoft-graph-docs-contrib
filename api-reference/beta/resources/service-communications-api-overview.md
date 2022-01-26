@@ -4,6 +4,7 @@ description: You can use the service communications API in Microsoft Graph to ac
 author: "payiAzure"
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.prod: "service-communications"
 ---
 
 # Working with service communications API in Microsoft Graph

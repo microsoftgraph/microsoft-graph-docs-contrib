@@ -5,6 +5,7 @@ ms.date: 09/12/2017
 title: DefaultColumnValue
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.prod: "sites-and-lists"
 
 ---
 # DefaultColumnValue resource type
