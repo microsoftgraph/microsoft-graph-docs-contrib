@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Delete(nil)
+identityProviderId := "identityProvider-id"
+graphClient.IdentityProvidersById(&identityProviderId).Delete(nil)
 
 
 ```

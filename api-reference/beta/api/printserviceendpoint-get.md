@@ -3,7 +3,7 @@ title: Get printServiceEndpoint
 description: Retrieve the properties and relationships of a print service endpoint.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -15,14 +15,18 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a print service endpoint.
 
-## Permissions
-No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
+> [!NOTE]
+> In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)|None.|
-|Delegated (personal Microsoft account)|None.|
-|Application|None.|
+## Permissions
+
+One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Delegated (personal Microsoft account) | Not supported.                      |
+| Application                            | Not supported.                      |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,19 +35,25 @@ GET /print/services/{id}/endpoints/{name}
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [printServiceEndpoint](../resources/printserviceendpoint.md) object in the response body.
 ## Example
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -81,13 +91,16 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 ---
 
 ##### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printServiceEndpoint"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -109,5 +122,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

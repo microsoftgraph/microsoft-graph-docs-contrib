@@ -21,6 +21,24 @@
     {
       "ChangeList": [
         {
+          "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
+          "ApiChange": "Method",
+          "ChangedApiName": "devices",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **/me/devices**, **/me/devices/{id}/commands**, and **/me/devices/{id}/commands/{id}** endpoints that allow discovering and sending commands to user devices that support Project Rome capabilities.",
+          "Target": "users"
+         }
+        ],
+        "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-01-24T00:00:00.8892294Z",
+        "WorkloadArea": "Users",
+        "SubArea": ""
+      },	  
+      {
+      "ChangeList": [
+        {
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Property",
           "ChangedApiName": "isAnswerEditable",

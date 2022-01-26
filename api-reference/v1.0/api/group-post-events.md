@@ -35,14 +35,14 @@ POST /groups/{id}/calendar/events
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+In the request body, supply a JSON representation of an [event](../resources/event.md) object.
 
 ## Response
-If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [event](../resources/event.md) object in the response body.
 
 ## Example
-#### Request
-The following is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,9 +108,7 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
-
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
