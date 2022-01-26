@@ -1,6 +1,6 @@
 ---
 title: "retentionEventStatus resource type"
-description: "**TODO: Add Description**"
+description: "Retrieve the status of an event and additional information about location and workload"
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Retrieve the status of an event and additional information about location and workload**
 
 ## Properties
 |Property|Type|Description|

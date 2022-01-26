@@ -1,6 +1,6 @@
 ---
 title: "eventPropagationResult resource type"
-description: "**TODO: Add Description**"
+description: "For event-based retention, this attribute can provide the status of event propogation after it is created."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**For event-based retention, this attribute provides the status of event propogation.**
+**For event-based retention, this attribute can provide the status of event propogation after it is created.**
 
 ## Properties
 |Property|Type|Description|
