@@ -70,7 +70,7 @@ Content-Length: 909
       "deviceName": "Device Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "diskType": "hdd",
+      "diskType": "ssd",
       "operatingSystemVersion": "Operating System Version value",
       "bootScore": 9,
       "coreBootTimeInMs": 0,
