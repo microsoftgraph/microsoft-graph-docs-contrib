@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryroletemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryroletemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

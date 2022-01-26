@@ -1,6 +1,6 @@
 ---
 title: "Remove member"
-description: "Use this API to remove a member from a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups."
+description: "Remove a member from a Microsoft 365 group or a security group through the members navigation property."
 ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
+Remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

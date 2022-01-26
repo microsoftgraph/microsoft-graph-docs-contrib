@@ -2340,34 +2340,76 @@
     {
       "ChangeList": [
         {
-          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "richLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-beta) resource",
+          "Target": "richLongRunningOperation"
+        },
+        {
+          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "ApiChange": "Method",
+          "ChangedApiName": "addCopyFromContentTypeHub",
+          "ChangeType": "Addition",
+          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCompatibleHubContentTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
+          "Target": "contentType"
+        }
+      ],
+      "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-20T05:57:29.5959903Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9ce14ba6-741e-4ca5-9879-f2a9f3adf958",
           "ApiChange": "Resource",
           "ChangedApiName": "siteSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/resources/siteSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/api/resources/siteSettings?view=graph-rest-beta) resource type.",
           "Target": "siteSettings"
         },
         {
-          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
-          "ApiChange": "Method",
-          "ChangedApiName": "siteSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [Get SiteSettings](https://docs.microsoft.com/en-us/graph/api/siteSettings-get?view=graph-rest-beta) Method.",
-          "Target": "siteSettings"
-        },
-        {
-          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+          "Id": "9ce14ba6-741e-4ca5-9879-f2a9f3adf958",
           "ApiChange": "Property",
-          "ChangedApiName": "site",
+          "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/siteSettings-get?view=graph-rest-beta) property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **settings** property to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
-      "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
-      "Cloud": "prd",
+      "Id": "9ce14ba6-741e-4ca5-9879-f2a9f3adf958",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-11T20:00:00.001Z",
+      "CreatedDateTime": "2022-01-26T21:36:07.8994263Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }
