@@ -1842,11 +1842,11 @@ items:
       items:
       - name: Overview
         href: resources/project-rome-overview.md
-      - name: List user devices
+      - name: List user devices (deprecated)
         href: api/user-list-devices.md
-      - name: Send device command
+      - name: Send device command (deprecated)
         href: api/send-device-command.md
-      - name: Get device command status
+      - name: Get device command status (deprecated)
         href: api/get-device-command-status.md
       - name: Activity feed
         href: resources/activity-feed-api-overview.md
@@ -11146,7 +11146,7 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device member of
+          - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
@@ -13533,33 +13533,40 @@ items:
           - name: Credential User Registration Count
             href: resources/credentialuserregistrationcount.md
             items:
-            - name: Get registration count
+            - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
           - name: Credential User Registration Details
             href: resources/credentialuserregistrationdetails.md
             items:
-            - name: List registration details
+            - name: List
               href: api/reportroot-list-credentialuserregistrationdetails.md
           - name: User Credential Usage Details
             href: resources/usercredentialusagedetails.md
             items:
-            - name: List usage details
+            - name: List
               href: api/reportroot-list-usercredentialusagedetails.md
           - name: Credential Usage Summary
             href: resources/credentialusagesummary.md
             items:
-            - name: Get usage summary
+            - name: List
               href: api/reportroot-getcredentialusagesummary.md
           - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
-            - name: Get users registered by feature
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbyfeature.md
           - name: Users registered by method
             href: resources/userregistrationmethodsummary.md
             items:
-            - name: Get users registered by authentication method
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
+          - name: User registration details
+            href: resources/userregistrationdetails.md
+            items:
+            - name: List 
+              href: api/authenticationmethodsroot-list-userregistrationdetails.md
+            - name: Get 
+              href: api/userregistrationdetails-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview

@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Use this API to get the members list (users, groups, and devices) in an administrative unit."
+description: "Use this API to get the members list (user and group) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to get the members list (users, groups, and devices) in an administrative unit.
+Use this API to get the members list (user and group) in an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,38 +34,27 @@ One of the following permissions is required to call this API. To learn more, in
 GET /administrativeUnits/{id}/members
 GET /administrativeUnits/{id}/members/$ref
 ```
-## Optional query parameters
-This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit. 
-
-`$search` is supported on the **displayName** and **description** properties only. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
 ## Request headers
-| Header      |Value|
+| Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) objects in the response body. Adding `$ref` at the end of the request returns a collection of only `@odata.id` URLs of the members.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.  Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.
 
 ## Examples
-### Example 1: List member objects
-
-#### Request
+##### List member objects
 The following request will list the members of the administrative unit, returning a collection of users and/or groups.
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-#### Response
-
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
@@ -91,19 +80,12 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List member references
-
-#### Request
-
+##### List member references
 The following request will list the member references of the administrative unit, returning a collection of `@odata.id` references to the members.
-
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-
-#### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
  
 ```http
 HTTP/1.1 200 OK
