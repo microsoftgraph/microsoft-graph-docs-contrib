@@ -20,7 +20,6 @@ Represents client applications (service principals and workload identities) incl
 |:---|:---|:---|
 |excludeServicePrincipals|String collection|Service principal IDs excluded from the policy scope.|
 |includeServicePrincipals|String collection|Service principal IDs included in the policy scope, or `ServicePrincipalsInMyTenant`. |
-|servicePrincipalFilter|[conditionalAccessFilter](conditionalaccessfilter.md)|Filter that defines the dynamic syntax rule to include/exclude service principals based on custom security attributes assigned to the app. Cannot be set if **excludeServicePrincipals** or **includeServicePrincipals** is set. 
 
 ## Relationships
 None.
@@ -40,10 +39,7 @@ The following is a JSON representation of the resource.
   ],
   "excludeServicePrincipals": [
     "String"
-  ],
-  "servicePrincipalFilter": {
-    "@odata.type": "microsoft.graph.conditionalAccessFilter"
-  }
+  ]
 }
 ```
 
