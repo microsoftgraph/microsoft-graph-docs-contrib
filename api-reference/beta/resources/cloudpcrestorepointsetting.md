@@ -19,7 +19,7 @@ Represents specific settings of point-in-time restore.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|frequencyInHours|Int32|The time interval for auto taking snapshots (restore points) of a Cloud PC. Possible values are: 4 hours, 6 hours, 12 hours, 18 hours, 24 hours. The default frequency is 12 hours.|
+|frequencyInHours|Int32|The time interval for auto taking snapshots (restore points) of a Cloud PC. Possible values are: 4 hours, 6 hours, 12 hours, 16 hours, 24 hours. The default frequency is 12 hours.|
 |userRestoreEnabled|Boolean|If true, the user will have the privilege to use snapshots to restore Cloud PCs. If false, snapshots can't be used by the non-admin user.|
 
 ## Relationships
