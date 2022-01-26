@@ -34,8 +34,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.siteSettings",
-  "languageTag": "en-US",
-  "timeZone": "(UTC-08:00) Pacific Time (US and Canada)""
+  "languageTag": "String",
+  "timeZone": "String"
 }
 ```
+
 [site]: site.md
