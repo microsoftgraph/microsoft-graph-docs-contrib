@@ -15,12 +15,6 @@ Namespace: microsoft.graph
 
 A container for the range of Microsoft Teams functionalities that are available for the organization.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List devices](../api/teamworkdevice-list.md)|[teamworkDevice](../resources/teamworkdevice.md) collection|Get the list of all Teams devices provisioned for the tenant.|
-| [List workforceIntegrations](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) collection | Get the list of **workforceIntegration** objects associated with this **teamwork**.|
-
 ## Properties
 
 | Property | Type | Description |

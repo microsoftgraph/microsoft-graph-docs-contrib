@@ -1,6 +1,6 @@
 ---
 title: "teamworkMicrophoneConfiguration resource type"
-description: "Represents the details about the microphone configuration for a Microsoft Teams-enabled device."
+description: "Represents the details about the microphone configuration for a Microsoft Teams Rooms device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the microphone configuration for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). Applicable only for Microsoft Teams Rooms devices.
+Represents the details about the microphone configuration for a Microsoft Teams Rooms [device](../resources/teamworkdevice.md).
 
 ## Properties
 |Property|Type|Description|
