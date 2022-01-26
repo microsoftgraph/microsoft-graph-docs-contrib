@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents a stage of an Azure AD [access review](accessreviewsv2-overview.md) recurrence. If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) will be comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions will pass from stage to stage.
 
-Every **accessReviewStage** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is one decision per identity being reviewed.
+Every **accessReviewStage** contains a list of [decisions](accessreviewinstancedecisionitem.md) that reviewers can take action on. There is only one decision per identity being reviewed.
 
 ## Methods
 |Method|Return type|Description|
