@@ -22,7 +22,7 @@ Every **accessReviewStage** contains a list of [decisions](accessreviewinstanced
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessReviewStages](../api/accessreviewstage-list.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Get a list of the [accessReviewStage](../resources/accessreviewstage.md) objects and their properties.|
+|[List accessReviewStages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Get a list of the [accessReviewStage](../resources/accessreviewstage.md) objects and their properties.|
 |[Get accessReviewStage](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[Update accessReviewStage](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|

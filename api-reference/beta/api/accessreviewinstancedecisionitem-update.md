@@ -31,10 +31,10 @@ One of the following permissions is required to call this API. Delegated permiss
 Update a decision on an accessReviewInstance
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Update a decision from a stage of an accessReviewInstance
+Update a decision on a stage of an accessReviewInstance that has multiple stages
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStage: stop"
-description: "Stop a currently active accessReviewStage."
+description: "Stop an inProgress accessReviewStage."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"

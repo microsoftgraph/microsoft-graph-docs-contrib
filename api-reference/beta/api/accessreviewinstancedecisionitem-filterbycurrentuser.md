@@ -48,7 +48,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->Reviewers can retrieve the decisions from previous stages on the instance if the decisionHistoriesForReviewersEnabled property is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)
+>Reviewers of multi-stage reviews can retrieve the decisions from previous stages on the decsion item if the decisionHistoriesForReviewersEnabled property is enabled in [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) on the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)
 
 ## Function parameters
 The following table shows the query parameters that can be used with this method.
@@ -172,7 +172,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
+  "name": "accessreviewinstancedecisionitem_filterbycurrentuser_2"
 }
 -->
 ``` http
