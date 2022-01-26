@@ -33,7 +33,15 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/filterByCurrentUser(on='reviewer')
 ```
 
-This method supports `$select`, `$filter`, `$orderBy`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+## Function parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|on|accessReviewStageFilterByCurrentUserOptions|**TODO: Add Description**. Allowed value is `reviewer`. Required.|
+
+This function also supports the `$select`, `$filter`, `$orderBy`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
