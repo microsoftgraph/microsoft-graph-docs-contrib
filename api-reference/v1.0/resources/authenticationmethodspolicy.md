@@ -32,7 +32,7 @@ Defines authentication methods and the users that are allowed to use them to sig
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Represents the settings for each authentication method.|
+|authenticationMethodConfigurations|[authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md) collection|Automatically expanded on `GET /policies/authenticationMethodsPolicy`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
