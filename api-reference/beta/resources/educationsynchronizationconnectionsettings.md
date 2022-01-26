@@ -42,8 +42,7 @@ The following is a JSON representation of this resource.
    "isAbstract":true,
   "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
+  ]
 }-->
 
 ```json
