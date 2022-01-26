@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object.
+Read the configuration details for the [X.509 certificate authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) in the [authentication methods policy](../resources/authenticationmethodspolicy.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x50
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -79,19 +79,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
-    "id": "16c76b20-d9da-0fc9-c1ac-3fdb602db203",
-    "state": "String",
-    "certificateUserBindings": [
-      {
-        "@odata.type": "microsoft.graph.x509CertificateUserBinding"
-      }
-    ],
-    "authenticationModeConfiguration": {
-      "@odata.type": "microsoft.graph.x509CertificateAuthenticationModeConfiguration"
-    }
-  }
+	"@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+	"id": "X509Certificate",
+	"state": "disabled",
+	"certificateUserBindings": [{
+			"x509CertificateField": "PrincipalName",
+			"userProperty": "onPremisesUserPrincipalName",
+			"priority": 1
+		},
+		{
+			"x509CertificateField": "RFC822Name",
+			"userProperty": "userPrincipalName",
+			"priority": 2
+		}
+	],
+	"authenticationModeConfiguration": {
+		"x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
+		"rules": []
+	},
+	"includeTargets": [{
+		"targetType": "group",
+		"id": "all_users",
+		"isRegistrationRequired": false
+	}]
 }
 ```
 

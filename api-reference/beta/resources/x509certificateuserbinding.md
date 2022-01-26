@@ -1,6 +1,6 @@
 ---
 title: "x509CertificateUserBinding resource type"
-description: "A complex type that defines the mapping from X.509 certificate field to directory user attribute to bind the certificate to the user account. This controls which certificate fields and which Azure AD user attributes are used to bind the certificate to the user."
+description: "Defines the fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user account."
 author: "Vimala"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A complex type that defines the mapping from X.509 certificate field to directory user attribute to bind the certificate to the user account. This controls which certificate fields and which Azure AD user attributes are used
-to bind the certificate to the user.
+Defines the fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user account.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|The priority of the binding.  Azure AD uses the binding with the highest priority where the X509CertificateField is present in the certificate. Value must be non-negative and unique in the list.|
-|userProperty|String|Which user property on the Azure AD user object to use.  Value must be one of userPrincipalName, onPremisesUserPrincipalName, mail.|
-|x509CertificateField|String|Which certificate field.  Value must be one of: principalName, RFC822Name.|
+|priority|Int32|The priority of the binding. Azure AD uses the binding with the highest priority. This value must be a non-negative integer and unique in the collection of objects in the **certificateUserBindings** property of an **x509CertificateAuthenticationMethodConfiguration** object. Required|
+|userProperty|String|Defines the Azure AD user property of the user object to use for the binding. The possible values are: **userPrincipalName**, `onPremisesUserPrincipalName`, `email`. Required.|
+|x509CertificateField|String|The field on the X.509 certificate to use for the binding. The possible values are: `PrincipalName`, `RFC822Name`.|
 
 ## Relationships
 None.

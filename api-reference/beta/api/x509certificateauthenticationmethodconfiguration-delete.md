@@ -1,18 +1,18 @@
 ---
-title: "Delete x509CertificateAuthenticationMethodConfiguration"
-description: "Deletes a x509CertificateAuthenticationMethodConfiguration object."
+title: "Disable x509CertificateAuthenticationMethodConfiguration"
+description: "Disable a x509CertificateAuthenticationMethodConfiguration object and restores all the other properties to their default settings"
 author: "Vimala"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete x509CertificateAuthenticationMethodConfiguration
+# Disable x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object.
+Disable and restore the [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 ```
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

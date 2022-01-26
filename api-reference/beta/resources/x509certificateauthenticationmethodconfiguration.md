@@ -1,6 +1,6 @@
 ---
 title: "x509CertificateAuthenticationMethodConfiguration resource type"
-description: "A configuration entity that represents whether Azure AD native Certificate Based Authentication is enabled or disabled for the tenant and which users and groups can register and use it. (The id is 'Certificate')"
+description: "Represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who can register and use it."
 author: "Vimala"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A configuration entity that represents whether Azure AD native Certificate Based Authentication is enabled or disabled for the tenant and which users and groups can register and use it.
+Represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who can register and use it
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
@@ -22,17 +22,16 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |[Get x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object.|
 |[Update x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Update the properties of a x509CertificateAuthenticationMethodConfiguration object.|
-|[Delete x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|None|Reverts the x509CertificateAuthenticationMethodConfiguration object to its default configuration.|
+|[Disable x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|None|Disables and restores the x509CertificateAuthenticationMethodConfiguration object to its default configuration.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The authentication method policy identifier.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
-|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Controls which X.509 cert fields map to which directory user object attributes to bind the certificate to the user.  Order is significant.  The first binding that matches will be used and the rest ignored. |
-|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong auth configurations. This configuration includes the default authentication mode and the different rules of strong auth bindings. |
-
+|id|String|The identifier for the authentication method policy. The value is always `X509Certificate`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
+|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
 
 
 ## Relationships
