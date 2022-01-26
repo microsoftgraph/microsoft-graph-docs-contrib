@@ -4,10 +4,26 @@
 	  "ChangeList": [
 		{
 			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) method CSV response.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		},
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) method CSV response.",
+			"Target": "getTeamsUserActivityUserDetail"
+		},
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
 			"ApiChange": "Property",
 			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **userId** property to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) method.",
+			"Description": "Added the **userId** property to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) method JSON response.",
 			"Target": "getTeamsDeviceUsageUserDetail"
 		},
 		{
@@ -15,7 +31,7 @@
 			"ApiChange": "Property",
 			"ChangedApiName": "getTeamsUserActivityUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **userId** property to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) method.",
+			"Description": "Added the **userId** property to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) method JSON response.",
 			"Target": "getTeamsUserActivityUserDetail"
 		}
 	],
@@ -30,24 +46,24 @@
 	  "ChangeList": [
 		{
 			"Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
-			"ApiChange": "Property",
+			"ApiChange": "Column",
 			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **User Id** property to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-v1.0) method.",
+			"Description": "Added the **User Id** column to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-v1.0) method CSV response.",
 			"Target": "getTeamsDeviceUsageUserDetail"
 		},
 		{
 			"Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
-			"ApiChange": "Property",
+			"ApiChange": "Column",
 			"ChangedApiName": "getTeamsUserActivityUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **User Id** property to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-v1.0) method.",
+			"Description": "Added the **User Id** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-v1.0) method CSV response.",
 			"Target": "getTeamsUserActivityUserDetail"
 		}
 	],
 	  "Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
 	  "Cloud": "prd",
-	  "Version": "beta",
+	  "Version": "v1.0",
 	  "CreatedDateTime": "2022-01-19T09:15:14.3122315Z",
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
