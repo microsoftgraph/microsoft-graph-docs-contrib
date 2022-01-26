@@ -7,19 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.ContactRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 	Select: "displayName",
 }
 headers := map[string]string{
 	"Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.ContactRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 	Q: requestParameters,
 	H: headers,
 }
 contactFolderId := "contactFolder-id"
-contactId := "contact-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).ContactsById(&contactId).Get(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()().Get(options)
 
 
 ```

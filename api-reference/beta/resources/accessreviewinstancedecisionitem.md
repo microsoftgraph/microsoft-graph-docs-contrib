@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision is the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
+Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md).  This resource is an open type that allows other properties to be passed in.
 
 ## Methods
 
@@ -51,6 +51,7 @@ Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 | instance |[accessReviewInstance](accessreviewinstance.md) | There is exactly one accessReviewInstance associated with each decision. The instance is the parent of the decision item, representing the recurrence of the access review the decision is made on. |
+| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
 
 
 ## JSON representation

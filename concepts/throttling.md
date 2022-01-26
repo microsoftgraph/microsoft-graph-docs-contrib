@@ -481,3 +481,11 @@ The preceding limits apply to the following resources:
 | <!-- fake header--> |
 |--|
 | <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+### Service Communications service limits
+The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
+
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 240 requests per 60 seconds |
+|Any | 800 requests per hour |

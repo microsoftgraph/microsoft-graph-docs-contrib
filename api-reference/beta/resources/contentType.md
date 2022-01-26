@@ -32,7 +32,8 @@ Content types allow you to define a set of columns that must be present on every
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
 |[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a collection of columns, represented as [columnDefinition](../resources/columnDefinition.md) resources, in a **contentType**.|
 |[Create column](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Add a column to a **content type** in a site or list.|
-
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[contentType](../resources/contenttype.md) collection| Retrieve published content types from the content type hub that can be added to a site or a list.|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)| Add or sync a compatible content type from the content type hub to a site or a list.|
 
 ## Properties
 
@@ -49,7 +50,7 @@ Content types allow you to define a set of columns that must be present on every
 | **readOnly**      | Boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.
 | **sealed**        | Boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 | **isBuiltIn**            | Boolean| Specifies if a content type is a built-in content type. 
-| **documentSet**       | [documentSet][]      | [Document Set](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) metadata.
+| **documentSet**       | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.
 | **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.
 | **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
 | **propagateChanges**   | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
@@ -120,5 +121,3 @@ The following is a JSON representation of a **contentType** resource.
   "suppressions": []
 }
 -->
-
-
