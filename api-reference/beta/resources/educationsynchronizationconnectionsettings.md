@@ -38,14 +38,7 @@ The following is a JSON representation of this resource.
 
 <!-- {
   "blockType": "resource",
-   truncated: true,
-   "isAbstract":true,
-  "optionalProperties": [
-
-  ],
-  "customizations": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
-  }
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
 }-->
 
 ```json
