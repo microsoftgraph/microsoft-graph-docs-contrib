@@ -18,7 +18,8 @@ Represents the data provider to use as the synchronization source for a [educati
 > [!NOTE]
 > This complex type is abstract. Refer to the specific types of data providers listed.
 
-## Providers
+
+**Providers**
 
 | Data Provider                                                             | Description                                                                                        |
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
@@ -26,10 +27,29 @@ Represents the data provider to use as the synchronization source for a [educati
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
 | [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
 
+## Properties
+
+None.
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.educationSynchronizationDataProvider"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.educationSynchronizationDataProvider"
+}
+```
+
+
 [educationsynchronizationprofile]: educationsynchronizationprofile.md
 [educationcsvdataprovider]: educationCsvDataProvider.md
 [educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
 [educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
 [educationcsvdataprovider]: educationCsvDataProvider.md
-
-
