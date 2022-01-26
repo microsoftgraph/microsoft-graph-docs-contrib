@@ -1,14 +1,13 @@
 ---
-author: k-tsoi
+title: "siteSettings resource type"
 description: "This resource represents the settings of a site."
-ms.date: 09/29/2021
-title: SiteSettings
-ms.localizationpriority: Normal
+author: k-tsoi
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# siteSettings resource
+# siteSettings resource type
 
 Namespace: microsoft.graph
 
@@ -16,42 +15,27 @@ Namespace: microsoft.graph
 
 This resource represents the settings of a [site].
 
-## JSON representation
-
-Here is a JSON representation of a **siteSettings** resource.
-
-<!--{
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.siteSettings",
-  "openType": true
-}-->
-
-```json
-{
-  "languageTag": "en-US",
-  "timeZone": "(UTC-08:00) Pacific Time (US and Canada)"
-}
-```
-
 ## Properties
-
-The **siteSettings** resource has the following properties.
-
-| Property name    | Type          | Description
-|:-----------------|:--------------|:---------------------------
-| languageTag      | string        | The language tag of language used on this site.
-| timeZone         | string        | Indicates the time zone of the site using UTC Offset format.
+|Property|Type|Description|
+|:---|:---|:---|
+|languageTag|String|The language tag of language used on this site.|
+|timeZone|String|Indicates the time zone of the site using UTC Offset format.|
 
 ## Relationships
+None.
 
-The **siteSettings** resource does not have relationships to other resources.
-
-[site]: site.md
-
-<!--
-{
-  "type": "#page.annotation",
-  "section": "documentation",
-  "tocPath": "Resources/SiteSettings",
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.siteSettings"
 }
 -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.siteSettings",
+  "languageTag": "en-US",
+  "timeZone": "(UTC-08:00) Pacific Time (US and Canada)""
+}
+```
+[site]: site.md
