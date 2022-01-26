@@ -47,6 +47,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 The following properties can be updated.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
