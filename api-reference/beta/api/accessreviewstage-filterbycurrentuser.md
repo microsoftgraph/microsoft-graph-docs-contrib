@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewStageFilterByCurrentUserOptions|**TODO: Add Description**. Allowed value is `reviewer`. Required.|
+|on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Allowed value is `reviewer`. This returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer. Required.|
 
 This function also supports the `$select`, `$filter`, `$orderBy`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 

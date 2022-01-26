@@ -40,6 +40,13 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### accessReviewStageFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### continuousAccessEvaluationMode values 
 
 |Member|
