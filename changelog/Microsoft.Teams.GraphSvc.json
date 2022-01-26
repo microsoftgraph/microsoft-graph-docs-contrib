@@ -202,7 +202,7 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-	  {
+    {
       "ChangeList": [
         {
           "Id": "86f339c3-0390-4236-8cd1-da5043639a1f",
@@ -351,6 +351,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-15T09:20:09.7567921Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkOnlineMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkOnlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-1.0) resource type.",
+          "Target": "teamworkOnlineMeetingInfo"
+        },
+        {
+          "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingInfo** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-25T12:58:28.5337951Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
