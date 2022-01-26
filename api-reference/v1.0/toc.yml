@@ -5372,6 +5372,22 @@ items:
                 href: api/accessreviewinstancedecisionitem-update.md
               - name: Filter by current user
                 href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review history definition
+            href: resources/accessreviewhistorydefinition.md
+            items:
+            - name: Get
+              href: api/accessreviewhistorydefinition-get.md
+            - name: List
+              href: api/accessreviewset-list-historydefinitions.md
+            - name: Create
+              href: api/accessreviewset-post-historydefinitions.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items: 
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Consent requests
           href: resources/consentrequests-overview.md
           items:
