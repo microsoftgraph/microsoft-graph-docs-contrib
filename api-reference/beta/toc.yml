@@ -11481,14 +11481,14 @@ items:
             href: resources/unifiedrbacresourcenamespace.md
             items:
             - name: List
-              href: api/unifiedrbacresourcenamespace-list.md
+              href: api/rbacapplicationmultiple-list-unifiedrbacresourcenamespace.md
             - name: Get
               href: api/unifiedrbacresourcenamespace-get.md
             - name: Resource actions
               href: resources/unifiedrbacresourceaction.md
               items:
               - name: List
-                href: api/unifiedrbacresourceaction-list.md
+                href: api/unifiedrbacresourcenamespace-list-unifiedrbacresourceaction.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
       - name: Identity and sign-in

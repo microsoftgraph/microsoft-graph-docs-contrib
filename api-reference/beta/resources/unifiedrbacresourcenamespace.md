@@ -18,7 +18,7 @@ An object that represents a collection of related actions. Inherits from [entity
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRbacResourceNamespaces](../api/unifiedrbacresourcenamespace-list.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Get a list of the [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) objects and their properties.|
+|[List unifiedRbacResourceNamespaces](../api/rbacapplicationmultiple-list-unifiedrbacresourcenamespace.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Get a list of the [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) objects and their properties.|
 |[Get unifiedRbacResourceNamespace](../api/unifiedrbacresourcenamespace-get.md)|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Read the properties and relationships of an [unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) object.|
 
 ## Properties

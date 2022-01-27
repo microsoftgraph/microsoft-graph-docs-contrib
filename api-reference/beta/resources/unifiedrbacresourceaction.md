@@ -20,7 +20,7 @@ Inherits from [entity](entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List unifiedRbacResourceActions](../api/unifiedrbacresourceaction-list.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Get a list of the [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) objects and their properties.|
+|[List unifiedRbacResourceActions](../api/unifiedrbacresourcenamespace-list-unifiedrbacresourceaction.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Get a list of the [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) objects and their properties.|
 |[Get unifiedRbacResourceAction](../api/unifiedrbacresourceaction-get.md)|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md)|Read the properties and relationships of an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.|
 
 ## Properties
