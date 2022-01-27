@@ -9,7 +9,7 @@
               "ApiChange": "Member",
               "ChangedApiName": "customPasswordAddition",
               "ChangeType": "Addition",
-              "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/?view=graph-rest-beta) enum",
+              "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/graph/api/resources/passwordcredentialconfiguration?view=graph-rest-beta) enum to passwordCredentialConfiguration",
               "Target": "appCredentialRestrictionType"
             }
           ],
