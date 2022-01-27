@@ -15,8 +15,12 @@ Namespace: microsoft.graph
 
 Get the collection of [lists][] for a [site][].
 
+Lists with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
+
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
+[system]: ../resources/systemfacet.md
 
 ## Permissions
 
@@ -36,7 +40,7 @@ GET /sites/{site-id}/lists
 
 ## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -72,7 +76,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ---
 
 
-##### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -105,13 +109,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## Remarks
-
-Lists with the [system][] facet are hidden by default.
-To list them, include `system` in your `$select` statement.
-
-[system]: ../resources/systemfacet.md
 
 <!--
 {
