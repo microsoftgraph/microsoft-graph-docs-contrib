@@ -34,7 +34,7 @@ GET /roleManagement/directory/resourceNamespaces
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameter to help customize the response. This method supports `$filter` for `id` and `name`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. This method supports `$filter` for **id** and **name**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

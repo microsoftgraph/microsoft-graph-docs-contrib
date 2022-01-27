@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
-description: "An object that represents a collection of related actions."
+description: "An object that represents a collection of related actions in a directory."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object that represents a collection of related actions.
+An object that represents a collection of related actions. Inherits from [entity](entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -25,12 +25,12 @@ An object that represents a collection of related actions.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier of the directory resource namespace, such as `microsoft.aad.b2c`. Required.|
-|name|String|Name of the directory resource namespace. Typically, the same name as the `id` property, such as `microsoft.aad.b2c`. Required.|
+|name|String|Name of the directory resource namespace. Typically, the same name as the **id** property, such as `microsoft.aad.b2c`. Required. Supports `$filter` (`eq`, `startsWith`).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceActions|[unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
+|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
