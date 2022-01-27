@@ -296,13 +296,13 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 <td> Users in group 'g1' are only allowed to access application 'a1'. All users, including users in group 'g1', are blocked from accessing any other application. </td>
 </tr>
 <tr>
-<td> Allow users of group 'g1' access to only application 'a1' </td>
+<td> Block users in group 'g1' from accessing application 'a1' </td>
 <td>
 
 ``` json
 "b2bSetting": {
     "usersAndGroups": {
-        "accessType": "allowed",
+        "accessType": "blocked",
         "targets": [
             {
                 "target": "g1",
@@ -311,7 +311,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
         ]
     },
     "applications": {
-        "accessType": "allowed",
+        "accessType": "blocked",
         "targets": [
             {
                 "target": "a1",
@@ -323,7 +323,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 ```
 
 </td>
-<td> Users in group 'g1' are allowed access to application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
+<td> Users in group 'g1' are blocked from accessing application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
 </table>
 
