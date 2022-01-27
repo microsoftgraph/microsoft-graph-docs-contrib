@@ -517,16 +517,24 @@
             "ApiChange": "Resource",
             "ChangedApiName": "tenantUsage",
             "ChangeType": "Addition",
-            "Description": "Added the [tenantUsage](https://docs.microsoft.com/graph/api/resources/managedTenant?view=graph-rest-beta) resource",
-            "Target": "managedTenant"
+            "Description": "Added the [tenantUsage](https://docs.microsoft.com/graph/api/resources/managedtenants-tenantUsage?view=graph-rest-beta) resource",
+            "Target": "tenantUsage"
           },
           {
             "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
-            "ApiChange": "Resource",
+            "ApiChange": "Relationship",
             "ChangedApiName": "tenantUsage",
             "ChangeType": "Addition",
-            "Description": "Added the [tenantUsage](https://docs.microsoft.com/graph/api/resources/managedtenants-tenantUsage?view=graph-rest-beta) resource",
-            "Target": "tenantUsage"
+            "Description": "Added the **tenantUsage** navigation property to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+            "Target": "calendar"
+          },
+          {
+            "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+            "ApiChange": "Method",
+            "ChangedApiName": "GET",
+            "ChangeType": "Addition",
+            "Description": "Added the [list tenantUsage](https://docs.microsoft.com/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta) operation to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+            "Target": "managedTenant"
           }
         ],
         "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
