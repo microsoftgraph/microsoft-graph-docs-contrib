@@ -4579,14 +4579,6 @@
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-list?view=graph-rest-beta&tabs=http) operation to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
-          "Target": "teamwork"
-        },
-        {
-          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkDevice",
           "ChangeType": "Addition",
@@ -4632,6 +4624,86 @@
           "ChangeType": "Addition",
           "Description": "Added the [teamworkPeripheral](https://docs.microsoft.com/en-us/graph/api/resources/teamworkperipheral?view=graph-rest-beta) resource type.",
           "Target": "teamworkPeripheral"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [get temworkDevice](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-get?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [list teamworkDevices](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-list?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDeviceActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [get teamworkDeviceActivity](https://docs.microsoft.com/en-us/graph/api/teamworkdeviceactivity-get?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDeviceActivity"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDeviceHealth",
+          "ChangeType": "Addition",
+          "Description": "Added the [get teamworkDeviceHealth](https://docs.microsoft.com/en-us/graph/api/teamworkdevicehealth-get?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDeviceHealth"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDeviceConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [get teamworkDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/teamworkdeviceconfiguration-get?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDeviceConfiguration"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDeviceOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [get teamworkDeviceOperation](https://docs.microsoft.com/en-us/graph/api/teamworkdeviceoperation-get?view=graph-rest-beta&tabs=http) method.",
+          "Target": "teamworkDeviceOperation"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkDeviceOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [list operations in teamworkDevice](https://docs.microsoft.com/en-us/graph/api/teamworkdeviceoperation-list?view=graph-rest-beta) method.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "restart",
+          "ChangeType": "Addition",
+          "Description": "Added new action [restart](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-restart?view=graph-rest-beta) to the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta) resource type.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "runDiagnostics",
+          "ChangeType": "Addition",
+          "Description": "Added new action [runDiagnostics](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-rundiagnostics?view=graph-rest-beta) to the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta) resource type.",
+          "Target": "teamworkDevice"
+        },
+        {
+          "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateSoftware",
+          "ChangeType": "Addition",
+          "Description": "Added new action [updateSoftware](https://docs.microsoft.com/en-us/graph/api/teamworkdevice-updatesoftware?view=graph-rest-beta) to the [teamworkDevice](https://docs.microsoft.com/en-us/graph/api/resources/teamworkdevice?view=graph-rest-beta) resource type.",
+          "Target": "teamworkDevice"
         },
         {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
