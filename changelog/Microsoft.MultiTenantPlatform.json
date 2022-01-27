@@ -526,7 +526,7 @@
             "ChangedApiName": "tenantUsage",
             "ChangeType": "Addition",
             "Description": "Added the **tenantUsage** navigation property to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
-            "Target": "calendar"
+            "Target": "managedTenant"
           },
           {
             "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
