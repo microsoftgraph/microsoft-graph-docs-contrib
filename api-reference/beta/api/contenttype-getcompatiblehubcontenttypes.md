@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get compatible content types in the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
-This API is part of new content type publishing changes to optimize the syncing of published content types to sites and lists. As part of this optimization we are switching to a usage-based **subscription** model, effectively moving from a **push everywhere** to **pull as needed** approach. Users can get the list of content types that can be pulled from the content type hub to required site or list by using this API. More details about this change can be found in [blog post](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a "push everywhere" to "pull as needed" approach. The method allows users to pull content types directly from the content type hub to a site or list. For more information, see [addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) and the blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
