@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a [userRegistrat
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userregistrationdetails"
@@ -59,6 +61,32 @@ If successful, this method returns a `200 OK` response code and a [userRegistrat
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails/{userRegistrationDetailsId}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userregistrationdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userregistrationdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userregistrationdetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-userregistrationdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userregistrationdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-userregistrationdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
@@ -75,19 +103,18 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userRegistrationDetails",
-    "id": "6832a83d-2ef9-c5f5-9a2d-f2761d7ff317",
-    "userDisplayName": "Abbe Smith",
-    "userPrincipalName": "abbe@contoso.com",
-    "isMfaRegistered": "true",
-    "isMfaCapable": "true",
-    "isSsprRegistered": "true",
-    "isSsprEnabled": "false",
-    "isSsprCapable": "false",
-    "isPasswordlessCapable": "false",
+    "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
+    "userPrincipalName": "AlexW@Contoso.com",
+    "userDisplayName": "Alex Wilber",
+    "isSsprRegistered": false,
+    "isSsprEnabled": false,
+    "isSsprCapable": false,
+    "isMfaRegistered": true,
+    "isMfaCapable": true,
+    "isPasswordlessCapable": false,
     "methodsRegistered": [
-      "mobilePhone",
-      "email"
+    "microsoftAuthenticatorPush",
+      "softwareOneTimePasscode"
     ]
   }
 }

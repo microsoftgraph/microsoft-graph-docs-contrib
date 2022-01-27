@@ -26,6 +26,13 @@ Namespace: microsoft.graph
 |user|
 |group|
 
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
 ### userSignInRecommendationScope values 
 
 |Member|

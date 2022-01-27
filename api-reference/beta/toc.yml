@@ -1182,35 +1182,36 @@ items:
           - name: Delete password single sign on credentials
             href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Synchronization
-        href: resources/synchronization-overview.md
         items:
-        - name: Synchronize custom target attributes
-          href: resources/synchronization-configure-with-custom-target-attributes.md
-        - name: Synchronize directory extension attributes
-          href: resources/synchronization-configure-with-directory-extension-attributes.md
-        - name: Acquire access token
-          href: api/synchronization-synchronization-acquireaccesstoken.md
-        - name: Directory definition
-          href: resources/synchronization-directorydefinition.md
+        - name: Overview
+          href: resources/synchronization-overview.md
+        - name: Synchronization
+          href: resources/synchronization-synchronization.md
           items:
-          - name: Discover
-            href: api/directorydefinition-discover.md
+          - name: Acquire access token
+            href: api/synchronization-synchronization-acquireaccesstoken.md
+          - name: Add secrets
+            href: api/synchronization-synchronization-secrets.md
+          - name: Synchronize custom target attributes
+            href: resources/synchronization-configure-with-custom-target-attributes.md
+          - name: Synchronize directory extension attributes
+            href: resources/synchronization-configure-with-directory-extension-attributes.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
-          - name: List jobs
+          - name: List
             href: api/synchronization-synchronizationjob-list.md
-          - name: Create job
+          - name: Create
             href: api/synchronization-synchronizationjob-post.md
-          - name: Get job
+          - name: Get
             href: api/synchronization-synchronizationjob-get.md
-          - name: Start job
+          - name: Start
             href: api/synchronization-synchronizationjob-start.md
-          - name: Pause job
+          - name: Pause
             href: api/synchronization-synchronizationjob-pause.md
-          - name: Restart job
+          - name: Restart
             href: api/synchronization-synchronizationjob-restart.md
-          - name: Delete job
+          - name: Delete
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1229,12 +1230,17 @@ items:
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
+          - name: Directory definition
+            href: resources/synchronization-directorydefinition.md
+            items:
+            - name: Discover
+              href: api/directorydefinition-discover.md
         - name: Template
           href: resources/synchronization-synchronizationtemplate.md
           items:
-          - name: List templates
+          - name: List
             href: api/synchronization-synchronizationtemplate-list.md
-          - name: Get template
+          - name: Get
             href: api/synchronization-synchronizationtemplate-get.md
     - name: Calendar
       href: resources/calendar.md
@@ -12251,21 +12257,21 @@ items:
                href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User flow attribute assignment
+             - name: User
                href: resources/identityuserflowattributeassignment.md
-             - name: Get user flow attribute assignment
+             - name: Get
                href: api/identityuserflowattributeassignment-get.md
-             - name: Update user flow attribute assignment
+             - name: Update
                href: api/identityuserflowattributeassignment-update.md
-             - name: Delete user flow attribute assignment
+             - name: Delete
                href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
              - name: User flow language configuration
                href: resources/userflowlanguageconfiguration.md
-             - name: Get userFlowLanguageConfiguration
+             - name: Get user flow language configuration
                href: api/userflowlanguageconfiguration-get.md
-             - name: Delete userFlowLanguageConfiguration
+             - name: Delete user flow language configuration
                href: api/userflowlanguageconfiguration-delete.md
              - name: List defaultPages
                href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12273,11 +12279,11 @@ items:
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get userFlowLanguagePage
+             - name: Get user flow language page
                href: api/userflowlanguagepage-get.md
-             - name: Update userFlowLanguagePage
+             - name: Update user flow language page
                href: api/userflowlanguagepage-put.md
-             - name: Delete userFlowLanguagePage
+             - name: Delete user flow language page
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
@@ -12373,8 +12379,13 @@ items:
               href: api/accessreviewset-list-historydefinitions.md
             - name: Create
               href: api/accessreviewset-post-historydefinitions.md
-            - name: Generate download URI
-              href: api/accessreviewhistorydefinition-generatedownloaduri.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items: 
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
