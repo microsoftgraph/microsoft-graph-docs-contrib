@@ -353,6 +353,48 @@
       "CreatedDateTime": "2021-12-15T09:20:09.7567921Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-26T09:30:11.7567234Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
