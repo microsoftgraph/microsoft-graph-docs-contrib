@@ -34,7 +34,7 @@ GET /deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}
 ```
 
 ## Optional query parameters
-This method supports `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcSnapsh
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/{cloudPcSnapshotId}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8
 ```
 
 

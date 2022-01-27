@@ -112,7 +112,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "snapshots",
                     "ChangeType": "Addition",
-                    "Description": "Added the **snapshots** relationship to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **snapshots** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
                     "Target": "virtualEndpoint"
                 },
                 {
@@ -120,7 +120,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcSnapshot",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSnapshot?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSnapshot?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSnapshot"
                 },
                 {

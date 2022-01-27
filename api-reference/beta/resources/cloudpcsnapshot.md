@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSnapshot resource type"
-description: "Represents the details of the Cloud PC snapshot."
+description: "Represents a Cloud PC snapshot."
 author: "xintaozMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the Cloud PC snapshot.
+Represents a Cloud PC snapshot.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,23 +21,23 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcSnapshots](../api/virtualendpoint-list-snapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.|
+|[List snapshots](../api/virtualendpoint-list-snapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.|
 |[Get cloudPcSnapshot](../api/cloudpcsnapshot-get.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md)|Read the properties and relationships of a [cloudPcSnapshot](../resources/cloudpcsnapshot.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|The Cloud PC id.|
-|createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|id|String|The snapshot id of Cloud PC previous point-in-time state. Inherited from [entity](../resources/entity.md).|
-|lastRestoredDateTime|DateTimeOffset|The date and time that snapshot has been used for restore. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|[cloudPcSnapshotStatus](#cloudpcsnapshotstatus-values)|Status of the Cloud PC snapshot. Possible values include "ready". The possible values are: `ready`, `unknownFutureValue`.|
+|cloudPcId|String|The unique identifier for the Cloud PC.|
+|createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
+|id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
+|lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
+|status|[cloudPcSnapshotStatus](#cloudpcsnapshotstatus-values)|The status of the Cloud PC snapshot. The possible values are: `ready`, `unknownFutureValue`.|
 
 ### cloudPcSnapshotStatus values 
 
 |Member|Description|
 |:---|:---|
-|ready|The snapshot is ready to be used for restore.|
+|ready|The snapshot is ready to restore the Cloud PC device.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
