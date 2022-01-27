@@ -43,9 +43,9 @@ Even though you have added a partner to your cross-tenant access settings, some 
 
 ## Inbound trust settings in cross-tenant access settings
 
-Inbound trust settings enable you to trust the MFA external users perform in their home directories. This addresses the feedback you've given us around your external users having to perform MFA multiple times, both in their home directories and in your directory. Now you can enable a seamless authentication experience for your external users by trusting the MFA they perform in their home directories so they don't need to complete MFA with you. You'll also save on the MFA costs incurred by your organization.  
+Inbound trust settings enable you to trust the MFA external users perform in their home directories. This prevents external users from having to perform MFA both in their home directories and in your directory. With inbound trust settings, you enable a seamless authentication experience for your external users and save on the MFA costs incurred by your organization.  
 
-Inbound trust settings also enable you to trust devices that are compliant, or hybrid Azure AD joined in their home directories. Devices can only be managed and compliant in their home directories. You can now protect access to your apps and resources by requiring that external users use compliant, or hybrid Azure AD joined devices and using inbound trust settings to trust the device your external users are using to access your resources.
+Inbound trust settings also enable you to trust devices that are compliant, or hybrid Azure AD joined in their home directories. With inbound trust settings in cross-tenant access settings, you can now protect access to your apps and resources by requiring that external users use compliant, or hybrid Azure AD joined devices.
 
 ## Interpreting the API response
 
