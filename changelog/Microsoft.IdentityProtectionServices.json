@@ -3,6 +3,32 @@
 		{
 			"ChangeList": [
 				{
+					"Id": "cad83874-f5f9-459e-9b42-965603408cda",
+					"ApiChange": "Property",
+					"ChangedApiName": "clientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessClientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
+					"Target": "conditionalAccessClientApplications"
+				}
+			],
+			"Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2021-01-26T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
+			"ChangeList": [
+				{
 					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
 					"ApiChange": "Member",
 					"ChangedApiName": "ADFederationServicesMFAAdapter",

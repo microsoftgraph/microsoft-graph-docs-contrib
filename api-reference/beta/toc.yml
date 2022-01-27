@@ -1182,35 +1182,36 @@ items:
           - name: Delete password single sign on credentials
             href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Synchronization
-        href: resources/synchronization-overview.md
         items:
-        - name: Synchronize custom target attributes
-          href: resources/synchronization-configure-with-custom-target-attributes.md
-        - name: Synchronize directory extension attributes
-          href: resources/synchronization-configure-with-directory-extension-attributes.md
-        - name: Acquire access token
-          href: api/synchronization-synchronization-acquireaccesstoken.md
-        - name: Directory definition
-          href: resources/synchronization-directorydefinition.md
+        - name: Overview
+          href: resources/synchronization-overview.md
+        - name: Synchronization
+          href: resources/synchronization-synchronization.md
           items:
-          - name: Discover
-            href: api/directorydefinition-discover.md
+          - name: Acquire access token
+            href: api/synchronization-synchronization-acquireaccesstoken.md
+          - name: Add secrets
+            href: api/synchronization-synchronization-secrets.md
+          - name: Synchronize custom target attributes
+            href: resources/synchronization-configure-with-custom-target-attributes.md
+          - name: Synchronize directory extension attributes
+            href: resources/synchronization-configure-with-directory-extension-attributes.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
-          - name: List jobs
+          - name: List
             href: api/synchronization-synchronizationjob-list.md
-          - name: Create job
+          - name: Create
             href: api/synchronization-synchronizationjob-post.md
-          - name: Get job
+          - name: Get
             href: api/synchronization-synchronizationjob-get.md
-          - name: Start job
+          - name: Start
             href: api/synchronization-synchronizationjob-start.md
-          - name: Pause job
+          - name: Pause
             href: api/synchronization-synchronizationjob-pause.md
-          - name: Restart job
+          - name: Restart
             href: api/synchronization-synchronizationjob-restart.md
-          - name: Delete job
+          - name: Delete
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1229,12 +1230,17 @@ items:
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
+          - name: Directory definition
+            href: resources/synchronization-directorydefinition.md
+            items:
+            - name: Discover
+              href: api/directorydefinition-discover.md
         - name: Template
           href: resources/synchronization-synchronizationtemplate.md
           items:
-          - name: List templates
+          - name: List
             href: api/synchronization-synchronizationtemplate-list.md
-          - name: Get template
+          - name: Get
             href: api/synchronization-synchronizationtemplate-get.md
     - name: Calendar
       href: resources/calendar.md
@@ -1842,11 +1848,11 @@ items:
       items:
       - name: Overview
         href: resources/project-rome-overview.md
-      - name: List user devices
+      - name: List user devices (deprecated)
         href: api/user-list-devices.md
-      - name: Send device command
+      - name: Send device command (deprecated)
         href: api/send-device-command.md
-      - name: Get device command status
+      - name: Get device command status (deprecated)
         href: api/get-device-command-status.md
       - name: Activity feed
         href: resources/activity-feed-api-overview.md
@@ -12215,21 +12221,21 @@ items:
                href: api/identityuserflowattribute-delete.md
           - name: User flow attribute assignment
             items:
-             - name: User flow attribute assignment
+             - name: User
                href: resources/identityuserflowattributeassignment.md
-             - name: Get user flow attribute assignment
+             - name: Get
                href: api/identityuserflowattributeassignment-get.md
-             - name: Update user flow attribute assignment
+             - name: Update
                href: api/identityuserflowattributeassignment-update.md
-             - name: Delete user flow attribute assignment
+             - name: Delete
                href: api/identityuserflowattributeassignment-delete.md
           - name: User flow language configuration
             items:
              - name: User flow language configuration
                href: resources/userflowlanguageconfiguration.md
-             - name: Get userFlowLanguageConfiguration
+             - name: Get user flow language configuration
                href: api/userflowlanguageconfiguration-get.md
-             - name: Delete userFlowLanguageConfiguration
+             - name: Delete user flow language configuration
                href: api/userflowlanguageconfiguration-delete.md
              - name: List defaultPages
                href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12237,11 +12243,11 @@ items:
                href: api/userflowlanguageconfiguration-list-overridespages.md
              - name: User flow language page
                href: resources/userflowlanguagepage.md
-             - name: Get userFlowLanguagePage
+             - name: Get user flow language page
                href: api/userflowlanguagepage-get.md
-             - name: Update userFlowLanguagePage
+             - name: Update user flow language page
                href: api/userflowlanguagepage-put.md
-             - name: Delete userFlowLanguagePage
+             - name: Delete user flow language page
                href: api/userflowlanguagepage-delete.md
           - name: API connectors
             items:
@@ -12337,8 +12343,13 @@ items:
               href: api/accessreviewset-list-historydefinitions.md
             - name: Create
               href: api/accessreviewset-post-historydefinitions.md
-            - name: Generate download URI
-              href: api/accessreviewhistorydefinition-generatedownloaduri.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items: 
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
@@ -13533,33 +13544,40 @@ items:
           - name: Credential User Registration Count
             href: resources/credentialuserregistrationcount.md
             items:
-            - name: Get registration count
+            - name: Get
               href: api/reportroot-getcredentialuserregistrationcount.md
           - name: Credential User Registration Details
             href: resources/credentialuserregistrationdetails.md
             items:
-            - name: List registration details
+            - name: List
               href: api/reportroot-list-credentialuserregistrationdetails.md
           - name: User Credential Usage Details
             href: resources/usercredentialusagedetails.md
             items:
-            - name: List usage details
+            - name: List
               href: api/reportroot-list-usercredentialusagedetails.md
           - name: Credential Usage Summary
             href: resources/credentialusagesummary.md
             items:
-            - name: Get usage summary
+            - name: List
               href: api/reportroot-getcredentialusagesummary.md
           - name: Users registered by feature
             href: resources/userregistrationfeaturesummary.md
             items:
-            - name: Get users registered by feature
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbyfeature.md
           - name: Users registered by method
             href: resources/userregistrationmethodsummary.md
             items:
-            - name: Get users registered by authentication method
+            - name: List
               href: api/authenticationmethodsroot-usersregisteredbymethod.md
+          - name: User registration details
+            href: resources/userregistrationdetails.md
+            items:
+            - name: List 
+              href: api/authenticationmethodsroot-list-userregistrationdetails.md
+            - name: Get 
+              href: api/userregistrationdetails-get.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
