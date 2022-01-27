@@ -77,11 +77,11 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcSnapshot",
-      "id": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
       "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
-      "status": "ready",
       "createdDateTime": "2021-08-23T09:28:32.8260335Z",
-      "lastRestoredDateTime": "2021-09-01T09:28:32.8260338Z"
+      "lastRestoredDateTime": "2021-09-01T09:28:32.8260338Z",
+      "id": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8",
+      "status": "ready"
     }
   ]
 }
