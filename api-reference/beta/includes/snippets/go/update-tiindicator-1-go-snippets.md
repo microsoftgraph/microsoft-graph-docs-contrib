@@ -7,8 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewTiIndicator()
+description := "description-updated"
+requestBody.SetDescription(&description)
+options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
+	Body: requestBody,
+}
 tiIndicatorId := "tiIndicator-id"
-graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(nil)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
 
 
 ```

@@ -2,6 +2,90 @@
   "changelog": [
     {
       "ChangeList": [
+        {
+          "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
+          "ApiChange": "Method",
+          "ChangedApiName": "devices",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **/me/devices**, **/me/devices/{id}/commands**, and **/me/devices/{id}/commands/{id}** endpoints that allow discovering and sending commands to user devices that support Project Rome capabilities.",
+          "Target": "users"
+         }
+        ],
+        "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-01-24T00:00:00.8892294Z",
+        "WorkloadArea": "Users",
+        "SubArea": ""
+      },	  
+      {
+      "ChangeList": [
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAnswerEditable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAnswerEditable** property to [accessPackageQuestion](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageQuestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageQuestion"
+         },
+	 {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttribute** resource.",
+          "Target": "accessPackageResourceAttribute"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeDestination** resource.",
+          "Target": "accessPackageResourceAttributeDestination"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageUserDirectoryAttributeStore",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageUserDirectoryAttributeStore** resource.",
+          "Target": "accesspackageuserdirectoryattributestore"
+        },
+	{
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeSource** resource.",
+          "Target": "accessPackageResourceAttributeSource"
+        },
+	{
+   	 "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+    	 "ApiChange": "Property",
+    	 "ChangedApiName": "attributes",
+    	 "ChangeType": "Addition",
+    	 "Description": "Added the **attributes** property to the [accessPackageResource](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
+    	 "Target": "accessPackageResource"
+  	},
+        {
+          "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceAttributeQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageResourceAttributeQuestion** resource.",
+          "Target": "accessPackageResourceAttributeQuestion"
+        }
+      ],
+      "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-06T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },	  
+	{
+      "ChangeList": [
         { 
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
           "ApiChange": "Method",
@@ -2985,67 +3069,19 @@
       "ChangeList": [
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackage",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackage"
+          "Description": "Added support for the `EntitlementManagement.Read.All` application permission to the read operations of the Azure AD [entitlement management](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-beta) resources.",
+          "Target": "entitlementManagement"
         },
         {
           "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignment",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageAssignment"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentRequest",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageAssignmentRequest"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageAssignmentResourceRole",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageAssignmentResourceRole"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageCatalog",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageCatalog"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "accessPackageResourceRequest",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "accessPackageResourceRequest"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "connectedOrganization",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "connectedOrganization"
-        },
-        {
-          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "entitlementManagementSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
-          "Target": "entitlementManagementSettings"
+          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the read and write operations of the Azure AD [entitlement management](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-beta) resources.",
+          "Target": "entitlementManagement"
         }
       ],
       "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
@@ -8309,7 +8345,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-05-07T23:28:58.045Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9473,7 +9509,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9491,7 +9527,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-17T10:00:37.303Z",
       "WorkloadArea": "Calendar",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -9509,7 +9545,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-13T00:00:00",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [

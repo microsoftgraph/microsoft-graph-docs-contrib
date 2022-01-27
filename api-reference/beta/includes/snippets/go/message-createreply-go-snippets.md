@@ -10,8 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
-message.SetAdditionalData(map[string]interface{}{
-	"toRecipients":  []Object {
+message.SetToRecipients( []Recipient {
+	msgraphsdk.NewRecipient(),
+	SetAdditionalData(map[string]interface{}{
+	}
+	msgraphsdk.NewRecipient(),
+	SetAdditionalData(map[string]interface{}{
 	}
 }
 comment := "Samantha, Randi, would you name the group if the project is approved, please?"

@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/profile/phones
 [!INCLUDE [sample-code](../includes/snippets/go/get-itemphone-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-itemphone-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

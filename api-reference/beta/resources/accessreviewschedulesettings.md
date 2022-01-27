@@ -32,6 +32,7 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | recommendationsEnabled|Boolean | Indicates whether decision recommendations are enabled or disabled. |
 | recommendationLookBackDuration | Duration| Optional field. Indicates the time period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to `deny` if the user is inactive during the look back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. |
 |decisionHistoriesForReviewersEnabled|Boolean| Indicates whether decisions on previous access review stages are available for reviewers on an **accessReviewInstance** with multiple subsequent stages. If not provided, the default is disabled (`false`).|
+| recommendationInsightSettings|[accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) collection | Optional. Describes the types of insights that aid reviewers to make access review decisions. |
 
 ## Relationships
 None.
@@ -63,7 +64,12 @@ The following is a JSON representation of the resource.
   ],
   "recommendationsEnabled": "Boolean",
   "recommendationLookBackDuration": "Duration",
-  "decisionHistoriesForReviewersEnabled": "Boolean"
+  "decisionHistoriesForReviewersEnabled": "Boolean",
+  "recommendationInsightSettings": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"
+    }
+  ]
 }
 ```
 

@@ -26,6 +26,7 @@ graphClient.me().drive().items("{itemId}")
 		.withPassword(password)
 		.withMessage(null)
 		.withRecipients(recipientsList)
+		.withRetainInheritedPermissions(null)
 		.build())
 	.buildRequest()
 	.post();

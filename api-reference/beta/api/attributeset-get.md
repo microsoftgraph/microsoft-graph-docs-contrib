@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CustomSecAttributeAssignment.ReadWrite.All, CustomSecAttributeDefinition.ReadWrite.All|
+|Delegated (work or school account)|CustomSecAttributeDefinition.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CustomSecAttributeAssignment.ReadWrite.All, CustomSecAttributeDefinition.ReadWrite.All|
+|Application|CustomSecAttributeDefinition.ReadWrite.All|
 
 The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/attributeSets/Engineering
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-attributeset-single-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attributeset-single-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
