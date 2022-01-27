@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
 ### userSignInRecommendationScope values 
 
 |Member|
@@ -2764,4 +2771,14 @@ Possible values for user account types (group membership), per Windows definitio
 |allAttendees|
 |staff|
 |customer|
+|unknownFutureValue|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
 |unknownFutureValue|
