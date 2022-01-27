@@ -1,6 +1,6 @@
 ---
 title: "List snapshots"
-description: "Get the cloudPcSnapshot resources from the snapshots navigation property."
+description: "Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties."
 author: "xintaozMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
