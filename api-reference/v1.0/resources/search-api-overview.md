@@ -30,6 +30,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**
 
 ## Scope search based on entity types
 
@@ -132,6 +134,22 @@ Aggregations are currently supported for any refinable property on the following
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
+## Request spelling correction
+
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md).
+
+In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+
+See [Request spelling correction](/graph/search-concept-speller) for examples that show how to use spelling corrections.
+
+## Search display layout
+
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+
+To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
+
+See [Use search display layout](/graph/search-concept-display-layout) for examples.
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -163,6 +181,8 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
+  - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

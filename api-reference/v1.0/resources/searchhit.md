@@ -21,6 +21,7 @@ Represents a single result within the list of search results.
 |rank|Int32|The rank or the order of the result.|
 |contentSource|String|The name of the content source which the **externalItem** is part of .|
 |summary|String|A summary of the result, if a summary is available.|
+|resultTemplateId|String|ID of the result template to render the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 
 ## JSON representation
