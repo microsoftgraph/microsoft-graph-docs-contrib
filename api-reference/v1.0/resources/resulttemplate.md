@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A dictionary of **resultTemplateIds** and associated values, which includes the name and JSON schema of the result templates.
 
 ## Properties
