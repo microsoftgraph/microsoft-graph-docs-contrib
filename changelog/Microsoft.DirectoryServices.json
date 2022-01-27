@@ -4,11 +4,27 @@
       "ChangeList": [
         {
           "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
-          "ApiChange": "Method",
+          "ApiChange": "Property",
           "ChangedApiName": "administrativeUnits",
           "ChangeType": "Addition",
-          "Description": "Added dynamic membership rule options as parameters to the [New administrativeunit](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-administrativeunits?view=graph-rest-beta), [Get administrativeunit](https://docs.microsoft.com/en-us/graph/api/administrativeunit-get?view=graph-rest-beta), [List administrativeunit](https://docs.microsoft.com/en-us/graph/api/administrativeunit-list?view=graph-rest-beta), and [Update administrativeunit](https://docs.microsoft.com/en-us/graph/api/administrativeunit-update?view=graph-rest-beta) methods of the administrative unit resource.",
-          "Target": "administrativeUnits"
+          "Description": "Added the **membershipRule** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+          "ApiChange": "Property",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipRuleProcessingState** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
+          "ApiChange": "Property",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipType** property to the [administrativeunit](https://docs.microsoft.com/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
         }
       ],
       "Id": "e9d0e39e-b167-4dd7-b2a2-b9ba921da487",
