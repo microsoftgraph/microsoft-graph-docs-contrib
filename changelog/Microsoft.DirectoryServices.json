@@ -1,26 +1,22 @@
 {
   "changelog": [
     {
-      "changelog": [
+      "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
-              "ApiChange": "Member",
-              "ChangedApiName": "customPasswordAddition",
-              "ChangeType": "Addition",
-              "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/graph/api/resources/passwordcredentialconfiguration?view=graph-rest-beta) enum to passwordCredentialConfiguration",
-              "Target": "appCredentialRestrictionType"
-            }
-          ],
           "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2022-01-27T22:17:51.760961Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Directory management"
+          "ApiChange": "Member",
+          "ChangedApiName": "customPasswordAddition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/graph/api/resources/passwordcredentialconfiguration?view=graph-rest-beta) enum to passwordCredentialConfiguration",
+          "Target": "appCredentialRestrictionType"
         }
-      ]
+      ],
+      "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-27T22:17:51.760961Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
