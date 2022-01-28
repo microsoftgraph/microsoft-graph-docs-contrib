@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 
 ### Response
 
->**Note:** If you have never modified your cross tenant access settings prior, this response will return {}.
+>**Note:** If you have never modified your cross-tenant access settings, this response will return {}.
 <!-- {
   "blockType": "response",
   "truncated": true,
