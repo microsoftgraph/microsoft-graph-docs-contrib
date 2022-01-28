@@ -14,14 +14,16 @@ Some APIs provide the option to choose a licensing and payment model via the `mo
 others only support one model or do not support a licensing and payment model.
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
+- [`model=A`](#modela-requirements) is restricted to applications performing a 
+[security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
 and requires a [supported license](#required-licenses-for-modela).
 In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
-- [`model=B`](#modelb-requirements) is free to use today; 
+- [`model=B`](#modelb-requirements) is restricted to applications that do not perform a 
+[security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
+[`model=B`](#modelb-requirements) is free to use today; 
 however, in the future, apps will pay based on the number of messages they consume. 
-There are no licensing requirements for `model=B`,
-and it is not restricted to applications performing a security or compliance function.
+There are no licensing requirements for `model=B`.
 
 - [Evaluation Mode (default)](#evaluation-mode-default-requirements)
 enables access to APIs with limited usage per requesting application for evaluation purposes. 
@@ -41,6 +43,9 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
+
+`model=B` is restricted to applications that do not perform a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
+of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
 >**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
 
