@@ -21,7 +21,7 @@ Inherits from [policyBase](policybase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| definition (deprecated) | String collection | The raw JSON definition of the cross tenant access policy. **Deprecated. Do not use.** |
+| definition (deprecated) | String collection | The raw JSON definition of the cross-tenant access policy. **Deprecated. Do not use.** |
 | description | String | Description for this policy. Required. Inherited from [policyBase](../resources/policybase.md). |
 | displayName | String collection | Display name for this policy. Required. Inherited from [policyBase](../resources/policybase.md). |
 
