@@ -34,7 +34,7 @@ Change notifications will not be sent if the limit is exceeded.
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
@@ -49,7 +49,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 >**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
@@ -58,7 +58,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## Evaluation mode (default) requirements
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | Price for additional use | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
