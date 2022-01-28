@@ -30,7 +30,7 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 |:---|:---|:---|
 | displayName | String | The display name of the cross-tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
 | lastModifiedDateTime | DateTimeOffset | The time that the cross tenant access policy was last modified represented using ISO 8601 format and always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-| definition (deprecated) | String | The raw JSON definition of the cross tenant access policy. **Deprecated. Do not use.**|
+| definition (deprecated) | String | The raw JSON definition of the cross-tenant access policy. **Deprecated. Do not use.**|
 
 ## Relationships
 
