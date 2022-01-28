@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## January 2022: New and generally available
 
 ### Devices and apps | Service health and communications
-- Get a [service announcement attachment](/graph/api/resources/serviceAnnouncementAttachment) added to a [service update message ](https://docs.microsoft.com/en-us/graph/api/resources/serviceupdatemessage).
+Get a [service announcement attachment](/graph/api/resources/serviceAnnouncementAttachment) added to a [service update message ](https://docs.microsoft.com/en-us/graph/api/resources/serviceupdatemessage).
 
 ### Identity and access | Governance
 - Get a collection of [access review reviewer](/graph/api/resources/accessreviewreviewer) resources that is used to define reviewers contacted for an [instance of access reviews](/graph/api/resources/accessReviewInstance).
