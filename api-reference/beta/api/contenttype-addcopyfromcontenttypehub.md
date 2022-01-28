@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 Add or sync a copy of a published content type from the content type hub to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a "push everywhere" to "pull as needed" approach. The method allows users to pull content types directly from the content type hub to a site or list. For more information, see [getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) and the blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,7 +76,7 @@ Content-Type: application/json
 Content-length: 33
 
 {
-  "contentTypeId": "String"
+  "contentTypeId": "0x0101"
 }
 ```
 # [C#](#tab/csharp)
@@ -115,15 +116,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.contentType",
-    "id": "String (identifier)",
-    "description": "String",
-    "group": "String",
-    "hidden": "Boolean",
-    "isBuiltIn": "Boolean",
-    "name": "String"
-  }
+    "id": "0x0101",
+    "description": "Document content type",
+    "group": "Document Content Types",
+    "hidden": false,
+    "isBuiltIn": true,
+    "name": "Document"
 }
 ```
 ### Example 2: Asynchronous pull

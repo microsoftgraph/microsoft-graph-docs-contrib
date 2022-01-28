@@ -273,7 +273,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Assign custom security attributes (preview)
+              - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
