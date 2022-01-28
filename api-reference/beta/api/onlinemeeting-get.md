@@ -231,7 +231,7 @@ Content-Length: 1574
     "isPasscodeRequired": false,
     "joinMeetingId": "1234567890",
     "passcode": null
-  }
+  },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
   "allowMeetingChat": "enabled",
