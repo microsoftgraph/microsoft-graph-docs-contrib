@@ -333,5 +333,6 @@ Cross-tenant access settings outbound controls are for controlling how **your or
 
 ## Next steps
 
++ [Cross-tenant access settings documentation](https://docs.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-overview)
 + [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type
 + [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type
