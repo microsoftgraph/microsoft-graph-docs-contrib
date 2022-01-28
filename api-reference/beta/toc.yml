@@ -14641,7 +14641,7 @@ items:
             href: api/chat-delete-installedapps.md
       - name: Device
         items:
-        - name: Enrolled devices
+        - name: Provisioned devices
           href: resources/teamworkdevice.md
           items:
             - name: List

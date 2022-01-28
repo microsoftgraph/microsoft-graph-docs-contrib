@@ -1,6 +1,6 @@
 ---
 title: "teamworkDevice resource type"
-description: "Represents details about a Microsoft Teams-enabled device."
+description: "Represents details about a Microsoft Teams-enabled device that is provisioned for the tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about a Microsoft Teams-enabled device.
+Represents details about a Microsoft Teams-enabled device that is provisioned for the tenant.
 
 Inherits from [entity](../resources/entity.md).
 
