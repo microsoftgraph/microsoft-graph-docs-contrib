@@ -90,6 +90,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+>- `joinMeetingIdSettings` may not be generated for some pre-scheduled meetings if the meeting was created before this feature was supported.
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` must be URL encoded.
 
@@ -226,6 +227,11 @@ Content-Length: 1574
     "scope": "everyone",
     "isDialInBypassEnabled": true
   },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
   "allowMeetingChat": "enabled",
@@ -298,6 +304,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "lobbyBypassSettings": {
         "scope": "organization",
         "isDialInBypassEnabled": false
+    },
+    "joinMeetingIdSettings": {
+        "isPasscodeRequired": false,
+        "joinMeetingId": "1234567890",
+        "passcode": null
     }
 }
 ```
@@ -359,6 +370,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "lobbyBypassSettings": {
                 "scope": "organization",
                 "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
             }
         }
     ]
@@ -373,13 +389,13 @@ You can retrieve meeting information via joinMeetingId by using either a user or
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'27011906249261'
+GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
 ```
 
 The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'27011906249261'
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
 ```
 
 #### Response
@@ -422,6 +438,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "lobbyBypassSettings": {
                 "scope": "organization",
                 "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
             }
         }
     ]

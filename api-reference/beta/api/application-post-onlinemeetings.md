@@ -39,7 +39,8 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `joinMeetingIdSettings` may not be generated for some pre-scheduled meetings if the meeting was created before this feature was supported.
 
 ## Request headers
 
@@ -150,7 +151,12 @@ Content-Type: application/json
       "upn": "upn-value"
     }
   },
-  "subject": "User Token Meeting"
+  "subject": "User Token Meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -226,7 +232,12 @@ Content-Type: application/json
       "upn": "upn-value"
     }
   },
-  "subject": "User meeting in Microsoft Teams channel."
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
 }
 ```
 
@@ -319,6 +330,11 @@ Content-Type: application/json
     "allowedAudience": "organization",
     "isRecordingEnabled": true,
     "isAttendeeReportEnabled": true
+  },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   }
 }
 ```
@@ -337,4 +353,163 @@ Content-Type: application/json
 }
 -->
 
+### Example 4: Create an online meeting with passcode
 
+A paccdoe can be added to the meeting. The passcode is used when joining a meeting with joinMeetingId. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+#### Request
+>**Note:** Passcode is automatically generated and custom passcode is not supported.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": true
+  }
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": "123abc"
+  }
+}
+```
+
+
+### Example 5: Create an online meeting with no passcode
+
+When `isPasscodeRequired` is set to false or when `joinMeetingIdSettings` is not specified in the request, the generated online meeting will not have a passcode.
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false
+  }
+}
+```
+
+or
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel."
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
+}
+```
