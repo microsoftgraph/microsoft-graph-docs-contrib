@@ -14657,6 +14657,43 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: Device
+        items:
+        - name: Provisioned devices
+          href: resources/teamworkdevice.md
+          items:
+            - name: List
+              href: api/teamworkdevice-list.md
+            - name: Get
+              href: api/teamworkdevice-get.md
+            - name: Restart device
+              href: api/teamworkdevice-restart.md
+            - name: Run device diagnostic
+              href: api/teamworkdevice-rundiagnostics.md
+            - name: Software update
+              href: api/teamworkdevice-updatesoftware.md
+        - name: Device activity
+          href: resources/teamworkdeviceactivity.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceactivity-get.md
+        - name: Device configuration
+          href: resources/teamworkdeviceconfiguration.md
+          items:
+            - name: Get
+              href: api/teamworkdeviceconfiguration-get.md
+        - name: Device health
+          href: resources/teamworkdevicehealth.md
+          items:
+            - name: Get
+              href: api/teamworkdevicehealth-get.md
+        - name: Device operation
+          href: resources/teamworkdeviceoperation.md
+          items:
+            - name: List
+              href: api/teamworkdeviceoperation-list.md
+            - name: Get
+              href: api/teamworkdeviceoperation-get.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
