@@ -16,7 +16,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 ## January 2022: New and generally available
 
 ### Devices and apps | Service health and communications
-Get a [service announcement attachment](/graph/api/resources/serviceAnnouncementAttachment) added to a [service update message ](https://docs.microsoft.com/en-us/graph/api/resources/serviceupdatemessage).
+Get a [service announcement attachment](/graph/api/resources/serviceAnnouncementAttachment) added to a [service update message](https://docs.microsoft.com/en-us/graph/api/resources/serviceupdatemessage).
 
 ### Identity and access | Governance
 - Get a collection of [access review reviewer](/graph/api/resources/accessreviewreviewer) resources that is used to define reviewers contacted for an [instance of access reviews](/graph/api/resources/accessReviewInstance).
@@ -45,9 +45,9 @@ Get the URL of a custodian's OneDrive for Business site (**siteWebUrl** property
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true) to aid reviewers in making decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) for a [decision on a user or principal's access in an instance of an access review](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
 - The requestor of an access package can provide custom information as part of an [access package resource](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) that may be used to make approval decisions for the access package.
-- A requestor can edit an answer to a [question](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) in an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
+- A requestor can edit the answer to a [question](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) in an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
 
-## Reports | Identity and access reports
+### Reports | Identity and access reports
 - Get details of the [authentication methods registered for a user](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true), such as multi-factor authentication, self-service password reset, and passwordless authentication.
 - Get the following properties for a [sign-in](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) event of a user or application in an organization: 
   - Any conditional access [authentication context](/graph/api/resources/authenticationContext?view=graph-rest-beta&preserve-view=true).
@@ -56,7 +56,7 @@ Get the URL of a custodian's OneDrive for Business site (**siteWebUrl** property
   - The identifier of an application's federated identity credential if that was used to sign in.
   - The identifier of the service principal representing the target resource in the sign-in event.
 
-## Reports | Microsoft 365 usage reports
+### Reports | Microsoft 365 usage reports
 Get usage reports for Outlook, OneDrive, and SharePoint for Microsoft Cloud for US Government. See summary for [cloud deployments](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
 
 ### Sites and lists
