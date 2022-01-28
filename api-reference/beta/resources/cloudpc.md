@@ -31,9 +31,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
-|[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a cloud pc to a previous state through snapshot.|
-|[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Perform bulk restore for a set of Cloud PCs with their Intune managed device ids and restore point date time.|
-|[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
+|[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state from a snapshot.|
+|[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time.|
 
 ## Properties
 
@@ -46,7 +45,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the enterprise Cloud PCs. The supported remote actions are: `Rename`, `Reboot`, `Reprovision`, `Restore`, and `Troubleshoot`.|
+|lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the enterprise Cloud PCs. The supported remote actions are: `Reboot`, `Rename`, `Reprovision`, `Restore`, and `Troubleshoot`.|
 |managedDeviceId|String|The Intune device ID of the Cloud PC.|
 |managedDeviceName|String|The Intune device name of the Cloud PC.|
 |onPremisesConnectionName|String|The on-premises connection that is applied during the provisioning of Cloud PCs.|

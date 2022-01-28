@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: restoreCloudPc"
-description: "Restore a cloud pc to a previous state through snapshot."
+description: "Restore a Cloud PC device to a previous state from a snapshot."
 author: "rongting"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a cloud pc to a previous state through snapshot.
+Restore a Cloud PC device to a previous state from a snapshot.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,13 +40,13 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/restoreCloudPc
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcSnapshotId|String|The snapshot id of Cloud PC previous point-in-time state.|
+|cloudPcSnapshotId|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time.|
 
 
 
@@ -57,13 +57,14 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.restorecloudpc"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/managedDevices/{managedDeviceId}/restoreCloudPc
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/5e1387aa-d960-4916-ae7c-293b977e49bf/restoreCloudPc
 Content-Type: application/json
 Content-length: 37
 
@@ -74,7 +75,6 @@ Content-length: 37
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

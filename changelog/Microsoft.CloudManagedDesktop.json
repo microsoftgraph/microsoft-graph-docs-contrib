@@ -128,7 +128,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkRemoteActionResult",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkRemoteActionResult?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [cloudPcBulkRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcBulkRemoteActionResult?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkRemoteActionResult"
                 },
                 {
@@ -136,16 +136,16 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkRestoreCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkRestoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkRestoreCloudPc?view=graph-rest-beta) method to the [bulkRestoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkRestoreCloudPc?view=graph-rest-beta) resource.",
-                    "Target": "bulkRestoreCloudPc"
+                    "Description": "Added the [bulkRestoreCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "managedDevice"
                 },
                 {
                     "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
                     "ApiChange": "Method",
                     "ChangedApiName": "restoreCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [restoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-restoreCloudPc?view=graph-rest-beta) method to the [restoreCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-restoreCloudPc?view=graph-rest-beta) resource.",
-                    "Target": "restoreCloudPc"
+                    "Description": "Added the [restoreCloudPc](https://docs.microsoft.com/en-us/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "managedDevice"
                 }
             ],
             "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",

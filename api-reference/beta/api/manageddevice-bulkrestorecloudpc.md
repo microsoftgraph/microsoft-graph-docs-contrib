@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: bulkRestoreCloudPc"
-description: "Perform bulk restore for a set of Cloud PCs with their Intune managed device ids and restore point date time."
+description: "Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform bulk restore for a set of Cloud PCs with their Intune managed device ids and restore point date time.
+Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,24 +40,24 @@ POST /deviceManagement/managedDevices/bulkRestoreCloudPc
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |managedDeviceIds|String collection|The IDs of the Cloud PC devices.|
-|restorePointDateTime|DateTimeOffset|The UTC time point for selected Cloud PCs to restore to. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-|timeRange|[restoreTimeRange](#restoretimerange-values)|The time range of restore point.|
+|restorePointDateTime|DateTimeOffset|The UTC time point for the selected Cloud PC devices to restore to a previous state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.|
+|timeRange|[restoreTimeRange](#restoretimerange-values)|The time range of the restore point. Possible values are: `before`, `after`, `beforeOrAfter`, `unknownFutureValue`.|
 
 ### restoreTimeRange values
 
 |Member|Description|
 |:---|:---|
-|before|Choose closest snapshot before selected time point.|
-|after|Choose closest snapshot after selected time point.|
-|beforeOrAfter|Choose closest snapshot around selected time point.|
-|unknownFutureValue|Unknown future value.|
+|before|Choose the closest snapshot before the selected time point.|
+|after|Choose the closest snapshot after the selected time point.|
+|beforeOrAfter|Choose the closest snapshot around the selected time point.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Response
 
@@ -66,13 +66,14 @@ If successful, this action returns a `200 OK` response code and a [cloudPcBulkRe
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.bulkrestorecloudpc"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/managedDevices/bulkRestoreCloudPc
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/bulkRestoreCloudPc
 Content-Type: application/json
 Content-length: 123
 
@@ -88,7 +89,7 @@ Content-length: 123
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

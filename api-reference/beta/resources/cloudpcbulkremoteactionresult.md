@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkRemoteActionResult resource type"
-description: "Represents cloud PC bulk remote action result."
+description: "Represents the Cloud PC-specified bulk remote action result."
 author: "rongting"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents cloud PC bulk remote action result.
+Represents the Cloud PC-specified bulk remote action result.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|A list of all the managed devices id that completed the bulk action successfully.|
-|failedDeviceIds|String collection|A list of all the managed devices id that completed the bulk action with a failure.|
-|notFoundDeviceIds|String collection|A list of all the managed devices id that were not found when the bulk action was attempted.|
-|notSupportedDeviceIds|String collection|A list of all the managed devices id that were identified as unsupported for the bulk action.|
+|successfulDeviceIds|String collection|A list of all the Intune managed device IDs that completed the bulk action successfully.|
+|failedDeviceIds|String collection|A list of all the Intune managed device IDs that completed the bulk action with a failure.|
+|notFoundDeviceIds|String collection|A list of all the Intune managed device IDs that were not found when the bulk action was attempted.|
+|notSupportedDeviceIds|String collection|A list of all the Intune managed device IDs that were identified as unsupported for the bulk action.|
 
 ## Relationships
 None.
@@ -36,9 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkRemoteActionResult",
-  "successfulDeviceIds": [
-    "String"
-  ],
   "failedDeviceIds": [
     "String"
   ],
@@ -46,6 +43,9 @@ The following is a JSON representation of the resource.
     "String"
   ],
   "notSupportedDeviceIds": [
+    "String"
+  ],
+  "successfulDeviceIds": [
     "String"
   ]
 }
