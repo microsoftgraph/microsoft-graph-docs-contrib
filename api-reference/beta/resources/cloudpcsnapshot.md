@@ -28,9 +28,9 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier for the Cloud PC.|
-|createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
+|createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
-|lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
+|lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |status|[cloudPcSnapshotStatus](#cloudpcsnapshotstatus-values)|The status of the Cloud PC snapshot. The possible values are: `ready`, `unknownFutureValue`.|
 
 ### cloudPcSnapshotStatus values 
@@ -56,11 +56,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSnapshot",
-  "id": "String (identifier)",
   "cloudPcId": "String",
-  "status": "String",
   "createdDateTime": "String (timestamp)",
-  "lastRestoredDateTime": "String (timestamp)"
+  "id": "String (identifier)",
+  "lastRestoredDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

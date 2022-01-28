@@ -1,6 +1,6 @@
 ---
 title: "List snapshots"
-description: "Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties."
+description: "Get a list of the cloudPcSnapshot objects and their properties."
 author: "xintaozMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -51,6 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcsnapshot"
@@ -62,6 +65,9 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots
 
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
