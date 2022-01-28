@@ -17,11 +17,11 @@ Specifies the joinMeetingId and the meeting passcode, as well as the passcode re
 
 ## Properties
 
-| Property            | Type      | Description                                                     |
-|:--------------------|:----------|:----------------------------------------------------------------|
-| isPasscodeRequired  | Boolean   | Indicates whether a passcode is required to join a meeting when using joinMeetingId. |
-| joinMeetingId       | String    | The meeting ID entered by user to join a meeting.  |
-| passcode            | String    | The passcode to join a meeting.                    |
+| Property            | Type      | Description                                   | Required | ReadOnly |
+|:--------------------|:----------|:----------------------------------------------|----------|----------|
+| isPasscodeRequired  | Boolean   | Indicates whether a passcode is required to join a meeting when using joinMeetingId. | No | No |
+| joinMeetingId       | String    | The meeting ID to be used to join a meeting.  | No       | Yes      |
+| passcode            | String    | The passcode to join a meeting.               | No       | Yes      |
 
 ## JSON representation
 

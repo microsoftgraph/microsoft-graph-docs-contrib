@@ -17,7 +17,7 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 
 For example, you can:
 
-- Get details of an onlineMeeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
+- Get details of an onlineMeeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
 - Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-attendee-report-of-a-teams-live-event).
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 6](#example-6-fetch-recording-of-a-teams-live-event).
 
@@ -176,20 +176,20 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "55525634478",
-    "tollFreeNumber": "55566390588",
+    "tollNumber": "55534478",
+    "tollFreeNumber": "55390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
-    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-    "messageId": "1533758867081"
+    "threadId": "19:cbee7c1c868258e3cebf7bee0d@thread.skype",
+    "messageId": "153867081"
   },
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa674c-875-432d-bd41-3720e0a%22%2c%22Oid%22%3a%2f7296-5fa4-42ca-bae8-6a4b8%22%7d",
   "participants": {
     "attendees": [
       {
@@ -197,8 +197,8 @@ Content-Length: 1574
         "identity": {
           "user": {
             "@odata.type": "#microsoft.graph.identity",
-            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+            "id": "11296-5fa4-42ca-bae8-6a2b4b8",
+            "tenantId": "aa674c-8475-432d-bd41-39f2e0a",
             "displayName": "Tyler Stein"
           }
         },
@@ -211,8 +211,8 @@ Content-Length: 1574
       "identity": {
         "user": {
           "@odata.type": "#microsoft.graph.identity",
-          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+          "id": "58ede-f3cc-42eb-b2c1-e53ec96",
+          "tenantId": "a7bdc-8475-432d-bd41-39f2e0a",
           "displayName": "Jasmine Miller"
         }
       },
@@ -272,11 +272,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 ```json
 {
-    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "id": "MSpkYzE3Njc0Yy04MWQ5L1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
-    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4YxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22c581-5130-43e9-88f3-fc82cde37%22%2c%22Oid%22%3a%22674c-81d9-4adb-bb2-8f62e4622%22%7d",
     "subject": null,
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
@@ -290,9 +290,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "role": "presenter",
             "identity": {
                 "user": {
-                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "id": "dc174c-81d9-4adb-bfb2-8f4622",
                     "displayName": null,
-                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "tenantId": "9081-5130-43e9-88f3-fcde38",
                     "identityProvider": "AAD"
                 }
             }
@@ -338,11 +338,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 {
     "value": [
         {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyEtZWVkODYxODYzMmY2@thread.v2",
             "creationDateTime": "2020-09-29T22:35:33.1594516Z",
             "startDateTime": "2020-09-29T22:35:31.389759Z",
             "endDateTime": "2020-09-29T23:35:31.389759Z",
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2N2%40thread.v2/0?context=%7b%22Tid%22%3a%229581-5130-43e9-8f3-fcb35e37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
             "subject": null,
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
@@ -356,9 +356,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
                     "role": "presenter",
                     "identity": {
                         "user": {
-                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "id": "dc4c-81d9-4adb-bfb2-8f4622",
                             "displayName": null,
-                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "tenantId": "9091-5130-43e9-88f3-fcbe38",
                             "identityProvider": "AAD"
                         }
                     }
@@ -406,11 +406,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 {
     "value": [
         {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
             "creationDateTime": "2020-09-29T22:35:33.1594516Z",
             "startDateTime": "2020-09-29T22:35:31.389759Z",
             "endDateTime": "2020-09-29T23:35:31.389759Z",
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
             "subject": null,
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
@@ -424,9 +424,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
                     "role": "presenter",
                     "identity": {
                         "user": {
-                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "id": "dc174c-81d9-4adb-bfb2-8f6622",
                             "displayName": null,
-                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "tenantId": "9091-5130-43e9-88f3-fce38",
                             "identityProvider": "AAD"
                         }
                     }
