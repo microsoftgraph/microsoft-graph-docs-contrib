@@ -60,11 +60,11 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |falsePositive|After a detailed investigation, the service is confirmed to be healthy and operating as designed. No impact to the service was observed or the cause of the incident originated outside of the service. Incidents and advisories with this status appear in the history view until they expire (after the period of time stated in the final post for that event).|
 |investigationSuspended|If our detailed investigation of a potential issue results in a request for additional information from customers to allow the service team to investigate further, you'll see this status. If service team need you to act, they'll let you know what data or logs they need.|
 |resolved|The health status reserved for future use.|
-|mitigatedExternal|The service status reserved for future use.|
-|mitigated|The service status reserved for future use.|
-|resolvedExternal|The service status reserved for future use.|
-|confirmed|The service status reserved for future use.|
-|reported|The service status reserved for future use.|
+|mitigatedExternal|The health status reserved for future use.|
+|mitigated|The health status reserved for future use.|
+|resolvedExternal|The health status reserved for future use.|
+|confirmed|The health status reserved for future use.|
+|reported|The health status reserved for future use.|
 
 ## Relationships
 None.
