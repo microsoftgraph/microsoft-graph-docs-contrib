@@ -384,16 +384,8 @@
           "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
           "ApiChange": "Method",
           "ChangedApiName": "query",
-          "ChangeType": "Addition",
-          "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) resource.",
-          "Target": "query"
-        },
-        {
-          "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
-          "ApiChange": "Method",
-          "ChangedApiName": "query",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **query** method from the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Updated the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to return a collection of [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
           "Target": "query"
         }
       ],
