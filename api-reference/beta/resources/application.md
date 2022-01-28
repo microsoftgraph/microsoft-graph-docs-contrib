@@ -110,6 +110,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application. For more information about how publisher verification helps support application security, trustworthiness, and compliance, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|
 | uniqueName | String | The unique identifier that can be assigned to an application as an alternative identifier. Immutable. Read-only. |
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
+| windows |[windowsApplication](windowsapplication.md)| Specifies settings for a windows application. |
 
 ### signInAudience values
 
