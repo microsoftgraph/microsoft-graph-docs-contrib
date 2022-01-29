@@ -337,7 +337,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryAlterationOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **queryAlterationOptions** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **queryAlterationOptions** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
           "Target": "searchRequest"
         },
         {
@@ -345,7 +345,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "hitsContainers",
           "ChangeType": "Addition",
-          "Description": "Added the **hitsContainers** property to [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **hitsContainers** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -353,7 +353,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resultTemplates",
           "ChangeType": "Addition",
-          "Description": "Added the **resultTemplates** property to [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **resultTemplates** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -361,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "searchTerms",
           "ChangeType": "Addition",
-          "Description": "Added the **searchTerms** property to [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Added the **searchTerms** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -369,7 +369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "value",
           "ChangeType": "Deletion",
-          "Description": "Removed the **value** property from [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+          "Description": "Removed the **value** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
           "Target": "searchResponse"
         },
         {
@@ -392,7 +392,7 @@
       "Id": "400d3385-87a1-4e12-8f3d-7fa2c24b5c3f",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-22T12:49:29.5221544Z",
+      "CreatedDateTime": "2021-01-28T12:49:29.5221544Z",
       "WorkloadArea": "Search",
       "SubArea": "Analytics"
     }
