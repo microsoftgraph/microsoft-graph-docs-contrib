@@ -1,5 +1,5 @@
 ---
-title: "Change notifications for Outlook resources using Microsoft Graph"
+title: "Change notifications for Outlook resources in Microsoft Graph"
 description: "Learn how to get notifications for changes (create, update, and delete) for resources in Outlook using Microsoft Graph APIs"
 author: "abheek-das"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 ms.custom: scenarios:getting-started
 ---
 
-# Change notifications for Outlook resources using Microsoft Graph
+# Change notifications for Outlook resources in Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide a low latency model by allowing 
 you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid 
