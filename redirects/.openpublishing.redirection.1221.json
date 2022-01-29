@@ -186,13 +186,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/beta/api/consentrequests-root.md",
-      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-beta",
+      "source_path_from_root": "/api-reference/beta/resources/consentrequests-root.md",
+      "redirect_url": "/graph/api/resources/consentrequests-overview?view=graph-rest-beta",
       "redirect_document_id": true
     },
     {
       "source_path_from_root": "/api-reference/v1.0/api/consentrequests-root.md",
-      "redirect_url": "/graph/api/consentrequests-overview?view=graph-rest-1.0",
+      "redirect_url": "/graph/api/resources/consentrequests-overview?view=graph-rest-1.0",
       "redirect_document_id": true
     },
     {
@@ -213,6 +213,11 @@
     {
       "source_path_from_root": "/api-reference/v1.0/api/agreement-post-agreements.md",
       "redirect_url": "/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/identityprotection-root.md",
+      "redirect_url": "/graph/api/resources/identityprotection-overview?view=graph-rest-beta",
       "redirect_document_id": true
     }
   ]

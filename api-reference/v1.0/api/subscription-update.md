@@ -75,6 +75,14 @@ PATCH /subscriptions/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource. |
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
