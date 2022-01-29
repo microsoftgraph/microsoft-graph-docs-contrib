@@ -70,8 +70,12 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 Content-Type: application/json
 
 {
+  "id":"87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory."
+  "description": "All users can request for access to the directory.",
+  "accessPackage": {
+        "id": "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
+  }
 }
 ```
 

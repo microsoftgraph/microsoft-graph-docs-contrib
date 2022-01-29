@@ -52,6 +52,7 @@ You can specify the following properties when creating an **accessPackageAssignm
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Who can request this access package from this policy.|
 |specificAllowedTargets|[subjectSet](../resources/subjectset.md) collection|The targets for being assigned access from an access package from this policy.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)| Access package containing the policy.|
 
 ## Response
 
@@ -71,7 +72,11 @@ Content-Type: application/json
 
 {
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "accessPackage": {
+        "id": "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
+  }
+
 }
 ```
 
