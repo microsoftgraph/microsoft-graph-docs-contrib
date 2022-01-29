@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using [classification results](../resources/security-classificationresult.md), compute the [sensitivity label](../resources/security-sensitivitylabel.md.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
+Using [classification results](../resources/security-classificationresult.md), compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
 To evaluate based on classification results, provide [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following: 
 

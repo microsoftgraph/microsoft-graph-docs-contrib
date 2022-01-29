@@ -43,6 +43,7 @@ POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateR
 ```
 
 ## Request headers
+
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
 | Content-type  | application/json. Required.                                                                                                                                                       |
