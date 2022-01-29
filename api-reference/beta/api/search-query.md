@@ -1,6 +1,6 @@
 ---
 title: "searchEntity: query"
-description: "Runs the query specified in the request body. Search results are provided in the response"
+description: "Run a specified search query. Search results are provided in the response."
 ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Runs the query specified in the request body. Search results are provided in the response.
+Run a specified search query. Search results are provided in the response.
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `HTTP 200 OK` response code and a collection of[searchResponse](../resources/searchresponse.md) objects in the response body.
+If successful, this method returns an `HTTP 200 OK` response code and a collection of [searchResponse](../resources/searchresponse.md) objects in the response body.
  
 
 ## Examples
