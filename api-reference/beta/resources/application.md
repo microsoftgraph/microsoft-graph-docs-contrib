@@ -183,7 +183,8 @@ The following is a JSON representation of the resource.
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"},
+  "windows": {"@odata.type": "microsoft.graph.windowsApplication"}
 }
 ```
 
