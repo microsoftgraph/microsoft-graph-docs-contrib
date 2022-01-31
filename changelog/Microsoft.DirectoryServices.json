@@ -1,6 +1,42 @@
 {
   "changelog": [
-    {
+        {
+      "ChangeList": [
+        {
+          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added **ErrorStatus** to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo resource type](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
+          "Target": "provisioningStatus"
+        }
+      ],
+      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-21T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+   {
+      "ChangeList": [
+        {
+          "Id": "b5198730-2bcb-4253-a18c-bf7d5b494386",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added **ErrorStatus** to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo resource type](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-beta) resource.",
+          "Target": "provisioningStatus"
+        }
+      ],
+      "Id": "b5198730-2bcb-4253-a18c-bf7d5b494386",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-31T12:02:41.3698793",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+   {
       "ChangeList": [
         {
           "Id": "72205121-4e40-4e7b-b40c-2d70c22cd571",
@@ -144,42 +180,6 @@
       "Version": "beta",
       "CreatedDateTime": "2021-12-01T00:00:00.000Z",
       "WorkloadArea": "Identity and Access",
-      "SubArea": "Directory management"
-    },
-       {
-      "ChangeList": [
-        {
-          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-          "ApiChange": "Resource",
-          "ChangedApiName": "serviceplanInfo",
-          "ChangeType": "Addition",
-          "Description": "Added **errorStatus** to the to the provisioningStatus property of property of the [servicePlanInfo resource type](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
-          "Target": "provisioningStatus"
-        }
-      ],
-      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2021-10-21T00:00:00.2532422Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },
-   {
-      "ChangeList": [
-        {
-          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-          "ApiChange": "Resource",
-          "ChangedApiName": "serviceplanInfo",
-          "ChangeType": "Addition",
-          "Description": "Added **errorStatus** to the provisioningStatus property of the [servicePlanInfo resource type](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-beta) resource.",
-          "Target": "provisioningStatus"
-        }
-      ],
-      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-21T00:00:00.2532422Z",
-      "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
     {
