@@ -1,17 +1,20 @@
 ---
 title: "Get informationProtectionLabel"
-description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# Get informationProtectionLabel
+# Get informationProtectionLabel (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `Get informationProtectionLabel` API is deprecated and will stop returning data on August 30, 2022. Please use the new [sensitivityLabel API](./security-informationprotection-sensitivitylabel-get.md).
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 

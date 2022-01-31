@@ -22,7 +22,7 @@ Represents a set of actions that should be taken to apply or update a label. **a
 | actionSource                | String                                                                   | Possible values are: `manual`, `automatic`, `recommended`, `default`.                                                                                                                             |
 | actions                     | [informationProtectionAction](informationprotectionaction.md) collection | The collection of specific actions that should be taken by the consuming application to label the document. See  [informationProtectionAction](informationprotectionaction.md) for the full list. |
 | label                       | [labelDetails](labeldetails.md)                                          | Object that describes the details of the label to apply.                                                                                                                                          |
-| responsibleSensitiveTypeIds | Guid collection                                                          | If the label was the result of an automatic classification, supply the list of sensitive info type GUIDs that resulted in the returned label.                                         
+| responsibleSensitiveTypeIds | Guid collection                                                          | If the label was the result of an automatic classification, supply the list of sensitive info type GUIDs that resulted in the returned label.                                                     |
 ## JSON representation
 
 The following is a JSON representation of the resource.

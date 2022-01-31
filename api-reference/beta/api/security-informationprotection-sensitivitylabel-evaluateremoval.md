@@ -24,6 +24,7 @@ Given [contentInfo](../resources/contentinfo.md) as an input, which includes exi
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -50,6 +51,7 @@ POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateR
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.

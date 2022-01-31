@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> Existing apps that use this feature should be updated, as this API endpoint is being deprecated. Please use the  [updated informationProtection](./security-informationprotection.md) and [sensitivityLabel](./security-sensitivitylabel.md) APIs.
+
 Describes the informationProtectionContentLabel object that defines MIP metadata on an object. **informationProtectionContentLabel** is returned by the [extractLabel](../api/informationprotectionlabel-extractLabel.md) API resolve to the label that is currently applied to a file. 
 
 ## Properties

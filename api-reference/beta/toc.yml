@@ -13957,7 +13957,7 @@ items:
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Information protection
         items:
-        - name: Labels
+        - name: Labels (deprecated)
           href: resources/informationprotectionlabel.md
           items:
           - name: List labels
@@ -13972,6 +13972,21 @@ items:
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Sensitivity labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List sensitivity labels
+            href: api/security-informationprotection-list-sensitivitylabels
+          - name: Get sensitivity label
+            href: api/security-informationprotection-sensitivitylabel-get.md
+          - name: Evaluate application
+            href: api/security-informationprotection-sensitivitylabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/security-informationprotection-sensitivitylabel-evaluateremoval.md
+          - name: Extract label
+            href: api/security-informationprotection-sensitivitylabel-extractcontentlabel.md
         - name: Threat assessment
           items:
           - name: Overview

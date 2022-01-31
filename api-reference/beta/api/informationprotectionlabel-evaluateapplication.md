@@ -1,17 +1,20 @@
 ---
-title: "informationProtectionLabel: evaluateApplication"
-description: "Evaluate which label to apply based on existing content info and desired content state."
+title: "informationProtectionLabel: evaluateApplication (deprecated)"
+description: "Evaluate which label to apply based on existing content info and desired content state. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: evaluateApplication
+# informationProtectionLabel: evaluateApplication (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `evaluateApplication` API is deprecated and will stop returning data on August 30, 2022. Please use the new [evaluateApplication API](./security-informationprotection-sensitivitylabel-evaluateapplication.md).
 
 Compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents. 
 

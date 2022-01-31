@@ -1,17 +1,20 @@
 ---
-title: "informationProtectionLabel: evaluateClassificationResults"
-description: "Evaluate which label to apply based on existing content info and a classification result."
+title: "informationProtectionLabel: evaluateClassificationResults (deprecated)"
+description: "Evaluate which label to apply based on existing content info and a classification result. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: evaluateClassificationResults
+# informationProtectionLabel: evaluateClassificationResults (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `evaluateClassificationResults` API is deprecated and will stop returning data on August 30, 2022. Please use the new [evaluateClassificationResults API](./security-informationprotection-sensitivitylabel-evaluateclassificationresults.md).
 
 Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 

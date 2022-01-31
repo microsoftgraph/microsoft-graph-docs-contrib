@@ -1,17 +1,20 @@
 ---
-title: "informationProtectionLabel: evaluateRemoval"
-description: "Evaluate which label to remove and how to remove it based on existing content info."
+title: "informationProtectionLabel: evaluateRemoval (deprecated)"
+description: "Evaluate which label to remove and how to remove it based on existing content info. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
-# informationProtectionLabel: evaluateRemoval
+# informationProtectionLabel: evaluateRemoval (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The `evaluateRemoval` API is deprecated and will stop returning data on August 30, 2022. Please use the new [evaluateRemoval API](./security-informationprotection-sensitivitylabel-evaluateremoval.md).
 
 Indicate to the consuming application what actions it should take to remove the label information.
 
