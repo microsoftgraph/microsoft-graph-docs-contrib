@@ -391,11 +391,6 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
-
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
