@@ -13798,6 +13798,10 @@ items:
             href: api/externalconnectors-externalgroup-post-members.md
           - name: Delete external group member
             href: api/externalconnectors-externalgroupmember-delete.md
+        - name: Connnection Quota
+          items:
+          - name: Get Connection Quota
+            href: api/externalconnectors-connectionQuota.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
