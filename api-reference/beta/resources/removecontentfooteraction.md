@@ -1,13 +1,13 @@
 ---
-title: "removeContentFooterAction resource type"
-description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable."
+title: "removeContentFooterAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# removeContentFooterAction resource type
+# removeContentFooterAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

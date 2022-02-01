@@ -1,13 +1,13 @@
 ---
-title: "removeContentHeaderAction resource type"
-description: "Represents an action that specifies the details on the content header to be removed from the information, if applicable."
+title: "removeContentHeaderAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content header to be removed from the information, if applicable. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# removeContentHeaderAction resource type
+# removeContentHeaderAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

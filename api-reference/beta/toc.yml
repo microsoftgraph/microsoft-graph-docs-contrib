@@ -13976,7 +13976,7 @@ items:
           href: resources/informationprotectionlabel.md
           items:
           - name: List sensitivity labels
-            href: api/security-informationprotection-list-sensitivitylabels
+            href: api/security-informationprotection-list-sensitivitylabels.md
           - name: Get sensitivity label
             href: api/security-informationprotection-sensitivitylabel-get.md
           - name: Evaluate application
