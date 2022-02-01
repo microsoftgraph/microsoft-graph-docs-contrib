@@ -25,7 +25,7 @@ Before you can build the property, you must have identified the team for the cur
 
 ![Select your channel from the Channels section](./images/notificationchannel-channel.png)
 
-## notificationChannelUrl property
+## Steps to build the notificationChannelUrl property value
 
 The following steps describe how to build the property value.
 
