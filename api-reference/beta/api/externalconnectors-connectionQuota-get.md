@@ -94,7 +94,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
+  "@odata.type": "microsoft.graph.externalConnectors.connectionQuota"
 } -->
 
 ```http
