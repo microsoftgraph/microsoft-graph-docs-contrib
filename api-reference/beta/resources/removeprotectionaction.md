@@ -1,13 +1,13 @@
 ---
-title: "removeProtectionAction resource type"
-description: "Represents an action to remove protection from the file or information."
+title: "removeProtectionAction resource type (deprecated)"
+description: "Represents an action to remove protection from the file or information. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# removeProtectionAction resource type
+# removeProtectionAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

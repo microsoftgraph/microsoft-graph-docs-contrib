@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action to remove protection from the file or information. The [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md), [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/security-sensitivitylabel-evaluateremoval.md) APIs may return the **removeProtectionAction** if protection is to be removed as a result of updating or removing the label. Protection should be removed via a client library, such as the Microsoft Information Protection SDK, only if the calling user has sufficient rights to remove protection.
+Represents an action to remove protection from the file or information. The [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateapplication.md), [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/security-informationprotection-sensitivitylabel-evaluateremoval.md) APIs may return the **removeProtectionAction** if protection is to be removed as a result of updating or removing the label. Protection should be removed via a client library, such as the Microsoft Information Protection SDK, only if the calling user has sufficient rights to remove protection.
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 

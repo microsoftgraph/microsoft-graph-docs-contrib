@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. The [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md), [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/security-sensitivitylabel-evaluateremoval.md) APIs may return the **removeWatermarkAction** if the watermark is to be removed as a result of updating or removing the label. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content watermark.
+Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. The [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateapplication.md), [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/security-informationprotection-sensitivitylabel-evaluateremoval.md) APIs may return the **removeWatermarkAction** if the watermark is to be removed as a result of updating or removing the label. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content watermark.
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 

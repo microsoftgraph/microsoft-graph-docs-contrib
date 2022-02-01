@@ -1,13 +1,13 @@
 ---
-title: "removeWatermarkAction resource type"
-description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable."
+title: "removeWatermarkAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# removeWatermarkAction resource type
+# removeWatermarkAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
