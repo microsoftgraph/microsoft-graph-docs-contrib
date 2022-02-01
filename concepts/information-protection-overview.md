@@ -30,7 +30,7 @@ Enterprise developers use Microsoft Information Protection to label and protect 
 
 ### Discover labels available to a user or organization
 
-With Microsoft Graph you can access the [sensitivity labels](/graph/api/informationprotectionlabel?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
+With Microsoft Graph you can access the [sensitivity labels](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
 
 ### Understand how to apply labels
 
@@ -38,7 +38,7 @@ By providing information on the existing and desired sensitivity label, the REST
 
 ### Interpret labels applied to data
 
-Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/metadataaction?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
+Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/metadataaction?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## API reference
 
