@@ -35,8 +35,7 @@ POST /solutions/bookingBusinesses/{id}/appointments
 ## Request body
 In the request body, supply a JSON representation of a [bookingAppointment](../resources/bookingappointment.md) object.
 
-> [!IMPORTANT]
-> If maximumAttedeesCount of the service is greater than 1:
+If maximumAttedeesCount of the service is greater than 1:
 
 - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the create Customer API.
 
