@@ -8103,6 +8103,25 @@ items:
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
+          - name: Oem warranty
+            href: resources/intune-devices-oemwarranty.md
+          - name: Oem warranty information on-boarding
+            href: resources/intune-devices-oemwarrantyinformationonboarding.md
+            items:
+            - name: List
+              href: api/intune-devices-oemwarrantyinformationonboarding-list.md
+            - name: Get
+              href: api/intune-devices-oemwarrantyinformationonboarding-get.md
+            - name: Create
+              href: api/intune-devices-oemwarrantyinformationonboarding-create.md
+            - name: Delete
+              href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
+            - name: Update
+              href: api/intune-devices-oemwarrantyinformationonboarding-update.md
+            - name: enable action
+              href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
+            - name: disable action
+              href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
@@ -8718,6 +8737,23 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
+          - name: User experience analytics work from anywhere model performance
+            href: resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
+          - name: Warranty offer
+            href: resources/intune-devices-warrantyoffer.md
+          - name: Warranty type
+            href: resources/intune-devices-warrantytype.md
           - name: Windows defender product status
             href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
